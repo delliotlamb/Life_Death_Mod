@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<RaceConfigs>
+	<DataChecksum NoParse="1">
+		<Ignore>DisplayName, ShortName, Capital, Description, UnitSkinColor, UnitHairColor, UnitClothColor, BuildingPrimaryColor, BuildingSecondaryColor, BuildingRoofColor, BuildingStyle, UnitStyle, WorkerName</Ignore>
+		<Translate>DisplayName, ShortName, Capital, Description, WorkerName</Translate>
+	</DataChecksum>
+	<RaceConfig InternalName="Faction_Usaimor">
+		<DisplayName>Empire of Usaimor</DisplayName>
+		<AIPersonality>AI_General</AIPersonality>
+		<ShortName>Usaimor</ShortName>
+		<Description>These are Trogs who have embraced the antithesis of their blood - patience, study, and contemplation - to become better killers. Though they might seem weaker than their bretherin, the Usaimor have won many skirmishes against the musclebound axe wielders of Yithril. The time has come for the Usaimor to leave petty tribal conflict behind, outmaneuver the armies of other rising nations, and bring eternal warfare to this new age.</Description>
+        <Capital>Usaim Rin</Capital>
+        <City>Morstan</City>
+        <City>Orbillanum</City>
+        <City>Az Tala Fum</City>
+        <City>Ek Orns Kai</City>
+        <City>Ras'khig</City>
+        <City>Borzhul</City>
+        <City>Kharfol</City>
+        <City>Indilkup</City>
+        <City>Prasma Dyb</City>		
+		<FactionAllegiance>Empire</FactionAllegiance>
+		<IsCustom>true</IsCustom>
+		<IsModDependent>true</IsModDependent>
+		<RaceInternalName>Race_Type_Trogs</RaceInternalName>
+		<RaceDisplayName>Trogs</RaceDisplayName>
+		<MaleUnitType>Generic_Sovereign_Trog_Male</MaleUnitType>
+		<FemaleUnitType>Generic_Sovereign_Trog_Female</FemaleUnitType>
+		<GenericUnitType_Male>Generic_Trog_Male</GenericUnitType_Male>
+		<GenericUnitType_Female>Generic_Trog_Female</GenericUnitType_Female>
+		<GenericUnitType_Other>Unit_Juggernaut</GenericUnitType_Other>
+		<TraderUnitType>TraderTest</TraderUnitType>
+		<SageUnitType>Sage_Trog</SageUnitType>
+		<ShopkeeperUnitType>Shopkeeper_Trog</ShopkeeperUnitType>
+		<StartingUnitType>Unit_Peasant_Trog</StartingUnitType>
+		<StartingUnitType>Unit_Peasant_Trog_AI</StartingUnitType>
+		<StartingUnitType>Unit_Pioneer_Trog</StartingUnitType>
+		<StartingUnitType>Unit_Archer_Trog</StartingUnitType>
+		<StartingUnitType>Unit_Archer_Trog_AI</StartingUnitType>
+		<StartingUnitType>Unit_Crossbowman_Trog</StartingUnitType>
+		<StartingUnitType>Unit_Horseman_Trog</StartingUnitType>
+		<StartingUnitType>Unit_Defender_Trog</StartingUnitType>
+		<StartingUnitType>Unit_Defender_Trog_AI</StartingUnitType>
+		<StartingUnitType>Unit_Defender_Trog_AI2</StartingUnitType>
+		<StartingUnitType>Unit_SpearMaiden_Trog</StartingUnitType>
+		<StartingUnitType>Unit_Spearman_Trog</StartingUnitType>
+		<StartingUnitType>Unit_Spearman_Trog_AI</StartingUnitType>
+		<StartingUnitType>Unit_Spearman_Trog_AI2</StartingUnitType>
+		<StartingUnitType>Unit_Spearman_Trog_AI3</StartingUnitType>
+		<StartingUnitType>Unit_Spearman_Trog_AI4</StartingUnitType>
+		<StartingUnitType>Unit_Spearman_Trog_AI5</StartingUnitType>
+		<StartingUnitType>Unit_Catapult</StartingUnitType>
+		<StartingUnitType>Unit_Juggernaut</StartingUnitType>
+		<StartingUnitType>Unit_Scout_Trog</StartingUnitType>
+		<StartingUnitType>Unit_Light_Trog</StartingUnitType>
+		<StartingUnitType>Unit_Medium_Trog</StartingUnitType>
+		<StartingUnitType>Unit_Medium_Trog_AI</StartingUnitType>
+		<StartingUnitType>Unit_Medium_Trog_AI2</StartingUnitType>
+		<StartingUnitType>Unit_Heavy_Trog</StartingUnitType>
+		<StartingUnitType>Unit_Heavy_Trog_AI</StartingUnitType>
+		<StartingUnitType>Unit_Mage_Trog</StartingUnitType>
+		<StartingUnitType>Unit_Magic_Light_Trog_AI</StartingUnitType>
+		<StartingUnitType>Unit_Magic_Light_Trog_AI2</StartingUnitType>
+		<StartingUnitType>Unit_Magic_Light_Trog_AI3</StartingUnitType>
+		<StartingUnitType>Unit_Magic_Medium_Trog</StartingUnitType>
+		<StartingUnitType>Unit_Magic_Medium_Trog_AI</StartingUnitType>
+		<StartingUnitType>Unit_Magic_Medium_Trog_AI2</StartingUnitType>
+		<StartingUnitType>Unit_Magic_Medium_Trog_AI3</StartingUnitType>
+		<StartingUnitType>Unit_Trog_AI1</StartingUnitType>
+		<StartingUnitType>Unit_Magic_Heavy_Trog</StartingUnitType>
+		<UnitScale>1.0000</UnitScale>
+		<RaceClassification>Fallen</RaceClassification>
+		<MusicTheme>AtWar1_BG</MusicTheme>
+		<Alignment>Neutral</Alignment>
+		<UnitSkinColor>125,120,120,255</UnitSkinColor>
+		<UnitHairColor>190,190,190,255</UnitHairColor>
+		<FactionColor>166,28,28,255</FactionColor>
+		<UnitMetalColor>128,128,128,255</UnitMetalColor>
+		<UnitClothing1Color>166,28,28,255</UnitClothing1Color>
+		<UnitClothing2Color>107,15,15,255</UnitClothing2Color>
+		<BuildingPrimaryColor>74,74,74,255</BuildingPrimaryColor>
+		<BuildingSecondaryColor>92,82,64,255</BuildingSecondaryColor>
+		<BuildingRoofColor>50,50,50,255</BuildingRoofColor>
+		<BuildingStyle>EmpireStyle</BuildingStyle>
+		<EnvironmentTerrainType>1</EnvironmentTerrainType>
+		<PreferredLogoType>GenericCrest14</PreferredLogoType>
+		<NonBuildableEnvironmentType>GrasslandEnvironment</NonBuildableEnvironmentType>
+		<TechTree>TechTree_Amarian</TechTree>
+		<Spellbook>DeathSpellbook</Spellbook>
+		<FactionType>Major</FactionType>
+		<RemCustomizationPts>0</RemCustomizationPts>
+		<SelAbilityBonusOption>MasterworkChain</SelAbilityBonusOption>
+		<SelAbilityBonusOption>ScholarsTech</SelAbilityBonusOption>
+		<SelAbilityBonusOption>Archers</SelAbilityBonusOption>
+		<SelAbilityBonusOption>WarriorsTech</SelAbilityBonusOption>
+		<SelAbilityBonusOption>AssassinsTools</SelAbilityBonusOption>
+		<SelAbilityBonusOption>VulnerableEmpire</SelAbilityBonusOption>		
+		<!--<SelAbilityBonusOption>Endgame_Player</SelAbilityBonusOption>-->		
+		<A_Additive_FoodPerGrain>25.0000</A_Additive_FoodPerGrain>
+		<A_Additive_GoldTakeAwayPerTaxPercentage>1.0000</A_Additive_GoldTakeAwayPerTaxPercentage>
+		<A_Additive_Graves>50.0000</A_Additive_Graves>
+		<A_Additive_ProductionEffectPerUnrest>1.0000</A_Additive_ProductionEffectPerUnrest>
+		<A_Additive_ProductionPerMaterials>8.0000</A_Additive_ProductionPerMaterials>
+		<A_Additive_ResearchEffectPerUnrest>1.0000</A_Additive_ResearchEffectPerUnrest>
+		<A_GoodieRating>1.0000</A_GoodieRating>
+		<A_GrainYield>1.0000</A_GrainYield>
+		<A_ManaRegeneration>1.0000</A_ManaRegeneration>
+		<A_MaterialsYield>1.0000</A_MaterialsYield>
+		<A_MaxArmySize>5.0000</A_MaxArmySize>
+		<A_NPCSpawnRating>2.0000</A_NPCSpawnRating>
+		<A_QuestingRating>5.0000</A_QuestingRating>
+		<A_Traits>4.0000</A_Traits>
+		<A_UnitUpgrades>100.0000</A_UnitUpgrades>
+	</RaceConfig>
+</RaceConfigs>

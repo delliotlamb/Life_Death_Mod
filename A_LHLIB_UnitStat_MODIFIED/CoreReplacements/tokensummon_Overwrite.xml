@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<Container>
+	<GameItemType InternalName="Egg_Skath">
+		<DisplayName>Skath Egg</DisplayName>
+		<Description>Breaking open this enchanted egg will cause a baby Skath to fight for you.</Description>
+		<ShopValue>90</ShopValue>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>SummonUnit</Attribute>
+			<Value>2</Value>
+			<Provides>Summons a Mire Skath</Provides>
+			<UnitClass>MireSkath_BG_Summon</UnitClass>
+		</GameModifier>
+		<IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+		<Likelihood>20</Likelihood>
+		<RarityDisplay>Uncommon</RarityDisplay>
+		<HeroOnly>1</HeroOnly>
+		<IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+		<IsUsable>1</IsUsable>
+		<ArtDef>Egg_Skath_ArtDef</ArtDef>
+		           <AIData AIPersonality="AI_General">
+                <AIPriority>0</AIPriority>
+            </AIData>
+	</GameItemType>
+	<GameItemType InternalName="Letter_Mark">
+		<DisplayName>Letter of Mark</DisplayName>
+		<Description>Using this letter will transport a hired mercenary to your group.</Description>
+		<ShopValue>90</ShopValue>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>SummonUnit</Attribute>
+			<StrVal>Wallace</StrVal>
+			<Value>6</Value>
+			<Provides>Engages a Mercenary</Provides>
+			<UnitClass>Mercenary</UnitClass>
+		</GameModifier>
+		<IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+		<Likelihood>20</Likelihood>
+		<RarityDisplay>Uncommon</RarityDisplay>
+		<HeroOnly>1</HeroOnly>
+		<IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+		<IsUsable>1</IsUsable>
+		<ArtDef>Letter_Mark_ArtDef</ArtDef>
+		            <AIData AIPersonality="AI_General">
+                <AIPriority>0</AIPriority>
+            </AIData>
+			
+	</GameItemType>
+	<GameItemType InternalName="Token_BestFriend">
+		<DisplayName>Token of the Friend</DisplayName>
+		<Description>This token will summon man's best friend.</Description>
+		<ShopValue>90</ShopValue>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>SummonUnit</Attribute>
+			<StrVal>Annie</StrVal>
+			<Value>8</Value>
+			<Provides>Summons a Dog</Provides>
+			<UnitClass>AnnieDog_BG_Summon</UnitClass>
+		</GameModifier>
+		<IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+		<Likelihood>20</Likelihood>
+		<RarityDisplay>Uncommon</RarityDisplay>
+		<HeroOnly>1</HeroOnly>
+		<IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+		<IsUsable>1</IsUsable>
+		<ArtDef>Token_BestFriend_ArtDef</ArtDef>
+		            <AIData AIPersonality="AI_General">
+                <AIPriority>0</AIPriority>
+            </AIData>
+	</GameItemType>
+	<GameItemType InternalName="Token_Golem">
+		<DisplayName>Token of the Sand Golem</DisplayName>
+		<Description>This token will summon a sand golem to aid you.</Description>
+		<ShopValue>240</ShopValue>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>SummonUnit</Attribute>
+			<StrVal>Sand Golem</StrVal>
+			<Value>3</Value>
+			<Provides>Summons a Sand Golem</Provides>
+			<UnitClass>SandGolem_BG_Summon</UnitClass>
+		</GameModifier>
+		<IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+		<Likelihood>20</Likelihood>
+		<RarityDisplay>Uncommon</RarityDisplay>
+		<HeroOnly>1</HeroOnly>
+		<IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+		<IsUsable>1</IsUsable>
+		<ArtDef>Token_Golem_ArtDef</ArtDef>
+		            <AIData AIPersonality="AI_General">
+                <AIPriority>0</AIPriority>
+            </AIData>
+	</GameItemType>
+	<GameItemType InternalName="Token_Wolf">
+		<DisplayName>Token of the Wolf</DisplayName>
+		<Description>This token will summon a wolf to serve you</Description>
+		<ShopValue>90</ShopValue>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>SummonUnit</Attribute>
+			<StrVal>Anna</StrVal>
+			<Value>2</Value>
+			<Provides>Summons a Wolf</Provides>
+			<UnitClass>EbbenWolf_BG_Summon</UnitClass>
+		</GameModifier>
+		<IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+		<Likelihood>40</Likelihood>
+		<RarityDisplay>Common</RarityDisplay>
+		<HeroOnly>1</HeroOnly>
+		<IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+		<IsUsable>1</IsUsable>
+		<ArtDef>Token_Wolf_ArtDef</ArtDef>
+		            <AIData AIPersonality="AI_General">
+                <AIPriority>0</AIPriority>
+            </AIData>
+	</GameItemType>
+</Container>

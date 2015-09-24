@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<TileDesigns>
+	<DataChecksum NoParse="1">
+		<Ignore>DisplayName</Ignore>
+		<Translate>DisplayName</Translate>
+	</DataChecksum>
+	<TileDesign InternalName="flint_tile1">
+		<DisplayName>flint_tile1</DisplayName>
+		<Thumbnail>\Game\Gfx\tile_icon.png</Thumbnail>
+		<LowResShadow>flint_tile1_shadow.png</LowResShadow>
+		<HighResShadow>flint_tile1_shadow.png</HighResShadow>
+		<ShadowTransparency>59</ShadowTransparency>
+		<IsCore>0</IsCore>
+		<IsHiddenFromEditor>0</IsHiddenFromEditor>
+		<SubTileFlags>15</SubTileFlags>
+		<TileDesignObject InternalName="_obj0">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>FallenRocks_Crag3</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>8.202316,-10.000000,15.823261</Position>
+			<Rotation>0.785398,1.047198,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj1">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>BurningRocks_Rock2</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-22.435913,-5.000000,-38.785980</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj2">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>BurningRocks_Rock2</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-20.849365,-6.000000,23.072250</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj3">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>BurningRocks_Rock2</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>1.640289,-15.000000,-18.307564</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj4">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>BurningRocks_Rock2</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>26.540359,-8.000000,-8.839806</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj5">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>BurningRocks_Rock2</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>43.639603,-7.000000,-35.337120</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj6">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>BurningRocks_Rock2</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-27.196136,-10.000000,8.271179</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj7">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>BurningRocks_Rock2</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-41.586029,-9.000000,-17.530773</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj8">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>BurningRocks_Rock2</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>3.042755,-7.000000,36.433914</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj9">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>BurningRocks_Rock2</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>41.617317,-12.000000,27.962929</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj10">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>BurningRocks_Rock2</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-35.053177,-15.000000,37.386856</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj11">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>BurningRocks_Rock2</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-5.697708,-9.000000,-1.034714</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj12">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>BurningRocks_Rock2</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-16.142166,-13.000000,-22.890331</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj13">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>BurningRocks_Rock2</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>17.076920,-4.000000,-40.774498</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj14">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>BurningRocks_Rock2</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>36.250206,-6.000000,-21.811916</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj15">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>BurningRocks_Rock2</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>27.731926,-11.000000,30.575592</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj16">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>BurningRocks_Rock2</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>35.486458,-11.000000,11.644943</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj17">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>BurningRocks_Rock2</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>17.480042,-8.000000,2.548225</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj18">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>BurningRocks_Rock2</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-22.002838,-14.000000,-10.761749</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj19">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>BurningRocks_Rock2</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-32.989944,-10.000000,-33.230782</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj20">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>BurningRocks_Rock2</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-39.334274,-7.000000,-4.315582</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj21">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>BurningRocks_Rock2</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-15.741333,-11.000000,38.671333</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj22">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>BurningRocks_Rock2</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-4.572205,-7.000000,14.259804</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj23">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>BurningRocks_Rock2</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>23.122360,-9.000000,-26.144615</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj24">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>BurningRocks_Rock2</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>3.859894,-5.000000,-36.529411</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj25">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>FallenRocks_Crag3</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-39.029327,-6.000000,22.026230</Position>
+			<Rotation>0.000000,1.919862,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj26">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>FallenRocks_Crag3</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>31.264374,-1.000000,-39.044754</Position>
+			<Rotation>0.000000,5.585054,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj27">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>FallenRocks_Crag3</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-9.396484,-5.000000,-11.770035</Position>
+			<Rotation>0.000000,2.443461,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj28">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>FallenRocks_Crag3</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>12.920654,0.000000,-9.843338</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj29">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>FallenRocks_Crag3</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>13.836578,-3.000000,28.147202</Position>
+			<Rotation>6.021386,3.403392,0.174533</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj30">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>FallenRocks_Crag3</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>42.844879,-9.000000,40.874222</Position>
+			<Rotation>0.087266,2.967060,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj31">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>FallenRocks_Crag3</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>43.103882,-2.000000,-8.008743</Position>
+			<Rotation>0.000000,5.323255,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj32">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>FallenRocks_Crag2</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-10.751526,-13.000000,31.766586</Position>
+			<Rotation>6.195919,2.617994,0.087266</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignPath InternalName="_path0"/>
+		<TileDesignPath InternalName="_path1"/>
+	</TileDesign>
+</TileDesigns>

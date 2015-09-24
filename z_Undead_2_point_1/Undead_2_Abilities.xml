@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- DLC04_Abilities.xml -->
+<!-- -->
+
+
+<AbilityBonuses>
+        <AbilityBonus InternalName="DLC04_UndeadFactionAbility">
+        <AbilityBonusType>Player</AbilityBonusType>
+        <AbilityBonusOption InternalName="DLC04_UndeadFaction">
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Additive_ProductionPerMaterials</StrVal>
+            <Value>6</Value>
+            <Icon>Icon_Lumber.png</Icon>
+            <Provides>+6 Prod. per Material due to sleepless workforce</Provides>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Player</ModType>
+                <Attribute>AbilityBonus</Attribute>
+                <StrVal>A_Additive_Unrest</StrVal>
+                <Value>-10</Value>
+                <Provides>-10% Unrest from eternal patience</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Player</ModType>
+                <Attribute>AbilityBonus</Attribute>
+                <StrVal>A_Research</StrVal>
+                <Value>-10</Value>
+                <Provides>-10% to Research, attributed to sluggish minds</Provides>
+            </GameModifier>			
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+	    <AbilityBonus InternalName="UndyingCurseDead2Ability">
+        <AbilityBonusOption InternalName="UndyingCurseDead2">
+            <DisplayName>Undying Curse</DisplayName>
+            <Description>When this unit kills a victim it adds another member to its group, to a maximum of 6 units</Description>
+            <Icon>Ability_UndyingCurse_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxTroopsFromKills</StrVal>
+                <Value>6</Value>
+                <Provides>When this unit kills a victim it adds another member to its group, to a maximum of 6 units</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_StaminaFromKills</StrVal>
+                <Value>3</Value>
+                <Provides>Killing an enemy provides 3 Stamina</Provides>
+            </GameModifier>			
+            <IsCombatAbility>1</IsCombatAbility>
+            <AdditionalTrainingTurns>10</AdditionalTrainingTurns>
+            <Type>Aggressive</Type>
+            <Prereq>
+                <Type>Race</Type>
+                <Attribute>Race_Type_Dead</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+	
+
+	
+</AbilityBonuses>

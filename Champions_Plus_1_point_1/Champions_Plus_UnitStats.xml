@@ -1,0 +1,218 @@
+<PlayerAbilityTypes>
+
+<UnitStatType InternalName="UnitStat_IsAtBlacksmith">
+	<DisplayName>Is At Blacksmith</DisplayName>
+	<Description>Is this unit present with a Blacksmith?</Description>
+	<Icon>Ledger_ConstructionRate_Icon.png</Icon>
+	<DefaultValue>0.0</DefaultValue>
+	<Hidden>1</Hidden>
+	<UnitStatGrouping>CombatStat</UnitStatGrouping>
+</UnitStatType>
+
+<UnitStatType InternalName="UnitStat_IsAtWeaponsmith">
+	<DisplayName>Is At Weaponsmith</DisplayName>
+	<Description>Is this unit present with a Weaponsmith?</Description>
+	<Icon>Icon_Sword.png</Icon>
+	<DefaultValue>0.0</DefaultValue>
+	<Hidden>1</Hidden>
+	<UnitStatGrouping>CombatStat</UnitStatGrouping>
+</UnitStatType>
+
+<UnitStatType InternalName="UnitStat_IsAtBlacksmith_LightPlate">
+	<DisplayName>Is At Blacksmith</DisplayName>
+	<Description>Is this unit present with a Light Plate Blacksmith?</Description>
+	<Icon>Ledger_ConstructionRate_Icon.png</Icon>
+	<DefaultValue>0.0</DefaultValue>
+	<Hidden>1</Hidden>
+	<UnitStatGrouping>CombatStat</UnitStatGrouping>
+</UnitStatType>
+
+<UnitStatType InternalName="UnitStat_IsAtTanner">
+	<DisplayName>Is At Tanner</DisplayName>
+	<Description>Is this unit present with a Tanner?</Description>
+	<Icon>ItemCategoryIcon_Boots.png</Icon>
+	<DefaultValue>0.0</DefaultValue>
+	<Hidden>1</Hidden>
+	<UnitStatGrouping>CombatStat</UnitStatGrouping>
+</UnitStatType>
+
+<UnitStatType InternalName="UnitStat_IsAtEnchanter">
+	<DisplayName>Is At Enchanter</DisplayName>
+	<Description>Is this unit present with an Enchanter?</Description>
+	<Icon>Icon_Crystal.png</Icon>
+	<DefaultValue>0.0</DefaultValue>
+	<Hidden>1</Hidden>
+	<UnitStatGrouping>CombatStat</UnitStatGrouping>
+</UnitStatType>
+
+<UnitStatType InternalName="UnitStat_IsAtPlateArmorer">
+	<DisplayName>Is At Plate Armorer</DisplayName>
+	<Description>Is this unit present with a Plate Armorer?</Description>
+	<Icon>ItemCategoryIcon_Head.png</Icon>
+	<DefaultValue>0.0</DefaultValue>
+	<Hidden>1</Hidden>
+	<UnitStatGrouping>CombatStat</UnitStatGrouping>
+</UnitStatType>
+
+<UnitStatType InternalName="UnitStat_IsAtPlateArmorer_Master">
+	<DisplayName>Can Order Pinnacle Armor</DisplayName>
+	<Description>Can this unit order Pinnacle Armor</Description>
+	<Icon>ItemCategoryIcon_Head.png</Icon>
+	<DefaultValue>0.0</DefaultValue>
+	<Hidden>1</Hidden>
+	<UnitStatGrouping>CombatStat</UnitStatGrouping>
+</UnitStatType>
+
+<UnitStatType InternalName="UnitStat_IsAtMasterworkChainArmorer">
+	<DisplayName>Is At Plate Armorer</DisplayName>
+	<Description>Is this unit present with a Masterwork Chainmail Armorer?</Description>
+	<Icon>ItemCategoryIcon_Head.png</Icon>
+	<DefaultValue>0.0</DefaultValue>
+	<Hidden>1</Hidden>
+	<UnitStatGrouping>CombatStat</UnitStatGrouping>
+</UnitStatType>
+
+
+<UnitStatType InternalName="UnitStat_IsAtArcaneArmorer">
+	<DisplayName>Is At Arcane Armorer</DisplayName>
+	<Description>Is this unit present with an Arcane Armorer?</Description>
+	<Icon>ItemCategoryIcon_Torso.png</Icon>
+	<DefaultValue>0.0</DefaultValue>
+	<Hidden>1</Hidden>
+	<UnitStatGrouping>CombatStat</UnitStatGrouping>
+</UnitStatType>
+
+<UnitStatType InternalName="UnitStat_IsAtArcaneArmorer_Tran">
+	<DisplayName>Can order Transcendent Armor</DisplayName>
+	<Description>Can this arcane armorer make transcendent equipment?</Description>
+	<Icon>ItemCategoryIcon_Torso.png</Icon>
+	<DefaultValue>0.0</DefaultValue>
+	<Hidden>1</Hidden>
+	<UnitStatGrouping>CombatStat</UnitStatGrouping>
+</UnitStatType>
+
+<UnitStatType InternalName="UnitStat_IsAtArcaneWeaponsmith">
+	<DisplayName>Is At Arcane Weaponsmith</DisplayName>
+	<Description>Is this unit present with an Arcane Weaponsmith?</Description>
+	<Icon>Ledger_ConstructionRate_Icon.png</Icon>
+	<DefaultValue>0.0</DefaultValue>
+	<Hidden>1</Hidden>
+	<UnitStatGrouping>CombatStat</UnitStatGrouping>
+</UnitStatType>
+
+<UnitStatType InternalName="UnitStat_IsAtArcaneWeaponsmith_Tran">
+	<DisplayName>Can order Transcendent Weapons</DisplayName>
+	<Description>Can this Arcane Weaponsmith make transcendent equipment?</Description>
+	<Icon>Ledger_ConstructionRate_Icon.png</Icon>
+	<DefaultValue>0.0</DefaultValue>
+	<Hidden>1</Hidden>
+	<UnitStatGrouping>CombatStat</UnitStatGrouping>
+</UnitStatType>
+
+<UnitStatType InternalName="UnitStat_IsAtMasterEnchanter">
+	<DisplayName>Is At Master Enchanter</DisplayName>
+	<Description>Is this unit present with a Master Enchanter?</Description>
+	<Icon>Icon_ManaToMaintain.png</Icon>
+	<DefaultValue>0.0</DefaultValue>
+	<Hidden>1</Hidden>
+	<UnitStatGrouping>CombatStat</UnitStatGrouping>
+</UnitStatType>
+
+<UnitStatType InternalName="UnitStat_IsAtProvisionist">
+	<DisplayName>Is At Provisionist</DisplayName>
+	<Description>Is this unit present with a Provisionist?</Description>
+	<Icon>Bread_Item.png</Icon>
+	<DefaultValue>0.0</DefaultValue>
+	<Hidden>1</Hidden>
+	<UnitStatGrouping>CombatStat</UnitStatGrouping>
+</UnitStatType>
+
+<UnitStatType InternalName="UnitStat_IsAtProvisionist_Dead">
+	<DisplayName>Is At Equipment Clerk</DisplayName>
+	<Description>Is this unit present with an Equipment Clerk?</Description>
+	<Icon>ItemCategoryIcon_Forearms.png</Icon>
+	<DefaultValue>0.0</DefaultValue>
+	<Hidden>1</Hidden>
+	<UnitStatGrouping>CombatStat</UnitStatGrouping>
+</UnitStatType>
+
+<UnitStatType InternalName="UnitStat_IsAtArchaeologist">
+	<DisplayName>Is At Archaeologist</DisplayName>
+	<Description>Is this unit present with an Archaeologist?</Description>
+	<Icon>Action_BuildRoad.png</Icon>
+	<DefaultValue>0.0</DefaultValue>
+	<Hidden>1</Hidden>
+	<UnitStatGrouping>CombatStat</UnitStatGrouping>
+</UnitStatType>
+
+<UnitStatType InternalName="UnitStat_IsAtRanch">
+	<DisplayName>Is At Ranch</DisplayName>
+	<Description>Is this unit present at a Ranch?</Description>
+	<Icon>ItemCategoryIcon_Mount.png</Icon>
+	<DefaultValue>0.0</DefaultValue>
+	<Hidden>1</Hidden>
+	<UnitStatGrouping>CombatStat</UnitStatGrouping>
+</UnitStatType>
+
+<UnitStatType InternalName="UnitStat_IsAtRanch_Dead">
+	<DisplayName>Is At Ranch</DisplayName>
+	<Description>Is this unit present at a Ranch?</Description>
+	<Icon>ItemCategoryIcon_Mount.png</Icon>
+	<DefaultValue>0.0</DefaultValue>
+	<Hidden>1</Hidden>
+	<UnitStatGrouping>CombatStat</UnitStatGrouping>
+</UnitStatType>
+
+<UnitStatType InternalName="UnitStat_IsAtRanch_LegacyOfSerrane">
+	<DisplayName>Is At Ranch</DisplayName>
+	<Description>Is this unit present at a Ranch?</Description>
+	<Icon>ItemCategoryIcon_Mount.png</Icon>
+	<DefaultValue>0.0</DefaultValue>
+	<Hidden>1</Hidden>
+	<UnitStatGrouping>CombatStat</UnitStatGrouping>
+</UnitStatType>
+
+<UnitStatType InternalName="UnitStat_IsAtKennel">
+	<DisplayName>Is At Kennel</DisplayName>
+	<Description>Is this unit present with a Kennel?</Description>
+	<Icon>Icon_Wargs.png</Icon>
+	<DefaultValue>0.0</DefaultValue>
+	<Hidden>1</Hidden>
+	<UnitStatGrouping>CombatStat</UnitStatGrouping>
+</UnitStatType>
+
+<UnitStatType InternalName="UnitStat_IsAtAdventurersGuild">
+	<DisplayName>Is At Adventurer's Guild</DisplayName>
+	<Description>Is this unit present with an Adventurer's Guild?</Description>
+	<Icon>Icon_Wargs.png</Icon>
+	<DefaultValue>0.0</DefaultValue>
+	<Hidden>1</Hidden>
+	<UnitStatGrouping>CombatStat</UnitStatGrouping>
+</UnitStatType>
+
+	<!-- Overwrites Crushing Blow Unitstat to make Calc tags simpler in my Crushing Blow overwrite 
+
+    <UnitStatType InternalName="UnitStat_BonusCrushingBlow">
+        <DisplayName>Bonus Crushing Blow Damage</DisplayName>
+        <Description>Multiplier to Attack for the Crushing Blow ability</Description>
+        <Hidden>1</Hidden>
+        <DefaultValue>1.25</DefaultValue>
+    </UnitStatType>-->
+	
+	    <UnitStatType InternalName="UnitStat_BonusRainOfArrows">
+        <DisplayName>Bonus Rain Of Arrows Damage</DisplayName>
+        <Description>Multiplier to Attack for the Rain Of Arrows ability</Description>
+        <Hidden>1</Hidden>
+		<UnitStatGrouping>CombatStat</UnitStatGrouping>		
+        <DefaultValue>1.0</DefaultValue>
+    </UnitStatType>
+	
+		<UnitStatType InternalName="UnitStat_PriorityTargetReady">
+        <DisplayName>Priority Target Ready?</DisplayName>
+        <Description>Unitstat required for a commander to use Priority Target.</Description>
+        <Hidden>1</Hidden>
+		<UnitStatGrouping>CombatStat</UnitStatGrouping>
+        <DefaultValue>1.0</DefaultValue>
+    </UnitStatType>
+
+</PlayerAbilityTypes>

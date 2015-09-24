@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!-- 
+<ImprovementTypes>
+	
+    <ImprovementType InternalName="Mausoleum">
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Prestige</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Growth</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>LimitedUnitCap</Attribute>
+            <StrVal>Unit_Spearman_AutoGen_Dead</StrVal>
+            <Value>1</Value>
+            <Provides>Recruit 1 Skeleton Party</Provides>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>1000</AIPriority>
+            <AITag>Economy</AITag>
+        </AIData>
+    </ImprovementType>
+	
+    <ImprovementType InternalName="Catacomb">
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Prestige</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Growth</Provides>
+        </GameModifier>			
+        <AIData AIPersonality="AI_General">
+            <AIPriority>1000</AIPriority>
+            <AITag>Economy</AITag>
+        </AIData>		
+    </ImprovementType>
+	
+    <ImprovementType InternalName="Necropolis">
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Prestige</Attribute>
+            <Value>2</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+2 Growth</Provides>
+        </GameModifier>	
+        <AIData AIPersonality="AI_General">
+            <AIPriority>1000</AIPriority>
+            <AITag>Economy</AITag>
+        </AIData>
+    </ImprovementType>
+	
+	<ImprovementType InternalName="Necropolis2">
+         <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Prestige</Attribute>
+            <Value>3</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+3 Growth</Provides>
+        </GameModifier>					
+        <AIData AIPersonality="AI_General">
+            <AIPriority>1000</AIPriority>
+            <AITag>Economy</AITag>
+        </AIData>          
+        </ImprovementType>
+		
+        <ImprovementType InternalName="Necropolis3">
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Prestige</Attribute>
+            <Value>4</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+4 Growth</Provides>
+        </GameModifier>	
+        <AIData AIPersonality="AI_General">
+            <AIPriority>1000</AIPriority>
+            <AITag>Economy</AITag>
+        </AIData>
+        </ImprovementType>
+		
+		<ImprovementType InternalName="Pier">
+			<Prereq>
+				<Type>RestrictedAbilityBonusOption</Type>
+				<Attribute>DLC04_UndeadFaction</Attribute>
+				<Target>Player</Target>
+			</Prereq>
+		</ImprovementType>
+	
+	<ImprovementType InternalName="TombExcavator">
+        <DisplayName>Tomb Excavator</DisplayName>
+        <Description>Excavators dig new graves for your populace, and in the process will inevitably find new bodies for reanimation.</Description>
+        <RequiresCity>1</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>TradeGuild</RequiredImprovement>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>DLC04_UndeadFaction</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Restoration</Attribute>
+        </Prereq>
+        <LaborToBuild>200</LaborToBuild>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Graves</Attribute>
+            <Value>150</Value>
+			<PerTurn>1</PerTurn>
+            <Provides>+150 Graves</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Prestige</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Growth</Provides>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>1000</AIPriority>
+            <AITag>Economy</AITag>
+        </AIData>
+        <ArtDef>Art_TombExcavator</ArtDef>
+		<ImprovementTypeArtDef InternalName="Art_TombExcavator">
+        <ImprovementTypeArtSubPack InternalName="Art_TombExcavator_Default">
+            <TileDesign>Dead_Tomb_01</TileDesign>
+            <ConstructionTileDesign>F_Construction1x1_01</ConstructionTileDesign>
+                <DrawnIcon>Improvement_FloodedGraveyard.png</DrawnIcon>
+                <DrawnIconConstruction>Improvement_FloodedGraveyard_C.png</DrawnIconConstruction>
+                <Thumbnail>DLC04_Improvement_Catacomb.png</Thumbnail>
+            <Medallions InternalName="">
+                <All>DLC04_Mausoleum_Thumb_01.png</All>
+            </Medallions>
+        </ImprovementTypeArtSubPack>
+		</ImprovementTypeArtDef>
+
+		
+		
+    </ImprovementType>
+	
+	<ImprovementType InternalName="SepulchreOfAwakening">
+        <DisplayName>Sepulchre Of Awakening</DisplayName>
+        <Description>Each of these sepulchres built gives a growth bonus to all your cities.</Description>
+        <RequiresCity>1</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>TradeGuild</RequiredImprovement>
+	    <UpgradesToImprovement>SpireOfAwakening</UpgradesToImprovement>
+        <UpgradeTier>1</UpgradeTier>		
+        <LaborToBuild>200</LaborToBuild>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>DLC04_UndeadFaction</Attribute>
+            <Target>Player</Target>
+        </Prereq>		
+                <GameModifier>
+                    <ModType>Player</ModType>
+                    <Attribute>AbilityBonus</Attribute>
+                    <StrVal>A_Prestige</StrVal>
+                    <Value>20</Value>
+					<Provides>+20% Growth in all your cities</Provides>
+                </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>1000</AIPriority>
+            <AITag>Economy</AITag>
+        </AIData>
+        <ArtDef>Art_Sepulchre</ArtDef>
+		<ImprovementTypeArtDef InternalName="Art_Sepulchre">
+        <ImprovementTypeArtSubPack InternalName="Art_Sepulchre_Default">
+            <TileDesign>Dead_Sepulchre_01</TileDesign>
+            <ConstructionTileDesign>F_Construction1x1_01</ConstructionTileDesign>
+                <DrawnIcon>Improvement_StoneQuarry.png</DrawnIcon>
+                <DrawnIconConstruction>Improvement_StoneQuarry_C.png</DrawnIconConstruction>
+                <Thumbnail>DLC04_Mausoleum_Thumb_01.png</Thumbnail>
+            <Medallions InternalName="">
+                <All>DLC04_Mausoleum_Thumb_01.png</All>
+            </Medallions>
+        </ImprovementTypeArtSubPack>
+		</ImprovementTypeArtDef>	
+    </ImprovementType>
+
+		<ImprovementType InternalName="SpireOfAwakening">
+        <DisplayName>The Accursed Spire</DisplayName>
+        <Description>This Spire gives a growth bonus to all your cities.</Description>
+        <AllowedPerFaction>1</AllowedPerFaction>		
+        <RequiresCity>1</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>TradeGuild</RequiredImprovement>
+        <LaborToBuild>700</LaborToBuild>
+        <UpgradeTier>2</UpgradeTier>		
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>DLC04_UndeadFaction</Attribute>
+            <Target>Player</Target>
+        </Prereq>		
+                <GameModifier>
+                    <ModType>Player</ModType>
+                    <Attribute>AbilityBonus</Attribute>
+                    <StrVal>A_Prestige</StrVal>
+                    <Value>50</Value>
+					<Provides>+50% Growth in all your cities</Provides>
+                </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>1000</AIPriority>
+            <AITag>Economy</AITag>
+        </AIData>
+        <ArtDef>Art_SpireOfAwakening</ArtDef>
+		<ImprovementTypeArtDef InternalName="Art_SpireOfAwakening">
+        <ImprovementTypeArtSubPack InternalName="Art_SpireOfAwakening_Default">
+            <TileDesign>Dead_Monolith_01</TileDesign>
+            <ConstructionTileDesign>F_Construction1x1_01</ConstructionTileDesign>
+                <DrawnIcon>Improvement_StoneQuarry.png</DrawnIcon>
+                <DrawnIconConstruction>Improvement_StoneQuarry_C.png</DrawnIconConstruction>
+                <Thumbnail>DLC04_Mausoleum_Thumb_01.png</Thumbnail>
+            <Medallions InternalName="">
+                <All>DLC04_Mausoleum_Thumb_01.png</All>
+            </Medallions>
+        </ImprovementTypeArtSubPack>
+		</ImprovementTypeArtDef>	
+    </ImprovementType>
+	
+
+	
+</ImprovementTypes>
+-->

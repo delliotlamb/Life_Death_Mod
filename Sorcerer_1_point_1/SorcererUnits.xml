@@ -1,0 +1,495 @@
+<UnitTypes>
+<UnitType InternalName="Champion_Ursavack">
+		<DisplayName>Ursuvack Vengier</DisplayName>
+		<UnitDisplayName>Ursuvack Vengier</UnitDisplayName> 
+		<Class>Adventurer</Class>
+		<Allegiance>Empire</Allegiance>
+		<CreatureType>Champion</CreatureType> 
+		<RaceType>Race_Type_Quendar</RaceType>
+        	<Unique>1</Unique>
+		<CanBeDesigned>0</CanBeDesigned> 
+		<Gender>Male</Gender> 
+		<WageOverride>1</WageOverride> 
+		<IsNPC>1</IsNPC>
+		<IsChampion>1</IsChampion>  
+		<IsSovereign>0</IsSovereign>
+		<SpawnRating>3</SpawnRating> 
+		<NPCSpawnLikelihood>100</NPCSpawnLikelihood> 
+		<GameModifier>
+			<ModType>Resource</ModType>
+			<Attribute>Unrest</Attribute>
+			<Value>-5</Value>
+            <Provides>-5% Unrest in the city this unit is in</Provides>
+		</GameModifier>
+		<LevelMilestone InternalName="L1">
+			<Level>1</Level>
+			<UnitStat_Accuracy>80</UnitStat_Accuracy>
+			<UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+			<UnitStat_CombatSpeed>22</UnitStat_CombatSpeed>
+			<UnitStat_HitPoints>20</UnitStat_HitPoints>
+	    <UnitStat_BG_IsChampion>1</UnitStat_BG_IsChampion>
+	    <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
+	    <UnitStat_BG_IsMale>1</UnitStat_BG_IsMale>
+	    <UnitStat_BG_IsRace_Quendar>1</UnitStat_BG_IsRace_Quendar>
+	    <UnitStat_BG_IsEmpire>1</UnitStat_BG_IsEmpire>
+		</LevelMilestone>
+		<SelectedAbilityBonusOption>Blood_Quendar</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>PathOfTheSorcerer</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Air1</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Earth1</SelectedAbilityBonusOption>
+		<AutoCreateEquipment>Staff</AutoCreateEquipment>
+        <AutoCreateEquipment>SorcererTowerPlans</AutoCreateEquipment>
+		<Equipment>F_Male_Quendar_Head_01</Equipment>
+		<Equipment>DarkWizardRobeID2</Equipment>
+		<Equipment>Sion_Cloak_ID2</Equipment>
+		<Equipment>F_Male_Quendar_Horns_03</Equipment>
+        	<Quote>'Do you search for wisdom? Only the Magnar are older and wiser than I.'</Quote>
+		<Backstory>I have studied. I have endured pain. And for it, I have been given wisdom. With this wisdom, I shall help your armies to march and your enemies to suffer.</Backstory>
+		<AnimationPack>NoblemanAnimationPack</AnimationPack>
+		<BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+		<ClothMapScale>1.6000</ClothMapScale>
+		<ClothPoseIndex>6</ClothPoseIndex>
+		<Color_Skin>198,106,78,255</Color_Skin>
+		<Color_Hair>218,218,218,255</Color_Hair>
+		<Color_Clothing1>85,15,75,255</Color_Clothing1>
+		<Color_Clothing2>40,35,35,255</Color_Clothing2>
+		<Color_Metal>107,41,41,255</Color_Metal>
+		<CutSceneDataPack>MagnarCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\eyes\blinks\eyeblink_m3_cataract.png</EyeTexture>
+		<InfoCardBackground>BG34_MedLvlShop</InfoCardBackground>
+		<ModelPath>F_Male_Magnar_Body_Mesh_01.hkb</ModelPath>
+        	<ModelScale>1</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+		<OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+		<SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+		<SoundPack>SoundPack_Generic_Male</SoundPack>
+		<TacticalModelScale>1.6000</TacticalModelScale>
+		<Texture_Skin>Magnar_Skin_M_01.dds</Texture_Skin>
+		<Texture_Eyes>gfx\eyes\blinks\eyeblink_m6_White.png</Texture_Eyes>
+        	<UnitModelType>QuendarMale</UnitModelType>
+	</UnitType>
+
+<UnitType InternalName="Champion_Vernak">
+		<DisplayName>Vernak Who Ruminates</DisplayName>
+		<UnitDisplayName>Vernak Who Ruminates</UnitDisplayName> 
+		<Class>Adventurer</Class>
+		<Allegiance>Kingdom</Allegiance>
+		<CreatureType>Champion</CreatureType> 
+		<RaceType>Race_Type_Amarians</RaceType>
+        	<Unique>1</Unique>
+		<CanBeDesigned>0</CanBeDesigned> 
+		<Gender>Male</Gender> 
+		<WageOverride>1</WageOverride> 
+		<IsNPC>1</IsNPC>
+		<IsChampion>1</IsChampion>  
+		<IsSovereign>0</IsSovereign>
+		<SpawnRating>3</SpawnRating> 
+		<NPCSpawnLikelihood>100</NPCSpawnLikelihood> 
+		<GameModifier>
+			<ModType>Resource</ModType>
+			<Attribute>Unrest</Attribute>
+			<Value>-5</Value>
+            		<Provides>-5% Unrest in the city this unit is in</Provides>
+		</GameModifier>
+		<LevelMilestone InternalName="L1">
+			<Level>1</Level>
+			<UnitStat_Accuracy>80</UnitStat_Accuracy>
+			<UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+			<UnitStat_CombatSpeed>22</UnitStat_CombatSpeed>
+			<UnitStat_HitPoints>20</UnitStat_HitPoints>
+	    <UnitStat_BG_IsChampion>1</UnitStat_BG_IsChampion>
+	    <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
+	    <UnitStat_BG_IsMale>1</UnitStat_BG_IsMale>
+	    <UnitStat_BG_IsRace_Amarians>1</UnitStat_BG_IsRace_Amarians>
+	    <UnitStat_BG_IsKingdom>1</UnitStat_BG_IsKingdom>
+		</LevelMilestone>
+		<SelectedAbilityBonusOption>Blood_Amarian</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>PathOfTheSorcerer</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Scholar</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Earth1</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Water1</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Scarred</SelectedAbilityBonusOption>
+		<AutoCreateEquipment>Staff</AutoCreateEquipment>
+        <AutoCreateEquipment>SorcererTowerPlans</AutoCreateEquipment>
+		<Equipment>K_Male_Head_01</Equipment>
+		<Equipment>Sovereign_Beard</Equipment>
+		<Equipment>Sovereign_Robe_ID2</Equipment>
+		<Equipment>F_LongThick_Hair_Mesh_01</Equipment>
+        	<Quote>'Give me a safe city in which to study, and I shall show you what magic can do.'</Quote>
+		<Backstory>For a time, I studied to be a mage. But my spells were too slow, you see. And I enjoyed the study more than the practice. I shall be no mighty warlock on your side, alas. But know that the true power of magic is not in fire or lightning bolts. It is in shaping the world slowly, that the acts of magic might endure beyond even us.</Backstory>
+		<AnimationPack>NoblemanAnimationPack</AnimationPack>
+		<BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+		<ClothMapScale>1.6000</ClothMapScale>
+		<ClothPoseIndex>6</ClothPoseIndex>
+		<Color_Skin>167,112,97,255</Color_Skin>
+		<Color_Hair>255,255,255,255</Color_Hair>
+		<Color_Clothing1>155,175,205,255</Color_Clothing1>
+		<Color_Clothing2>100,110,110,255</Color_Clothing2>
+		<Color_Metal>160,175,190,255</Color_Metal>
+		<CutSceneDataPack>MagnarCutscenePack</CutSceneDataPack>
+        	<EyeTexture>gfx\eyes\blinks\eyeblink_m3_cataract.png</EyeTexture>
+		<InfoCardBackground>BG34_MedLvlShop</InfoCardBackground>
+		<ModelPath>Gfx\HKB\Units\K_Male_Mesh_01.hkb</ModelPath>
+        	<ModelScale>1</ModelScale>
+        	<MovingSFX>TEMP_KnightMarching1</MovingSFX>
+		<OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+		<SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+		<SoundPack>SoundPack_Generic_Male</SoundPack>
+		<TacticalModelScale>1.6000</TacticalModelScale>
+		<Texture_Skin>K_Male_Aged_Texture_01.png</Texture_Skin>
+		<Texture_Eyes>gfx\eyes\blinks\eyeblink_m3_cataract.png</Texture_Eyes>
+        	<UnitModelType>AmarianMale</UnitModelType>
+	</UnitType>
+
+<UnitType InternalName="Champion_Milgrashiv">
+		<DisplayName>Milgrashiv Lifeturned</DisplayName>
+		<UnitDisplayName>Milgrashiv Lifeturned</UnitDisplayName> 
+		<Class>Adventurer</Class>
+		<Allegiance>Kingdom</Allegiance>
+		<CreatureType>Champion</CreatureType> 
+		<RaceType>Race_Type_Quendar</RaceType>
+        	<Unique>1</Unique>
+		<CanBeDesigned>0</CanBeDesigned> 
+		<Gender>Male</Gender> 
+		<WageOverride>1</WageOverride> 
+		<IsNPC>1</IsNPC>
+		<IsChampion>1</IsChampion>  
+		<IsSovereign>0</IsSovereign>
+		<SpawnRating>5</SpawnRating> 
+		<NPCSpawnLikelihood>100</NPCSpawnLikelihood> 
+		<GameModifier>
+			<ModType>Resource</ModType>
+			<Attribute>Unrest</Attribute>
+			<Value>-5</Value>
+            <Provides>-5% Unrest in the city this unit is in</Provides>
+		</GameModifier>
+		<LevelMilestone InternalName="L1">
+			<Level>1</Level>
+			<UnitStat_Accuracy>80</UnitStat_Accuracy>
+			<UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+			<UnitStat_CombatSpeed>22</UnitStat_CombatSpeed>
+			<UnitStat_HitPoints>20</UnitStat_HitPoints>
+	    <UnitStat_BG_IsChampion>1</UnitStat_BG_IsChampion>
+	    <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
+	    <UnitStat_BG_IsMale>1</UnitStat_BG_IsMale>
+	    <UnitStat_BG_IsRace_Quendar>1</UnitStat_BG_IsRace_Quendar>
+	    <UnitStat_BG_IsKingdom>1</UnitStat_BG_IsKingdom>
+		</LevelMilestone>
+		<SelectedAbilityBonusOption>Blood_Quendar</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>PathOfTheSorcerer</SelectedAbilityBonusOption>
+				<SelectedAbilityBonusOption>Life1</SelectedAbilityBonusOption>
+						<SelectedAbilityBonusOption>Life2</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Life3</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Knowledge_Sorcerer</SelectedAbilityBonusOption>
+		<AutoCreateEquipment>Staff</AutoCreateEquipment>
+        <AutoCreateEquipment>SorcererTowerPlans</AutoCreateEquipment>
+		<Equipment>F_Male_Quendar_Head_01</Equipment>
+		<Equipment>DarkWizardRobeID2</Equipment>
+		<Equipment>F_Male_Quendar_Horns_03</Equipment>
+        	<Quote>'I have turned from death, to embrace life.'</Quote>
+		<Backstory>You are wise indeed, sovereign, to have hired me. Most cannot see beyond race. And indeed my kind and all those children of Curgen are to be distrusted for their coming intentions. But let me assist you now, that some day my brothers may turn from death as well, and there can be peace.</Backstory>
+		<AnimationPack>NoblemanAnimationPack</AnimationPack>
+		<BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+		<ClothMapScale>1.6000</ClothMapScale>
+		<ClothPoseIndex>6</ClothPoseIndex>
+		<Color_Skin>198,106,78,255</Color_Skin>
+		<Color_Hair>218,218,218,255</Color_Hair>
+		<Color_Clothing1>85,15,75,255</Color_Clothing1>
+		<Color_Clothing2>40,35,35,255</Color_Clothing2>
+		<Color_Metal>107,41,41,255</Color_Metal>
+		<CutSceneDataPack>MagnarCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\eyes\blinks\eyeblink_m3_cataract.png</EyeTexture>
+		<InfoCardBackground>BG34_MedLvlShop</InfoCardBackground>
+		<ModelPath>F_Male_Magnar_Body_Mesh_01.hkb</ModelPath>
+        	<ModelScale>1</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+		<OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+		<SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+		<SoundPack>SoundPack_Generic_Male</SoundPack>
+		<TacticalModelScale>1.6000</TacticalModelScale>
+		<Texture_Skin>Magnar_Skin_M_01.dds</Texture_Skin>
+		<Texture_Eyes>gfx\eyes\blinks\eyeblink_m6_White.png</Texture_Eyes>
+        	<UnitModelType>QuendarMale</UnitModelType>
+	</UnitType>
+
+<UnitType InternalName="Champion_Pelmiar">
+		<DisplayName>Pelmiar Of Pariden</DisplayName>
+		<UnitDisplayName>Pelmiar Of Pariden</UnitDisplayName> 
+		<Class>Adventurer</Class>
+		<Allegiance>Empire</Allegiance>
+		<CreatureType>Champion</CreatureType> 
+		<RaceType>Race_Type_Amarians</RaceType>
+        	<Unique>1</Unique>
+		<CanBeDesigned>0</CanBeDesigned> 
+		<Gender>Male</Gender> 
+		<WageOverride>1</WageOverride> 
+		<IsNPC>1</IsNPC>
+		<IsChampion>1</IsChampion>  
+		<IsSovereign>0</IsSovereign>
+		<SpawnRating>3</SpawnRating> 
+		<NPCSpawnLikelihood>100</NPCSpawnLikelihood> 
+		<GameModifier>
+			<ModType>Resource</ModType>
+			<Attribute>Unrest</Attribute>
+			<Value>-5</Value>
+            <Provides>-5% Unrest in the city this unit is in</Provides>
+		</GameModifier>
+		<LevelMilestone InternalName="L1">
+			<Level>1</Level>
+			<UnitStat_Accuracy>80</UnitStat_Accuracy>
+			<UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+			<UnitStat_CombatSpeed>22</UnitStat_CombatSpeed>
+			<UnitStat_HitPoints>20</UnitStat_HitPoints>
+	    <UnitStat_BG_IsChampion>1</UnitStat_BG_IsChampion>
+	    <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
+	    <UnitStat_BG_IsMale>1</UnitStat_BG_IsMale>
+	    <UnitStat_BG_IsRace_Amarians>1</UnitStat_BG_IsRace_Amarians>
+	    <UnitStat_BG_IsEmpire>1</UnitStat_BG_IsEmpire>
+		</LevelMilestone>
+		<SelectedAbilityBonusOption>Blood_Amarian</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Knowledge_Sorcerer</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>PathOfTheSorcerer</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Earth1</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Water1</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Death1</SelectedAbilityBonusOption>
+		<AutoCreateEquipment>Staff</AutoCreateEquipment>
+        <AutoCreateEquipment>SorcererTowerPlans</AutoCreateEquipment>
+		<Equipment>K_Male_Head_01</Equipment>
+		<Equipment>Sovereign_Robe_ID2</Equipment>
+		<Equipment>F_LongThick_Hair_Mesh_01</Equipment>
+        	<Quote>'Procipinee's intolerance of Death is weakness. Let me show you strength.'</Quote>
+		<Backstory>I learned much as an apprentice in Pariden. In the last, I learned how short-sighted the life-lovers are, when they turn on the wisdom of Death. So let me share the power of my mind with you. And If you require me to burn the universities of the Amarian, know I shall relish in it.</Backstory>
+		<AnimationPack>NoblemanAnimationPack</AnimationPack>
+		<BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+		<ClothMapScale>1.6000</ClothMapScale>
+		<ClothPoseIndex>6</ClothPoseIndex>
+		<Color_Skin>167,112,97,255</Color_Skin>
+		<Color_Hair>255,255,255,255</Color_Hair>
+		<Color_Clothing1>155,175,205,255</Color_Clothing1>
+		<Color_Clothing2>100,110,110,255</Color_Clothing2>
+		<Color_Metal>160,175,190,255</Color_Metal>
+		<CutSceneDataPack>MagnarCutscenePack</CutSceneDataPack>
+        	<EyeTexture>gfx\eyes\blinks\eyeblink_m3_cataract.png</EyeTexture>
+		<InfoCardBackground>BG34_MedLvlShop</InfoCardBackground>
+		<ModelPath>Gfx\HKB\Units\K_Male_Mesh_01.hkb</ModelPath>
+        	<ModelScale>1</ModelScale>
+        	<MovingSFX>TEMP_KnightMarching1</MovingSFX>
+		<OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+		<SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+		<SoundPack>SoundPack_Generic_Male</SoundPack>
+		<TacticalModelScale>1.6000</TacticalModelScale>
+		<Texture_Skin>K_Male_Aged_Texture_01.png</Texture_Skin>
+		<Texture_Eyes>gfx\eyes\blinks\eyeblink_m3_cataract.png</Texture_Eyes>
+        	<UnitModelType>AmarianMale</UnitModelType>
+	</UnitType>
+
+
+<UnitType InternalName="Quendar_Apprentice1">
+        <DisplayName>Quendar Apprentice</DisplayName>
+        	<Unique>1</Unique>
+        <DividesBattleExp>0</DividesBattleExp>
+        <Gender>Male</Gender>
+        <IsNPC>1</IsNPC>
+        <IsChampion>1</IsChampion>
+		<RaceType>Race_Type_Quendar</RaceType>
+        <IsSovereign>0</IsSovereign>
+        <GetPerksOnLevelUp>1</GetPerksOnLevelUp>
+        <AllowGrouping>0</AllowGrouping>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_HitPoints>10</UnitStat_HitPoints>
+	    <UnitStat_BG_IsChampion>1</UnitStat_BG_IsChampion>
+	    <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
+	    <UnitStat_BG_IsMale>1</UnitStat_BG_IsMale>
+	    <UnitStat_BG_IsRace_Quendar>1</UnitStat_BG_IsRace_Quendar>
+        </LevelMilestone>
+        <Prereq>
+            <Type>Race</Type>
+            <Attribute>Race_Type_Cypher</Attribute>
+        </Prereq>
+        <SelectedAbilityBonusOption>Blood_Quendar</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>WaterAdept1</SelectedAbilityBonusOption>
+        <Equipment>Staff</Equipment>
+        <Equipment>Sovereign_Robe_ID2</Equipment>
+        <Equipment>F_Male_Quendar_Head_01</Equipment>
+        <Equipment>F_Male_Quendar_Horns_02</Equipment>
+        <Backstory>This Quendar, drawn by your magical knowledge, has sworn to your service.</Backstory>
+		
+        <AnimationPack>MaleSovereignAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>29</ClothPoseIndex>
+        <Color_Hair>192,192,192,255</Color_Hair>
+        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\eyes\blinks\eyeblink_m7_Yellow.png</EyeTexture>
+        <InfoCardBackground>BG_Lava</InfoCardBackground>
+        <ModelPath>F_Male_Magnar_Body_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Generic_Male</SoundPack>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\eyeblink_m7_Yellow.png</Texture_Eyes>
+        <Texture_Skin>Magnar_Skin_M_01.dds</Texture_Skin>
+        <UnitModelType>QuendarMale</UnitModelType>
+    </UnitType>
+
+
+<UnitType InternalName="Quendar_Apprentice2">
+        <DisplayName>Quendar Apprentice</DisplayName>
+        	<Unique>1</Unique>
+        <DividesBattleExp>0</DividesBattleExp>
+        <Gender>Male</Gender>
+        <IsNPC>1</IsNPC>
+        <IsChampion>1</IsChampion>
+		<RaceType>Race_Type_Quendar</RaceType>
+        <IsSovereign>0</IsSovereign>
+        <GetPerksOnLevelUp>1</GetPerksOnLevelUp>
+        <AllowGrouping>0</AllowGrouping>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_HitPoints>10</UnitStat_HitPoints>
+	    <UnitStat_BG_IsChampion>1</UnitStat_BG_IsChampion>
+	    <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
+	    <UnitStat_BG_IsMale>1</UnitStat_BG_IsMale>
+	    <UnitStat_BG_IsRace_Quendar>1</UnitStat_BG_IsRace_Quendar>
+        </LevelMilestone>
+        <Prereq>
+            <Type>Race</Type>
+            <Attribute>Race_Type_Cypher</Attribute>
+        </Prereq>
+        <SelectedAbilityBonusOption>Blood_Quendar</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>AirAdept1</SelectedAbilityBonusOption>
+        <Equipment>Staff</Equipment>
+        <Equipment>Sovereign_Robe_ID2</Equipment>
+        <Equipment>F_Male_Quendar_Head_01</Equipment>
+        <Equipment>F_Male_Quendar_Horns_02</Equipment>
+        <Backstory>This Quendar, drawn by your magical knowledge, has sworn to your service.</Backstory>	
+        <AnimationPack>MaleSovereignAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>29</ClothPoseIndex>
+        <Color_Hair>192,192,192,255</Color_Hair>
+        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\eyes\blinks\eyeblink_m7_Yellow.png</EyeTexture>
+        <InfoCardBackground>BG_Lava</InfoCardBackground>
+        <ModelPath>F_Male_Magnar_Body_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Generic_Male</SoundPack>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\eyeblink_m7_Yellow.png</Texture_Eyes>
+        <Texture_Skin>Magnar_Skin_M_01.dds</Texture_Skin>
+        <UnitModelType>QuendarMale</UnitModelType>
+    </UnitType>
+
+ <UnitType InternalName="Amarian_Apprentice1">
+        <DisplayName>Amarian Apprentice</DisplayName>
+        <DividesBattleExp>0</DividesBattleExp>
+        <Gender>Male</Gender>
+        <IsNPC>1</IsNPC>
+        <IsChampion>1</IsChampion>
+		<RaceType>Race_Type_Amarians</RaceType>
+        <IsSovereign>0</IsSovereign>
+        <GetPerksOnLevelUp>1</GetPerksOnLevelUp>
+        	<Unique>1</Unique>
+        <AllowGrouping>0</AllowGrouping>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_HitPoints>10</UnitStat_HitPoints>
+	    <UnitStat_BG_IsChampion>1</UnitStat_BG_IsChampion>
+	    <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
+	    <UnitStat_BG_IsMale>1</UnitStat_BG_IsMale>
+	    <UnitStat_BG_IsRace_Amarians>1</UnitStat_BG_IsRace_Amarians>
+        </LevelMilestone>
+        <Prereq>
+            <Type>Race</Type>
+            <Attribute>Race_Type_Cypher</Attribute>
+        </Prereq>
+        <SelectedAbilityBonusOption>Blood_Amarian</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>WaterAdept1</SelectedAbilityBonusOption>
+        <Equipment>Staff</Equipment>
+        <Equipment>Sovereign_Robe_ID2</Equipment>
+        <Equipment>K_Male_Head_05</Equipment>
+        <Equipment>Sovereign_Short_Hair_02</Equipment>
+        <Backstory>This Amarian, drawn by your magical knowledge, has sworn to your service.</Backstory>	
+        <AnimationPack>MaleSovereignAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>29</ClothPoseIndex>
+        <Color_Hair>195,160,110,255</Color_Hair>
+        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\eyes\blinks\eyeblink_m3_brwn.png</EyeTexture>
+        <InfoCardBackground>BG_River</InfoCardBackground>
+        <InfoCardBackgroundFlipped>0</InfoCardBackgroundFlipped>
+        <ModelPath>Gfx\HKB\Units\K_Male_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Generic_Male</SoundPack>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\eyeblink_m3_brwn.png</Texture_Eyes>
+        <Texture_Skin>K_Male_Evil_Texture_01.png</Texture_Skin>
+        <UnitModelType>AmarianMale</UnitModelType>
+    </UnitType>
+
+ <UnitType InternalName="Amarian_Apprentice2">
+        <DisplayName>Amarian Apprentice</DisplayName>
+        <DividesBattleExp>0</DividesBattleExp>
+        <Gender>Male</Gender>
+        <IsNPC>1</IsNPC>
+        <IsChampion>1</IsChampion>
+		<RaceType>Race_Type_Amarians</RaceType>
+        <IsSovereign>0</IsSovereign>
+        <GetPerksOnLevelUp>1</GetPerksOnLevelUp>
+        	<Unique>1</Unique>
+        <AllowGrouping>0</AllowGrouping>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_HitPoints>10</UnitStat_HitPoints>
+	    <UnitStat_BG_IsChampion>1</UnitStat_BG_IsChampion>
+	    <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
+	    <UnitStat_BG_IsMale>1</UnitStat_BG_IsMale>
+	    <UnitStat_BG_IsRace_Amarians>1</UnitStat_BG_IsRace_Amarians>
+        </LevelMilestone>
+        <Prereq>
+            <Type>Race</Type>
+            <Attribute>Race_Type_Cypher</Attribute>
+        </Prereq>
+        <SelectedAbilityBonusOption>Blood_Amarian</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>AirAdept1</SelectedAbilityBonusOption>
+        <Equipment>Staff</Equipment>
+        <Equipment>Sovereign_Robe_ID2</Equipment>
+        <Equipment>K_Male_Head_05</Equipment>
+        <Equipment>Sovereign_Short_Hair_02</Equipment>
+        <Backstory>This Amarian, drawn by your magical knowledge, has sworn to your service.</Backstory>	
+        <AnimationPack>MaleSovereignAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>29</ClothPoseIndex>
+        <Color_Hair>195,160,110,255</Color_Hair>
+        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\eyes\blinks\eyeblink_m3_brwn.png</EyeTexture>
+        <InfoCardBackground>BG_River</InfoCardBackground>
+        <InfoCardBackgroundFlipped>0</InfoCardBackgroundFlipped>
+        <ModelPath>Gfx\HKB\Units\K_Male_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Generic_Male</SoundPack>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\eyeblink_m3_brwn.png</Texture_Eyes>
+        <Texture_Skin>K_Male_Evil_Texture_01.png</Texture_Skin>
+        <UnitModelType>AmarianMale</UnitModelType>
+    </UnitType>
+
+</UnitTypes>

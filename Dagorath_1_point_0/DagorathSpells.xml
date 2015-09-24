@@ -1,0 +1,622 @@
+<Spells>
+
+<!-- Removed feature, retained in case I find a way to use elsewhere
+
+    <SpellDef InternalName="Voidcall">
+        <DisplayName>Void call</DisplayName>
+        <Description>Opens a Void Gate through which lesser demons shall enter this world - but beware, their allegiance to you is uncertain, until you face them!</Description>
+        <Image>S_ShadowWorld_Painting.png</Image>
+        <IconFG>S_ShadowWorld_Icon.png</IconFG>
+        <SpellBookSortCategory>World</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Map</SpellBookSortSubCategory>
+  	<SpellType>Strategic</SpellType>
+  	<SpellClass>Defensive</SpellClass>
+  	<SpellSubClass>Other</SpellSubClass>
+  	<SpellTargetType>Self</SpellTargetType>
+        <CasterMustBeSov>1</CasterMustBeSov>
+	<AppliesRandomModifier>1</AppliesRandomModifier>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>CreateGoodieHut</Attribute>
+            <StrVal>Void Gate</StrVal>
+            <UnitClass>GH_Shadow_Rift_Dagorath</UnitClass>
+            <Radius>4</Radius>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>CreateGoodieHut</Attribute>
+            <StrVal>Void Gate</StrVal>
+            <UnitClass>GH_Shadow_Rift_Dagorath2</UnitClass>
+            <Radius>4</Radius>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>CreateGoodieHut</Attribute>
+            <StrVal>Void Gate</StrVal>
+            <UnitClass>GH_Shadow_Rift_Dagorath5</UnitClass>
+            <Radius>4</Radius>
+        </GameModifier>      
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>CreateGoodieHut</Attribute>
+            <StrVal>Void Gate</StrVal>
+            <UnitClass>GH_Shadow_Rift_Dagorath6</UnitClass>
+            <Radius>4</Radius>
+        </GameModifier>
+        <ValidTerrainType>Land</ValidTerrainType>
+        <ValidTerrainType>Rugged_Land</ValidTerrainType>
+        <ValidTerrainType>Fertile_Land</ValidTerrainType>
+        <ValidTerrainType>DesertTerrain</ValidTerrainType>
+        <ValidTerrainType>HillsTerrain</ValidTerrainType>
+        <ValidTerrainType>SwampTerrain</ValidTerrainType>
+        <ValidTerrainType>ArcticTerrain</ValidTerrainType>
+        <ValidTerrainType>Forest</ValidTerrainType>
+        <ValidTerrainType>River</ValidTerrainType>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>10</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Shadow_World</HitSoundFX>
+    </SpellDef>
+
+
+<SpellDef InternalName="Voidcall_Greater">
+        <DisplayName>Greater Void call</DisplayName>
+        <Description>Opens a Void Gate through which mighty demons shall enter this world - but you shall not know if they are willing to serve you. DO NOT cast this unless you are ready to fend off an army of angry demons!</Description>
+        <Image>S_ShadowWorld_Painting.png</Image>
+        <IconFG>S_ShadowWorld_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <SpellBookSortCategory>World</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Map</SpellBookSortSubCategory>
+  	<SpellType>Strategic</SpellType>
+  	<SpellClass>Defensive</SpellClass>
+  	<SpellSubClass>Other</SpellSubClass>
+  	<SpellTargetType>Self</SpellTargetType>
+        <CasterMustBeSov>1</CasterMustBeSov>
+	<AppliesRandomModifier>1</AppliesRandomModifier>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>150</Amount>
+        </SpellResourceCost>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>VoidBound</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Rituals</Attribute>
+        </Prereq>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>CreateGoodieHut</Attribute>
+            <StrVal>Void Gate</StrVal>
+            <UnitClass>GH_Shadow_Rift_Dagorath3</UnitClass>
+            <Radius>4</Radius>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>CreateGoodieHut</Attribute>
+            <StrVal>Void Gate</StrVal>
+            <UnitClass>GH_Shadow_Rift_Dagorath4</UnitClass>
+            <Radius>4</Radius>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>CreateGoodieHut</Attribute>
+            <StrVal>Void Gate</StrVal>
+            <UnitClass>GH_Shadow_Rift_Dagorath7</UnitClass>
+            <Radius>4</Radius>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>CreateGoodieHut</Attribute>
+            <StrVal>Void Gate</StrVal>
+            <UnitClass>GH_Shadow_Rift_Dagorath8</UnitClass>
+            <Radius>4</Radius>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>CreateGoodieHut</Attribute>
+            <StrVal>Void Gate</StrVal>
+            <UnitClass>GH_Shadow_Rift_Dagorath9</UnitClass>
+            <Radius>4</Radius>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>CreateGoodieHut</Attribute>
+            <StrVal>Void Gate</StrVal>
+            <UnitClass>GH_Shadow_Rift_Dagorath10</UnitClass>
+            <Radius>4</Radius>
+        </GameModifier>
+        <ValidTerrainType>Land</ValidTerrainType>
+        <ValidTerrainType>Rugged_Land</ValidTerrainType>
+        <ValidTerrainType>Fertile_Land</ValidTerrainType>
+        <ValidTerrainType>DesertTerrain</ValidTerrainType>
+        <ValidTerrainType>HillsTerrain</ValidTerrainType>
+        <ValidTerrainType>SwampTerrain</ValidTerrainType>
+        <ValidTerrainType>ArcticTerrain</ValidTerrainType>
+        <ValidTerrainType>Forest</ValidTerrainType>
+        <ValidTerrainType>River</ValidTerrainType>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>100</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Shadow_World</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_ShadowGate_Particle</EffectName>
+            <LocalPosition>0,20,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+-->
+
+<SpellDef InternalName="Endure_Pain_Dagorath">
+        <DisplayName>Endure</DisplayName>
+        <Description>This unit gains 25% fire resistance, +33% physical damage resistance, and +75% Lightning and Cold resistance, until their next attack. This also puts the caster into a defending stance.</Description>
+        <IconFG>Ability_Withstand_Icon.png</IconFG>
+        <CanStack>0</CanStack>
+        <StaminaCost>3</StaminaCost>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitEnchantment</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Buff</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ResistCold</StrVal>
+            <Duration>1</Duration>
+            <UpdateDurationAtTurnStart>1</UpdateDurationAtTurnStart>
+            <Value>75</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ResistFire</StrVal>
+            <Duration>1</Duration>
+            <UpdateDurationAtTurnStart>1</UpdateDurationAtTurnStart>
+            <Value>25</Value>
+        </GameModifier>
+		<GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ResistPierce</StrVal>
+            <Duration>1</Duration>
+            <UpdateDurationAtTurnStart>1</UpdateDurationAtTurnStart>
+            <Value>33</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ResistLightning</StrVal>
+            <Duration>1</Duration>
+            <UpdateDurationAtTurnStart>1</UpdateDurationAtTurnStart>
+            <Value>75</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <Duration>1</Duration>
+            <UpdateDurationAtTurnStart>1</UpdateDurationAtTurnStart>
+            <Effect>Y_Defend_Particle</Effect>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitStat_Tactical_Auto_Defense_Boost]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Dodge</StrVal>
+            <Duration>1</Duration>
+            <UpdateDurationAtTurnStart>1</UpdateDurationAtTurnStart>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitStat_Tactical_Auto_Dodge_Boost]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>10</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_ManaShield_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>Y_Ability_Withstand1</EffectName>
+            <LocalPosition>0,20,0</LocalPosition>
+            <EffectScale>0.8</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+            <PlayOnCaster>1</PlayOnCaster>
+        </SpellDefEffect>
+    </SpellDef>
+
+<SpellDef InternalName="Domination">
+        <DisplayName>Domination</DisplayName>
+        <Description>Take control of enemy unit unless they resist.</Description>
+        <Image>S_Domination_Painting.png</Image>
+        <IconFG>S_Domination_Icon.png</IconFG>
+        <CastTime>2</CastTime>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Charm</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+        <IsResistable>1</IsResistable>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>CharmTarget</Attribute>
+            <Value>100</Value>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>80</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_DominationHit_01</HitSoundFX>
+        <SpellCastSoundFX>Spell_DominationProjectile_01</SpellCastSoundFX>
+        <SpellCastEffectName>T_Erosion_Particle</SpellCastEffectName>
+        <SpellCastEffectScale>1</SpellCastEffectScale>
+        <SpellCastProjectile>1</SpellCastProjectile>
+        <SpellCastProjectileSpeed>700</SpellCastProjectileSpeed>
+        <SpellDefEffect>
+            <EffectName>T_ErosionImpact_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>0.5</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+    <SpellDef InternalName="EldritchRot_Effect">
+        <DisplayName>Eldritch Rot</DisplayName>
+        <Description>Target enemy unit suffers 5 Eldritch Rot damage per turn.</Description>
+		<Image>T_InfernalCovenant_Icon.png</Image>
+        <IconFG>T_InfernalCovenant_Icon.png</IconFG>
+        <CanStack>0</CanStack>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitCurse</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Debuff</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <IsCastable>0</IsCastable>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Eldritch</AttackStat>
+            <Duration>-1</Duration>
+            <Effect>E_Wither_Particle</Effect>
+            <PerTurn>1</PerTurn>
+            <Value>5</Value>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+    </SpellDef>
+
+    <SpellDef InternalName="EldritchRot_Effect2">
+        <DisplayName>Eldritch Rot</DisplayName>
+        <Description>Target enemy unit suffers 8 Eldritch Rot damage per turn.</Description>
+		<Image>T_InfernalCovenant_Icon.png</Image>
+        <IconFG>T_InfernalCovenant_Icon.png</IconFG>
+        <CanStack>0</CanStack>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitCurse</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Debuff</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <IsCastable>0</IsCastable>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Eldritch</AttackStat>
+            <Duration>-1</Duration>
+            <Effect>E_Wither_Particle</Effect>
+            <PerTurn>1</PerTurn>
+            <Value>8</Value>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+    </SpellDef>
+
+<!-- Playtest spell 
+
+    <SpellDef InternalName="GiveEldritchEnergy">
+        <DisplayName>Gimmie EE</DisplayName>
+        <Description>Mods breh!</Description>
+        <Image>S_Alchemy_Painting.png</Image>
+        <IconFG>S_Alchemy_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <SpellBookSortCategory>World</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Other</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <CasterMustBeSov>1</CasterMustBeSov>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>1</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>EldritchEnergy</Attribute>
+            <Value>10000</Value>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Alchemy_01</HitSoundFX>
+    </SpellDef>
+
+-->
+
+    <SpellDef InternalName="OpenVoidGate">
+        <DisplayName>Void Call</DisplayName>
+        <Description>Creates a Void Gate in neutral territory. The gate counts as an outpost. Once open, the gate will allow powerful demons to enter this world in your service.</Description>
+        <Image>S_ShadowWorld_Painting.png</Image>
+        <IconFG>S_ShadowWorld_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <Cooldown>30</Cooldown>
+        <CanStack>0</CanStack>
+        <SpellBookSortCategory>World</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Map</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Terraform</SpellClass>
+        <SpellSubClass>BuildOutpost</SpellSubClass>
+        <SpellTargetType>NeutralGround</SpellTargetType>
+        <CasterMustBeSov>1</CasterMustBeSov>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>VoidBound</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>350</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>BuildWildImprovement</Attribute>
+            <StrVal>Dagorath_Gate</StrVal>
+        </GameModifier>
+        <ValidTerrainCategory>City</ValidTerrainCategory>
+        <ValidTerrainCategory>Forest</ValidTerrainCategory>
+        <ValidTerrainCategory>Land</ValidTerrainCategory>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>10000</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Shadow_World</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_ShadowGate_Particle</EffectName>
+            <LocalPosition>0,20,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+
+
+    <SpellDef InternalName="EldritchWarp">
+        <DisplayName>Eldritch Warp</DisplayName>
+        <Description>Projects decaying Eldritch energy at enemies within 1 radius, doing 10 Eldritch Rot damage (+2 per death shard), half if they resist.</Description>
+        <FormattedDescription>Projects decaying Eldritch energy at enemies, doing %d Eldritch Rot damage.</FormattedDescription>
+        <Image>Tech_Arcane_Weapons.png</Image>
+        <IconFG>T_ShadowBolt_Icon.png</IconFG>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <IsResistable>1</IsResistable>
+        <CanBeDodged>1</CanBeDodged>
+        <IsSpecialAbility>1</IsSpecialAbility>
+		<Radius>1</Radius>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Eldritch</AttackStat>
+            <IsForFormattedDescription>1</IsForFormattedDescription>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumDeathShards] * 2]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc] + 10]]></Expression>
+            </Calculate>
+            <Calculate InternalName="ValueForFormattedDescription">
+                <Expression><![CDATA[[Calc] + 10]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Eldritch</AttackStat>
+            <IsForSpellResist>1</IsForSpellResist>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumDeathShards]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc] + 5]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>1000</AIPriority>
+        <ValueCalcWrapper>
+            <ValueType>IsTargetWorthy</ValueType>
+            <Calculate InternalName="Calc" ValueOwner="TargetUnit">
+                <Expression><![CDATA[[UnitStat_ResistEldritch]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc] < 75]]></Expression>
+            </Calculate>
+        </ValueCalcWrapper>
+        </AIData>
+        <HitSoundFX>Spell_Shadowbolt_Hit</HitSoundFX>
+        <SpellCastSoundFX>Spell_Shadowbolt_Travel</SpellCastSoundFX>
+        <SpellCastEffectName>T_ShadowBolt_Particle</SpellCastEffectName>
+        <SpellCastEffectScale>0.30</SpellCastEffectScale>
+        <SpellCastProjectile>1</SpellCastProjectile>
+        <SpellCastProjectileSpeed>800</SpellCastProjectileSpeed>
+        <SpellDefEffect>
+            <EffectName>T_Contagion_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>.3</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+            <PlayOnAllTargets>1</PlayOnAllTargets>
+        </SpellDefEffect>
+    </SpellDef>
+
+<!-- grouping issues, deleted for now
+
+<SpellDef InternalName="Invasion">
+        <DisplayName>Invasion</DisplayName>
+        <Description>Summons a small Eldritch army in friendly territory.</Description>
+        <Image>S_ShadowWorld_Painting.png</Image>
+        <IconFG>S_SummonImp_Icon.png</IconFG>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>AnyKnownTerritory</SpellTargetType>
+	<SpellTargetZOCType>Friendly</SpellTargetZOCType>
+        <SpellResourceCost>
+            <Resource>EldritchEnergy</Resource>
+            <Amount>30</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>CreateWorldProp</Attribute>
+            <StrVal>Dagorath_Tile_Shadow_Rift_01</StrVal>
+            <Duration>1</Duration>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>SummonUnit</Attribute>
+            <UnitClass>Unit_Horror_Dagorath_Company</UnitClass>
+	    <Value>1</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>SummonUnit</Attribute>
+            <UnitClass>Unit_Horror_Dagorath_Company</UnitClass>
+	    <Value>1</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>SummonUnit</Attribute>
+            <UnitClass>EldritchSoldier</UnitClass>
+	    <Value>1</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>SummonUnit</Attribute>
+            <UnitClass>EldritchSoldier</UnitClass>
+	    <Value>1</Value>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Shadow_World</HitSoundFX>
+    </SpellDef>
+
+	-->
+	
+	<SpellDef InternalName="Sacrificial_Lamb">
+        <DisplayName>Sacrificial Rites</DisplayName>
+        <Description>Sacrifice the caster to gain 2 Eldritch energy.</Description>
+        <Image>T_CulltheWeak_Painting.png</Image>
+        <IconFG>Ability_AmarianLegacy_Icon.png</IconFG>
+        <StaminaCost>7</StaminaCost>		
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <IsSpecialAbility>1</IsSpecialAbility>		
+        <!--<SpellTypeDrain>1</SpellTypeDrain>-->
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>CurHealth</Attribute>
+            <Calculate InternalName="Calc" ValueOwner="TargetUnit">
+                <Expression><![CDATA[[Unit_GetHPCurrent] * -1]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>PermanentDeath</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>EldritchEnergy</Attribute>
+            <Value>2</Value>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_CullTheWeak_01</HitSoundFX>
+    </SpellDef>
+	
+	<SpellDef InternalName="Sacrificial_Lamb_Level">
+        <DisplayName>Sacrificial Rites</DisplayName>
+        <Description>Sacrifice a unit to gain 2 Eldritch energy.</Description>
+        <Image>T_CulltheWeak_Painting.png</Image>
+        <IconFG>Ability_AmarianLegacy_Icon.png</IconFG>
+        <StaminaCost>7</StaminaCost>		
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>FriendlyTrainedUnit</SpellTargetType>
+        <IsSpecialAbility>1</IsSpecialAbility>		
+        <!--<SpellTypeDrain>1</SpellTypeDrain>-->
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>CurHealth</Attribute>
+            <Calculate InternalName="Calc" ValueOwner="TargetUnit">
+                <Expression><![CDATA[[Unit_GetHPCurrent] * -1]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>PermanentDeath</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>EldritchEnergy</Attribute>
+            <Value>2</Value>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_CullTheWeak_01</HitSoundFX>
+    </SpellDef>
+
+</Spells>

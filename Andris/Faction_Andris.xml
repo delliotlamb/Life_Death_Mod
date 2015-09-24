@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<RaceConfigs>
+	<DataChecksum NoParse="1">
+		<Ignore>DisplayName, ShortName, Capital, Description, UnitSkinColor, UnitHairColor, UnitClothColor, BuildingPrimaryColor, BuildingSecondaryColor, BuildingRoofColor, BuildingStyle, UnitStyle, WorkerName</Ignore>
+		<Translate>DisplayName, ShortName, Capital, Description, WorkerName</Translate>
+	</DataChecksum>
+	<RaceConfig InternalName="OrderOfAndris">
+		<DisplayName>Order Of Andris</DisplayName>
+		<AIPersonality>AI_General</AIPersonality>
+		<ShortName>Andris</ShortName>
+		<Description>When the Krax marched with Amarian against Curgen, their most elite knights were the Order of Andris. Then came the cataclysm, and the Krax united with the Fallen. Defying Fallen ways, the Andris were betrayed and left to annihilation. It is said that starving Andris warriors defended a Iru civilians from Urxen assault, and the Andris thus were blessed that day by those mysterious people. Now the Andris order of knights shall rise again in this new world.</Description>
+        <Capital>Krax Andris</Capital>
+        <City>Vraghas</City>
+        <City>New Hedigah</City>
+        <City>Reil Stena</City>
+        <City>Breighka</City>
+        <City>T'Alavar Esthim</City>
+        <City>Alsir Carfell</City>
+        <City>Evertian</City>
+        <City>Tramfell</City>
+        <City>Magorfell</City>		
+		<FactionAllegiance>Kingdom</FactionAllegiance>
+		<IsCustom>true</IsCustom>
+		<IsModDependent>true</IsModDependent>
+		<RaceInternalName>Race_Type_Andris</RaceInternalName>
+		<RaceDisplayName>Krax</RaceDisplayName>
+		<MaleUnitType>Generic_Sovereign_Andris_Male</MaleUnitType>
+		<FemaleUnitType>Generic_Sovereign_Andris_Female</FemaleUnitType>
+		<GenericUnitType_Male>Generic_Andris_Male</GenericUnitType_Male>
+		<GenericUnitType_Female>Generic_Andris_Female</GenericUnitType_Female>
+		<TraderUnitType>TraderTest</TraderUnitType>
+        <SageUnitType>Sage_Krax</SageUnitType>
+		<ShopkeeperUnitType>Shopkeeper_Andris</ShopkeeperUnitType>
+		<StartingUnitType>Unit_Peasant_Andris</StartingUnitType>
+		<StartingUnitType>Unit_Pioneer_Andris</StartingUnitType>
+		<UnitScale>1.0000</UnitScale>
+		<RaceClassification>Men</RaceClassification>
+		<MusicTheme>WanderersHome</MusicTheme>
+		<Alignment>Good</Alignment>
+		<UnitSkinColor>99,63,30,255</UnitSkinColor>
+		<UnitHairColor>50,50,50,255</UnitHairColor>
+		<FactionColor>200,200,200,255</FactionColor>
+		<UnitMetalColor>50,50,50,255</UnitMetalColor>
+		<!--<UnitClothing1Color>200,200,200,255</UnitClothing1Color>
+		<UnitClothing2Color>255,255,0,255</UnitClothing2Color>-->
+		<UnitClothing1Color>30,84,48,255</UnitClothing1Color>
+		<UnitClothing2Color>30,84,48,255</UnitClothing2Color>
+		<BuildingPrimaryColor>255,0,0,255</BuildingPrimaryColor>
+		<BuildingSecondaryColor>255,241,187,255</BuildingSecondaryColor>
+		<BuildingRoofColor>30,84,48,255</BuildingRoofColor>
+		<BuildingStyle>KingdomStyle</BuildingStyle>
+		<EnvironmentTerrainType>2</EnvironmentTerrainType>
+		<PreferredLogoType>FallenCrest6</PreferredLogoType>
+		<NonBuildableEnvironmentType>DeadEnvironment</NonBuildableEnvironmentType>
+		<TechTree>TechTree_Amarian</TechTree>
+		<FactionType>Major</FactionType>
+		<RemCustomizationPts>0</RemCustomizationPts>
+		<SelAbilityBonusOption>LightPlate</SelAbilityBonusOption>
+		<SelAbilityBonusOption>CraftsmanCaste</SelAbilityBonusOption>
+		<SelAbilityBonusOption>WarriorCaste</SelAbilityBonusOption>
+		<SelAbilityBonusOption>Defensive</SelAbilityBonusOption>
+		<SelAbilityBonusOption>NoRangedWeapons</SelAbilityBonusOption>
+		<SelAbilityBonusOption>IruAllies</SelAbilityBonusOption>
+		<SelAbilityBonusOption>Endgame_Player</SelAbilityBonusOption>		
+		<A_Additive_FoodPerGrain>25.0000</A_Additive_FoodPerGrain>
+		<A_Additive_GoldTakeAwayPerTaxPercentage>1.0000</A_Additive_GoldTakeAwayPerTaxPercentage>
+		<A_Additive_Graves>50.0000</A_Additive_Graves>
+		<A_Additive_ProductionEffectPerUnrest>1.0000</A_Additive_ProductionEffectPerUnrest>
+		<A_Additive_ProductionPerMaterials>8.0000</A_Additive_ProductionPerMaterials>
+		<A_Additive_ResearchEffectPerUnrest>1.0000</A_Additive_ResearchEffectPerUnrest>
+		<A_GoodieRating>1.0000</A_GoodieRating>
+		<A_GrainYield>1.0000</A_GrainYield>
+		<A_ManaRegeneration>1.0000</A_ManaRegeneration>
+		<A_MaterialsYield>1.0000</A_MaterialsYield>
+		<A_MaxArmySize>5.0000</A_MaxArmySize>
+		<A_NPCSpawnRating>2.0000</A_NPCSpawnRating>
+		<A_QuestingRating>5.0000</A_QuestingRating>
+		<A_Traits>4.0000</A_Traits>
+		<A_UnitUpgrades>100.0000</A_UnitUpgrades>
+	</RaceConfig>
+</RaceConfigs>

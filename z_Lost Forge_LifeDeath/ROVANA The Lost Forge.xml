@@ -1,0 +1,1197 @@
+<Quests>
+<QuestDef InternalName="Quest_LostForge">
+        <DisplayName>The Lost Forge</DisplayName>
+        <Description>You arrive at the stones of seeing, but you can sense nothing. Has their magic long faded?
+		
+		But when you next make camp, lightning rages in the distant skies. The fury up in the clouds is incredible. The storms last for ten days and ten nights. On the Eleventh morning, they cease utterly, and the clouds give way to beautiful rays of sun. 
+		
+		You have a dreadful intuition that the storms raged because the world has changed. 
+		</Description>
+        <ShortTextAccept>Word from foreign lands may tell of these storms.</ShortTextAccept>
+        <ShortTextDeny>I cannot indulge paranoia - it is just the weather.</ShortTextDeny>
+        <SuccessText>The Forge is now bound to you. The Spell Of Making is in your spellbook, should you see it fit to cast. With that spell are other powers of the Overlord. The future of Elemental shall not be written by the Titans, it shall be written by you.</SuccessText>        
+		<QuestClass>Major</QuestClass>
+        <Repeatable>0</Repeatable>
+        <SpawnRating>5</SpawnRating>
+        <AICanGoOnQuest>0</AICanGoOnQuest>
+        <Image>S_GentleRain_Painting.png</Image>
+        <PrefQuestLoc>QuestLoc_SeeingStone_Forge</PrefQuestLoc>
+        <Treasure>
+		<GameModifier>
+                <ModType>Player</ModType>
+                <Attribute>UnlockSpell</Attribute>
+                <StrVal>SpellOfMaking2</StrVal>
+                </GameModifier>
+		<GameModifier>
+                <ModType>Player</ModType>
+                <Attribute>UnlockSpell</Attribute>
+                <StrVal>Domination_Spell2</StrVal>
+                </GameModifier>
+		<GameModifier>
+                <ModType>Player</ModType>
+                <Attribute>UnlockSpell</Attribute>
+                <StrVal>CurgensVolcano2</StrVal>
+                </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockSpell</Attribute>
+                <StrVal>TitanSlayer_Command</StrVal>
+		<Provides>Allows unit to cast Titanslayer's Command</Provides>
+            </GameModifier>
+	</Treasure>
+	<Treasure>
+            <GameModifier>
+                <ModType>Resource</ModType>
+                <Attribute>Fame</Attribute>
+                <Value>500</Value>
+            </GameModifier>
+        </Treasure>
+
+        <QuestObjectiveDef>
+            <ObjectiveID>0</ObjectiveID>
+            <NextObjectiveID>1</NextObjectiveID>
+	<Treasure>
+        <GameModifier>
+          <ModType>Map</ModType>
+          <Attribute>CreateGoodieHut</Attribute>
+          <StrVal>Busy Inn</StrVal>
+          <Unitclass>GH_ForgeInn</Unitclass>
+          <Radius>12</Radius>
+        </GameModifier>
+      </Treasure>
+      <QuestConditionDef>
+        <Objective>
+          <Icon>Mana_32.png</Icon>
+          <Text>Seek word from the surrounding lands at a merchant's Inn.</Text>
+          <IsOptional>0</IsOptional>
+        </Objective>
+        <Class>Success</Class>
+        <Type>ClearGoodieHut</Type>
+        <TextData>GH_ForgeInn</TextData>
+        <Flag>RevealTarget</Flag>
+      </QuestConditionDef>
+        <ChoiceText>You sit down to see if you might hear word of these storms. The Inn's owner falls over himself to serve you and your men. Is it out of admiration, or fear? 
+
+You intimidate the other patrons at first - but soon they are telling stories to impress you. 
+
+Some say thieves are loose in the countryside, hiding with documents stolen from Queen Procipinee's secret library. One merchant swears there is man abroad with magic seeds, that can plant a gildar tree. And - of course - one man insists he won a fight in the Slakhanan arena. 
+
+No one has heard of the cause of the ten day storm.
+
+You consider forgetting storms and omens when, across the tavern, you hear a suddenly heated exchange. A chair flips over, and a young braggard boasts: "You'll show a little more respect once I've helped raise the Forge Of The Overlord!"
+
+The tavern is nearly silent. Those who know the Forge's dark history are sobered at its mention. When the braggard meets your gaze, he quickly drops payment, and hurries out the tavern's door. 
+</ChoiceText>
+            <ChoiceMedallion>Pub.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+	    <QuestChoiceDef>
+         	<Description>Follow him and investigate his wild claim.</Description>
+		<NextObjectiveID>1</NextObjectiveID>
+            </QuestChoiceDef>
+	    <QuestChoiceDef>
+         	<Description>Just another tall tale. Ale for everyone! (abandon quest)</Description>
+		<NextObjectiveID>-1</NextObjectiveID>
+		<QuestFailure>1</QuestFailure>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+        <QuestObjectiveDef>
+            <ObjectiveID>1</ObjectiveID>
+            <NextObjectiveID>2</NextObjectiveID>
+            <ChoiceText>You find the young man outside. When you call to him he stops, but is nervous. "I was just bragging, sir. Making up stories, I don't know about any cave. Er, Forge. Nothing." 
+</ChoiceText>
+            <ChoiceMedallion>Calis.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>Beat him until he speaks the truth.</Description>
+                <NextObjectiveID>2</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>Lives are at stake - what do you know of the Forge?</Description>
+                <NextObjectiveID>3</NextObjectiveID>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+        <QuestObjectiveDef>
+            <ObjectiveID>2</ObjectiveID>
+            <NextObjectiveID>4</NextObjectiveID>       
+            <ChoiceText>Your men lay hard fits into his side, and the boy quickly offers to tell you everything. He is working for a wizard, Darzomil. Darzomil claims he has found a cave that leads to the Forge Of The Overlord. The boy marks on your map where Darzomil resides. 
+
+"That's all I know, your greatness. Your sovereignty. I swear. Darzomil told me the Forge can help rebuild the broken world."
+
+You ask him what he knows of the storms that lasted ten days and nights.
+
+"Nothing, my Lord. I swear. Perhaps Darzomil will know."
+</ChoiceText>
+            <ChoiceMedallion>Calis.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>I take my leave to speak with this Darzomil.</Description>
+                <NextObjectiveID>4</NextObjectiveID>
+            </QuestChoiceDef>
+	</QuestobjectiveDef>
+
+        <QuestObjectiveDef>
+            <ObjectiveID>3</ObjectiveID>
+            <NextObjectiveID>4</NextObjectiveID>       
+            <ChoiceText>You remind that boy that the Forge is said to have been lost in the Cataclysm. 
+
+"I am no scholar, Lord. Perhaps it was lost, but...Darzomil says it has been found."
+
+The boy explains that a wizard - Darzomil - has hired the boy for "errands." Darzomil believes that he has found the Forge buried under a mountain - and that there is a tunnel passage that leads to it.
+
+"Darzomil says when we awaken the Forge again, the world will be restored and peaceful. I want to be part of something important, M'Lord."
+
+"In ages past, that Forge brought the Titans, and they almost destroyed the world." you counsel him.
+
+"I thought those were just stories. I didn't think there was any danger."
+
+"The Titans were very real. The possibility that the Forge still exists cannot be lightly dismissed." 
+
+You ask him what he knows of the storms that lasted ten days and nights.
+
+"Nothing, my Lord. I swear. Perhaps Darzomil will know."
+</ChoiceText>
+            <ChoiceMedallion>L_Champion_Kingdom_05.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>Tell me where I can find this Darzomil.</Description>
+                <NextObjectiveID>4</NextObjectiveID>
+            </QuestChoiceDef>
+	</QuestobjectiveDef>
+
+	<QuestObjectiveDef>
+	    <ObjectiveID>4</ObjectiveID>
+	    <NextObjectiveID>5</NextObjectiveID>
+	    <Treasure>
+                <GameModifier>
+                    <ModType>Map</ModType>
+                    <Attribute>CreateGoodieHut</Attribute>
+                    <StrVal>Darzomil's Camp</StrVal>
+                    <Unitclass>GH_Quest_Darzomil</Unitclass>
+                    <Radius>9</Radius>
+                </GameModifier>
+            </Treasure>
+	<QuestConditionDef>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Seek out Darzomil</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Success</Class>
+                <Type>ClearGoodieHut</Type>
+                <TextData>GH_Quest_Darzomil</TextData>
+                <Flag>RevealTarget</Flag>
+        </QuestConditionDef>
+	<ChoiceText>You come to Darzomil's compound. Hired young men hear your request to see Darzomil, and you are immediately shown to him.
+
+"Welcome, my Lord. How may I serve thy grace?"
+
+You mention the ten day storm, and ask Darzomil if he knows what caused such an unusual fury in the sky. 
+
+Darzomil hesitates. 
+
+"I am no Aeromancer, My Lord. I am curious...why do you seek my counsel on storms?"
+
+Darzomil feigns ignorance. You tell what you have heard from his hired boy. His face goes from cordial, to stern.
+
+"I have meant to keep my work secret. Just the name of the Forge gathers the interest of...evil. But there is no point in keeping you in the dark, Lord." 
+
+"Indeed, I have discovered a cave that leads, undergound, to the lost Forge of The Overlord."</ChoiceText>	    <ChoiceMedallion>Diplomacy_Medallion_Full.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_01.png</ChoiceMedallionFrame>
+	    <QuestChoiceDef>
+                <Description>Undergound? It survived the Cataclysm?</Description>
+                <NextObjectiveID>5</NextObjectiveID>
+            </QuestChoiceDef>
+	    <QuestChoiceDef>
+                <Description>(Laugh at his claim) I have wasted my time. (abandon quest)</Description>
+                <NextObjectiveID>-1</NextObjectiveID>
+		<QuestFailure>1</QuestFailure>
+            </QuestChoiceDef>
+	</QuestObjectiveDef>
+
+        <QuestObjectiveDef>
+            <ObjectiveID>5</ObjectiveID>
+	    <NextObjectiveID>6</NextObjectiveID>       
+            <ChoiceText>"It was buried when the Cataclysm ate the world, yes, but the Forge cannot be simply breached or toppled - even by moving mountains. It remains erect and undamaged, under leagues of rock. I claim this with confidence, because I have stood before it in the darkness." 
+
+You ask, were the storms related to the Forge?
+
+"It is said that such storms raged over the Forge of the Overlord, in times long past. They came shortly after I found the Forge - I think Elemental stirs, anticipating its re-connection to it." 
+
+"In fact My Lord, I could journey to the Forge this very instant and unlock its divine power, were it not sealed by ancient and powerful magic."
+
+If Darzomil is spinning a lie, then he is a master deceiver. He seems utterly genuine.
+</ChoiceText>
+            <ChoiceMedallion>Q_ForgeOfTheOverlord.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_01.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>You know a way to open it, don't you Darzomil?</Description>
+                <NextObjectiveID>6</NextObjectiveID>
+            </QuestChoiceDef>
+	</QuestobjectiveDef>
+
+	<QuestObjectiveDef>
+            <ObjectiveID>6</ObjectiveID>
+            <NextObjectiveID>7</NextObjectiveID>      
+<ChoiceText>"You are most perceptive, My Lord. I have studied the Forge for a long time, and there is indeed a way to open it." 
+
+"The scroll record of Pariden is still intact in our age. And there, he details the spell that was cast upon the Forge's interior to banish it to void. Its contents could be used to re-open the Forge."
+
+Darzomil gives an awkward smile. 
+
+"The Record is an historic opportunity - we could use the Forge to restore the golden age of Pariden."
+</ChoiceText>
+            <ChoiceMedallion>Tech_Third_Book.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_01.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>Where is the Record of Pariden, then?</Description>
+            <NextObjectiveID>7</NextObjectiveID>
+            </QuestChoiceDef>
+     	    <QuestChoiceDef>
+                <Description>Pariden is dead. Tell me how to get the Record or you will join him.</Description>
+            <NextObjectiveID>8</NextObjectiveID>
+            </QuestChoiceDef>
+	</QuestobjectiveDef>
+
+	<QuestObjectiveDef>
+            <ObjectiveID>7</ObjectiveID>
+	    <NextObjectiveID>9</NextObjectiveID>       
+            <ChoiceText>"I arranged for it to be...borrowed from Procipinee's archive. Some Amarians are superstitious - they think such knowledge is frightening and must be locked away."  
+
+He laughs, slightly. There is something not so genuine when he mentions this. 
+
+"It must be fate that you have come Lord. For the delivery was waylaid by the Syndicate before it could reach me. They do not know the purpose of the Record, but they know it is worthy of ransom. I cannot afford to pay them or fight them. But you could surely take back the scroll." 
+</ChoiceText>
+            <ChoiceMedallion>AbandonedWagon.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_01.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>I will glady relieve the Syndicate of this scroll.</Description>
+                <NextObjectiveID>9</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>You are no more than a petty thief.</Description>
+                <NextObjectiveID>8</NextObjectiveID>
+            </QuestChoiceDef>
+	</QuestobjectiveDef>
+
+	<QuestObjectiveDef>
+            <ObjectiveID>8</ObjectiveID>
+            <NextObjectiveID>9</NextObjectiveID>      
+	<ChoiceText>"I cannot deny you, My lord. I can see you are more worthy than I to unlock the power of the Forge. As long as its power helps to return order to this broken world, I shall be satisfied."
+
+You are surprised that Darzomil is suddenly so deferant to you.
+
+"The Record Of Pariden," you remind him.
+
+"I was to have the scroll delivered here. But it was waylaid by the Syndicate before it could reach me. They do not know the purpose of the Journal, but they know it is worthy of ransom. I cannot afford to pay them or fight them, but you could surely take back the Record, My Lord."
+</ChoiceText>
+            <ChoiceMedallion>Diplomacy_Medallion_Full.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_01.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>Good you know your place. Now to slaughter the Syndicate and recover the scroll.</Description>
+                <NextObjectiveID>9</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>(Say nothing)</Description>
+                <NextObjectiveID>9</NextObjectiveID>
+            </QuestChoiceDef>
+	</QuestobjectiveDef>
+
+	<QuestObjectiveDef>
+            <ObjectiveID>9</ObjectiveID>
+            <NextObjectiveID>10</NextObjectiveID>         
+	<ChoiceText>"I will mark two locations on your map. First, where you can find the Syndicate thieves. Second, where to meet me." 
+
+You wonder if there is more to this story than Darzomil tells. But the only way to verify his claims is to seek the Record of Pariden, then see this cave for yourself.
+</ChoiceText>
+            <ChoiceMedallion>Diplomacy_Medallion_Full.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_01.png</ChoiceMedallionFrame>        
+	    <QuestChoiceDef>
+                <Description>I take my leave to seek the scroll.</Description>
+                <NextObjectiveID>10</NextObjectiveID>
+            </QuestChoiceDef>
+	    <QuestChoiceDef>
+                <Description>If this is a trap, I'll be back for your head.</Description>
+                <NextObjectiveID>10</NextObjectiveID>
+            </QuestChoiceDef>
+	</QuestObjectiveDef>
+
+	<QuestObjectiveDef>
+	    <ObjectiveID>10</ObjectiveID>
+	    <NextObjectiveID>11</NextObjectiveID>
+	    <Description>Track down the Syndicate thieves.</Description>
+	    <Treasure>
+                <GameModifier>
+                    <ModType>Map</ModType>
+                    <Attribute>CreateGoodieHut</Attribute>
+                    <StrVal>Captured Caravan</StrVal>
+                    <Unitclass>GH_Quest_RecoverJournal</Unitclass>
+                    <Radius>9</Radius>
+                </GameModifier>
+            </Treasure>
+            <QuestConditionDef>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Track down the Record Of Pariden.</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Success</Class>
+                <Type>ClearGoodieHut</Type>
+                <TextData>GH_Quest_RecoverJournal</TextData>
+                <Flag>RevealTarget</Flag>
+            </QuestConditionDef>
+            <ChoiceText>You arrive to find the Syndicate thieves dead, their corpses cold and white, drained of life. 
+
+A raspy voice speaks. 
+
+"I have sought the Forge since before the Titans. Death could not stop me. No channeler will. The scroll is mine."
+
+The Lich came prepared - with three Banshees, and an army of undead. 
+</ChoiceText>
+            <ChoiceMedallion>M_Lich_Card_01.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_01.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>You are long overdue for the abyss, Lich.</Description>
+                <NextObjectiveID>11</NextObjectiveID>
+                <Encounter>
+                    <Liklihood>100</Liklihood>
+                    <BattleIdentifier>Lich</BattleIdentifier>
+                    <WillRespawn>0</WillRespawn>
+                    <WanderingRadius>0</WanderingRadius>
+                    <UnitInstance>
+                        <UnitType>Lich</UnitType>
+                        <Level>12</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>SkeletonA</UnitType>
+			<UnitGroupingType>UnitGroupingType_Company</UnitGroupingType>
+                        <Level>2</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>SkeletonA</UnitType>
+			<UnitGroupingType>UnitGroupingType_Company</UnitGroupingType>
+                        <Level>2</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>SkeletonB</UnitType>
+			<UnitGroupingType>UnitGroupingType_Company</UnitGroupingType>
+                        <Level>2</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Skeleton_Burning</UnitType>
+			<UnitGroupingType>UnitGroupingType_Company</UnitGroupingType>
+                        <Level>2</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>SkeletonC</UnitType>
+			<UnitGroupingType>UnitGroupingType_Company</UnitGroupingType>
+                        <Level>2</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Banshee</UnitType>
+                        <Level>6</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Banshee</UnitType>
+                        <Level>6</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Banshee</UnitType>
+                        <Level>6</Level>
+                    </UnitInstance>
+                </Encounter>
+		</QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>Keep it for now. I'll hunt you down later. (retreat)</Description>
+                <NextObjectiveID>10</NextObjectiveID>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+        <QuestObjectiveDef>
+            <ObjectiveID>11</ObjectiveID>
+            <NextObjectiveID>12</NextObjectiveID>
+            <PopupObjectiveMsg>0</PopupObjectiveMsg>
+            <QuestConditionDef>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Defeat the Undead</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Success</Class>
+                <Type>BattleFinished</Type>
+                <TextData>Lich</TextData>
+                <MoreTextData>Victory</MoreTextData>
+            </QuestConditionDef>
+        </QuestObjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>12</ObjectiveID>
+	    <NextObjectiveID>13</NextObjectiveID>       
+            <ChoiceText>The Lich is taken by death at last, and goes still. From its robes you pull an ancient scroll - the Record of Pariden.
+
+As you look up, a wisp floats before you. Your soldiers ready weapons.
+
+"I mean you no harm," it says. "Rather I come to warn you of the danger you are near."
+
+"When last storms raged ten days and ten nights, this world knew nothing of the darkness that would come by the power of the Forge. The recent storms are Elemental itself warning that re-opening the Forge will bring great evil." 
+
+It seems the Forge of The Overlord truly has survived - and you now hold the key to mastering it. What feats could you work with its infinite power?
+
+"Long ago, we warned when the Forge was first built - we were not heeded. The Titans sought the Forge's power from the Void, and brought horror and Cataclysm. We implore you to turn away from the Forge, and help us seal it away forever."
+
+If you are to turn back from the Forge, and whatever glorious and horrible power it holds, this is the last chance. 
+</ChoiceText>
+            <ChoiceMedallion>Wisp_Medallion.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_01.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>I felt this during the storms. The Forge is too powerful for this world.</Description>
+                <NextObjectiveID>13</NextObjectiveID>
+            </QuestChoiceDef>
+	    <QuestChoiceDef>
+                <Description>I cannot be swayed by storms or vague warnings. I am called to master the Forge.</Description>
+                <NextObjectiveID>16</NextObjectiveID>
+            </QuestChoiceDef>
+	</QuestobjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>13</ObjectiveID>
+	    <NextObjectiveID>14</NextObjectiveID>       
+            <ChoiceText>"The Record is the key to the Forge - it must be burned. No other record remains of how to un-seal the Forge. Then the Forge Of The Overlord can sleep under the mountain for eternity."
+
+"I shall not allow that," a voice says. "The Forge must be opened - immediately." 
+
+You recognize it as Darzomil's voice. But when you see him, his form is quite different.   
+</ChoiceText>
+            <ChoiceMedallion>M_Shirayn_Card.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_01.png</ChoiceMedallionFrame>
+	    <QuestChoiceDef>
+                <Description>You are no mere wizard.</Description>
+                <NextObjectiveID>14</NextObjectiveID>
+                <Encounter>
+                    <Liklihood>100</Liklihood>
+                    <BattleIdentifier>Darzomil</BattleIdentifier>
+                    <WillRespawn>0</WillRespawn>
+                    <WanderingRadius>0</WanderingRadius>
+                    <UnitInstance>
+                        <UnitType>Darzomil</UnitType>
+                        <Level>10</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>AssassinDemon</UnitType>
+			<UnitGroupingType>UnitGroupingType_Company</UnitGroupingType>
+                        <Level>6</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>TitanImp</UnitType>
+			<UnitGroupingType>UnitGroupingType_Party</UnitGroupingType>
+                        <Level>6</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>AssassinDemon</UnitType>
+			<UnitGroupingType>UnitGroupingType_Company</UnitGroupingType>
+                        <Level>6</Level>
+                    </UnitInstance>
+                </Encounter>
+            </QuestChoiceDef>
+	</QuestobjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>14</ObjectiveID>
+            <NextObjectiveID>15</NextObjectiveID>
+            <PopupObjectiveMsg>0</PopupObjectiveMsg>
+            <QuestConditionDef>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Slay Darzomil</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Success</Class>
+                <Type>BattleFinished</Type>
+                <TextData>Darzomil</TextData>
+                <MoreTextData>Victory</MoreTextData>
+                <CompletionText>Darzomil dies, sobbing: "The masters will curse my name."</CompletionText>
+            </QuestConditionDef>
+        </QuestObjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>15</ObjectiveID>    
+            <ChoiceText>Your soldiers build a pyre, and throw the Record in. It flakes and flames, and slowly crumbles into ash. You feel deep sadness, to see such a powerful symbol of a better time burn away.  
+
+The next morning, you pack up the camp. The wisp's voice comes to you.
+
+"The will to turn away power is too rare a gift. You are among the few worthy to carry weapons such as this. May you lead well. When one day you pass beyond flesh, we may ask you to join our ranks as a protector."
+
+A sword lies at your feet.   
+	    </ChoiceText>
+            <ChoiceMedallion>Town_Council.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_01.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>I return to leading my people.</Description>
+		<Treasure>
+                <GameModifier>
+                    <ModType>GiveItem</ModType>
+                    <Attribute>Longsword_Andergest</Attribute>
+                </GameModifier>
+                </Treasure>
+		<NextObjectiveID>-1</NextObjectiveID>
+                <QuestFailure>1</QuestFailure>
+            </QuestChoiceDef>
+	</QuestobjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>16</ObjectiveID>
+	    <NextObjectiveID>17</NextObjectiveID>       
+            <ChoiceText>"How many times have such conceits been uttered, only to end in suffering and death? The architects of the Forge indulged in such thoughts. Their former glories are now just shattered stone and fading memories."
+
+Around the wisps, other spirits gather, some with armor and swords.
+
+"We did not interfere when the Forge was built. We shall not repeat that mistake. We Aloulai shall act to defend the small and weak. Defend yourself!"
+</ChoiceText>
+            <ChoiceMedallion>Lightbringer_Medallion.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_01.png</ChoiceMedallionFrame>
+	    <QuestChoiceDef>
+                <Description>No ghosts shall keep me from the Forge.</Description>
+                <NextObjectiveID>17</NextObjectiveID>
+                <Encounter>
+                    <Liklihood>100</Liklihood>
+                    <BattleIdentifier>Aloulai_Knight</BattleIdentifier>
+                    <WillRespawn>0</WillRespawn>
+                    <WanderingRadius>0</WanderingRadius>
+                    <UnitInstance>
+                        <UnitType>Aloulai_Knight</UnitType>
+                        <Level>16</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Aloulai_Knight</UnitType>
+                        <Level>15</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Aloulai_Knight</UnitType>
+                        <Level>15</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Aloulai_Warrior</UnitType>
+                        <Level>15</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Aloulai_Warrior</UnitType>
+                        <Level>15</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Aloulai_Wisp</UnitType>
+                        <Level>10</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Aloulai_Wisp</UnitType>
+                        <Level>10</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Aloulai_Wisp</UnitType>
+                        <Level>10</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Aloulai_Wisp</UnitType>
+                        <Level>10</Level>
+                    </UnitInstance>
+                </Encounter>
+            </QuestChoiceDef>
+	</QuestobjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>17</ObjectiveID>
+            <NextObjectiveID>18</NextObjectiveID>
+            <PopupObjectiveMsg>0</PopupObjectiveMsg>
+            <QuestConditionDef>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Slay the spirits</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Success</Class>
+                <Type>BattleFinished</Type>
+                <TextData>Aloulai_Knight</TextData>
+                <MoreTextData>Victory</MoreTextData>
+                <CompletionText>The spirits are driven off, and the Record of Pariden is yours.</CompletionText>
+            </QuestConditionDef>
+        </QuestObjectiveDef>
+
+        <QuestObjectiveDef>
+            <ObjectiveID>18</ObjectiveID>
+            <NextObjectiveID>19</NextObjectiveID>
+            <Treasure>
+                <GameModifier>
+                    <ModType>Map</ModType>
+                    <Attribute>CreateGoodieHut</Attribute>
+                    <StrVal>Dig Site</StrVal>
+                    <Unitclass>GH_Quest_ForgeCave</Unitclass>
+                    <Radius>1</Radius>
+                </GameModifier>
+            </Treasure>
+            <QuestConditionDef>
+		<ID>0</ID>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Find the dig site.</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Success</Class>
+                <Type>ClearGoodieHut</Type>
+                <TextData>GH_Quest_ForgeCave</TextData>
+                <Flag>RevealTarget</Flag>
+            </QuestConditionDef>
+<ChoiceText>You arrive at the mine's entrance, which is sealed by a wall of abnormally smooth rock. 
+
+Darzomil appears immediately, and casts a spell over the rock wall - it slides downwards into the ground and is gone.
+
+Darzomil sees you hold the Record, and smiles.
+
+"My Lord. Let us march our men downwards, and look upon the Forge of the Overlord."
+</ChoiceText>
+	    <ChoiceMedallion>CaveDesert_Medallion.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_01.png</ChoiceMedallionFrame>
+	    <QuestChoiceDef>
+		<Description>You first.</Description>
+		<NextObjectiveID>19</NextObjectiveID>
+	    </QuestChoiceDef> 
+        </QuestObjectiveDef>
+	    
+	<QuestObjectiveDef>
+	    <ObjectiveID>19</ObjectiveID>
+	    <NextObjectiveID>20</NextObjectiveID>
+<ChoiceText>After more than two days journey downward, the group led by you and Darzomil finally comes to an opening from the tunnel. Across from you in the cave is a great door. 
+
+You have no doubt you look upon part of the walls of The Forge. No fortress has walls these sturdy, no palace has a shining surface this majestic.
+
+Darzomil says he can read the Record's Avostan, and cast the spell. You give the scroll to him, but keep a close eye on him. 
+
+Darzomil speaks the words, and at first nothing happens. 
+
+Then the whole chamber shakes. The door to the Forge Of The Overlord opens.    
+	    </ChoiceText>
+	    <ChoiceMedallion>Tech_Titans_Remain.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_01.png</ChoiceMedallionFrame>
+	    <QuestChoiceDef>
+		<Description>Approach the entrance.</Description>
+		<NextObjectiveID>21</NextObjectiveID>
+	    </QuestChoiceDef>
+	    <QuestChoiceDef>
+		<Description>Darzomil's job is done - Kill him.</Description>
+		<NextObjectiveID>20</NextObjectiveID>
+	    </QuestChoiceDef>
+	</QuestObjectiveDef>
+
+	<QuestObjectiveDef>
+            <ObjectiveID>20</ObjectiveID>
+            <NextObjectiveID>21</NextObjectiveID>
+<ChoiceText>As the door to the Forge opens, one of your more reliable men jabs a dagger into his back. Darzomil shakes, and falls to the ground. 
+
+"I never trusted you, Darzomil. Now you cannot betray me," You explain to him.
+
+Darzomil laughs - he morphs into his true form, a demonic imp.
+
+"I had no interest in entering the Forge, you fool. It was my mission only to release my master that has waited within."
+
+A voice booms out as Darzomil the Imp slinks away - it comes from within the Forge itself. 
+
+"It is so, channeler. The new master of this Forge is within it already."      
+	    </ChoiceText>
+	    <ChoiceMedallion>T_DemonicAlly_Painting.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_01.png</ChoiceMedallionFrame>
+	    <QuestChoiceDef>
+		<Description>Who dares?</Description>
+		<NextObjectiveID>21</NextObjectiveID>
+	    </QuestChoiceDef>
+</QuestObjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>21</ObjectiveID>
+            <NextObjectiveID>22</NextObjectiveID>
+	    <Treasure>
+	    <GameModifier>
+                 <ModType>Player</ModType>
+                 <Attribute>DamageAllUnits</Attribute>
+                 <Value>40</Value>
+            </GameModifier>
+	    <GameModifier>
+                <ModType>Map</ModType>
+                <Attribute>AllPlayerStoredResourceAdjustment</Attribute>
+                <StrVal>Population</StrVal>
+                <Value>-40</Value>
+	    </GameModifier>
+	    <GameModifier>
+                <ModType>Player</ModType>
+                <Attribute>AbilityBonus</Attribute>
+                <StrVal>A_Additive_Unrest</StrVal>
+                <Value>30</Value>
+      	    </GameModifier>
+            <GameModifier>
+                <ModType>Player</ModType>
+                <Attribute>AbilityBonus</Attribute>
+                <StrVal>A_Mana</StrVal>
+                <Value>-50</Value>
+            </GameModifier>
+	    </Treasure>
+<ChoiceText>The Forge is not empty. A voice booms out, "I must thank you, channeler, for your naivety." 
+
+You can see it step forward - clad in black armor from another world. You can sense the power it has, and the magic flowing to its command. It is a creature not of Elemental, but of another place entirely...
+
+"I am Tiarmand, the Drednir. You call us Titans. Long ago Curgen came to your world, leaving us behind in the void. Now we have escaped. This Forge shall give us all the magic of your world. Submit to us - now."
+
+Despite the odds, you know you cannot let The Titans control the Forge. You call your soldiers to battle.
+
+But you and your warriors are pushed back from the door with a hurricane gust, and a cave-in begins betwen you and the Forge. 
+
+As the rock comes down, you and your army have no choice but to flee. You all rush upwards until the cave-ins are behind you. But the cave still rumbles deep below. 
+
+Or is the rumbling now coming from high above?
+
+You wonder what awaits under the sun, now that the Titans hold the Forge.
+	    </ChoiceText>
+	    <ChoiceMedallion>Rank_Pariden.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_01.png</ChoiceMedallionFrame>
+	    <QuestChoiceDef>
+		<Description>There is nothing left for us here. We march upwards.</Description>
+		<NextObjectiveID>22</NextObjectiveID>
+	    </QuestChoiceDef>
+	    <QuestChoiceDef>
+		<Description>(Kill a soldier, and blame the failure on him)</Description>
+		<NextObjectiveID>22</NextObjectiveID>
+	    </QuestChoiceDef>
+</QuestObjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>22</ObjectiveID>
+            <NextObjectiveID>23</NextObjectiveID>
+    	    <Treasure>
+     	    <GameModifier>
+        	<ModType>Map</ModType>
+        	<Attribute>CreateGoodieHut</Attribute>
+        	<StrVal>Rift of the Titans</StrVal>
+        	<Unitclass>GH_Shadow_Rift2</Unitclass>
+        	<Radius>10</Radius>
+      	    </GameModifier>
+     	    <GameModifier>
+        	<ModType>Map</ModType>
+        	<Attribute>CreateGoodieHut</Attribute>
+        	<StrVal>Rift of the Titans</StrVal>
+        	<Unitclass>GH_Shadow_Rift2</Unitclass>
+        	<Radius>12</Radius>
+      	    </GameModifier>	
+     	    <GameModifier>
+        	<ModType>Map</ModType>
+        	<Attribute>CreateGoodieHut</Attribute>
+        	<Unitclass>GH_Lair_Titan_Palace2</Unitclass>
+        	<Radius>52</Radius>
+      	    </GameModifier>
+     	    <GameModifier>
+        	<ModType>Map</ModType>
+        	<Attribute>CreateGoodieHut</Attribute>
+        	<StrVal>Rift of the Titans</StrVal>
+        	<Unitclass>GH_Shadow_Rift2</Unitclass>
+        	<Radius>60</Radius>
+      	    </GameModifier>
+     	    <GameModifier>
+        	<ModType>Map</ModType>
+        	<Attribute>CreateGoodieHut</Attribute>
+        	<StrVal>Rift of the Titans</StrVal>
+        	<Unitclass>GH_Shadow_Rift2</Unitclass>
+        	<Radius>80</Radius>
+      	    </GameModifier>
+	    <GameModifier>
+        	<ModType>Map</ModType>
+        	<Attribute>CreateGoodieHut</Attribute>
+        	<StrVal>Rift of the Titans</StrVal>
+        	<Unitclass>GH_Shadow_Rift2</Unitclass>
+        	<Radius>9</Radius>
+      	    </GameModifier>            
+	    </Treasure>
+<ChoiceText>You and your men step out of the cavern and back onto the surface of Elemental - a changed Elemental.
+
+The magic in the air is still present, but it is warped - its strings are being pulled.  
+
+Your soldiers scream, and point upwards - flaming rocks fall from the sky. You call a retreat back to the safety of the cave, but some are struck down. The storm ends, and your army marches onwards.
+
+It isn't long before you meet refugees crossing the wastes, and you hear the stories from across the world. Rifts have opened, and Titan armies march into ours. Meteor storms and Earthquakes have ravaged the lands of every country. Entire crops have died and unrest surges in every nation.
+
+Perhaps it is of great amusement, inside the Forge, to play with Elemental like this. And it is only the beginning of what the Forge could do in Titan hands. 
+
+But you can still feel the shards. You still have a channeler's power. Does something hold The Titan back? 
+
+Gather your mightiest heroes and relics, and raise the army that can kill Titans. This world has secrets and powers older than even the Forge, that may assist you.
+
+Until you siege the Forge and face Tiarmand, Elemental belongs to the Titans.
+</ChoiceText>   
+	    <ChoiceMedallion>S_ShadowWorld_Painting.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_01.png</ChoiceMedallionFrame>
+	    <QuestChoiceDef>
+		<Description>We gather our strength - the Titans must pay.</Description>
+		<NextObjectiveID>23</NextObjectiveID>
+	    </QuestChoiceDef>
+	    <QuestChoiceDef>
+		<Description>The Titan's wrath is timid, compared to what I will do with the Forge.</Description>
+		<NextObjectiveID>23</NextObjectiveID>
+	    </QuestChoiceDef>
+</QuestObjectiveDef>
+
+<QuestObjectiveDef>
+	<ObjectiveID>23</ObjectiveID>
+        <NextObjectiveID>24</NextObjectiveID>
+	    <Treasure>
+   	    <GameModifier>
+        	<ModType>Map</ModType>
+        	<Attribute>CreateGoodieHut</Attribute>
+        	<StrVal>Rift of the Titans</StrVal>
+        	<Unitclass>GH_Shadow_Rift2</Unitclass>
+        	<Radius>28</Radius>
+      	    </GameModifier>
+   	    <GameModifier>
+        	<ModType>Map</ModType>
+        	<Attribute>CreateGoodieHut</Attribute>
+        	<StrVal>Rift of the Titans</StrVal>
+        	<Unitclass>GH_Shadow_Rift2</Unitclass>
+        	<Radius>30</Radius>
+      	    </GameModifier>
+   	    <GameModifier>
+        	<ModType>Map</ModType>
+        	<Attribute>CreateGoodieHut</Attribute>
+        	<StrVal>Rift of the Titans</StrVal>
+        	<Unitclass>GH_Shadow_Rift2</Unitclass>
+        	<Radius>32</Radius>
+      	    </GameModifier>
+   	    <GameModifier>
+        	<ModType>Map</ModType>
+        	<Attribute>CreateGoodieHut</Attribute>
+        	<StrVal>Rift of the Titans</StrVal>
+        	<Unitclass>GH_Shadow_Rift2</Unitclass>
+        	<Radius>40</Radius>
+      	    </GameModifier>
+   	    <GameModifier>
+        	<ModType>Map</ModType>
+        	<Attribute>CreateGoodieHut</Attribute>
+        	<StrVal>Rift of the Titans</StrVal>
+        	<Unitclass>GH_Shadow_Rift2</Unitclass>
+        	<Radius>80</Radius>
+      	    </GameModifier>
+   	    <GameModifier>
+        	<ModType>Map</ModType>
+        	<Attribute>CreateGoodieHut</Attribute>
+        	<StrVal>The Forge Of The Overlord</StrVal>
+        	<Unitclass>GH_Forge_Overlord2</Unitclass>
+        	<Radius>16</Radius>
+      	    </GameModifier>
+	    </Treasure>
+	<QuestConditionDef>
+	<Description>Assault the Forge and kill Tiarmand</Description>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Gather your full  might to capture the Forge.</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Success</Class>
+                <Type>ClearGoodieHut</Type>
+                <TextData>GH_Forge_Overlord2</TextData>
+                <Flag>RevealTarget</Flag>
+            </QuestConditionDef>
+<ChoiceText>You reach the Forge Of The Overlord. Outside, a Titan army awaits you. Its General steps forward.
+
+"Greetings, channeler. We Drednir take pleasure in fighting worthy foes. On behalf of Tiarmand, Curgen's elder, Lord Of Elemental, I implore you show us a healthy resistance as we slaughter you." 
+
+You ignore his insult, taking the time to survey his forces. The General, astride a dragon in the Drednir's service, and seven of his Drednir kind stand against you. A golem-guardian stands with them. 
+
+No battle like this has been fought since the final battle of Imperium. And even if you win, Tiarmand still awaits inside. Did you truly bring enough men, potions, scrolls? Are there dragons that might join you in defending Elemental? Can you stop the mighty Drednir spells? 
+
+Are you truly ready to fight the Gods?</ChoiceText>
+            <ChoiceMedallion>Q_ForgeOfTheOverlord.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame> 
+	    <QuestChoiceDef>
+		<Description>We re-take Elemental today. Charge!</Description>
+		<NextObjectiveID>24</NextObjectiveID>
+	    	<Encounter>
+                    <Liklihood>100</Liklihood>
+                    <BattleIdentifier>Titan_General</BattleIdentifier>
+		    <TacticalMap>T_ForgeExterior_01</TacticalMap>
+                    <WillRespawn>0</WillRespawn>
+                    <WanderingRadius>0</WanderingRadius>
+                    <UnitInstance>
+                        <UnitType>Titan_General</UnitType>
+			<UnitName>Danrethnor The Titan</UnitName>
+                        <Level>24</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Drednir_Warrior</UnitType>
+                        <UnitName>Dran-Mar the Titan</UnitName>
+                        <Level>18</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Elder_Titan2</UnitType>
+			<UnitName>Bel-Vanids The Titan</UnitName>
+                        <Level>25</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Titan</UnitType>
+			<UnitName>Morstara The Titan</UnitName>
+                        <Level>20</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Drednir_Warrior</UnitType>
+                        <UnitName>Dar-Granor the Titan</UnitName>
+                        <Level>18</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Elder_Titan2</UnitType>
+			<UnitName>Iarkast The Titan</UnitName>
+                        <Level>25</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Titan</UnitType>
+			<UnitName>Zar-Andil The Titan</UnitName>
+                        <Level>20</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Titan</UnitType>
+			<UnitName>Marikal the Titan</UnitName>
+                        <Level>20</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Obsidian_Sentinel</UnitType>
+                        <Level>10</Level>
+                    </UnitInstance>
+	    	</Encounter>
+	    </QuestChoiceDef>  
+	    <QuestChoiceDef>
+		<Description>I must retreat - for now.</Description>
+		<NextObjectiveID>23</NextObjectiveID>
+	    </QuestChoiceDef>
+</QuestObjectiveDef>
+
+        <QuestObjectiveDef>
+            <ObjectiveID>24</ObjectiveID>
+            <NextObjectiveID>25</NextObjectiveID>
+            <PopupObjectiveMsg>0</PopupObjectiveMsg>
+            <QuestConditionDef>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Kill the General's army</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Success</Class>
+                <Type>BattleFinished</Type>
+                <TextData>Titan_General</TextData>
+                <MoreTextData>Victory</MoreTextData>
+            </QuestConditionDef>
+        </QuestObjectiveDef>
+	
+        <QuestObjectiveDef>
+            <ObjectiveID>25</ObjectiveID>
+            <NextObjectiveID>26</NextObjectiveID>
+            <ChoiceText>You enter the Forge. It is a massive structure, of impossible design. But then you look behind you - your soldiers are gone, locked outside the Forge by Tiarmand's magic. 
+
+You climb up, to the Forge's main chamber, alone. Tiarmand is there, bathed in the light of Elemental's focused magic.  
+
+"Perhaps you have sensed it, channeler. Your world's magic resists me desperately. But my will is unyielding, and every day that passes it succumbs more of my domination. I will soon unlock the last of the Forge's power - the power to directly bend reality, the Spell of Making." 
+
+Something strange happens as the Titan boasts. You can feel untold mana gathering from the Forge - to you. Elemental's magic is being dominated by Tiarmand, but some of its own will remains, and it is reaching out to you. Ancient knowledge and new abilities form in your mind. 
+
+Tiarmand can sense it: "No! This power is mine!"
+
+"Elemental's magic will not accept you," you say. "Not in time to save your life."
+
+Tiarmand releases what might be the Titan equivalent of a chuckle. Another Titan, and a golem appear to Tiarmand's sides.
+
+"I do not need any magic to kill you. Let it share some trifling power with you. I will show you what arcane feats I have ripped from treacherous Elemental - the Mastery of Death."
+</ChoiceText>
+            <ChoiceMedallion>Q_ForgeInterior.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>(attack)</Description>
+                <NextObjectiveID>26</NextObjectiveID>
+            <Treasure>
+                <GameModifier>
+                    <ModType>Unit</ModType>
+                    <Attribute>UnlockUnitAbility</Attribute>
+                    <StrVal>Nascent_Ascension2</StrVal>
+                </GameModifier>
+            </Treasure>
+                <Encounter>
+                    <Liklihood>100</Liklihood>
+                    <BattleIdentifier>Elder_Titan</BattleIdentifier>
+                    <ForceLeaderOnly>1</ForceLeaderOnly>
+                    <TacticalMap>T_Forge_01</TacticalMap>
+                    <UnitInstance>
+                        <UnitType>Elder_Titan</UnitType>
+                        <Level>30</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Elder_Titan2</UnitType>
+			<UnitName>Demarkol The Titan</UnitName>
+                        <Level>25</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Obsidian_Sentinel</UnitType>
+                        <Level>15</Level>
+                    </UnitInstance>
+                </Encounter>
+      	    </QuestChoiceDef>
+</QuestObjectiveDef>
+
+        <QuestObjectiveDef>
+            <ObjectiveID>26</ObjectiveID>
+            <NextObjectiveID>27</NextObjectiveID>
+            <PopupObjectiveMsg>0</PopupObjectiveMsg>
+            <QuestConditionDef>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Enter the Forge alone and defeat Tiarmand</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Success</Class>
+                <Type>BattleFinished</Type>
+                <TextData>Elder_Titan</TextData>
+                <MoreTextData>Victory</MoreTextData>
+            </QuestConditionDef>
+        </QuestObjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>27</ObjectiveID>
+            <NextObjectiveID>28</NextObjectiveID>
+	    <Treasure>
+	    <GameModifier>
+                <ModType>Player</ModType>
+                <Attribute>AbilityBonus</Attribute>
+                <StrVal>A_Additive_Unrest</StrVal>
+                <Value>-30</Value>
+      	    </GameModifier>
+            <GameModifier>
+                <ModType>Player</ModType>
+                <Attribute>AbilityBonus</Attribute>
+                <StrVal>A_Mana</StrVal>
+                <Value>50</Value>
+            </GameModifier>
+	    </Treasure>
+<ChoiceText>Tiarmand is defeated - and his remaining grip over the world's magic slips away. His invasion has failed, and another would-be God passes from the face of Elemental. 
+
+Many died as Tiarmand toyed with the Forge - the Forge you opened for him in quest for power.
+
+Elemental groans, feeling the Forge focus upon you alone, anticipating your intentions. It would resist any master - but it cannot now resist you, to whom it showed favor. 
+
+Some Drednir may persist, though their leader is dead. This age of Elemental still awaits its leader. 
+
+The Forge, the full magic power of Elemental, is yours if you want it. 
+</ChoiceText>
+            <ChoiceMedallion>S_SpellofMaking_Painting.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+		<Description>This power is too great. I will seal away the Forge once more.</Description>
+            	<NextObjectiveID>28</NextObjectiveID>
+	    </QuestChoiceDef>
+            <QuestChoiceDef>
+		<Description>I am more than channeler. More than Titan. I am Elemental's Overlord.</Description>
+            <NextObjectiveID>31</NextObjectiveID>
+	    </QuestChoiceDef>
+</QuestObjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>28</ObjectiveID>
+            <NextObjectiveID>29</NextObjectiveID>
+	    <Treasure>
+        	<GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockSpell</Attribute>
+                <StrVal>Titanslayer_command</StrVal>
+        	</GameModifier>
+	    </Treasure>
+<ChoiceText>You call the best scholars and wizards you can trust. Before the Forge, you read from Pariden's spell, and with the others re-cast the spell he cast so long ago.   
+
+It is successful - the Forge of The Overlord's interior is out of mortal reach once more. You burn the record of Pariden in a massive pyre, and are not satisfied until its ashes are a fine sand. 
+
+You call for one more ritual, gathering all the combined mana of those present. The Earth is opened, and the Forge descends back into the rock below the Earth. The fissure seals, and the Forge is once again lost to history. Oaths are made that the location of these rites shall never be spoken or written. 
+
+The Forge is gone from this era of Elemental.
+
+Elemental's power has not faded from you. You have rewarded its trust in you, by turning away the Forge. Elemental's blessing shall stay with you, and an idea for a new spell is in your spellbook.  
+
+Perhaps another evil from the void may be drawn to the Forge again. Perhaps the secrets of what happened are are written in a record that will persist, and spark greed for the Forge anew. 
+
+But if the Forge does return, it will be the story of a later age.
+</ChoiceText>
+            <ChoiceMedallion>5Seers.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+		<Description>I shall lead my people on.</Description>
+                <NextObjectiveID>29</NextObjectiveID>
+	    </QuestChoiceDef>
+</QuestObjectiveDef>
+
+        <QuestObjectiveDef>
+            <ObjectiveID>29</ObjectiveID>
+	    <NextObjectiveID>30</NextObjectiveID>
+<ChoiceText>But as you are about to journey onward, a spirit comes to you. "I was called from beyond the void to assist the Aloulai in fighting the Drednir. But you have solved the very problem you created - and had the courage to seal the Forge away. Any who could turn aside such power truly is wise." 
+
+"I would be honored to serve you and your people. Some of the Drednir may still walk the land."
+
+You sense something strange about this spirit. His essence is that of - a Titan.
+
+"I was once called Kan-Orlis. I was a Titan, yes. But I perished fighting the Drednir the first time they walked Elemental. My spirit has endured, for the Drednir cannot be allowed to walk free upon any world."
+</ChoiceText>
+            <ChoiceMedallion>T_ParidensReturn_Painting.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+		<Description>You are welcome in my service.</Description>
+                <NextObjectiveID>-1</NextObjectiveID>
+                <QuestFailure>1</QuestFailure>
+        <Treasure>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnitJoinArmy</Attribute>
+                <StrVal>Champion_KanOrlis</StrVal>
+                <Value>25</Value>
+                <UnitClass>Champion</UnitClass>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Resource</ModType>
+                <Attribute>Fame</Attribute>
+                <Value>400</Value>
+            </GameModifier>
+        </Treasure>
+	    </QuestChoiceDef>
+            <QuestChoiceDef>
+		<Description>There is no room for another Titan on this world. Be gone.</Description>
+                <NextObjectiveID>30</NextObjectiveID>
+	    </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>30</ObjectiveID>
+<ChoiceText>"Let me at least leave Andergest, with which the Aloulai armed me. If it cannot fight in this realm through me, then may it fight through you or your champions."
+
+The spirit lays down a sword, then fades from view.
+
+"I go to seek adventure beyond your shores. May your world find peace."
+</ChoiceText>
+            <ChoiceMedallion>Refined_Attack.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+		<Description>My efforts will bring that peace.</Description>
+                <NextObjectiveID>-1</NextObjectiveID>
+                <QuestFailure>1</QuestFailure>
+		<Treasure>
+                <GameModifier>
+                    <ModType>GiveItem</ModType>
+                    <Attribute>Longsword_Andergest</Attribute>
+                </GameModifier>
+            <GameModifier>
+                <ModType>Resource</ModType>
+                <Attribute>Fame</Attribute>
+                <Value>400</Value>
+            </GameModifier>
+                </Treasure>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+        <QuestObjectiveDef>
+            <ObjectiveID>31</ObjectiveID>
+            <QuestEnd>1</QuestEnd>
+        </QuestObjectiveDef>
+
+</Quests>

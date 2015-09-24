@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<TileDesigns>
+	<DataChecksum NoParse="1">
+		<Ignore>DisplayName</Ignore>
+		<Translate>DisplayName</Translate>
+	</DataChecksum>
+	<TileDesign InternalName="TD_ShadowWall">
+		<DisplayName>TD_ShadowWall</DisplayName>
+		<Thumbnail>\Game\Gfx\tile_icon.png</Thumbnail>
+		<DecalName>Gfx\Terrain\Decals\SnowShadow3.png</DecalName>
+		<LowResShadow>TD_Groundfire_shadow.png</LowResShadow>
+		<HighResShadow>TD_Groundfire_shadow.png</HighResShadow>
+		<ShadowTransparency>70</ShadowTransparency>
+		<IsCore>0</IsCore>
+		<IsHiddenFromEditor>0</IsHiddenFromEditor>
+		<SubTileFlags>15</SubTileFlags>
+		<EffectTrigger InternalName="PEffect_WallOfShadow">
+			<EffectName>PEffect_WallOfShadow</EffectName>
+			<LocalPosition>-0.436180,8.000000,-1.873398</LocalPosition>
+			<Scale>1.0000</Scale>
+			<IndefiniteRepeat>1</IndefiniteRepeat>
+			<SpawnOnCreation>1</SpawnOnCreation>
+		</EffectTrigger>
+	</TileDesign>
+	<TileDesign InternalName="TD_LightWall">
+		<DisplayName>TD_LightWall</DisplayName>
+		<Thumbnail>\Game\Gfx\tile_icon.png</Thumbnail>
+		<DecalName>Gfx\Terrain\Decals\SnowShadow3.png</DecalName>
+		<LowResShadow>TD_Groundfire_shadow.png</LowResShadow>
+		<HighResShadow>TD_Groundfire_shadow.png</HighResShadow>
+		<ShadowTransparency>70</ShadowTransparency>
+		<IsCore>0</IsCore>
+		<IsHiddenFromEditor>0</IsHiddenFromEditor>
+		<SubTileFlags>15</SubTileFlags>
+		<EffectTrigger InternalName="PEffect_WallOfLight">
+			<EffectName>PEffect_WallOfLight</EffectName>
+			<LocalPosition>-0.436180,8.000000,-1.873398</LocalPosition>
+			<Scale>1.0000</Scale>
+			<IndefiniteRepeat>1</IndefiniteRepeat>
+			<SpawnOnCreation>1</SpawnOnCreation>
+		</EffectTrigger>
+	</TileDesign>	
+</TileDesigns>

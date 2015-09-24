@@ -1,0 +1,277 @@
+<AbilityBonuses>
+<AbilityBonus InternalName="ResistLightningAbility">
+        <AbilityBonusOption InternalName="ResistLightning">
+            <DisplayName>Resist Lightning</DisplayName>
+            <Description>Unit takes half damage from lightning</Description>
+            <Icon>Ability_ImmuneToLightning_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ResistLightning</StrVal>
+                <Value>50</Value>
+                <Provides>+50 Lightning Resist</Provides>
+            </GameModifier>
+            <CombatRating>10</CombatRating>
+            <IsCombatAbility>1</IsCombatAbility>
+            <Type>Defensive</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+<AbilityBonus InternalName="Spell_BlizzardAbility2">
+        <AbilityBonusOption InternalName="Spell_Blizzard2">
+            <DisplayName>Blizzard</DisplayName>
+            <Description>Allows the unit to cast Blizzard</Description>
+            <Icon>T_Blizzard_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Blizzard_Ability</StrVal>
+                <Provides>Assaults target foes with an ice storm, dealing 16 cold damage (+2 per water shard), per member, to affected unit.</Provides>
+            </GameModifier>
+            <CombatRating>50</CombatRating>
+            <IsCombatAbility>1</IsCombatAbility>
+            <Type>Spell</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+<AbilityBonus InternalName="AscensionAbility2">
+        <AbilityBonusOption InternalName="Nascent_Ascension">
+            <DisplayName>Nascent Ascension</DisplayName>
+            <Description>Allows the unit to cast Deathbind, Shatterspell</Description>
+            <Icon>RoundCrest_Pariden.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Purge_Magic_Ability</StrVal>
+		<Provides>Unlocks Shatterspell</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Mass_Graveseal</StrVal>
+		<Provides>Unlocks Deathbind</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Death_Mastery</StrVal>
+		<Provides>Unlocks Grip Of Death</Provides>
+            </GameModifier>
+			<GameModifier>
+				<ModType>Unit</ModType>
+				<Attribute>AdjustUnitStat</Attribute>
+				<StrVal>UnitStat_HitPoints</StrVal>
+				<Value>250</Value>
+			</GameModifier>
+			<GameModifier>
+				<ModType>Unit</ModType>
+				<Attribute>AdjustUnitStat</Attribute>
+				<StrVal>UnitStat_CombatSpeed</StrVal>
+				<Value>10</Value>
+			</GameModifier>
+			<GameModifier>
+				<ModType>Unit</ModType>
+				<Attribute>AdjustUnitStat</Attribute>
+				<StrVal>UnitStat_TacticalSpellManaCost_Multiplier</StrVal>
+				<Value>-1</Value>
+			</GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_SpellCastTimeModifier</StrVal>
+                <Value>-1</Value>
+                <Provides>-1 to Casting Times</Provides>
+            </GameModifier>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+    <AbilityBonus InternalName="Spell_MassSlowAbility">
+        <AbilityBonusOption InternalName="Spell_MassSlow">
+            <DisplayName>Mass Slow</DisplayName>
+            <Description>Allows the unit to cast Mass Slow</Description>
+            <Icon>T_Slow_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Mass_Slow_Ability</StrVal>
+                <Provides>All enemy units suffer -3 to Initiative (-1 per water shard) unless they resist</Provides>
+            </GameModifier>
+            <CombatRating>10</CombatRating>
+            <IsCombatAbility>1</IsCombatAbility>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+    <AbilityBonus InternalName="SummonDemonHordeAbility">
+        <AbilityBonusOption InternalName="SummonDemonicHorde">
+            <DisplayName>Summon Drednii Horde</DisplayName>
+            <Description>Summons a Mass of Drednii from Beyond</Description>
+            <Icon>Ability_SummonDeathDemon_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>SummonDemonicHorde</StrVal>
+                <Provides>Summon forth a force of Drednii to fight for you.</Provides>
+            </GameModifier>
+            <CombatRating>200</CombatRating>
+            <IsCombatAbility>1</IsCombatAbility>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+<AbilityBonus InternalName="AscensionAbility3">
+        <AbilityBonusOption InternalName="Nascent_Ascension2">
+            <DisplayName>Elemental's Blessing</DisplayName>
+            <Description>Unlocks Mastery spells</Description>
+            <Icon>RoundCrest_Pariden.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Purge_Magic_Ability</StrVal>
+		<Provides>Allows unit to cast Shatterspell</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>FireMastery2</StrVal>
+		<Provides>Allows unit to cast Wrath Of Flame</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>WaterMastery</StrVal>
+		<Provides>Allows unit to cast Artic Storm</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>AirMastery2</StrVal>
+		<Provides>Allows unit to cast Will Of Thunder</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>EarthMastery2</StrVal>
+		<Provides>Allows unit to cast Hide Of The Mountain</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>LifeMastery2</StrVal>
+		<Provides>Allows unit to cast Life Blessing</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Mass_Graveseal</StrVal>
+		<Provides>Allows unit to cast Deathbind</Provides>
+            </GameModifier>
+			<GameModifier>
+				<ModType>Unit</ModType>
+				<Attribute>AdjustUnitStat</Attribute>
+				<StrVal>UnitStat_HitPoints</StrVal>
+				<Value>250</Value>
+			</GameModifier>
+			<GameModifier>
+				<ModType>Unit</ModType>
+				<Attribute>AdjustUnitStat</Attribute>
+				<StrVal>UnitStat_CombatSpeed</StrVal>
+				<Value>10</Value>
+			</GameModifier>
+			<GameModifier>
+				<ModType>Unit</ModType>
+				<Attribute>AdjustUnitStat</Attribute>
+				<StrVal>UnitStat_TacticalSpellManaCost_Multiplier</StrVal>
+				<Value>-1</Value>
+			</GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_SpellCastTimeModifier</StrVal>
+                <Value>-1</Value>
+                <Provides>-1 to Casting Times</Provides>
+            </GameModifier>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+    <AbilityBonus InternalName="Spell_SoulSparkAbility2">
+        <AbilityBonusOption InternalName="SoulSpark2">
+            <DisplayName>Soul Spark</DisplayName>
+            <Description>Allows the unit to cast Soul Spark</Description>
+            <Icon>T_SoulSpark_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>SoulSPark2</StrVal>
+                <Provides>Does 2 (+1 per level) lightning damage to the victim.  This damage is multipled by the amount of units casting.</Provides>
+            </GameModifier>
+            <CombatRating>10</CombatRating>
+            <IsCombatAbility>1</IsCombatAbility>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+    <AbilityBonus InternalName="Trigger_ProtectionFromNature">
+        <AbilityBonusOption InternalName="Trigger_ProtectionFromNature">
+            <DisplayName>Protection From Nature</DisplayName>
+            <Description>+50 Fire, Cold, Lightning Resist to all allies</Description>
+            <Icon>S_NaturesCloak_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>BattleAutoCastSpell</Attribute>
+                <StrVal>ProtectionFromNature</StrVal>
+                <Value>100</Value>
+                <Provides>Triggered when combat begins</Provides>
+            </GameModifier>
+            <CombatRating>100</CombatRating>
+            <Type>Ability</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="ExpendedEssence">
+        <AbilityBonusOption InternalName="ExpendedEssence">
+            <DisplayName>Expended Essence</DisplayName>
+            <Description>-10% to Accuracy, Spell Mastery and Hit Points</Description>
+            <Icon>Ability_BrokenSpirit_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Accuracy</StrVal>
+                <Multiplier>0.9</Multiplier>
+                <Provides>-10% Accuracy</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MagicPower</StrVal>
+                <Multiplier>0.9</Multiplier>
+                <Provides>-10% Spell Mastery</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_HitPoints</StrVal>
+                <Multiplier>0.9</Multiplier>
+                <Provides>-10% Hit Points</Provides>
+            </GameModifier>
+            <Type>Weakness</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+</AbilityBonuses>

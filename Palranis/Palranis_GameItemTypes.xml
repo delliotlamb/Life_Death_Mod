@@ -1,0 +1,205 @@
+<GameItemTypes>
+
+	
+	<GameItemType InternalName="VictorySpear">
+        <DisplayName>Victory Spear</DisplayName>
+        <Description>Though useless now, this spear was used to savagely earn Palrani citizenship, and it reminds the bearer of the savagery that shall yet still be needed. </Description>
+        <Type>Accessory</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>0</AdditionalTrainingTurns>
+        <ShopValue>2</ShopValue>
+        <ProductionRequirement>
+            <Type>Resource</Type>
+            <Attribute>CombatTrials</Attribute>
+            <Value>2</Value>
+        </ProductionRequirement>		
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>			
+			<Provides>+1 Attack</Provides>
+			<Value>1</Value>
+        </GameModifier>			
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Accuracy</StrVal>
+			<Provides>+10 Accuracy</Provides>
+			<Value>10</Value>			
+        </GameModifier>			
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <IsUsable>0</IsUsable>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>OnlyTheStrong</Attribute>
+			<Target>Player</Target>
+        </Prereq>		
+            <AIData AIPersonality="AI_General">
+                <AIPriority>20</AIPriority>
+            </AIData>
+        <ArtDef>VictorySpear_ArtDef</ArtDef>
+        <GameItemTypeArtDef InternalName="VictorySpear_ArtDef">
+            <GameItemTypeModelPack InternalName="VictorySpear_Default">
+                <IconFile>Weapon_OakSpear1.png</IconFile>
+                <TintR>0</TintR>
+                <TintG>0</TintG>
+                <TintB>0</TintB>
+                <GameItemTypeModel>
+                </GameItemTypeModel>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+    </GameItemType>
+	
+	
+	<GameItemType InternalName="ArenaTwig">
+        <DisplayName>Pitfloor Twig</DisplayName>
+        <Description>This tattered splinter from a club or spear is the humble trophy of a citizenship hard won. It will keep the bearer's mind sharp when the chaos of combat tests it.</Description>
+        <Type>Accessory</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>0</AdditionalTrainingTurns>
+        <ShopValue>2</ShopValue>
+        <ProductionRequirement>
+            <Type>Resource</Type>
+            <Attribute>CombatTrials</Attribute>
+            <Value>2</Value>
+        </ProductionRequirement>		
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_MagicResist</StrVal>			
+			<Provides>+15 Spell Resist</Provides>
+			<Value>15</Value>
+        </GameModifier>				
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <IsUsable>0</IsUsable>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>OnlyTheStrong</Attribute>
+			<Target>Player</Target>
+        </Prereq>			
+            <AIData AIPersonality="AI_General">
+                <AIPriority>20</AIPriority>
+            </AIData>
+        <ArtDef>ArenaTwig_ArtDef</ArtDef>
+        <GameItemTypeArtDef InternalName="ArenaTwig_ArtDef">
+            <GameItemTypeModelPack InternalName="ArenaTwig_Default">
+                <IconFile>log2.png</IconFile>
+                <TintR>0</TintR>
+                <TintG>0</TintG>
+                <TintB>0</TintB>
+                <GameItemTypeModel>
+                </GameItemTypeModel>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+    </GameItemType>
+	
+	<GameItemType InternalName="PitRat">
+        <DisplayName>Pit Rat</DisplayName>
+        <Description>This crushed corpse was your first kill in the pit. Tasting its blood focused your bloodlust to make the second, and win your citizenship. Just because it now stinks of rot, is no reason to discard so memorable a token.</Description>
+        <Type>Accessory</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>0</AdditionalTrainingTurns>
+        <ShopValue>2</ShopValue>
+        <ProductionRequirement>
+            <Type>Resource</Type>
+            <Attribute>CombatTrials</Attribute>
+            <Value>3</Value>
+        </ProductionRequirement>		
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Pierce</StrVal>
+                <Multiplier>1.10</Multiplier>
+                <Provides>+10% Attack</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Defense_Pierce</StrVal>
+                <Multiplier>0.75</Multiplier>
+                <Provides>-25% Defense</Provides>
+            </GameModifier>			
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <IsUsable>0</IsUsable>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>OnlyTheStrong</Attribute>
+			<Target>Player</Target>
+        </Prereq>			
+            <AIData AIPersonality="AI_General">
+                <AIPriority>20</AIPriority>
+            </AIData>
+        <ArtDef>PitRat_ArtDef</ArtDef>
+        <GameItemTypeArtDef InternalName="PitRat_ArtDef">
+            <GameItemTypeModelPack InternalName="PitRat_Default">
+                <IconFile>DeadRat_Item.png</IconFile>
+                <TintR>0</TintR>
+                <TintG>0</TintG>
+                <TintB>0</TintB>
+                <GameItemTypeModel>
+                </GameItemTypeModel>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+    </GameItemType>
+	
+	<GameItemType InternalName="PitStone">
+        <DisplayName>Pit Stone</DisplayName>
+        <Description>This piece of stone broke from the pit's edge when your head struck it, but you still rose up again to win. It shall forever remind you  to fight through injury and pain.</Description>
+        <Type>Accessory</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>0</AdditionalTrainingTurns>
+        <ShopValue>2</ShopValue>
+        <ProductionRequirement>
+            <Type>Resource</Type>
+            <Attribute>CombatTrials</Attribute>
+            <Value>2</Value>
+        </ProductionRequirement>		
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Defense_Pierce</StrVal>
+                <Multiplier>1.10</Multiplier>
+                <Provides>+10% Defense</Provides>
+            </GameModifier>	
+			<GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_HitPoints</StrVal>
+                <Provides>+3 HP</Provides>
+				<Value>3</Value>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <IsUsable>0</IsUsable>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>OnlyTheStrong</Attribute>
+			<Target>Player</Target>
+        </Prereq>			
+            <AIData AIPersonality="AI_General">
+                <AIPriority>20</AIPriority>
+            </AIData>
+        <ArtDef>PitStone_ArtDef</ArtDef>
+        <GameItemTypeArtDef InternalName="PitStone_ArtDef">
+            <GameItemTypeModelPack InternalName="PitStone_Default">
+                <IconFile>K_City_Pavers_Slice.png</IconFile>
+                <TintR>0</TintR>
+                <TintG>0</TintG>
+                <TintB>0</TintB>
+                <GameItemTypeModel>
+                </GameItemTypeModel>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+    </GameItemType>
+	
+	
+	
+
+</GameItemTypes>

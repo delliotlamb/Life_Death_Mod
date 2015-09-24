@@ -1,0 +1,20 @@
+<RaceTypes>
+<RaceType InternalName="Race_Type_RedQuendar">
+		<DisplayName>Red Quendar</DisplayName>
+		<RaceClassification>Fallen</RaceClassification>
+		<UnitScale>1.0</UnitScale>
+		<UnitSkinColor>138,61,13</UnitSkinColor>
+		<UnitHairColor>200,200,200</UnitHairColor>
+		<MaleUnitType>Generic_Sovereign_RedQuendar_Male</MaleUnitType>
+		<FemaleUnitType>Generic_Sovereign_RedQuendar_Female</FemaleUnitType>
+		<GenericUnitType_Male>Generic_RedQuendar_Male</GenericUnitType_Male>
+		<GenericUnitType_Female>Generic_RedQuendar_Female</GenericUnitType_Female>
+        <TraderUnitType>TraderTest</TraderUnitType>
+        <StartingUnitType>Unit_Pioneer_RedQuendar</StartingUnitType>
+        <StartingUnitType>Unit_Catapult</StartingUnitType>
+        <StartingUnitType>Unit_Scout_RedQuendar</StartingUnitType>
+        <SageUnitType>Sage_RedQuendar</SageUnitType>
+        <ShopkeeperUnitType>Shopkeeper_RedQuendar</ShopkeeperUnitType>
+        <MusicTheme>AncientShadow</MusicTheme>
+	</RaceType>
+</RaceTypes>

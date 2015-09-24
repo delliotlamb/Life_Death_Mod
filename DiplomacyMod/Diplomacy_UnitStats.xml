@@ -1,0 +1,12 @@
+<PlayerAbilityTypes>
+
+<UnitStatType InternalName="UnitStat_IsAtDiplomat">
+	<DisplayName>Is At Diplomat</DisplayName>
+	<Description>Is this unit present with a Diplomatic Office?</Description>
+	<Icon>Icon_InfluencePoints.png</Icon>
+	<DefaultValue>0.0</DefaultValue>
+	<Hidden>1</Hidden>
+	<UnitStatGrouping>CombatStat</UnitStatGrouping>
+</UnitStatType>
+
+</PlayerAbilityTypes>

@@ -1,0 +1,36 @@
+
+<!-- 
+
+<Techs>
+    
+       
+    <TechDef InternalName="Quendar_Henchmen">
+        <DisplayName>Quendar Henchmen</DisplayName>
+        <Description>Charisma can attract bright talent. But so can tolerance and respect for races beyond just Men.</Description>
+        <AdviceText>The Quendar may have been born of Curgen's magic, but they survive as a people bound to honor. Why not ally with such an ethic?</AdviceText>
+        <Image>ObsidianLegion_Medallion.png</Image>
+        <Color>76,79,196</Color>
+        <HotColor>182,182,244</HotColor>
+        <Cost>19</Cost>
+        <Rarity>100</Rarity>
+        <Category>Magic</Category>
+        <Infinite>0</Infinite>
+        <AppearanceChance>100</AppearanceChance>
+        <Prereq>
+            <Type>Race</Type>
+            <Attribute>Race_Type_BlackMancers</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Sorcery</Attribute>
+        </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>50</AIPriority>
+                <AITradeToGetValue>75</AITradeToGetValue>
+                <AITradeOutValue>90</AITradeOutValue>
+                <AIAtWarMultiplier>3</AIAtWarMultiplier>
+                <AIEarlyBuildUpMultiplier>1</AIEarlyBuildUpMultiplier>
+            </AIData>
+    </TechDef>
+    
+</Techs>-->

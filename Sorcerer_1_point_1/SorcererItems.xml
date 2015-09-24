@@ -1,0 +1,214 @@
+<GameItemTypes>
+
+<GameItemType InternalName="Staff_Sorcerer">
+        <DisplayName>Sorcerer's Staff</DisplayName>
+        <Description>Only Sorcerers can use this staff. It calms the user's mind, focuses their thoughts, and even gives brief glimpses of the immediate future. In battle, it can deliver a tepid shock at range.</Description>
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>Staff</WeaponType>
+        <WeaponUpgradeType>Staff</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <CustomizationPointCost>1</CustomizationPointCost>
+        <ShopValue>100</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Lightning</StrVal>
+            <Value>6</Value>
+        </GameModifier>		
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>3</Value>
+        </GameModifier>		
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_DodgeAgainstRanged</StrVal>
+                <Value>20</Value>
+                <Provides>+20 Dodge Versus Ranged Attacks</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_SpellDamage</StrVal>
+                <Value>10</Value>
+                <Provides>+10% Spell Damage</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockRangedAction</Attribute>
+                <StrVal>BowAttack_Lightning</StrVal>
+                <Provides>Ranged attack</Provides>
+            </GameModifier>			
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>20</Likelihood>
+        <RarityDisplay>Uncommon</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_PathOfTheSorcerer</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_BLUNT</AIPrefType>
+            <AIPriority>125</AIPriority>
+        </AIData>
+        <ArtDef>Staff_Banishing_ArtDef</ArtDef>
+    </GameItemType>
+	
+	<GameItemType InternalName="Mana_Stone">
+        <DisplayName>Mana Stone</DisplayName>
+        <Description>A magical experiment has left mana solidified. Holding this stone confers strong magical energy to the holder.</Description>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <ShopValue>400</ShopValue>
+        <Type>Accessory</Type>		
+        <CanBeEquipped>1</CanBeEquipped>		
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_EnchantmentMaintenanceMultiplier</StrVal>
+            <Multiplier>.5</Multiplier>
+            <Provides>Enchantments on this unit cost only half the normal mana.</Provides>
+        </GameModifier>	
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>		
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <IsUsable>0</IsUsable>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>0</AIPriority>
+            </AIData>
+        <ArtDef>Mana_Stone_ArtDef</ArtDef>
+        <GameItemTypeArtDef InternalName="Mana_Stone_ArtDef">
+            <GameItemTypeModelPack InternalName="Mana_Stone_Default">
+                <IconFile>Item_X_Mana_Stone.png</IconFile>
+                <TintR>20</TintR>
+                <TintG>20</TintG>
+                <TintB>20</TintB>
+                <GameItemTypeModel>
+                </GameItemTypeModel>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>		
+    </GameItemType>
+	
+	
+
+	<GameItemType InternalName="Staff_Sorcerer2">
+        <DisplayName>Spell Lance</DisplayName>
+        <Description>Only Sorcerers can use this staff. It strikes with incredible magical power.</Description>
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>Spear</WeaponType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <CustomizationPointCost>1</CustomizationPointCost>
+        <ShopValue>400</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Lightning</StrVal>
+            <Value>20</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>12</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>3</Value>
+        </GameModifier>		
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_DodgeAgainstRanged</StrVal>
+                <Value>20</Value>
+                <Provides>+20 Dodge Versus Ranged Attacks</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_SpellDamage</StrVal>
+                <Value>25</Value>
+                <Provides>+25% Spell Damage</Provides>
+            </GameModifier>		
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_PathOfTheSorcerer</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_BLUNT</AIPrefType>
+            <AIPriority>125</AIPriority>
+        </AIData>
+        <ArtDef>Staff_Sorcerer2_ArtDef</ArtDef>
+       <GameItemTypeArtDef InternalName="Staff_Sorcerer2_ArtDef">
+            <GameItemTypeModelPack InternalName="Staff_Sorcerer2_Default">
+                <IconFile>W_Staff_Spellstaff_Icon_01.png</IconFile>
+                <TintR>0</TintR>
+                <TintG>0</TintG>
+                <TintB>0</TintB>
+                <AttackSFX>Hit_Pike_01</AttackSFX>
+                <AttackSFX>Hit_Pike_02</AttackSFX>
+                <AttackSFX>Hit_Pike_03</AttackSFX>
+                <EquipSFX>Equip_WoodenItem_01</EquipSFX>
+                <EquipSFX>Equip_WoodenItem_02</EquipSFX>
+                <EquipSFX>Equip_WoodenItem_03</EquipSFX>
+                <OnHitParticleName>Hit_Ice1</OnHitParticleName>
+                <SupportedUnitModelType>AmarianFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>AmarianMale</SupportedUnitModelType>
+                <SupportedUnitModelType>Banshee</SupportedUnitModelType>
+                <SupportedUnitModelType>DarklingMale</SupportedUnitModelType>
+                <SupportedUnitModelType>EmpireFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>EmpireMale</SupportedUnitModelType>
+                <SupportedUnitModelType>FallenFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>FallenMale</SupportedUnitModelType>
+                <SupportedUnitModelType>HenchmanMale</SupportedUnitModelType>
+                <SupportedUnitModelType>IroneerFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>IroneerMale</SupportedUnitModelType>
+                <SupportedUnitModelType>IronGolem</SupportedUnitModelType>
+                <SupportedUnitModelType>JuggernautMale</SupportedUnitModelType>
+                <SupportedUnitModelType>KingdomFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>KingdomMale</SupportedUnitModelType>
+                <SupportedUnitModelType>MancerFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>MancerMale</SupportedUnitModelType>
+                <SupportedUnitModelType>QuendarFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>QuendarMale</SupportedUnitModelType>
+                <SupportedUnitModelType>Skeleton</SupportedUnitModelType>
+                <SupportedUnitModelType>SlaveMale</SupportedUnitModelType>
+                <SupportedUnitModelType>TarthanFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>TarthanMale</SupportedUnitModelType>
+                <SupportedUnitModelType>UrxenFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>UrxenMale</SupportedUnitModelType>
+                <SupportedUnitModelType>WraithFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>WraithMale</SupportedUnitModelType>
+                <GameItemTypeModel>
+                    <ModelFile>gfx/hkb/weapons/w_spell_staff_mesh_01.hkb</ModelFile>
+                    <Texture_All>W_Club_Texture_01.png</Texture_All>
+                    <Attachment>hand_right_Lcf</Attachment>
+                    <Color_Clothing1>150, 29, 200</Color_Clothing1>
+                    <Color_Metal>84,78, 90</Color_Metal>
+        <EffectAttachment>
+            <Attachment>Effect_Loc_04</Attachment>
+            <EffectName>A_Spellstaff_Particle</EffectName>
+            <EffectPosition>0,0,-5</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.3</EffectScale>
+        </EffectAttachment>
+                </GameItemTypeModel>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>		
+    </GameItemType>
+
+    </GameItemTypes>

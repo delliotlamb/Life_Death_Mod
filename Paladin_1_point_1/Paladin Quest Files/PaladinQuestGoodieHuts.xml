@@ -1,0 +1,110 @@
+<GoodieHutTypes>
+    <GoodieHutType InternalName="GH_Quest_DarkWizard">
+        <Name>Dark Tower</Name>
+        <Description>No animals hunt these lands, no birds fly over.  An old tower stands sentry over the quiet land and somehow seems to be in shadow from every direction.</Description>
+        <Rarity>-1</Rarity>
+        <SpawnRating>0</SpawnRating>
+        <TileDesign>L_Champion_Empire_05</TileDesign>
+        <DrawnIcon>Artifact_ToppledCastle.dds</DrawnIcon>
+        <OnSelectSFX>Click_Tower</OnSelectSFX>
+        <EnvironmentType>DeadEnvironment</EnvironmentType>
+        <EnvironmentSpreadIntensity>5</EnvironmentSpreadIntensity>
+        <EnvironmentSpreadRadius>2</EnvironmentSpreadRadius>
+        <Medallions InternalName="">
+            <All>L_Champion_Empire_05.png</All>
+        </Medallions>
+    </GoodieHutType>
+
+<GoodieHutType InternalName="GH_Quest_StormDragonLair_Paladin">
+        <Name>Dragon Lair</Name>
+        <Description>Ash covers the land here, choking off any plant growth and portending the fate of any who tresspass here. Your sovereign must face whatever awaits totally alone!</Description>
+        <Rarity>-1</Rarity>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <SpawnRating>-1</SpawnRating>
+        <TileDesign>L_Dragon_Cave_01</TileDesign>
+        <DrawnIcon>Lair_Dragon.png</DrawnIcon>
+        <OnSelectSFX>Click_Dragon_Lair_Rocky</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>L_Dragon_Cave_01.png</All>
+        </Medallions>
+    </GoodieHutType>
+
+    <GoodieHutType InternalName="GH_Quest_SwampTree_Paladin">
+        <Name>Treacherous Bog</Name>
+        <Description>Here is a thick, flooded swamp. Within, one could easily be ambushed by the skath hunters who rule the marshes. Your sovereign must face whatever awaits totally alone!</Description>
+        <Rarity>-1</Rarity>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <SpawnRating>-1</SpawnRating>
+        <TileDesign>G_Great_Swamp_Tree_01</TileDesign>
+        <DrawnIcon>Treasure_GreatSwampTree.png</DrawnIcon>
+        <OnSelectSFX>Click_Swamp</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>G_Great_Swamp_Tree_01.png</All>
+        </Medallions>
+    </GoodieHutType>
+
+<GoodieHutType InternalName="GH_Quest_RavenousHarridan_Paladin">
+        <Name>Cobwebbed Ruin</Name>
+        <Description>The house, somehow, still stands in the waste, perhaps because of the finger thick webs covering its every surface. Your sovereign must face whatever awaits totally alone!</Description>
+        <Rarity>-1</Rarity>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <SpawnRating>-1</SpawnRating>
+        <TileDesign>L_Giant_Blackwidow_01</TileDesign>
+        <DrawnIcon>Lair_Widow.png</DrawnIcon>
+        <OnSelectSFX>Click_Rat_Nest</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>L_Giant_Blackwidow_01.png</All>
+        </Medallions>
+    </GoodieHutType>
+
+<GoodieHutType InternalName="Woodedgrounds_Paladin">
+	<Name>Fledgling forest</Name>
+	<Description>Trees have begun to grow here - they are just tall enough for a skillful hunter to feast upon the small animals that are drawn here. Your sovereign must face whatever awaits totally alone!</Description>
+	<Rarity>-1</Rarity>
+	<BarredTerrain>River</BarredTerrain>
+	<PreferredTerrain>Category:Land</PreferredTerrain>
+	<SpawnRating>0</SpawnRating>
+        <TileDesign>G_WolfPack_01</TileDesign>
+        <DrawnIcon>Lair_Warg.png</DrawnIcon>
+        <OnSelectSFX>Click_Forest_Wolf</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>G_WolfPack_01.png</All>
+        </Medallions>
+    </GoodieHutType>		
+
+<GoodieHutType InternalName="GH_Quest_BoarPaladin">
+        <Name>Wastes</Name>
+        <Description>Nothing farmable grows here, no water trickles. Only the hardiest of creatures could subsist in this terrain. Your sovereign must face whatever awaits totally alone!</Description>
+        <Rarity>-1</Rarity>
+        <MinDistanceFromStartingPoints>6</MinDistanceFromStartingPoints>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <SpawnRating>0</SpawnRating>
+        <TileDesign>L_Sand_Golem_01</TileDesign>
+        <DrawnIcon>Lair_Golem.png</DrawnIcon>
+        <OnSelectSFX>Click_Cave_Sand</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>L_Sand_Golem_01.png</All>
+        </Medallions>
+    </GoodieHutType>
+	
+	<GoodieHutType InternalName="GH_Paladin_WhiteWarg">
+        <Name>Swamp</Name>
+        <Description>The swamps buzz with life, and hidden secrets. Your sovereign must face whatever awaits totally alone!</Description>
+        <Rarity>-1</Rarity>
+        <MinDistanceFromStartingPoints>6</MinDistanceFromStartingPoints>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>SwampTerrain</PreferredTerrain>
+        <SpawnRating>0</SpawnRating>
+        <TileDesign>G_Great_Swamp_Tree_WithChest_01</TileDesign>
+        <DrawnIcon>Treasure_GreatSwampTree.png</DrawnIcon>
+        <OnSelectSFX>Click_Swamp</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>G_Great_Swamp_Tree_01.png</All>
+        </Medallions>
+    </GoodieHutType>
+
+</GoodieHutTypes>

@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<Container>
+  <AbilityBonus InternalName="UnitStat_BG_abilityspecials">
+    <AbilityBonusOption InternalName="UnitStat_BG_IsGodAbility">
+      <DisplayName>God</DisplayName>
+      <Description>This unit is a God.</Description>
+      <Icon>Ability_Regalia_Icon.png</Icon>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_IsGod</StrVal>
+        <Provides>This unit counts as a God</Provides>
+        <Value>1</Value>
+      </GameModifier>
+      <HideWhenUpgraded>1</HideWhenUpgraded>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="UnitStat_BG_abilityspecials2">
+    <AbilityBonusOption InternalName="UnitStat_BG_IsSummonedAbility">
+      <DisplayName>Summoned</DisplayName>
+      <Description>This unit was summoned.</Description>
+      <Icon>Ability_StaticBlast_Icon.png</Icon>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_IsSummoned</StrVal>
+        <Provides>This unit counts as Summoned</Provides>
+        <Value>1</Value>
+      </GameModifier>
+      <HideWhenUpgraded>1</HideWhenUpgraded>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="UnitStat_BG_abilityspecials3">
+    <AbilityBonusOption InternalName="UnitStat_BG_IsMilitiaAbility">
+      <DisplayName>Militia</DisplayName>
+      <Description>This unit is Militia.</Description>
+      <Icon>Ability_FreePopulation_Icon.png</Icon>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_IsMilitia</StrVal>
+        <Provides>This unit counts as a Militia</Provides>
+        <Value>1</Value>
+      </GameModifier>
+      <HideWhenUpgraded>1</HideWhenUpgraded>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="UnitStat_BG_abilityspecials4">
+    <AbilityBonusOption InternalName="UnitStat_BG_IsNotAliveAbility">
+      <DisplayName>Not Alive</DisplayName>
+      <Description>This unit not alive.</Description>
+      <Icon>Plain_Ability_Icon.png</Icon>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_IsNotAlive</StrVal>
+        <Provides>This unit counts as Not Alive</Provides>
+        <Value>1</Value>
+      </GameModifier>
+      <HideWhenUpgraded>1</HideWhenUpgraded>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="UnitStat_BG_abilityspecials5">
+    <AbilityBonusOption InternalName="UnitStat_BG_IsImmortalAbility">
+      <DisplayName>Immortal</DisplayName>
+      <Description>This unit will never die of old age and counts as Immortal.</Description>
+      <Icon>Ability_CurseOfCyndrum_Icon.png</Icon>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_IsImmortal</StrVal>
+        <Provides>This unit counts as Immortal</Provides>
+        <Value>1</Value>
+      </GameModifier>
+      <HideWhenUpgraded>1</HideWhenUpgraded>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="UnitStat_BG_abilityspecials6">
+    <AbilityBonusOption InternalName="UnitStat_BG_IsOversizedAbility">
+      <DisplayName>Oversized</DisplayName>
+      <Description>This unit is significantly larger than a mounted knight and counts as Oversized.</Description>
+      <Icon>Ability_Defensive_Icon.png</Icon>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_IsOversized</StrVal>
+        <Value>1</Value>
+        <Provides>Unit counts as Oversized</Provides>
+      </GameModifier>
+      <HideWhenUpgraded>1</HideWhenUpgraded>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="UnitStat_BG_abilityspecials7">
+    <AbilityBonusOption InternalName="UnitStat_BG_IsDemonAbility">
+      <DisplayName>Demon</DisplayName>
+      <Description>This unit counts as Demon</Description>
+      <Icon>Ability_SummonDeathDemon_Icon.png</Icon>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_IsDemon</StrVal>
+        <Value>1</Value>
+        <Provides>Unit counts as Demon</Provides>
+      </GameModifier>
+      <HideWhenUpgraded>1</HideWhenUpgraded>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="UnitStat_BG_abilityspecials8">
+    <AbilityBonusOption InternalName="UnitStat_BG_IsFlyingAbility">
+      <DisplayName>Flying</DisplayName>
+      <Description>This unit is capable of flight and counts as Flying</Description>
+      <Icon>Ability_GuardianI_Icon.png</Icon>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_IsFlying</StrVal>
+        <Value>1</Value>
+        <Provides>This unit is capable of flight and counts as Flying</Provides>
+      </GameModifier>
+      <HideWhenUpgraded>1</HideWhenUpgraded>
+    </AbilityBonusOption>
+  </AbilityBonus>
+</Container>

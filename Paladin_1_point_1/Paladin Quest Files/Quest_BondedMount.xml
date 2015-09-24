@@ -1,0 +1,1121 @@
+<Quests>
+
+
+    <QuestDef InternalName="Quest_BondedMount">
+        <DisplayName>The Bound Brother</DisplayName>
+        <Description>This is a graveyard - empty of any life. But spirits gather here, drawn by the flux between life and death. Your spell has drawn you and your bonded mount together by this crossroads of spirits. One of them will guide you to your bound animal brother. The rest, however, may have other intentions.
+
+If you persist, you might awaken and confront spirits of terrible power. Should you continue?
+</Description>
+        <IsStartingPointQuest>0</IsStartingPointQuest>
+        <AllowQuestRejection>1</AllowQuestRejection>
+        <ShortTextAccept>I will not yield.</ShortTextAccept>
+        <ShortTextDeny>I cannot risk this.</ShortTextDeny>
+        <QuestClass>Minor</QuestClass>
+        <Repeatable>0</Repeatable>
+        <TriggerType>QuestLocation</TriggerType>
+        <TriggerOrigin>EventLocation</TriggerOrigin>
+        <SpawnRating>3</SpawnRating>
+		<TriggerChance>0</TriggerChance>		
+        <AICanGoOnQuest>0</AICanGoOnQuest>
+        <Image>G_Graveyard_01.png</Image>
+        <PrefQuestLoc>QuestLoc_Graveyard_Paladin</PrefQuestLoc>
+	<Treasure>
+            <GameModifier InternalName="Reward1">
+                <ModType>Unit</ModType>
+                <Attribute>GiveExperience</Attribute>
+                <Value>200</Value>
+            </GameModifier>
+	</Treasure>
+        <QuestObjectiveDef>
+            <ObjectiveID>0</ObjectiveID>
+            <NextObjectiveID>1</NextObjectiveID>
+            <ChoiceText>You step forward, and a banshee form coalesces before you. You reach for your weapon, but it does not attack.
+
+"I was like you, once. I used the arcane to empower my thirst for ordering the world. But there can be no lasting justice, as there can be no enduring power, or persisting life."
+</ChoiceText>
+            <ChoiceMedallion>M_Banshee_Card_01.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>You may be correct, spirit, but I must strive on nontheless.</Description>
+                <NextObjectiveID>1</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>Impede me no further, and silence your words of despair!</Description>
+                <NextObjectiveID>1</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>G-g-ghosts are s-s-scary! (abandon quest)</Description>
+                <NextObjectiveID>-1</NextObjectiveID>
+		<QuestFailure>1</QuestFailure>
+            </QuestChoiceDef>
+</QuestObjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>1</ObjectiveID>
+            <NextObjectiveID>2</NextObjectiveID>
+            <ChoiceText>"Very well. We shall see what fate you weave, before you join us in the beyond."
+
+The banshee fades, but it speaks again:
+
+"Some of the spirits here are connected to living creatures, not the dead - creatures that might be bound to you. But what kind of spirit are you, channeler, that you would bind yourself to another?"
+</ChoiceText>
+            <ChoiceMedallion>M_Banshee_Card_01.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>I am a wild wanderer. I hunt to survive, and relish the thrill.</Description>
+                <NextObjectiveID>6</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>I am furious, and untamed. But when my will is focused, I am mighty.</Description>
+                <NextObjectiveID>4</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>I am temperant. I strive on despite weariness and difficulty, and thus I can complete journeys some would call impossible.</Description>
+                <NextObjectiveID>3</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>(more choices)</Description>
+                <NextObjectiveID>2</NextObjectiveID>
+            </QuestChoiceDef>
+</QuestObjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>2</ObjectiveID>
+            <NextObjectiveID>3</NextObjectiveID>
+            <ChoiceText>"What kind of spirit are you?"
+</ChoiceText>
+            <ChoiceMedallion>M_Banshee_Card_01.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>I am meticulous. I plan, and watch before acting with terrible and decisive results.</Description>
+                <NextObjectiveID>8</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>I am primeval, and strong. I patiently await for when my foes are neediest and thus distracted, and then strike at their soft throats.</Description>
+                <NextObjectiveID>10</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>I am a detached spirit that watches the world from afar. But when evil concentrates, I must act.</Description>
+                <NextObjectiveID>12</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>(previous choices)</Description>
+                <NextObjectiveID>1</NextObjectiveID>
+            </QuestChoiceDef>
+</QuestObjectiveDef>
+
+
+//war horse no fight
+
+        <QuestObjectiveDef>
+            <ObjectiveID>3</ObjectiveID>
+            <NextObjectiveID>14</NextObjectiveID>
+            <Description>Find the spirit that draws you to binding.</Description>
+            <Treasure>
+                <GameModifier>
+                    <ModType>Map</ModType>
+                    <Attribute>CreateGoodieHut</Attribute>
+                    <StrVal>Sands</StrVal>
+                    <Unitclass>GH_Quest_BoarPaladin</Unitclass>
+                    <Radius>2</Radius>
+                </GameModifier>
+            </Treasure>
+            <QuestConditionDef>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Find the spirit that draws you to binding.</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Success</Class>
+                <Type>ClearGoodieHut</Type>
+                <TextData>GH_Quest_BoarPaladin</TextData>
+                <Flag>RevealTarget</Flag>
+            </QuestConditionDef>
+            <ChoiceText>A beautiful mare approaches you, and snorts. For some time, you stare at one another, an understanding growing between you. It is as if a psychic connection is forming between you.
+
+You mount the horse, and it resists at first, testing you. But soon you are comfortable upon it, and it accepts you as its rider.
+
+Your have found your bound animal brother.
+</ChoiceText>
+            <ChoiceMedallion>Res_Horses_Plains.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>My quest is complete.</Description>
+                <NextObjectiveID>14</NextObjectiveID>
+        <Treasure>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <Attribute>Warhorse_Paladin</Attribute>
+            </GameModifier>
+        </Treasure>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+//war boar fight
+
+<QuestObjectiveDef>
+            <ObjectiveID>4</ObjectiveID>
+            <NextObjectiveID>5</NextObjectiveID>
+            <Description>Find the spirit that draws you to binding.</Description>
+            <Treasure>
+                <GameModifier>
+                    <ModType>Map</ModType>
+                    <Attribute>CreateGoodieHut</Attribute>
+                    <StrVal>Sands</StrVal>
+                    <Unitclass>GH_Quest_BoarPaladin</Unitclass>
+                    <Radius>2</Radius>
+                </GameModifier>
+            </Treasure>
+            <QuestConditionDef>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Find the spirit that draws you.</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Success</Class>
+                <Type>ClearGoodieHut</Type>
+                <TextData>GH_Quest_BoarPaladin</TextData>
+                <Flag>RevealTarget</Flag>
+            </QuestConditionDef>
+            <ChoiceText>You arrive, seeing only salted clay baked by an unforgiving sun.
+
+And then it appears, charging towards you. It is a great War Boar, singular in purpose: if you two are to be bound, then you must defeat it - alone!
+</ChoiceText>
+            <ChoiceMedallion>Boar_Medallion.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>I shall prove who is master.</Description>
+                <NextObjectiveID>5</NextObjectiveID>
+                <Encounter>
+                    <Liklihood>100</Liklihood>
+                    <BattleIdentifier>WarBoar</BattleIdentifier>
+                    <ForceLeaderOnly>1</ForceLeaderOnly>
+                    <TacticalMap>T_Ruins_Barren_01</TacticalMap>
+                    <WillRespawn>0</WillRespawn>
+                    <WanderingRadius>0</WanderingRadius>
+                    <UnitInstance>
+                        <UnitType>WarBoar_Paladin</UnitType>
+                        <Level>6</Level>
+                    </UnitInstance>
+                </Encounter>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>5</ObjectiveID>
+            <NextObjectiveID>14</NextObjectiveID>
+            <PopupObjectiveMsg>0</PopupObjectiveMsg>
+            <QuestConditionDef>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Defeat the War Boar.</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Success</Class>
+                <Type>BattleFinished</Type>
+                <TextData>WarBoar</TextData>
+                <MoreTextData>Victory</MoreTextData>
+            </QuestConditionDef>
+            <ChoiceText>The mighty boar falls, exhausted and incapacitated. You stand over it, and stare into its eyes.
+
+It understands now, that you are worthy of being master. You take your place upon its back, and the bond between you is complete.
+</ChoiceText>
+            <ChoiceMedallion>Boar_Medallion.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_01.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>I ride onward!</Description>
+                <NextObjectiveID>14</NextObjectiveID>
+        <Treasure>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <Attribute>WarBoarMount_Paladin</Attribute>
+            </GameModifier>
+        </Treasure>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+//warg fight
+
+<QuestObjectiveDef>
+            <ObjectiveID>6</ObjectiveID>
+            <NextObjectiveID>7</NextObjectiveID>
+            <Description>Find the spirit that draws you to binding.</Description>
+            <Treasure>
+                <GameModifier>
+                    <ModType>Map</ModType>
+                    <Attribute>CreateGoodieHut</Attribute>
+                    <StrVal>Wooded Grounds</StrVal>
+                    <Unitclass>Woodedgrounds_Paladin</Unitclass>
+                    <Radius>2</Radius>
+                </GameModifier>
+            </Treasure>
+            <QuestConditionDef>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Find the spirit that draws you.</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Success</Class>
+                <Type>ClearGoodieHut</Type>
+                <TextData>Woodedgrounds_Paladin</TextData>
+                <Flag>RevealTarget</Flag>
+            </QuestConditionDef>
+            <ChoiceText>You arrive, hearing only silence among the trees. Too much silence - there is no breeze, no sound of birds. You feel that you are being stalked by a skilled hunter.
+
+And then it appears, lunging forward with teeth. It is a Warg, singular in purpose: if you two are to be bound, then you must defeat it - alone!
+</ChoiceText>
+            <ChoiceMedallion>Creature_Ebbenwolf1.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>I shall prove who is master.</Description>
+                <NextObjectiveID>7</NextObjectiveID>
+                <Encounter>
+                    <Liklihood>100</Liklihood>
+                    <BattleIdentifier>TimberWarg</BattleIdentifier>
+                    <ForceLeaderOnly>1</ForceLeaderOnly>
+                    <TacticalMap>T_Ruins_Barren_01</TacticalMap>
+                    <WillRespawn>0</WillRespawn>
+                    <WanderingRadius>0</WanderingRadius>
+                    <UnitInstance>
+                        <UnitType>TimberWarg_Paladin</UnitType>
+                        <Level>6</Level>
+                    </UnitInstance>
+                </Encounter>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>7</ObjectiveID>
+            <NextObjectiveID>14</NextObjectiveID>
+            <PopupObjectiveMsg>0</PopupObjectiveMsg>
+            <QuestConditionDef>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Defeat the Warg.</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Success</Class>
+                <Type>BattleFinished</Type>
+                <TextData>TimberWarg</TextData>
+                <MoreTextData>Victory</MoreTextData>
+            </QuestConditionDef>
+            <ChoiceText>The warg falls, exhausted and incapacitated. You stand over it, and stare into its eyes.
+
+It understands now, that you are worthy of being master. You take your place upon its back, and the bond between you is complete.
+</ChoiceText>
+            <ChoiceMedallion>Creature_Ebbenwolf1.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_01.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>I ride onward!</Description>
+                <NextObjectiveID>14</NextObjectiveID>
+        <Treasure>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <Attribute>WargMount_Paladin</Attribute>
+            </GameModifier>
+        </Treasure>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+
+//harridan fight
+
+<QuestObjectiveDef>
+            <ObjectiveID>8</ObjectiveID>
+            <NextObjectiveID>9</NextObjectiveID>
+            <Description>Find the spirit that draws you to binding.</Description>
+            <Treasure>
+                <GameModifier>
+                    <ModType>Map</ModType>
+                    <Attribute>CreateGoodieHut</Attribute>
+                    <StrVal>Sand Golem Lair</StrVal>
+                    <Unitclass>GH_Quest_RavenousHarridan_Paladin</Unitclass>
+                    <Radius>2</Radius>
+                </GameModifier>
+            </Treasure>
+            <QuestConditionDef>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Find the spirit that draws you.</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Success</Class>
+                <Type>ClearGoodieHut</Type>
+                <TextData>GH_Quest_RavenousHarridan_Paladin</TextData>
+                <Flag>RevealTarget</Flag>
+            </QuestConditionDef>
+            <ChoiceText>You arrive at an old farmhouse, wrapped in old webs. How many living things have jad their vitality sucked from them, while trapped by those webs?
+
+There is no time for reflection - the monstrosity skitters out from the house with deadly, inhuman grace. It senses your presence, and will not tolerate submission to a prey-thing. It is a giant black widow, singular in purpose: if you two are to be bound, then you must defeat it - alone!
+</ChoiceText>
+            <ChoiceMedallion>M_SpiderQueen_Card_01.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>I shall prove who is master.</Description>
+                <NextObjectiveID>9</NextObjectiveID>
+                <Encounter>
+                    <Liklihood>100</Liklihood>
+                    <BattleIdentifier>Harridan</BattleIdentifier>
+                    <ForceLeaderOnly>1</ForceLeaderOnly>
+                    <TacticalMap>T_Ruins_Barren_01</TacticalMap>
+                    <WillRespawn>0</WillRespawn>
+                    <WanderingRadius>0</WanderingRadius>
+                    <UnitInstance>
+                        <UnitType>RavenousHarridan_Paladin</UnitType>
+                        <Level>6</Level>
+                    </UnitInstance>
+                </Encounter>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>9</ObjectiveID>
+            <NextObjectiveID>14</NextObjectiveID>
+            <PopupObjectiveMsg>0</PopupObjectiveMsg>
+            <QuestConditionDef>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Defeat the Spider.</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Success</Class>
+                <Type>BattleFinished</Type>
+                <TextData>Harridan</TextData>
+                <MoreTextData>Victory</MoreTextData>
+            </QuestConditionDef>
+            <ChoiceText>The great spider falls, exhausted and incapacitated. You stand over it, and stare into its many eyes.
+
+It understands now, that you are worthy of being master. You take your place upon its back, and the bond between you is complete.
+</ChoiceText>
+            <ChoiceMedallion>M_SpiderQueen_Card_01.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_01.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>I ride onward!</Description>
+                <NextObjectiveID>14</NextObjectiveID>
+        <Treasure>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <Attribute>Mount_RavenousHarridan_Paladin</Attribute>
+            </GameModifier>
+        </Treasure>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+<!-- skath fight -->
+
+<QuestObjectiveDef>
+            <ObjectiveID>10</ObjectiveID>
+            <NextObjectiveID>11</NextObjectiveID>
+            <Description>Find the spirit that draws you to binding.</Description>
+            <Treasure>
+                <GameModifier>
+                    <ModType>Map</ModType>
+                    <Attribute>CreateGoodieHut</Attribute>
+                    <StrVal>Swampy Domain</StrVal>
+                    <Unitclass>GH_Quest_SwampTree_Paladin</Unitclass>
+                    <Radius>2</Radius>
+                </GameModifier>
+            </Treasure>
+            <QuestConditionDef>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Find the spirit that draws you.</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Success</Class>
+                <Type>ClearGoodieHut</Type>
+                <TextData>GH_Quest_SwampTree_Paladin</TextData>
+                <Flag>RevealTarget</Flag>
+            </QuestConditionDef>
+            <ChoiceText>You arrive, hearing the cacophony of insects that fills the swamps. This is a place where old, reptilian masters rule the food chain.
+
+It lunges from the murk below without warning - but you felt its malice just in time to leap back. Staring at you with reptilian hunger is a mire skath, singular in purpose: if you two are to be bound, then you must defeat it - alone!
+</ChoiceText>
+            <ChoiceMedallion>Dungeon_Swamp2.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>I shall prove who is master.</Description>
+                <NextObjectiveID>11</NextObjectiveID>
+                <Encounter>
+                    <Liklihood>100</Liklihood>
+                    <BattleIdentifier>MireSkath</BattleIdentifier>
+                    <ForceLeaderOnly>1</ForceLeaderOnly>
+                    <TacticalMap>T_Ruins_Barren_01</TacticalMap>
+                    <WillRespawn>0</WillRespawn>
+                    <WanderingRadius>0</WanderingRadius>
+                    <UnitInstance>
+                        <UnitType>MireSkath_Paladin</UnitType>
+                        <Level>6</Level>
+                    </UnitInstance>
+                </Encounter>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>11</ObjectiveID>
+            <NextObjectiveID>14</NextObjectiveID>
+            <PopupObjectiveMsg>0</PopupObjectiveMsg>
+            <QuestConditionDef>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Defeat the Skath.</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Success</Class>
+                <Type>BattleFinished</Type>
+                <TextData>MireSkath</TextData>
+                <MoreTextData>Victory</MoreTextData>
+            </QuestConditionDef>
+            <ChoiceText>The skath falls, exhausted and incapacitated. You stand over it, and stare into its eyes.
+
+It understands now, that you are worthy of being master. You take your place upon its back, and the bond between you is complete.
+</ChoiceText>
+            <ChoiceMedallion>M_Warg_SiltSkath_Card_01.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_01.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>I ride onward!</Description>
+                <NextObjectiveID>14</NextObjectiveID>
+        <Treasure>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <Attribute>Mount_MireSkath_Paladin</Attribute>
+            </GameModifier>
+        </Treasure>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+<!-- Spirit Warg -->
+
+<QuestObjectiveDef>
+            <ObjectiveID>12</ObjectiveID>
+            <NextObjectiveID>13</NextObjectiveID>
+            <Description>Find the spirit that draws you to binding.</Description>
+            <Treasure>
+                <GameModifier>
+                    <ModType>Map</ModType>
+                    <Attribute>CreateGoodieHut</Attribute>
+                    <StrVal>Swamp</StrVal>
+                    <Unitclass>GH_Paladin_WhiteWarg</Unitclass>
+                    <Radius>2</Radius>
+                </GameModifier>
+            </Treasure>
+            <QuestConditionDef>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Find the spirit that draws you.</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Success</Class>
+                <Type>ClearGoodieHut</Type>
+                <TextData>GH_Paladin_WhiteWarg</TextData>
+                <Flag>RevealTarget</Flag>
+            </QuestConditionDef>
+            <ChoiceText>You arrive at the swamp. A shape of dancing light comes forth from behind a wall of vines. 
+			
+			"I have watched the world from afar for so long. Let me bind to you, and we shall protect the small and weak things of the world."
+			
+			The shape transforms, becoming white as a cloud on a clear day, its body held up by four strong agile legs. 
+</ChoiceText>
+            <ChoiceMedallion>Wisp_Medallion.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>I ride onward!</Description>
+                <NextObjectiveID>14</NextObjectiveID>
+        <Treasure>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <Attribute>SpiritWargMount</Attribute>
+            </GameModifier>
+        </Treasure>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+//final objectiveID
+
+        <QuestObjectiveDef>
+            <ObjectiveID>14</ObjectiveID>
+            <QuestEnd>1</QuestEnd>
+        </QuestObjectiveDef>
+</QuestDef>
+
+    <QuestDef InternalName="Quest_BondedMount_Empire">
+        <DisplayName>The Bound Brother</DisplayName>
+        <Description>This is a graveyard - empty of any life. But spirits gather here, drawn by the flux between life and death. Your spell has drawn you and your bonded mount together by this crossroads of spirits. One of them will guide you to your bound animal brother. The rest, however, may have other intentions.
+
+If you persist, you might awaken and confront spirits of terrible power. Should you continue?
+</Description>
+        <IsStartingPointQuest>0</IsStartingPointQuest>
+        <AllowQuestRejection>1</AllowQuestRejection>
+        <ShortTextAccept>I will not yield.</ShortTextAccept>
+        <ShortTextDeny>I cannot risk this.</ShortTextDeny>
+        <QuestClass>Minor</QuestClass>
+        <Repeatable>0</Repeatable>
+        <TriggerType>QuestLocation</TriggerType>
+        <TriggerOrigin>EventLocation</TriggerOrigin>
+        <SpawnRating>3</SpawnRating>
+		<TriggerChance>0</TriggerChance>		
+        <AICanGoOnQuest>0</AICanGoOnQuest>
+        <Image>G_Graveyard_01.png</Image>
+        <PrefQuestLoc>QuestLoc_Graveyard_Paladin</PrefQuestLoc>
+	<Treasure>
+            <GameModifier InternalName="Reward1">
+                <ModType>Unit</ModType>
+                <Attribute>GiveExperience</Attribute>
+                <Value>200</Value>
+            </GameModifier>
+	</Treasure>
+
+        <QuestObjectiveDef>
+            <ObjectiveID>0</ObjectiveID>
+            <NextObjectiveID>1</NextObjectiveID>
+            <ChoiceText>You step forward, and a banshee form coalesces before you. You reach for your weapon, but it does not attack.
+
+"I was like you, once. I used the arcane to empower my thirst for ordering the world. But there can be no lasting justice, as there can be no enduring power, or persisting life."
+</ChoiceText>
+            <ChoiceMedallion>M_Banshee_Card_01.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>You may be correct, spirit, but I must strive on nontheless.</Description>
+                <NextObjectiveID>1</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>Impede me no further, and silence your words of despair!</Description>
+                <NextObjectiveID>1</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>G-g-ghosts are s-s-scary! (abandon quest)</Description>
+                <NextObjectiveID>-1</NextObjectiveID>
+		<QuestFailure>1</QuestFailure>
+            </QuestChoiceDef>
+</QuestObjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>1</ObjectiveID>
+            <NextObjectiveID>2</NextObjectiveID>
+            <ChoiceText>"Very well. We shall see what fate you weave, before you join us in the beyond."
+
+The banshee fades, but it speaks again:
+
+"Some of the spirits here are connected to living creatures, not the dead - creatures that might be bound to you. But what kind of spirit are you, channeler, that you would bind yourself to another?"
+</ChoiceText>
+            <ChoiceMedallion>M_Banshee_Card_01.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>I am a wild wanderer. I hunt to survive, and relish the thrill.</Description>
+                <NextObjectiveID>6</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>I am furious, and untamed. But when my will is focused, I am mighty.</Description>
+                <NextObjectiveID>4</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>I am temperant. I strive on despite weariness and difficulty, and thus I can complete journeys some would call impossible.</Description>
+                <NextObjectiveID>3</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>(more choices)</Description>
+                <NextObjectiveID>2</NextObjectiveID>
+            </QuestChoiceDef>
+</QuestObjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>2</ObjectiveID>
+            <NextObjectiveID>3</NextObjectiveID>
+            <ChoiceText>"What kind of spirit are you?"
+</ChoiceText>
+            <ChoiceMedallion>M_Banshee_Card_01.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>I am meticulous. I plan, and watch before acting with terrible and decisive results.</Description>
+                <NextObjectiveID>8</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>I am primeval, and strong. I patiently await for when my foes are neediest and thus distracted, and then strike at their soft throats.</Description>
+                <NextObjectiveID>10</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>I am ancient, and powerful beyond men or fallen. I will not be bound to any other being!</Description>
+                <NextObjectiveID>12</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>(previous choices)</Description>
+                <NextObjectiveID>1</NextObjectiveID>
+            </QuestChoiceDef>
+</QuestObjectiveDef>
+
+
+//war horse no fight
+
+        <QuestObjectiveDef>
+            <ObjectiveID>3</ObjectiveID>
+            <NextObjectiveID>14</NextObjectiveID>
+            <Description>Find the spirit that draws you to binding.</Description>
+            <Treasure>
+                <GameModifier>
+                    <ModType>Map</ModType>
+                    <Attribute>CreateGoodieHut</Attribute>
+                    <StrVal>Sands</StrVal>
+                    <Unitclass>GH_Quest_BoarPaladin</Unitclass>
+                    <Radius>2</Radius>
+                </GameModifier>
+            </Treasure>
+            <QuestConditionDef>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Find the spirit that draws you to binding.</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Success</Class>
+                <Type>ClearGoodieHut</Type>
+                <TextData>GH_Quest_BoarPaladin</TextData>
+                <Flag>RevealTarget</Flag>
+            </QuestConditionDef>
+            <ChoiceText>A beautiful mare approaches you, and snorts. For some time, you stare at one another, an understanding growing between you. It is as if a psychic connection is forming between you.
+
+You mount the horse, and it resists at first, testing you. But soon you are comfortable upon it, and it accepts you as its rider.
+
+Your have found your bound animal brother.
+</ChoiceText>
+            <ChoiceMedallion>Res_Horses_Plains.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>My quest is complete.</Description>
+                <NextObjectiveID>14</NextObjectiveID>
+        <Treasure>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <Attribute>Warhorse_Paladin</Attribute>
+            </GameModifier>
+        </Treasure>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+//war boar fight
+
+<QuestObjectiveDef>
+            <ObjectiveID>4</ObjectiveID>
+            <NextObjectiveID>5</NextObjectiveID>
+            <Description>Find the spirit that draws you to binding.</Description>
+            <Treasure>
+                <GameModifier>
+                    <ModType>Map</ModType>
+                    <Attribute>CreateGoodieHut</Attribute>
+                    <StrVal>Sands</StrVal>
+                    <Unitclass>GH_Quest_BoarPaladin</Unitclass>
+                    <Radius>2</Radius>
+                </GameModifier>
+            </Treasure>
+            <QuestConditionDef>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Find the spirit that draws you.</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Success</Class>
+                <Type>ClearGoodieHut</Type>
+                <TextData>GH_Quest_BoarPaladin</TextData>
+                <Flag>RevealTarget</Flag>
+            </QuestConditionDef>
+            <ChoiceText>You arrive, seeing only salted clay baked by an unforgiving sun.
+
+And then it appears, charging towards you. It is a great War Boar, singular in purpose: if you two are to be bound, then you must defeat it - alone!
+</ChoiceText>
+            <ChoiceMedallion>Boar_Medallion.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>I shall prove who is master.</Description>
+                <NextObjectiveID>5</NextObjectiveID>
+                <Encounter>
+                    <Liklihood>100</Liklihood>
+                    <BattleIdentifier>WarBoar</BattleIdentifier>
+                    <ForceLeaderOnly>1</ForceLeaderOnly>
+                    <TacticalMap>T_Ruins_Barren_01</TacticalMap>
+                    <WillRespawn>0</WillRespawn>
+                    <WanderingRadius>0</WanderingRadius>
+                    <UnitInstance>
+                        <UnitType>WarBoar_Paladin</UnitType>
+                        <Level>6</Level>
+                    </UnitInstance>
+                </Encounter>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>5</ObjectiveID>
+            <NextObjectiveID>14</NextObjectiveID>
+            <PopupObjectiveMsg>0</PopupObjectiveMsg>
+            <QuestConditionDef>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Defeat the War Boar.</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Success</Class>
+                <Type>BattleFinished</Type>
+                <TextData>WarBoar</TextData>
+                <MoreTextData>Victory</MoreTextData>
+            </QuestConditionDef>
+            <ChoiceText>The mighty boar falls, exhausted and incapacitated. You stand over it, and stare into its eyes.
+
+It understands now, that you are worthy of being master. You take your place upon its back, and the bond between you is complete.
+</ChoiceText>
+            <ChoiceMedallion>Boar_Medallion.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_01.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>I ride onward!</Description>
+                <NextObjectiveID>14</NextObjectiveID>
+        <Treasure>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <Attribute>WarBoarMount_Paladin</Attribute>
+            </GameModifier>
+        </Treasure>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+//warg fight
+
+<QuestObjectiveDef>
+            <ObjectiveID>6</ObjectiveID>
+            <NextObjectiveID>7</NextObjectiveID>
+            <Description>Find the spirit that draws you to binding.</Description>
+            <Treasure>
+                <GameModifier>
+                    <ModType>Map</ModType>
+                    <Attribute>CreateGoodieHut</Attribute>
+                    <StrVal>Wooded Grounds</StrVal>
+                    <Unitclass>Woodedgrounds_Paladin</Unitclass>
+                    <Radius>2</Radius>
+                </GameModifier>
+            </Treasure>
+            <QuestConditionDef>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Find the spirit that draws you.</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Success</Class>
+                <Type>ClearGoodieHut</Type>
+                <TextData>Woodedgrounds_Paladin</TextData>
+                <Flag>RevealTarget</Flag>
+            </QuestConditionDef>
+            <ChoiceText>You arrive, hearing only silence among the trees. Too much silence - there is no breeze, no sound of birds. You feel that you are being stalked by a skilled hunter.
+
+And then it appears, lunging forward with teeth. It is a Warg, singular in purpose: if you two are to be bound, then you must defeat it - alone!
+</ChoiceText>
+            <ChoiceMedallion>Creature_Ebbenwolf1.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>I shall prove who is master.</Description>
+                <NextObjectiveID>7</NextObjectiveID>
+                <Encounter>
+                    <Liklihood>100</Liklihood>
+                    <BattleIdentifier>TimberWarg</BattleIdentifier>
+                    <ForceLeaderOnly>1</ForceLeaderOnly>
+                    <TacticalMap>T_Ruins_Barren_01</TacticalMap>
+                    <WillRespawn>0</WillRespawn>
+                    <WanderingRadius>0</WanderingRadius>
+                    <UnitInstance>
+                        <UnitType>TimberWarg_Paladin</UnitType>
+                        <Level>6</Level>
+                    </UnitInstance>
+                </Encounter>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>7</ObjectiveID>
+            <NextObjectiveID>14</NextObjectiveID>
+            <PopupObjectiveMsg>0</PopupObjectiveMsg>
+            <QuestConditionDef>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Defeat the Warg.</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Success</Class>
+                <Type>BattleFinished</Type>
+                <TextData>TimberWarg</TextData>
+                <MoreTextData>Victory</MoreTextData>
+            </QuestConditionDef>
+            <ChoiceText>The warg falls, exhausted and incapacitated. You stand over it, and stare into its eyes.
+
+It understands now, that you are worthy of being master. You take your place upon its back, and the bond between you is complete.
+</ChoiceText>
+            <ChoiceMedallion>Creature_Ebbenwolf1.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_01.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>I ride onward!</Description>
+                <NextObjectiveID>14</NextObjectiveID>
+        <Treasure>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <Attribute>WargMount_Paladin</Attribute>
+            </GameModifier>
+        </Treasure>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+
+//harridan fight
+
+<QuestObjectiveDef>
+            <ObjectiveID>8</ObjectiveID>
+            <NextObjectiveID>9</NextObjectiveID>
+            <Description>Find the spirit that draws you to binding.</Description>
+            <Treasure>
+                <GameModifier>
+                    <ModType>Map</ModType>
+                    <Attribute>CreateGoodieHut</Attribute>
+                    <StrVal>Sand Golem Lair</StrVal>
+                    <Unitclass>GH_Quest_RavenousHarridan_Paladin</Unitclass>
+                    <Radius>2</Radius>
+                </GameModifier>
+            </Treasure>
+            <QuestConditionDef>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Find the spirit that draws you.</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Success</Class>
+                <Type>ClearGoodieHut</Type>
+                <TextData>GH_Quest_RavenousHarridan_Paladin</TextData>
+                <Flag>RevealTarget</Flag>
+            </QuestConditionDef>
+            <ChoiceText>You arrive at an old farmhouse, wrapped in old webs. How many living things have jad their vitality sucked from them, while trapped by those webs?
+
+There is no time for reflection - the monstrosity skitters out from the house with deadly, inhuman grace. It senses your presence, and will not tolerate submission to a prey-thing. It is a giant black widow, singular in purpose: if you two are to be bound, then you must defeat it - alone!
+</ChoiceText>
+            <ChoiceMedallion>M_SpiderQueen_Card_01.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>I shall prove who is master.</Description>
+                <NextObjectiveID>9</NextObjectiveID>
+                <Encounter>
+                    <Liklihood>100</Liklihood>
+                    <BattleIdentifier>Harridan</BattleIdentifier>
+                    <ForceLeaderOnly>1</ForceLeaderOnly>
+                    <TacticalMap>T_Ruins_Barren_01</TacticalMap>
+                    <WillRespawn>0</WillRespawn>
+                    <WanderingRadius>0</WanderingRadius>
+                    <UnitInstance>
+                        <UnitType>RavenousHarridan_Paladin</UnitType>
+                        <Level>6</Level>
+                    </UnitInstance>
+                </Encounter>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>9</ObjectiveID>
+            <NextObjectiveID>14</NextObjectiveID>
+            <PopupObjectiveMsg>0</PopupObjectiveMsg>
+            <QuestConditionDef>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Defeat the Spider.</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Success</Class>
+                <Type>BattleFinished</Type>
+                <TextData>Harridan</TextData>
+                <MoreTextData>Victory</MoreTextData>
+            </QuestConditionDef>
+            <ChoiceText>The great spider falls, exhausted and incapacitated. You stand over it, and stare into its many eyes.
+
+It understands now, that you are worthy of being master. You take your place upon its back, and the bond between you is complete.
+</ChoiceText>
+            <ChoiceMedallion>M_SpiderQueen_Card_01.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_01.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>I ride onward!</Description>
+                <NextObjectiveID>14</NextObjectiveID>
+        <Treasure>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <Attribute>Mount_RavenousHarridan_Paladin</Attribute>
+            </GameModifier>
+        </Treasure>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+//skath fight
+
+<QuestObjectiveDef>
+            <ObjectiveID>10</ObjectiveID>
+            <NextObjectiveID>11</NextObjectiveID>
+            <Description>Find the spirit that draws you to binding.</Description>
+            <Treasure>
+                <GameModifier>
+                    <ModType>Map</ModType>
+                    <Attribute>CreateGoodieHut</Attribute>
+                    <StrVal>Swampy Domain</StrVal>
+                    <Unitclass>GH_Quest_SwampTree_Paladin</Unitclass>
+                    <Radius>2</Radius>
+                </GameModifier>
+            </Treasure>
+            <QuestConditionDef>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Find the spirit that draws you.</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Success</Class>
+                <Type>ClearGoodieHut</Type>
+                <TextData>GH_Quest_SwampTree_Paladin</TextData>
+                <Flag>RevealTarget</Flag>
+            </QuestConditionDef>
+            <ChoiceText>You arrive, hearing the cacophony of insects that fills the swamps. This is a place where old, reptilian masters rule the food chain.
+
+It lunges from the murk below without warning - but you felt its malice just in time to leap back. Staring at you with reptilian hunger is a mire skath, singular in purpose: if you two are to be bound, then you must defeat it - alone!
+</ChoiceText>
+            <ChoiceMedallion>Dungeon_Swamp2.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>I shall prove who is master.</Description>
+                <NextObjectiveID>11</NextObjectiveID>
+                <Encounter>
+                    <Liklihood>100</Liklihood>
+                    <BattleIdentifier>MireSkath</BattleIdentifier>
+                    <ForceLeaderOnly>1</ForceLeaderOnly>
+                    <TacticalMap>T_Ruins_Barren_01</TacticalMap>
+                    <WillRespawn>0</WillRespawn>
+                    <WanderingRadius>0</WanderingRadius>
+                    <UnitInstance>
+                        <UnitType>MireSkath_Paladin</UnitType>
+                        <Level>6</Level>
+                    </UnitInstance>
+                </Encounter>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>11</ObjectiveID>
+            <NextObjectiveID>14</NextObjectiveID>
+            <PopupObjectiveMsg>0</PopupObjectiveMsg>
+            <QuestConditionDef>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Defeat the Skath.</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Success</Class>
+                <Type>BattleFinished</Type>
+                <TextData>MireSkath</TextData>
+                <MoreTextData>Victory</MoreTextData>
+            </QuestConditionDef>
+            <ChoiceText>The skath falls, exhausted and incapacitated. You stand over it, and stare into its eyes.
+
+It understands now, that you are worthy of being master. You take your place upon its back, and the bond between you is complete.
+</ChoiceText>
+            <ChoiceMedallion>M_Warg_SiltSkath_Card_01.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_01.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>I ride onward!</Description>
+                <NextObjectiveID>14</NextObjectiveID>
+        <Treasure>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <Attribute>Mount_MireSkath_Paladin</Attribute>
+            </GameModifier>
+        </Treasure>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+//dragon fight
+
+<QuestObjectiveDef>
+            <ObjectiveID>12</ObjectiveID>
+            <NextObjectiveID>13</NextObjectiveID>
+            <Description>Find the spirit that draws you to binding.</Description>
+            <Treasure>
+                <GameModifier>
+                    <ModType>Map</ModType>
+                    <Attribute>CreateGoodieHut</Attribute>
+                    <StrVal>Dragon Lair</StrVal>
+                    <Unitclass>GH_Quest_StormDragonLair_Paladin</Unitclass>
+                    <Radius>2</Radius>
+                </GameModifier>
+            </Treasure>
+            <QuestConditionDef>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Find the spirit that draws you.</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Success</Class>
+                <Type>ClearGoodieHut</Type>
+                <TextData>GH_Quest_StormDragonLair_Paladin</TextData>
+                <Flag>RevealTarget</Flag>
+            </QuestConditionDef>
+            <ChoiceText>You arrive at the cave. Layers of caked ash flow away from the dark cave. Within, you can feel that an ancient beast waits within. It senses your presence as much as you can sense its - and it feels nothing but contempt for you. That you would think yourself worthy to master it is a deep insult!
+
+And then it appears, proudly marching forward, its wings blotting out the daylight. It is an adolescent ashwake dragon, a mighty creature few have ever witnessed. 
+
+If you two are to be bound, then you must defeat it - alone!
+</ChoiceText>
+            <ChoiceMedallion>D_Dragon_Card_01.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>I shall prove who is master.</Description>
+                <NextObjectiveID>13</NextObjectiveID>
+                <Encounter>
+                    <Liklihood>100</Liklihood>
+                    <BattleIdentifier>AshwakeDragon</BattleIdentifier>
+                    <ForceLeaderOnly>1</ForceLeaderOnly>
+                    <TacticalMap>T_Ruins_Barren_01</TacticalMap>
+                    <WillRespawn>0</WillRespawn>
+                    <WanderingRadius>0</WanderingRadius>
+                    <UnitInstance>
+                        <UnitType>AshwakeDragon</UnitType>
+                        <Level>15</Level>
+                    </UnitInstance>
+                </Encounter>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>13</ObjectiveID>
+            <NextObjectiveID>14</NextObjectiveID>
+            <PopupObjectiveMsg>0</PopupObjectiveMsg>
+            <QuestConditionDef>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Defeat the Dragon.</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Success</Class>
+                <Type>BattleFinished</Type>
+                <TextData>AshwakeDragon</TextData>
+                <MoreTextData>Victory</MoreTextData>
+            </QuestConditionDef>
+            <ChoiceText>The dragon falls, exhausted and incapacitated. You stand over it, and stare into its eyes.
+
+It understands now, that you are worthy of being master. Its pride will forever be scarred, but its loyalty to you is won. You take your place upon its back, and the bond between you is complete.
+</ChoiceText>
+            <ChoiceMedallion>D_Dragon_Card_01.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_01.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>I ride onward!</Description>
+                <NextObjectiveID>14</NextObjectiveID>
+        <Treasure>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <Attribute>Mount_YoungDragon</Attribute>
+            </GameModifier>
+        </Treasure>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+//final objectiveID
+
+        <QuestObjectiveDef>
+            <ObjectiveID>14</ObjectiveID>
+            <QuestEnd>1</QuestEnd>
+        </QuestObjectiveDef>
+</QuestDef>
+
+
+</Quests>

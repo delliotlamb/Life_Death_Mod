@@ -1,0 +1,500 @@
+<AbilityBonuses>
+
+    <AbilityBonus InternalName="VoidBound_Ability">
+        <AbilityBonusType>Player</AbilityBonusType>
+        <AbilityBonusOption InternalName="VoidBound">
+            <DisplayName>Void Sight</DisplayName>
+            <Description>Allows you to cast Void Call, which opens gates in spacetime to recruit otherworldly demons, and its greater variation.</Description>
+            <Icon>Ability_Daze_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Player</ModType>
+                <Attribute>UnlockSpell</Attribute>
+                <StrVal>VoidCall</StrVal>
+                <Provides>Unlocks Void Call, which opens gates in spacetime to recruit otherworld demons.</Provides>
+            </GameModifier>
+            <!--<GameModifier>
+                <ModType>Player</ModType>
+                <Attribute>UnlockSpell</Attribute>
+                <StrVal>Invasion</StrVal>
+                <Provides>Unlocks Void Call, which opens gates in spacetime to recruit otherworld demons.</Provides>
+            </GameModifier>-->
+            <Cost>2</Cost>
+            <Type>Army</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+	<AbilityBonus InternalName="RedMarkOfDagorath_Ability">
+        <AbilityBonusType>Player</AbilityBonusType>
+		<AbilityBonusOption InternalName="RedMarkOfDagorath">
+            <DisplayName>Red Mark Of Dagorath</DisplayName>
+            <Description>-5% Research, -10% gildar, +5% Unrest.</Description>
+            <Icon>Ability_Reap1_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Player</ModType>
+                <Attribute>AbilityBonus</Attribute>
+                <StrVal>A_Research</StrVal>
+                <Value>-5</Value>
+                <Provides>-5% to Research</Provides>
+            </GameModifier>
+			<GameModifier>
+				<ModType>Player</ModType>
+				<Attribute>AbilityBonus</Attribute>
+				<StrVal>A_Gold</StrVal>
+				<Value>-10</Value>
+				<Icon>Res_Icon_Gold.png</Icon>
+				<Provides>-10% Gildar</Provides>
+			</GameModifier>
+			<GameModifier>
+                <ModType>Player</ModType>
+                <Attribute>AbilityBonus</Attribute>
+                <StrVal>A_Additive_Unrest</StrVal>
+                <Value>5</Value>
+                <Provides>+5% Unrest</Provides>
+            </GameModifier>
+            <Cost>-1</Cost>
+            <Type>Weakness</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+<AbilityBonus InternalName="ClawsAbility_Dagorath">
+        <AbilityBonusType>Unit_Design</AbilityBonusType>
+        <AbilityBonusOption InternalName="Claws_Dagorath">
+            <DisplayName>Void Claws</DisplayName>
+            <Description>+10% armor piercing per level</Description>
+            <Icon>Y_Maul_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ArmorPierce</StrVal>
+                <Value>5</Value>
+		<PerLevel>1</PerLevel>
+                <Provides>Ignores 5%, per level, of the victim's Defense</Provides>
+            </GameModifier>
+            <AdditionalTrainingTurns>0</AdditionalTrainingTurns>
+            <Type>Aggressive</Type>
+            <SupportedUnitModelType>Dagorath_Demon</SupportedUnitModelType>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+
+<AbilityBonus InternalName="Blood_RedQuendarAbility">
+        <AbilityBonusOption InternalName="Blood_RedQuendar">
+            <DisplayName>Red Quendar Blood</DisplayName>
+            <Description>+50% Fire Resistance, -50% Cold Resistance and the ability to use the Endure ability</Description>
+            <Icon>Action_FoundEmpire.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ResistFire</StrVal>
+                <Value>50</Value>
+                <Provides>+50% Fire Resistance</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ResistCold</StrVal>
+                <Value>-50</Value>
+                <Provides>-50% Cold Resistance</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Endure_Pain_Dagorath</StrVal>
+                <Provides>Endure: This unit gains +25% fire resistance, +33% physical resistance and +75% cold and lightning resistance, and enters a defensive stance for 1 round of combat.</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>RainOfArrows</StrVal>
+                <Provides>.</Provides>
+            </GameModifier>		
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+<AbilityBonus InternalName="CallousedHide_Dagorath_Ability">
+        <AbilityBonusOption InternalName="CallousedHide_Dagorath">
+            <DisplayName>Void Flesh</DisplayName>
+            <Description>+2 Defense per Level</Description>
+            <Icon>Ability_TemperedSteel_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Defense_Pierce</StrVal>
+                <Value>2</Value>
+                <PerLevel>1</PerLevel>
+                <Provides>+2 Defense per Level</Provides>
+            </GameModifier>
+            <Type>Defensive</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+
+<AbilityBonus InternalName="Void_Spawn_Ability">
+        <AbilityBonusOption InternalName="Void_Spawn">
+            <DisplayName>Child Of Void</DisplayName>
+            <Description>+5 Eldritch Rot damage per turn, +20 spell resist, +20 Hp from kills, kills add a member to this unit, +2 Defense per Level</Description>
+            <Icon>Ability_Binding_Icon.png</Icon>
+      	    <GameModifier>
+        	<Provides>Unit counts as Demon</Provides>
+      	    </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>MeleeAppliesSpell</Attribute>
+                <StrVal>EldritchRot_Effect</StrVal>
+                <Provides>Units struck suffer 5 Eldritch Rot damage per turn.</Provides>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_MagicResist</StrVal>
+            <Value>20</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxTroopsFromKills</StrVal>
+                <Value>6</Value>
+                <Provides>When this unit kills a victim it adds another member to its group, to a maximum of 6 units</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_HPFromKills</StrVal>
+                <Value>20</Value>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Defense_Pierce</StrVal>
+                <Value>2</Value>
+                <PerLevel>1</PerLevel>
+                <Provides>+2 Defense per Level</Provides>
+            </GameModifier>
+            <Type>Defensive</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>10000</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+<AbilityBonus InternalName="Void_Spawn2_Ability">
+        <AbilityBonusOption InternalName="Void_Spawn2">
+            <DisplayName>Prince Of The Void</DisplayName>
+            <Description>+8 Eldritch Rot damage per turn, Ignores 10% per level of the victim's Defense, +20 spell resist, +30 Hp from kills, +2 Defense per Level.</Description>
+            <Icon>Ability_Binding_Icon.png</Icon>
+      	    <GameModifier>
+        	<Provides>Unit counts as Demon</Provides>
+      	    </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>MeleeAppliesSpell</Attribute>
+                <StrVal>EldritchRot_Effect2</StrVal>
+                <Provides>Units struck suffer 8 Eldritch Rot damage per turn.</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ArmorPierce</StrVal>
+                <Value>10</Value>
+		<PerLevel>1</PerLevel>
+                <Provides>Ignores 10%, per level, of the victim's Defense</Provides>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_MagicResist</StrVal>
+            <Value>20</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_HPFromKills</StrVal>
+                <Value>30</Value>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Defense_Pierce</StrVal>
+                <Value>2</Value>
+                <PerLevel>1</PerLevel>
+                <Provides>+2 Defense per Level</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>CanCastSpells</Attribute>
+                <Provides>This unit can cast spells as though it were a champion.</Provides>
+            </GameModifier>			
+            <Type>Defensive</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+<AbilityBonus InternalName="Void_Spawn3_Ability">
+        <AbilityBonusOption InternalName="Void_Spawn3">
+            <DisplayName>Flayer Of The Void</DisplayName>
+            <Description>+20 spell resist, +30 Hp from kills, +2 Defense per Level.</Description>
+            <Icon>Ability_Binding_Icon.png</Icon>
+      	    <GameModifier>
+        	<Provides>Unit counts as Demon</Provides>
+      	    </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>EldritchWarp</StrVal>
+                <Provides>Can deal Eldritch Rot damage at range every turn</Provides>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_MagicResist</StrVal>
+            <Value>20</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_HPFromKills</StrVal>
+                <Value>30</Value>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Defense_Pierce</StrVal>
+                <Value>2</Value>
+                <PerLevel>1</PerLevel>
+                <Provides>+2 Defense per Level</Provides>
+            </GameModifier>
+            <Type>Defensive</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>10000</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+<AbilityBonus InternalName="Walking_Massacre_Ability">
+        <AbilityBonusOption InternalName="Walking_Massacre">
+            <DisplayName>Walking Massacre</DisplayName>
+            <Description>Casts Fear at the beginning of combat, +25 HP from kills, Immune to Poison, +20 spell resist, -50% lightning resist, +10% armor piercing per level</Description>
+            <Icon>Ability_Binding_Icon.png</Icon>
+      	    <GameModifier>
+        	<Provides>Unit counts as Demon</Provides>
+      	    </GameModifier>
+      	    <GameModifier>
+        	<ModType>Unit</ModType>
+        	<Attribute>AdjustUnitStat</Attribute>
+        	<StrVal>UnitStat_BG_IsOversized</StrVal>
+        	<Value>1</Value>
+        	<Provides>Unit counts as Oversized</Provides>
+      	    </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>EldritchWarp</StrVal>
+                <Provides>Can deal Eldritch Rot damage at range every turn</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ChanceToAvoidProne</StrVal>
+                <Value>100</Value>
+                <Provides>Cannot be knocked Prone</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_HitPoints</StrVal>
+                <Value>5</Value>
+                <PerLevel>1</PerLevel>
+                <Provides>+5 Hit Points per Level</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_HPFromKills</StrVal>
+                <Value>25</Value>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ResistPoison</StrVal>
+                <Value>100</Value>
+                <Provides>Immune to Poison damage</Provides>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_MagicResist</StrVal>
+            <Value>20</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ResistLightning</StrVal>
+                <Value>-50</Value>
+                <Provides>-50% Lightning Resistance</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>BattleAutoCastSpell</Attribute>
+                <StrVal>Fear_Ability</StrVal>
+                <Value>100</Value>
+                <Provides>Fear is triggered when combat begins</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ArmorPierce</StrVal>
+                <Value>10</Value>
+		<PerLevel>1</PerLevel>
+                <Provides>Ignores 10%, per level, of the victim's Defense</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Defense_Pierce</StrVal>
+                <Value>3</Value>
+                <PerLevel>1</PerLevel>
+                <Provides>+3 Defense per Level</Provides>
+            </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_IsOversized</StrVal>
+        <Value>1</Value>
+        <Provides>Unit counts as Oversized</Provides>
+      </GameModifier>
+            <Type>Defensive</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>10000</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+	 <AbilityBonus InternalName="FireEater_Red_Ability">
+        <AbilityBonusType>Unit_Design</AbilityBonusType>
+        <AbilityBonusOption InternalName="FireEater_Red">
+            <DisplayName>Enduring Scales</DisplayName>
+            <Description>This unit gets a defense bonus equal to its Stamina</Description>
+            <Icon>Ability_FurnaceBorn_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Defense_Pierce</StrVal>
+                <Value>1</Value>
+                <PerStamina>1</PerStamina>
+                <Provides>This unit gets a defense bonus equal to its Stamina</Provides>
+            </GameModifier>
+            <AdditionalTrainingTurns>10</AdditionalTrainingTurns>
+            <CombatRating>5</CombatRating>
+            <IsCombatAbility>1</IsCombatAbility>
+            <Type>Aggressive</Type>
+            <Prereq>
+                <Type>Race</Type>
+                <Attribute>Race_Type_RedQuendar</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+    <AbilityBonus InternalName="FireEater_Red_Ability_Level">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="FireEater_Red_Level">
+            <DisplayName>Enduring Scales</DisplayName>
+            <Description>This unit gets a defense bonus equal to its Stamina</Description>
+            <Icon>Ability_FurnaceBorn_Icon.png</Icon>
+            <PerkTreePosX>0</PerkTreePosX>
+            <PerkTreePosY>4</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Defense_Pierce</StrVal>
+                <Value>1</Value>
+                <PerStamina>1</PerStamina>
+                <Provides>This unit gets a defense bonus equal to its Stamina</Provides>
+            </GameModifier>
+            <CombatRating>5</CombatRating>
+            <IsCombatAbility>1</IsCombatAbility>
+            <Type>Aggressive</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Blood_RedQuendar</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+	<AbilityBonus InternalName="Spell_Furnaceborn_Red_Ability">
+        <AbilityBonusType>Unit_Design</AbilityBonusType>
+        <AbilityBonusOption InternalName="Spell_Furnaceborn_Red">
+            <DisplayName>Sacrificial Rites</DisplayName>
+            <Description>Kill this unit to gain 2 Eldritch energy.</Description>
+            <Icon>Ability_AmarianLegacy_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Sacrificial_Lamb</StrVal>
+                <Provides>Kill this unit to gain 2 Eldritch energy.</Provides>
+            </GameModifier>
+            <AdditionalTrainingTurns>10</AdditionalTrainingTurns>
+            <CombatRating>5</CombatRating>
+            <IsCombatAbility>1</IsCombatAbility>
+            <Type>Aggressive</Type>
+            <Prereq>
+                <Type>Race</Type>
+                <Attribute>Race_Type_RedQuendar</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+    <AbilityBonus InternalName="Spell_Furnaceborn_Red_Ability_Level">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusType>Unit_Spell_Rank</AbilityBonusType>
+        <AbilityBonusOption InternalName="Spell_Furnaceborn_Red_Level">
+            <DisplayName>Sacrificial Rites</DisplayName>
+            <Description>Kill a unit to gain 2 Eldritch energy.</Description>
+            <Icon>Ability_AmarianLegacy_Icon.png</Icon>
+            <PerkTreePosX>1</PerkTreePosX>
+            <PerkTreePosY>4</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Sacrificial_Lamb_Level</StrVal>
+                <Provides>Kill a unit to gain 2 Eldritch energy.</Provides>
+            </GameModifier>
+            <CombatRating>5</CombatRating>
+            <IsCombatAbility>1</IsCombatAbility>
+            <Type>Aggressive</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>FireEater_Red_Level</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+</AbilityBonuses>

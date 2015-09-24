@@ -1,0 +1,581 @@
+
+
+<Quests>
+
+
+
+    <QuestDef InternalName="Quest_HopelessCause">
+        <DisplayName>The Hopeless Cause</DisplayName>
+        <Description>There is a tribe of people here, and you don't need to hear their story to know it is a sad one. Their small camp reeks of death. Most lie on the ground, with horrible boils on their arms and faces.
+</Description>
+        <IsStartingPointQuest>0</IsStartingPointQuest>
+        <AllowQuestRejection>0</AllowQuestRejection>
+        <ShortTextAccept>I want to know more.</ShortTextAccept>
+        <ShortTextDeny>I have difficulty enough without a pox on me and my soldiers.</ShortTextDeny>
+        <SuccessText>You pick up the shield, and can feel its mighty magic. The spirit Ebleramis has become a shield of no equal, and the power within it gives you hope.</SuccessText>
+        <QuestClass>Minor</QuestClass>
+        <Repeatable>0</Repeatable>		
+        <TriggerType>QuestLocation</TriggerType>
+        <TriggerOrigin>EventLocation</TriggerOrigin>
+        <SpawnRating>3</SpawnRating>
+		<TriggerChance>0</TriggerChance>		
+        <AICanGoOnQuest>0</AICanGoOnQuest>
+        <Image>Q_ImpoverishedLord.png</Image>
+        <PrefQuestLoc>QuestLoc_Camp_Paladin3</PrefQuestLoc>
+        <Treasure>
+            <GameModifier InternalName="Reward1">
+                <ModType>GiveItem</ModType>
+                <Attribute>Shield_Ebleramis</Attribute>
+            </GameModifier>
+        </Treasure>
+
+        <QuestObjectiveDef>
+            <ObjectiveID>0</ObjectiveID>
+            <NextObjectiveID>1</NextObjectiveID>
+            <ChoiceText>The elder approaches, and welcomes you - but he is probably in the worst shape of any, barely able to stand. 
+
+"There is a Dark Wizard, who lives not far. I believe he cast a powerful hex upon us. It is the only plausible explanation."
+
+The elder slips to his knees, struggling to breathe. 
+
+"His fortress is near here. If you talk with him, he may lift the hex."
+
+The elder points to a pile of crates near his tent.
+
+"We have an item of value. I can offer that as reward."
+
+You could take whatever is in that crate, and they could do nothing to stop you. 
+</ChoiceText>
+            <ChoiceMedallion>WorkCamp.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>I will seek out the wizard.</Description>
+                <NextObjectiveID>1</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>(attack and kill them all)</Description>
+                <NextObjectiveID>11</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>The strong take from the weak, fool. (take his item)</Description>
+                <NextObjectiveID>-1</NextObjectiveID>
+				<QuestFailure>1</QuestFailure>
+					<Treasure>
+            			<GameModifier>
+                			<ModType>GiveItem</ModType>
+                			<StrVal>Rare</StrVal>
+            			</GameModifier>
+					</Treasure>
+				</QuestChoiceDef>
+</QuestObjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>1</ObjectiveID>
+            <NextObjectiveID>2</NextObjectiveID>
+            <Treasure>
+                <GameModifier>
+                    <ModType>Map</ModType>
+                    <Attribute>CreateGoodieHut</Attribute>
+                    <StrVal>Dark Wizard's Home</StrVal>
+                    <Unitclass>GH_Quest_DarkWizard</Unitclass>
+                    <Radius>4</Radius>
+                </GameModifier>
+            </Treasure>
+            <QuestConditionDef>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>See the Dark Wizard.</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Success</Class>
+                <Type>ClearGoodieHut</Type>
+                <TextData>GH_Quest_DarkWizard</TextData>
+                <Flag>RevealTarget</Flag>
+            </QuestConditionDef>
+            <ChoiceText>There is a chill in the air as you approach the Dark Wizard's spire. You call for the wizard, and he does indeed appear. His mere presence exudes power. 
+
+"I am deep in research channeler. My magic could kill you easily. So tell me - why do you interrupt me?"
+</ChoiceText>
+            <ChoiceMedallion>L_Champion_Empire_05.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>I want you to lift the disease.</Description>
+                <NextObjectiveID>2</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>Die! (attack)</Description>
+                <NextObjectiveID>3</NextObjectiveID>
+            </QuestChoiceDef>
+</QuestObjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>2</ObjectiveID>
+            <NextObjectiveID>3</NextObjectiveID>
+            <ChoiceText>"One of these people already came to me, begging the spell be lifted. But I cast no such spell. They seek some reason for their affliction. Perhaps they angered another channeler, who cursed them. Or Elemental's magic coalesced at random, and expressed itself as a disease. These possibilities are the price for living in a world of magic. Who can say for sure? Not I." 
+
+You try to decide if the wizard is lying to you or not. But he is suddenly angry.
+
+"Why would I care about those foolish people? My magic has much more important purposes. Leave me, you have wasted enough of my time!"  
+</ChoiceText>
+            <ChoiceMedallion>B_DarkWizzard_Card_01.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>We return to the refugee camp.</Description>
+                <NextObjectiveID>5</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>You die. (attack)</Description>
+                <NextObjectiveID>3</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>Forget the people. Join me, and own the world alongside me.</Description>
+                <NextObjectiveID>10</NextObjectiveID>
+            </QuestChoiceDef>
+</QuestObjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>3</ObjectiveID>
+            <NextObjectiveID>4</NextObjectiveID>
+            <ChoiceText>The wizard laughs, deeply. 
+
+"Then your essence shall help fuel my ambitions, fool."
+</ChoiceText>
+            <ChoiceMedallion>B_DarkWizzard_Card_01.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>(Fight)</Description>
+                <NextObjectiveID>4</NextObjectiveID>
+                <Encounter>
+                    <Liklihood>100</Liklihood>
+                    <BattleIdentifier>DarkWizard</BattleIdentifier>
+                    <WillRespawn>0</WillRespawn>
+                    <WanderingRadius>0</WanderingRadius>
+                    <UnitInstance>
+                        <UnitType>DarkWizard</UnitType>
+                        <Level>8</Level>
+                    </UnitInstance>
+                </Encounter>
+            </QuestChoiceDef>
+</QuestObjectiveDef>
+
+        <QuestObjectiveDef>
+            <ObjectiveID>4</ObjectiveID>
+            <NextObjectiveID>5</NextObjectiveID>
+            <PopupObjectiveMsg>0</PopupObjectiveMsg>
+            <QuestConditionDef>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Kill the Dark Wizard.</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Success</Class>
+                <Type>BattleFinished</Type>
+                <TextData>DarkWizard</TextData>
+                <MoreTextData>Victory</MoreTextData>
+            </QuestConditionDef>
+        </QuestObjectiveDef>
+
+        <QuestObjectiveDef>
+            <ObjectiveID>5</ObjectiveID>
+            <NextObjectiveID>6</NextObjectiveID>
+            <Description>Return to the refugee camp.</Description>
+            <QuestConditionDef>
+                <ID>0</ID>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Return to the Refugee camp.</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Success</Class>
+                <Type>UnitEntersQuestLocation</Type>
+            </QuestConditionDef>
+        </QuestObjectiveDef>
+
+        <QuestObjectiveDef>
+            <ObjectiveID>6</ObjectiveID>
+            <NextObjectiveID>7</NextObjectiveID>
+            <PopupObjectiveMsg>0</PopupObjectiveMsg>
+            <QuestConditionDef>
+                <ID>0</ID>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Expend 50 Mana to heal those still alive.</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>ChoiceUnlock</Class>
+                <Type>CheckForResource</Type>
+                <TextData>Mana</TextData>
+                <NumericData>50</NumericData>
+            </QuestConditionDef>
+            <ChoiceText>At the camp, the disease is clearly still with them. 
+
+The elder has died. Many have joined him. Those few still alive - maybe a dozen? - are all infected, and getting worse. Without a cure, these people are all doomed.  
+
+The chest with their "asset" is still there, completely unguarded.
+
+You think you can cast a spell to cure them. But it might not work. 
+</ChoiceText>
+            <ChoiceMedallion>Q_WomanatGrave.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>I cannot be dragged down with them. (take their valuable item)</Description>
+                <NextObjectiveID>-1</NextObjectiveID>
+		    <Treasure>
+            		<GameModifier>
+                	<ModType>GiveItem</ModType>
+                	<StrVal>Rare</StrVal>
+            		</GameModifier>
+		    </Treasure>
+		<QuestFailure>1</QuestFailure>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>Cast a spell to try purging the disease. (-50 mana)</Description>
+                <RequiredConditionID>0</RequiredConditionID>
+                <NextObjectiveID>7</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>I will return.</Description>
+                <NextObjectiveID>6</NextObjectiveID>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+
+        <QuestObjectiveDef>
+            <ObjectiveID>7</ObjectiveID>
+            <NextObjectiveID>8</NextObjectiveID>
+            <ChoiceText>You send out powerful magic. Your spell of curing begins to work - but then a more powerful spell reacts. It is already within them, and against your influence it easily sustains the disease. 
+
+They realize your spell has not worked. One of the people thanks you nontheless. "Please, My Lord. You have done more for us than any. We are doomed, and we have resigned to that. Please take your reward, and go on to preserve life elsewhere. Your efforts shall not be forgotten."
+
+Did the wizard lie? Was the spell his, or did some other magical source afflict these people? 
+
+An idea comes to your mind - if you were to expend some of your essence, you might purge the pox spell, allowing your curing spell to have its effect. But this would leave you irreversibly weakened. If this somehow fails to defeat the pox spell, you shall still be permamnently diminished.
+
+Your responsibility is to your people first - these refugees are too few to be of much consequence now, dead or alive. If they are cured, you may grow your fame. But is that worth the permanent price you shall pay?
+
+It is your decision as Sovereign.
+</ChoiceText>
+            <ChoiceMedallion>T_Wellspring_Painting.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>I can do nothing more for these people, alas. (accept their reward, leave)</Description>
+                <NextObjectiveID>-1</NextObjectiveID>
+		    <Treasure>
+            		<GameModifier>
+                	<ModType>GiveItem</ModType>
+                	<StrVal>Uncommon</StrVal>
+            		</GameModifier>
+		    </Treasure>
+		<QuestFailure>1</QuestFailure>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>I shall expend some of my essence. I will not abandon these souls.</Description>
+                <NextObjectiveID>8</NextObjectiveID>
+		<Treasure>
+                <GameModifier>
+                    <ModType>Unit</ModType>
+                    <Attribute>UnlockUnitAbility</Attribute>
+                    <StrVal>ExpendedEssence</StrVal>
+                </GameModifier>
+		</Treasure>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+
+        <QuestObjectiveDef>
+            <ObjectiveID>8</ObjectiveID>
+            <NextObjectiveID>9</NextObjectiveID>
+<ChoiceText>You cut a part of your own essence away from you. It is a terrifying and painful feeling, but your will holds true. Something detaches from you, and you feel weak and drained. But this part of you moves out in a shower of brilliant light, and touches each of the survivors. They perk up, feeling refreshed. 
+
+You are pained with the feeling that part of you is missing. But laughter is heard in the camp for the first time in months.
+
+The sickness returns with a vengeance later that evening. Each of them has a part of you in them, so you stay. The pox takes them, one by one. The last to die, a young girl, thanks you for your dedication to her people.
+
+You bury their bodies in a field of wildflowers.
+
+You burn with fury and sadness. You suspect the source of this disease shall never be discovered, and this crime will never be avenged. Your sacrifice did nothing but make their inevitable deaths more painful to you.   
+</ChoiceText>
+            <ChoiceMedallion>Wildflowers.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+	            <QuestChoiceDef>
+            		<Description>I have erred greatly. I must somehow return to the affairs of my kingdom.</Description>
+            		<NextObjectiveID>9</NextObjectiveID>
+	            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+        <QuestObjectiveDef>
+            <ObjectiveID>9</ObjectiveID>
+            <NextObjectiveID>18</NextObjectiveID>
+<ChoiceText>"I do not believe you have erred, sovereign."
+
+Before you is a wisp. 
+
+"I sensed the sadness and pain here. I hoped to help these people in their suffering. Alas, I arrived here too late. But I also sensed some comfort in their end. A part of you comforted them, within."
+
+Its presence gives you unease. "I do not need the story told to me, wisp."
+
+"I am not hear to tell your tale. Rather, I recognize your actions. What you have done is a sacrifice few could make. I am known as Ebleramis - I search for those like you, who have the will to help the weak and suffering. Please take my power, and use it to fight and sacrifice again. I shall take the form of a shield..."
+
+The wisp begins to change. Indeed, it seems to become metal. 
+
+"We cannot save those lives now - they are gone. But when evil next rears its head, together we shall shield the weak, and those who defend them."
+</ChoiceText> 
+            <ChoiceMedallion>Wisp_Medallion.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+	            <QuestChoiceDef>
+            		<Description>I shall honor their memories by striving onward.</Description>
+            		<NextObjectiveID>18</NextObjectiveID>
+	            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+//talking to dark wizard about him joining you
+
+ <QuestObjectiveDef>
+            <ObjectiveID>10</ObjectiveID>
+            <NextObjectiveID>3</NextObjectiveID>
+<ChoiceText>"Join you? Please. What could you possibly offer me?"
+</ChoiceText> 
+            <ChoiceMedallion>Wisp_Medallion.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+	            <QuestChoiceDef>
+            		<Description>You shall grow powerful under my command.</Description>
+            		<NextObjectiveID>3/NextObjectiveID>
+	            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+//Kill the people and burn their village
+
+ <QuestObjectiveDef>
+            <ObjectiveID>11</ObjectiveID>
+            <NextObjectiveID>12</NextObjectiveID>
+<ChoiceText>The villagers scream as you and your men slaughter them. Even sick, their instincts for pain and fear make their deaths intense and affecting.
+
+A presence is rising from their corpses. Death magic is coalescing into physical form.
+
+"I am Uzzerraddax. I kill without regard, without design. Yet you have given a crescendo to my plague here, sweetened it with undue aggression. I want you to serve me further..."
+</ChoiceText> 
+            <ChoiceMedallion>S_Blight_Painting.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+	            <QuestChoiceDef>
+            		<Description>Serve you? I serve no one.</Description>
+            		<NextObjectiveID>12</NextObjectiveID>
+	            </QuestChoiceDef>
+	            <QuestChoiceDef>
+            		<Description>You will serve me!</Description>
+            		<NextObjectiveID>12</NextObjectiveID>
+	            </QuestChoiceDef>
+	            <QuestChoiceDef>
+            		<Description>How would I benefit?</Description>
+            		<NextObjectiveID>12</NextObjectiveID>
+	            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+ <QuestObjectiveDef>
+            <ObjectiveID>12</ObjectiveID>
+            <NextObjectiveID>13</NextObjectiveID>
+<ChoiceText>"I am death unweighted and beautiful. If you seek power, bow to me and you shall have it. Defy me, and you shall be dissassembled just as you slaughtered these weak fools."
+
+This demon is dreadfully powerful - it could be quite a fight.
+</ChoiceText> 
+            <ChoiceMedallion>M_SuperDemon_Card.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+	            <QuestChoiceDef>
+            		<Description>Never. Die, Demon! (attack)</Description>
+			<NextObjectiveID>15</NextObjectiveID>
+                <Encounter>
+                    <Liklihood>100</Liklihood>
+                    <BattleIdentifier>Uzzerraddax</BattleIdentifier>
+                    <WillRespawn>0</WillRespawn>
+                    <WanderingRadius>0</WanderingRadius>
+                    <UnitInstance>
+                        <UnitType>DeathDemon</UnitType>
+            		<UnitName>Uzzerraddax</UnitName>
+                        <Level>20</Level>
+                    </UnitInstance>
+                </Encounter>
+	            </QuestChoiceDef>
+	            <QuestChoiceDef>
+            		<Description>Tell me what you want.</Description>
+            		<NextObjectiveID>13</NextObjectiveID>
+	            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+ <QuestObjectiveDef>
+            <ObjectiveID>13</ObjectiveID>
+            <NextObjectiveID>14</NextObjectiveID>
+<ChoiceText>"I will bind a part of myself to you. We shall be as brothers, murder and atrocity against this world. You shall yield some of your essence to me, and in exchange you shall have my power. You shall be weakened, of course. But my assistance shall make you greater than you ever were before."
+</ChoiceText> 
+            <ChoiceMedallion>M_SuperDemon_Card.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+	            <QuestChoiceDef>
+            		<Description>No deal. (attack)</Description>
+            		<NextObjectiveID>18</NextObjectiveID>
+                <Encounter>
+                    <Liklihood>100</Liklihood>
+                    <BattleIdentifier>Uzzerraddax</BattleIdentifier>
+                    <WillRespawn>0</WillRespawn>
+                    <WanderingRadius>0</WanderingRadius>
+                    <UnitInstance>
+                        <UnitType>DeathDemon</UnitType>
+            		<UnitName>Uzzerraddax</UnitName>
+                        <Level>20</Level>
+                    </UnitInstance>
+                </Encounter>
+	            </QuestChoiceDef>
+	            <QuestChoiceDef>
+            		<Description>I agree. We shall be bound to one another.</Description>
+            		<NextObjectiveID>17</NextObjectiveID>
+	            </QuestChoiceDef>
+	            <QuestChoiceDef>
+            		<Description>Why would I allow myself to be bound to a mere demon?</Description>
+            		<NextObjectiveID>14</NextObjectiveID>
+	            </QuestChoiceDef>
+	            <QuestChoiceDef>
+            		<Description>No deal. Let's get out of here. (abandon quest)</Description>
+            		<NextObjectiveID>-1</NextObjectiveID>
+			<QuestFailure>1</QuestFailure>
+	            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+ <QuestObjectiveDef>
+            <ObjectiveID>14</ObjectiveID>
+            <NextObjectiveID>15</NextObjectiveID>
+<ChoiceText>The ground shakes from its laughter.
+
+"I am no mere demon. I have existed since before this world formed. I am quite eternal. If you cannot sense that, then perhaps I should not waste time with you."
+</ChoiceText> 
+            <ChoiceMedallion>M_SuperDemon_Card.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+	            <QuestChoiceDef>
+            		<Description>No deal. (attack)</Description>
+            		<NextObjectiveID>15</NextObjectiveID>
+                <Encounter>
+                    <Liklihood>100</Liklihood>
+                    <BattleIdentifier>Uzzerraddax</BattleIdentifier>
+                    <WillRespawn>0</WillRespawn>
+                    <WanderingRadius>0</WanderingRadius>
+                    <UnitInstance>
+                        <UnitType>DeathDemon</UnitType>
+            		<UnitName>Uzzerraddax</UnitName>
+                        <Level>20</Level>
+                    </UnitInstance>
+                </Encounter>
+	            </QuestChoiceDef>
+	            <QuestChoiceDef>
+            		<Description>Very well. Let us be bound together by spirit.</Description>
+            		<NextObjectiveID>17</NextObjectiveID>
+	            </QuestChoiceDef>
+	            <QuestChoiceDef>
+            		<Description>I shall make no commitment. We withdraw. (abandon quest)</Description>
+            		<NextObjectiveID>-1</NextObjectiveID>
+			<QuestFailure>1</QuestFailure>
+	            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+
+        <QuestObjectiveDef>
+            <ObjectiveID>15</ObjectiveID>
+            <NextObjectiveID>16</NextObjectiveID>
+            <PopupObjectiveMsg>0</PopupObjectiveMsg>
+            <QuestConditionDef>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Kill Uzzerraddax.</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Success</Class>
+                <Type>BattleFinished</Type>
+                <TextData>Uzzerraddax</TextData>
+                <MoreTextData>Victory</MoreTextData>
+            </QuestConditionDef>
+        </QuestObjectiveDef>
+
+ <QuestObjectiveDef>
+            <ObjectiveID>16</ObjectiveID>
+            <NextObjectiveID>-1</NextObjectiveID>
+<ChoiceText>The demon falls motionless. but you have an uneasy feeling.
+
+"You shall not forget this mistake, channeler," a disembodied voice booms out. "I am far more eternal than one simple form. Know that you carry my mark, now. I shall follow you, and torment you as long as your consciousness persists." 
+</ChoiceText> 
+            <ChoiceMedallion>T_InfernalCovenant_Painting.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+	            <QuestChoiceDef>
+            		<Description>The torment shall be yours.</Description>
+            		<NextObjectiveID>-1</NextObjectiveID>
+			<QuestFailure>1</QuestFailure>
+		<Treasure>
+                <GameModifier>
+                    <ModType>Unit</ModType>
+                    <Attribute>UnlockUnitAbility</Attribute>
+                    <StrVal>MarkOfUzzerraddax</StrVal>
+                </GameModifier>
+		</Treasure>
+		    <Treasure>
+            		<GameModifier>
+                	<ModType>GiveItem</ModType>
+                	<StrVal>Rare</StrVal>
+            		</GameModifier>
+		    </Treasure>
+	            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+//this is for acepting the offer of uzzerraddax
+
+ <QuestObjectiveDef>
+            <ObjectiveID>17</ObjectiveID>
+            <NextObjectiveID>-1</NextObjectiveID>
+<ChoiceText>"Good. Good!"
+
+The demon fades away, and then you scream out in pain. It feels as if your veins are pumping liquid razors. Your vision blurs, and everything goes black.
+
+You awaken later, to your troops standing around you. A heavy hangover-feeling is upon you. But in your hand is a sword, its blade pure shadow. You hear distant laughter - and then the voice of Uzzerraddax in your head.
+
+"We are one, now. I am in the sword, and the sword is me. Let us tear down all that dares grow, may you torture all that is beautiful."  
+</ChoiceText> 
+            <ChoiceMedallion>T_SoulBurning_Painting.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+	            <QuestChoiceDef>
+            		<Description>I hope this proves a wise bargain.</Description>
+            		<NextObjectiveID>-1</NextObjectiveID>
+			<QuestFailure>1</QuestFailure>
+        			<Treasure>
+            				<GameModifier>
+                				<ModType>GiveItem</ModType>
+                				<Attribute>Longsword_Uzzerraddax</Attribute>
+            				</GameModifier>
+        			</Treasure>
+		<Treasure>
+                <GameModifier>
+                    <ModType>Unit</ModType>
+                    <Attribute>UnlockUnitAbility</Attribute>
+                    <StrVal>ExpendedEssence</StrVal>
+                </GameModifier>
+		</Treasure>
+	            </QuestChoiceDef>
+	            <QuestChoiceDef>
+            		<Description>Let's go do more killing.</Description>
+            		<NextObjectiveID>-1</NextObjectiveID>
+			<QuestFailure>1</QuestFailure>
+        			<Treasure>
+            				<GameModifier>
+                				<ModType>GiveItem</ModType>
+                				<Attribute>Longsword_Uzzerraddax</Attribute>
+            				</GameModifier>
+       				</Treasure>
+		<Treasure>
+                <GameModifier>
+                    <ModType>Unit</ModType>
+                    <Attribute>UnlockUnitAbility</Attribute>
+                    <StrVal>ExpendedEssence</StrVal>
+                </GameModifier>
+		</Treasure>
+	            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+        <QuestObjectiveDef>
+            <ObjectiveID>18</ObjectiveID>
+            <QuestEnd>1</QuestEnd>
+        </QuestObjectiveDef>
+</QuestDef>
+
+</Quests>

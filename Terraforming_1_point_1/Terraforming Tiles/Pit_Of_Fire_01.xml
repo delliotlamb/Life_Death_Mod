@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<TileDesigns>
+	<DataChecksum NoParse="1">
+		<Ignore>DisplayName</Ignore>
+		<Translate>DisplayName</Translate>
+	</DataChecksum>
+	<TileDesign InternalName="Pit_Of_Fire_01">
+		<DisplayName>Pit_Of_Fire_01</DisplayName>
+		<Thumbnail>\Game\Gfx\tile_icon.png</Thumbnail>
+		<DecalName>Gfx\Decals\DirtSquareLarge.dds</DecalName>
+		<LowResShadow>Pit_Of_Fire_01_shadow.png</LowResShadow>
+		<HighResShadow>Pit_Of_Fire_01_shadow.png</HighResShadow>
+		<ShadowTransparency>58</ShadowTransparency>
+		<IsCore>0</IsCore>
+		<IsHiddenFromEditor>0</IsHiddenFromEditor>
+		<SubTileFlags>1</SubTileFlags>
+		<TileDesignObject InternalName="_obj0">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>K_Platform_Round_01</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>0.000000,1.000000,0.000000</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0400</Scale>
+			<BaseScale>2.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj1">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>K_Platform_Round_01</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>0.000000,-1.000000,0.000000</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.2800</Scale>
+			<BaseScale>2.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj2">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>RobedAtMarket</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>16.337265,3.000000,14.904114</Position>
+			<Rotation>0.000000,0.750000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0400</Scale>
+			<BaseScale>0.1300</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj3">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>RobedTalking2</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>-29.974957,0.000000,-35.727554</Position>
+			<Rotation>0.000000,-0.825000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0400</Scale>
+			<BaseScale>0.1300</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj4">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>MaleTalking1</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>-25.178905,0.000000,-39.648682</Position>
+			<Rotation>0.000000,2.250001,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0400</Scale>
+			<BaseScale>0.1300</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj5">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>RobedTalking2</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>20.954712,0.000000,43.205841</Position>
+			<Rotation>0.000000,-1.275000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0400</Scale>
+			<BaseScale>0.1300</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj6">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>RobedTalking1</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>29.568604,0.000000,40.215130</Position>
+			<Rotation>0.000000,2.025001,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0400</Scale>
+			<BaseScale>0.1300</BaseScale>
+		</TileDesignObject>
+		<TileDesignPath InternalName="_path0"/>
+		<EffectTrigger InternalName="LavaPool">
+			<EffectName>LavaPool</EffectName>
+			<LocalPosition>0.000000,3.000000,0.000000</LocalPosition>
+			<Scale>0.0700</Scale>
+			<IndefiniteRepeat>1</IndefiniteRepeat>
+			<SpawnOnCreation>1</SpawnOnCreation>
+		</EffectTrigger>
+	</TileDesign>
+</TileDesigns>

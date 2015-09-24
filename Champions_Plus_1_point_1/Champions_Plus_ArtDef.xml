@@ -1,0 +1,153 @@
+<ImprovementTypeArtDefs>
+
+ <ImprovementTypeArtDef InternalName="Art_Kennel_01">
+        <ImprovementTypeArtSubPack InternalName="Art_Kennel_01_Kingdom">
+            <SupportedBuildingStyle>KingdomStyle</SupportedBuildingStyle>
+            <TileDesign>Kennel_01</TileDesign>
+            <ConstructionTileDesign>K_Construction1x1_01</ConstructionTileDesign>
+            <DrawnIcon>Improvement_Kennel.png</DrawnIcon>
+            <DrawnIconConstruction>Improvement_Kennel_C.png</DrawnIconConstruction>
+            <Thumbnail>K_Kennel_Thumb_01.png</Thumbnail>
+            <Medallions InternalName="">
+                <All>K_Kennel_Thumb_01.png</All>
+            </Medallions>
+        </ImprovementTypeArtSubPack>
+        <ImprovementTypeArtSubPack InternalName="Art_Kennel_01_Empire">
+            <SupportedBuildingStyle>EmpireStyle</SupportedBuildingStyle>
+            <TileDesign>Kennel_01</TileDesign>
+            <ConstructionTileDesign>F_Construction1x1_01</ConstructionTileDesign>
+            <DrawnIcon>Improvement_Kennel.png</DrawnIcon>
+            <DrawnIconConstruction>Improvement_Kennel_C.png</DrawnIconConstruction>
+            <Thumbnail>F_Kennel_Thumb_01.png</Thumbnail>
+            <Medallions InternalName="">
+                <All>F_Kennel_Thumb_01.png</All>
+            </Medallions>
+        </ImprovementTypeArtSubPack>
+    </ImprovementTypeArtDef>
+	
+	<ImprovementTypeArtDef InternalName="Art_Ranch_01">
+        <ImprovementTypeArtSubPack InternalName="Art_Ranch_01_Kingdom">
+            <SupportedBuildingStyle>KingdomStyle</SupportedBuildingStyle>
+            <TileDesign>Ranch_01</TileDesign>
+            <ConstructionTileDesign>K_Construction1x1_01</ConstructionTileDesign>
+            <DrawnIcon>Improvement_Pasture.png</DrawnIcon>
+            <DrawnIconConstruction>Improvement_Pasture_C.png</DrawnIconConstruction>
+            <Thumbnail>K_Stables_01_Thumb.png</Thumbnail>
+            <Medallions InternalName="">
+                <All>K_Stables_01_Thumb.png</All>
+            </Medallions>
+        </ImprovementTypeArtSubPack>
+        <ImprovementTypeArtSubPack InternalName="Art_Ranch_01_Empire">
+            <SupportedBuildingStyle>EmpireStyle</SupportedBuildingStyle>
+            <TileDesign>Ranch_01</TileDesign>
+            <ConstructionTileDesign>F_Construction1x1_01</ConstructionTileDesign>
+            <DrawnIcon>Improvement_Pasture.png</DrawnIcon>
+            <DrawnIconConstruction>Improvement_Pasture_C.png</DrawnIconConstruction>
+            <Thumbnail>F_Stables_Thumb_01.png</Thumbnail>
+            <Medallions InternalName="">
+                <All>F_Stables_Thumb_01.png</All>
+            </Medallions>
+        </ImprovementTypeArtSubPack>
+    </ImprovementTypeArtDef>
+	
+    <ImprovementTypeArtDef InternalName="Art_Archaeologist">
+        <ImprovementTypeArtSubPack InternalName="Art_Archaeologist_Kingdom">
+            <SupportedBuildingStyle>KingdomStyle</SupportedBuildingStyle>
+            <TileDesign>K_Workshop_01</TileDesign>
+            <ConstructionTileDesign>K_Construction1x1_01</ConstructionTileDesign>
+            <DrawnIcon>Improvement_DestroyedLot.png</DrawnIcon>
+            <DrawnIconConstruction>Improvement_DestroyedLot.png</DrawnIconConstruction>
+            <Thumbnail>K_Workshop_Thumb_01.png</Thumbnail>
+            <Medallions InternalName="">
+                <All>K_Workshop_Thumb_01.png</All>
+            </Medallions>
+        </ImprovementTypeArtSubPack>
+        <ImprovementTypeArtSubPack InternalName="Art_Archaeologist_Empire">
+            <SupportedBuildingStyle>EmpireStyle</SupportedBuildingStyle>
+            <TileDesign>F_Workshop_01</TileDesign>
+            <ConstructionTileDesign>F_Construction1x1_01</ConstructionTileDesign>
+            <DrawnIcon>Improvement_DestroyedLot.png</DrawnIcon>
+            <DrawnIconConstruction>Improvement_DestroyedLot.png</DrawnIconConstruction>
+            <Thumbnail>F_Workshop_Thumb_01.png</Thumbnail>
+            <Medallions InternalName="">
+                <All>F_Workshop_Thumb_01.png</All>
+            </Medallions>
+        </ImprovementTypeArtSubPack>
+    </ImprovementTypeArtDef>
+	
+		<ImprovementTypeArtDef InternalName="Art_Enchanter">
+        <ImprovementTypeArtSubPack InternalName="Art_Enchanter_Kingdom">
+            <SupportedBuildingStyle>KingdomStyle</SupportedBuildingStyle>
+            <TileDesign>K_Herbalist_01</TileDesign>
+            <ConstructionTileDesign>K_Construction1x1_01</ConstructionTileDesign>
+            <DrawnIcon>Improvement_Academy.png</DrawnIcon>
+            <DrawnIconConstruction>Improvement_Academy_C.png</DrawnIconConstruction>
+            <Thumbnail>K_Herbalist_Thumb_01.png</Thumbnail>
+            <Medallions InternalName="">
+                <All>K_Herbalist_Thumb_01.png</All>
+            </Medallions>
+        </ImprovementTypeArtSubPack>
+        <ImprovementTypeArtSubPack InternalName="Art_Enchanter_Empire">
+            <SupportedBuildingStyle>EmpireStyle</SupportedBuildingStyle>
+            <TileDesign>F_Herbalist_01</TileDesign>
+            <ConstructionTileDesign>F_Construction1x1_01</ConstructionTileDesign>
+            <DrawnIcon>Improvement_Academy.png</DrawnIcon>
+            <DrawnIconConstruction>Improvement_Academy_C.png</DrawnIconConstruction>
+            <Thumbnail>F_Herbalist_Thumb_01.png</Thumbnail>
+            <Medallions InternalName="">
+                <All>F_Herbalist_Thumb_01.png</All>
+            </Medallions>
+        </ImprovementTypeArtSubPack>
+    </ImprovementTypeArtDef>
+	
+	<ImprovementTypeArtDef InternalName="Art_AleHouse">
+        <ImprovementTypeArtSubPack InternalName="Art_AleHouse_Kingdom">
+            <SupportedBuildingStyle>KingdomStyle</SupportedBuildingStyle>
+            <TileDesign>K_YeOldTavern_01</TileDesign>
+            <ConstructionTileDesign>K_Construction1x1_01</ConstructionTileDesign>
+            <DrawnIcon>Improvement_Pub.png</DrawnIcon>
+            <DrawnIconConstruction>Improvement_Pub_C.png</DrawnIconConstruction>
+            <Thumbnail>K_Inn_01_Thumb.png</Thumbnail>
+            <Medallions InternalName="">
+                <All>K_Inn_01_Thumb.png</All>
+            </Medallions>
+        </ImprovementTypeArtSubPack>
+        <ImprovementTypeArtSubPack InternalName="Art_AleHouse_Empire">
+            <SupportedBuildingStyle>EmpireStyle</SupportedBuildingStyle>
+            <TileDesign>F_YeOldTavern_01</TileDesign>
+            <ConstructionTileDesign>F_Construction1x1_01</ConstructionTileDesign>
+            <DrawnIcon>Improvement_Pub.png</DrawnIcon>
+            <DrawnIconConstruction>Improvement_Pub_C.png</DrawnIconConstruction>
+            <Thumbnail>F_Inn_Thumb_01.png</Thumbnail>
+            <Medallions InternalName="">
+                <All>F_Inn_Thumb_01.png</All>
+            </Medallions>
+        </ImprovementTypeArtSubPack>
+    </ImprovementTypeArtDef>
+	
+	<ImprovementTypeArtDef InternalName="Art_ArcanaWard">
+        <ImprovementTypeArtSubPack InternalName="Art_ArcanaWard_Kingdom">
+            <SupportedBuildingStyle>KingdomStyle</SupportedBuildingStyle>
+            <TileDesign>K_Arcana_Ward_01</TileDesign>
+            <ConstructionTileDesign>K_Construction1x1_01</ConstructionTileDesign>
+            <DrawnIcon>Improvement_TowerOfTheMagi.png</DrawnIcon>
+            <DrawnIconConstruction>Improvement_TowerOfTheMagi_C.png</DrawnIconConstruction>
+            <Thumbnail>K_Tower_of_The_Magi_Thumb_01.png</Thumbnail>
+            <Medallions InternalName="">
+                <All>K_Tower_of_The_Magi_Thumb_01.png</All>
+            </Medallions>
+        </ImprovementTypeArtSubPack>
+        <ImprovementTypeArtSubPack InternalName="Art_ArcanaWard_Empire">
+            <SupportedBuildingStyle>EmpireStyle</SupportedBuildingStyle>
+            <TileDesign>F_Arcana_Ward_01</TileDesign>
+            <ConstructionTileDesign>F_Construction1x1_01</ConstructionTileDesign>
+            <DrawnIcon>Improvement_TowerOfTheMagi.png</DrawnIcon>
+            <DrawnIconConstruction>Improvement_TowerOfTheMagi_C.png</DrawnIconConstruction>
+            <Thumbnail>F_Tower_of_The_Magi_Thumb_01.png</Thumbnail>
+            <Medallions InternalName="">
+                <All>F_Tower_of_The_Magi_Thumb_01.png</All>
+            </Medallions>
+        </ImprovementTypeArtSubPack>
+    </ImprovementTypeArtDef>
+
+    </ImprovementTypeArtDefs>

@@ -1,0 +1,155 @@
+<ImprovementTypes>
+
+<ImprovementType InternalName="Diplomat">
+        <DisplayName>Diplomat's Office</DisplayName>
+        <Description>The diplomat will generate Diplomatic Capital (influence) improving your relations with other civilizations. The effect will increase as you pass 100 and then 200 influence more than a rival's influence.</Description>
+        <RequiresCity>1</RequiresCity>		
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>TradeGuild</RequiredImprovement>  
+		<LaborToBuild>750</LaborToBuild>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Literacy</Attribute>
+        </Prereq>
+        <!--<GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>DiplomaticCapital</Attribute>
+            <Value>50</Value>
+            <Provides>+50 Diplomatic Capital</Provides>
+        </GameModifier>-->
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_DiplomaticCapital</StrVal>
+            <Value>10</Value>
+            <Provides>All sources of Influence get +10%</Provides>
+        </GameModifier>		
+		<GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>DiplomaticCapital</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>			
+            <Provides>+1 Diplomatic Capital Per Turn</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>City</ModType>
+            <Attribute>AdjustDefendingUnit</Attribute>
+            <StrVal>UnitStat_IsAtDiplomat</StrVal>
+            <Value>1</Value>
+            <Provides>Can recruit spies</Provides>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+            <AITag>Diplomat</AITag>
+        </AIData>
+        <ArtDef>Art_Embassy</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="Embassy">
+		<GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>DiplomaticCapital</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>			
+            <Provides>+1 Diplomatic Capital Per Turn</Provides>
+        </GameModifier>		
+    </ImprovementType>	
+		
+	<ImprovementType InternalName="Outpost_Spy">
+        <DisplayName>Territorial Claim</DisplayName>
+        <Description>Increases the player's borders and improves their visibility.</Description>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <ZOCMinRadius>2</ZOCMinRadius>
+        <ZOCMaxRadius>2</ZOCMaxRadius>
+        <ZOCRadiusTurnsBeforeUpdate>1</ZOCRadiusTurnsBeforeUpdate>
+        <HideInBuildList>1</HideInBuildList>
+        <LaborToBuild>-1</LaborToBuild>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+            <AITag>CommandPost</AITag>
+        </AIData>
+        <ArtDef>Art_Outpost_Base</ArtDef>
+    </ImprovementType>
+	
+		   <ImprovementType InternalName="Camp_Mercenary">
+		<GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>DiplomaticCapital</Attribute>
+            <Value>.25</Value>
+            <PerTurn>1</PerTurn>			
+            <Provides>+.25 Diplomatic Capital Per Turn</Provides>
+        </GameModifier> 
+    </ImprovementType>
+
+	<ImprovementType InternalName="Camp_OrderOfAsok">
+		<GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>DiplomaticCapital</Attribute>
+            <Value>.25</Value>
+            <PerTurn>1</PerTurn>			
+            <Provides>+.25 Diplomatic Capital Per Turn</Provides>
+        </GameModifier> 	
+    </ImprovementType>
+	
+	    <!--<ImprovementType InternalName="EmigrationOffice">
+		<GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>DiplomaticCapital</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>			
+            <Provides>+1 Diplomatic Capital Per Turn</Provides>
+        </GameModifier>
+    </ImprovementType>-->
+	
+	    <!--<ImprovementType InternalName="AdventurersGuild">
+		<GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>DiplomaticCapital</Attribute>
+            <Value>.5</Value>
+            <PerTurn>1</PerTurn>			
+            <Provides>+.5 Diplomatic Capital Per Turn</Provides>
+        </GameModifier>
+    </ImprovementType>-->
+	
+	<ImprovementType InternalName="MerchantcrossBazaar">
+		<GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>DiplomaticCapital</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>			
+            <Provides>+1 Diplomatic Capital Per Turn</Provides>
+        </GameModifier>
+    </ImprovementType>
+	
+	<ImprovementType InternalName="TreasuryVault">
+		<GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>DiplomaticCapital</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>			
+            <Provides>+1 Diplomatic Capital Per Turn</Provides>
+        </GameModifier>
+    </ImprovementType>
+	
+	<ImprovementType InternalName="HostensLibrary">
+		<GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>DiplomaticCapital</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>			
+            <Provides>+1 Diplomatic Capital Per Turn</Provides>
+        </GameModifier>
+    </ImprovementType>
+	
+
+	
+    </ImprovementTypes>

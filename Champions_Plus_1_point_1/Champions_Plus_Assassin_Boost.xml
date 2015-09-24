@@ -1,0 +1,1194 @@
+<Spells>
+
+<!--<SpellDef InternalName="CraftBow">
+        <DisplayName>Craft Bow</DisplayName>
+        <Description>Craft a bow for ranged attacks.</Description>
+        <Image>Archer_Medallion.png</Image>
+        <IconFG>W_Shortbow_Crude_Icon_01.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+		<Cooldown>5000</Cooldown>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>PathOfTheAssassin</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Gold</Resource>
+            <Amount>35</Amount>
+        </SpellResourceCost>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <Attribute>Shortbow_Crude</Attribute>
+            </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>30</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_CalltoArms_01</HitSoundFX>
+    </SpellDef>-->
+
+<SpellDef InternalName="ThrowAcid">
+        <DisplayName>Throw Acid</DisplayName>
+        <Description>Target enemy takes 2-6 damage a round for 15 rounds. Costs 20 gold for materials.</Description>
+        <Image>Ability_SpitAcidI_Icon.png</Image>
+        <IconFG>Y_SpitAcid_Icon.png</IconFG>
+        <Cooldown>3</Cooldown>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <IsCastable>0</IsCastable>
+        <CanBeDodged>1</CanBeDodged>
+        <IsSpecialAbility>1</IsSpecialAbility>
+		<Range>3</Range>
+        <SpellResourceCost>
+            <Resource>Gold</Resource>
+            <Amount>20</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>CurHealth</Attribute>
+            <Duration>15</Duration>
+            <Effect>E_Acid_Particle</Effect>
+            <PerTurn>1</PerTurn>
+            <MinValue>-2</MinValue>
+            <MaxValue>-6</MaxValue>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>100</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_SpitAcidHit_01</HitSoundFX>
+        <HitSoundFX>Spell_SpitAcidHit_02</HitSoundFX>
+        <MissSoundFX>Miss_Swing1</MissSoundFX>
+        <MissSoundFX>Miss_Swing2</MissSoundFX>
+        <SpellCastSoundFX>Spell_SpitAcidCast_01</SpellCastSoundFX>
+        <SpellCastEffectName>Y_SpitAcid_Particle</SpellCastEffectName>
+        <SpellCastEffectScale>0.50</SpellCastEffectScale>
+        <SpellCastProjectile>1</SpellCastProjectile>
+        <SpellCastProjectileSpeed>400</SpellCastProjectileSpeed>
+    </SpellDef>
+
+<!-- disabled for now. All attacks get poison damage with the unlocking ability
+	
+    <SpellDef InternalName="PoisonedNick">
+        <DisplayName>Poisoned Arrow</DisplayName>
+        <Description>If this ranged attack hits, the target enemy takes 6 poison damage per round.</Description>
+        <Image>Ability_SpitAcidI_Icon.png</Image>
+        <IconFG>Y_SpitAcid_Icon.png</IconFG>
+        <Cooldown>5</Cooldown>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <IsCastable>0</IsCastable>
+        <CanBeDodged>1</CanBeDodged>
+        <IsSpecialAbility>1</IsSpecialAbility>
+		<UseWeaponRange>1</useWeaponRange>
+	        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsBow</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Gold</Resource>
+            <Amount>10</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Poison</AttackStat>
+            <Duration>-1</Duration>
+            <Effect>E_Poison_Particle</Effect>
+            <SoundFX>Spell_Poisoned2_01</SoundFX>
+            <PerTurn>1</PerTurn>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitStat_BonusDamage_Poison] * 6]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>30</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_ToxicArrow_Hit_01</HitSoundFX>
+        <HitSoundFX>Spell_ToxicArrow_Hit_02</HitSoundFX>
+        <SpellCastSoundFX>Spell_BowAttack_ToxicCast_01</SpellCastSoundFX>
+        <SpellCastEffectName>A_ToxicLongbow_Particle</SpellCastEffectName>
+        <SpellCastEffectScale>0.3</SpellCastEffectScale>
+        <SpellCastProjectile>1</SpellCastProjectile>
+        <SpellCastProjectileSpeed>700</SpellCastProjectileSpeed>
+        <SpellDefEffect>
+            <EffectName>A_ToxicLongbow_Impact_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+	
+	-->
+
+    <SpellDef InternalName="ThrowMolotov">
+        <DisplayName>Throw Molotov</DisplayName>
+        <Description>Target tile is left burning for 5 rounds. Any unit entering it takes 15 fire damage. Costs 40 gold for materials.</Description>
+        <Image>Ability_SpitAcidI_Icon.png</Image>
+        <IconFG>Ability_Embers.png</IconFG>
+        <Cooldown>3</Cooldown>
+        <SpellBookSortCategory>World</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Map</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>FriendlyTerritory</SpellTargetType>
+        <SpellTargetTileOccupied>EnemyOrEmpty</SpellTargetTileOccupied>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <IsCastable>0</IsCastable>
+        <IsSpecialAbility>1</IsSpecialAbility>
+		<Range>3</Range>
+        <SpellResourceCost>
+            <Resource>Gold</Resource>
+            <Amount>40</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>CreateWorldProp</Attribute>
+            <StrVal>TD_Groundfire</StrVal>
+            <Duration>-1</Duration>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Fire</AttackStat>
+            <ApplyToTile>1</ApplyToTile>
+            <Duration>0</Duration>
+            <DurationOnTile>5</DurationOnTile>
+			<Value>15</Value>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+        <HitSoundFX>IceElemental_Death</HitSoundFX>
+    </SpellDef>
+
+    <SpellDef InternalName="DeadlyShot">
+        <DisplayName>Deadly Shot</DisplayName>
+        <Description>Attack with a bow for 60% more damage, but lose your next turn.</Description>
+        <Image>Ability_SpitAcidI_Icon.png</Image>
+        <IconFG>Ability_Powershot_Icon.png</IconFG>
+		<StaminaCost>7</StaminaCost>
+        <Cooldown>10</Cooldown>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <IsCastable>0</IsCastable>
+        <CanBeDodged>1</CanBeDodged>
+        <IsSpecialAbility>1</IsSpecialAbility>
+		<UseWeaponRange>1</useWeaponRange>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsBow</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Pierce</AttackStat>
+            <IsForFormattedDescription>1</IsForFormattedDescription>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitStat_CombinedAttack] * 1.6]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="ValueForFormattedDescription">
+                <Expression><![CDATA[[Calc]]]></Expression>
+            </Calculate>
+        </GameModifier>
+		        <GameModifier>
+            <ModType>TacticalUnit</ModType>
+            <Attribute>ChanceToLoseNextTurn</Attribute>
+            <ApplyToCaster>1</ApplyToCaster>
+            <DisplayName>Dazed</DisplayName>
+            <Duration>2</Duration>
+            <Effect>E_Daze_Particle</Effect>
+            <Value>100</Value>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>30</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_CrushingBlow_01</HitSoundFX>
+        <MissSoundFX>Miss_Swing2</MissSoundFX>
+        <SpellCastSoundFX>Spell_BowAttack_BasicCast_01</SpellCastSoundFX>
+        <SpellCastEffectName>Arrow</SpellCastEffectName>
+        <SpellCastEffectScale>0.5</SpellCastEffectScale>
+        <SpellCastProjectile>1</SpellCastProjectile>
+        <SpellCastProjectileSpeed>1100</SpellCastProjectileSpeed>
+    </SpellDef>
+
+<SpellDef InternalName="Poisoned">
+        <DisplayName>Poisoned</DisplayName>
+        <Description>Unit takes 2 Poison damage per round</Description>
+        <Image>Ability_PoisonousI_Icon.png</Image>
+        <IconFG>Ability_PoisonousI_Icon.png</IconFG>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <IsCastable>0</IsCastable>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Poison</AttackStat>
+            <Duration>-1</Duration>
+            <Effect>E_Poison_Particle</Effect>
+            <SoundFX>Spell_Poisoned1_01</SoundFX>
+            <PerTurn>1</PerTurn>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitStat_BonusDamage_Poison] * 2]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Poisoned_01</HitSoundFX>
+        <HitSoundFX>Spell_Poisoned_02</HitSoundFX>
+    </SpellDef>
+    <SpellDef InternalName="Poisoned1">
+        <DisplayName>Poisoned I</DisplayName>
+        <Description>Unit takes 3 Poison damage per round</Description>
+        <Image>Ability_PoisonousI_Icon.png</Image>
+        <IconFG>Ability_PoisonousI_Icon.png</IconFG>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <IsCastable>0</IsCastable>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Poison</AttackStat>
+            <Duration>-1</Duration>
+            <Effect>E_Poison_Particle</Effect>
+            <SoundFX>Spell_Poisoned1_01</SoundFX>
+            <PerTurn>1</PerTurn>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitStat_BonusDamage_Poison] * 3]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Poisoned1_01</HitSoundFX>
+        <HitSoundFX>Spell_Poisoned1_02</HitSoundFX>
+    </SpellDef>
+    <SpellDef InternalName="Poisoned2">
+        <DisplayName>Poisoned II</DisplayName>
+        <Description>Unit takes 6 Poison damage per round</Description>
+        <Image>Ability_PoisonousII_Icon.png</Image>
+        <IconFG>Ability_PoisonousII_Icon.png</IconFG>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <IsCastable>0</IsCastable>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Poison</AttackStat>
+            <Duration>-1</Duration>
+            <Effect>E_Poison_Particle</Effect>
+            <SoundFX>Spell_Poisoned2_01</SoundFX>
+            <PerTurn>1</PerTurn>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitStat_BonusDamage_Poison] * 6]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Poisoned2_01</HitSoundFX>
+        <HitSoundFX>Spell_Poisoned2_02</HitSoundFX>
+    </SpellDef>
+    <SpellDef InternalName="Poisoned3">
+        <DisplayName>Poisoned III</DisplayName>
+        <Description>Unit takes 12 Poison damage per round</Description>
+        <Image>Ability_PoisonousIII_Icon.png</Image>
+        <IconFG>Ability_PoisonousIII_Icon.png</IconFG>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <IsCastable>0</IsCastable>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Poison</AttackStat>
+            <Duration>-1</Duration>
+            <Effect>E_Poison_Particle</Effect>
+            <SoundFX>Spell_Poisoned2_02</SoundFX>
+            <PerTurn>1</PerTurn>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitStat_BonusDamage_Poison] * 12]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Poisoned2_01</HitSoundFX>
+        <HitSoundFX>Spell_Poisoned2_02</HitSoundFX>
+    </SpellDef>
+	
+	<SpellDef InternalName="AssassinInfiltrate">
+	<DisplayName>Assassin Infiltration</DisplayName>
+	<Description>Assassin can place traps or choose where to begin the battle</Description>
+	<Image>T_Focus_Painting.png</Image>
+	<IconFG>T_Focus_Icon.png</IconFG>
+	<CanStack>0</CanStack>
+	<SpellBookSortCategory>Unit</SpellBookSortCategory>
+	<SpellBookSortSubCategory>UnitEnchantment</SpellBookSortSubCategory>
+	<SpellType>Tactical</SpellType>
+	<SpellClass>Offensive</SpellClass>
+	<SpellSubClass>Buff</SpellSubClass>
+	<SpellTargetType>Self</SpellTargetType>
+	<IgnoreCastAnim>1</IgnoreCastAnim>
+	<IsCastable>0</IsCastable>
+	<GameModifier>
+		<ModType>Unit</ModType>
+		<Attribute>AdjustUnitStat</Attribute>
+		<StrVal>UnitStat_Infiltrate</StrVal>
+		<Duration>2</Duration>
+		<Value>1</Value>
+	</GameModifier>
+        <GameModifier>
+            <ModType>TacticalUnit</ModType>
+            <Attribute>GoNext</Attribute>
+        </GameModifier>       
+	<AIData AIPersonality="AI_General">
+		<AIPriority>5</AIPriority>
+	</AIData>        
+</SpellDef>
+
+    <SpellDef InternalName="Sneak_Assassin">
+        <DisplayName>Sneak</DisplayName>
+        <Description>Start from any location in Tactical combat, then take another turn. On your next turn your critical chance will be increased by 50 and your accuracy by 200. Usable only on the first turn of combat.</Description>
+        <IconFG>Ability_Sneak_Icon.png</IconFG>
+        <Cooldown>99</Cooldown>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>EmptyTile</SpellTargetType>
+        <SpellTargetTileOccupied>Empty</SpellTargetTileOccupied>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <IsCastable>0</IsCastable>
+        <IsSpecialAbility>1</IsSpecialAbility>
+	    <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_Infiltrate</Attribute>
+            <Value>1</Value>
+        </Prereq>		
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>TransportUnit</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ChanceToCrit</StrVal>
+            <ApplyToCaster>1</ApplyToCaster>
+            <Duration>2</Duration>
+            <Value>25</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Accuracy</StrVal>
+            <ApplyToCaster>1</ApplyToCaster>
+            <Duration>2</Duration>
+            <Value>100</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>TacticalUnit</ModType>
+			<ApplyToCaster>1</ApplyToCaster>
+            <Attribute>GoNext</Attribute>
+        </GameModifier> 		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+	
+	    <SpellDef InternalName="Spike_Trap">
+        <DisplayName>Spike Trap</DisplayName>
+        <Description>Set a trap on a tile that does damage to any unit crossing it. Usable only on the first turn of combat.</Description>
+        <Image>U_Inferno_Painting.png</Image>
+        <IconFG>DestroyBuildingIcon.png</IconFG>
+        <Cooldown>99</Cooldown>		
+        <SpellBookSortCategory>World</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Map</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Debuff</SpellSubClass>
+        <SpellTargetType>FriendlyTerritory</SpellTargetType>
+        <SpellTargetTileOccupied>EnemyOrEmpty</SpellTargetTileOccupied>
+		<Range>5</Range>
+	    <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_Infiltrate</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>CreateWorldProp</Attribute>
+            <StrVal>Trap_Prop1</StrVal>
+            <Duration>5</Duration>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Pierce</AttackStat>
+            <ApplyToTile>1</ApplyToTile>
+            <Duration>0</Duration>
+            <DurationOnTile>-1</DurationOnTile>
+            <Calculate InternalName="Calc" ValueOwner="TargetUnit">
+                <Expression><![CDATA[[Unit_GetTroopCount] * 10]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Fortify_01</HitSoundFX>
+        <HitSoundFX>Spell_Fortify_02</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_AuraofMight_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>.75</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+	
+	<SpellDef InternalName="Poison_Trap">
+        <DisplayName>Poison Trap</DisplayName>
+        <Description>Set a trap on a tile that does poison damage to any unit crossing it. Usable only on the first turn of combat.</Description>
+        <Image>U_Inferno_Painting.png</Image>
+        <IconFG>MapEditorIcon_TileModifier.png</IconFG>
+        <SpellBookSortCategory>World</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Map</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Debuff</SpellSubClass>
+        <SpellTargetType>FriendlyTerritory</SpellTargetType>
+        <SpellTargetTileOccupied>EnemyOrEmpty</SpellTargetTileOccupied>
+		<Range>5</Range>
+	    <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_Infiltrate</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>CreateWorldProp</Attribute>
+            <StrVal>Trap_Prop1</StrVal>
+            <Duration>5</Duration>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Poison</AttackStat>
+            <ApplyToTile>1</ApplyToTile>
+            <Duration>0</Duration>
+            <DurationOnTile>-1</DurationOnTile>
+            <Calculate InternalName="Calc" ValueOwner="TargetUnit">
+                <Expression><![CDATA[[Unit_GetTroopCount] * 10]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Fortify_01</HitSoundFX>
+        <HitSoundFX>Spell_Fortify_02</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_AuraofMight_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>.75</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+	
+	<SpellDef InternalName="Eviscerate">
+        <DisplayName>Eviscerate</DisplayName>
+        <Description>Attack for an automatic critical hit.</Description>
+        <IconFG>Ability_Eviscerate_Icon.png</IconFG>
+		<StaminaCost>3</StaminaCost>
+        <CanStack>0</CanStack>
+        <Cooldown>5</Cooldown>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+        <ApproachTargetTile>1</ApproachTargetTile>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <IsCastable>0</IsCastable>
+        <CanBeDodged>1</CanBeDodged>
+        <IsSpecialAbility>1</IsSpecialAbility>
+        <UseWeaponRange>1</UseWeaponRange>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ChanceToCrit</StrVal>
+            <ApplyToCaster>1</ApplyToCaster>
+            <IsPreHitSpellModifier>1</IsPreHitSpellModifier>
+            <Value>100</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>25</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_TrueStrike_01</HitSoundFX>
+        <MissSoundFX>Miss_Swing1</MissSoundFX>
+        <MissSoundFX>Miss_Swing2</MissSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_Sacrifice_Particle</EffectName>
+            <LocalPosition>0,50,0</LocalPosition>
+            <EffectScale>.5</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+	
+	<SpellDef InternalName="Assassinate">
+        <DisplayName>Assassinate</DisplayName>
+        <Description>Once per battle, attack to permanently kill a champion or sovereign, if it connects. Accuracy is reduced by 3 for every hit point the target currently has remaining - only attempt on a nearly dead unit! Cannot be used again if a sovereign is killed.</Description>
+        <Image>RoyalFuneral.png.png</Image>
+        <IconFG>Improvement_FloodedGraveyard.png</IconFG>
+		<StaminaCost>7</StaminaCost>
+        <Cooldown>99</Cooldown>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitCurse</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+        <ApproachTargetTile>1</ApproachTargetTile>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <IsCastable>0</IsCastable>
+        <CanBeDodged>1</CanBeDodged>
+        <IsSpecialAbility>1</IsSpecialAbility>
+        <Range>1</Range>
+		<Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAssassinateReady</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Accuracy</StrVal>
+            <ApplyToCaster>1</ApplyToCaster>
+            <IsPreHitSpellModifier>1</IsPreHitSpellModifier>
+            <Calculate InternalName="Calc" ValueOwner="TargetUnit">
+                <Expression><![CDATA[[Unit_GetHPCurrent] * 3]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc] * -1]]></Expression>
+            </Calculate>           
+        </GameModifier>		
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>PermanentDeath</Attribute>
+            <DisplayName>Assassinated!</DisplayName>			
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Assassinate_Ready</StrVal>
+            <ApplyToCaster>1</ApplyToCaster>
+            <Calculate InternalName="Calc" ValueOwner="TargetUnit">
+                <Expression><![CDATA[[Unit_BG_IsSovereign]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc] * -1]]></Expression>
+            </Calculate>           
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>1000</AIPriority>
+			<ValueCalcWrapper>
+				<ValueType>IsTargetWorthy</ValueType>
+				<Calculate InternalName="Calc" ValueOwner="TargetUnit">
+					<Expression><![CDATA[[Unit_BG_IsChampion]]]></Expression>
+				</Calculate>
+				<Calculate InternalName="Value">
+					<Expression><![CDATA[[Calc] > 0]]></Expression>
+				</Calculate>
+			</ValueCalcWrapper>
+        </AIData>
+        <CasterAnimationType>30</CasterAnimationType>
+        <HitSoundFX>Ability_Cleave_01</HitSoundFX>
+        <HitSoundFX>Ability_Cleave_02</HitSoundFX>
+        <MissSoundFX>Miss_Swing1</MissSoundFX>
+        <MissSoundFX>Miss_Swing2</MissSoundFX>
+        <SpellDefEffect>
+            <EffectName>Y_DeadlyBite_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>1.0</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>		
+    </SpellDef>
+	
+		<!--<SpellDef InternalName="RainOfArrows">
+        <DisplayName>Rain of Arrows</DisplayName>
+        <Description>Fires arrows at all enemies in a 2 tile radius.</Description>
+        <IconFG>Ability_RainofArrows_Icon.png</IconFG>
+        <Cooldown>5</Cooldown>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <IgnoreInvalidTargetsInRadius>1</IgnoreInvalidTargetsInRadius>
+        <IsCastable>0</IsCastable>
+        <CanBeDodged>1</CanBeDodged>
+        <IsSpecialAbility>1</IsSpecialAbility>
+        <Radius>2</Radius>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsBow</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>100</AIPriority>
+            <AIMinSpellTargets>2</AIMinSpellTargets>
+        </AIData>
+        <CasterAnimationType>31</CasterAnimationType>
+        <HitSoundFX>Hit_Arrow1</HitSoundFX>
+        <HitSoundFX>Hit_Arrow2</HitSoundFX>
+        <MissSoundFX>Miss_Swing1</MissSoundFX>
+        <MissSoundFX>Miss_Swing2</MissSoundFX>
+        <SpellCastSoundFX>Spell_BowAttack_BasicCast_01</SpellCastSoundFX>
+        <SpellCastEffectName>Arrow</SpellCastEffectName>
+        <SpellCastEffectScale>0.5</SpellCastEffectScale>
+        <SpellCastProjectile>1</SpellCastProjectile>
+        <SpellCastProjectileSpeed>1100</SpellCastProjectileSpeed>
+    </SpellDef>-->
+	
+	<SpellDef InternalName="Escape_Assassin_Ability">
+        <DisplayName>Slip From Sight</DisplayName>
+        <Description>All units flee from the battlefield.</Description>
+        <Image>T_Escape_Painting.png</Image>
+        <IconFG>T_Escape_Icon.png</IconFG>
+		<StaminaCost>7</StaminaCost>
+        <CastTime>1</CastTime>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Movement</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Movement</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>AllFriendlyUnits</SpellTargetType>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <IsSpecialAbility>1</IsSpecialAbility>
+        <GameModifier>
+            <ModType>TacticalUnit</ModType>
+            <Attribute>EscapeFromBattle</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Teleport_03</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>T_Escape_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>.75</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+            <PlayOnAllTargets>1</PlayOnAllTargets>
+        </SpellDefEffect>
+    </SpellDef>
+	
+	<SpellDef InternalName="MarkOfRegicide">
+        <DisplayName>Anointment Of Regicide</DisplayName>
+        <Description>Cast on an assassin with the Executioner II trait to allow that Assassin to permanently assassinate ONE sovereign or champion.</Description>
+        <Image>F_Domination_Full.png</Image>
+        <IconFG>T_Kill_Icon.png</IconFG>
+		<Cooldown>50</Cooldown>
+		<AutoUnlock>1</AutoUnlock>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitEnchantment</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Buff</SpellSubClass>
+        <SpellTargetType>FriendlyChampionOrSov</SpellTargetType>
+        <CasterMustBeSov>1</CasterMustBeSov>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>400</Amount>
+        </SpellResourceCost>		
+				<GameModifier>
+					<ModType>Unit</ModType>
+					<Attribute>AdjustUnitStat</Attribute>
+					<StrVal>UnitStat_Assassinate_Ready</StrVal>
+					<Value>1</Value>
+				</GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>1000</AIPriority>
+        <ValueCalcWrapper>
+            <ValueType>IsTargetWorthy</ValueType>
+            <Calculate InternalName="Calc" ValueOwner="TargetUnit">
+                <Expression><![CDATA[[UnitStat_MarkOfRegicide]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc] > 0]]></Expression>
+            </Calculate>
+        </ValueCalcWrapper>			
+        </AIData>
+        <HitSoundFX>Spell_Antipathy_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_Blight_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+	
+	<!-- <SpellDef InternalName="AssassinsStrike">
+        <DisplayName>Assassin's Strike</DisplayName>
+        <Description>Attack at +3 Attack per Stamina</Description>
+        <FormattedDescription>Launch a %d Attack</FormattedDescription>
+        <IconFG>Ability_AssassinsStrike_Icon.png</IconFG>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+        <ApproachTargetTile>1</ApproachTargetTile>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <IsCastable>0</IsCastable>
+        <CanBeDodged>1</CanBeDodged>
+        <IsSpecialAbility>1</IsSpecialAbility>
+        <UseWeaponRange>1</UseWeaponRange>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Pierce</AttackStat>
+            <IsForFormattedDescription>1</IsForFormattedDescription>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitStat_Stamina] * 3]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc2" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitStat_CombinedAttack] + [Calc]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc2]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="ValueForFormattedDescription">
+                <Expression><![CDATA[[Calc2]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Stamina</StrVal>
+            <ApplyToCaster>1</ApplyToCaster>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitStat_Stamina] * -1]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_CrushingBlow_01</HitSoundFX>
+        <MissSoundFX>Miss_Swing1</MissSoundFX>
+        <MissSoundFX>Miss_Swing2</MissSoundFX>
+        <SpellDefEffect>
+            <EffectName>Y_Ability_CrushingBlow</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>0.6</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>-->
+	
+</Spells>
+
+<AbilityBonuses>
+
+
+	<AbilityBonus InternalName="Poison_AssassinAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="Poison_Assassin">
+            <DisplayName>Lethal Formulas</DisplayName>
+            <Description>+3 poison attack, can use Throw Acid.</Description>
+            <Icon>Ability_Assassin_Icon.png</Icon>
+            <PerkTreePosX>0</PerkTreePosX>
+            <PerkTreePosY>4</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>ThrowAcid</StrVal>
+                <Provides>Can use Throw Acid</Provides>
+            </GameModifier>
+            <!--<GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>ThrowMolotov</StrVal>
+                <Provides>Can use Throw Molotov</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Poison_Trap</StrVal>
+                <Provides>Can lay poison traps on first round of combat</Provides>
+            </GameModifier>-->		
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Poison</StrVal>
+                <Value>3</Value>
+                <Provides>+3 Poison attack</Provides>
+            </GameModifier>		
+            <IsCombatAbility>1</IsCombatAbility>
+            <Type>Ability</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>PathOfTheAssassin</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="PrecisionAbility_Level">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="Precision_Level">
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <Value>1</Value>
+                <Provides>+1 attack</Provides>
+            </GameModifier>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="Precision2Ability_Level">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="Precision2_Level">
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <Value>2</Value>
+                <Provides>+2 attack</Provides>
+            </GameModifier>
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+    <AbilityBonus InternalName="Precision3Ability_Level">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="Precision3_Level">
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <Value>3</Value>
+                <Provides>+3 attack</Provides>
+            </GameModifier>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+<AbilityBonus InternalName="VitalStrike1Ability">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="VitalStrike1">
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_BonusDamage_Poison</StrVal>
+                <Provides>+25% to melee poison damage effects</Provides>
+				<Value>.25</Value>
+            </GameModifier>
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+    <AbilityBonus InternalName="VitalStrike2Ability">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="VitalStrike2">	
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_BonusDamage_Poison</StrVal>
+                <Multiplier>1.25</Multiplier>
+                <Provides>+25% to melee poison damage effects</Provides>
+            </GameModifier>
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+    <AbilityBonus InternalName="VitalStrike3Ability">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="VitalStrike3">
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <Provides>+25% to melee poison damage effects</Provides>
+				<Value>.25</Value>
+            </GameModifier>
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+    <AbilityBonus InternalName="VitalStrike4Ability">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="VitalStrike4">
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Poison</StrVal>
+                <Multiplier>2</Multiplier>
+                <Provides>+100% Poison damage</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_BonusDamage_Poison</StrVal>
+                <Provides>+25% to melee poison damage effects</Provides>
+				<Value>.25</Value>
+            </GameModifier>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="MasterArcher2Ability">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="MasterArcher2">
+            <DisplayName>Murderer's Aim</DisplayName>
+            <Description>+20 Critical Hit Chance when using a Bow and unlocks DeadlyShot</Description>
+            <Icon>Ability_MasterArcher_Icon.png</Icon>
+            <PerkTreePosX>4</PerkTreePosX>
+            <PerkTreePosY>3</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <BoolVal1>1</BoolVal1>
+                <StrVal>UnitStat_ChanceToCrit</StrVal>
+                <StrVal2>UnitStat_IsBow</StrVal2>
+                <Value>20</Value>
+                <BonusValue>0.5</BonusValue>
+                <Provides>+20 Critical Hit Chance when using a Bow</Provides>
+                <vsHigher>1</vsHigher>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>DeadlyShot</StrVal>
+                <Provides>Unlocks DeadlyShot: Deal 50% bonus damage, requires a bow</Provides>
+            </GameModifier>
+            <IsCombatAbility>1</IsCombatAbility>
+            <Type>Ability</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>RainOfArrows</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+	    <AbilityBonus InternalName="ChargeAbility_Level">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="Charge_Level">
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <Value>2</Value>
+                <Provides>+2 Attack for the first three turns of combat</Provides>
+                <xActions>3</xActions>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Moves</StrVal>
+                <Value>2</Value>
+                <Provides>+2 Moves for the first three turns of combat</Provides>
+                <xActions>3</xActions>
+            </GameModifier>
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+	    <AbilityBonus InternalName="Executioner2Ability">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="Executioner2">
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Assassinate</StrVal>
+                <Provides>Unlocks assassinate: attack weakened champions to permanently kill them.</Provides>
+            </GameModifier>	
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MarkOfRegicide</StrVal>
+                <Value>1</Value>
+                <Provides>This unit can be targeted by Mark Of Regicide</Provides>
+            </GameModifier>			
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+	<AbilityBonus InternalName="AcrobatAbility_Level">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="Acrobat_Level">
+	            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Escape_Assassin_Ability</StrVal>
+                <Provides>Grants the ability to escape from battle (leaving any allies behind to fight)</Provides>
+            </GameModifier>
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+	<AbilityBonus InternalName="Dodge2Ability">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="Dodge2">
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>MovementCostOverRide</Attribute>
+                <StrVal>Forest</StrVal>
+                <Value>8</Value>
+                <Provides>No Movement penalty in Forests</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>MovementCostOverRide</Attribute>
+                <StrVal>SwampTerrain</StrVal>
+                <Value>8</Value>
+                <Provides>No Movement penalty in Swamps</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>MovementCostOverRide</Attribute>
+                <StrVal>HillsTerrain</StrVal>
+                <Value>8</Value>
+                <Provides>No Movement penalty on Hills</Provides>
+            </GameModifier>
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+ <AbilityBonus InternalName="RainOfArrowsAbility">
+        <AbilityBonusOption InternalName="RainOfArrows">
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_BonusRainOfArrows</StrVal>
+                <Value>1</Value>
+                <Provides>Rain Of Arrows Does Full Attack Damage</Provides>
+            </GameModifier>
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+</AbilityBonuses>
+
+<PlayerAbilityTypes>
+
+	<UnitStatType InternalName="UnitStat_BonusDamage_Poison">
+		<DisplayName>Poison Damage</DisplayName>
+		<Description>Percentage bonus to the amount of damage done by poison.</Description>
+		<Icon>Stat_SpawnRating_Icon.png</Icon>
+		<Hidden>1</Hidden>
+        <DefaultValue>1.0</DefaultValue>
+		<DisplayPercentage>1</DisplayPercentage>
+    </UnitStatType>
+	
+	<UnitStatType InternalName="UnitStat_Infiltrate">
+		<DisplayName>Infiltration</DisplayName>
+		<Description>Is this unit infiltrating prior to battle?</Description>
+		<Icon>Stat_SpawnRating_Icon.png</Icon>
+		<Hidden>1</Hidden>
+        <DefaultValue>0</DefaultValue>
+    </UnitStatType>
+	
+	<UnitStatType InternalName="UnitStat_AssassinateReady">
+        <DisplayName>Assassination Ready?</DisplayName>
+        <Description>Unitstat required to be able to assassinate champions or sovereigns</Description>
+        <Hidden>1</Hidden>
+		<UnitStatGrouping>CombatStat</UnitStatGrouping>
+        <DefaultValue>1.0</DefaultValue>
+    </UnitStatType>
+	
+	<UnitStatType InternalName="UnitStat_MarkOfRegicide">
+        <DisplayName>Regicide Eligible</DisplayName>
+        <Description>Used solely for AI targeting of Mark Of Regicide spell</Description>
+        <Hidden>1</Hidden>
+		<UnitStatGrouping>CombatStat</UnitStatGrouping>
+        <DefaultValue>0</DefaultValue>
+    </UnitStatType>
+	
+
+</PlayerAbilityTypes>

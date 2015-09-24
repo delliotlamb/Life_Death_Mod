@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+<Container>
+  <AbilityBonus InternalName="Injury_AfraidOfDying">
+    <AbilityBonusOption InternalName="AfraidOfDying">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_HasInjuries</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Injury</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Injury_Hallucinations">
+    <AbilityBonusOption InternalName="Hallucinations">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_HasInjuries</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Injury</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Injury_Amnesia">
+    <AbilityBonusOption InternalName="Amnesia">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_HasInjuries</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Injury</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Injury_BlindInOneEye">
+    <AbilityBonusOption InternalName="BlindInOneEye">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_HasInjuries</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Injury</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Injury_BrokenLegAbility">
+    <AbilityBonusOption InternalName="BrokenLeg">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_HasInjuries</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Injury</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Injury_BrokenNoseAbility">
+    <AbilityBonusOption InternalName="BrokenNose">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_HasInjuries</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Injury</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Injury_ChippedToothAbility">
+    <AbilityBonusOption InternalName="ChippedTooth">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_HasInjuries</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Injury</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Injury_CrackedSkull">
+    <AbilityBonusOption InternalName="CrackedSkull">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_HasInjuries</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Injury</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Injury_FleshWound">
+    <AbilityBonusOption InternalName="FleshWound">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_HasInjuries</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Injury</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Injury_RottingWound">
+    <AbilityBonusOption InternalName="RottingWound">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_HasInjuries</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Injury</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Injury_GangreneHand">
+    <AbilityBonusOption InternalName="GangreneHand">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_HasInjuries</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Injury</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Injury_MissingEar">
+    <AbilityBonusOption InternalName="MissingEar">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_HasInjuries</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Injury</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Injury_MissingFinger">
+    <AbilityBonusOption InternalName="MissingFinger">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_HasInjuries</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Injury</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Injury_Pneumonia">
+    <AbilityBonusOption InternalName="Pneumonia">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_HasInjuries</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Injury</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Injury_TisButAScratch">
+    <AbilityBonusOption InternalName="TisButAScratch">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_HasInjuries</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Injury</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Injury_Concussion">
+    <AbilityBonusOption InternalName="Concussion">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_HasInjuries</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Injury</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Injury_TyphoidFever">
+    <AbilityBonusOption InternalName="TyphoidFever">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_HasInjuries</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Injury</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Injury_TwistedAnkleAbility">
+    <AbilityBonusOption InternalName="TwistedAnkle">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_HasInjuries</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Injury</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Injury_TwistedKnee">
+    <AbilityBonusOption InternalName="TwistedKnee">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_HasInjuries</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Injury</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+</Container>

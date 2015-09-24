@@ -1,0 +1,159 @@
+<FlavorTextEntries>
+
+    <FlavorText>
+        <Topic>Talk_DeclareWar</Topic>
+        <Faction>OrderOfAndris</Faction>
+        <Text>The Knights of [S_FactionShortName] have drilled and trained hard for this day. On Behalf of[S_LeaderName], know that we march to face you in honorable combat!</Text>
+		<Text>No further words between us. [S_FactionShortName] declares war upon the [L_FactionName]!</Text>
+        <Text>We have watched your conduct and character. I challenge you, [L_LeaderName]! In battle I shall punish your errors. War comes for you!</Text>
+		<Text>The Iru themselves hide from the world to avoid war, but even they know there are times for violence. [L_FactionShortName], know you have become our enemies in war!</Text>
+    </FlavorText>
+    <FlavorText>
+        <Topic>Talk_EnteringForeignTerritory</Topic>
+        <Faction>OrderOfAndris</Faction>
+        <Text>Our territory is a second Iru sanctuary, [S_FactionShortName]. Begone from their presence or we shall slay you.</Text>
+    </FlavorText>
+    <FlavorText>
+        <Topic>Talk_FirstContact</Topic>
+        <Faction>OrderOfAndris</Faction>
+        <Rule>1</Rule>
+        <Text>Greetings, [L_LeaderName]. We are the Krax who rejected the ways of death. Let us work together to keep death at bay.</Text>
+        <Text>We [S_FactionShortName] value honor and oaths. Respect our oath to the Iru, [L_LeaderName], and there will be peace between us.</Text>
+        <Text>We are the [S_FactionShortName]. We have little patience being branded with the treachery of our Krax kin, [L_LeaderName]. We are confident our behaviour shall speak for us and redeem our honor.</Text>		
+    </FlavorText>
+    <FlavorText>
+        <Topic>Talk_FirstContact</Topic>
+        <Faction>OrderOfAndris</Faction>
+        <Rule>2</Rule>
+        <Text>You call yourself [L_LeaderName]? Tell the [L_FactionShortName] we did not submit to the Fallen ways as the other Krax did. Do not trifle with our armies.</Text>
+        <Text>[L_LeaderName] we will be watching your hungry [L_FactionName] hordes. [S_FactionShortName] will tolerate your kind who act in peace, and quickly slay those who plot war or treachery.</Text>
+        <Text>[L_LeaderName], hold your dogs at bay. The people of [S_FactionShortName] will tolerate those of your citizens who can keep an oath. We shall slay any of your blood who cannot.</Text>
+    </FlavorText>
+    <!--<FlavorText>
+        <Topic>Talk_FirstContact</Topic>
+        <Faction>OrderOfAndris</Faction>
+        <ListeningFaction>KingdomOfAltar</ListeningFaction>
+        <R_OK>Talk_FirstContact_R_OK_KingdomToKingdom</R_OK>
+        <Text>Greetings, [L_LeaderName] of Altar. In the name of our Proconsul, [S_LeaderName], we recognize your nation and endeavour to remake the world in cooperation with you.</Text>
+        <Text>[L_LeaderName]! The humble hospitality of the [S_FactionShortName] is yours, if you would have it.  These are dangerous but opportune times, and we are open to peace and cooperation with you if you can but respect our Republican ways.</Text>
+        <Text>We are both rebels in our own right, [L_LeaderName]. The [S_FactionShortName] will build a New Republic, and if you can respect our ways we may yet become fast allies.</Text>
+    </FlavorText>
+    <FlavorText>
+        <Topic>Talk_FirstContact</Topic>
+        <Faction>OrderOfAndris</Faction>
+        <ListeningFaction>KingdomOfCapitar</ListeningFaction>
+        <R_OK>Talk_FirstContact_R_OK_KingdomToKingdom</R_OK>
+        <Text>[L_LeaderName] of Capitar. We of the [S_FactionShortName] are eager to build a strong, prosperous political economy in the world. We are excited to discuss how our merchants and laborers can work together for mutual benefit.</Text>
+		<Text>[L_LeaderName] of Capitar, greetings! Despite the distaste for concentrated wealth here in [S_FactionShortName], we know we could stand to learn much from your shrewd traders and merchants. Let us cooperate to make both our societies greater.</Text>
+    </FlavorText>
+    <FlavorText>
+        <Topic>Talk_FirstContact</Topic>
+        <Faction>OrderOfAndris</Faction>
+        <ListeningFaction>KingdomOfGilden</ListeningFaction>
+        <R_OK>Talk_FirstContact_R_OK_KingdomToKingdom</R_OK>
+        <Text>[L_LeaderName] of Gilden, we are honored to finally meet your resolute people. Let us meet and break bread together soon. Surely in working together, we can remake the world into a brighter age.</Text>
+    </FlavorText>
+	
+    <FlavorText>
+        <Topic>Talk_FirstContact</Topic>
+        <Faction>OrderOfAndris</Faction>
+        <ListeningFaction>KingdomOfTarth</ListeningFaction>
+        <R_OK>Talk_FirstContact_R_OK_KingdomToKingdom</R_OK>
+        <Text>[L_LeaderName] and the people of Tarth, I greet you. We share your deep hunger for freedom, and distrust of those who would take it. Let us work together to make all the world free of bondage.</Text>
+    </FlavorText>-->
+    <FlavorText>
+        <Topic>Talk_FirstContact</Topic>
+        <Faction>OrderOfAndris</Faction>
+        <ListeningFaction>EmpireOfKraxis</ListeningFaction>
+        <R_OK>Talk_FirstContact_R_OK_EmpireToKingdom</R_OK>
+        <Text>[L_LeaderName]. What you did to us, what you did to yourselves, is unforgivable. Stay from our lands and we shall attempt to put the past behind us. Raise but a hand against us, however, and revenge shall find you.</Text>
+    </FlavorText>
+    <FlavorText>
+        <Topic>Talk_FirstContact</Topic>
+        <Faction>OrderOfAndris</Faction>
+        <ListeningFaction>EmpireOfMagnar</ListeningFaction>
+        <R_OK>Talk_FirstContact_R_OK_EmpireToKingdom</R_OK>
+        <Text>[L_LeaderName]. We have no tolerance for death magic. The ways of Curgen are abomination. You shall have but one chance to show us peaceful intentions. Fail at this and we shall meet you in war.</Text>
+    </FlavorText>
+    <FlavorText>
+        <Topic>Talk_FirstContact</Topic>
+        <Faction>OrderOfAndris</Faction>
+        <ListeningFaction>EmpireOfResoln</ListeningFaction>
+        <R_OK>Talk_FirstContact_R_OK_EmpireToKingdom</R_OK>
+        <Text>[L_LeaderName] of Resoln? You are a mystery to us. Respect the ground of the Iru or we shall purge you from this world.</Text>
+    </FlavorText>
+    <FlavorText>
+        <Topic>Talk_FirstContact</Topic>
+        <Faction>OrderOfAndris</Faction>
+        <ListeningFaction>EmpireOfUmber</ListeningFaction>
+        <R_OK>Talk_FirstContact_R_OK_EmpireToKingdom</R_OK>
+        <Text>[L_LeaderName] of Umber, a titan whose evil was eclipsed only by that of Curgen. Stay out of our affairs or your cursed lands shall burn.</Text>
+    </FlavorText>
+    <FlavorText>
+        <Topic>Talk_FirstContact</Topic>
+        <Faction>OrderOfAndris</Faction>
+        <ListeningFaction>EmpireOfYithril</ListeningFaction>
+        <R_OK>Talk_FirstContact_R_OK_EmpireToKingdom</R_OK>
+        <Text>[L_LeaderName] of Yithril. We of [S_FactionShortName] recognize your might. Do not think it is enough to overcome our courage and honor, or your lands will be left as ash.</Text>
+		<Text>[L_LeaderName] of Yithril. We of [S_FactionShortName] know the cruelty of Trogs. Submit to honor and oath or we shall purge your kind from this world.</Text>
+    </FlavorText>
+    <FlavorText>
+        <Topic>Talk_Greeting_Generic</Topic>
+        <Faction>OrderOfAndris</Faction>
+        <Rule>1</Rule>
+        <Text>Welcome to [S_FactionShortName], [L_LeaderName]. The Iru walk these halls, if you watch closely.</Text>
+        <Text>Ah, [L_LeaderName]. [S_FactionShortName] welcomes you to the second home of the Iru.</Text>
+        <Text>Listen carefully, and the song of the Iru can be heard.</Text>
+    </FlavorText>
+    <FlavorText>
+        <Topic>Talk_Greeting_Generic</Topic>
+        <Faction>OrderOfAndris</Faction>
+        <Text>Welcome to [S_FactionShortName], [L_LeaderName]. Show your honor and speak the truth.</Text>
+		<Text>[L_LeaderName], we are listening. Do not waste our hospitality.</Text>
+		<Text>[L_LeaderName], the Iru know lies when they are spoken. Take care.</Text>
+    </FlavorText>
+    <FlavorText>
+        <Topic>Talk_Greeting_GenericTrade</Topic>
+        <Faction>OrderOfAndris</Faction>
+        <Text>Make a fair deal or be gone.</Text>
+		<Text>Trade? Do so in honor and good faith only.</Text>
+		<Text>If the [S_FactionShortName] and the Iru people might benefit, I shall give you a moment.</Text>
+    </FlavorText>
+	
+	<FlavorText>
+    <Topic>Talk_WorldSituation</Topic>
+    <Faction>OrderOfAndris</Faction>
+    <Rule>1</Rule>
+    <Text>[L_LeaderName]. Arms and armor are our concern. You shall be protected by ours, or crushed under them. The choice is yours.</Text>
+    <Text>Greetings, [L_LeaderName]. Every day our warriors become more skilled, and our craftsmen more fruitful. The Iru guide us.</Text>
+    <Text>I have been to your capital, [L_LeaderName]. [L_CAPITAL_CITY] is a beautiful city. If only it was graced with the holy presence of the Iru, as [S_CAPITAL_CITY].</Text>
+    <Text>Hail [L_LeaderName]! Rumor has it that [BEST_CHAMPION] is powerful over all others. But our armies fear no individual.</Text>
+    <Text>I have come to warn you, [L_LeaderName]. Your capital is only [DISTANCE_L_CAPITAL] from a thing called [BEST_MONSTER]. Defense must come first.</Text>
+    <Text>They say a Channeler can live for hundreds of years. I hope to talk with the Iru sages for centuries to come.</Text>
+    <Text>The Spell of Making is part of the recently found book, "Book of Mastery". This knowledge would best be placed in the hands of Iru sages, not mortal men.</Text>
+    <Text>We have [S_MONEY] gildar. You have [L_MONEY] gildar. But the Iru have little use for money.</Text>
+    <Text>War is terrible. But victory makes men and their oaths stronger. Take care you win wars, not lose them.</Text>
+    <Text>[L_LeaderName]. You are our allies, or villains to be brought under rule. Reflect upon this.</Text>
+    <R_OK>Talk_Generic_R_OK</R_OK>
+  </FlavorText>
+
+  <FlavorText>
+    <Topic>Talk_WorldSituation</Topic>
+    <Faction>OrderOfAndris</Faction>
+    <Rule>2</Rule>
+    <Text>[L_LeaderName], your people can survive as servants to the Iru. Or you can be utterly destroyed. There is no in between.</Text>
+    <Text>[L_LeaderName]. I confess I have imagined what war between us would be like. I would win.</Text>
+    <Text>[L_LeaderName]. I have been to your capital, [L_CAPITAL_CITY]. Once the perverse buildings have been torn down and temples to the Iru raised, it will be a nice place to visit.</Text>
+    <Text>[L_LeaderName]. Your quest for tribal power is doomed. Submit to our rule before we must march against you.</Text>
+    <Text>[L_LeaderName], we hear tales of the deeds of [BEST_CHAMPION]. If you see him, tell him to lay down his sword lest our armies bury him.</Text>
+    <Text>[L_LeaderName]. Your capital is only [DISTANCE_L_CAPITAL] leagues from the most foul monster we've discovered. It is called [BEST_MONSTER]. Stay away from it.</Text>
+    <Text>They say the Forge of the Overlord commanded all the power of magic. If it is rebuilt, only the Iru can be trusted to watch over it.</Text>
+    <Text>The Spell of Making is magic that was thought lost from the world. But Iru sages might discover its secrets. Our knights shall slay any who seek this knowledge beside them.</Text>
+    <Text>We have [S_MONEY] gildar. You have [L_MONEY] gildar. Remember our might, [L_LeaderName].</Text>
+    <Text>After the cataclysm, we held fast to our principles, and were slaughtered for it. Yet we have survived, and our resolve has grown only stronger.</Text>
+    <Text>[L_LeaderName]. The Titans are gone. They cannot protect you anymore.</Text>
+    <R_OK>Talk_Generic_R_OK</R_OK>
+  </FlavorText>
+  
+	
+	</FlavorTextEntries>

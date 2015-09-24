@@ -1,0 +1,483 @@
+<GameItemTypes>
+
+<GameItemType InternalName="Shield_Ebleramis">
+        <DisplayName>Ebleramis</DisplayName>
+        <Description>This shield chooses its owner, one who will stand up to evil and defend the weak. It is said that in times of incredible need, Ebleramis can hold back Death itself.</Description>
+        <Type>Defense</Type>
+        <WeaponType>Shield</WeaponType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>700</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <Value>15</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Dodge</StrVal>
+            <Value>15</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Tactical_Auto_Defense_Boost</StrVal>
+            <Value>24</Value>
+            <Provides>+24 Defense when Defending</Provides>
+        </GameModifier>
+	<GameModifier>
+            	<ModType>Unit</ModType>
+            	<Attribute>AdjustUnitStat</Attribute>
+            	<StrVal>UnitStat_MagicResist</StrVal>
+            	<Value>20</Value>
+             </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnlockCombatAbility</Attribute>
+            <StrVal>ShieldBash_Ability</StrVal>
+            <Provides>Shield Bash- Knocks the victim back a tile</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsShield</StrVal>
+            <Value>1</Value>
+            <Provides>Enables abilities that require Shields</Provides>
+        </GameModifier>
+	<GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>ProtectionFromDeath_Ability</StrVal>
+                <Provides>Allows the wielder to cast Protection From Death</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>40</AIPriority>
+            </AIData>
+        <ArtDef>TowerShield_Reinforced_ArtDef</ArtDef>
+    </GameItemType>
+
+<GameItemType InternalName="Longsword_Uzzerraddax">
+        <DisplayName>Uzzerraddax</DisplayName>
+        <Description>This sword embodies power never meant for this world. Every moment spent holding its hilt is a battle against madness. Yet, woe to the armies that face it - for they are as lambs to the wolf.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>OneHanded</WeaponType>
+        <WeaponUpgradeType>Blade</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>4000</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>32</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>2</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxCounterAttack</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Counterattack per round</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ArmorPierce</StrVal>
+                <Value>66</Value>
+                <Provides>Ignores 66% of the victim's Defense</Provides>
+            </GameModifier>
+	    <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Despair_Uzzerraddax</StrVal>
+                <Provides>Allows the wielder to cast Despair</Provides>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsSword</StrVal>
+            <Value>1</Value>
+                <Provides>Enables abilities that require Swords</Provides>
+        </GameModifier>
+<IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Prereq>
+            <Type>UnitStat_Level</Type>
+            <Attribute>12</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>264</AIPriority>
+        </AIData>
+        <ArtDef>Broadsword_Shadow_ArtDef</ArtDef>
+    </GameItemType>
+
+<GameItemType InternalName="Longsword_Aldergest">
+        <DisplayName>Aldergest</DisplayName>
+        <Description>Aldergest's blade is a mighty weapon, but also a tool to heal. The sword chooses its wielder, that the wielder might stand in defense of the helpless and small things of Elemental.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>OneHanded</WeaponType>
+        <WeaponUpgradeType>Blade</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>4000</ShopValue>
+        <GameModifier>
+            	<ModType>Unit</ModType>
+            	<Attribute>AdjustUnitStat</Attribute>
+            	<StrVal>UnitStat_Attack_Pierce</StrVal>
+            	<Value>34</Value>
+            </GameModifier>
+        <GameModifier>
+            	<ModType>Unit</ModType>
+            	<Attribute>AdjustUnitStat</Attribute>
+            	<StrVal>UnitStat_Attack_ArcaneLight</StrVal>
+            	<Value>12</Value>
+            </GameModifier>
+        <GameModifier>
+            	<ModType>Unit</ModType>
+            	<Attribute>AdjustUnitStat</Attribute>
+            	<StrVal>UnitStat_CombatSpeed</StrVal>
+            	<Value>3</Value>
+            </GameModifier>
+        <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxCounterAttack</StrVal>
+                <Value>2</Value>
+                <Provides>+2 Counterattack per round</Provides>
+            </GameModifier>
+	<GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Wellspring_Ability</StrVal>
+                <Provides>Allows the wielder to cast Wellspring</Provides>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsSword</StrVal>
+            <Value>1</Value>
+                <Provides>Enables abilities that require Swords</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>320</AIPriority>
+        </AIData>
+        <ArtDef>Longsword_Angel_ArtDef</ArtDef>
+    </GameItemType>
+
+<GameItemType InternalName="Longsword_UmbrilBrand">
+        <DisplayName>Umbril Brand</DisplayName>
+        <Description>This sword kills all light that touches it in a flowing cloud of fog. Flesh, too, decays in ctonact with it, and those who can master shadow will do better still with this sweapon in hand.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>OneHanded</WeaponType>
+        <WeaponUpgradeType>Blade</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>200</ShopValue>
+        <GameModifier>
+            	<ModType>Unit</ModType>
+            	<Attribute>AdjustUnitStat</Attribute>
+            	<StrVal>UnitStat_Attack_Pierce</StrVal>
+            	<Value>19</Value>
+            </GameModifier>
+        <GameModifier>
+            	<ModType>Unit</ModType>
+            	<Attribute>AdjustUnitStat</Attribute>
+            	<StrVal>UnitStat_Attack_ArcaneShadow</StrVal>
+            	<Value>6</Value>
+            </GameModifier>
+        <GameModifier>
+            	<ModType>Unit</ModType>
+            	<Attribute>AdjustUnitStat</Attribute>
+            	<StrVal>UnitStat_CombatSpeed</StrVal>
+            	<Value>2</Value>
+            </GameModifier>
+        <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxCounterAttack</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Counterattack per round</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_ArcaneShadow</StrVal>
+                <Multiplier>1.25</Multiplier>
+                <Provides>+25% Arcane Shadow damage</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_SpellDamage_ArcaneShadow</StrVal>
+                <Value>0.25</Value>
+                <Provides>+25% Spell Damage with Arcane Shadow spells</Provides>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsSword</StrVal>
+            <Value>1</Value>
+                <Provides>Enables abilities that require Swords</Provides>
+        </GameModifier>		
+<IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Rare</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>264</AIPriority>
+        </AIData>
+        <ArtDef>Broadsword_Shadow_ArtDef</ArtDef>
+    </GameItemType>
+
+
+<GameItemType InternalName="Longsword_Lumina">
+        <DisplayName>Lumina Brand</DisplayName>
+        <Description>Enchanted to exude lightrays that, up close, can melt through hardened steel. Masters of such energies may find that this sword fortifies their efforts.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>OneHanded</WeaponType>
+        <WeaponUpgradeType>Blade</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>200</ShopValue>
+        <GameModifier>
+            	<ModType>Unit</ModType>
+            	<Attribute>AdjustUnitStat</Attribute>
+            	<StrVal>UnitStat_Attack_Pierce</StrVal>
+            	<Value>19</Value>
+            </GameModifier>
+        <GameModifier>
+            	<ModType>Unit</ModType>
+            	<Attribute>AdjustUnitStat</Attribute>
+            	<StrVal>UnitStat_Attack_ArcaneLight</StrVal>
+            	<Value>4</Value>
+            </GameModifier>
+        <GameModifier>
+            	<ModType>Unit</ModType>
+            	<Attribute>AdjustUnitStat</Attribute>
+            	<StrVal>UnitStat_CombatSpeed</StrVal>
+            	<Value>2</Value>
+            </GameModifier>
+        <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxCounterAttack</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Counterattack per round</Provides>
+        </GameModifier>
+        <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_ArcaneLight</StrVal>
+                <Multiplier>1.25</Multiplier>
+                <Provides>+25% Arcane Light damage</Provides>
+        </GameModifier>
+        <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_SpellDamage_ArcaneLight</StrVal>
+                <Value>0.25</Value>
+                <Provides>+25% Spell Damage with Arcane Light spells</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsSword</StrVal>
+            <Value>1</Value>
+            <Provides>Enables abilities that require Swords</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Rare</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>320</AIPriority>
+        </AIData>
+        <ArtDef>Longsword_Angel_ArtDef</ArtDef>
+    </GameItemType>
+
+<GameItemType InternalName="Shield_Paladin">
+        <DisplayName>Broken Shield</DisplayName>
+        <Description>This shield is bent and rusted beyond any usefulness. But when raised by a warrior mad enough to put ideals over their very flesh, powerful magic hardens this bizarre creation into a bulwark as stout as any iron shield.</Description>
+        <Type>Defense</Type>
+        <WeaponType>Shield</WeaponType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>20</ShopValue>
+		<GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <Value>6</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Dodge</StrVal>
+            <Value>6</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Tactical_Auto_Defense_Boost</StrVal>
+            <Value>15</Value>
+            <Provides>+15 Defense when Defending</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnlockCombatAbility</Attribute>
+            <StrVal>ShieldBash_Ability</StrVal>
+            <Provides>Shield Bash- Knocks the victim back a tile</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsShield</StrVal>
+            <Value>1</Value>
+            <Provides>Enables abilities that require Shields</Provides>
+        </GameModifier>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_PathOfThePaladin</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <RarityDisplay>Common</RarityDisplay>
+        <Likelihood>100</Likelihood>
+        <HeroOnly>1</HeroOnly>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>40</AIPriority>
+            </AIData>
+        <ArtDef>RustyShield_ArtDef</ArtDef>
+    </GameItemType>
+
+<GameItemType InternalName="Longsword_Paladin">
+        <DisplayName>Cursed Blade</DisplayName>
+        <Description>This sword carries a powerful ward that floods the grip of the wielder with intense pain. Only when one is so passionately intent on doing justice - however interpreted - that they will endure the pain, does the ward relent.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>OneHanded</WeaponType>
+        <WeaponUpgradeType>Blade</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>20</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>17</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>2</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxCounterAttack</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Counterattack per round</Provides>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsSword</StrVal>
+            <Value>1</Value>
+                <Provides>Enables abilities that require Swords</Provides>
+        </GameModifier>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_PathOfThePaladin</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>100</Likelihood>
+        <RarityDisplay>Common</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>41</AIPriority>
+        </AIData>
+        <ArtDef>Longsword_Souls_ArtDef</ArtDef>
+    </GameItemType>
+
+
+<GameItemType InternalName="RingOfBrilliantFury">
+        <DisplayName>Ring Of Brilliant Fury</DisplayName>
+        <Description>This ring protects from magical shadow attacks.</Description>
+        <Type>Accessory</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>250</ShopValue>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ResistArcaneShadow</StrVal>
+                <Value>100</Value>
+            </GameModifier>			
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>20</Likelihood>
+        <RarityDisplay>Uncommon</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <IsUsable>0</IsUsable>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>40</AIPriority>
+            </AIData>
+        <ArtDef>FlickeringRing_ArtDef</ArtDef>
+    </GameItemType>
+
+    <GameItemType InternalName="AmuletOfLightbane">
+        <DisplayName>Amulet of Lightbane</DisplayName>
+        <Description>When it is worn, this totem protects from magical light attacks.</Description>
+        <Type>Accessory</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>250</ShopValue>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ResistArcaneLight</StrVal>
+                <Value>100</Value>
+            </GameModifier>		
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>20</Likelihood>
+        <RarityDisplay>Uncommon</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsUsable>0</IsUsable>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>40</AIPriority>
+            </AIData>
+        <ArtDef>AmuletOfLightbane_ArtDef</ArtDef>
+        <GameItemTypeArtDef InternalName="AmuletOfLightbane_ArtDef">
+            <GameItemTypeModelPack InternalName="AmuletOfLightbane_Default">
+                <IconFile>AmuletofStrength_Item.png</IconFile>
+                <TintR>240</TintR>
+                <TintG>10</TintG>
+                <TintB>10</TintB>
+                <SFX>Equip_MagicRing_01</SFX>
+                <SFX>Equip_MagicRing_02</SFX>
+                <SFX>Equip_MagicRing_03</SFX>
+                <SFX>Equip_MagicRing_04</SFX>
+                <GameItemTypeModel>
+                </GameItemTypeModel>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+    </GameItemType>
+    
+</GameItemTypes>

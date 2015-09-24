@@ -1,0 +1,604 @@
+<?xml version="1.0"?>
+<Container>
+  <!-- equipment stats -->
+  <UnitStatType InternalName="UnitStat_BG_IsUsingMount">
+    <DisplayName>Hidden</DisplayName>
+    <DisplayNameShort>Hidden</DisplayNameShort>
+    <Description>Hidden</Description>
+    <Icon>Piercing_Stat_Icon.png</Icon>
+    <Hidden>1</Hidden>
+    <UnitStatGrouping>CombatStat</UnitStatGrouping>
+    <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+  </UnitStatType>
+  <!--   <UnitStatType InternalName="UnitStat_BG_IsRanged">
+        <DisplayName>Hidden</DisplayName>
+        <DisplayNameShort>Hidden</DisplayNameShort>
+        <Description>Hidden</Description>
+        <Icon>Piercing_Stat_Icon.png</Icon>
+        <Hidden>1</Hidden>
+        <UnitStatGrouping>CombatStat</UnitStatGrouping>
+        <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+    </UnitStatType>
+    <UnitStatType InternalName="UnitStat_BG_IsMelee">
+        <DisplayName>Hidden</DisplayName>
+        <DisplayNameShort>Hidden</DisplayNameShort>
+        <Description>Hidden</Description>
+        <Icon>Piercing_Stat_Icon.png</Icon>
+        <Hidden>1</Hidden>
+        <UnitStatGrouping>CombatStat</UnitStatGrouping>
+        <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+    </UnitStatType>
+    <UnitStatType InternalName="UnitStat_BG_IsUsingSmallShield">
+        <DisplayName>Hidden</DisplayName>
+        <DisplayNameShort>Hidden</DisplayNameShort>
+        <Description>Hidden</Description>
+        <Icon>Piercing_Stat_Icon.png</Icon>
+        <Hidden>1</Hidden>
+        <UnitStatGrouping>CombatStat</UnitStatGrouping>
+        <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+    </UnitStatType>
+    <UnitStatType InternalName="UnitStat_BG_IsUsingTowerShield">
+        <DisplayName>Hidden</DisplayName>
+        <DisplayNameShort>Hidden</DisplayNameShort>
+        <Description>Hidden</Description>
+        <Icon>Piercing_Stat_Icon.png</Icon>
+        <Hidden>1</Hidden>
+        <UnitStatGrouping>CombatStat</UnitStatGrouping>
+        <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+    </UnitStatType>
+    <UnitStatType InternalName="UnitStat_BG_IsUsingSpear">
+        <DisplayName>Hidden</DisplayName>
+        <DisplayNameShort>Hidden</DisplayNameShort>
+        <Description>Hidden</Description>
+        <Icon>Piercing_Stat_Icon.png</Icon>
+        <Hidden>1</Hidden>
+        <UnitStatGrouping>CombatStat</UnitStatGrouping>
+        <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+    </UnitStatType>
+    <UnitStatType InternalName="UnitStat_BG_IsUsingStaff">
+        <DisplayName>Hidden</DisplayName>
+        <DisplayNameShort>Hidden</DisplayNameShort>
+        <Description>Hidden</Description>
+        <Icon>Piercing_Stat_Icon.png</Icon>
+        <Hidden>1</Hidden>
+        <UnitStatGrouping>CombatStat</UnitStatGrouping>
+        <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+    </UnitStatType>
+    <UnitStatType InternalName="UnitStat_BG_IsUsingBow">
+        <DisplayName>Hidden</DisplayName>
+        <DisplayNameShort>Hidden</DisplayNameShort>
+        <Description>Hidden</Description>
+        <Icon>Piercing_Stat_Icon.png</Icon>
+        <Hidden>1</Hidden>
+        <UnitStatGrouping>CombatStat</UnitStatGrouping>
+        <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+    </UnitStatType>
+    <UnitStatType InternalName="UnitStat_BG_IsUsingMace">
+        <DisplayName>Hidden</DisplayName>
+        <DisplayNameShort>Hidden</DisplayNameShort>
+        <Description>Hidden</Description>
+        <Icon>Piercing_Stat_Icon.png</Icon>
+        <Hidden>1</Hidden>
+        <UnitStatGrouping>CombatStat</UnitStatGrouping>
+        <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+    </UnitStatType>
+    <UnitStatType InternalName="UnitStat_BG_IsUsingSword">
+        <DisplayName>Hidden</DisplayName>
+        <DisplayNameShort>Hidden</DisplayNameShort>
+        <Description>Hidden</Description>
+        <Icon>Piercing_Stat_Icon.png</Icon>
+        <Hidden>1</Hidden>
+        <UnitStatGrouping>CombatStat</UnitStatGrouping>
+        <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+    </UnitStatType>
+    <UnitStatType InternalName="UnitStat_BG_IsUsingAxe">
+        <DisplayName>Hidden</DisplayName>
+        <DisplayNameShort>Hidden</DisplayNameShort>
+        <Description>Hidden</Description>
+        <Icon>Piercing_Stat_Icon.png</Icon>
+        <Hidden>1</Hidden>
+        <UnitStatGrouping>CombatStat</UnitStatGrouping>
+        <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+    </UnitStatType>
+    <UnitStatType InternalName="UnitStat_BG_IsUsingDagger">
+        <DisplayName>Hidden</DisplayName>
+        <DisplayNameShort>Hidden</DisplayNameShort>
+        <Description>Hidden</Description>
+        <Icon>Piercing_Stat_Icon.png</Icon>
+        <Hidden>1</Hidden>
+        <UnitStatGrouping>CombatStat</UnitStatGrouping>
+        <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+    </UnitStatType>
+    <UnitStatType InternalName="UnitStat_BG_IsUsingTwoHanded">
+        <DisplayName>Hidden</DisplayName>
+        <DisplayNameShort>Hidden</DisplayNameShort>
+        <Description>Hidden</Description>
+        <Icon>Piercing_Stat_Icon.png</Icon>
+        <Hidden>1</Hidden>
+        <UnitStatGrouping>CombatStat</UnitStatGrouping>
+        <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+    </UnitStatType>
+    <UnitStatType InternalName="UnitStat_BG_IsUsingOneHanded">
+        <DisplayName>Hidden</DisplayName>
+        <DisplayNameShort>Hidden</DisplayNameShort>
+        <Description>Hidden</Description>
+        <Icon>Piercing_Stat_Icon.png</Icon>
+        <Hidden>1</Hidden>
+        <UnitStatGrouping>CombatStat</UnitStatGrouping>
+        <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+    </UnitStatType>
+    <UnitStatType InternalName="UnitStat_BG_IsUsingDualwield">
+        <DisplayName>Hidden</DisplayName>
+        <DisplayNameShort>Hidden</DisplayNameShort>
+        <Description>Hidden</Description>
+        <Icon>Piercing_Stat_Icon.png</Icon>
+        <Hidden>1</Hidden>
+        <UnitStatGrouping>CombatStat</UnitStatGrouping>
+        <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+    </UnitStatType>
+    <UnitStatType InternalName="UnitStat_BG_IsWearingLeather">
+        <DisplayName>Hidden</DisplayName>
+        <DisplayNameShort>Hidden</DisplayNameShort>
+        <Description>Hidden</Description>
+        <Icon>Piercing_Stat_Icon.png</Icon>
+        <Hidden>1</Hidden>
+        <UnitStatGrouping>CombatStat</UnitStatGrouping>
+        <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+    </UnitStatType>
+    <UnitStatType InternalName="UnitStat_BG_IsWearingChainmail">
+        <DisplayName>Hidden</DisplayName>
+        <DisplayNameShort>Hidden</DisplayNameShort>
+        <Description>Hidden</Description>
+        <Icon>Piercing_Stat_Icon.png</Icon>
+        <Hidden>1</Hidden>
+        <UnitStatGrouping>CombatStat</UnitStatGrouping>
+        <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+    </UnitStatType>
+    <UnitStatType InternalName="UnitStat_BG_IsWearingPlate">
+        <DisplayName>Hidden</DisplayName>
+        <DisplayNameShort>Hidden</DisplayNameShort>
+        <Description>Hidden</Description>
+        <Icon>Piercing_Stat_Icon.png</Icon>
+        <Hidden>1</Hidden>
+        <UnitStatGrouping>CombatStat</UnitStatGrouping>
+        <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+    </UnitStatType>
+    <UnitStatType InternalName="UnitStat_BG_Metalcost">
+        <DisplayName>Hidden</DisplayName>
+        <DisplayNameShort>Hidden</DisplayNameShort>
+        <Description>Hidden</Description>
+        <Icon>Piercing_Stat_Icon.png</Icon>
+        <Hidden>1</Hidden>
+        <UnitStatGrouping>CombatStat</UnitStatGrouping>
+        <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+    </UnitStatType>
+    <UnitStatType InternalName="UnitStat_BG_Crystalcost">
+        <DisplayName>Hidden</DisplayName>
+        <DisplayNameShort>Hidden</DisplayNameShort>
+        <Description>Hidden</Description>
+        <Icon>Piercing_Stat_Icon.png</Icon>
+        <Hidden>1</Hidden>
+        <UnitStatGrouping>CombatStat</UnitStatGrouping>
+        <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+    </UnitStatType>
+    <UnitStatType InternalName="UnitStat_BG_DiplomaticCapitalCost">
+        <DisplayName>Hidden</DisplayName>
+        <DisplayNameShort>Hidden</DisplayNameShort>
+        <Description>Hidden</Description>
+        <Icon>Piercing_Stat_Icon.png</Icon>
+        <Hidden>1</Hidden>
+        <UnitStatGrouping>CombatStat</UnitStatGrouping>
+        <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+    </UnitStatType>
+    <UnitStatType InternalName="UnitStat_BG_MagicalNature">
+        <DisplayName>Magical</DisplayName>
+        <DisplayNameShort>MgN</DisplayNameShort>
+        <Description>A rough value describing the Magical nature of a unit</Description>
+        <Icon>Stat_ManaOnCast_Icon.png</Icon>
+        <Hidden>1</Hidden>
+        <UnitStatGrouping>CombatStat</UnitStatGrouping>
+        <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+    </UnitStatType>-->
+  <!-- unit stats -->
+  <!--
+   <UnitStatType InternalName="UnitStat_BG_IsSpellcaster">
+        <DisplayName>Hidden</DisplayName>
+        <DisplayNameShort>Hidden</DisplayNameShort>
+        <Description>Hidden</Description>
+        <Icon>Piercing_Stat_Icon.png</Icon>
+        <Hidden>1</Hidden>
+        <UnitStatGrouping>CombatStat</UnitStatGrouping>
+        <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+    </UnitStatType>-->
+  <UnitStatType InternalName="UnitStat_BG_IsChampion">
+    <DisplayName>Hidden</DisplayName>
+    <DisplayNameShort>Hidden</DisplayNameShort>
+    <Description>Hidden</Description>
+    <Icon>Piercing_Stat_Icon.png</Icon>
+    <Hidden>1</Hidden>
+    <UnitStatGrouping>CombatStat</UnitStatGrouping>
+    <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+  </UnitStatType>
+  <UnitStatType InternalName="UnitStat_BG_IsSovereign">
+    <DisplayName>Hidden</DisplayName>
+    <DisplayNameShort>Hidden</DisplayNameShort>
+    <Description>Hidden</Description>
+    <Icon>Piercing_Stat_Icon.png</Icon>
+    <Hidden>1</Hidden>
+    <UnitStatGrouping>CombatStat</UnitStatGrouping>
+    <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+  </UnitStatType>
+  <UnitStatType InternalName="UnitStat_BG_IsMilitia">
+    <DisplayName>Hidden</DisplayName>
+    <DisplayNameShort>Hidden</DisplayNameShort>
+    <Description>Hidden</Description>
+    <Icon>Piercing_Stat_Icon.png</Icon>
+    <Hidden>1</Hidden>
+    <UnitStatGrouping>CombatStat</UnitStatGrouping>
+    <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+  </UnitStatType>
+  <UnitStatType InternalName="UnitStat_BG_IsHumanoid">
+    <DisplayName>Hidden</DisplayName>
+    <DisplayNameShort>Hidden</DisplayNameShort>
+    <Description>Hidden</Description>
+    <Icon>Piercing_Stat_Icon.png</Icon>
+    <Hidden>1</Hidden>
+    <UnitStatGrouping>CombatStat</UnitStatGrouping>
+    <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+  </UnitStatType>
+  <UnitStatType InternalName="UnitStat_BG_IsNotAlive">
+    <DisplayName>Hidden</DisplayName>
+    <DisplayNameShort>Hidden</DisplayNameShort>
+    <Description>Hidden</Description>
+    <Icon>Piercing_Stat_Icon.png</Icon>
+    <Hidden>1</Hidden>
+    <UnitStatGrouping>CombatStat</UnitStatGrouping>
+    <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+  </UnitStatType>
+  <UnitStatType InternalName="UnitStat_BG_IsEmpire">
+    <DisplayName>Hidden</DisplayName>
+    <DisplayNameShort>Hidden</DisplayNameShort>
+    <Description>Hidden</Description>
+    <Icon>Piercing_Stat_Icon.png</Icon>
+    <Hidden>1</Hidden>
+    <UnitStatGrouping>CombatStat</UnitStatGrouping>
+    <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+  </UnitStatType>
+  <UnitStatType InternalName="UnitStat_BG_IsKingdom">
+    <DisplayName>Hidden</DisplayName>
+    <DisplayNameShort>Hidden</DisplayNameShort>
+    <Description>Hidden</Description>
+    <Icon>Piercing_Stat_Icon.png</Icon>
+    <Hidden>1</Hidden>
+    <UnitStatGrouping>CombatStat</UnitStatGrouping>
+    <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+  </UnitStatType>
+  <UnitStatType InternalName="UnitStat_BG_IsMonster">
+    <DisplayName>Hidden</DisplayName>
+    <DisplayNameShort>Hidden</DisplayNameShort>
+    <Description>Hidden</Description>
+    <Icon>Piercing_Stat_Icon.png</Icon>
+    <Hidden>1</Hidden>
+    <UnitStatGrouping>CombatStat</UnitStatGrouping>
+    <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+  </UnitStatType>
+  <UnitStatType InternalName="UnitStat_BG_IsDragon">
+    <DisplayName>Hidden</DisplayName>
+    <DisplayNameShort>Hidden</DisplayNameShort>
+    <Description>Hidden</Description>
+    <Icon>Piercing_Stat_Icon.png</Icon>
+    <Hidden>1</Hidden>
+    <UnitStatGrouping>CombatStat</UnitStatGrouping>
+    <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+  </UnitStatType>
+  <UnitStatType InternalName="UnitStat_BG_IsElemental">
+    <DisplayName>IsElemental</DisplayName>
+    <DisplayNameShort>Hidden</DisplayNameShort>
+    <Description>Hidden</Description>
+    <Icon>Piercing_Stat_Icon.png</Icon>
+    <Hidden>1</Hidden>
+    <UnitStatGrouping>CombatStat</UnitStatGrouping>
+    <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+  </UnitStatType>
+  <UnitStatType InternalName="UnitStat_BG_IsBeast">
+    <DisplayName>Hidden</DisplayName>
+    <DisplayNameShort>Hidden</DisplayNameShort>
+    <Description>Hidden</Description>
+    <Icon>Piercing_Stat_Icon.png</Icon>
+    <Hidden>1</Hidden>
+    <UnitStatGrouping>CombatStat</UnitStatGrouping>
+    <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+  </UnitStatType>
+  <UnitStatType InternalName="UnitStat_BG_IsTwisted">
+    <DisplayName>IsTwisted</DisplayName>
+    <DisplayNameShort>Hidden</DisplayNameShort>
+    <Description>Hidden</Description>
+    <Icon>Piercing_Stat_Icon.png</Icon>
+    <Hidden>1</Hidden>
+    <UnitStatGrouping>CombatStat</UnitStatGrouping>
+    <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+  </UnitStatType>
+  <UnitStatType InternalName="UnitStat_BG_IsConstruct">
+    <DisplayName>Hidden</DisplayName>
+    <DisplayNameShort>Hidden</DisplayNameShort>
+    <Description>Hidden</Description>
+    <Icon>Piercing_Stat_Icon.png</Icon>
+    <Hidden>1</Hidden>
+    <UnitStatGrouping>CombatStat</UnitStatGrouping>
+    <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+  </UnitStatType>
+  <UnitStatType InternalName="UnitStat_BG_IsDemon">
+    <DisplayName>Hidden</DisplayName>
+    <DisplayNameShort>Hidden</DisplayNameShort>
+    <Description>Hidden</Description>
+    <Icon>Piercing_Stat_Icon.png</Icon>
+    <Hidden>1</Hidden>
+    <UnitStatGrouping>CombatStat</UnitStatGrouping>
+    <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+  </UnitStatType>
+  <UnitStatType InternalName="UnitStat_BG_IsGod">
+    <DisplayName>Hidden</DisplayName>
+    <DisplayNameShort>Hidden</DisplayNameShort>
+    <Description>Hidden</Description>
+    <Icon>Piercing_Stat_Icon.png</Icon>
+    <Hidden>1</Hidden>
+    <UnitStatGrouping>CombatStat</UnitStatGrouping>
+    <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+  </UnitStatType>
+  <UnitStatType InternalName="UnitStat_BG_IsSummoned">
+    <DisplayName>Hidden</DisplayName>
+    <DisplayNameShort>Hidden</DisplayNameShort>
+    <Description>Hidden</Description>
+    <Icon>Piercing_Stat_Icon.png</Icon>
+    <Hidden>1</Hidden>
+    <UnitStatGrouping>CombatStat</UnitStatGrouping>
+    <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+  </UnitStatType>
+  <UnitStatType InternalName="UnitStat_BG_IsImmortal">
+    <DisplayName>Hidden</DisplayName>
+    <DisplayNameShort>Hidden</DisplayNameShort>
+    <Description>Hidden</Description>
+    <Icon>Piercing_Stat_Icon.png</Icon>
+    <Hidden>1</Hidden>
+    <UnitStatGrouping>CombatStat</UnitStatGrouping>
+    <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+  </UnitStatType>
+  <UnitStatType InternalName="UnitStat_BG_IsOversized">
+    <DisplayName>Hidden</DisplayName>
+    <DisplayNameShort>Hidden</DisplayNameShort>
+    <Description>Hidden</Description>
+    <Icon>Piercing_Stat_Icon.png</Icon>
+    <Hidden>1</Hidden>
+    <UnitStatGrouping>CombatStat</UnitStatGrouping>
+    <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+  </UnitStatType>
+  <UnitStatType InternalName="UnitStat_BG_IsFemale">
+    <DisplayName>Hidden</DisplayName>
+    <DisplayNameShort>Hidden</DisplayNameShort>
+    <Description>Hidden</Description>
+    <Icon>Piercing_Stat_Icon.png</Icon>
+    <Hidden>1</Hidden>
+    <UnitStatGrouping>CombatStat</UnitStatGrouping>
+    <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+  </UnitStatType>
+  <UnitStatType InternalName="UnitStat_BG_IsMale">
+    <DisplayName>Hidden</DisplayName>
+    <DisplayNameShort>Hidden</DisplayNameShort>
+    <Description>Hidden</Description>
+    <Icon>Piercing_Stat_Icon.png</Icon>
+    <Hidden>1</Hidden>
+    <UnitStatGrouping>CombatStat</UnitStatGrouping>
+    <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+  </UnitStatType>
+  <!-- custom stats -->
+  <UnitStatType InternalName="UnitStat_BG_HasInjuries">
+    <DisplayName>Injuries</DisplayName>
+    <DisplayNameShort>Hidden</DisplayNameShort>
+    <Description>Hidden</Description>
+    <Icon>Piercing_Stat_Icon.png</Icon>
+    <Hidden>1</Hidden>
+    <UnitStatGrouping>CombatStat</UnitStatGrouping>
+    <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+  </UnitStatType>
+  <UnitStatType InternalName="UnitStat_BG_Spellbooks">
+    <DisplayName>Hidden</DisplayName>
+    <DisplayNameShort>Hidden</DisplayNameShort>
+    <Description>Hidden</Description>
+    <Icon>Piercing_Stat_Icon.png</Icon>
+    <Hidden>1</Hidden>
+    <UnitStatGrouping>CombatStat</UnitStatGrouping>
+    <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+  </UnitStatType>
+  <UnitStatType InternalName="UnitStat_BG_GreyMagic">
+    <DisplayName>Hidden</DisplayName>
+    <DisplayNameShort>Hidden</DisplayNameShort>
+    <Description>Hidden</Description>
+    <Icon>Piercing_Stat_Icon.png</Icon>
+    <Hidden>1</Hidden>
+    <UnitStatGrouping>CombatStat</UnitStatGrouping>
+    <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+  </UnitStatType>
+  <!--    <UnitStatType InternalName="UnitStat_BG_IsInSwamp">
+        <DisplayName>Units in this tile counts as occupying Swamp terrain</DisplayName>
+        <DisplayNameShort>DGE</DisplayNameShort>
+        <Description>The chance to dodge an attack in battle.</Description>
+        <Icon>Stat_Dodge_Icon.png</Icon>
+        <Hidden>1</Hidden>
+        <UnitStatGrouping>CombatStat</UnitStatGrouping>
+        <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+    </UnitStatType>
+    <UnitStatType InternalName="UnitStat_BG_IsInPlains">
+        <DisplayName>Units in this tile counts as occupying Plains terrain</DisplayName>
+        <DisplayNameShort>DGE</DisplayNameShort>
+        <Description>The chance to dodge an attack in battle.</Description>
+        <Icon>Stat_Dodge_Icon.png</Icon>
+        <Hidden>1</Hidden>
+        <UnitStatGrouping>CombatStat</UnitStatGrouping>
+        <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+    </UnitStatType>
+    <UnitStatType InternalName="UnitStat_BG_IsInHills">
+        <DisplayName>In Hills Terrain</DisplayName>
+        <DisplayNameShort>DGE</DisplayNameShort>
+        <Description>The chance to dodge an attack in battle.</Description>
+        <Icon>Stat_Dodge_Icon.png</Icon>
+        <Hidden>1</Hidden>
+        <UnitStatGrouping>CombatStat</UnitStatGrouping>
+        <DefaultValue>1</DefaultValue>
+        <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+    </UnitStatType>
+    <UnitStatType InternalName="UnitStat_BG_IsInDesert">
+        <DisplayName>Units in this tile counts as occupying Desert terrain</DisplayName>
+        <DisplayNameShort>DGE</DisplayNameShort>
+        <Description>The chance to dodge an attack in battle.</Description>
+        <Icon>Stat_Dodge_Icon.png</Icon>
+        <Hidden>1</Hidden>
+        <UnitStatGrouping>CombatStat</UnitStatGrouping>
+        <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+    </UnitStatType>
+    <UnitStatType InternalName="UnitStat_BG_IsInForest">
+        <DisplayName>Units in this tile counts as occupying Forest terrain</DisplayName>
+        <DisplayNameShort>DGE</DisplayNameShort>
+        <Description>The chance to dodge an attack in battle.</Description>
+        <Icon>Stat_Dodge_Icon.png</Icon>
+        <Hidden>1</Hidden>
+        <UnitStatGrouping>CombatStat</UnitStatGrouping>
+        <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+    </UnitStatType>
+    <UnitStatType InternalName="UnitStat_BG_IsInCity">
+        <DisplayName>Units in this tile counts as occupying City terrain</DisplayName>
+        <DisplayNameShort>DGE</DisplayNameShort>
+        <Description>The chance to dodge an attack in battle.</Description>
+        <Icon>Stat_Dodge_Icon.png</Icon>
+        <Hidden>1</Hidden>
+        <UnitStatGrouping>CombatStat</UnitStatGrouping>
+        <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+    </UnitStatType>
+    <UnitStatType InternalName="UnitStat_BG_IsInRiver">
+        <DisplayName>Units in this tile counts as occupying River terrain</DisplayName>
+        <DisplayNameShort>DGE</DisplayNameShort>
+        <Description>The chance to dodge an attack in battle.</Description>
+        <Icon>Stat_Dodge_Icon.png</Icon>
+        <Hidden>1</Hidden>
+        <UnitStatGrouping>CombatStat</UnitStatGrouping>
+        <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+    </UnitStatType>-->
+  <!-- races-->
+  <UnitStatType InternalName="UnitStat_BG_IsRace_Altarians">
+    <DisplayName>Hidden</DisplayName>
+    <DisplayNameShort>Hidden</DisplayNameShort>
+    <Description>Hidden</Description>
+    <Icon>Stat_Dodge_Icon.png</Icon>
+    <Hidden>1</Hidden>
+    <UnitStatGrouping>CombatStat</UnitStatGrouping>
+    <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+  </UnitStatType>
+  <UnitStatType InternalName="UnitStat_BG_IsRace_Mancers">
+    <DisplayName>Hidden</DisplayName>
+    <DisplayNameShort>Hidden</DisplayNameShort>
+    <Description>Hidden</Description>
+    <Icon>Stat_Dodge_Icon.png</Icon>
+    <Hidden>1</Hidden>
+    <UnitStatGrouping>CombatStat</UnitStatGrouping>
+    <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+  </UnitStatType>
+  <UnitStatType InternalName="UnitStat_BG_IsRace_Ironeers">
+    <DisplayName>Hidden</DisplayName>
+    <DisplayNameShort>Hidden</DisplayNameShort>
+    <Description>Hidden</Description>
+    <Icon>Stat_Dodge_Icon.png</Icon>
+    <Hidden>1</Hidden>
+    <UnitStatGrouping>CombatStat</UnitStatGrouping>
+    <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+  </UnitStatType>
+  <UnitStatType InternalName="UnitStat_BG_IsRace_Amarians">
+    <DisplayName>Hidden</DisplayName>
+    <DisplayNameShort>Hidden</DisplayNameShort>
+    <Description>Hidden</Description>
+    <Icon>Stat_Dodge_Icon.png</Icon>
+    <Hidden>1</Hidden>
+    <UnitStatGrouping>CombatStat</UnitStatGrouping>
+    <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+  </UnitStatType>
+  <UnitStatType InternalName="UnitStat_BG_IsRace_Tarthans">
+    <DisplayName>Hidden</DisplayName>
+    <DisplayNameShort>Hidden</DisplayNameShort>
+    <Description>Hidden</Description>
+    <Icon>Stat_Dodge_Icon.png</Icon>
+    <Hidden>1</Hidden>
+    <UnitStatGrouping>CombatStat</UnitStatGrouping>
+    <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+  </UnitStatType>
+  <UnitStatType InternalName="UnitStat_BG_IsRace_Krax">
+    <DisplayName>Hidden</DisplayName>
+    <DisplayNameShort>Hidden</DisplayNameShort>
+    <Description>Hidden</Description>
+    <Icon>Stat_Dodge_Icon.png</Icon>
+    <Hidden>1</Hidden>
+    <UnitStatGrouping>CombatStat</UnitStatGrouping>
+    <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+  </UnitStatType>
+  <UnitStatType InternalName="UnitStat_BG_IsRace_Wraiths">
+    <DisplayName>Hidden</DisplayName>
+    <DisplayNameShort>Hidden</DisplayNameShort>
+    <Description>Hidden</Description>
+    <Icon>Stat_Dodge_Icon.png</Icon>
+    <Hidden>1</Hidden>
+    <UnitStatGrouping>CombatStat</UnitStatGrouping>
+    <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+  </UnitStatType>
+  <UnitStatType InternalName="UnitStat_BG_IsRace_Trogs">
+    <DisplayName>Hidden</DisplayName>
+    <DisplayNameShort>Hidden</DisplayNameShort>
+    <Description>Hidden</Description>
+    <Icon>Stat_Dodge_Icon.png</Icon>
+    <Hidden>1</Hidden>
+    <UnitStatGrouping>CombatStat</UnitStatGrouping>
+    <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+  </UnitStatType>
+  <UnitStatType InternalName="UnitStat_BG_IsRace_Urxen">
+    <DisplayName>Hidden</DisplayName>
+    <DisplayNameShort>Hidden</DisplayNameShort>
+    <Description>Hidden</Description>
+    <Icon>Stat_Dodge_Icon.png</Icon>
+    <Hidden>1</Hidden>
+    <UnitStatGrouping>CombatStat</UnitStatGrouping>
+    <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+  </UnitStatType>
+  <UnitStatType InternalName="UnitStat_BG_IsRace_Quendar">
+    <DisplayName>Hidden</DisplayName>
+    <DisplayNameShort>Hidden</DisplayNameShort>
+    <Description>Hidden</Description>
+    <Icon>Stat_Dodge_Icon.png</Icon>
+    <Hidden>1</Hidden>
+    <UnitStatGrouping>CombatStat</UnitStatGrouping>
+    <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+  </UnitStatType>
+  <UnitStatType InternalName="UnitStat_BG_IsFlying">
+    <DisplayName>Hidden</DisplayName>
+    <DisplayNameShort>Hidden</DisplayNameShort>
+    <Description>Hidden</Description>
+    <Icon>Stat_Dodge_Icon.png</Icon>
+    <Hidden>1</Hidden>
+    <UnitStatGrouping>CombatStat</UnitStatGrouping>
+    <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+  </UnitStatType>
+   <UnitStatType InternalName="UnitStat_BG_IsUndead">
+    <DisplayName>Hidden</DisplayName>
+    <DisplayNameShort>Hidden</DisplayNameShort>
+    <Description>Hidden</Description>
+    <Icon>Stat_Dodge_Icon.png</Icon>
+    <Hidden>1</Hidden>
+    <UnitStatGrouping>CombatStat</UnitStatGrouping>
+    <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+  </UnitStatType>
+    <UnitStatType InternalName="UnitStat_BG_IsRace_DLCUndea">
+    <DisplayName>Hidden</DisplayName>
+    <DisplayNameShort>Hidden</DisplayNameShort>
+    <Description>Hidden</Description>
+    <Icon>Stat_Dodge_Icon.png</Icon>
+    <Hidden>1</Hidden>
+    <UnitStatGrouping>CombatStat</UnitStatGrouping>
+    <UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+  </UnitStatType>
+
+</Container>

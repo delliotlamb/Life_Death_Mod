@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Created with the Elemental Editor -->
+<!-- CoreAbilities.xml -->
+<!-- -->
+<AbilityBonuses>
+    <DataChecksum NoParse="1">
+        <Ignore>DispName</Ignore>
+        <Translate>DisplayName,Description</Translate>
+    </DataChecksum>
+    
+    <AbilityBonus InternalName="CraftsmanCasteAbility">
+        <AbilityBonusType>Player</AbilityBonusType>
+        <AbilityBonusOption InternalName="CraftsmanCaste">
+            <DisplayName>Craftsman Caste</DisplayName>
+            <Description>Armor and weapons cost 75% of normal production.  Upgrading units is a three quarters the normal cost.</Description>
+            <Icon>Ability_Weaponsmith_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Player</ModType>
+                <Attribute>AbilityBonus</Attribute>
+                <StrVal>A_Training_Metal</StrVal>
+                <Value>-25</Value>
+                <Provides>-25% Metal costs for weapons and armor</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Player</ModType>
+                <Attribute>AbilityBonus</Attribute>
+                <StrVal>A_Training_Labor_Equipment</StrVal>
+                <Value>-25</Value>
+                <Provides>-25% Production cost for weapons and armor</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Player</ModType>
+                <Attribute>AbilityBonus</Attribute>
+                <StrVal>A_UnitUpgrades</StrVal>
+                <Value>-25</Value>
+                <Provides>-25% Upgrade costs</Provides>
+            </GameModifier>
+            <Cost>1</Cost>
+            <Type>Army</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+	 <AbilityBonus InternalName="IruAlliesAbility">
+        <AbilityBonusType>Player</AbilityBonusType>
+        <AbilityBonusOption InternalName="IruAllies">
+            <DisplayName>Allies Of Iru T'Alavar</DisplayName>
+            <Description>This faction's sovereign and life altars summon allies from the distant valley of Iru T'alavar.</Description>
+            <Icon>Life_Dot.png</Icon>		
+            <GameModifier>
+                <Provides>This faction's life altars summon allies from the distant valley of Iru T'alavar.</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Player</ModType>
+                <Attribute>UnlockSpell</Attribute>
+                <StrVal>SummonIruAllies</StrVal>
+                <Provides>Unlocks Summon Iru Soldier</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Player</ModType>
+                <Attribute>UnlockSpell</Attribute>
+                <StrVal>SummonIruAllies_Tactical</StrVal>
+                <Provides>.</Provides>
+            </GameModifier>			
+            <Cost>1</Cost>
+            <Type>Army</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+	<AbilityBonus InternalName="Champion_History">
+        <AbilityBonusType>Champion_History</AbilityBonusType>
+        <AbilityBonusOption InternalName="SlaveLeader">
+            <DisplayName>Deliverer</DisplayName>
+            <Description>-25% to unit wages, +10% to the army's experience, and +2 Fame.</Description>
+            <Icon>Ability_SlaveLords_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Resource</ModType>
+                <Attribute>Fame</Attribute>
+                <Value>2</Value>
+                <Provides>+2 Fame</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Player</ModType>
+                <Attribute>AbilityBonus</Attribute>
+                <StrVal>A_ArmyMaintenance</StrVal>
+                <Value>25</Value>
+                <Provides>-25% to unit Wages</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustArmyStat</Attribute>
+                <StrVal>UnitStat_ExpBonus</StrVal>
+                <Value>10</Value>
+                <Provides>+10% to the Army's Experience</Provides>
+            </GameModifier>			
+            <Cost>1</Cost>
+            <HideWhenUpgraded>0</HideWhenUpgraded>
+            <Type>Army</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+		</AbilityBonus>
+		
+		<AbilityBonus InternalName="IruKnightAbility">
+        <AbilityBonusOption InternalName="IruKnight">
+            <DisplayName>Iru Knight</DisplayName>
+            <Description>Unit gains Initiative, Spell Mastery, Spell Resist, Dodge and Fire Spell Damage with each life shard.</Description>
+            <Icon>Life_Dot.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>BattleAutoCastSpell</Attribute>
+                <StrVal>IruLifeLink_Ability</StrVal>
+                <Value>100</Value>
+                <Provides>Iru Link is triggered when combat begins</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>HealingLight</StrVal>
+                <Provides>Heals 8 hit points (+2 per level) to all allies within 1 tile.</Provides>
+            </GameModifier>	
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Embers2</StrVal>
+                <Provides>Needles of fire shoot at an enemy for for 4 (+2 per level) damage</Provides>
+            </GameModifier>			
+            <CombatRating>40</CombatRating>
+            <IsCombatAbility>1</IsCombatAbility>
+            <Type>Defensive</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+		<AbilityBonus InternalName="IruSoldierAbility">
+        <AbilityBonusOption InternalName="IruSoldier">
+            <DisplayName>Iru Soldier</DisplayName>
+            <Description>Unit gains Initiative, Spell Mastery, Spell Resist, Dodge and Fire Spell Damage with each life shard.</Description>
+            <Icon>Life_Dot.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>BattleAutoCastSpell</Attribute>
+                <StrVal>IruLifeLink_Ability</StrVal>
+                <Value>100</Value>
+                <Provides>Iru Link is triggered when combat begins</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>HealingLight</StrVal>
+                <Provides>Heals 8 hit points (+2 per level) to all allies within 1 tile.</Provides>
+            </GameModifier>			
+            <CombatRating>40</CombatRating>
+            <IsCombatAbility>1</IsCombatAbility>
+            <Type>Defensive</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+		<AbilityBonus InternalName="IruMasterAbility">
+        <AbilityBonusOption InternalName="IruMaster">
+            <DisplayName>Iru Master</DisplayName>
+            <Description>Unit gains Initiative, Spell Mastery, Spell Resist, Dodge and Fire Spell Damage with each life shard.</Description>
+            <Icon>Life_Dot.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>BattleAutoCastSpell</Attribute>
+                <StrVal>IruLifeLink_Ability</StrVal>
+                <Value>100</Value>
+                <Provides>Iru Link is triggered when combat begins</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Wellspring_Ability</StrVal>
+                <Provides>All allies heal 24 hit points (+4 per life shard).</Provides>
+            </GameModifier>	
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Embers2</StrVal>
+                <Provides>Needles of fire shoot at an enemy for for 10 (+1 per level) damage</Provides>
+            </GameModifier>	
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>StinkingMud</StrVal>
+                <Provides>Changes the terrain within a 1 tile radius to mud.  Units can only move 1 tile per turn through mud.</Provides>
+            </GameModifier>		
+            <CombatRating>40</CombatRating>
+            <IsCombatAbility>1</IsCombatAbility>
+            <Type>Defensive</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+	 <AbilityBonus InternalName="TridentStrike_Andris_Ability">
+        <AbilityBonusType>Unit_Design</AbilityBonusType>
+        <AbilityBonusType>Unit_Spell_Rank</AbilityBonusType>
+        <AbilityBonusOption InternalName="TridentStrike_Andris">
+            <DisplayName>Trident Strike</DisplayName>
+            <Description>Allows the unit to use the Trident Strike ability</Description>
+            <Icon>Ability_TridentStrike_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>TridentStrike</StrVal>
+                <Provides>Unlocks the following ability</Provides>
+            </GameModifier>
+            <AdditionalTrainingTurns>10</AdditionalTrainingTurns>
+            <CombatRating>5</CombatRating>
+            <IsCombatAbility>1</IsCombatAbility>
+            <Type>Aggressive</Type>
+            <Prereq>
+                <Type>Race</Type>
+                <Attribute>Race_Type_Andris</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+	
+	<AbilityBonus InternalName="Exhaust_Andris_Ability">
+        <AbilityBonusType>Unit_Design</AbilityBonusType>
+        <AbilityBonusOption InternalName="Exhaust_Andris">
+            <DisplayName>Exhaust</DisplayName>
+            <Description>Units struck suffer -1 to Stamina</Description>
+            <Icon>Ability_Exhaust_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>MeleeAppliesSpell</Attribute>
+                <StrVal>Exhaust_Effect</StrVal>
+                <Provides>Units struck suffer -1 to Stamina</Provides>
+            </GameModifier>
+            <AdditionalTrainingTurns>10</AdditionalTrainingTurns>
+            <CombatRating>5</CombatRating>
+            <IsCombatAbility>1</IsCombatAbility>
+            <Type>Aggressive</Type>
+            <Prereq>
+                <Type>Race</Type>
+                <Attribute>Race_Type_Andris</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    
+</AbilityBonuses>

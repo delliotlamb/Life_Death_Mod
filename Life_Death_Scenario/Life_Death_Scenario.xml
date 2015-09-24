@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<Campaigns>
+    <DataChecksum NoParse="1">
+        <Ignore>Description, DisplayName, Icon, EyeTextureFilename, SupportedUnitModelType, Image_Wide, Image_Square</Ignore>
+        <Translate>DisplayName, Description</Translate>
+    </DataChecksum>
+    <Campaign InternalName="TheSeasBelowAnthys_Campaign">
+        <AutoSaveName>TheSeasBelowAnthys</AutoSaveName>
+        <!--<ScenarioSubDirectoryName>LHScenario</ScenarioSubDirectoryName>-->
+		<DisplayName>The Seas Beyond Anthys</DisplayName>
+		<!-- temporary warning -->
+		<Description>DO NOT PLAY THIS SCENARIO, UNDER CONSTRUCTION 
+		YOU'VE BEEN WARNED, IT SUCKS NOW!
+		</Description>
+		<!--
+        <Description>In the broken lands of Anthys, there are unbelievable tales of a new land in the south. Part of the old continent drifted there, and joined with land driven up by furious volcanoes.
+		
+		You lead the meager Carian tribe, who in desperation have boarded ships for this new land. The people believe in a new kind of government, a better society devised from a different place and time, and written down in the secret Carian scrolls...
+		
+		Will your people starve at sea before discovering a virgin new land to settle among the waves? And if this promised land does exist, you wonder if your fledging Republic will find secrets best left below the waves.
+		</Description>-->
+        <Image_Wide>Tech_Seafaring.png</Image_Wide>
+        <Image_Square>ScenicView.png</Image_Square>
+        <Map>Custom-TinyMaps-Rovana_Campaign</Map>
+        <PlayerFaction>CustomFaction_Carian</PlayerFaction>
+        <PlayerSovereign>Eianor_Sovereign</PlayerSovereign>
+        <AIPlayerSettings>
+            <Sovereign>Dagorath</Sovereign>
+            <Faction>Faction_Dagorath</Faction>
+            <AIDifficulty>AIDiffLvl_Expert</AIDifficulty>
+			<TeamID>2</TeamID>
+        </AIPlayerSettings>
+        <AIPlayerSettings>
+            <Sovereign>Valsindiar_Sovereign</Sovereign>
+            <Faction>CustomFaction_Palranis</Faction>
+            <AIDifficulty>AIDiffLvl_Hard</AIDifficulty>
+			<TeamID>3</TeamID>
+        </AIPlayerSettings>
+        <AIPlayerSettings>
+            <Sovereign>Amzarin_Sovereign</Sovereign>
+            <Faction>Faction_Usaimor</Faction>
+            <AIDifficulty>AIDiffLvl_Hard</AIDifficulty>
+			<TeamID>4</TeamID>
+        </AIPlayerSettings>
+        <AIPlayerSettings>
+            <Sovereign>Sovereign_Aldremain</Sovereign>
+            <Faction>OrderOfAndris</Faction>
+            <AIDifficulty>AIDiffLvl_Hard</AIDifficulty>
+			<TeamID>5</TeamID>
+        </AIPlayerSettings>
+        <StartingMusicTheme>FE_Campaign1MapTheme</StartingMusicTheme>
+        <!--/* for <ScenarioRelationship> format is: (firstFactionName, secondFactionName, relationship value)
+        
+        possible relationship values:
+         0 - RELATIONS_UNKNOWN (this is the default),
+	     1 - RELATIONS_PERMANENT_WAR,
+	     2 - RELATIONS_WAR,
+	     3 - RELATIONS_HOSTILE,
+	     4 - RELATIONS_UNFRIENDLY,
+	     5 - RELATIONS_COOL,
+	     6 - RELATIONS_NEUTRAL,
+	     7 - RELATIONS_WARM,
+	     8 - RELATIONS_FRIENDLY,
+	     9 - RELATIONS_CLOSE,
+	    10 - RELATIONS_ALLY,
+	    11 - RELATIONS_TEAM,
+        */-->
+        <!--derek here are some samples of how to set relationships between the various player factions-->
+		<!--
+        <ScenarioRelationship>KingdomOfAltar,EmpireOfKraxis,1</ScenarioRelationship>
+        <ScenarioRelationship>KingdomOfAltar,EmpireOfResoln,1</ScenarioRelationship>
+        <ScenarioRelationship>KingdomOfAltar,EmpireOfYithril,1</ScenarioRelationship>
+        <ScenarioRelationship>KingdomOfAltar,EmpireOfYithril2,1</ScenarioRelationship>
+        <ScenarioRelationship>KingdomOfAltar,EmpireOfMagnar,1</ScenarioRelationship>
+        <ScenarioRelationship>KingdomOfAltar,KingdomOfPariden,11</ScenarioRelationship>
+        <ScenarioRelationship>KingdomOfAltar,KingdomOfTarth,11</ScenarioRelationship>
+        <ScenarioRelationship>KingdomOfAltar,KingdomOfGilden,11</ScenarioRelationship>
+        <ScenarioRelationship>KingdomOfAltar,KingdomOfCapitar,11</ScenarioRelationship>
+
+        <ScenarioRelationship>KingdomOfPariden,EmpireOfKraxis,1</ScenarioRelationship>
+        <ScenarioRelationship>KingdomOfPariden,EmpireOfResoln,1</ScenarioRelationship>
+        <ScenarioRelationship>KingdomOfPariden,EmpireOfYithril,1</ScenarioRelationship>
+        <ScenarioRelationship>KingdomOfPariden,EmpireOfYithril2,1</ScenarioRelationship>
+        <ScenarioRelationship>KingdomOfPariden,EmpireOfMagnar,1</ScenarioRelationship>
+        <ScenarioRelationship>KingdomOfPariden,KingdomOfAltar,11</ScenarioRelationship>
+        <ScenarioRelationship>KingdomOfPariden,KingdomOfTarth,11</ScenarioRelationship>
+        <ScenarioRelationship>KingdomOfPariden,KingdomOfGilden,11</ScenarioRelationship>
+        <ScenarioRelationship>KingdomOfPardien,KingdomOfCapitar,11</ScenarioRelationship>
+
+        <ScenarioRelationship>KingdomOfTarth,EmpireOfKraxis,1</ScenarioRelationship>
+        <ScenarioRelationship>KingdomOfTarth,EmpireOfResoln,1</ScenarioRelationship>
+        <ScenarioRelationship>KingdomOfTarth,EmpireOfYithril,1</ScenarioRelationship>
+        <ScenarioRelationship>KingdomOfTarth,EmpireOfYithril2,1</ScenarioRelationship>
+        <ScenarioRelationship>KingdomOfTarth,EmpireOfMagnar,1</ScenarioRelationship>
+        <ScenarioRelationship>KingdomOfTarth,KingdomOfAltar,11</ScenarioRelationship>
+        <ScenarioRelationship>KingdomOfTarth,KingdomOfPariden,11</ScenarioRelationship>
+        <ScenarioRelationship>KingdomOfTarth,KingdomOfGilden,11</ScenarioRelationship>
+        <ScenarioRelationship>KingdomOfTarth,KingdomOfCapitar,11</ScenarioRelationship>
+
+        <ScenarioRelationship>KingdomOfGilden,EmpireOfKraxis,1</ScenarioRelationship>
+        <ScenarioRelationship>KingdomOfGilden,EmpireOfResoln,1</ScenarioRelationship>
+        <ScenarioRelationship>KingdomOfGilden,EmpireOfYithril,1</ScenarioRelationship>
+        <ScenarioRelationship>KingdomOfGilden,EmpireOfYithril2,1</ScenarioRelationship>
+        <ScenarioRelationship>KingdomOfGilden,EmpireOfMagnar,1</ScenarioRelationship>
+        <ScenarioRelationship>KingdomOfGilden,KingdomOfAltar,11</ScenarioRelationship>
+        <ScenarioRelationship>KingdomOfGilden,KingdomOfTarth,11</ScenarioRelationship>
+        <ScenarioRelationship>KingdomOfGilden,KingdomOfPariden,11</ScenarioRelationship>
+        <ScenarioRelationship>KingdomOfGilden,KingdomOfCapitar,11</ScenarioRelationship>
+
+        <ScenarioRelationship>KingdomOfCapitar,EmpireOfKraxis,1</ScenarioRelationship>
+        <ScenarioRelationship>KingdomOfCapitar,EmpireOfResoln,1</ScenarioRelationship>
+        <ScenarioRelationship>KingdomOfCapitar,EmpireOfYithril,1</ScenarioRelationship>
+        <ScenarioRelationship>KingdomOfCapitar,EmpireOfYithril2,1</ScenarioRelationship>
+        <ScenarioRelationship>KingdomOfCapitar,EmpireOfMagnar,1</ScenarioRelationship>
+        <ScenarioRelationship>KingdomOfCapitar,KingdomOfAltar,11</ScenarioRelationship>
+        <ScenarioRelationship>KingdomOfCapitar,KingdomOfTarth,11</ScenarioRelationship>
+        <ScenarioRelationship>KingdomOfCapitar,KingdomOfPariden,11</ScenarioRelationship>
+        <ScenarioRelationship>KingdomOfCapitar,KingdomOfGilden,11</ScenarioRelationship>
+		
+        <ScenarioRelationship>EmpireOfKraxis,EmpireOfResoln,11</ScenarioRelationship>
+        <ScenarioRelationship>EmpireOfKraxis,EmpireOfYithril,11</ScenarioRelationship>
+        <ScenarioRelationship>EmpireOfKraxis,EmpireOfYithril2,11</ScenarioRelationship>
+        <ScenarioRelationship>EmpireOfKraxis,EmpireOfMagnar,11</ScenarioRelationship>
+        <ScenarioRelationship>EmpireOfKraxis,KingdomOfAltar,1</ScenarioRelationship>
+        <ScenarioRelationship>EmpireOfKraxis,KingdomOfPariden,1</ScenarioRelationship>
+        <ScenarioRelationship>EmpireOfKraxis,KingdomOfTarth,1</ScenarioRelationship>
+        <ScenarioRelationship>EmpireOfKraxis,KingdomOfGilden,1</ScenarioRelationship>
+        <ScenarioRelationship>EmpireOfKraxis,KingdomOfCapitar,1</ScenarioRelationship>
+
+        <ScenarioRelationship>EmpireOfResoln,EmpireOfKraxis,11</ScenarioRelationship>
+        <ScenarioRelationship>EmpireOfResoln,EmpireOfYithril,11</ScenarioRelationship>
+        <ScenarioRelationship>EmpireOfResoln,EmpireOfYithril2,11</ScenarioRelationship>
+        <ScenarioRelationship>EmpireOfResoln,EmpireOfMagnar,11</ScenarioRelationship>
+        <ScenarioRelationship>EmpireOfResoln,KingdomOfAltar,1</ScenarioRelationship>
+        <ScenarioRelationship>EmpireOfResoln,KingdomOfPariden,1</ScenarioRelationship>
+        <ScenarioRelationship>EmpireOfResoln,KingdomOfTarth,1</ScenarioRelationship>
+        <ScenarioRelationship>EmpireOfResoln,KingdomOfGilden,1</ScenarioRelationship>
+        <ScenarioRelationship>EmpireOfResoln,KingdomOfCapitar,1</ScenarioRelationship>
+
+        <ScenarioRelationship>EmpireOfYithril,EmpireOfYithril2,11</ScenarioRelationship>
+        <ScenarioRelationship>EmpireOfYithril,EmpireOfResoln,11</ScenarioRelationship>
+        <ScenarioRelationship>EmpireOfYithril,EmpireOfKraxis,11</ScenarioRelationship>
+        <ScenarioRelationship>EmpireOfYithril,EmpireOfMagnar,11</ScenarioRelationship>
+        <ScenarioRelationship>EmpireOfYithril,KingdomOfAltar,1</ScenarioRelationship>
+        <ScenarioRelationship>EmpireOfYithril,KingdomOfPariden,1</ScenarioRelationship>
+        <ScenarioRelationship>EmpireOfYithril,KingdomOfTarth,1</ScenarioRelationship>
+        <ScenarioRelationship>EmpireOfYithril,KingdomOfGilden,1</ScenarioRelationship>
+        <ScenarioRelationship>EmpireOfYithril,KingdomOfCapitar,1</ScenarioRelationship>
+
+        <ScenarioRelationship>EmpireOfMagnar,EmpireOfResoln,11</ScenarioRelationship>
+        <ScenarioRelationship>EmpireOfMagnar,EmpireOfYithril,11</ScenarioRelationship>
+        <ScenarioRelationship>EmpireOfMagnar,EmpireOfYithril2,11</ScenarioRelationship>
+        <ScenarioRelationship>EmpireOfMagnar,EmpireOfKraxis,11</ScenarioRelationship>
+        <ScenarioRelationship>EmpireOfMagnar,KingdomOfAltar,1</ScenarioRelationship>
+        <ScenarioRelationship>EmpireOfMagnar,KingdomOfPariden,1</ScenarioRelationship>
+        <ScenarioRelationship>EmpireOfMagnar,KingdomOfTarth,1</ScenarioRelationship>
+        <ScenarioRelationship>EmpireOfMagnar,KingdomOfGilden,1</ScenarioRelationship>
+        <ScenarioRelationship>EmpireOfMagnar,KingdomOfCapitar,1</ScenarioRelationship>
+
+        <ScenarioRelationship>EmpireOfYithril2,EmpireOfYithril,11</ScenarioRelationship>
+        <ScenarioRelationship>EmpireOfYithril2,EmpireOfResoln,11</ScenarioRelationship>
+        <ScenarioRelationship>EmpireOfYithril2,EmpireOfKraxis,11</ScenarioRelationship>
+        <ScenarioRelationship>EmpireOfYithril2,EmpireOfMagnar,11</ScenarioRelationship>
+        <ScenarioRelationship>EmpireOfYithril2,KingdomOfAltar,1</ScenarioRelationship>
+        <ScenarioRelationship>EmpireOfYithril2,KingdomOfPariden,1</ScenarioRelationship>
+        <ScenarioRelationship>EmpireOfYithril2,KingdomOfTarth,1</ScenarioRelationship>
+        <ScenarioRelationship>EmpireOfYithril2,KingdomOfGilden,1</ScenarioRelationship>
+        <ScenarioRelationship>EmpireOfYithril2,KingdomOfCapitar,1</ScenarioRelationship>
+        -->
+        <!-- rules -->
+        <AreChampionsBound>0</AreChampionsBound>
+        <StartingYear>183</StartingYear>
+        <CanBuildPioneers>1</CanBuildPioneers>
+        <AllowNormalVictories>1</AllowNormalVictories>
+		<!--<VictoryConditionEnabled>QUEST,1</VictoryConditionEnabled>-->
+        <AllowAIBuildingAndTraining>1</AllowAIBuildingAndTraining>
+        <AllowDiplomacy>1</AllowDiplomacy>
+        <AllowChampDisbanding>1</AllowChampDisbanding>
+        <IsResearchAllowed>1</IsResearchAllowed>
+        <ResearchCostMod>90</ResearchCostMod>
+        <ProductionCostMod>70</ProductionCostMod>
+        <IsFertileLandBonus>1</IsFertileLandBonus>
+        <ShowGridOnWater>1</ShowGridOnWater>
+        <AutoTurn>1</AutoTurn>
+        <ForceAIWonderingRadius>4</ForceAIWonderingRadius>
+        <AICanRecruit>1</AICanRecruit>
+        <HunterRange>4</HunterRange>
+        <CreatureAttackDecisionMultiplier>1.0</CreatureAttackDecisionMultiplier>
+        <CreaturesFormArmies>1</CreaturesFormArmies>
+        <YouLoseText>Placeholder</YouLoseText>
+        <YouWinText>Placeholder</YouWinText>    
+    </Campaign>
+</Campaigns>

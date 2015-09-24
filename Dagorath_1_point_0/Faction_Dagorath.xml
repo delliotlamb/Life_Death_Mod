@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<RaceConfigs>
+	<DataChecksum NoParse="1">
+		<Ignore>DisplayName, ShortName, Capital, Description, UnitSkinColor, UnitHairColor, UnitClothColor, BuildingPrimaryColor, BuildingSecondaryColor, BuildingRoofColor, BuildingStyle, UnitStyle, WorkerName</Ignore>
+		<Translate>DisplayName, ShortName, Capital, Description, WorkerName</Translate>
+	</DataChecksum>
+	<RaceConfig InternalName="Faction_Dagorath">
+		<DisplayName>Empire of Dagorath</DisplayName>
+		<AIPersonality>AI_General</AIPersonality>
+        <Capital>Dagorath Gate</Capital>
+        <City>Rul Nuggavadh</City>
+        <City>Thousand Spawn</City>
+        <City>Dead Dreamer</City>
+        <City>Wise Fearful</City>
+        <City>Voidcall</City>
+        <City>Ia Ia</City>
+        <City>Ba Ghjundlu</City>
+        <City>Infinite Despair</City>
+        <City>Tenth Gate</City>
+		<ShortName>Dagorath</ShortName>
+		<Description>These Quendar had their encampents closest, when Dagorath emerged from his long study-slumber. He preached to them of his knowledge, and gave the vision of void to some. Those who accepted Dagorath's visions soon went mad. Those who remained blissfully ignorant had no hope but to submit to Dagorath. For when the True Masters cover the Earth, will not those who have served from early on, suffer the least?</Description>
+		<FactionAllegiance>Empire</FactionAllegiance>
+		<IsCustom>true</IsCustom>
+		<IsModDependent>false</IsModDependent>
+		<RaceInternalName>Race_Type_RedQuendar</RaceInternalName>
+		<RaceDisplayName>Red Quendar</RaceDisplayName>
+		<UnitScale>1.0000</UnitScale>
+		<RaceClassification>Fallen</RaceClassification>
+		<MusicTheme>temp_war00</MusicTheme>
+		<Alignment>Neutral</Alignment>
+		<UnitSkinColor>240,21,13,255</UnitSkinColor>
+		<UnitHairColor>200,200,200,255</UnitHairColor>
+		<FactionColor>0,0,0,255</FactionColor>
+		<UnitMetalColor>128,128,128,255</UnitMetalColor>
+		<UnitClothing1Color>0,0,0,255</UnitClothing1Color>
+		<UnitClothing2Color>255,255,255,255</UnitClothing2Color>
+		<BuildingPrimaryColor>0,0,0,255</BuildingPrimaryColor>
+		<BuildingSecondaryColor>0,0,0,255</BuildingSecondaryColor>
+		<BuildingRoofColor>0,0,0,255</BuildingRoofColor>
+		<BuildingStyle>EmpireStyle</BuildingStyle>
+		<EnvironmentTerrainType>1</EnvironmentTerrainType>
+		<PreferredLogoType>FallenCrest3</PreferredLogoType>
+		<NonBuildableEnvironmentType>GrasslandEnvironment</NonBuildableEnvironmentType>
+		<TechTree>TechTree_Amarian</TechTree>
+		<Spellbook>DeathSpellbook</Spellbook>
+		<FactionType>Major</FactionType>
+		<RemCustomizationPts>0</RemCustomizationPts>
+		<SelAbilityBonusOption>AdeptsTech</SelAbilityBonusOption>
+		<SelAbilityBonusOption>RedMarkOfDagorath</SelAbilityBonusOption>
+		<SelAbilityBonusOption>VoidBound</SelAbilityBonusOption>
+		<SelAbilityBonusOption>TheDecalon</SelAbilityBonusOption>
+		<SelAbilityBonusOption>Endgame_Empire</SelAbilityBonusOption>
+		<A_Additive_FoodPerGrain>25.0000</A_Additive_FoodPerGrain>
+		<A_Additive_GoldTakeAwayPerTaxPercentage>1.0000</A_Additive_GoldTakeAwayPerTaxPercentage>
+		<A_Additive_ProductionEffectPerUnrest>1.0000</A_Additive_ProductionEffectPerUnrest>
+		<A_Additive_ProductionPerMaterials>8.0000</A_Additive_ProductionPerMaterials>
+		<A_Additive_ResearchEffectPerUnrest>1.0000</A_Additive_ResearchEffectPerUnrest>
+		<A_GoodieRating>1.0000</A_GoodieRating>
+		<A_GrainYield>1.0000</A_GrainYield>
+		<A_ManaRegeneration>1.0000</A_ManaRegeneration>
+		<A_MaterialsYield>1.0000</A_MaterialsYield>
+		<A_MaxArmySize>5.0000</A_MaxArmySize>
+		<A_NPCSpawnRating>2.0000</A_NPCSpawnRating>
+		<A_QuestingRating>5.0000</A_QuestingRating>
+		<A_Traits>4.0000</A_Traits>
+		<A_UnitUpgrades>100.0000</A_UnitUpgrades>
+	</RaceConfig>
+</RaceConfigs>

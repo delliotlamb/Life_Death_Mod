@@ -1,0 +1,101 @@
+<!-- <TerrainTypes>
+
+<TerrainType InternalName="BlockedLand">
+    <DisplayName>Barrier</DisplayName>
+    <MaxHeight>90</MaxHeight>
+    <MinHeight>50</MinHeight>
+    <MovementCost>8</MovementCost>
+    <TerrainMovementNote>1x Movement</TerrainMovementNote>
+    <Category>Land</Category>
+    <IsTerrainFeature>0</IsTerrainFeature>
+    <IsBaseTerrain>0</IsBaseTerrain>
+    <PassableByLandUnits>0</PassableByLandUnits>
+    <PassableByWaterUnits>0</PassableByWaterUnits>
+    <PassableByAirUnits>0</PassableByAirUnits>
+    <SuitableForStartingLocation>0</SuitableForStartingLocation>
+    <Indestructable>0</Indestructable>
+    <MinTilesPerSplat>0</MinTilesPerSplat>
+    <MaxTilesPerSplat>0</MaxTilesPerSplat>
+    <MinBrushRadius>3</MinBrushRadius>
+    <MaxBrushRadius>6</MaxBrushRadius>
+    <PlacementOrder>0</PlacementOrder>
+    <SupportsSubTerrain>false</SupportsSubTerrain>
+    <IsBorderTerrain>0</IsBorderTerrain>
+    <CannotBorder>Category:Water</CannotBorder>
+    <MapGenPlaceChance>0</MapGenPlaceChance>
+    <GameModifier InternalName="CityTileYield_Fertile">
+      <ModType>Resource</ModType>
+      <Attribute>TileYieldGrain</Attribute>
+      <Value>1.5</Value>
+      <PerTurn>1</PerTurn>
+    </GameModifier>
+    <TerrainTypeEnvData>
+      <Environment>Barren</Environment>
+      <Texture>gfx/terrain/barren_ground_rough.dds</Texture>
+      <TextureWeight>1.0000</TextureWeight>
+      <TerrainPropData>P_Berren_Land_01,10</TerrainPropData>
+      <TerrainPropData>P_Berren_Land_02,10</TerrainPropData>
+      <TerrainPropData>P_Berren_Land_03,10</TerrainPropData>
+      <TerrainPropData>P_Berren_Land_04,10</TerrainPropData>
+      <TerrainPropData>P_Berren_Land_05,10</TerrainPropData>
+      <TerrainPropData>P_Berren_Land_06,10</TerrainPropData>
+      <TerrainPropData>P_Berren_Land_07,10</TerrainPropData>
+      <TerrainPropData>P_Berren_Land_08,10</TerrainPropData>
+      <TacticalMap>T_Barren_Land_01</TacticalMap>
+		<TacticalMap>T_Barren_Land_02</TacticalMap>
+      <TacticalMap>T_Barren_Land_03</TacticalMap>
+      <TacticalMap>T_Barren_Land_04</TacticalMap>
+      <TacticalMap>T_DLC06_Barren_01</TacticalMap>
+      <TacticalMap>T_DLC06_Barren_02</TacticalMap>
+      <TacticalMap>T_DLC06_Barren_03</TacticalMap>
+      <DistanceFogColor>94,89,76</DistanceFogColor>
+      <ClothMapColor>205,185,130</ClothMapColor>
+
+    </TerrainTypeEnvData>
+    <TerrainTypeEnvData>
+      <Environment>Dead</Environment>
+      <GrantsTileYields>1</GrantsTileYields>
+      <Texture>gfx/terrain/fallen_ground.dds</Texture>
+
+      <TerrainPropData>P_Fallen_Land_01,10</TerrainPropData>
+      <TerrainPropData>P_Fallen_Land_02,10</TerrainPropData>
+      <TerrainPropData>P_Fallen_Land_03,10</TerrainPropData>
+      <TerrainPropData>P_Fallen_Land_04,10</TerrainPropData>
+      <TerrainPropData>P_Fallen_Land_05,10</TerrainPropData>
+      <TerrainPropData>P_Fallen_Land_06,10</TerrainPropData>
+      <TerrainPropData>P_Fallen_Land_07,10</TerrainPropData>
+      <TextureWeight>1.0000</TextureWeight>
+		<TacticalMap>T_Fallen_Land_01</TacticalMap>
+     	<TacticalMap>T_DLC06_Fallen_Rugged_01</TacticalMap>
+
+      <DistanceFogColor>83,65,88</DistanceFogColor>
+
+      <ClothMapColor>165,180,190</ClothMapColor>
+
+    </TerrainTypeEnvData>
+    <TerrainTypeEnvData>
+      <Environment>Grassland</Environment>
+      <GrantsTileYields>1</GrantsTileYields>
+      <Texture>gfx/terrain/light_grass.dds</Texture>
+
+      <TextureWeight>1.0000</TextureWeight>
+      <TerrainPropData>P_Grassland_01,10</TerrainPropData>
+      <TerrainPropData>P_Grassland_02,10</TerrainPropData>
+      <TerrainPropData>P_Grassland_03,10</TerrainPropData>
+      <TerrainPropData>P_Grassland_04,10</TerrainPropData>
+      <TerrainPropData>P_Grassland_05,10</TerrainPropData>
+      <TerrainPropData>P_Grassland_06,10</TerrainPropData>
+      <TerrainPropData>P_Grassland_Bird,10</TerrainPropData>
+		<TacticalMap>T_Grassland_Land_01</TacticalMap>
+		<TacticalMap>T_Grassland_Land_02</TacticalMap>
+		<TacticalMap>T_DLC06_Grassland_01</TacticalMap>
+		<TacticalMap>T_DLC06_Grassland_02</TacticalMap>
+      <DistanceFogColor>200,220,228</DistanceFogColor>
+
+      <ClothMapColor>180,185,120</ClothMapColor>
+
+    </TerrainTypeEnvData>
+    
+  </TerrainType>
+  
+  </TerrainTypes>-->

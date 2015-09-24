@@ -1,0 +1,304 @@
+<ImprovementTypes>
+	
+	<ImprovementType InternalName="LifeAltar">
+        <!--<DisplayName>Life Altar</DisplayName>
+        <Description>Life Altars can be built on Life Shards. They amplify Life spells and provide Mana every season.</Description>
+        <SpecialBuildingType>Shard</SpecialBuildingType>
+        <IgnoreDuplicateImpLimit>1</IgnoreDuplicateImpLimit>
+        <RequiresResource>1</RequiresResource>
+        <SupportedResourceType>LifeShard</SupportedResourceType>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <UpgradesToImprovement>LifeShrine</UpgradesToImprovement>
+        <UpgradeTier>1</UpgradeTier>
+        <Prereq>
+            <Type>Allegiance</Type>
+            <Attribute>Kingdom</Attribute>
+        </Prereq>-->
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>IruAllies</Attribute>
+            <Target>Player</Target>
+        </Prereq>		
+        <!--<Prereq>
+            <Type>Tech</Type>
+            <Attribute>Shard_Harvesting</Attribute>
+        </Prereq>
+        <LaborToBuild>80</LaborToBuild>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Mana</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Mana</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>LifeMana</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Life Power</Provides>
+            <UpgradeComparisonID>2</UpgradeComparisonID>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+            <AITag>Shards</AITag>
+        </AIData>
+        <ArtDef>LifeAltar_ArtDef</ArtDef>-->
+    </ImprovementType>
+	
+    <ImprovementType InternalName="LifeShrine">
+        <!--<DisplayName>Life Shrine</DisplayName>
+        <Description>Life Shrines upgrade from Life Altars. They amplify Life spells and provide additional Mana every season.</Description>
+        <SpecialBuildingType>Shard</SpecialBuildingType>
+        <IgnoreDuplicateImpLimit>1</IgnoreDuplicateImpLimit>
+        <RequiresResource>1</RequiresResource>
+        <SupportedResourceType>LifeShard</SupportedResourceType>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <UpgradesToImprovement>LifeTemple</UpgradesToImprovement>
+        <UpgradeTier>2</UpgradeTier>
+        <Prereq>
+            <Type>Allegiance</Type>
+            <Attribute>Kingdom</Attribute>
+        </Prereq>-->
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>IruAllies</Attribute>
+            <Target>Player</Target>
+        </Prereq>			
+        <!--<Prereq>
+            <Type>Tech</Type>
+            <Attribute>Immortal_Codex</Attribute>
+        </Prereq>
+        <LaborToBuild>179</LaborToBuild>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Mana</Attribute>
+            <Value>2</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+2 Mana</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>LifeMana</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Life Power</Provides>
+            <UpgradeComparisonID>2</UpgradeComparisonID>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+            <AITag>Shards</AITag>
+        </AIData>
+        <ArtDef>LifeShrine_ArtDef</ArtDef>-->
+    </ImprovementType>
+	
+    <ImprovementType InternalName="LifeTemple">
+        <!--<DisplayName>Life Temple</DisplayName>
+        <Description>Life Temples upgrade from Life Shrines. They amplify Life spells and provide additional Mana every season.</Description>
+        <SpecialBuildingType>Shard</SpecialBuildingType>
+        <IgnoreDuplicateImpLimit>1</IgnoreDuplicateImpLimit>
+        <RequiresResource>1</RequiresResource>
+        <SupportedResourceType>LifeShard</SupportedResourceType>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <UpgradeTier>3</UpgradeTier>-->
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>IruAllies</Attribute>
+            <Target>Player</Target>
+        </Prereq>		
+        <!--<Prereq>
+            <Type>Allegiance</Type>
+            <Attribute>Kingdom</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Ereogs_Journal</Attribute>
+        </Prereq>
+        <LaborToBuild>376</LaborToBuild>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Mana</Attribute>
+            <Value>3</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+3 Mana</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>LifeMana</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Life Power</Provides>
+            <UpgradeComparisonID>2</UpgradeComparisonID>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+            <AITag>Shards</AITag>
+        </AIData>
+        <ArtDef>LifeTemple_ArtDef</ArtDef>-->
+    </ImprovementType>
+	
+	<ImprovementType InternalName="LifeAltar_Andris">
+        <DisplayName>Iru Altar</DisplayName>
+        <Description>Life Altars can be built on Life Shards. They amplify Life spells and provide Mana every season. They also call an Iru Soldier to fight for your cause.</Description>
+        <SpecialBuildingType>Shard</SpecialBuildingType>
+        <IgnoreDuplicateImpLimit>1</IgnoreDuplicateImpLimit>
+        <RequiresResource>1</RequiresResource>
+        <SupportedResourceType>LifeShard</SupportedResourceType>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <UpgradesToImprovement>LifeShrine</UpgradesToImprovement>
+        <UpgradeTier>1</UpgradeTier>
+        <Prereq>
+            <Type>Allegiance</Type>
+            <Attribute>Kingdom</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>IruAllies</Attribute>
+            <Target>Player</Target>
+        </Prereq>		
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Shard_Harvesting</Attribute>
+        </Prereq>
+        <LaborToBuild>80</LaborToBuild>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Mana</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Mana</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>LifeMana</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Life Power</Provides>
+            <UpgradeComparisonID>2</UpgradeComparisonID>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>LimitedUnitCap</Attribute>
+            <StrVal>Iru_Soldier</StrVal>
+            <Value>1</Value>
+            <Provides>Summons an Iru Soldier</Provides>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+            <AITag>Shards</AITag>
+        </AIData>
+        <ArtDef>LifeAltar_ArtDef</ArtDef>
+    </ImprovementType>
+	
+    <ImprovementType InternalName="LifeShrine_Andris">
+        <DisplayName>Iru Shrine</DisplayName>
+        <Description>Life Shrines upgrade from Life Altars. They amplify Life spells and provide additional Mana every season. They also call an Iru Knight to fight for your cause.</Description>
+        <SpecialBuildingType>Shard</SpecialBuildingType>
+        <IgnoreDuplicateImpLimit>1</IgnoreDuplicateImpLimit>
+        <RequiresResource>1</RequiresResource>
+        <SupportedResourceType>LifeShard</SupportedResourceType>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <UpgradesToImprovement>LifeTemple</UpgradesToImprovement>
+        <UpgradeTier>2</UpgradeTier>
+        <Prereq>
+            <Type>Allegiance</Type>
+            <Attribute>Kingdom</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>IruAllies</Attribute>
+            <Target>Player</Target>
+        </Prereq>			
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Immortal_Codex</Attribute>
+        </Prereq>
+        <LaborToBuild>179</LaborToBuild>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Mana</Attribute>
+            <Value>2</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+2 Mana</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>LifeMana</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Life Power</Provides>
+            <UpgradeComparisonID>2</UpgradeComparisonID>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>LimitedUnitCap</Attribute>
+            <StrVal>Iru_Knight</StrVal>
+            <Value>1</Value>
+            <Provides>Summons an Iru Knight</Provides>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+            <AITag>Shards</AITag>
+        </AIData>
+        <ArtDef>LifeShrine_ArtDef</ArtDef>
+    </ImprovementType>
+	
+    <ImprovementType InternalName="LifeTemple_Andris">
+        <DisplayName>Iru Temple</DisplayName>
+        <Description>Life Temples upgrade from Life Shrines. They amplify Life spells and provide additional Mana every season. They also call an Iru Master to fight for your cause.</Description>
+        <SpecialBuildingType>Shard</SpecialBuildingType>
+        <IgnoreDuplicateImpLimit>1</IgnoreDuplicateImpLimit>
+        <RequiresResource>1</RequiresResource>
+        <SupportedResourceType>LifeShard</SupportedResourceType>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <UpgradeTier>3</UpgradeTier>
+        <Prereq>
+            <Type>Allegiance</Type>
+            <Attribute>Kingdom</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>IruAllies</Attribute>
+            <Target>Player</Target>
+        </Prereq>			
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Ereogs_Journal</Attribute>
+        </Prereq>
+        <LaborToBuild>376</LaborToBuild>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Mana</Attribute>
+            <Value>3</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+3 Mana</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>LifeMana</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Life Power</Provides>
+            <UpgradeComparisonID>2</UpgradeComparisonID>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>LimitedUnitCap</Attribute>
+            <StrVal>Iru_Master</StrVal>
+            <Value>1</Value>
+            <Provides>Summons an Iru Master</Provides>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+            <AITag>Shards</AITag>
+        </AIData>
+        <ArtDef>LifeTemple_ArtDef</ArtDef>
+    </ImprovementType>
+	
+	    </ImprovementTypes>

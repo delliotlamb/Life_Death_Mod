@@ -1,0 +1,128 @@
+<ImprovementTypeArtDefs>
+
+<ImprovementTypeArtDef InternalName="Art_PublicForum">
+        <ImprovementTypeArtSubPack InternalName="Art_PublicForum_Kingdom">
+            <SupportedBuildingStyle>KingdomStyle</SupportedBuildingStyle>
+            <TileDesign>K_PublicForum_01</TileDesign>
+            <ConstructionTileDesign>K_Construction1x1_01</ConstructionTileDesign>
+                <DrawnIcon>Improvement_AncientTemple.png</DrawnIcon>
+                <DrawnIconConstruction>Improvement_AncientTemple_C.png</DrawnIconConstruction>
+            <Thumbnail>K_Sage_Thumb_01.png</Thumbnail>
+            <Medallions InternalName="">
+                <All>K_Sage_Thumb_01.png</All>
+            </Medallions>
+        </ImprovementTypeArtSubPack>
+        <ImprovementTypeArtSubPack InternalName="Art_PublicForum_Empire">
+            <SupportedBuildingStyle>EmpireStyle</SupportedBuildingStyle>
+            <TileDesign>F_PublicForum_01</TileDesign>
+            <ConstructionTileDesign>F_Construction1x1_01</ConstructionTileDesign>
+                <DrawnIcon>Improvement_AncientTemple.png</DrawnIcon>
+                <DrawnIconConstruction>Improvement_AncientTemple_C.png</DrawnIconConstruction>
+            <Thumbnail>F_Sage_Thumb_01.png</Thumbnail>
+            <Medallions InternalName="">
+                <All>F_Sage_Thumb_01.png</All>
+            </Medallions>
+        </ImprovementTypeArtSubPack>
+    </ImprovementTypeArtDef>
+	
+	<ImprovementTypeArtDef InternalName="Art_Courier_Post">
+        <ImprovementTypeArtSubPack InternalName="Art_Courier_Post_Kingdom">
+            <SupportedBuildingStyle>KingdomStyle</SupportedBuildingStyle>
+            <TileDesign>Courier_Post</TileDesign>
+            <ConstructionTileDesign>K_Construction1x1_01</ConstructionTileDesign>
+                <DrawnIcon>Improvement_Stable.png</DrawnIcon>
+                <DrawnIconConstruction>Improvement_Stable_C.png</DrawnIconConstruction>
+            <Thumbnail>K_Outpost_Stables_Thumb_01.png</Thumbnail>
+            <Medallions InternalName="">
+                <All>K_Outpost_Stables_Thumb_01.png</All>
+            </Medallions>
+        </ImprovementTypeArtSubPack>
+        <ImprovementTypeArtSubPack InternalName="Art_Courier_Post_Empire">
+            <SupportedBuildingStyle>EmpireStyle</SupportedBuildingStyle>
+            <TileDesign>Courier_Post</TileDesign>
+            <ConstructionTileDesign>F_Construction1x1_01</ConstructionTileDesign>
+                <DrawnIcon>Improvement_Stable.png</DrawnIcon>
+                <DrawnIconConstruction>Improvement_Stable_C.png</DrawnIconConstruction>
+            <Thumbnail>K_Outpost_Stables_Thumb_01.png</Thumbnail>
+            <Medallions InternalName="">
+                <All>K_Outpost_Stables_Thumb_01.png</All>
+            </Medallions>
+        </ImprovementTypeArtSubPack>
+    </ImprovementTypeArtDef>
+	
+	    <ImprovementTypeArtDef InternalName="Art_CivilCourt">
+        <ImprovementTypeArtSubPack InternalName="Art_CivilCourt_Kingdom">
+            <SupportedBuildingStyle>KingdomStyle</SupportedBuildingStyle>
+            <TileDesign>Civil_Court_01</TileDesign>
+            <ConstructionTileDesign>K_Construction1x1_01</ConstructionTileDesign>
+            <DrawnIcon>Improvement_ScrollScribe.png</DrawnIcon>
+            <DrawnIconConstruction>Improvement_ScrollScribe_C.png</DrawnIconConstruction>
+            <Thumbnail>K_Bell_Tower_Thumb_01.png</Thumbnail>
+            <Medallions InternalName="">
+                <All>K_Bell_Tower_Thumb_01.png</All>
+            </Medallions>
+        </ImprovementTypeArtSubPack>
+        <ImprovementTypeArtSubPack InternalName="Art_CivilCourt_Empire">
+            <SupportedBuildingStyle>EmpireStyle</SupportedBuildingStyle>
+            <TileDesign>Civil_Court_01</TileDesign>
+            <ConstructionTileDesign>F_Construction1x1_01</ConstructionTileDesign>
+            <DrawnIcon>Improvement_ScrollScribe.png</DrawnIcon>
+            <DrawnIconConstruction>Improvement_ScrollScribe_C.png</DrawnIconConstruction>
+            <Thumbnail>F_Bell_Tower_Thumb_01.png</Thumbnail>
+            <Medallions InternalName="">
+                <All>F_Bell_Tower_Thumb_01.png</All>
+            </Medallions>
+        </ImprovementTypeArtSubPack>
+    </ImprovementTypeArtDef>
+	
+	 <ImprovementTypeArtDef InternalName="Art_ExchangeForum">
+        <ImprovementTypeArtSubPack InternalName="Art_ExchangeForum_Kingdom">
+            <SupportedBuildingStyle>KingdomStyle</SupportedBuildingStyle>
+            <TileDesign>K_ExchangeForum_01</TileDesign>
+            <ConstructionTileDesign>K_Construction1x1_01</ConstructionTileDesign>
+            <DrawnIcon>Improvement_Mint.png</DrawnIcon>
+            <DrawnIconConstruction>Improvement_Market_C.png</DrawnIconConstruction>
+            <Thumbnail>K_Market_01_Thumb.png</Thumbnail>
+            <Medallions InternalName="">
+                <All>K_Market_01_Thumb.png</All>
+            </Medallions>
+        </ImprovementTypeArtSubPack>
+        <ImprovementTypeArtSubPack InternalName="Art_ExchangeForum_Empire">
+            <SupportedBuildingStyle>EmpireStyle</SupportedBuildingStyle>
+            <TileDesign>K_ExchangeForum_01</TileDesign>
+            <ConstructionTileDesign>F_Construction1x1_01</ConstructionTileDesign>
+            <DrawnIcon>Improvement_Mint.png</DrawnIcon>
+            <DrawnIconConstruction>Improvement_Market_C.png</DrawnIconConstruction>
+            <Thumbnail>K_Market_01_Thumb.png</Thumbnail>
+            <Medallions InternalName="">
+                <All>K_Market_01_Thumb.png</All>
+            </Medallions>
+        </ImprovementTypeArtSubPack>
+    </ImprovementTypeArtDef>
+	
+	<ImprovementTypeArtDef InternalName="Art_Sewer">
+        <ImprovementTypeArtSubPack InternalName="Art_Sewer_Kingdom">
+            <SupportedBuildingStyle>KingdomStyle</SupportedBuildingStyle>
+            <TileDesign>K_Sewer_01</TileDesign>
+            <ConstructionTileDesign>K_Underforge_Build_01</ConstructionTileDesign>
+            <DrawnIcon>Improvement_Underforge.png</DrawnIcon>
+            <DrawnIconConstruction>Improvement_Underforge_C.png</DrawnIconConstruction>
+            <Thumbnail>K_Underforge_Thumb_01.png</Thumbnail>
+            <Medallions InternalName="">
+                <All>K_Underforge_Thumb_01.png</All>
+            </Medallions>
+        </ImprovementTypeArtSubPack>
+        <ImprovementTypeArtSubPack InternalName="Art_Sewer_Empire">
+            <SupportedBuildingStyle>EmpireStyle</SupportedBuildingStyle>
+            <TileDesign>K_Sewer_01</TileDesign>
+            <ConstructionTileDesign>F_Underforge_Build_01</ConstructionTileDesign>
+            <DrawnIcon>Improvement_Underforge.png</DrawnIcon>
+            <DrawnIconConstruction>Improvement_Underforge_C.png</DrawnIconConstruction>
+            <Thumbnail>F_Underforge_Thumb_01.png</Thumbnail>
+            <Medallions InternalName="">
+                <All>F_Underforge_Thumb_01.png</All>
+            </Medallions>
+        </ImprovementTypeArtSubPack>
+    </ImprovementTypeArtDef>
+
+    </ImprovementTypeArtDefs>

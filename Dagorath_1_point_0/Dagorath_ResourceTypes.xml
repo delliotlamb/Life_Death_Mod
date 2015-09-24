@@ -1,0 +1,23 @@
+<ResourceTypes>  
+
+<ResourceType InternalName="EldritchEnergy">
+    <DisplayName>Eldritch Presence</DisplayName>
+    <Type>EldritchEnergy</Type>
+    <Description>How close you are to summoning another eldritch demon into the world.</Description>
+    <IconColor>0,0,0</IconColor>
+    <Icon>Gfx//Icons//Ability_SummonDeathDemon_Icon.png</Icon>
+    <HideInHiergamenon>1</HideInHiergamenon>
+    <ModelColor>0,0,0</ModelColor>
+    <Production>1.0</Production>
+    <Global>1</Global>
+    <Rarity>0.0</Rarity>
+    <Shared>0</Shared>
+    <TradedByCaravans>0</TradedByCaravans>
+    <ShownInGlobalDisplay>1</ShownInGlobalDisplay>
+    <!-- AI Info -->
+    <AIData AIPersonality="AI_General">
+      <AITag>Fame</AITag>
+    </AIData>
+  </ResourceType>
+
+</ResourceTypes>

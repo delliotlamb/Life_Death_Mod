@@ -1,0 +1,415 @@
+<Spells>
+		
+		<SpellDef InternalName="RecruitSpy">
+        <DisplayName>Recruit Spy</DisplayName>
+        <Description>Recruit a Spy that can use accumulated Influence against your enemies, or to claim new territory.</Description>
+        <Image>Sovereign_YoungWizard.png</Image>
+        <IconFG>Individual.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+		<Cooldown>5</Cooldown>		
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtDiplomat</Attribute>
+            <Value>1</Value>
+        </Prereq>		
+        <SpellResourceCost>
+            <Resource>DiplomaticCapital</Resource>
+            <Amount>10</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Gold</Resource>
+            <Amount>100</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Gold</Resource>
+            <PerTurn>1</PerTurn>
+            <Amount>3</Amount>
+        </SpellResourceCost>		
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>SummonUnit</Attribute>
+            <StrVal>Trustworthy Gentleman</StrVal>
+            <UnitClass>Unit_Spy</UnitClass>
+            <Duration>-1</Duration>
+			<Value>1</Value>
+        </GameModifier>	
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+    </SpellDef>
+		
+	<SpellDef InternalName="InciteRevolution">
+        <DisplayName>Incite Revolution</DisplayName>
+        <Description>Take control of target city. Can be cast on Allies, breaking the alliance.</Description>
+        <Image>S_Inspiration_Painting.png</Image>
+        <IconFG>S_BrokenLoyalties_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+		<CastTime>1</CastTime>
+        <SpellBookSortCategory>City</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Charm</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>ImpResourceBooster</SpellClass>
+        <SpellSubClass>Debuff</SpellSubClass>
+		<Range>1</Range>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Spy</Attribute>
+        </Prereq>			
+        <SpellResourceCost>
+            <Resource>Gold</Resource>
+            <Amount>500</Amount>
+        </SpellResourceCost>		
+        <SpellResourceCost>
+            <Resource>DiplomaticCapital</Resource>
+            <Amount>300</Amount>
+        </SpellResourceCost>		
+        <GameModifier>
+            <ModType>City</ModType>
+            <Attribute>TransferCityControl</Attribute>
+            <BoolVal1>1</BoolVal1>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Antipathy_01</HitSoundFX>
+        <SpellCastEffectName>Brilliance</SpellCastEffectName>
+        <SpellCastEffectScale>0.4</SpellCastEffectScale>
+        <SpellDefEffect>
+            <EffectName>S_Blight_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+	
+	<SpellDef InternalName="TerritorialClaim">
+        <DisplayName>Territorial Claim</DisplayName>
+        <Description>Creates an outpost.</Description>
+        <Image>Fort.png</Image>
+        <IconFG>S_Empower_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>			
+        <CanStack>0</CanStack>
+        <SpellBookSortCategory>World</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Map</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Terraform</SpellClass>
+        <SpellSubClass>BuildOutpost</SpellSubClass>
+        <SpellTargetType>NeutralGround</SpellTargetType>
+		<Range>2</Range>		
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Spy</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Gold</Resource>
+            <Amount>25</Amount>
+        </SpellResourceCost>		
+        <SpellResourceCost>
+            <Resource>DiplomaticCapital</Resource>
+            <Amount>40</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>BuildWildImprovement</Attribute>
+            <StrVal>Outpost_Spy</StrVal>
+        </GameModifier>
+        <ValidTerrainCategory>City</ValidTerrainCategory>
+        <ValidTerrainCategory>Forest</ValidTerrainCategory>
+        <ValidTerrainCategory>Land</ValidTerrainCategory>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_ArcaneMonolith_01</HitSoundFX>
+    </SpellDef>
+	
+	<SpellDef InternalName="Trigger_SpyNoSpell">
+	<DisplayName>Spy No Spell</DisplayName>
+	<Description>No Tactical Spells for Spies</Description>
+    <Image>Improvement_SiegeFactory.png</Image>
+    <IconFG>TrainUnitIcon_Catapult.png</IconFG>
+	<CanStack>0</CanStack>
+	<SpellBookSortCategory>Unit</SpellBookSortCategory>
+	<SpellBookSortSubCategory>UnitEnchantment</SpellBookSortSubCategory>
+	<SpellType>Tactical</SpellType>
+	<SpellClass>Offensive</SpellClass>
+	<SpellSubClass>Buff</SpellSubClass>
+	<SpellTargetType>Self</SpellTargetType>
+	<IgnoreCastAnim>1</IgnoreCastAnim>
+	<IsCastable>0</IsCastable>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>PreventSpellcasting</Attribute>
+            <Duration>-1</Duration>
+            <!--<PerTurn>1</PerTurn>-->
+        </GameModifier>      
+	<AIData AIPersonality="AI_General">
+		<AIPriority>5</AIPriority>
+	</AIData>        
+	</SpellDef>
+	
+	    <SpellDef InternalName="Defection_Ability">
+        <DisplayName>Call To Defect</DisplayName>
+        <Description>Convert a trained unit to your cause unless they resist.</Description>
+        <Image>S_DestinysGift_Painting.png</Image>
+        <IconFG>T_SilverTongue_Icon.png</IconFG>
+        <Cooldown>99</Cooldown>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Charm</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Debuff</SpellSubClass>
+        <SpellTargetType>EnemyTrainedUnit</SpellTargetType>
+        <SpellTargetCreatureType>Men</SpellTargetCreatureType>
+        <IsResistable>1</IsResistable>
+        <IsSpecialAbility>1</IsSpecialAbility>		
+        <Range>1</Range>
+        <SpellResourceCost>
+            <Resource>Gold</Resource>
+            <Amount>100</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>DiplomaticCapital</Resource>
+            <Amount>75</Amount>
+        </SpellResourceCost>		
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>CharmTarget</Attribute>
+            <Value>100</Value>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>1000</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_SilverTongue_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>T_Tame_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+	
+	<!--<SpellDef InternalName="Defection2_Ability">
+        <DisplayName>Better Offer</DisplayName>
+        <Description>Convert an enemy champion to your cause (-1% success chance per target level).</Description>
+        <Image>S_DestinysGift_Painting.png</Image>
+        <IconFG>T_SilverTongue_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>		
+        <Cooldown>99</Cooldown>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Charm</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Debuff</SpellSubClass>
+        <SpellTargetType>EnemyChampion</SpellTargetType>
+        <Range>1</Range>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Spy</Attribute>
+        </Prereq>		
+        <SpellResourceCost>
+            <Resource>Gold</Resource>
+            <Amount>200</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>DiplomaticCapital</Resource>
+            <Amount>100</Amount>
+        </SpellResourceCost>		
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>CharmTarget</Attribute>
+            <Value>100</Value>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_SilverTongue_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>T_Tame_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>-->
+	
+
+	<SpellDef InternalName="DiplomaticImmunity_Ability">
+        <DisplayName>Diplomatic Immunity</DisplayName>
+        <Description>All units flee from the battlefield.</Description>
+        <Image>T_Escape_Painting.png</Image>
+        <IconFG>T_Escape_Icon.png</IconFG>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Movement</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Movement</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>AllFriendlyUnits</SpellTargetType>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <IsSpecialAbility>1</IsSpecialAbility>
+        <SpellResourceCost>
+            <Resource>DiplomaticCapital</Resource>
+            <Amount>25</Amount>
+        </SpellResourceCost>		
+        <GameModifier>
+            <ModType>TacticalUnit</ModType>
+            <Attribute>EscapeFromBattle</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Teleport_03</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>T_Escape_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>.75</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+            <PlayOnAllTargets>1</PlayOnAllTargets>
+        </SpellDefEffect>
+    </SpellDef>
+	
+	    <SpellDef InternalName="SpiritOfDiplomacy">
+        <DisplayName>Aura Of Cooperation</DisplayName>
+        <Description>+1 Influence per turn</Description>
+        <Image>Diplomacy_Medallion_Full.png</Image>
+        <IconFG>S_Ingenuity_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CanStack>0</CanStack>
+        <SpellBookSortCategory>City</SpellBookSortCategory>
+        <SpellBookSortSubCategory>CityEnchantment</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>ImpResourceBooster</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>FriendlyCity</SpellTargetType>
+        <CasterMustBeSov>1</CasterMustBeSov>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>45</Amount>
+        </SpellResourceCost>		
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>DiplomaticCapital</Attribute>
+            <Duration>-1</Duration>
+            <HasUpgradableValue>1</HasUpgradableValue>
+            <PerTurn>1</PerTurn>
+			<Value>1</Value>
+        </GameModifier>
+        <ValidTerrainCategory>City</ValidTerrainCategory>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Daze_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_Inspiration_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>0.75</EffectScale>
+            <EffectDelay>0.5</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+	
+	<SpellDef InternalName="EmphasizedDeeds">
+        <DisplayName>Emphasized Position</DisplayName>
+        <Description>Gain 50 Diplomatic Capital.</Description>
+        <Image>Kingdom_Sovereign1.png</Image>
+        <IconFG>Action_Treaty.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <Cooldown>1</Cooldown>		
+        <SpellBookSortCategory>World</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Other</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Illusomancy</Attribute>
+        </Prereq>		
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>100</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>DiplomaticCapital</Attribute>
+            <Value>40</Value>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Alchemy_01</HitSoundFX>
+    </SpellDef>
+	
+	<SpellDef InternalName="DiplomaticChaos">
+        <DisplayName>Diplomatic Collapse</DisplayName>
+        <Description>All players declare war with any non-allies. This will override non-aggression pacts and tribute treaties. Usable only once per game.</Description>
+        <Image>F_Conquest_Full.png</Image>
+        <IconFG>S_MoriansChant_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>			
+        <Cooldown>1000</Cooldown>
+        <SpellBookSortCategory>World</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Debuff</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Spy</Attribute>
+        </Prereq>		
+        <SpellResourceCost>
+            <Resource>DiplomaticCapital</Resource>
+            <Amount>200</Amount>
+        </SpellResourceCost>
+            <GameModifier>
+                <ModType>Map</ModType>
+                <Attribute>AllPlayersDeclareWar</Attribute>
+            </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_CalltoArms_01</HitSoundFX>
+    </SpellDef>
+	
+	<SpellDef InternalName="Sabotage">
+        <DisplayName>Incite Sabotage</DisplayName>
+        <Description>Resets the production queue, with a chance of destroying other improvements.</Description>
+        <Image>S_Earthquake_Painting.png</Image>
+        <IconFG>Improvement_DestroyedLot.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <Cooldown>1</Cooldown>
+        <SpellBookSortCategory>City</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>EnemyCity</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Spy</Attribute>
+        </Prereq>		
+        <SpellResourceCost>
+            <Resource>DiplomaticCapital</Resource>
+            <Amount>100</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>City</ModType>
+            <Attribute>Earthquake</Attribute>
+            <!--<Radius>1</Radius>-->
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>70</AIPriority>
+        </AIData>
+        <HitSoundFX>Raze</HitSoundFX>
+    </SpellDef>
+	
+</Spells>

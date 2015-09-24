@@ -1,0 +1,2043 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- DLC04_Units.xml -->
+<!-- -->
+<UnitTypes>
+    <UnitType InternalName="Sovereign_Morrigan">
+        <DisplayName>Morrigan the Risen</DisplayName>
+        <UnitDisplayName>Morrigan the Risen</UnitDisplayName>
+        <Class>Sovereign</Class>
+        <Allegiance>Empire</Allegiance>
+        <CreatureType>Undead</CreatureType>
+        <Unique>1</Unique>
+        <CanBeDesigned>0</CanBeDesigned>
+        <FactionToLead>EmpireOfTheDead</FactionToLead>
+        <Gender>Male</Gender>
+        <HasWages>0</HasWages>
+        <IsSovereign>1</IsSovereign>
+        <HasEssence>1</HasEssence>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Unrest</Attribute>
+            <Value>-10</Value>
+            <Provides>-10% Unrest in the city this unit is in</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>SummonUnit</Attribute>
+            <Value>1</Value>
+            <Multiplier>3</Multiplier>
+            <UnitClass>Unit_Spearman_Dead</UnitClass>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>SummonUnit</Attribute>
+            <Value>1</Value>
+            <Multiplier>3</Multiplier>
+            <UnitClass>Unit_Peasant_Dead</UnitClass>
+        </GameModifier>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_Accuracy>80</UnitStat_Accuracy>
+            <UnitStat_CombatSpeed>22</UnitStat_CombatSpeed>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+			<UnitStat_HitPoints>20</UnitStat_HitPoints>
+			<UnitStat_BG_IsHumanoid>1.0000</UnitStat_BG_IsHumanoid> <!-- For CotS -->
+			<UnitStat_BG_IsEmpire>1.0000</UnitStat_BG_IsEmpire> <!-- For CotS -->
+			<UnitStat_BG_IsNotAlive>1</UnitStat_BG_IsNotAlive> <!-- For CotS -->
+			<UnitStat_BG_IsRace_DLCUndead>1.0000</UnitStat_BG_IsRace_DLCUndead> <!-- For CotS -->
+			<UnitStat_BG_IsSovereign>1.0000</UnitStat_BG_IsSovereign> <!-- For CotS -->
+			<UnitStat_BG_IsChampion>1</UnitStat_BG_IsChampion> <!-- For CotS -->
+			<UnitStat_BG_IsUndead>1</UnitStat_BG_IsUndead> <!-- For CotS -->
+			<UnitStat_BG_IsImmortal>1</UnitStat_BG_IsImmortal> <!-- For CotS -->
+			<UnitStat_ImmuneToFear>1</UnitStat_ImmuneToFear> <!-- For CotS -->
+        </LevelMilestone>
+		<SelectedAbilityBonusOption>Blood_Undead</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Summoner</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Death2</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Death1</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Attunement</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Brilliant</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Weak</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Spell_SummonSkeleton</SelectedAbilityBonusOption>
+		<AutoCreateEquipment>Staff_Ice</AutoCreateEquipment>
+		<AutoCreateEquipment>EreogsToken</AutoCreateEquipment>
+        <Equipment>Ritualist_Robe</Equipment>
+        <Backstory>You were once Morrigan the Damned. You sealed yourself within the buried city of Calebethon, and toiled as each light went out. As the darkness crept through Calebethon there was a rising tide of screams and madness. It would be unjust to say that the citizens became as animals, because animals were never so cruel or afraid.
+		
+		Eventually the darkness claimed those voices too, and the city settled to the gentle sounds of ragged breath and the drip of blood, flesh and filth. When the last light of Calebethon finally went out you could only hear echoes of your great city in the darkness.  You have no memories of those last, horrible days.
+		
+		When you awoke you walked through the streets of ancient Calebethon, and where you walked the long dead citizens of your city rose to follow.</Backstory>
+        <LorebookIntroText>You were once Morrigan the Damned. You sealed yourself within the buried city of Calebethon, and toiled as each light went out. As the darkness crept through Calebethon there was a rising tide of screams and madness. It would be unjust to say that the citizens became as animals, because animals were never so cruel or afraid.
+		
+		Eventually the darkness claimed those voices too, and the city settled to the gentle sounds of ragged breath and the drip of blood, flesh and filth. When the last light of Calebethon finally went out you could only hear echoes of your great city in the darkness.  You have no memories of those last, horrible days.
+		
+		When you awoke you walked through the streets of ancient Calebethon, and where you walked the long dead citizens of your city rose to follow.</LorebookIntroText>
+        <AIMilitaryStrategy>Swordsman</AIMilitaryStrategy>
+        <PossibleAITrait>Civilized</PossibleAITrait>
+        <PossibleAITrait>Sorcerer</PossibleAITrait>
+        <Medallions InternalName="">
+            <All>DLC04_Morrigan.png</All>
+        </Medallions>
+        <AnimationPack>OldManAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.5</ClothMapScale>
+        <ClothPoseIndex>7</ClothPoseIndex>
+        <CutSceneDataPack>MorriganCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\Eyes\blinks\Eyeblink_F4_Blk.png</EyeTexture>
+        <InfoCardBackground>BG_Swamp</InfoCardBackground>
+        <ModelPath>M_Skeleton_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Skeleton</SoundPack>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Skin>M_Skeleton_Texture_01.png</Texture_Skin>
+        <UnitModelType>Skeleton</UnitModelType>
+        <EffectAttachment>
+            <Attachment>Lf_Eye_LCF</Attachment>
+            <EffectName>A_LichEyes_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.1</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>Rt_Eye_LCF</Attachment>
+            <EffectName>A_LichEyes_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.1</EffectScale>
+        </EffectAttachment>
+    </UnitType>
+    <UnitType InternalName="Generic_Sovereign_Dead_Female">
+        <DisplayName>Undead Sovereign</DisplayName>
+        <Class>Sovereign</Class>
+        <CreatureType>Undead</CreatureType>
+        <RaceType>Race_Type_Dead</RaceType>
+        <CanBeDesigned>0</CanBeDesigned>
+        <Gender>Female</Gender>
+        <HasWages>0</HasWages>
+        <IsSovereign>0</IsSovereign>
+        <HasEssence>1</HasEssence>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Unrest</Attribute>
+            <Value>-10</Value>
+            <Provides>-10% Unrest in the city this unit is in</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>SummonUnit</Attribute>
+            <Value>1</Value>
+            <Multiplier>3</Multiplier>
+            <UnitClass>Unit_Spearman_Dead</UnitClass>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>SummonUnit</Attribute>
+            <Value>1</Value>
+            <Multiplier>3</Multiplier>
+            <UnitClass>Unit_Peasant_Dead</UnitClass>
+        </GameModifier>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_Accuracy>80</UnitStat_Accuracy>
+            <UnitStat_CombatSpeed>22</UnitStat_CombatSpeed>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+			<UnitStat_HitPoints>20</UnitStat_HitPoints>
+			<UnitStat_BG_IsHumanoid>1.0000</UnitStat_BG_IsHumanoid> <!-- For CotS -->
+			<UnitStat_BG_IsEmpire>1.0000</UnitStat_BG_IsEmpire> <!-- For CotS -->
+			<UnitStat_BG_IsNotAlive>1</UnitStat_BG_IsNotAlive> <!-- For CotS -->
+			<UnitStat_BG_IsRace_DLCUndead>1.0000</UnitStat_BG_IsRace_DLCUndead> <!-- For CotS -->
+			<UnitStat_BG_IsSovereign>1.0000</UnitStat_BG_IsSovereign> <!-- For CotS -->
+			<UnitStat_BG_IsChampion>1</UnitStat_BG_IsChampion> <!-- For CotS -->
+			<UnitStat_BG_IsUndead>1</UnitStat_BG_IsUndead> <!-- For CotS -->
+			<UnitStat_BG_IsImmortal>1</UnitStat_BG_IsImmortal> <!-- For CotS -->
+			<UnitStat_ImmuneToFear>1</UnitStat_ImmuneToFear> <!-- For CotS -->
+        </LevelMilestone>
+        <SelectedAbilityBonusOption>Blood_Undead</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Spirit</SelectedAbilityBonusOption>
+        <Equipment>Banshee_Head</Equipment>
+        <Equipment>Banshee_Hair</Equipment>
+        <Equipment>Banshee_Skirt</Equipment>
+        <Equipment>Banshee_Shirt</Equipment>
+        <AIMilitaryStrategy>Swordsman</AIMilitaryStrategy>
+        <PossibleAITrait>Sorcerer</PossibleAITrait>
+        <PossibleAITrait>Civilized</PossibleAITrait>
+        <AnimationPack>FemaleSovereignAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>0</ClothPoseIndex>
+        <CutSceneDataPack>Ceresa_CutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\Eyes\blinks\Eyeblink_F4_Gold.png</EyeTexture>
+        <InfoCardBackground>BG_EmpireRugged</InfoCardBackground>
+        <ModelPath>M_Banshee_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Banshee</SoundPack>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\Eyeblink_Banshee.png</Texture_Eyes>
+        <Texture_Trans>M_Banshee_Skin_01.png</Texture_Trans>
+        <UnitModelType>Banshee</UnitModelType>
+    </UnitType>
+    <UnitType InternalName="Generic_Sovereign_Dead_Male">
+        <DisplayName>Undead Sovereign</DisplayName>
+        <Class>Sovereign</Class>
+        <CreatureType>Undead</CreatureType>
+        <RaceType>Race_Type_Dead</RaceType>
+        <CanBeDesigned>0</CanBeDesigned>
+        <Gender>Male</Gender>
+        <HasWages>0</HasWages>
+        <IsSovereign>0</IsSovereign>
+        <HasEssence>1</HasEssence>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Unrest</Attribute>
+            <Value>-10</Value>
+            <Provides>-10% Unrest in the city this unit is in</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>SummonUnit</Attribute>
+            <Value>1</Value>
+            <Multiplier>3</Multiplier>
+            <UnitClass>Unit_Spearman_Dead</UnitClass>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>SummonUnit</Attribute>
+            <Value>1</Value>
+            <Multiplier>3</Multiplier>
+            <UnitClass>Unit_Peasant_Dead</UnitClass>
+        </GameModifier>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_Accuracy>80</UnitStat_Accuracy>
+            <UnitStat_CombatSpeed>22</UnitStat_CombatSpeed>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+			<UnitStat_HitPoints>20</UnitStat_HitPoints>
+			<UnitStat_BG_IsHumanoid>1.0000</UnitStat_BG_IsHumanoid> <!-- For CotS -->
+			<UnitStat_BG_IsEmpire>1.0000</UnitStat_BG_IsEmpire> <!-- For CotS -->
+			<UnitStat_BG_IsNotAlive>1</UnitStat_BG_IsNotAlive> <!-- For CotS -->
+			<UnitStat_BG_IsRace_DLCUndead>1.0000</UnitStat_BG_IsRace_DLCUndead> <!-- For CotS -->
+			<UnitStat_BG_IsSovereign>1.0000</UnitStat_BG_IsSovereign> <!-- For CotS -->
+			<UnitStat_BG_IsChampion>1</UnitStat_BG_IsChampion> <!-- For CotS -->
+			<UnitStat_BG_IsUndead>1</UnitStat_BG_IsUndead> <!-- For CotS -->
+			<UnitStat_BG_IsImmortal>1</UnitStat_BG_IsImmortal> <!-- For CotS -->
+			<UnitStat_ImmuneToFear>1</UnitStat_ImmuneToFear> <!-- For CotS -->
+        </LevelMilestone>
+        <SelectedAbilityBonusOption>Blood_Undead</SelectedAbilityBonusOption>
+        <AIMilitaryStrategy>Swordsman</AIMilitaryStrategy>
+        <PossibleAITrait>Sorcerer</PossibleAITrait>
+        <PossibleAITrait>Civilized</PossibleAITrait>
+        <AnimationPack>MaleSovereignAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>0</ClothPoseIndex>
+        <CutSceneDataPack>Ceresa_CutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\Eyes\blinks\eyeblink_m5_gold.png</EyeTexture>
+        <InfoCardBackground>BG_EmpireRugged</InfoCardBackground>
+        <ModelPath>M_Skeleton_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Skeleton</SoundPack>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Skin>M_Skeleton_Texture_01.png</Texture_Skin>
+        <UnitModelType>Skeleton</UnitModelType>
+        <EffectAttachment>
+            <Attachment>Lf_Eye_LCF</Attachment>
+            <EffectName>A_LichEyes_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.1</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>Rt_Eye_LCF</Attachment>
+            <EffectName>A_LichEyes_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.1</EffectScale>
+        </EffectAttachment>
+    </UnitType>
+    <UnitType InternalName="Generic_Dead_Female">
+        <DisplayName>Peon</DisplayName>
+        <Description>A peasant with a stick.</Description>
+        <RaceType>Race_Type_Dead</RaceType>
+        <CanBeDesigned>0</CanBeDesigned>
+        <Gender>Female</Gender>
+        <AdditionalTrainingTurns>20</AdditionalTrainingTurns>
+        <IsSovereign>0</IsSovereign>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid> <!-- For CotS -->
+            <UnitStat_BG_IsRace_DLCUndead>1</UnitStat_BG_IsRace_DLCUndead> <!-- For CotS -->
+            <UnitStat_BG_IsEmpire>1</UnitStat_BG_IsEmpire> <!-- For CotS -->
+            <UnitStat_BG_IsImmortal>1</UnitStat_BG_IsImmortal> <!-- For CotS -->
+            <UnitStat_BG_IsUndead>1</UnitStat_BG_IsUndead> <!-- For CotS -->
+            <UnitStat_ImmuneToFear>1</UnitStat_ImmuneToFear> <!-- For CotS -->
+            <UnitStat_BG_IsNotAlive>1</UnitStat_BG_IsNotAlive> <!-- For CotS -->
+    	</LevelMilestone>
+        <SelectedAbilityBonusOption>Blood_Undead</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Spirit</SelectedAbilityBonusOption>		
+        <Equipment>Banshee_Head</Equipment>
+        <Equipment>Banshee_Hair</Equipment>
+        <Equipment>Banshee_Skirt</Equipment>
+        <Equipment>Banshee_Shirt</Equipment>
+        <AnimationPack>SoldierAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>1</ClothPoseIndex>
+        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+        <InfoCardBackground>BG_EmpireRugged</InfoCardBackground>
+        <ModelPath>M_Banshee_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Banshee</SoundPack>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\Eyeblink_Banshee.png</Texture_Eyes>
+        <Texture_Trans>M_Banshee_Skin_01.png</Texture_Trans>
+        <UnitModelType>Banshee</UnitModelType>
+    </UnitType>
+    <UnitType InternalName="Generic_Dead_Male">
+        <DisplayName>Peon</DisplayName>
+        <Description>A peasant with a stick.</Description>
+        <RaceType>Race_Type_Dead</RaceType>
+        <CanBeDesigned>0</CanBeDesigned>
+        <Gender>Male</Gender>
+        <AdditionalTrainingTurns>20</AdditionalTrainingTurns>
+        <IsSovereign>0</IsSovereign>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid> <!-- For CotS -->
+            <UnitStat_BG_IsRace_DLCUndead>1</UnitStat_BG_IsRace_DLCUndead> <!-- For CotS -->
+            <UnitStat_BG_IsEmpire>1</UnitStat_BG_IsEmpire> <!-- For CotS -->
+            <UnitStat_BG_IsImmortal>1</UnitStat_BG_IsImmortal> <!-- For CotS -->
+            <UnitStat_BG_IsUndead>1</UnitStat_BG_IsUndead> <!-- For CotS -->
+            <UnitStat_ImmuneToFear>1</UnitStat_ImmuneToFear> <!-- For CotS -->
+            <UnitStat_BG_IsNotAlive>1</UnitStat_BG_IsNotAlive> <!-- For CotS -->
+    	</LevelMilestone>
+        <SelectedAbilityBonusOption>Blood_Undead</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>UndyingCurseDead2</SelectedAbilityBonusOption>		
+        <AnimationPack>SkeletonAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>1</ClothPoseIndex>
+        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\Eyes\blinks\eyeblink_m5_gold.png</EyeTexture>
+        <InfoCardBackground>BG_EmpireRugged</InfoCardBackground>
+        <ModelPath>M_Skeleton_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Generic_Male</SoundPack>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Skin>M_Skeleton_Texture_01.png</Texture_Skin>
+        <UnitModelType>Skeleton</UnitModelType>
+    </UnitType>
+    <UnitType InternalName="Sage_Dead">
+        <DisplayName>Undead Sage</DisplayName>
+        <RaceType>Race_Type_Dead</RaceType>
+        <CanBeDesigned>0</CanBeDesigned>
+        <Gender>Male</Gender>
+        <IsSovereign>0</IsSovereign>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+        </LevelMilestone>
+        <Equipment>Banshee_Head</Equipment>
+        <Equipment>Banshee_Hair</Equipment>
+        <Equipment>Banshee_Skirt</Equipment>
+        <Equipment>Banshee_Shirt</Equipment>
+        <AnimationPack>MerchantAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>15</ClothPoseIndex>
+        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\eyes\blinks\eyeblink_m5_White.png</EyeTexture>
+        <InfoCardBackground>BG_EmpireRugged</InfoCardBackground>
+        <InfoCardBackgroundFlipped>0</InfoCardBackgroundFlipped>
+        <ModelPath>M_Banshee_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\Eyeblink_Banshee.png</Texture_Eyes>
+        <Texture_Trans>M_Banshee_Skin_01.png</Texture_Trans>
+        <UnitModelType>Banshee</UnitModelType>
+    </UnitType>
+    <UnitType InternalName="Shopkeeper_Dead">
+        <DisplayName>Undead Shopkeeper</DisplayName>
+        <RaceType>Race_Type_Dead</RaceType>
+        <CanBeDesigned>0</CanBeDesigned>
+        <Gender>Male</Gender>
+        <IsSovereign>0</IsSovereign>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+        </LevelMilestone>
+        <SelectedAbilityBonusOption>Blood_Undead</SelectedAbilityBonusOption>
+        <AnimationPack>MerchantAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>15</ClothPoseIndex>
+        <Color_Clothing1>62,78,91,255</Color_Clothing1>
+        <Color_Clothing2>50,50,60,255</Color_Clothing2>
+        <Color_Hair>50,50,65,255</Color_Hair>
+        <Color_Metal>50,55,70,255</Color_Metal>
+        <Color_Skin>160,170,185,255</Color_Skin>
+        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\eyes\blinks\eyeblink_m5_White.png</EyeTexture>
+        <InfoCardBackground>BG_EmpireRugged</InfoCardBackground>
+        <InfoCardBackgroundFlipped>0</InfoCardBackgroundFlipped>
+        <ModelPath>M_Skeleton_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\eyeblink_m5_White.png</Texture_Eyes>
+        <Texture_Skin>M_Skeleton_Texture_01.png</Texture_Skin>
+        <UnitModelType>Skeleton</UnitModelType>
+    </UnitType>
+    <UnitType InternalName="Unit_Peasant_Dead">
+        <DisplayName>Skeleton</DisplayName>
+        <Description>A skeleton armed with a crude club.</Description>
+        <Class>Peasant</Class>
+        <RaceType>Race_Type_Dead</RaceType>
+        <CanBeDesigned>1</CanBeDesigned>
+        <Gender>Male</Gender>
+        <AdditionalTrainingTurns>20</AdditionalTrainingTurns>
+        <IsSovereign>0</IsSovereign>
+        <IsStartingUnitType>1</IsStartingUnitType>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid> <!-- For CotS -->
+            <UnitStat_BG_IsRace_DLCUndead>1</UnitStat_BG_IsRace_DLCUndead> <!-- For CotS -->
+            <UnitStat_BG_IsEmpire>1</UnitStat_BG_IsEmpire> <!-- For CotS -->
+            <UnitStat_BG_IsImmortal>1</UnitStat_BG_IsImmortal> <!-- For CotS -->
+            <UnitStat_BG_IsUndead>1</UnitStat_BG_IsUndead> <!-- For CotS -->
+            <UnitStat_ImmuneToFear>1</UnitStat_ImmuneToFear> <!-- For CotS -->
+            <UnitStat_BG_IsNotAlive>1</UnitStat_BG_IsNotAlive> <!-- For CotS -->
+    	</LevelMilestone>
+        <SelectedAbilityBonusOption>Blood_Undead</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>UndyingCurseDead2</SelectedAbilityBonusOption>		
+        <Equipment>Club</Equipment>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Weapon</EquipmentSlot>
+            <WeaponUpgradeType>Blunt</WeaponUpgradeType>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Attack_Pierce</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Cold</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Fire</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Lightning</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Poison</ComparisonAttribute>
+            <ForUpgradeActionOnly>1</ForUpgradeActionOnly>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Torso</EquipmentSlot>
+            <EquipmentSlot>Surcoat</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+            <ForUpgradeActionOnly>1</ForUpgradeActionOnly>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>LowerBody</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+            <ForUpgradeActionOnly>1</ForUpgradeActionOnly>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Boots</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+            <ForUpgradeActionOnly>1</ForUpgradeActionOnly>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Head</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+            <ForUpgradeActionOnly>1</ForUpgradeActionOnly>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Forearms</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+            <ForUpgradeActionOnly>1</ForUpgradeActionOnly>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Defense</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+            <ForUpgradeActionOnly>1</ForUpgradeActionOnly>
+        </EquipmentUpgradeDef>
+        <Prereq>
+            <Type>Race</Type>
+            <Attribute>Race_Type_Dead</Attribute>
+        </Prereq>
+        <Backstory>You sealed yourself within the buried city of Calebethon, and toiled as each light went out. As the darkness crept through Calebethon there was a rising tide of screams and madness. It would be unjust to say that the citizens became as animals, because animals were never so cruel or afraid.
+		
+		Eventually the darkness claimed those voices too, and the city settled to the gentle sounds of ragged breath and the drip of blood, flesh and filth. When the last light of Calebethon finally went out you could only hear echoes of your great city in the darkness.  You have no memories of those last, horrible days.
+		
+		When you awoke you walked through the streets of ancient Calebethon, and where you walked the long dead citizens of your city rose to follow.</Backstory>
+        <AnimationPack>SkeletonAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>1</ClothPoseIndex>
+        <Color_Hair>45,45,60,255</Color_Hair>
+        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\eyes\blinks\eyeblink_m5_White.png</EyeTexture>
+        <InfoCardBackground>BG_EmpireRugged</InfoCardBackground>
+        <ModelPath>M_Skeleton_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Skeleton</SoundPack>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\eyeblink_m5_White.png</Texture_Eyes>
+        <Texture_Skin>M_Skeleton_Texture_01.png</Texture_Skin>
+        <UnitModelType>Skeleton</UnitModelType>
+    </UnitType>
+    <UnitType InternalName="Unit_Pioneer_Dead">
+        <DisplayName>Pioneer</DisplayName>
+        <Description>Pioneers are equipped with the necessary supplies to start new settlements and create outposts.</Description>
+        <Class>Pioneer</Class>
+        <RaceType>Race_Type_Dead</RaceType>
+        <Gender>Female</Gender>
+        <AdditionalTrainingTurns>48</AdditionalTrainingTurns>
+        <HasWages>0</HasWages>
+        <IsSovereign>0</IsSovereign>
+        <IsStartingUnitType>1</IsStartingUnitType>
+        <IsUniqueButBuildable>1</IsUniqueButBuildable>
+        <GroupingType>UnitGroupingType_Party</GroupingType>
+        <TrainUnitIcon>TrainUnitIcon_Pioneer.png</TrainUnitIcon>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnlockAction</Attribute>
+            <StrVal>BuildTown</StrVal>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnlockAction</Attribute>
+            <StrVal>BuildImprovement</StrVal>
+            <StrVal2>Outpost</StrVal2>
+        </GameModifier>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid> <!-- For CotS -->
+            <UnitStat_BG_IsRace_DLCUndead>1</UnitStat_BG_IsRace_DLCUndead> <!-- For CotS -->
+            <UnitStat_BG_IsEmpire>1</UnitStat_BG_IsEmpire> <!-- For CotS -->
+            <UnitStat_BG_IsImmortal>1</UnitStat_BG_IsImmortal> <!-- For CotS -->
+            <UnitStat_BG_IsUndead>1</UnitStat_BG_IsUndead> <!-- For CotS -->
+            <UnitStat_ImmuneToFear>1</UnitStat_ImmuneToFear> <!-- For CotS -->
+            <UnitStat_BG_IsNotAlive>1</UnitStat_BG_IsNotAlive> <!-- For CotS -->
+    	</LevelMilestone>
+        <SelectedAbilityBonusOption>Blood_Undead</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Spirit</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Weak</SelectedAbilityBonusOption>
+        <Equipment>Banshee_Head</Equipment>
+        <Equipment>Banshee_Hair</Equipment>
+        <Equipment>Banshee_Skirt</Equipment>
+        <Equipment>Banshee_Shirt</Equipment>
+        <Prereq>
+            <Type>Race</Type>
+            <Attribute>Race_Type_Dead</Attribute>
+        </Prereq>
+        <ProductionRequirement>
+            <Type>Resource</Type>
+            <Attribute>Population</Attribute>
+            <Value>10</Value>
+        </ProductionRequirement>
+        <Backstory>You sealed yourself within the buried city of Calebethon, and toiled as each light went out. As the darkness crept through Calebethon there was a rising tide of screams and madness. It would be unjust to say that the citizens became as animals, because animals were never so cruel or afraid.
+		
+		Eventually the darkness claimed those voices too, and the city settled to the gentle sounds of ragged breath and the drip of blood, flesh and filth. When the last light of Calebethon finally went out you could only hear echoes of your great city in the darkness.  You have no memories of those last, horrible days.
+		
+		When you awoke you walked through the streets of ancient Calebethon, and where you walked the long dead citizens of your city rose to follow.</Backstory>
+        <AnimationPack>FemaleSovereignAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>6</ClothPoseIndex>
+        <Color_Hair>37,37,52,255</Color_Hair>
+        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\eyes\blinks\Eyeblink_F4_Wht.png</EyeTexture>
+        <InfoCardBackground>BG_EmpireRugged</InfoCardBackground>
+        <InfoCardBackgroundFlipped>0</InfoCardBackgroundFlipped>
+        <ModelPath>M_Banshee_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovementType>land</MovementType>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Banshee</SoundPack>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\Eyeblink_Banshee.png</Texture_Eyes>
+        <Texture_Trans>M_Banshee_Skin_01.png</Texture_Trans>
+        <UnitModelType>Banshee</UnitModelType>
+	</UnitType>
+    <UnitType InternalName="Unit_Scout_Dead">
+        <DisplayName>Scout</DisplayName>
+        <Description>Use scouts to explore the world.</Description>
+        <Class>Scout</Class>
+        <RaceType>Race_Type_Dead</RaceType>
+        <CanBeDesigned>1</CanBeDesigned>
+        <Gender>Female</Gender>
+        <AdditionalTrainingTurns>20</AdditionalTrainingTurns>
+        <IsSovereign>0</IsSovereign>
+        <IsStartingUnitType>1</IsStartingUnitType>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid> <!-- For CotS -->
+            <UnitStat_BG_IsRace_DLCUndead>1</UnitStat_BG_IsRace_DLCUndead> <!-- For CotS -->
+            <UnitStat_BG_IsEmpire>1</UnitStat_BG_IsEmpire> <!-- For CotS -->
+            <UnitStat_BG_IsImmortal>1</UnitStat_BG_IsImmortal> <!-- For CotS -->
+            <UnitStat_BG_IsUndead>1</UnitStat_BG_IsUndead> <!-- For CotS -->
+            <UnitStat_ImmuneToFear>1</UnitStat_ImmuneToFear> <!-- For CotS -->
+            <UnitStat_BG_IsNotAlive>1</UnitStat_BG_IsNotAlive> <!-- For CotS -->
+    	</LevelMilestone>
+        <SelectedAbilityBonusOption>Blood_Undead</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Spirit</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Weak</SelectedAbilityBonusOption>
+        <Equipment>Banshee_Head</Equipment>
+        <Equipment>Banshee_Hair</Equipment>
+        <Equipment>Banshee_Skirt</Equipment>
+        <Equipment>Banshee_Shirt</Equipment>
+        <Equipment>Staff</Equipment>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Weapon</EquipmentSlot>
+            <WeaponUpgradeType>Spear</WeaponUpgradeType>
+            <EquipmentSlot>Defense</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Attack_Pierce</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Cold</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Fire</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Lightning</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Poison</ComparisonAttribute>
+            <ForUpgradeActionOnly>1</ForUpgradeActionOnly>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Torso</EquipmentSlot>
+            <EquipmentSlot>Surcoat</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+            <ForUpgradeActionOnly>1</ForUpgradeActionOnly>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>LowerBody</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+            <ForUpgradeActionOnly>1</ForUpgradeActionOnly>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Boots</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+            <ForUpgradeActionOnly>1</ForUpgradeActionOnly>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Head</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+            <ForUpgradeActionOnly>1</ForUpgradeActionOnly>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Forearms</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+            <ForUpgradeActionOnly>1</ForUpgradeActionOnly>
+        </EquipmentUpgradeDef>
+        <Prereq>
+            <Type>Race</Type>
+            <Attribute>Race_Type_Dead</Attribute>
+        </Prereq>
+        <Backstory>You sealed yourself within the buried city of Calebethon, and toiled as each light went out. As the darkness crept through Calebethon there was a rising tide of screams and madness. It would be unjust to say that the citizens became as animals, because animals were never so cruel or afraid.
+		
+		Eventually the darkness claimed those voices too, and the city settled to the gentle sounds of ragged breath and the drip of blood, flesh and filth. When the last light of Calebethon finally went out you could only hear echoes of your great city in the darkness.  You have no memories of those last, horrible days.
+		
+		When you awoke you walked through the streets of ancient Calebethon, and where you walked the long dead citizens of your city rose to follow.</Backstory>
+        <AnimationPack>SoldierAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>9</ClothPoseIndex>
+        <Color_Hair>65,65,80,255</Color_Hair>
+        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\eyes\blinks\Eyeblink_F4_Wht.png</EyeTexture>
+        <InfoCardBackground>BG_EmpireRugged</InfoCardBackground>
+        <ModelPath>M_Banshee_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovementType>land</MovementType>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Banshee</SoundPack>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\Eyeblink_Banshee.png</Texture_Eyes>
+        <Texture_Trans>M_Banshee_Skin_01.png</Texture_Trans>
+        <UnitModelType>Banshee</UnitModelType>
+	</UnitType>
+    <UnitType InternalName="Unit_Spearman_Dead">
+        <DisplayName>Spearmen</DisplayName>
+        <Description>Spearmen are effective against well armored enemies.</Description>
+        <Class>Spearman</Class>
+        <RaceType>Race_Type_Dead</RaceType>
+        <CanBeDesigned>1</CanBeDesigned>
+        <Gender>Male</Gender>	
+        <AdditionalTrainingTurns>20</AdditionalTrainingTurns>
+        <IsSovereign>0</IsSovereign>
+        <IsStartingUnitType>1</IsStartingUnitType>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid> <!-- For CotS -->
+            <UnitStat_BG_IsRace_DLCUndead>1</UnitStat_BG_IsRace_DLCUndead> <!-- For CotS -->
+            <UnitStat_BG_IsEmpire>1</UnitStat_BG_IsEmpire> <!-- For CotS -->
+            <UnitStat_BG_IsImmortal>1</UnitStat_BG_IsImmortal> <!-- For CotS -->
+            <UnitStat_BG_IsUndead>1</UnitStat_BG_IsUndead> <!-- For CotS -->
+            <UnitStat_ImmuneToFear>1</UnitStat_ImmuneToFear> <!-- For CotS -->
+            <UnitStat_BG_IsNotAlive>1</UnitStat_BG_IsNotAlive> <!-- For CotS -->
+    	</LevelMilestone>
+        <SelectedAbilityBonusOption>Blood_Undead</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>UndyingCurseDead2</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Fast</SelectedAbilityBonusOption>		
+        <Equipment>Spear</Equipment>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Weapon</EquipmentSlot>
+            <WeaponUpgradeType>Spear</WeaponUpgradeType>
+            <EquipmentSlot>Defense</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Attack_Pierce</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Cold</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Fire</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Lightning</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Poison</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Torso</EquipmentSlot>
+            <EquipmentSlot>Surcoat</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>LowerBody</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Boots</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Head</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Forearms</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <Prereq>
+            <Type>Race</Type>
+            <Attribute>Race_Type_Dead</Attribute>
+        </Prereq>
+        <Backstory>You sealed yourself within the buried city of Calebethon, and toiled as each light went out. As the darkness crept through Calebethon there was a rising tide of screams and madness. It would be unjust to say that the citizens became as animals, because animals were never so cruel or afraid.
+		
+		Eventually the darkness claimed those voices too, and the city settled to the gentle sounds of ragged breath and the drip of blood, flesh and filth. When the last light of Calebethon finally went out you could only hear echoes of your great city in the darkness.  You have no memories of those last, horrible days.
+		
+		When you awoke you walked through the streets of ancient Calebethon, and where you walked the long dead citizens of your city rose to follow.</Backstory>
+        <AnimationPack>SkeletonAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>29</ClothPoseIndex>
+        <Color_Hair>45,45,60,255</Color_Hair>
+        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\eyes\blinks\eyeblink_m5_White.png</EyeTexture>
+        <InfoCardBackground>BG_EmpireRugged</InfoCardBackground>
+        <ModelPath>M_Skeleton_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Skeleton</SoundPack>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\eyeblink_m5_White.png</Texture_Eyes>
+        <Texture_Skin>M_Skeleton_Texture_01.png</Texture_Skin>
+        <UnitModelType>Skeleton</UnitModelType>
+    </UnitType>
+    <UnitType InternalName="Unit_Archer_Dead">
+        <DisplayName>Archer</DisplayName>
+        <Description>Archers are lightly equipped and skilled at picking off their opponents at a distance.</Description>
+        <Class>Archer</Class>
+        <RaceType>Race_Type_Dead</RaceType>
+        <CanBeDesigned>1</CanBeDesigned>
+        <Gender>Male</Gender>
+        <AdditionalTrainingTurns>20</AdditionalTrainingTurns>
+        <IsSovereign>0</IsSovereign>
+        <IsStartingUnitType>1</IsStartingUnitType>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid> <!-- For CotS -->
+            <UnitStat_BG_IsRace_DLCUndead>1</UnitStat_BG_IsRace_DLCUndead> <!-- For CotS -->
+            <UnitStat_BG_IsEmpire>1</UnitStat_BG_IsEmpire> <!-- For CotS -->
+            <UnitStat_BG_IsImmortal>1</UnitStat_BG_IsImmortal> <!-- For CotS -->
+            <UnitStat_BG_IsUndead>1</UnitStat_BG_IsUndead> <!-- For CotS -->
+            <UnitStat_ImmuneToFear>1</UnitStat_ImmuneToFear> <!-- For CotS -->
+            <UnitStat_BG_IsNotAlive>1</UnitStat_BG_IsNotAlive> <!-- For CotS -->
+    	</LevelMilestone>
+        <SelectedAbilityBonusOption>Blood_Undead</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>UndyingCurseDead2</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Fast</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Precision</SelectedAbilityBonusOption>		
+        <Equipment>Shortbow</Equipment>
+		<Equipment>F_Female_Quendar_Horns_01</Equipment>
+		<Equipment>Ladies_Cape_ID1</Equipment>
+		<Equipment>TightBoots_Dark</Equipment>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Weapon</EquipmentSlot>
+            <WeaponUpgradeType>Bow</WeaponUpgradeType>
+            <EquipmentSlot>Defense</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Attack_Pierce</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Cold</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Fire</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Lightning</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Poison</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Torso</EquipmentSlot>
+            <EquipmentSlot>Surcoat</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+            <ForUpgradeActionOnly>1</ForUpgradeActionOnly>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>LowerBody</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+            <ForUpgradeActionOnly>1</ForUpgradeActionOnly>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Boots</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+            <ForUpgradeActionOnly>1</ForUpgradeActionOnly>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Head</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+            <ForUpgradeActionOnly>1</ForUpgradeActionOnly>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Forearms</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+            <ForUpgradeActionOnly>1</ForUpgradeActionOnly>
+        </EquipmentUpgradeDef>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Archery</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>Race</Type>
+            <Attribute>Race_Type_Dead</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_BOW</AIPrefType>
+        </AIData>
+        <Backstory>You sealed yourself within the buried city of Calebethon, and toiled as each light went out. As the darkness crept through Calebethon there was a rising tide of screams and madness. It would be unjust to say that the citizens became as animals, because animals were never so cruel or afraid.
+		
+		Eventually the darkness claimed those voices too, and the city settled to the gentle sounds of ragged breath and the drip of blood, flesh and filth. When the last light of Calebethon finally went out you could only hear echoes of your great city in the darkness.  You have no memories of those last, horrible days.
+		
+		When you awoke you walked through the streets of ancient Calebethon, and where you walked the long dead citizens of your city rose to follow.</Backstory>
+        <AnimationPack>SkeletonAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>17</ClothPoseIndex>
+        <Color_Hair>45,45,60,255</Color_Hair>
+        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\eyes\blinks\eyeblink_m5_White.png</EyeTexture>
+        <InfoCardBackground>BG_EmpireRugged</InfoCardBackground>
+        <ModelPath>M_Skeleton_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Skeleton</SoundPack>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\eyeblink_m5_White.png</Texture_Eyes>
+        <Texture_Skin>M_Skeleton_Texture_01.png</Texture_Skin>
+        <UnitModelType>Skeleton</UnitModelType>
+    </UnitType>
+    <UnitType InternalName="Unit_Heavy_Dead">
+        <DisplayName>Baron</DisplayName>
+        <Description>Barons are powerful melee units, able to do lots of damage to those that fall within their range.</Description>
+        <Class>Baron</Class>
+        <RaceType>Race_Type_Dead</RaceType>
+        <CanBeDesigned>1</CanBeDesigned>
+        <Gender>Male</Gender>
+        <AdditionalTrainingTurns>20</AdditionalTrainingTurns>
+        <IsSovereign>0</IsSovereign>
+        <IsStartingUnitType>1</IsStartingUnitType>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid> <!-- For CotS -->
+            <UnitStat_BG_IsRace_DLCUndead>1</UnitStat_BG_IsRace_DLCUndead> <!-- For CotS -->
+            <UnitStat_BG_IsEmpire>1</UnitStat_BG_IsEmpire> <!-- For CotS -->
+            <UnitStat_BG_IsImmortal>1</UnitStat_BG_IsImmortal> <!-- For CotS -->
+            <UnitStat_BG_IsUndead>1</UnitStat_BG_IsUndead> <!-- For CotS -->
+            <UnitStat_ImmuneToFear>1</UnitStat_ImmuneToFear> <!-- For CotS -->
+            <UnitStat_BG_IsNotAlive>1</UnitStat_BG_IsNotAlive> <!-- For CotS -->
+    	</LevelMilestone>
+        <SelectedAbilityBonusOption>Blood_Undead</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>ArmorProficiency2</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Fast</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>UndyingCurseDead2</SelectedAbilityBonusOption>		
+        <Equipment>Greataxe</Equipment>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Torso</EquipmentSlot>
+            <EquipmentSlot>Surcoat</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>LowerBody</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Boots</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Head</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Forearms</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <Prereq>
+            <Type>Race</Type>
+            <Attribute>Race_Type_Dead</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Weapons_Of_War</Attribute>
+        </Prereq>
+        <Backstory>You sealed yourself within the buried city of Calebethon, and toiled as each light went out. As the darkness crept through Calebethon there was a rising tide of screams and madness. It would be unjust to say that the citizens became as animals, because animals were never so cruel or afraid.
+		
+		Eventually the darkness claimed those voices too, and the city settled to the gentle sounds of ragged breath and the drip of blood, flesh and filth. When the last light of Calebethon finally went out you could only hear echoes of your great city in the darkness.  You have no memories of those last, horrible days.
+		
+		When you awoke you walked through the streets of ancient Calebethon, and where you walked the long dead citizens of your city rose to follow.</Backstory>
+        <AnimationPack>SkeletonAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>13</ClothPoseIndex>
+        <Color_Hair>45,45,60,255</Color_Hair>
+        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\eyes\blinks\eyeblink_m5_White.png</EyeTexture>
+        <InfoCardBackground>BG_EmpireRugged</InfoCardBackground>
+        <ModelPath>M_Skeleton_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Skeleton</SoundPack>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\eyeblink_m5_White.png</Texture_Eyes>
+        <Texture_Skin>M_Skeleton_Texture_01.png</Texture_Skin>
+        <UnitModelType>Skeleton</UnitModelType>
+    </UnitType>
+    <UnitType InternalName="Unit_Horseman_Dead">
+        <DisplayName>Horsemen</DisplayName>
+        <Description>Horsemen are excellent for scouting out unknown areas, and escaping when they uncover dangers in those areas.</Description>
+        <Class>Horseman</Class>
+        <RaceType>Race_Type_Dead</RaceType>
+        <CanBeDesigned>1</CanBeDesigned>
+        <Gender>Male</Gender>
+        <AdditionalTrainingTurns>20</AdditionalTrainingTurns>
+        <IsSovereign>0</IsSovereign>
+        <IsStartingUnitType>1</IsStartingUnitType>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid> <!-- For CotS -->
+            <UnitStat_BG_IsRace_DLCUndead>1</UnitStat_BG_IsRace_DLCUndead> <!-- For CotS -->
+            <UnitStat_BG_IsEmpire>1</UnitStat_BG_IsEmpire> <!-- For CotS -->
+            <UnitStat_BG_IsImmortal>1</UnitStat_BG_IsImmortal> <!-- For CotS -->
+            <UnitStat_BG_IsUndead>1</UnitStat_BG_IsUndead> <!-- For CotS -->
+            <UnitStat_ImmuneToFear>1</UnitStat_ImmuneToFear> <!-- For CotS -->
+            <UnitStat_BG_IsNotAlive>1</UnitStat_BG_IsNotAlive> <!-- For CotS -->
+    	</LevelMilestone>
+        <SelectedAbilityBonusOption>Blood_Undead</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>UndyingCurseDead2</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Fast</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Charge</SelectedAbilityBonusOption>		
+        <Equipment>LeatherBreastpiece</Equipment>
+        <Equipment>LeatherHelmet</Equipment>
+        <Equipment>LeatherVambraces</Equipment>
+        <Equipment>LeatherGreaves</Equipment>
+        <Equipment>LeatherBoots</Equipment>
+        <Equipment>UndeadHorseMount</Equipment>
+		<Equipment>Butcherman_Hair</Equipment>
+		<Equipment>Empire_Female_Leather_Gloves_Light</Equipment>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Weapon</EquipmentSlot>
+            <WeaponUpgradeType>Spear</WeaponUpgradeType>
+            <EquipmentSlot>Defense</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Attack_Pierce</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Cold</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Fire</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Lightning</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Poison</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Torso</EquipmentSlot>
+            <EquipmentSlot>Surcoat</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+            <ForUpgradeActionOnly>1</ForUpgradeActionOnly>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>LowerBody</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+            <ForUpgradeActionOnly>1</ForUpgradeActionOnly>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Boots</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+            <ForUpgradeActionOnly>1</ForUpgradeActionOnly>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Head</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+            <ForUpgradeActionOnly>1</ForUpgradeActionOnly>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Forearms</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+            <ForUpgradeActionOnly>1</ForUpgradeActionOnly>
+        </EquipmentUpgradeDef>
+        <Prereq>
+            <Type>Race</Type>
+            <Attribute>Race_Type_Dead</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Mounted_Warfare</Attribute>
+        </Prereq>
+        <Backstory>You sealed yourself within the buried city of Calebethon, and toiled as each light went out. As the darkness crept through Calebethon there was a rising tide of screams and madness. It would be unjust to say that the citizens became as animals, because animals were never so cruel or afraid.
+		
+		Eventually the darkness claimed those voices too, and the city settled to the gentle sounds of ragged breath and the drip of blood, flesh and filth. When the last light of Calebethon finally went out you could only hear echoes of your great city in the darkness.  You have no memories of those last, horrible days.
+		
+		When you awoke you walked through the streets of ancient Calebethon, and where you walked the long dead citizens of your city rose to follow.</Backstory>
+        <AnimationPack>SkeletonAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>1</ClothPoseIndex>
+        <Color_Hair>45,45,60,255</Color_Hair>
+        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\eyes\blinks\eyeblink_m5_White.png</EyeTexture>
+        <InfoCardBackground>BG_EmpireRugged</InfoCardBackground>
+        <ModelPath>M_Skeleton_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Skeleton</SoundPack>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\eyeblink_m5_White.png</Texture_Eyes>
+        <Texture_Skin>M_Skeleton_Texture_01.png</Texture_Skin>
+        <UnitModelType>Skeleton</UnitModelType>
+    </UnitType>
+    <UnitType InternalName="Unit_Light_Dead">
+        <DisplayName>Horned Axeman</DisplayName>
+        <Description>Horned Axemen are good early skirmishers, quick to train and good in most battles.</Description>
+        <Class>Light</Class>
+        <RaceType>Race_Type_Dead</RaceType>
+        <CanBeDesigned>1</CanBeDesigned>
+        <Gender>Male</Gender>
+        <AdditionalTrainingTurns>20</AdditionalTrainingTurns>
+        <IsSovereign>0</IsSovereign>
+        <IsStartingUnitType>1</IsStartingUnitType>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid> <!-- For CotS -->
+            <UnitStat_BG_IsRace_DLCUndead>1</UnitStat_BG_IsRace_DLCUndead> <!-- For CotS -->
+            <UnitStat_BG_IsEmpire>1</UnitStat_BG_IsEmpire> <!-- For CotS -->
+            <UnitStat_BG_IsImmortal>1</UnitStat_BG_IsImmortal> <!-- For CotS -->
+            <UnitStat_BG_IsUndead>1</UnitStat_BG_IsUndead> <!-- For CotS -->
+            <UnitStat_ImmuneToFear>1</UnitStat_ImmuneToFear> <!-- For CotS -->
+            <UnitStat_BG_IsNotAlive>1</UnitStat_BG_IsNotAlive> <!-- For CotS -->
+    	</LevelMilestone>
+        <SelectedAbilityBonusOption>Blood_Undead</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>ArmorProficiency1</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>UndyingCurseDead2</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Fast</SelectedAbilityBonusOption>		
+        <Equipment>Axe</Equipment>
+		<Equipment>Fallen_Leather_Shirt_ID1</Equipment>
+		<Equipment>Female_Peasant_Pants_ID1</Equipment>
+		<Equipment>F_Male_Quendar_Horns_04</Equipment>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Weapon</EquipmentSlot>
+            <WeaponUpgradeType>Axe</WeaponUpgradeType>
+            <EquipmentSlot>Defense</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Attack_Pierce</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Cold</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Fire</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Lightning</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Poison</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Torso</EquipmentSlot>
+            <EquipmentSlot>Surcoat</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>LowerBody</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Boots</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Forearms</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <Prereq>
+            <Type>Race</Type>
+            <Attribute>Race_Type_Dead</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Weaponry</Attribute>
+        </Prereq>
+        <Backstory>You sealed yourself within the buried city of Calebethon, and toiled as each light went out. As the darkness crept through Calebethon there was a rising tide of screams and madness. It would be unjust to say that the citizens became as animals, because animals were never so cruel or afraid.
+		
+		Eventually the darkness claimed those voices too, and the city settled to the gentle sounds of ragged breath and the drip of blood, flesh and filth. When the last light of Calebethon finally went out you could only hear echoes of your great city in the darkness.  You have no memories of those last, horrible days.
+		
+		When you awoke you walked through the streets of ancient Calebethon, and where you walked the long dead citizens of your city rose to follow.</Backstory>
+        <AnimationPack>SkeletonAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>11</ClothPoseIndex>
+        <Color_Hair>45,45,60,255</Color_Hair>
+        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\eyes\blinks\eyeblink_m5_White.png</EyeTexture>
+        <InfoCardBackground>BG_EmpireRugged</InfoCardBackground>
+        <ModelPath>M_Skeleton_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Skeleton</SoundPack>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\eyeblink_m5_White.png</Texture_Eyes>
+        <Texture_Skin>M_Skeleton_Texture_01.png</Texture_Skin>
+        <UnitModelType>Skeleton</UnitModelType>
+    </UnitType>
+    <UnitType InternalName="Unit_Mage_Dead">
+        <DisplayName>Frost Matron</DisplayName>
+        <Description>Mages deal magical damage at range, use them to decimate enemies that rely on physical defense.</Description>
+        <Class>Mage</Class>
+        <RaceType>Race_Type_Dead</RaceType>
+        <CanBeDesigned>1</CanBeDesigned>
+        <Gender>Female</Gender>
+        <AdditionalTrainingTurns>20</AdditionalTrainingTurns>
+        <IsSovereign>0</IsSovereign>
+        <IsStartingUnitType>1</IsStartingUnitType>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid> <!-- For CotS -->
+            <UnitStat_BG_IsRace_DLCUndead>1</UnitStat_BG_IsRace_DLCUndead> <!-- For CotS -->
+            <UnitStat_BG_IsEmpire>1</UnitStat_BG_IsEmpire> <!-- For CotS -->
+            <UnitStat_BG_IsImmortal>1</UnitStat_BG_IsImmortal> <!-- For CotS -->
+            <UnitStat_BG_IsUndead>1</UnitStat_BG_IsUndead> <!-- For CotS -->
+            <UnitStat_ImmuneToFear>1</UnitStat_ImmuneToFear> <!-- For CotS -->
+            <UnitStat_BG_IsNotAlive>1</UnitStat_BG_IsNotAlive> <!-- For CotS -->
+    	</LevelMilestone>
+        <SelectedAbilityBonusOption>Blood_Undead</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Spirit</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Fast</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Precision</SelectedAbilityBonusOption>		
+		<Equipment>Staff_Ice</Equipment>
+		<Equipment>Banshee_Head</Equipment>
+		<Equipment>Noble_Overskirt_2_ID1</Equipment>
+		<Equipment>Banshee_Shirt</Equipment>
+		<Equipment>Wraith_Doublet_ID1</Equipment>
+		<Equipment>Wizard_Hair</Equipment>
+		<EquipmentUpgradeDef>
+			<SelectionCriterion>MaximizeBest</SelectionCriterion>
+			<ComparisonAttribute>UnitStat_Attack_Cold</ComparisonAttribute>
+			<ComparisonAttribute>UnitStat_Attack_Fire</ComparisonAttribute>
+			<ComparisonAttribute>UnitStat_Attack_Lightning</ComparisonAttribute>
+			<ComparisonAttribute>UnitStat_Attack_Poison</ComparisonAttribute>
+			<WeaponUpgradeType>ColdStaff</WeaponUpgradeType>
+			<EquipmentSlot>Weapon</EquipmentSlot>
+			<EquipmentSlot>Defense</EquipmentSlot>
+			<ForUpgradeActionOnly>0</ForUpgradeActionOnly>
+		</EquipmentUpgradeDef>
+        <Prereq>
+            <Type>Race</Type>
+            <Attribute>Race_Type_Dead</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Enchantment</Attribute>
+        </Prereq>
+		<Backstory>You sealed yourself within the buried city of Calebethon, and toiled as each light went out. As the darkness crept through Calebethon there was a rising tide of screams and madness. It would be unjust to say that the citizens became as animals, because animals were never so cruel or afraid.
+		
+		Eventually the darkness claimed those voices too, and the city settled to the gentle sounds of ragged breath and the drip of blood, flesh and filth. When the last light of Calebethon finally went out you could only hear echoes of your great city in the darkness.  You have no memories of those last, horrible days.
+		
+		When you awoke you walked through the streets of ancient Calebethon, and where you walked the long dead citizens of your city rose to follow.</Backstory>
+        <AnimationPack>SoldierAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>0</ClothPoseIndex>
+		<Color_Hair>220,220,220,255</Color_Hair>
+        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+        <InfoCardBackground>BG_EmpireRugged</InfoCardBackground>
+        <ModelPath>M_Banshee_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Banshee</SoundPack>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\Eyeblink_Banshee.png</Texture_Eyes>
+        <Texture_Trans>M_Banshee_Skin_01.png</Texture_Trans>
+        <UnitModelType>Banshee</UnitModelType>
+    </UnitType>
+    <UnitType InternalName="Unit_Medium_Dead">
+        <DisplayName>Fallen Swordsman</DisplayName>
+        <Description>Fallen Swordsmen are good midgame units for your armies.</Description>
+        <Class>Medium</Class>
+        <RaceType>Race_Type_Dead</RaceType>
+        <CanBeDesigned>1</CanBeDesigned>
+        <Gender>Male</Gender>
+        <AdditionalTrainingTurns>20</AdditionalTrainingTurns>
+        <IsSovereign>0</IsSovereign>
+        <IsStartingUnitType>1</IsStartingUnitType>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid> <!-- For CotS -->
+            <UnitStat_BG_IsRace_DLCUndead>1</UnitStat_BG_IsRace_DLCUndead> <!-- For CotS -->
+            <UnitStat_BG_IsEmpire>1</UnitStat_BG_IsEmpire> <!-- For CotS -->
+            <UnitStat_BG_IsImmortal>1</UnitStat_BG_IsImmortal> <!-- For CotS -->
+            <UnitStat_BG_IsUndead>1</UnitStat_BG_IsUndead> <!-- For CotS -->
+            <UnitStat_ImmuneToFear>1</UnitStat_ImmuneToFear> <!-- For CotS -->
+            <UnitStat_BG_IsNotAlive>1</UnitStat_BG_IsNotAlive> <!-- For CotS -->
+    	</LevelMilestone>
+        <SelectedAbilityBonusOption>Blood_Undead</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>ArmorProficiency2</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>UndyingCurseDead2</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Fast</SelectedAbilityBonusOption>		
+        <Equipment>Shortsword</Equipment>
+		<Equipment>Butcherman_Shirt</Equipment>
+		<Equipment>TightBoots_Dark</Equipment>
+		<Equipment>Butcherman_Pants</Equipment>
+		<Equipment>F_Male_Quendar_Horns_03</Equipment>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Weapon</EquipmentSlot>
+            <WeaponUpgradeType>Blade</WeaponUpgradeType>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Attack_Pierce</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Cold</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Fire</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Lightning</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Poison</ComparisonAttribute>
+            <ForUpgradeActionOnly>1</ForUpgradeActionOnly>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Torso</EquipmentSlot>
+            <EquipmentSlot>Surcoat</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>LowerBody</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Boots</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Head</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Forearms</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Defense</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <Prereq>
+            <Type>Race</Type>
+            <Attribute>Race_Type_Dead</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Blacksmithing</Attribute>
+        </Prereq>
+        <Backstory>You sealed yourself within the buried city of Calebethon, and toiled as each light went out. As the darkness crept through Calebethon there was a rising tide of screams and madness. It would be unjust to say that the citizens became as animals, because animals were never so cruel or afraid.
+		
+		Eventually the darkness claimed those voices too, and the city settled to the gentle sounds of ragged breath and the drip of blood, flesh and filth. When the last light of Calebethon finally went out you could only hear echoes of your great city in the darkness.  You have no memories of those last, horrible days.
+		
+		When you awoke you walked through the streets of ancient Calebethon, and where you walked the long dead citizens of your city rose to follow.</Backstory>
+        <AnimationPack>SkeletonAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>3</ClothPoseIndex>
+        <Color_Hair>45,45,60,255</Color_Hair>
+        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\eyes\blinks\eyeblink_m5_White.png</EyeTexture>
+        <InfoCardBackground>BG_EmpireRugged</InfoCardBackground>
+        <ModelPath>M_Skeleton_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Skeleton</SoundPack>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\eyeblink_m5_White.png</Texture_Eyes>
+        <Texture_Skin>M_Skeleton_Texture_01.png</Texture_Skin>
+        <UnitModelType>Skeleton</UnitModelType>
+    </UnitType>
+    <UnitType InternalName="Unit_Crossbowman_Dead">
+        <DisplayName>Crossbowman</DisplayName>
+        <Description>Crossbowmen can fire through units in lines and are a great way to deal with masses of enemy units.</Description>
+        <Class>Crossbowman</Class>
+        <RaceType>Race_Type_Dead</RaceType>
+        <CanBeDesigned>1</CanBeDesigned>
+        <Gender>Male</Gender>
+        <AdditionalTrainingTurns>20</AdditionalTrainingTurns>
+        <IsSovereign>0</IsSovereign>
+        <IsStartingUnitType>1</IsStartingUnitType>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid> <!-- For CotS -->
+            <UnitStat_BG_IsRace_DLCUndead>1</UnitStat_BG_IsRace_DLCUndead> <!-- For CotS -->
+            <UnitStat_BG_IsEmpire>1</UnitStat_BG_IsEmpire> <!-- For CotS -->
+            <UnitStat_BG_IsImmortal>1</UnitStat_BG_IsImmortal> <!-- For CotS -->
+            <UnitStat_BG_IsUndead>1</UnitStat_BG_IsUndead> <!-- For CotS -->
+            <UnitStat_ImmuneToFear>1</UnitStat_ImmuneToFear> <!-- For CotS -->
+            <UnitStat_BG_IsNotAlive>1</UnitStat_BG_IsNotAlive> <!-- For CotS -->
+    	</LevelMilestone>
+        <SelectedAbilityBonusOption>Blood_Undead</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>UndyingCurseDead2</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Fast</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Fury</SelectedAbilityBonusOption>		
+		<Equipment>Basic_Boots_ID2</Equipment>
+		<Equipment>F_Male_Quendar_Horns_01</Equipment>
+		<Equipment>Butcherman_Pants</Equipment>
+		<Equipment>F_Warn_Surcoat_Solid_ID1</Equipment>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Weapon</EquipmentSlot>
+            <WeaponUpgradeType>Crossbow</WeaponUpgradeType>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Attack_Pierce</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Cold</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Fire</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Lightning</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Poison</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Torso</EquipmentSlot>
+            <EquipmentSlot>Surcoat</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+            <ForUpgradeActionOnly>1</ForUpgradeActionOnly>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>LowerBody</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+            <ForUpgradeActionOnly>1</ForUpgradeActionOnly>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Boots</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+            <ForUpgradeActionOnly>1</ForUpgradeActionOnly>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Head</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+            <ForUpgradeActionOnly>1</ForUpgradeActionOnly>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Forearms</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+            <ForUpgradeActionOnly>1</ForUpgradeActionOnly>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Defense</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+            <ForUpgradeActionOnly>1</ForUpgradeActionOnly>
+        </EquipmentUpgradeDef>
+        <Prereq>
+            <Type>Race</Type>
+            <Attribute>Race_Type_Dead</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Longbows</Attribute>
+        </Prereq>
+        <Backstory>You sealed yourself within the buried city of Calebethon, and toiled as each light went out. As the darkness crept through Calebethon there was a rising tide of screams and madness. It would be unjust to say that the citizens became as animals, because animals were never so cruel or afraid.
+		
+		Eventually the darkness claimed those voices too, and the city settled to the gentle sounds of ragged breath and the drip of blood, flesh and filth. When the last light of Calebethon finally went out you could only hear echoes of your great city in the darkness.  You have no memories of those last, horrible days.
+		
+		When you awoke you walked through the streets of ancient Calebethon, and where you walked the long dead citizens of your city rose to follow.</Backstory>
+        <AnimationPack>SkeletonAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>29</ClothPoseIndex>
+        <Color_Hair>45,45,60,255</Color_Hair>
+        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\eyes\blinks\eyeblink_m5_White.png</EyeTexture>
+        <InfoCardBackground>BG_EmpireRugged</InfoCardBackground>
+        <ModelPath>M_Skeleton_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Skeleton</SoundPack>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\eyeblink_m5_White.png</Texture_Eyes>
+        <Texture_Skin>M_Skeleton_Texture_01.png</Texture_Skin>
+        <UnitModelType>Skeleton</UnitModelType>
+    </UnitType>
+    <UnitType InternalName="Unit_Defender_Dead">
+        <DisplayName>Eternal Defender</DisplayName>
+        <Description>Defenders are formidable troops that are able to outlast enemy units and absorb lots of damage.</Description>
+        <Class>Defender</Class>
+        <RaceType>Race_Type_Dead</RaceType>
+        <CanBeDesigned>1</CanBeDesigned>
+        <Gender>Male</Gender>
+        <AdditionalTrainingTurns>20</AdditionalTrainingTurns>
+        <IsSovereign>0</IsSovereign>
+        <IsStartingUnitType>1</IsStartingUnitType>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid> <!-- For CotS -->
+            <UnitStat_BG_IsRace_DLCUndead>1</UnitStat_BG_IsRace_DLCUndead> <!-- For CotS -->
+            <UnitStat_BG_IsEmpire>1</UnitStat_BG_IsEmpire> <!-- For CotS -->
+            <UnitStat_BG_IsImmortal>1</UnitStat_BG_IsImmortal> <!-- For CotS -->
+            <UnitStat_BG_IsUndead>1</UnitStat_BG_IsUndead> <!-- For CotS -->
+            <UnitStat_ImmuneToFear>1</UnitStat_ImmuneToFear> <!-- For CotS -->
+            <UnitStat_BG_IsNotAlive>1</UnitStat_BG_IsNotAlive> <!-- For CotS -->
+    	</LevelMilestone>
+        <SelectedAbilityBonusOption>Blood_Undead</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>ArmorProficiency2</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Defender</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>UndyingCurseDead2</SelectedAbilityBonusOption>
+        <Equipment>LeatherBreastpiece</Equipment>
+        <Equipment>LeatherHelmet</Equipment>
+        <Equipment>LeatherVambraces</Equipment>
+        <Equipment>LeatherGreaves</Equipment>
+        <Equipment>LeatherBoots</Equipment>
+        <Equipment>WoodShield</Equipment>
+        <Equipment>Bards_Cloak_ID1</Equipment>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Weapon</EquipmentSlot>
+            <WeaponUpgradeType>Blunt</WeaponUpgradeType>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Attack_Pierce</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Cold</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Fire</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Lightning</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Poison</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Torso</EquipmentSlot>
+            <EquipmentSlot>Surcoat</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>LowerBody</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Boots</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Head</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Forearms</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Defense</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <Prereq>
+            <Type>Race</Type>
+            <Attribute>Race_Type_Dead</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Leatherworking</Attribute>
+        </Prereq>
+        <Backstory>You sealed yourself within the buried city of Calebethon, and toiled as each light went out. As the darkness crept through Calebethon there was a rising tide of screams and madness. It would be unjust to say that the citizens became as animals, because animals were never so cruel or afraid.
+		
+		Eventually the darkness claimed those voices too, and the city settled to the gentle sounds of ragged breath and the drip of blood, flesh and filth. When the last light of Calebethon finally went out you could only hear echoes of your great city in the darkness.  You have no memories of those last, horrible days.
+		
+		When you awoke you walked through the streets of ancient Calebethon, and where you walked the long dead citizens of your city rose to follow.</Backstory>
+        <AnimationPack>SkeletonAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>5</ClothPoseIndex>
+        <Color_Hair>45,45,60,255</Color_Hair>
+        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\eyes\blinks\eyeblink_m5_White.png</EyeTexture>
+        <InfoCardBackground>BG_EmpireRugged</InfoCardBackground>
+        <ModelPath>M_Skeleton_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Skeleton</SoundPack>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\eyeblink_m5_White.png</Texture_Eyes>
+        <Texture_Skin>M_Skeleton_Texture_01.png</Texture_Skin>
+        <UnitModelType>Skeleton</UnitModelType>
+    </UnitType>
+    <UnitType InternalName="Unit_Magic_Heavy_Dead">
+        <DisplayName>Possessed Knight</DisplayName>
+        <Description>Possessed Knights are the most expensive and powerful units that can be trained.  They combine the best armor, weapons and enchanted items with reliable mounts and advanced training.</Description>
+        <Class>MagicHeavy</Class>
+        <RaceType>Race_Type_Dead</RaceType>
+        <CanBeDesigned>1</CanBeDesigned>
+        <Gender>Male</Gender>
+        <AdditionalTrainingTurns>20</AdditionalTrainingTurns>
+        <IsSovereign>0</IsSovereign>
+        <IsStartingUnitType>1</IsStartingUnitType>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid> <!-- For CotS -->
+            <UnitStat_BG_IsRace_DLCUndead>1</UnitStat_BG_IsRace_DLCUndead> <!-- For CotS -->
+            <UnitStat_BG_IsEmpire>1</UnitStat_BG_IsEmpire> <!-- For CotS -->
+            <UnitStat_BG_IsImmortal>1</UnitStat_BG_IsImmortal> <!-- For CotS -->
+            <UnitStat_BG_IsUndead>1</UnitStat_BG_IsUndead> <!-- For CotS -->
+            <UnitStat_ImmuneToFear>1</UnitStat_ImmuneToFear> <!-- For CotS -->
+            <UnitStat_BG_IsNotAlive>1</UnitStat_BG_IsNotAlive> <!-- For CotS -->
+    	</LevelMilestone>
+        <SelectedAbilityBonusOption>Blood_Undead</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>ArmorProficiency2</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Fast</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>UndyingCurseDead2</SelectedAbilityBonusOption>		
+        <Equipment>BattleAxe_Burning</Equipment>
+        <Equipment>AmuletOfFlames</Equipment>
+        <Equipment>IceWargCloak</Equipment>
+        <Equipment>UndeadHorseMount</Equipment>
+		<Equipment>F_Male_Quendar_Horns_01</Equipment>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Torso</EquipmentSlot>
+            <EquipmentSlot>Surcoat</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>LowerBody</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Boots</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Forearms</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <Prereq>
+            <Type>Race</Type>
+            <Attribute>Race_Type_Dead</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Arcane_Weapons</Attribute>
+        </Prereq>
+        <Backstory>You sealed yourself within the buried city of Calebethon, and toiled as each light went out. As the darkness crept through Calebethon there was a rising tide of screams and madness. It would be unjust to say that the citizens became as animals, because animals were never so cruel or afraid.
+		
+		Eventually the darkness claimed those voices too, and the city settled to the gentle sounds of ragged breath and the drip of blood, flesh and filth. When the last light of Calebethon finally went out you could only hear echoes of your great city in the darkness.  You have no memories of those last, horrible days.
+		
+		When you awoke you walked through the streets of ancient Calebethon, and where you walked the long dead citizens of your city rose to follow.</Backstory>
+        <AnimationPack>SkeletonAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>13</ClothPoseIndex>
+        <Color_Hair>45,45,60,255</Color_Hair>
+        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\eyes\blinks\eyeblink_m5_White.png</EyeTexture>
+        <InfoCardBackground>BG_EmpireRugged</InfoCardBackground>
+        <ModelPath>M_Skeleton_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Skeleton</SoundPack>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\eyeblink_m5_White.png</Texture_Eyes>
+        <Texture_Skin>M_Skeleton_Texture_01.png</Texture_Skin>
+        <UnitModelType>Skeleton</UnitModelType>
+        <EffectAttachment>
+            <Attachment>Head_Lcf</Attachment>
+            <EffectName>A_Cindercorpse_Chest_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.2</EffectScale>
+        </EffectAttachment>
+    </UnitType>
+    <UnitType InternalName="Unit_Magic_Medium_Dead">
+        <DisplayName>Coal Matron</DisplayName>
+        <Description>Coal Matrons are outfitted with enchanted weapons and items.  They are a powerful tool for any empire, but expensive to train.</Description>
+        <Class>MagicMedium</Class>
+        <RaceType>Race_Type_Dead</RaceType>
+        <CanBeDesigned>1</CanBeDesigned>
+        <Gender>Female</Gender>
+        <AdditionalTrainingTurns>20</AdditionalTrainingTurns>
+        <IsSovereign>0</IsSovereign>
+        <IsStartingUnitType>1</IsStartingUnitType>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid> <!-- For CotS -->
+            <UnitStat_BG_IsRace_DLCUndead>1</UnitStat_BG_IsRace_DLCUndead> <!-- For CotS -->
+            <UnitStat_BG_IsEmpire>1</UnitStat_BG_IsEmpire> <!-- For CotS -->
+            <UnitStat_BG_IsImmortal>1</UnitStat_BG_IsImmortal> <!-- For CotS -->
+            <UnitStat_BG_IsUndead>1</UnitStat_BG_IsUndead> <!-- For CotS -->
+            <UnitStat_ImmuneToFear>1</UnitStat_ImmuneToFear> <!-- For CotS -->
+            <UnitStat_BG_IsNotAlive>1</UnitStat_BG_IsNotAlive> <!-- For CotS -->
+    	</LevelMilestone>
+        <SelectedAbilityBonusOption>Blood_Undead</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Spirit</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>SpellResistance</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Fast</SelectedAbilityBonusOption>
+        <Equipment>Axe_Burning</Equipment>
+        <Equipment>AmuletOfFlames</Equipment>
+        <Equipment>TrollCharm</Equipment>
+        <Equipment>Banshee_Head</Equipment>
+        <Equipment>Banshee_Hair</Equipment>
+        <Equipment>Banshee_Skirt</Equipment>
+        <Equipment>Banshee_Shirt</Equipment>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Weapon</EquipmentSlot>
+            <WeaponUpgradeType>Axe</WeaponUpgradeType>
+            <EquipmentSlot>Defense</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Attack_Pierce</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Cold</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Fire</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Lightning</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Poison</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Torso</EquipmentSlot>
+            <EquipmentSlot>Surcoat</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>LowerBody</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Boots</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Forearms</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <Prereq>
+            <Type>Race</Type>
+            <Attribute>Race_Type_Dead</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Glyph_Stones</Attribute>
+        </Prereq>
+        <Backstory>You sealed yourself within the buried city of Calebethon, and toiled as each light went out. As the darkness crept through Calebethon there was a rising tide of screams and madness. It would be unjust to say that the citizens became as animals, because animals were never so cruel or afraid.
+		
+		Eventually the darkness claimed those voices too, and the city settled to the gentle sounds of ragged breath and the drip of blood, flesh and filth. When the last light of Calebethon finally went out you could only hear echoes of your great city in the darkness.  You have no memories of those last, horrible days.
+		
+		When you awoke you walked through the streets of ancient Calebethon, and where you walked the long dead citizens of your city rose to follow.</Backstory>
+        <AnimationPack>SoldierAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>3</ClothPoseIndex>
+        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+        <InfoCardBackground>BG_EmpireRugged</InfoCardBackground>
+        <ModelPath>M_Banshee_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Banshee</SoundPack>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\Eyeblink_Banshee.png</Texture_Eyes>
+        <Texture_Trans>M_Banshee_Skin_01.png</Texture_Trans>
+        <UnitModelType>Banshee</UnitModelType>
+    </UnitType>
+    <UnitType InternalName="Unit_CityArcher_Dead">
+        <DisplayName>City Archer</DisplayName>
+        <Class>CityArcher</Class>
+        <RaceType>Race_Type_Dead</RaceType>
+        <CanBeDesigned>0</CanBeDesigned>
+        <Gender>Male</Gender>
+        <HasWages>0</HasWages>
+        <IsSovereign>0</IsSovereign>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid> <!-- For CotS -->
+            <UnitStat_BG_IsRace_DLCUndead>1</UnitStat_BG_IsRace_DLCUndead> <!-- For CotS -->
+            <UnitStat_BG_IsEmpire>1</UnitStat_BG_IsEmpire> <!-- For CotS -->
+            <UnitStat_BG_IsImmortal>1</UnitStat_BG_IsImmortal> <!-- For CotS -->
+            <UnitStat_BG_IsUndead>1</UnitStat_BG_IsUndead> <!-- For CotS -->
+            <UnitStat_ImmuneToFear>1</UnitStat_ImmuneToFear> <!-- For CotS -->
+            <UnitStat_BG_IsNotAlive>1</UnitStat_BG_IsNotAlive> <!-- For CotS -->
+            <UnitStat_BG_IsMilitia>1</UnitStat_BG_IsMilitia> <!-- For CotS -->
+        </LevelMilestone>
+        <SelectedAbilityBonusOption>Blood_Undead</SelectedAbilityBonusOption>		
+        <Equipment>Shortbow</Equipment>
+		<Equipment>F_Female_Quendar_Horns_01</Equipment>
+		<Equipment>Ladies_Cape_ID1</Equipment>
+		<Equipment>TightBoots_Dark</Equipment>
+        <Prereq>
+            <Type>Race</Type>
+            <Attribute>Race_Type_Dead</Attribute>
+        </Prereq>
+        <Backstory>You sealed yourself within the buried city of Calebethon, and toiled as each light went out. As the darkness crept through Calebethon there was a rising tide of screams and madness. It would be unjust to say that the citizens became as animals, because animals were never so cruel or afraid.
+		
+		Eventually the darkness claimed those voices too, and the city settled to the gentle sounds of ragged breath and the drip of blood, flesh and filth. When the last light of Calebethon finally went out you could only hear echoes of your great city in the darkness.  You have no memories of those last, horrible days.
+		
+		When you awoke you walked through the streets of ancient Calebethon, and where you walked the long dead citizens of your city rose to follow.</Backstory>
+        <AnimationPack>SkeletonAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>17</ClothPoseIndex>
+        <Color_Hair>45,45,60,255</Color_Hair>
+        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\eyes\blinks\eyeblink_m5_White.png</EyeTexture>
+        <InfoCardBackground>BG_EmpireRugged</InfoCardBackground>
+        <ModelPath>M_Skeleton_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Skeleton</SoundPack>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\eyeblink_m5_White.png</Texture_Eyes>
+        <Texture_Skin>M_Skeleton_Texture_01.png</Texture_Skin>
+        <UnitModelType>Skeleton</UnitModelType>
+    </UnitType>
+    <UnitType InternalName="Unit_CityDefender_Dead">
+        <DisplayName>City Militia</DisplayName>
+        <Class>CityDefender</Class>
+        <RaceType>Race_Type_Dead</RaceType>
+        <CanBeDesigned>0</CanBeDesigned>
+        <Gender>Male</Gender>
+        <HasWages>0</HasWages>
+        <IsSovereign>0</IsSovereign>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid> <!-- For CotS -->
+            <UnitStat_BG_IsRace_DLCUndead>1</UnitStat_BG_IsRace_DLCUndead> <!-- For CotS -->
+            <UnitStat_BG_IsEmpire>1</UnitStat_BG_IsEmpire> <!-- For CotS -->
+            <UnitStat_BG_IsImmortal>1</UnitStat_BG_IsImmortal> <!-- For CotS -->
+            <UnitStat_BG_IsUndead>1</UnitStat_BG_IsUndead> <!-- For CotS -->
+            <UnitStat_ImmuneToFear>1</UnitStat_ImmuneToFear> <!-- For CotS -->
+            <UnitStat_BG_IsNotAlive>1</UnitStat_BG_IsNotAlive> <!-- For CotS -->
+            <UnitStat_BG_IsMilitia>1</UnitStat_BG_IsMilitia> <!-- For CotS -->
+        </LevelMilestone>
+        <SelectedAbilityBonusOption>Blood_Undead</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>UndyingCurseDead2</SelectedAbilityBonusOption>	
+        <Equipment>Club</Equipment>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Weapon</EquipmentSlot>
+            <WeaponUpgradeType>Blunt</WeaponUpgradeType>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Attack_Pierce</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Cold</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Fire</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Lightning</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Poison</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <Prereq>
+            <Type>Race</Type>
+            <Attribute>Race_Type_Dead</Attribute>
+        </Prereq>
+        <Backstory>You sealed yourself within the buried city of Calebethon, and toiled as each light went out. As the darkness crept through Calebethon there was a rising tide of screams and madness. It would be unjust to say that the citizens became as animals, because animals were never so cruel or afraid.
+		
+		Eventually the darkness claimed those voices too, and the city settled to the gentle sounds of ragged breath and the drip of blood, flesh and filth. When the last light of Calebethon finally went out you could only hear echoes of your great city in the darkness.  You have no memories of those last, horrible days.
+		
+		When you awoke you walked through the streets of ancient Calebethon, and where you walked the long dead citizens of your city rose to follow.</Backstory>
+        <AnimationPack>SkeletonAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>17</ClothPoseIndex>
+        <Color_Hair>45,45,60,255</Color_Hair>
+        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\eyes\blinks\eyeblink_m5_White.png</EyeTexture>
+        <InfoCardBackground>BG_EmpireRugged</InfoCardBackground>
+        <ModelPath>M_Skeleton_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Skeleton</SoundPack>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\eyeblink_m5_White.png</Texture_Eyes>
+        <Texture_Skin>M_Skeleton_Texture_01.png</Texture_Skin>
+        <UnitModelType>Skeleton</UnitModelType>
+    </UnitType>
+	
+	<UnitType InternalName="Unit_Spearman_AutoGen_Dead">
+        <DisplayName>The Risen</DisplayName>
+        <Class>Spearman</Class>
+        <RaceType>Race_Type_Dead</RaceType>
+        <CanBeDesigned>1</CanBeDesigned>
+        <Gender>Male</Gender>
+        <GroupingType>UnitGroupingType_Party</GroupingType>		
+        <AdditionalTrainingTurns>20</AdditionalTrainingTurns>
+        <IsSovereign>0</IsSovereign>
+        <IsStartingUnitType>1</IsStartingUnitType>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid> <!-- For CotS -->
+            <UnitStat_BG_IsRace_DLCUndead>1</UnitStat_BG_IsRace_DLCUndead> <!-- For CotS -->
+            <UnitStat_BG_IsEmpire>1</UnitStat_BG_IsEmpire> <!-- For CotS -->
+            <UnitStat_BG_IsImmortal>1</UnitStat_BG_IsImmortal> <!-- For CotS -->
+            <UnitStat_BG_IsUndead>1</UnitStat_BG_IsUndead> <!-- For CotS -->
+            <UnitStat_ImmuneToFear>1</UnitStat_ImmuneToFear> <!-- For CotS -->
+            <UnitStat_BG_IsNotAlive>1</UnitStat_BG_IsNotAlive> <!-- For CotS -->
+    	</LevelMilestone>
+        <SelectedAbilityBonusOption>Blood_Undead</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>UndyingCurseDead2</SelectedAbilityBonusOption>		
+        <Equipment>Axe_Golem</Equipment>
+        <Equipment>ChainBreastpiece_Skeleton</Equipment>		
+        <Prereq>
+            <Type>Race</Type>
+            <Attribute>Race_Type_Unavailable</Attribute>
+        </Prereq>
+        <Backstory>You sealed yourself within the buried city of Calebethon, and toiled as each light went out. As the darkness crept through Calebethon there was a rising tide of screams and madness. It would be unjust to say that the citizens became as animals, because animals were never so cruel or afraid.
+		
+		Eventually the darkness claimed those voices too, and the city settled to the gentle sounds of ragged breath and the drip of blood, flesh and filth. When the last light of Calebethon finally went out you could only hear echoes of your great city in the darkness.  You have no memories of those last, horrible days.
+		
+		When you awoke you walked through the streets of ancient Calebethon, and where you walked the long dead citizens of your city rose to follow.</Backstory>
+        <AnimationPack>SkeletonAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>29</ClothPoseIndex>
+        <Color_Hair>45,45,60,255</Color_Hair>
+        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\eyes\blinks\eyeblink_m5_White.png</EyeTexture>
+        <InfoCardBackground>BG_EmpireRugged</InfoCardBackground>
+        <ModelPath>M_Skeleton_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Skeleton</SoundPack>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\eyeblink_m5_White.png</Texture_Eyes>
+        <Texture_Skin>M_Skeleton_Texture_01.png</Texture_Skin>
+        <UnitModelType>Skeleton</UnitModelType>
+    </UnitType>
+	
+	<UnitType InternalName="Unit_Sion">
+        <DisplayName>Sion</DisplayName>
+        <Description>Sions are the most skilled warriors of the fallen.  Though they can't learn magic they gain levels and traits as champions.</Description>
+        <RaceType>Race_Type_Trogs</RaceType>
+        <CanBeDesigned>1</CanBeDesigned>
+        <Gender>Male</Gender>
+        <GetPerksOnLevelUp>1</GetPerksOnLevelUp>
+        <AdditionalTrainingTurns>300</AdditionalTrainingTurns>
+        <IsSovereign>0</IsSovereign>
+        <AllowGrouping>0</AllowGrouping>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+        </LevelMilestone>
+        <Equipment>Sion_Head</Equipment>
+        <Equipment>Sion_Surcoat</Equipment>
+        <Equipment>Sion_Cloak</Equipment>
+        <Equipment>F_PonyTail_Hair_Mesh_01</Equipment>
+        <Equipment>SionVambraces</Equipment>
+        <Equipment>Sion_Boots</Equipment>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Weapon</EquipmentSlot>
+            <WeaponUpgradeType>Blade</WeaponUpgradeType>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Attack_Pierce</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Cold</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Fire</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Lightning</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Poison</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <Prereq>
+            <Type>Allegiance</Type>
+            <Attribute>Empire</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>SionTemple</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>DLC04_UndeadFaction</Attribute>
+            <Target>Player</Target>
+        </Prereq>		
+        <ProductionRequirement>
+            <Type>Resource</Type>
+            <Attribute>Fame</Attribute>
+            <Value>20</Value>
+        </ProductionRequirement>
+        <ProductionRequirement>
+            <Type>Resource</Type>
+            <Attribute>Gold</Attribute>
+            <Value>50</Value>
+        </ProductionRequirement>
+        <AnimationPack>NoblemanAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>0</ClothPoseIndex>
+        <Color_Hair>39,33,35,255</Color_Hair>
+        <Color_Skin>125,120,120,255</Color_Skin>
+        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\Eyes\blinks\Eyeblink_M4_Gold.png</EyeTexture>
+        <InfoCardBackground>BG_EmpireRugged</InfoCardBackground>
+        <InfoCardBackgroundFlipped>0</InfoCardBackgroundFlipped>
+        <ModelPath>Gfx\HKB\Units\F_Male_Sion_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovementType>land</MovementType>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Generic_Male</SoundPack>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\eyeblink_f3_blue.png</Texture_Eyes>
+        <Texture_Skin>K_Male_Tattoo_Texture_02.png</Texture_Skin>
+        <UnitModelType>FallenMale</UnitModelType>
+    </UnitType>
+	
+	<UnitType InternalName="Unit_Sion_Dead">
+        <DisplayName>Skeleton</DisplayName>
+        <Description>Sions are your most skilled warriors, ascended from flesh.  Though they can't learn magic they gain levels and traits like champions.</Description>
+        <RaceType>Race_Type_Dead</RaceType>
+        <CanBeDesigned>1</CanBeDesigned>
+        <Gender>Male</Gender>
+        <GetPerksOnLevelUp>1</GetPerksOnLevelUp>
+        <AdditionalTrainingTurns>20</AdditionalTrainingTurns>
+        <IsSovereign>0</IsSovereign>
+        <IsStartingUnitType>1</IsStartingUnitType>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid> <!-- For CotS -->
+            <UnitStat_BG_IsRace_DLCUndead>1</UnitStat_BG_IsRace_DLCUndead> <!-- For CotS -->
+            <UnitStat_BG_IsEmpire>1</UnitStat_BG_IsEmpire> <!-- For CotS -->
+            <UnitStat_BG_IsImmortal>1</UnitStat_BG_IsImmortal> <!-- For CotS -->
+            <UnitStat_BG_IsUndead>1</UnitStat_BG_IsUndead> <!-- For CotS -->
+            <UnitStat_ImmuneToFear>1</UnitStat_ImmuneToFear> <!-- For CotS -->
+            <UnitStat_BG_IsNotAlive>1</UnitStat_BG_IsNotAlive> <!-- For CotS -->
+    	</LevelMilestone>
+        <SelectedAbilityBonusOption>Blood_Undead</SelectedAbilityBonusOption>
+        <Equipment>Club</Equipment>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Weapon</EquipmentSlot>
+            <WeaponUpgradeType>Blunt</WeaponUpgradeType>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Attack_Pierce</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Cold</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Fire</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Lightning</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Poison</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Torso</EquipmentSlot>
+            <EquipmentSlot>Surcoat</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>LowerBody</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Boots</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Head</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Forearms</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Defense</EquipmentSlot>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <Prereq>
+            <Type>Race</Type>
+            <Attribute>Race_Type_Dead</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>SionTemple</Attribute>
+        </Prereq>
+        <ProductionRequirement>
+            <Type>Resource</Type>
+            <Attribute>Fame</Attribute>
+            <Value>20</Value>
+        </ProductionRequirement>
+        <ProductionRequirement>
+            <Type>Resource</Type>
+            <Attribute>Gold</Attribute>
+            <Value>50</Value>
+        </ProductionRequirement>		
+        <Backstory>Your sions gain levels like champions. But they cannot cast spells, and die permanently upon falling in battle.</Backstory>
+        <AnimationPack>SkeletonAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>1</ClothPoseIndex>
+        <Color_Hair>45,45,60,255</Color_Hair>
+        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\eyes\blinks\eyeblink_m5_White.png</EyeTexture>
+        <InfoCardBackground>BG_EmpireRugged</InfoCardBackground>
+        <ModelPath>M_Skeleton_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Skeleton</SoundPack>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\eyeblink_m5_White.png</Texture_Eyes>
+        <Texture_Skin>M_Skeleton_Texture_01.png</Texture_Skin>
+        <UnitModelType>Skeleton</UnitModelType>
+    </UnitType>
+	
+</UnitTypes>

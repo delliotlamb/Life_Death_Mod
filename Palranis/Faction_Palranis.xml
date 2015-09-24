@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<RaceConfigs>
+	<DataChecksum NoParse="1">
+		<Ignore>DisplayName, ShortName, Capital, Description, UnitSkinColor, UnitHairColor, UnitClothColor, BuildingPrimaryColor, BuildingSecondaryColor, BuildingRoofColor, BuildingStyle, UnitStyle, WorkerName</Ignore>
+		<Translate>DisplayName, ShortName, Capital, Description, WorkerName</Translate>
+	</DataChecksum>
+	<RaceConfig InternalName="CustomFaction_Palranis">
+		<DisplayName>Empire of Palranis</DisplayName>
+		<AIPersonality>AI_General</AIPersonality>
+		<ShortName>Palranis</ShortName>
+		<Description>The Palrani Quendar differ from their bretherin under Magnar in one crucial respect: though not above using slaves as laborers from time to time, thet would never allow slaves in their cherished armies. For the Palrani eugenically weed out all weakness through brutal trials of combat. Those who survive to march in their armies, however, are truly elite.</Description>
+        <Capital>Var Quendas</Capital>
+        <City>Ala Visthel</City>
+        <City>Adarazi</City>
+        <City>Usulkim</City>
+        <City>Gelver Jie</City>
+        <City>Bresgela</City>
+        <City>Mindiel</City>
+        <City>Quenda Urim</City>
+        <City>Quenda Vuus</City>
+        <City>Aba D'aan</City>		
+		<FactionAllegiance>Empire</FactionAllegiance>
+		<IsCustom>true</IsCustom>
+		<IsModDependent>true</IsModDependent>
+		<RaceInternalName>Race_Type_PalraniQuendar</RaceInternalName>
+		<RaceDisplayName>Palrani Quendar</RaceDisplayName>
+		<MaleUnitType>Generic_Sovereign_Palranis_Male</MaleUnitType>
+		<FemaleUnitType>Generic_Sovereign_Palranis_Female</FemaleUnitType>
+		<GenericUnitType_Male>Generic_Palranis_Male</GenericUnitType_Male>
+		<GenericUnitType_Female>Generic_Palranis_Female</GenericUnitType_Female>
+		<TraderUnitType>TraderTest</TraderUnitType>
+		<SageUnitType>Sage_Palranis</SageUnitType>
+		<ShopkeeperUnitType>Shopkeeper_Palranis</ShopkeeperUnitType>
+		<StartingUnitType>Smasher_Palranis</StartingUnitType>
+		<StartingUnitType>Unit_Pioneer_PalraniQuendar</StartingUnitType>
+		<StartingUnitType>Unit_Catapult</StartingUnitType>
+		<StartingUnitType>Expeditioners_Palranis</StartingUnitType>
+		<UnitScale>1.0000</UnitScale>
+		<RaceClassification>Fallen</RaceClassification>
+		<MusicTheme>SeeInDarkness</MusicTheme>
+		<Alignment>Neutral</Alignment>
+		<UnitSkinColor>138,61,13,255</UnitSkinColor>
+		<UnitHairColor>200,200,200,255</UnitHairColor>
+		<FactionColor>99,63,30,255</FactionColor>
+		<UnitMetalColor>128,128,128,255</UnitMetalColor>
+		<UnitClothing1Color>99,63,30,255</UnitClothing1Color>
+		<UnitClothing2Color>71,163,99,255</UnitClothing2Color>
+		<BuildingPrimaryColor>30,63,99,255</BuildingPrimaryColor>
+		<BuildingSecondaryColor>93,83,65,255</BuildingSecondaryColor>
+		<BuildingRoofColor>79,48,20,255</BuildingRoofColor>
+		<BuildingStyle>EmpireStyle</BuildingStyle>
+		<EnvironmentTerrainType>1</EnvironmentTerrainType>
+		<PreferredLogoType>GenericCrest28</PreferredLogoType>
+		<NonBuildableEnvironmentType>GrasslandEnvironment</NonBuildableEnvironmentType>
+		<TechTree>TechTree_Amarian</TechTree>
+		<Spellbook>DeathSpellbook</Spellbook>
+		<FactionType>Major</FactionType>
+		<RemCustomizationPts>0</RemCustomizationPts>
+		<SelAbilityBonusOption>LightPlate</SelAbilityBonusOption>
+		<SelAbilityBonusOption>OnlyTheStrong</SelAbilityBonusOption>
+		<!--<SelAbilityBonusOption>GreatAxes</SelAbilityBonusOption>-->		
+		<!--<SelAbilityBonusOption>QuickEmpire</SelAbilityBonusOption>-->
+		<SelAbilityBonusOption>SlaveLord</SelAbilityBonusOption>	
+		<A_Additive_FoodPerGrain>25.0000</A_Additive_FoodPerGrain>
+		<A_Additive_GoldTakeAwayPerTaxPercentage>1.0000</A_Additive_GoldTakeAwayPerTaxPercentage>
+		<A_Additive_Graves>50.0000</A_Additive_Graves>
+		<A_Additive_ProductionEffectPerUnrest>1.0000</A_Additive_ProductionEffectPerUnrest>
+		<A_Additive_ProductionPerMaterials>8.0000</A_Additive_ProductionPerMaterials>
+		<A_Additive_ResearchEffectPerUnrest>1.0000</A_Additive_ResearchEffectPerUnrest>
+		<A_GoodieRating>1.0000</A_GoodieRating>
+		<A_GrainYield>1.0000</A_GrainYield>
+		<A_ManaRegeneration>1.0000</A_ManaRegeneration>
+		<A_MaterialsYield>1.0000</A_MaterialsYield>
+		<A_MaxArmySize>5.0000</A_MaxArmySize>
+		<A_NPCSpawnRating>2.0000</A_NPCSpawnRating>
+		<A_QuestingRating>5.0000</A_QuestingRating>
+		<A_Traits>4.0000</A_Traits>
+		<A_UnitUpgrades>100.0000</A_UnitUpgrades>
+	</RaceConfig>
+</RaceConfigs>

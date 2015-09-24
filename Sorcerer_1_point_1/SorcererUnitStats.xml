@@ -1,0 +1,50 @@
+<PlayerAbilityTypes>
+
+<UnitStatType InternalName="UnitStat_PathOfTheSorcerer">
+	<DisplayName>Sorcerer</DisplayName>
+	<Description>Flag for being a Sorcerer.</Description>
+	<Icon>Stat_Radius_Icon.png</Icon>
+	<DefaultValue>0.0</DefaultValue>
+	<Hidden>1</Hidden>
+	<UnitStatGrouping>CombatStat</UnitStatGrouping>
+</UnitStatType>
+
+
+<UnitStatType InternalName="UnitStat_IsInTower">
+	<DisplayName>Is Near Tower</DisplayName>
+	<Description>Is this unit present with a Sorcerer's Tower?</Description>
+	<Icon>Stat_Radius_Icon.png</Icon>
+	<DefaultValue>0.0</DefaultValue>
+	<Hidden>1</Hidden>
+	<UnitStatGrouping>CombatStat</UnitStatGrouping>
+</UnitStatType>
+
+
+<!--<UnitStatType InternalName="UnitStat_IsResident">
+	<DisplayName>Resident Sorcerer</DisplayName>
+	<Description>Is this Sorcerer in Permanent Residence?</Description>
+	<Icon>Stat_Radius_Icon.png</Icon>
+	<DefaultValue>0.0</DefaultValue>
+	<Hidden>1</Hidden>
+	<UnitStatGrouping>CombatStat</UnitStatGrouping>
+</UnitStatType>-->
+
+<UnitStatType InternalName="UnitStat_ShardEssence">
+	<DisplayName>Has Killed A Shard</DisplayName>
+	<Description>Has the Sorcerer Sacrificed a Shard for its essence?</Description>
+	<Icon>Stat_Radius_Icon.png</Icon>
+	<DefaultValue>0.0</DefaultValue>
+	<Hidden>1</Hidden>
+	<UnitStatGrouping>CombatStat</UnitStatGrouping>
+</UnitStatType>
+
+    <UnitStatType InternalName="UnitStat_SpellDamage_SorcererTactical">
+        <DisplayName>Tactical Spell Damage Modifier</DisplayName>
+        <DisplayNameShort>CAST</DisplayNameShort>
+        <Description>Change (up or down) to the damage of a tactical spell</Description>
+        <Hidden>1</Hidden>
+        <DefaultValue>0</DefaultValue>
+        <UnitStatGrouping>CombatStat</UnitStatGrouping>
+    </UnitStatType>
+
+</PlayerAbilityTypes>

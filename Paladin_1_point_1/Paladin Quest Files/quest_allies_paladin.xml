@@ -1,0 +1,1147 @@
+<QuestDef InternalName="Quest_Allies_Paladin">
+        <DisplayName>Allies</DisplayName>
+        <Description>"I have tried to form a village here," the village elder says. "But we are little more than fatted calves for the bandits that consume our wheat and slaughter our lambs.  I have failed."
+
+"If you can stop these bandits, what remains of my soldiers will join you." </Description>
+        <IsStartingPointQuest>0</IsStartingPointQuest>
+        <AllowQuestRejection>0</AllowQuestRejection>
+        <ShortTextAccept>I will end them</ShortTextAccept>
+        <ShortTextDeny>I'm too busy for this</ShortTextDeny>
+        <RewardText>Group of Archers</RewardText>
+        <RewardImage>W_Shortbow_Icon_01.png</RewardImage>
+        <SuccessText>"Thank you." the village elder says, "We will join you if you would have us."</SuccessText>
+        <QuestClass>Minor</QuestClass>
+        <Repeatable>1</Repeatable>
+        <TriggerType>QuestLocation</TriggerType>
+        <TriggerOrigin>EventLocation</TriggerOrigin>
+        <SpawnRating>1</SpawnRating>
+		<TriggerChance>0</TriggerChance>		
+        <AICanGoOnQuest>0</AICanGoOnQuest>
+        <Image>Q_ImpoverishedLord.png</Image>
+        <PrefQuestLoc>QuestLoc_Camp_Paladin2</PrefQuestLoc>
+        <Treasure>
+            <GameModifier InternalName="Reward1">
+                <ModType>Unit</ModType>
+                <Attribute>UnitJoinArmy</Attribute>
+                <StrVal>Unit_Quest_Archer</StrVal>
+                <UnitClass>Unit</UnitClass>
+            </GameModifier>
+        </Treasure>
+        <Treasure>
+            <GameModifier InternalName="Reward3">
+                <ModType>Unit</ModType>
+                <Attribute>GiveExperience</Attribute>
+                <Value>6</Value>
+            </GameModifier>
+        </Treasure>
+        <Treasure>
+            <GameModifier InternalName="Reward4">
+                <ModType>Resource</ModType>
+                <Attribute>Fame</Attribute>
+                <Value>10</Value>
+            </GameModifier>
+        </Treasure>
+
+        <QuestObjectiveDef>
+            <ObjectiveID>0</ObjectiveID>
+            <NextObjectiveID>1</NextObjectiveID>
+            <Description>Find the Bandit Camp.</Description>
+            <Treasure>
+                <GameModifier>
+                    <ModType>Map</ModType>
+                    <Attribute>CreateGoodieHut</Attribute>
+                    <StrVal>Bandit Camp</StrVal>
+                    <Unitclass>GH_BanditCamp</Unitclass>
+                    <Radius>4</Radius>
+                </GameModifier>
+            </Treasure>
+            <QuestConditionDef>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Defeat the Bandits.</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Success</Class>
+                <Type>ClearGoodieHut</Type>
+                <TextData>GH_BanditCamp</TextData>
+                <Flag>RevealTarget</Flag>
+            </QuestConditionDef>
+            <ChoiceText>It isn't difficult to track down the bandits and they don't stop you from walking into their camp and approaching the ramshackle throne of their leader.
+
+"I've talked to the village elder and I've agreed to clear you from these lands." you say.  "You can either leave or I will string you up for your crimes."
+
+The bandit captain laughs. "Ah, but I am sure he forgot to mention that I am his son, and that he is the reason that his people starve."</ChoiceText>
+            <ChoiceMedallion>B_Highwayman_Card_01.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>You're as mad as a hatter. Die! (attack)</Description>
+                <NextObjectiveID>1</NextObjectiveID>
+                <Encounter>
+                    <Liklihood>100</Liklihood>
+                    <BattleIdentifier>BanditCaptain</BattleIdentifier>
+                    <WillRespawn>0</WillRespawn>
+                    <WanderingRadius>0</WanderingRadius>
+                    <UnitInstance>
+                        <UnitType>BanditCaptain</UnitType>
+                        <Level>3</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Bandit</UnitType>
+                        <Level>1</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Bandit</UnitType>
+                        <Level>1</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Bandit</UnitType>
+                        <Level>1</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Bandit</UnitType>
+                        <Level>1</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Bandit</UnitType>
+                        <Level>1</Level>
+                    </UnitInstance>
+                </Encounter>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>I will leave, for now.</Description>
+                <NextObjectiveID>0</NextObjectiveID>
+                <PopupMessage>"Slither away with your yellow tail." the bandit captain calls as you walk away.</PopupMessage>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>Why should I believe you?</Description>
+                <NextObjectiveID>3</NextObjectiveID>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+        <QuestObjectiveDef>
+            <ObjectiveID>1</ObjectiveID>
+            <NextObjectiveID>2</NextObjectiveID>
+            <PopupObjectiveMsg>0</PopupObjectiveMsg>
+            <QuestConditionDef>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Clear the bandit lair</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Success</Class>
+                <Type>BattleFinished</Type>
+                <TextData>BanditCaptain</TextData>
+                <MoreTextData>Victory</MoreTextData>
+            </QuestConditionDef>
+        </QuestObjectiveDef>
+
+        <QuestObjectiveDef>
+            <ObjectiveID>2</ObjectiveID>
+            <NextObjectiveID>25</NextObjectiveID>
+            <Description>Return to the village</Description>
+            <QuestConditionDef>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Return to the village</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Success</Class>
+                <Type>UnitEntersQuestLocation</Type>
+            </QuestConditionDef>
+        </QuestObjectiveDef>
+
+ <QuestObjectiveDef>
+            <ObjectiveID>3</ObjectiveID>
+            <NextObjectiveID>4</NextObjectiveID>
+            <ChoiceText>"You can slaughter us, but what will you gain? My father, last year, insisted we not rotate our crops, for fear of roaming monsters. And then, come winter, two dozen families starved when the wheat yields were far too low."
+
+"I was going to seize power without violence. But he blamed the failure on me, and banished me. The men sided with me, so we left and have subsisted as bandits. But we have never hurt our own people - it is my father, the elder's fault, that they suffer." 
+</ChoiceText>
+            <ChoiceMedallion>B_Highwayman_Card_01.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>I'll make you dead as a doornail! (attack)</Description>
+                <NextObjectiveID>2</NextObjectiveID>
+                <Encounter>
+                    <Liklihood>100</Liklihood>
+                    <BattleIdentifier>BanditCaptain2</BattleIdentifier>
+                    <WillRespawn>0</WillRespawn>
+                    <WanderingRadius>0</WanderingRadius>
+                    <UnitInstance>
+                        <UnitType>BanditCaptain</UnitType>
+                        <Level>3</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Bandit</UnitType>
+                        <Level>1</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Bandit</UnitType>
+                        <Level>1</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Bandit</UnitType>
+                        <Level>1</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Bandit</UnitType>
+                        <Level>1</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Bandit</UnitType>
+                        <Level>1</Level>
+                    </UnitInstance>
+                </Encounter>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>Then you should serve under me. I will take better care of your people than your father, or you can.</Description>
+                <NextObjectiveID>4</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>I am going to return to your father, and confront him.</Description>
+                <NextObjectiveID>8</NextObjectiveID>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+ <QuestObjectiveDef>
+            <ObjectiveID>4</ObjectiveID>
+            <NextObjectiveID></NextObjectiveID>
+            <ChoiceText>"Why? How will you lead us to a better life?" 
+</ChoiceText>
+            <ChoiceMedallion>B_Highwayman_Card_01.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>You're right. People as sad as you are useless to my progress! (attack)</Description>
+                <NextObjectiveID>2</NextObjectiveID>
+		<Encounter>
+                    <Liklihood>100</Liklihood>
+                    <BattleIdentifier>BanditCaptain2</BattleIdentifier>
+                    <WillRespawn>0</WillRespawn>
+                    <WanderingRadius>0</WanderingRadius>
+                    <UnitInstance>
+                        <UnitType>BanditCaptain</UnitType>
+                        <Level>3</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Bandit</UnitType>
+                        <Level>1</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Bandit</UnitType>
+                        <Level>1</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Bandit</UnitType>
+                        <Level>1</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Bandit</UnitType>
+                        <Level>1</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Bandit</UnitType>
+                        <Level>1</Level>
+                    </UnitInstance>
+                </Encounter>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>I cannot promise perfection. But I will make the hard choices and sacrifices necessary.</Description>
+                <NextObjectiveID>5</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>You listen to me, you live. You don't, you die. Doesn't that make sense?</Description>
+                <NextObjectiveID>6</NextObjectiveID>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+ <QuestObjectiveDef>
+            <ObjectiveID>5</ObjectiveID>
+            <NextObjectiveID></NextObjectiveID>
+            <ChoiceText>"All right. But on one condition only - that you allow me to be present when I confront my father." 
+</ChoiceText>
+            <ChoiceMedallion>B_Highwayman_Card_01.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>No one gives me conditions. Die! (attack)</Description>
+                <NextObjectiveID>2</NextObjectiveID>
+		<Encounter>
+                    <Liklihood>100</Liklihood>
+                    <BattleIdentifier>BanditCaptain2</BattleIdentifier>
+                    <WillRespawn>0</WillRespawn>
+                    <WanderingRadius>0</WanderingRadius>
+                    <UnitInstance>
+                        <UnitType>BanditCaptain</UnitType>
+                        <Level>3</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Bandit</UnitType>
+                        <Level>1</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Bandit</UnitType>
+                        <Level>1</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Bandit</UnitType>
+                        <Level>1</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Bandit</UnitType>
+                        <Level>1</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Bandit</UnitType>
+                        <Level>1</Level>
+                    </UnitInstance>
+                </Encounter>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>No conditions. I demand absolute loyalty.</Description>
+                <NextObjectiveID>6</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>I agree. Let us go visit your father once more.</Description>
+                <NextObjectiveID>16</NextObjectiveID>
+		<Treasure>
+                <GameModifier>
+                	<ModType>Unit</ModType>
+                	<Attribute>UnitJoinArmy</Attribute>
+                	<StrVal>BanditCaptain</StrVal>
+                	<StrVal2>Bandit Son</StrVal2>
+                    <Value>1</Value>
+                </GameModifier>
+                </Treasure>
+		<Treasure>
+                <GameModifier>
+                	<ModType>Unit</ModType>
+                	<Attribute>UnitJoinArmy</Attribute>
+                	<StrVal>Bandit</StrVal>
+                	<UnitClass>Unit</UnitClass>
+                </GameModifier>
+                </Treasure>
+		<Treasure>
+                <GameModifier>
+                	<ModType>Unit</ModType>
+                	<Attribute>UnitJoinArmy</Attribute>
+                	<StrVal>Bandit</StrVal>
+                	<UnitClass>Unit</UnitClass>
+                </GameModifier>
+                </Treasure>
+		<Treasure>
+                <GameModifier>
+                	<ModType>Unit</ModType>
+                	<Attribute>UnitJoinArmy</Attribute>
+                	<StrVal>Bandit</StrVal>
+                	<UnitClass>Unit</UnitClass>
+                </GameModifier>
+                </Treasure>
+		<Treasure>
+                <GameModifier>
+                	<ModType>Unit</ModType>
+                	<Attribute>UnitJoinArmy</Attribute>
+                	<StrVal>Bandit</StrVal>
+                	<UnitClass>Unit</UnitClass>
+                </GameModifier>
+                </Treasure>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>6</ObjectiveID>
+            <NextObjectiveID></NextObjectiveID>
+            <ChoiceText>"What? I was a fool to consider cooperation. Men, attack!" 
+</ChoiceText>
+            <ChoiceMedallion>B_Highwayman_Card_01.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>That is your final mistake. (attack)</Description>
+                <NextObjectiveID>2</NextObjectiveID>
+		<Encounter>
+                    <Liklihood>100</Liklihood>
+                    <BattleIdentifier>BanditCaptain2</BattleIdentifier>
+                    <WillRespawn>0</WillRespawn>
+                    <WanderingRadius>0</WanderingRadius>
+                    <UnitInstance>
+                        <UnitType>BanditCaptain</UnitType>
+                        <Level>3</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Bandit</UnitType>
+                        <Level>1</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Bandit</UnitType>
+                        <Level>1</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Bandit</UnitType>
+                        <Level>1</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Bandit</UnitType>
+                        <Level>1</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Bandit</UnitType>
+                        <Level>1</Level>
+                    </UnitInstance>
+                </Encounter>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+//this is for killing the bandits after knowing the truth
+
+        <QuestObjectiveDef>
+            <ObjectiveID>7</ObjectiveID>
+            <NextObjectiveID>8</NextObjectiveID>
+            <PopupObjectiveMsg>0</PopupObjectiveMsg>
+            <QuestConditionDef>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Kill the bandits.</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Success</Class>
+                <Type>BattleFinished</Type>
+                <TextData>BanditCaptain2</TextData>
+                <MoreTextData>Victory</MoreTextData>
+            </QuestConditionDef>
+        </QuestObjectiveDef>
+
+
+//this is for returning to the village once you know the truth, but WITHOUT BANDITS on your side
+
+        <QuestObjectiveDef>
+            <ObjectiveID>8</ObjectiveID>
+            <NextObjectiveID>9</NextObjectiveID>
+            <Description>Return to the village and confront the elder</Description>
+            <QuestConditionDef>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Return to the village</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Success</Class>
+                <Type>UnitEntersQuestLocation</Type>
+            </QuestConditionDef>
+        </QuestObjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>9</ObjectiveID>
+            <NextObjectiveID>10</NextObjectiveID>
+            <ChoiceText>You return to the village, and the elder's eyes are full of hope.
+
+"Are we safe from those bandits?" 
+</ChoiceText>
+            <ChoiceMedallion>Q_ImpoverishedLord.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>You mean, your own son?</Description>
+                <NextObjectiveID>12</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>(Lie) They're dead. Give me the reward.</Description>
+                <NextObjectiveID>25</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>You're a liar. No one lies to me! (attack)</Description>
+                <NextObjectiveID>10</NextObjectiveID>
+		<Encounter>
+                    <Liklihood>100</Liklihood>
+                    <BattleIdentifier>VillageElder</BattleIdentifier>
+                    <WillRespawn>0</WillRespawn>
+                    <WanderingRadius>0</WanderingRadius>
+                    <UnitInstance>
+                        <UnitType>Unit_Scout_Amarian</UnitType>
+                        <UnitName>Village Elder</UnitName>
+                        <Level>5</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Unit_Quest_Archer</UnitType>
+                        <UnitGroupingType>UnitGroupingType_Party</UnitGroupingType>
+                        <Level>1</Level>
+                    </UnitInstance>
+                </Encounter>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+//this is for after killing the elder and the archers
+
+        <QuestObjectiveDef>
+            <ObjectiveID>10</ObjectiveID>
+            <NextObjectiveID>11</NextObjectiveID>
+            <PopupObjectiveMsg>0</PopupObjectiveMsg>
+            <QuestConditionDef>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Kill the Village Elder.</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Success</Class>
+                <Type>BattleFinished</Type>
+                <TextData>VillageElder</TextData>
+                <MoreTextData>Victory</MoreTextData>
+            </QuestConditionDef>
+        </QuestObjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>11</ObjectiveID>
+            <NextObjectiveID>-1</NextObjectiveID>
+            <ChoiceText>The Elder is dead, and his only fighting troops with him. The people are hungry and desperate. What shall be done with them?
+</ChoiceText>
+            <ChoiceMedallion>B_Highwayman_Card_01.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>Allow them to join your faction willingly.</Description>
+                <NextObjectiveID>-1</NextObjectiveID>
+		<QuestFailure>1</QuestFailure> 
+            <Treasure>
+                <GameModifier>
+                    <ModType>Resource</ModType>
+                    <Attribute>Population</Attribute>
+                    <Value>20</Value>
+                </GameModifier>
+            </Treasure>
+            <Treasure>
+		<GameModifier>
+            	    <ModType>Unit</ModType>
+            	    <Attribute>UnlockUnitAbility</Attribute>
+            	    <StrVal>Gentle_Lord</StrVal>
+        	</GameModifier>
+            </Treasure>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>Force them to serve under you.</Description>
+                <NextObjectiveID>-1</NextObjectiveID>
+		<QuestFailure>1</QuestFailure>            
+		<Treasure>
+                <GameModifier>
+                    <ModType>Resource</ModType>
+                    <Attribute>Population</Attribute>
+                    <Value>30</Value>
+                </GameModifier>
+            </Treasure>
+            <Treasure>
+		<GameModifier>
+            	    <ModType>Unit</ModType>
+            	    <Attribute>UnlockUnitAbility</Attribute>
+            	    <StrVal>Slave_Driver</StrVal>
+        	</GameModifier>
+            </Treasure>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>I want nothing further to do with these people. May they rot in obscurity. (abandon quest)</Description>
+                <NextObjectiveID>-1</NextObjectiveID>
+		<QuestFailure>1</QuestFailure>
+            <Treasure>
+		<GameModifier>
+            	    <ModType>Unit</ModType>
+            	    <Attribute>UnlockUnitAbility</Attribute>
+            	    <StrVal>Contemptuous</StrVal>
+        	</GameModifier>
+            </Treasure>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>(kill them all, and burn the village)</Description>
+                <NextObjectiveID>-1</NextObjectiveID>
+		<QuestFailure>1</QuestFailure>
+            <Treasure>
+		<GameModifier>
+            	    <ModType>Unit</ModType>
+            	    <Attribute>UnlockUnitAbility</Attribute>
+            	    <StrVal>SomeMen</StrVal>
+        	</GameModifier>
+            </Treasure>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+//this for discussing the truth with the elder
+
+<QuestObjectiveDef>
+            <ObjectiveID>12</ObjectiveID>
+            <NextObjectiveID>13</NextObjectiveID>
+            <ChoiceText>"Whatever he told you is a lie. He betrayed me! He should have followed his father, without question!"
+</ChoiceText>
+            <ChoiceMedallion>Q_ImpoverishedLord.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>I want the truth - or I will kill you.</Description>
+                <NextObjectiveID>13</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>I know you're holding back. Tell me the truth, before all your people starve.</Description>
+                <NextObjectiveID>13</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>I don't have time for this nonsense. Give me your archers, or you die.</Description>
+                <NextObjectiveID>25</NextObjectiveID>
+		<PopupMessage>"You win. Please just leave us in peace."</PopupMessage>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>That's it, you die! (attack)</Description>
+                <NextObjectiveID>10</NextObjectiveID>
+		<Encounter>
+                    <Liklihood>100</Liklihood>
+                    <BattleIdentifier>VillageElder</BattleIdentifier>
+                    <WillRespawn>0</WillRespawn>
+                    <WanderingRadius>0</WanderingRadius>
+                    <UnitInstance>
+                        <UnitType>Unit_Scout_Amarian</UnitType>
+                        <UnitName>Village Elder</UnitName>
+                        <Level>5</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Unit_Quest_Archer</UnitType>
+                        <UnitGroupingType>UnitGroupingType_Party</UnitGroupingType>
+                        <Level>1</Level>
+                    </UnitInstance>
+                </Encounter>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>13</ObjectiveID>
+            <NextObjectiveID>14</NextObjectiveID>
+            <ChoiceText>"He is a traitor. What else is there to say?"
+</ChoiceText>
+            <ChoiceMedallion>Q_ImpoverishedLord.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>If you wil not talk, then I want you to resign and pledge your people to my nation.</Description>
+                <NextObjectiveID>15</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>He never attacked you, did he? You banished him to hide from your mistakes.</Description>
+                <NextObjectiveID>14</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>That's it, you die! (attack)</Description>
+                <NextObjectiveID>10</NextObjectiveID>
+		<Encounter>
+                    <Liklihood>100</Liklihood>
+                    <BattleIdentifier>VillageElder</BattleIdentifier>
+                    <WillRespawn>0</WillRespawn>
+                    <WanderingRadius>0</WanderingRadius>
+                    <UnitInstance>
+                        <UnitType>Unit_Scout_Amarian</UnitType>
+                        <UnitName>Village Elder</UnitName>
+                        <Level>5</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Unit_Quest_Archer</UnitType>
+                        <UnitGroupingType>UnitGroupingType_Party</UnitGroupingType>
+                        <Level>1</Level>
+                    </UnitInstance>
+                </Encounter>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>14</ObjectiveID>
+            <NextObjectiveID>15</NextObjectiveID>
+            <ChoiceText>"Yes. I- I am a proud man. But it is probably too late, for my rule. Many deaths are my fault."
+</ChoiceText>
+            <ChoiceMedallion>Q_ImpoverishedLord.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>You are weak enough to admit it? Then I shall kill you like a dog! (attack)</Description>
+                <NextObjectiveID>10</NextObjectiveID>
+		<Encounter>
+                    <Liklihood>100</Liklihood>
+                    <BattleIdentifier>VillageElder</BattleIdentifier>
+                    <WillRespawn>0</WillRespawn>
+                    <WanderingRadius>0</WanderingRadius>
+                    <UnitInstance>
+                        <UnitType>Unit_Scout_Amarian</UnitType>
+                        <UnitName>Village Elder</UnitName>
+                        <Level>5</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Unit_Quest_Archer</UnitType>
+                        <UnitGroupingType>UnitGroupingType_Party</UnitGroupingType>
+                        <Level>1</Level>
+                    </UnitInstance>
+                </Encounter>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>Thank you for speaking the truth. Let your tribe join my nation.</Description>
+                <NextObjectiveID>25</NextObjectiveID>
+            <Treasure>
+                <GameModifier>
+                    <ModType>Resource</ModType>
+                    <Attribute>Population</Attribute>
+                    <Value>20</Value>
+                </GameModifier>
+            </Treasure>
+            <Treasure>
+		<GameModifier>
+            	    <ModType>Unit</ModType>
+            	    <Attribute>UnlockUnitAbility</Attribute>
+            	    <StrVal>Gentle_Lord</StrVal>
+        	</GameModifier>
+            </Treasure>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>I want nothing further to do with you or your people. Rot in obscurity. (abandon quest)</Description>
+                <NextObjectiveID>-1</NextObjectiveID>
+		<QuestFailure>1</QuestFailure>
+            </QuestChoiceDef>
+            <Treasure>
+		<GameModifier>
+            	    <ModType>Unit</ModType>
+            	    <Attribute>UnlockUnitAbility</Attribute>
+            	    <StrVal>Contemptuous</StrVal>
+        	</GameModifier>
+            </Treasure>
+        </QuestObjectiveDef>
+
+
+<QuestObjectiveDef>
+            <ObjectiveID>15</ObjectiveID>
+            <NextObjectiveID>16</NextObjectiveID>
+            <ChoiceText>"I resign. Take them as your own."
+</ChoiceText>
+            <ChoiceMedallion>Q_ImpoverishedLord.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>I shall take them as slaves.</Description>
+                <NextObjectiveID>25</NextObjectiveID>
+            <Treasure>
+                <GameModifier>
+                    <ModType>Resource</ModType>
+                    <Attribute>Population</Attribute>
+                    <Value>30</Value>
+                </GameModifier>
+            </Treasure>
+            <Treasure>
+		<GameModifier>
+            	    <ModType>Unit</ModType>
+            	    <Attribute>UnlockUnitAbility</Attribute>
+            	    <StrVal>Slave_Driver</StrVal>
+        	</GameModifier>
+            </Treasure>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>They are welcome if they choose to follow me.</Description>
+                <NextObjectiveID>25</NextObjectiveID>
+            <Treasure>
+                <GameModifier>
+                    <ModType>Resource</ModType>
+                    <Attribute>Population</Attribute>
+                    <Value>20</Value>
+                </GameModifier>
+            </Treasure>
+            <Treasure>
+		<GameModifier>
+            	    <ModType>Unit</ModType>
+            	    <Attribute>UnlockUnitAbility</Attribute>
+            	    <StrVal>Gentle_Lord</StrVal>
+        	</GameModifier>
+            </Treasure>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>You are so pathetic, I must kill you out of principle! (attack)</Description>
+                <NextObjectiveID>10</NextObjectiveID>
+		<Encounter>
+                    <Liklihood>100</Liklihood>
+                    <BattleIdentifier>VillageElder</BattleIdentifier>
+                    <WillRespawn>0</WillRespawn>
+                    <WanderingRadius>0</WanderingRadius>
+                    <UnitInstance>
+                        <UnitType>Unit_Scout_Amarian</UnitType>
+                        <UnitName>Village Elder</UnitName>
+                        <Level>5</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Unit_Quest_Archer</UnitType>
+                        <UnitGroupingType>UnitGroupingType_Party</UnitGroupingType>
+                        <Level>1</Level>
+                    </UnitInstance>
+                </Encounter>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+
+//END BRANCH, returning after knowing but not with bandits
+
+//BANDITS ARE WITH YOU BRANCH
+
+//this is for returning to the village once you know the truth, but WITHOUT BANDITS on your side
+
+        <QuestObjectiveDef>
+            <ObjectiveID>16</ObjectiveID>
+            <NextObjectiveID>17</NextObjectiveID>
+            <Description>Return to the village and confront the elder</Description>
+            <QuestConditionDef>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Return to the village</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Success</Class>
+                <Type>UnitEntersQuestLocation</Type>
+            </QuestConditionDef>
+        </QuestObjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>17</ObjectiveID>
+            <NextObjectiveID>18</NextObjectiveID>
+            <ChoiceText>You return to the village, and the elder's eyes are full of terror. Word has already reached him that the bandit leader joined you.
+
+"You were supposed to kill them!" 
+</ChoiceText>
+            <ChoiceMedallion>Q_ImpoverishedLord.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>You mean, your own son?</Description>
+                <NextObjectiveID>20</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>You're a liar. No one lies to me! (attack)</Description>
+                <NextObjectiveID>18</NextObjectiveID>
+		<Encounter>
+                    <Liklihood>100</Liklihood>
+                    <BattleIdentifier>VillageElder</BattleIdentifier>
+                    <WillRespawn>0</WillRespawn>
+                    <WanderingRadius>0</WanderingRadius>
+                    <UnitInstance>
+                        <UnitType>Unit_Scout_Amarian</UnitType>
+                        <UnitName>Village Elder</UnitName>
+                        <Level>5</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Unit_Quest_Archer</UnitType>
+                        <UnitGroupingType>UnitGroupingType_Party</UnitGroupingType>
+                        <Level>1</Level>
+                    </UnitInstance>
+                </Encounter>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+//this is for after killing the elder and the archers
+
+        <QuestObjectiveDef>
+            <ObjectiveID>18</ObjectiveID>
+            <NextObjectiveID>19</NextObjectiveID>
+            <PopupObjectiveMsg>0</PopupObjectiveMsg>
+            <QuestConditionDef>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Kill the Village Elder.</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Success</Class>
+                <Type>BattleFinished</Type>
+                <TextData>VillageElder</TextData>
+                <MoreTextData>Victory</MoreTextData>
+            </QuestConditionDef>
+        </QuestObjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>19</ObjectiveID>
+            <NextObjectiveID>-1</NextObjectiveID>
+            <ChoiceText>The Elder is dead, and his only fighting troops with him. The people are hungry and desperate. What shall be done with them?
+</ChoiceText>
+            <ChoiceMedallion>B_Highwayman_Card_01.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>Allow them to join your faction willingly.</Description>
+                <NextObjectiveID>-1</NextObjectiveID>
+		<QuestFailure>1</QuestFailure> 
+            <Treasure>
+                <GameModifier>
+                    <ModType>Resource</ModType>
+                    <Attribute>Population</Attribute>
+                    <Value>20</Value>
+                </GameModifier>
+            </Treasure>
+            <Treasure>
+		<GameModifier>
+            	    <ModType>Unit</ModType>
+            	    <Attribute>UnlockUnitAbility</Attribute>
+            	    <StrVal>Gentle_Lord</StrVal>
+        	</GameModifier>
+            </Treasure>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>Force them to serve under you.</Description>
+                <NextObjectiveID>-1</NextObjectiveID>
+		<QuestFailure>1</QuestFailure>            
+		<Treasure>
+                <GameModifier>
+                    <ModType>Resource</ModType>
+                    <Attribute>Population</Attribute>
+                    <Value>30</Value>
+                </GameModifier>
+            </Treasure>
+            <Treasure>
+		<GameModifier>
+            	    <ModType>Unit</ModType>
+            	    <Attribute>UnlockUnitAbility</Attribute>
+            	    <StrVal>Slave_Driver</StrVal>
+        	</GameModifier>
+            </Treasure>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>I want nothing further to do with these people. May they rot in obscurity. (abandon quest)</Description>
+                <NextObjectiveID>-1</NextObjectiveID>
+		<QuestFailure>1</QuestFailure>
+            <Treasure>
+		<GameModifier>
+            	    <ModType>Unit</ModType>
+            	    <Attribute>UnlockUnitAbility</Attribute>
+            	    <StrVal>Contemptuous</StrVal>
+        	</GameModifier>
+            </Treasure>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>(kill them all, and burn the village)</Description>
+                <NextObjectiveID>-1</NextObjectiveID>
+		<QuestFailure>1</QuestFailure>
+            <Treasure>
+		<GameModifier>
+            	    <ModType>Unit</ModType>
+            	    <Attribute>UnlockUnitAbility</Attribute>
+            	    <StrVal>SomeMen</StrVal>
+        	</GameModifier>
+            </Treasure>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+//this for discussing the truth with the elder
+
+<QuestObjectiveDef>
+            <ObjectiveID>20</ObjectiveID>
+            <NextObjectiveID>13</NextObjectiveID>
+            <ChoiceText>"He betrayed me! He should have followed his father, without question!"
+</ChoiceText>
+            <ChoiceMedallion>Q_ImpoverishedLord.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>I want the truth - or I will kill you.</Description>
+                <NextObjectiveID>21</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>I know you're holding back. Tell me the truth, before all your people starve.</Description>
+                <NextObjectiveID>21</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>I don't have time for this nonsense. Give me your archers, or you die.</Description>
+                <NextObjectiveID>25</NextObjectiveID>
+		<PopupMessage>"You win. Please just leave us in peace."</PopupMessage>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>That's it, you die! (attack)</Description>
+                <NextObjectiveID>18</NextObjectiveID>
+		<Encounter>
+                    <Liklihood>100</Liklihood>
+                    <BattleIdentifier>VillageElder</BattleIdentifier>
+                    <WillRespawn>0</WillRespawn>
+                    <WanderingRadius>0</WanderingRadius>
+                    <UnitInstance>
+                        <UnitType>Unit_Scout_Amarian</UnitType>
+                        <UnitName>Village Elder</UnitName>
+                        <Level>5</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Unit_Quest_Archer</UnitType>
+                        <UnitGroupingType>UnitGroupingType_Party</UnitGroupingType>
+                        <Level>1</Level>
+                    </UnitInstance>
+                </Encounter>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>21</ObjectiveID>
+            <NextObjectiveID>22</NextObjectiveID>
+            <ChoiceText>"I failed my people. It was a dark moment. I needed my son to support me - but he wanted to seize power! How could he do that?"
+</ChoiceText>
+            <ChoiceMedallion>Q_ImpoverishedLord.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>I want you to resign and pledge your people to my nation.</Description>
+                <NextObjectiveID>23</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>He never attacked you, did he? You banished him to hide from your mistakes.</Description>
+                <NextObjectiveID>22</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>That's it, you die! (attack)</Description>
+                <NextObjectiveID>18</NextObjectiveID>
+		<Encounter>
+                    <Liklihood>100</Liklihood>
+                    <BattleIdentifier>VillageElder</BattleIdentifier>
+                    <WillRespawn>0</WillRespawn>
+                    <WanderingRadius>0</WanderingRadius>
+                    <UnitInstance>
+                        <UnitType>Unit_Scout_Amarian</UnitType>
+                        <UnitName>Village Elder</UnitName>
+                        <Level>5</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Unit_Quest_Archer</UnitType>
+                        <UnitGroupingType>UnitGroupingType_Party</UnitGroupingType>
+                        <Level>1</Level>
+                    </UnitInstance>
+                </Encounter>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>22</ObjectiveID>
+            <NextObjectiveID>15</NextObjectiveID>
+            <ChoiceText>"Many deaths are my fault. Perhaps it is best that I abdicate."
+</ChoiceText>
+            <ChoiceMedallion>Q_ImpoverishedLord.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>You are weak enough to admit it? Then I shall kill you like a dog! (attack)</Description>
+                <NextObjectiveID>18</NextObjectiveID>
+		<Encounter>
+                    <Liklihood>100</Liklihood>
+                    <BattleIdentifier>VillageElder</BattleIdentifier>
+                    <WillRespawn>0</WillRespawn>
+                    <WanderingRadius>0</WanderingRadius>
+                    <UnitInstance>
+                        <UnitType>Unit_Scout_Amarian</UnitType>
+                        <UnitName>Village Elder</UnitName>
+                        <Level>5</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Unit_Quest_Archer</UnitType>
+                        <UnitGroupingType>UnitGroupingType_Party</UnitGroupingType>
+                        <Level>1</Level>
+                    </UnitInstance>
+                </Encounter>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>Thank you for speaking the truth. Let your tribe join my nation.</Description>
+                <NextObjectiveID>25</NextObjectiveID>
+            <Treasure>
+                <GameModifier>
+                    <ModType>Resource</ModType>
+                    <Attribute>Population</Attribute>
+                    <Value>20</Value>
+                </GameModifier>
+            </Treasure>
+            <Treasure>
+		<GameModifier>
+            	    <ModType>Unit</ModType>
+            	    <Attribute>UnlockUnitAbility</Attribute>
+            	    <StrVal>Gentle_Lord</StrVal>
+        	</GameModifier>
+            </Treasure>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>I want nothing further to do with you or your people. Rot in obscurity. (abandon quest)</Description>
+                <NextObjectiveID>-1</NextObjectiveID>
+		<QuestFailure>1</QuestFailure>
+            </QuestChoiceDef>
+            <Treasure>
+		<GameModifier>
+            	    <ModType>Unit</ModType>
+            	    <Attribute>UnlockUnitAbility</Attribute>
+            	    <StrVal>Contemptuous</StrVal>
+        	</GameModifier>
+            </Treasure>
+        </QuestObjectiveDef>
+
+
+<QuestObjectiveDef>
+            <ObjectiveID>23</ObjectiveID>
+            <NextObjectiveID>25</NextObjectiveID>
+            <ChoiceText>"I resign. Take them as your own."
+</ChoiceText>
+            <ChoiceMedallion>Q_ImpoverishedLord.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_17.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>I shall take them as slaves.</Description>
+                <NextObjectiveID>25</NextObjectiveID>
+            <Treasure>
+                <GameModifier>
+                    <ModType>Resource</ModType>
+                    <Attribute>Population</Attribute>
+                    <Value>30</Value>
+                </GameModifier>
+            </Treasure>
+            <Treasure>
+		<GameModifier>
+            	    <ModType>Unit</ModType>
+            	    <Attribute>UnlockUnitAbility</Attribute>
+            	    <StrVal>Slave_Driver</StrVal>
+        	</GameModifier>
+            </Treasure>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>They are welcome if they choose to follow me.</Description>
+                <NextObjectiveID>25</NextObjectiveID>
+            <Treasure>
+                <GameModifier>
+                    <ModType>Resource</ModType>
+                    <Attribute>Population</Attribute>
+                    <Value>20</Value>
+                </GameModifier>
+            </Treasure>
+            <Treasure>
+		<GameModifier>
+            	    <ModType>Unit</ModType>
+            	    <Attribute>UnlockUnitAbility</Attribute>
+            	    <StrVal>Gentle_Lord</StrVal>
+        	</GameModifier>
+            </Treasure>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>You are so pathetic, I must kill you out of principle! (attack)</Description>
+                <NextObjectiveID>18</NextObjectiveID>
+		<Encounter>
+                    <Liklihood>100</Liklihood>
+                    <BattleIdentifier>VillageElder</BattleIdentifier>
+                    <WillRespawn>0</WillRespawn>
+                    <WanderingRadius>0</WanderingRadius>
+                    <UnitInstance>
+                        <UnitType>Unit_Scout_Amarian</UnitType>
+                        <UnitName>Village Elder</UnitName>
+                        <Level>5</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Unit_Quest_Archer</UnitType>
+                        <UnitGroupingType>UnitGroupingType_Party</UnitGroupingType>
+                        <Level>1</Level>
+                    </UnitInstance>
+                </Encounter>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+//END BRANDITS ARE WITH YOU BRANCH
+
+
+
+
+
+
+//this is where we go to if you followed the original quest path, killing bandits without digging deeper
+
+        <QuestObjectiveDef>
+            <ObjectiveID>24</ObjectiveID>
+            <NextObjectiveID>25</NextObjectiveID>
+            <Description>Return to the village and confront the elder</Description>
+            <QuestConditionDef>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Return to the village</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Success</Class>
+                <Type>UnitEntersQuestLocation</Type>
+            </QuestConditionDef>
+        </QuestObjectiveDef>
+
+
+        <QuestObjectiveDef>
+            <ObjectiveID>25</ObjectiveID>
+            <QuestEnd>1</QuestEnd>
+        </QuestObjectiveDef>
+
+    </QuestDef>

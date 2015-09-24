@@ -1,0 +1,394 @@
+<GoodieHutTypes>
+
+<!-- Void Call possible result -->
+
+<GoodieHutType InternalName="GH_Shadow_Rift_Dagorath">
+        <Name>Unstable Void Gate</Name>
+        <Description>These are temporary gates through which demons - friendly or hostile - will enter Elemental.</Description>
+        <Rarity>-1</Rarity>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <SpawnRating>0</SpawnRating>
+        <TileDesign>G_Quest_Shadow_Rift_01</TileDesign>
+        <DrawnIcon>TempleFrostLord1.png</DrawnIcon>
+        <OnSelectSFX>Click_Shadow_Temple</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>G_Quest_Shadow_Rift_01.png</All>
+        </Medallions>
+        <Encounter>
+            <Liklihood>100</Liklihood>
+            <WillRespawn>0</WillRespawn>
+            <SpawnOnClear>1</SpawnOnClear>
+            <WanderingRadius>20</WanderingRadius>
+            <UnitInstance>
+                <UnitType>MurderDemon</UnitType>
+		<UnitGroupingType>UnitGroupingType_Pair</UnitGroupingType>
+                <Level>5</Level>
+            </UnitInstance>
+        </Encounter>
+    </GoodieHutType>
+
+<!-- Void Call possible result -->
+
+<GoodieHutType InternalName="GH_Shadow_Rift_Dagorath2">
+        <Name>Unstable Void Gate</Name>
+        <Description>These are temporary gates through which demons - friendly or hostile - will enter Elemental.</Description>
+        <Rarity>-1</Rarity>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <SpawnRating>0</SpawnRating>
+        <TileDesign>G_Quest_Shadow_Rift_01</TileDesign>
+        <DrawnIcon>TempleFrostLord1.png</DrawnIcon>
+        <OnSelectSFX>Click_Shadow_Temple</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>G_Quest_Shadow_Rift_01.png</All>
+        </Medallions>
+        <Encounter>
+            <Liklihood>100</Liklihood>
+            <WillRespawn>0</WillRespawn>
+            <SpawnOnClear>1</SpawnOnClear>
+            <WanderingRadius>20</WanderingRadius>
+            <UnitInstance>
+                <UnitType>VoidDemon</UnitType>
+		<UnitGroupingType>UnitGroupingType_Group</UnitGroupingType>
+                <Level>3</Level>
+            </UnitInstance>
+            <UnitInstance>
+                <UnitType>VoidDemon</UnitType>
+		<UnitGroupingType>UnitGroupingType_Group</UnitGroupingType>
+                <Level>3</Level>
+            </UnitInstance>
+        </Encounter>
+    </GoodieHutType>
+
+<!-- Greater Void Call possible result -->
+
+<GoodieHutType InternalName="GH_Shadow_Rift_Dagorath3">
+        <Name>Greater Unstable Gate</Name>
+        <Description>These are temporary gates through which demons - friendly or hostile - will enter Elemental.</Description>
+        <Rarity>-1</Rarity>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <SpawnRating>0</SpawnRating>
+        <TileDesign>G_Quest_Shadow_Rift_01</TileDesign>
+        <DrawnIcon>TempleFrostLord1.png</DrawnIcon>
+        <OnSelectSFX>Click_Shadow_Temple</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>G_Quest_Shadow_Rift_01.png</All>
+        </Medallions>
+	<Encounter>
+            <Liklihood>100</Liklihood>
+            <SpawnOnClear>1</SpawnOnClear>
+            <WillRespawn>0</WillRespawn>
+            <TacticalMap>T_Cave_Generic_01</TacticalMap>
+            <WanderingRadius>0</WanderingRadius>
+            <UnitInstance>
+                <UnitType>DeathDemon</UnitType>
+                <Level>10</Level>
+            </UnitInstance>
+            <UnitInstance>
+                <UnitType>VoidDemon</UnitType>
+		<UnitGroupingType>UnitGroupingType_Group</UnitGroupingType>
+                <Level>4</Level>
+            </UnitInstance>
+            <UnitInstance>
+                <UnitType>VoidDemon</UnitType>
+		<UnitGroupingType>UnitGroupingType_Group</UnitGroupingType>
+                <Level>4</Level>
+            </UnitInstance>
+            <UnitInstance>
+                <UnitType>MurderDemon</UnitType>
+		<UnitGroupingType>UnitGroupingType_Party</UnitGroupingType>
+                <Level>5</Level>
+            </UnitInstance>
+        </Encounter>
+    </GoodieHutType>
+
+<!-- Greater Void Call possible result -->
+
+<GoodieHutType InternalName="GH_Shadow_Rift_Dagorath4">
+        <Name>Greater Unstable Gate</Name>
+        <Description>These are temporary gates through which demons - friendly or hostile - will enter Elemental.</Description>
+        <Rarity>-1</Rarity>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <SpawnRating>0</SpawnRating>
+        <TileDesign>G_Quest_Shadow_Rift_01</TileDesign>
+        <DrawnIcon>TempleFrostLord1.png</DrawnIcon>
+        <OnSelectSFX>Click_Shadow_Temple</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>G_Quest_Shadow_Rift_01.png</All>
+        </Medallions>
+	<Encounter>
+            <Liklihood>100</Liklihood>
+            <SpawnOnClear>1</SpawnOnClear>
+            <WillRespawn>0</WillRespawn>
+            <TacticalMap>T_Cave_Generic_01</TacticalMap>
+            <WanderingRadius>0</WanderingRadius>
+            <UnitInstance>
+                <UnitType>VoidDemon</UnitType>
+		<UnitGroupingType>UnitGroupingType_Group</UnitGroupingType>
+                <Level>4</Level>
+            </UnitInstance>
+            <UnitInstance>
+                <UnitType>VoidDemon</UnitType>
+		<UnitGroupingType>UnitGroupingType_Group</UnitGroupingType>
+                <Level>4</Level>
+            </UnitInstance>
+            <UnitInstance>
+                <UnitType>VoidDemon</UnitType>
+		<UnitGroupingType>UnitGroupingType_Group</UnitGroupingType>
+                <Level>4</Level>
+            </UnitInstance>
+            <UnitInstance>
+                <UnitType>VoidDemon</UnitType>
+		<UnitGroupingType>UnitGroupingType_Group</UnitGroupingType>
+                <Level>4</Level>
+            </UnitInstance>
+            <UnitInstance>
+                <UnitType>MurderDemon</UnitType>
+		<UnitGroupingType>UnitGroupingType_Party</UnitGroupingType>
+                <Level>5</Level>
+            </UnitInstance>
+            <UnitInstance>
+                <UnitType>MurderDemon</UnitType>
+		<UnitGroupingType>UnitGroupingType_Party</UnitGroupingType>
+                <Level>5</Level>
+            </UnitInstance>
+            <UnitInstance>
+                <UnitType>MurderDemon</UnitType>
+		<UnitGroupingType>UnitGroupingType_Party</UnitGroupingType>
+                <Level>5</Level>
+            </UnitInstance>
+        </Encounter>
+    </GoodieHutType>
+
+<!-- Void Call possible result -->
+
+<GoodieHutType InternalName="GH_Shadow_Rift_Dagorath5">
+        <Name>Unstable Void Gate</Name>
+        <Description>These are temporary gates through which demons - friendly or hostile - will enter Elemental.</Description>
+        <Rarity>-1</Rarity>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <SpawnRating>0</SpawnRating>
+        <TileDesign>G_Quest_Shadow_Rift_01</TileDesign>
+        <DrawnIcon>TempleFrostLord1.png</DrawnIcon>
+        <OnSelectSFX>Click_Shadow_Temple</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>G_Quest_Shadow_Rift_01.png</All>
+        </Medallions>
+        <Treasure>
+            <Title>Ally Found</Title>
+            <Desc>Demons have come forth from this gate, and vow to serve your righteous cause.</Desc>
+            <Liklihood>100</Liklihood>
+            <SFX>Goodie_NajaLair_01</SFX>
+            <GameModifier InternalName="Reward1">
+                <ModType>Unit</ModType>
+                <Attribute>UnitJoinArmy</Attribute>
+                <StrVal>VoidDemon_Group</StrVal>
+                <Value>3</Value>
+                <UnitClass>Unit</UnitClass>
+            </GameModifier>
+        </Treasure>
+    </GoodieHutType>
+
+<!-- Void Call possible result -->
+
+<GoodieHutType InternalName="GH_Shadow_Rift_Dagorath6">
+        <Name>Unstable Void Gate</Name>
+        <Description>These are temporary gates through which demons - friendly or hostile - will enter Elemental.</Description>
+        <Rarity>-1</Rarity>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <SpawnRating>0</SpawnRating>
+        <TileDesign>G_Quest_Shadow_Rift_01</TileDesign>
+        <DrawnIcon>TempleFrostLord1.png</DrawnIcon>
+        <OnSelectSFX>Click_Shadow_Temple</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>G_Quest_Shadow_Rift_01.png</All>
+        </Medallions>
+        <Treasure>
+            <Title>Ally Found</Title>
+            <Desc>Demons have come forth from this gate, and vow to serve your righteous cause.</Desc>
+            <Liklihood>100</Liklihood>
+            <SFX>Goodie_NajaLair_01</SFX>
+            <GameModifier InternalName="Reward1">
+                <ModType>Unit</ModType>
+                <Attribute>UnitJoinArmy</Attribute>
+                <StrVal>MurderDemon_Pair</StrVal>
+                <Value>4</Value>
+                <UnitClass>Unit</UnitClass>
+            </GameModifier>
+        </Treasure>
+    </GoodieHutType>
+
+<!-- Greater Void Call possible result -->
+
+<GoodieHutType InternalName="GH_Shadow_Rift_Dagorath7">
+        <Name>Greater Unstable Gate</Name>
+        <Description>These are temporary gates through which demons - friendly or hostile - will enter Elemental.</Description>
+        <Rarity>-1</Rarity>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <SpawnRating>0</SpawnRating>
+        <TileDesign>G_Quest_Shadow_Rift_01</TileDesign>
+        <DrawnIcon>TempleFrostLord1.png</DrawnIcon>
+        <OnSelectSFX>Click_Shadow_Temple</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>G_Quest_Shadow_Rift_01.png</All>
+        </Medallions>
+        <Treasure>
+            <Title>Ally Found</Title>
+            <Desc>Demons have come forth from this gate, and vow to serve your righteous cause.</Desc>
+            <Liklihood>100</Liklihood>
+            <SFX>Goodie_NajaLair_01</SFX>
+            <GameModifier InternalName="Reward1">
+                <ModType>Unit</ModType>
+                <Attribute>UnitJoinArmy</Attribute>
+                <StrVal>DeathDemon</StrVal>
+                <Value>7</Value>
+                <UnitClass>Unit</UnitClass>
+            </GameModifier>
+        </Treasure>
+    </GoodieHutType>
+
+<!-- Greater Void Call possible result -->
+
+<GoodieHutType InternalName="GH_Shadow_Rift_Dagorath8">
+        <Name>Greater Unstable Gate</Name>
+        <Description>These are temporary gates through which demons - friendly or hostile - will enter Elemental.</Description>
+        <Rarity>-1</Rarity>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <SpawnRating>0</SpawnRating>
+        <TileDesign>G_Quest_Shadow_Rift_01</TileDesign>
+        <DrawnIcon>TempleFrostLord1.png</DrawnIcon>
+        <OnSelectSFX>Click_Shadow_Temple</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>G_Quest_Shadow_Rift_01.png</All>
+        </Medallions>
+        <Treasure>
+            <Title>Ally Found</Title>
+            <Desc>Demons have come forth from this gate, and vow to serve your righteous cause.</Desc>
+            <Liklihood>100</Liklihood>
+            <SFX>Goodie_NajaLair_01</SFX>
+            <GameModifier InternalName="Reward1">
+                <ModType>Unit</ModType>
+                <Attribute>UnitJoinArmy</Attribute>
+                <StrVal>MurderDemon_Party</StrVal>
+                <Value>5</Value>
+                <UnitClass>Unit</UnitClass>
+            </GameModifier>
+            <GameModifier InternalName="Reward1">
+                <ModType>Unit</ModType>
+                <Attribute>UnitJoinArmy</Attribute>
+                <StrVal>MurderDemon_Party</StrVal>
+                <Value>5</Value>
+                <UnitClass>Unit</UnitClass>
+            </GameModifier>
+        </Treasure>
+    </GoodieHutType>
+
+<!-- Greater Void Call possible result -->
+
+<GoodieHutType InternalName="GH_Shadow_Rift_Dagorath9">
+        <Name>Greater Unstable Gate</Name>
+        <Description>These are temporary gates through which demons - friendly or hostile - will enter Elemental.</Description>
+        <Rarity>-1</Rarity>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <SpawnRating>0</SpawnRating>
+        <TileDesign>G_Quest_Shadow_Rift_01</TileDesign>
+        <DrawnIcon>TempleFrostLord1.png</DrawnIcon>
+        <OnSelectSFX>Click_Shadow_Temple</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>G_Quest_Shadow_Rift_01.png</All>
+        </Medallions>
+	<Encounter>
+            <Liklihood>100</Liklihood>
+            <SpawnOnClear>1</SpawnOnClear>
+            <WillRespawn>0</WillRespawn>
+            <TacticalMap>T_Cave_Generic_01</TacticalMap>
+            <WanderingRadius>0</WanderingRadius>
+            <UnitInstance>
+                <UnitType>DeathDemon_Alt</UnitType>
+                <Level>10</Level>
+            </UnitInstance>
+            <UnitInstance>
+                <UnitType>VoidDemon</UnitType>
+		<UnitGroupingType>UnitGroupingType_Group</UnitGroupingType>
+                <Level>4</Level>
+            </UnitInstance>
+            <UnitInstance>
+                <UnitType>VoidDemon</UnitType>
+		<UnitGroupingType>UnitGroupingType_Group</UnitGroupingType>
+                <Level>4</Level>
+            </UnitInstance>
+            <UnitInstance>
+                <UnitType>MurderDemon</UnitType>
+		<UnitGroupingType>UnitGroupingType_Party</UnitGroupingType>
+                <Level>5</Level>
+            </UnitInstance>
+        </Encounter>
+    </GoodieHutType>
+
+<!-- Greater Void Call possible result -->
+
+<GoodieHutType InternalName="GH_Shadow_Rift_Dagorath10">
+        <Name>Greater Unstable Gate</Name>
+        <Description>These are temporary gates through which demons - friendly or hostile - will enter Elemental.</Description>
+        <Rarity>-1</Rarity>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <SpawnRating>0</SpawnRating>
+        <TileDesign>G_Quest_Shadow_Rift_01</TileDesign>
+        <DrawnIcon>TempleFrostLord1.png</DrawnIcon>
+        <OnSelectSFX>Click_Shadow_Temple</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>G_Quest_Shadow_Rift_01.png</All>
+        </Medallions>
+        <Treasure>
+            <Title>Ally Found</Title>
+            <Desc>Demons have come forth from this gate, and vow to serve your righteous cause.</Desc>
+            <Liklihood>100</Liklihood>
+            <SFX>Goodie_NajaLair_01</SFX>
+            <GameModifier InternalName="Reward1">
+                <ModType>Unit</ModType>
+                <Attribute>UnitJoinArmy</Attribute>
+                <StrVal>VoidDemon_Group</StrVal>
+                <Value>3</Value>
+                <UnitClass>Unit</UnitClass>
+            </GameModifier>
+            <GameModifier InternalName="Reward1">
+                <ModType>Unit</ModType>
+                <Attribute>UnitJoinArmy</Attribute>
+                <StrVal>VoidDemon_Group</StrVal>
+                <Value>3</Value>
+                <UnitClass>Unit</UnitClass>
+            </GameModifier>
+            <GameModifier InternalName="Reward1">
+                <ModType>Unit</ModType>
+                <Attribute>UnitJoinArmy</Attribute>
+                <StrVal>VoidDemon_Group</StrVal>
+                <Value>3</Value>
+                <UnitClass>Unit</UnitClass>
+            </GameModifier>
+            <GameModifier InternalName="Reward1">
+                <ModType>Unit</ModType>
+                <Attribute>UnitJoinArmy</Attribute>
+                <StrVal>VoidDemon_Group</StrVal>
+                <Value>3</Value>
+                <UnitClass>Unit</UnitClass>
+            </GameModifier>
+            <GameModifier InternalName="Reward1">
+                <ModType>Unit</ModType>
+                <Attribute>UnitJoinArmy</Attribute>
+                <StrVal>VoidDemon_Group</StrVal>
+                <Value>3</Value>
+                <UnitClass>Unit</UnitClass>
+            </GameModifier>
+        </Treasure>
+    </GoodieHutType>
+
+</GoodieHutTypes>

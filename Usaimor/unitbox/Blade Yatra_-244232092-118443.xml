@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<UnitTypes>
+	<UnitType InternalName="Blade Yatra_-244232092-118443">
+		<DisplayName>Blade Yatra</DisplayName>
+		<Quote>'My blade hungers for the blood of man.'</Quote>
+		<Backstory>"Feel no pain. Know no fear. Need no rest. Fight till the foe falls. Then seek the next battle." These are the watchwords of the yatra nata - the Juggernauts - the elite among all Trog warriors, soldiers segregated from their brethren on their eleventh name day for special training. History says their first battle came a dozen years after the Quendar conquered Teroth-Nu, when eight of them overthrew a city full of Magnar II's troops, and retook Kir-Tion's throne.</Backstory>
+		<HasEssence>false</HasEssence>
+		<ModelPath>K_Juggernaut_Mesh_01.hkb</ModelPath>
+		<SkeletonPath>K_Juggernaut_Skeleton_01.hkb</SkeletonPath>
+		<EyeTexture>gfx/eyes/male_brown_eye.png</EyeTexture>
+		<AnimationPack>JuggernautAnimationPack</AnimationPack>
+		<ShowAsSingleUnit>false</ShowAsSingleUnit>
+		<CutSceneDataPack>JuggernautUnitCutscenePack</CutSceneDataPack>
+		<ModelScale>0.7879</ModelScale>
+		<TacticalModelScale>1.5000</TacticalModelScale>
+		<EquipmentScale>2.5000</EquipmentScale>
+		<ClothMapScale>1.2000</ClothMapScale>
+		<BattleAnimationBehavior>Stationary</BattleAnimationBehavior>
+		<MovementType>land</MovementType>
+		<BobbingFrequency>0.0000</BobbingFrequency>
+		<ClothPoseIndex>0</ClothPoseIndex>
+		<InfoCardBackground>BG_Swamp</InfoCardBackground>
+		<InfoCardBackgroundFlipped>0</InfoCardBackgroundFlipped>
+		<CanBeDesigned>1</CanBeDesigned>
+		<UserDesigned>true</UserDesigned>
+		<IsModDependent>false</IsModDependent>
+		<Medallions InternalName=""/>
+		<MovingSFX>TEMP_KnightMarching1</MovingSFX>
+		<LevelMilestone InternalName="">
+			<Level>1</Level>
+			<UnitStat_BG_IsEmpire>1.0000</UnitStat_BG_IsEmpire>
+			<UnitStat_BG_IsMale>1.0000</UnitStat_BG_IsMale>
+			<UnitStat_BG_IsMonster>1.0000</UnitStat_BG_IsMonster>
+			<UnitStat_BG_IsRace_Trogs>1.0000</UnitStat_BG_IsRace_Trogs>
+			<UnitStat_BG_IsTwisted>1.0000</UnitStat_BG_IsTwisted>
+			<UnitStat_ChanceToAvoidProne>100.0000</UnitStat_ChanceToAvoidProne>
+			<UnitStat_HitPoints>50.0000</UnitStat_HitPoints>
+			<UnitStat_WeightCapacity>200.0000</UnitStat_WeightCapacity>
+		</LevelMilestone>
+		<Equipment>Juggernaut_Hair</Equipment>
+		<Equipment>Juggernaut_Gear</Equipment>
+		<Equipment>PoisonVial</Equipment>
+		<Equipment>Rations</Equipment>
+		<Equipment>FirstAidKit</Equipment>
+		<Equipment>BeltOfReinforcing</Equipment>
+		<EquipmentUpgradeDef>
+			<SelectionCriterion>MaximizeBest</SelectionCriterion>
+			<ComparisonAttribute>UnitStat_Attack_Pierce</ComparisonAttribute>
+			<WeaponUpgradeType>Blade</WeaponUpgradeType>
+			<EquipmentSlot>Weapon</EquipmentSlot>
+			<ForUpgradeActionOnly>0</ForUpgradeActionOnly>
+		</EquipmentUpgradeDef>
+		<EquipmentUpgradeDef>
+			<SelectionCriterion>MaximizeSum</SelectionCriterion>
+			<ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+			<EquipmentSlot>Defense</EquipmentSlot>
+			<ForUpgradeActionOnly>0</ForUpgradeActionOnly>
+		</EquipmentUpgradeDef>
+		<Color_Hair>190,190,190,255</Color_Hair>
+		<Color_Skin>125,120,120,255</Color_Skin>
+		<Color_Clothing1>166,28,28,255</Color_Clothing1>
+		<Color_Clothing2>107,15,15,255</Color_Clothing2>
+		<Color_Metal>128,128,128,255</Color_Metal>
+		<Color_Primary>74,74,74,255</Color_Primary>
+		<Color_Secondary>92,82,64,255</Color_Secondary>
+		<Color_Roof>50,50,50,255</Color_Roof>
+		<Color_TerrainBlend>255,255,255,255</Color_TerrainBlend>
+		<Color_TerrainOnly>255,255,255,255</Color_TerrainOnly>
+		<Color_Trans>255,255,255,255</Color_Trans>
+		<Color_ScrollTransMask>255,255,255,255</Color_ScrollTransMask>
+		<Color_Eyes>255,255,255,255</Color_Eyes>
+		<Color_Crest>255,255,255,255</Color_Crest>
+		<Texture_Skin>M_Juggernaut_Texture_01.dds</Texture_Skin>
+		<CreatorFactionName>Faction_Usaimor</CreatorFactionName>
+		<Gender>Male</Gender>
+		<UnitModelType>JuggernautMale</UnitModelType>
+		<SelectedAbilityBonusOption>Juggernaut</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>BrutalNature</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Maul</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Frenzy</SelectedAbilityBonusOption>
+		<IsSovereign>0</IsSovereign>
+		<HasWages>1</HasWages>
+		<NPCFreeRecruit>0</NPCFreeRecruit>
+		<RaceType>Race_Type_Trogs</RaceType>
+		<IgnoreItemTrainingCosts>false</IgnoreItemTrainingCosts>
+		<AdditionalTrainingTurns>250.0000</AdditionalTrainingTurns>
+		<WageOverride>0.0000</WageOverride>
+		<UnitTypeVersion>1</UnitTypeVersion>
+		<TileRadius>0</TileRadius>
+		<GetPerksOnLevelUp>0</GetPerksOnLevelUp>
+		<DividesBattleExp>1</DividesBattleExp>
+		<CanSqueeze>0</CanSqueeze>
+		<OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+		<AllowGrouping>false</AllowGrouping>
+		<SoundPack>SoundPack_Juggernaut</SoundPack>
+		<Prereq InternalName="Prereq 291">
+			<Type>Race</Type>
+			<Target>player</Target>
+			<Attribute>Race_Type_Trogs</Attribute>
+			<Value>0.0000</Value>
+		</Prereq>
+		<Prereq InternalName="Prereq 292">
+			<Type>Tech</Type>
+			<Target>player</Target>
+			<Attribute>Juggernauts</Attribute>
+			<Value>0.0000</Value>
+		</Prereq>
+		<IsChampion>0</IsChampion>
+	</UnitType>
+</UnitTypes>

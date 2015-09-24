@@ -1,0 +1,2448 @@
+<?xml version="1.0"?>
+<Container>
+  <SpellDef InternalName="CallSlag">
+    <DisplayName>Call Slag</DisplayName>
+    <Description>Summons a Slag or the smaller River Slag.</Description>
+    <FormattedDescription>Summons a level %d Slag or the smaller River Slag.</FormattedDescription>
+    <Image>T_CallSlag_Painting.png</Image>
+    <IconFG>T_CallSlag_Icon.png</IconFG>
+    <CanStack>0</CanStack>
+    <CastTime>2</CastTime>
+    <SpellBookSortCategory>Summon</SpellBookSortCategory>
+    <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+    <SpellType>Tactical</SpellType>
+    <SpellClass>Offensive</SpellClass>
+    <SpellSubClass>Summon</SpellSubClass>
+    <SpellTargetType>EmptyTile</SpellTargetType>
+    <AppliesRandomModifier>1</AppliesRandomModifier>
+    <IsSpecialAbility>1</IsSpecialAbility>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <StrVal>Slag</StrVal>
+      <UnitClass>Slag_BG_Summon</UnitClass>
+      <IsForFormattedDescription>1</IsForFormattedDescription>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitStat_BonusSummonLevel] + 10]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+      <Calculate InternalName="ValueForFormattedDescription">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <StrVal>River Slag</StrVal>
+      <UnitClass>RiverSlag_BG_Summon</UnitClass>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitStat_BonusSummonLevel] + 10]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <AIData AIPersonality="AI_General">
+      <AIPriority>70</AIPriority>
+    </AIData>
+    <HitSoundFX>Spell_CallSlag_01</HitSoundFX>
+    <SpellDefEffect>
+      <EffectName>S_SummonEarthElemental_Particle</EffectName>
+      <LocalPosition>0,0,0</LocalPosition>
+      <EffectScale>0.5</EffectScale>
+      <EffectDelay>0</EffectDelay>
+      <SnapToTerrain>1</SnapToTerrain>
+    </SpellDefEffect>
+  </SpellDef>
+  <SpellDef InternalName="CallUteran">
+    <DisplayName>Call Uteran</DisplayName>
+    <Description>Summons a Cave Bear at the same level as the caster.</Description>
+    <FormattedDescription>Summons a level %d Cave Bear.</FormattedDescription>
+    <Image>TuskedBear_Medallion.png</Image>
+    <IconFG>T_CallUteran_Icon.png</IconFG>
+    <CanStack>0</CanStack>
+    <CastTime>1</CastTime>
+    <SpellBookSortCategory>Summon</SpellBookSortCategory>
+    <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+    <SpellType>Tactical</SpellType>
+    <SpellClass>Offensive</SpellClass>
+    <SpellSubClass>Summon</SpellSubClass>
+    <SpellTargetType>EmptyTile</SpellTargetType>
+    <HideInHiergamenon>1</HideInHiergamenon>
+    <IsSpecialAbility>1</IsSpecialAbility>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <StrVal>Uteran</StrVal>
+      <UnitClass>CaveBear_BG_Summon</UnitClass>
+      <IsForFormattedDescription>1</IsForFormattedDescription>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitStat_BonusSummonLevel] + [Unit_GetLevel]]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+      <Calculate InternalName="ValueForFormattedDescription">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <AIData AIPersonality="AI_General">
+      <AIPriority>70</AIPriority>
+    </AIData>
+    <HitSoundFX>Spell_CallUteran_01</HitSoundFX>
+    <SpellDefEffect>
+      <EffectName>S_SummonEarthElemental_Particle</EffectName>
+      <LocalPosition>0,0,0</LocalPosition>
+      <EffectScale>0.5</EffectScale>
+      <EffectDelay>0</EffectDelay>
+      <SnapToTerrain>1</SnapToTerrain>
+    </SpellDefEffect>
+  </SpellDef>
+  <SpellDef InternalName="DemonicAlly">
+    <DisplayName>Demonic Ally</DisplayName>
+    <Description>Summons an Assassin Demon at the same level as the caster.</Description>
+    <FormattedDescription>Summons a level %d Assassin Demon.</FormattedDescription>
+    <Image>T_DemonicAlly_Painting.png</Image>
+    <IconFG>T_DemonicAlly_Icon.png</IconFG>
+    <CanStack>0</CanStack>
+    <Cooldown>5</Cooldown>
+    <SpellBookSortCategory>Summon</SpellBookSortCategory>
+    <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+    <SpellType>Tactical</SpellType>
+    <SpellClass>Offensive</SpellClass>
+    <SpellSubClass>Summon</SpellSubClass>
+    <SpellTargetType>EmptyTile</SpellTargetType>
+    <HideInHiergamenon>1</HideInHiergamenon>
+    <IsSpecialAbility>1</IsSpecialAbility>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <StrVal>Assassin Demon</StrVal>
+      <UnitClass>AssassinDemon_BG_Summon</UnitClass>
+      <IsForFormattedDescription>1</IsForFormattedDescription>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitStat_BonusSummonLevel] + [Unit_GetLevel]]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+      <Calculate InternalName="ValueForFormattedDescription">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <AIData AIPersonality="AI_General">
+      <AIPriority>70</AIPriority>
+    </AIData>
+    <HitSoundFX>Spell_SummonDemonicAlly_01</HitSoundFX>
+    <SpellDefEffect>
+      <EffectName>Y_SummonDeathDemon_Particle</EffectName>
+      <LocalPosition>0,0,0</LocalPosition>
+      <EffectScale>0.5</EffectScale>
+      <EffectDelay>0</EffectDelay>
+      <SnapToTerrain>1</SnapToTerrain>
+    </SpellDefEffect>
+  </SpellDef>
+  <SpellDef InternalName="InfernalCovenant">
+    <DisplayName>Infernal Covenant</DisplayName>
+    <Description>Sacrifice a champion to transform him into a Death Demon for that battle.  The higher level the champion, the more powerful the death demon will be.</Description>
+    <Image>T_InfernalCovenant_Painting.png</Image>
+    <IconFG>T_InfernalCovenant_Icon.png</IconFG>
+    <CastTime>1</CastTime>
+    <SpellBookSortCategory>Summon</SpellBookSortCategory>
+    <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+    <SpellType>Tactical</SpellType>
+    <SpellClass>Offensive</SpellClass>
+    <SpellSubClass>Other</SpellSubClass>
+    <SpellTargetType>FriendlyChampion</SpellTargetType>
+    <CasterMustBeSov>1</CasterMustBeSov>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>PermanentDeath</Attribute>
+    </GameModifier>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <StrVal>Death Demon</StrVal>
+      <UnitClass>DeathDemon_BG_Summon</UnitClass>
+      <ApplyIfSpellTargetKilled>1</ApplyIfSpellTargetKilled>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc" ValueOwner="TargetUnit">
+        <Expression><![CDATA[[Unit_GetLevel] + 7]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>CurHealth</Attribute>
+      <Calculate InternalName="Calc" ValueOwner="TargetUnit">
+        <Expression><![CDATA[[Unit_GetHPCurrent] * -1]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <AIData AIPersonality="AI_General">
+      <AIPriority>5</AIPriority>
+    </AIData>
+    <HitSoundFX>Spell_Teleport_01</HitSoundFX>
+    <SpellDefEffect>
+      <EffectName>T_InfernalCovenant_Particle</EffectName>
+      <LocalPosition>0,0,0</LocalPosition>
+      <EffectScale>1</EffectScale>
+      <EffectDelay>0</EffectDelay>
+      <SnapToTerrain>1</SnapToTerrain>
+    </SpellDefEffect>
+  </SpellDef>
+  <SpellDef InternalName="InnerFire">
+    <DisplayName>Inner Fire</DisplayName>
+    <Description>A fiery dart strikes for double the caster's level in fire damage.  If the unit is killed a Cindercorpse is raised in their place.</Description>
+    <FormattedDescription>A fiery dart strikes for %d fire damage.</FormattedDescription>
+    <IconFG>T_Soulburning_Icon.png</IconFG>
+    <SpellBookSortCategory>Unit</SpellBookSortCategory>
+    <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+    <SpellType>Tactical</SpellType>
+    <SpellClass>Offensive</SpellClass>
+    <SpellSubClass>Damage</SpellSubClass>
+    <SpellTargetType>EnemyUnit</SpellTargetType>
+    <HideInHiergamenon>1</HideInHiergamenon>
+    <IsResistable>1</IsResistable>
+    <IsSpecialAbility>1</IsSpecialAbility>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>DefendableDamage</Attribute>
+      <AttackStat>UnitStat_Attack_Fire</AttackStat>
+      <IsForFormattedDescription>1</IsForFormattedDescription>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[Unit_GetLevel] * 2]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Calc2" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[Calc] * [UnitStat_SpellDamage_Fire]]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc2]]]></Expression>
+      </Calculate>
+      <Calculate InternalName="ValueForFormattedDescription">
+        <Expression><![CDATA[[Calc2]]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>DefendableDamage</Attribute>
+      <AttackStat>UnitStat_Attack_Fire</AttackStat>
+      <IsForSpellResist>1</IsForSpellResist>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[Unit_GetLevel]]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Calc2" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[Calc] * [UnitStat_SpellDamage_Fire]]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc2]]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <UnitClass>Skeleton_Burning_BG_Summon</UnitClass>
+      <ApplyIfSpellTargetKilled>1</ApplyIfSpellTargetKilled>
+      <Duration>-1</Duration>
+    </GameModifier>
+    <AIData AIPersonality="AI_General">
+      <AIPriority>40</AIPriority>
+      <ValueCalcWrapper>
+        <ValueType>IsTargetWorthy</ValueType>
+        <Calculate InternalName="Calc" ValueOwner="TargetUnit">
+          <Expression><![CDATA[[UnitStat_ResistFire]]]></Expression>
+        </Calculate>
+        <Calculate InternalName="Value">
+          <Expression><![CDATA[[Calc] < 75]]></Expression>
+        </Calculate>
+      </ValueCalcWrapper>
+    </AIData>
+    <HitSoundFX>Spell_FlameDart_01</HitSoundFX>
+    <SpellCastSoundFX>Spell_FlameDartTravel_01</SpellCastSoundFX>
+    <SpellCastEffectName>T_FlameDart_Particle</SpellCastEffectName>
+    <SpellCastEffectScale>0.30</SpellCastEffectScale>
+    <SpellCastProjectile>1</SpellCastProjectile>
+    <SpellCastProjectileSpeed>800</SpellCastProjectileSpeed>
+    <SpellDefEffect>
+      <EffectName>E_FlameDartImpact_Particle</EffectName>
+      <LocalPosition>0,0,0</LocalPosition>
+      <EffectScale>1</EffectScale>
+      <EffectDelay>0</EffectDelay>
+      <SnapToTerrain>1</SnapToTerrain>
+    </SpellDefEffect>
+  </SpellDef>
+  <SpellDef InternalName="NaturesCall">
+    <DisplayName>Nature's Call</DisplayName>
+    <Description>Summons a pack of wolves, bear, naja or panther to aid you in battle.</Description>
+    <Image>S_CharmMonster_Painting.png</Image>
+    <IconFG>S_CharmMonster_Icon.png</IconFG>
+    <AutoUnlock>1</AutoUnlock>
+    <CanStack>0</CanStack>
+    <SpellBookSortCategory>Summon</SpellBookSortCategory>
+    <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+    <SpellType>Tactical</SpellType>
+    <SpellClass>Offensive</SpellClass>
+    <SpellSubClass>Summon</SpellSubClass>
+    <SpellTargetType>EmptyTile</SpellTargetType>
+    <AppliesRandomModifier>1</AppliesRandomModifier>
+    <Prereq>
+      <Type>AbilityBonusOption</Type>
+      <Attribute>Earth2</Attribute>
+    </Prereq>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <StrVal>Wolf Pack</StrVal>
+      <UnitClass>Wolf_Group_BG_Summon</UnitClass>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitStat_BonusSummonLevel] + 1]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <StrVal>Bear</StrVal>
+      <UnitClass>Bear_BG_Summon</UnitClass>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitStat_BonusSummonLevel] + 3]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <StrVal>Stalker</StrVal>
+      <UnitClass>Stalker_BG_Summon</UnitClass>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitStat_BonusSummonLevel] + 2]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <StrVal>Naja</StrVal>
+      <UnitClass>Naja_BG_Summon</UnitClass>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitStat_BonusSummonLevel] + 3]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <AIData AIPersonality="AI_General">
+      <AIPriority>70</AIPriority>
+    </AIData>
+    <HitSoundFX>Spell_NaturesCall_01</HitSoundFX>
+    <SpellDefEffect>
+      <EffectName>S_SummonEarthElemental_Particle</EffectName>
+      <LocalPosition>0,0,0</LocalPosition>
+      <EffectScale>0.5</EffectScale>
+      <EffectDelay>0</EffectDelay>
+      <SnapToTerrain>1</SnapToTerrain>
+    </SpellDefEffect>
+  </SpellDef>
+  <SpellDef InternalName="ParidensReturn">
+    <DisplayName>Pariden's Return</DisplayName>
+    <Description>Summons a Titan from a distant world to fight for five turns.</Description>
+    <Image>T_ParidensReturn_Painting.png</Image>
+    <IconFG>T_ParidensReturn_Icon.png</IconFG>
+    <CastTime>1</CastTime>
+    <SpellBookSortCategory>Summon</SpellBookSortCategory>
+    <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+    <SpellType>Tactical</SpellType>
+    <SpellClass>Offensive</SpellClass>
+    <SpellSubClass>Summon</SpellSubClass>
+    <SpellTargetType>EmptyTile</SpellTargetType>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <StrVal>Titan</StrVal>
+      <UnitClass>Titan_BG_Summon</UnitClass>
+      <Duration>5</Duration>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitStat_BonusSummonLevel] + 15]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <AIData AIPersonality="AI_General">
+      <AIPriority>100</AIPriority>
+    </AIData>
+    <HitSoundFX>Spell_ParidensReturn_01</HitSoundFX>
+    <SpellDefEffect>
+      <EffectName>T_ParidensReturn_Particle</EffectName>
+      <LocalPosition>0,0,0</LocalPosition>
+      <EffectScale>0.4</EffectScale>
+      <EffectDelay>0</EffectDelay>
+      <SnapToTerrain>1</SnapToTerrain>
+    </SpellDefEffect>
+  </SpellDef>
+  <SpellDef InternalName="RaiseSkeletalHorde">
+    <DisplayName>Raise Skeletal Horde</DisplayName>
+    <Description>Raise a skeletal horde from the ruins of Elemental.</Description>
+    <FormattedDescription>Raise a horde of level %d skeletons from the ruins of Elemental.</FormattedDescription>
+    <Image>Res_HowlingChasm.png</Image>
+    <IconFG>T_RaiseSkeletalHorde_Icon.png</IconFG>
+    <AutoUnlock>1</AutoUnlock>
+    <CanStack>0</CanStack>
+    <SpellBookSortCategory>Summon</SpellBookSortCategory>
+    <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+    <SpellType>Tactical</SpellType>
+    <SpellClass>Offensive</SpellClass>
+    <SpellSubClass>Summon</SpellSubClass>
+    <SpellTargetType>EmptyTile</SpellTargetType>
+    <AppliesRandomModifier>1</AppliesRandomModifier>
+    <Radius>1</Radius>
+    <Prereq>
+      <Type>AbilityBonusOption</Type>
+      <Attribute>Necromancy2</Attribute>
+    </Prereq>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <StrVal>Skeleton</StrVal>
+      <UnitClass>SkeletonA_BG_Summon</UnitClass>
+      <IsForFormattedDescription>1</IsForFormattedDescription>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitStat_BonusSummonLevel] + 1]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+      <Calculate InternalName="ValueForFormattedDescription">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <StrVal>Skeleton</StrVal>
+      <UnitClass>SkeletonB_BG_Summon</UnitClass>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitStat_BonusSummonLevel] + 1]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <StrVal>Skeleton</StrVal>
+      <UnitClass>SkeletonC_BG_Summon</UnitClass>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitStat_BonusSummonLevel] + 1]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <AIData AIPersonality="AI_General">
+      <AIPriority>70</AIPriority>
+    </AIData>
+    <HitSoundFX>Spell_SummonEarthElemental_01</HitSoundFX>
+    <WorldLightOverrideTime>2</WorldLightOverrideTime>
+    <WorldLightOverrideAmbiant>30,30,30</WorldLightOverrideAmbiant>
+    <WorldLightOverrideDiffuse>30,30,30</WorldLightOverrideDiffuse>
+    <WorldLightOverrideRim0>212,0,192</WorldLightOverrideRim0>
+    <WorldLightOverrideRim1>0,132,234</WorldLightOverrideRim1>
+  </SpellDef>
+  <SpellDef InternalName="RaiseSkeleton">
+    <DisplayName>Raise Skeleton</DisplayName>
+    <Description>Raise a Skeleton from the ruins of Elemental.  Though weak, a skeleton costs no mana to create.</Description>
+    <FormattedDescription>Raise a level %d Skeleton from the ruins of Elemental.</FormattedDescription>
+    <Image>Res_HowlingChasm.png</Image>
+    <IconFG>T_RaiseSkeleton_Icon.png</IconFG>
+    <AutoUnlock>1</AutoUnlock>
+    <CanStack>0</CanStack>
+    <SpellBookSortCategory>Summon</SpellBookSortCategory>
+    <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+    <SpellType>Tactical</SpellType>
+    <SpellClass>Offensive</SpellClass>
+    <SpellSubClass>Summon</SpellSubClass>
+    <SpellTargetType>EmptyTile</SpellTargetType>
+    <AppliesRandomModifier>1</AppliesRandomModifier>
+    <Prereq>
+      <Type>AbilityBonusOption</Type>
+      <Attribute>Necromancy1</Attribute>
+    </Prereq>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <StrVal>Skeleton</StrVal>
+      <UnitClass>SkeletonA_BG_Summon</UnitClass>
+      <IsForFormattedDescription>1</IsForFormattedDescription>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitStat_BonusSummonLevel] + 1]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+      <Calculate InternalName="ValueForFormattedDescription">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <StrVal>Skeleton</StrVal>
+      <UnitClass>SkeletonB_BG_Summon</UnitClass>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitStat_BonusSummonLevel] + 1]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <StrVal>Skeleton</StrVal>
+      <UnitClass>SkeletonC_BG_Summon</UnitClass>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitStat_BonusSummonLevel] + 1]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <AIData AIPersonality="AI_General">
+      <AIPriority>70</AIPriority>
+    </AIData>
+    <HitSoundFX>Spell_SummonEarthElemental_01</HitSoundFX>
+    <WorldLightOverrideTime>2</WorldLightOverrideTime>
+    <WorldLightOverrideAmbiant>30,30,30</WorldLightOverrideAmbiant>
+    <WorldLightOverrideDiffuse>30,30,30</WorldLightOverrideDiffuse>
+    <WorldLightOverrideRim0>212,0,192</WorldLightOverrideRim0>
+    <WorldLightOverrideRim1>0,132,234</WorldLightOverrideRim1>
+  </SpellDef>
+  <SpellDef InternalName="SummonAbomination">
+    <DisplayName>Summon Abomination</DisplayName>
+    <Description>Summons a level 5 Abomination</Description>
+    <FormattedDescription>Summons a level %d Abomination.</FormattedDescription>
+    <Image>Res_HowlingChasm.png</Image>
+    <IconFG>S_SummonAbomination_Icon.png</IconFG>
+    <CanStack>0</CanStack>
+    <SpellBookSortCategory>Summon</SpellBookSortCategory>
+    <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+    <SpellType>Strategic</SpellType>
+    <SpellClass>Defensive</SpellClass>
+    <SpellSubClass>Summon</SpellSubClass>
+    <SpellTargetType>Self</SpellTargetType>
+    <Range>0</Range>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <StrVal>Abomination</StrVal>
+      <UnitClass>Juggernaut_Escaped_BG_Summon</UnitClass>
+      <IsForFormattedDescription>1</IsForFormattedDescription>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitStat_BonusSummonLevel] + 5]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+      <Calculate InternalName="ValueForFormattedDescription">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <AIData AIPersonality="AI_General">
+      <AIPriority>70</AIPriority>
+    </AIData>
+    <HitSoundFX>Spell_SummonEarthElemental_01</HitSoundFX>
+    <SpellDefEffect>
+      <EffectName>S_SummonEarthElemental_Particle</EffectName>
+      <LocalPosition>0,0,0</LocalPosition>
+      <EffectScale>0.5</EffectScale>
+      <EffectDelay>0</EffectDelay>
+      <SnapToTerrain>1</SnapToTerrain>
+    </SpellDefEffect>
+  </SpellDef>
+  <SpellDef InternalName="SummonAirElemental">
+    <DisplayName>Summon Air Elemental</DisplayName>
+     <Description>Summons a level 5 (+1 per air shard) Air Elemental. When cast in Tactical all surrounding enemies are knocked prone.</Description>
+    <Image>M_AirElemental_Card.png</Image>
+    <IconFG>S_SummonAirElemental_Icon.png</IconFG>
+    <AutoUnlock>1</AutoUnlock>
+    <CanStack>0</CanStack>
+    <SpellBookSortCategory>Summon</SpellBookSortCategory>
+    <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+    <SpellType>Strategic</SpellType>
+    <SpellClass>Defensive</SpellClass>
+    <SpellSubClass>Summon</SpellSubClass>
+    <SpellTargetType>Self</SpellTargetType>
+    <Prereq>
+      <Type>AbilityBonusOption</Type>
+      <Attribute>SummonAirElemental</Attribute>
+    </Prereq>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <StrVal>Air Elemental</StrVal>
+      <UnitClass>AirElemental_BG_Summon</UnitClass>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitOwner_GetNumAirShards] + [UnitStat_BonusSummonLevel]]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc] + 5]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <AIData AIPersonality="AI_General">
+      <AIPriority>70</AIPriority>
+    </AIData>
+    <HitSoundFX>Spell_SummonAirElemental_01</HitSoundFX>
+    <SpellDefEffect>
+      <EffectName>S_SummonAirElemental_Particle</EffectName>
+      <LocalPosition>0,0,0</LocalPosition>
+      <EffectScale>0.5</EffectScale>
+      <EffectDelay>0</EffectDelay>
+      <SnapToTerrain>1</SnapToTerrain>
+    </SpellDefEffect>
+  </SpellDef>
+  <SpellDef InternalName="SummonAirElemental_Ability">
+    <DisplayName>Summon Air Elemental</DisplayName>
+    <Description>Summons a level 5 Air Elemental and knocks all surrounding enemies prone.</Description>
+    <Image>M_AirElemental_Card.png</Image>
+    <IconFG>S_SummonAirElemental_Icon.png</IconFG>
+    <CanStack>0</CanStack>
+    <SpellBookSortCategory>Summon</SpellBookSortCategory>
+    <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+    <SpellType>Tactical</SpellType>
+    <SpellClass>Offensive</SpellClass>
+    <SpellSubClass>Summon</SpellSubClass>
+    <SpellTargetType>EmptyTile</SpellTargetType>
+    <HideInHiergamenon>1</HideInHiergamenon>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <StrVal>Air Elemental</StrVal>
+      <UnitClass>AirElemental_BG_Summon</UnitClass>
+      <Duration>-1</Duration>
+      <Value>5</Value>
+    </GameModifier>
+    <GameModifier>
+      <ModType>TacticalUnit</ModType>
+      <Attribute>TargetKnockedProne</Attribute>
+      <Duration>1</Duration>
+    </GameModifier>
+    <AIData AIPersonality="AI_General">
+      <AIPriority>70</AIPriority>
+    </AIData>
+    <HitSoundFX>Spell_SummonAirElemental_01</HitSoundFX>
+    <SpellDefEffect>
+      <EffectName>S_SummonAirElemental_Particle</EffectName>
+      <LocalPosition>0,0,0</LocalPosition>
+      <EffectScale>0.5</EffectScale>
+      <EffectDelay>0</EffectDelay>
+      <SnapToTerrain>1</SnapToTerrain>
+    </SpellDefEffect>
+  </SpellDef>
+  <SpellDef InternalName="SummonAirElemental_Tactical">
+    <DisplayName>Summon Air Elemental</DisplayName>
+    <Description>Summons a level 5 (+1 per air shard) Air Elemental. When cast in Tactical all surrounding enemies are knocked prone.</Description>
+    <FormattedDescription>Summons a level %d Air Elemental and knocks all surrounding enemies prone.</FormattedDescription>
+    <Image>M_AirElemental_Card.png</Image>
+    <IconFG>S_SummonAirElemental_Icon.png</IconFG>
+    <AutoUnlock>1</AutoUnlock>
+    <CanStack>0</CanStack>
+    <SpellBookSortCategory>Summon</SpellBookSortCategory>
+    <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+    <SpellType>Tactical</SpellType>
+    <SpellClass>Offensive</SpellClass>
+    <SpellSubClass>Summon</SpellSubClass>
+    <SpellTargetType>EmptyTile</SpellTargetType>
+    <SpellTargetTileOccupied>EnemyOrEmpty</SpellTargetTileOccupied>
+    <HideInHiergamenon>1</HideInHiergamenon>
+    <PreventStackingWith>SummonAirElemental</PreventStackingWith>
+    <Radius>1</Radius>
+    <Prereq>
+      <Type>AbilityBonusOption</Type>
+      <Attribute>SummonAirElemental</Attribute>
+    </Prereq>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <StrVal>Air Elemental</StrVal>
+      <UnitClass>AirElemental_BG_Summon</UnitClass>
+      <ApplyToSpellRadiusCenterOnly>1</ApplyToSpellRadiusCenterOnly>
+      <IsForFormattedDescription>1</IsForFormattedDescription>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitOwner_GetNumAirShards] + [UnitStat_BonusSummonLevel]]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc] + 5]]></Expression>
+      </Calculate>
+      <Calculate InternalName="ValueForFormattedDescription">
+        <Expression><![CDATA[[Calc] + 5]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <GameModifier>
+      <ModType>TacticalUnit</ModType>
+      <Attribute>TargetKnockedProne</Attribute>
+      <Duration>1</Duration>
+    </GameModifier>
+    <AIData AIPersonality="AI_General">
+      <AIPriority>70</AIPriority>
+    </AIData>
+    <HitSoundFX>Spell_SummonAirElemental_01</HitSoundFX>
+    <SpellDefEffect>
+      <EffectName>S_SummonAirElemental_Particle</EffectName>
+      <LocalPosition>0,0,0</LocalPosition>
+      <EffectScale>0.5</EffectScale>
+      <EffectDelay>0</EffectDelay>
+      <SnapToTerrain>1</SnapToTerrain>
+    </SpellDefEffect>
+  </SpellDef>
+  <SpellDef InternalName="SummonBurningWraith_Tactical">
+    <DisplayName>Summon Burning Wraith</DisplayName>
+    <Description>Summons a level 5 Burning Wraith.</Description>
+    <FormattedDescription>Summons a level %d Burning Wraith.</FormattedDescription>
+    <Image>M_BurningWraith.png</Image>
+    <IconFG>S_SummonAirElemental_Icon.png</IconFG>
+    <CanStack>0</CanStack>
+    <SpellBookSortCategory>Summon</SpellBookSortCategory>
+    <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+    <SpellType>Tactical</SpellType>
+    <SpellClass>Offensive</SpellClass>
+    <SpellSubClass>Summon</SpellSubClass>
+    <SpellTargetType>EmptyTile</SpellTargetType>
+    <HideInHiergamenon>1</HideInHiergamenon>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <StrVal>Burning Wraith</StrVal>
+      <UnitClass>BurningWraith_BG_Summon</UnitClass>
+      <IsForFormattedDescription>1</IsForFormattedDescription>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitStat_BonusSummonLevel] + 5]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+      <Calculate InternalName="ValueForFormattedDescription">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <AIData AIPersonality="AI_General">
+      <AIPriority>70</AIPriority>
+    </AIData>
+    <HitSoundFX>Spell_SummonAirElemental_01</HitSoundFX>
+    <SpellDefEffect>
+      <EffectName>S_SummonAirElemental_Particle</EffectName>
+      <LocalPosition>0,0,0</LocalPosition>
+      <EffectScale>0.5</EffectScale>
+      <EffectDelay>0</EffectDelay>
+      <SnapToTerrain>1</SnapToTerrain>
+    </SpellDefEffect>
+  </SpellDef>
+  <SpellDef InternalName="SummonCragSpawn">
+    <DisplayName>Summon Crag Spawn</DisplayName>
+    <Description>Summons a level 5 Crag Spawn.  When cast in Tactical it places mud in all adjacent tiles which reduces Moves to 1.</Description>
+    <Image>M_Elemental_Earth_Card.png</Image>
+    <IconFG>T_SummonCragSpawn_Icon.png</IconFG>
+    <AutoUnlock>1</AutoUnlock>
+    <CanStack>0</CanStack>
+    <SpellBookSortCategory>Summon</SpellBookSortCategory>
+    <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+    <SpellType>Strategic</SpellType>
+    <SpellClass>Defensive</SpellClass>
+    <SpellSubClass>Summon</SpellSubClass>
+    <SpellTargetType>Self</SpellTargetType>
+    <Prereq>
+      <Type>AbilityBonusOption</Type>
+      <Attribute>SummonCragSpawn</Attribute>
+    </Prereq>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <UnitClass>CragSpawn_BG_Summon</UnitClass>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitOwner_GetNumEarthShards] + [UnitStat_BonusSummonLevel]]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc] + 5]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <AIData AIPersonality="AI_General">
+      <AIPriority>70</AIPriority>
+    </AIData>
+    <HitSoundFX>Spell_SummonAirElemental_01</HitSoundFX>
+    <SpellDefEffect>
+      <EffectName>S_SummonAirElemental_Particle</EffectName>
+      <LocalPosition>0,0,0</LocalPosition>
+      <EffectScale>0.5</EffectScale>
+      <EffectDelay>0</EffectDelay>
+      <SnapToTerrain>1</SnapToTerrain>
+    </SpellDefEffect>
+  </SpellDef>
+  <SpellDef InternalName="SummonCragSpawn_Tactical">
+    <DisplayName>Summon Crag Spawn</DisplayName>
+    <Description>Summons a level 5 Crag Spawn.  When cast in Tactical it places mud in all adjacent tiles which reduces Moves to 1.</Description>
+        <FormattedDescription>Summons a level %d Crag Spawn and places mud in all adjacent tiles which reduces Moves to 1.</FormattedDescription>
+    <Image>M_Elemental_Earth_Card.png</Image>
+    <IconFG>T_SummonCragSpawn_Icon.png</IconFG>
+    <AutoUnlock>1</AutoUnlock>
+    <CanStack>0</CanStack>
+    <SpellBookSortCategory>Summon</SpellBookSortCategory>
+    <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+    <SpellType>Tactical</SpellType>
+    <SpellClass>Offensive</SpellClass>
+    <SpellSubClass>Summon</SpellSubClass>
+    <SpellTargetType>EmptyTile</SpellTargetType>
+    <SpellTargetTileOccupied>EnemyOrEmpty</SpellTargetTileOccupied>
+    <HideInHiergamenon>1</HideInHiergamenon>
+    <IgnoreInvalidTargetsInRadius>1</IgnoreInvalidTargetsInRadius>
+    <PreventStackingWith>SummonCragSpawn</PreventStackingWith>
+    <Radius>1</Radius>
+    <Prereq>
+      <Type>AbilityBonusOption</Type>
+      <Attribute>SummonCragSpawn</Attribute>
+    </Prereq>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <UnitClass>CragSpawn_BG_Summon</UnitClass>
+      <ApplyToSpellRadiusCenterOnly>1</ApplyToSpellRadiusCenterOnly>
+      <IsForFormattedDescription>1</IsForFormattedDescription>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitOwner_GetNumEarthShards] + [UnitStat_BonusSummonLevel]]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc] + 5]]></Expression>
+      </Calculate>
+      <Calculate InternalName="ValueForFormattedDescription">
+        <Expression><![CDATA[[Calc] + 5]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <GameModifier>
+      <ModType>Map</ModType>
+      <Attribute>CreateWorldProp</Attribute>
+      <StrVal>Stinking_Mud</StrVal>
+      <Duration>5</Duration>
+    </GameModifier>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SetUnitStat</Attribute>
+      <StrVal>UnitStat_Moves</StrVal>
+      <ApplyToTile>1</ApplyToTile>
+      <Duration>1</Duration>
+      <DurationOnTile>5</DurationOnTile>
+      <Value>1</Value>
+    </GameModifier>
+    <AIData AIPersonality="AI_General">
+      <AIPriority>70</AIPriority>
+    </AIData>
+    <HitSoundFX>Spell_SummonAirElemental_01</HitSoundFX>
+    <SpellDefEffect>
+      <EffectName>S_SummonAirElemental_Particle</EffectName>
+      <LocalPosition>0,0,0</LocalPosition>
+      <EffectScale>0.5</EffectScale>
+      <EffectDelay>0</EffectDelay>
+      <SnapToTerrain>1</SnapToTerrain>
+    </SpellDefEffect>
+  </SpellDef>
+  <!-- CoS Note: Not flagged as summon - assumes it's "natural" reinforcements 
+  <SpellDef InternalName="SummonDarkling_Ability">
+    <DisplayName>Summon Darkling</DisplayName>
+    <Description>Summon a level 3 Darkling Warrior</Description>
+    <Image>M_Darkling_Warrior_Card.png</Image>
+    <IconFG>Ability_SummonDarkling_Icon.png</IconFG>
+    <Cooldown>5</Cooldown>
+    <SpellBookSortCategory>Summon</SpellBookSortCategory>
+    <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+    <SpellType>Tactical</SpellType>
+    <SpellClass>Offensive</SpellClass>
+    <SpellSubClass>Summon</SpellSubClass>
+    <SpellTargetType>EmptyTile</SpellTargetType>
+    <HideInHiergamenon>1</HideInHiergamenon>
+    <IsSpecialAbility>1</IsSpecialAbility>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <UnitClass>DarklingWarrior</UnitClass>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitStat_BonusSummonLevel] + 3]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <AIData AIPersonality="AI_General">
+      <AIPriority>60</AIPriority>
+    </AIData>
+    <HitSoundFX>Spell_SummonDeathDemon_01</HitSoundFX>
+    <SpellDefEffect>
+      <EffectName>Y_SummonDeathDemon_Particle</EffectName>
+      <LocalPosition>0,0,0</LocalPosition>
+      <EffectScale>1</EffectScale>
+      <EffectDelay>0</EffectDelay>
+      <SnapToTerrain>1</SnapToTerrain>
+    </SpellDefEffect>
+  </SpellDef>-->
+  <SpellDef InternalName="SummonDeathDemon">
+    <DisplayName>Summon Death Demon</DisplayName>
+    <Description>Summon a level 8 (+1 per death shard) Death Demon.</Description>
+    <FormattedDescription>Summon a level %d Death Demon.</FormattedDescription>
+    <Image>M_SuperDemon_Card.png</Image>
+    <IconFG>Ability_SummonDeathDemon_Icon.png</IconFG>
+    <CastTime>3</CastTime>
+    <Cooldown>5</Cooldown>
+    <SpellBookSortCategory>Summon</SpellBookSortCategory>
+    <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+    <SpellType>Tactical</SpellType>
+    <SpellClass>Offensive</SpellClass>
+    <SpellSubClass>Summon</SpellSubClass>
+    <SpellTargetType>EmptyTile</SpellTargetType>
+    <HideInHiergamenon>1</HideInHiergamenon>
+    <IsSpecialAbility>1</IsSpecialAbility>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <StrVal>Death Demon</StrVal>
+      <UnitClass>DeathDemon_BG_Summon</UnitClass>
+      <IsForFormattedDescription>1</IsForFormattedDescription>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitOwner_GetNumDeathShards] + [UnitStat_BonusSummonLevel]]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc] + 8]]></Expression>
+      </Calculate>
+      <Calculate InternalName="ValueForFormattedDescription">
+        <Expression><![CDATA[[Calc] + 8]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <AIData AIPersonality="AI_General">
+      <AIPriority>210</AIPriority>
+    </AIData>
+    <HitSoundFX>Spell_SummonDeathDemon_01</HitSoundFX>
+    <SpellDefEffect>
+      <EffectName>Y_SummonDeathDemon_Particle</EffectName>
+      <LocalPosition>0,0,0</LocalPosition>
+      <EffectScale>1</EffectScale>
+      <EffectDelay>0</EffectDelay>
+      <SnapToTerrain>1</SnapToTerrain>
+    </SpellDefEffect>
+  </SpellDef>
+  <SpellDef InternalName="SummonDelin">
+    <DisplayName>Summon the Pyre of Men</DisplayName>
+    <Description>Summon Delin, the Pyre of Men for 3 actions.</Description>
+    <Image>M_Delin_Card_01.png</Image>
+    <IconFG>T_ParidensReturn_Icon.png</IconFG>
+    <AutoUnlock>1</AutoUnlock>
+    <CastTime>2</CastTime>
+    <SpellBookSortCategory>Summon</SpellBookSortCategory>
+    <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+    <SpellType>Tactical</SpellType>
+    <SpellClass>Offensive</SpellClass>
+    <SpellSubClass>Summon</SpellSubClass>
+    <SpellTargetType>EmptyTile</SpellTargetType>
+    <Prereq>
+      <Type>AbilityBonusOption</Type>
+      <Attribute>SummonMastery</Attribute>
+    </Prereq>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <UnitClass>Delin_BG_Summon</UnitClass>
+      <Duration>3</Duration>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitStat_BonusSummonLevel] + 10]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <AIData AIPersonality="AI_General">
+      <AIPriority>100</AIPriority>
+    </AIData>
+    <HitSoundFX>Spell_ParidensReturn_01</HitSoundFX>
+    <SpellDefEffect>
+      <EffectName>T_ParidensReturn_Particle</EffectName>
+      <LocalPosition>0,0,0</LocalPosition>
+      <EffectScale>0.4</EffectScale>
+      <EffectDelay>0</EffectDelay>
+      <SnapToTerrain>1</SnapToTerrain>
+    </SpellDefEffect>
+  </SpellDef>
+  <SpellDef InternalName="SummonEarthElemental">
+    <DisplayName>Summon Earth Elemental</DisplayName>
+    <Description>Summons a level 5 (+1 per earth shard) Earth Elemental.  When cats in Tactical all adjacent enmies take 12 damage.</Description>
+    <Image>S_SummonEarthElemental_Painting.png</Image>
+    <IconFG>S_SummonEarthElemental_Icon.png</IconFG>
+    <AutoUnlock>1</AutoUnlock>
+    <CanStack>0</CanStack>
+    <SpellBookSortCategory>Summon</SpellBookSortCategory>
+    <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+    <SpellType>Strategic</SpellType>
+    <SpellClass>Defensive</SpellClass>
+    <SpellSubClass>Summon</SpellSubClass>
+    <SpellTargetType>Self</SpellTargetType>
+    <Range>0</Range>
+    <Prereq>
+      <Type>AbilityBonusOption</Type>
+      <Attribute>SummonEarthElemental</Attribute>
+    </Prereq>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <StrVal>Earth Elemental</StrVal>
+      <UnitClass>EarthElemental_BG_Summon</UnitClass>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitOwner_GetNumEarthShards] + [UnitStat_BonusSummonLevel]]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc] + 5]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <AIData AIPersonality="AI_General">
+      <AIPriority>70</AIPriority>
+    </AIData>
+    <HitSoundFX>Spell_SummonEarthElemental_01</HitSoundFX>
+    <SpellDefEffect>
+      <EffectName>S_SummonEarthElemental_Particle</EffectName>
+      <LocalPosition>0,0,0</LocalPosition>
+      <EffectScale>0.5</EffectScale>
+      <EffectDelay>0</EffectDelay>
+      <SnapToTerrain>1</SnapToTerrain>
+    </SpellDefEffect>
+  </SpellDef>
+  <SpellDef InternalName="SummonEarthElemental_Tactical">
+    <DisplayName>Summon Earth Elemental</DisplayName>
+    <Description>Summons a level 5 (+1 per earth shard) Earth Elemental.  When cats in Tactical all adjacent enmies take 12 damage.</Description>
+    <FormattedDescription>Summons a level %d Earth Elemental and does 12 damage to all enemies with 1 tile.</FormattedDescription>
+    <Image>S_SummonEarthElemental_Painting.png</Image>
+    <IconFG>S_SummonEarthElemental_Icon.png</IconFG>
+    <AutoUnlock>1</AutoUnlock>
+    <CanStack>0</CanStack>
+    <SpellBookSortCategory>Summon</SpellBookSortCategory>
+    <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+    <SpellType>Tactical</SpellType>
+    <SpellClass>Offensive</SpellClass>
+    <SpellSubClass>Summon</SpellSubClass>
+    <SpellTargetType>EmptyTile</SpellTargetType>
+    <SpellTargetTileOccupied>EnemyOrEmpty</SpellTargetTileOccupied>
+    <HideInHiergamenon>1</HideInHiergamenon>
+    <IgnoreInvalidTargetsInRadius>1</IgnoreInvalidTargetsInRadius>
+    <PreventStackingWith>SummonEarthElemental</PreventStackingWith>
+    <Radius>1</Radius>
+    <Prereq>
+      <Type>AbilityBonusOption</Type>
+      <Attribute>SummonEarthElemental</Attribute>
+    </Prereq>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <StrVal>Earth Elemental</StrVal>
+      <UnitClass>EarthElemental_BG_Summon</UnitClass>
+      <ApplyToSpellRadiusCenterOnly>1</ApplyToSpellRadiusCenterOnly>
+      <IsForFormattedDescription>1</IsForFormattedDescription>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitOwner_GetNumEarthShards] + [UnitStat_BonusSummonLevel]]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc] + 5]]></Expression>
+      </Calculate>
+      <Calculate InternalName="ValueForFormattedDescription">
+        <Expression><![CDATA[[Calc] + 5]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>DefendableDamage</Attribute>
+      <AttackStat>UnitStat_Attack_Pierce</AttackStat>
+      <Value>12</Value>
+    </GameModifier>
+    <AIData AIPersonality="AI_General">
+      <AIPriority>70</AIPriority>
+    </AIData>
+    <CameraShakeDuration>1.25</CameraShakeDuration>
+    <CameraShakeStrength>0.25</CameraShakeStrength>
+    <HitSoundFX>Spell_SummonEarthElemental_01</HitSoundFX>
+    <SpellDefEffect>
+      <EffectName>S_SummonEarthElemental_Particle</EffectName>
+      <LocalPosition>0,0,0</LocalPosition>
+      <EffectScale>0.5</EffectScale>
+      <EffectDelay>0</EffectDelay>
+      <SnapToTerrain>1</SnapToTerrain>
+    </SpellDefEffect>
+    <SpellDefEffect>
+      <EffectName>T_Shockwave_Particle</EffectName>
+      <LocalPosition>0,0,0</LocalPosition>
+      <EffectScale>0.75</EffectScale>
+      <EffectDelay>0</EffectDelay>
+      <SnapToTerrain>1</SnapToTerrain>
+      <PlayOnAllTargets>0</PlayOnAllTargets>
+    </SpellDefEffect>
+    <SpellDefEffect>
+      <EffectName>T_Shockwave_Impact_Particle</EffectName>
+      <LocalPosition>0,50,0</LocalPosition>
+      <EffectScale>1</EffectScale>
+      <EffectDelay>0.25</EffectDelay>
+      <SnapToTerrain>1</SnapToTerrain>
+      <PlayOnAllTargets>1</PlayOnAllTargets>
+    </SpellDefEffect>
+  </SpellDef>
+  <SpellDef InternalName="SummonFamiliar">
+    <DisplayName>Summon Familiar</DisplayName>
+    <Description>Summon a Familiar.  Familiars can cast all the spells your sovereign can.</Description>
+    <Image>M_WargFamiliar_Card.png</Image>
+    <IconFG>T_SummonFamiliar_Icon.png</IconFG>
+    <AutoUnlock>1</AutoUnlock>
+    <CanStack>0</CanStack>
+    <SpellBookSortCategory>Summon</SpellBookSortCategory>
+    <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+    <SpellType>Strategic</SpellType>
+    <SpellClass>Defensive</SpellClass>
+    <SpellSubClass>Summon</SpellSubClass>
+    <SpellTargetType>Self</SpellTargetType>
+    <CasterMustBeSov>1</CasterMustBeSov>
+    <Range>0</Range>
+    <Prereq>
+      <Type>AbilityBonusOption</Type>
+      <Attribute>SovereignBond</Attribute>
+    </Prereq>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <UnitClass>Familiar_BG_Summon</UnitClass>
+      <Duration>-1</Duration>
+      <Value>1</Value>
+    </GameModifier>
+    <AIData AIPersonality="AI_General">
+      <AIPriority>0</AIPriority>
+    </AIData>
+    <HitSoundFX>Spell_SummonFamiliar_01</HitSoundFX>
+    <SpellDefEffect>
+      <EffectName>S_SummonEarthElemental_Particle</EffectName>
+      <LocalPosition>0,0,0</LocalPosition>
+      <EffectScale>0.5</EffectScale>
+      <EffectDelay>0</EffectDelay>
+      <SnapToTerrain>1</SnapToTerrain>
+    </SpellDefEffect>
+  </SpellDef>
+  <SpellDef InternalName="SummonFireElemental">
+    <DisplayName>Summon Fire Elemental</DisplayName>
+    <Description>Summons a level 5 (+1 per fire shard) Fire Elemental. When cast in Tactical all adjacent tiles are set on fire for 5 turns.</Description>
+    <Image>S_SummonFireElemental_Painting.png</Image>
+    <IconFG>S_SummonFireElemental_Icon.png</IconFG>
+    <AutoUnlock>1</AutoUnlock>
+    <CanStack>0</CanStack>
+    <SpellBookSortCategory>Summon</SpellBookSortCategory>
+    <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+    <SpellType>Strategic</SpellType>
+    <SpellClass>Defensive</SpellClass>
+    <SpellSubClass>Summon</SpellSubClass>
+    <SpellTargetType>Self</SpellTargetType>
+    <Range>0</Range>
+    <Prereq>
+      <Type>AbilityBonusOption</Type>
+      <Attribute>SummonFireElemental</Attribute>
+    </Prereq>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <StrVal>Fire Elemental</StrVal>
+      <UnitClass>FireElemental_BG_Summon</UnitClass>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitOwner_GetNumFireShards] + [UnitStat_BonusSummonLevel]]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc] + 5]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <AIData AIPersonality="AI_General">
+      <AIPriority>70</AIPriority>
+    </AIData>
+    <HitSoundFX>Spell_SummonFireElemental_01</HitSoundFX>
+    <SpellDefEffect>
+      <EffectName>S_SummonFireElemental_Particle</EffectName>
+      <LocalPosition>0,0,0</LocalPosition>
+      <EffectScale>0.5</EffectScale>
+      <EffectDelay>0</EffectDelay>
+      <SnapToTerrain>1</SnapToTerrain>
+    </SpellDefEffect>
+  </SpellDef>
+  <SpellDef InternalName="SummonFireElemental_Tactical">
+    <DisplayName>Summon Fire Elemental</DisplayName>
+    <Description>Summons a level 5 (+1 per fire shard) Fire Elemental. When cast in Tactical all adjacent tiles are set on fire for 5 turns.</Description>
+        <FormattedDescription>Summons a level %d Fire Elemental and sets all adjacent tiles on fire for 5 turns.</FormattedDescription>
+    <Image>S_SummonFireElemental_Painting.png</Image>
+    <IconFG>S_SummonFireElemental_Icon.png</IconFG>
+    <AutoUnlock>1</AutoUnlock>
+    <CanStack>0</CanStack>
+    <SpellBookSortCategory>Summon</SpellBookSortCategory>
+    <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+    <SpellType>Tactical</SpellType>
+    <SpellClass>Offensive</SpellClass>
+    <SpellSubClass>Summon</SpellSubClass>
+    <SpellTargetType>EmptyTile</SpellTargetType>
+    <SpellTargetTileOccupied>EnemyOrEmpty</SpellTargetTileOccupied>
+    <HideInHiergamenon>1</HideInHiergamenon>
+    <IgnoreInvalidTargetsInRadius>1</IgnoreInvalidTargetsInRadius>
+    <PreventStackingWith>SummonFireElemental</PreventStackingWith>
+    <Radius>1</Radius>
+    <Prereq>
+      <Type>AbilityBonusOption</Type>
+      <Attribute>SummonFireElemental</Attribute>
+    </Prereq>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <StrVal>Fire Elemental</StrVal>
+      <UnitClass>FireElemental_BG_Summon</UnitClass>
+      <ApplyToSpellRadiusCenterOnly>1</ApplyToSpellRadiusCenterOnly>
+      <IsForFormattedDescription>1</IsForFormattedDescription>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitOwner_GetNumFireShards] + [UnitStat_BonusSummonLevel]]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc] + 5]]></Expression>
+      </Calculate>
+      <Calculate InternalName="ValueForFormattedDescription">
+        <Expression><![CDATA[[Calc] + 5]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <GameModifier>
+      <ModType>Map</ModType>
+      <Attribute>CreateWorldProp</Attribute>
+      <StrVal>TD_Groundfire</StrVal>
+      <Duration>5</Duration>
+    </GameModifier>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>DefendableDamage</Attribute>
+      <AttackStat>UnitStat_Attack_Fire</AttackStat>
+      <ApplyToTile>1</ApplyToTile>
+      <DurationOnTile>5</DurationOnTile>
+      <Value>5</Value>
+    </GameModifier>
+    <AIData AIPersonality="AI_General">
+      <AIPriority>70</AIPriority>
+    </AIData>
+    <HitSoundFX>Spell_SummonFireElemental_01</HitSoundFX>
+    <WorldLightOverrideTime>4</WorldLightOverrideTime>
+    <WorldLightOverrideAmbiant>30,30,30</WorldLightOverrideAmbiant>
+    <WorldLightOverrideDiffuse>30,30,30</WorldLightOverrideDiffuse>
+    <WorldLightOverrideRim0>255,0,0</WorldLightOverrideRim0>
+    <WorldLightOverrideRim1>255,156,0</WorldLightOverrideRim1>
+    <SpellDefEffect>
+      <EffectName>S_SummonFireElemental_Particle</EffectName>
+      <LocalPosition>0,0,0</LocalPosition>
+      <EffectScale>0.5</EffectScale>
+      <EffectDelay>0</EffectDelay>
+      <SnapToTerrain>1</SnapToTerrain>
+    </SpellDefEffect>
+  </SpellDef>
+  <SpellDef InternalName="SummonGraveElemental">
+    <DisplayName>Summon Grave Elemental</DisplayName>
+    <Description>Summons a level 5 Grave Elemental. When cast in Tactical all adjacent allied units are provided with a Death Ward for 5 turns.</Description>
+    <Image>M_GraveElemental.png</Image>
+    <IconFG>T_SummonGraveElemental_Icon.png</IconFG>
+    <AutoUnlock>1</AutoUnlock>
+    <CanStack>0</CanStack>
+    <SpellBookSortCategory>Summon</SpellBookSortCategory>
+    <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+    <SpellType>Strategic</SpellType>
+    <SpellClass>Defensive</SpellClass>
+    <SpellSubClass>Summon</SpellSubClass>
+    <SpellTargetType>Self</SpellTargetType>
+    <Range>0</Range>
+    <Prereq>
+      <Type>AbilityBonusOption</Type>
+      <Attribute>SummonGraveElemental</Attribute>
+    </Prereq>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <UnitClass>GraveElemental_Ancient_BG_Summon</UnitClass>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitStat_BonusSummonLevel] + 5]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <AIData AIPersonality="AI_General">
+      <AIPriority>70</AIPriority>
+    </AIData>
+    <HitSoundFX>Spell_SummonAirElemental_01</HitSoundFX>
+    <SpellDefEffect>
+      <EffectName>S_SummonAirElemental_Particle</EffectName>
+      <LocalPosition>0,0,0</LocalPosition>
+      <EffectScale>0.5</EffectScale>
+      <EffectDelay>0</EffectDelay>
+      <SnapToTerrain>1</SnapToTerrain>
+    </SpellDefEffect>
+  </SpellDef>
+  <SpellDef InternalName="SummonGraveElemental_Tactical">
+    <DisplayName>Summon Grave Elemental</DisplayName>
+    <Description>Summons a level 5 Grave Elemental. When cast in Tactical all adjacent allied units are provided with a Death Ward for 5 turns.</Description>
+        <FormattedDescription>TXT_SPELL_SUMMONGRAVEELEMENTAL_FORMATDESC</FormattedDescription>
+    <Image>M_GraveElemental.png</Image>
+    <IconFG>T_SummonGraveElemental_Icon.png</IconFG>
+    <AutoUnlock>1</AutoUnlock>
+    <CanStack>0</CanStack>
+    <SpellBookSortCategory>Summon</SpellBookSortCategory>
+    <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+    <SpellType>Tactical</SpellType>
+    <SpellClass>Offensive</SpellClass>
+    <SpellSubClass>Summon</SpellSubClass>
+    <SpellTargetType>FriendlyUnit</SpellTargetType>
+    <SpellTargetTileOccupied>Empty</SpellTargetTileOccupied>
+    <HideInHiergamenon>1</HideInHiergamenon>
+    <IgnoreInvalidTargetsInRadius>1</IgnoreInvalidTargetsInRadius>
+    <PreventStackingWith>SummonGraveElemental</PreventStackingWith>
+    <Radius>1</Radius>
+    <Prereq>
+      <Type>AbilityBonusOption</Type>
+      <Attribute>SummonGraveElemental</Attribute>
+    </Prereq>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <UnitClass>GraveElemental_Ancient_BG_Summon</UnitClass>
+      <ApplyToSpellRadiusCenterOnly>1</ApplyToSpellRadiusCenterOnly>
+      <IsForFormattedDescription>1</IsForFormattedDescription>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitStat_BonusSummonLevel] + 5]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+      <Calculate InternalName="ValueForFormattedDescription">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>DeathWard</Attribute>
+      <DisplayName>Death Ward</DisplayName>
+      <Duration>5</Duration>
+      <Effect>E_CloakOfFear_Particle</Effect>
+    </GameModifier>
+    <AIData AIPersonality="AI_General">
+      <AIPriority>70</AIPriority>
+    </AIData>
+    <HitSoundFX>Spell_SummonAirElemental_01</HitSoundFX>
+    <SpellDefEffect>
+      <EffectName>S_SummonAirElemental_Particle</EffectName>
+      <LocalPosition>0,0,0</LocalPosition>
+      <EffectScale>0.5</EffectScale>
+      <EffectDelay>0</EffectDelay>
+      <SnapToTerrain>1</SnapToTerrain>
+    </SpellDefEffect>
+  </SpellDef>
+  <!-- CoS Note: Not flagged as summon - assumes it's "natural" reinforcements 
+  <SpellDef InternalName="SummonHarridan_Ability">
+    <DisplayName>Summon Harridan</DisplayName>
+    <Description>Smmon a level 6 Ravenous Harridan</Description>
+    <Image>M_Spider_GiantBlackWidow.png</Image>
+    <IconFG>Ability_Summon_Huge_Spider_Icon.png</IconFG>
+    <Cooldown>5</Cooldown>
+    <SpellBookSortCategory>Summon</SpellBookSortCategory>
+    <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+    <SpellType>Tactical</SpellType>
+    <SpellClass>Offensive</SpellClass>
+    <SpellSubClass>Summon</SpellSubClass>
+    <SpellTargetType>EmptyTile</SpellTargetType>
+    <HideInHiergamenon>1</HideInHiergamenon>
+    <IsSpecialAbility>1</IsSpecialAbility>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <UnitClass>RavenousHarridan</UnitClass>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitStat_BonusSummonLevel] + 6]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <AIData AIPersonality="AI_General">
+      <AIPriority>60</AIPriority>
+    </AIData>
+    <HitSoundFX>Spell_SummonDeathDemon_01</HitSoundFX>
+    <SpellDefEffect>
+      <EffectName>Y_SummonDeathDemon_Particle</EffectName>
+      <LocalPosition>0,0,0</LocalPosition>
+      <EffectScale>1</EffectScale>
+      <EffectDelay>0</EffectDelay>
+      <SnapToTerrain>1</SnapToTerrain>
+    </SpellDefEffect>
+  </SpellDef>-->
+  <SpellDef InternalName="SummonIceElemental">
+    <DisplayName>Summon Ice Elemental</DisplayName>
+    <Description>Summons a level 3 (+1 per water shard) Ice Elemental.</Description>
+    <Image>T_SummonIceElemental_Painting.png</Image>
+    <IconFG>T_SummonIceElemental_Icon.png</IconFG>
+    <AutoUnlock>1</AutoUnlock>
+    <CanStack>0</CanStack>
+    <SpellBookSortCategory>Summon</SpellBookSortCategory>
+    <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+    <SpellType>Strategic</SpellType>
+    <SpellClass>Defensive</SpellClass>
+    <SpellSubClass>Summon</SpellSubClass>
+    <SpellTargetType>Self</SpellTargetType>
+    <Range>0</Range>
+    <Prereq>
+      <Type>AbilityBonusOption</Type>
+      <Attribute>SummonIceElemental</Attribute>
+    </Prereq>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <StrVal>Ice Elemental</StrVal>
+      <UnitClass>IceElemental_BG_Summon</UnitClass>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitOwner_GetNumWaterShards] +  [UnitStat_BonusSummonLevel]]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc] + 3]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <AIData AIPersonality="AI_General">
+      <AIPriority>70</AIPriority>
+    </AIData>
+    <HitSoundFX>Spell_SummonIceElemental_01</HitSoundFX>
+    <SpellDefEffect>
+      <EffectName>T_SummonIceElemental_Particle</EffectName>
+      <LocalPosition>0,0,0</LocalPosition>
+      <EffectScale>0.3</EffectScale>
+      <EffectDelay>0</EffectDelay>
+      <SnapToTerrain>1</SnapToTerrain>
+    </SpellDefEffect>
+  </SpellDef>
+  <SpellDef InternalName="SummonIceElemental_Tactical">
+    <DisplayName>Summon Ice Elemental</DisplayName>
+    <Description>Summons a level 3 (+1 per water shard) Ice Elemental.</Description>
+    <FormattedDescription>Summons a level %d Ice Elemental.</FormattedDescription>
+    <Image>T_SummonIceElemental_Painting.png</Image>
+    <IconFG>T_SummonIceElemental_Icon.png</IconFG>
+    <AutoUnlock>1</AutoUnlock>
+    <CanStack>0</CanStack>
+    <SpellBookSortCategory>Summon</SpellBookSortCategory>
+    <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+    <SpellType>Tactical</SpellType>
+    <SpellClass>Defensive</SpellClass>
+    <SpellSubClass>Summon</SpellSubClass>
+    <SpellTargetType>EmptyTile</SpellTargetType>
+    <HideInHiergamenon>1</HideInHiergamenon>
+    <PreventStackingWith>SummonIceElemental</PreventStackingWith>
+    <Prereq>
+      <Type>AbilityBonusOption</Type>
+      <Attribute>SummonIceElemental</Attribute>
+    </Prereq>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <StrVal>Ice Elemental</StrVal>
+      <UnitClass>IceElemental_BG_Summon</UnitClass>
+      <IsForFormattedDescription>1</IsForFormattedDescription>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitOwner_GetNumWaterShards] +  [UnitStat_BonusSummonLevel]]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc] + 3]]></Expression>
+      </Calculate>
+      <Calculate InternalName="ValueForFormattedDescription">
+        <Expression><![CDATA[[Calc] + 3]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <AIData AIPersonality="AI_General">
+      <AIPriority>70</AIPriority>
+    </AIData>
+    <HitSoundFX>Spell_SummonIceElemental_01</HitSoundFX>
+    <SpellDefEffect>
+      <EffectName>T_SummonIceElemental_Particle</EffectName>
+      <LocalPosition>0,0,0</LocalPosition>
+      <EffectScale>0.3</EffectScale>
+      <EffectDelay>0</EffectDelay>
+      <SnapToTerrain>1</SnapToTerrain>
+    </SpellDefEffect>
+  </SpellDef>
+  <SpellDef InternalName="SummonIgnys">
+    <DisplayName>Summon Ignys</DisplayName>
+    <Description>Summons a level 5 fire breathing Ignys.  When cast in Tactical it does 8 fire damage to all adjacent enemies.</Description>
+    <Image>M_Ignys_Card.png</Image>
+    <IconFG>T_SummonIgnys_Icon.png</IconFG>
+    <AutoUnlock>1</AutoUnlock>
+    <CanStack>0</CanStack>
+    <SpellBookSortCategory>Summon</SpellBookSortCategory>
+    <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+    <SpellType>Strategic</SpellType>
+    <SpellClass>Defensive</SpellClass>
+    <SpellSubClass>Summon</SpellSubClass>
+    <SpellTargetType>Self</SpellTargetType>
+    <Range>0</Range>
+    <Prereq>
+      <Type>AbilityBonusOption</Type>
+      <Attribute>SummonIgnys</Attribute>
+    </Prereq>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <UnitClass>Ignys_BG_Summon</UnitClass>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitStat_BonusSummonLevel] + 5]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <AIData AIPersonality="AI_General">
+      <AIPriority>70</AIPriority>
+    </AIData>
+    <HitSoundFX>Spell_SummonAirElemental_01</HitSoundFX>
+    <SpellDefEffect>
+      <EffectName>S_SummonAirElemental_Particle</EffectName>
+      <LocalPosition>0,0,0</LocalPosition>
+      <EffectScale>0.5</EffectScale>
+      <EffectDelay>0</EffectDelay>
+      <SnapToTerrain>1</SnapToTerrain>
+    </SpellDefEffect>
+  </SpellDef>
+  <SpellDef InternalName="SummonIgnys_Ability">
+        <DisplayName>Summon Ignys</DisplayName>
+        <Description>Summons a level 5 fire breathing Ignys.  When cast in Tactical it does 8 fire damage to all adjacent enemies.</Description>
+        <FormattedDescription>Summons a level %d fire breathing Ignys and does 8 fire damage to all enemies within 1 tile.</FormattedDescription>
+        <Image>M_Ignys_Card.png</Image>
+        <IconFG>T_SummonIgnys_Icon.png</IconFG>
+        <Cooldown>5</Cooldown>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>EmptyTile</SpellTargetType>
+        <SpellTargetTileOccupied>EnemyOrEmpty</SpellTargetTileOccupied>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <IgnoreInvalidTargetsInRadius>1</IgnoreInvalidTargetsInRadius>
+        <Radius>1</Radius>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Spell_SummonIgnys</Attribute>
+        </Prereq>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>SummonUnit</Attribute>
+            <UnitClass>Ignys_BG_Summon</UnitClass>
+            <ApplyToSpellRadiusCenterOnly>1</ApplyToSpellRadiusCenterOnly>
+            <IsForFormattedDescription>1</IsForFormattedDescription>
+            <Duration>-1</Duration>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitStat_BonusSummonLevel] + 5]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="ValueForFormattedDescription">
+                <Expression><![CDATA[[Calc]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Fire</AttackStat>
+            <Value>8</Value>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>70</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_SummonAirElemental_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>E_FireballExplosion_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>3</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+</SpellDef>
+
+  <SpellDef InternalName="SummonIgnys_Tactical">
+    <DisplayName>Summon Ignys</DisplayName>
+    <Description>Summons a level 5 fire breathing Ignys.  When cast in Tactical it does 8 fire damage to all adjacent enemies.</Description>
+    <FormattedDescription>Summons a level %d fire breathing Ignys and does 8 fire damage to all enemies within 1 tile.</FormattedDescription>
+    <Image>M_Ignys_Card.png</Image>
+    <IconFG>T_SummonIgnys_Icon.png</IconFG>
+    <AutoUnlock>1</AutoUnlock>
+    <CanStack>0</CanStack>
+    <SpellBookSortCategory>Summon</SpellBookSortCategory>
+    <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+    <SpellType>Tactical</SpellType>
+    <SpellClass>Offensive</SpellClass>
+    <SpellSubClass>Summon</SpellSubClass>
+    <SpellTargetType>EmptyTile</SpellTargetType>
+    <SpellTargetTileOccupied>EnemyOrEmpty</SpellTargetTileOccupied>
+    <HideInHiergamenon>1</HideInHiergamenon>
+    <IgnoreInvalidTargetsInRadius>1</IgnoreInvalidTargetsInRadius>
+    <PreventStackingWith>SummonIgnys</PreventStackingWith>
+    <Radius>1</Radius>
+    <Prereq>
+      <Type>AbilityBonusOption</Type>
+      <Attribute>SummonIgnys</Attribute>
+    </Prereq>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <UnitClass>Ignys_BG_Summon</UnitClass>
+      <ApplyToSpellRadiusCenterOnly>1</ApplyToSpellRadiusCenterOnly>
+      <IsForFormattedDescription>1</IsForFormattedDescription>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitStat_BonusSummonLevel] + 5]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+      <Calculate InternalName="ValueForFormattedDescription">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>DefendableDamage</Attribute>
+      <AttackStat>UnitStat_Attack_Fire</AttackStat>
+      <Value>8</Value>
+    </GameModifier>
+    <AIData AIPersonality="AI_General">
+      <AIPriority>70</AIPriority>
+    </AIData>
+    <HitSoundFX>Spell_SummonAirElemental_01</HitSoundFX>
+    <SpellDefEffect>
+      <EffectName>E_FireballExplosion_Particle</EffectName>
+      <LocalPosition>0,0,0</LocalPosition>
+      <EffectScale>3</EffectScale>
+      <EffectDelay>0</EffectDelay>
+      <SnapToTerrain>1</SnapToTerrain>
+    </SpellDefEffect>
+  </SpellDef>
+  <SpellDef InternalName="SummonLightbringer">
+    <DisplayName>Summon Lightbringer</DisplayName>
+    <Description>Summons a level 5 (+1 per life shard) Lightbringer.  When cast in Tactical it blinds all surrounding units, giving them a 25% penalty to Accuracy and Dodge.</Description>
+    <Image>Lightbringer_Medallion.png</Image>
+    <IconFG>T_SummonLightbringer_Icon.png</IconFG>
+    <AutoUnlock>1</AutoUnlock>
+    <CanStack>0</CanStack>
+    <SpellBookSortCategory>Summon</SpellBookSortCategory>
+    <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+    <SpellType>Strategic</SpellType>
+    <SpellClass>Defensive</SpellClass>
+    <SpellSubClass>Summon</SpellSubClass>
+    <SpellTargetType>Self</SpellTargetType>
+    <Range>0</Range>
+    <Prereq>
+      <Type>AbilityBonusOption</Type>
+      <Attribute>SummonLightbringer</Attribute>
+    </Prereq>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <UnitClass>Lightbringer_BG_Summon</UnitClass>
+      <ApplyToSpellRadiusCenterOnly>1</ApplyToSpellRadiusCenterOnly>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitStat_BonusSummonLevel] + 5]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Calc2" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitOwner_GetNumLifeShards]]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc] + [Calc2]]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <AIData AIPersonality="AI_General">
+      <AIPriority>70</AIPriority>
+    </AIData>
+    <HitSoundFX>Spell_SummonAirElemental_01</HitSoundFX>
+    <WorldLightOverrideTime>4</WorldLightOverrideTime>
+    <WorldLightOverrideAmbiant>1500,1500,1500</WorldLightOverrideAmbiant>
+    <WorldLightOverrideDiffuse>500,500,500</WorldLightOverrideDiffuse>
+    <WorldLightOverrideRim0>240,240,240</WorldLightOverrideRim0>
+    <WorldLightOverrideRim1>240,240,240</WorldLightOverrideRim1>
+    <SpellDefEffect>
+      <EffectName>S_BlindingLight_Particle</EffectName>
+      <LocalPosition>0,60,0</LocalPosition>
+      <EffectScale>2</EffectScale>
+      <EffectDelay>0</EffectDelay>
+      <SnapToTerrain>1</SnapToTerrain>
+      <PlayOnCaster>1</PlayOnCaster>
+    </SpellDefEffect>
+  </SpellDef>
+  <SpellDef InternalName="SummonLightbringer_Tactical">
+    <DisplayName>Summon Lightbringer</DisplayName>
+    <Description>Summons a level 5 (+1 per life shard) Lightbringer.  When cast in Tactical it blinds all surrounding units, giving them a 25% penalty to Accuracy and Dodge.</Description>
+        <FormattedDescription>Summons a level %d Lightbringer and blinds all surrounding units, giving them a 25% penalty to Accuracy and Dodge.</FormattedDescription>
+    <Image>Lightbringer_Medallion.png</Image>
+    <IconFG>T_SummonLightbringer_Icon.png</IconFG>
+    <AutoUnlock>1</AutoUnlock>
+    <CanStack>0</CanStack>
+    <SpellBookSortCategory>Summon</SpellBookSortCategory>
+    <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+    <SpellType>Tactical</SpellType>
+    <SpellClass>Offensive</SpellClass>
+    <SpellSubClass>Summon</SpellSubClass>
+    <SpellTargetType>EmptyTile</SpellTargetType>
+    <SpellTargetTileOccupied>EnemyOrEmpty</SpellTargetTileOccupied>
+    <HideInHiergamenon>1</HideInHiergamenon>
+    <IgnoreInvalidTargetsInRadius>1</IgnoreInvalidTargetsInRadius>
+    <IsResistable>1</IsResistable>
+    <PreventStackingWith>SummonLightbringer</PreventStackingWith>
+    <Radius>1</Radius>
+    <Prereq>
+      <Type>AbilityBonusOption</Type>
+      <Attribute>SummonLightbringer</Attribute>
+    </Prereq>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <UnitClass>Lightbringer_BG_Summon</UnitClass>
+      <ApplyToSpellRadiusCenterOnly>1</ApplyToSpellRadiusCenterOnly>
+      <IsForFormattedDescription>1</IsForFormattedDescription>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitStat_BonusSummonLevel] + 5]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Calc2" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitOwner_GetNumLifeShards]]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc] + [Calc2]]]></Expression>
+      </Calculate>
+      <Calculate InternalName="ValueForFormattedDescription">
+        <Expression><![CDATA[[Calc] + [Calc2]]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>AdjustUnitStat</Attribute>
+      <StrVal>UnitStat_Accuracy</StrVal>
+      <DisplayName>Blinded</DisplayName>
+      <Duration>5</Duration>
+      <Effect>E_Blindness_Particle</Effect>
+      <Calculate InternalName="Calc" ValueOwner="TargetUnit">
+        <Expression><![CDATA[[UnitStat_Accuracy] * -0.25]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Dodge</StrVal>
+            <Duration>5</Duration>
+            <Calculate InternalName="Calc" ValueOwner="TargetUnit">
+                <Expression><![CDATA[[UnitStat_Dodge] * -0.25]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc]]]></Expression>
+            </Calculate>
+        </GameModifier>
+    <AIData AIPersonality="AI_General">
+      <AIPriority>70</AIPriority>
+    </AIData>
+    <HitSoundFX>Spell_SummonAirElemental_01</HitSoundFX>
+    <WorldLightOverrideTime>4</WorldLightOverrideTime>
+    <WorldLightOverrideAmbiant>1500,1500,1500</WorldLightOverrideAmbiant>
+    <WorldLightOverrideDiffuse>500,500,500</WorldLightOverrideDiffuse>
+    <WorldLightOverrideRim0>240,240,240</WorldLightOverrideRim0>
+    <WorldLightOverrideRim1>240,240,240</WorldLightOverrideRim1>
+    <SpellDefEffect>
+      <EffectName>S_BlindingLight_Particle</EffectName>
+      <LocalPosition>0,60,0</LocalPosition>
+      <EffectScale>2</EffectScale>
+      <EffectDelay>0</EffectDelay>
+      <SnapToTerrain>1</SnapToTerrain>
+      <PlayOnCaster>1</PlayOnCaster>
+    </SpellDefEffect>
+  </SpellDef>
+  <SpellDef InternalName="SummonPlaguestalker_Ability">
+    <DisplayName>Summon Plaguestalker</DisplayName>
+    <Description>Summon a level 5 Plaguestalker</Description>
+    <Image>M_Plaguestalker_Card.png</Image>
+    <IconFG>Ability_Summon_Plaguestalker_Icon.png</IconFG>
+    <Cooldown>5</Cooldown>
+    <SpellBookSortCategory>Summon</SpellBookSortCategory>
+    <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+    <SpellType>Tactical</SpellType>
+    <SpellClass>Offensive</SpellClass>
+    <SpellSubClass>Summon</SpellSubClass>
+    <SpellTargetType>EmptyTile</SpellTargetType>
+    <HideInHiergamenon>1</HideInHiergamenon>
+    <IsSpecialAbility>1</IsSpecialAbility>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <UnitClass>Plaguestalker_BG_Summon</UnitClass>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitStat_BonusSummonLevel] + 5]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <AIData AIPersonality="AI_General">
+      <AIPriority>60</AIPriority>
+    </AIData>
+    <HitSoundFX>Spell_SummonDeathDemon_01</HitSoundFX>
+    <SpellDefEffect>
+      <EffectName>Y_SummonDeathDemon_Particle</EffectName>
+      <LocalPosition>0,0,0</LocalPosition>
+      <EffectScale>1</EffectScale>
+      <EffectDelay>0</EffectDelay>
+      <SnapToTerrain>1</SnapToTerrain>
+    </SpellDefEffect>
+  </SpellDef>
+  <SpellDef InternalName="SummonSentinel">
+    <DisplayName>Summon Sentinel</DisplayName>
+    <Description>Summons a level 3 Armored Sentinel and increase the Defense of all surrounding allies by 10.</Description>
+    <FormattedDescription>Summons a level %d Armored Sentinel and increase the Defense of all surrounding allies by 10.</FormattedDescription>
+    <IconFG>T_SummonSentinel_Icon.png</IconFG>
+    <AutoUnlock>1</AutoUnlock>
+    <CanStack>0</CanStack>
+    <SpellBookSortCategory>Summon</SpellBookSortCategory>
+    <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+    <SpellType>Tactical</SpellType>
+    <SpellClass>Offensive</SpellClass>
+    <SpellSubClass>Summon</SpellSubClass>
+    <SpellTargetType>FriendlyUnit</SpellTargetType>
+    <SpellTargetTileOccupied>Empty</SpellTargetTileOccupied>
+    <IgnoreInvalidTargetsInRadius>1</IgnoreInvalidTargetsInRadius>
+    <IsResistable>1</IsResistable>
+    <Radius>1</Radius>
+    <Prereq>
+      <Type>AbilityBonusOption</Type>
+      <Attribute>SummonSentinel</Attribute>
+    </Prereq>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <UnitClass>ArmoredSentinel_BG_Summon</UnitClass>
+      <ApplyToSpellRadiusCenterOnly>1</ApplyToSpellRadiusCenterOnly>
+      <IsForFormattedDescription>1</IsForFormattedDescription>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitStat_BonusSummonLevel] + 3]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Calc2" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[Calc] + [UnitStat_BonusSentinelSummonLevel]]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc2]]]></Expression>
+      </Calculate>
+      <Calculate InternalName="ValueForFormattedDescription">
+        <Expression><![CDATA[[Calc2]]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>AdjustUnitStat</Attribute>
+      <StrVal>UnitStat_Defense_Pierce</StrVal>
+      <DisplayName>10 Defense</DisplayName>
+      <Duration>1</Duration>
+      <Value>10</Value>
+    </GameModifier>
+    <AIData AIPersonality="AI_General">
+      <AIPriority>70</AIPriority>
+    </AIData>
+    <HitSoundFX>Spell_SummonAirElemental_01</HitSoundFX>
+    <WorldLightOverrideTime>4</WorldLightOverrideTime>
+    <WorldLightOverrideAmbiant>1500,1500,1500</WorldLightOverrideAmbiant>
+    <WorldLightOverrideDiffuse>500,500,500</WorldLightOverrideDiffuse>
+    <WorldLightOverrideRim0>240,240,240</WorldLightOverrideRim0>
+    <WorldLightOverrideRim1>240,240,240</WorldLightOverrideRim1>
+    <SpellDefEffect>
+      <EffectName>S_BlindingLight_Particle</EffectName>
+      <LocalPosition>0,60,0</LocalPosition>
+      <EffectScale>2</EffectScale>
+      <EffectDelay>0</EffectDelay>
+      <SnapToTerrain>1</SnapToTerrain>
+      <PlayOnCaster>1</PlayOnCaster>
+    </SpellDefEffect>
+  </SpellDef>
+  <SpellDef InternalName="SummonShadowWarg">
+    <DisplayName>Summon Shadow Warg</DisplayName>
+    <Description>Summons a level 1 Shadow Warg.</Description>
+    <Image>M_Warg_ShadowWarg_Card.png</Image>
+    <IconFG>S_SummonShadowWarg_Icon.png</IconFG>
+    <AutoUnlock>1</AutoUnlock>
+    <CanStack>0</CanStack>
+    <SpellBookSortCategory>Summon</SpellBookSortCategory>
+    <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+    <SpellType>Strategic</SpellType>
+    <SpellClass>Defensive</SpellClass>
+    <SpellSubClass>Summon</SpellSubClass>
+    <SpellTargetType>Self</SpellTargetType>
+    <Range>0</Range>
+    <Prereq>
+      <Type>AbilityBonusOption</Type>
+      <Attribute>Summoner</Attribute>
+    </Prereq>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <StrVal>Shadow Warg</StrVal>
+      <UnitClass>ShadowWarg_BG_Summon</UnitClass>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc">
+        <Expression><![CDATA[[UnitStat_BonusSummonLevel] + 1]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <AIData AIPersonality="AI_General">
+      <AIPriority>10</AIPriority>
+    </AIData>
+    <HitSoundFX>Spell_SummonShadowWarg_01</HitSoundFX>
+    <SpellDefEffect>
+      <EffectName>Y_SummonDeathDemon_Particle</EffectName>
+      <LocalPosition>0,20,0</LocalPosition>
+      <EffectScale>1</EffectScale>
+      <EffectDelay>0</EffectDelay>
+      <SnapToTerrain>1</SnapToTerrain>
+    </SpellDefEffect>
+  </SpellDef>
+  <SpellDef InternalName="SummonShadowWarg_Tactical">
+    <DisplayName>Summon Shadow Warg</DisplayName>
+    <Description>Summons a level 1 Shadow Warg.</Description>
+    <FormattedDescription>Summons a level %d Shadow Warg.</FormattedDescription>
+    <Image>M_Warg_ShadowWarg_Card.png</Image>
+    <IconFG>S_SummonShadowWarg_Icon.png</IconFG>
+    <AutoUnlock>1</AutoUnlock>
+    <CanStack>0</CanStack>
+    <SpellBookSortCategory>Summon</SpellBookSortCategory>
+    <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+    <SpellType>Tactical</SpellType>
+    <SpellClass>Defensive</SpellClass>
+    <SpellSubClass>Summon</SpellSubClass>
+    <SpellTargetType>EmptyTile</SpellTargetType>
+    <HideInHiergamenon>1</HideInHiergamenon>
+    <PreventStackingWith>SummonShadowWarg</PreventStackingWith>
+    <Prereq>
+      <Type>AbilityBonusOption</Type>
+      <Attribute>Summoner</Attribute>
+    </Prereq>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <StrVal>Shadow Warg</StrVal>
+      <UnitClass>ShadowWarg_BG_Summon</UnitClass>
+      <IsForFormattedDescription>1</IsForFormattedDescription>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitStat_BonusSummonLevel] + 1]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+      <Calculate InternalName="ValueForFormattedDescription">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <AIData AIPersonality="AI_General">
+      <AIPriority>10</AIPriority>
+    </AIData>
+    <HitSoundFX>Spell_SummonShadowWarg_01</HitSoundFX>
+    <WorldLightOverrideTime>2</WorldLightOverrideTime>
+    <WorldLightOverrideAmbiant>30,30,30</WorldLightOverrideAmbiant>
+    <WorldLightOverrideDiffuse>30,30,30</WorldLightOverrideDiffuse>
+    <WorldLightOverrideRim0>212,0,192</WorldLightOverrideRim0>
+    <WorldLightOverrideRim1>0,132,234</WorldLightOverrideRim1>
+    <SpellDefEffect>
+      <EffectName>Y_SummonDeathDemon_Particle</EffectName>
+      <LocalPosition>0,0,0</LocalPosition>
+      <EffectScale>1</EffectScale>
+      <EffectDelay>0</EffectDelay>
+      <SnapToTerrain>1</SnapToTerrain>
+    </SpellDefEffect>
+  </SpellDef>
+  <!-- CoS Note: Not flagged as summon - assumes it's "natural" reinforcements 
+  <SpellDef InternalName="SummonShrill_Ability">
+    <DisplayName>Summon Shrills</DisplayName>
+    <Description>Summon a random group of Shrills</Description>
+    <Image>FireShrill.png</Image>
+    <IconFG>Ability_Summon_Shrill_Icon.png</IconFG>
+    <CastTime>5</CastTime>
+    <SpellBookSortCategory>Summon</SpellBookSortCategory>
+    <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+    <SpellType>Tactical</SpellType>
+    <SpellClass>Offensive</SpellClass>
+    <SpellSubClass>Summon</SpellSubClass>
+    <SpellTargetType>EmptyTile</SpellTargetType>
+    <AppliesRandomModifier>1</AppliesRandomModifier>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <UnitClass>AirShrill_Group</UnitClass>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitStat_BonusSummonLevel] + 3]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <UnitClass>EarthShrill_Group</UnitClass>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitStat_BonusSummonLevel] + 3]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <UnitClass>FireShrill_Group</UnitClass>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitStat_BonusSummonLevel] + 3]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <UnitClass>WaterShrill_Group</UnitClass>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitStat_BonusSummonLevel] + 3]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <AIData AIPersonality="AI_General">
+      <AIPriority>100</AIPriority>
+    </AIData>
+    <HitSoundFX>Spell_ParidensReturn_01</HitSoundFX>
+    <SpellDefEffect>
+      <EffectName>T_ParidensReturn_Particle</EffectName>
+      <LocalPosition>0,0,0</LocalPosition>
+      <EffectScale>0.4</EffectScale>
+      <EffectDelay>0</EffectDelay>
+      <SnapToTerrain>1</SnapToTerrain>
+    </SpellDefEffect>
+  </SpellDef>-->
+  <!-- CoS Note: Not flagged as summon - assumes it's "natural" reinforcements 
+  <SpellDef InternalName="SummonSpider_Ability">
+    <DisplayName>Summon Spiders</DisplayName>
+    <Description>Summon a group of level 3 Gatherer Spiders</Description>
+    <Image>M_Spider_Gatherer.png</Image>
+    <IconFG>Ability_Summon_Small_Spiders_Icon.png</IconFG>
+    <Cooldown>5</Cooldown>
+    <SpellBookSortCategory>Summon</SpellBookSortCategory>
+    <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+    <SpellType>Tactical</SpellType>
+    <SpellClass>Offensive</SpellClass>
+    <SpellSubClass>Summon</SpellSubClass>
+    <SpellTargetType>EmptyTile</SpellTargetType>
+    <HideInHiergamenon>1</HideInHiergamenon>
+    <IsSpecialAbility>1</IsSpecialAbility>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <UnitClass>GathererSpider</UnitClass>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitStat_BonusSummonLevel] + 3]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <AIData AIPersonality="AI_General">
+      <AIPriority>60</AIPriority>
+    </AIData>
+    <HitSoundFX>Spell_SummonDeathDemon_01</HitSoundFX>
+    <SpellDefEffect>
+      <EffectName>Y_SummonDeathDemon_Particle</EffectName>
+      <LocalPosition>0,0,0</LocalPosition>
+      <EffectScale>1</EffectScale>
+      <EffectDelay>0</EffectDelay>
+      <SnapToTerrain>1</SnapToTerrain>
+    </SpellDefEffect>
+  </SpellDef>-->
+  <SpellDef InternalName="SummonTitanImp">
+    <DisplayName>Summon Titan's Imp</DisplayName>
+    <Description>Summons a level 8 Imp of the Titans.</Description>
+    <Image>S_CalloftheTitans_Painting.png</Image>
+    <IconFG>S_CalloftheTitans_Icon.png</IconFG>
+    <AutoUnlock>0</AutoUnlock>
+    <CanStack>0</CanStack>
+    <SpellBookSortCategory>Summon</SpellBookSortCategory>
+    <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+    <SpellType>Strategic</SpellType>
+    <SpellClass>Defensive</SpellClass>
+    <SpellSubClass>Summon</SpellSubClass>
+    <SpellTargetType>Self</SpellTargetType>
+    <CasterMustBeSov>1</CasterMustBeSov>
+    <Range>0</Range>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <StrVal>Imp of the Titans</StrVal>
+      <UnitClass>TitanImp_BG_Summon</UnitClass>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc">
+        <Expression><![CDATA[[UnitStat_BonusSummonLevel] + 8]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <AIData AIPersonality="AI_General">
+      <AIPriority>70</AIPriority>
+    </AIData>
+    <HitSoundFX>Spell_SummonEarthElemental_01</HitSoundFX>
+    <SpellDefEffect>
+      <EffectName>S_SummonEarthElemental_Particle</EffectName>
+      <LocalPosition>0,0,0</LocalPosition>
+      <EffectScale>0.5</EffectScale>
+      <EffectDelay>0</EffectDelay>
+      <SnapToTerrain>1</SnapToTerrain>
+    </SpellDefEffect>
+  </SpellDef>
+  <!-- CoS Note: Not flagged as summon - assumes it's "natural" reinforcements 
+  <SpellDef InternalName="SummonWilding_Ability">
+    <DisplayName>Summon Wilding</DisplayName>
+    <Description>Summon a level 4 Wilding Rider</Description>
+    <Image>SandCrawlerRider_Medallion.png</Image>
+    <IconFG>Ability_Summon_Wilding_Icon.png</IconFG>
+    <Cooldown>5</Cooldown>
+    <SpellBookSortCategory>Summon</SpellBookSortCategory>
+    <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+    <SpellType>Tactical</SpellType>
+    <SpellClass>Offensive</SpellClass>
+    <SpellSubClass>Summon</SpellSubClass>
+    <SpellTargetType>EmptyTile</SpellTargetType>
+    <HideInHiergamenon>1</HideInHiergamenon>
+    <IsSpecialAbility>1</IsSpecialAbility>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <UnitClass>WildingRider</UnitClass>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitStat_BonusSummonLevel] + 4]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <AIData AIPersonality="AI_General">
+      <AIPriority>60</AIPriority>
+    </AIData>
+    <HitSoundFX>Spell_SummonDeathDemon_01</HitSoundFX>
+    <SpellDefEffect>
+      <EffectName>Y_SummonDeathDemon_Particle</EffectName>
+      <LocalPosition>0,0,0</LocalPosition>
+      <EffectScale>1</EffectScale>
+      <EffectDelay>0</EffectDelay>
+      <SnapToTerrain>1</SnapToTerrain>
+    </SpellDefEffect>
+  </SpellDef>-->
+  <SpellDef InternalName="SummonWisp">
+    <DisplayName>Summon Wisp</DisplayName>
+    <Description>Summons a level 2 (+1 per life shard) Wisp.  When cast in Tactical it heals all adjacent allies 8 hit points.</Description>
+    <Image>Wisp_Medallion.png</Image>
+    <IconFG>T_SummonWisp_Icon.png</IconFG>
+    <AutoUnlock>1</AutoUnlock>
+    <CanStack>0</CanStack>
+    <SpellBookSortCategory>Summon</SpellBookSortCategory>
+    <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+    <SpellType>Strategic</SpellType>
+    <SpellClass>Defensive</SpellClass>
+    <SpellSubClass>Summon</SpellSubClass>
+    <SpellTargetType>Self</SpellTargetType>
+    <Range>0</Range>
+    <Prereq>
+      <Type>AbilityBonusOption</Type>
+      <Attribute>SummonWisp</Attribute>
+    </Prereq>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <UnitClass>Wisp_BG_Summon</UnitClass>
+      <ApplyToSpellRadiusCenterOnly>1</ApplyToSpellRadiusCenterOnly>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitStat_BonusSummonLevel] + 2]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Calc2" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitOwner_GetNumLifeShards]]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc] + [Calc2]]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <AIData AIPersonality="AI_General">
+      <AIPriority>70</AIPriority>
+    </AIData>
+    <HitSoundFX>Spell_SummonAirElemental_01</HitSoundFX>
+    <SpellDefEffect>
+      <EffectName>S_HealingLight_Particle</EffectName>
+      <LocalPosition>0,65,0</LocalPosition>
+      <EffectScale>1</EffectScale>
+      <EffectDelay>0</EffectDelay>
+      <SnapToTerrain>1</SnapToTerrain>
+      <PlayOnCaster>1</PlayOnCaster>
+    </SpellDefEffect>
+  </SpellDef>
+  <SpellDef InternalName="SummonWisp_Tactical">
+    <DisplayName>Summon Wisp</DisplayName>
+    <Description>Summons a level 2 (+1 per life shard) Wisp.  When cast in Tactical it heals all adjacent allies 8 hit points.</Description>
+        <FormattedDescription>Summons a level %d Wisp and heals all adjacent allies 8 hit points.</FormattedDescription>
+    <Image>Wisp_Medallion.png</Image>
+    <IconFG>T_SummonWisp_Icon.png</IconFG>
+    <AutoUnlock>1</AutoUnlock>
+    <CanStack>0</CanStack>
+    <SpellBookSortCategory>Summon</SpellBookSortCategory>
+    <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+    <SpellType>Tactical</SpellType>
+    <SpellClass>Offensive</SpellClass>
+    <SpellSubClass>Summon</SpellSubClass>
+    <SpellTargetType>FriendlyUnit</SpellTargetType>
+    <SpellTargetTileOccupied>Empty</SpellTargetTileOccupied>
+    <HideInHiergamenon>1</HideInHiergamenon>
+    <IgnoreInvalidTargetsInRadius>1</IgnoreInvalidTargetsInRadius>
+    <PreventStackingWith>SummonWisp</PreventStackingWith>
+    <Radius>1</Radius>
+    <Prereq>
+      <Type>AbilityBonusOption</Type>
+      <Attribute>SummonWisp</Attribute>
+    </Prereq>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <UnitClass>Wisp_BG_Summon</UnitClass>
+      <ApplyToSpellRadiusCenterOnly>1</ApplyToSpellRadiusCenterOnly>
+      <IsForFormattedDescription>1</IsForFormattedDescription>
+      <Duration>-1</Duration>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitStat_BonusSummonLevel] + 2]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Calc2" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitOwner_GetNumLifeShards]]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc] + [Calc2]]]></Expression>
+      </Calculate>
+      <Calculate InternalName="ValueForFormattedDescription">
+        <Expression><![CDATA[[Calc] + [Calc2]]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>CurHealth</Attribute>
+      <IsForFormattedDescription>1</IsForFormattedDescription>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[8 * [UnitStat_BonusHealing]]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+      <Calculate InternalName="ValueForFormattedDescription">
+        <Expression><![CDATA[[Calc]]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <AIData AIPersonality="AI_General">
+      <AIPriority>70</AIPriority>
+    </AIData>
+    <HitSoundFX>Spell_SummonAirElemental_01</HitSoundFX>
+    <SpellDefEffect>
+      <EffectName>S_HealingLight_Particle</EffectName>
+      <LocalPosition>0,65,0</LocalPosition>
+      <EffectScale>1</EffectScale>
+      <EffectDelay>0</EffectDelay>
+      <SnapToTerrain>1</SnapToTerrain>
+      <PlayOnCaster>1</PlayOnCaster>
+    </SpellDefEffect>
+  </SpellDef>
+  <SpellDef InternalName="TouchOfEntropy">
+    <DisplayName>Touch of Entropy</DisplayName>
+    <Description>Does 24 damage (+6 per death shard) to unit.  If that unit is killed a Lurk is summoned in its place.</Description>
+    <FormattedDescription>Does %d damage to unit, half if the unit resists.  If that unit is killed a Lurk is summoned in its place.</FormattedDescription>
+    <Image>T_TouchofEntropy_Painting.png</Image>
+    <IconFG>T_TouchOfEntropy_Icon.png</IconFG>
+    <AutoUnlock>1</AutoUnlock>
+    <SpellBookSortCategory>Unit</SpellBookSortCategory>
+    <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+    <SpellType>Tactical</SpellType>
+    <SpellClass>Offensive</SpellClass>
+    <SpellSubClass>Damage</SpellSubClass>
+    <SpellTargetType>EnemyUnit</SpellTargetType>
+    <IsResistable>1</IsResistable>
+    <Range>1</Range>
+    <Prereq>
+      <Type>AbilityBonusOption</Type>
+      <Attribute>Death4</Attribute>
+    </Prereq>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>CurHealth</Attribute>
+      <IsForFormattedDescription>1</IsForFormattedDescription>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitOwner_GetNumDeathShards] * -6]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Calc2">
+        <Expression><![CDATA[[Calc] - 24]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc2]]]></Expression>
+      </Calculate>
+      <Calculate InternalName="ValueForFormattedDescription">
+        <Expression><![CDATA[[Calc2] * -1]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <StrVal>Lurk</StrVal>
+      <UnitClass>Lurk_BG_Summon</UnitClass>
+      <ApplyIfSpellTargetKilled>1</ApplyIfSpellTargetKilled>
+      <Duration>-1</Duration>
+    </GameModifier>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>CurHealth</Attribute>
+      <IsForSpellResist>1</IsForSpellResist>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitOwner_GetNumDeathShards] * -3]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc] - 12]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <AIData AIPersonality="AI_General">
+      <AIPriority>90</AIPriority>
+    </AIData>
+    <HitSoundFX>Spell_TouchOfEntropy_01</HitSoundFX>
+    <SpellDefEffect>
+      <EffectName>T_TouchofEntropy_Particle</EffectName>
+      <LocalPosition>0,0,0</LocalPosition>
+      <EffectScale>.3</EffectScale>
+      <EffectDelay>0</EffectDelay>
+      <SnapToTerrain>1</SnapToTerrain>
+    </SpellDefEffect>
+  </SpellDef>
+  <SpellDef InternalName="TouchOfEntropy_Ability">
+    <DisplayName>Touch of Entropy</DisplayName>
+    <Description>Does 24 damage (+6 per death shard) to unit.  If that unit is killed a Lurk is summoned in its place.</Description>
+    <FormattedDescription>Does %d damage to unit, half if the unit resists.  If that unit is killed a Lurk is summoned in its place.</FormattedDescription>
+    <Image>T_TouchofEntropy_Painting.png</Image>
+    <IconFG>T_TouchOfEntropy_Icon.png</IconFG>
+    <Cooldown>5</Cooldown>
+    <SpellBookSortCategory>Unit</SpellBookSortCategory>
+    <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+    <SpellType>Tactical</SpellType>
+    <SpellClass>Offensive</SpellClass>
+    <SpellSubClass>Damage</SpellSubClass>
+    <SpellTargetType>EnemyUnit</SpellTargetType>
+    <HideInHiergamenon>1</HideInHiergamenon>
+    <IsResistable>1</IsResistable>
+    <IsSpecialAbility>1</IsSpecialAbility>
+    <Range>1</Range>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>CurHealth</Attribute>
+      <IsForFormattedDescription>1</IsForFormattedDescription>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitOwner_GetNumDeathShards] * -6]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Calc2">
+        <Expression><![CDATA[[Calc] - 24]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc2]]]></Expression>
+      </Calculate>
+      <Calculate InternalName="ValueForFormattedDescription">
+        <Expression><![CDATA[[Calc2] * -1]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>SummonUnit</Attribute>
+      <StrVal>Lurk</StrVal>
+      <UnitClass>Lurk_BG_Summon</UnitClass>
+      <ApplyIfSpellTargetKilled>1</ApplyIfSpellTargetKilled>
+      <Duration>-1</Duration>
+    </GameModifier>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>CurHealth</Attribute>
+      <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+        <Expression><![CDATA[[UnitOwner_GetNumDeathShards] * -3]]></Expression>
+      </Calculate>
+      <Calculate InternalName="Value">
+        <Expression><![CDATA[[Calc] - 12]]></Expression>
+      </Calculate>
+    </GameModifier>
+    <AIData AIPersonality="AI_General">
+      <AIPriority>90</AIPriority>
+    </AIData>
+    <HitSoundFX>Spell_TouchOfEntropy_01</HitSoundFX>
+    <SpellDefEffect>
+      <EffectName>T_TouchofEntropy_Particle</EffectName>
+      <LocalPosition>0,0,0</LocalPosition>
+      <EffectScale>.3</EffectScale>
+      <EffectDelay>0</EffectDelay>
+      <SnapToTerrain>1</SnapToTerrain>
+    </SpellDefEffect>
+  </SpellDef>
+</Container>

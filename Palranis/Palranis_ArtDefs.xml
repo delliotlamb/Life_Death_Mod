@@ -1,0 +1,14 @@
+<ImprovementTypeArtDefs>
+        <ImprovementTypeArtDef InternalName="Trial_Pit_ArtDef">
+            <ImprovementTypeArtSubPack InternalName="SacrificialAltar_Default">
+                <TileDesign>F_Trial_Pit_01</TileDesign>
+                <ConstructionTileDesign>F_Construction1x1_01</ConstructionTileDesign>
+                <DrawnIcon>Improvement_SacrificialAltar.png</DrawnIcon>
+                <DrawnIconConstruction>Improvement_SacrificialAltar_C.png</DrawnIconConstruction>
+                <Thumbnail>F_Sacrificial_Alter_Thumb_01.png</Thumbnail>
+                <Medallions InternalName="">
+                    <All>F_Sacrificial_Alter_Thumb_01.png</All>
+                </Medallions>
+            </ImprovementTypeArtSubPack>
+        </ImprovementTypeArtDef>
+</ImprovementTypeArtDefs>		

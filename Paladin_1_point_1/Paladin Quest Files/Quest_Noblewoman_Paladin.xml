@@ -1,0 +1,976 @@
+<Quests>
+
+
+<QuestDef InternalName="Quest_TheRaidersBribe_Paladin">
+        <DisplayName>Escort Noblewoman</DisplayName>
+        <Description>Sitting for food and drink, you meet a friendly nobleman. Hearing your stories of defeating the horrors of this new world, he is impressed. He requests that you escort his daughter back to his estate. He promises a valuable sword as a reward.</Description>
+        <IsStartingPointQuest>0</IsStartingPointQuest>
+        <AllowQuestRejection>1</AllowQuestRejection>
+	<ShortTextAccept>I will meet the daughter.</ShortTextAccept>
+        <ShortTextDeny>I will waste no time with petty errands.</ShortTextDeny>
+        <RewardText>Silver Broadsword</RewardText>
+        <RewardImage>W_Broadsword_Sharp_Icon_01.png</RewardImage>
+        <QuestClass>Minor</QuestClass>
+        <Repeatable>0</Repeatable>
+        <TriggerType>QuestLocation</TriggerType>
+        <TriggerOrigin>EventLocation</TriggerOrigin>
+        <SpawnRating>2</SpawnRating>
+		<TriggerChance>0</TriggerChance>		
+        <AIAcceptChance>0</AIAcceptChance>
+        <AICanGoOnQuest>0</AICanGoOnQuest>
+        <Image>Q_Damsel_In_Distress_Card_01.png</Image>
+        <PrefQuestLoc>QuestLoc_Inn_Paladin</PrefQuestLoc>
+
+		<QuestObjectiveDef>
+            <ObjectiveID>0</ObjectiveID>
+            <NextObjectiveID>1</NextObjectiveID>
+            <ChoiceText>She is quite fair, but shy. And there is more hiding behind her silence - she seems quite deliberate in not speaking whenever possible, but seems quite aware of everything you do. You aren't sure if it is her fancying you, or feeling deep distrust in your character.
+
+			Your men are rested, and it is time to go.
+			</ChoiceText>
+            <ChoiceMedallion>Q_Damsel_In_Distress_Card_01.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Gfx\Medallions\Medallion_Frame_01.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>Maybe I'll learn more about her on the way. We move.</Description>
+                <NextObjectiveID>1</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>Doesn't matter. I want the nobleman's valuable reward, let's go.</Description>
+                <NextObjectiveID>1</NextObjectiveID>
+            </QuestChoiceDef>
+	    <QuestChoiceDef>
+                <Description>No, something isn't right here. Find another escort for your mute, fey daughter. (abandon quest).</Description>
+                <NextObjectiveID>-1</NextObjectiveID>
+		<QuestFailure>1</QuestFailure>
+            </QuestChoiceDef>
+	    <QuestChoiceDef>
+                <Description>I feel like I've done this quest before, somehow...is there an igyns shortbow in my future?</Description>
+                <NextObjectiveID>1</NextObjectiveID>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+        <QuestObjectiveDef>
+            <ObjectiveID>1</ObjectiveID>
+            <NextObjectiveID>2</NextObjectiveID>
+            <Description>The noble points to the location of his estate on your map, promising that his steward will give you your reward when his daughter arrives safely.</Description>
+            <Treasure>
+                <GameModifier>
+                    <ModType>Unit</ModType>
+                    <Attribute>UnitJoinArmy</Attribute>
+                    <StrVal>Unit_Quest_Noblewoman</StrVal>
+                    <Unitclass>Unit</Unitclass>
+                </GameModifier>
+            </Treasure>
+            <Treasure>
+                <GameModifier>
+                    <ModType>Map</ModType>
+                    <Attribute>CreateGoodieHut</Attribute>
+                    <StrVal>Estate</StrVal>
+                    <Unitclass>GH_Quest_Estate</Unitclass>
+                    <Radius>3</Radius>
+                </GameModifier>
+            </Treasure>
+            <QuestConditionDef>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Escort the noblewoman home.</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Success</Class>
+                <Type>ClearGoodieHut</Type>
+                <TextData>GH_Quest_Estate</TextData>
+                <MoreTextData>Unit_Quest_Noblewoman</MoreTextData>
+                <Flag>RevealTarget</Flag>
+                <Flag>DestroyUnit</Flag>
+                <Flag>UnitMustBeEscorted</Flag>
+            </QuestConditionDef>
+            <QuestConditionDef>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Protect the noblewoman from harm.</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Failure</Class>
+                <Type>UnitKilled</Type>
+                <Faction>Player</Faction>
+                <TextData>Unit_Quest_Noblewoman</TextData>
+                <NumericData>1</NumericData>
+                <CompletionText>You failed to protect the noble's daughter and she died a most gruesome death. Her father will not be pleased...</CompletionText>
+            </QuestConditionDef>
+            <QuestConditionDef>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Don't allow the noblewoman to arrive unescorted.</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Failure</Class>
+                <Type>ClearGoodieHut</Type>
+                <TextData>GH_Quest_Estate</TextData>
+                <MoreTextData>Unit_Quest_Noblewoman</MoreTextData>
+                <Flag>DestroyUnit</Flag>
+                <Flag>UnitUnescorted</Flag>
+                <CompletionText>The noblewoman's father is furious that you allowed her to make the journey home without an escort and refuses to give any reward.</CompletionText>
+            </QuestConditionDef>
+        </QuestObjectiveDef>
+
+        <QuestObjectiveDef>
+            <ObjectiveID>2</ObjectiveID>
+            <NextObjectiveID>3</NextObjectiveID>
+            <ChoiceText>The entire journey, you have not been able to shake a strange feeling - another presence following you, as you escort the young, still silent noblewoman.
+
+You sight the grounds of the estate, not far ahead. She seems surprised that you have arrived. She looks at you with desperation:
+
+"Please do not return me. My father is an evil man. I have only learned this recently, but - if you return me, I will come to harm. And there will be evil done to your nation, some day, as well!"
+</ChoiceText>
+            <ChoiceMedallion>Q_Damsel_In_Distress_Card_01.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Gfx\Medallions\Medallion_Frame_01.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>How is he so evil?</Description>
+                <NextObjectiveID>11</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>Silence! I didn't march all this way to give up my reward. Keep walking.</Description>
+                <NextObjectiveID>3</NextObjectiveID>
+            </QuestChoiceDef>
+	    <QuestChoiceDef>
+                <Description>No, relax, I've done this quest before. We go to the estate, you're safe, and I choose between a bow and some gold.</Description>
+                <NextObjectiveID>11</NextObjectiveID>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+//FIRST BRANCH: Ignore her pleas and return the kid
+
+        <QuestObjectiveDef>
+            <ObjectiveID>3</ObjectiveID>
+            <NextObjectiveID>4</NextObjectiveID>
+            <ChoiceText>You arrive to find bandits camped outside of the estate.  Their leader approaches, and offers you a deal.
+
+"We want the girl. Give her to us and we will pay you 200 gold to release her to our custody."</ChoiceText>
+            <ChoiceMedallion>B_Highwayman_Card_01.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Gfx\Medallions\Medallion_Frame_01.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>That's a generous offer.</Description>
+                <NextObjectiveID>4</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>No. Stand aside!</Description>
+                <NextObjectiveID>4</NextObjectiveID>
+            </QuestChoiceDef>
+	    <QuestChoiceDef>
+                <Description>You bandits are soft. And I do not tolerate weakness.</Description>
+                <NextObjectiveID>4</NextObjectiveID>
+            </QuestChoiceDef>
+		<QuestChoiceDef>
+                <Description>Tell me why you want her - 200 gold is a lot.</Description>
+                <NextObjectiveID>10</NextObjectiveID>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+	<QuestObjectiveDef>
+            <ObjectiveID>4</ObjectiveID>
+            <NextObjectiveID>5</NextObjectiveID>
+            <ChoiceText>What is your choice? Either you negotiate - or we take her from you.</ChoiceText>
+            <ChoiceMedallion>B_Highwayman_Card_01.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Gfx\Medallions\Medallion_Frame_01.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>200 gold, you said? It's a deal! (+200 Gildar, but abandon the quest)</Description>
+                <NextObjectiveID>-1</NextObjectiveID>
+                <QuestFailure>1</QuestFailure>
+                <PopupMessage>The noblewoman bursts into tears as you hand her over to the bandits.</PopupMessage>
+            <Treasure>
+                <GameModifier>
+                    <ModType>Player</ModType>
+                    <Attribute>Treasury</Attribute>
+                    <Value>200</Value>
+                </GameModifier>
+            </Treasure>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>I will not betray my task. (attack)</Description>
+                <NextObjectiveID>5</NextObjectiveID>
+                <Encounter>
+                    <Liklihood>100</Liklihood>
+                    <BattleIdentifier>BanditCaptain_Paladin</BattleIdentifier>
+                    <WillRespawn>0</WillRespawn>
+                    <WanderingRadius>0</WanderingRadius>
+                    <UnitInstance>
+                        <UnitType>BanditCaptain</UnitType>
+                        <UnitName>Bandit Captain</UnitName>
+                        <Level>3</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Bandit</UnitType>
+                        <UnitName>Bandit</UnitName>
+                        <Level>1</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Bandit</UnitType>
+                        <UnitName>Bandit</UnitName>
+                        <Level>1</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Bandit</UnitType>
+                        <UnitName>Bandit</UnitName>
+                        <Level>1</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Bandit</UnitType>
+                        <UnitName>Bandit</UnitName>
+                        <Level>1</Level>
+                    </UnitInstance>
+                </Encounter>
+            </QuestChoiceDef>
+	    <QuestChoiceDef>
+                <Description>You are all too incapable to spare! (Kill the daughter, attack bandits)</Description>
+                <NextObjectiveID>7</NextObjectiveID>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+        <QuestObjectiveDef>
+            <ObjectiveID>5</ObjectiveID>
+            <NextObjectiveID>6</NextObjectiveID>
+            <PopupObjectiveMsg>0</PopupObjectiveMsg>
+            <QuestConditionDef>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Kill the Bandits.</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Success</Class>
+                <Type>BattleFinished</Type>
+                <TextData>BanditCaptain_Paladin</TextData>
+                <MoreTextData>Victory</MoreTextData>
+            </QuestConditionDef>
+        </QuestObjectiveDef>
+
+        <QuestObjectiveDef>
+            <ObjectiveID>6</ObjectiveID>
+            <NextObjectiveID>-1</NextObjectiveID>
+            <ChoiceText>After the battle, the family steward emerges and quickly looks the young noblewoman over. He sends the young woman inside before turning to offer you reward.
+
+"I can pay you 100 Gildar or a sword enchanted to punish twisted creatures and elementals.  Which would you prefer?"</ChoiceText>
+            <ChoiceMedallion>Q_Brood.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_01.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>The Gildar. (+100 Gildar)</Description>
+                <NextObjectiveID>-1</NextObjectiveID>
+               <QuestFailure>1</QuestFailure>
+		<PopupMessage>You are thanked once more with grace, then sent off, reward in hand.</PopupMessage>
+            <Treasure>
+                <GameModifier>
+                    <ModType>Player</ModType>
+                    <Attribute>Treasury</Attribute>
+                    <Value>100</Value>
+                </GameModifier>
+            </Treasure>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>I could use the sword.</Description>
+                <NextObjectiveID>-1</NextObjectiveID>
+               <QuestFailure>1</QuestFailure>
+		<PopupMessage>You are thanked once more with grace, then sent off, reward in hand.</PopupMessage>
+            <Treasure>
+                <GameModifier>
+                    <ModType>GiveItem</ModType>
+                    <Attribute>Broadsword_Silver</Attribute>
+                </GameModifier>
+            </Treasure>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+
+        <QuestObjectiveDef>
+            <ObjectiveID>7</ObjectiveID>
+            <NextObjectiveID>8</NextObjectiveID>
+            <ChoiceText>The bandits are shocked to see you cut the girl's throat, and turn your murderous eyes on them.
+
+"What- how could you kill her?" The leader of the bandits asks. Even to him, that was heartless.
+</ChoiceText>
+            <ChoiceMedallion>B_Highwayman_Card_01.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Gfx\Medallions\Medallion_Frame_01.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>She was weak. As are you - now see the dividends paid to the helpless in this world! (attack)</Description>
+                <NextObjectiveID>8</NextObjectiveID>
+		<Encounter>
+                    <Liklihood>100</Liklihood>
+                    <BattleIdentifier>BanditCaptain_Murder</BattleIdentifier>
+                    <WillRespawn>0</WillRespawn>
+                    <WanderingRadius>0</WanderingRadius>
+                    <UnitInstance>
+                        <UnitType>BanditCaptain</UnitType>
+                        <UnitName>Bandit Captain</UnitName>
+                        <Level>3</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Bandit</UnitType>
+                        <UnitName>Bandit</UnitName>
+                        <Level>1</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Bandit</UnitType>
+                        <UnitName>Bandit</UnitName>
+                        <Level>1</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Bandit</UnitType>
+                        <UnitName>Bandit</UnitName>
+                        <Level>1</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Bandit</UnitType>
+                        <UnitName>Bandit</UnitName>
+                        <Level>1</Level>
+                    </UnitInstance>
+                </Encounter>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+        <QuestObjectiveDef>
+            <ObjectiveID>8</ObjectiveID>
+            <NextObjectiveID>9</NextObjectiveID>
+            <PopupObjectiveMsg>0</PopupObjectiveMsg>
+            <QuestConditionDef>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Kill the Bandits.</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Success</Class>
+                <Type>BattleFinished</Type>
+                <TextData>BanditCaptain_Murder</TextData>
+                <MoreTextData>Victory</MoreTextData>
+            </QuestConditionDef>
+        </QuestObjectiveDef>
+
+        <QuestObjectiveDef>
+            <ObjectiveID>9</ObjectiveID>
+            <NextObjectiveID>-1</NextObjectiveID>
+            <ChoiceText>The young noble's daughter is dead. There is no quest to complete, now.</ChoiceText>
+            <ChoiceMedallion>KidnappedDamsel.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_01.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>But the weak have been punished. This is deeply satisfying.</Description>
+                <NextObjectiveID>-1</NextObjectiveID>
+		<QuestFailure>1</QuestFailure>
+            <Treasure>
+		<GameModifier>
+            	    <ModType>Unit</ModType>
+            	    <Attribute>UnlockUnitAbility</Attribute>
+            	    <StrVal>Wrath_Paladin</StrVal>
+        	</GameModifier>
+            </Treasure>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>I could have gotten the reward before I murdered her. I will strive to control myself better, in the future.</Description>
+                <NextObjectiveID>-1</NextObjectiveID>
+            <Treasure>
+		<GameModifier>
+            	    <ModType>Unit</ModType>
+            	    <Attribute>UnlockUnitAbility</Attribute>
+            	    <StrVal>Discipline_Light</StrVal>
+        	</GameModifier>
+            </Treasure>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>...What have I done?</Description>
+                <NextObjectiveID>-1</NextObjectiveID>
+            <Treasure>
+		<GameModifier>
+            	    <ModType>Unit</ModType>
+            	    <Attribute>UnlockUnitAbility</Attribute>
+            	    <StrVal>Self_Distrust_Paladin</StrVal>
+        	</GameModifier>
+            </Treasure>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>10</ObjectiveID>
+            <NextObjectiveID>4</NextObjectiveID>
+            <ChoiceText>Simple! The nobleman is said to be quite powerful. And rich. The girl's life is most valuable to him - thus I want to have her life in my hands, when he names the price for her freedom.</ChoiceText>
+            <ChoiceMedallion>B_Highwayman_Card_01.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_01.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>You are a sensible businessman.</Description>
+                <NextObjectiveID>4</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>You filthy kidnapper.</Description>
+                <NextObjectiveID>4</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>You ransoming mite!</Description>
+                <NextObjectiveID>4</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>I recommend slicing off fingers and ears. Higher price in the end.</Description>
+                <NextObjectiveID>4</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>If you assaulted his estate and took what you wanted from him, I'd respect you.</Description>
+                <NextObjectiveID>4</NextObjectiveID>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+
+//END FIRST BRANCH - Ignore the kid's warnings and deliver her
+
+//SECOND BRANCH - Listen to her warnings
+
+<QuestObjectiveDef>
+            <ObjectiveID>11</ObjectiveID>
+            <NextObjectiveID>12</NextObjectiveID>
+            <ChoiceText>Please listen! I am not certain how, but that man who hired you - he is not my father. Not anymore. A year ago, my father changed. He began to do horrible experiments at night. Strange travelers came to the house, in the middle of the night, and sometimes there would be screams. And in the gardens, during the day, there were monstrous footprints. 
+
+Whatever he was doing, evil was being born of it. You only met us at the Inn because I had run away, and he found and caught me. I believe he intends to do experiments on me, next. 
+
+Please - he has become some kind of evil magician! He only hired you because he can no longer stand to walk in the sunlight. Returning me will only help to advance his evil!
+</ChoiceText>
+            <ChoiceMedallion>L_Death_Demon_01.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Gfx\Medallions\Medallion_Frame_01.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>I will wait for him to return, tonight.</Description>
+                <NextObjectiveID>12</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>Fascinating story. But I have a reward to collect, so get to walking dear.</Description>
+                <NextObjectiveID>3</NextObjectiveID>
+            </QuestChoiceDef>
+	    <QuestChoiceDef>
+                <Description>I could use a Necromancer ally...I mean, ahem, I will wait to see him, tonight.</Description>
+                <NextObjectiveID>12</NextObjectiveID>
+            </QuestChoiceDef>
+	    <QuestChoiceDef>
+                <Description>He sounds horrible, my dear. I am MUCH WORSE! (kill her).</Description>
+                <NextObjectiveID>9</NextObjectiveID>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+
+<QuestObjectiveDef>
+            <ObjectiveID>12</ObjectiveID>
+            <NextObjectiveID>13</NextObjectiveID>
+            <ChoiceText>You wait at a distance from the estate, and watch the road approaching it. Night comes, and then a coach approaches the estate. 
+
+"That is my father's coach! He has returned!" She runs and hides behind a bush.
+
+What do you do?
+</ChoiceText>
+            <ChoiceMedallion>G_Quest_Estate_01.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Gfx\Medallions\Medallion_Frame_01.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>I am done with this quest. I signed up for an ignys shortbow, not this madness.</Description>
+                <NextObjectiveID>-1</NextObjectiveID>
+		<QuestFailure>1</QuestFailure>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>I will knock on the front door.</Description>
+                <NextObjectiveID>13</NextObjectiveID>
+            </QuestChoiceDef>
+	    <QuestChoiceDef>
+                <Description>I will sneak in the backdoor.</Description>
+                <NextObjectiveID>17</NextObjectiveID>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+
+<QuestObjectiveDef>
+            <ObjectiveID>13</ObjectiveID>
+            <NextObjectiveID>14</NextObjectiveID>
+            <ChoiceText>You open the front door, and the steward says his master has been waiting for you to come to the door. 
+
+You enter the house, and a man in a robe greets you - the nobleman you met at the inn, but now seeming quite different. Quite a bit more powerful, in fact.
+
+"I am strongest at night, channeler. But you have brought my daughter, as asked - have you not? Allow me to reward you, per our agreement. And then you can be on your way."
+</ChoiceText>
+            <ChoiceMedallion>M_Magician_Card_01.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Gfx\Medallions\Medallion_Frame_01.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>You are a thing of evil - I cannot allow you to live!</Description>
+                <NextObjectiveID>18</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>What magical experiments do you do at night?</Description>
+                <NextObjectiveID>15</NextObjectiveID>
+            </QuestChoiceDef>
+	    <QuestChoiceDef>
+                <Description>How powerful are you, exactly?</Description>
+                <NextObjectiveID>15</NextObjectiveID>
+            </QuestChoiceDef>
+	    <QuestChoiceDef>
+                <Description>She's outside, behind a bush. I'll take the reward now!</Description>
+                <NextObjectiveID>14</NextObjectiveID>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>14</ObjectiveID>
+            <NextObjectiveID>-1</NextObjectiveID>
+            <ChoiceText>The steward aproaches you.
+
+"I can pay you 100 Gildar or a sword enchanted to punish twisted creatures and elementals.  Which would you prefer?"</ChoiceText>
+            <ChoiceMedallion>Q_Brood.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_01.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>The Gildar. (+100 Gildar)</Description>
+                <NextObjectiveID>-1</NextObjectiveID>
+               <QuestFailure>1</QuestFailure>
+		<PopupMessage>You are sent promptly on your way, reward in hand. The girl is never seen again.</PopupMessage>
+            <Treasure>
+                <GameModifier>
+                    <ModType>Player</ModType>
+                    <Attribute>Treasury</Attribute>
+                    <Value>100</Value>
+                </GameModifier>
+            </Treasure>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>I could use the sword.</Description>
+                <NextObjectiveID>-1</NextObjectiveID>
+               <QuestFailure>1</QuestFailure>
+		<PopupMessage>You are sent promptly on your way, reward in hand. The girl is never seen again.</PopupMessage>
+            <Treasure>
+                <GameModifier>
+                    <ModType>GiveItem</ModType>
+                    <Attribute>Broadsword_Silver</Attribute>
+                </GameModifier>
+            </Treasure>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>15</ObjectiveID>
+            <NextObjectiveID>17</NextObjectiveID>
+            <ChoiceText>"I have studied death magic long, and intensely. I am your superior in the channeling arts." He laughs. "Are you afraid? You should be." </ChoiceText>
+            <ChoiceMedallion>M_Magician_Card_01.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_01.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>Afraid? Let me show you the MEANING of fear! (attack)</Description>
+                <NextObjectiveID>18</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>I do not let fear guide my choices. I am taking the girl, and leaving. Good night.</Description>
+                <NextObjectiveID>16</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>Death magic? Then we are enemies - defend yourself! (attack)</Description>
+                <NextObjectiveID>18</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>Sounds wonderful. Want to help me conquer the world?</Description>
+                <NextObjectiveID>20</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>Run away! (abandon quest)</Description>
+                <NextObjectiveID>-1</NextObjectiveID>
+		<QuestFailure>1</QuestFailure>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>16</ObjectiveID>
+            <NextObjectiveID>18</NextObjectiveID>
+            <ChoiceText>"You shall go nowhere! The girl is MINE!"</ChoiceText>
+            <ChoiceMedallion>M_Magician_Card_01.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_01.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>Do not impede my exit.</Description>
+                <NextObjectiveID>18</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>Run away! (abandon quest)</Description>
+                <NextObjectiveID>-1</NextObjectiveID>
+		<QuestFailure>1</QuestFailure>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>17</ObjectiveID>
+            <NextObjectiveID>18</NextObjectiveID>
+            <ChoiceText>You sneak into the back door of the mansion, moving quietly. But then a torch is lit, and a man in robes stands before you.
+
+"I am too a powerful a magician for your petty burglary, channeler! To see one such as you sneaking in my parlor? Shameful."
+ </ChoiceText>
+            <ChoiceMedallion>M_Magician_Card_01.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_01.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>I wish to speak with you.</Description>
+                <NextObjectiveID>15</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>You die! (attack)</Description>
+                <NextObjectiveID>18</NextObjectiveID>
+		<QuestFailure>1</QuestFailure>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>Run away! (abandon quest)</Description>
+                <NextObjectiveID>-1</NextObjectiveID>
+		<QuestFailure>1</QuestFailure>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>18</ObjectiveID>
+            <NextObjectiveID>19</NextObjectiveID>
+            <ChoiceText>"Then we shall battle, channeler!"
+
+The family steward transforms, into a ritualist assistant.
+</ChoiceText>
+            <ChoiceMedallion>M_Ritualist_Card.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_01.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>(attack them)</Description>
+                <NextObjectiveID>19</NextObjectiveID>
+		<Encounter>
+                    <Liklihood>100</Liklihood>
+                    <BattleIdentifier>Nobleman_Magician</BattleIdentifier>
+                    <WillRespawn>0</WillRespawn>
+                    <WanderingRadius>0</WanderingRadius>
+                    <UnitInstance>
+                        <UnitType>DarkWizard2</UnitType>
+                        <UnitName>Former Nobleman</UnitName>
+                        <Level>4</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Ritualist</UnitType>
+                        <UnitName>Family Steward</UnitName>
+                        <Level>2</Level>
+                    </UnitInstance>
+                </Encounter>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>No. There is no benefit to us fighting.</Description>
+                <NextObjectiveID>24</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>Er, actually - run like the cowards we are! (abandon quest)</Description>
+                <NextObjectiveID>-1</NextObjectiveID>
+		<QuestFailure>1</QuestFailure>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+
+        <QuestObjectiveDef>
+            <ObjectiveID>19</ObjectiveID>
+            <NextObjectiveID>21</NextObjectiveID>
+            <PopupObjectiveMsg>0</PopupObjectiveMsg>
+            <QuestConditionDef>
+                <Objective>
+                    <Icon>Mana_32.png</Icon>
+                    <Text>Kill the Nobleman and his steward.</Text>
+                    <IsOptional>0</IsOptional>
+                </Objective>
+                <Class>Success</Class>
+                <Type>BattleFinished</Type>
+                <TextData>Nobleman_Magician</TextData>
+                <MoreTextData>Victory</MoreTextData>
+            </QuestConditionDef>
+        </QuestObjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>20</ObjectiveID>
+            <NextObjectiveID>17</NextObjectiveID>
+            <ChoiceText>"Cooperation? I did not think you would be interested in that..." He laughs. "Divert 5 mana to me, every turn - even after my death, as you will perceive it - do this, and I shall join you. And I keep the girl, of course." </ChoiceText>
+            <ChoiceMedallion>S_Meditation_Painting.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_01.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>That offer is an insult! (attack)</Description>
+                <NextObjectiveID>17</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>Forget it. I am taking the girl, and leaving. Good night.</Description>
+                <NextObjectiveID>15</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>You have a deal.</Description>
+                <NextObjectiveID>-1</NextObjectiveID>
+		<PopupMessage>You begin to pay the mana cost, and the nobleman agrees to follow you.</PopupMessage>
+		<QuestFailure>1</QuestFailure>
+	<Treasure>
+		<GameModifier>
+            	    <ModType>Unit</ModType>
+            	    <Attribute>UnlockUnitAbility</Attribute>
+            	    <StrVal>Noblemans_Due</StrVal>
+        	</GameModifier>
+        </Treasure>
+            <Treasure>
+                <GameModifier>
+                	<ModType>Unit</ModType>
+                	<Attribute>UnitJoinArmy</Attribute>
+                	<StrVal>DarkWizard2</StrVal>
+                	<Value>4</Value>
+                	<UnitClass>Unit</UnitClass>
+                </GameModifier>
+            </Treasure>
+            </QuestChoiceDef>
+
+//This choice description is being displayed as the intro text when the quest starts. Why?
+
+            <QuestChoiceDef>
+                <Description>Actually, I am sleepy. Enjoy turning your daughter into a demon, or what have you. Night! (abandons quest)</Description>
+                <NextObjectiveID>-1</NextObjectiveID>
+		<QuestFailure>1</QuestFailure>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>21</ObjectiveID>
+            <NextObjectiveID>22</NextObjectiveID>
+            <ChoiceText>The nobleman, dark wizard, or whatever it was he had become, falls dead.
+
+There had been many magical artifacts, including a silver broadsword. But his death seems to have sucked away the enchantment from everyting in the house, leaving his treasures cracked and uselesss.
+
+As the sun rises, the daughter finds you once more, and asks to allow her to follow you on your further adventures.
+
+"I am no champion, but perhaps I could learn under your lead. My father had some channeling ability, and I believe I inherited a small sliver of that talent - I merely need a master to help me develop my meager talents."
+
+Will you take her with you?
+</ChoiceText>
+            <ChoiceMedallion>Q_Damsel_In_Distress_Card_01.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_01.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>No, I go on alone. Enjoy your father's property. Don't dabble in his magic, though, or I'll find you.</Description>
+                <NextObjectiveID>30</NextObjectiveID>
+	<Treasure>
+		<GameModifier>
+            	    <ModType>Unit</ModType>
+            	    <Attribute>UnlockUnitAbility</Attribute>
+            	    <StrVal>Lone_Avenger</StrVal>
+        	</GameModifier>
+        </Treasure>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>Did you think I did this to save you? Only by purging all weakness can Elemental have peace! (kill her)</Description>
+                <NextObjectiveID>22</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>You shall come with me.</Description>
+                <NextObjectiveID>30</NextObjectiveID>
+	<Treasure>
+               <GameModifier>
+                	<ModType>Unit</ModType>
+                	<Attribute>UnitJoinArmy</Attribute>
+                	<StrVal>Unit_Quest_Noblewoman_Paladin</StrVal>
+                	<StrVal2>Noblewoman Henchwoman</StrVal2>
+                	<UnitClass>Champion</UnitClass>
+                    <Value>1</Value>
+                </GameModifier>
+            </Treasure>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>I just wanted my ignys bow.</Description>
+                <NextObjectiveID>30</NextObjectiveID>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>22</ObjectiveID>
+            <NextObjectiveID>-1</NextObjectiveID>
+            <ChoiceText>The young noble's daughter is dead. All who have opposed you, have died.</ChoiceText>
+            <ChoiceMedallion>KidnappedDamsel.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_01.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>But the weak have been punished. This is deeply satisfying.</Description>
+                <NextObjectiveID>-1</NextObjectiveID>
+		<QuestFailure>1</QuestFailure>
+            <Treasure>
+		<GameModifier>
+            	    <ModType>Unit</ModType>
+            	    <Attribute>UnlockUnitAbility</Attribute>
+            	    <StrVal>Wrath_Paladin</StrVal>
+        	</GameModifier>
+            </Treasure>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>...What have I done?</Description>
+                <NextObjectiveID>-1</NextObjectiveID>
+		<QuestFailure>1</QuestFailure>
+            <Treasure>
+		<GameModifier>
+            	    <ModType>Unit</ModType>
+            	    <Attribute>UnlockUnitAbility</Attribute>
+            	    <StrVal>Self_Distrust_Paladin</StrVal>
+        	</GameModifier>
+            </Treasure>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+//missing objective ID here #23
+
+<QuestObjectiveDef>
+            <ObjectiveID>24</ObjectiveID>
+            <NextObjectiveID>25</NextObjectiveID>
+            <ChoiceText>"Are you mad, channeler? If you do not defend yourself, then I shall kill you and take your essence!"
+</ChoiceText>
+            <ChoiceMedallion>M_Magician_Card_01.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_01.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>You're right. En guarde!</Description>
+                <NextObjectiveID>19</NextObjectiveID>
+		<Encounter>
+                    <Liklihood>100</Liklihood>
+                    <BattleIdentifier>Nobleman_Magician</BattleIdentifier>
+                    <WillRespawn>0</WillRespawn>
+                    <WanderingRadius>0</WanderingRadius>
+                    <UnitInstance>
+                        <UnitType>DarkWizard2</UnitType>
+                        <UnitName>Former Nobleman</UnitName>
+                        <Level>4</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Ritualist</UnitType>
+                        <UnitName>Family Steward</UnitName>
+                        <Level>2</Level>
+                    </UnitInstance>
+                </Encounter>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>No. We shall talk, and then I shall leave with the girl.</Description>
+                <NextObjectiveID>25</NextObjectiveID>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>25</ObjectiveID>
+            <NextObjectiveID>26</NextObjectiveID>
+            <ChoiceText>"Never! The girl is my property. Do you think you can use your pathetic powers to influence my mind? It shall have no effect!"
+
+"I need no mind control," you say. "If you kill me, I shall not die, but escape to my territory - and we shall battle again. It might be the ruin of my kingdom, but I shall eventually raise an army that defeats you."
+
+"No!" he interjects. "I will raise an army of my own!"
+</ChoiceText>
+            <ChoiceMedallion>F_Conquest_Full.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_01.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>Good point. Better you die now!</Description>
+                <NextObjectiveID>19</NextObjectiveID>
+		<Encounter>
+                    <Liklihood>100</Liklihood>
+                    <BattleIdentifier>Nobleman_Magician</BattleIdentifier>
+                    <WillRespawn>0</WillRespawn>
+                    <WanderingRadius>0</WanderingRadius>
+                    <UnitInstance>
+                        <UnitType>DarkWizard2</UnitType>
+                        <UnitName>Former Nobleman</UnitName>
+                        <Level>4</Level>
+                    </UnitInstance>
+                    <UnitInstance>
+                        <UnitType>Ritualist</UnitType>
+                        <UnitName>Family Steward</UnitName>
+                        <Level>2</Level>
+                    </UnitInstance>
+                </Encounter>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>No. We both have higher projects to attend to. Release the girl to me and I shall leave you in peace.</Description>
+                <NextObjectiveID>26</NextObjectiveID>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>26</ObjectiveID>
+            <NextObjectiveID>27</NextObjectiveID>
+            <ChoiceText>He does not respond at first - he realizes the wisdom in your position.
+
+"The girl must stay. I need her for - the future."
+</ChoiceText>
+            <ChoiceMedallion>M_Magician_Card_01.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_01.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>I'll release her - but I want a more powerful magical item in return for peace between us.</Description>
+                <NextObjectiveID>27</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>She was once loved by you - if she dies, you shall regret it, somewhere inside, even if not right away.</Description>
+                <NextObjectiveID>28</NextObjectiveID>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>27</ObjectiveID>
+            <NextObjectiveID>-1</NextObjectiveID>
+            <ChoiceText>He laughs. "You are a wise negotiator, indeed!"
+
+He nods to his assistant, who retrieves something valuable from the basement.
+
+"This is precious, indeed, channeler. A worthy tribute to our non-violent future, together."
+</ChoiceText>
+            <ChoiceMedallion>M_Magician_Card_01.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_01.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>You were most reasonable. Have a pleasant evening.</Description>
+                <NextObjectiveID>-1</NextObjectiveID>
+		<QuestFailure>1</QuestFailure>
+        <Treasure>
+            <GameModifier InternalName="Reward1">
+                <ModType>GiveItem</ModType>
+                <StrVal>Rare</StrVal>
+            </GameModifier>
+        </Treasure>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>28</ObjectiveID>
+            <NextObjectiveID>29</NextObjectiveID>
+            <ChoiceText>He grunts.
+
+"Take her. Begone, before I change my mind."
+</ChoiceText>
+            <ChoiceMedallion>M_Magician_Card_01.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_01.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>I honor your grace in releasing her. And we shall have peace - so long as no evil grows from your sphere, into mine.</Description>
+                <NextObjectiveID>29</NextObjectiveID>
+            <Treasure>
+		<GameModifier>
+            	    <ModType>Unit</ModType>
+            	    <Attribute>UnlockUnitAbility</Attribute>
+            	    <StrVal>Mind_Before_Blades</StrVal>
+        	</GameModifier>
+            </Treasure>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+<QuestObjectiveDef>
+            <ObjectiveID>29</ObjectiveID>
+            <NextObjectiveID>30</NextObjectiveID>
+            <ChoiceText>As the sun rises, the daughter finds you once more, and asks to allow her to follow you on your further adventures.
+
+"I am no champion, but perhaps I could learn under your lead. My father had some channeling ability, and I believe I inherited a small sliver of that talent - I merely need a master to help me develop my meager talents."
+
+Will you take her with you?
+</ChoiceText>
+            <ChoiceMedallion>Q_Damsel_In_Distress_Card_01.png</ChoiceMedallion>
+            <ChoiceMedallionFrame>Medallion_Frame_01.png</ChoiceMedallionFrame>
+            <QuestChoiceDef>
+                <Description>No, I go on alone.</Description>
+                <NextObjectiveID>30</NextObjectiveID>
+            </QuestChoiceDef>
+            <QuestChoiceDef>
+                <Description>You shall come with me.</Description>
+                <NextObjectiveID>30</NextObjectiveID>
+		<Treasure>
+                <GameModifier>
+                	<ModType>Unit</ModType>
+                	<Attribute>UnitJoinArmy</Attribute>
+                	<StrVal>Unit_Quest_Noblewoman_Paladin</StrVal>
+                	<StrVal2>Noblewoman Henchwoman</StrVal2>
+                	<UnitClass>Champion</UnitClass>
+                    <Value>1</Value>
+                </GameModifier>
+            </Treasure>
+            </QuestChoiceDef>
+        </QuestObjectiveDef>
+
+        <QuestObjectiveDef>
+            <ObjectiveID>30</ObjectiveID>
+            <QuestEnd>1</QuestEnd>
+        </QuestObjectiveDef>
+
+</QuestDef>
+
+</Quests>
+
+//abilities: Lone_Avenger, Wrath_Paladin, Self_Distrust_Paladin, Noblemans_Due, Discipline_Light, MindBeforeBlades_Paladin
+

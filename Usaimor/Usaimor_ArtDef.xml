@@ -1,0 +1,28 @@
+<ImprovementTypeArtDefs>
+
+ <ImprovementTypeArtDef InternalName="Art_MartialLibrary">
+        <ImprovementTypeArtSubPack InternalName="Art_MartialLibrary_Kingdom">
+            <SupportedBuildingStyle>KingdomStyle</SupportedBuildingStyle>
+            <TileDesign>K_Barracks_01</TileDesign>
+            <ConstructionTileDesign>K_Construction1x1_01</ConstructionTileDesign>
+            <DrawnIcon>Improvement_MercenaryCamp.png</DrawnIcon>
+            <DrawnIconConstruction>Improvement_MercenaryCamp_C.png</DrawnIconConstruction>
+            <Thumbnail>K_Barracks_01_Thumb.png</Thumbnail>
+            <Medallions InternalName="">
+                <All>K_Barracks_01_Thumb.png</All>
+            </Medallions>
+        </ImprovementTypeArtSubPack>
+        <ImprovementTypeArtSubPack InternalName="Art_MartialLibrary_Empire">
+            <SupportedBuildingStyle>EmpireStyle</SupportedBuildingStyle>
+            <TileDesign>F_Garrison_01</TileDesign>
+            <ConstructionTileDesign>F_Construction1x1_01</ConstructionTileDesign>
+            <DrawnIcon>Improvement_MercenaryCamp.png</DrawnIcon>
+            <DrawnIconConstruction>Improvement_MercenaryCamp_C.png</DrawnIconConstruction>
+            <Thumbnail>F_Garrison_01_Thumb.png</Thumbnail>
+            <Medallions InternalName="">
+                <All>F_Garrison_01_Thumb.png</All>
+            </Medallions>
+        </ImprovementTypeArtSubPack>
+    </ImprovementTypeArtDef>
+
+    </ImprovementTypeArtDefs>

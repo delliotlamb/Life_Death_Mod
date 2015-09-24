@@ -1,0 +1,423 @@
+<AbilityBonuses>
+
+<AbilityBonus InternalName="PathOfTheAssassinAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusType>Unit_Level_Path</AbilityBonusType>
+        <AbilityBonusOption InternalName="PathOfTheAssassin">
+            <DisplayName>Assassin</DisplayName>
+            <Description>Masters of fast attacks that debilitate, ignore defense or kill outright.</Description>
+            <Icon>Ability_PathOfTheAssassin_Icon.png</Icon>
+            <TraitTreePicture>trait_tree_unit_assassin.png</TraitTreePicture>
+            <BackgroundColor>80,106,47</BackgroundColor>
+            <HighlightColor>166,213,60</HighlightColor>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_CombatSpeed</StrVal>
+                <Value>100</Value>
+                <Provides>An Assassin goes first in combat.</Provides>
+                <xActions>1</xActions>
+            </GameModifier>
+			<!--<GameModifier>
+				<ModType>Unit</ModType>
+				<Attribute>BattleAutoCastSpell</Attribute>
+				<StrVal>PaladinSwordSkill</StrVal>
+				<Value>100</Value>
+				<Provides>-</Provides>
+			</GameModifier>-->			
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Sneak_Assassin</StrVal>
+                <Provides>Can make sneak attacks on the first turn (if not mounted).</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Spike_Trap</StrVal>
+                <Provides>Can lay spike traps on the first turn instead of sneaking.</Provides>
+            </GameModifier>			
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Infiltrate</StrVal>
+                <Value>1</Value>
+                <Provides>-</Provides>
+                <xActions>1</xActions>
+            </GameModifier>			
+            <RequiredLevel>2</RequiredLevel>
+            <Type>Ability</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="PathOfTheDefenderAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusType>Unit_Level_Path</AbilityBonusType>
+        <AbilityBonusOption InternalName="PathOfTheDefender">
+            <DisplayName>Defender</DisplayName>
+            <Description>Resilient to attack and an unfaltering wall between their enemies and allies.</Description>
+            <Icon>Ability_PathOfTheDefender_Icon.png</Icon>
+            <TraitTreePicture>trait_tree_unit_defender.png</TraitTreePicture>
+            <BackgroundColor>42,72,105</BackgroundColor>
+            <HighlightColor>77,164,231</HighlightColor>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Hinder</StrVal>
+                <Provides>Allows the unit to use the Hinder special ability</Provides>
+            </GameModifier>
+            <RequiredLevel>2</RequiredLevel>
+            <Type>Defensive</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="PathOfTheGovernorAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusType>Unit_Level_Path</AbilityBonusType>
+        <AbilityBonusOption InternalName="PathOfTheGovernor">
+            <DisplayName>Commander</DisplayName>
+            <Description>A Commander's strength is in the armies and cities they serve.</Description>
+            <Icon>Ability_PathOfTheGovernor_Icon.png</Icon>
+            <TraitTreePicture>trait_tree_unit_governor.png</TraitTreePicture>
+            <BackgroundColor>137,120,49</BackgroundColor>
+            <HighlightColor>190,178,39</HighlightColor>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>PriorityTarget</StrVal>
+                <Provides>Allows the unit to use the Priority Target special ability</Provides>
+            </GameModifier>
+            <RequiredLevel>2</RequiredLevel>
+            <Type>Army</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="PathOfTheWarriorAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusType>Unit_Level_Path</AbilityBonusType>
+        <AbilityBonusOption InternalName="PathOfTheWarrior">
+            <DisplayName>Warrior</DisplayName>
+            <Description>Masters of weapons and the brutal art of battle.</Description>
+            <Icon>Ability_PathOfTheWarrior_Icon.png</Icon>
+            <TraitTreePicture>trait_tree_unit_warrior.png</TraitTreePicture>
+            <BackgroundColor>125,71,24</BackgroundColor>
+            <HighlightColor>244,104,20</HighlightColor>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Pin</StrVal>
+                <Provides>Allows the unit to use the Pin special ability</Provides>
+            </GameModifier>
+            <RequiredLevel>2</RequiredLevel>
+            <Type>Aggressive</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+	<AbilityBonus InternalName="Champion_History">
+        <AbilityBonusType>Champion_History</AbilityBonusType>
+        <AbilityBonusOption InternalName="Raider">
+            <DisplayName>Barbarian</DisplayName>
+            <Description>This unit does 25% bonus damage.</Description>
+            <Icon>Ability_Berserkers_Icon.png</Icon>		
+	        <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Pierce</StrVal>
+                <Multiplier>1.25</Multiplier>
+                <Provides>+25% Attack</Provides>
+            </GameModifier>		
+        </AbilityBonusOption>			
+	</AbilityBonus>
+	
+	<!-- This ability is a variation of an idea by parrotmath, who was a major architect of quality LH mods and the modding community -->
+	
+	<AbilityBonus InternalName="Injury_OnDeathsDoor">
+        <AbilityBonusType>Unit_Injury</AbilityBonusType>
+        <AbilityBonusOption InternalName="OnDeathsDoor">
+            <DisplayName>On Death's Door</DisplayName>
+            <Description>This champion will be subject to permanent death upon entering combat.</Description>
+            <Icon>Ability_Inefficient_Icon.png</Icon>
+				<GameModifier>
+					<ModType>Unit</ModType>
+					<Attribute>BattleAutoCastSpell</Attribute>
+					<StrVal>Trigger_OnDeathsDoor</StrVal>
+					<Value>100</Value>
+					<Provides>This champion will be subject to permanent death upon entering combat.</Provides>
+				</GameModifier>
+				<GameModifier>
+					<ModType>Unit</ModType>
+					<Attribute>AdjustUnitStat</Attribute>
+					<StrVal>UnitStat_BG_HasInjuries</StrVal>
+					<Value>1</Value>
+					<Provides>+1 Injury</Provides>
+				</GameModifier>			
+            <Type>Weakness</Type>
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+	<AbilityBonus InternalName="Injury_Hated">
+        <AbilityBonusType>Unit_Injury</AbilityBonusType>
+        <AbilityBonusOption InternalName="Hated">
+            <DisplayName>Hated by The People</DisplayName>
+            <Description>+5% Unrest in all cities.</Description>
+            <Icon>Ability_Rebels_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Player</ModType>
+                <Attribute>AbilityBonus</Attribute>
+                <StrVal>A_Additive_Unrest</StrVal>
+                <Value>5</Value>
+                <Provides>+5% Unrest in all cities</Provides>
+            </GameModifier>
+			<GameModifier>
+				<ModType>Unit</ModType>
+				<Attribute>AdjustUnitStat</Attribute>
+				<StrVal>UnitStat_BG_HasInjuries</StrVal>
+				<Value>1</Value>
+				<Provides>+1 Injury</Provides>
+			</GameModifier>			
+            <Type>Weakness</Type>
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+		<AbilityBonus InternalName="Injury_SurvivorsGuilt">
+        <AbilityBonusType>Unit_Injury</AbilityBonusType>
+        <AbilityBonusOption InternalName="SurvivorsGuilt">
+            <DisplayName>Survivor's Guilt</DisplayName>
+            <Description>-1 to Attack, Initiative, Spell Resist, Spell Mastery, and Accuracy for every injury.</Description>
+            <Icon>Ability_BrokenSpirit_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>BattleAutoCastSpell</Attribute>
+                <StrVal>Trigger_SurvivorsGuilt</StrVal>
+                <Value>100</Value>
+                <Provides>-1 to most combat stats for each injury</Provides>
+            </GameModifier>
+			<GameModifier>
+				<ModType>Unit</ModType>
+				<Attribute>AdjustUnitStat</Attribute>
+				<StrVal>UnitStat_BG_HasInjuries</StrVal>
+				<Value>1</Value>
+				<Provides>+1 Injury</Provides>
+			</GameModifier>			
+            <Type>Weakness</Type>
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+	<!-- Adds Arrow Volley to all blood traits -->
+	
+	<AbilityBonus InternalName="Blood_AltarianAbility">
+        <AbilityBonusOption InternalName="Blood_Altarian">
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>RainOfArrows</StrVal>
+                <Provides>.</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Thrust_Ability</StrVal>
+                <Provides>.</Provides>
+            </GameModifier>				
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+    <AbilityBonus InternalName="Blood_AmarianAbility">
+        <AbilityBonusOption InternalName="Blood_Amarian">
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>RainOfArrows</StrVal>
+                <Provides>.</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Thrust_Ability</StrVal>
+                <Provides>.</Provides>
+            </GameModifier>				
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+    <AbilityBonus InternalName="Blood_IroneerAbility">
+        <AbilityBonusOption InternalName="Blood_Ironeer">
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_HitPoints</StrVal>
+                <Value>-1</Value>
+                <PerLevel>1</PerLevel>
+                <Provides>-1 Hit Point per Level</Provides>
+            </GameModifier>
+		    <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_HitPoints</StrVal>
+                <Value>2</Value>
+                <Provides>+2 Hit points</Provides>
+            </GameModifier>		
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>RainOfArrows</StrVal>
+                <Provides>.</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Thrust_Ability</StrVal>
+                <Provides>.</Provides>
+            </GameModifier>				
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+    <AbilityBonus InternalName="Blood_KraxAbility">
+        <AbilityBonusOption InternalName="Blood_Krax">
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>RainOfArrows</StrVal>
+                <Provides>.</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Thrust_Ability</StrVal>
+                <Provides>.</Provides>
+            </GameModifier>				
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+    <AbilityBonus InternalName="Blood_MancerAbility">
+        <AbilityBonusOption InternalName="Blood_Mancer">
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>RainOfArrows</StrVal>
+                <Provides>.</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Thrust_Ability</StrVal>
+                <Provides>.</Provides>
+            </GameModifier>				
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+    <AbilityBonus InternalName="Blood_QuendarAbility">
+        <AbilityBonusOption InternalName="Blood_Quendar">
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>RainOfArrows</StrVal>
+                <Provides>.</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Thrust_Ability</StrVal>
+                <Provides>.</Provides>
+            </GameModifier>				
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+    <AbilityBonus InternalName="Blood_TarthAbility">
+        <AbilityBonusOption InternalName="Blood_Tarth">
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>RainOfArrows</StrVal>
+                <Provides>.</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Thrust_Ability</StrVal>
+                <Provides>.</Provides>
+            </GameModifier>				
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+    <AbilityBonus InternalName="Blood_TrogAbility">
+        <AbilityBonusOption InternalName="Blood_Trog">
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>RainOfArrows</StrVal>
+                <Provides>.</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Thrust_Ability</StrVal>
+                <Provides>.</Provides>
+            </GameModifier>				
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+    <AbilityBonus InternalName="Blood_UrxenAbility">
+        <AbilityBonusOption InternalName="Blood_Urxen">
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>RainOfArrows</StrVal>
+                <Provides>.</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Thrust_Ability</StrVal>
+                <Provides>.</Provides>
+            </GameModifier>				
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+    <AbilityBonus InternalName="Blood_WraithAbility">
+        <AbilityBonusOption InternalName="Blood_Wraith">
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>RainOfArrows</StrVal>
+                <Provides>.</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Thrust_Ability</StrVal>
+                <Provides>.</Provides>
+            </GameModifier>			
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+	<AbilityBonus InternalName="Blood_UndeadAbility">
+        <AbilityBonusOption InternalName="Blood_Undead">
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>RainOfArrows</StrVal>
+                <Provides>.</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Thrust_Ability</StrVal>
+                <Provides>.</Provides>
+            </GameModifier>				
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+	
+	</AbilityBonuses>

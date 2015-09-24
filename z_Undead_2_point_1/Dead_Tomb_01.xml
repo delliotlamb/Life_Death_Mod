@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<TileDesigns>
+	<DataChecksum NoParse="1">
+		<Ignore>DisplayName</Ignore>
+		<Translate>DisplayName</Translate>
+	</DataChecksum>
+	<TileDesign InternalName="Dead_Tomb_01">
+		<DisplayName>Dead_Tomb_01</DisplayName>
+		<Thumbnail>\Game\Gfx\tile_icon.png</Thumbnail>
+		<LowResShadow>Dead_Tomb_01_shadow.png</LowResShadow>
+		<HighResShadow>Dead_Tomb_01_shadow.png</HighResShadow>
+		<ShadowTransparency>70</ShadowTransparency>
+		<IsCore>0</IsCore>
+		<IsHiddenFromEditor>0</IsHiddenFromEditor>
+		<SubTileFlags>1</SubTileFlags>
+		<TileDesignObject InternalName="_obj0">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>F_LeatherFence</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-14.157656,0.000000,21.479813</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.9200</Scale>
+			<BaseScale>1.4000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj1">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>F_LeatherFence</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-0.457085,0.000000,21.217422</Position>
+			<Rotation>0.000000,-3.150001,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.9200</Scale>
+			<BaseScale>1.4000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj2">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>F_LeatherFence</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>13.462357,0.000000,21.372543</Position>
+			<Rotation>0.000000,-6.299998,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.9200</Scale>
+			<BaseScale>1.4000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj3">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>F_LeatherFence</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-21.077385,0.000000,13.932401</Position>
+			<Rotation>0.000000,-4.725000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.9200</Scale>
+			<BaseScale>1.4000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj4">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>F_LeatherFence</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-21.030991,0.000000,-1.013226</Position>
+			<Rotation>0.000000,-7.874998,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.9200</Scale>
+			<BaseScale>1.4000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj5">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>F_LeatherFence</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-20.871231,0.000000,-15.023386</Position>
+			<Rotation>0.000000,-11.024994,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.9200</Scale>
+			<BaseScale>1.4000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj6">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>F_LeatherFence</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-12.907845,0.000000,-21.516090</Position>
+			<Rotation>0.000000,-15.749986,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.9200</Scale>
+			<BaseScale>1.4000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj7">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>F_LeatherFence</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>1.115644,0.000000,-21.154076</Position>
+			<Rotation>0.000000,-18.824991,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.9200</Scale>
+			<BaseScale>1.4000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj8">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>F_LeatherFence</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>15.550225,0.000000,-21.393669</Position>
+			<Rotation>0.000000,-21.974998,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.9200</Scale>
+			<BaseScale>1.4000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj9">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>F_AngledWood</ObjectDefName>
+			<ObjectLOD>3</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>19.263515,-5.000000,21.253632</Position>
+			<Rotation>0.000000,-1.575000,-0.087266</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.6000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj10">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>F_AngledWood</ObjectDefName>
+			<ObjectLOD>3</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>3.702374,-6.000000,21.168903</Position>
+			<Rotation>0.000000,-1.575000,-0.087266</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.6000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj11">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>F_AngledWood</ObjectDefName>
+			<ObjectLOD>3</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>4.041288,-6.000000,6.546539</Position>
+			<Rotation>0.000000,-4.724999,-0.087266</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.6000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj12">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>F_AngledWood</ObjectDefName>
+			<ObjectLOD>3</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>19.118929,-5.000000,6.800137</Position>
+			<Rotation>0.000000,-4.724999,-0.087266</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.6000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj13">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>F_DarkWoodPlank</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>10.903702,14.000000,9.644867</Position>
+			<Rotation>0.000000,-1.575000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.8000</Scale>
+			<BaseScale>1.4000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj14">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>F_DarkWoodPlank</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>11.850582,14.000000,18.239479</Position>
+			<Rotation>0.000000,-1.570796,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.8000</Scale>
+			<BaseScale>1.4000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj15">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>F_Keep_Flag2</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>6.432755,14.000000,13.978320</Position>
+			<Rotation>1.483530,-1.566593,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.5600</Scale>
+			<BaseScale>5.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj16">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>F_Keep_Flag2</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>16.578558,14.000000,14.016145</Position>
+			<Rotation>1.570796,-4.716593,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.5600</Scale>
+			<BaseScale>5.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj17">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>F_Forge_IronBar_02</ObjectDefName>
+			<ObjectLOD>6</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>19.785088,14.000000,18.305204</Position>
+			<Rotation>-1.570796,0.075000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.3600</Scale>
+			<BaseScale>0.7000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj18">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>F_Forge_IronBar_02</ObjectDefName>
+			<ObjectLOD>6</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>11.781719,14.000000,18.479599</Position>
+			<Rotation>-1.570796,0.075000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.3600</Scale>
+			<BaseScale>0.7000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj19">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>F_Forge_IronBar_02</ObjectDefName>
+			<ObjectLOD>6</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>3.929527,14.000000,18.594578</Position>
+			<Rotation>-1.570796,0.075000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.3600</Scale>
+			<BaseScale>0.7000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj20">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>F_WoodPile</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>9.912943,0.000000,13.804321</Position>
+			<Rotation>0.000000,-1.575000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.9600</Scale>
+			<BaseScale>1.4000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj21">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>F_LightCrate</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-17.710833,0.000000,17.439411</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.4400</Scale>
+			<BaseScale>1.4000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj22">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>F_LightCrate</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-12.062001,0.000000,17.391304</Position>
+			<Rotation>0.000000,-0.075000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.4400</Scale>
+			<BaseScale>1.4000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj23">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>F_LightCrate</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-6.372039,0.000000,17.449177</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.4400</Scale>
+			<BaseScale>1.4000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj24">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>F_DarkCrate</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-15.733543,5.000000,17.297623</Position>
+			<Rotation>0.000000,0.075000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.2400</Scale>
+			<BaseScale>1.4000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj25">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>F_DarkCrate</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-11.388927,5.000000,17.289772</Position>
+			<Rotation>0.000000,-0.075000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.2400</Scale>
+			<BaseScale>1.4000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj26">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>F_DarkCrate</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-7.159693,5.000000,17.527569</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.2400</Scale>
+			<BaseScale>1.4000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj27">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>F_DarkCrate</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-9.220329,9.000000,17.526073</Position>
+			<Rotation>0.000000,-0.075000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.2400</Scale>
+			<BaseScale>1.4000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj28">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>F_Barrel</ObjectDefName>
+			<ObjectLOD>7</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-16.186111,0.000000,-8.465263</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.4000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj29">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>F_Barrel</ObjectDefName>
+			<ObjectLOD>7</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-15.838753,0.000000,-13.250973</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.4000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj30">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>F_Barrel</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-11.866463,0.000000,-14.485260</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.4000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj31">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>RobedTalking2</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>21.406960,0.000000,3.513292</Position>
+			<Rotation>0.000000,2.094395,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>0.1300</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj32">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>F_Bucket</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>8.544365,0.000000,-15.605324</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.3600</Scale>
+			<BaseScale>1.4000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj33">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>K_Wheel_Barrel_01</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>16.220085,0.000000,-13.786827</Position>
+			<Rotation>0.000000,6.108653,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj34">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>K_Wheel_Barrel_01</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>6.542816,0.000000,3.559378</Position>
+			<Rotation>0.000000,4.799655,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj35">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>F_Barrel</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>9.504120,0.000000,-7.786858</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.4000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj36">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>F_Bucket</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>12.749268,0.000000,-5.123589</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.2800</Scale>
+			<BaseScale>1.4000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj37">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>F_Bucket</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>16.445511,0.000000,-5.741837</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.2800</Scale>
+			<BaseScale>1.4000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj38">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>K_Wheel_Barrel_01</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>22.427612,0.000000,-11.167473</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj39">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>K_Wheel_Barrel_01</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-17.893406,0.000000,7.805443</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj40">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>K_Wheel_Barrel_01</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-12.321517,0.000000,6.968925</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj41">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>K_Wheel_Barrel_01</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-9.117433,0.000000,-5.515900</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj42">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>K_Wheel_Barrel_01</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-6.344308,0.000000,6.823814</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj43">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>SmallDesertDune</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>1.707919,0.000000,-7.757446</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.5200</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj44">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>Artifact_RibCage</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-6.861588,-1.000000,-14.859222</Position>
+			<Rotation>0.087266,0.087266,1.658063</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.1200</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj45">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>Artifact_RibCage</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-16.088608,-1.000000,0.105679</Position>
+			<Rotation>0.000000,0.436332,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.1600</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj46">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>Artifact_Bone</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-2.730026,0.000000,8.782593</Position>
+			<Rotation>0.000000,0.785398,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.1600</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj47">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>Artifact_Skull3</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-10.292103,0.000000,11.745552</Position>
+			<Rotation>0.000000,0.872665,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.2000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj48">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>Artifact_RibCage</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>0.955627,2.000000,-5.792397</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.1600</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj49">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>TreeBranch1</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-2.824814,0.000000,-15.557266</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.2000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj50">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>TreeBranch1</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-2.023534,0.000000,12.586885</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.8400</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj51">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>FallenPlant_Mushroom2</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>22.482208,0.000000,22.112961</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.4800</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj52">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>FallenPlant_Mushroom2</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>3.274399,0.000000,-16.205734</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.2400</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj53">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>FallenPlant_Mushroom2</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-17.698767,0.000000,-17.771477</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.3200</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj54">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>FallenPlant_StarPod1</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>22.144814,0.000000,-1.945198</Position>
+			<Rotation>0.000000,0.698132,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.2000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj55">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>RobedAtMarket</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>15.171761,0.000000,4.596695</Position>
+			<Rotation>6.195919,3.141593,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>0.1300</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj56">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>RobedHammeringGround</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-2.906406,0.000000,0.457821</Position>
+			<Rotation>0.000000,0.959931,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>0.1300</BaseScale>
+		</TileDesignObject>
+		<TileDesignPath InternalName="_path0"/>
+	</TileDesign>
+</TileDesigns>

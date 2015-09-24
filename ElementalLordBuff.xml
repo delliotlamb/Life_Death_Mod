@@ -1,0 +1,1932 @@
+<UnitTypes>
+
+<UnitType InternalName="Abeix">
+        <DisplayName>Abeix, Who Dwells Beneath</DisplayName>
+        <CreatureType>Elemental</CreatureType>
+        <Unique>1</Unique>
+        <CanBeDesigned>0</CanBeDesigned>
+        <IsSovereign>0</IsSovereign>
+        <AllowGrouping>0</AllowGrouping>
+        <HasWages>0</HasWages>
+        <SpawnRating>15</SpawnRating>
+        <MovementType>Chasm</MovementType>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>30</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>25</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>100</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L2">
+            <Level>2</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>33</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>28</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>100</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L3">
+            <Level>3</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>36</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>31</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>100</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L4">
+            <Level>4</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>39</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>34</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>100</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L5">
+            <Level>5</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>42</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>37</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>100</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L6">
+            <Level>6</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>45</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>40</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>100</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L7">
+            <Level>7</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>48</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>43</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>100</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L8">
+            <Level>8</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>51</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>46</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>100</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L9">
+            <Level>9</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>54</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>49</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>100</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L10">
+            <Level>10</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>57</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>52</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>100</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L11">
+            <Level>11</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>60</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>55</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>100</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L12">
+            <Level>12</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>63</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>58</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>100</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L13">
+            <Level>13</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>66</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>61</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>100</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L14">
+            <Level>14</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>69</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>64</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>100</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L15">
+            <Level>15</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>72</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>67</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>100</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L16">
+            <Level>16</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>75</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>70</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>100</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L17">
+            <Level>17</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>78</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>73</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>100</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L18">
+            <Level>18</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>81</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>76</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>100</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L19">
+            <Level>19</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>84</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>79</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>100</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L20">
+            <Level>20</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>87</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>82</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>100</UnitStat_HitPoints>
+        </LevelMilestone>
+        <SelectedAbilityBonusOption>Monsterous</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>ImmuneToPoison</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>SpitAcid3</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Overpower</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Trigger_Fear</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>UncontrolledRage</SelectedAbilityBonusOption>
+       <SelectedAbilityBonusOption>ElementalLord</SelectedAbilityBonusOption>
+       <SelectedAbilityBonusOption>Spell_StoneRain</SelectedAbilityBonusOption>	   
+        <Treasure>
+            <Liklihood>100</Liklihood>
+            <City_Trophy>Trophy_AbeixAbility</City_Trophy>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <StrVal></StrVal>
+                <Attribute>Greataxe_Sunderer</Attribute>
+                <BoolVal1></BoolVal1>
+                <Value></Value>
+            </GameModifier>
+        </Treasure>
+        <Quote>You are you nothing more than insects scurrying upon the shell of the world.</Quote>
+        <Backstory>Glory to any champion that is able to defeat Abeix.  In times of old, he was one of the Five - the Elemental Lords worshipped by the peoples of Anthuane. But the coming of the Titans weakened his powers, and his followers' numbers. And the Cataclysm, some say, drove him mad.                                
+
+Now he waits beneath the world, guardian of the Bhinadmi and the Bhinmuna, ready to fight any and all who would invade his domain.  Know that few weapons can damage his armored hide; few fighters can survive his acidic spittle. </Backstory>
+        <Medallions InternalName="">
+            <All>M_Abeix_Card.png</All>
+        </Medallions>
+        <AnimationPack>AbeixAnimationPack</AnimationPack>
+        <AnimationParticleEffect>Awaken,E_AbeixEmerge_Particle,0.0,0.0,0.0,5.0</AnimationParticleEffect>
+        <BattleAnimationBehavior>Monster</BattleAnimationBehavior>
+        <CanSqueeze>1</CanSqueeze>
+        <ClothMapScale>2</ClothMapScale>
+        <CutSceneDataPack>AbeixUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx/eyes/male_brown_eye.png</EyeTexture>
+        <InfoCardBackground>BG4_Dark</InfoCardBackground>
+        <ModelPath>gfx/hkb/Monsters/M_Abeix_Mesh_01.hkb</ModelPath>
+        <ModelScale>4</ModelScale>
+        <ShowAsSingleUnit>1</ShowAsSingleUnit>
+        <SkeletonPath>Gfx\HKB\Units\M_Ignys_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Abeix</SoundPack>
+        <TacticalModelScale>8</TacticalModelScale>
+        <Texture_Skin>M_Abeix_Texture_01.dds</Texture_Skin>
+        <TileRadius>1</TileRadius>
+    </UnitType>
+	
+	<UnitType InternalName="Torax">
+        <DisplayName>Torax, Who Grinds Mountains to Dust</DisplayName>
+        <CreatureType>Elemental</CreatureType>
+        <Unique>1</Unique>
+        <CanBeDesigned>0</CanBeDesigned>
+        <IsSovereign>0</IsSovereign>
+        <AllowGrouping>0</AllowGrouping>
+        <HasWages>0</HasWages>
+        <SpawnRating>15</SpawnRating>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>19</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>40</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L2">
+            <Level>2</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>24</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>2</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>42</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L3">
+            <Level>3</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>29</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>3</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>44</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L4">
+            <Level>4</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>34</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>4</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>46</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L5">
+            <Level>5</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>39</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>5</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>48</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L6">
+            <Level>6</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>44</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>6</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>50</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L7">
+            <Level>7</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>49</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>7</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>52</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L8">
+            <Level>8</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>54</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>8</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>54</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L9">
+            <Level>9</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>59</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>9</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>56</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L10">
+            <Level>10</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>64</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>10</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>58</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L11">
+            <Level>11</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>69</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>11</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>60</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L12">
+            <Level>12</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>74</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>12</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>62</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L13">
+            <Level>13</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>79</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>13</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>64</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L14">
+            <Level>14</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>84</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>14</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>66</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L15">
+            <Level>15</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>89</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>15</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>68</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L16">
+            <Level>16</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>94</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>16</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>70</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L17">
+            <Level>17</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>99</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>17</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>72</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L18">
+            <Level>18</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>104</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>18</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>74</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L19">
+            <Level>19</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>109</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>19</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>76</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L20">
+            <Level>20</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>114</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>20</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>78</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <SelectedAbilityBonusOption>Monsterous</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>ImmuneToPoison</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Overpower</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Spell_Fireball</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Trigger_TitansBreath2</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>UncontrolledRage</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>ElementalLord</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Spell_WindShield</SelectedAbilityBonusOption>			
+        <Treasure>
+            <Liklihood>100</Liklihood>
+            <City_Trophy>Trophy_ToraxAbility</City_Trophy>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <StrVal></StrVal>
+                <Attribute>TowerShield_TectonicBulwark</Attribute>
+                <BoolVal1></BoolVal1>
+                <Value></Value>
+            </GameModifier>
+        </Treasure>
+        <Backstory>"I feared the sandstorm, until I reached its heart." - Myrimahus
+
+Torax is one of the Five Elemental Lords worshipped by the Padars of old.  An Elemental Lord unlike the others, who bears no apparent enmity to man or Fallen for the destruction of much of what he once ruled. When Torax does attack a caravan, or a group of adventures, his actions seem capricious... accidental... he leaves their remains strewn across the sands for the Wildings to salvage. Though his presence is a plague to the merchants that try to cross his deserts... to sages and adventurers he is a legend, a moving mountain cloaked by a sandstorm.  To the wilding natives of the sands, Torax is a god.  He shapes their world, claws out deep pits in the ground and changes the patterns of dunes larger than the great castles of the Verhaellem. </Backstory>
+        <Medallions InternalName="">
+            <All>M_Torax_Card_01.png</All>
+        </Medallions>
+        <AnimationPack>ToraxAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Stationary</BattleAnimationBehavior>
+        <CanSqueeze>1</CanSqueeze>
+        <ClothMapScale>0.17</ClothMapScale>
+        <CutSceneDataPack>ToraxUnitCutScenePack</CutSceneDataPack>
+        <EyeTexture>gfx/eyes/male_brown_eye.png</EyeTexture>
+        <InfoCardBackground>BG20_StainedGlass</InfoCardBackground>
+        <MaxScaleMainMap>0.36</MaxScaleMainMap>
+        <ModelPath>gfx/hkb/Monsters/M_Torax_Mesh_01.hkb</ModelPath>
+        <ModelScale>0.5</ModelScale>
+        <OnHitParticleName>FireElemental_OnHit</OnHitParticleName>
+        <ShowAsSingleUnit>1</ShowAsSingleUnit>
+        <SkeletonPath>gfx/hkb/Monsters/M_Torax_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_FireElemental</SoundPack>
+        <TacticalModelScale>1.1</TacticalModelScale>
+        <Texture_Skin>M_Torax_Texture_01.dds</Texture_Skin>
+        <TileRadius>1</TileRadius>
+    </UnitType>
+	
+	<UnitType InternalName="Morian">
+        <DisplayName>Morian, the Ruin of Summer</DisplayName>
+        <CreatureType>Elemental</CreatureType>
+        <Unique>1</Unique>
+        <CanBeDesigned>0</CanBeDesigned>
+        <IsSovereign>0</IsSovereign>
+        <AllowGrouping>0</AllowGrouping>
+        <HasWages>0</HasWages>
+        <SpawnRating>15</SpawnRating>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>24</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>20</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L2">
+            <Level>2</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>28</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>21</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L3">
+            <Level>3</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>32</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>22</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L4">
+            <Level>4</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>36</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>23</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L5">
+            <Level>5</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>40</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>24</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L6">
+            <Level>6</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>44</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>25</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L7">
+            <Level>7</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>48</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>26</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L8">
+            <Level>8</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>52</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>27</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L9">
+            <Level>9</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>56</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>28</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L10">
+            <Level>10</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>60</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>29</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L11">
+            <Level>11</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>64</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>30</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L12">
+            <Level>12</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>68</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>31</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L13">
+            <Level>13</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>72</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>32</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L14">
+            <Level>14</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>76</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>33</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L15">
+            <Level>15</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>80</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>34</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L16">
+            <Level>16</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>84</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>35</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L17">
+            <Level>17</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>88</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>36</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L18">
+            <Level>18</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>92</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>37</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L19">
+            <Level>19</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>96</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>38</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L20">
+            <Level>20</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>100</UnitStat_Attack_Pierce>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>39</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <SelectedAbilityBonusOption>Monsterous</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>VulnerableToCold</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Overpower</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Regeneration3</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Trigger_Fear</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>UncontrolledRage</SelectedAbilityBonusOption>
+       <SelectedAbilityBonusOption>ElementalLord</SelectedAbilityBonusOption>
+       <SelectedAbilityBonusOption>Spell_Plague</SelectedAbilityBonusOption>		   
+        <Treasure>
+            <Liklihood>100</Liklihood>
+            <City_Trophy>Trophy_MorianAbility</City_Trophy>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <StrVal></StrVal>
+                <Attribute>Longsword_Equinox</Attribute>
+                <BoolVal1></BoolVal1>
+                <Value></Value>
+            </GameModifier>
+        </Treasure>
+        <Backstory>An Elemental Lord, one of the Five worshipped by the Padars of old, Morian's power was greatly diminished with the coming of the Titans and their imprisonment of the world's mana within the Elemental shards. He haunts the swamps of the world now, a dark reflection of his former self, said to have lost all reason when the vast forests he ruled over were destroyed by the cataclysm. </Backstory>
+        <Medallions InternalName="">
+            <All>M_Morian_Card.png</All>
+        </Medallions>
+        <AlwaysInTileCenter>1</AlwaysInTileCenter>
+        <AnimationPack>SwampLordAnimationPack</AnimationPack>
+        <AnimationParticleEffect>Awaken,_Morian_Awaken_01,0.0,5.0,0.0,2.5</AnimationParticleEffect>
+        <BattleAnimationBehavior>Stationary</BattleAnimationBehavior>
+        <CanSqueeze>1</CanSqueeze>
+        <ClothMapScale>0.4</ClothMapScale>
+        <ClothPoseIndex>0</ClothPoseIndex>
+        <Color_Clothing1>170,175,200,255</Color_Clothing1>
+        <Color_Clothing2>60,35,60,255</Color_Clothing2>
+        <Color_Hair>205,170,120,255</Color_Hair>
+        <Color_Metal>171,175,200,255</Color_Metal>
+        <Color_Skin>229,160,115,255</Color_Skin>
+        <CutSceneDataPack>MorianUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\eyes\blinks\eyeblink_m3_grn.png</EyeTexture>
+        <InfoCardBackground>BG1_Sunset</InfoCardBackground>
+        <MaxScaleTacticalMap>1</MaxScaleTacticalMap>
+        <ModelPath>Gfx\HKB\Units\M_SwampLord_Mesh_01.hkb</ModelPath>
+        <ModelScale>0.5</ModelScale>
+        <OnAttackParticleName>Swamplord_Attack1</OnAttackParticleName>
+        <ShowAsSingleUnit>1</ShowAsSingleUnit>
+        <SkeletonPath>Gfx\HKB\Units\M_SwampLord_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Morian</SoundPack>
+        <TacticalModelScale>1.2</TacticalModelScale>
+        <Texture_Skin>Gfx\HKB\Units\M_SwampLord_Texture_01.png</Texture_Skin>
+        <TileRadius>1</TileRadius>
+        <EffectAttachment>
+            <Attachment>Swaying_End</Attachment>
+            <EffectName>Swamplord_Pollen1</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>5</EffectScale>
+        </EffectAttachment>
+    </UnitType>
+	
+	<UnitType InternalName="Delin">
+        <DisplayName>Delin, the Pyre of Man</DisplayName>
+        <CreatureType>Elemental</CreatureType>
+        <Unique>1</Unique>
+        <CanBeDesigned>0</CanBeDesigned>
+        <IsSovereign>0</IsSovereign>
+        <AllowGrouping>0</AllowGrouping>
+        <HasWages>0</HasWages>
+        <SpawnRating>15</SpawnRating>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>MeleeDefenseAppliesSpell</Attribute>
+            <StrVal>MantleOfFire_Effect</StrVal>
+        </GameModifier>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>12</UnitStat_Attack_Pierce>
+            <UnitStat_Attack_Fire>12</UnitStat_Attack_Fire>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>30</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>200</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L2">
+            <Level>2</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>14</UnitStat_Attack_Pierce>
+            <UnitStat_Attack_Fire>14</UnitStat_Attack_Fire>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>32</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>200</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L3">
+            <Level>3</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>16</UnitStat_Attack_Pierce>
+            <UnitStat_Attack_Fire>16</UnitStat_Attack_Fire>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>34</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>200</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L4">
+            <Level>4</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>18</UnitStat_Attack_Pierce>
+            <UnitStat_Attack_Fire>18</UnitStat_Attack_Fire>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>36</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>200</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L5">
+            <Level>5</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>20</UnitStat_Attack_Pierce>
+            <UnitStat_Attack_Fire>20</UnitStat_Attack_Fire>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>38</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>200</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L6">
+            <Level>6</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>22</UnitStat_Attack_Pierce>
+            <UnitStat_Attack_Fire>22</UnitStat_Attack_Fire>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>40</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>200</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L7">
+            <Level>7</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>24</UnitStat_Attack_Pierce>
+            <UnitStat_Attack_Fire>24</UnitStat_Attack_Fire>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>42</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>200</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L8">
+            <Level>8</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>26</UnitStat_Attack_Pierce>
+            <UnitStat_Attack_Fire>26</UnitStat_Attack_Fire>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>44</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>200</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L9">
+            <Level>9</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>28</UnitStat_Attack_Pierce>
+            <UnitStat_Attack_Fire>28</UnitStat_Attack_Fire>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>46</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>200</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L10">
+            <Level>10</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>30</UnitStat_Attack_Pierce>
+            <UnitStat_Attack_Fire>30</UnitStat_Attack_Fire>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>48</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>200</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L11">
+            <Level>11</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>32</UnitStat_Attack_Pierce>
+            <UnitStat_Attack_Fire>32</UnitStat_Attack_Fire>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>50</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>200</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L12">
+            <Level>12</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>34</UnitStat_Attack_Pierce>
+            <UnitStat_Attack_Fire>34</UnitStat_Attack_Fire>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>52</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>200</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L13">
+            <Level>13</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>36</UnitStat_Attack_Pierce>
+            <UnitStat_Attack_Fire>36</UnitStat_Attack_Fire>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>54</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>200</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L14">
+            <Level>14</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>38</UnitStat_Attack_Pierce>
+            <UnitStat_Attack_Fire>38</UnitStat_Attack_Fire>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>56</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>200</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L15">
+            <Level>15</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>40</UnitStat_Attack_Pierce>
+            <UnitStat_Attack_Fire>40</UnitStat_Attack_Fire>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>58</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>200</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L16">
+            <Level>16</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>42</UnitStat_Attack_Pierce>
+            <UnitStat_Attack_Fire>42</UnitStat_Attack_Fire>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>60</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>200</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L17">
+            <Level>17</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>44</UnitStat_Attack_Pierce>
+            <UnitStat_Attack_Fire>44</UnitStat_Attack_Fire>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>62</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>200</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L18">
+            <Level>18</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>46</UnitStat_Attack_Pierce>
+            <UnitStat_Attack_Fire>46</UnitStat_Attack_Fire>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>64</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>200</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L19">
+            <Level>19</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>48</UnitStat_Attack_Pierce>
+            <UnitStat_Attack_Fire>48</UnitStat_Attack_Fire>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>66</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>200</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L20">
+            <Level>20</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>50</UnitStat_Attack_Pierce>
+            <UnitStat_Attack_Fire>50</UnitStat_Attack_Fire>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>68</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>200</UnitStat_HitPoints>
+        </LevelMilestone>
+        <SelectedAbilityBonusOption>Monsterous</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>ImmuneToPoison</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>ImmuneToFire</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>VulnerableToCold</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Overpower</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Spell_Fireball</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Spell_DelinsBreath</SelectedAbilityBonusOption>		
+        <SelectedAbilityBonusOption>Trigger_Fear</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>UncontrolledRage</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>ElementalLord</SelectedAbilityBonusOption>		
+        <Treasure>
+            <Liklihood>100</Liklihood>
+            <City_Trophy>Trophy_DelinAbility</City_Trophy>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <StrVal></StrVal>
+                <Attribute>DelinsEmber</Attribute>
+                <BoolVal1></BoolVal1>
+                <Value></Value>
+            </GameModifier>
+        </Treasure>
+        <Backstory>A creature of near-unimaginable power, said by some to be an Elemental Lord, though there is no record of Delin from before the cataclysm. His first appearance was over the city of Anniellum, where 200,000 perished when a volcano exploded and buried the city in lava and ash.  Ever since, Delin has wandered the world, burning all he encounters... though he is said to take particular delight in the killing of men.</Backstory>
+        <Medallions InternalName="">
+            <All>M_Delin_Card_01.png</All>
+        </Medallions>
+        <AnimationPack>DelinAnimationPack</AnimationPack>
+        <AnimationParticleEffect>Awaken,_Delin_Awaken_01,0.0,5.0,0.0,2.0</AnimationParticleEffect>
+        <BattleAnimationBehavior>Stationary</BattleAnimationBehavior>
+        <CanSqueeze>1</CanSqueeze>
+        <ClothMapScale>1.2</ClothMapScale>
+        <Color_Skin>53,66,81,255</Color_Skin>
+        <CutSceneDataPack>DelinUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx/eyes/male_brown_eye.png</EyeTexture>
+        <InfoCardBackground>BG13_Volcanic</InfoCardBackground>
+        <LightMap>Gfx\HKB\Monsters\M_Fire_Demon_Texture_01_L.png</LightMap>
+        <MaxScaleMainMap>0.9</MaxScaleMainMap>
+        <ModelPath>Gfx\HKB\Monsters\M_Fire_Demon_Mesh_01.hkb</ModelPath>
+        <ModelScale>2.25</ModelScale>
+        <ShowAsSingleUnit>1</ShowAsSingleUnit>
+        <SkeletonPath>Gfx\HKB\Monsters\M_SuperDemon_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_FireElemental</SoundPack>
+        <TacticalModelScale>4</TacticalModelScale>
+        <Texture_Skin>Gfx\HKB\Monsters\M_Fire_Demon_Texture_01.png</Texture_Skin>
+        <TileRadius>1</TileRadius>
+        <EffectAttachment>
+            <Attachment>Root_Lcf</Attachment>
+            <EffectName>A_Fire_Particle_03</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.3</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>Wing_Right_Lcf</Attachment>
+            <EffectName>A_Fire_Delin_Wings_Particle_01</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.3</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>Right_Eye_Lcf</Attachment>
+            <EffectName>A_Fire_Delin_Eye_Particle_01</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.3</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>Left_Eye_Lcf</Attachment>
+            <EffectName>A_Fire_Delin_Eye_Particle_01</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.3</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>Wing_Left_Lcf</Attachment>
+            <EffectName>A_Fire_Delin_Wings_Particle_01</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.3</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>Stomach_Lcf</Attachment>
+            <EffectName>A_Fire_Delin_Stomach_Particle_01</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.3</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>Left_Thigh_Lcf</Attachment>
+            <EffectName>A_Fire_Particle_02</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.3</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>Left_Calf_Lcf</Attachment>
+            <EffectName>A_Fire_Particle_01</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.3</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>Left_Foot_Lcf</Attachment>
+            <EffectName>A_Fire_Delin_Foot_Particle_01</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.3</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>Right_Thigh_Lcf</Attachment>
+            <EffectName>A_Fire_Particle_01</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.3</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>Right_Calf_Lcf</Attachment>
+            <EffectName>A_Fire_Particle_01</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.3</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>Right_Foot_Lcf</Attachment>
+            <EffectName>A_Fire_Delin_Foot_Particle_01</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.3</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>Back_Lcf</Attachment>
+            <EffectName>A_Fire_Delin_Back_Particle_01</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.3</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>Upper_Back_Lcf</Attachment>
+            <EffectName>A_Fire_Delin_Back_Particle_01</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.3</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>Left_Shoulder_Lcf</Attachment>
+            <EffectName>A_Fire_Delin_Shoulder_Particle_01</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.3</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>Left_Arm_Lcf</Attachment>
+            <EffectName>A_Fire_Particle_01</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.3</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>Left_Hand_Lcf</Attachment>
+            <EffectName>A_Fire_Particle_02</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.3</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>Left_Forearm_Lcf</Attachment>
+            <EffectName>A_Fire_Particle_01</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.3</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>Right_Forearm_Lcf</Attachment>
+            <EffectName>A_Fire_Particle_01</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.3</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>Head_Lcf</Attachment>
+            <EffectName>A_Fire_Particle_01</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.3</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>Right_Shoulder_Lcf</Attachment>
+            <EffectName>A_Fire_Delin_Shoulder_Particle_01</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.3</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>Right_Arm_Lcf</Attachment>
+            <EffectName>A_Fire_Particle_01</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.3</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>Right_Hand_Lcf</Attachment>
+            <EffectName>A_Fire_Particle_02</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.3</EffectScale>
+        </EffectAttachment>
+    </UnitType>
+	
+	 <UnitType InternalName="Vetrar">
+        <DisplayName>Vetrar, Guardian of the World's End</DisplayName>
+        <CreatureType>Elemental</CreatureType>
+        <Unique>1</Unique>
+        <CanBeDesigned>0</CanBeDesigned>
+        <IsSovereign>0</IsSovereign>
+        <AllowGrouping>0</AllowGrouping>
+        <HasWages>0</HasWages>
+        <SpawnRating>20</SpawnRating>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>23</UnitStat_Attack_Pierce>
+            <UnitStat_Attack_Cold>18</UnitStat_Attack_Cold>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>20</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L2">
+            <Level>2</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>25</UnitStat_Attack_Pierce>
+            <UnitStat_Attack_Cold>20</UnitStat_Attack_Cold>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>22</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L3">
+            <Level>3</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>27</UnitStat_Attack_Pierce>
+            <UnitStat_Attack_Cold>22</UnitStat_Attack_Cold>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>24</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L4">
+            <Level>4</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>29</UnitStat_Attack_Pierce>
+            <UnitStat_Attack_Cold>24</UnitStat_Attack_Cold>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>26</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L5">
+            <Level>5</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>31</UnitStat_Attack_Pierce>
+            <UnitStat_Attack_Cold>26</UnitStat_Attack_Cold>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>28</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L6">
+            <Level>6</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>33</UnitStat_Attack_Pierce>
+            <UnitStat_Attack_Cold>28</UnitStat_Attack_Cold>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>30</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L7">
+            <Level>7</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>35</UnitStat_Attack_Pierce>
+            <UnitStat_Attack_Cold>30</UnitStat_Attack_Cold>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>32</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L8">
+            <Level>8</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>37</UnitStat_Attack_Pierce>
+            <UnitStat_Attack_Cold>32</UnitStat_Attack_Cold>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>34</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L9">
+            <Level>9</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>39</UnitStat_Attack_Pierce>
+            <UnitStat_Attack_Cold>34</UnitStat_Attack_Cold>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>36</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L10">
+            <Level>10</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>41</UnitStat_Attack_Pierce>
+            <UnitStat_Attack_Cold>36</UnitStat_Attack_Cold>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>38</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L11">
+            <Level>11</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>43</UnitStat_Attack_Pierce>
+            <UnitStat_Attack_Cold>38</UnitStat_Attack_Cold>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>40</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L12">
+            <Level>12</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>45</UnitStat_Attack_Pierce>
+            <UnitStat_Attack_Cold>40</UnitStat_Attack_Cold>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>42</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L13">
+            <Level>13</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>47</UnitStat_Attack_Pierce>
+            <UnitStat_Attack_Cold>42</UnitStat_Attack_Cold>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>44</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L14">
+            <Level>14</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>49</UnitStat_Attack_Pierce>
+            <UnitStat_Attack_Cold>44</UnitStat_Attack_Cold>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>46</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L15">
+            <Level>15</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>51</UnitStat_Attack_Pierce>
+            <UnitStat_Attack_Cold>46</UnitStat_Attack_Cold>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>48</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L16">
+            <Level>16</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>53</UnitStat_Attack_Pierce>
+            <UnitStat_Attack_Cold>48</UnitStat_Attack_Cold>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>50</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L17">
+            <Level>17</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>55</UnitStat_Attack_Pierce>
+            <UnitStat_Attack_Cold>50</UnitStat_Attack_Cold>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>52</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L18">
+            <Level>18</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>57</UnitStat_Attack_Pierce>
+            <UnitStat_Attack_Cold>52</UnitStat_Attack_Cold>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>54</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L19">
+            <Level>19</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>59</UnitStat_Attack_Pierce>
+            <UnitStat_Attack_Cold>54</UnitStat_Attack_Cold>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>56</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <LevelMilestone InternalName="L20">
+            <Level>20</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>61</UnitStat_Attack_Pierce>
+            <UnitStat_Attack_Cold>56</UnitStat_Attack_Cold>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_CombatSpeed>18</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>58</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>300</UnitStat_HitPoints>
+        </LevelMilestone>
+        <SelectedAbilityBonusOption>Monsterous</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>ImmuneToPoison</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>ImmuneToCold</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>VulnerableToFire</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Sweep</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Overpower</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Spell_WintersWrath</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Trigger_Fear</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>ElementalLord</SelectedAbilityBonusOption>		
+        <Equipment>Vetrar_Shoulder</Equipment>
+        <Treasure>
+            <Liklihood>100</Liklihood>
+            <City_Trophy>Trophy_VetrarAbility</City_Trophy>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <StrVal></StrVal>
+                <Attribute>GreatSword_HeartOfTheGlacier</Attribute>
+                <BoolVal1></BoolVal1>
+                <Value></Value>
+            </GameModifier>
+        </Treasure>
+        <Backstory>"We are born in warmth, but the cold embrace of death awaits us." - Magnar III
+
+Vetrar is Elemental Lord of the frozen tundra - the ice-covered wastes of the North, beyond which the world is said to end. Yet there are some who believe Vetrar's title does not refer to the land he watches over, but to the role he is destined to play at the end of time, when the world itself will end in a second Cataclysm.
+
+"When all warmth bleeds out of the world, when summer has gone forever, when our monuments lie buried in snow and our cities have been ground to dust by glaciers, when the blood of the last of our children has been frozen by the endless winter, Vetrar will remain standing... the world's last champion.  Then he will fulfill his charge, and destroy all life on Elemental... man, Fallen, sacred and profane alike."
+
+Of the thousands that have set out to destroy Vetrar, only a handful has even reached the borders of his territory. Most have simply laid down in the snow and let death take them... a prefiguration, some believe, of how the world will end.
+</Backstory>
+        <Medallions InternalName="">
+            <All>M_Vetrar_Card.png</All>
+        </Medallions>
+        <AlwaysInTileCenter>1</AlwaysInTileCenter>
+        <AnimationPack>VetrarAnimationPack</AnimationPack>
+        <AnimationParticleEffect>Awaken,_Vetrar_Awaken_02,0.0,10.0,0.0,1.0</AnimationParticleEffect>
+        <AnimationParticleEffect>Death,A_Vetrar_Death_01,0.0,5.0,0.0,2.0</AnimationParticleEffect>
+        <BattleAnimationBehavior>Stationary</BattleAnimationBehavior>
+        <CanSqueeze>1</CanSqueeze>
+        <ClothMapScale>3</ClothMapScale>
+        <Color_Metal>192,192,192,255</Color_Metal>
+        <Color_Skin>5,0,0,255</Color_Skin>
+        <CutSceneDataPack>VetrarUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx/eyes/male_brown_eye.png</EyeTexture>
+        <InfoCardBackground>BG_Arctic</InfoCardBackground>
+        <MaxScaleMainMap>3.36</MaxScaleMainMap>
+        <ModelPath>gfx/hkb/Monsters/M_Vetrar_Mesh_01.hkb</ModelPath>
+        <ModelScale>3.4</ModelScale>
+        <OnHitParticleName>WaterShrill_OnHit</OnHitParticleName>
+        <ShowAsSingleUnit>1</ShowAsSingleUnit>
+        <SkeletonPath>Gfx\HKB\Units\M_Vetrar_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Golem1</SoundPack>
+        <TacticalModelScale>9</TacticalModelScale>
+        <Texture_Skin>M_Vetrar_Texture_01.png</Texture_Skin>
+        <TileRadius>1</TileRadius>
+    </UnitType>
+	
+</UnitTypes>
+	
+<Spells>
+	    <SpellDef InternalName="DelinsBreath">
+        <DisplayName>Delin's Breath</DisplayName>
+        <Description>Delin's Breath summons a fireball that shoots at all enemies.  These fireballs do 50 (+4 per fire shard) fire damage to all units within a 1 tile radius.</Description>
+        <FormattedDescription>Delin's Breath summons a fireball that shoots at all enemies.  These fireballs do %d fire damage to all units within a 1 tile radius.</FormattedDescription>
+        <Image>T_Fireball_Painting.png</Image>
+        <IconFG>T_Fireball_Icon.png</IconFG>
+        <Cooldown>5</Cooldown>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>AllEnemyUnits</SpellTargetType>
+        <AllowFriendlyFireInRadius>1</AllowFriendlyFireInRadius>
+        <IsResistable>1</IsResistable>
+        <IsSpecialAbility>1</IsSpecialAbility>
+        <Radius>1</Radius>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Fire</AttackStat>
+            <IsForFormattedDescription>1</IsForFormattedDescription>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumFireShards] * 4]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc2" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[Calc] + 50]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc3" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[Calc2] * [UnitStat_SpellDamage_Fire]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc3]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="ValueForFormattedDescription">
+                <Expression><![CDATA[[Calc3]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Fire</AttackStat>
+            <IsForSpellResist>1</IsForSpellResist>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumFireShards] * 2]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc2" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[Calc] + 25]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc3" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[Calc2] * [UnitStat_SpellDamage_Fire]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc3]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>1000</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_FireBallExplode_01</HitSoundFX>
+        <SpellCastSoundFX>Spell_FireBall_01</SpellCastSoundFX>
+        <SpellCastEffectName>T_Fireball_Particle</SpellCastEffectName>
+        <SpellCastEffectScale>1</SpellCastEffectScale>
+        <SpellCastProjectile>1</SpellCastProjectile>
+        <SpellCastProjectileSpeed>600</SpellCastProjectileSpeed>
+        <WorldLightOverrideTime>3</WorldLightOverrideTime>
+        <WorldLightOverrideAmbiant>20,20,20</WorldLightOverrideAmbiant>
+        <WorldLightOverrideRim0>255,217,66</WorldLightOverrideRim0>
+        <WorldLightOverrideRim1>255,115,66</WorldLightOverrideRim1>
+        <SpellDefEffect>
+            <EffectName>E_FireballExplosion_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>3</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+	
+	<SpellDef InternalName="WintersWrath_Ability">
+        <DisplayName>Winter's Wrath</DisplayName>
+        <Description>All enemy units take 50 cold damage (+2 per water shard).</Description>
+        <FormattedDescription>Units take %d cold damage per member.</FormattedDescription>
+        <Image>T_Blizzard_Painting.png</Image>
+        <IconFG>T_Blizzard_Icon.png</IconFG>
+        <Cooldown>5</Cooldown>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+        <AllowFriendlyFireInRadius>1</AllowFriendlyFireInRadius>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <IsCastable>0</IsCastable>
+        <IsResistable>1</IsResistable>
+        <IsSpecialAbility>1</IsSpecialAbility>
+        <Radius>2</Radius>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Cold</AttackStat>
+            <IsForFormattedDescription>1</IsForFormattedDescription>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumWaterShards] * 2]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc] + 50]]></Expression>
+            </Calculate>
+            <Calculate InternalName="ValueForFormattedDescription">
+                <Expression><![CDATA[[Calc2]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Cold</AttackStat>
+            <IsForSpellResist>1</IsForSpellResist>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumWaterShards]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc] + 25]]></Expression>
+            </Calculate>
+            <Calculate InternalName="ValueForFormattedDescription">
+                <Expression><![CDATA[[Calc2]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>1000</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_FreezeGroup_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_Freeze_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>3</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+	
+	 <SpellDef InternalName="StoneRain_Ability">
+        <DisplayName>Stone Rain</DisplayName>
+        <Description>Boulders strike all enemy units for 30 physical damage.</Description>
+        <Image>T_Shockwave_Painting.png</Image>
+        <IconFG>T_HurlBoulder_Icon.png</IconFG>
+        <Cooldown>5</Cooldown>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>AllEnemyUnits</SpellTargetType>
+        <IsSpecialAbility>1</IsSpecialAbility>
+        <CanBeDodged>1</CanBeDodged>		
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Pierce</AttackStat>
+			<Value>30</Value>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>1000</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Fireball_01</HitSoundFX>
+        <MissSoundFX>Miss_Swing1</MissSoundFX>
+        <MissSoundFX>Miss_Swing2</MissSoundFX>
+        <SpellCastSoundFX>CatapultToss1_M</SpellCastSoundFX>
+        <SpellCastEffectName>Catapult_Particle</SpellCastEffectName>
+        <SpellCastEffectScale>0.9</SpellCastEffectScale>
+        <SpellCastProjectile>1</SpellCastProjectile>
+        <SpellCastProjectileSpeed>500</SpellCastProjectileSpeed>
+    </SpellDef>
+	
+	<SpellDef InternalName="WindShield_Ability">
+        <DisplayName>Wind Shield</DisplayName>
+        <Description>The caster gets +20 Dodge and +200 Dodge Against Ranged Attacks for the rest of the battle.</Description>
+        <Image>T_WindShield_Painting.png</Image>
+        <IconFG>T_WindShield_Icon.png</IconFG>
+		<Cooldown>99</Cooldown>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Buff</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <IsSpecialAbility>1</IsSpecialAbility>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_DodgeAgainstRanged</StrVal>
+            <Duration>-1</Duration>
+            <Value>200</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Dodge</StrVal>
+            <Duration>-1</Duration>
+            <Value>20</Value>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>1000</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Tornado_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_Tornado_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>4</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+	
+	 <SpellDef InternalName="ReleaseCurrent">
+        <DisplayName>Release Current</DisplayName>
+        <Description>Lightning shocks all enemy units for 24 Lightning damage.</Description>
+        <Image>T_Storm_Painting.png</Image>
+        <IconFG>T_ChainLightning_Icon.png</IconFG>
+        <Cooldown>5</Cooldown>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>AllEnemyUnits</SpellTargetType>
+        <IsResistable>1</IsResistable>
+        <IsSpecialAbility>1</IsSpecialAbility>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Lightning</AttackStat>
+			<Value>24</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Lightning</AttackStat>
+            <IsForSpellResist>1</IsForSpellResist>
+			<Value>12</Value>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>10000</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_LightningArrow_Hit_01</HitSoundFX>
+        <HitSoundFX>Spell_LightningArrow_Hit_02</HitSoundFX>
+        <SpellCastSoundFX>Spell_BowAttack_LightningCast_01</SpellCastSoundFX>
+        <SpellCastEffectName>A_LightningLongbow_Particle</SpellCastEffectName>
+        <SpellCastEffectScale>0.3</SpellCastEffectScale>
+        <SpellCastProjectile>1</SpellCastProjectile>
+        <SpellCastProjectileSpeed>700</SpellCastProjectileSpeed>
+        <SpellDefEffect>
+            <EffectName>A_LightningLongbow_Impact_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+	
+	<SpellDef InternalName="Plague_Ability">
+        <DisplayName>Plague</DisplayName>
+        <Description>All enemy units take 10 poison damage per turn for the rest of the battle.</Description>
+        <Image>T_Contagion_Painting.png</Image>
+        <IconFG>T_Contagion_Icon.png</IconFG>
+        <CanStack>0</CanStack>
+        <Cooldown>99</Cooldown>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>AllEnemyUnits</SpellTargetType>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <IsSpecialAbility>1</IsSpecialAbility>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Poison</AttackStat>
+            <Duration>-1</Duration>
+            <Effect>E_Poison_Particle</Effect>
+            <PerTurn>1</PerTurn>
+			<Value>10</Value>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>1000</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Contagion_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>T_Contagion_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>.3</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+            <PlayOnAllTargets>1</PlayOnAllTargets>
+        </SpellDefEffect>
+    </SpellDef>
+	
+	<!--<SpellDef InternalName="TestSummon">
+        <DisplayName>Test Summon</DisplayName>
+        <Description>Summon Elemental Lords.</Description>
+        <Image>M_Morian_Card.png</Image>
+        <IconFG>T_Barbs_Icon.png</IconFG>
+		<AutoUnlock>1</AutoUnlock>
+        <SpellBookSortCategory>World</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Map</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Terraform</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>NeutralGround</SpellTargetType>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>SummonUnit</Attribute>
+            <UnitClass>Torax</UnitClass>
+			<Value>20</Value>
+        </GameModifier>	
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>SummonUnit</Attribute>
+            <UnitClass>Abeix</UnitClass>
+			<Value>20</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>SummonUnit</Attribute>
+            <UnitClass>Delin</UnitClass>
+			<Value>20</Value>
+        </GameModifier>	
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>SummonUnit</Attribute>
+            <UnitClass>Morian</UnitClass>
+			<Value>20</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>SummonUnit</Attribute>
+            <UnitClass>Vetrar</UnitClass>
+			<Value>20</Value>
+        </GameModifier>			
+        <ValidTerrainType>Forest</ValidTerrainType>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+        <HitSoundFX>Morian_Death</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_NaturesCloak_Particle</EffectName>
+            <LocalPosition>0,20,0</LocalPosition>
+            <EffectScale>0.7</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>-->
+	
+</Spells>
+
+<AbilityBonuses>
+
+    <AbilityBonus InternalName="ElementalLordAbility">
+        <AbilityBonusOption InternalName="ElementalLord">
+            <DisplayName>Elemental Lord</DisplayName>
+            <Description>+10 Initiative, +30 Spell Resist, +8 HP per level, +33 Resist against all Elements</Description>
+            <Icon>Ability_SummonMastery_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_CombatSpeed</StrVal>
+                <Value>10</Value>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MagicResist</StrVal>
+                <Value>30</Value>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ResistFire</StrVal>
+                <Value>33</Value>
+                <Provides>+33% Fire Resistance</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ResistCold</StrVal>
+                <Value>33</Value>
+                <Provides>+33% Cold Resistance</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ResistLightning</StrVal>
+                <Value>33</Value>
+                <Provides>+33% Lightning Resistance</Provides>
+            </GameModifier>			
+            <Type>Aggressive</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="Trigger_TitansBreath2Ability">
+        <AbilityBonusOption InternalName="Trigger_TitansBreath2">
+            <DisplayName>Titan's Breath</DisplayName>
+            <Description>Titan's Breath is triggered when combat begins</Description>
+            <Icon>Ability_TitansBreath.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>BattleAutoCastSpell</Attribute>
+                <StrVal>TitansBreath_Ability2</StrVal>
+                <Value>100</Value>
+                <Provides>Titan's Breath is triggered when combat begins</Provides>
+            </GameModifier>
+            <CombatRating>200</CombatRating>
+            <Type>Ability</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="Spell_WintersWrathAbility">
+        <AbilityBonusOption InternalName="Spell_WintersWrath">
+            <DisplayName>Winter's Wrath</DisplayName>
+            <Description>Allows the unit to cast Winter's Wrath</Description>
+            <Icon>T_Blizzard_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>WintersWrath_Ability</StrVal>
+                <Provides>Assaults target foes with an ice storm, dealing 30 cold damage (+2 per water shard) per member.</Provides>
+            </GameModifier>
+            <CombatRating>200</CombatRating>
+            <IsCombatAbility>1</IsCombatAbility>
+            <Type>Spell</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+	    <AbilityBonus InternalName="Spell_WindShieldAbility">
+        <AbilityBonusOption InternalName="Spell_WindShield">
+            <DisplayName>Armed By The Sky</DisplayName>
+            <Description>Allows the unit to cast WindShield and Release Current</Description>
+            <Icon>T_WindShield_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>WindShield_Ability</StrVal>
+                <Provides>Allows this unit to cast WindShield, which increased Dodge Against Ranged Attacks by 200.</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>ReleaseCurrent</StrVal>
+                <Provides>Allows this unit to cast Release Current, which does 25 lightning damage to all units.</Provides>
+            </GameModifier>			
+            <CombatRating>200</CombatRating>
+            <IsCombatAbility>1</IsCombatAbility>
+            <Type>Spell</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="Spell_StoneRainAbility">
+        <AbilityBonusOption InternalName="Spell_StoneRain">
+            <DisplayName>Stone Rain</DisplayName>
+            <Description>Allows the unit to cast Stone Rain</Description>
+            <Icon>T_HurlBoulder_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>StoneRain_Ability</StrVal>
+                <Provides>Assaults all foes with a rain of boulders.</Provides>
+            </GameModifier>
+            <CombatRating>200</CombatRating>
+            <IsCombatAbility>1</IsCombatAbility>
+            <Type>Spell</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="Spell_PlagueAbility">
+        <AbilityBonusOption InternalName="Spell_Plague">
+            <DisplayName>Plague</DisplayName>
+            <Description>Allows the unit to cast Plague</Description>
+            <Icon>T_Contagion_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Plague_Ability</StrVal>
+                <Provides>All enemy units take 10 poison damage per turn.</Provides>
+            </GameModifier>
+            <CombatRating>200</CombatRating>
+            <IsCombatAbility>1</IsCombatAbility>
+            <Type>Spell</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>	
+	
+	    <AbilityBonus InternalName="Spell_DelinsBreathAbility">
+        <AbilityBonusOption InternalName="Spell_DelinsBreath">
+            <DisplayName>Delin's Breath</DisplayName>
+            <Description>Allows the unit to cast Delin's Breath</Description>
+            <Icon>T_Fireball_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>DelinsBreath</StrVal>
+                <Provides>Delin's Breath summons a fireball that shoots at all enemies.  These fireballs do 18 (+4 per fire shard) fire damage to all units within a 1 tile radius.</Provides>
+            </GameModifier>
+            <CombatRating>10</CombatRating>
+            <IsCombatAbility>1</IsCombatAbility>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+</AbilityBonuses>

@@ -1,0 +1,95 @@
+
+<ImprovementTypes>
+    
+    <ImprovementType InternalName="SorcerersTower">
+        <DisplayName>Sorcerer's Tower</DisplayName>
+        <Description>Constructing this building allows your Sorcerer to conduct Magical Experiments (appears in Spellbook when stationed). Also allows purchase of the Sorcerer's Staff.</Description>
+        <RequiresCity>1</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>Conclave</RequiredImprovement>
+        <GameModifier>
+            <ModType>ConstructionResourceCost</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>-30</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ConstructionResourceCost</ModType>
+            <Attribute>RefinedCrystal</Attribute>
+            <Value>-5</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ConstructionResourceCost</ModType>
+            <Attribute>Metal</Attribute>
+            <Value>-5</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>City</ModType>
+            <Attribute>AdjustDefendingUnit</Attribute>
+            <StrVal>UnitStat_IsInTower</StrVal>
+            <Value>1</Value>
+            <Provides>Stationed Units Have Access to Sorcerer's Tower</Provides>
+        </GameModifier>
+        <LaborToBuild>75</LaborToBuild>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+            <AITag>Victory</AITag>
+        </AIData>
+        <ArtDef>Art_TowerOfTheMagi</ArtDef>
+        <UnlocksShopItem>Staff_Sorcerer</UnlocksShopItem>			
+    </ImprovementType>
+	
+	 <ImprovementType InternalName="Outpost_SorcererFortress">
+        <DisplayName>Arcane Fortress</DisplayName>
+        <Description>Increases the player's borders and improves their visibility.</Description>
+        <RequiresForceUnlock>1</RequiresForceUnlock>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <ZOCMinRadius>1</ZOCMinRadius>
+        <ZOCMaxRadius>1</ZOCMaxRadius>
+        <ZOCRadiusTurnsBeforeUpdate>1</ZOCRadiusTurnsBeforeUpdate>
+        <HideInBuildList>1</HideInBuildList>
+        <LaborToBuild>-1</LaborToBuild>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>10</Value>
+            <Operator>%</Operator>
+            <Provides>+10% Attack to friendly units in Zone of Control</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <Value>20</Value>
+            <Operator>%</Operator>
+            <Provides>+20% Defense to friendly units in Zone of Control</Provides>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+            <AITag>CommandPost</AITag>
+        </AIData>
+        <ArtDef>Outpost_SorcererFortress_ArtDef</ArtDef>
+        <ImprovementTypeArtDef InternalName="Outpost_SorcererFortress_ArtDef">
+            <ImprovementTypeArtSubPack InternalName="Outpost_SorcererFortress_Default">
+                <TileDesign>K_Sorcerer_Fortress</TileDesign>
+                <ConstructionTileDesign>K_Outpost_Arcane_01</ConstructionTileDesign>
+                <DrawnIcon>Improvement_Fort.png</DrawnIcon>
+                <DrawnIconConstruction>Improvement_Fort_C.png</DrawnIconConstruction>
+                <Thumbnail>K_Outpost_Arcane_Thumb_01.png</Thumbnail>
+                <Medallions InternalName="">
+                    <All>K_Outpost_Abbey_Thumb_01.png</All>
+                </Medallions>
+            </ImprovementTypeArtSubPack>
+        </ImprovementTypeArtDef>
+    </ImprovementType>
+    
+</ImprovementTypes>

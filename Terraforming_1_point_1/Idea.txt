@@ -1,0 +1,1 @@
+-multiply all resource values by 10 to avoid repeating events

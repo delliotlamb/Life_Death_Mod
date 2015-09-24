@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<TileDesigns>
+	<DataChecksum NoParse="1">
+		<Ignore>DisplayName</Ignore>
+		<Translate>DisplayName</Translate>
+	</DataChecksum>
+	<TileDesign InternalName="EnchantedGarden_02">
+		<DisplayName>EnchantedGarden_02</DisplayName>
+		<Thumbnail>\Game\Gfx\tile_icon.png</Thumbnail>
+		<DecalName>Gfx\Decals\GenericGrass_Decal.dds</DecalName>
+		<LowResShadow>EnchantedGarden_02_shadow.png</LowResShadow>
+		<HighResShadow>EnchantedGarden_02_shadow.png</HighResShadow>
+		<ShadowTransparency>70</ShadowTransparency>
+		<IsCore>0</IsCore>
+		<IsHiddenFromEditor>0</IsHiddenFromEditor>
+		<SubTileFlags>1</SubTileFlags>
+		<TileDesignObject InternalName="_obj0">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>Statue_Hooded_03</ObjectDefName>
+			<ObjectLOD>3</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-12.500000,3.000000,0.000000</Position>
+			<Rotation>0.000000,-1.570796,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.4400</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj1">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>Statue_Hooded_03</ObjectDefName>
+			<ObjectLOD>3</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>12.500000,3.000000,0.000000</Position>
+			<Rotation>0.000000,1.570796,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.4400</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj2">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>Statue_Stand1</ObjectDefName>
+			<ObjectLOD>3</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-13.500000,-4.000000,0.000000</Position>
+			<Rotation>0.000000,0.785398,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.4000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj3">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>Statue_Stand1</ObjectDefName>
+			<ObjectLOD>3</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>13.500000,-4.000000,0.000000</Position>
+			<Rotation>0.000000,-0.785398,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.4000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj4">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>SmallFertileGrove1</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-8.715139,0.000000,-18.522379</Position>
+			<Rotation>0.000000,-2.325001,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj5">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>SmallFertileGrove1</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-18.938793,0.000000,-10.252560</Position>
+			<Rotation>0.000000,-0.450000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj6">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>SmallFertileGrove1</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-15.568352,0.000000,9.388595</Position>
+			<Rotation>0.000000,-0.950467,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj7">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>SmallFertileGrove1</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-10.554687,0.000000,17.278511</Position>
+			<Rotation>0.000000,1.050000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj8">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>SmallFertileGrove1</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>9.870857,0.000000,16.806633</Position>
+			<Rotation>0.000000,0.450000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj9">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>SmallFertileGrove1</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>17.265461,0.000000,11.274979</Position>
+			<Rotation>0.000000,2.775001,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj10">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>SmallFertileGrove1</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>15.457699,0.000000,-11.106031</Position>
+			<Rotation>0.000000,1.875000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj11">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>SmallFertileGrove1</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>10.081600,0.000000,-17.464851</Position>
+			<Rotation>0.000000,4.350000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj12">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>LargeFertileGrove1</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>0.290749,1.000000,-3.519806</Position>
+			<Rotation>0.000000,-1.275000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0800</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj13">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>Artifact_RoundFountain</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>0.000000,-3.000000,0.000000</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.9200</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj14">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>WhiteFlowers2</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-2.039871,3.000000,-0.376602</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj15">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>Statue_Hooded_03</ObjectDefName>
+			<ObjectLOD>3</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-12.500000,3.000000,0.000000</Position>
+			<Rotation>0.000000,-1.570796,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.4400</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj16">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>Statue_Hooded_03</ObjectDefName>
+			<ObjectLOD>3</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>12.500000,3.000000,0.000000</Position>
+			<Rotation>0.000000,1.570796,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.4400</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj17">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>Statue_Stand1</ObjectDefName>
+			<ObjectLOD>3</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-13.500000,-4.000000,0.000000</Position>
+			<Rotation>0.000000,0.785398,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.4000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj18">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>Statue_Stand1</ObjectDefName>
+			<ObjectLOD>3</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>13.500000,-4.000000,0.000000</Position>
+			<Rotation>0.000000,-0.785398,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.4000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj19">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>SmallFertileGrove1</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-8.715139,0.000000,-18.522379</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj20">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>SmallFertileGrove1</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-18.938793,0.000000,-10.252560</Position>
+			<Rotation>0.000000,-0.450000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj21">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>SmallFertileGrove1</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-15.568352,0.000000,9.388595</Position>
+			<Rotation>0.000000,-0.950467,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj22">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>SmallFertileGrove1</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-10.554687,0.000000,17.278511</Position>
+			<Rotation>0.000000,1.050000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj23">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>SmallFertileGrove1</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>9.870857,0.000000,16.806633</Position>
+			<Rotation>0.000000,0.450000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj24">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>SmallFertileGrove1</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>17.265461,0.000000,11.274979</Position>
+			<Rotation>0.000000,2.775001,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj25">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>SmallFertileGrove1</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>15.457699,0.000000,-11.106031</Position>
+			<Rotation>0.000000,1.875000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj26">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>SmallFertileGrove1</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>10.081600,0.000000,-17.464851</Position>
+			<Rotation>0.000000,4.350000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj27">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>LargeFertileGrove1</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>0.290749,1.000000,-3.519806</Position>
+			<Rotation>0.000000,-1.275000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0800</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj28">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>Artifact_RoundFountain</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>0.000000,-3.000000,0.000000</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.9200</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj29">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>WhiteFlowers2</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-2.039871,3.000000,-0.376602</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj30">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>TownTree_Large</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>1.946198,0.000000,18.028694</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.4400</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj31">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>TownTree_Large</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>13.598694,0.000000,-16.192198</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.5200</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj32">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>PineTreeSingle</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-18.891022,0.000000,-21.254356</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.6800</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj33">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>AppleTree_2</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-16.816986,0.000000,-17.349083</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.5000</Scale>
+			<BaseScale>2.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj34">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>SwampTree3</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-18.329039,0.000000,18.559830</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj35">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>SwampTree3</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>16.419582,0.000000,17.336472</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0400</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignPath InternalName="_path0"/>
+		<TileDesignPath InternalName="_path1"/>
+		<TileDesignPath InternalName="_path2"/>
+	</TileDesign>
+</TileDesigns>

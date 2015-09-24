@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- DLC04_Spells.xml -->
+<!-- -->
+<Spells>
+   
+    <SpellDef InternalName="Terror_Ability">
+        <DisplayName>Terror</DisplayName>
+        <Description>Target adjacent enemy loses their next action, unless they resist.</Description>
+        <Image>S_CloakOfFear_Painting.png</Image>
+        <IconFG>DLC04_Terror_Icon.png</IconFG>
+        <CanStack>0</CanStack>
+        <Cooldown>5</Cooldown>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitCurse</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Debuff</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <IsResistable>1</IsResistable>
+        <IsSpecialAbility>1</IsSpecialAbility>
+		<Range>1</Range>
+        <GameModifier>
+            <ModType>TacticalUnit</ModType>
+            <Attribute>ChanceToLoseNextTurn</Attribute>
+            <DisplayName>Afraid</DisplayName>
+            <Duration>1</Duration>
+            <Effect>E_Afraid_Particle</Effect>
+            <PerTurn>1</PerTurn>
+            <Value>100</Value>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+		</AIData>
+        <HitSoundFX>Spell_FearWave_01</HitSoundFX>
+    </SpellDef>
+	
+	
+	
+	
+	
+</Spells>

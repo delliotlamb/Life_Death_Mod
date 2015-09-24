@@ -1,0 +1,14 @@
+[TABLEALIAS GlobalResourceStatEntry]
+
+[EldritchEnergy_Description] Measure of how much Eldritch Presence has come to Elemental through Void Gates. Spend it to train powerful Eldritch troops.
+[CombatTrials_Description] The more combatants killed in your trial pits, the closer you are to finding an exceptional Apexor.
+[VerdantEssence_Description] Measure of connection to wild, abundant life. Allows you to cast special Life spells. Earn more by creating Forest, lose it by destroying Forest.
+[ArcticEssence_Description] Measure of connection to ice and glacier. Allows you to cast special Ice spells. Earn more by creating Arctic, lose it by thawing Arctic.
+[WaveEssence_Description] Measure of connection to pool and stream. Allows you to cast special Water spells. Earn more by creating Ocean, lose it by turning water into land.
+[GaleEssence_Description] Measure of connection to the hidden fury of air. Allows you to cast special Air spells. Earn more by creating Plains, lose it by creating Forest, Hills, or Mountain.
+[EmberEssence_Description] Measure of connection to smoldering flame in wait. Allows you to cast special Fire spells. Earn more by creating Burning Lands or setting fires.
+[MineralEssence_Description] Measure of connection to rock and gem. Allows you to cast special Earth spells. Earn more by creating Hills and Mountain, lose it by lowering Hills or flooding dry land.
+[FamineEssence_Description] Measure of connection to the cruel scarcity of death. Allows you to cast special Death spells. Earn more by creating Desert or killing Forest And Swamp, lose it by creating trees or irrigating desert.
+
+
+[TABLEEND]

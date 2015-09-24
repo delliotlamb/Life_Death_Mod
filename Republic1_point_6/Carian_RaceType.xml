@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<RaceTypes>
+	<RaceType InternalName="Race_Type_BlackMancers">
+		<DisplayName>Black Mancer</DisplayName>
+		<RaceClassification>Men</RaceClassification>
+		<UnitScale>1.0</UnitScale>		
+		<UnitSkinColor>214,145,100,255</UnitSkinColor>
+		<UnitHairColor>0,0,0,255</UnitHairColor>
+		<MaleUnitType>Generic_Sovereign_BlackMancer_Male</MaleUnitType>
+		<FemaleUnitType>Generic_Sovereign_BlackMancer_Female</FemaleUnitType>
+		<GenericUnitType_Male>Generic_BlackMancer_Male</GenericUnitType_Male>
+		<GenericUnitType_Female>Generic_BlackMancer_Female</GenericUnitType_Female>
+		<!--<GenericUnitType_Other>Generic_Quendar_Henchman</GenericUnitType_Other>-->	
+		<TraderUnitType>TraderTest</TraderUnitType>
+		<SageUnitType>Sage_BlackMancer</SageUnitType>
+		<ShopkeeperUnitType>Shopkeeper_BlackMancer</ShopkeeperUnitType>
+		<StartingUnitType>Unit_Pioneer_BlackMancer</StartingUnitType>
+		<StartingUnitType>Unit_Catapult</StartingUnitType>
+		<StartingUnitType>Unit_Scout_BlackMancer</StartingUnitType>
+		<StartingUnitType>CarianClubs</StartingUnitType>
+		<StartingUnitType>Staffmen</StartingUnitType>
+		<StartingUnitType>CarianSpears</StartingUnitType>
+        <MusicTheme>WanderersHome</MusicTheme>
+    </RaceType>
+</RaceTypes>

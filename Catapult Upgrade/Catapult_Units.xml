@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Created with the Elemental Editor -->
+<!-- CoreUnits.xml -->
+<!-- -->
+<UnitTypes>
+    
+    <UnitType InternalName="Unit_Catapult">
+        <DisplayName>Catapult</DisplayName>
+        <Description>Catapults are devastating on the battle field but are extremely slow and expensive. In tactical combat, their attacks damage all units within a 1 tile radius. They can also launch sieges on the strategic map.</Description>
+        <CanBeDesigned>1</CanBeDesigned>
+        <AdditionalTrainingTurns>240</AdditionalTrainingTurns>
+        <IgnoreItemTrainingCosts>1</IgnoreItemTrainingCosts>
+        <IsCatapult>1</IsCatapult>
+        <IsSovereign>0</IsSovereign>
+        <IsUniqueButBuildable>1</IsUniqueButBuildable>
+        <AllowGrouping>0</AllowGrouping>
+        <TrainUnitIcon>TrainUnitIcon_Catapult.png</TrainUnitIcon>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_Attack_Pierce>28</UnitStat_Attack_Pierce>
+            <UnitStat_CombatSpeed>16</UnitStat_CombatSpeed>
+            <UnitStat_Defense_Pierce>30</UnitStat_Defense_Pierce>
+            <UnitStat_HitPoints>50</UnitStat_HitPoints>
+			<!-- the following disable unit from casting Writ spells -->
+			<UnitStat_IsAtBlacksmith>-1</UnitStat_IsAtBlacksmith>
+			<UnitStat_IsAtBlacksmith_LightPlate>-1</UnitStat_IsAtBlacksmith_LightPlate>
+			<UnitStat_IsAtTanner>-1</UnitStat_IsAtTanner>
+			<UnitStat_IsAtEnchanter>-1</UnitStat_IsAtEnchanter>
+			<UnitStat_IsAtPlateArmorer>-1</UnitStat_IsAtPlateArmorer>
+			<UnitStat_IsAtPlateArmorer_Master>-1</UnitStat_IsAtPlateArmorer_Master>
+			<UnitStat_IsAtMasterworkChainArmorer>-1</UnitStat_IsAtMasterworkChainArmorer>
+			<UnitStat_IsAtArcaneArmorer>-1</UnitStat_IsAtArcaneArmorer>
+			<UnitStat_IsAtArcaneArmorer_Tran>-1</UnitStat_IsAtArcaneArmorer_Tran>
+			<UnitStat_IsAtArcaneWeaponsmith>-1</UnitStat_IsAtArcaneWeaponsmith>
+			<UnitStat_IsAtArcaneWeaponsmith_Tran>-1</UnitStat_IsAtArcaneWeaponsmith_Tran>
+			<UnitStat_IsAtMasterEnchanter>-1</UnitStat_IsAtMasterEnchanter>
+			<UnitStat_IsAtProvisionist>-1</UnitStat_IsAtProvisionist>
+			<UnitStat_IsAtProvisionist_Dead>-1</UnitStat_IsAtProvisionist_Dead>
+			<UnitStat_IsAtArchaeologist>-1</UnitStat_IsAtArchaeologist>
+			<UnitStat_IsAtRanch>-1</UnitStat_IsAtRanch>
+			<UnitStat_IsAtRanch_Dead>-1</UnitStat_IsAtRanch_Dead>
+			<UnitStat_IsAtRanch_LegacyOfSerrane>-1</UnitStat_IsAtRanch_LegacyOfSerrane>
+			<UnitStat_IsAtKennel>-1</UnitStat_IsAtKennel>
+			<UnitStat_IsAtAdventurersGuild>-1</UnitStat_IsAtAdventurersGuild>
+			<UnitStat_IsAtDiplomat>-1</UnitStat_IsAtDiplomat>
+			<UnitStat_IsAtWeaponsmith>-1</UnitStat_IsAtWeaponsmith>			
+        </LevelMilestone>
+        <SelectedAbilityBonusOption>Inaccurate</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>CatapultSiege</SelectedAbilityBonusOption>		
+        <Equipment>CatapultAmmo</Equipment>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Siege_Weapons</Attribute>
+        </Prereq>
+        <ProductionRequirement>
+            <Type>Resource</Type>
+            <Attribute>Gold</Attribute>
+            <Value>100</Value>
+        </ProductionRequirement>
+        <ProductionRequirement>
+            <Type>Resource</Type>
+            <Attribute>Metal</Attribute>
+            <Value>10</Value>
+        </ProductionRequirement>
+        <Backstory>These machines are based upon drawings found in the great library at New Pariden.  They are reconstructions of those catapults Argynn used thousands of years ago during the siege of Eduruun V'olloz - the black citadel of the Nerazga.</Backstory>
+        <Medallions InternalName="">
+            <All>Catapult_Card.png</All>
+        </Medallions>
+        <AlwaysInTileCenter>1</AlwaysInTileCenter>
+        <AnimationPack>KingdomBasicCatapultAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.2</ClothMapScale>
+        <EyeTexture>gfx\eyes\blinks\eyeblink_m3_cataract.png</EyeTexture>
+        <InfoCardBackground>BG17_BurningCastle</InfoCardBackground>
+        <ModelPath>Gfx\HKB\Objects\K_Catapult_Basic_Mesh_01.hkb</ModelPath>
+        <ModelScale>1.5</ModelScale>
+        <MovementType>land</MovementType>
+        <SkeletonPath>Gfx\HKB\Objects\K_Catapult_Basic_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Catapult1</SoundPack>
+        <TacticalModelScale>2.5</TacticalModelScale>
+        <Texture_All>K_Catapult_Basic_Texture_01.png</Texture_All>
+        <UnitModelType>Catapult</UnitModelType>
+    </UnitType>
+    
+</UnitTypes>

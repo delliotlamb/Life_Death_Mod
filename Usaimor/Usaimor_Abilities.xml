@@ -1,0 +1,55 @@
+<!--<AbilityBonuses>
+
+ <AbilityBonus InternalName="WarScholarshipAbility">
+        <AbilityBonusType>Player</AbilityBonusType>
+        <AbilityBonusOption InternalName="WarScholarship">
+            <DisplayName>War Scholarship</DisplayName>
+            <Description>Unlocks the Martial Library, an improvement that grants trained units +2 armor piercing per level, +2 Accuracy per level, and +25% Experience.</Description>
+            <Icon>Ability_WarMachine_Icon.png</Icon>
+            <GameModifier>
+                <Provides>Unlocks the Martial Library, an improvement that grants trained units +10 armor piercing, +2 Accuracy per level, and +25% Experience.</Provides>
+            </GameModifier>
+            <Cost>1</Cost>
+            <Type>Army</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="WarscholarAbility">
+        <AbilityBonusOption InternalName="Warscholar">
+            <DisplayName>War Student</DisplayName>
+            <Description>+2 armor piercing per level, +2 Accuracy per level, +25% Experience</Description>
+            <Icon>Ability_WarMachine_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ExpBonus</StrVal>
+                <Value>25</Value>
+                <Provides>+25% Experience</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ArmorPierce</StrVal>
+                <Value>2</Value>
+				<PerLevel>1</PerLevel>
+                <Provides>+2 Armor Piercing per level</Provides>				
+            </GameModifier>			
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Accuracy</StrVal>
+                <Value>2</Value>
+				<PerLevel>1</PerLevel>
+                <Provides>+2 Accuracy per level</Provides>
+            </GameModifier>			
+            <Type>Offensive</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+</AbilityBonuses>-->

@@ -1,0 +1,375 @@
+<AbilityBonuses>
+    <AbilityBonus InternalName="Republic_Ability">
+        <AbilityBonusType>Player</AbilityBonusType>
+        <AbilityBonusOption InternalName="Republic">
+            <DisplayName>Res Publica</DisplayName>
+            <Description>Your cities are each a state with voice in a Senate government. Your sovereign is head of the military and arcane societies, but with limited power in the government. Each city-state has limited responsibility to support your military. Labor is given partial ownership of its sector of the economy.</Description>
+            <Icon>Action_Treaty.png</Icon>
+            <GameModifier>
+                <Provides>Your cities are each a state with voice in a Senate government. Your sovereign is head of the military and arcane societies, but with limited power in the government. Each city-state has limited responsibility to support your military. Labor is given partial ownership of its sector of the economy.</Provides>
+            </GameModifier>
+            <GameModifier>
+                <Provides>Unlocks the Public Forum improvement, which massively reduces local unrest, boosts your city economy, but increases faction-wide unrest (lessening the return of multiple cities).</Provides>
+            </GameModifier>
+	    <GameModifier>
+                <ModType>Player</ModType>
+                <Attribute>AbilityBonus</Attribute>
+                <StrVal>A_Additive_Unrest</StrVal>
+                <Value>40</Value>
+                <Provides>+40% unrest in each city (Public Forum negates this)</Provides>
+            </GameModifier>      
+            <GameModifier>
+                <ModType>Player</ModType>
+                <Attribute>AbilityBonus</Attribute>
+                <StrVal>A_ArmyMaintenance</StrVal>
+                <Value>-33</Value>
+                <Provides>+33% to unit Wages</Provides>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Mana</StrVal>
+            <Value>-10</Value>
+            <Icon>Mana_Stat_Icon.png</Icon>
+            <Provides>-10% Mana due to magic distrust and humanist biases in this culture</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Additive_ProductionPerMaterials</StrVal>
+            <Value>-6</Value>
+            <Icon>Icon_Lumber.png</Icon>
+            <Provides>-6 Prod. per Material in cities, until Public Forum built</Provides>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Player</ModType>
+                <Attribute>AbilityBonus</Attribute>
+                <StrVal>A_Research</StrVal>
+                <Value>-40</Value>
+                <Provides>-40% to Research in cities, until Public Forum built</Provides>
+            </GameModifier>
+            <GameModifier>
+                <Provides>Fortresses are distrusted by your populace, as they fear an encroaching military state. Further, the state does not provide support for their massive food cost. Fortresses improvements are bogged down with extra food and gold cost, and create unrest.</Provides>
+            </GameModifier>
+            <GameModifier>
+                <Provides>Conclaves and Towns have many additional economic upgrades, making them even better under a Republic.</Provides>
+            </GameModifier>
+            <GameModifier>
+                <Provides>Human labor-based buildings produce small amounts of gold due to a wealthier labor force and economic multipliers.</Provides>
+            </GameModifier>
+            <Cost>0</Cost>
+            <Type>Army</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+<AbilityBonus InternalName="AwkwardAbility">
+        <AbilityBonusOption InternalName="Awkward">
+            <DisplayName>Awkward</DisplayName>
+            <Description>-10% to accuracy and spell mastery, +25% tactical spell mana cost</Description>
+            <Icon>Ability_Amnesia_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_TacticalSpellManaCost_Multiplier</StrVal>
+                <Value>0.25</Value>
+                <Provides>+25% mana cost for tactical spells</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Accuracy</StrVal>
+                <Multiplier>0.9</Multiplier>
+                <Provides>-10% Accuracy</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MagicPower</StrVal>
+                <Multiplier>0.9</Multiplier>
+                <Provides>-10% Spell Mastery</Provides>
+            </GameModifier>
+            <Type>Weakness</Type>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+
+    <AbilityBonus InternalName="Blood_BlackMancerAbility">
+        <AbilityBonusOption InternalName="Blood_BlackMancer">
+            <DisplayName>Black Mancer Blood</DisplayName>
+            <Description>+10% Experience, +1 Accuracy per level</Description>
+            <Icon>Action_StudySpells.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ExpBonus</StrVal>
+                <Value>10</Value>
+                <Provides>+10% Experience</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>RainOfArrows</StrVal>
+                <Provides>.</Provides>
+            </GameModifier>			
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Accuracy</StrVal>
+                <Value>1</Value>
+                <PerLevel>1</PerLevel>
+                <Provides>+1 Accuracy per Level</Provides>
+            </GameModifier>			
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+	
+   
+<AbilityBonus InternalName="MilitaryState_Ability">
+	<AbilityBonusOption InternalName="MilitaryState">
+            <DisplayName>Military State</DisplayName>
+            <Description>+1% Unrest in all cities</Description>
+            <Icon>Ability_Cruel_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Player</ModType>
+                <Attribute>AbilityBonus</Attribute>
+                <StrVal>A_Additive_Unrest</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Unrest in all cities</Provides>
+            </GameModifier>
+            <Type>Weakness</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="ArmorUpkeep1_Ability">
+        <AbilityBonusOption InternalName="ArmorUpkeep1">
+            <DisplayName>ArmorUpkeep 1</DisplayName>
+            <Description>-.5 Gildar per Season</Description>
+            <Icon>Immunity.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>ProduceResource</Attribute>
+                <StrVal>Gold</StrVal>
+                <Value>-.5</Value>
+                <Provides>-.5 Gildar per Season</Provides>
+            </GameModifier>
+            <Type>Weakness</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="ArmorUpkeep2_Ability">
+        <AbilityBonusOption InternalName="ArmorUpkeep2">
+            <DisplayName>ArmorUpkeep 2</DisplayName>
+            <Description>-1 Gildar per Season</Description>
+            <Icon>Immunity.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>ProduceResource</Attribute>
+                <StrVal>Gold</StrVal>
+                <Value>-1</Value>
+                <Provides>-1 Gildar per Season</Provides>
+            </GameModifier>
+            <Type>Weakness</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="ArmorUpkeep3_Ability">
+        <AbilityBonusOption InternalName="ArmorUpkeep3">
+            <DisplayName>ArmorUpkeep 3</DisplayName>
+            <Description>-1.5 Gildar per Season</Description>
+            <Icon>Immunity.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>ProduceResource</Attribute>
+                <StrVal>Gold</StrVal>
+                <Value>-1.5</Value>
+                <Provides>-1.5 Gildar per Season</Provides>
+            </GameModifier>
+            <Type>Weakness</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="ArmorUpkeep4_Ability">
+        <AbilityBonusOption InternalName="ArmorUpkeep4">
+            <DisplayName>Weapon And Armor Upkeep 4</DisplayName>
+            <Description>-2.5 Gildar per Season</Description>
+            <Icon>Immunity.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>ProduceResource</Attribute>
+                <StrVal>Gold</StrVal>
+                <Value>-2.5</Value>
+                <Provides>-2.5 Gildar per Season</Provides>
+            </GameModifier>
+            <Type>Weakness</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+	    <AbilityBonus InternalName="TrainQuendarHenchmenAbility">
+        <AbilityBonusOption InternalName="TrainQuendarHenchmen">
+            <DisplayName>Quendar Henchmen</DisplayName>
+            <Description>With the Merit Before Blood faction trait, this sovereign can summon one Quendar Henchman. Henchmen level and can use equipment like champions.</Description>
+            <Icon>Ability_TrainHenchmen_Icon.png</Icon>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_QuendarAwaiting</StrVal>
+			<Provides>With the Merit Before Blood faction trait, this sovereign can summon one Quendar Henchman. Henchmen level and can use equipment like champions.</Provides>
+            <Value>1</Value>
+        </GameModifier>
+            <Type>Army</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+	    <AbilityBonus InternalName="RoadBuilding2Ability">
+        <AbilityBonusType>Unit_Design</AbilityBonusType>
+        <AbilityBonusOption InternalName="RoadBuilding2">
+            <DisplayName>Road Building</DisplayName>
+            <Description>Allows the unit to build roads</Description>
+            <Icon>Ability_PathOfTheGovernor_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockAction</Attribute>
+                <StrVal>BuildRoad</StrVal>
+                <Provides>Allows the unit to build roads</Provides>
+            </GameModifier>
+            <Cost>10</Cost>
+            <Type>Army</Type>
+            <Prereq>
+                <Type>Race</Type>
+                <Attribute>Race_Type_BlackMancers</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+	<AbilityBonus InternalName="Readiness_BM_Ability">
+        <AbilityBonusType>Unit_Design</AbilityBonusType>
+        <AbilityBonusOption InternalName="Readiness_BM">
+            <DisplayName>Readiness</DisplayName>
+            <Description>+1 Starting Stamina</Description>
+            <Icon>Ability_Readiness_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Stamina_Starting</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Starting Stamina</Provides>
+            </GameModifier>
+            <AdditionalTrainingTurns>10</AdditionalTrainingTurns>
+            <Type>Aggressive</Type>
+            <Prereq>
+                <Type>Race</Type>
+                <Attribute>Race_Type_BlackMancers</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+    <AbilityBonus InternalName="Readiness_BM_Ability_Level">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="Readiness_BM_Level">
+            <DisplayName>Readiness</DisplayName>
+            <Description>+1 Starting Stamina</Description>
+            <Icon>Ability_Readiness_Icon.png</Icon>
+            <PerkTreePosX>0</PerkTreePosX>
+            <PerkTreePosY>4</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Stamina_Starting</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Starting Stamina</Provides>
+            </GameModifier>
+            <Type>Aggressive</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Blood_BlackMancer</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+	<AbilityBonus InternalName="Spell_SecondWind_BM_Ability">
+        <AbilityBonusType>Unit_Design</AbilityBonusType>
+        <AbilityBonusType>Unit_Spell_Rank</AbilityBonusType>
+        <AbilityBonusOption InternalName="Spell_SecondWind_BM">
+            <DisplayName>Second Wind</DisplayName>
+            <Description>Heal 14 Hit Points for 7 Stamina</Description>
+            <Icon>Ability_SecondWind_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>SecondWind</StrVal>
+                <Provides>Heal 14 Hit Points for 7 Stamina</Provides>
+            </GameModifier>
+            <AdditionalTrainingTurns>10</AdditionalTrainingTurns>
+            <IsCombatAbility>1</IsCombatAbility>
+            <Type>Spell</Type>
+            <Prereq>
+                <Type>Race</Type>
+                <Attribute>Race_Type_BlackMancers</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+    <AbilityBonus InternalName="Spell_SecondWind_BM_Ability_Level">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusType>Unit_Spell_Rank</AbilityBonusType>
+        <AbilityBonusOption InternalName="Spell_SecondWind_BM_Level">
+            <DisplayName>Second Wind</DisplayName>
+            <Description>Heal 14 Hit Points for 7 Stamina</Description>
+            <Icon>Ability_SecondWind_Icon.png</Icon>
+            <PerkTreePosX>1</PerkTreePosX>
+            <PerkTreePosY>4</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>SecondWind</StrVal>
+                <Provides>Heal 14 Hit Points for 7 Stamina</Provides>
+            </GameModifier>
+            <IsCombatAbility>1</IsCombatAbility>
+            <Type>Spell</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Readiness_BM_Level</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+</AbilityBonuses>

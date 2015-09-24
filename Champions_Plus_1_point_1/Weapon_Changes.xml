@@ -1,0 +1,3553 @@
+<GameItemTypes>
+
+<!-- This file primarily adds the "IsSword" unitstat to all swords (for the Paladin mod). At the end, it also slightly reduces damage of axes, mauls, and pikes for trained units (for Champions Plus). -->
+
+<GameItemType InternalName="Broadsword">
+        <DisplayName>Broadsword</DisplayName>
+        <Description>A broad-bladed sword with a lethal slash, wielded with one hand.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>OneHanded</WeaponType>
+        <WeaponUpgradeType>Blade</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>45</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>15</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>2</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxCounterAttack</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Counterattack per round</Provides>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsSword</StrVal>
+            <Value>1</Value>
+                <Provides>Enables abilities that require Swords</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <!--<Likelihood>200</Likelihood>-->
+        <RarityDisplay>Uncommon</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>264</AIPriority>
+        </AIData>
+        <ArtDef>Broadsword_ArtDef</ArtDef>
+    </GameItemType>
+
+<GameItemType InternalName="Broadsword_Shadow">
+        <DisplayName>Shadow Broadsword</DisplayName>
+        <Description>"I would rather fight a man in armor.  He imagines he is safe, but some weapons can slip through steel." -Rahelle the Scorpion</Description>
+        <Type>Weapon</Type>
+        <WeaponType>OneHanded</WeaponType>
+        <WeaponUpgradeType>Blade</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>180</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>18</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>2</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxCounterAttack</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Counterattack per round</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ArmorPierce</StrVal>
+                <Value>66</Value>
+                <Provides>Ignores 66% of the victim's Defense</Provides>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsSword</StrVal>
+            <Value>1</Value>
+                <Provides>Enables abilities that require Swords</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <!--<Likelihood>100</Likelihood>-->
+        <RarityDisplay>Uncommon</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Prereq>
+            <Type>UnitStat_Level</Type>
+            <Attribute>4</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>264</AIPriority>
+        </AIData>
+        <ArtDef>Broadsword_Shadow_ArtDef</ArtDef>
+    </GameItemType>
+
+    <GameItemType InternalName="Broadsword_Berserkers">
+        <DisplayName>Berserker's Broadsword</DisplayName>
+        <Description>This sword incites a warrior in battle, allowing him to unleash a flurry of attacks until his victim is dead, or his own heart explodes.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>OneHanded</WeaponType>
+        <WeaponUpgradeType>Blade</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>360</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>15</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>2</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxCounterAttack</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Counterattack per round</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaulChance</StrVal>
+                <Value>100</Value>
+                <Provides>Maul- Unit continues attacking at a cumulative -15 to Accuracy until he misses</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_AIControlChance</StrVal>
+                <Value>100</Value>
+                <Provides>Unit will attack enemies in combat without player direction</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>PreventSpellcasting</Attribute>
+                <Provides>Unit can't cast spells in tactical combat</Provides>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsSword</StrVal>
+            <Value>1</Value>
+                <Provides>Enables abilities that require Swords</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <!--<Likelihood>50</Likelihood>-->
+        <RarityDisplay>Rare</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>264</AIPriority>
+        </AIData>
+        <ArtDef>Broadsword_Berserkers_ArtDef</ArtDef>
+    </GameItemType>
+    <GameItemType InternalName="Broadsword_Champions">
+        <DisplayName>Scinan Broadsword</DisplayName>
+        <Description>New Pariden knight-commanders often carry these broadswords.  Many glow in the presence of the creatures they are enchanted against, and warn against ambushes or raids.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>OneHanded</WeaponType>
+        <WeaponUpgradeType>Blade</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>180</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>18</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>2</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxCounterAttack</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Counterattack per round</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>Twisted</StrVal2>
+                <Value>10</Value>
+                <Provides>+10 Attack vs Twisted</Provides>
+                <vsUnitType>1</vsUnitType>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsSword</StrVal>
+            <Value>1</Value>
+                <Provides>Enables abilities that require Swords</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <!--<Likelihood>100</Likelihood>-->
+        <RarityDisplay>Uncommon</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Prereq>
+            <Type>UnitStat_Level</Type>
+            <Attribute>4</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>264</AIPriority>
+        </AIData>
+        <ArtDef>Broadsword_Champions_ArtDef</ArtDef>
+    </GameItemType>
+    <GameItemType InternalName="Broadsword_Sharp">
+        <DisplayName>Sharp Broadsword</DisplayName>
+        <Description>The pommel is carved into the head of a stalker.  The blade is so so sharp it whistles as it passes through the air.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>OneHanded</WeaponType>
+        <WeaponUpgradeType>Blade</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>180</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>19</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ChanceToCrit</StrVal>
+            <Value>5</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>2</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxCounterAttack</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Counterattack per round</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_CritDamageMultiplier</StrVal>
+                <Value>0.5</Value>
+                <Provides>+50% Critical Damage</Provides>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsSword</StrVal>
+            <Value>1</Value>
+                <Provides>Enables abilities that require Swords</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <!--<Likelihood>100</Likelihood>-->
+        <RarityDisplay>Uncommon</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Prereq>
+            <Type>UnitStat_Level</Type>
+            <Attribute>4</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>266.5</AIPriority>
+        </AIData>
+        <ArtDef>Broadsword_Sharp_ArtDef</ArtDef>
+    </GameItemType>
+    <GameItemType InternalName="Broadsword_Razor">
+        <DisplayName>Razor Broadsword</DisplayName>
+        <Description>Made famous in the Tarth gladiator arenas, these swords make the battles short and bloody.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>OneHanded</WeaponType>
+        <WeaponUpgradeType>Blade</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>240</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>21</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ChanceToCrit</StrVal>
+            <Value>10</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>2</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxCounterAttack</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Counterattack per round</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_CritDamageMultiplier</StrVal>
+                <Value>1</Value>
+                <Provides>+100% Critical Damage</Provides>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsSword</StrVal>
+            <Value>1</Value>
+                <Provides>Enables abilities that require Swords</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <!--<Likelihood>50</Likelihood>-->
+        <RarityDisplay>Rare</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Prereq>
+            <Type>UnitStat_Level</Type>
+            <Attribute>5</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>269</AIPriority>
+        </AIData>
+        <ArtDef>Broadsword_Razor_ArtDef</ArtDef>
+    </GameItemType>
+    <GameItemType InternalName="Broadsword_Silver">
+        <DisplayName>Silver Broadsword</DisplayName>
+        <Description>The Silver Broadswords of Capitar are as effective in war as steel blades, but are more effective against Elementals and the Twisted creatures of the world.  </Description>
+        <Type>Weapon</Type>
+        <WeaponType>OneHanded</WeaponType>
+        <WeaponUpgradeType>Blade</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>90</ShopValue>
+        <ProductionRequirement>
+            <Type>Resource</Type>
+            <Attribute>Metal</Attribute>
+            <Value>3</Value>
+        </ProductionRequirement>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>20</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>2</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxCounterAttack</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Counterattack per round</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>Twisted</StrVal2>
+                <Value>10</Value>
+                <Provides>+10 Attack vs Twisted</Provides>
+                <vsUnitType>1</vsUnitType>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>Elemental</StrVal2>
+                <Value>10</Value>
+                <Provides>+10 Attack vs Elementals</Provides>
+                <vsUnitType>1</vsUnitType>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsSword</StrVal>
+            <Value>1</Value>
+                <Provides>Enables abilities that require Swords</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <!--<Likelihood>100</Likelihood>-->
+        <RarityDisplay>Uncommon</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Prereq>
+            <Type>UnitStat_Level</Type>
+            <Attribute>5</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>264</AIPriority>
+        </AIData>
+        <ArtDef>Broadsword_Silver_ArtDef</ArtDef>
+    </GameItemType>
+    <GameItemType InternalName="Broadsword_Legendary">
+        <DisplayName>Legendary Broadsword</DisplayName>
+        <Description>"The others play at war.  When my legions have these swords, their games will be over." - Lord Enil Markin</Description>
+        <Type>Weapon</Type>
+        <WeaponType>OneHanded</WeaponType>
+        <WeaponUpgradeType>Blade</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>180</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Accuracy</StrVal>
+            <Value>10</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>25</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>2</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxCounterAttack</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Counterattack per round</Provides>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsSword</StrVal>
+            <Value>1</Value>
+                <Provides>Enables abilities that require Swords</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <!--<Likelihood>100</Likelihood>-->
+        <RarityDisplay>Uncommon</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Prereq>
+            <Type>UnitStat_Level</Type>
+            <Attribute>7</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>340</AIPriority>
+        </AIData>
+        <ArtDef>Broadsword_Legendary_ArtDef</ArtDef>
+    </GameItemType>
+    <GameItemType InternalName="Broadsword_Brutal">
+        <DisplayName>Brutal Broadsword</DisplayName>
+        <Description>"It drove other wielders mad with violence and visions.  But when Verga touched it he became calm.  Which made us even more afraid." - Scearp the Weaponsmith</Description>
+        <Type>Weapon</Type>
+        <WeaponType>OneHanded</WeaponType>
+        <WeaponUpgradeType>Blade</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>360</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>30</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>2</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxCounterAttack</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Counterattack per round</Provides>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsSword</StrVal>
+            <Value>1</Value>
+                <Provides>Enables abilities that require Swords</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <!--<Likelihood>50</Likelihood>-->
+        <RarityDisplay>Rare</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Prereq>
+            <Type>UnitStat_Level</Type>
+            <Attribute>10</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>726</AIPriority>
+        </AIData>
+        <ArtDef>Broadsword_Brutal_ArtDef</ArtDef>
+    </GameItemType>
+    <GameItemType InternalName="Broadsword_Perfect">
+        <DisplayName>Dancing Blade</DisplayName>
+        <Description>Also known as the dream blade, this sword guides the wielders attacks making their movements fluid and perfect.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>OneHanded</WeaponType>
+        <WeaponUpgradeType>Blade</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>360</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Accuracy</StrVal>
+            <Value>30</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>25</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>8</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Dodge</StrVal>
+            <Value>10</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxCounterAttack</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Counterattack per round</Provides>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsSword</StrVal>
+            <Value>1</Value>
+                <Provides>Enables abilities that require Swords</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <!--<Likelihood>50</Likelihood>-->
+        <RarityDisplay>Rare</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Prereq>
+            <Type>UnitStat_Level</Type>
+            <Attribute>7</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>422</AIPriority>
+        </AIData>
+        <ArtDef>Broadsword_Perfect_ArtDef</ArtDef>
+    </GameItemType>
+
+    <GameItemType InternalName="Longsword">
+        <DisplayName>Longsword</DisplayName>
+        <Description>A long-bladed sword.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>OneHanded</WeaponType>
+        <WeaponUpgradeType>Blade</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>20</AdditionalTrainingTurns>
+        <ShopValue>60</ShopValue>
+        <ProductionRequirement>
+            <Type>Resource</Type>
+            <Attribute>Metal</Attribute>
+            <Value>3</Value>
+        </ProductionRequirement>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>17</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>2</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxCounterAttack</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Counterattack per round</Provides>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsSword</StrVal>
+            <Value>1</Value>
+                <Provides>Enables abilities that require Swords</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Uncommon</RarityDisplay>
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Wanderlust</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>AssassinsTools</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>War_Colleges</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>320</AIPriority>
+        </AIData>
+        <ArtDef>Longsword_ArtDef</ArtDef>
+    </GameItemType>
+    <GameItemType InternalName="Longsword_Equinox">
+        <DisplayName>Equinox</DisplayName>
+        <Description>The sword Equinox is the physical personification of the Elemental Lord Morian. Captured in the blade is the power of the seasons themselves. It can be used to bring life; or take it.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>OneHanded</WeaponType>
+        <WeaponUpgradeType>Blade</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>2700</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>25</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>2</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxCounterAttack</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Counterattack per round</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>AutumnalEquinox</StrVal>
+                <Provides>Autumnal Equinox- Deals damage to all enemies equal to 50% of your missing Hit Points.</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>VernalEquinox</StrVal>
+                <Provides>Vernal Equinox- Heals all allies for 50% of your current Hit Points.</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_HitPoints</StrVal>
+                <Value>20</Value>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsSword</StrVal>
+            <Value>1</Value>
+                <Provides>Enables abilities that require Swords</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>280</AIPriority>
+        </AIData>
+        <ArtDef>Longsword_Equinox_ArtDef</ArtDef>
+    </GameItemType>
+    <GameItemType InternalName="Longsword_Angel">
+        <DisplayName>Angelic Longsword</DisplayName>
+        <Description>When pulled from the scabbard this sword rings with the sound of harps and distant angels singing.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>OneHanded</WeaponType>
+        <WeaponUpgradeType>Blade</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>120</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>19</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>2</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxCounterAttack</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Counterattack per round</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Pierce</StrVal>
+                <StrVal2>Undead</StrVal2>
+                <Value>10</Value>
+                <Provides>+10 Attack vs Undead</Provides>
+                <vsUnitType>1</vsUnitType>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsSword</StrVal>
+            <Value>1</Value>
+                <Provides>Enables abilities that require Swords</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Rare</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>320</AIPriority>
+        </AIData>
+        <ArtDef>Longsword_Angel_ArtDef</ArtDef>
+    </GameItemType>
+    <GameItemType InternalName="Longsword_Golem">
+        <DisplayName>Golem Longsword</DisplayName>
+        <Description>This sword has seen many wars.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>OneHanded</WeaponType>
+        <WeaponUpgradeType>Blade</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>60</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>11</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>2</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxCounterAttack</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Counterattack per round</Provides>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsSword</StrVal>
+            <Value>1</Value>
+                <Provides>Enables abilities that require Swords</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Uncommon</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>280</AIPriority>
+        </AIData>
+        <ArtDef>Longsword_Golem_ArtDef</ArtDef>
+    </GameItemType>
+    <GameItemType InternalName="Longsword_Assassins">
+        <DisplayName>Assassin's Blade</DisplayName>
+        <Description>A voice whispers to you, "I am the assassin's blade, enchanted to fulfill the tragic desires of those that wish upon my altar.  Use me to fulfill those requests and I will seek your enemies as well."</Description>
+        <Type>Weapon</Type>
+        <WeaponType>OneHanded</WeaponType>
+        <WeaponUpgradeType>Blade</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>60</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>23</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>4</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxCounterAttack</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Counterattack per round</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Pierce</StrVal>
+                <StrVal2>Champion</StrVal2>
+                <Value>10</Value>
+                <Provides>+10 Attack vs Champions</Provides>
+                <vsUnitType>1</vsUnitType>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsSword</StrVal>
+            <Value>1</Value>
+                <Provides>Enables abilities that require Swords</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>UltraRare</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>368</AIPriority>
+        </AIData>
+        <ArtDef>Longsword_Assassins_ArtDef</ArtDef>
+    </GameItemType>
+    <GameItemType InternalName="Longsword_Shadow">
+        <DisplayName>Druss Blade</DisplayName>
+        <Description>The spirit of an assassin demon is bound into the sword.  These swords often appear faded and grey in bright light, but gleam like silver in the darkness.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>OneHanded</WeaponType>
+        <WeaponUpgradeType>Blade</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>960</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>30</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>4</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxCounterAttack</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Counterattack per round</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ArmorPierce</StrVal>
+                <Value>66</Value>
+                <Provides>Ignores 66% of the victim's Defense</Provides>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsSword</StrVal>
+            <Value>1</Value>
+                <Provides>Enables abilities that require Swords</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <!--<Likelihood>50</Likelihood>-->
+        <RarityDisplay>Rare</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Prereq>
+            <Type>UnitStat_Level</Type>
+            <Attribute>9</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>736</AIPriority>
+        </AIData>
+        <ArtDef>Longsword_Shadow_ArtDef</ArtDef>
+    </GameItemType>
+    <GameItemType InternalName="Longsword_Flaming">
+        <DisplayName>Pyre Brand</DisplayName>
+        <Description>"At first the smell of burning flesh is revolting, but in time you will find yourself yearning for it." - Bibiana</Description>
+        <Type>Weapon</Type>
+        <WeaponType>OneHanded</WeaponType>
+        <WeaponUpgradeType>Blade</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>900</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>18</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Fire</StrVal>
+            <Value>12</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>2</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxCounterAttack</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Counterattack per round</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>MeleeAppliesSpell</Attribute>
+                <StrVal>Soulburning</StrVal>
+                <Provides>Does 10 fire damage (+5 per death and fire shard) to target unit.  If the unit is killed an inferno is left in their tile</Provides>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsSword</StrVal>
+            <Value>1</Value>
+                <Provides>Enables abilities that require Swords</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <!--<Likelihood>50</Likelihood>-->
+        <RarityDisplay>Rare</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Prereq>
+            <Type>UnitStat_Level</Type>
+            <Attribute>9</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>997</AIPriority>
+        </AIData>
+        <ArtDef>Longsword_Flaming_ArtDef</ArtDef>
+    </GameItemType>
+    <GameItemType InternalName="Longsword_Freezing">
+        <DisplayName>Boreal Blade</DisplayName>
+        <Description>The spirit of an ice elemental is bound into the sword and it incessantly whispers for its wielder to lie down and sleep forever.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>OneHanded</WeaponType>
+        <WeaponUpgradeType>Blade</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>40</AdditionalTrainingTurns>
+        <ShopValue>630</ShopValue>
+        <ProductionRequirement>
+            <Type>Resource</Type>
+            <Attribute>RefinedCrystal</Attribute>
+            <Value>5</Value>
+        </ProductionRequirement>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>18</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Cold</StrVal>
+            <Value>3</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>2</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxCounterAttack</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Counterattack per round</Provides>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsSword</StrVal>
+            <Value>1</Value>
+                <Provides>Enables abilities that require Swords</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Rare</RarityDisplay>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Arcane_Weapons</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>420</AIPriority>
+        </AIData>
+        <ArtDef>Longsword_Freezing_ArtDef</ArtDef>
+    </GameItemType>
+    <GameItemType InternalName="Longsword_Sharp">
+        <DisplayName>Sharp Longsword</DisplayName>
+        <Description>Originally fashioned of obsidian, enchanters eventually discovered how to use less expensive steel swords.  Most crafters still embed a piece of obsidian in the crossguard as a reminder of their former style.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>OneHanded</WeaponType>
+        <WeaponUpgradeType>Blade</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>870</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>20</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ChanceToCrit</StrVal>
+            <Value>5</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>2</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxCounterAttack</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Counterattack per round</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_CritDamageMultiplier</StrVal>
+                <Value>0.5</Value>
+                <Provides>+50% Critical Damage</Provides>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsSword</StrVal>
+            <Value>1</Value>
+                <Provides>Enables abilities that require Swords</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <!--<Likelihood>50</Likelihood>-->
+        <RarityDisplay>Rare</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Prereq>
+            <Type>UnitStat_Level</Type>
+            <Attribute>9</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>322.5</AIPriority>
+        </AIData>
+        <ArtDef>Longsword_Sharp_ArtDef</ArtDef>
+    </GameItemType>
+    <GameItemType InternalName="Longsword_Razor">
+        <DisplayName>Heartseeker</DisplayName>
+        <Description>A deadly sword in the hands of a skilled master.  In the hands of a novice, it is likely to cut off the wielder's arm.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>OneHanded</WeaponType>
+        <WeaponUpgradeType>Blade</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>1020</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>28</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ChanceToCrit</StrVal>
+            <Value>15</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>2</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxCounterAttack</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Counterattack per round</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_CritDamageMultiplier</StrVal>
+                <Value>1</Value>
+                <Provides>+100% Critical Damage</Provides>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsSword</StrVal>
+            <Value>1</Value>
+                <Provides>Enables abilities that require Swords</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+       <!-- <Likelihood>50</Likelihood>-->
+        <RarityDisplay>Rare</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Prereq>
+            <Type>UnitStat_Level</Type>
+            <Attribute>9</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>645</AIPriority>
+        </AIData>
+        <ArtDef>Longsword_Razor_ArtDef</ArtDef>
+    </GameItemType>
+    <GameItemType InternalName="Longsword_Souls">
+        <DisplayName>Sovereign's Sword</DisplayName>
+        <Description>This longsword provides mana each time it kills a victim, and allows the wielder to discharge that mana in a powerful blast.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>OneHanded</WeaponType>
+        <WeaponUpgradeType>Blade</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>1260</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>36</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>2</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ManaFromKills</StrVal>
+            <Value>5</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxCounterAttack</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Counterattack per round</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>ManaBlast</StrVal>
+                <Provides>Allows the wielder to cast Mana Blast</Provides>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsSword</StrVal>
+            <Value>1</Value>
+                <Provides>Enables abilities that require Swords</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <!--<Likelihood>50</Likelihood>-->
+        <RarityDisplay>Rare</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Prereq>
+            <Type>UnitStat_Level</Type>
+            <Attribute>13</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>640</AIPriority>
+        </AIData>
+        <ArtDef>Longsword_Souls_ArtDef</ArtDef>
+    </GameItemType>
+    <GameItemType InternalName="Longsword_Urxen">
+        <DisplayName>Scimitar</DisplayName>
+        <Description>Inspired by the curved teeth of the monsters they slay, the scimitar combines the speed of the sword and the power of an axe.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>OneHanded</WeaponType>
+        <WeaponUpgradeType>Blade</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>20</AdditionalTrainingTurns>
+        <ShopValue>75</ShopValue>
+        <ProductionRequirement>
+            <Type>Resource</Type>
+            <Attribute>Metal</Attribute>
+            <Value>3</Value>
+        </ProductionRequirement>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>18</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>2</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxCounterAttack</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Counterattack per round</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_BackswingChance</StrVal>
+                <Value>100</Value>
+                <Provides>Backswing- If the attack misses the unit gets a second attack against the same target</Provides>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsSword</StrVal>
+            <Value>1</Value>
+                <Provides>Enables abilities that require Swords</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Uncommon</RarityDisplay>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>AssassinsTools</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>War_Colleges</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>320</AIPriority>
+        </AIData>
+        <ArtDef>Longsword_Urxen_ArtDef</ArtDef>
+    </GameItemType>
+    <GameItemType InternalName="Longsword_Altar">
+        <DisplayName>Athican Longsword</DisplayName>
+        <Description>With almost perfect balance, the longswords of Athica are faster than comparable blades of other factions, and they allow an additional counterattack.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>OneHanded</WeaponType>
+        <WeaponUpgradeType>Blade</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>20</AdditionalTrainingTurns>
+        <ShopValue>75</ShopValue>
+        <ProductionRequirement>
+            <Type>Resource</Type>
+            <Attribute>Metal</Attribute>
+            <Value>3</Value>
+        </ProductionRequirement>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>18</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>2</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxCounterAttack</StrVal>
+                <Value>2</Value>
+                <Provides>+2 Counterattacks per round</Provides>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsSword</StrVal>
+            <Value>1</Value>
+                <Provides>Enables abilities that require Swords</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Uncommon</RarityDisplay>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Wanderlust</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>War_Colleges</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>396</AIPriority>
+        </AIData>
+        <ArtDef>Longsword_Altar_ArtDef</ArtDef>
+    </GameItemType>
+    <GameItemType InternalName="Longsword_SwordOfTheSunAndMoon">
+        <DisplayName>Sword of the Sun and Moon</DisplayName>
+        <Description>This sword was not forged in this world, but carried from another by the titan Pariden.  It has a symbol of constellations on its crossguard and its pommel is a star.  Though it was mere ornamentation for the titan, it far exceeds anything crafted by men.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>OneHanded</WeaponType>
+        <WeaponUpgradeType>Blade</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>2460</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Accuracy</StrVal>
+            <Value>30</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>36</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ChanceToCrit</StrVal>
+            <Value>10</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>2</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxCounterAttack</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Counterattack per round</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_CritDamageMultiplier</StrVal>
+                <Value>2.5</Value>
+                <Provides>+250% Critical Damage</Provides>
+            </GameModifier>        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsSword</StrVal>
+            <Value>1</Value>
+                <Provides>Enables abilities that require Swords</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>1002.5</AIPriority>
+        </AIData>
+        <ArtDef>Longsword_SwordOfTheSunAndMoon_ArtDef</ArtDef>
+    </GameItemType>
+    <GameItemType InternalName="Longsword_Serrated">
+        <DisplayName>Serrated Longsword</DisplayName>
+        <Description>The jagged blade tears flesh, cuts through muscle and hooks the bone beneath.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>OneHanded</WeaponType>
+        <WeaponUpgradeType>Blade</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>1080</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>25</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ChanceToCrit</StrVal>
+            <Value>10</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>2</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxCounterAttack</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Counterattack per round</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_CritDamageMultiplier</StrVal>
+                <Value>1.5</Value>
+                <Provides>+150% Critical Damage</Provides>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsSword</StrVal>
+            <Value>1</Value>
+                <Provides>Enables abilities that require Swords</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <!--<Likelihood>50</Likelihood>-->
+        <RarityDisplay>Rare</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Prereq>
+            <Type>UnitStat_Level</Type>
+            <Attribute>7</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>404.5</AIPriority>
+        </AIData>
+        <ArtDef>Longsword_Serrated_ArtDef</ArtDef>
+    </GameItemType>
+    <GameItemType InternalName="Greatsword">
+        <DisplayName>Greatsword</DisplayName>
+        <Description>A greatsword of surpassing quality, known to cleave through multiple opponents in a single swing without slowing its bearer to a crawl.</Description>
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>TwoHanded</WeaponType>
+        <WeaponUpgradeType>Blade</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>150</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>28</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxCounterAttack</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Counterattack per round</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Splashdamage</StrVal>
+                <Value>0.25</Value>
+                <Provides>Splash- Does 25% of its attack damage to all surrounding units.</Provides>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsSword</StrVal>
+            <Value>1</Value>
+                <Provides>Enables abilities that require Swords</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <!--<Likelihood>50</Likelihood>-->
+        <RarityDisplay>Rare</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Prereq>
+            <Type>UnitStat_Level</Type>
+            <Attribute>9</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>380</AIPriority>
+        </AIData>
+        <ArtDef>Greatsword_ArtDef</ArtDef>
+    </GameItemType>
+
+    <GameItemType InternalName="Greatsword_HeartOfTheGlacier">
+        <DisplayName>Heart of the Glacier</DisplayName>
+        <Description>Many have attempted to kill Vetrar and put an end to the prophecy that he will destroy mankind.  Whatever hero once wielded this sword came close.</Description>
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>TwoHanded</WeaponType>
+        <WeaponUpgradeType>Blade</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>2700</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>28</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Cold</StrVal>
+            <Value>28</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxCounterAttack</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Counterattack per round</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Blizzard_Ability</StrVal>
+                <Provides>Allows the wielder to cast Blizzard</Provides>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsSword</StrVal>
+            <Value>1</Value>
+                <Provides>Enables abilities that require Swords</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>1080</AIPriority>
+        </AIData>
+        <ArtDef>Greatsword_HeartOfTheGlacier_ArtDef</ArtDef>
+    </GameItemType>
+    <GameItemType InternalName="Greatsword_Serrated">
+        <DisplayName>Serrated Greatsword</DisplayName>
+        <Description>Most laugh when they see the comically long blade, which is far longer than would be practical for killing a man.  But there are much larger things than men in Elemental.</Description>
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>TwoHanded</WeaponType>
+        <WeaponUpgradeType>Blade</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>1170</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>34</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ChanceToCrit</StrVal>
+            <Value>10</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxCounterAttack</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Counterattack per round</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_CritDamageMultiplier</StrVal>
+                <Value>1.5</Value>
+                <Provides>+150% Critical Damage</Provides>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsSword</StrVal>
+            <Value>1</Value>
+                <Provides>Enables abilities that require Swords</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <!--<Likelihood>50</Likelihood>-->
+        <RarityDisplay>Rare</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Prereq>
+            <Type>UnitStat_Level</Type>
+            <Attribute>12</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>447.5</AIPriority>
+        </AIData>
+        <ArtDef>Greatsword_Serrated_ArtDef</ArtDef>
+    </GameItemType>
+    <GameItemType InternalName="Greatsword_Void">
+        <DisplayName>Sythe of the Void</DisplayName>
+        <Description>How many weary battles has this sword seen?  They all fade into a single echoing whirl.  Though the wielder of this blade may dance easily through them, he remembers little.</Description>
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>TwoHanded</WeaponType>
+        <WeaponUpgradeType>Blade</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>2040</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>42</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ExpBonus</StrVal>
+            <Value>-100</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxCounterAttack</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Counterattack per round</Provides>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsSword</StrVal>
+            <Value>1</Value>
+                <Provides>Enables abilities that require Swords</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Prereq>
+            <Type>UnitStat_Level</Type>
+            <Attribute>8</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>1080</AIPriority>
+        </AIData>
+        <ArtDef>Greatsword_Void_ArtDef</ArtDef>
+    </GameItemType>
+    <GameItemType InternalName="Greatsword_Legendary">
+        <DisplayName>Legendary Greatsword</DisplayName>
+        <Description>"Now this is a sword." - the Warlord Verga</Description>
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>TwoHanded</WeaponType>
+        <WeaponUpgradeType>Blade</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>225</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>42</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxCounterAttack</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Counterattack per round</Provides>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsSword</StrVal>
+            <Value>1</Value>
+                <Provides>Enables abilities that require Swords</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <!--<Likelihood>50</Likelihood>-->
+        <RarityDisplay>Rare</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Prereq>
+            <Type>UnitStat_Level</Type>
+            <Attribute>15</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>440</AIPriority>
+        </AIData>
+        <ArtDef>Greatsword_Legendary_ArtDef</ArtDef>
+    </GameItemType>
+    <GameItemType InternalName="TrogScimitar_Brutal">
+        <DisplayName>Brutal Trog Scimitar</DisplayName>
+        <Description>If there is one symbol of the Yithril empire it is this sword; it is powerful, dangerous and without mercy - useless for non-military pursuits, but invaluable in war.</Description>
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>TwoHanded</WeaponType>
+        <WeaponUpgradeType>Blade</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>1200</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>38</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxCounterAttack</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Counterattack per round</Provides>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsSword</StrVal>
+            <Value>1</Value>
+                <Provides>Enables abilities that require Swords</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <!--<Likelihood>50</Likelihood>-->
+        <RarityDisplay>Rare</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Prereq>
+            <Type>UnitStat_Level</Type>
+            <Attribute>14</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>600</AIPriority>
+        </AIData>
+        <ArtDef>TrogScimitar_Brutal_ArtDef</ArtDef>
+    </GameItemType>
+    <GameItemType InternalName="Greatsword_SwordOfWrath">
+        <DisplayName>Sword of Wrath</DisplayName>
+        <Description>After the sacrifice of Red Spring, as the butchermen writhed upon their altars, Amhah called to Curgen.  The titan never responded, the ritual was incomplete.  Realizing his spell would never end Amhah turned his sword on himself, but it was too late.</Description>
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>TwoHanded</WeaponType>
+        <WeaponUpgradeType>Blade</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>1725</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>50</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_HPFromKills</StrVal>
+            <Value>5</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxCounterAttack</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Counterattack per round</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Enrage_Damage_Bonus</StrVal>
+                <Value>0.3</Value>
+                <Provides>+30% cumulative damage with each successful attack</Provides>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsSword</StrVal>
+            <Value>1</Value>
+                <Provides>Enables abilities that require Swords</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Prereq>
+            <Type>UnitStat_Level</Type>
+            <Attribute>15</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>720</AIPriority>
+        </AIData>
+        <ArtDef>Greatsword_SwordOfWrath_ArtDef</ArtDef>
+    </GameItemType>
+	
+	<!-- Champions Plus reductions go here: Turns down the attack strength of the top-tier hammers so they less likely to one-shot heroes. A company wielding any maul type is still a dire threat to heroes in melee. -->
+	
+	<GameItemType InternalName="Maul_Doom">
+        <DisplayName>Doom Maul</DisplayName>
+        <Description>Blood seeps through the leather straps that bind the maul's handle.  Some assume it is from a recent kill, but even if left idle for days the maul continues to bleed.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>Blunt</WeaponType>
+        <WeaponUpgradeType>Blunt</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>40</AdditionalTrainingTurns>
+        <ShopValue>300</ShopValue>
+        <ProductionRequirement>
+            <Type>Resource</Type>
+            <Attribute>RefinedCrystal</Attribute>
+            <Value>9</Value>
+        </ProductionRequirement>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>21</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-4</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Enrage_Damage_Bonus</StrVal>
+                <Value>0.1</Value>
+                <Provides>+10% cumulative damage with each successful attack</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_BashChance</StrVal>
+                <Value>100</Value>
+                <Provides>Bash- Has a chance equal to the damage done of knocking the victim prone</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>CrushingBlow</StrVal>
+                <Provides>Crushing Blow- +100% Attack, but you lose your next action</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Rare</RarityDisplay>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Arcane_Weapons</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_BLUNT</AIPrefType>
+            <AIPriority>490</AIPriority>
+        </AIData>
+        <ArtDef>Maul_Doom_ArtDef</ArtDef>
+    </GameItemType>
+	
+	<GameItemType InternalName="Maul">
+        <DisplayName>Maul</DisplayName>
+        <Description>"If their armor protects from our hammers, build bigger hammers." General Carrodus</Description>
+        <Type>Weapon</Type>
+        <WeaponType>Blunt</WeaponType>
+        <WeaponUpgradeType>Blunt</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>30</AdditionalTrainingTurns>
+        <ShopValue>75</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>19</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-4</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_BashChance</StrVal>
+                <Value>100</Value>
+                <Provides>Bash- Has a chance equal to the damage done of knocking the victim prone</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>CrushingBlow</StrVal>
+                <Provides>Crushing Blow- +100% Attack, but you lose your next action</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Uncommon</RarityDisplay>
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>GreatHammers</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Weapons_Of_War</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_BLUNT</AIPrefType>
+            <AIPriority>400</AIPriority>
+        </AIData>
+        <ArtDef>Maul_ArtDef</ArtDef>
+    </GameItemType>
+	
+    <GameItemType InternalName="Maul_Gilden">
+        <DisplayName>Sledge</DisplayName>
+        <Description>"What chance do men have against weapons that have chewed through mountains and burrowed through the heart of Elemental herself?" Lord Markin</Description>
+        <Type>Weapon</Type>
+        <WeaponType>Blunt</WeaponType>
+        <WeaponUpgradeType>Blunt</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>30</AdditionalTrainingTurns>
+        <ShopValue>225</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>20</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-4</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_BashChance</StrVal>
+                <Value>100</Value>
+                <Provides>Bash- Has a chance equal to the damage done of knocking the victim prone</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>CrushingBlow</StrVal>
+                <Provides>Crushing Blow- +100% Attack, but you lose your next action</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Uncommon</RarityDisplay>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>GreatHammers</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Weapons_Of_War</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_BLUNT</AIPrefType>
+            <AIPriority>416</AIPriority>
+        </AIData>
+        <ArtDef>Maul_Gilden_ArtDef</ArtDef>
+    </GameItemType>
+	
+	<!-- Reducing great axe damage along with the maul group -->
+	
+	<GameItemType InternalName="Greataxe">
+        <DisplayName>Great Axe</DisplayName>
+        <Description>"With axes like these, why do I need diplomacy?" - The Warlord Verga before beheading his diplomatic advisor.</Description>
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>TwoHanded</WeaponType>
+        <WeaponUpgradeType>Axe</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>24</AdditionalTrainingTurns>
+        <ShopValue>75</ShopValue>
+        <ProductionRequirement>
+            <Type>Resource</Type>
+            <Attribute>Metal</Attribute>
+            <Value>4</Value>
+        </ProductionRequirement>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>18</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-2</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_BackswingChance</StrVal>
+                <Value>100</Value>
+                <Provides>Backswing- If the attack misses the unit gets a second attack against the same target</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Cleave_Ability</StrVal>
+                <Provides>Cleave- Strike 3 adjacent enemies</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Uncommon</RarityDisplay>
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>GreatAxes</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Weapons_Of_War</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>396</AIPriority>
+        </AIData>
+        <ArtDef>Greataxe_ArtDef</ArtDef>
+    </GameItemType>
+	
+    <GameItemType InternalName="Greataxe_Trog">
+        <DisplayName>Dual Great Axe</DisplayName>
+        <Description>"With axes like these, why do I need diplomacy?" - The Warlord Verga before beheading his diplomatic advisor.</Description>
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>Blunt</WeaponType>
+        <WeaponUpgradeType>Axe</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>36</AdditionalTrainingTurns>
+        <ShopValue>75</ShopValue>
+        <ProductionRequirement>
+            <Type>Resource</Type>
+            <Attribute>Metal</Attribute>
+            <Value>6</Value>
+        </ProductionRequirement>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>20</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_BackswingChance</StrVal>
+                <Value>100</Value>
+                <Provides>Backswing- If the attack misses the unit gets a second attack against the same target</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Cleave_Ability</StrVal>
+                <Provides>Cleave- Strike 3 adjacent enemies</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Uncommon</RarityDisplay>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>GreatAxes</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Weapons_Of_War</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>480</AIPriority>
+        </AIData>
+        <ArtDef>Greataxe_Trog_ArtDef</ArtDef>
+    </GameItemType>
+	
+	<!-- slight nerf to spears at top level. Damage and Armor piercing reduced, but added bonus damage against mounted units. -->
+
+<GameItemType InternalName="Pike">
+        <DisplayName>Pike</DisplayName>
+        <Description>A deadly weapon for hunting or war.</Description>
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>Spear</WeaponType>
+        <WeaponUpgradeType>Spear</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>20</AdditionalTrainingTurns>
+        <ShopValue>60</ShopValue>
+        <ProductionRequirement>
+            <Type>Resource</Type>
+            <Attribute>Metal</Attribute>
+            <Value>3</Value>
+        </ProductionRequirement>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>15</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ArmorPierce</StrVal>
+                <Value>25</Value>
+                <Provides>Ignores 25% of the victim's Defense</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>CannotBeCounterattacked</Attribute>
+                <Value>-1</Value>
+                <Provides>Immune to Counterattack</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>UnitStat_BG_IsUsingMount</StrVal2>
+                <Value>3</Value>
+                <Provides>+3 Attack vs mounted opponents (when not mounted)</Provides>
+                <vsHigher>1</vsHigher>
+            </GameModifier>			
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Impale_Ability</StrVal>
+                <Provides>Impale- Strike an opponent and whoever is behind them</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Uncommon</RarityDisplay>
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Defensive</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>War_Colleges</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_PIERCING</AIPrefType>
+            <AIPriority>370</AIPriority>
+        </AIData>
+        <ArtDef>Pike_ArtDef</ArtDef>
+    </GameItemType>	
+	
+	<GameItemType InternalName="Pike_Krax">
+        <DisplayName>Short Pike</DisplayName>
+        <Description>"Bring the armorers and make them lay with their creations." - Emperor Karavox after being defeated at the Battle of Spines.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>Spear</WeaponType>
+        <WeaponUpgradeType>Spear</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>20</AdditionalTrainingTurns>
+        <ShopValue>75</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>15</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ArmorPierce</StrVal>
+                <Value>25</Value>
+                <Provides>Ignores 25% of the victim's Defense</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>CannotBeCounterattacked</Attribute>
+                <Value>-1</Value>
+                <Provides>Immune to Counterattack</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>UnitStat_BG_IsUsingMount</StrVal2>
+                <Value>3</Value>
+                <Provides>+3 Attack vs mounted opponents (when not mounted)</Provides>
+                <vsHigher>1</vsHigher>
+            </GameModifier>			
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Impale_Ability</StrVal>
+                <Provides>Impale- Strike an opponent and whoever is behind them</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Uncommon</RarityDisplay>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Defensive</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>War_Colleges</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_PIERCING</AIPrefType>
+            <AIPriority>370</AIPriority>
+        </AIData>
+        <ArtDef>Pike_Krax_ArtDef</ArtDef>
+    </GameItemType>
+	
+	<GameItemType InternalName="Pike_Shocking">
+        <DisplayName>Lightning Pike</DisplayName>
+        <Description>Also known as the lightning rod, this pike not only unleashes lightning with every attack but helps protect its wielder from the lightning attacks of others.</Description>
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>Spear</WeaponType>
+        <WeaponUpgradeType>Spear</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>40</AdditionalTrainingTurns>
+        <ShopValue>860</ShopValue>
+        <ProductionRequirement>
+            <Type>Resource</Type>
+            <Attribute>RefinedCrystal</Attribute>
+            <Value>5</Value>
+        </ProductionRequirement>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>16</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Lightning</StrVal>
+            <Value>3</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ArmorPierce</StrVal>
+                <Value>25</Value>
+                <Provides>Ignores 25% of the victim's Defense</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>CannotBeCounterattacked</Attribute>
+                <Value>-1</Value>
+                <Provides>Immune to Counterattack</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>UnitStat_BG_IsUsingMount</StrVal2>
+                <Value>3</Value>
+                <Provides>+3 Attack vs mounted opponents (when not mounted)</Provides>
+                <vsHigher>1</vsHigher>
+            </GameModifier>			
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ResistLightning</StrVal>
+                <Value>50</Value>
+                <Provides>+50% Lightning resistance</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Impale_Ability</StrVal>
+                <Provides>Impale- Strike an opponent and whoever is behind them</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Rare</RarityDisplay>
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Defensive</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Arcane_Weapons</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_PIERCING</AIPrefType>
+            <AIPriority>450</AIPriority>
+        </AIData>
+        <ArtDef>Pike_Shocking_ArtDef</ArtDef>
+    </GameItemType>
+	
+    <GameItemType InternalName="Pike_Shocking_Krax">
+        <DisplayName>Short Lightning Pike</DisplayName>
+        <Description>Also known as the lightning rod, this pike not only unleashes lightning with every attack but helps protect its wielder from the lightning attacks of others.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>Spear</WeaponType>
+        <WeaponUpgradeType>Spear</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>40</AdditionalTrainingTurns>
+        <ShopValue>860</ShopValue>
+        <ProductionRequirement>
+            <Type>Resource</Type>
+            <Attribute>RefinedCrystal</Attribute>
+            <Value>5</Value>
+        </ProductionRequirement>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>16</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Lightning</StrVal>
+            <Value>3</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ArmorPierce</StrVal>
+                <Value>25</Value>
+                <Provides>Ignores 25% of the victim's Defense</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>CannotBeCounterattacked</Attribute>
+                <Value>-1</Value>
+                <Provides>Immune to Counterattack</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>UnitStat_BG_IsUsingMount</StrVal2>
+                <Value>3</Value>
+                <Provides>+3 Attack vs mounted opponents (when not mounted)</Provides>
+                <vsHigher>1</vsHigher>
+            </GameModifier>			
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ResistLightning</StrVal>
+                <Value>50</Value>
+                <Provides>+50% Lightning resistance</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Impale_Ability</StrVal>
+                <Provides>Impale- Strike an opponent and whoever is behind them</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Rare</RarityDisplay>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Defensive</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Arcane_Weapons</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_PIERCING</AIPrefType>
+            <AIPriority>450</AIPriority>
+        </AIData>
+        <ArtDef>Pike_Shocking_Krax_ArtDef</ArtDef>
+    </GameItemType>
+	
+	<GameItemType InternalName="BoarSpear">
+        <DisplayName>Boar Spear</DisplayName>
+        <Description>A Boar Spear has two "wings" behind the blade to keep enraged boars from charging up the spear and attacking the wielder (Trogs have been known to do the same).</Description>
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>Spear</WeaponType>
+        <WeaponUpgradeType>Spear</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>16</AdditionalTrainingTurns>
+        <ShopValue>45</ShopValue>
+        <ProductionRequirement>
+            <Type>Resource</Type>
+            <Attribute>Metal</Attribute>
+            <Value>2</Value>
+        </ProductionRequirement>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>11</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ArmorPierce</StrVal>
+                <Value>25</Value>
+                <Provides>Ignores 25% of the victim's Defense</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>CannotBeCounterattacked</Attribute>
+                <Value>-1</Value>
+                <Provides>Immune to Counterattack</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>UnitStat_BG_IsUsingMount</StrVal2>
+                <Value>3</Value>
+                <Provides>+3 Attack vs mounted opponents (when not mounted)</Provides>
+                <vsHigher>1</vsHigher>
+            </GameModifier>			
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Impale_Ability</StrVal>
+                <Provides>Impale- Strike an opponent and whoever is behind them</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Uncommon</RarityDisplay>
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Defensive</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Blacksmithing</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_PIERCING</AIPrefType>
+            <AIPriority>230</AIPriority>
+        </AIData>
+        <ArtDef>BoarSpear_ArtDef</ArtDef>
+    </GameItemType>
+	
+    <GameItemType InternalName="BoarSpear_Krax">
+        <DisplayName>Winged Spear</DisplayName>
+        <Description>Krax weaponsmiths forge lighter versions of the boar spear so their soldiers can wield them with shields in battle.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>Spear</WeaponType>
+        <WeaponUpgradeType>Spear</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>16</AdditionalTrainingTurns>
+        <ShopValue>45</ShopValue>
+        <ProductionRequirement>
+            <Type>Resource</Type>
+            <Attribute>Metal</Attribute>
+            <Value>2</Value>
+        </ProductionRequirement>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>11</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ArmorPierce</StrVal>
+                <Value>25</Value>
+                <Provides>Ignores 25% of the victim's Defense</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>CannotBeCounterattacked</Attribute>
+                <Value>-1</Value>
+                <Provides>Immune to Counterattack</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>UnitStat_BG_IsUsingMount</StrVal2>
+                <Value>3</Value>
+                <Provides>+3 Attack vs mounted opponents (when not mounted)</Provides>
+                <vsHigher>1</vsHigher>
+            </GameModifier>			
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Impale_Ability</StrVal>
+                <Provides>Impale- Strike an opponent and whoever is behind them</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Uncommon</RarityDisplay>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Defensive</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Blacksmithing</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_PIERCING</AIPrefType>
+            <AIPriority>230</AIPriority>
+        </AIData>
+        <ArtDef>BoarSpear_Krax_ArtDef</ArtDef>
+    </GameItemType>
+	
+	<GameItemType InternalName="Spear">
+        <DisplayName>Spear</DisplayName>
+        <Description>A strong oak spear, sharpened to a deadly point.</Description>
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>Spear</WeaponType>
+        <WeaponUpgradeType>Spear</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>8</AdditionalTrainingTurns>
+        <ShopValue>30</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>5</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ArmorPierce</StrVal>
+                <Value>25</Value>
+                <Provides>Ignores 25% of the victim's Defense</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>CannotBeCounterattacked</Attribute>
+                <Value>-1</Value>
+                <Provides>Immune to Counterattack</Provides>
+            </GameModifier>
+	            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>UnitStat_BG_IsUsingMount</StrVal2>
+                <Value>3</Value>
+                <Provides>+3 Attack vs mounted opponents (when not mounted)</Provides>
+                <vsHigher>1</vsHigher>
+            </GameModifier>		
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Impale_Ability</StrVal>
+                <Provides>Impale- Strike an opponent and whoever is behind them</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>1</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Common</RarityDisplay>
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Defensive</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_PIERCING</AIPrefType>
+            <AIPriority>110</AIPriority>
+        </AIData>
+        <ArtDef>Spear_ArtDef</ArtDef>
+    </GameItemType>
+	
+    <GameItemType InternalName="Spear_Krax">
+        <DisplayName>Short Spear</DisplayName>
+        <Description>This spear is short enough to be wielded with one hand, leaving the other free for a shield.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>Spear</WeaponType>
+        <WeaponUpgradeType>Spear</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>8</AdditionalTrainingTurns>
+        <ShopValue>30</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>5</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ArmorPierce</StrVal>
+                <Value>25</Value>
+                <Provides>Ignores 25% of the victim's Defense</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>CannotBeCounterattacked</Attribute>
+                <Value>-1</Value>
+                <Provides>Immune to Counterattack</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>UnitStat_BG_IsUsingMount</StrVal2>
+                <Value>3</Value>
+                <Provides>+3 Attack vs mounted opponents (when not mounted)</Provides>
+                <vsHigher>1</vsHigher>
+            </GameModifier>			
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Impale_Ability</StrVal>
+                <Provides>Impale- Strike an opponent and whoever is behind them</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Common</RarityDisplay>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Defensive</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_PIERCING</AIPrefType>
+            <AIPriority>110</AIPriority>
+        </AIData>
+        <ArtDef>Spear_Krax_ArtDef</ArtDef>
+    </GameItemType>
+	
+	<GameItemType InternalName="Spear_Guiding">
+        <DisplayName>Guiding Spear</DisplayName>
+        <Description>This spear bends and twists to seek out victims.  It is a powerful weapon even for those unfamiliar with warfare, but be careful practicing with it.</Description>
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>Spear</WeaponType>
+        <WeaponUpgradeType>Spear</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>180</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Accuracy</StrVal>
+            <Value>10</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>7</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ArmorPierce</StrVal>
+                <Value>25</Value>
+                <Provides>Ignores 25% of the victim's Defense</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>CannotBeCounterattacked</Attribute>
+                <Value>-1</Value>
+                <Provides>Immune to Counterattack</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>UnitStat_BG_IsUsingMount</StrVal2>
+                <Value>3</Value>
+                <Provides>+3 Attack vs mounted opponents (when not mounted)</Provides>
+                <vsHigher>1</vsHigher>
+            </GameModifier>				
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Impale_Ability</StrVal>
+                <Provides>Impale- Strike an opponent and whoever is behind them</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>40</Likelihood>
+        <RarityDisplay>Common</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_PIERCING</AIPrefType>
+            <AIPriority>170</AIPriority>
+        </AIData>
+        <ArtDef>Spear_Guiding_ArtDef</ArtDef>
+    </GameItemType>
+	
+    <GameItemType InternalName="Spear_Champions">
+        <DisplayName>Champion's Spear</DisplayName>
+        <Description>Rumors say that this spear isn't enchanted.  Instead it has claimed the lives of so many darklings, ogres and trolls that it yearns to kill more.</Description>
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>Spear</WeaponType>
+        <WeaponUpgradeType>Spear</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>200</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>7</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ArmorPierce</StrVal>
+                <Value>25</Value>
+                <Provides>Ignores 25% of the victim's Defense</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>CannotBeCounterattacked</Attribute>
+                <Value>-1</Value>
+                <Provides>Immune to Counterattack</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>UnitStat_BG_IsUsingMount</StrVal2>
+                <Value>3</Value>
+                <Provides>+3 Attack vs mounted opponents (when not mounted)</Provides>
+                <vsHigher>1</vsHigher>
+            </GameModifier>				
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Pierce</StrVal>
+                <StrVal2>Twisted</StrVal2>
+                <Value>10</Value>
+                <Provides>+10 Attack vs Twisted</Provides>
+                <vsUnitType>1</vsUnitType>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Impale_Ability</StrVal>
+                <Provides>Impale- Strike an opponent and whoever is behind them</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>40</Likelihood>
+        <RarityDisplay>Common</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_PIERCING</AIPrefType>
+            <AIPriority>160</AIPriority>
+        </AIData>
+        <ArtDef>Spear_Champions_ArtDef</ArtDef>
+    </GameItemType>
+	
+    <GameItemType InternalName="Spear_AirElemental">
+        <DisplayName>Air Elemental's Spear</DisplayName>
+        <Description>As white as the clouds, the spear's delicate beauty causes many to underestimate its dangerous potential.</Description>
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>Spear</WeaponType>
+        <WeaponUpgradeType>Spear</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>300</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>5</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ArmorPierce</StrVal>
+                <Value>33</Value>
+                <Provides>Ignores 33% of the victim's Defense</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>CannotBeCounterattacked</Attribute>
+                <Value>-1</Value>
+                <Provides>Immune to Counterattack</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>UnitStat_BG_IsUsingMount</StrVal2>
+                <Value>3</Value>
+                <Provides>+3 Attack vs mounted opponents (when not mounted)</Provides>
+                <vsHigher>1</vsHigher>
+            </GameModifier>				
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Lightning</StrVal>
+                <Value>2</Value>
+                <PerLevel>1</PerLevel>
+                <Provides>+2 Lightning Attack per Level</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Impale_Ability</StrVal>
+                <Provides>Impale- Strike an opponent and whoever is behind them</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Rare</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_PIERCING</AIPrefType>
+            <AIPriority>180</AIPriority>
+        </AIData>
+        <ArtDef>Spear_AirElemental_ArtDef</ArtDef>
+    </GameItemType>
+	
+    <GameItemType InternalName="Spear_Ice">
+        <DisplayName>Ice Spear</DisplayName>
+        <Description>The point pierces armor, and the chill seeps through flesh and bone.</Description>
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>Spear</WeaponType>
+        <WeaponUpgradeType>Spear</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>18</AdditionalTrainingTurns>
+        <ShopValue>140</ShopValue>
+        <ProductionRequirement>
+            <Type>Resource</Type>
+            <Attribute>RefinedCrystal</Attribute>
+            <Value>2</Value>
+        </ProductionRequirement>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>6</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Cold</StrVal>
+            <Value>1</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ArmorPierce</StrVal>
+                <Value>25</Value>
+                <Provides>Ignores 25% of the victim's Defense</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>UnitStat_BG_IsUsingMount</StrVal2>
+                <Value>3</Value>
+                <Provides>+3 Attack vs mounted opponents (when not mounted)</Provides>
+                <vsHigher>1</vsHigher>
+            </GameModifier>				
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>CannotBeCounterattacked</Attribute>
+                <Value>-1</Value>
+                <Provides>Immune to Counterattack</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Impale_Ability</StrVal>
+                <Provides>Impale- Strike an opponent and whoever is behind them</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>40</Likelihood>
+        <RarityDisplay>Common</RarityDisplay>
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Defensive</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Enchantment</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_PIERCING</AIPrefType>
+            <AIPriority>150</AIPriority>
+        </AIData>
+        <ArtDef>Spear_Ice_ArtDef</ArtDef>
+    </GameItemType>
+	
+    <GameItemType InternalName="Spear_Ice_Krax">
+        <DisplayName>Short Ice Spear</DisplayName>
+        <Description>The point pierces armor, and the chill seeps through flesh and bone.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>Spear</WeaponType>
+        <WeaponUpgradeType>Spear</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>18</AdditionalTrainingTurns>
+        <ShopValue>140</ShopValue>
+        <ProductionRequirement>
+            <Type>Resource</Type>
+            <Attribute>RefinedCrystal</Attribute>
+            <Value>2</Value>
+        </ProductionRequirement>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>6</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Cold</StrVal>
+            <Value>1</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ArmorPierce</StrVal>
+                <Value>25</Value>
+                <Provides>Ignores 25% of the victim's Defense</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>CannotBeCounterattacked</Attribute>
+                <Value>-1</Value>
+                <Provides>Immune to Counterattack</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>UnitStat_BG_IsUsingMount</StrVal2>
+                <Value>3</Value>
+                <Provides>+3 Attack vs mounted opponents (when not mounted)</Provides>
+                <vsHigher>1</vsHigher>
+            </GameModifier>				
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Impale_Ability</StrVal>
+                <Provides>Impale- Strike an opponent and whoever is behind them</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Common</RarityDisplay>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Defensive</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Enchantment</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_PIERCING</AIPrefType>
+            <AIPriority>150</AIPriority>
+        </AIData>
+        <ArtDef>Spear_Ice_Krax_ArtDef</ArtDef>
+    </GameItemType>
+	
+    <GameItemType InternalName="Spear_Winters">
+        <DisplayName>Winter's Spear</DisplayName>
+        <Description>In order to enchant these spears they must be laid in the arctic for nearly a century.  Unwilling to wait, enchanters rob the graves of warriors that may have been buried with their weapons.</Description>
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>Spear</WeaponType>
+        <WeaponUpgradeType>Spear</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>530</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>5</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Cold</StrVal>
+            <Value>5</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ArmorPierce</StrVal>
+                <Value>25</Value>
+                <Provides>Ignores 25% of the victim's Defense</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>CannotBeCounterattacked</Attribute>
+                <Value>-1</Value>
+                <Provides>Immune to Counterattack</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>UnitStat_BG_IsUsingMount</StrVal2>
+                <Value>3</Value>
+                <Provides>+3 Attack vs mounted opponents (when not mounted)</Provides>
+                <vsHigher>1</vsHigher>
+            </GameModifier>				
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Impale_Ability</StrVal>
+                <Provides>Impale- Strike an opponent and whoever is behind them</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>10</Likelihood>
+        <RarityDisplay>Rare</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_PIERCING</AIPrefType>
+            <AIPriority>210</AIPriority>
+        </AIData>
+        <ArtDef>Spear_Winters_ArtDef</ArtDef>
+    </GameItemType>
+	
+	<GameItemType InternalName="Pike_Champions">
+        <DisplayName>Champion's Lance</DisplayName>
+        <Description>Usually fitted with a banner this lance is a powerful symbol of a champion's strength, and elevates them from common soldiers to heroes.</Description>
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>Spear</WeaponType>
+        <WeaponUpgradeType>Spear</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>600</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>22</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ArmorPierce</StrVal>
+                <Value>33</Value>
+                <Provides>Ignores 33% of the victim's Defense</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>CannotBeCounterattacked</Attribute>
+                <Value>-1</Value>
+                <Provides>Immune to Counterattack</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>UnitStat_BG_IsUsingMount</StrVal2>
+                <Value>3</Value>
+                <Provides>+3 Attack vs mounted opponents (when not mounted)</Provides>
+                <vsHigher>1</vsHigher>
+            </GameModifier>				
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Pierce</StrVal>
+                <StrVal2>Dragon</StrVal2>
+                <Value>10</Value>
+                <Provides>+10 Attack vs Dragons</Provides>
+                <vsUnitType>1</vsUnitType>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Impale_Ability</StrVal>
+                <Provides>Impale- Strike an opponent and whoever is behind them</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>10</Likelihood>
+        <RarityDisplay>Rare</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Prereq>
+            <Type>UnitStat_Level</Type>
+            <Attribute>5</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_PIERCING</AIPrefType>
+            <AIPriority>406</AIPriority>
+        </AIData>
+        <ArtDef>Pike_Champions_ArtDef</ArtDef>
+    </GameItemType>
+	
+    <GameItemType InternalName="Pike_Guiding">
+        <DisplayName>Guiding Pike</DisplayName>
+        <Description>With these pikes even a blind man could fight in battle.</Description>
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>Spear</WeaponType>
+        <WeaponUpgradeType>Spear</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>400</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Accuracy</StrVal>
+            <Value>20</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>22</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ArmorPierce</StrVal>
+                <Value>33</Value>
+                <Provides>Ignores 33% of the victim's Defense</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>CannotBeCounterattacked</Attribute>
+                <Value>-1</Value>
+                <Provides>Immune to Counterattack</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>UnitStat_BG_IsUsingMount</StrVal2>
+                <Value>3</Value>
+                <Provides>+3 Attack vs mounted opponents (when not mounted)</Provides>
+                <vsHigher>1</vsHigher>
+            </GameModifier>				
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Impale_Ability</StrVal>
+                <Provides>Impale- Strike an opponent and whoever is behind them</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>20</Likelihood>
+        <RarityDisplay>Uncommon</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Prereq>
+            <Type>UnitStat_Level</Type>
+            <Attribute>5</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_PIERCING</AIPrefType>
+            <AIPriority>490</AIPriority>
+        </AIData>
+        <ArtDef>Pike_Guiding_ArtDef</ArtDef>
+        <GameItemTypeArtDef InternalName="Pike_Guiding_ArtDef">
+    </GameItemType>
+	
+	<GameItemType InternalName="Pike_AirElemental">
+        <DisplayName>Hummingbird Pike</DisplayName>
+        <Description>Crafted in Tan-Takreet, these power Pikes float weightlessly in the air, making them easy for even the most feeble to wield.  But their true power is in their ability to summon Air Elementals in battle.</Description>
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>Spear</WeaponType>
+        <WeaponUpgradeType>Spear</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>1000</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>21</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ArmorPierce</StrVal>
+                <Value>33</Value>
+                <Provides>Ignores 33% of the victim's Defense</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>CannotBeCounterattacked</Attribute>
+                <Value>-1</Value>
+                <Provides>Immune to Counterattack</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>UnitStat_BG_IsUsingMount</StrVal2>
+                <Value>3</Value>
+                <Provides>+3 Attack vs mounted opponents (when not mounted)</Provides>
+                <vsHigher>1</vsHigher>
+            </GameModifier>				
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>SummonAirElemental_Ability</StrVal>
+                <Provides>Allows the caster to Summon an Air Elemental in tactical combat</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Impale_Ability</StrVal>
+                <Provides>Impale- Strike an opponent and whoever is behind them</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>10</Likelihood>
+        <RarityDisplay>Rare</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Prereq>
+            <Type>UnitStat_Level</Type>
+            <Attribute>4</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_PIERCING</AIPrefType>
+            <AIPriority>430</AIPriority>
+        </AIData>
+        <ArtDef>Pike_AirElemental_ArtDef</ArtDef>
+    </GameItemType>
+	
+	<GameItemType InternalName="Pike_Perfect">
+        <DisplayName>Holhiarn Pike</DisplayName>
+        <Description>The tips of these pikes are taken from the cursed crystals found in the walls of Holhiarn. Enchanters found that if they used them at the tip of a weapon and held them far enough away the misfortune would strike their enemies.</Description>
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>Spear</WeaponType>
+        <WeaponUpgradeType>Spear</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>840</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>32</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ArmorPierce</StrVal>
+                <Value>33</Value>
+                <Provides>Ignores 33% of the victim's Defense</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>CannotBeCounterattacked</Attribute>
+                <Value>-1</Value>
+                <Provides>Immune to Counterattack</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>UnitStat_BG_IsUsingMount</StrVal2>
+                <Value>3</Value>
+                <Provides>+3 Attack vs mounted opponents (when not mounted)</Provides>
+                <vsHigher>1</vsHigher>
+            </GameModifier>			
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_BonusImpale</StrVal>
+                <Value>0.5</Value>
+                <Provides>+50% damage when using the Impale ability</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Impale_Ability</StrVal>
+                <Provides>Impale- Strike an opponent and whoever is behind them</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>10</Likelihood>
+        <RarityDisplay>Rare</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Prereq>
+            <Type>UnitStat_Level</Type>
+            <Attribute>10</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_PIERCING</AIPrefType>
+            <AIPriority>655</AIPriority>
+        </AIData>
+        <ArtDef>Pike_Perfect_ArtDef</ArtDef>
+    </GameItemType>
+	
+	<!-- Crossbows pierce armor -->
+	
+	<GameItemType InternalName="Crossbow">
+        <DisplayName>Crossbow</DisplayName>
+        <Description>This is a powerful weapon that can shoot clear through a body and into the person behind him.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>Bow</WeaponType>
+        <WeaponUpgradeType>Crossbow</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>40</AdditionalTrainingTurns>
+        <ShopValue>75</ShopValue>
+        <ProductionRequirement>
+            <Type>Resource</Type>
+            <Attribute>Metal</Attribute>
+            <Value>1</Value>
+        </ProductionRequirement>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Accuracy</StrVal>
+            <Value>-15</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>8</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ArmorPierce</StrVal>
+            <Value>10</Value>
+        </GameModifier>			
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-8</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockRangedAction</Attribute>
+                <StrVal>BowAttack_Basic</StrVal>
+                <Provides>Ranged attack</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>PowerShot3</StrVal>
+                <Provides>Power Shot- Strike through 3 units in a line</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Uncommon</RarityDisplay>
+        <TacticalRange>20</TacticalRange>
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>NoRangedWeapons</Attribute>
+            <Target>Player</Target>
+        </Prereq>		
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Siege_Weapons</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_BOW</AIPrefType>
+            <AIPriority>106</AIPriority>
+        </AIData>
+        <ArtDef>Crossbow_ArtDef</ArtDef>
+    </GameItemType>
+	
+	<GameItemType InternalName="HeavyCrossbow">
+        <DisplayName>Heavy Crossbow</DisplayName>
+        <Description>Heavier than a normal crossbow, this weapon clears battlefields like a sythe reaps wheat.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>Bow</WeaponType>
+        <WeaponUpgradeType>Crossbow</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>60</AdditionalTrainingTurns>
+        <ShopValue>105</ShopValue>
+        <ProductionRequirement>
+            <Type>Resource</Type>
+            <Attribute>Metal</Attribute>
+            <Value>1</Value>
+        </ProductionRequirement>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Accuracy</StrVal>
+            <Value>-10</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>10</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-8</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ArmorPierce</StrVal>
+            <Value>20</Value>
+        </GameModifier>		
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockRangedAction</Attribute>
+                <StrVal>BowAttack_Basic</StrVal>
+                <Provides>Ranged attack</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>PowerShot5</StrVal>
+                <Provides>Power Shot- Strike through 5 units in a line</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Uncommon</RarityDisplay>
+        <TacticalRange>20</TacticalRange>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Advanced_Archery</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_BOW</AIPrefType>
+            <AIPriority>140</AIPriority>
+        </AIData>
+        <ArtDef>HeavyCrossbow_ArtDef</ArtDef>
+    </GameItemType>
+	
+	<GameItemType InternalName="HeavyCrossbow_Perfect">
+        <DisplayName>Perfect Crossbow</DisplayName>
+        <Description>Urxen marksmen brag about how many they killed with a single shot.  Enemies or allies count equally.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>Bow</WeaponType>
+        <WeaponUpgradeType>Crossbow</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>315</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>25</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ArmorPierce</StrVal>
+            <Value>33</Value>
+        </GameModifier>			
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-4</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockRangedAction</Attribute>
+                <StrVal>BowAttack_Basic</StrVal>
+                <Provides>Ranged attack</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>PowerShot5</StrVal>
+                <Provides>Power Shot- Strike through 5 units in a line</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>10</Likelihood>
+        <RarityDisplay>Rare</RarityDisplay>
+        <TacticalRange>20</TacticalRange>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_BOW</AIPrefType>
+            <AIPriority>296</AIPriority>
+        </AIData>
+        <ArtDef>HeavyCrossbow_Perfect_ArtDef</ArtDef>
+    </GameItemType>
+	
+	<!-- Ram's horn is too good! -->
+	
+	<GameItemType InternalName="YewLongbow_Tarth">
+        <DisplayName>Ram's Horn Longbow</DisplayName>
+        <Description>The powerful Ram's Horn Longbow has a higher attack and initiative than Yew Longbows.  In addition, it ignores 25% of the victim's defense.</Description>
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>Bow</WeaponType>
+        <WeaponUpgradeType>Bow</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>70</AdditionalTrainingTurns>
+        <ShopValue>105</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Accuracy</StrVal>
+            <Value>-5</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>12</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-4</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_IsBow</StrVal>
+                <Value>1</Value>
+                <Provides>Enables abilities that require Bows</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockRangedAction</Attribute>
+                <StrVal>BowAttack_Basic</StrVal>
+                <Provides>Ranged attack</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ArmorPierce</StrVal>
+                <Value>20</Value>
+                <Provides>Ignores 20% of the victim's Defense</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Uncommon</RarityDisplay>
+        <TacticalRange>20</TacticalRange>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Archers</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Advanced_Archery</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_BOW</AIPrefType>
+            <AIPriority>222</AIPriority>
+        </AIData>
+        <ArtDef>YewLongbow_Tarth_ArtDef</ArtDef>
+    </GameItemType>
+
+</GameItemTypes>

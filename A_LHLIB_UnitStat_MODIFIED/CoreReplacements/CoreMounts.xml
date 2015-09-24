@@ -1,0 +1,836 @@
+<?xml version="1.0"?>
+<Container>
+  <GameItemTypes>
+	  <GameItemType InternalName="BasicHorseMount">
+		  <CustomizationPointCost>1</CustomizationPointCost>
+      <GameModifier InternalName="_IsUsingMount">
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_IsUsingMount</StrVal>
+        <Value>1</Value>
+        <Provides>Unit counts as Mounted</Provides>
+      </GameModifier>
+      <DisplayName>Horse</DisplayName>
+      <Description>Horses grant your units more speed in combat and in travel and make them immune to being knocked prone.</Description>
+      <Type>Mount</Type>
+      <CanBeEquipped>1</CanBeEquipped>
+      <AdditionalTrainingTurns>20</AdditionalTrainingTurns>
+      <ShopValue>120</ShopValue>
+      <ProductionRequirement>
+        <Type>Resource</Type>
+        <Attribute>Horses</Attribute>
+        <Value>1</Value>
+      </ProductionRequirement>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_Attack_Boost</StrVal>
+        <Value>2</Value>
+        <Provides>+2 Attack for the first turn of combat</Provides>
+        <xActions>1</xActions>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_CombatSpeed</StrVal>
+        <Value>2</Value>
+        <Provides>+2 Initiative for the first turn of combat</Provides>
+        <xActions>1</xActions>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_ChanceToAvoidProne</StrVal>
+        <Value>100</Value>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_Moves</StrVal>
+        <Value>2</Value>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_Infiltrate</StrVal>
+        <Provides>Assassins cannot sneak or lay traps with this mount</Provides>		
+        <Value>-1</Value>
+      </GameModifier>	  
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <BoolVal1>1</BoolVal1>
+                <StrVal>UnitStat_Attack_Pierce</StrVal>
+                <StrVal2>UnitStat_IsBow</StrVal2>
+                <Value>3</Value>
+                <BonusValue>0.5</BonusValue>
+                <Provides>+3 Attack when using a Bow</Provides>
+                <vsHigher>1</vsHigher>
+            </GameModifier>	
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_Moves</StrVal>
+        <Value>2</Value>
+      </GameModifier>			
+      <CutSceneDataPack>HorseMountCutScenePack</CutSceneDataPack>
+      <Prereq>
+        <Type>RestrictedAbilityBonusOption</Type>
+        <Attribute>DLC04_UndeadFaction</Attribute>
+        <Target>Player</Target>
+      </Prereq>
+      <Prereq>
+        <Type>RestrictedAbilityBonusOption</Type>
+        <Attribute>LegacyOfSerrane</Attribute>
+        <Target>Player</Target>
+      </Prereq>
+      <Prereq>
+        <Type>Tech</Type>
+        <Attribute>Mounted_Warfare</Attribute>
+      </Prereq>
+      <AIData AIPersonality="AI_General">
+        <AIPrefType>AIPrefType_MOUNT</AIPrefType>
+      </AIData>
+      <ArtDef>BasicHorseMount_ArtDef</ArtDef>
+    </GameItemType>
+	
+    <GameItemType InternalName="BasicHorseMount2">
+	<CustomizationPointCost>1</CustomizationPointCost>
+      <GameModifier InternalName="_IsUsingMount">
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_IsUsingMount</StrVal>
+        <Value>1</Value>
+        <Provides>Unit counts as Mounted</Provides>
+      </GameModifier>
+      <DisplayName>Horse</DisplayName>
+      <Description>Horses grant your units more speed in combat and in travel and make them immune to being knocked prone.</Description>
+      <Type>Mount</Type>
+      <CanBeEquipped>1</CanBeEquipped>
+      <AdditionalTrainingTurns>20</AdditionalTrainingTurns>
+      <HideInHiergamenon>1</HideInHiergamenon>
+      <ShopValue>120</ShopValue>
+      <ProductionRequirement>
+        <Type>Resource</Type>
+        <Attribute>Horses</Attribute>
+        <Value>1</Value>
+      </ProductionRequirement>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_Attack_Boost</StrVal>
+        <Value>2</Value>
+        <Provides>+2 Attack for the first turn of combat</Provides>
+        <xActions>1</xActions>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_CombatSpeed</StrVal>
+        <Value>2</Value>
+        <Provides>+2 Initiative for the first turn of combat</Provides>
+        <xActions>1</xActions>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_ChanceToAvoidProne</StrVal>
+        <Value>100</Value>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_Moves</StrVal>
+        <Value>2</Value>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_Infiltrate</StrVal>
+        <Provides>Assassins cannot sneak or lay traps with this mount</Provides>		
+        <Value>-1</Value>
+      </GameModifier>  
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <BoolVal1>1</BoolVal1>
+                <StrVal>UnitStat_Attack_Pierce</StrVal>
+                <StrVal2>UnitStat_IsBow</StrVal2>
+                <Value>3</Value>
+                <BonusValue>0.5</BonusValue>
+                <Provides>+3 Attack when using a Bow</Provides>
+                <vsHigher>1</vsHigher>
+            </GameModifier>	  
+      <CutSceneDataPack>HorseMountCutScenePack</CutSceneDataPack>
+      <Prereq>
+        <Type>RestrictedAbilityBonusOption</Type>
+        <Attribute>DLC04_UndeadFaction</Attribute>
+        <Target>Player</Target>
+      </Prereq>
+      <Prereq>
+        <Type>RestrictedAbilityBonusOption</Type>
+        <Attribute>LegacyOfSerrane</Attribute>
+        <Target>Player</Target>
+      </Prereq>
+      <Prereq>
+        <Type>Tech</Type>
+        <Attribute>Mounted_Warfare</Attribute>
+      </Prereq>
+      <AIData AIPersonality="AI_General">
+        <AIPrefType>AIPrefType_MOUNT</AIPrefType>
+      </AIData>
+      <ArtDef>BasicHorseMount2_ArtDef</ArtDef>
+    </GameItemType>
+	
+    <GameItemType InternalName="Mount_Pony">
+      <GameModifier InternalName="_IsUsingMount">
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_IsUsingMount</StrVal>
+        <Value>1</Value>
+        <Provides>Unit counts as Mounted</Provides>
+      </GameModifier>
+      <DisplayName>Pony</DisplayName>
+      <Description>This is one strong pony!</Description>
+      <Type>Mount</Type>
+      <CanBeEquipped>1</CanBeEquipped>
+      <HideInHiergamenon>1</HideInHiergamenon>
+      <ShopValue>120</ShopValue>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_Attack_Boost</StrVal>
+        <Value>3</Value>
+        <Provides>+3 Attack for the first turn of combat</Provides>
+        <xActions>1</xActions>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_CombatSpeed</StrVal>
+        <Value>3</Value>
+        <Provides>+3 Initiative for the first turn of combat</Provides>
+        <xActions>1</xActions>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_ChanceToAvoidProne</StrVal>
+        <Value>100</Value>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_CombatSpeed</StrVal>
+        <Value>2</Value>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_Moves</StrVal>
+        <Value>3</Value>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_Infiltrate</StrVal>
+        <Provides>Assassins cannot sneak or lay traps with this mount</Provides>		
+        <Value>-1</Value>
+      </GameModifier>	  
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <BoolVal1>1</BoolVal1>
+                <StrVal>UnitStat_Attack_Pierce</StrVal>
+                <StrVal2>UnitStat_IsBow</StrVal2>
+                <Value>3</Value>
+                <BonusValue>0.5</BonusValue>
+                <Provides>+3 Attack when using a Bow</Provides>
+                <vsHigher>1</vsHigher>
+            </GameModifier>	  
+      <CutSceneDataPack>HorseMountCutScenePack</CutSceneDataPack>
+      <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+      <Liklihood>100</Liklihood>
+      <RarityDisplay>Rare</RarityDisplay>
+      <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+      <AIData AIPersonality="AI_General">
+        <AIPrefType>AIPrefType_MOUNT</AIPrefType>
+      </AIData>
+      <ArtDef>Warhorse_ArtDef</ArtDef>
+    </GameItemType>
+	
+    <GameItemType InternalName="Warhorse">
+      <GameModifier InternalName="_IsUsingMount">
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_IsUsingMount</StrVal>
+        <Value>1</Value>
+        <Provides>Unit counts as Mounted</Provides>
+      </GameModifier>
+      <DisplayName>Warhorse</DisplayName>
+      <Description>Warhorses grant your units more speed in combat and in travel and make them immune to being knocked prone.</Description>
+      <Type>Mount</Type>
+      <CanBeEquipped>1</CanBeEquipped>
+      <AdditionalTrainingTurns>20</AdditionalTrainingTurns>
+      <ShopValue>200</ShopValue>
+      <ProductionRequirement>
+        <Type>Resource</Type>
+        <Attribute>Horses</Attribute>
+        <Value>1</Value>
+      </ProductionRequirement>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_Attack_Boost</StrVal>
+        <Value>3</Value>
+        <Provides>+3 Attack for the first turn of combat</Provides>
+        <xActions>1</xActions>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_CombatSpeed</StrVal>
+        <Value>3</Value>
+        <Provides>+3 Initiative for the first turn of combat</Provides>
+        <xActions>1</xActions>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_ChanceToAvoidProne</StrVal>
+        <Value>100</Value>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_Moves</StrVal>
+        <Value>2</Value>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_Infiltrate</StrVal>
+        <Provides>Assassins cannot sneak or lay traps with this mount</Provides>		
+        <Value>-1</Value>
+      </GameModifier>	  
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <BoolVal1>1</BoolVal1>
+                <StrVal>UnitStat_Attack_Pierce</StrVal>
+                <StrVal2>UnitStat_IsBow</StrVal2>
+                <Value>3</Value>
+                <BonusValue>0.5</BonusValue>
+                <Provides>+3 Attack when using a Bow</Provides>
+                <vsHigher>1</vsHigher>
+            </GameModifier>	  
+      <CutSceneDataPack>HorseMountCutScenePack</CutSceneDataPack>
+      <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+      <Prereq>
+        <Type>AbilityBonusOption</Type>
+        <Attribute>LegacyOfSerrane</Attribute>
+        <Target>Player</Target>
+      </Prereq>
+      <Prereq>
+        <Type>Tech</Type>
+        <Attribute>Mounted_Warfare</Attribute>
+      </Prereq>
+      <AIData AIPersonality="AI_General">
+        <AIPrefType>AIPrefType_MOUNT</AIPrefType>
+      </AIData>
+      <ArtDef>Warhorse_ArtDef</ArtDef>
+    </GameItemType>
+	
+    <GameItemType InternalName="BasicWargMount">
+      <GameModifier InternalName="_IsUsingMount">
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_IsUsingMount</StrVal>
+        <Value>1</Value>
+        <Provides>Unit counts as Mounted</Provides>
+      </GameModifier>
+      <DisplayName>Warg</DisplayName>
+      <Description>Wargs improve your Initiative but don't increase your Moves as much as horses.</Description>
+      <Type>Mount</Type>
+      <CanBeEquipped>1</CanBeEquipped>
+      <AdditionalTrainingTurns>20</AdditionalTrainingTurns>
+      <ShopValue>150</ShopValue>
+      <ProductionRequirement>
+        <Type>Resource</Type>
+        <Attribute>Wargs</Attribute>
+        <Value>1</Value>
+      </ProductionRequirement>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_ChanceToAvoidProne</StrVal>
+        <Value>100</Value>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_CombatSpeed</StrVal>
+        <Value>2</Value>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_Moves</StrVal>
+        <Value>1</Value>
+      </GameModifier>	  
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <BoolVal1>1</BoolVal1>
+                <StrVal>UnitStat_Attack_Pierce</StrVal>
+                <StrVal2>UnitStat_IsBow</StrVal2>
+                <Value>1</Value>
+                <BonusValue>0.5</BonusValue>
+                <Provides>+1 Attack when using a Bow</Provides>
+                <vsHigher>1</vsHigher>
+            </GameModifier>	  
+      <CutSceneDataPack>WargMountCutScenePack</CutSceneDataPack>
+      <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+      <Prereq>
+        <Type>Tech</Type>
+        <Attribute>Warg_Riding</Attribute>
+      </Prereq>
+      <AIData AIPersonality="AI_General">
+        <AIPrefType>AIPrefType_MOUNT</AIPrefType>
+      </AIData>
+      <ArtDef>BasicWargMount_ArtDef</ArtDef>
+    </GameItemType>
+	
+    <GameItemType InternalName="BasicWargMount2">
+      <GameModifier InternalName="_IsUsingMount">
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_IsUsingMount</StrVal>
+        <Value>1</Value>
+        <Provides>Unit counts as Mounted</Provides>
+      </GameModifier>
+      <DisplayName>Warg</DisplayName>
+      <Description>Wargs improve your Initiative but don't increase your Moves as much as horses.</Description>
+      <Type>Mount</Type>
+      <CanBeEquipped>1</CanBeEquipped>
+      <AdditionalTrainingTurns>20</AdditionalTrainingTurns>
+      <HideInHiergamenon>1</HideInHiergamenon>
+      <ShopValue>150</ShopValue>
+      <ProductionRequirement>
+        <Type>Resource</Type>
+        <Attribute>Wargs</Attribute>
+        <Value>1</Value>
+      </ProductionRequirement>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_ChanceToAvoidProne</StrVal>
+        <Value>100</Value>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_CombatSpeed</StrVal>
+        <Value>2</Value>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_Moves</StrVal>
+        <Value>1</Value>
+      </GameModifier>  
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <BoolVal1>1</BoolVal1>
+                <StrVal>UnitStat_Attack_Pierce</StrVal>
+                <StrVal2>UnitStat_IsBow</StrVal2>
+                <Value>1</Value>
+                <BonusValue>0.5</BonusValue>
+                <Provides>+1 Attack when using a Bow</Provides>
+                <vsHigher>1</vsHigher>
+            </GameModifier>	  
+      <CutSceneDataPack>WargMountCutScenePack</CutSceneDataPack>
+      <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+      <Prereq>
+        <Type>Tech</Type>
+        <Attribute>Warg_Riding</Attribute>
+      </Prereq>
+      <AIData AIPersonality="AI_General">
+        <AIPrefType>AIPrefType_MOUNT</AIPrefType>
+      </AIData>
+      <ArtDef>BasicWargMount2_ArtDef</ArtDef>
+    </GameItemType>
+	
+    <GameItemType InternalName="Mount_RavenousHarridan">
+      <GameModifier InternalName="_IsUsingMount">
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_IsUsingMount</StrVal>
+        <Value>1</Value>
+        <Provides>Unit counts as Mounted</Provides>
+      </GameModifier>
+      <DisplayName>Ravenous Harridan</DisplayName>
+      <Type>Mount</Type>
+      <CanBeEquipped>1</CanBeEquipped>
+      <HideInHiergamenon>1</HideInHiergamenon>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>UnlockCombatAbility</Attribute>
+        <StrVal>TangledWeb</StrVal>
+        <Provides>Tangled Web- Target enemy is immobilized for 3 rounds.</Provides>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_ChanceToAvoidProne</StrVal>
+        <Value>100</Value>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_CombatSpeed</StrVal>
+        <Value>2</Value>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_Moves</StrVal>
+        <Value>2</Value>
+      </GameModifier>	  
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <BoolVal1>1</BoolVal1>
+                <StrVal>UnitStat_Attack_Pierce</StrVal>
+                <StrVal2>UnitStat_IsBow</StrVal2>
+                <Value>3</Value>
+                <BonusValue>0.5</BonusValue>
+                <Provides>+3 Attack when using a Bow</Provides>
+                <vsHigher>1</vsHigher>
+            </GameModifier>	  
+      <CutSceneDataPack>SpiderMountCutScenePack</CutSceneDataPack>
+      <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+      <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+      <AIData AIPersonality="AI_General">
+        <AIPrefType>AIPrefType_MOUNT</AIPrefType>
+      </AIData>
+      <ArtDef>Mount_RavenousHarridan_ArtDef</ArtDef>
+    </GameItemType>
+	
+    <GameItemType InternalName="Mount_AshwakeDragon">
+      <GameModifier InternalName="_IsUsingMount">
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_IsFlying</StrVal>
+        <Value>1</Value>
+        <Provides>This unit is capable of flight and counts as Flying</Provides>
+      </GameModifier>
+      <GameModifier InternalName="_IsUsingMount">
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_IsUsingMount</StrVal>
+        <Value>1</Value>
+        <Provides>Unit counts as Mounted</Provides>
+      </GameModifier>
+      <DisplayName>Ashwake Dragon</DisplayName>
+      <Type>Mount</Type>
+      <CanBeEquipped>1</CanBeEquipped>
+      <HideInHiergamenon>1</HideInHiergamenon>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>UnlockCombatAbility</Attribute>
+        <StrVal>FireBreath</StrVal>
+        <Provides>Fire Breath- Target unit is enveloped in fire, taking caster's attack strength in fire damage.</Provides>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_Attack_Fire</StrVal>
+        <Value>20</Value>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_ChanceToAvoidProne</StrVal>
+        <Value>100</Value>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_CombatSpeed</StrVal>
+        <Value>4</Value>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_MagicPower</StrVal>
+        <Value>20</Value>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_MagicResist</StrVal>
+        <Value>20</Value>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_Moves</StrVal>
+        <Value>2</Value>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_Infiltrate</StrVal>
+        <Provides>Assassins cannot sneak or lay traps with this mount</Provides>		
+        <Value>-1</Value>
+      </GameModifier>	  
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <BoolVal1>1</BoolVal1>
+                <StrVal>UnitStat_Attack_Pierce</StrVal>
+                <StrVal2>UnitStat_IsBow</StrVal2>
+                <Value>3</Value>
+                <BonusValue>0.5</BonusValue>
+                <Provides>+3 Attack when using a Bow</Provides>
+                <vsHigher>1</vsHigher>
+            </GameModifier>	  
+      <CutSceneDataPack>DragonMountCutScenePack</CutSceneDataPack>
+      <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+      <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+      <AIData AIPersonality="AI_General">
+        <AIPrefType>AIPrefType_MOUNT</AIPrefType>
+      </AIData>
+      <ArtDef>Mount_AshwakeDragon_ArtDef</ArtDef>
+    </GameItemType>
+	
+    <GameItemType InternalName="Mount_MireSkath">
+      <GameModifier InternalName="_IsUsingMount">
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_IsUsingMount</StrVal>
+        <Value>1</Value>
+        <Provides>Unit counts as Mounted</Provides>
+      </GameModifier>
+      <DisplayName>Mire Skath</DisplayName>
+      <Type>Mount</Type>
+      <CanBeEquipped>1</CanBeEquipped>
+      <HideInHiergamenon>1</HideInHiergamenon>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_ChanceToAvoidProne</StrVal>
+        <Value>100</Value>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_CombatSpeed</StrVal>
+        <Value>2</Value>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_Moves</StrVal>
+        <Value>2</Value>
+      </GameModifier>	  
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <BoolVal1>1</BoolVal1>
+                <StrVal>UnitStat_Attack_Pierce</StrVal>
+                <StrVal2>UnitStat_IsBow</StrVal2>
+                <Value>3</Value>
+                <BonusValue>0.5</BonusValue>
+                <Provides>+3 Attack when using a Bow</Provides>
+                <vsHigher>1</vsHigher>
+            </GameModifier>	  
+      <CutSceneDataPack>WargMountCutScenePack</CutSceneDataPack>
+      <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+      <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+      <AIData AIPersonality="AI_General">
+        <AIPrefType>AIPrefType_MOUNT</AIPrefType>
+      </AIData>
+      <ArtDef>Mount_MireSkath_ArtDef</ArtDef>
+    </GameItemType>
+	
+    <GameItemType InternalName="Mount_SpiderBody">
+      <DisplayName>Spider Body</DisplayName>
+      <Type>Mount</Type>
+      <Subtype>Clothes</Subtype>
+      <CanBeEquipped>1</CanBeEquipped>
+      <HideInHiergamenon>1</HideInHiergamenon>
+      <CutSceneDataPack>BroodUnitCutscenePack</CutSceneDataPack>
+      <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+      <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+      <AIData AIPersonality="AI_General">
+        <AIPrefType>AIPrefType_MOUNT</AIPrefType>
+      </AIData>
+      <ArtDef>Mount_SpiderBody_ArtDef</ArtDef>
+    </GameItemType>
+	
+    <GameItemType InternalName="WarBoarMount">
+      <GameModifier InternalName="_IsUsingMount">
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_IsUsingMount</StrVal>
+        <Value>1</Value>
+        <Provides>Unit counts as Mounted</Provides>
+      </GameModifier>
+      <DisplayName>War Boar</DisplayName>
+      <Description>You have tamed the War Boar, they are often more dangerous than their riders.</Description>
+      <Type>Mount</Type>
+      <CanBeEquipped>1</CanBeEquipped>
+      <HideInHiergamenon>1</HideInHiergamenon>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_Attack_Boost</StrVal>
+        <Value>3</Value>
+        <Provides>+3 Attack for the first turn of combat</Provides>
+        <xActions>1</xActions>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_CombatSpeed</StrVal>
+        <Value>3</Value>
+        <Provides>+3 Initiative for the first turn of combat</Provides>
+        <xActions>1</xActions>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_ChanceToAvoidProne</StrVal>
+        <Value>100</Value>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_CombatSpeed</StrVal>
+        <Value>2</Value>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_DodgeAgainstRanged</StrVal>
+        <Value>15</Value>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_Moves</StrVal>
+        <Value>2</Value>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_Infiltrate</StrVal>
+        <Provides>Assassins cannot sneak or lay traps with this mount</Provides>		
+        <Value>-1</Value>
+      </GameModifier>	  
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <BoolVal1>1</BoolVal1>
+                <StrVal>UnitStat_Attack_Pierce</StrVal>
+                <StrVal2>UnitStat_IsBow</StrVal2>
+                <Value>3</Value>
+                <BonusValue>0.5</BonusValue>
+                <Provides>+3 Attack when using a Bow</Provides>
+                <vsHigher>1</vsHigher>
+            </GameModifier>	  
+      <CutSceneDataPack>WargMountCutScenePack</CutSceneDataPack>
+      <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+      <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+      <AIData AIPersonality="AI_General">
+        <AIPrefType>AIPrefType_MOUNT</AIPrefType>
+      </AIData>
+      <ArtDef>WarBoarMount_ArtDef</ArtDef>
+    </GameItemType>
+  </GameItemTypes>
+  
+  <GameItemType InternalName="UndeadHorseMount">
+    <GameModifier InternalName="_IsUsingMount">
+      <ModType>Unit</ModType>
+      <Attribute>AdjustUnitStat</Attribute>
+      <StrVal>UnitStat_BG_IsUsingMount</StrVal>
+      <Value>1</Value>
+      <Provides>Unit counts as Mounted</Provides>
+    </GameModifier>
+    <DisplayName>Undead Horse</DisplayName>
+    <Description>Horses grant your units more speed in combat and in travel and make them immune to being knocked prone.</Description>
+    <Type>Mount</Type>
+    <CanBeEquipped>1</CanBeEquipped>
+    <AdditionalTrainingTurns>20</AdditionalTrainingTurns>
+    <ShopValue>120</ShopValue>
+    <ProductionRequirement>
+      <Type>Resource</Type>
+      <Attribute>Horses</Attribute>
+      <Value>1</Value>
+    </ProductionRequirement>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>AdjustUnitStat</Attribute>
+      <StrVal>UnitStat_Attack_Boost</StrVal>
+      <Value>2</Value>
+      <Provides>+2 Attack for the first turn of combat</Provides>
+      <xActions>1</xActions>
+    </GameModifier>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>AdjustUnitStat</Attribute>
+      <StrVal>UnitStat_CombatSpeed</StrVal>
+      <Value>2</Value>
+      <Provides>+2 Initiative for the first turn of combat</Provides>
+      <xActions>1</xActions>
+    </GameModifier>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>AdjustUnitStat</Attribute>
+      <StrVal>UnitStat_ChanceToAvoidProne</StrVal>
+      <Value>100</Value>
+    </GameModifier>
+    <GameModifier>
+      <ModType>Unit</ModType>
+      <Attribute>AdjustUnitStat</Attribute>
+      <StrVal>UnitStat_Moves</StrVal>
+      <Value>2</Value>
+    </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_Infiltrate</StrVal>
+        <Provides>Assassins cannot sneak or lay traps with this mount</Provides>		
+        <Value>-1</Value>
+      </GameModifier>	
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <BoolVal1>1</BoolVal1>
+                <StrVal>UnitStat_Attack_Pierce</StrVal>
+                <StrVal2>UnitStat_IsBow</StrVal2>
+                <Value>3</Value>
+                <BonusValue>0.5</BonusValue>
+                <Provides>+3 Attack when using a Bow</Provides>
+                <vsHigher>1</vsHigher>
+            </GameModifier>	
+    <CutSceneDataPack>HorseMountCutScenePack</CutSceneDataPack>
+    <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+    <Prereq>
+      <Type>AbilityBonusOption</Type>
+      <Attribute>DLC04_UndeadFaction</Attribute>
+      <Target>Player</Target>
+    </Prereq>
+    <Prereq>
+      <Type>Tech</Type>
+      <Attribute>Mounted_Warfare</Attribute>
+    </Prereq>
+    <AIData AIPersonality="AI_General">
+      <AIPrefType>AIPrefType_MOUNT</AIPrefType>
+    </AIData>
+    <ArtDef>UndeadHorseMount_ArtDef</ArtDef>
+  </GameItemType>
+</Container>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<UnitTypes>
+	<UnitType InternalName="Unit_Spy">
+		<DisplayName>Trustworthy Gentleman</DisplayName>
+		<Backstory>Respectful, charming, or amusing, this spy is whatever he needs to be to get past the social defenses of your enemies. Once in their presence, he is capable of using your nation's diplomatic influence against the enemy. He can also help an army escape combat and create outposts.</Backstory>
+		<ModelPath>Gfx\HKB\Units\K_Male_Mesh_01.hkb</ModelPath>
+		<SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+		<EyeTexture>gfx\eyes\blinks\eyeblink_m1_grn.png</EyeTexture>
+		<AnimationPack>MaleSovereignAnimationPack</AnimationPack>
+		<ModelScale>1.0000</ModelScale>
+		<TacticalModelScale>1.5000</TacticalModelScale>
+		<EquipmentScale>1.0000</EquipmentScale>
+		<ClothMapScale>1.6000</ClothMapScale>
+		<BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+		<ClothPoseIndex>7</ClothPoseIndex>
+		<InfoCardBackground>BG36_HighlvlShop</InfoCardBackground>
+		<InfoCardBackgroundFlipped>1</InfoCardBackgroundFlipped>
+		<CanBeDesigned>0</CanBeDesigned>
+		<Medallions InternalName=""/>
+		<MovingSFX>TEMP_KnightMarching1</MovingSFX>
+		<LevelMilestone InternalName="">
+			<Level>1</Level>
+			<UnitStat_Moves>1</UnitStat_Moves>
+			<!-- the following disable unit from casting Writ spells -->
+			<UnitStat_IsAtBlacksmith>-1</UnitStat_IsAtBlacksmith>
+			<UnitStat_IsAtBlacksmith_LightPlate>-1</UnitStat_IsAtBlacksmith_LightPlate>
+			<UnitStat_IsAtTanner>-1</UnitStat_IsAtTanner>
+			<UnitStat_IsAtEnchanter>-1</UnitStat_IsAtEnchanter>
+			<UnitStat_IsAtPlateArmorer>-1</UnitStat_IsAtPlateArmorer>
+			<UnitStat_IsAtPlateArmorer_Master>-1</UnitStat_IsAtPlateArmorer_Master>
+			<UnitStat_IsAtMasterworkChainArmorer>-1</UnitStat_IsAtMasterworkChainArmorer>
+			<UnitStat_IsAtArcaneArmorer>-1</UnitStat_IsAtArcaneArmorer>
+			<UnitStat_IsAtArcaneArmorer_Tran>-1</UnitStat_IsAtArcaneArmorer_Tran>
+			<UnitStat_IsAtArcaneWeaponsmith>-1</UnitStat_IsAtArcaneWeaponsmith>
+			<UnitStat_IsAtArcaneWeaponsmith_Tran>-1</UnitStat_IsAtArcaneWeaponsmith_Tran>
+			<UnitStat_IsAtMasterEnchanter>-1</UnitStat_IsAtMasterEnchanter>
+			<UnitStat_IsAtProvisionist>-1</UnitStat_IsAtProvisionist>
+			<UnitStat_IsAtProvisionist_Dead>-1</UnitStat_IsAtProvisionist_Dead>
+			<UnitStat_IsAtArchaeologist>-1</UnitStat_IsAtArchaeologist>
+			<UnitStat_IsAtRanch>-1</UnitStat_IsAtRanch>
+			<UnitStat_IsAtRanch_Dead>-1</UnitStat_IsAtRanch_Dead>
+			<UnitStat_IsAtRanch_LegacyOfSerrane>-1</UnitStat_IsAtRanch_LegacyOfSerrane>
+			<UnitStat_IsAtKennel>-1</UnitStat_IsAtKennel>
+			<UnitStat_IsAtAdventurersGuild>-1</UnitStat_IsAtAdventurersGuild>
+			<UnitStat_IsAtDiplomat>-1</UnitStat_IsAtDiplomat>
+			<UnitStat_IsAtWeaponsmith>-1</UnitStat_IsAtWeaponsmith>			
+		</LevelMilestone>
+		<Equipment>K_Male_Head_01</Equipment>
+		<Equipment>Sovereign_FlatCap_Hair_ID1</Equipment>
+		<Equipment>Kraxis_Beard</Equipment>
+		<Equipment>CarrodusGreatcoat</Equipment>
+		<Equipment>Sovereign_Boots_Leather</Equipment>
+		<Equipment>Noblemans_Pants_ID2</Equipment>
+		<Equipment>Noblemans_Pants_ID2</Equipment>		
+		<Equipment>Staff_War</Equipment>	
+		<Equipment>Warhorse</Equipment>
+		<Color_Skin>183,128,113,255</Color_Skin>
+		<Color_Hair>247,247,94,255</Color_Hair>
+		<Color_Clothing1>155,175,205,255</Color_Clothing1>
+		<Color_Clothing2>100,110,110,255</Color_Clothing2>
+		<Color_Metal>160,175,190,255</Color_Metal>
+		<Texture_Skin>K_Male_Default_Texture_01.png</Texture_Skin>
+		<Texture_Eyes>gfx\eyes\blinks\eyeblink_m1_grn.png</Texture_Eyes>
+		<Gender>Male</Gender>
+		<UnitModelType>AmarianMale</UnitModelType>
+		<SelectedAbilityBonusOption>Blood_Amarian</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Spy</SelectedAbilityBonusOption>
+		<IsSovereign>0</IsSovereign>
+		<HasWages>1</HasWages>
+		<NPCFreeRecruit>0</NPCFreeRecruit>
+		<RaceType>Race_Type_Amarians</RaceType>
+		<AdditionalTrainingTurns>0.0000</AdditionalTrainingTurns>
+		<UnitTypeVersion>1</UnitTypeVersion>
+		<TileRadius>0</TileRadius>
+		<OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+		<SoundPack>SoundPack_Generic_Male</SoundPack>
+	</UnitType>
+</UnitTypes>

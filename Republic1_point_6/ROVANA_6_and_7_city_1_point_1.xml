@@ -1,0 +1,1826 @@
+<!--
+
+This is a self-contained mod file to turn on level 6 and 7 cities for all factions. Included are the ability bonuses for level 6 and 7 upgrades, as well as the improvement type entries for the lvl 6 and 7 bonus buildings.
+
+This mod was meant to go with the republic faction trait, but can be used on its own does not require any other mod to work. Just plug this file into your mods folder and all factions can get level 6 and 7 cities.
+
+-->
+
+<!-- 8-2-14 Added support for The Dead -->
+
+<!-- idea 8/7/15 what if level 6 and 7 increases city unrest by 10% each level over 5? -->
+
+<ImprovementTypes> 
+
+<ImprovementType InternalName="CityHub1">
+        <GameModifier>
+            <ModType>StationedUnitStatBonus</ModType>
+            <StrVal>UnitStat_Experience</StrVal>
+            <StrVal2>OnlyChampions</StrVal2>
+            <Value>1</Value>
+            <Operator>25</Operator>
+            <Provides>Stationed champions gain 1xp/season</Provides>
+        </GameModifier>
+		<GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Unrest</Attribute>
+            <PerTurn>1</PerTurn>
+            <Provides>+5 Unrest per essence</Provides>
+            <Calculate InternalName="Value" ValueOwner="OwnerCity">
+                <Expression><![CDATA[[TileYieldEssence] * 5]]></Expression>
+            </Calculate>
+        </GameModifier>
+    </ImprovementType>
+    <ImprovementType InternalName="CityHub2">
+        <GameModifier>
+            <ModType>StationedUnitStatBonus</ModType>
+            <StrVal>UnitStat_Experience</StrVal>
+            <StrVal2>OnlyChampions</StrVal2>
+            <Value>1</Value>
+            <Operator>25</Operator>
+            <Provides>Stationed champions gain 1xp/season</Provides>
+        </GameModifier>
+		<GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Unrest</Attribute>
+            <PerTurn>1</PerTurn>
+            <Provides>+5 Unrest per essence</Provides>
+            <Calculate InternalName="Value" ValueOwner="OwnerCity">
+                <Expression><![CDATA[[TileYieldEssence] * 5]]></Expression>
+            </Calculate>
+        </GameModifier>		
+    </ImprovementType>
+    <ImprovementType InternalName="CityHub2_Conclave">
+        <GameModifier>
+            <ModType>StationedUnitStatBonus</ModType>
+            <StrVal>UnitStat_Experience</StrVal>
+            <StrVal2>OnlyChampions</StrVal2>
+            <Value>1</Value>
+            <Operator>25</Operator>
+            <Provides>Stationed champions gain 1xp/season</Provides>
+        </GameModifier>
+		<GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Unrest</Attribute>
+            <PerTurn>1</PerTurn>
+            <Provides>+5 Unrest per essence</Provides>
+            <Calculate InternalName="Value" ValueOwner="OwnerCity">
+                <Expression><![CDATA[[TileYieldEssence] * 5]]></Expression>
+            </Calculate>
+        </GameModifier>		
+    </ImprovementType>
+    <ImprovementType InternalName="CityHub2_Fortress">
+        <GameModifier>
+            <ModType>StationedUnitStatBonus</ModType>
+            <StrVal>UnitStat_Experience</StrVal>
+            <StrVal2>OnlyChampions</StrVal2>
+            <Value>1</Value>
+            <Operator>25</Operator>
+            <Provides>Stationed champions gain 1xp/season</Provides>
+        </GameModifier>
+		<GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Unrest</Attribute>
+            <PerTurn>1</PerTurn>
+            <Provides>+5 Unrest per essence</Provides>
+            <Calculate InternalName="Value" ValueOwner="OwnerCity">
+                <Expression><![CDATA[[TileYieldEssence] * 5]]></Expression>
+            </Calculate>
+        </GameModifier>		
+    </ImprovementType>
+    <ImprovementType InternalName="CityHub2_Town">
+        <GameModifier>
+            <ModType>StationedUnitStatBonus</ModType>
+            <StrVal>UnitStat_Experience</StrVal>
+            <StrVal2>OnlyChampions</StrVal2>
+            <Value>1</Value>
+            <Operator>25</Operator>
+            <Provides>Stationed champions gain 1xp/season</Provides>
+        </GameModifier>
+		<GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Unrest</Attribute>
+            <PerTurn>1</PerTurn>
+            <Provides>+5 Unrest per essence</Provides>
+            <Calculate InternalName="Value" ValueOwner="OwnerCity">
+                <Expression><![CDATA[[TileYieldEssence] * 5]]></Expression>
+            </Calculate>
+        </GameModifier>		
+    </ImprovementType>
+    <ImprovementType InternalName="CityHub3_Conclave">
+        <GameModifier>
+            <ModType>StationedUnitStatBonus</ModType>
+            <StrVal>UnitStat_Experience</StrVal>
+            <StrVal2>OnlyChampions</StrVal2>
+            <Value>1</Value>
+            <Operator>25</Operator>
+            <Provides>Stationed champions gain 1xp/season</Provides>
+        </GameModifier>
+		<GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Unrest</Attribute>
+            <PerTurn>1</PerTurn>
+            <Provides>+5 Unrest per essence</Provides>
+            <Calculate InternalName="Value" ValueOwner="OwnerCity">
+                <Expression><![CDATA[[TileYieldEssence] * 5]]></Expression>
+            </Calculate>
+        </GameModifier>		
+    </ImprovementType>
+    <ImprovementType InternalName="CityHub3_Fortress">
+        <GameModifier>
+            <ModType>StationedUnitStatBonus</ModType>
+            <StrVal>UnitStat_Experience</StrVal>
+            <StrVal2>OnlyChampions</StrVal2>
+            <Value>1</Value>
+            <Operator>25</Operator>
+            <Provides>Stationed champions gain 1xp/season</Provides>
+        </GameModifier>	
+    </ImprovementType>
+    <ImprovementType InternalName="CityHub3_Town">
+        <GameModifier>
+            <ModType>StationedUnitStatBonus</ModType>
+            <StrVal>UnitStat_Experience</StrVal>
+            <StrVal2>OnlyChampions</StrVal2>
+            <Value>1</Value>
+            <Operator>25</Operator>
+            <Provides>Stationed champions gain 1xp/season</Provides>
+        </GameModifier>
+		<GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Unrest</Attribute>
+            <PerTurn>1</PerTurn>
+            <Provides>+5 Unrest per essence</Provides>
+            <Calculate InternalName="Value" ValueOwner="OwnerCity">
+                <Expression><![CDATA[[TileYieldEssence] * 5]]></Expression>
+            </Calculate>
+        </GameModifier>		
+    </ImprovementType>
+    <ImprovementType InternalName="CityHub4_Conclave">
+        <GameModifier>
+            <ModType>StationedUnitStatBonus</ModType>
+            <StrVal>UnitStat_Experience</StrVal>
+            <StrVal2>OnlyChampions</StrVal2>
+            <Value>1</Value>
+            <Operator>25</Operator>
+            <Provides>Stationed champions gain 1xp/season</Provides>
+        </GameModifier>	
+    </ImprovementType>
+    <ImprovementType InternalName="CityHub4_Fortress">
+        <GameModifier>
+            <ModType>StationedUnitStatBonus</ModType>
+            <StrVal>UnitStat_Experience</StrVal>
+            <StrVal2>OnlyChampions</StrVal2>
+            <Value>1</Value>
+            <Operator>25</Operator>
+            <Provides>Stationed champions gain 1xp/season</Provides>
+        </GameModifier>
+		<GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Unrest</Attribute>
+            <PerTurn>1</PerTurn>
+            <Provides>+5 Unrest per essence</Provides>
+            <Calculate InternalName="Value" ValueOwner="OwnerCity">
+                <Expression><![CDATA[[TileYieldEssence] * 5]]></Expression>
+            </Calculate>
+        </GameModifier>		
+    </ImprovementType>
+    <ImprovementType InternalName="CityHub4_Town">
+        <GameModifier>
+            <ModType>StationedUnitStatBonus</ModType>
+            <StrVal>UnitStat_Experience</StrVal>
+            <StrVal2>OnlyChampions</StrVal2>
+            <Value>1</Value>
+            <Operator>25</Operator>
+            <Provides>Stationed champions gain 1xp/season</Provides>
+        </GameModifier>	
+    </ImprovementType>  
+
+<ImprovementType InternalName="CityHub5_Conclave">
+        <GameModifier>
+            <ModType>LevelBarrier</ModType>
+            <Attribute>Population</Attribute>
+            <Value>1300</Value>
+            <CityUpgrade>CityHub6_Conclave</CityUpgrade>
+        </GameModifier>
+        <GameModifier>
+            <ModType>StationedUnitStatBonus</ModType>
+            <StrVal>UnitStat_Experience</StrVal>
+            <StrVal2>OnlyChampions</StrVal2>
+            <Value>1</Value>
+            <Operator>25</Operator>
+            <Provides>Stationed champions gain 1xp/season</Provides>
+        </GameModifier>
+		<GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Unrest</Attribute>
+            <PerTurn>1</PerTurn>
+            <Provides>+5 Unrest per essence</Provides>
+            <Calculate InternalName="Value" ValueOwner="OwnerCity">
+                <Expression><![CDATA[[TileYieldEssence] * 5]]></Expression>
+            </Calculate>
+        </GameModifier>		
+    </ImprovementType>
+
+<ImprovementType InternalName="CityHub5_Fortress">        
+<GameModifier>
+            <ModType>LevelBarrier</ModType>
+            <Attribute>Population</Attribute>
+            <Value>1300</Value>
+            <CityUpgrade>CityHub6_Fortress</CityUpgrade>
+        </GameModifier>
+        <GameModifier>
+            <ModType>StationedUnitStatBonus</ModType>
+            <StrVal>UnitStat_Experience</StrVal>
+            <StrVal2>OnlyChampions</StrVal2>
+            <Value>1</Value>
+            <Operator>25</Operator>
+            <Provides>Stationed champions gain 1xp/season</Provides>
+        </GameModifier>
+		<GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Unrest</Attribute>
+            <PerTurn>1</PerTurn>
+            <Provides>+5 Unrest per essence</Provides>
+            <Calculate InternalName="Value" ValueOwner="OwnerCity">
+                <Expression><![CDATA[[TileYieldEssence] * 5]]></Expression>
+            </Calculate>
+        </GameModifier>		
+    </ImprovementType>
+
+<ImprovementType InternalName="CityHub5_Town">
+        <GameModifier>
+            <ModType>LevelBarrier</ModType>
+            <Attribute>Population</Attribute>
+            <Value>1300</Value>
+            <CityUpgrade>CityHub6_Town</CityUpgrade>
+        </GameModifier>
+        <GameModifier>
+            <ModType>StationedUnitStatBonus</ModType>
+            <StrVal>UnitStat_Experience</StrVal>
+            <StrVal2>OnlyChampions</StrVal2>
+            <Value>1</Value>
+            <Operator>25</Operator>
+            <Provides>Stationed champions gain 1xp/season</Provides>
+        </GameModifier>
+		<GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Unrest</Attribute>
+            <PerTurn>1</PerTurn>
+            <Provides>+5 Unrest per essence</Provides>
+            <Calculate InternalName="Value" ValueOwner="OwnerCity">
+                <Expression><![CDATA[[TileYieldEssence] * 5]]></Expression>
+            </Calculate>
+        </GameModifier>		
+    </ImprovementType>
+
+<ImprovementType InternalName="CityHub6_Fortress">
+        <DisplayName>Fortress</DisplayName>
+        <IsCityHub>1</IsCityHub>
+        <RequiresCity>0</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <ZOCMinRadius>1</ZOCMinRadius>
+        <ZOCMaxRadius>1</ZOCMaxRadius>
+        <ZOCRadiusTurnsBeforeUpdate>0</ZOCRadiusTurnsBeforeUpdate>
+        <BuildRadius>1</BuildRadius>
+        <BuildableTiles>50</BuildableTiles>
+        <CitywideDuplicateImpLimit>1</CitywideDuplicateImpLimit>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <LaborToBuild>0</LaborToBuild>
+        <GameModifier>
+            <ModType>LevelBarrier</ModType>
+            <Attribute>Population</Attribute>
+            <Value>3000</Value>
+            <CityUpgrade>CityHub7_Fortress</CityUpgrade>
+        </GameModifier>
+        <GameModifier>
+            <ModType>CityDefenseSummon</ModType>
+            <Attribute>SummonUnitByClass</Attribute>
+            <Value>3</Value>
+            <Multiplier>4</Multiplier>
+            <Provides>+3 City Defender Group's</Provides>
+            <UnitClass>CityDefender</UnitClass>
+        </GameModifier>
+        <GameModifier>
+            <ModType>CityDefenseSummon</ModType>
+            <Attribute>SummonUnitByClass</Attribute>
+            <Value>1</Value>
+            <Multiplier>3</Multiplier>
+            <Provides>+1 City Archer Party</Provides>
+            <UnitClass>CityArcher</UnitClass>
+        </GameModifier>
+        <GameModifier>
+            <ModType>CityDefenseSummon</ModType>
+            <Attribute>SummonUnitByClass</Attribute>
+            <Value>1</Value>
+            <Multiplier>3</Multiplier>
+            <Provides>+1 City Archer Party</Provides>
+            <UnitClass>CityArcher</UnitClass>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Research</Attribute>
+            <Value>18</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+18 Research per Season</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Production</Attribute>
+            <Value>26</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+26 Production</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>24</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+24 Gildar per Season</Provides>
+        </GameModifier>
+		<!-- testing without this		
+        <GameModifier>
+                <ModType>Resource</ModType>
+                <Attribute>Prestige</Attribute>
+                <Value>2</Value>
+         	<PerTurn>1</PerTurn>
+                <Provides>+2 Growth</Provides>
+        </GameModifier>            
+		<GameModifier>
+                <ModType>ResourceMultiplier</ModType>
+                <Attribute>Prestige</Attribute>
+                <Value>1.5</Value>
+                <Provides>+50% Growth in this city</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Fame</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Fame per Season</Provides>
+        </GameModifier>-->
+        <GameModifier>
+            <ModType>StationedUnitStatBonus</ModType>
+            <StrVal>UnitStat_Experience</StrVal>
+            <StrVal2>OnlyChampions</StrVal2>
+            <Value>1</Value>
+            <Operator>25</Operator>
+            <Provides>Stationed champions gain 1xp/season</Provides>
+        </GameModifier>
+		<GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Unrest</Attribute>
+            <PerTurn>1</PerTurn>
+            <Provides>+5 Unrest per essence</Provides>
+            <Calculate InternalName="Value" ValueOwner="OwnerCity">
+                <Expression><![CDATA[[TileYieldEssence] * 5]]></Expression>
+            </Calculate>
+        </GameModifier>		
+        <AIName>City</AIName>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <UnlocksShopItem>SaltedPork</UnlocksShopItem>
+        <UnlocksShopItem>Club</UnlocksShopItem>
+        <UnlocksShopItem>Staff</UnlocksShopItem>
+        <UnlocksShopItem>HealingNectar</UnlocksShopItem>
+        <ArtDef>Art_CityHub5_Fortress</ArtDef>
+    </ImprovementType>
+
+
+    <ImprovementType InternalName="CityHub6_Conclave">
+        <DisplayName>Conclave</DisplayName>
+        <IsCityHub>1</IsCityHub>
+        <RequiresCity>0</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <ZOCMinRadius>1</ZOCMinRadius>
+        <ZOCMaxRadius>1</ZOCMaxRadius>
+        <ZOCRadiusTurnsBeforeUpdate>0</ZOCRadiusTurnsBeforeUpdate>
+        <BuildRadius>1</BuildRadius>
+        <BuildableTiles>50</BuildableTiles>
+        <CitywideDuplicateImpLimit>1</CitywideDuplicateImpLimit>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <LaborToBuild>0</LaborToBuild>
+        <GameModifier>
+            <ModType>LevelBarrier</ModType>
+            <Attribute>Population</Attribute>
+            <Value>3000</Value>
+            <CityUpgrade>CityHub7_Conclave</CityUpgrade>
+        </GameModifier>
+        <GameModifier>
+            <ModType>CityDefenseSummon</ModType>
+            <Attribute>SummonUnitByClass</Attribute>
+            <Value>1</Value>
+            <Multiplier>7</Multiplier>
+            <Provides>+7 City Defender Squad</Provides>
+            <UnitClass>CityDefender</UnitClass>
+        </GameModifier>
+        <GameModifier>
+            <ModType>CityDefenseSummon</ModType>
+            <Attribute>SummonUnitByClass</Attribute>
+            <Value>3</Value>
+            <Multiplier>5</Multiplier>
+            <Provides>+5 City Defender Group's</Provides>
+            <UnitClass>CityDefender</UnitClass>
+        </GameModifier>        
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Research</Attribute>
+            <Value>27</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+27 Research per Season</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Production</Attribute>
+            <Value>20</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+20 Production</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>24</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+24 Gildar per Season</Provides>
+        </GameModifier>
+		<!-- testing without this		
+        <GameModifier>
+                <ModType>Resource</ModType>
+                <Attribute>Prestige</Attribute>
+                <Value>2</Value>
+         	<PerTurn>1</PerTurn>
+                <Provides>+2 Growth</Provides>
+        </GameModifier>            
+		<GameModifier>
+                <ModType>ResourceMultiplier</ModType>
+                <Attribute>Prestige</Attribute>
+                <Value>1.5</Value>
+                <Provides>+50% Growth in this city</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Fame</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Fame per Season</Provides>
+        </GameModifier>-->
+        <GameModifier>
+            <ModType>StationedUnitStatBonus</ModType>
+            <StrVal>UnitStat_Experience</StrVal>
+            <StrVal2>OnlyChampions</StrVal2>
+            <Value>1</Value>
+            <Operator>25</Operator>
+            <Provides>Stationed champions gain 1xp/season</Provides>
+        </GameModifier>
+		<GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Unrest</Attribute>
+            <PerTurn>1</PerTurn>
+            <Provides>+5 Unrest per essence</Provides>
+            <Calculate InternalName="Value" ValueOwner="OwnerCity">
+                <Expression><![CDATA[[TileYieldEssence] * 5]]></Expression>
+            </Calculate>
+        </GameModifier>		
+        <AIName>GreatCity</AIName>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <UnlocksShopItem>SaltedPork</UnlocksShopItem>
+        <UnlocksShopItem>Club</UnlocksShopItem>
+        <UnlocksShopItem>Staff</UnlocksShopItem>
+        <UnlocksShopItem>HealingNectar</UnlocksShopItem>
+        <ArtDef>Art_CityHub5_Conclave</ArtDef>
+    </ImprovementType>
+
+
+    <ImprovementType InternalName="CityHub6_Town">
+        <DisplayName>Town</DisplayName>
+        <IsCityHub>1</IsCityHub>
+        <RequiresCity>0</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <ZOCMinRadius>1</ZOCMinRadius>
+        <ZOCMaxRadius>1</ZOCMaxRadius>
+        <ZOCRadiusTurnsBeforeUpdate>0</ZOCRadiusTurnsBeforeUpdate>
+        <BuildRadius>1</BuildRadius>
+        <BuildableTiles>50</BuildableTiles>
+        <CitywideDuplicateImpLimit>1</CitywideDuplicateImpLimit>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <LaborToBuild>0</LaborToBuild>
+        <GameModifier>
+            <ModType>LevelBarrier</ModType>
+            <Attribute>Population</Attribute>
+            <Value>3000</Value>
+            <CityUpgrade>CityHub7_Town</CityUpgrade>
+        </GameModifier>
+        <GameModifier>
+            <ModType>CityDefenseSummon</ModType>
+            <Attribute>SummonUnitByClass</Attribute>
+            <Value>1</Value>
+            <Multiplier>7</Multiplier>
+            <Provides>+7 City Defender Squad</Provides>
+            <UnitClass>CityDefender</UnitClass>
+        </GameModifier>
+        <GameModifier>
+            <ModType>CityDefenseSummon</ModType>
+            <Attribute>SummonUnitByClass</Attribute>
+            <Value>3</Value>
+            <Multiplier>5</Multiplier>
+            <Provides>+5 City Defender Group's</Provides>
+            <UnitClass>CityDefender</UnitClass>
+        </GameModifier>        
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Research</Attribute>
+            <Value>18</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+18 Research per Season</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Production</Attribute>
+            <Value>20</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+20 Production</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>32</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+32 Gildar per Season</Provides>
+        </GameModifier>
+        <!-- testing without this
+		<GameModifier>
+                <ModType>Resource</ModType>
+                <Attribute>Prestige</Attribute>
+                <Value>2</Value>
+         	<PerTurn>1</PerTurn>
+                <Provides>+2 Growth</Provides>
+        </GameModifier>            
+	<GameModifier>
+                <ModType>ResourceMultiplier</ModType>
+                <Attribute>Prestige</Attribute>
+                <Value>1.5</Value>
+                <Provides>+50% Growth in this city</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Fame</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Fame per Season</Provides>
+        </GameModifier>-->
+        <GameModifier>
+            <ModType>StationedUnitStatBonus</ModType>
+            <StrVal>UnitStat_Experience</StrVal>
+            <StrVal2>OnlyChampions</StrVal2>
+            <Value>1</Value>
+            <Operator>25</Operator>
+            <Provides>Stationed champions gain 1xp/season</Provides>
+        </GameModifier>
+		<GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Unrest</Attribute>
+            <PerTurn>1</PerTurn>
+            <Provides>+5 Unrest per essence</Provides>
+            <Calculate InternalName="Value" ValueOwner="OwnerCity">
+                <Expression><![CDATA[[TileYieldEssence] * 5]]></Expression>
+            </Calculate>
+        </GameModifier>		
+        <AIName>GreatCity</AIName>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <UnlocksShopItem>SaltedPork</UnlocksShopItem>
+        <UnlocksShopItem>Club</UnlocksShopItem>
+        <UnlocksShopItem>Staff</UnlocksShopItem>
+        <UnlocksShopItem>HealingNectar</UnlocksShopItem>
+        <ArtDef>Art_CityHub5_Town</ArtDef>	
+    </ImprovementType> 
+
+<ImprovementType InternalName="CityHub7_Fortress">
+        <DisplayName>Fortress</DisplayName>
+        <IsCityHub>1</IsCityHub>
+        <RequiresCity>0</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <ZOCMinRadius>1</ZOCMinRadius>
+        <ZOCMaxRadius>1</ZOCMaxRadius>
+        <ZOCRadiusTurnsBeforeUpdate>0</ZOCRadiusTurnsBeforeUpdate>
+        <BuildRadius>1</BuildRadius>
+        <BuildableTiles>50</BuildableTiles>
+        <CitywideDuplicateImpLimit>1</CitywideDuplicateImpLimit>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <LaborToBuild>0</LaborToBuild>
+        <GameModifier>
+            <ModType>CityDefenseSummon</ModType>
+            <Attribute>SummonUnitByClass</Attribute>
+            <Value>3</Value>
+            <Multiplier>4</Multiplier>
+            <Provides>+3 City Defender Group's</Provides>
+            <UnitClass>CityDefender</UnitClass>
+        </GameModifier>
+        <GameModifier>
+            <ModType>CityDefenseSummon</ModType>
+            <Attribute>SummonUnitByClass</Attribute>
+            <Value>1</Value>
+            <Multiplier>3</Multiplier>
+            <Provides>+1 City Archer Party</Provides>
+            <UnitClass>CityArcher</UnitClass>
+        </GameModifier>
+        <GameModifier>
+            <ModType>CityDefenseSummon</ModType>
+            <Attribute>SummonUnitByClass</Attribute>
+            <Value>1</Value>
+            <Multiplier>3</Multiplier>
+            <Provides>+1 City Archer Party</Provides>
+            <UnitClass>CityArcher</UnitClass>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Research</Attribute>
+            <Value>34</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+34 Research per Season</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Production</Attribute>
+            <Value>78</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+78 Production</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>46</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+46 Gildar per Season</Provides>
+        </GameModifier>
+        <!--<GameModifier>
+                <ModType>Resource</ModType>
+                <Attribute>Prestige</Attribute>
+                <Value>5</Value>
+         	<PerTurn>1</PerTurn>
+                <Provides>+5 Growth</Provides>
+        </GameModifier>            
+	<GameModifier>
+                <ModType>ResourceMultiplier</ModType>
+                <Attribute>Prestige</Attribute>
+                <Value>2</Value>
+                <Provides>+200% Growth in this city</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Fame</Attribute>
+            <Value>5</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+5 Fame per Season</Provides>
+        </GameModifier>-->
+        <GameModifier>
+            <ModType>StationedUnitStatBonus</ModType>
+            <StrVal>UnitStat_Experience</StrVal>
+            <StrVal2>OnlyChampions</StrVal2>
+            <Value>1</Value>
+            <Operator>25</Operator>
+            <Provides>Stationed champions gain 1xp/season</Provides>
+        </GameModifier>
+		<GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Unrest</Attribute>
+            <PerTurn>1</PerTurn>
+            <Provides>+5 Unrest per essence</Provides>
+            <Calculate InternalName="Value" ValueOwner="OwnerCity">
+                <Expression><![CDATA[[TileYieldEssence] * 5]]></Expression>
+            </Calculate>
+        </GameModifier>		
+        <AIName>City</AIName>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <UnlocksShopItem>SaltedPork</UnlocksShopItem>
+        <UnlocksShopItem>Club</UnlocksShopItem>
+        <UnlocksShopItem>Staff</UnlocksShopItem>
+        <UnlocksShopItem>HealingNectar</UnlocksShopItem>
+        <ArtDef>Art_CityHub5_Fortress</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="CityHub7_Conclave">
+        <DisplayName>Conclave</DisplayName>
+        <IsCityHub>1</IsCityHub>
+        <RequiresCity>0</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <ZOCMinRadius>1</ZOCMinRadius>
+        <ZOCMaxRadius>1</ZOCMaxRadius>
+        <ZOCRadiusTurnsBeforeUpdate>0</ZOCRadiusTurnsBeforeUpdate>
+        <BuildRadius>1</BuildRadius>
+        <BuildableTiles>50</BuildableTiles>
+        <CitywideDuplicateImpLimit>1</CitywideDuplicateImpLimit>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <LaborToBuild>0</LaborToBuild>
+        <GameModifier>
+            <ModType>CityDefenseSummon</ModType>
+            <Attribute>SummonUnitByClass</Attribute>
+            <Value>1</Value>
+            <Multiplier>7</Multiplier>
+            <Provides>+7 City Defender Squad</Provides>
+            <UnitClass>CityDefender</UnitClass>
+        </GameModifier>
+        <GameModifier>
+            <ModType>CityDefenseSummon</ModType>
+            <Attribute>SummonUnitByClass</Attribute>
+            <Value>3</Value>
+            <Multiplier>5</Multiplier>
+            <Provides>+5 City Defender Group's</Provides>
+            <UnitClass>CityDefender</UnitClass>
+        </GameModifier>        
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Research</Attribute>
+            <Value>63</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+63 Research per Season</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Production</Attribute>
+            <Value>32</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+32 Production</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>46</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+46 Gildar per Season</Provides>
+        </GameModifier>
+        <!--<GameModifier>
+                <ModType>Resource</ModType>
+                <Attribute>Prestige</Attribute>
+                <Value>5</Value>
+         	<PerTurn>1</PerTurn>
+                <Provides>+5 Growth</Provides>
+        </GameModifier>            
+	<GameModifier>
+                <ModType>ResourceMultiplier</ModType>
+                <Attribute>Prestige</Attribute>
+                <Value>2</Value>
+                <Provides>+200% Growth in this city</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Fame</Attribute>
+            <Value>5</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+5 Fame per Season</Provides>
+        </GameModifier>-->
+        <GameModifier>
+            <ModType>StationedUnitStatBonus</ModType>
+            <StrVal>UnitStat_Experience</StrVal>
+            <StrVal2>OnlyChampions</StrVal2>
+            <Value>1</Value>
+            <Operator>25</Operator>
+            <Provides>Stationed champions gain 1xp/season</Provides>
+        </GameModifier>
+		<GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Unrest</Attribute>
+            <PerTurn>1</PerTurn>
+            <Provides>+5 Unrest per essence</Provides>
+            <Calculate InternalName="Value" ValueOwner="OwnerCity">
+                <Expression><![CDATA[[TileYieldEssence] * 5]]></Expression>
+            </Calculate>
+        </GameModifier>		
+        <AIName>GreatCity</AIName>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <UnlocksShopItem>SaltedPork</UnlocksShopItem>
+        <UnlocksShopItem>Club</UnlocksShopItem>
+        <UnlocksShopItem>Staff</UnlocksShopItem>
+        <UnlocksShopItem>HealingNectar</UnlocksShopItem>
+        <ArtDef>Art_CityHub5_Conclave</ArtDef>
+    </ImprovementType>
+
+
+    <ImprovementType InternalName="CityHub7_Town">
+        <DisplayName>Town</DisplayName>
+        <IsCityHub>1</IsCityHub>
+        <RequiresCity>0</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <ZOCMinRadius>1</ZOCMinRadius>
+        <ZOCMaxRadius>1</ZOCMaxRadius>
+        <ZOCRadiusTurnsBeforeUpdate>0</ZOCRadiusTurnsBeforeUpdate>
+        <BuildRadius>1</BuildRadius>
+        <BuildableTiles>50</BuildableTiles>
+        <CitywideDuplicateImpLimit>1</CitywideDuplicateImpLimit>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <LaborToBuild>0</LaborToBuild>
+        <GameModifier>
+            <ModType>CityDefenseSummon</ModType>
+            <Attribute>SummonUnitByClass</Attribute>
+            <Value>1</Value>
+            <Multiplier>7</Multiplier>
+            <Provides>+7 City Defender Squad</Provides>
+            <UnitClass>CityDefender</UnitClass>
+        </GameModifier>
+        <GameModifier>
+            <ModType>CityDefenseSummon</ModType>
+            <Attribute>SummonUnitByClass</Attribute>
+            <Value>3</Value>
+            <Multiplier>5</Multiplier>
+            <Provides>+5 City Defender Group's</Provides>
+            <UnitClass>CityDefender</UnitClass>
+        </GameModifier>        
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Research</Attribute>
+            <Value>34</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+34 Research per Season</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Production</Attribute>
+            <Value>32</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+32 Production</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>73</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+73 Gildar per Season</Provides>
+        </GameModifier>
+        <!--<GameModifier>
+                <ModType>Resource</ModType>
+                <Attribute>Prestige</Attribute>
+                <Value>5</Value>
+         	<PerTurn>1</PerTurn>
+                <Provides>+5 Growth</Provides>
+        </GameModifier>            
+	<GameModifier>
+                <ModType>ResourceMultiplier</ModType>
+                <Attribute>Prestige</Attribute>
+                <Value>2</Value>
+                <Provides>+200% Growth in this city</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Fame</Attribute>
+            <Value>5</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+5 Fame per Season</Provides>
+        </GameModifier>-->
+        <GameModifier>
+            <ModType>StationedUnitStatBonus</ModType>
+            <StrVal>UnitStat_Experience</StrVal>
+            <StrVal2>OnlyChampions</StrVal2>
+            <Value>1</Value>
+            <Operator>25</Operator>
+            <Provides>Stationed champions gain 1xp/season</Provides>
+        </GameModifier>
+		<GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Unrest</Attribute>
+            <PerTurn>1</PerTurn>
+            <Provides>+5 Unrest per essence</Provides>
+            <Calculate InternalName="Value" ValueOwner="OwnerCity">
+                <Expression><![CDATA[[TileYieldEssence] * 5]]></Expression>
+            </Calculate>
+        </GameModifier>		
+        <AIName>GreatCity</AIName>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <UnlocksShopItem>SaltedPork</UnlocksShopItem>
+        <UnlocksShopItem>Club</UnlocksShopItem>
+        <UnlocksShopItem>Staff</UnlocksShopItem>
+        <UnlocksShopItem>HealingNectar</UnlocksShopItem>
+        <ArtDef>Art_CityHub5_Town</ArtDef>	
+    </ImprovementType>       
+
+//Here are the perk buildings for level 6 and 7
+
+    <ImprovementType InternalName="IruConstruct">
+        <DisplayName>Iru Construct</DisplayName>
+        <Description>This crystalline aggregation is imbued with life energy, an attempt to re-create the treasure of the long-lost valley of Iru T'Alavar.</Description>
+        <RequiresCity>1</RequiresCity>
+        <RequiresForceUnlock>1</RequiresForceUnlock>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>Conclave</RequiredImprovement>
+        <LaborToBuild>0</LaborToBuild>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>LifeMana</Attribute>
+            <Value>3</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+3 Life Power</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Mana</Attribute>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Mana per Essence</Provides>
+            <UpgradeComparisonID>3</UpgradeComparisonID>
+            <UpgradeComparisonText>Mana per Essence</UpgradeComparisonText>
+            <Calculate InternalName="Value" ValueOwner="OwnerCity">
+                <Expression><![CDATA[[TileYieldEssence]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+            <AITag>Prestige</AITag>
+        </AIData>
+                <ArtDef>Monument_IruTAlavar_ArtDef</ArtDef>
+        <ImprovementTypeArtDef InternalName="Monument_IruTAlavar_ArtDef">
+            <ImprovementTypeArtSubPack InternalName="Monument_IruTAlavar_Default">
+                <TileDesign>K_Iru_Talavar_01</TileDesign>
+                <ConstructionTileDesign>K_Iru_Talavar_01</ConstructionTileDesign>
+                <DrawnIcon>Improvement_IruTAlavar.png</DrawnIcon>
+                <DrawnIconConstruction>Improvement_IruTAlavar_C.png</DrawnIconConstruction>
+                <Thumbnail>K_Iru_Talavar_Thumb_01.png</Thumbnail>
+                <Medallions InternalName="">
+                    <All>K_Iru_Talavar_Thumb_01.png</All>
+                </Medallions>
+            </ImprovementTypeArtSubPack>
+        </ImprovementTypeArtDef>
+    </ImprovementType>
+
+    <ImprovementType InternalName="GraveyardTemple">
+        <DisplayName>A flooded mass grave, a dare to the powers of death to come forth.</Description>
+        <RequiresCity>1</RequiresCity>
+        <RequiresForceUnlock>1</RequiresForceUnlock>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>Conclave</RequiredImprovement>
+        <LaborToBuild>0</LaborToBuild>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>DeathMana</Attribute>
+            <Value>3</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+3 Death Power</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Mana</Attribute>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Mana per Essence</Provides>
+            <UpgradeComparisonID>3</UpgradeComparisonID>
+            <UpgradeComparisonText>Mana per Essence</UpgradeComparisonText>
+            <Calculate InternalName="Value" ValueOwner="OwnerCity">
+                <Expression><![CDATA[[TileYieldEssence]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+            <AITag>Prestige</AITag>
+        </AIData>
+                <ArtDef>Monument_FloodedGraveyard_ArtDef</ArtDef>
+        <ImprovementTypeArtDef InternalName="Monument_FloodedGraveyard_ArtDef">
+            <ImprovementTypeArtSubPack InternalName="Monument_FloodedGraveyard_Default">
+                <TileDesign>F_FloodedGraveyard_01</TileDesign>
+                <ConstructionTileDesign>F_FloodedGraveyard_Build_01</ConstructionTileDesign>
+                <DrawnIcon>Improvement_FloodedGraveyard.png</DrawnIcon>
+                <DrawnIconConstruction>Improvement_FloodedGraveyard_C.png</DrawnIconConstruction>
+            </ImprovementTypeArtSubPack>
+        </ImprovementTypeArtDef>
+    </ImprovementType>
+
+    <ImprovementType InternalName="ArcaneForge">
+        <DisplayName>Arcane Forge</DisplayName>
+        <Description>A crude mimicry of the Forge Of The Overlord. While it is utterly eclipsed by the miracle of the Forge proper, this enchanting focal point can still produce small wonders for your faction.</Description>
+        <RequiresCity>1</RequiresCity>
+        <RequiresForceUnlock>1</RequiresForceUnlock>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>Conclave</RequiredImprovement>
+        <LaborToBuild>0</LaborToBuild>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>RefinedCrystal</Attribute>
+            <Value>5</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+5 Crystal per Season</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+        </GameModifier>
+        <GameModifier>
+            <Provides>Unlocks rare magical armor and weapons in the shop</Provides>
+        </GameModifier>
+        <UnlocksShopItem>Broadsword_Legendary</UnlocksShopItem>
+        <UnlocksShopItem>Maul_Bashing</UnlocksShopItem>
+        <UnlocksShopItem>PlateHelmet_Obsidian</UnlocksShopItem>
+        <UnlocksShopItem>PlateHelmet_Obsidian</UnlocksShopItem>
+        <UnlocksShopItem>LeatherBreastpiece_Hardened</UnlocksShopItem>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+            <AITag>Prestige</AITag>
+        </AIData>
+        <ArtDef>Art_AmethystVault</ArtDef>
+    </ImprovementType>
+
+    <ImprovementType InternalName="Inquisition">
+        <DisplayName>Inquisition Halls</DisplayName>
+        <Description>None can defy you, and escape the long arm of your agents. Those suspected of wrongdoing are brought within, and their unruly wills bent to obedience. All are watched and followed by your vigilant inquisitors. Great minds and deeds may be muted by the ever-present eyes of your agents - but is that not the price of peace?</Description>
+        <RequiresCity>1</RequiresCity>
+        <RequiresForceUnlock>1</RequiresForceUnlock>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>Fortress</RequiredImprovement>
+        <LaborToBuild>0</LaborToBuild>
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Additive_Unrest</StrVal>
+            <Value>-40</Value>
+            <Provides>-40% Unrest in all your cities</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Research</StrVal>
+            <Value>-25</Value>
+            <Provides>-25% Research in all your cities</Provides>
+        </GameModifier>
+                <GameModifier>
+                    <ModType>Player</ModType>
+                    <Attribute>AbilityBonus</Attribute>
+                    <StrVal>A_Prestige</StrVal>
+                    <Value>-50</Value>
+            <Provides>-50% Growth in all your cities</Provides>
+                </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Fame</Attribute>
+            <Value>+100</Value>
+            <Provides>+100 Fame</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+            <AITag>Prestige</AITag>
+        </AIData>
+        <ArtDef>Art_Prison</ArtDef>
+    </ImprovementType>
+
+    <ImprovementType InternalName="MartialSkillAcademy">
+        <DisplayName>Martial Skill Academy</DisplayName>
+        <Description>Your greatest warriors retire here to become masters. They drill lethal combat techniques and skills into your trained soldiers, that they might fight to the most skillful extent their mortal bodies allow.</Description>
+        <RequiresCity>1</RequiresCity>
+        <RequiresForceUnlock>1</RequiresForceUnlock>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>Fortress</RequiredImprovement>
+        <LaborToBuild>0</LaborToBuild>
+        <GameModifier>
+            <ModType>CityTrainingBonus</ModType>
+            <Attribute>TrainingBonus_ApplyUnitModifier_Add</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>1</Value>
+            <Provides>+1 Initiative for Trained Units</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>CityTrainingBonus</ModType>
+            <Attribute>TrainingBonus_ApplyUnitModifier_Add</Attribute>
+            <StrVal>UnitStat_Dodge</StrVal>
+            <Value>15</Value>
+            <Provides>+15 Dodge for Trained Units</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>CityTrainingBonus</ModType>
+            <Attribute>TrainingBonus_ApplyAbilityBonus</Attribute>
+            <StrVal>Bash</StrVal>
+            <Provides>Trained units get the Bash ability</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+            <AITag>Prestige</AITag>
+        </AIData>
+        <ArtDef>WarCollege_ArtDef</ArtDef>
+        <ImprovementTypeArtDef InternalName="WarCollege_ArtDef">
+            <ImprovementTypeArtSubPack InternalName="WarCollege_Default">
+                <TileDesign>K_Armory_01</TileDesign>
+                <ConstructionTileDesign>K_Construction1x1_01</ConstructionTileDesign>
+                <DrawnIcon>Improvement_WarCollege.png</DrawnIcon>
+                <DrawnIconConstruction>Improvement_WarCollege_C.png</DrawnIconConstruction>
+                <Thumbnail>K_WarCollege_01_Thumb.png</Thumbnail>
+                <Medallions InternalName="">
+                    <All>K_WarCollege_01_Thumb.png</All>
+                </Medallions>
+            </ImprovementTypeArtSubPack>
+        </ImprovementTypeArtDef>
+    </ImprovementType>
+
+    <ImprovementType InternalName="MagiWarAcademy">
+        <DisplayName>Magi War Academy</DisplayName>
+        <Description>Your soldiers train in drills against your mages, learning to resist the effects of combat magic.</Description>
+        <RequiresCity>1</RequiresCity>
+        <RequiresForceUnlock>1</RequiresForceUnlock>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>Fortress</RequiredImprovement>
+        <LaborToBuild>0</LaborToBuild>
+        <GameModifier>
+            <ModType>CityTrainingBonus</ModType>
+            <Attribute>TrainingBonus_ApplyUnitModifier_Add</Attribute>
+            <StrVal>UnitStat_MagicResist</StrVal>
+            <Value>20</Value>
+            <Provides>+20 Spell Resistance for Trained Units</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+            <UpgradeComparisonText>Trained Unit Spell Resistance</UpgradeComparisonText>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+            <AITag>Prestige</AITag>
+        </AIData>
+        <ArtDef>WarCollege_ArtDef</ArtDef>
+        <ImprovementTypeArtDef InternalName="WarCollege_ArtDef">
+            <ImprovementTypeArtSubPack InternalName="WarCollege_Default">
+                <TileDesign>K_Armory_01</TileDesign>
+                <ConstructionTileDesign>K_Construction1x1_01</ConstructionTileDesign>
+                <DrawnIcon>Improvement_WarCollege.png</DrawnIcon>
+                <DrawnIconConstruction>Improvement_WarCollege_C.png</DrawnIconConstruction>
+                <Thumbnail>K_WarCollege_01_Thumb.png</Thumbnail>
+                <Medallions InternalName="">
+                    <All>K_WarCollege_01_Thumb.png</All>
+                </Medallions>
+            </ImprovementTypeArtSubPack>
+        </ImprovementTypeArtDef>
+    </ImprovementType>
+
+    <ImprovementType InternalName="EmigrationOffice">
+        <DisplayName>Emigration Office</DisplayName>
+        <Description>This office uses emigration incentives to match the unemployed and crowded populations, with labor shortages and surplus food supplies across your lands.</Description>
+        <RequiresCity>1</RequiresCity>
+        <RequiresForceUnlock>1</RequiresForceUnlock>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>Town</RequiredImprovement>
+        <LaborToBuild>0</LaborToBuild>
+                <GameModifier>
+                    <ModType>Player</ModType>
+                    <Attribute>AbilityBonus</Attribute>
+                    <StrVal>A_Prestige</StrVal>
+                    <Value>50</Value>
+		    <Provides>+50% growth in all your cities</Provides>
+                </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+            <AITag>Prestige</AITag>
+        </AIData>
+        <ArtDef>Art_AmethystVault</ArtDef>
+    </ImprovementType>
+
+    <ImprovementType InternalName="WineCellars">
+        <DisplayName>Wine Cellars</DisplayName>
+        <Description>A cellar stocked with the finest vintages your land produces, aged in barrels of the finest wood. Your people will find it hard to disagree with your rule, when they have such quality wine to drink.</Description>
+        <RequiresCity>1</RequiresCity>
+        <RequiresForceUnlock>1</RequiresForceUnlock>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>Town</RequiredImprovement>
+        <LaborToBuild>0</LaborToBuild>
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Additive_Unrest</StrVal>
+            <Value>-10</Value>
+            <Provides>-10% Unrest in all your cities</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>10</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+10 Gildar per Season in this city</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+            <AITag>Prestige</AITag>
+        </AIData>
+        <ArtDef>Art_AmethystVault</ArtDef>
+    </ImprovementType>
+
+    <ImprovementType InternalName="GreatHouseOfGames">
+        <DisplayName>House Of Games</DisplayName>
+        <Description>A palace of games, where gambling and competitions of all sort are tastefully - and profitably - held day and night.</Description>
+        <RequiresCity>1</RequiresCity>
+        <RequiresForceUnlock>1</RequiresForceUnlock>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>Town</RequiredImprovement>
+        <LaborToBuild>0</LaborToBuild>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>1.5</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+50% Gildar in this city</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+            <AITag>Prestige</AITag>
+        </AIData>
+        <ArtDef>Art_AmethystVault</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="TownUltimate">
+        <DisplayName>Miraculous Well</DisplayName>
+        <Description>Your arcane society is able to create a well that pulls up enchanted water without exhaustion. Anyone who drinks of it is completely slaked of thirst, and cured of ailments. Any crops irrigated with the water flourish. Day and night, men pull up the buckets of literal 'eau de vie,' and fill barrels to ship across your lands. In the soil of your farms, this water could create a golden age for your nation.</Description>
+        <RequiresCity>1</RequiresCity>
+        <RequiresForceUnlock>1</RequiresForceUnlock>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>Town</RequiredImprovement>
+        <LaborToBuild>0</LaborToBuild>
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Additive_FoodPerGrain</StrVal>
+            <Value>100</Value>
+            <Provides>+100 Food per Grain for your faction</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+            <UpgradeComparisonText>Faction Food per Grain</UpgradeComparisonText>
+        </GameModifier>
+                <GameModifier>
+                    <ModType>Player</ModType>
+                    <Attribute>AbilityBonus</Attribute>
+                    <StrVal>A_Prestige</StrVal>
+                    <Value>200</Value>
+            <Provides>+200% Growth in all your cities</Provides>
+                </GameModifier>
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Additive_Unrest</StrVal>
+            <Value>-20</Value>
+            <Provides>-20% Unrest in all your cities</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+            <AITag>Prestige</AITag>
+        </AIData>
+        <ArtDef>Art_Well</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="ConclaveUltimate">
+        <DisplayName>Arcana-Gravitic Tower</DisplayName>
+        <Description>Your arcane society raises a structure that attracts mana itself. Like a lightning rod, it gathers magic from the ground, the air, and the sky, focusing untold energy to you.</Description>
+        <RequiresCity>1</RequiresCity>
+        <RequiresForceUnlock>1</RequiresForceUnlock>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>Conclave</RequiredImprovement>
+        <LaborToBuild>0</LaborToBuild>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Mana</Attribute>
+            <Value>500</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+500 Mana per turn</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+            <AITag>Prestige</AITag>
+        </AIData>
+        <ArtDef>DarklingCityHub1_ArtDef</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="FortressUltimate">
+        <DisplayName>Grandmaster Weaponsmith</DisplayName>
+        <Description>The High Grandmaster Weaponsmith has appeared, and offered his service to your civilization. Build him a Forge, and send him your weapons and armor for finishing - when they reach the hands of your soldiers, your armies shall fight as if Titans.</Description>
+        <RequiresCity>1</RequiresCity>
+        <RequiresForceUnlock>1</RequiresForceUnlock>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>Fortress</RequiredImprovement>
+        <LaborToBuild>0</LaborToBuild>
+        <GameModifier>
+            <ModType>CityTrainingBonus</ModType>
+            <Attribute>TrainingBonus_ApplyUnitModifier_Add</Attribute>
+            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <Value>15</Value>
+            <Provides>+15 Defense for Trained Units</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+            <UpgradeComparisonText>Trained Unit Defense</UpgradeComparisonText>
+        </GameModifier>
+        <GameModifier>
+            <ModType>CityTrainingBonus</ModType>
+            <Attribute>TrainingCostDiscount_Armor</Attribute>
+            <StrVal>Labor</StrVal>
+            <Value>0.5</Value>
+            <Provides>-50% Labor Cost of Armor</Provides>
+            <UpgradeComparisonID>4</UpgradeComparisonID>
+            <UpgradeComparisonText>Armor Labor Cost Discount</UpgradeComparisonText>
+        </GameModifier>
+        <GameModifier>
+            <ModType>CityTrainingBonus</ModType>
+            <Attribute>TrainingCostDiscount_Weapon</Attribute>
+            <StrVal>Labor</StrVal>
+            <Value>0.5</Value>
+            <Provides>-50% the Production cost of Weapons</Provides>
+            <UpgradeComparisonID>5</UpgradeComparisonID>
+            <UpgradeComparisonText>Weapon Labor Cost Discount</UpgradeComparisonText>
+        </GameModifier>
+        <GameModifier>
+            <ModType>CityTrainingBonus</ModType>
+            <Attribute>TrainingBonus_ApplyUnitModifier_Add</Attribute>
+            <StrVal>UnitStat_Attack_Boost</StrVal>
+            <Value>3</Value>
+            <Provides>+3 Attack for Trained Units</Provides>
+            <UpgradeComparisonID>6</UpgradeComparisonID>
+            <UpgradeComparisonText>Trained Unit Attack</UpgradeComparisonText>
+        </GameModifier>
+        <GameModifier>
+            <ModType>CityTrainingBonus</ModType>
+            <Attribute>TrainingBonus_ApplyUnitModifier_Add</Attribute>
+            <StrVal>UnitStat_HitPoints</StrVal>
+            <Value>3</Value>
+            <Provides>Trained units get +3 Hit Points</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>CityTrainingBonus</ModType>
+            <Attribute>TrainingBonus_ApplyUnitModifier_Add</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>2</Value>
+            <Provides>+2 Initiative for Trained Units</Provides>
+        </GameModifier>
+        <GameModifier>
+            <Provides>Unlocks some Brutal Weaponry and Reinforced Armor in the shop</Provides>
+        </GameModifier>
+        <UnlocksShopItem>Broadsword_Brutal</UnlocksShopItem>
+        <UnlocksShopItem>YewLongbow_Brutal</UnlocksShopItem>
+        <UnlocksShopItem>PlateBreastpiece_Reinforced</UnlocksShopItem>
+        <UnlocksShopItem>TowerShield_Reinforced</UnlocksShopItem>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+            <AITag>Prestige</AITag>
+        </AIData>
+        <ArtDef>Art_IronWorks</ArtDef>
+    </ImprovementType>
+
+<!-- Below is support for the undead -->
+
+
+       <ImprovementType InternalName="Necropolis">
+                <UpgradesToImprovement>Necropolis2</UpgradesToImprovement>
+        </ImprovementType>
+       
+        <ImprovementType InternalName="Necropolis2">
+            <DisplayName>Halls Of The Dead</DisplayName>
+            <Description>Upgrades the ultimate memorial to the dead.</Description>
+            <RequiresCity>1</RequiresCity>
+            <BarredTerrain>River</BarredTerrain>
+            <BarredTerrain>SwampTerrain</BarredTerrain>
+            <PreferredTerrain>City</PreferredTerrain>
+            <PreferredTerrain>Category:Land</PreferredTerrain>
+            <PreferredTerrain>Forest</PreferredTerrain>      
+            <UpgradesToImprovement>Necropolis3</UpgradesToImprovement>
+            <UpgradeTier>4</UpgradeTier>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Attribute>DLC04_UndeadFaction</Attribute>
+                <Target>Player</Target>
+            </Prereq>
+            <Prereq>
+                <Type>Tech</Type>
+                <Attribute>Guilds</Attribute>
+            </Prereq>
+            <LaborToBuild>1600</LaborToBuild>
+            <GameModifier>
+                <ModType>Resource</ModType>
+                <Attribute>Graves</Attribute>
+                <Value>1300</Value>
+                <PerTurn>1</PerTurn>
+                <Provides>+1300 Graves</Provides>
+                <UpgradeComparisonID>1</UpgradeComparisonID>
+                <UpgradeComparisonText>Graves</UpgradeComparisonText>
+            </GameModifier>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>10</AIPriority>
+                <AITag>Economy</AITag>
+            </AIData>
+            <ArtDef>DLC04_Necropolis_ArtDef</ArtDef>
+            <ImprovementTypeArtDef InternalName="DLC04_Necropolis_ArtDef">
+                <ImprovementTypeArtSubPack InternalName="DLC04_Necropolis_Default">
+                    <TileDesign>DLC04_Necropolis_01</TileDesign>
+                    <ConstructionTileDesign>F_Construction1x1_01</ConstructionTileDesign>
+                    <DrawnIcon>DLC04_Improvement_Necropolis.png</DrawnIcon>
+                    <DrawnIconConstruction>DLC04_Improvement_Necropolis_C.png</DrawnIconConstruction>
+                    <Thumbnail>DLC04_Necropolis_Thumb_01.png</Thumbnail>
+                    <Medallions InternalName="">
+                        <All>DLC04_Necropolis_Thumb_01.png</All>
+                    </Medallions>
+                </ImprovementTypeArtSubPack>
+            </ImprovementTypeArtDef>
+        </ImprovementType>
+        <ImprovementType InternalName="Necropolis3">
+            <DisplayName>Undercity Of The Dead</DisplayName>
+            <Description>The ultimate upgrade to the ultimate memorial to the dead.</Description>
+            <RequiresCity>1</RequiresCity>
+            <BarredTerrain>River</BarredTerrain>
+            <BarredTerrain>SwampTerrain</BarredTerrain>
+            <PreferredTerrain>City</PreferredTerrain>
+            <PreferredTerrain>Category:Land</PreferredTerrain>
+            <PreferredTerrain>Forest</PreferredTerrain>
+            <UpgradeTier>5</UpgradeTier>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Attribute>DLC04_UndeadFaction</Attribute>
+                <Target>Player</Target>
+            </Prereq>
+            <Prereq>
+                <Type>Tech</Type>
+                <Attribute>Guilds</Attribute>
+            </Prereq>
+            <LaborToBuild>3600</LaborToBuild>
+            <GameModifier>
+                <ModType>Resource</ModType>
+                <Attribute>Graves</Attribute>
+                <Value>3000</Value>
+                <PerTurn>1</PerTurn>
+                <Provides>+3000 Graves</Provides>
+                <UpgradeComparisonID>1</UpgradeComparisonID>
+                <UpgradeComparisonText>Graves</UpgradeComparisonText>
+            </GameModifier>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>10</AIPriority>
+                <AITag>Economy</AITag>
+            </AIData>
+            <ArtDef>DLC04_Necropolis_ArtDef</ArtDef>
+            <ImprovementTypeArtDef InternalName="DLC04_Necropolis_ArtDef">
+                <ImprovementTypeArtSubPack InternalName="DLC04_Necropolis_Default">
+                    <TileDesign>DLC04_Necropolis_01</TileDesign>
+                    <ConstructionTileDesign>F_Construction1x1_01</ConstructionTileDesign>
+                    <DrawnIcon>DLC04_Improvement_Necropolis.png</DrawnIcon>
+                    <DrawnIconConstruction>DLC04_Improvement_Necropolis_C.png</DrawnIconConstruction>
+                    <Thumbnail>DLC04_Necropolis_Thumb_01.png</Thumbnail>
+                    <Medallions InternalName="">
+                        <All>DLC04_Necropolis_Thumb_01.png</All>
+                    </Medallions>
+                </ImprovementTypeArtSubPack>
+            </ImprovementTypeArtDef>
+        </ImprovementType>
+
+</ImprovementTypes>
+
+//here are the level 6 and level 7 ability choices
+
+<AbilityBonuses>
+   <AbilityBonus InternalName="CityLevel_UnlockLevel6">
+    	<AbilityBonusType>City_Level</AbilityBonusType>
+    	<AbilityBonusOption InternalName="UnlockInquisition">
+            <DisplayName>Inquisition Halls</DisplayName>
+            <Description>None can defy you, and escape the long arm of your agents. Those suspected of wrongdoing are brought within, and their unruly wills bent to order. Even those who seek privacy are watched and followed by your vigilant inquisitors. Great minds and deeds may be muted by the ever-present eyes of your agents - but is that not the price of peace?</Description>
+            <Icon>K_Tower_of_The_Magi_Thumb_01.png</Icon>	        
+            <Likelihood>400</Likelihood>
+            <RarityDisplay>Common</RarityDisplay>
+            <RequiredLevel>6</RequiredLevel>
+	    <GameModifier>
+                <ModType>City</ModType>
+                <Attribute>UnlockImprovement</Attribute>
+                <BoolVal1>1</BoolVal1>
+                <StrVal>Inquisition</StrVal>
+            </GameModifier>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>City</Target>
+                <Attribute>UnlockFortress</Attribute>
+            </Prereq>            
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>   
+
+    	<AbilityBonusOption InternalName="UnlockMartialSkillAcademy">
+            <DisplayName>Martial Skill Academy</DisplayName>
+            <Description>Your greatest warriors retire here to become masters. They drill lethal combat techniques and skills into your trained soldiers, that they might fight to the most skillful extent their mortal bodies allow.</Description>
+            <Icon>K_Tower_of_The_Magi_Thumb_01.png</Icon>	        
+            <Likelihood>400</Likelihood>
+            <RarityDisplay>Common</RarityDisplay>
+            <RequiredLevel>6</RequiredLevel>
+	    <GameModifier>
+                <ModType>City</ModType>
+                <Attribute>UnlockImprovement</Attribute>
+                <BoolVal1>1</BoolVal1>
+                <StrVal>MartialSkillAcademy</StrVal>
+            </GameModifier>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>City</Target>
+                <Attribute>UnlockFortress</Attribute>
+            </Prereq>            
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>   
+
+    	<AbilityBonusOption InternalName="UnlockMagiWarAcademy">
+            <DisplayName>Magi War Academy</DisplayName>
+            <Description>This war academy teaches your warriors to survive battles against channelers.</Description>
+            <Icon>K_Tower_of_The_Magi_Thumb_01.png</Icon>	        
+            <Likelihood>400</Likelihood>
+            <RarityDisplay>Common</RarityDisplay>
+            <RequiredLevel>6</RequiredLevel>
+	    <GameModifier>
+                <ModType>City</ModType>
+                <Attribute>UnlockImprovement</Attribute>
+                <BoolVal1>1</BoolVal1>
+                <StrVal>MagiWarAcademy</StrVal>
+            </GameModifier>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>City</Target>
+                <Attribute>UnlockFortress</Attribute>
+            </Prereq>           
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>   
+
+    	<AbilityBonusOption InternalName="UnlockEmigrationOffice">
+            <DisplayName>Emigration Office</DisplayName>
+            <Description>This office uses emigration incentives to match the unemployed and crowded populations, with labor shortages and surplus food supplies across your lands.</Description>
+            <Icon>K_Tower_of_The_Magi_Thumb_01.png</Icon>	        
+            <Likelihood>400</Likelihood>
+            <RarityDisplay>Common</RarityDisplay>
+            <RequiredLevel>6</RequiredLevel>
+	    <GameModifier>
+                <ModType>City</ModType>
+                <Attribute>UnlockImprovement</Attribute>
+                <BoolVal1>1</BoolVal1>
+                <StrVal>EmigrationOffice</StrVal>
+            </GameModifier>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>City</Target>
+                <Attribute>UnlockTradeGuild</Attribute>
+            </Prereq>            
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>   
+
+    	<AbilityBonusOption InternalName="UnlockHouseOfGames">
+            <DisplayName>Great House Of Games</DisplayName>
+            <Description>A palace of games, where gambling and competitions of all sort are tastefully - and profitably - held all day and all night, in every season.</Description>
+            <Icon>K_Tower_of_The_Magi_Thumb_01.png</Icon>	        
+            <Likelihood>400</Likelihood>
+            <RarityDisplay>Common</RarityDisplay>
+            <RequiredLevel>6</RequiredLevel>
+	    <GameModifier>
+                <ModType>City</ModType>
+                <Attribute>UnlockImprovement</Attribute>
+                <BoolVal1>1</BoolVal1>
+                <StrVal>GreatHouseOfGames</StrVal>
+            </GameModifier>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>City</Target>
+                <Attribute>UnlockTradeGuild</Attribute>
+            </Prereq>            
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>   
+
+
+    	<AbilityBonusOption InternalName="UnlockWineCellars">
+            <DisplayName>Wine Cellars</DisplayName>
+            <Description>A cellar stocked with the finest vintages your land produces, aged in barrels of the finest wood. Your people will find it hard to disagree with your rule, when they have such quality wine to drink.</Description>
+            <Icon>K_Tower_of_The_Magi_Thumb_01.png</Icon>	        
+            <Likelihood>400</Likelihood>
+            <RarityDisplay>Common</RarityDisplay>
+            <RequiredLevel>6</RequiredLevel>
+	    <GameModifier>
+                <ModType>City</ModType>
+                <Attribute>UnlockImprovement</Attribute>
+                <BoolVal1>1</BoolVal1>
+                <StrVal>WineCellars</StrVal>
+            </GameModifier>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>City</Target>
+                <Attribute>UnlockTradeGuild</Attribute>
+            </Prereq>            
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>   
+
+
+    	<AbilityBonusOption InternalName="UnlockArcaneForge">
+            <DisplayName>Arcane Forge</DisplayName>
+            <Description>A crude mimicry of the Forge Of The Overlord. While it is utterly eclipsed by the miracle of the Forge proper, this enchanting focal point can still produce small wonders for your faction.</Description>
+            <Icon>K_Tower_of_The_Magi_Thumb_01.png</Icon>	        
+            <Likelihood>400</Likelihood>
+            <RarityDisplay>Common</RarityDisplay>
+            <RequiredLevel>6</RequiredLevel>
+	    <GameModifier>
+                <ModType>City</ModType>
+                <Attribute>UnlockImprovement</Attribute>
+                <BoolVal1>1</BoolVal1>
+                <StrVal>ArcaneForge</StrVal>
+            </GameModifier>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>City</Target>
+                <Attribute>UnlockConclave</Attribute>
+            </Prereq>            
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>   
+
+    	<AbilityBonusOption InternalName="UnlockIruConstruct">
+            <DisplayName>Iru Construct</DisplayName>
+            <Description>This crystalline aggregation is imbued with life energy, an attempt to re-create the treasure of the long-lost valley of Iru T'Alavar.</Description>
+            <Icon>K_Tower_of_The_Magi_Thumb_01.png</Icon>	        
+            <Likelihood>400</Likelihood>
+            <RarityDisplay>Common</RarityDisplay>
+            <RequiredLevel>6</RequiredLevel>
+	    <GameModifier>
+                <ModType>City</ModType>
+                <Attribute>UnlockImprovement</Attribute>
+                <BoolVal1>1</BoolVal1>
+                <StrVal>IruConstruct</StrVal>
+            </GameModifier>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>City</Target>
+                <Attribute>UnlockConclave</Attribute>
+            </Prereq>            
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>   
+
+
+    	<AbilityBonusOption InternalName="UnlockGraveyardTemple">
+            <DisplayName>Graveyard Temple</DisplayName>
+            <Description>A flooded mass grave, a dare to the powers of death to come forth.</Description>
+            <Icon>K_Tower_of_The_Magi_Thumb_01.png</Icon>	        
+            <Likelihood>400</Likelihood>
+            <RarityDisplay>Common</RarityDisplay>
+            <RequiredLevel>6</RequiredLevel>
+	    <GameModifier>
+                <ModType>City</ModType>
+                <Attribute>UnlockImprovement</Attribute>
+                <BoolVal1>1</BoolVal1>
+                <StrVal>GraveyardTemple</StrVal>
+            </GameModifier>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>City</Target>
+                <Attribute>UnlockConclave</Attribute>
+            </Prereq>            
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>   
+   </AbilityBonus>
+
+   <AbilityBonus InternalName="CityLevel_UnlockLevel7">
+    	<AbilityBonusType>City_Level</AbilityBonusType>
+    	<AbilityBonusOption InternalName="UnlockConclaveUltimate">
+            <DisplayName>Arcana-Gravitic Tower</DisplayName>
+            <Description>Your arcane society raises a structure that attracts mana itself. Like a lightning rod, it gathers magic from the ground, the air, and the sky, focusing untold energy to you.</Description>
+            <Icon>K_Tower_of_The_Magi_Thumb_01.png</Icon>	        
+            <Likelihood>400</Likelihood>
+            <RarityDisplay>Common</RarityDisplay>
+            <RequiredLevel>7</RequiredLevel>
+	    <GameModifier>
+                <ModType>City</ModType>
+                <Attribute>UnlockImprovement</Attribute>
+                <BoolVal1>1</BoolVal1>
+                <StrVal>ConclaveUltimate</StrVal>
+            </GameModifier>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>City</Target>
+                <Attribute>UnlockConclave</Attribute>
+            </Prereq>            
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>   
+
+    	<AbilityBonusOption InternalName="UnlockTownUltimate">
+            <DisplayName>Miraculous Well</DisplayName>
+            <Description>Your arcane society is able to create a well that eternally pulls up enchanted water. Anyone who drinks of it is completely slaked of thirst, and cured of ailments. Any crops irrigated with the water flourish. Day and night, men pull up the buckets of literal 'eau de vie,' and fill barrels to ship across your lands. In the soil of your farms, this water could create a golden age for your nation.</Description>
+            <Icon>K_Tower_of_The_Magi_Thumb_01.png</Icon>	        
+            <Likelihood>400</Likelihood>
+            <RarityDisplay>Common</RarityDisplay>
+            <RequiredLevel>7</RequiredLevel>
+	    <GameModifier>
+                <ModType>City</ModType>
+                <Attribute>UnlockImprovement</Attribute>
+                <BoolVal1>1</BoolVal1>
+                <StrVal>TownUltimate</StrVal>
+            </GameModifier> 
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>City</Target>
+                <Attribute>UnlockTradeGuild</Attribute>
+            </Prereq>          
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>   
+
+    	<AbilityBonusOption InternalName="UnlockFortressUltimate">
+            <DisplayName>Grandmaster Weaponsmith</DisplayName>
+            <Description>The Grandmaster Weaponsmith has appeared, and offered his service to your civilization. Build him a Forge, and assign him your weapons and armor production - when they reach the hands of your soldiers, they shall fight as if Titans.</Description>
+            <Icon>K_Tower_of_The_Magi_Thumb_01.png</Icon>	        
+            <Likelihood>400</Likelihood>
+            <RarityDisplay>Common</RarityDisplay>
+            <RequiredLevel>7</RequiredLevel>
+	    <GameModifier>
+                <ModType>City</ModType>
+                <Attribute>UnlockImprovement</Attribute>
+                <BoolVal1>1</BoolVal1>
+                <StrVal>FortressUltimate</StrVal>
+            </GameModifier>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>City</Target>
+                <Attribute>UnlockFortress</Attribute>
+            </Prereq>            
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>   
+   </AbilityBonus>
+
+</AbilityBonuses>

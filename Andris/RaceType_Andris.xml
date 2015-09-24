@@ -1,0 +1,23 @@
+<RaceTypes>
+
+	<RaceType InternalName="Race_Type_Andris">
+		<DisplayName>Andris</DisplayName>
+		<RaceClassification>Men</RaceClassification>
+		<UnitScale>1.0</UnitScale>
+		<UnitSkinColor>114,78,45,255</UnitSkinColor>
+		<UnitHairColor>40,40,40,255</UnitHairColor>
+		<MaleUnitType>Generic_Sovereign_Andris_Male</MaleUnitType>
+		<FemaleUnitType>Generic_Sovereign_Andris_Female</FemaleUnitType>
+		<GenericUnitType_Male>Generic_Andris_Male</GenericUnitType_Male>
+		<GenericUnitType_Female>Generic_Andris_Female</GenericUnitType_Female>
+        <TraderUnitType>TraderTest</TraderUnitType>
+        <StartingUnitType>Unit_Peasant_Andris</StartingUnitType>
+        <StartingUnitType>Unit_Pioneer_Andris</StartingUnitType>
+        <StartingUnitType>Unit_Spearman_Andris</StartingUnitType>
+        <StartingUnitType>Unit_Catapult</StartingUnitType>
+        <SageUnitType>Sage_Andris</SageUnitType>
+        <ShopkeeperUnitType>Shopkeeper_Andris</ShopkeeperUnitType>
+		<MusicTheme>WanderersHome</MusicTheme>
+	</RaceType>
+	
+</RaceTypes>

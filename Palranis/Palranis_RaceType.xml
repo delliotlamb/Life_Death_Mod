@@ -1,0 +1,24 @@
+<RaceType>
+
+<RaceType InternalName="Race_Type_PalraniQuendar">
+		<DisplayName>Palrani Quendar</DisplayName>
+		<RaceClassification>Fallen</RaceClassification>
+		<UnitScale>1.0</UnitScale>
+		<UnitSkinColor>138,61,13</UnitSkinColor>
+		<UnitHairColor>200,200,200</UnitHairColor>
+		<MaleUnitType>Generic_Sovereign_Palranis_Male</MaleUnitType>
+		<FemaleUnitType>Generic_Sovereign_Palranis_Female</FemaleUnitType>
+		<GenericUnitType_Male>Generic_Palranis_Male</GenericUnitType_Male>
+		<GenericUnitType_Female>Generic_Palranis_Female</GenericUnitType_Female>
+        <TraderUnitType>TraderTest</TraderUnitType>
+        <StartingUnitType>Smasher_Palranis</StartingUnitType>
+        <StartingUnitType>Unit_Pioneer_PalraniQuendar</StartingUnitType>
+        <StartingUnitType>Unit_Catapult</StartingUnitType>
+        <StartingUnitType>Expeditioners_Palranis</StartingUnitType>
+        <StartingUnitType>Unit_Mage_Quendar</StartingUnitType>
+        <SageUnitType>Sage_Palranis</SageUnitType>
+        <ShopkeeperUnitType>Shopkeeper_Palranis</ShopkeeperUnitType>
+        <MusicTheme>AncientShadow</MusicTheme>
+	</RaceType>
+	
+<RaceType>

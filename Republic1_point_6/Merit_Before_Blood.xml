@@ -1,0 +1,1696 @@
+<AbilityBonuses>
+
+<AbilityBonus InternalName="OutcastAbility">
+        <AbilityBonusType>Unit_Injury</AbilityBonusType>
+        <AbilityBonusOption InternalName="Outcast">
+            <DisplayName>Shamed</DisplayName>
+            <Description>-5% to Hit Points, -2 initiative</Description>
+            <Icon>Ability_Cowardly_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_CombatSpeed</StrVal>
+                <Value>-1</Value>
+                <Provides>-1 Initiative</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_HitPoints</StrVal>
+                <Value>-2</Value>
+                <Provides>-2 Hit points</Provides>
+            </GameModifier>			
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_BG_HasInjuries</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Injury</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Accuracy</StrVal>
+                <Value>-5</Value>
+                <Provides>-5 Accuracy</Provides>
+            </GameModifier>
+			            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MagicPower</StrVal>
+                <Value>-5</Value>
+                <Provides>-5 Spell Mastery</Provides>
+            </GameModifier>
+            <Type>Weakness</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+	<!--<AbilityBonus InternalName="PariahAbility">
+        <AbilityBonusOption InternalName="Pariah">
+            <DisplayName>Pariah</DisplayName>
+            <Description>-5% to Hit Points, -2 initiative</Description>
+            <Icon>Ability_BrokenSpirit_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_CombatSpeed</StrVal>
+                <Value>-1</Value>
+                <Provides>-1 Initiative</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_HitPoints</StrVal>
+                <Value>-2</Value>
+                <Provides>-2 Hit points</Provides>
+            </GameModifier>			
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Accuracy</StrVal>
+                <Value>-5</Value>
+                <Provides>-5 Accuracy</Provides>
+            </GameModifier>
+            <Type>Weakness</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>-->
+
+    <AbilityBonus InternalName="MeritBeforeBloodAbility">
+        <AbilityBonusType>Player</AbilityBonusType>
+        <AbilityBonusOption InternalName="MeritBeforeBlood">
+            <DisplayName>Merit Before Blood</DisplayName>
+            <Description>This faction can recruit outcasts from other lands. They may be Men, Fallen, or another unexpected being.</Description>
+            <Icon>Action_Recruit_Green.png</Icon>
+            <GameModifier>
+                <ModType>Player</ModType>
+                <Attribute>UnlockSpell</Attribute>
+                <StrVal>CallOutcast</StrVal>
+                <Provides>This faction can recruit outcasts from other lands. They may be Men, Fallen, or another unexpected being.</Provides>
+            </GameModifier>		
+            <Cost>1</Cost>
+            <Type>Army</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+</AbilityBonuses>
+
+<UnitTypes>
+
+<UnitType InternalName="Unit_Hero_Quendar">
+        <DisplayName>Quendar Outcast</DisplayName>
+        <Description>These outcasts are like Altarian Henchmen, called to serve by the tolerance of your country.</Description>
+        <DividesBattleExp>0</DividesBattleExp>
+        <Gender>Male</Gender>
+        <IsNPC>1</IsNPC>
+        <IsChampion>1</IsChampion>
+        <IsSovereign>0</IsSovereign>
+        <GetPerksOnLevelUp>1</GetPerksOnLevelUp>
+        <AllowGrouping>0</AllowGrouping>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_HitPoints>10</UnitStat_HitPoints>
+	    <UnitStat_BG_IsChampion>1</UnitStat_BG_IsChampion>
+	    <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
+	    <UnitStat_BG_IsMale>1</UnitStat_BG_IsMale>
+	    <UnitStat_BG_IsRace_Quendar>1</UnitStat_BG_IsRace_Quendar>
+        </LevelMilestone>
+        <Prereq>
+            <Type>Race</Type>
+            <Attribute>Race_Type_Cypher</Attribute>
+        </Prereq>
+        <SelectedAbilityBonusOption>Blood_Quendar</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Hallucinations</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>WaterAdept1</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Outcast</SelectedAbilityBonusOption>
+        <Equipment>Spear</Equipment>
+        <Equipment>F_Male_Quendar_Head_01</Equipment>
+        <Equipment>F_Male_Quendar_Horns_02</Equipment>
+        <Backstory>What was Curgen's imperative to his sons, if not honor? The Titans are gone, and it is time to serve a strong master once more. The Quendar prize honor and strength, but does not honor persist beyond battles and years? Do not those who prove a new strength, deserve honorable servants? I shall serve the country that promises to endure.</Backstory>
+        <AnimationPack>MaleSovereignAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>29</ClothPoseIndex>
+        <Color_Clothing1>64,82,105,255</Color_Clothing1>
+        <Color_Clothing2>255,255,207,255</Color_Clothing2>
+        <Color_Hair>218,218,218,255</Color_Hair>
+        <Color_Metal>60,50,50,255</Color_Metal>
+        <Color_Skin>208,116,88,255</Color_Skin>
+        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\eyes\blinks\eyeblink_m7_Yellow.png</EyeTexture>
+        <InfoCardBackground>BG_Lava</InfoCardBackground>
+        <ModelPath>F_Male_Magnar_Body_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Generic_Male</SoundPack>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\eyeblink_m7_Yellow.png</Texture_Eyes>
+        <Texture_Skin>Magnar_Skin_M_01.dds</Texture_Skin>
+        <UnitModelType>QuendarMale</UnitModelType>
+    </UnitType>
+	
+	<UnitType InternalName="Unit_Hero_Krax">
+        <DisplayName>Krax Outcast</DisplayName>
+        <DividesBattleExp>0</DividesBattleExp>
+        <Gender>Female</Gender>
+        <IsNPC>1</IsNPC>
+        <IsChampion>1</IsChampion>
+        <IsSovereign>0</IsSovereign>
+        <GetPerksOnLevelUp>1</GetPerksOnLevelUp>
+        <AllowGrouping>0</AllowGrouping>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_HitPoints>10</UnitStat_HitPoints>
+			<UnitStat_BG_IsChampion>1</UnitStat_BG_IsChampion>
+			<UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
+			<UnitStat_BG_IsFemale>1</UnitStat_BG_IsFemale>
+			<UnitStat_BG_IsRace_Krax>1</UnitStat_BG_IsRace_Krax>
+        </LevelMilestone>
+        <Prereq>
+            <Type>Race</Type>
+            <Attribute>Race_Type_Cypher</Attribute>
+        </Prereq>		
+        <SelectedAbilityBonusOption>Blood_Krax</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>MissingFinger</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>WaterAdept1</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Outcast</SelectedAbilityBonusOption>
+        <AutoCreateEquipment>Spear_Krax</AutoCreateEquipment>
+        <Equipment>K_Female_Head_03</Equipment>
+        <Equipment>TightBoots_Dark</Equipment>
+        <Equipment>Kraxis_Dress2_Light_Flipped</Equipment>
+        <Equipment>Spouse_FemaleBasicHair</Equipment>
+        <Backstory>We Krax know survival. I have been cast out, but if you take me in I will prove the strength of my people. Even if I must fight my old brothers and sisters themselves, our opponents shall know my strength.</Backstory>
+        <AnimationPack>FemaleSovereignAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>0</ClothPoseIndex>
+        <Color_Clothing1>150,100,50,255</Color_Clothing1>
+        <Color_Clothing2>40,35,30,255</Color_Clothing2>
+        <Color_Hair>47,37,52,255</Color_Hair>
+        <Color_Metal>100,100,110,255</Color_Metal>
+        <Color_Skin>208,163,128,255</Color_Skin>
+        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\eyes\blinks\eyeblink_f3_grn.png</EyeTexture>
+        <InfoCardBackground>BG_EmpireHills</InfoCardBackground>
+        <ModelPath>Gfx\HKB\Units\K_Female_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Generic_Female</SoundPack>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\eyeblink_f3_grn.png</Texture_Eyes>
+        <Texture_Skin>K_Female_Fallen_Texture_01.png</Texture_Skin>
+        <UnitModelType>EmpireFemale</UnitModelType>
+    </UnitType>
+
+<UnitType InternalName="Unit_Hero_Trog">
+        <DisplayName>Trog Outcast</DisplayName>
+        <Description>These outcasts are like Altarian Henchmen, called to serve by the tolerance of your country.</Description>
+        <Class>Spearman</Class>
+        <DividesBattleExp>0</DividesBattleExp>
+        <Gender>Male</Gender>
+        <IsNPC>1</IsNPC>
+        <IsChampion>1</IsChampion>
+        <IsSovereign>0</IsSovereign>
+        <GetPerksOnLevelUp>1</GetPerksOnLevelUp>
+        <AllowGrouping>0</AllowGrouping>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_HitPoints>10</UnitStat_HitPoints>
+	    <UnitStat_BG_IsChampion>1</UnitStat_BG_IsChampion>
+	    <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
+	    <UnitStat_BG_IsMale>1</UnitStat_BG_IsMale>
+	    <UnitStat_BG_IsRace_Trogs>1</UnitStat_BG_IsRace_Trogs>
+        </LevelMilestone>
+        <Prereq>
+            <Type>Race</Type>
+            <Attribute>Race_Type_Cypher</Attribute>
+        </Prereq>
+        <SelectedAbilityBonusOption>Blood_Trog</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>MissingEar</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>AirAdept1</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Outcast</SelectedAbilityBonusOption>
+        <Equipment>Club</Equipment>
+        <Equipment>F_Male_Head_05</Equipment>
+        <Backstory>Ha! What does it matter, the side one fights on? Does it matter, who is slain, Fallen or Man-ling? It does not. What matters is that the mighty strived and bled. Let it be known D'rogs strode for this country! Let its opponents tremble, for D'rogs fight for it!</Backstory>
+        <AnimationPack>MaleSovereignAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>29</ClothPoseIndex>
+        <Color_Clothing1>56,33,13,255</Color_Clothing1>
+        <Color_Clothing2>184,148,85,255</Color_Clothing2>
+        <Color_Hair>177,187,197,255</Color_Hair>
+        <Color_Metal>80,75,90,255</Color_Metal>
+        <Color_Skin>133,128,128,255</Color_Skin>
+        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\eyes\blinks\eyeblink_m5_White.png</EyeTexture>
+        <InfoCardBackground>BG_EmpireRugged</InfoCardBackground>
+        <InfoCardBackgroundFlipped>0</InfoCardBackgroundFlipped>
+        <ModelPath>Gfx\HKB\Units\F_Male_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Generic_Male</SoundPack>
+        <TacticalModelScale>1.6</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\eyeblink_m5_White.png</Texture_Eyes>
+        <Texture_Skin>Trog_Skin_M_03.png</Texture_Skin>
+        <UnitModelType>FallenMale</UnitModelType>
+    </UnitType>
+
+ <UnitType InternalName="Unit_Hero_Amarian">
+        <DisplayName>Amarian Outcast</DisplayName>
+        <Description>These outcasts are like Altarian Henchmen, called to serve by the tolerance of your country.</Description>
+        <DividesBattleExp>0</DividesBattleExp>
+        <Gender>Male</Gender>
+        <IsNPC>1</IsNPC>
+        <IsChampion>1</IsChampion>
+        <IsSovereign>0</IsSovereign>
+        <GetPerksOnLevelUp>1</GetPerksOnLevelUp>
+        <AllowGrouping>0</AllowGrouping>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_HitPoints>10</UnitStat_HitPoints>
+	    <UnitStat_BG_IsChampion>1</UnitStat_BG_IsChampion>
+	    <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
+	    <UnitStat_BG_IsMale>1</UnitStat_BG_IsMale>
+	    <UnitStat_BG_IsRace_Amarians>1</UnitStat_BG_IsRace_Amarians>
+        </LevelMilestone>
+        <Prereq>
+            <Type>Race</Type>
+            <Attribute>Race_Type_Cypher</Attribute>
+        </Prereq>
+        <SelectedAbilityBonusOption>Blood_Amarian</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>MissingFinger</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>EarthAdept1</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Outcast</SelectedAbilityBonusOption>
+        <Equipment>Staff</Equipment>
+        <Equipment>K_Male_Head_05</Equipment>
+        <Equipment>Sovereign_Short_Hair_02</Equipment>
+        <Backstory>Nobility is in action. And the magic in these veins shall serve any country that upholds nobility and honor.</Backstory>
+        <AnimationPack>MaleSovereignAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>29</ClothPoseIndex>
+        <Color_Hair>195,160,110,255</Color_Hair>
+        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\eyes\blinks\eyeblink_m3_brwn.png</EyeTexture>
+        <InfoCardBackground>BG_River</InfoCardBackground>
+        <InfoCardBackgroundFlipped>0</InfoCardBackgroundFlipped>
+        <ModelPath>Gfx\HKB\Units\K_Male_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Generic_Male</SoundPack>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\eyeblink_m3_brwn.png</Texture_Eyes>
+        <Texture_Skin>K_Male_Evil_Texture_01.png</Texture_Skin>
+        <UnitModelType>AmarianMale</UnitModelType>
+    </UnitType>
+
+<UnitType InternalName="Unit_Hero_Tarth">
+        <DisplayName>Tarth Outcast</DisplayName>
+        <Description>These outcasts are like Altarian Henchmen, called to serve by the tolerance of your country.</Description>
+        <DividesBattleExp>0</DividesBattleExp>
+        <Gender>Male</Gender>
+        <IsNPC>1</IsNPC>
+        <IsChampion>1</IsChampion>
+        <IsSovereign>0</IsSovereign>
+        <GetPerksOnLevelUp>1</GetPerksOnLevelUp>
+        <AllowGrouping>0</AllowGrouping>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_HitPoints>10</UnitStat_HitPoints>
+	    <UnitStat_BG_IsChampion>1</UnitStat_BG_IsChampion>
+	    <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
+	    <UnitStat_BG_IsMale>1</UnitStat_BG_IsMale>
+	    <UnitStat_BG_IsRace_Tarthans>1</UnitStat_BG_IsRace_Tarthans>
+        </LevelMilestone>
+        <Prereq>
+            <Type>Race</Type>
+            <Attribute>Race_Type_Cypher</Attribute>
+        </Prereq>
+        <SelectedAbilityBonusOption>Blood_Tarth</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Pneumonia</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>FireAdept1</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Outcast</SelectedAbilityBonusOption>
+        <Equipment>Spear</Equipment>
+        <Equipment>F_Head_Wraith_Mesh_04</Equipment>
+        <Equipment>Sovereign_Bandit_Hair_ID1</Equipment>
+        <Backstory>I do not care who I fight. So long as I do so for purpose, I shall fight back the Dred'nir themselves!</Backstory>
+        <AnimationPack>MaleSovereignAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>29</ClothPoseIndex>
+        <Color_Hair>73,48,38,255</Color_Hair>
+        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\eyes\blinks\eyeblink_m2_olive.png</EyeTexture>
+        <InfoCardBackground>BG_Swamp</InfoCardBackground>
+        <InfoCardBackgroundFlipped>0</InfoCardBackgroundFlipped>
+        <ModelPath>Gfx\HKB\Units\K_Male_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Generic_Male</SoundPack>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\eyeblink_m2_olive.png</Texture_Eyes>
+        <Texture_Skin>K_Male_Tattoo_Texture_01.png</Texture_Skin>
+        <UnitModelType>TarthanMale</UnitModelType>
+    </UnitType>
+
+    <UnitType InternalName="Unit_Hero_Wolf">
+        <DisplayName>Lone Wolf</DisplayName>
+        <DividesBattleExp>0</DividesBattleExp>
+        <CreatureType>Beast</CreatureType>
+        <Unique>1</Unique>
+        <CanBeDesigned>0</CanBeDesigned>		
+        <IsNPC>1</IsNPC>
+        <IsChampion>1</IsChampion>
+        <IsSovereign>0</IsSovereign>
+        <GetPerksOnLevelUp>1</GetPerksOnLevelUp>
+        <AllowGrouping>0</AllowGrouping>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_HitPoints>20</UnitStat_HitPoints>
+            <UnitStat_Attack_Pierce>20</UnitStat_Attack_Pierce>
+            <UnitStat_Defense_Pierce>3</UnitStat_Defense_Pierce>
+            <UnitStat_Dodge>20</UnitStat_Dodge>			
+            <UnitStat_Moves>3</UnitStat_Moves>
+			<UnitStat_BG_IsChampion>1</UnitStat_BG_IsChampion>
+			<UnitStat_BG_IsMonster>1</UnitStat_BG_IsMonster>	    
+			<UnitStat_BG_IsBeast>1</UnitStat_BG_IsBeast>
+        </LevelMilestone>
+        <Prereq>
+            <Type>Race</Type>
+            <Attribute>Race_Type_Cypher</Attribute>
+        </Prereq>
+        <SelectedAbilityBonusOption>Counterattack</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Hallucinations</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>WaterAdept1</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Outcast</SelectedAbilityBonusOption>
+        <Backstory>(silent stare)</Backstory>
+        <Medallions InternalName="">
+            <All>M_Wolf_EbbenWolf_Card.png</All>
+        </Medallions>
+        <AnimationPack>WolfAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <Color_Skin>50,45,45</Color_Skin>
+        <CutSceneDataPack>WolfUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx/eyes/male_brown_eye.png</EyeTexture>
+        <InfoCardBackground>BG1_Sunset</InfoCardBackground>
+        <ModelPath>gfx/hkb/Monsters/M_Wolf_Mesh_01.hkb</ModelPath>
+        <ModelScale>2.25</ModelScale>
+        <OnAttackParticleName>Bite_Attack</OnAttackParticleName>
+        <OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+        <SkeletonPath>Gfx\HKB\Monsters\M_Wolf_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Wolf1</SoundPack>
+        <TacticalModelScale>2</TacticalModelScale>
+        <Texture_Skin>M_Wolf_Texture_01.png</Texture_Skin>
+    </UnitType>
+
+<UnitType InternalName="Unit_Hero_Hergon">
+        <DisplayName>Hergon Aberration</DisplayName>
+        <DividesBattleExp>0</DividesBattleExp>
+        <CreatureType>Beast</CreatureType>
+        <Unique>1</Unique>
+        <CanBeDesigned>0</CanBeDesigned>
+        <IsNPC>1</IsNPC>
+        <IsChampion>1</IsChampion>
+        <IsSovereign>0</IsSovereign>
+        <GetPerksOnLevelUp>1</GetPerksOnLevelUp>
+        <AllowGrouping>0</AllowGrouping>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_HitPoints>20</UnitStat_HitPoints>
+            <UnitStat_Attack_Pierce>20</UnitStat_Attack_Pierce>
+            <UnitStat_Defense_Pierce>10</UnitStat_Defense_Pierce>			
+            <UnitStat_Moves>3</UnitStat_Moves>
+			<UnitStat_BG_IsChampion>1</UnitStat_BG_IsChampion>
+			<UnitStat_BG_IsMonster>1</UnitStat_BG_IsMonster>
+			<UnitStat_BG_IsBeast>1</UnitStat_BG_IsBeast>
+        </LevelMilestone>
+        <Prereq>
+            <Type>Race</Type>
+            <Attribute>Race_Type_Cypher</Attribute>
+        </Prereq>
+        <SelectedAbilityBonusOption>AirAdept1</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Outcast</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>CallousedHide</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Pneumonia</SelectedAbilityBonusOption>		
+        <Backstory>(silent stare)</Backstory>
+        <Medallions InternalName="">
+            <All>M_SquamategoF_Card_01.png</All>
+        </Medallions>
+        <AnimationPack>GaragoxAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>2.2</ClothMapScale>
+        <Color_Skin>106,81,59,255</Color_Skin>
+        <CutSceneDataPack>WargUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx/eyes/male_brown_eye.png</EyeTexture>
+        <InfoCardBackground>BG11_Tree</InfoCardBackground>
+        <MaxScaleMainMap>1.32</MaxScaleMainMap>
+        <ModelPath>M_Squamatego_Female_Mesh.hkb</ModelPath>
+        <ModelScale>1.5</ModelScale>
+        <OnAttackParticleName>Bite_Attack</OnAttackParticleName>
+        <OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+        <SkeletonPath>Gfx\HKB\Monsters\M_Warg_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Garagox</SoundPack>
+        <TacticalModelScale>3</TacticalModelScale>
+        <Texture_Skin>squamatego_texture.dds</Texture_Skin>
+    </UnitType>
+
+    <UnitType InternalName="Unit_Hero_Spirit">
+        <DisplayName>Wandering Spirit</DisplayName>
+        <DividesBattleExp>0</DividesBattleExp>
+        <Gender>Female</Gender>
+        <IsNPC>1</IsNPC>
+        <IsChampion>1</IsChampion>
+        <IsSovereign>0</IsSovereign>
+        <GetPerksOnLevelUp>1</GetPerksOnLevelUp>
+        <AllowGrouping>0</AllowGrouping>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_HitPoints>10</UnitStat_HitPoints>
+	    <UnitStat_BG_IsChampion>1</UnitStat_BG_IsChampion>
+	    <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
+	    <UnitStat_BG_IsFemale>1</UnitStat_BG_IsFemale>
+	    <UnitStat_BG_IsRace_IsNotAlive>1</UnitStat_BG_IsNotAlive>
+	    <UnitStat_BG_IsImmortal>1</UnitStat_BG_IsImmortal>
+        </LevelMilestone>
+        <Prereq>
+            <Type>Race</Type>
+            <Attribute>Race_Type_Cypher</Attribute>
+        </Prereq>
+        <SelectedAbilityBonusOption>Spirit</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Hallucinations</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>EarthAdept1</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Outcast</SelectedAbilityBonusOption>
+        <Backstory>I had great missions in life. In this next form, my ambitions have not entirely dissipated.</Backstory>
+        <AnimationPack>LightbringerAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>0</ClothPoseIndex>
+        <Color_Metal>240,240,240,255</Color_Metal>
+        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\eyes\blinks\Eyeblink_Banshee.png</EyeTexture>
+        <InfoCardBackground>BG6_WaterCliff</InfoCardBackground>
+        <ModelPath>M_Banshee_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Lightbringer</SoundPack>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\Eyeblink_Banshee.png</Texture_Eyes>
+        <Texture_Trans>M_Wisp_Skin_01.png</Texture_Trans>
+        <UnitModelType>AmarianFemale</UnitModelType>
+        <EffectAttachment>
+            <Attachment>thigh_left_lcf</Attachment>
+            <EffectName>A_Lightbringer_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.1</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>calf_left_lcf</Attachment>
+            <EffectName>A_Lightbringer_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.1</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>foot_left_lcf</Attachment>
+            <EffectName>A_Lightbringer_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.1</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>thigh_right_lcf</Attachment>
+            <EffectName>A_Lightbringer_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.1</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>calf_right_lcf</Attachment>
+            <EffectName>A_Lightbringer_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.1</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>foot_right_lcf</Attachment>
+            <EffectName>A_Lightbringer_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.1</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>shoulder_left_lcf</Attachment>
+            <EffectName>A_Lightbringer_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.1</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>hand_left_lcf</Attachment>
+            <EffectName>A_Lightbringer_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.1</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>forearm_left_lcf</Attachment>
+            <EffectName>A_Lightbringer_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.1</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>forearm_right_lcf</Attachment>
+            <EffectName>A_Lightbringer_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.1</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>head_lcf</Attachment>
+            <EffectName>A_Lightbringer_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.1</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>shoulder_right_lcf</Attachment>
+            <EffectName>A_Lightbringer_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.1</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>hand_right_lcf</Attachment>
+            <EffectName>A_Lightbringer_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.1</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>chest_center_lcf</Attachment>
+            <EffectName>A_LightbringerChest_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.1</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>skirting_left_lcf</Attachment>
+            <EffectName>A_Lightbringer_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.1</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>skirting_right_lcf</Attachment>
+            <EffectName>A_Lightbringer_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.1</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>rear_skirting_lcf</Attachment>
+            <EffectName>A_Lightbringer_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.1</EffectScale>
+        </EffectAttachment>
+    </UnitType>
+
+<UnitType InternalName="Unit_Hero_Mancer">
+        <DisplayName>Mancer Outcast</DisplayName>
+        <Description>Henchmen level and can use equipment like champions, but don't divide experience.</Description>
+        <CreatureType>Champion</CreatureType>
+        <RaceType>Race_Type_Mancers</RaceType>
+        <CanBeDesigned>0</CanBeDesigned>
+        <DividesBattleExp>0</DividesBattleExp>
+        <Gender>Male</Gender>
+        <GetPerksOnLevelUp>1</GetPerksOnLevelUp>
+        <IsNPC>1</IsNPC>
+        <IsChampion>1</IsChampion>
+        <IsSovereign>0</IsSovereign>
+        <SpawnRating>1</SpawnRating>
+        <AllowGrouping>0</AllowGrouping>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_HitPoints>10</UnitStat_HitPoints>
+	    <UnitStat_BG_IsChampion>1</UnitStat_BG_IsChampion>
+	    <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
+	    <UnitStat_BG_IsMale>1</UnitStat_BG_IsMale>
+	    <UnitStat_BG_IsRace_Mancers>1</UnitStat_BG_IsRace_Mancers>
+        </LevelMilestone>
+        <Prereq>
+            <Type>Race</Type>
+            <Attribute>Race_Type_Cypher</Attribute>
+        </Prereq>
+        <SelectedAbilityBonusOption>Blood_Mancer</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Outcast</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Pneumonia</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>WaterAdept1</SelectedAbilityBonusOption>
+        <Backstory>I am no trader. I care little for money or trade, but your society seems to have a purpose I can follow.</Backstory>
+        <Equipment>Club</Equipment>
+        <Equipment>K_Male_Head_02</Equipment>
+        <Equipment>Sovereign_Warrior_Hair</Equipment>
+        <AnimationPack>NoblemanAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>0</ClothPoseIndex>
+        <CutSceneDataPack>HenchmanCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\eyes\blinks\eyeblink_m2_grayblue.png</EyeTexture>
+        <InfoCardBackground>BG_KingdomRugged</InfoCardBackground>
+        <InfoCardBackgroundFlipped>0</InfoCardBackgroundFlipped>
+        <ModelPath>Gfx\HKB\Units\K_Male_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Generic_Male</SoundPack>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\eyeblink_f3_blue.png</Texture_Eyes>
+        <Texture_Skin>K_Male_Default_Texture_01.png</Texture_Skin>
+        <UnitModelType>MancerMale</UnitModelType>
+    </UnitType>
+
+<UnitType InternalName="Unit_Hero_Ironeer">
+        <DisplayName>Ironeer Outcast</DisplayName>
+        <CreatureType>Champion</CreatureType>
+        <RaceType>Race_Type_Ironeers</RaceType>
+        <CanBeDesigned>0</CanBeDesigned>
+        <DividesBattleExp>0</DividesBattleExp>
+        <Gender>Male</Gender>
+        <GetPerksOnLevelUp>1</GetPerksOnLevelUp>
+        <IsNPC>1</IsNPC>
+        <IsChampion>1</IsChampion>
+        <IsSovereign>0</IsSovereign>
+        <SpawnRating>1</SpawnRating>
+        <AllowGrouping>0</AllowGrouping>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_HitPoints>10</UnitStat_HitPoints>
+	    <UnitStat_BG_IsChampion>1</UnitStat_BG_IsChampion>
+	    <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
+	    <UnitStat_BG_IsMale>1</UnitStat_BG_IsMale>
+	    <UnitStat_BG_IsRace_Ironeers>1</UnitStat_BG_IsRace_Ironeers>
+        </LevelMilestone>
+        <Prereq>
+            <Type>Race</Type>
+            <Attribute>Race_Type_Cypher</Attribute>
+        </Prereq>
+        <SelectedAbilityBonusOption>Blood_Ironeer</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Outcast</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>TwistedKnee</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>AirAdept1</SelectedAbilityBonusOption>
+        <Backstory>I am a poor armorer. But I am hearty, and will lend you a stout arm to defeat your foes.</Backstory>
+        <Equipment>Club</Equipment>
+        <Equipment>K_Male_Head_01</Equipment>
+        <Equipment>Sovereign_Beard</Equipment>
+        <Equipment>Sovereign_Short_Hair_04</Equipment>
+        <AnimationPack>NoblemanAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>0</ClothPoseIndex>
+        <CutSceneDataPack>HenchmanCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\eyes\blinks\eyeblink_m2_grayblue.png</EyeTexture>
+        <InfoCardBackground>BG_KingdomRugged</InfoCardBackground>
+        <InfoCardBackgroundFlipped>0</InfoCardBackgroundFlipped>
+        <ModelPath>Gfx\HKB\Units\K_Male_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Generic_Male</SoundPack>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\eyeblink_f3_blue.png</Texture_Eyes>
+        <Texture_Skin>K_Male_beard_Texture_01.png</Texture_Skin>
+        <UnitModelType>IroneerMale</UnitModelType>
+    </UnitType>
+
+<UnitType InternalName="Unit_Hero_Urxen">
+        <DisplayName>Urxen Outcast</DisplayName>
+        <Description>Henchmen level and can use equipment like champions, but don't divide experience.</Description>
+        <CreatureType>Champion</CreatureType>
+        <RaceType>Race_Type_Urxen</RaceType>
+        <Unique>1</Unique>
+        <CanBeDesigned>0</CanBeDesigned>
+        <DividesBattleExp>0</DividesBattleExp>
+        <Gender>Female</Gender>
+        <GetPerksOnLevelUp>1</GetPerksOnLevelUp>
+        <IsNPC>1</IsNPC>
+        <IsChampion>1</IsChampion>
+        <IsSovereign>0</IsSovereign>
+        <SpawnRating>1</SpawnRating>
+        <NPCSpawnLikelihood>0</NPCSpawnLikelihood>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_HitPoints>10</UnitStat_HitPoints>
+	    <UnitStat_BG_IsChampion>1</UnitStat_BG_IsChampion>
+	    <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
+	    <UnitStat_BG_IsMale>1</UnitStat_BG_IsMale>
+	    <UnitStat_BG_IsRace_Urxen>1</UnitStat_BG_IsRace_Urxen>
+        </LevelMilestone>
+        <Prereq>
+            <Type>Race</Type>
+            <Attribute>Race_Type_Cypher</Attribute>
+        </Prereq>
+        <SelectedAbilityBonusOption>Blood_Urxen</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Outcast</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>TwistedAnkle</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>WaterAdept1</SelectedAbilityBonusOption>
+        <Backstory>My kind are rarely pensive. But I have many ideas, and know I am called to greatness. Give me a chance to prove my potential.</Backstory>
+        <Equipment>Club</Equipment>
+        <Equipment>F_Female_Head_Mesh_02</Equipment>
+        <Equipment>Sovereign_Short_Hair_03</Equipment>
+        <AnimationPack>FemaleSovereignAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>16</ClothPoseIndex>
+        <Color_Clothing1>79,48,20,255</Color_Clothing1>
+        <Color_Clothing2>138,95,54,255</Color_Clothing2>
+        <Color_Hair>55,55,75,255</Color_Hair>
+        <Color_Metal>50,35,31,255</Color_Metal>
+        <Color_Skin>155,155,160,255</Color_Skin>
+        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\eyes\blinks\Eyeblink_F4_Red.png</EyeTexture>
+        <InfoCardBackground>BG_BarrenForest</InfoCardBackground>
+        <ModelPath>Gfx\HKB\Units\K_Female_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Generic_Female</SoundPack>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\Eyeblink_F4_Red.png</Texture_Eyes>
+        <Texture_Skin>Urxen_Skin_F_01.png</Texture_Skin>
+        <UnitModelType>UrxenFemale</UnitModelType>
+    </UnitType>
+
+ <UnitType InternalName="Unit_Hero_Wraith">
+        <DisplayName>Wraith Outcast</DisplayName>
+        <Description>Henchmen level and can use equipment like champions, but don't divide experience.</Description>
+        <CreatureType>Champion</CreatureType>
+        <RaceType>Race_Type_Wraiths</RaceType>
+        <Unique>1</Unique>
+        <CanBeDesigned>0</CanBeDesigned>
+        <DividesBattleExp>0</DividesBattleExp>
+        <Gender>Male</Gender>
+        <GetPerksOnLevelUp>1</GetPerksOnLevelUp>
+        <IsNPC>1</IsNPC>
+        <IsChampion>1</IsChampion>
+        <IsSovereign>0</IsSovereign>
+        <SpawnRating>1</SpawnRating>
+        <NPCSpawnLikelihood>0</NPCSpawnLikelihood>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_HitPoints>10</UnitStat_HitPoints>
+	    <UnitStat_BG_IsChampion>1</UnitStat_BG_IsChampion>
+	    <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
+	    <UnitStat_BG_IsMale>1</UnitStat_BG_IsMale>
+	    <UnitStat_BG_IsRace_Wraiths>1</UnitStat_BG_IsRace_Wraiths>
+        </LevelMilestone>
+        <Prereq>
+            <Type>Race</Type>
+            <Attribute>Race_Type_Cypher</Attribute>
+        </Prereq>
+        <SelectedAbilityBonusOption>Blood_Wraith</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Outcast</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>TyphoidFever</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>FireAdept1</SelectedAbilityBonusOption>
+        <Backstory>We are all bound to Ceresa, by magic. But at distance, the bond weakens. I know my destiny is not as a Wraith servant, but for something more.</Backstory>
+        <Equipment>Club</Equipment>
+        <Equipment>F_Head_Wraith_Mesh_07</Equipment>
+        <AnimationPack>MaleSovereignAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>6</ClothPoseIndex>
+        <Color_Clothing1>30,65,100,255</Color_Clothing1>
+        <Color_Clothing2>50,50,60,255</Color_Clothing2>
+        <Color_Hair>58,58,73,255</Color_Hair>
+        <Color_Metal>50,55,70,255</Color_Metal>
+        <Color_Skin>145,155,170,255</Color_Skin>
+        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\eyes\blinks\eyeblink_m5_gold.png</EyeTexture>
+        <InfoCardBackground>BG_Chasm</InfoCardBackground>
+        <ModelPath>Gfx\HKB\Units\K_Male_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Generic_Male</SoundPack>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\eyeblink_m5_gold.png</Texture_Eyes>
+        <Texture_Skin>K_Male_Handsome_Texture_01.png</Texture_Skin>
+        <UnitModelType>WraithMale</UnitModelType>
+    </UnitType>
+
+	<UnitType InternalName="Familiar_Henchman">
+        <DisplayName>Unbound Familiar</DisplayName>
+        <CreatureType>Champion</CreatureType>
+        <Unique>1</Unique>
+        <CanBeDesigned>0</CanBeDesigned>
+        <DividesBattleExp>0</DividesBattleExp>
+        <GetPerksOnLevelUp>1</GetPerksOnLevelUp>
+        <WageOverride>1</WageOverride>
+        <IsNPC>1</IsNPC>
+        <IsChampion>1</IsChampion>
+        <IsSovereign>0</IsSovereign>
+        <SpawnRating>1</SpawnRating>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_Attack_Pierce>20</UnitStat_Attack_Pierce>
+            <UnitStat_Dodge>20</UnitStat_Dodge>			
+            <UnitStat_HitPoints>20</UnitStat_HitPoints>
+			<UnitStat_BG_IsChampion>1</UnitStat_BG_IsChampion>
+			<UnitStat_BG_IsMonster>1</UnitStat_BG_IsMonster>	    
+			<UnitStat_BG_IsRace_IsNotAlive>1</UnitStat_BG_IsNotAlive>
+			<UnitStat_BG_IsImmortal>1</UnitStat_BG_IsImmortal>			
+        </LevelMilestone>
+        <SelectedAbilityBonusOption>Outcast</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Amnesia</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>FireAdept1</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Spirit</SelectedAbilityBonusOption>
+        <Backstory>I was bound to a channeler long ago. She was murdered, and yet I did not fade away. For a long time I have wandered, and I believe I can now serve you.</Backstory>
+        <Medallions InternalName="">
+            <All>M_WargFamiliar_Card.png</All>
+        </Medallions>
+        <AnimationPack>WargAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>2.2</ClothMapScale>
+        <CutSceneDataPack>ShadowWargUnitScenePack</CutSceneDataPack>
+        <EyeTexture>gfx/eyes/male_brown_eye.png</EyeTexture>
+        <InfoCardBackground>BG15_Dark</InfoCardBackground>
+        <LightMap>M_WargFamiliar_Texture_01_L.png</LightMap>
+        <MaxScaleMainMap>0.96</MaxScaleMainMap>
+        <ModelPath>gfx/hkb/Monsters/M_WargFamiliar_Mesh_01.hkb</ModelPath>
+        <ModelScale>2</ModelScale>
+        <OnAttackParticleName>Bite_Attack</OnAttackParticleName>
+        <OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+        <SkeletonPath>Gfx\HKB\Monsters\M_Warg_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Wolf1</SoundPack>
+        <Texture_Trans>M_WargFamiliar_Texture_01.png</Texture_Trans>
+        <EffectAttachment>
+            <Attachment>Chest_Lcf</Attachment>
+            <EffectName>A_FamiliarHeart_Particle3</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.5</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>Neck_Lcf</Attachment>
+            <EffectName>A_FamiliarHeart_Particle3</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.35</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>Head_Lcf</Attachment>
+            <EffectName>A_FamiliarHeart_Particle2</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.2</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>LowerBack_Lcf</Attachment>
+            <EffectName>A_FamiliarHeart_Particle3</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.35</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>Lf_Front_Paw_Lcf</Attachment>
+            <EffectName>A_FamiliarHeart_Particle2</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.25</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>Lf_Front_Paw_Lcf</Attachment>
+            <EffectName>A_FamiliarHeart_Particle3</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.35</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>Rt_Front_Paw_Lcf</Attachment>
+            <EffectName>A_FamiliarHeart_Particle2</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.25</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>Rt_Front_Paw_Lcf</Attachment>
+            <EffectName>A_FamiliarHeart_Particle3</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.18</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>Lf_Front_Knee_Lcf</Attachment>
+            <EffectName>A_FamiliarHeart_Particle2</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.35</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>Rt_Front_Knee_Lcf</Attachment>
+            <EffectName>A_FamiliarHeart_Particle2</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.35</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>Lf_Backleg_Lcf</Attachment>
+            <EffectName>A_FamiliarHeart_Particle2</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.35</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>Rt_Backleg_Lcf</Attachment>
+            <EffectName>A_FamiliarHeart_Particle2</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.35</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>Lf_Back_Ankle_Lcf</Attachment>
+            <EffectName>A_FamiliarHeart_Particle2</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.25</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>Rt_Back_Ankle_Lcf</Attachment>
+            <EffectName>A_FamiliarHeart_Particle2</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.25</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>Lf_Back_Paw_Lcf</Attachment>
+            <EffectName>A_FamiliarHeart_Particle2</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.25</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>Lf_Back_Paw_Lcf</Attachment>
+            <EffectName>A_FamiliarHeart_Particle3</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.18</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>Rt_Back_Paw_Lcf</Attachment>
+            <EffectName>A_FamiliarHeart_Particle2</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.25</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>Rt_Back_Paw_Lcf</Attachment>
+            <EffectName>A_FamiliarHeart_Particle3</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.18</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>Tail_Lcf</Attachment>
+            <EffectName>A_FamiliarHeart_Particle2</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.25</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>TailTip_Lcf</Attachment>
+            <EffectName>A_FamiliarHeart_Particle2</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.2</EffectScale>
+        </EffectAttachment>
+    </UnitType>
+	
+	<!--<UnitType InternalName="Quendar_Warrior">
+		<DisplayName>Quendar Warrior</DisplayName>
+		<Description>A Quendar who may become a champion of yours someday, given sufficient training.</Description>
+		<Quote>'For the kingdom!'</Quote>
+		<Backstory>Some would say the Quendar are too sadistic and evil to ever cooperate with the kingdoms. But honor is the highest virtue to the Quendar, and in some circumstances the upholding of honor means turning away from heritage. A leader that rewards the loyalty and honor of these warriors will command unstoppable might.</Backstory>
+		<HasEssence>false</HasEssence>
+		<ModelPath>F_Male_Magnar_Body_Mesh_01.hkb</ModelPath>
+		<SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+		<EyeTexture>gfx\eyes\blinks\eyeblink_f3_grn.png</EyeTexture>
+		<AnimationPack>SoldierAnimationPack</AnimationPack>
+		<ShowAsSingleUnit>false</ShowAsSingleUnit>
+		<CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+		<ModelScale>1.0000</ModelScale>
+		<TacticalModelScale>1.5000</TacticalModelScale>
+		<EquipmentScale>1.0000</EquipmentScale>
+		<ClothMapScale>1.6000</ClothMapScale>
+		<BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+		<MovementType>land</MovementType>
+		<BobbingFrequency>0.0000</BobbingFrequency>
+		<ClothPoseIndex>6</ClothPoseIndex>
+		<InfoCardBackground>BG_Lava</InfoCardBackground>
+		<InfoCardBackgroundFlipped>1</InfoCardBackgroundFlipped>
+		<CanBeDesigned>1</CanBeDesigned>
+		<UserDesigned>true</UserDesigned>
+		<IsModDependent>false</IsModDependent>
+        <Medallions InternalName="">
+            <All>ObsidianLegion_Medallion.png</All>
+        </Medallions>
+		<MovingSFX>TEMP_KnightMarching1</MovingSFX>
+		<LevelMilestone InternalName="">
+			<Level>1</Level>
+			<UnitStat_BG_IsChampion>1.0000</UnitStat_BG_IsChampion>
+			<UnitStat_BG_IsHumanoid>1.0000</UnitStat_BG_IsHumanoid>
+			<UnitStat_BG_IsMale>1.0000</UnitStat_BG_IsMale>
+			<UnitStat_BG_IsRace_Quendar>1.0000</UnitStat_BG_IsRace_Quendar>
+			<UnitStat_ChanceToCrit>1.0000</UnitStat_ChanceToCrit>
+			<UnitStat_HitPoints>10.0000</UnitStat_HitPoints>
+		</LevelMilestone>
+		<Equipment>F_Male_Quendar_Head_01</Equipment>
+		<Equipment>F_Male_Quendar_Horns_02</Equipment>
+		<Equipment>Fallen_Shirt_ID1</Equipment>
+		<Equipment>Fallen_Leather_Pants_ID1</Equipment>
+		<Equipment>Large_Sion_Boots_ID2</Equipment>
+		<Equipment>F_Warn_Surcoat_Solid_ID2</Equipment>
+		<EquipmentUpgradeDef>
+			<SelectionCriterion>MaximizeBest</SelectionCriterion>
+			<ComparisonAttribute>UnitStat_Attack_Pierce</ComparisonAttribute>
+			<WeaponUpgradeType>Axe</WeaponUpgradeType>
+			<EquipmentSlot>Weapon</EquipmentSlot>
+			<EquipmentSlot>Defense</EquipmentSlot>
+			<ForUpgradeActionOnly>0</ForUpgradeActionOnly>
+		</EquipmentUpgradeDef>
+		<AutoCreateEquipment>LeatherHelmet</AutoCreateEquipment>
+		<AutoCreateEquipment>LeatherBreastpiece</AutoCreateEquipment>
+		<AutoCreateEquipment>LeatherGreaves</AutoCreateEquipment>
+		<AutoCreateEquipment>LeatherBoots_Soldiers</AutoCreateEquipment>
+		<AutoCreateEquipment>LeatherVambraces_Soldiers</AutoCreateEquipment>
+		<AutoCreateEquipment>ArcticWolfCloak</AutoCreateEquipment>
+		<ProductionRequirement InternalName="">
+			<Type>Resource</Type>
+			<Attribute>Fame</Attribute>
+			<Value>25</Value>
+		</ProductionRequirement>
+		<Texture_Skin>Magnar_Skin_M_01.dds</Texture_Skin>
+		<CreatorFactionName>CustomFaction_Carian</CreatorFactionName>
+		<Gender>Male</Gender>
+		<UnitModelType>QuendarMale</UnitModelType>
+		<SelectedAbilityBonusOption>Blood_Quendar</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Outcast</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>FireAdept1</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Constitution</SelectedAbilityBonusOption>
+		<IsSovereign>0</IsSovereign>
+		<HasWages>1</HasWages>
+		<NPCFreeRecruit>0</NPCFreeRecruit>
+		<IgnoreItemTrainingCosts>false</IgnoreItemTrainingCosts>
+		<AdditionalTrainingTurns>20.0000</AdditionalTrainingTurns>
+		<WageOverride>0.0000</WageOverride>
+		<UnitTypeVersion>1</UnitTypeVersion>
+		<TileRadius>0</TileRadius>
+		<GetPerksOnLevelUp>1</GetPerksOnLevelUp>
+		<DividesBattleExp>0</DividesBattleExp>
+		<CanSqueeze>0</CanSqueeze>
+		<OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+		<AllowGrouping>false</AllowGrouping>
+		<SoundPack>SoundPack_Generic_Male</SoundPack>
+		<Prereq InternalName="Prereq 777">
+			<Type>AbilityBonusOption</Type>
+			<Target>Player</Target>
+			<Attribute>MeritBeforeBlood</Attribute>
+			<Value>0.0000</Value>
+		</Prereq>
+		<Prereq InternalName="Prereq 778">
+			<Type>Tech</Type>
+			<Target>player</Target>
+			<Attribute>Breons_Letters</Attribute>
+			<Value>0.0000</Value>
+		</Prereq>
+		<IsChampion>1</IsChampion>
+	</UnitType>
+	
+	<UnitType InternalName="Quendar_Sergeant">
+		<DisplayName>Quendar Sergeant</DisplayName>
+		<Description>A Quendar who may become a champion of yours someday, given sufficient training.</Description>
+		<Quote>'For the kingdom!'</Quote>
+		<Backstory>Some would say the Quendar are too sadistic and evil to ever cooperate with the kingdoms. But honor is the highest virtue to the Quendar, and in some circumstances the upholding of honor means turning away from heritage. A leader that rewards the loyalty and honor of these warriors will command unstoppable might.</Backstory>
+		<HasEssence>false</HasEssence>
+		<ModelPath>F_Male_Magnar_Body_Mesh_01.hkb</ModelPath>
+		<SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+		<EyeTexture>gfx\eyes\blinks\eyeblink_f3_grn.png</EyeTexture>
+		<AnimationPack>SoldierAnimationPack</AnimationPack>
+		<ShowAsSingleUnit>false</ShowAsSingleUnit>
+		<CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+		<ModelScale>1.0000</ModelScale>
+		<TacticalModelScale>1.5000</TacticalModelScale>
+		<EquipmentScale>1.0000</EquipmentScale>
+		<ClothMapScale>1.6000</ClothMapScale>
+		<BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+		<MovementType>land</MovementType>
+		<BobbingFrequency>0.0000</BobbingFrequency>
+		<ClothPoseIndex>22</ClothPoseIndex>
+		<InfoCardBackground>BG_Lava</InfoCardBackground>
+		<InfoCardBackgroundFlipped>1</InfoCardBackgroundFlipped>
+		<CanBeDesigned>1</CanBeDesigned>
+		<UserDesigned>true</UserDesigned>
+		<IsModDependent>false</IsModDependent>
+        <Medallions InternalName="">
+            <All>ObsidianLegion_Medallion.png</All>
+        </Medallions>
+		<MovingSFX>TEMP_KnightMarching1</MovingSFX>
+		<LevelMilestone InternalName="">
+			<Level>1</Level>
+			<UnitStat_BG_IsChampion>1.0000</UnitStat_BG_IsChampion>
+			<UnitStat_BG_IsHumanoid>1.0000</UnitStat_BG_IsHumanoid>
+			<UnitStat_BG_IsMale>1.0000</UnitStat_BG_IsMale>
+			<UnitStat_BG_IsRace_Quendar>1.0000</UnitStat_BG_IsRace_Quendar>
+			<UnitStat_ChanceToCrit>1.0000</UnitStat_ChanceToCrit>
+			<UnitStat_HitPoints>10.0000</UnitStat_HitPoints>
+		</LevelMilestone>
+		<Equipment>F_Male_Quendar_Head_01</Equipment>
+		<Equipment>F_Male_Quendar_Horns_02</Equipment>
+		<Equipment>Fallen_Shirt_ID1</Equipment>
+		<Equipment>Fallen_Leather_Pants_ID1</Equipment>
+		<Equipment>Large_Sion_Boots_ID2</Equipment>
+		<Equipment>F_Warn_Surcoat_Solid_ID2</Equipment>
+		<EquipmentUpgradeDef>
+			<SelectionCriterion>MaximizeBest</SelectionCriterion>
+			<ComparisonAttribute>UnitStat_Attack_Pierce</ComparisonAttribute>
+			<WeaponUpgradeType>Blade</WeaponUpgradeType>
+			<EquipmentSlot>Weapon</EquipmentSlot>
+			<ForUpgradeActionOnly>0</ForUpgradeActionOnly>
+		</EquipmentUpgradeDef>
+		<EquipmentUpgradeDef>
+			<SelectionCriterion>MaximizeSum</SelectionCriterion>
+			<ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+			<EquipmentSlot>Defense</EquipmentSlot>
+			<ForUpgradeActionOnly>0</ForUpgradeActionOnly>
+		</EquipmentUpgradeDef>
+		<AutoCreateEquipment>LeatherHelmet</AutoCreateEquipment>
+		<AutoCreateEquipment>LeatherBreastpiece</AutoCreateEquipment>
+		<AutoCreateEquipment>LeatherGreaves</AutoCreateEquipment>
+		<AutoCreateEquipment>LeatherVambraces</AutoCreateEquipment>
+		<AutoCreateEquipment>LeatherBoots</AutoCreateEquipment>
+		<AutoCreateEquipment>ArcticWolfCloak</AutoCreateEquipment>
+		<ProductionRequirement InternalName="">
+			<Type>Resource</Type>
+			<Attribute>Fame</Attribute>
+			<Value>25</Value>
+		</ProductionRequirement>
+		<Texture_Skin>Magnar_Skin_M_01.dds</Texture_Skin>
+		<CreatorFactionName>CustomFaction_Carian</CreatorFactionName>
+		<Gender>Male</Gender>
+		<UnitModelType>QuendarMale</UnitModelType>
+		<SelectedAbilityBonusOption>Blood_Quendar</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Outcast</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Discipline</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>EarthAdept1</SelectedAbilityBonusOption>		
+		<IsSovereign>0</IsSovereign>
+		<HasWages>1</HasWages>
+		<NPCFreeRecruit>0</NPCFreeRecruit>
+		<IgnoreItemTrainingCosts>false</IgnoreItemTrainingCosts>
+		<AdditionalTrainingTurns>20.0000</AdditionalTrainingTurns>
+		<WageOverride>0.0000</WageOverride>
+		<UnitTypeVersion>1</UnitTypeVersion>
+		<TileRadius>0</TileRadius>
+		<GetPerksOnLevelUp>1</GetPerksOnLevelUp>
+		<DividesBattleExp>0</DividesBattleExp>
+		<CanSqueeze>0</CanSqueeze>
+		<OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+		<AllowGrouping>false</AllowGrouping>
+		<SoundPack>SoundPack_Generic_Male</SoundPack>
+		<Prereq InternalName="Prereq 777">
+			<Type>AbilityBonusOption</Type>
+			<Target>Player</Target>
+			<Attribute>MeritBeforeBlood</Attribute>
+			<Value>0.0000</Value>
+		</Prereq>
+		<Prereq InternalName="Prereq 778">
+			<Type>Tech</Type>
+			<Target>player</Target>
+			<Attribute>Breons_Letters</Attribute>
+			<Value>0.0000</Value>
+		</Prereq>
+		<IsChampion>1</IsChampion>
+	</UnitType>
+	
+	<UnitType InternalName="Quendar_Mage">
+		<DisplayName>Quendar Mage</DisplayName>
+		<Description>A Quendar who may become a champion of yours someday, given sufficient training.</Description>
+		<Quote>'Our enemies will tremble at our might.'</Quote>
+		<Backstory>Some would say the Quendar are too sadistic and evil to ever cooperate with the kingdoms. But honor is the highest virtue to the Quendar, and in some circumstances the upholding of honor means turning away from heritage. A leader that rewards the loyalty and honor of these warriors will command unstoppable might.</Backstory>
+		<HasEssence>false</HasEssence>
+		<ModelPath>F_Male_Magnar_Body_Mesh_01.hkb</ModelPath>
+		<SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+		<EyeTexture>gfx\eyes\blinks\eyeblink_f3_grn.png</EyeTexture>
+		<AnimationPack>SoldierAnimationPack</AnimationPack>
+		<ShowAsSingleUnit>false</ShowAsSingleUnit>
+		<CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+		<ModelScale>1.0000</ModelScale>
+		<TacticalModelScale>1.5000</TacticalModelScale>
+		<EquipmentScale>1.0000</EquipmentScale>
+		<ClothMapScale>1.6000</ClothMapScale>
+		<BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+		<MovementType>land</MovementType>
+		<BobbingFrequency>0.0000</BobbingFrequency>
+		<ClothPoseIndex>0</ClothPoseIndex>
+		<InfoCardBackground>BG_Lava</InfoCardBackground>
+		<InfoCardBackgroundFlipped>0</InfoCardBackgroundFlipped>
+		<CanBeDesigned>1</CanBeDesigned>
+		<UserDesigned>true</UserDesigned>
+		<IsModDependent>false</IsModDependent>
+        <Medallions InternalName="">
+            <All>ObsidianLegion_Medallion.png</All>
+        </Medallions>
+		<MovingSFX>TEMP_KnightMarching1</MovingSFX>
+		<LevelMilestone InternalName="">
+			<Level>1</Level>
+			<UnitStat_BG_IsChampion>1.0000</UnitStat_BG_IsChampion>
+			<UnitStat_BG_IsHumanoid>1.0000</UnitStat_BG_IsHumanoid>
+			<UnitStat_BG_IsMale>1.0000</UnitStat_BG_IsMale>
+			<UnitStat_BG_IsRace_Quendar>1.0000</UnitStat_BG_IsRace_Quendar>
+			<UnitStat_ChanceToCrit>1.0000</UnitStat_ChanceToCrit>
+			<UnitStat_HitPoints>10.0000</UnitStat_HitPoints>
+		</LevelMilestone>
+		<Equipment>F_Male_Quendar_Head_01</Equipment>
+		<Equipment>F_Male_Quendar_Horns_02</Equipment>
+		<Equipment>Wraith_Robe</Equipment>
+		<Equipment>Noble_Cloak_ID1</Equipment>
+		<Equipment>Large_Sion_Boots</Equipment>
+		<AutoCreateEquipment>Staff</AutoCreateEquipment>
+		<ProductionRequirement InternalName="">
+			<Type>Resource</Type>
+			<Attribute>Fame</Attribute>
+			<Value>25</Value>
+		</ProductionRequirement>
+		<Texture_Skin>Magnar_Skin_M_01.dds</Texture_Skin>
+		<CreatorFactionName>CustomFaction_Carian</CreatorFactionName>
+		<Gender>Male</Gender>
+		<UnitModelType>QuendarMale</UnitModelType>
+		<SelectedAbilityBonusOption>Blood_Quendar</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Outcast</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>AirAdept1</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>WaterAdept1</SelectedAbilityBonusOption>		
+		<IsSovereign>0</IsSovereign>
+		<HasWages>1</HasWages>
+		<NPCFreeRecruit>0</NPCFreeRecruit>
+		<IgnoreItemTrainingCosts>false</IgnoreItemTrainingCosts>
+		<AdditionalTrainingTurns>20.0000</AdditionalTrainingTurns>
+		<WageOverride>0.0000</WageOverride>
+		<UnitTypeVersion>1</UnitTypeVersion>
+		<TileRadius>0</TileRadius>
+		<GetPerksOnLevelUp>1</GetPerksOnLevelUp>
+		<DividesBattleExp>0</DividesBattleExp>
+		<CanSqueeze>0</CanSqueeze>
+		<OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+		<AllowGrouping>false</AllowGrouping>
+		<SoundPack>SoundPack_Generic_Male</SoundPack>
+		<Prereq>
+			<Type>AbilityBonusOption</Type>
+			<Target>Player</Target>
+			<Attribute>MeritBeforeBlood</Attribute>
+			<Value>0</Value>
+		</Prereq>
+		<Prereq>
+			<Type>Tech</Type>
+			<Target>Player</Target>
+			<Attribute>Breons_Letters</Attribute>
+			<Value>0</Value>
+		</Prereq>
+		<IsChampion>1</IsChampion>
+	</UnitType>-->
+	
+	<!--<UnitType InternalName="Quendar_Outcast">
+		<DisplayName>Quendar Pariah</DisplayName>
+		<Description>A Sion-like Warrior who gains traits with each level, but cannot cast spells and dies permanently.</Description>
+		<Quote>'Our enemies will tremble at our might.'</Quote>
+		<Backstory>Some would say the Quendar are too sadistic and evil to ever cooperate with the kingdoms. But honor is the highest virtue to the Quendar. A leader that rewards Quendar discipline will have these shunned warriors at their command.</Backstory>
+        <!--<CreatureType>Champion</CreatureType>--><!--		
+		<HasEssence>false</HasEssence>
+		<ModelPath>F_Male_Magnar_Body_Mesh_01.hkb</ModelPath>
+		<SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+		<EyeTexture>gfx\eyes\blinks\eyeblink_f3_grn.png</EyeTexture>
+		<AnimationPack>SoldierAnimationPack</AnimationPack>
+		<ShowAsSingleUnit>false</ShowAsSingleUnit>
+		<CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+		<ModelScale>1.0000</ModelScale>
+		<TacticalModelScale>1.5000</TacticalModelScale>
+		<EquipmentScale>1.0000</EquipmentScale>
+		<ClothMapScale>1.6000</ClothMapScale>
+		<BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+		<MovementType>land</MovementType>
+		<BobbingFrequency>0.0000</BobbingFrequency>
+		<ClothPoseIndex>0</ClothPoseIndex>
+		<InfoCardBackground>BG_Lava</InfoCardBackground>
+		<InfoCardBackgroundFlipped>0</InfoCardBackgroundFlipped>
+		<CanBeDesigned>1</CanBeDesigned>
+        <Medallions InternalName="">
+            <All>ObsidianLegion_Medallion.png</All>
+        </Medallions>
+		<MovingSFX>TEMP_KnightMarching1</MovingSFX>
+		<LevelMilestone InternalName="">
+			<Level>1</Level>-->
+			<!--<UnitStat_BG_IsChampion>1.0000</UnitStat_BG_IsChampion>--><!--
+			<UnitStat_BG_IsHumanoid>1.0000</UnitStat_BG_IsHumanoid>
+			<UnitStat_BG_IsMale>1.0000</UnitStat_BG_IsMale>
+			<UnitStat_BG_IsRace_Quendar>1.0000</UnitStat_BG_IsRace_Quendar>
+			<UnitStat_ChanceToCrit>1.0000</UnitStat_ChanceToCrit>
+			<UnitStat_HitPoints>10.0000</UnitStat_HitPoints>
+		</LevelMilestone>
+		<Equipment>F_Male_Quendar_Head_01</Equipment>
+		<Equipment>F_Male_Quendar_Horns_02</Equipment>
+		<Equipment>Fallen_Shirt_ID1</Equipment>
+		<Equipment>Fallen_Leather_Pants_ID1</Equipment>
+		<Equipment>Large_Sion_Boots_ID2</Equipment>
+		<Equipment>F_Warn_Surcoat_Solid_ID2</Equipment>
+		<AutoCreateEquipment>Staff</AutoCreateEquipment>
+		<ProductionRequirement InternalName="">
+			<Type>Resource</Type>
+			<Attribute>Fame</Attribute>
+			<Value>20</Value>
+		</ProductionRequirement>
+		<Texture_Skin>Magnar_Skin_M_01.dds</Texture_Skin>
+		<CreatorFactionName>CustomFaction_Carian</CreatorFactionName>
+		<Gender>Male</Gender>
+		<UnitModelType>QuendarMale</UnitModelType>
+		<SelectedAbilityBonusOption>Blood_Quendar</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Pariah</SelectedAbilityBonusOption>-->		
+        <!--<SelectedAbilityBonusOption>AirAdept1</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>WaterAdept1</SelectedAbilityBonusOption>-->	
+        <!--<IsNPC>1</IsNPC>
+        <IsChampion>1</IsChampion>--><!--		
+		<IsSovereign>0</IsSovereign>
+		<HasWages>1</HasWages>
+		<NPCFreeRecruit>0</NPCFreeRecruit>
+		<IgnoreItemTrainingCosts>false</IgnoreItemTrainingCosts>
+		<AdditionalTrainingTurns>20.0000</AdditionalTrainingTurns>
+		<WageOverride>0.0000</WageOverride>
+		<UnitTypeVersion>1</UnitTypeVersion>
+		<TileRadius>0</TileRadius>
+		<GetPerksOnLevelUp>1</GetPerksOnLevelUp>
+		<DividesBattleExp>0</DividesBattleExp>
+		<CanSqueeze>0</CanSqueeze>
+		<OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+		<AllowGrouping>false</AllowGrouping>
+		<SoundPack>SoundPack_Generic_Male</SoundPack>
+		<Prereq>
+			<Type>AbilityBonusOption</Type>
+			<Target>Player</Target>
+			<Attribute>MeritBeforeBlood</Attribute>
+			<Value>0</Value>
+		</Prereq>		
+		<Prereq>
+			<Type>Tech</Type>
+			<Target>Player</Target>
+			<Attribute>Cooperation</Attribute>
+			<Value>0</Value>
+		</Prereq>
+	</UnitType>-->
+	
+	<!--<UnitType InternalName="Trog_Adept">
+        <DisplayName>Trog Adept</DisplayName>
+        <Description>This Trog has been called to serve by the tolerance of your country.</Description>
+        <DividesBattleExp>0</DividesBattleExp>
+        <Gender>Male</Gender>
+        <IsNPC>1</IsNPC>
+        <IsChampion>1</IsChampion>
+        <IsSovereign>0</IsSovereign>
+        <GetPerksOnLevelUp>1</GetPerksOnLevelUp>
+        <AllowGrouping>0</AllowGrouping>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_HitPoints>10</UnitStat_HitPoints>
+			<UnitStat_BG_IsChampion>1</UnitStat_BG_IsChampion>
+			<UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
+			<UnitStat_BG_IsMale>1</UnitStat_BG_IsMale>
+			<UnitStat_BG_IsRace_Trogs>1</UnitStat_BG_IsRace_Trogs>
+        </LevelMilestone>
+        <SelectedAbilityBonusOption>Blood_Trog</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Might</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>AirAdept1</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Outcast</SelectedAbilityBonusOption>
+        <Equipment>Club</Equipment>
+        <Equipment>F_Male_Head_05</Equipment>
+        <Backstory>Ha! What does it matter, the side one fights on? Does it matter, who is slain, Fallen or Man-ling? It does not. What matters is that the mighty strived and bled. Let it be known D'rogs strode for this country! Let its opponents tremble, for D'rogs fight for it!</Backstory>
+        <AnimationPack>MaleSovereignAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>29</ClothPoseIndex>
+        <Color_Clothing1>56,33,13,255</Color_Clothing1>
+        <Color_Clothing2>184,148,85,255</Color_Clothing2>
+        <Color_Hair>177,187,197,255</Color_Hair>
+        <Color_Metal>80,75,90,255</Color_Metal>
+        <Color_Skin>133,128,128,255</Color_Skin>
+        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\eyes\blinks\eyeblink_m5_White.png</EyeTexture>
+        <InfoCardBackground>BG_EmpireRugged</InfoCardBackground>
+        <InfoCardBackgroundFlipped>0</InfoCardBackgroundFlipped>
+        <ModelPath>Gfx\HKB\Units\F_Male_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <Medallions InternalName="">
+            <All>Peddler.png</All>
+        </Medallions>		
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Generic_Male</SoundPack>
+        <TacticalModelScale>1.6</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\eyeblink_m5_White.png</Texture_Eyes>
+        <Texture_Skin>Trog_Skin_M_03.png</Texture_Skin>
+        <UnitModelType>FallenMale</UnitModelType>
+		<Prereq>
+			<Type>AbilityBonusOption</Type>
+			<Target>Player</Target>
+			<Attribute>MeritBeforeBlood</Attribute>
+			<Value>0</Value>
+		</Prereq>
+		<Prereq>
+			<Type>Tech</Type>
+			<Target>Player</Target>
+			<Attribute>Breons_Letters</Attribute>
+			<Value>0</Value>
+		</Prereq>		
+    </UnitType>-->
+	
+</UnitTypes>
+
+<Spells>
+
+<SpellDef InternalName="CallOutcast">
+        <DisplayName>Call Outcast Hero</DisplayName>
+        <Description>Call out for a fledgling champion (henchman) that has been rejected by other empires or kingdoms. What form will this forsaken yet bright potential take?</Description>
+        <Image>Bandit_Medallion.png</Image>
+        <IconFG>Action_Recruit_Green.png</IconFG>
+        <CanStack>0</CanStack>
+		<Cooldown>5</Cooldown>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <CasterMustBeSov>1</CasterMustBeSov>
+        <AppliesRandomModifier>1</AppliesRandomModifier>		
+        <SpellResourceCost>
+            <Resource>Fame</Resource>
+            <Amount>25</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>10</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Gold</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>		
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnitJoinArmy</Attribute>
+            <StrVal>Unit_Hero_Wolf</StrVal>
+            <UnitClass>Champion</UnitClass>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnitJoinArmy</Attribute>
+            <StrVal>Unit_Hero_Hergon</StrVal>
+            <UnitClass>Champion</UnitClass>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnitJoinArmy</Attribute>
+            <StrVal>Unit_Hero_Spirit</StrVal>
+            <UnitClass>Champion</UnitClass>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnitJoinArmy</Attribute>
+            <StrVal>Familiar_Henchman</StrVal>
+            <UnitClass>Champion</UnitClass>
+        </GameModifier>	
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnitJoinArmy</Attribute>
+            <StrVal>Unit_Hero_Krax</StrVal>
+            <UnitClass>Champion</UnitClass>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnitJoinArmy</Attribute>
+            <StrVal>Unit_Hero_Wraith</StrVal>
+            <UnitClass>Champion</UnitClass>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnitJoinArmy</Attribute>
+            <StrVal>Unit_Hero_Urxen</StrVal>
+            <UnitClass>Champion</UnitClass>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnitJoinArmy</Attribute>
+            <StrVal>Unit_Hero_Quendar</StrVal>
+            <UnitClass>Champion</UnitClass>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnitJoinArmy</Attribute>
+            <StrVal>Unit_Hero_Trog</StrVal>
+            <UnitClass>Champion</UnitClass>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnitJoinArmy</Attribute>
+            <StrVal>Unit_Hero_Quendar</StrVal>
+            <UnitClass>Champion</UnitClass>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnitJoinArmy</Attribute>
+            <StrVal>Unit_Hero_Trog</StrVal>
+            <UnitClass>Champion</UnitClass>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnitJoinArmy</Attribute>
+            <StrVal>Unit_Hero_Ironeer</StrVal>
+            <UnitClass>Champion</UnitClass>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnitJoinArmy</Attribute>
+            <StrVal>Unit_Hero_Amarian</StrVal>
+            <UnitClass>Champion</UnitClass>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnitJoinArmy</Attribute>
+            <StrVal>Unit_Hero_Tarth</StrVal>
+            <UnitClass>Champion</UnitClass>
+        </GameModifier>	
+        <AIData AIPersonality="AI_General">
+            <AIPriority>100</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_DestinyGift_01</HitSoundFX>
+    </SpellDef>
+	
+	<SpellDef InternalName="CallQuendar">
+        <DisplayName>Call Quendar Hero</DisplayName>
+        <Description>Call out for a fledgling Quendar champion (henchman) that has been rejected by Magnar.</Description>
+        <Image>ObsidianLegion_Medallion.png</Image>
+        <IconFG>FallenLegendaryPlateHelmet.png</IconFG>
+		<AutoUnlock>1</AutoUnlock>
+        <CanStack>0</CanStack>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <CasterMustBeSov>1</CasterMustBeSov>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_QuendarAwaiting</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Fame</Resource>
+            <Amount>25</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>10</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Gold</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>		
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnitJoinArmy</Attribute>
+            <StrVal>Unit_Hero_Quendar</StrVal>
+            <UnitClass>Champion</UnitClass>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_QuendarAwaiting</StrVal>
+			<ApplyToCaster>1</ApplyToCaster>
+            <Value>-1</Value>
+        </GameModifier>			
+        <AIData AIPersonality="AI_General">
+            <AIPriority>100</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_DestinyGift_01</HitSoundFX>
+    </SpellDef>
+	    
+
+</Spells>
+
+<PlayerAbilityTypes>
+
+<UnitStatType InternalName="UnitStat_QuendarAwaiting">
+	<DisplayName>Has Quendar Awaiting</DisplayName>
+	<Description>Is this unit capable of summoning a Quendar henchman?</Description>
+	<Icon>Ability_Embers.png</Icon>
+	<DefaultValue>0.0</DefaultValue>
+	<Hidden>1</Hidden>
+	<UnitStatGrouping>CombatStat</UnitStatGrouping>
+</UnitStatType>
+
+
+</PlayerAbilityTypes>

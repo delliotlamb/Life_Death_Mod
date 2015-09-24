@@ -1,0 +1,13 @@
+<PlayerAbilityTypes>
+
+<UnitStatType InternalName="UnitStat_HasOil">
+	<DisplayName>Has Oil</DisplayName>
+	<Description>Is this unit equipped with flammable oil?</Description>
+	<Icon>Ability_Embers.png</Icon>
+	<DefaultValue>0.0</DefaultValue>
+	<Hidden>1</Hidden>
+	<UnitStatGrouping>CombatStat</UnitStatGrouping>
+</UnitStatType>
+
+
+</PlayerAbilityTypes>

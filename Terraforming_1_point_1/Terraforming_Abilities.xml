@@ -1,0 +1,475 @@
+<AbilityBonuses>
+
+    <AbilityBonus InternalName="VerdantBlessingAbility">
+        <AbilityBonusOption InternalName="VerdantBlessing">
+            <DisplayName>Verdant Blessing</DisplayName>
+            <Description>+1 Life Power per turn</Description>
+            <Icon>Ability_Hardy_Icon.png</Icon>
+			<GameModifier>
+				<ModType>Resource</ModType>
+				<Attribute>LifeMana</Attribute>
+				<Value>1</Value>
+				<PerTurn>1</PerTurn>
+				<Provides>+1 Life Power (faction wide)</Provides>
+			</GameModifier>
+            <Type>Aggressive</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+
+    <!--<AbilityBonus InternalName="ArcticBlessingAbility">
+        <AbilityBonusOption InternalName="ArcticBlessing">
+            <DisplayName>Arctic Blessing</DisplayName>
+            <Description>+1 Water Power per turn</Description>
+            <Icon>Ability_ImmuneToCold_Icon.png</Icon>
+			<GameModifier>
+				<ModType>Resource</ModType>
+				<Attribute>WaterMana</Attribute>
+				<Value>.5</Value>
+				<PerTurn>1</PerTurn>
+				<Provides>+.5 Water Power (faction wide)</Provides>
+			</GameModifier>
+            <Type>Aggressive</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>-->
+
+    <AbilityBonus InternalName="WaveBlessingAbility">
+        <AbilityBonusOption InternalName="WaveBlessing">
+            <DisplayName>Wave Blessing</DisplayName>
+            <Description>+1 Water Power per turn</Description>
+            <Icon>Ability_Hydromancy_Icon.png</Icon>
+			<GameModifier>
+				<ModType>Resource</ModType>
+				<Attribute>WaterMana</Attribute>
+				<Value>1</Value>
+				<PerTurn>1</PerTurn>
+				<Provides>+1 Water Power (faction wide)</Provides>
+			</GameModifier>
+            <Type>Aggressive</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="GaleBlessingAbility">
+        <AbilityBonusOption InternalName="GaleBlessing">
+            <DisplayName>Gale Blessing</DisplayName>
+            <Description>+1 Air Power per turn</Description>
+            <Icon>Ability_ImmuneToLightning_Icon.png</Icon>
+			<GameModifier>
+				<ModType>Resource</ModType>
+				<Attribute>AirMana</Attribute>
+				<Value>1</Value>
+				<PerTurn>1</PerTurn>
+				<Provides>+1 Air Power (faction wide)</Provides>
+			</GameModifier>
+            <Type>Aggressive</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="EmberBlessingAbility">
+        <AbilityBonusOption InternalName="EmberBlessing">
+            <DisplayName>Blessing Of Embers</DisplayName>
+            <Description>+1 Fire Power per turn</Description>
+            <Icon>Ability_ImmuneToFire_Icon.png</Icon>
+			<GameModifier>
+				<ModType>Resource</ModType>
+				<Attribute>FireMana</Attribute>
+				<Value>1</Value>
+				<PerTurn>1</PerTurn>
+				<Provides>+1 Fire Power (faction wide)</Provides>
+			</GameModifier>
+            <Type>Aggressive</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="MineralBlessingAbility">
+        <AbilityBonusOption InternalName="MineralBlessing">
+            <DisplayName>Mineral Blessing</DisplayName>
+            <Description>+1 Earth Power per turn</Description>
+            <Icon>Ability_TemperedSteel_Icon.png</Icon>
+			<GameModifier>
+				<ModType>Resource</ModType>
+				<Attribute>EarthMana</Attribute>
+				<Value>1</Value>
+				<PerTurn>1</PerTurn>
+				<Provides>+1 Earth Power (faction wide)</Provides>
+			</GameModifier>
+            <Type>Aggressive</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="StarvationBlessingAbility">
+        <AbilityBonusOption InternalName="StarvationBlessing">
+            <DisplayName>Starvation's Blessing</DisplayName>
+            <Description>+1 Death Power per turn</Description>
+            <Icon>Ability_Necromancy_Icon.png</Icon>
+			<GameModifier>
+				<ModType>Resource</ModType>
+				<Attribute>DeathMana</Attribute>
+				<Value>1</Value>
+				<PerTurn>1</PerTurn>
+				<Provides>+1 Death Power (faction wide)</Provides>
+			</GameModifier>
+            <Type>Aggressive</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="MajorInjury1Ability">
+        <AbilityBonusOption InternalName="MajorInjury1">
+            <DisplayName>Kindling Curse</DisplayName>
+            <Description>-100 Fire Resist</Description>
+            <Icon>Ability_VulnerableToFire_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ResistFire</StrVal>
+                <Value>-100</Value>
+                <Provides>Takes double Fire damage</Provides>
+            </GameModifier>
+            <Type>Aggressive</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="MajorInjury2Ability">
+        <AbilityBonusOption InternalName="MajorInjury2">
+            <DisplayName>Curse Of Conductivity</DisplayName>
+            <Description>-100 Lightning Resist</Description>
+            <Icon>Ability_VulnerableToLightning_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ResistLightning</StrVal>
+                <Value>-100</Value>
+                <Provides>Takes double Lightning damage</Provides>
+            </GameModifier>
+            <Type>Aggressive</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+
+    <AbilityBonus InternalName="MajorInjury3Ability">
+        <AbilityBonusOption InternalName="MajorInjury3">
+            <DisplayName>Incurable Infection</DisplayName>
+            <Description>-40% Hit Points</Description>
+            <Icon>Ability_TyphoidFever_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_HitPoints</StrVal>
+                <Multiplier>0.6</Multiplier>
+            </GameModifier>
+            <Type>Aggressive</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="MajorInjury4Ability">
+        <AbilityBonusOption InternalName="MajorInjury4">
+            <DisplayName>Brittlebones</DisplayName>
+            <Description>-60% Defense</Description>
+            <Icon>Ability_Fragile_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Defense_Pierce</StrVal>
+                <Multiplier>0.4</Multiplier>
+                <Provides>-60% Defense</Provides>
+            </GameModifier>
+            <Type>Aggressive</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="MajorInjury5Ability">
+        <AbilityBonusOption InternalName="MajorInjury5">
+            <DisplayName>Lame Legs</DisplayName>
+            <Description>-6 Initiative, -2 Moves, -50% dodge and accuracy</Description>
+            <Icon>Ability_BrokenLeg_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_CombatSpeed</StrVal>
+                <Value>-6</Value>
+                <Provides>-6 Initiative</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Moves</StrVal>
+                <Value>-2</Value>
+                <Provides>-2 Moves</Provides>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Accuracy</StrVal>
+                <Multiplier>0.5</Multiplier>
+                <Provides>-50% Accuracy</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Dodge</StrVal>
+                <Multiplier>0.5</Multiplier>
+                <Provides>-50% Dodge</Provides>
+        </GameModifier>
+            <Type>Aggressive</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="MajorInjury6Ability">
+        <AbilityBonusOption InternalName="MajorInjury6">
+            <DisplayName>Doomed To Die</DisplayName>
+            <Description>Unit suffers a critical hit from all attacks</Description>
+            <Icon>Ability_AfraidofDying_Icon.png</Icon>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>Graveseal</Attribute>
+        </GameModifier>
+            <Type>Aggressive</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="MajorInjury7Ability">
+        <AbilityBonusOption InternalName="MajorInjury7">
+            <DisplayName>Cowardice</DisplayName>
+            <Description>-40% Spell Resistance and Attack</Description>
+            <Icon>Ability_Cowardly_Icon.png</Icon>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_MagicResist</StrVal>
+            <Multiplier>0.6</Multiplier>
+            <Provides>-40% Spell Resist</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Multiplier>0.6</Multiplier>
+			<Provides>-40% Attack</Provides>			
+        </GameModifier>
+            <Type>Aggressive</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="MajorInjury8Ability">
+        <AbilityBonusOption InternalName="MajorInjury8">
+            <DisplayName>Arcane Severance</DisplayName>
+            <Description>Unit Cannot Cast Spells</Description>
+            <Icon>Ability_Reap1_Icon.png</Icon>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>PreventSpellcasting</Attribute>
+            <PerTurn>1</PerTurn>
+            <Provides>Cannot Cast Spells</Provides>
+        </GameModifier>
+            <Type>Aggressive</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="DesertFeverAbility">
+        <AbilityBonusType>Unit_Injury</AbilityBonusType>		
+        <AbilityBonusOption InternalName="DesertFever">
+            <DisplayName>Dust Lung</DisplayName>
+            <Description>-10% Hit Points, -1 initiative, -1 Attack</Description>
+            <Icon>Ability_Pneumonia_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_HitPoints</StrVal>
+                <Multiplier>0.9</Multiplier>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_CombatSpeed</StrVal>
+                <Value>-1</Value>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <Value>-1</Value>
+            </GameModifier>
+            <Type>Aggressive</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+		 <AbilityBonus InternalName="Spell_DrownCityAbility">
+        <AbilityBonusType>Unit_Spell_Rank</AbilityBonusType>
+        <AbilityBonusOption InternalName="Spell_DrownCity">
+            <DisplayName>Rage Of The Sea</DisplayName>
+            <Description>Allows the unit to cast Rage Of The Sea</Description>
+            <Icon>S_TidalWave_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>CanCastSpells</Attribute>
+                <Provides>Allows the unit to cast Rage Of The Sea</Provides>
+            </GameModifier>			
+            <Type>Spell</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+	<AbilityBonus InternalName="Spell_TsunamiAbility">
+        <AbilityBonusType>Unit_Spell_Rank</AbilityBonusType>
+        <AbilityBonusOption InternalName="Spell_Tsunami">
+            <DisplayName>Tsunami</DisplayName>
+            <Description>Allows the unit to cast Tsunami</Description>
+            <Icon>S_TidalWave_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>CanCastSpells</Attribute>
+                <Provides>Allows the unit to cast Tsunami</Provides>
+            </GameModifier>			
+            <Type>Spell</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="Spell_SummonForestAlliesAbility">
+        <AbilityBonusOption InternalName="Spell_SummonForestAllies">
+            <DisplayName>Summon Forest Allies</DisplayName>
+            <Description>Allows the unit to summon a bear, stalker, or wolves into battle.</Description>
+            <Icon>Ability_Summon_Plaguestalker_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>SummonForestAllies_Ability</StrVal>
+                <Provides>Allows the unit to summon a bear, stalker, or wolves into battle.</Provides>
+            </GameModifier>
+            <CombatRating>10</CombatRating>
+            <IsCombatAbility>1</IsCombatAbility>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+	    <AbilityBonus InternalName="WindElementalAbility">
+        <AbilityBonusOption InternalName="WindElemental">
+            <DisplayName>Wind Elemental</DisplayName>
+            <Description>Allows the unit to use Gust of Wind, Escape, Summon Air Elemental, and Titan's Breath.</Description>
+            <Icon>S_SummonAirElemental_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>GustOfWind_Ability</StrVal>
+                <Provides>Allows the unit to summon a bear, stalker, or wolves into battle.</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>TitansBreath_Ability</StrVal>
+                <Provides>Allows the unit to summon a bear, stalker, or wolves into battle.</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Escape_Ability</StrVal>
+                <Provides>Allows the unit to summon a bear, stalker, or wolves into battle.</Provides>
+            </GameModifier>			
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>SummonAirElemental_Ability</StrVal>
+                <Provides>Allows the unit to summon a bear, stalker, or wolves into battle.</Provides>
+            </GameModifier>			
+            <CombatRating>10</CombatRating>
+            <IsCombatAbility>1</IsCombatAbility>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+	    <AbilityBonus InternalName="Spell_SummonCragSpawnAbility">
+        <AbilityBonusOption InternalName="Spell_SummonSummonCragSpawn">
+            <DisplayName>Summon Crag Spawn</DisplayName>
+            <Description>Allows the unit to summon a Crag Spawn in battle</Description>
+            <Icon>Ability_SummonCragSpawn_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>SummonCragSpawn_Ability</StrVal>
+                <Provides>Allows the unit to summon a Crag Spawn in battle</Provides>
+            </GameModifier>
+            <CombatRating>10</CombatRating>
+            <IsCombatAbility>1</IsCombatAbility>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+	<AbilityBonus InternalName="SummonIgnys_2Ability">
+        <AbilityBonusType>Unit_Spell_Rank</AbilityBonusType>
+        <AbilityBonusOption InternalName="SummonIgnys2">
+            <DisplayName>Summon Ignys</DisplayName>
+            <Description>Unlocks the Summon Ignys spell</Description>
+            <Icon>Ability_SummonIgnys_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>SummonIgnys_Ability</StrVal>
+                <Provides>Allows the unit to summon a Crag Spawn in battle</Provides>
+            </GameModifier>
+            <CombatRating>10</CombatRating>
+            <IsCombatAbility>1</IsCombatAbility>			
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+</AbilityBonuses>

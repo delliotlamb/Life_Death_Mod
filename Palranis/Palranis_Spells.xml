@@ -1,0 +1,109 @@
+<Spells>
+
+    <SpellDef InternalName="ArenaEnlightenment">
+        <DisplayName>Trial Pit's Enlightenment</DisplayName>
+        <Description>Target Champion gains a level.</Description>
+        <Image>G_Ancient_Battlefield_01.png</Image>
+        <IconFG>Combat_Dot.png</IconFG>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitEnchantment</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>FriendlyChampionOrSov</SpellTargetType>
+        <CasterMustBeSov>1</CasterMustBeSov>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>		
+        <SpellResourceCost>
+            <Resource>CombatTrials</Resource>
+            <Amount>200</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>TargetUnitLevelUp</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_DestinyGift_01</HitSoundFX>
+    </SpellDef>
+	
+	<SpellDef InternalName="ALethalRace">
+        <DisplayName>A Lethal Race</DisplayName>
+        <Description>All units do 10% bonus physical damage. Castable once per game.</Description>
+        <Image>ObsidianLegion_Medallion.png</Image>
+        <IconFG>Ability_Powerful_Icon.png</IconFG>
+        <Cooldown>900</Cooldown>
+        <SpellBookSortCategory>World</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Buff</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <CasterMustBeSov>1</CasterMustBeSov>		
+        <SpellResourceCost>
+            <Resource>CombatTrials</Resource>
+            <Amount>300</Amount>
+        </SpellResourceCost>
+	    <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_UnitStat_Attack_Pierce</StrVal>
+            <Value>10</Value>
+            <Provides>+10% Attack</Provides>
+        </GameModifier>		
+        <!--<GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsPlagued</StrVal>
+            <ApplyToCaster>1</ApplyToCaster>
+            <Value>-1</Value>
+        </GameModifier>-->
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Crusade_01</HitSoundFX>
+    </SpellDef>
+	
+	<SpellDef InternalName="AnEnduringRace">
+        <DisplayName>An Enduring Race</DisplayName>
+        <Description>All units get +10% HP. Castable once per game.</Description>
+        <Image>ObsidianLegion_Medallion.png</Image>
+        <IconFG>Ability_Fortitude_Icon.png</IconFG>
+        <Cooldown>900</Cooldown>
+        <SpellBookSortCategory>World</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Buff</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>        
+		<CasterMustBeSov>1</CasterMustBeSov>
+        <SpellResourceCost>
+            <Resource>CombatTrials</Resource>
+            <Amount>300</Amount>
+        </SpellResourceCost>
+	    <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_UnitStat_HitPoints</StrVal>
+            <Value>10</Value>
+            <Provides>+10% Hit Points</Provides>
+        </GameModifier>		
+        <!--<GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsPlagued</StrVal>
+            <ApplyToCaster>1</ApplyToCaster>
+            <Value>-1</Value>
+        </GameModifier>-->
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Crusade_01</HitSoundFX>
+    </SpellDef>
+	
+
+	
+	</Spells>

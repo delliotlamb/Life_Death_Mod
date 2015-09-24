@@ -1,0 +1,23 @@
+<QuestLocations>
+
+
+
+<QuestLocationType InternalName="QuestLoc_SeeingStone_Forge">
+        <Name>Seeing Stones</Name>
+        <Description>This is a place of strange magic. A skilled channeler could use it to see past, future, or places far beyond.</Description>
+        <Unique>1</Unique>
+        <Rarity>-1</Rarity>
+        <MinDistanceFromStartingPoints>0</MinDistanceFromStartingPoints>		
+        <Destructable>0</Destructable>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <TileDesign>L_Air_Elemental_01</TileDesign>
+        <DrawnIcon>Quest_StoneRing.png</DrawnIcon>
+        <IconSize>75</IconSize>
+        <OnSelectSFX>Click_Ruined_Temple</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>L_Air_Elemental_01.png</All>
+        </Medallions>
+    </QuestLocationType>
+
+</QuestLocations>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<TileDesigns>
+	<DataChecksum NoParse="1">
+		<Ignore>DisplayName</Ignore>
+		<Translate>DisplayName</Translate>
+	</DataChecksum>
+	<TileDesign InternalName="StoneShrine_02">
+		<DisplayName>StoneShrine_02</DisplayName>
+		<Thumbnail>\Game\Gfx\tile_icon.png</Thumbnail>
+		<DecalName>Gfx\Decals\GenericGrass_Decal.dds</DecalName>
+		<LowResShadow>StoneShrine_02_shadow.png</LowResShadow>
+		<HighResShadow>StoneShrine_02_shadow.png</HighResShadow>
+		<ShadowTransparency>50</ShadowTransparency>
+		<IsCore>0</IsCore>
+		<IsHiddenFromEditor>0</IsHiddenFromEditor>
+		<SubTileFlags>1</SubTileFlags>
+		<TileDesignObject InternalName="_obj0">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>MidRockForm</ObjectDefName>
+			<ObjectLOD>1</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-18.875000,4.000000,-15.625000</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.2000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj1">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>SmoothRock5</ObjectDefName>
+			<ObjectLOD>1</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-9.375000,0.000000,-21.875000</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.8000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj2">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>LargeRockForm</ObjectDefName>
+			<ObjectLOD>1</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-14.875000,0.000000,6.750000</Position>
+			<Rotation>0.000000,-5.497787,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.2000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj3">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>RockBridge</ObjectDefName>
+			<ObjectLOD>1</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-21.875000,3.000000,3.125000</Position>
+			<Rotation>0.000000,-1.575000,0.174533</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.3600</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj4">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>SmallRockForm</ObjectDefName>
+			<ObjectLOD>1</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>17.500000,0.000000,16.875000</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.5000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj5">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>SmoothRock5</ObjectDefName>
+			<ObjectLOD>1</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-12.500000,0.000000,17.000000</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.9200</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj6">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>SmoothRock3</ObjectDefName>
+			<ObjectLOD>1</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-3.125000,0.000000,21.875000</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.5000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj7">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>SmoothRock5</ObjectDefName>
+			<ObjectLOD>1</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-6.250000,0.000000,19.125000</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.5000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj8">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>SmoothRock2</ObjectDefName>
+			<ObjectLOD>1</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>6.250000,0.000000,19.125000</Position>
+			<Rotation>0.000000,-0.825000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0800</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj9">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>SmoothRock2</ObjectDefName>
+			<ObjectLOD>1</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>3.125000,0.000000,-18.750000</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.3000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj10">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>SmoothRock3</ObjectDefName>
+			<ObjectLOD>1</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>16.875000,0.000000,4.500000</Position>
+			<Rotation>0.000000,1.275000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.3200</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj11">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>SmoothRock3</ObjectDefName>
+			<ObjectLOD>1</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>12.500000,0.000000,-21.875000</Position>
+			<Rotation>0.000000,-0.150000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.6400</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj12">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>SharpRock5</ObjectDefName>
+			<ObjectLOD>1</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>14.750000,0.000000,-15.625000</Position>
+			<Rotation>0.000000,-0.525000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.2400</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj13">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>SharpRock5</ObjectDefName>
+			<ObjectLOD>1</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-3.125000,0.000000,15.000000</Position>
+			<Rotation>0.000000,-0.525000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0400</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj14">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>SmoothRock5</ObjectDefName>
+			<ObjectLOD>1</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>20.000000,0.000000,-3.125000</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.8000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj15">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>Statue_Guardian1</ObjectDefName>
+			<ObjectLOD>6</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>0.479105,0.000000,0.895844</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.9200</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignPath InternalName="_path0"/>
+	</TileDesign>
+</TileDesigns>

@@ -1,0 +1,155 @@
+<FlavorText>
+        <Topic>Talk_DeclareWar</Topic>
+        <Faction>Faction_Dagorath</Faction>
+        <Text>[L_LeaderName]. The Eldritch hunger is upon you. The [L_FactionName] are the next victims of my red legions!</Text>
+        <Text>I shall toy with you no longer, [L_LeaderName]. My hungry armies march to feed upon you in war!</Text>
+		<Text>In the name of [S_FactionShortName] and the coming Paradise, we now make war upon you!</Text>		
+    </FlavorText>
+	
+	
+    <FlavorText>
+        <Topic>Talk_EnteringForeignTerritory</Topic>
+        <Faction>Faction_Dagorath</Faction>
+        <Text>Trespasser! Do not these soldiers follow the orders of [L_LeaderName]? Withdraw your minions or I shall consume them.</Text>
+        <Text>You trespass on the ground of [S_FactionShortName]. Begone now, or face endless torture and enslavement of your spirit.</Text>		
+    </FlavorText>
+    <FlavorText>
+        <Topic>Talk_FirstContact</Topic>
+        <Faction>Faction_Dagorath</Faction>
+        <Text>Know that you stand before the blessed soil of Dagorath, [L_FactionShortName]. We serve Dagorath Who Knows Void, and under his wisdom we shall remake this world into a paradise beyond any era of the Magi.</Text>
+    </FlavorText>
+    <FlavorText>
+        <Topic>Talk_FirstContact</Topic>
+        <Faction>Faction_Dagorath</Faction>
+        <ListeningFaction>KingdomOfAltar</ListeningFaction>
+        <R_OK>Talk_FirstContact_R_OK_KingdomToEmpire</R_OK>
+        <Text>[L_LeaderName] of Altar! We are the Void blessed. Make peace with us, and both our peoples can have freedom. Defy us, and only we shall enjoy it.</Text>
+    </FlavorText>
+    <FlavorText>
+        <Topic>Talk_FirstContact</Topic>
+        <Faction>Faction_Dagorath</Faction>
+        <ListeningFaction>KingdomOfCapitar</ListeningFaction>
+        <R_OK>Talk_FirstContact_R_OK_KingdomToEmpire</R_OK>
+        <Text>[L_LeaderName] of Capitar. Your wealth will not translate into the world that is coming. But for now, we respect your economic strength. You would be wise to respect our vast knowledge of this universe.</Text>
+    </FlavorText>
+    <FlavorText>
+        <Topic>Talk_FirstContact</Topic>
+        <Faction>Faction_Dagorath</Faction>
+        <ListeningFaction>KingdomOfGilden</ListeningFaction>
+        <R_OK>Talk_FirstContact_R_OK_KingdomToEmpire</R_OK>
+        <Text>[L_LeaderName] of Gilden! We celebrate the stout arms you craft. The future we bring has no need of such trinkets, but for now we shall respect your ways. Do not dare disrespect ours.</Text>
+    </FlavorText>
+    <FlavorText>
+        <Topic>Talk_FirstContact</Topic>
+        <Faction>Faction_Dagorath</Faction>
+        <ListeningFaction>KingdomOfPariden</ListeningFaction>
+        <R_OK>Talk_FirstContact_R_OK_KingdomToEmpire</R_OK>
+        <Text>[L_LeaderName] of Pariden! Your namesake Titan came from beyond this world. What we seek does as well, and shall make Pariden seem like a child. If you are wise enough to respect our ways, you might join us in celebrating the coming world.</Text>
+    </FlavorText>
+    <FlavorText>
+        <Topic>Talk_FirstContact</Topic>
+        <Faction>Faction_Dagorath</Faction>
+        <ListeningFaction>KingdomOfTarth</ListeningFaction>
+        <R_OK>Talk_FirstContact_R_OK_KingdomToEmpire</R_OK>
+        <Text>[L_LeaderName] of Tarth! Alas, that soon your military prowess will be so obsolete. Ally with us, and you may share in the future. Defy us, and you shall become its fodder.</Text>
+    </FlavorText>
+    <FlavorText>
+        <Topic>Talk_FirstContact</Topic>
+        <Faction>Faction_Dagorath</Faction>
+        <ListeningFaction>EmpireOfKraxis</ListeningFaction>
+        <R_OK>Talk_FirstContact_R_OK_EmpireToEmpire</R_OK>
+        <Text>[L_LeaderName] of Kraxis! Alas, that soon your military prowess will be so obsolete. Ally with us, and you may share in the future. Defy us, and you shall become its fodder.</Text>
+    </FlavorText>
+    <FlavorText>
+        <Topic>Talk_FirstContact</Topic>
+        <Faction>Faction_Dagorath</Faction>
+        <ListeningFaction>EmpireOfMagnar</ListeningFaction>
+        <R_OK>Talk_FirstContact_R_OK_EmpireToEmpire</R_OK>
+        <Text>[L_LeaderName] of Magnar! Curgen favored your line above mine, and I congratulate you for your mighty past. But now is the future and the next era belongs to me.</Text>
+    </FlavorText>
+    <FlavorText>
+        <Topic>Talk_FirstContact</Topic>
+        <Faction>Faction_Dagorath</Faction>
+        <ListeningFaction>EmpireOfResoln</ListeningFaction>
+        <R_OK>Talk_FirstContact_R_OK_EmpireToEmpire</R_OK>
+        <Text>[L_LeaderName] of Resoln! You are Curgen's final legacy to this world. But your father is passed, as is his power. You have some knowledge of the void. You would be wise to ally with us, foolish to defy us.</Text>
+    </FlavorText>
+    <FlavorText>
+        <Topic>Talk_FirstContact</Topic>
+        <Faction>Faction_Dagorath</Faction>
+        <ListeningFaction>EmpireOfUmber</ListeningFaction>
+        <R_OK>Talk_FirstContact_R_OK_EmpireToEmpire</R_OK>
+        <Text>[L_LeaderName] of Umber! Your Titan matriarch is long gone now. Ally with our vision of the future world, or your empire is doomed to become as much a ruined relic as its namesake.</Text>
+    </FlavorText>
+    <FlavorText>
+        <Topic>Talk_Greeting_Generic</Topic>
+        <Faction>Faction_Dagorath</Faction>
+        <Text>We greet you, [L_FactionShortName]. We are making a bright new future. With us, you shall celebrate it. Against us, you shall be as food to fuel it.</Text>
+        <Text>You stand in [S_FactionShortName], [L_LeaderName]. Justify yourself, immediately.</Text>		
+    </FlavorText>
+    <FlavorText>
+        <Topic>Talk_Greeting_Generic</Topic>
+        <Faction>Faction_Dagorath</Faction>
+		<Rule>11</Rule>		
+        <Text>Greetings, [L_FactionShortName]. What is more important than murdering the Kingdoms of Men, that you seek me?</Text>
+        <Text>You stand in [S_FactionShortName], [L_LeaderName]. Justify yourself, immediately.</Text>		
+    </FlavorText>	
+    <FlavorText>
+        <Topic>Talk_Greeting_GenericTrade</Topic>
+        <Faction>Faction_Dagorath</Faction>
+        <Text>Soon money and economics shall be irrelevant. But for now, we listen to those who would bring us wealth.</Text>
+    </FlavorText>
+	
+	<!-- empire speaking to any listener 
+	<FlavorText>
+		<Topic>Talk_WorldSituation</Topic>
+		<Rule>10</Rule>
+		<Text>[L_LeaderName]. Our agents have visited [L_CAPITAL_CITY]. Impressive. I look forward to adding it to my empire.</Text>
+		<Text>[L_LeaderName], we are gathering the most powerful beings into our empire. Soon [BEST_CHAMPION], the most powerful of them all shall be ours...or dead.</Text>
+		<Text>[L_LeaderName]. Your capital is only [DISTANCE_L_CAPITAL] leagues from the most foul monster we've discovered. It is known as a [BEST_MONSTER].</Text>
+		<Text>It is with grave news I speak to you today, [L_LeaderName]. Your capital is only [DISTANCE_L_CAPITAL] leagues from the most powerful monster we've discovered. It is known as a [BEST_MONSTER].</Text>
+		<Text>Let us speak candidly, [L_LeaderName]. </Text>
+		<Text>Let me tell you something that few know the whole truth of, [L_LeaderName]. The Dread Lord Talax himself, the very last of the Titans, favored me with his wisdom concerning the inevitable battle between the Kingdoms and the Empires. It is the destiny of the Empires to rule. We are the true inheritors of Curgen's throne and our armies will fulfill his vision.</Text>
+		<Text>I shall share with you tidings, [L_LeaderName]. The people of [L_CAPITAL_CITY] are unaware of the nature of the struggle between the Kingdoms and the Empires. The Kingdoms do not understand the nature of life. It is short. It is harsh. It is a struggle. The world is governed by the laws of scarcity. The Empires understand this and will do whatever is necessary to secure their existence. The Kingdoms, by contrast, will not.</Text>
+		<Text>Let me tell you the true nature of the Kingdoms, [L_LeaderName]. In all things, they are weak. When boldness is required, they vacillate. When action necessary, they deliberate. When words are superflous, they pontificate. It is for these reasons that they shall fail to survive in this world of scarcity.</Text>
+		<Text>The rise of the Empires is ineviable, [L_LeaderName]. These are desperate times. And we are a desperate people. We provide the example. We do not stray our course to aid those less fortunate. If they cannot summon the will to survive, then let them fall. Let them die. There is room for others to take their place.</Text>
+		<R_OK>Talk_Generic_R_OK</R_OK>
+	</FlavorText>-->
+	
+	<!-- empire talking to empire -->
+	
+	<FlavorText>
+    <Topic>Talk_WorldSituation</Topic>
+    <Faction>Faction_Dagorath</Faction>
+    <Rule>11</Rule>
+    <Text>Greetings [L_LeaderName]. This is a new era for our world. The Titans were merely the beginning. The powers waiting in the Void Beyond wish to arrive here. Help us in this, and you shall rejoice. Challenge us, and you shall be consumed.</Text>
+    <Text>Hail [L_LeaderName]. Let us ally. Would it be not better for our might to combine? Then we need not eat of your power and essence. But if we must do this to you, know we shall feast greedily.</Text>
+    <Text>Greetings [L_LeaderName]. Your capital, [L_CAPITAL_CITY], is impressive. We look forward to it becoming one of the great wonders of the world.</Text>
+    <Text>Greetings [L_LeaderName]. You seem to be doing well. We hope we can find ways to work together.</Text>
+    <Text>Hail [L_LeaderName]! Rumor has it that [BEST_CHAMPION] is the greatest of champions. I admit, I dream of consuming his strength.</Text>
+    <Text>[L_LeaderName]. Your capital is only [DISTANCE_L_CAPITAL] leagues from a great threat. It is called [BEST_MONSTER]. Yet it is nothing compared to the minds that await in the Void.</Text>
+	<Text>Let me tell you something that few know the whole truth of, [L_LeaderName]. The Dread Lord Talax himself, the very last of the Titans, told some with his wisdom concerning the inevitable battle between the Kingdoms and the Empires. But I know what he does not. The Kingdoms AND Empires will lose! The Titans know little of the powers that long to arrive upon Elemental. Talax himself will beg me for mercy once I have achieved this. Remember my words today.</Text>
+    <Text>We have [S_MONEY] gildar. You have [L_MONEY] gildar. Soon money will be meaningless, [L_LeaderName].</Text>
+    <Text>It will not be Kings or Emperors who decide the fate of the world. It will be minds far superior to ours. Know that I serve these minds. Do you dare risk being caught opposing them?</Text>
+    <Text>[L_LeaderName]. Security is an illusion. Your wars can achieve nothing permanent. I encourage you to suckle upon your delusions, while I lead the world to its Next Age.</Text>
+    <R_OK>Talk_Generic_R_OK</R_OK>
+  </FlavorText>
+
+  <!--empire talking to kingdom -->
+  
+  <FlavorText>
+    <Topic>Talk_WorldSituation</Topic>
+    <Faction>Faction_Dagorath</Faction>
+    <Rule>12</Rule>
+    <Text>[L_LeaderName], I have seen the civilization of the Kingdoms. The question I ask is this: given your small knowledge of history, how do you not look upon yourselves and laugh? </Text>
+    <Text>[L_LeaderName], the Empires will never succeed. I know this. Neither shall the kingdoms! Civilization is just a tool. Temporary. Our solution shall last for eternity. Soon, you will humble yourself before us, and thank us for what we are building.</Text>
+    <Text>[L_LeaderName]. I have been to  your capital, [L_CAPITAL_CITY]. It is beautiful. Such a shame that it and all other matter of this world will soon be cast aside for paradise.</Text>
+    <Text>[L_LeaderName]. Your empire has come far. You call it a kingdom, perhaps to fool yourself? You follow the rules of this world and the cycle of rising and falling is inevitable. But we shall free you from this cycle. We shall change everything.</Text>
+    <Text>Hail [L_LeaderName]! Rumor has it that [BEST_CHAMPION] is the greatest of champions. I admit, I dream of consuming his strength.</Text>
+    <Text>[L_LeaderName]. Your capital is only [DISTANCE_L_CAPITAL] leagues from a great threat. It is called [BEST_MONSTER]. Yet it is nothing compared to the minds that await in the Void.</Text>
+    <Text>They say the Forge of the Overlord brought to this world the Titans. And it was the Titans who it is said brought the rise of the various Fallen races. A shame that greater masters were not summoned in place of the Titans. But that is exactly what we shall achieve, soon</Text>
+    <Text>The Spell of Making is magic that was thought lost from the world. While the Book of Mastery has been found, no one can yet translate its ancient words. We shall soon have this knowledge. With the Spell Of Making shall build a portal greater than anything Curgen attempted. And then you shall see paradise. And in that moment you shall weep.</Text>
+    <Text>We have [S_MONEY] gildar. You have [L_MONEY] gildar. Soon money will be meaningless, [L_LeaderName].</Text>
+    <Text>What you consider your will, is merely a primitive drive. Your choices are predictable. When the Void comes to Elemental, we shall be relieved from these illusions. Under the rule of the True masters, we shall have perfect freedom.</Text>
+    <R_OK>Talk_Generic_R_OK</R_OK>
+  </FlavorText>

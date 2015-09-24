@@ -1,0 +1,99 @@
+<ImprovementTypes>
+<ImprovementType InternalName="Dagorath_Gate">
+        <DisplayName>Void Gate Tower</DisplayName>
+        <Description>Inside this tower outpost a gate to another place is held open indefinitely, allowing you some control over what comes through.</Description>
+        <RequiresForceUnlock>1</RequiresForceUnlock>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <ZOCMinRadius>2</ZOCMinRadius>
+        <ZOCMaxRadius>2</ZOCMaxRadius>
+        <ZOCRadiusTurnsBeforeUpdate>1</ZOCRadiusTurnsBeforeUpdate>
+        <HideInBuildList>1</HideInBuildList>
+        <LaborToBuild>-1</LaborToBuild>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>VoidBound</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>EldritchEnergy</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Eldritch Energy per Season</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>10000</AIPriority>
+            <AITag>Mining</AITag>
+        </AIData>
+        <ArtDef>Art_Dagorath_Gate</ArtDef>
+    </ImprovementType>
+	
+	<ImprovementType InternalName="Stable_Gate">
+        <DisplayName>Stable Gate</DisplayName>
+        <Description>This gate is held open indefinitely, ferrying in Eldritch armies while also allowing you some choice in what form your Eldritch allies will take. Just know that your citizens will be terrified to live alongside the energies that exude from it.</Description>
+        <RequiresCity>1</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+		<Prereq>
+            <Type>Resource</Type>
+            <Attribute>TileYieldEssence</Attribute>
+        </Prereq>
+		<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>VoidBound</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <LaborToBuild>350</LaborToBuild>
+		<GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>LimitedUnitCap</Attribute>
+            <StrVal>Unit_Horror_Dagorath_Group</StrVal>
+            <Value>1</Value>
+            <Provides>Recruit a Horror Army</Provides>
+        </GameModifier>
+		<GameModifier>
+            <ModType>ConstructionResourceCost</ModType>
+            <Attribute>Mana</Attribute>
+            <Value>-200</Value>
+        </GameModifier>
+		<GameModifier>
+            <ModType>ConstructionResourceCost</ModType>
+            <Attribute>RefinedCrystal</Attribute>
+            <Value>-30</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>EldritchEnergy</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Eldritch Energy per Season</Provides>
+        </GameModifier>
+		<GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Unrest</Attribute>
+            <Value>10</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+10% Unrest</Provides>
+        </GameModifier>
+		<GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Prestige</Attribute>
+            <Value>-1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>-1 Growth</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>100000</AIPriority>
+            <AITag>Merchant</AITag>
+        </AIData>
+        <ArtDef>Art_StableGate</ArtDef>
+    </ImprovementType>
+	
+</ImprovementTypes>

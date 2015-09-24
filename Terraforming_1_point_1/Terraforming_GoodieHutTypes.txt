@@ -1,0 +1,625 @@
+ <GoodieHutTypes>
+
+ 
+ <!--
+ 
+    <GoodieHutType InternalName="GH_ArcticGift1">
+        <Name>Icy Chest</Name>
+        <Description>Here lies a crate of polished hardwood, wrapped in lattices of ice and dusted with snow.</Description>
+       <Rarity>-1</Rarity>
+        <MinDistanceFromStartingPoints>8</MinDistanceFromStartingPoints>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <SpawnRating>0</SpawnRating>
+        <TileDesign>G_Treasure_Chest_01</TileDesign>
+        <DrawnIcon>Treasure_TreasureChest.png</DrawnIcon>
+        <OnSelectSFX>Click_Treasure</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>G_Treasure_Chest_01.png</All>
+        </Medallions>
+        <Treasure>
+            <Title>Found Item</Title>
+            <Desc>Inside the chest you find a valuable item.</Desc>
+            <Liklihood>100</Liklihood>
+            <SFX>Goodie_Crate_01</SFX>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <Attribute>Longsword_Freezing2</Attribute>
+            </GameModifier>
+        </Treasure>
+    </GoodieHutType>
+
+
+    <GoodieHutType InternalName="GH_ArcticGift2">
+        <Name>Icy Chest</Name>
+        <Description>Here lies a crate of polished hardwood, wrapped in lattices of ice and dusted with snow.</Description>
+       <Rarity>-1</Rarity>
+        <MinDistanceFromStartingPoints>8</MinDistanceFromStartingPoints>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <SpawnRating>0</SpawnRating>
+        <TileDesign>G_Treasure_Chest_01</TileDesign>
+        <DrawnIcon>Treasure_TreasureChest.png</DrawnIcon>
+        <OnSelectSFX>Click_Treasure</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>G_Treasure_Chest_01.png</All>
+        </Medallions>
+        <Treasure>
+            <Title>Found Item</Title>
+            <Desc>Inside the chest you find a valuable item.</Desc>
+            <Liklihood>100</Liklihood>
+            <SFX>Goodie_Crate_01</SFX>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <Attribute>Staff_Winters</Attribute>
+            </GameModifier>
+        </Treasure>
+    </GoodieHutType>
+
+
+    <GoodieHutType InternalName="GH_ArcticGift3">
+        <Name>Icy Chest</Name>
+        <Description>Here lies a crate of polished hardwood, wrapped in lattices of ice and dusted with snow.</Description>
+       <Rarity>-1</Rarity>
+        <MinDistanceFromStartingPoints>8</MinDistanceFromStartingPoints>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <SpawnRating>0</SpawnRating>
+        <TileDesign>G_Treasure_Chest_01</TileDesign>
+        <DrawnIcon>Treasure_TreasureChest.png</DrawnIcon>
+        <OnSelectSFX>Click_Treasure</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>G_Treasure_Chest_01.png</All>
+        </Medallions>
+        <Treasure>
+            <Title>Found Item</Title>
+            <Desc>Inside the chest you find a valuable item.</Desc>
+            <Liklihood>100</Liklihood>
+            <SFX>Goodie_Crate_01</SFX>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <Attribute>Mace_Winters</Attribute>
+            </GameModifier>
+        </Treasure>
+    </GoodieHutType>
+
+	-->
+	
+    <GoodieHutType InternalName="GH_OceanGift1">
+        <Name>Barnacled Chest</Name>
+        <Description>Here lies a crate of polished hardwood, covered in barnacles and wrapped with seaweed.</Description>
+       <Rarity>-1</Rarity>
+        <MinDistanceFromStartingPoints>8</MinDistanceFromStartingPoints>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <SpawnRating>0</SpawnRating>
+        <TileDesign>G_Treasure_Chest_01</TileDesign>
+        <DrawnIcon>Treasure_TreasureChest.png</DrawnIcon>
+        <OnSelectSFX>Click_Treasure</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>G_Treasure_Chest_01.png</All>
+        </Medallions>
+        <Treasure>
+            <Title>Found Item</Title>
+            <Desc>Inside the chest you find a valuable item.</Desc>
+            <Liklihood>100</Liklihood>
+            <SFX>Goodie_Crate_01</SFX>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <Attribute>TomeoftheWaves2</Attribute>
+            </GameModifier>
+        </Treasure>
+    </GoodieHutType>
+	
+	    <GoodieHutType InternalName="GH_OceanGift2">
+        <Name>Barnacled Chest</Name>
+        <Description>Here lies a crate of polished hardwood, covered in barnacles and wrapped with seaweed.</Description>
+       <Rarity>-1</Rarity>
+        <MinDistanceFromStartingPoints>8</MinDistanceFromStartingPoints>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <SpawnRating>0</SpawnRating>
+        <TileDesign>G_Treasure_Chest_01</TileDesign>
+        <DrawnIcon>Treasure_TreasureChest.png</DrawnIcon>
+        <OnSelectSFX>Click_Treasure</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>G_Treasure_Chest_01.png</All>
+        </Medallions>
+        <Treasure>
+            <Title>Found Item</Title>
+            <Desc>Inside the chest you find a valuable item.</Desc>
+            <Liklihood>100</Liklihood>
+            <SFX>Goodie_Crate_01</SFX>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <Attribute>Longsword_Freezing2</Attribute>
+            </GameModifier>
+        </Treasure>
+    </GoodieHutType>
+
+    <GoodieHutType InternalName="GH_OceanGift3">
+        <Name>Barnacled Chest</Name>
+        <Description>Here lies a crate of polished hardwood, covered in barnacles and wrapped with seaweed.</Description>
+       <Rarity>-1</Rarity>
+        <MinDistanceFromStartingPoints>8</MinDistanceFromStartingPoints>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <SpawnRating>0</SpawnRating>
+        <TileDesign>G_Treasure_Chest_01</TileDesign>
+        <DrawnIcon>Treasure_TreasureChest.png</DrawnIcon>
+        <OnSelectSFX>Click_Treasure</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>G_Treasure_Chest_01.png</All>
+        </Medallions>
+        <Treasure>
+            <Title>Found Item</Title>
+            <Desc>Inside the chest you find a valuable item.</Desc>
+            <Liklihood>100</Liklihood>
+            <SFX>Goodie_Crate_01</SFX>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <Attribute>GoldenBelt2</Attribute>
+            </GameModifier>
+        </Treasure>
+    </GoodieHutType>
+
+
+    <GoodieHutType InternalName="GH_VerdantGift1">
+        <Name>Living Chest</Name>
+        <Description>The hardwood of this chest is stout and smells of pungent moss. Lacking hinges or a lock, flowered vines alone seem to hold its lid secure. An Ocean spirit or flying champion could reach it for you.</Description>
+       <Rarity>-1</Rarity>
+        <MinDistanceFromStartingPoints>8</MinDistanceFromStartingPoints>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <SpawnRating>0</SpawnRating>
+        <TileDesign>G_Treasure_Chest_01</TileDesign>
+        <DrawnIcon>Treasure_TreasureChest.png</DrawnIcon>
+        <OnSelectSFX>Click_Treasure</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>G_Treasure_Chest_01.png</All>
+        </Medallions>
+        <Treasure>
+            <Title>Found Item</Title>
+            <Desc>Inside the chest you find a valuable item.</Desc>
+            <Liklihood>100</Liklihood>
+            <SFX>Goodie_Crate_01</SFX>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <Attribute>Longsword_Searingray</Attribute>
+            </GameModifier>
+        </Treasure>
+    </GoodieHutType>
+	
+	    <GoodieHutType InternalName="GH_VerdantGift2">
+        <Name>Living Chest</Name>
+        <Description>The hardwood of this chest is stout and smells of pungent moss. Lacking hinges or a lock, flowered vines alone seem to hold its lid secure.</Description>
+       <Rarity>-1</Rarity>
+        <MinDistanceFromStartingPoints>8</MinDistanceFromStartingPoints>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <SpawnRating>0</SpawnRating>
+        <TileDesign>G_Treasure_Chest_01</TileDesign>
+        <DrawnIcon>Treasure_TreasureChest.png</DrawnIcon>
+        <OnSelectSFX>Click_Treasure</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>G_Treasure_Chest_01.png</All>
+        </Medallions>
+        <Treasure>
+            <Title>Found Item</Title>
+            <Desc>Inside the chest you find a valuable item.</Desc>
+            <Liklihood>100</Liklihood>
+            <SFX>Goodie_Crate_01</SFX>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <Attribute>Token_MagicalSeed2</Attribute>
+            </GameModifier>
+        </Treasure>
+    </GoodieHutType>
+
+
+    <GoodieHutType InternalName="GH_VerdantGift3">
+        <Name>Living Chest</Name>
+        <Description>The hardwood of this chest is stout and smells of pungent moss. Lacking hinges or a lock, flowered vines alone seem to hold its lid secure.</Description>
+		<Rarity>-1</Rarity>
+        <MinDistanceFromStartingPoints>8</MinDistanceFromStartingPoints>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <SpawnRating>0</SpawnRating>
+        <TileDesign>G_Treasure_Chest_01</TileDesign>
+        <DrawnIcon>Treasure_TreasureChest.png</DrawnIcon>
+        <OnSelectSFX>Click_Treasure</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>G_Treasure_Chest_01.png</All>
+        </Medallions>
+        <Treasure>
+            <Title>Found Item</Title>
+            <Desc>Inside the chest you find a valuable item.</Desc>
+            <Liklihood>100</Liklihood>
+            <SFX>Goodie_Crate_01</SFX>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <Attribute>Token_MagicalSeed3</Attribute>
+            </GameModifier>
+        </Treasure>
+    </GoodieHutType>
+
+	<!--
+	
+    <GoodieHutType InternalName="GH_VerdantGift4">
+        <Name>Living Chest</Name>
+        <Description>The hardwood of this chest is stout and smells of pungent moss. Lacking hinges or a lock, flowered vines alone seem to hold its lid scure.</Description>
+       <Rarity>-1</Rarity>
+        <MinDistanceFromStartingPoints>8</MinDistanceFromStartingPoints>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <SpawnRating>0</SpawnRating>
+        <TileDesign>G_Treasure_Chest_01</TileDesign>
+        <DrawnIcon>Treasure_TreasureChest.png</DrawnIcon>
+        <OnSelectSFX>Click_Treasure</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>G_Treasure_Chest_01.png</All>
+        </Medallions>
+        <Treasure>
+            <Title>Found Item</Title>
+            <Desc>Inside the chest you find a valuable item.</Desc>
+            <Liklihood>100</Liklihood>
+            <SFX>Goodie_Crate_01</SFX>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <Attribute>Token_MagicalSeed3</Attribute>
+            </GameModifier>
+        </Treasure>
+    </GoodieHutType>
+
+    <GoodieHutType InternalName="GH_VerdantGift5">
+        <Name>Living Chest</Name>
+        <Description>The hardwood of this chest is stout and smells of pungent moss. Lacking hinges or a lock, flowered vines alone seem to hold its lid scure.</Description>
+       <Rarity>-1</Rarity>
+        <MinDistanceFromStartingPoints>8</MinDistanceFromStartingPoints>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <SpawnRating>0</SpawnRating>
+        <TileDesign>G_Treasure_Chest_01</TileDesign>
+        <DrawnIcon>Treasure_TreasureChest.png</DrawnIcon>
+        <OnSelectSFX>Click_Treasure</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>G_Treasure_Chest_01.png</All>
+        </Medallions>
+        <Treasure>
+            <Title>Found Item</Title>
+            <Desc>Inside the chest you find a valuable item.</Desc>
+            <Liklihood>100</Liklihood>
+            <SFX>Goodie_Crate_01</SFX>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <Attribute>Token_MagicalSeed4</Attribute>
+            </GameModifier>
+        </Treasure>
+    </GoodieHutType>
+
+	-->
+	
+    <GoodieHutType InternalName="GH_FamineGift1">
+        <Name>Rotting Chest</Name>
+        <Description>The hardwood of this chest is soft and warped from intense rot. Any who approach it feel their mouth dry, and their belly rumble.</Description>
+       <Rarity>-1</Rarity>
+        <MinDistanceFromStartingPoints>8</MinDistanceFromStartingPoints>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <SpawnRating>0</SpawnRating>
+        <TileDesign>G_Treasure_Chest_01</TileDesign>
+        <DrawnIcon>Treasure_TreasureChest.png</DrawnIcon>
+        <OnSelectSFX>Click_Treasure</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>G_Treasure_Chest_01.png</All>
+        </Medallions>
+        <Treasure>
+            <Title>Found Item</Title>
+            <Desc>Inside the chest you find a valuable item.</Desc>
+            <Liklihood>100</Liklihood>
+            <SFX>Goodie_Crate_01</SFX>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <Attribute>Scroll_Despair</Attribute>
+            </GameModifier>
+        </Treasure>
+    </GoodieHutType>
+
+    <GoodieHutType InternalName="GH_FamineGift2">
+        <Name>Rotting Chest</Name>
+        <Description>The hardwood of this chest is soft and warped from intense rot. Any who approach it feel their mouth dry, and their belly rumble.</Description>
+       <Rarity>-1</Rarity>
+        <MinDistanceFromStartingPoints>8</MinDistanceFromStartingPoints>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <SpawnRating>0</SpawnRating>
+        <TileDesign>G_Treasure_Chest_01</TileDesign>
+        <DrawnIcon>Treasure_TreasureChest.png</DrawnIcon>
+        <OnSelectSFX>Click_Treasure</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>G_Treasure_Chest_01.png</All>
+        </Medallions>
+        <Treasure>
+            <Title>Found Item</Title>
+            <Desc>Inside the chest you find a valuable item.</Desc>
+            <Liklihood>100</Liklihood>
+            <SFX>Goodie_Crate_01</SFX>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <Attribute>CloakOfTheNight2</Attribute>
+            </GameModifier>
+        </Treasure>
+    </GoodieHutType>
+
+    <GoodieHutType InternalName="GH_FamineGift3">
+        <Name>Rotting Chest</Name>
+        <Description>The hardwood of this chest is soft and warped from intense rot. Any who approach it feel their mouth dry, and their belly rumble.</Description>
+       <Rarity>-1</Rarity>
+        <MinDistanceFromStartingPoints>8</MinDistanceFromStartingPoints>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <SpawnRating>0</SpawnRating>
+        <TileDesign>G_Treasure_Chest_01</TileDesign>
+        <DrawnIcon>Treasure_TreasureChest.png</DrawnIcon>
+        <OnSelectSFX>Click_Treasure</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>G_Treasure_Chest_01.png</All>
+        </Medallions>
+        <Treasure>
+            <Title>Found Item</Title>
+            <Desc>Inside the chest you find a valuable item.</Desc>
+            <Liklihood>100</Liklihood>
+            <SFX>Goodie_Crate_01</SFX>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <Attribute>Broadsword_DesertHunger</Attribute>
+            </GameModifier>
+        </Treasure>
+    </GoodieHutType>
+
+    <GoodieHutType InternalName="GH_EmberGift1">
+        <Name>Scorched Chest</Name>
+        <Description>The hardwood of this chest is blackened from roasting in fire.</Description>
+       <Rarity>-1</Rarity>
+        <MinDistanceFromStartingPoints>8</MinDistanceFromStartingPoints>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <SpawnRating>0</SpawnRating>
+        <TileDesign>G_Treasure_Chest_01</TileDesign>
+        <DrawnIcon>Treasure_TreasureChest.png</DrawnIcon>
+        <OnSelectSFX>Click_Treasure</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>G_Treasure_Chest_01.png</All>
+        </Medallions>
+        <Treasure>
+            <Title>Found Item</Title>
+            <Desc>Inside the chest you find a valuable item.</Desc>
+            <Liklihood>100</Liklihood>
+            <SFX>Goodie_Crate_01</SFX>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <Attribute>Greataxe_Flaming</Attribute>
+            </GameModifier>
+        </Treasure>
+    </GoodieHutType>
+
+    <GoodieHutType InternalName="GH_EmberGift2">
+        <Name>Scorched Chest</Name>
+        <Description>The hardwood of this chest is blackened from roasting in fire.</Description>
+       <Rarity>-1</Rarity>
+        <MinDistanceFromStartingPoints>8</MinDistanceFromStartingPoints>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <SpawnRating>0</SpawnRating>
+        <TileDesign>G_Treasure_Chest_01</TileDesign>
+        <DrawnIcon>Treasure_TreasureChest.png</DrawnIcon>
+        <OnSelectSFX>Click_Treasure</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>G_Treasure_Chest_01.png</All>
+        </Medallions>
+        <Treasure>
+            <Title>Found Item</Title>
+            <Desc>Inside the chest you find a valuable item.</Desc>
+            <Liklihood>100</Liklihood>
+            <SFX>Goodie_Crate_01</SFX>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <Attribute>PlateVambraces_Volcanic</Attribute>
+            </GameModifier>
+        </Treasure>
+    </GoodieHutType>
+
+    <GoodieHutType InternalName="GH_EmberGift3">
+        <Name>Scorched Chest</Name>
+        <Description>The hardwood of this chest is blackened from roasting in fire.</Description>
+       <Rarity>-1</Rarity>
+        <MinDistanceFromStartingPoints>8</MinDistanceFromStartingPoints>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <SpawnRating>0</SpawnRating>
+        <TileDesign>G_Treasure_Chest_01</TileDesign>
+        <DrawnIcon>Treasure_TreasureChest.png</DrawnIcon>
+        <OnSelectSFX>Click_Treasure</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>G_Treasure_Chest_01.png</All>
+        </Medallions>
+        <Treasure>
+            <Title>Found Item</Title>
+            <Desc>Inside the chest you find a valuable item.</Desc>
+            <Liklihood>100</Liklihood>
+            <SFX>Goodie_Crate_01</SFX>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <Attribute>Longsword_Flaming2</Attribute>
+            </GameModifier>
+        </Treasure>
+    </GoodieHutType>
+
+    <GoodieHutType InternalName="GH_GaleGift1">
+        <Name>Curious Chest</Name>
+        <Description>Cloud-like wisps of vapor cling to this chest, as if it had been ripped from the sky.</Description>
+       <Rarity>-1</Rarity>
+        <MinDistanceFromStartingPoints>8</MinDistanceFromStartingPoints>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <SpawnRating>0</SpawnRating>
+        <TileDesign>G_Treasure_Chest_01</TileDesign>
+        <DrawnIcon>Treasure_TreasureChest.png</DrawnIcon>
+        <OnSelectSFX>Click_Treasure</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>G_Treasure_Chest_01.png</All>
+        </Medallions>
+        <Treasure>
+            <Title>Found Item</Title>
+            <Desc>Inside the chest you find a valuable item.</Desc>
+            <Liklihood>100</Liklihood>
+            <SFX>Goodie_Crate_01</SFX>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <Attribute>Pike_AirElemental</Attribute>
+            </GameModifier>
+        </Treasure>
+    </GoodieHutType>
+
+    <GoodieHutType InternalName="GH_GaleGift2">
+        <Name>Curious Chest</Name>
+        <Description>Cloud-like wisps of vapor cling to this chest, as if it had been ripped from the sky.</Description>
+       <Rarity>-1</Rarity>
+        <MinDistanceFromStartingPoints>8</MinDistanceFromStartingPoints>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <SpawnRating>0</SpawnRating>
+        <TileDesign>G_Treasure_Chest_01</TileDesign>
+        <DrawnIcon>Treasure_TreasureChest.png</DrawnIcon>
+        <OnSelectSFX>Click_Treasure</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>G_Treasure_Chest_01.png</All>
+        </Medallions>
+        <Treasure>
+            <Title>Found Item</Title>
+            <Desc>Inside the chest you find a valuable item.</Desc>
+            <Liklihood>100</Liklihood>
+            <SFX>Goodie_Crate_01</SFX>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <Attribute>YewLongbow_Breezefly</Attribute>
+            </GameModifier>
+        </Treasure>
+    </GoodieHutType>
+
+    <GoodieHutType InternalName="GH_GaleGift3">
+        <Name>Curious Chest</Name>
+        <Description>Cloud-like wisps of vapor cling to this chest, as if it had been ripped from the sky.</Description>
+       <Rarity>-1</Rarity>
+        <MinDistanceFromStartingPoints>8</MinDistanceFromStartingPoints>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <SpawnRating>0</SpawnRating>
+        <TileDesign>G_Treasure_Chest_01</TileDesign>
+        <DrawnIcon>Treasure_TreasureChest.png</DrawnIcon>
+        <OnSelectSFX>Click_Treasure</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>G_Treasure_Chest_01.png</All>
+        </Medallions>
+        <Treasure>
+            <Title>Found Item</Title>
+            <Desc>Inside the chest you find a valuable item.</Desc>
+            <Liklihood>100</Liklihood>
+            <SFX>Goodie_Crate_01</SFX>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <Attribute>FlickeringRing</Attribute>
+            </GameModifier>
+        </Treasure>
+    </GoodieHutType>
+
+
+    <GoodieHutType InternalName="GH_MountainGift1">
+        <Name>Rock Chest</Name>
+        <Description>This chest is made of polished stone, but its clasps are raw, untreated rock.</Description>
+        <Rarity>-1</Rarity>
+        <MinDistanceFromStartingPoints>8</MinDistanceFromStartingPoints>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <SpawnRating>0</SpawnRating>
+        <TileDesign>G_Treasure_Chest_01</TileDesign>
+        <DrawnIcon>Treasure_TreasureChest.png</DrawnIcon>
+        <OnSelectSFX>Click_Treasure</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>G_Treasure_Chest_01.png</All>
+        </Medallions>
+        <Treasure>
+            <Title>Found Item</Title>
+            <Desc>Inside the chest you find a valuable item.</Desc>
+            <Liklihood>100</Liklihood>
+            <SFX>Goodie_Crate_01</SFX>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <Attribute>PlateBreastpiece_Impenetrable2</Attribute>
+            </GameModifier>
+        </Treasure>
+    </GoodieHutType>
+
+
+
+    <GoodieHutType InternalName="GH_MountainGift2">
+        <Name>Rock Chest</Name>
+        <Description>This chest is made of polished stone, but its clasps are raw, untreated rock.</Description>
+        <Rarity>-1</Rarity>
+        <MinDistanceFromStartingPoints>8</MinDistanceFromStartingPoints>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <SpawnRating>0</SpawnRating>
+        <TileDesign>G_Treasure_Chest_01</TileDesign>
+        <DrawnIcon>Treasure_TreasureChest.png</DrawnIcon>
+        <OnSelectSFX>Click_Treasure</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>G_Treasure_Chest_01.png</All>
+        </Medallions>
+        <Treasure>
+            <Title>Found Item</Title>
+            <Desc>Inside the chest you find a valuable item.</Desc>
+            <Liklihood>100</Liklihood>
+            <SFX>Goodie_Crate_01</SFX>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <Attribute>TowerShield_Obsidian2</Attribute>
+            </GameModifier>
+        </Treasure>
+    </GoodieHutType>
+
+
+
+    <GoodieHutType InternalName="GH_MountainGift3">
+        <Name>Rock Chest</Name>
+        <Description>This chest is made of polished stone, but its clasps are raw, untreated rock.</Description>
+        <Rarity>-1</Rarity>
+        <MinDistanceFromStartingPoints>8</MinDistanceFromStartingPoints>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <SpawnRating>0</SpawnRating>
+        <TileDesign>G_Treasure_Chest_01</TileDesign>
+        <DrawnIcon>Treasure_TreasureChest.png</DrawnIcon>
+        <OnSelectSFX>Click_Treasure</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>G_Treasure_Chest_01.png</All>
+        </Medallions>
+        <Treasure>
+            <Title>Found Item</Title>
+            <Desc>Inside the chest you find a valuable item.</Desc>
+            <Liklihood>100</Liklihood>
+            <SFX>Goodie_Crate_01</SFX>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <Attribute>TowerShield_TectonicBulwark</Attribute>
+            </GameModifier>
+        </Treasure>
+    </GoodieHutType>
+
+    </GoodieHutTypes>
+
+
+
+
+
+

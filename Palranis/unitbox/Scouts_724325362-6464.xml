@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<UnitTypes>
+	<UnitType InternalName="Scouts_724325362-6464">
+		<DisplayName>Scouts</DisplayName>
+		<Quote>'I will break my enemy's spirits...then bones.'</Quote>
+		<Backstory>These Quendar are utterly convinced that they were favored by Curgen for a reason: they are the apex of flesh, strong beyond any man or fallen. Through battle, their prove their strength or die to pass on their valor to the next generation. Mad or not, few can argue that their eugenic trial pits produce deadly warriors.</Backstory>
+		<HasEssence>false</HasEssence>
+		<ModelPath>F_Female_Magnar_Body_Mesh_01.hkb</ModelPath>
+		<SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+		<EyeTexture>gfx\eyes\blinks\Eyeblink_F6_black.png</EyeTexture>
+		<AnimationPack>SoldierAnimationPack</AnimationPack>
+		<ShowAsSingleUnit>false</ShowAsSingleUnit>
+		<CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+		<ModelScale>0.9915</ModelScale>
+		<TacticalModelScale>1.5000</TacticalModelScale>
+		<EquipmentScale>1.0000</EquipmentScale>
+		<ClothMapScale>1.6000</ClothMapScale>
+		<BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+		<MovementType>land</MovementType>
+		<BobbingFrequency>0.0000</BobbingFrequency>
+		<ClothPoseIndex>9</ClothPoseIndex>
+		<InfoCardBackground>BG_BarrenForest</InfoCardBackground>
+		<InfoCardBackgroundFlipped>0</InfoCardBackgroundFlipped>
+		<CanBeDesigned>1</CanBeDesigned>
+		<UserDesigned>true</UserDesigned>
+		<IsModDependent>false</IsModDependent>
+		<Medallions InternalName=""/>
+		<MovingSFX>TEMP_KnightMarching1</MovingSFX>
+		<LevelMilestone InternalName="">
+			<Level>1</Level>
+			<UnitStat_BG_IsEmpire>1.0000</UnitStat_BG_IsEmpire>
+			<UnitStat_BG_IsFemale>1.0000</UnitStat_BG_IsFemale>
+			<UnitStat_BG_IsHumanoid>1.0000</UnitStat_BG_IsHumanoid>
+			<UnitStat_BG_IsRace_Quendar>1.0000</UnitStat_BG_IsRace_Quendar>
+		</LevelMilestone>
+		<Equipment>F_Female_Quendar_Head_01</Equipment>
+		<Equipment>Empire_Female_Leather_Gloves_Light</Equipment>
+		<Equipment>Staff</Equipment>
+		<Equipment>F_Female_Quendar_Horns_01</Equipment>
+		<Equipment>Longsleeve_Empire_Shirt_Female_ID2</Equipment>
+		<Equipment>Fancy_Cloak_ID2</Equipment>
+		<Equipment>Female_Vest_ID2</Equipment>
+		<EquipmentUpgradeDef>
+			<SelectionCriterion>MaximizeBest</SelectionCriterion>
+			<ComparisonAttribute>UnitStat_Attack_Pierce</ComparisonAttribute>
+			<WeaponUpgradeType>Staff</WeaponUpgradeType>
+			<EquipmentSlot>Weapon</EquipmentSlot>
+			<EquipmentSlot>Defense</EquipmentSlot>
+			<ForUpgradeActionOnly>1</ForUpgradeActionOnly>
+		</EquipmentUpgradeDef>
+		<Color_Hair>200,200,200,255</Color_Hair>
+		<Color_Skin>138,61,13,255</Color_Skin>
+		<Color_Clothing1>99,63,30,255</Color_Clothing1>
+		<Color_Clothing2>71,163,99,255</Color_Clothing2>
+		<Color_Metal>128,128,128,255</Color_Metal>
+		<Color_Primary>30,63,99,255</Color_Primary>
+		<Color_Secondary>93,83,65,255</Color_Secondary>
+		<Color_Roof>79,48,20,255</Color_Roof>
+		<Color_TerrainBlend>255,255,255,255</Color_TerrainBlend>
+		<Color_TerrainOnly>255,255,255,255</Color_TerrainOnly>
+		<Color_Trans>255,255,255,255</Color_Trans>
+		<Color_ScrollTransMask>255,255,255,255</Color_ScrollTransMask>
+		<Color_Eyes>255,255,255,255</Color_Eyes>
+		<Color_Crest>255,255,255,255</Color_Crest>
+		<Texture_Skin>Magnar_Skin_F_01.dds</Texture_Skin>
+		<Texture_Eyes>gfx\eyes\blinks\Eyeblink_F6_black.png</Texture_Eyes>
+		<CreatorFactionName>CustomFaction_Palranis</CreatorFactionName>
+		<Gender>Female</Gender>
+		<UnitModelType>QuendarFemale</UnitModelType>
+		<SelectedAbilityBonusOption>Blood_Quendar</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Scout</SelectedAbilityBonusOption>
+		<IsSovereign>0</IsSovereign>
+		<HasWages>1</HasWages>
+		<NPCFreeRecruit>0</NPCFreeRecruit>
+		<RaceType>Race_Type_PalraniQuendar</RaceType>
+		<IgnoreItemTrainingCosts>false</IgnoreItemTrainingCosts>
+		<AdditionalTrainingTurns>20.0000</AdditionalTrainingTurns>
+		<WageOverride>0.0000</WageOverride>
+		<UnitTypeVersion>1</UnitTypeVersion>
+		<TileRadius>0</TileRadius>
+		<GetPerksOnLevelUp>0</GetPerksOnLevelUp>
+		<DividesBattleExp>1</DividesBattleExp>
+		<CanSqueeze>0</CanSqueeze>
+		<OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+		<AllowGrouping>true</AllowGrouping>
+		<SoundPack>SoundPack_Generic_Female</SoundPack>
+		<IsChampion>0</IsChampion>
+	</UnitType>
+</UnitTypes>

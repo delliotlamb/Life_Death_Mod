@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Created with the Elemental Editor -->
+<!-- CoreAbilities.xml -->
+<!-- -->
+<AbilityBonuses>
+	
+	<!-- here -->
+    <AbilityBonus InternalName="CatapultSiegeAbility">
+        <AbilityBonusOption InternalName="CatapultSiege">
+            <DisplayName>Catapult Siege</DisplayName>
+            <Description>Allows this unit to launch Siege attacks on the strategic map to soften up armies or stationed units.</Description>
+            <Icon>TrainUnitIcon_Catapult.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>CanCastSpells</Attribute>
+                <Provides>Can launch Siege attacks on the strategic map</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>BattleAutoCastSpell</Attribute>
+                <StrVal>Trigger_CatapultNoSpell</StrVal>
+                <Value>100</Value>
+                <Provides>to soften up armies or stationed units</Provides>
+            </GameModifier>			
+            <IsCombatAbility>1</IsCombatAbility>
+            <Type>Spell</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+</AbilityBonuses>

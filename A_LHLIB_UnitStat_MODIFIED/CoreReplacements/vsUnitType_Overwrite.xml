@@ -1,0 +1,799 @@
+<?xml version="1.0"?>
+<Container>
+	<!-- alters certain vanilla abilities and items so they function against the background unitstats-->
+	<AbilityBonus InternalName="DragonSlayerAbility">
+		<AbilityBonusOption InternalName="DragonSlayer">
+			<GameModifier>
+				<ModType>Unit</ModType>
+				<Attribute>AdjustUnitStat</Attribute>
+				<StrVal>UnitStat_Attack_Boost</StrVal>
+				<StrVal2>Dragon</StrVal2>
+				<Value>-10</Value>
+				<Provides>-10 Attack vs Dragons</Provides>
+				<vsUnitType>1</vsUnitType>
+			</GameModifier>
+	<GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>UnitStat_BG_IsDragon</StrVal2>
+		<Value>10</Value>
+                <BonusValue>0.5</BonusValue>
+		<Provides>+10 Attack vs Dragons</Provides>
+		<vsHigher>1</vsHigher>              
+	</GameModifier>
+
+		</AbilityBonusOption>
+	</AbilityBonus>
+	<AbilityBonus InternalName="Champion_History">
+		<AbilityBonusOption InternalName="Hunter">
+			<GameModifier>
+				<ModType>Unit</ModType>
+				<Attribute>AdjustUnitStat</Attribute>
+				<StrVal>UnitStat_Attack_Pierce</StrVal>
+				<StrVal2>Beast</StrVal2>
+				<Multiplier>0.5</Multiplier>
+				<Provides>-50% Attack vs Beasts</Provides>
+				<vsUnitType>1</vsUnitType>
+			</GameModifier>
+	<GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Pierce</StrVal>
+                <StrVal2>UnitStat_BG_IsBeast</StrVal2>
+		<Multiplier>1.5</Multiplier>
+                <BonusValue>0.5</BonusValue>
+		<Provides>+50% attack vs Beasts</Provides>
+		<vsHigher>1</vsHigher>
+                
+	</GameModifier>
+		</AbilityBonusOption>
+	</AbilityBonus>
+	<GameItemType InternalName="Club_Champions">
+		<DisplayName>Champion's Club</DisplayName>
+		<Description>A thick club made of enchanted ironwood.  These clubs were favored in the wildlands where frequent troll and ogre attacks threatened border settlements.</Description>
+		<Type>Weapon</Type>
+		<WeaponType>Blunt</WeaponType>
+		<WeaponUpgradeType>Blunt</WeaponUpgradeType>
+		<CanBeEquipped>1</CanBeEquipped>
+		<ShopValue>60</ShopValue>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>AdjustUnitStat</Attribute>
+			<StrVal>UnitStat_Attack_Pierce</StrVal>
+			<Value>9</Value>
+		</GameModifier>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>AdjustUnitStat</Attribute>
+			<StrVal>UnitStat_CombatSpeed</StrVal>
+			<Value>-4</Value>
+		</GameModifier>
+			<GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+		
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>UnitStat_BG_IsTwisted</StrVal2>
+		<Value>6</Value>
+                <BonusValue>0.5</BonusValue>
+		<Provides>+6 Attack vs Twisted</Provides>
+		<vsHigher>1</vsHigher>              
+	</GameModifier>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>AdjustUnitStat</Attribute>
+			<StrVal>UnitStat_BashChance</StrVal>
+			<Value>100</Value>
+			<Provides>Bash- Has a chance equal to the damage done of knocking the victim prone</Provides>
+		</GameModifier>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>UnlockCombatAbility</Attribute>
+			<StrVal>CrushingBlow</StrVal>
+			<Provides>Crushing Blow- +100% Attack, but you lose your next action</Provides>
+		</GameModifier>
+		<IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+		<Likelihood>40</Likelihood>
+		<RarityDisplay>Common</RarityDisplay>
+		<HeroOnly>1</HeroOnly>
+		<IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+		<AIData AIPersonality="AI_General">
+			<AIPrefType>AIPrefType_BLUNT</AIPrefType>
+			<AIPriority>147</AIPriority>
+		</AIData>
+		<ArtDef>Club_Champions_ArtDef</ArtDef>
+	</GameItemType>
+	<GameItemType InternalName="Staff_Banishing">
+		<DisplayName>Banishing Staff</DisplayName>
+		<Description>Favored by summoners, a Banishing Staff is often used to keep unruly elementals in line.</Description>
+		<Type>Weapon</Type>
+		<Type>Defense</Type>
+		<WeaponType>Spear</WeaponType>
+		<WeaponUpgradeType>Staff</WeaponUpgradeType>
+		<CanBeEquipped>1</CanBeEquipped>
+		<ShopValue>200</ShopValue>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>AdjustUnitStat</Attribute>
+			<StrVal>UnitStat_Attack_Pierce</StrVal>
+			<Value>6</Value>
+		</GameModifier>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>AdjustUnitStat</Attribute>
+			<StrVal>UnitStat_ChanceToCrit</StrVal>
+			<Value>-1</Value>
+		</GameModifier>
+			<GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+		
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>UnitStat_BG_IsElemental</StrVal2>
+		<Value>12</Value>
+                <BonusValue>0.5</BonusValue>
+		<Provides>+12 Attack vs Elementals</Provides>
+		<vsHigher>1</vsHigher>              
+	</GameModifier>
+		<IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+		<Likelihood>25</Likelihood>
+		<RarityDisplay>Uncommon</RarityDisplay>
+		<HeroOnly>1</HeroOnly>
+		<IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+		<AIData AIPersonality="AI_General">
+			<AIPrefType>AIPrefType_BLUNT</AIPrefType>
+			<AIPriority>125</AIPriority>
+		</AIData>
+		<ArtDef>Staff_Banishing_ArtDef</ArtDef>
+	</GameItemType>
+	<GameItemType InternalName="Spear_Champions">
+		<DisplayName>Champion's Spear</DisplayName>
+		<Description>Rumors say that this spear isn't enchanted.  Instead it has claimed the lives of so many darklings, ogres and trolls that it yearns to kill more.</Description>
+		<Type>Weapon</Type>
+		<Type>Defense</Type>
+		<WeaponType>Spear</WeaponType>
+		<WeaponUpgradeType>Spear</WeaponUpgradeType>
+		<CanBeEquipped>1</CanBeEquipped>
+		<ShopValue>200</ShopValue>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>AdjustUnitStat</Attribute>
+			<StrVal>UnitStat_Attack_Pierce</StrVal>
+			<Value>7</Value>
+		</GameModifier>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>AdjustUnitStat</Attribute>
+			<StrVal>UnitStat_ArmorPierce</StrVal>
+			<Value>33</Value>
+			<Provides>Ignores 33% of the victim's Defense</Provides>
+		</GameModifier>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>CannotBeCounterattacked</Attribute>
+			<Value>-1</Value>
+			<Provides>Immune to Counterattack</Provides>
+		</GameModifier>
+			<GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+		
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>UnitStat_BG_IsTwisted</StrVal2>
+		<Value>10</Value>
+                <BonusValue>0.5</BonusValue>
+		<Provides>+10 Attack vs Twisted</Provides>
+		<vsHigher>1</vsHigher>              
+	</GameModifier>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>UnlockCombatAbility</Attribute>
+			<StrVal>Impale_Ability</StrVal>
+			<Provides>Impale- Strike an opponent and whoever is behind them</Provides>
+		</GameModifier>
+		<IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+		<Likelihood>40</Likelihood>
+		<RarityDisplay>Common</RarityDisplay>
+		<HeroOnly>1</HeroOnly>
+		<IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+		<AIData AIPersonality="AI_General">
+			<AIPrefType>AIPrefType_PIERCING</AIPrefType>
+			<AIPriority>160</AIPriority>
+		</AIData>
+		<ArtDef>Spear_Champions_ArtDef</ArtDef>
+	</GameItemType>
+	<GameItemType InternalName="Warhammer_Blessed">
+		<DisplayName>Blessed Hammer</DisplayName>
+		<Description>It is a grave marker with a handle, a deadly reminder that the dead should remain so.</Description>
+		<Type>Weapon</Type>
+		<WeaponType>Blunt</WeaponType>
+		<WeaponUpgradeType>Blunt</WeaponUpgradeType>
+		<CanBeEquipped>1</CanBeEquipped>
+		<ShopValue>120</ShopValue>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>AdjustUnitStat</Attribute>
+			<StrVal>UnitStat_Attack_Pierce</StrVal>
+			<Value>15</Value>
+		</GameModifier>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>AdjustUnitStat</Attribute>
+			<StrVal>UnitStat_CombatSpeed</StrVal>
+			<Value>-4</Value>
+		</GameModifier>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>AdjustUnitStat</Attribute>
+			<StrVal>UnitStat_BashChance</StrVal>
+			<Value>100</Value>
+			<Provides>Bash- Has a chance equal to the damage done of knocking the victim prone</Provides>
+		</GameModifier>
+
+					<GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+		
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>UnitStat_BG_IsUndead</StrVal2>
+		<Value>10</Value>
+                <BonusValue>0.5</BonusValue>
+		<Provides>+10 Attack vs Undead</Provides>
+		<vsHigher>1</vsHigher>              
+	</GameModifier>
+
+	<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>UnlockCombatAbility</Attribute>
+			<StrVal>CrushingBlow</StrVal>
+			<Provides>Crushing Blow- +100% Attack, but you lose your next action</Provides>
+		</GameModifier>
+		<IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+		<Likelihood>40</Likelihood>
+		<RarityDisplay>Common</RarityDisplay>
+		<HeroOnly>1</HeroOnly>
+		<IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+		<AIData AIPersonality="AI_General">
+			<AIPrefType>AIPrefType_BLUNT</AIPrefType>
+			<AIPriority>245</AIPriority>
+		</AIData>
+		<ArtDef>Warhammer_Blessed_ArtDef</ArtDef>
+	</GameItemType>
+	<GameItemType InternalName="Warhammer_Banishing">
+		<DisplayName>Banishing Warhammer</DisplayName>
+		<Description>The head of this hammer is carved from the deep granite of Elemental, and is a powerful weapon against creatures that aren't from this world.</Description>
+		<Type>Weapon</Type>
+		<WeaponType>Blunt</WeaponType>
+		<WeaponUpgradeType>Blunt</WeaponUpgradeType>
+		<CanBeEquipped>1</CanBeEquipped>
+		<ShopValue>390</ShopValue>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>AdjustUnitStat</Attribute>
+			<StrVal>UnitStat_Attack_Pierce</StrVal>
+			<Value>14</Value>
+		</GameModifier>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>AdjustUnitStat</Attribute>
+			<StrVal>UnitStat_CombatSpeed</StrVal>
+			<Value>-4</Value>
+		</GameModifier>
+
+					<GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+		
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>UnitStat_BG_IsElemental</StrVal2>
+		<Value>10</Value>
+                <BonusValue>0.5</BonusValue>
+		<Provides>+10 Attack vs Elementals</Provides>
+		<vsHigher>1</vsHigher>              
+	</GameModifier>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>AdjustUnitStat</Attribute>
+			<StrVal>UnitStat_BashChance</StrVal>
+			<Value>100</Value>
+			<Provides>Bash- Has a chance equal to the damage done of knocking the victim prone</Provides>
+		</GameModifier>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>UnlockCombatAbility</Attribute>
+			<StrVal>CrushingBlow</StrVal>
+			<Provides>Crushing Blow- +100% Attack, but you lose your next action</Provides>
+		</GameModifier>
+		<IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+		<Likelihood>20</Likelihood>
+		<RarityDisplay>Uncommon</RarityDisplay>
+		<HeroOnly>1</HeroOnly>
+		<IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+		<AIData AIPersonality="AI_General">
+			<AIPrefType>AIPrefType_BLUNT</AIPrefType>
+			<AIPriority>229</AIPriority>
+		</AIData>
+		<ArtDef>Warhammer_Banishing_ArtDef</ArtDef>
+	</GameItemType>
+	<GameItemType InternalName="Axe_Hunters">
+		<DisplayName>Hunter's Axe</DisplayName>
+		<Description>These versatile axes are as useful for chopping wood as well as defending against the creatures that lurk in the woods.</Description>
+		<Type>Weapon</Type>
+		<Type>Defense</Type>
+		<WeaponType>TwoHanded</WeaponType>
+		<WeaponUpgradeType>Axe</WeaponUpgradeType>
+		<CanBeEquipped>1</CanBeEquipped>
+		<ShopValue>260</ShopValue>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>AdjustUnitStat</Attribute>
+			<StrVal>UnitStat_Attack_Pierce</StrVal>
+			<Value>12</Value>
+		</GameModifier>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>AdjustUnitStat</Attribute>
+			<StrVal>UnitStat_CombatSpeed</StrVal>
+			<Value>-2</Value>
+		</GameModifier>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>AdjustUnitStat</Attribute>
+			<StrVal>UnitStat_BackswingChance</StrVal>
+			<Value>100</Value>
+			<Provides>Backswing- If the attack misses the unit gets a second attack against the same target</Provides>
+		</GameModifier>
+
+			<GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+		
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>UnitStat_BG_IsBeast</StrVal2>
+		<Value>10</Value>
+                <BonusValue>0.5</BonusValue>
+		<Provides>+10 Attack vs Beasts</Provides>
+		<vsHigher>1</vsHigher>              
+	</GameModifier>
+
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>UnlockCombatAbility</Attribute>
+			<StrVal>Cleave_Ability</StrVal>
+			<Provides>Cleave- Strike 3 adjacent enemies</Provides>
+		</GameModifier>
+		<IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+		<Likelihood>20</Likelihood>
+		<RarityDisplay>Uncommon</RarityDisplay>
+		<HeroOnly>1</HeroOnly>
+		<IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+		<AIData AIPersonality="AI_General">
+			<AIPrefType>AIPrefType_CUTTING</AIPrefType>
+			<AIPriority>221</AIPriority>
+		</AIData>
+		<ArtDef>Axe_Hunters_ArtDef</ArtDef>
+	</GameItemType>
+	<GameItemType InternalName="Mace_Banishing">
+		<DisplayName>Banishing Mace</DisplayName>
+		<Description>Etched with runes, this mace is enchanted with wards against summoned creatures.</Description>
+		<Type>Weapon</Type>
+		<WeaponType>Blunt</WeaponType>
+		<WeaponUpgradeType>Blunt</WeaponUpgradeType>
+		<CanBeEquipped>1</CanBeEquipped>
+		<AdditionalTrainingTurns>24</AdditionalTrainingTurns>
+		<ShopValue>370</ShopValue>
+		<ProductionRequirement>
+			<Type>Resource</Type>
+			<Attribute>RefinedCrystal</Attribute>
+			<Value>3</Value>
+		</ProductionRequirement>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>AdjustUnitStat</Attribute>
+			<StrVal>UnitStat_Attack_Pierce</StrVal>
+			<Value>18</Value>
+		</GameModifier>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>AdjustUnitStat</Attribute>
+			<StrVal>UnitStat_CombatSpeed</StrVal>
+			<Value>-4</Value>
+		</GameModifier>
+
+					<GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+		
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>UnitStat_BG_IsElemental</StrVal2>
+		<Value>10</Value>
+                <BonusValue>0.5</BonusValue>
+		<Provides>+10 Attack vs Elementals</Provides>
+		<vsHigher>1</vsHigher>              
+	</GameModifier>
+
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>AdjustUnitStat</Attribute>
+			<StrVal>UnitStat_BashChance</StrVal>
+			<Value>100</Value>
+			<Provides>Bash- Has a chance equal to the damage done of knocking the victim prone</Provides>
+		</GameModifier>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>UnlockCombatAbility</Attribute>
+			<StrVal>CrushingBlow</StrVal>
+			<Provides>Crushing Blow- +100% Attack, but you lose your next action</Provides>
+		</GameModifier>
+		<IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+		<RarityDisplay>Uncommon</RarityDisplay>
+		<Prereq>
+			<Type>Tech</Type>
+			<Attribute>Magical_Forging</Attribute>
+		</Prereq>
+		<AIData AIPersonality="AI_General">
+			<AIPrefType>AIPrefType_BLUNT</AIPrefType>
+			<AIPriority>293</AIPriority>
+		</AIData>
+		<ArtDef>Mace_Banishing_ArtDef</ArtDef>
+	</GameItemType>
+	<GameItemType InternalName="Shortsword_Hunters">
+		<DisplayName>Hunter's Short Sword</DisplayName>
+		<Description>At one time these swords were known as blooding blades because young Trog warriors would head into the wilderness with them to fight and kill bears.  The was discontinued when much worse things than bears began killing the warriors.</Description>
+		<Type>Weapon</Type>
+		<WeaponType>OneHanded</WeaponType>
+		<WeaponUpgradeType>Blade</WeaponUpgradeType>
+		<CanBeEquipped>1</CanBeEquipped>
+		<AdditionalTrainingTurns>12</AdditionalTrainingTurns>
+		<ShopValue>180</ShopValue>
+		<ProductionRequirement>
+			<Type>Resource</Type>
+			<Attribute>RefinedCrystal</Attribute>
+			<Value>3</Value>
+		</ProductionRequirement>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>AdjustUnitStat</Attribute>
+			<StrVal>UnitStat_Attack_Pierce</StrVal>
+			<Value>13</Value>
+		</GameModifier>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>AdjustUnitStat</Attribute>
+			<StrVal>UnitStat_CombatSpeed</StrVal>
+			<Value>3</Value>
+		</GameModifier>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>AdjustUnitStat</Attribute>
+			<StrVal>UnitStat_MaxCounterAttack</StrVal>
+			<Value>1</Value>
+			<Provides>+1 Counterattack per round</Provides>
+		</GameModifier>
+					<GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+		
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>UnitStat_BG_IsBeast</StrVal2>
+		<Value>10</Value>
+                <BonusValue>0.5</BonusValue>
+		<Provides>+10 Attack vs Beasts</Provides>
+		<vsHigher>1</vsHigher>              
+	</GameModifier>
+
+		<IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+		<RarityDisplay>Uncommon</RarityDisplay>
+		<Prereq>
+			<Type>Tech</Type>
+			<Attribute>Magical_Forging</Attribute>
+		</Prereq>
+		<AIData AIPersonality="AI_General">
+			<AIPrefType>AIPrefType_CUTTING</AIPrefType>
+			<AIPriority>304</AIPriority>
+		</AIData>
+		<ArtDef>Shortsword_Hunters_ArtDef</ArtDef>
+	</GameItemType>
+	<GameItemType InternalName="Broadsword_Champions">
+		<DisplayName>Scinan Broadsword</DisplayName>
+		<Description>New Pariden knight-commanders often carry these broadswords.  Many glow in the presence of the creatures they are enchanted against, and warn against ambushes or raids.</Description>
+		<Type>Weapon</Type>
+		<WeaponType>OneHanded</WeaponType>
+		<WeaponUpgradeType>Blade</WeaponUpgradeType>
+		<CanBeEquipped>1</CanBeEquipped>
+		<ShopValue>180</ShopValue>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>AdjustUnitStat</Attribute>
+			<StrVal>UnitStat_Attack_Pierce</StrVal>
+			<Value>18</Value>
+		</GameModifier>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>AdjustUnitStat</Attribute>
+			<StrVal>UnitStat_CombatSpeed</StrVal>
+			<Value>2</Value>
+		</GameModifier>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>AdjustUnitStat</Attribute>
+			<StrVal>UnitStat_MaxCounterAttack</StrVal>
+			<Value>1</Value>
+			<Provides>+1 Counterattack per round</Provides>
+		</GameModifier>
+
+					<GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+		
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>UnitStat_BG_IsTwisted</StrVal2>
+		<Value>10</Value>
+                <BonusValue>0.5</BonusValue>
+		<Provides>+10 Attack vs Twisted</Provides>
+		<vsHigher>1</vsHigher>              
+	</GameModifier>
+
+		<IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+		<Likelihood>20</Likelihood>
+		<RarityDisplay>Uncommon</RarityDisplay>
+		<HeroOnly>1</HeroOnly>
+		<IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+		<Prereq>
+			<Type>UnitStat_Level</Type>
+			<Attribute>4</Attribute>
+		</Prereq>
+		<AIData AIPersonality="AI_General">
+			<AIPrefType>AIPrefType_CUTTING</AIPrefType>
+			<AIPriority>401</AIPriority>
+		</AIData>
+		<ArtDef>Broadsword_Champions_ArtDef</ArtDef>
+	</GameItemType>
+	<GameItemType InternalName="Broadsword_Silver">
+		<DisplayName>Silver Broadsword</DisplayName>
+		<Description>The Silver Broadswords of Capitar are as effective in war as steel blades, but are more effective against Elementals and the Twisted creatures of the world.  </Description>
+		<Type>Weapon</Type>
+		<WeaponType>OneHanded</WeaponType>
+		<WeaponUpgradeType>Blade</WeaponUpgradeType>
+		<CanBeEquipped>1</CanBeEquipped>
+		<ShopValue>90</ShopValue>
+		<ProductionRequirement>
+			<Type>Resource</Type>
+			<Attribute>Metal</Attribute>
+			<Value>3</Value>
+		</ProductionRequirement>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>AdjustUnitStat</Attribute>
+			<StrVal>UnitStat_Attack_Pierce</StrVal>
+			<Value>20</Value>
+		</GameModifier>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>AdjustUnitStat</Attribute>
+			<StrVal>UnitStat_CombatSpeed</StrVal>
+			<Value>2</Value>
+		</GameModifier>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>AdjustUnitStat</Attribute>
+			<StrVal>UnitStat_MaxCounterAttack</StrVal>
+			<Value>1</Value>
+			<Provides>+1 Counterattack per round</Provides>
+		</GameModifier>
+
+					<GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+		
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>UnitStat_BG_IsTwisted</StrVal2>
+		<Value>10</Value>
+                <BonusValue>0.5</BonusValue>
+		<Provides>+10 Attack vs Twisted</Provides>
+		<vsHigher>1</vsHigher>              
+	</GameModifier>
+
+				<GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+		
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>UnitStat_BG_IsElemental</StrVal2>
+		<Value>10</Value>
+                <BonusValue>0.5</BonusValue>
+		<Provides>+10 Attack vs Elementals</Provides>
+		<vsHigher>1</vsHigher>              
+	</GameModifier>
+
+		<IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+		<Likelihood>20</Likelihood>
+		<RarityDisplay>Uncommon</RarityDisplay>
+		<HeroOnly>1</HeroOnly>
+		<IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+		<Prereq>
+			<Type>UnitStat_Level</Type>
+			<Attribute>5</Attribute>
+		</Prereq>
+		<AIData AIPersonality="AI_General">
+			<AIPrefType>AIPrefType_CUTTING</AIPrefType>
+			<AIPriority>445</AIPriority>
+		</AIData>
+		<ArtDef>Broadsword_Silver_ArtDef</ArtDef>
+	</GameItemType>
+	<GameItemType InternalName="Pike_Champions">
+		<DisplayName>Champion's Lance</DisplayName>
+		<Description>Usually fitted with a banner this lance is a powerful symbol of a champion's strength, and elevates them from common soldiers to heroes.</Description>
+		<Type>Weapon</Type>
+		<Type>Defense</Type>
+		<WeaponType>Spear</WeaponType>
+		<WeaponUpgradeType>Spear</WeaponUpgradeType>
+		<CanBeEquipped>1</CanBeEquipped>
+		<ShopValue>600</ShopValue>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>AdjustUnitStat</Attribute>
+			<StrVal>UnitStat_Attack_Pierce</StrVal>
+			<Value>22</Value>
+		</GameModifier>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>AdjustUnitStat</Attribute>
+			<StrVal>UnitStat_CombatSpeed</StrVal>
+			<Value>-2</Value>
+		</GameModifier>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>AdjustUnitStat</Attribute>
+			<StrVal>UnitStat_ArmorPierce</StrVal>
+			<Value>33</Value>
+			<Provides>Ignores 33% of the victim's Defense</Provides>
+		</GameModifier>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>CannotBeCounterattacked</Attribute>
+			<Value>-1</Value>
+			<Provides>Immune to Counterattack</Provides>
+		</GameModifier>
+
+					<GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+		
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>UnitStat_BG_IsDragon</StrVal2>
+		<Value>10</Value>
+                <BonusValue>0.5</BonusValue>
+		<Provides>+10 Attack vs Dragons</Provides>
+		<vsHigher>1</vsHigher>              
+	</GameModifier>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>UnlockCombatAbility</Attribute>
+			<StrVal>Impale_Ability</StrVal>
+			<Provides>Impale- Strike an opponent and whoever is behind them</Provides>
+		</GameModifier>
+		<IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+		<Likelihood>10</Likelihood>
+		<RarityDisplay>Rare</RarityDisplay>
+		<HeroOnly>1</HeroOnly>
+		<IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+		<Prereq>
+			<Type>UnitStat_Level</Type>
+			<Attribute>5</Attribute>
+		</Prereq>
+		<AIData AIPersonality="AI_General">
+			<AIPrefType>AIPrefType_PIERCING</AIPrefType>
+			<AIPriority>406</AIPriority>
+		</AIData>
+		<ArtDef>Pike_Champions_ArtDef</ArtDef>
+	</GameItemType>
+	<GameItemType InternalName="Longsword_Angel">
+		<DisplayName>Angelic Longsword</DisplayName>
+		<Description>When pulled from the scabbard this sword rings with the sound of harps and distant angels singing.</Description>
+		<Type>Weapon</Type>
+		<WeaponType>OneHanded</WeaponType>
+		<WeaponUpgradeType>Blade</WeaponUpgradeType>
+		<CanBeEquipped>1</CanBeEquipped>
+		<ShopValue>120</ShopValue>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>AdjustUnitStat</Attribute>
+			<StrVal>UnitStat_Attack_Pierce</StrVal>
+			<Value>19</Value>
+		</GameModifier>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>AdjustUnitStat</Attribute>
+			<StrVal>UnitStat_CombatSpeed</StrVal>
+			<Value>2</Value>
+		</GameModifier>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>AdjustUnitStat</Attribute>
+			<StrVal>UnitStat_MaxCounterAttack</StrVal>
+			<Value>1</Value>
+			<Provides>+1 Counterattack per round</Provides>
+		</GameModifier>
+
+					<GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+		
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>UnitStat_BG_IsUndead</StrVal2>
+		<Value>10</Value>
+                <BonusValue>0.5</BonusValue>
+		<Provides>+10 Attack vs Undead</Provides>
+		<vsHigher>1</vsHigher>              
+	</GameModifier>
+
+		<IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+		<RarityDisplay>Rare</RarityDisplay>
+		<HeroOnly>1</HeroOnly>
+		<IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+		<AIData AIPersonality="AI_General">
+			<AIPrefType>AIPrefType_CUTTING</AIPrefType>
+			<AIPriority>423</AIPriority>
+		</AIData>
+		<ArtDef>Longsword_Angel_ArtDef</ArtDef>
+	</GameItemType>
+	<GameItemType InternalName="Shortbow_Hunters">
+		<DisplayName>Hunter's Shortbow</DisplayName>
+		<Description>This bow is carved from the thighbone of a cave bear.  The enchantment is fairly simple; it's procuring the thighbones that is difficult.</Description>
+		<Type>Weapon</Type>
+		<Type>Defense</Type>
+		<WeaponType>Bow</WeaponType>
+		<WeaponUpgradeType>Bow</WeaponUpgradeType>
+		<CanBeEquipped>1</CanBeEquipped>
+		<ShopValue>270</ShopValue>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>AdjustUnitStat</Attribute>
+			<StrVal>UnitStat_Attack_Pierce</StrVal>
+			<Value>8</Value>
+		</GameModifier>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>AdjustUnitStat</Attribute>
+			<StrVal>UnitStat_CombatSpeed</StrVal>
+			<Value>-8</Value>
+		</GameModifier>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>AdjustUnitStat</Attribute>
+			<StrVal>UnitStat_IsBow</StrVal>
+			<Value>1</Value>
+			<Provides>Enables abilities that require Bows</Provides>
+		</GameModifier>
+		<GameModifier>
+			<ModType>Unit</ModType>
+			<Attribute>UnlockRangedAction</Attribute>
+			<StrVal>BowAttack_Basic</StrVal>
+			<Provides>Ranged attack</Provides>
+		</GameModifier>
+			<GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>UnitStat_BG_IsBeast</StrVal2>
+		<Value>10</Value>
+                <BonusValue>0.5</BonusValue>
+		<Provides>+10 Attack vs Beasts</Provides>
+		<vsHigher>1</vsHigher>              
+	</GameModifier>
+		<IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+		<Likelihood>20</Likelihood>
+		<RarityDisplay>Uncommon</RarityDisplay>
+		<TacticalRange>20</TacticalRange>
+		<HeroOnly>1</HeroOnly>
+		<IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+		<AIData AIPersonality="AI_General">
+			<AIPrefType>AIPrefType_BOW</AIPrefType>
+			<AIPriority>131</AIPriority>
+		</AIData>
+		<ArtDef>Shortbow_Hunters_ArtDef</ArtDef>
+	</GameItemType>
+</Container>

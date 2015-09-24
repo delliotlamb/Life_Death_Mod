@@ -1,0 +1,2669 @@
+<GameItemTypes>
+
+
+<GameItemType InternalName="Longbow_Fluid">
+        <DisplayName>Fluid Longbow</DisplayName>
+        <Description>This bow in enchanted to pull with ease, allowing even an amateur to fire it quickly. Accuracy falls upon the user's skill as marksman.</Description>
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>Bow</WeaponType>
+        <WeaponUpgradeType>Bow</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>100</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Accuracy</StrVal>
+            <Value>-10</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>11</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-3</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_IsBow</StrVal>
+                <Value>1</Value>
+                <Provides>Enables abilities that require Bows</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockRangedAction</Attribute>
+                <StrVal>BowAttack_Basic</StrVal>
+                <Provides>Ranged attack</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>100</Likelihood>
+        <RarityDisplay>Common</RarityDisplay>
+        <TacticalRange>20</TacticalRange>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Prereq>
+            <Type>UnitStat_Level</Type>
+            <Attribute>6</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_BOW</AIPrefType>
+            <AIPriority>446</AIPriority>
+        </AIData>
+        <ArtDef>YewLongbow_Perfect_ArtDef</ArtDef>
+    </GameItemType>
+
+    <GameItemType InternalName="Longbow_Enchanted">
+        <DisplayName>Enchanted Longbow</DisplayName>
+        <Description>This bow fires its arrows with enhanced accuracy.</Description>
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>Bow</WeaponType>
+        <WeaponUpgradeType>Bow</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>100</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Accuracy</StrVal>
+            <Value>5</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>11</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-6</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_IsBow</StrVal>
+                <Value>1</Value>
+                <Provides>Enables abilities that require Bows</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockRangedAction</Attribute>
+                <StrVal>BowAttack_Basic</StrVal>
+                <Provides>Ranged attack</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>100</Likelihood>
+        <RarityDisplay>Common</RarityDisplay>
+        <TacticalRange>20</TacticalRange>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_BOW</AIPrefType>
+            <AIPriority>482</AIPriority>
+        </AIData>
+        <ArtDef>YewLongbow_Brutal_ArtDef</ArtDef>
+    </GameItemType>
+	
+	<!-- Mystanium Armor -->
+	
+	<GameItemType InternalName="MystantumGreaves">
+        <DisplayName>Mystantum Greaves</DisplayName>
+        <Description>Mystantum is extremely difficult to bend, making greaves and cuirass the only options for this lightweight, ironless material.</Description>
+        <Type>LowerBody</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>140</ShopValue>	
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <Value>3</Value>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_ArmorProficiency</Attribute>
+            <Value>1</Value>
+        </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>40</AIPriority>
+            </AIData>
+        <ArtDef>Art_MystantumGreaves_Light</ArtDef>
+    </GameItemType>
+	
+	<GameItemType InternalName="MystantumBreastpiece">
+        <DisplayName>Mystantum Cuirass</DisplayName>
+        <Description>A breastplate made from magically hardened mystantum. Though inferior to iron armor, it requires no metal to forge.</Description>
+        <Type>Torso</Type>
+        <Type>Surcoat</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>180</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <Value>4</Value>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_ArmorProficiency</Attribute>
+            <Value>1</Value>
+        </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>60</AIPriority>
+            </AIData>
+        <ArtDef>Art_MystantumBreastpiece_Light</ArtDef>
+    </GameItemType>
+	
+	    <GameItemType InternalName="Shortsword_Mystantum">
+        <DisplayName>Mystantum Short Sword</DisplayName>
+        <Description>Though difficult to give a lasting edge, these blades are swift and deadly once sharpened.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>OneHanded</WeaponType>
+        <WeaponUpgradeType>Blade</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>120</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>11</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>3</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxCounterAttack</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Counterattack per round</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>332</AIPriority>
+        </AIData>
+        <ArtDef>Shortsword_Balanced_ArtDef</ArtDef>
+    </GameItemType>
+	
+	    <GameItemType InternalName="RoundShield_Mystantum">
+        <DisplayName>Mystantum Shield</DisplayName>
+        <Description>Mystantum isn't as sturdy as iron, but this shield is easy to lift and can still deflect lethal blows.</Description>
+        <Type>Defense</Type>
+        <WeaponType>Shield</WeaponType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>80</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <Value>3</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Dodge</StrVal>
+            <Value>4</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Tactical_Auto_Defense_Boost</StrVal>
+            <Value>10</Value>
+            <Provides>+10 Defense when Defending</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnlockCombatAbility</Attribute>
+            <StrVal>ShieldBash_Ability</StrVal>
+            <Provides>Shield Bash- Knocks the victim back a tile</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsShield</StrVal>
+            <Value>1</Value>
+            <Provides>Enables abilities that require Shields</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>72</AIPriority>
+            </AIData>
+        <ArtDef>RoundShield_Wind_ArtDef</ArtDef>
+    </GameItemType>
+	
+<GameItemType InternalName="PlateGreaves_Champions2">
+        <DisplayName>Transcendent Plate Greaves</DisplayName>
+        <Description>A master armorer's lifetime achievement. Those within resist flame.</Description>
+        <Type>LowerBody</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>15</AdditionalTrainingTurns>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <ShopValue>700</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-1</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <Value>12</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ResistFire</StrVal>
+            <Value>50</Value>
+        </GameModifier>				
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_ArmorProficiency</Attribute>
+            <Value>2</Value>
+        </Prereq>		
+            <AIData AIPersonality="AI_General">
+                <AIPriority>500</AIPriority>
+            </AIData>
+        <ArtDef>Art_PlateGreaves_Impenetrable2</ArtDef>
+		<GameItemTypeArtDef InternalName="Art_PlateGreaves_Impenetrable2">
+        <GameItemTypeModelPack InternalName="Art_PlateGreaves_Impenetrable2_1">
+            <SupportedUnitModelType>AmarianMale</SupportedUnitModelType>
+            <SupportedUnitModelType>EmpireMale</SupportedUnitModelType>
+            <SupportedUnitModelType>HenchmanMale</SupportedUnitModelType>
+            <SupportedUnitModelType>IroneerMale</SupportedUnitModelType>
+            <SupportedUnitModelType>KingdomMale</SupportedUnitModelType>
+            <SupportedUnitModelType>MancerMale</SupportedUnitModelType>
+            <SupportedUnitModelType>Skeleton</SupportedUnitModelType>
+            <SupportedUnitModelType>SlaveMale</SupportedUnitModelType>
+            <SupportedUnitModelType>TarthanMale</SupportedUnitModelType>
+            <SupportedUnitModelType>WraithMale</SupportedUnitModelType>
+            <IconFile>Armor_K_MasterworkPlateGreaves.png</IconFile>
+            <TintR>0</TintR>
+            <TintG>0</TintG>
+            <TintB>0</TintB>
+            <GameItemTypeModel>
+                <ModelFile>gfx/hkb/Armor/K_Male_Impenetrable_ThighGuard_01.hkb</ModelFile>
+                <Texture_All>Impenetrable_Armor_03.png</Texture_All>
+                <Attachment>thigh_left_lcf</Attachment>
+            </GameItemTypeModel>
+            <GameItemTypeModel>
+                <ModelFile>gfx/hkb/Armor/K_Male_Impenetrable_ThighGuard_01.hkb</ModelFile>
+                <Texture_All>Impenetrable_Armor_03.png</Texture_All>
+                <Attachment>thigh_right_lcf</Attachment>
+            </GameItemTypeModel>
+        </GameItemTypeModelPack>
+        <GameItemTypeModelPack InternalName="Art_PlateGreaves_Impenetrable2_2">
+            <SupportedUnitModelType>FallenMale</SupportedUnitModelType>
+            <SupportedUnitModelType>QuendarMale</SupportedUnitModelType>
+            <SupportedUnitModelType>UrxenMale</SupportedUnitModelType>
+            <IconFile>Armor_K_MasterworkPlateGreaves.png</IconFile>
+            <TintR>0</TintR>
+            <TintG>0</TintG>
+            <TintB>0</TintB>
+            <GameItemTypeModel>
+                <ModelFile>gfx/hkb/Armor/F_Male_Impenetrable_ThighGuard_01.hkb</ModelFile>
+                <Texture_All>Impenetrable_Armor_03.png</Texture_All>
+                <Attachment>thigh_left_lcf</Attachment>
+            </GameItemTypeModel>
+            <GameItemTypeModel>
+                <ModelFile>gfx/hkb/Armor/F_Male_Impenetrable_ThighGuard_01.hkb</ModelFile>
+                <Texture_All>Impenetrable_Armor_03.png</Texture_All>
+                <Attachment>thigh_right_lcf</Attachment>
+            </GameItemTypeModel>
+        </GameItemTypeModelPack>
+        <GameItemTypeModelPack InternalName="Art_PlateGreaves_Impenetrable2_3">
+            <SupportedUnitModelType>AmarianFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>Banshee</SupportedUnitModelType>
+            <SupportedUnitModelType>EmpireFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>FallenFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>IroneerFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>KingdomFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>MancerFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>QuendarFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>TarthanFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>UrxenFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>WraithFemale</SupportedUnitModelType>
+            <IconFile>Armor_K_MasterworkPlateGreaves.png</IconFile>
+            <TintR>0</TintR>
+            <TintG>0</TintG>
+            <TintB>0</TintB>
+            <GameItemTypeModel>
+                <ModelFile>gfx/hkb/Armor/K_Female_Impenetrable_ThighGuard_01.hkb</ModelFile>
+                <Texture_All>Impenetrable_Armor_03.png</Texture_All>
+                <Attachment>thigh_left_lcf</Attachment>
+            </GameItemTypeModel>
+            <GameItemTypeModel>
+                <ModelFile>gfx/hkb/Armor/K_Female_Impenetrable_ThighGuard_01.hkb</ModelFile>
+                <Texture_All>Impenetrable_Armor_03.png</Texture_All>
+                <Attachment>thigh_right_lcf</Attachment>
+            </GameItemTypeModel>
+        </GameItemTypeModelPack>
+    </GameItemTypeArtDef>		
+    </GameItemType>
+	
+	<GameItemType InternalName="PlateHelmet_Champions2">
+        <DisplayName>Transcendent Plate Helm</DisplayName>
+        <Description>A master armorer's lifetime achievement. The wearer will resist the damaging effects of electrical currents.</Description>
+        <Type>Head</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>600</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-1</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <Value>8</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ResistLightning</StrVal>
+            <Value>50</Value>
+        </GameModifier>		
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_ArmorProficiency</Attribute>
+            <Value>2</Value>
+        </Prereq>		
+            <AIData AIPersonality="AI_General">
+                <AIPriority>500</AIPriority>
+            </AIData>
+        <ArtDef>Art_PlateHelmet_Warding</ArtDef>
+    </GameItemType>
+	
+	<GameItemType InternalName="PlateBoots_Champion2">
+        <DisplayName>Transcendent Plate Boots</DisplayName>
+        <Description>A master armorer's lifetime achievement. They magically resist the effects of cold.</Description>
+        <Type>Boots</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>12</AdditionalTrainingTurns>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <ShopValue>600</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-1</Value>
+        </GameModifier>		
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <Value>9</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ResistCold</StrVal>
+            <Value>50</Value>
+        </GameModifier>		
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_ArmorProficiency</Attribute>
+            <Value>2</Value>
+        </Prereq>		
+            <AIData AIPersonality="AI_General">
+                <AIPriority>500</AIPriority>
+            </AIData>
+        <ArtDef>Art_PlateBoots_Impenetrable2</ArtDef>
+		<GameItemTypeArtDef InternalName="Art_PlateBoots_Impenetrable2">
+        <GameItemTypeModelPack InternalName="Art_PlateBoots_Impenetrable2_1">
+            <SupportedUnitModelType>AmarianMale</SupportedUnitModelType>
+            <SupportedUnitModelType>EmpireMale</SupportedUnitModelType>
+            <SupportedUnitModelType>HenchmanMale</SupportedUnitModelType>
+            <SupportedUnitModelType>IroneerMale</SupportedUnitModelType>
+            <SupportedUnitModelType>KingdomMale</SupportedUnitModelType>
+            <SupportedUnitModelType>MancerMale</SupportedUnitModelType>
+            <SupportedUnitModelType>Skeleton</SupportedUnitModelType>
+            <SupportedUnitModelType>SlaveMale</SupportedUnitModelType>
+            <SupportedUnitModelType>TarthanMale</SupportedUnitModelType>
+            <SupportedUnitModelType>WraithMale</SupportedUnitModelType>
+            <IconFile>Armor_F_GroundedPlateBoots.png</IconFile>
+            <TintR>0</TintR>
+            <TintG>0</TintG>
+            <TintB>0</TintB>
+            <GameItemTypeModel>
+                <ModelFile>Gfx\HKB\Armor\K_Male_Greave_Boots_Mesh_01.hkb</ModelFile>
+                <AttachmentType>Skinned</AttachmentType>
+                <Texture_Clothing2>Gfx\HKB\Clothes\K_Male_Boots_Warrior_Texture_01.png</Texture_Clothing2>
+            </GameItemTypeModel>
+            <GameItemTypeModel>
+                <ModelFile>gfx/hkb/Armor/K_Male_Impenetrable_Greaves_01.hkb</ModelFile>
+                <Texture_All>Impenetrable_Armor_03.png</Texture_All>
+                <Attachment>calf_right_lcf</Attachment>
+            </GameItemTypeModel>
+            <GameItemTypeModel>
+                <ModelFile>gfx/hkb/Armor/K_Male_Impenetrable_Greaves_01.hkb</ModelFile>
+                <Texture_All>Impenetrable_Armor_03.png</Texture_All>
+                <Attachment>calf_left_lcf</Attachment>
+            </GameItemTypeModel>
+        </GameItemTypeModelPack>
+        <GameItemTypeModelPack InternalName="Art_PlateBoots_Impenetrable2_2">
+            <SupportedUnitModelType>FallenMale</SupportedUnitModelType>
+            <SupportedUnitModelType>QuendarMale</SupportedUnitModelType>
+            <SupportedUnitModelType>UrxenMale</SupportedUnitModelType>
+            <IconFile>Armor_F_GroundedPlateBoots.png</IconFile>
+            <TintR>0</TintR>
+            <TintG>0</TintG>
+            <TintB>0</TintB>
+            <GameItemTypeModel>
+                <ModelFile>Gfx\HKB\Armor\F_Male_Greave_Boots_Mesh_01.hkb</ModelFile>
+                <AttachmentType>Skinned</AttachmentType>
+                <Texture_Clothing2>Gfx\HKB\Clothes\K_Male_Boots_Warrior_Texture_01.png</Texture_Clothing2>
+            </GameItemTypeModel>
+            <GameItemTypeModel>
+                <ModelFile>gfx/hkb/Armor/F_Male_Impenetrable_Greave_01.hkb</ModelFile>
+                <Texture_All>Impenetrable_Armor_03.png</Texture_All>
+                <Attachment>calf_right_lcf</Attachment>
+            </GameItemTypeModel>
+            <GameItemTypeModel>
+                <ModelFile>gfx/hkb/Armor/F_Male_Impenetrable_Greave_01.hkb</ModelFile>
+                <Texture_All>Impenetrable_Armor_03.png</Texture_All>
+                <Attachment>calf_left_lcf</Attachment>
+            </GameItemTypeModel>
+        </GameItemTypeModelPack>
+        <GameItemTypeModelPack InternalName="Art_PlateBoots_Impenetrable2_3">
+            <SupportedUnitModelType>AmarianFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>Banshee</SupportedUnitModelType>
+            <SupportedUnitModelType>EmpireFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>FallenFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>IroneerFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>KingdomFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>MancerFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>QuendarFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>TarthanFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>UrxenFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>WraithFemale</SupportedUnitModelType>
+            <IconFile>Armor_F_GroundedPlateBoots.png</IconFile>
+            <TintR>0</TintR>
+            <TintG>0</TintG>
+            <TintB>0</TintB>
+            <GameItemTypeModel>
+                <ModelFile>gfx/hkb/Armor/K_Female_Impenetrable_Greaves_01.hkb</ModelFile>
+                <Texture_All>Impenetrable_Armor_03.png</Texture_All>
+                <Attachment>calf_right_lcf</Attachment>
+            </GameItemTypeModel>
+            <GameItemTypeModel>
+                <ModelFile>gfx/hkb/Armor/K_Female_Impenetrable_Greaves_01.hkb</ModelFile>
+                <Texture_All>Impenetrable_Armor_03.png</Texture_All>
+                <Attachment>calf_left_lcf</Attachment>
+            </GameItemTypeModel>
+            <GameItemTypeModel>
+                <ModelFile>Gfx\HKB\Armor\K_Female_Greave_Boots_Mesh_01.hkb</ModelFile>
+                <AttachmentType>Skinned</AttachmentType>
+                <Texture_Clothing2>Gfx\HKB\Clothes\K_Male_Boots_Warrior_Texture_01.png</Texture_Clothing2>
+            </GameItemTypeModel>
+        </GameItemTypeModelPack>
+    </GameItemTypeArtDef>		
+    </GameItemType>
+	
+	<GameItemType InternalName="PlateBreastpiece_Impenetrable3">
+        <DisplayName>Transcendent Plate Cuirass</DisplayName>
+        <Description>A master armorer's lifetime achievement. The wearer has unnatural ability to endure harm.</Description>
+        <Type>Torso</Type>
+        <Type>Surcoat</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>1200</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-2</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <Value>17</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_HitPoints</StrVal>
+            <Value>40</Value>
+            <Provides>+40 Hit Points</Provides>
+        </GameModifier>			
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_ArmorProficiency</Attribute>
+            <Value>2</Value>
+        </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>500</AIPriority>
+            </AIData>
+        <ArtDef>Art_PlateBreastpiece_Impenetrable</ArtDef>
+    </GameItemType>
+	
+	<GameItemType InternalName="TowerShield_Impenetrable2">
+        <DisplayName>Transcendent Tower Shield</DisplayName>
+        <Description>A master armorer's lifetime achievement. Heat is pushed away from it like shadow from sunlight.</Description>
+        <Type>Defense</Type>
+        <WeaponType>Shield</WeaponType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>1000</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <Value>15</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Dodge</StrVal>
+            <Value>15</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Tactical_Auto_Defense_Boost</StrVal>
+            <Value>20</Value>
+            <Provides>+20 Defense when Defending</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnlockCombatAbility</Attribute>
+            <StrVal>ShieldBash_Ability</StrVal>
+            <Provides>Shield Bash- Knocks the victim back a tile</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsShield</StrVal>
+            <Value>1</Value>
+            <Provides>Enables abilities that require Shields</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>ImmuneToSwarm</Attribute>
+            <Provides>Immune to Swarm Attack Bonuses</Provides>
+        </GameModifier>		
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>500</AIPriority>
+            </AIData>
+        <ArtDef>TowerShield_Impenetrable_ArtDef</ArtDef>
+    </GameItemType>
+	
+	    <GameItemType InternalName="PlateVambraces_Champions2">
+        <DisplayName>Transcendent Plate Vambraces</DisplayName>
+        <Description>A master armorer's lifetime achievement. They powerfully repel magic.</Description>
+        <Type>Forearms</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>12</AdditionalTrainingTurns>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <ShopValue>700</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-1</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <Value>7</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_MagicResist</StrVal>
+            <Value>50</Value>
+        </GameModifier>		
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_ArmorProficiency</Attribute>
+            <Value>2</Value>
+        </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>500</AIPriority>
+            </AIData>
+        <ArtDef>Art_PlateVambraces_Impenetrable</ArtDef>
+    </GameItemType>
+    
+<GameItemType InternalName="Staff_Freezing">
+        <DisplayName>Hailstone Staff</DisplayName>
+        <Description>Thick gloves are suggested for those that wield this staff.</Description>
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>Staff</WeaponType>
+        <WeaponUpgradeType>ColdStaff</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>48</AdditionalTrainingTurns>
+        <ShopValue>290</ShopValue>
+        <ProductionRequirement>
+            <Type>Resource</Type>
+            <Attribute>RefinedCrystal</Attribute>
+            <Value>6</Value>
+        </ProductionRequirement>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Cold</StrVal>
+            <Value>8</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-6</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockRangedAction</Attribute>
+                <StrVal>BowAttack_Freezing</StrVal>
+                <Provides>Ranged attack</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>1</IsAvailableForSovereignCustomization>
+        <Likelihood>10</Likelihood>
+        <RarityDisplay>Rare</RarityDisplay>
+        <TacticalRange>20</TacticalRange>
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>NoRangedWeapons</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Arcane_Weapons</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_BLUNT</AIPrefType>
+            <AIPriority>198</AIPriority>
+        </AIData>
+        <ArtDef>Staff_Freezing_ArtDef</ArtDef>
+    </GameItemType>
+    <GameItemType InternalName="Staff_Incineration">
+        <DisplayName>Incineration Staff</DisplayName>
+        <Description>A jet of fire can be coaxed from the embers that eternally burn on the tip of this staff.</Description>
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>Staff</WeaponType>
+        <WeaponUpgradeType>FireStaff</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>24</AdditionalTrainingTurns>
+        <CustomizationPointCost>1</CustomizationPointCost>
+        <ShopValue>150</ShopValue>
+        <ProductionRequirement>
+            <Type>Resource</Type>
+            <Attribute>RefinedCrystal</Attribute>
+            <Value>3</Value>
+        </ProductionRequirement>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Fire</StrVal>
+            <Value>4</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-6</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockRangedAction</Attribute>
+                <StrVal>BowAttack_Flaming</StrVal>
+                <Provides>Ranged attack</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>20</Likelihood>
+        <RarityDisplay>Uncommon</RarityDisplay>
+        <TacticalRange>20</TacticalRange>
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>NoRangedWeapons</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Enchantment</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_BLUNT</AIPrefType>
+            <AIPriority>114</AIPriority>
+        </AIData>
+        <ArtDef>Staff_Incineration_ArtDef</ArtDef>
+    </GameItemType>
+    <GameItemType InternalName="Staff_Hellfire">
+        <DisplayName>Hellfire Staff</DisplayName>
+        <Description>Also known as the dragon's breath staff.  A torrent of fire can be coaxed out of the flames that continually burn at the staff's tip.</Description>
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>Staff</WeaponType>
+        <WeaponUpgradeType>FireStaff</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>48</AdditionalTrainingTurns>
+        <ShopValue>290</ShopValue>
+        <ProductionRequirement>
+            <Type>Resource</Type>
+            <Attribute>RefinedCrystal</Attribute>
+            <Value>6</Value>
+        </ProductionRequirement>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Fire</StrVal>
+            <Value>8</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-6</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockRangedAction</Attribute>
+                <StrVal>BowAttack_Ignys</StrVal>
+                <Provides>Ranged attack</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>1</IsAvailableForSovereignCustomization>
+        <Likelihood>10</Likelihood>
+        <RarityDisplay>Rare</RarityDisplay>
+        <TacticalRange>20</TacticalRange>
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>NoRangedWeapons</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Arcane_Weapons</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_BLUNT</AIPrefType>
+            <AIPriority>198</AIPriority>
+        </AIData>
+        <ArtDef>Staff_Hellfire_ArtDef</ArtDef>
+    </GameItemType>
+    <GameItemType InternalName="Staff_Leht">
+        <DisplayName>Leht Staff</DisplayName>
+        <Description>Much like Queen Procipinee herself, this staff's beauty is a mask for the power it contains.</Description>
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>Staff</WeaponType>
+        <WeaponUpgradeType>FireStaff</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>48</AdditionalTrainingTurns>
+        <ShopValue>290</ShopValue>
+        <ProductionRequirement>
+            <Type>Resource</Type>
+            <Attribute>RefinedCrystal</Attribute>
+            <Value>6</Value>
+        </ProductionRequirement>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Lightning</StrVal>
+            <Value>9</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-6</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockRangedAction</Attribute>
+                <StrVal>BowAttack_Lightning</StrVal>
+                <Provides>Ranged attack</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>10</Likelihood>
+        <RarityDisplay>Rare</RarityDisplay>
+        <TacticalRange>20</TacticalRange>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Enchanters</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>NoRangedWeapons</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Arcane_Weapons</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_BLUNT</AIPrefType>
+            <AIPriority>212</AIPriority>
+        </AIData>
+        <ArtDef>Staff_Leht_ArtDef</ArtDef>
+    </GameItemType>
+    <GameItemType InternalName="Staff_Ice">
+        <DisplayName>Ice Staff</DisplayName>
+        <Description>Enchanters sell these staves in the Lombard Desert - not because they are powerful weapons, but because they keep the wielder cool.</Description>
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>Staff</WeaponType>
+        <WeaponUpgradeType>ColdStaff</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>24</AdditionalTrainingTurns>
+        <CustomizationPointCost>1</CustomizationPointCost>
+        <ShopValue>140</ShopValue>
+        <ProductionRequirement>
+            <Type>Resource</Type>
+            <Attribute>RefinedCrystal</Attribute>
+            <Value>3</Value>
+        </ProductionRequirement>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Cold</StrVal>
+            <Value>4</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-6</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockRangedAction</Attribute>
+                <StrVal>BowAttack_Ice</StrVal>
+                <Provides>Ranged attack</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>20</Likelihood>
+        <RarityDisplay>Uncommon</RarityDisplay>
+        <TacticalRange>20</TacticalRange>
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>NoRangedWeapons</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Enchantment</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_BLUNT</AIPrefType>
+            <AIPriority>114</AIPriority>
+        </AIData>
+        <ArtDef>Staff_Ice_ArtDef</ArtDef>
+    </GameItemType>
+	
+	<GameItemType InternalName="ToadVenom">
+        <DisplayName>Toad Venom</DisplayName>
+        <Description>Drinking this slosh of toad's venom mixed with herbs is a sure way to vomit. But force your soldiers to imbibe and their resistance to poisons will slightly increase.</Description>
+        <Type>Accessory</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>8</AdditionalTrainingTurns>
+        <ShopValue>20</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ResistPoison</StrVal>
+            <Value>25</Value>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>40</Likelihood>
+        <RarityDisplay>Common</RarityDisplay>
+        <IsUsable>0</IsUsable>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>9</AIPriority>
+            </AIData>
+        <ArtDef>ToadVenom_ArtDef</ArtDef>
+        <GameItemTypeArtDef InternalName="ToadVenom_ArtDef">
+            <GameItemTypeModelPack InternalName="ToadVenom_Default">
+                <IconFile>TrogBlood_Item.png</IconFile>
+                <TintR>0</TintR>
+                <TintG>0</TintG>
+                <TintB>0</TintB>
+                <GameItemTypeModel>
+                </GameItemTypeModel>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+    </GameItemType>
+	
+	<GameItemType InternalName="Longsword_Terror">
+        <DisplayName>Terror Blade</DisplayName>
+        <Description>Even its incredibly sharp blade cannot explain the boundless terror this weapon instills in those who face it.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>OneHanded</WeaponType>
+        <WeaponUpgradeType>Blade</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>900</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>35</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>2</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxCounterAttack</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Counterattack per round</Provides>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsSword</StrVal>
+            <Value>1</Value>
+            <Provides>Enables abilities that require Swords</Provides>
+        </GameModifier>			
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>MeleeAppliesSpell</Attribute>
+                <StrVal>Longsword_Terror_Effect</StrVal>
+                <Provides>Victims lose their next turn unless they resist.</Provides>
+            </GameModifier>			
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>641</AIPriority>
+        </AIData>
+        <ArtDef>Longsword_Terror_ArtDef</ArtDef>
+        <GameItemTypeArtDef InternalName="Longsword_Terror_ArtDef">
+            <GameItemTypeModelPack InternalName="Longsword_Terror_Default">
+                <IconFile>W_Scimitar_Brutal_Trog_Icon_01.png</IconFile>
+                <TintR>207</TintR>
+                <TintG>53</TintG>
+                <TintB>16</TintB>
+                <AttackSFX>Hit_Sword_01</AttackSFX>
+                <AttackSFX>Hit_Sword_02</AttackSFX>
+                <AttackSFX>Hit_Sword_03</AttackSFX>
+                <AttackSFX>Hit_Sword_04</AttackSFX>
+                <EquipSFX>Equip_Sword_01</EquipSFX>
+                <EquipSFX>Equip_Sword_02</EquipSFX>
+                <EquipSFX>Equip_Sword_03</EquipSFX>
+                <SupportedUnitModelType>AmarianFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>AmarianMale</SupportedUnitModelType>
+                <SupportedUnitModelType>Banshee</SupportedUnitModelType>
+                <SupportedUnitModelType>DarklingMale</SupportedUnitModelType>
+                <SupportedUnitModelType>EmpireFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>EmpireMale</SupportedUnitModelType>
+                <SupportedUnitModelType>FallenFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>FallenMale</SupportedUnitModelType>
+                <SupportedUnitModelType>HenchmanMale</SupportedUnitModelType>
+                <SupportedUnitModelType>IroneerFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>IroneerMale</SupportedUnitModelType>
+                <SupportedUnitModelType>IronGolem</SupportedUnitModelType>
+                <SupportedUnitModelType>JuggernautMale</SupportedUnitModelType>
+                <SupportedUnitModelType>KingdomFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>KingdomMale</SupportedUnitModelType>
+                <SupportedUnitModelType>MancerFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>MancerMale</SupportedUnitModelType>
+                <SupportedUnitModelType>QuendarFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>QuendarMale</SupportedUnitModelType>
+                <SupportedUnitModelType>Skeleton</SupportedUnitModelType>
+                <SupportedUnitModelType>SlaveMale</SupportedUnitModelType>
+                <SupportedUnitModelType>TarthanFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>TarthanMale</SupportedUnitModelType>
+                <SupportedUnitModelType>UrxenFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>UrxenMale</SupportedUnitModelType>
+                <SupportedUnitModelType>WraithFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>WraithMale</SupportedUnitModelType>
+                <GameItemTypeModel>
+                    <ModelFile>gfx/hkb/Weapons/W_Scimitar_Trog_01.hkb</ModelFile>
+                    <Texture_All>gfx/hkb/Weapons/FE_Weapons_01.png</Texture_All>
+                    <Attachment>hand_right_Lcf</Attachment>
+                    <Color_Metal>100,100,100</Color_Metal>
+                </GameItemTypeModel>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>		
+    </GameItemType>
+	
+	
+	<GameItemType InternalName="Pike_Spectre">
+        <DisplayName>Spectre Pike</DisplayName>
+        <Description>The tips of these pikes care little for armor.</Description>
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>Spear</WeaponType>
+        <WeaponUpgradeType>Spear</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>880</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>35</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ArmorPierce</StrVal>
+                <Value>90</Value>
+                <Provides>Ignores 90% of the victim's Defense</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>CannotBeCounterattacked</Attribute>
+                <Value>-1</Value>
+                <Provides>Immune to Counterattack</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>UnitStat_BG_IsUsingMount</StrVal2>
+                <Value>3</Value>
+                <Provides>+3 Attack vs mounted opponents (when not mounted)</Provides>
+                <vsHigher>1</vsHigher>
+            </GameModifier>				
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Impale_Ability</StrVal>
+                <Provides>Impale- Strike an opponent and whoever is behind them</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_PIERCING</AIPrefType>
+            <AIPriority>655</AIPriority>
+        </AIData>
+        <ArtDef>Pike_Perfect_ArtDef</ArtDef>
+    </GameItemType>
+	
+	<GameItemType InternalName="YewLongbow_Vengeful">
+        <DisplayName>Vengeful Longbow</DisplayName>
+        <Description>Fire an arrow from this bow, and it will seem to have hit before the string was even pulled.</Description>
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>Bow</WeaponType>
+        <WeaponUpgradeType>Bow</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>870</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>34</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_IsBow</StrVal>
+                <Value>1</Value>
+                <Provides>Enables abilities that require Bows</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockRangedAction</Attribute>
+                <StrVal>BowAttack_Basic</StrVal>
+                <Provides>Ranged attack</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <TacticalRange>20</TacticalRange>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_BOW</AIPrefType>
+            <AIPriority>482</AIPriority>
+        </AIData>
+        <ArtDef>YewLongbow_Brutal_ArtDef</ArtDef>
+    </GameItemType>
+        
+	<GameItemType InternalName="Maul_Rockshattering">
+        <DisplayName>Rockshattering Maul</DisplayName>
+        <Description>Even mountains have fear.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>Blunt</WeaponType>
+        <WeaponUpgradeType>Blunt</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>900</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>60</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-6</Value>
+        </GameModifier>		
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_BashChance</StrVal>
+                <Value>100</Value>
+                <Provides>Bash- Has a chance equal to the damage done of knocking the victim prone</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>CrushingBlow</StrVal>
+                <Provides>Crushing Blow- +100% Attack, but you lose your next action</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_BLUNT</AIPrefType>
+            <AIPriority>800</AIPriority>
+        </AIData>
+        <ArtDef>Maul_Floating_ArtDef</ArtDef>
+    </GameItemType>
+	
+	<GameItemType InternalName="Greataxe_Pendulum2">
+        <DisplayName>Centrifuge Axe</DisplayName>
+        <Description>Even a child could halve an ox with this axe, whose swing is augmented by magic. Take care which warrior is allowed its use.</Description>
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>TwoHanded</WeaponType>
+        <WeaponUpgradeType>Axe</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>725</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>40</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-4</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_BackswingChance</StrVal>
+                <Value>100</Value>
+                <Provides>Backswing- If the attack misses the unit gets a second attack against the same target</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_BonusCleave</StrVal>
+                <Value>0.75</Value>
+                <Provides>+75% damage when using the Cleave ability</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Cleave_Ability</StrVal>
+                <Provides>Cleave- Strike 3 adjacent enemies</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>460</AIPriority>
+        </AIData>
+        <ArtDef>Greataxe_Pendulum_ArtDef</ArtDef>
+    </GameItemType>
+	
+	<GameItemType InternalName="PlateBoots2">
+        <DisplayName>Pinnacle Plate Boots</DisplayName>
+        <Description>An armorer working with mere iron shouldn't be capable of making such an incredible set of armor - but it is yours nonetheless.</Description>
+        <Type>Boots</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <ShopValue>440</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-1</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <Value>6</Value>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+		<IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+		<HeroOnly>1</HeroOnly>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_ArmorProficiency</Attribute>
+            <Value>2</Value>
+        </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>40</AIPriority>
+            </AIData>
+        <ArtDef>Art_PlateBoots2</ArtDef>
+   <GameItemTypeArtDef InternalName="Art_PlateBoots2">
+        <GameItemTypeModelPack InternalName="Art_PlateBoots2_1">
+            <!--<SupportedUnitModelType>AmarianFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>AmarianMale</SupportedUnitModelType>
+            <SupportedUnitModelType>HenchmanMale</SupportedUnitModelType>
+            <SupportedUnitModelType>KingdomFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>KingdomMale</SupportedUnitModelType>
+            <SupportedUnitModelType>MancerFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>MancerMale</SupportedUnitModelType>
+            <SupportedUnitModelType>TarthanFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>TarthanMale</SupportedUnitModelType>
+            <IconFile>PressedIronGreaves.png</IconFile>-->
+			<SupportedUnitModelType>FallenMale</SupportedUnitModelType>
+            <SupportedUnitModelType>QuendarMale</SupportedUnitModelType>
+            <SupportedUnitModelType>UrxenMale</SupportedUnitModelType>
+            <IconFile>MasterHeavyPlateGreaves.png</IconFile>
+            <TintR>0</TintR>
+            <TintG>0</TintG>
+            <TintB>0</TintB>
+            <GameItemTypeModel>
+                <ModelFile>gfx/hkb/items/armor/kingdom armor/kingdom elite armor export A/kingdom_elite_greave_A.hkb</ModelFile>
+                <Texture_All>kingdom_elite_armor_texture_A.dds</Texture_All>
+                <AttachmentType>Skinned</AttachmentType>
+            </GameItemTypeModel>
+        </GameItemTypeModelPack>
+        <GameItemTypeModelPack InternalName="Art_PlateBoots2_2">
+            <!--<SupportedUnitModelType>FallenMale</SupportedUnitModelType>
+            <SupportedUnitModelType>QuendarMale</SupportedUnitModelType>
+            <SupportedUnitModelType>UrxenMale</SupportedUnitModelType>
+            <IconFile>MasterHeavyPlateGreaves.png</IconFile>-->
+			<SupportedUnitModelType>AmarianFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>AmarianMale</SupportedUnitModelType>
+            <SupportedUnitModelType>HenchmanMale</SupportedUnitModelType>
+            <SupportedUnitModelType>KingdomFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>KingdomMale</SupportedUnitModelType>
+            <SupportedUnitModelType>MancerFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>MancerMale</SupportedUnitModelType>
+            <SupportedUnitModelType>TarthanFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>TarthanMale</SupportedUnitModelType>
+            <IconFile>PressedIronGreaves.png</IconFile>
+            <TintR>0</TintR>
+            <TintG>0</TintG>
+            <TintB>0</TintB>
+            <GameItemTypeModel>
+                <ModelFile>Gfx\HKB\Armor\F_Male_Greave_Boots_Mesh_01.hkb</ModelFile>
+                <AttachmentType>Skinned</AttachmentType>
+                <Texture_Clothing2>Gfx\HKB\Clothes\K_Male_Boots_Warrior_Texture_01.png</Texture_Clothing2>
+            </GameItemTypeModel>
+            <GameItemTypeModel>
+                <ModelFile>gfx/hkb/Armor/F_Armor_Plate_Greave_01.hkb</ModelFile>
+                <Texture_All>F_Armor_Plate_Texture_02.png</Texture_All>
+                <Attachment>calf_right_lcf</Attachment>
+            </GameItemTypeModel>
+            <GameItemTypeModel>
+                <ModelFile>gfx/hkb/Armor/F_Armor_Plate_Greave_01.hkb</ModelFile>
+                <Texture_All>F_Armor_Plate_Texture_02.png</Texture_All>
+                <Attachment>calf_left_lcf</Attachment>
+            </GameItemTypeModel>
+        </GameItemTypeModelPack>
+        <GameItemTypeModelPack InternalName="Art_PlateBoots2_3">
+            <!--<SupportedUnitModelType>Banshee</SupportedUnitModelType>
+            <SupportedUnitModelType>EmpireFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>EmpireMale</SupportedUnitModelType>
+            <SupportedUnitModelType>FallenFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>QuendarFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>Skeleton</SupportedUnitModelType>
+            <SupportedUnitModelType>SlaveMale</SupportedUnitModelType>
+            <SupportedUnitModelType>UrxenFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>WraithFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>WraithMale</SupportedUnitModelType>
+            <IconFile>MasterHeavyPlateGreaves.png</IconFile>-->
+			<SupportedUnitModelType>IroneerFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>IroneerMale</SupportedUnitModelType>
+            <IconFile>PressedIronGreaves.png</IconFile>
+            <TintR>0</TintR>
+            <TintG>0</TintG>
+            <TintB>0</TintB>
+            <GameItemTypeModel>
+                <ModelFile>gfx/hkb/Armor/F_Masterwork_Greave_Small_Mesh_01.hkb</ModelFile>
+                <Texture_All>F_Armor_Plate_Texture_02.png</Texture_All>
+                <Attachment>calf_right_lcf</Attachment>
+            </GameItemTypeModel>
+            <GameItemTypeModel>
+                <ModelFile>gfx/hkb/Armor/F_Masterwork_Greave_Small_Mesh_01.hkb</ModelFile>
+                <Texture_All>F_Armor_Plate_Texture_02.png</Texture_All>
+                <Attachment>calf_left_lcf</Attachment>
+            </GameItemTypeModel>
+            <GameItemTypeModel>
+                <ModelFile>Gfx\HKB\Armor\K_Female_Greave_Boots_Mesh_01.hkb</ModelFile>
+                <AttachmentType>Skinned</AttachmentType>
+                <Texture_Clothing2>Gfx\HKB\Clothes\K_Male_Boots_Warrior_Texture_01.png</Texture_Clothing2>
+            </GameItemTypeModel>
+        </GameItemTypeModelPack>
+        <GameItemTypeModelPack InternalName="Art_PlateBoots2_10">
+            <!--<SupportedUnitModelType>IroneerFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>IroneerMale</SupportedUnitModelType>
+            <IconFile>PressedIronGreaves.png</IconFile>-->
+			<SupportedUnitModelType>Banshee</SupportedUnitModelType>
+            <SupportedUnitModelType>EmpireFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>EmpireMale</SupportedUnitModelType>
+            <SupportedUnitModelType>FallenFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>QuendarFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>Skeleton</SupportedUnitModelType>
+            <SupportedUnitModelType>SlaveMale</SupportedUnitModelType>
+            <SupportedUnitModelType>UrxenFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>WraithFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>WraithMale</SupportedUnitModelType>
+            <IconFile>MasterHeavyPlateGreaves.png</IconFile>
+            <TintR>0</TintR>
+            <TintG>0</TintG>
+            <TintB>0</TintB>
+            <GameItemTypeModel>
+                <ModelFile>gfx/hkb/items/armor/kingdom armor/kingdom elite armor export A/kingdom_elite_greave_A.hkb</ModelFile>
+                <Texture_All>kingdom_elite_armor_texture_A_Gilden.dds</Texture_All>
+                <AttachmentType>Skinned</AttachmentType>
+            </GameItemTypeModel>
+        </GameItemTypeModelPack>
+    </GameItemTypeArtDef>
+    </GameItemType>
+	
+	<GameItemType InternalName="PlateBreastpiece2">
+        <DisplayName>Pinnacle Plate Cuirass</DisplayName>
+        <Description>An armorer working with mere iron shouldn't be capable of making such an incredible set of armor - but it is yours nonetheless.</Description>
+        <Type>Torso</Type>
+        <Type>Surcoat</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <ShopValue>800</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-2</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <Value>11</Value>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+		<IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+		<HeroOnly>1</HeroOnly>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_ArmorProficiency</Attribute>
+            <Value>2</Value>
+        </Prereq>		
+            <AIData AIPersonality="AI_General">
+                <AIPriority>100</AIPriority>
+            </AIData>
+        <ArtDef>Art_PlateBreastpiece_Reinforced</ArtDef>
+    </GameItemType>
+	
+	<GameItemType InternalName="PlateGreaves2">
+        <DisplayName>Pinnacle Plate Greaves</DisplayName>
+        <Description>An armorer working with mere iron shouldn't be capable of making such an incredible set of armor - but it is yours nonetheless.</Description>
+        <Type>LowerBody</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <ShopValue>600</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-1</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <Value>8</Value>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+		<IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+		<HeroOnly>1</HeroOnly>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_ArmorProficiency</Attribute>
+            <Value>2</Value>
+        </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>60</AIPriority>
+            </AIData>
+        <ArtDef>Art_PlateGreaves2</ArtDef>
+		<GameItemTypeArtDef InternalName="Art_PlateGreaves2">
+        <GameItemTypeModelPack InternalName="Art_PlateGreaves2_1">
+            <!--<SupportedUnitModelType>AmarianFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>AmarianMale</SupportedUnitModelType>
+            <SupportedUnitModelType>HenchmanMale</SupportedUnitModelType>
+            <SupportedUnitModelType>KingdomFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>KingdomMale</SupportedUnitModelType>
+            <SupportedUnitModelType>MancerFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>MancerMale</SupportedUnitModelType>
+            <SupportedUnitModelType>TarthanFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>TarthanMale</SupportedUnitModelType>
+            <IconFile>Armor_K_LegendaryPlateGreaves.png</IconFile>-->
+			<SupportedUnitModelType>FallenMale</SupportedUnitModelType>
+            <SupportedUnitModelType>QuendarMale</SupportedUnitModelType>
+            <SupportedUnitModelType>UrxenMale</SupportedUnitModelType>
+            <IconFile>Armor_F_MasterworkPlateGreaves.png</IconFile>			
+            <TintR>0</TintR>
+            <TintG>0</TintG>
+            <TintB>0</TintB>
+            <GameItemTypeModel>
+                <ModelFile>gfx/hkb/items/armor/kingdom armor/kingdom elite armor export A/kingdom_elite_thigh_guard_A.hkb</ModelFile>
+                <Texture_All>kingdom_elite_armor_texture_A.dds</Texture_All>
+                <Attachment>thigh_left_lcf</Attachment>
+                <Color_Clothing2>Color_Metal</Color_Clothing2>
+            </GameItemTypeModel>
+            <GameItemTypeModel>
+                <ModelFile>gfx/hkb/items/armor/kingdom armor/kingdom elite armor export A/kingdom_elite_thigh_guard_A.hkb</ModelFile>
+                <Texture_All>kingdom_elite_armor_texture_A.dds</Texture_All>
+                <Attachment>thigh_right_lcf</Attachment>
+                <Color_Clothing2>Color_Metal</Color_Clothing2>
+            </GameItemTypeModel>
+        </GameItemTypeModelPack>
+        <GameItemTypeModelPack InternalName="Art_PlateGreaves2_2">
+            <!--<SupportedUnitModelType>FallenMale</SupportedUnitModelType>
+            <SupportedUnitModelType>QuendarMale</SupportedUnitModelType>
+            <SupportedUnitModelType>UrxenMale</SupportedUnitModelType>
+            <IconFile>Armor_F_MasterworkPlateGreaves.png</IconFile>-->
+			<SupportedUnitModelType>AmarianFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>AmarianMale</SupportedUnitModelType>
+            <SupportedUnitModelType>HenchmanMale</SupportedUnitModelType>
+            <SupportedUnitModelType>KingdomFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>KingdomMale</SupportedUnitModelType>
+            <SupportedUnitModelType>MancerFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>MancerMale</SupportedUnitModelType>
+            <SupportedUnitModelType>TarthanFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>TarthanMale</SupportedUnitModelType>
+            <IconFile>Armor_K_LegendaryPlateGreaves.png</IconFile>
+            <TintR>0</TintR>
+            <TintG>0</TintG>
+            <TintB>0</TintB>
+            <GameItemTypeModel>
+                <ModelFile>gfx/hkb/Armor/F_Armor_Plate_Thigh_Guard_01.hkb</ModelFile>
+                <Texture_All>F_Armor_Plate_Texture_02.png</Texture_All>
+                <Attachment>thigh_left_lcf</Attachment>
+            </GameItemTypeModel>
+            <GameItemTypeModel>
+                <ModelFile>gfx/hkb/Armor/F_Armor_Plate_Thigh_Guard_01.hkb</ModelFile>
+                <Texture_All>F_Armor_Plate_Texture_02.png</Texture_All>
+                <Attachment>thigh_right_lcf</Attachment>
+            </GameItemTypeModel>
+        </GameItemTypeModelPack>
+        <GameItemTypeModelPack InternalName="Art_PlateGreaves2_3">
+            <!--<SupportedUnitModelType>Banshee</SupportedUnitModelType>
+            <SupportedUnitModelType>EmpireFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>EmpireMale</SupportedUnitModelType>
+            <SupportedUnitModelType>FallenFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>QuendarFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>Skeleton</SupportedUnitModelType>
+            <SupportedUnitModelType>SlaveMale</SupportedUnitModelType>
+            <SupportedUnitModelType>UrxenFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>WraithFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>WraithMale</SupportedUnitModelType>
+            <IconFile>Armor_K_MasterworkPlateGreaves.png</IconFile>-->
+			<SupportedUnitModelType>IroneerFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>IroneerMale</SupportedUnitModelType>
+            <IconFile>Armor_K_LegendaryPlateGreaves.png</IconFile>
+            <TintR>0</TintR>
+            <TintG>0</TintG>
+            <TintB>0</TintB>
+            <GameItemTypeModel>
+                <ModelFile>gfx/hkb/Armor/F_Masterwork_Thighguard_Small_Mesh_01.hkb</ModelFile>
+                <Texture_All>F_Armor_Plate_Texture_02.png</Texture_All>
+                <Attachment>thigh_left_lcf</Attachment>
+            </GameItemTypeModel>
+            <GameItemTypeModel>
+                <ModelFile>gfx/hkb/Armor/F_Masterwork_Thighguard_Small_Mesh_01.hkb</ModelFile>
+                <Texture_All>F_Armor_Plate_Texture_02.png</Texture_All>
+                <Attachment>thigh_right_lcf</Attachment>
+            </GameItemTypeModel>
+        </GameItemTypeModelPack>
+        <GameItemTypeModelPack InternalName="Art_PlateGreaves2_10">
+            <!--<SupportedUnitModelType>IroneerFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>IroneerMale</SupportedUnitModelType>
+            <IconFile>Armor_K_LegendaryPlateGreaves.png</IconFile>-->
+			<SupportedUnitModelType>Banshee</SupportedUnitModelType>
+            <SupportedUnitModelType>EmpireFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>EmpireMale</SupportedUnitModelType>
+            <SupportedUnitModelType>FallenFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>QuendarFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>Skeleton</SupportedUnitModelType>
+            <SupportedUnitModelType>SlaveMale</SupportedUnitModelType>
+            <SupportedUnitModelType>UrxenFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>WraithFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>WraithMale</SupportedUnitModelType>
+            <IconFile>Armor_K_MasterworkPlateGreaves.png</IconFile>
+            <TintR>0</TintR>
+            <TintG>0</TintG>
+            <TintB>0</TintB>
+            <GameItemTypeModel>
+                <ModelFile>gfx/hkb/items/armor/kingdom armor/kingdom elite armor export A/kingdom_elite_thigh_guard_A.hkb</ModelFile>
+                <Texture_All>kingdom_elite_armor_texture_A_Gilden.dds</Texture_All>
+                <Attachment>thigh_left_lcf</Attachment>
+            </GameItemTypeModel>
+            <GameItemTypeModel>
+                <ModelFile>gfx/hkb/items/armor/kingdom armor/kingdom elite armor export A/kingdom_elite_thigh_guard_A.hkb</ModelFile>
+                <Texture_All>kingdom_elite_armor_texture_A_Gilden.dds</Texture_All>
+                <Attachment>thigh_right_lcf</Attachment>
+            </GameItemTypeModel>
+        </GameItemTypeModelPack>
+    </GameItemTypeArtDef>		
+    </GameItemType>
+	
+	 <GameItemType InternalName="PlateHelmet2">
+        <DisplayName>Pinnacle Plate Helm</DisplayName>
+        <Description>An armorer working with mere iron shouldn't be capable of making such an incredible set of armor - but it is yours nonetheless.</Description>
+        <Type>Head</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <ShopValue>440</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-1</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <Value>6</Value>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+		<IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+		<HeroOnly>1</HeroOnly>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_ArmorProficiency</Attribute>
+            <Value>2</Value>
+        </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>40</AIPriority>
+            </AIData>
+        <ArtDef>Art_PlateHelmet_Ivory</ArtDef>
+    </GameItemType>
+	
+	 <GameItemType InternalName="PlateVambraces2">
+        <DisplayName>Pinnacle Plate Vambraces</DisplayName>
+        <Description>An armorer working with mere iron shouldn't be capable of making such an incredible set of armor - but it is yours nonetheless.</Description>
+        <Type>Forearms</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <ShopValue>440</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-1</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <Value>6</Value>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+		<IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+		<HeroOnly>1</HeroOnly>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_ArmorProficiency</Attribute>
+            <Value>2</Value>
+        </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>40</AIPriority>
+            </AIData>
+        <ArtDef>Art_PlateVambraces_Reinforced2</ArtDef>
+		<GameItemTypeArtDef InternalName="Art_PlateVambraces_Reinforced2">
+        <GameItemTypeModelPack InternalName="Art_PlateVambraces_Reinforced2_1">
+            <SupportedUnitModelType>AmarianMale</SupportedUnitModelType>
+            <SupportedUnitModelType>DarklingMale</SupportedUnitModelType>
+            <SupportedUnitModelType>EmpireMale</SupportedUnitModelType>
+            <SupportedUnitModelType>HenchmanMale</SupportedUnitModelType>
+            <SupportedUnitModelType>IroneerMale</SupportedUnitModelType>
+            <SupportedUnitModelType>KingdomMale</SupportedUnitModelType>
+            <SupportedUnitModelType>MancerMale</SupportedUnitModelType>
+            <SupportedUnitModelType>Skeleton</SupportedUnitModelType>
+            <SupportedUnitModelType>SlaveMale</SupportedUnitModelType>
+            <SupportedUnitModelType>TarthanMale</SupportedUnitModelType>
+            <SupportedUnitModelType>WraithMale</SupportedUnitModelType>
+            <IconFile>ResplendantArmguards.png</IconFile>
+            <TintR>0</TintR>
+            <TintG>0</TintG>
+            <TintB>0</TintB>
+            <GameItemTypeModel>
+                <ModelFile>gfx/hkb/Armor/K_Male_Reinforced_Vambrace_01.hkb</ModelFile>
+                <Texture_All>K_Female_Armor_Plate_Texture_01.png</Texture_All>
+                <Attachment>forearm_left_lcf</Attachment>
+            </GameItemTypeModel>
+            <GameItemTypeModel>
+                <ModelFile>gfx/hkb/Armor/K_Male_Reinforced_Vambrace_01.hkb</ModelFile>
+                <Texture_All>K_Female_Armor_Plate_Texture_01.png</Texture_All>
+                <Attachment>forearm_right_lcf</Attachment>
+            </GameItemTypeModel>
+        </GameItemTypeModelPack>
+        <GameItemTypeModelPack InternalName="Art_PlateVambraces_Reinforced2_2">
+            <SupportedUnitModelType>FallenMale</SupportedUnitModelType>
+            <SupportedUnitModelType>QuendarMale</SupportedUnitModelType>
+            <SupportedUnitModelType>UrxenMale</SupportedUnitModelType>
+            <IconFile>ResplendantArmguards.png</IconFile>
+            <TintR>0</TintR>
+            <TintG>0</TintG>
+            <TintB>0</TintB>
+            <GameItemTypeModel>
+                <ModelFile>gfx/hkb/Armor/F_Armor_Reinforced_Vambrace_01.hkb</ModelFile>
+                <Texture_All>K_Female_Armor_Plate_Texture_01.png</Texture_All>
+                <Attachment>forearm_left_lcf</Attachment>
+            </GameItemTypeModel>
+            <GameItemTypeModel>
+                <ModelFile>gfx/hkb/Armor/F_Armor_Reinforced_Vambrace_01.hkb</ModelFile>
+                <Texture_All>K_Female_Armor_Plate_Texture_01.png</Texture_All>
+                <Attachment>forearm_right_lcf</Attachment>
+            </GameItemTypeModel>
+        </GameItemTypeModelPack>
+        <GameItemTypeModelPack InternalName="Art_PlateVambraces_Reinforced2_3">
+            <SupportedUnitModelType>AmarianFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>Banshee</SupportedUnitModelType>
+            <SupportedUnitModelType>EmpireFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>FallenFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>IroneerFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>KingdomFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>MancerFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>QuendarFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>TarthanFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>UrxenFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>WraithFemale</SupportedUnitModelType>
+            <IconFile>ResplendantArmguards.png</IconFile>
+            <TintR>0</TintR>
+            <TintG>0</TintG>
+            <TintB>0</TintB>
+            <GameItemTypeModel>
+                <ModelFile>gfx/hkb/Armor/K_Female_Armor_Plate_Vambrace_Mesh_01.hkb</ModelFile>
+                <Texture_All>K_Female_Armor_Plate_Texture_01.png</Texture_All>
+                <Attachment>forearm_left_lcf</Attachment>
+            </GameItemTypeModel>
+            <GameItemTypeModel>
+                <ModelFile>gfx/hkb/Armor/K_Female_Armor_Plate_Vambrace_Mesh_01.hkb</ModelFile>
+                <Texture_All>K_Female_Armor_Plate_Texture_01.png</Texture_All>
+                <Attachment>forearm_right_lcf</Attachment>
+            </GameItemTypeModel>
+        </GameItemTypeModelPack>
+    </GameItemTypeArtDef>
+    </GameItemType>
+	
+	<GameItemType InternalName="ChainBoots_Masterwork2">
+        <DisplayName>Pinnacle Chain Boots</DisplayName>
+        <Description>An armorer working with mere iron shouldn't be capable of making such an incredible set of armor - but it is yours nonetheless.</Description>
+        <Type>Boots</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <ShopValue>280</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <Value>5</Value>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+		<IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+		<HeroOnly>1</HeroOnly>		
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_ArmorProficiency</Attribute>
+            <Value>1</Value>
+        </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>40</AIPriority>
+            </AIData>
+        <ArtDef>Art_ChainBoots2</ArtDef>
+		<GameItemTypeArtDef InternalName="Art_ChainBoots2">
+        <GameItemTypeModelPack InternalName="Art_ChainBoots2_1">
+            <SupportedUnitModelType>AmarianFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>AmarianMale</SupportedUnitModelType>
+            <SupportedUnitModelType>HenchmanMale</SupportedUnitModelType>
+            <SupportedUnitModelType>IroneerFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>IroneerMale</SupportedUnitModelType>
+            <SupportedUnitModelType>KingdomFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>KingdomMale</SupportedUnitModelType>
+            <SupportedUnitModelType>MancerFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>MancerMale</SupportedUnitModelType>
+            <SupportedUnitModelType>TarthanFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>TarthanMale</SupportedUnitModelType>
+            <IconFile>SnakeskinBootsDark.png</IconFile>
+            <TintR>0</TintR>
+            <TintG>0</TintG>
+            <TintB>0</TintB>
+            <GameItemTypeModel>
+                <ModelFile>gfx/hkb/Armor/K_Chainmail_Boots_Mesh_01.hkb</ModelFile>
+                <Texture_All>K_Chain_Boots_Texture_01.png</Texture_All>
+                <AttachmentType>Skinned</AttachmentType>
+            </GameItemTypeModel>
+        </GameItemTypeModelPack>
+        <GameItemTypeModelPack InternalName="Art_ChainBoots2_2">
+            <SupportedUnitModelType>FallenMale</SupportedUnitModelType>
+            <SupportedUnitModelType>QuendarMale</SupportedUnitModelType>
+            <SupportedUnitModelType>UrxenMale</SupportedUnitModelType>
+            <IconFile>SnakeskinBootsDark.png</IconFile>
+            <TintR>0</TintR>
+            <TintG>0</TintG>
+            <TintB>0</TintB>
+            <GameItemTypeModel>
+                <ModelFile>gfx/hkb/Armor/F_Chainmail_Boots_Mesh_01.hkb</ModelFile>
+                <Texture_All>F_Chain_Boots_Texture_01.png</Texture_All>
+                <AttachmentType>Skinned</AttachmentType>
+            </GameItemTypeModel>
+        </GameItemTypeModelPack>
+        <GameItemTypeModelPack InternalName="Art_ChainBoots2_3">
+            <SupportedUnitModelType>Banshee</SupportedUnitModelType>
+            <SupportedUnitModelType>EmpireFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>EmpireMale</SupportedUnitModelType>
+            <SupportedUnitModelType>FallenFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>QuendarFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>Skeleton</SupportedUnitModelType>
+            <SupportedUnitModelType>SlaveMale</SupportedUnitModelType>
+            <SupportedUnitModelType>UrxenFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>WraithFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>WraithMale</SupportedUnitModelType>
+            <IconFile>SnakeskinBootsDark.png</IconFile>
+            <TintR>0</TintR>
+            <TintG>0</TintG>
+            <TintB>0</TintB>
+            <GameItemTypeModel>
+                <ModelFile>gfx/hkb/Armor/K_Chainmail_Boots_Mesh_01.hkb</ModelFile>
+                <Texture_All>F_Chain_Boots_Texture_01.png</Texture_All>
+                <AttachmentType>Skinned</AttachmentType>
+            </GameItemTypeModel>
+        </GameItemTypeModelPack>
+    </GameItemTypeArtDef>		
+    </GameItemType>
+	
+    <GameItemType InternalName="ChainBreastpiece_Masterwork2">
+        <DisplayName>Pinnacle Chain Shirt</DisplayName>
+        <Description>An armorer working with mere iron shouldn't be capable of making such an incredible set of armor - but it is yours nonetheless.</Description>
+        <Type>Torso</Type>
+        <Type>Surcoat</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <ShopValue>520</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-1</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <Value>9</Value>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+		<IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+		<HeroOnly>1</HeroOnly>		
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_ArmorProficiency</Attribute>
+            <Value>1</Value>
+        </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>70</AIPriority>
+            </AIData>
+        <ArtDef>Art_ChainBreastpiece_Reinforced</ArtDef>
+    </GameItemType>
+	
+    <GameItemType InternalName="ChainGreaves_Masterwork2">
+        <DisplayName>Pinnacle Chain Greaves</DisplayName>
+        <Description>An armorer working with mere iron shouldn't be capable of making such an incredible set of armor - but it is yours nonetheless.</Description>
+        <Type>LowerBody</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <ShopValue>400</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-1</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <Value>7</Value>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+		<IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+		<HeroOnly>1</HeroOnly>		
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_ArmorProficiency</Attribute>
+            <Value>1</Value>
+        </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>50</AIPriority>
+            </AIData>
+        <ArtDef>Art_ChainGreaves_Masterwork2</ArtDef>
+		<GameItemTypeArtDef InternalName="Art_ChainGreaves_Masterwork2">
+        <GameItemTypeModelPack InternalName="Art_ChainGreaves_Masterwork2_1">
+            <SupportedUnitModelType>AmarianFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>AmarianMale</SupportedUnitModelType>
+            <SupportedUnitModelType>HenchmanMale</SupportedUnitModelType>
+            <SupportedUnitModelType>IroneerFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>IroneerMale</SupportedUnitModelType>
+            <SupportedUnitModelType>KingdomFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>KingdomMale</SupportedUnitModelType>
+            <SupportedUnitModelType>MancerFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>MancerMale</SupportedUnitModelType>
+            <SupportedUnitModelType>TarthanFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>TarthanMale</SupportedUnitModelType>
+            <!--<IconFile>Armor_K_MasterworkChainGreaves.png</IconFile>-->
+			<IconFile>Armor_F_MasterworkChainGreaves.png</IconFile>
+            <TintR>0</TintR>
+            <TintG>0</TintG>
+            <TintB>0</TintB>
+            <GameItemTypeModel>
+                <ModelFile>gfx/hkb/Clothes/K_Male_Chain_Pants_Mesh_01.hkb</ModelFile>
+                <Texture_All>K_Chainmail_Pants_Texture_02.png</Texture_All>
+                <AttachmentType>Skinned</AttachmentType>
+            </GameItemTypeModel>
+        </GameItemTypeModelPack>
+        <GameItemTypeModelPack InternalName="Art_ChainGreaves_Masterwork2_2">
+            <SupportedUnitModelType>FallenMale</SupportedUnitModelType>
+            <SupportedUnitModelType>QuendarMale</SupportedUnitModelType>
+            <SupportedUnitModelType>UrxenMale</SupportedUnitModelType>
+            <!--<IconFile>Armor_F_MasterworkChainGreaves.png</IconFile>-->
+			<IconFile>Armor_K_MasterworkChainGreaves.png</IconFile>
+            <TintR>0</TintR>
+            <TintG>0</TintG>
+            <TintB>0</TintB>
+            <GameItemTypeModel>
+                <ModelFile>gfx/hkb/Clothes/F_Male_Pants_Mesh_01.hkb</ModelFile>
+                <Texture_All>F_Chainmail_Pants_Texture_02.png</Texture_All>
+                <AttachmentType>Skinned</AttachmentType>
+            </GameItemTypeModel>
+        </GameItemTypeModelPack>
+        <GameItemTypeModelPack InternalName="Art_ChainGreaves_Masterwork2_3">
+            <SupportedUnitModelType>Banshee</SupportedUnitModelType>
+            <SupportedUnitModelType>EmpireFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>EmpireMale</SupportedUnitModelType>
+            <SupportedUnitModelType>FallenFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>QuendarFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>Skeleton</SupportedUnitModelType>
+            <SupportedUnitModelType>SlaveMale</SupportedUnitModelType>
+            <SupportedUnitModelType>UrxenFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>WraithFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>WraithMale</SupportedUnitModelType>
+            <!--<IconFile>Armor_K_MasterworkChainGreaves.png</IconFile>-->
+			<IconFile>Armor_F_MasterworkChainGreaves.png</IconFile>
+            <TintR>0</TintR>
+            <TintG>0</TintG>
+            <TintB>0</TintB>
+            <GameItemTypeModel>
+                <ModelFile>gfx/hkb/Clothes/K_Male_Chain_Pants_Mesh_01.hkb</ModelFile>
+                <Texture_All>F_Chainmail_Pants_Texture_02.png</Texture_All>
+                <AttachmentType>Skinned</AttachmentType>
+            </GameItemTypeModel>
+        </GameItemTypeModelPack>
+    </GameItemTypeArtDef>		
+    </GameItemType>
+	
+    <GameItemType InternalName="ChainHelmet_Masterwork2">
+        <DisplayName>Pinnacle Chain Coif</DisplayName>
+        <Description>An armorer working with mere iron shouldn't be capable of making such an incredible set of armor - but it is yours nonetheless.</Description>
+        <Type>Head</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <ShopValue>280</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <Value>5</Value>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+		<IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+		<HeroOnly>1</HeroOnly>		
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_ArmorProficiency</Attribute>
+            <Value>1</Value>
+        </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>40</AIPriority>
+            </AIData>
+        <ArtDef>Art_ChainHelmet_Warding</ArtDef>
+    </GameItemType>
+	
+    <GameItemType InternalName="ChainVambraces_Masterwork2">
+        <DisplayName>Pinnacle Chain Vambraces</DisplayName>
+        <Description>An armorer working with mere iron shouldn't be capable of making such an incredible set of armor - but it is yours nonetheless.</Description>
+        <Type>Forearms</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <ShopValue>280</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <Value>5</Value>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+		<IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+		<HeroOnly>1</HeroOnly>		
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_ArmorProficiency</Attribute>
+            <Value>1</Value>
+        </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>40</AIPriority>
+            </AIData>
+        <ArtDef>Art_ChainVambraces2</ArtDef>
+		<GameItemTypeArtDef InternalName="Art_ChainVambraces2">
+        <GameItemTypeModelPack InternalName="Art_ChainVambraces2_1">
+            <SupportedUnitModelType>AmarianFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>AmarianMale</SupportedUnitModelType>
+            <SupportedUnitModelType>HenchmanMale</SupportedUnitModelType>
+            <SupportedUnitModelType>IroneerFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>IroneerMale</SupportedUnitModelType>
+            <SupportedUnitModelType>KingdomFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>KingdomMale</SupportedUnitModelType>
+            <SupportedUnitModelType>MancerFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>MancerMale</SupportedUnitModelType>
+            <SupportedUnitModelType>TarthanFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>TarthanMale</SupportedUnitModelType>
+            <!--<IconFile>Armor_K_ChainVambraces.png</IconFile>-->
+			<IconFile>Armor_F_ChainVambraces.png</IconFile>
+            <TintR>0</TintR>
+            <TintG>0</TintG>
+            <TintB>0</TintB>
+            <GameItemTypeModel>
+                <ModelFile>gfx/hkb/armor/K_Chainmail_Gloves_Mesh_01.hkb</ModelFile>
+                <Texture_All>K_Chainmail_Armor_Texture_02.png</Texture_All>
+                <AttachmentType>Skinned</AttachmentType>
+            </GameItemTypeModel>
+        </GameItemTypeModelPack>
+        <GameItemTypeModelPack InternalName="Art_ChainVambraces2_2">
+            <SupportedUnitModelType>FallenMale</SupportedUnitModelType>
+            <SupportedUnitModelType>QuendarMale</SupportedUnitModelType>
+            <SupportedUnitModelType>UrxenMale</SupportedUnitModelType>
+            <!--<IconFile>Armor_F_ChainVambraces.png</IconFile>-->
+			<IconFile>Armor_K_ChainVambraces.png</IconFile>
+            <TintR>0</TintR>
+            <TintG>0</TintG>
+            <TintB>0</TintB>
+            <GameItemTypeModel>
+                <ModelFile>gfx/hkb/armor/F_Chainmail_Gloves_Mesh_01.hkb</ModelFile>
+                <Texture_All>F_Chainmail_Armor_Texture_01.png</Texture_All>
+                <AttachmentType>Skinned</AttachmentType>
+            </GameItemTypeModel>
+        </GameItemTypeModelPack>
+        <GameItemTypeModelPack InternalName="Art_ChainVambraces2_3">
+            <SupportedUnitModelType>Banshee</SupportedUnitModelType>
+            <SupportedUnitModelType>DarklingMale</SupportedUnitModelType>
+            <SupportedUnitModelType>EmpireFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>EmpireMale</SupportedUnitModelType>
+            <SupportedUnitModelType>FallenFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>QuendarFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>Skeleton</SupportedUnitModelType>
+            <SupportedUnitModelType>SlaveMale</SupportedUnitModelType>
+            <SupportedUnitModelType>UrxenFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>WraithFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>WraithMale</SupportedUnitModelType>
+            <!--<IconFile>Armor_K_ChainVambraces.png</IconFile>-->
+			<IconFile>Armor_F_ChainVambraces.png</IconFile>
+            <TintR>0</TintR>
+            <TintG>0</TintG>
+            <TintB>0</TintB>
+            <GameItemTypeModel>
+                <ModelFile>gfx/hkb/armor/K_Chainmail_Gloves_Mesh_01.hkb</ModelFile>
+                <Texture_All>F_Chainmail_Armor_Texture_01.png</Texture_All>
+                <AttachmentType>Skinned</AttachmentType>
+            </GameItemTypeModel>
+        </GameItemTypeModelPack>
+    </GameItemTypeArtDef>		
+    </GameItemType>
+	
+		<GameItemType InternalName="ChainBoots_Transcendent">
+        <DisplayName>Transcendent Chain Boots</DisplayName>
+        <Description>Despite the significant weight of these metal boots, its wearer will glide like a gymnast across the batlefield.</Description>
+        <Type>Boots</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <ShopValue>280</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <Value>6</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_CombatSpeed</StrVal>
+                <Value>2</Value>
+            </GameModifier>		
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+		<IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+		<HeroOnly>1</HeroOnly>		
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_ArmorProficiency</Attribute>
+            <Value>1</Value>
+        </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>40</AIPriority>
+            </AIData>
+        <ArtDef>Art_ChainBoots_Grounded</ArtDef>		
+    </GameItemType>
+	
+    <GameItemType InternalName="ChainBreastpiece_Transcendent">
+        <DisplayName>Transcendent Chain Shirt</DisplayName>
+        <Description>An armorer working with mere iron shouldn't be capable of making such an incredible set of armor - but it is yours nonetheless.</Description>
+        <Type>Torso</Type>
+        <Type>Surcoat</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <ShopValue>520</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-1</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <Value>10</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_SpellDamage</StrVal>
+            <Value>20</Value>
+            <Provides>+20% Spell Damage</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+		<IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+		<HeroOnly>1</HeroOnly>		
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_ArmorProficiency</Attribute>
+            <Value>1</Value>
+        </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>70</AIPriority>
+            </AIData>
+        <ArtDef>Art_ChainBreastpiece_Impenetrable</ArtDef>
+    </GameItemType>
+	
+    <GameItemType InternalName="ChainGreaves_Transcendent">
+        <DisplayName>Transcendent Chain Greaves</DisplayName>
+        <Description>Any movement of the body in these greaves becomes easy to repeat and refine.</Description>
+        <Type>LowerBody</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <ShopValue>400</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-1</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <Value>8</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ExpBonus</StrVal>
+            <Value>30</Value>
+        </GameModifier>	
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+		<IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+		<HeroOnly>1</HeroOnly>		
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_ArmorProficiency</Attribute>
+            <Value>1</Value>
+        </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>50</AIPriority>
+            </AIData>
+        <ArtDef>Art_ChainGreaves_Masterwork3</ArtDef>
+		<!-- GET NEW ICON -->
+		<GameItemTypeArtDef InternalName="Art_ChainGreaves_Masterwork2">
+        <GameItemTypeModelPack InternalName="Art_ChainGreaves_Masterwork2_1">
+            <SupportedUnitModelType>AmarianFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>AmarianMale</SupportedUnitModelType>
+            <SupportedUnitModelType>HenchmanMale</SupportedUnitModelType>
+            <SupportedUnitModelType>IroneerFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>IroneerMale</SupportedUnitModelType>
+            <SupportedUnitModelType>KingdomFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>KingdomMale</SupportedUnitModelType>
+            <SupportedUnitModelType>MancerFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>MancerMale</SupportedUnitModelType>
+            <SupportedUnitModelType>TarthanFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>TarthanMale</SupportedUnitModelType>
+            <!--<IconFile>Armor_K_MasterworkChainGreaves.png</IconFile>-->
+			<IconFile>K_EliteGreave2_Icon.png</IconFile>
+            <TintR>0</TintR>
+            <TintG>0</TintG>
+            <TintB>0</TintB>
+            <GameItemTypeModel>
+                <ModelFile>gfx/hkb/Clothes/K_Male_Chain_Pants_Mesh_01.hkb</ModelFile>
+                <Texture_All>K_Chainmail_Pants_Texture_02.png</Texture_All>
+                <AttachmentType>Skinned</AttachmentType>
+            </GameItemTypeModel>
+        </GameItemTypeModelPack>
+        <GameItemTypeModelPack InternalName="Art_ChainGreaves_Masterwork2_2">
+            <SupportedUnitModelType>FallenMale</SupportedUnitModelType>
+            <SupportedUnitModelType>QuendarMale</SupportedUnitModelType>
+            <SupportedUnitModelType>UrxenMale</SupportedUnitModelType>
+            <!--<IconFile>Armor_F_MasterworkChainGreaves.png</IconFile>-->
+			<IconFile>K_EliteGreave2_Icon.png</IconFile>
+            <TintR>0</TintR>
+            <TintG>0</TintG>
+            <TintB>0</TintB>
+            <GameItemTypeModel>
+                <ModelFile>gfx/hkb/Clothes/F_Male_Pants_Mesh_01.hkb</ModelFile>
+                <Texture_All>F_Chainmail_Pants_Texture_02.png</Texture_All>
+                <AttachmentType>Skinned</AttachmentType>
+            </GameItemTypeModel>
+        </GameItemTypeModelPack>
+        <GameItemTypeModelPack InternalName="Art_ChainGreaves_Masterwork2_3">
+            <SupportedUnitModelType>Banshee</SupportedUnitModelType>
+            <SupportedUnitModelType>EmpireFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>EmpireMale</SupportedUnitModelType>
+            <SupportedUnitModelType>FallenFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>QuendarFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>Skeleton</SupportedUnitModelType>
+            <SupportedUnitModelType>SlaveMale</SupportedUnitModelType>
+            <SupportedUnitModelType>UrxenFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>WraithFemale</SupportedUnitModelType>
+            <SupportedUnitModelType>WraithMale</SupportedUnitModelType>
+            <!--<IconFile>Armor_K_MasterworkChainGreaves.png</IconFile>-->
+			<IconFile>K_EliteGreave2_Icon.png</IconFile>
+            <TintR>0</TintR>
+            <TintG>0</TintG>
+            <TintB>0</TintB>
+            <GameItemTypeModel>
+                <ModelFile>gfx/hkb/Clothes/K_Male_Chain_Pants_Mesh_01.hkb</ModelFile>
+                <Texture_All>F_Chainmail_Pants_Texture_02.png</Texture_All>
+                <AttachmentType>Skinned</AttachmentType>
+            </GameItemTypeModel>
+        </GameItemTypeModelPack>
+    </GameItemTypeArtDef>		
+    </GameItemType>
+	
+    <GameItemType InternalName="ChainHelmet_Transcendent">
+        <DisplayName>Transcendent Chain Coif</DisplayName>
+        <Description>Its layers of protection not only protect the brain, but enhance its focus.</Description>
+        <Type>Head</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <ShopValue>280</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <Value>6</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MagicPower</StrVal>
+                <Value>20</Value>
+                <Provides>+20 Spell Mastery</Provides>
+            </GameModifier>		
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+		<IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+		<HeroOnly>1</HeroOnly>		
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_ArmorProficiency</Attribute>
+            <Value>1</Value>
+        </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>40</AIPriority>
+            </AIData>
+        <ArtDef>Art_ChainHelmet_Glyph</ArtDef>
+    </GameItemType>
+	
+    <GameItemType InternalName="ChainVambraces_Transcendent">
+        <DisplayName>Transcendent Chain Vambraces</DisplayName>
+        <Description>The hands in these stout gauntlets become much more lethal.</Description>
+        <Type>Forearms</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <ShopValue>280</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <Value>6</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Pierce</StrVal>
+                <Multiplier>1.2</Multiplier>
+                <Provides>+20% Attack</Provides>
+            </GameModifier>			
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+		<IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+		<HeroOnly>1</HeroOnly>		
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_ArmorProficiency</Attribute>
+            <Value>1</Value>
+        </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>40</AIPriority>
+            </AIData>
+        <ArtDef>Art_ChainVambraces_Warm</ArtDef>
+    </GameItemType>
+	
+	<GameItemType InternalName="KiteShield_Mirror2">
+        <DisplayName>Transcendent Kite Shield</DisplayName>
+        <Description>Any who stand behind this shield will endure where mere mortals would fall broken.</Description>
+        <Type>Defense</Type>
+        <WeaponType>Shield</WeaponType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>150</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <Value>9</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Dodge</StrVal>
+            <Value>9</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Tactical_Auto_Defense_Boost</StrVal>
+            <Value>16</Value>
+            <Provides>+16 Defense when Defending</Provides>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_TacticalHealthRegen</StrVal>
+				<Provides>+2 Tactical Health Regeneration</Provides>
+                <Value>2</Value>
+            </GameModifier>	
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnlockCombatAbility</Attribute>
+            <StrVal>ShieldBash_Ability</StrVal>
+            <Provides>Shield Bash- Knocks the victim back a tile</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsShield</StrVal>
+            <Value>1</Value>
+            <Provides>Enables abilities that require Shields</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>122</AIPriority>
+            </AIData>
+        <ArtDef>KiteShield_Mirror_ArtDef</ArtDef>
+    </GameItemType>
+	
+	    <GameItemType InternalName="Longsword_Pinnacle">
+        <DisplayName>Pinnacle Longsword</DisplayName>
+        <Description>The height of non-magical craftsmanship, this sword is perfectly forged for balance, weight, and cutting power.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>OneHanded</WeaponType>
+        <WeaponUpgradeType>Blade</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>300</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>19</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>2</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxCounterAttack</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Counterattack per round</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ArmorPierce</StrVal>
+                <Value>10</Value>
+                <Provides>Ignores 10% of armor</Provides>
+            </GameModifier>			
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>428</AIPriority>
+        </AIData>
+        <ArtDef>Broadsword_Sharp_ArtDef</ArtDef>
+    </GameItemType>
+	
+	<GameItemType InternalName="BattleAxe_Pinnacle">
+        <DisplayName>Pinnacle Battle Axe</DisplayName>
+        <Description>A perfectly forged head-removing device requiring no enchantment.</Description>
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>TwoHanded</WeaponType>
+        <WeaponUpgradeType>Axe</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>300</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>20</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-1</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_BackswingChance</StrVal>
+                <Value>100</Value>
+                <Provides>Backswing- If the attack misses the unit gets a second attack against the same target</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Cleave_Ability</StrVal>
+                <Provides>Cleave- Strike 3 adjacent enemies</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>362</AIPriority>
+        </AIData>
+        <ArtDef>BattleAxe_Butchers_ArtDef</ArtDef>
+    </GameItemType>
+	
+	    <GameItemType InternalName="Pike_Pinnacle">
+        <DisplayName>Pinnacle Pike</DisplayName>
+        <Description>.</Description>
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>Spear</WeaponType>
+        <WeaponUpgradeType>Spear</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>300</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>17</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ArmorPierce</StrVal>
+                <Value>33</Value>
+                <Provides>Ignores 33% of the victim's Defense</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>CannotBeCounterattacked</Attribute>
+                <Value>-1</Value>
+                <Provides>Immune to Counterattack</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>UnitStat_BG_IsUsingMount</StrVal2>
+                <Value>3</Value>
+                <Provides>+3 Attack vs mounted opponents (when not mounted)</Provides>
+                <vsHigher>1</vsHigher>
+            </GameModifier>				
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Impale_Ability</StrVal>
+                <Provides>Impale- Strike an opponent and whoever is behind them</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_PIERCING</AIPrefType>
+            <AIPriority>430</AIPriority>
+        </AIData>
+        <ArtDef>Pike_AirElemental_ArtDef</ArtDef>
+    </GameItemType>
+	
+	<GameItemType InternalName="YewLongbow_Pinnacle">
+        <DisplayName>Pinnacle Longbow</DisplayName>
+        <Description>This bow draws with incredible ease, and launches arrows with deadly precision, all without enchantment.</Description>
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>Bow</WeaponType>
+        <WeaponUpgradeType>Bow</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>70</AdditionalTrainingTurns>
+        <ShopValue>105</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Accuracy</StrVal>
+            <Value>-3</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>13</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-3</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_IsBow</StrVal>
+                <Value>1</Value>
+                <Provides>Enables abilities that require Bows</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockRangedAction</Attribute>
+                <StrVal>BowAttack_Basic</StrVal>
+                <Provides>Ranged attack</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+		<Rarity>-1</Rarity>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>		
+        <TacticalRange>20</TacticalRange>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_BOW</AIPrefType>
+            <AIPriority>222</AIPriority>
+        </AIData>
+        <ArtDef>YewLongbow_Tarth_ArtDef</ArtDef>
+    </GameItemType>
+	
+	<GameItemType InternalName="Maul_Pinnacle">
+        <DisplayName>Pinnacle_Maul</DisplayName>
+        <Description>If you can lift it, swinging it will deal damage no mere mortal could survive.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>Blunt</WeaponType>
+        <WeaponUpgradeType>Blunt</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>300</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>22</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-4</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_BashChance</StrVal>
+                <Value>100</Value>
+                <Provides>Bash- Has a chance equal to the damage done of knocking the victim prone</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>CrushingBlow</StrVal>
+                <Provides>Crushing Blow- +25% Attack (+100% for champions), but you lose your next action</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_BLUNT</AIPrefType>
+            <AIPriority>261</AIPriority>
+        </AIData>
+        <ArtDef>Warhammer_Forge_ArtDef</ArtDef>
+    </GameItemType>
+	
+	
+</GameItemTypes>

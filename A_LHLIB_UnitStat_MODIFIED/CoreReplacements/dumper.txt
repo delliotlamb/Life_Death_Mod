@@ -1,0 +1,11 @@
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <BoolVal1>1</BoolVal1>
+                <StrVal>UnitStat_Attack_Pierce</StrVal>
+                <StrVal2>UnitStat_IsBow</StrVal2>
+                <Value>3</Value>
+                <BonusValue>0.5</BonusValue>
+                <Provides>+3 Attack when using a Bow</Provides>
+                <vsHigher>1</vsHigher>
+            </GameModifier>	

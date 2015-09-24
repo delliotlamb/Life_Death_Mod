@@ -1,0 +1,155 @@
+<AbilityBonuses>
+    <AbilityBonus InternalName="OnlyTheStrongAbility">
+        <AbilityBonusType>Player</AbilityBonusType>
+        <AbilityBonusOption InternalName="OnlyTheStrong">
+            <DisplayName>Only The Strong</DisplayName>
+            <Description>This faction can construct Trial pits, from which only the strong stand a chance of leaving alive. But those who do survive will be the apex of warriors.</Description>
+            <Icon>Ability_Slam_Icon.png</Icon>
+            <GameModifier>
+                <Provides>This faction can construct Trial pits, from which only the strong stand a chance of leaving alive. But those who do survive will be the apex of warriors.</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Player</ModType>
+                <Attribute>UnlockSpell</Attribute>
+                <StrVal>ArenaEnlightenment</StrVal>
+                <Provides>Unlocks Arena's Enlightenment, a spell that uses Combat Trials to level up a champion</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Player</ModType>
+                <Attribute>UnlockSpell</Attribute>
+                <StrVal>ALethalRace</StrVal>
+                <Provides>Unlocks A Lethal Race a spell that uses Combat Trials to boost the faction's attack</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Player</ModType>
+                <Attribute>UnlockSpell</Attribute>
+                <StrVal>AnEnduringRace</StrVal>
+                <Provides>unlocks An Enduring Race, a spell that uses Combat Trials to boost the faction's hit points</Provides>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Unrest</Attribute>
+            <Value>5</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+5% Unrest</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Research</Attribute>
+            <Value>.95</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>-5% Research</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Production</Attribute>
+            <Value>.95</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>-5% Production</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>.95</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>-5% Gildar</Provides>
+        </GameModifier>			
+            <Cost>1</Cost>
+            <Type>Army</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+	<AbilityBonus InternalName="ApexorAbility">
+        <AbilityBonusOption InternalName="Apexor">
+            <DisplayName>Apexor</DisplayName>
+            <Description>+25% Attack, +25 Hit points, +2 Initiative</Description>
+            <Icon>Ability_UncontrolledRage_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_CombatSpeed</StrVal>
+                <Value>2</Value>
+                <Provides>+2 Initiative</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Pierce</StrVal>
+                <Multiplier>1.25</Multiplier>
+                <Provides>+25% Attack</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_HitPoints</StrVal>
+                <Value>25</Value>
+                <Provides>+25 Hit Points</Provides>
+            </GameModifier>			
+            <CombatRating>200</CombatRating>
+            <IsCombatAbility>1</IsCombatAbility>
+            <Type>Aggressive</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+	<AbilityBonus InternalName="FireEater_Palranis_Ability">
+        <AbilityBonusType>Unit_Design</AbilityBonusType>
+        <AbilityBonusOption InternalName="FireEater_Palranis">
+            <DisplayName>Fire Eater</DisplayName>
+            <Description>Double Damage with the Flame Tongue ability</Description>
+            <Icon>Ability_FireEater_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Flametongue_Boost</StrVal>
+                <Value>1</Value>
+                <Provides>Double Damage with the Flame Tongue ability</Provides>
+            </GameModifier>
+            <AdditionalTrainingTurns>10</AdditionalTrainingTurns>
+            <CombatRating>5</CombatRating>
+            <IsCombatAbility>1</IsCombatAbility>
+            <Type>Aggressive</Type>
+            <Prereq>
+                <Type>Race</Type>
+                <Attribute>Race_Type_PalraniQuendar</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+	    <AbilityBonus InternalName="Spell_Furnaceborn_Palranis_Ability">
+        <AbilityBonusType>Unit_Design</AbilityBonusType>
+        <AbilityBonusOption InternalName="Spell_Furnaceborn_Palranis">
+            <DisplayName>Furnaceborn</DisplayName>
+            <Description>Unlocks the following ability</Description>
+            <Icon>Ability_FurnaceBorn_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Furnaceborn</StrVal>
+                <Provides>Spend 7 Stamina to do Fire damage to adjacent enemies per level</Provides>
+            </GameModifier>
+            <AdditionalTrainingTurns>10</AdditionalTrainingTurns>
+            <CombatRating>5</CombatRating>
+            <IsCombatAbility>1</IsCombatAbility>
+            <Type>Aggressive</Type>
+            <Prereq>
+                <Type>Race</Type>
+                <Attribute>Race_Type_PalraniQuendar</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+
+	
+    </AbilityBonuses>	

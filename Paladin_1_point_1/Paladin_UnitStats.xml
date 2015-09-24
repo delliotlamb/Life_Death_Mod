@@ -1,0 +1,190 @@
+<PlayerAbilityTypes>
+
+<UnitStatType InternalName="UnitStat_PathOfThePaladin">
+	<DisplayName>Paladin</DisplayName>
+	<Description>Flag for being a paladin.</Description>
+	<Icon>Stat_Radius_Icon.png</Icon>
+	<DefaultValue>0.0</DefaultValue>
+	<Hidden>1</Hidden>
+	<UnitStatGrouping>CombatStat</UnitStatGrouping>
+</UnitStatType>
+
+    <UnitStatType InternalName="UnitStat_IsSword">
+        <DisplayName>Is Sword</DisplayName>
+        <Description>Is this unit wielding a longsword, greatsword, or broadsword?</Description>
+        <Hidden>1</Hidden>
+        <DefaultValue>0.0</DefaultValue>
+    </UnitStatType>
+
+    <UnitStatType InternalName="UnitStat_IsDeathUser">
+        <DisplayName>Is Death User</DisplayName>
+        <Description>Does this unit have Death1 or higher?</Description>
+        <Hidden>1</Hidden>
+        <DefaultValue>0.0</DefaultValue>
+    </UnitStatType>
+
+    <UnitStatType InternalName="UnitStat_IsLifeUser">
+        <DisplayName>Is Life User</DisplayName>
+        <Description>Does this unit have Life1 or higher?</Description>
+        <Hidden>1</Hidden>
+        <DefaultValue>0.0</DefaultValue>
+    </UnitStatType>
+
+<UnitStatType InternalName="UnitStat_Attack_Sword">
+	<DisplayName>Sword Attack</DisplayName>
+	<Description>The additional damage that this unit can deal with a sword (broadsword, longsword, or greatsword).</Description>
+	<Icon>Icon_Sword.png</Icon>
+	<DefaultValue>0.0</DefaultValue>
+	<Hidden>0</Hidden>
+</UnitStatType>
+
+<UnitStatType InternalName="UnitStat_Accuracy_Sword">
+	<DisplayName>Sword Accuracy</DisplayName>
+	<Description>The additional accuracy that this unit gets with a sword (broadsword, longsword, or greatsword).</Description>
+	<Icon>Icon_Sword.png</Icon>
+	<DefaultValue>0.0</DefaultValue>
+	<Hidden>0</Hidden>
+</UnitStatType>
+
+<UnitStatType InternalName="UnitStat_Counter_Sword">
+	<DisplayName>Sword Counter-attack Count</DisplayName>
+	<Description>The additional counter-attacks that this unit gets with a sword (broadsword, longsword, or greatsword).</Description>
+	<Icon>Icon_Sword.png</Icon>
+	<DefaultValue>0.0</DefaultValue>
+	<Hidden>1</Hidden>
+</UnitStatType>
+
+<UnitStatType InternalName="UnitStat_CounterDamage_Sword">
+	<DisplayName>Sword Counter-attack Damage</DisplayName>
+	<Description>The additional counter-attack damage that this unit gets with a sword (broadsword, longsword, or greatsword).</Description>
+	<Icon>Icon_Sword.png</Icon>
+	<DefaultValue>0.0</DefaultValue>
+	<Hidden>1</Hidden>
+</UnitStatType>
+
+<UnitStatType InternalName="UnitStat_BashChance_Sword">
+	<DisplayName>Sword Bash Chance</DisplayName>
+	<Description>Chance of knocking units prone (weighted by damage done) that this unit gets with a sword (broadsword, longsword, or greatsword).</Description>
+	<Icon>Icon_Sword.png</Icon>
+	<DefaultValue>0.0</DefaultValue>
+	<Hidden>1</Hidden>
+</UnitStatType>
+
+<UnitStatType InternalName="UnitStat_Dodge_Sword">
+	<DisplayName>Sword Bash Chance</DisplayName>
+	<Description>Penalty to an enemy's chance to hit this unit, when this unit wields a sword (broadsword, longsword, or greatsword).</Description>
+	<Icon>Icon_Sword.png</Icon>
+	<DefaultValue>0.0</DefaultValue>
+	<Hidden>1</Hidden>
+</UnitStatType>
+
+<UnitStatType InternalName="UnitStat_CombatSpeed_Sword">
+	<DisplayName>Sword Initiative</DisplayName>
+	<Description>Initiative bonus, when this unit wields a sword (broadsword, longsword, or greatsword).</Description>
+	<Icon>Stat_CombatSpeed_Icon.png</Icon>
+	<DefaultValue>0.0</DefaultValue>
+	<Hidden>1</Hidden>
+</UnitStatType>
+
+<UnitStatType InternalName="UnitStat_Attack_ArcaneLight">
+        <DisplayName>Arcane Light Damage</DisplayName>
+        <DisplayNameShort>Light</DisplayNameShort>
+        <Description>The Arcane Light damage that this unit can deal.</Description>
+        <Icon>Spellbook_Icon.png</Icon>
+        <DefaultValue>0.0</DefaultValue>
+        <Hidden>1</Hidden>
+        <IsAttackStat>1</IsAttackStat>
+        <CorrespondingDefenseStat>UnitStat_Defense_ArcaneLight</CorrespondingDefenseStat>
+        <CorrespondingResistStat>UnitStat_ResistArcaneLight</CorrespondingResistStat>
+        <UnitStatGrouping>CombatStat</UnitStatGrouping>
+    </UnitStatType>
+
+    <UnitStatType InternalName="UnitStat_Defense_ArcaneLight">
+        <DisplayName>Arcane Light Defense</DisplayName>
+        <DisplayNameShort>LIT DEF</DisplayNameShort>
+        <Description>Ability to absorb Arcane Light attacks.</Description>
+        <Icon>Stat_DefensePoison_Icon.png</Icon>
+        <DefaultValue>0.0</DefaultValue>
+        <Hidden>1</Hidden>
+        <IsDefenseStat>1</IsDefenseStat>
+        <UnitStatGrouping>CombatStat</UnitStatGrouping>
+    </UnitStatType>
+
+    <UnitStatType InternalName="UnitStat_ResistArcaneLight">
+        <DisplayName>Arcane Light Resist</DisplayName>
+        <DisplayNameShort>LIT RES</DisplayNameShort>
+        <Description>Reduces Arcane Light damage by this percent.</Description>
+        <Icon>Stat_DefensePoison_Icon.png</Icon>
+        <DefaultValue>0.0</DefaultValue>
+        <Hidden>1</Hidden>
+        <UnitStatGrouping>CombatStat</UnitStatGrouping>
+		<UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+		<UnitStatGrouping>UnitDesignStat</UnitStatGrouping>
+    </UnitStatType>
+
+<UnitStatType InternalName="UnitStat_Attack_ArcaneShadow">
+        <DisplayName>Arcane Shadow Damage</DisplayName>
+        <DisplayNameShort>Shadow</DisplayNameShort>
+        <Description>The Arcane Shadow damage that this unit can deal.</Description>
+        <Icon>Icon_Death.png</Icon>
+        <DefaultValue>0.0</DefaultValue>
+        <Hidden>1</Hidden>
+        <IsAttackStat>1</IsAttackStat>
+        <CorrespondingDefenseStat>UnitStat_Defense_ArcaneShadow</CorrespondingDefenseStat>
+        <CorrespondingResistStat>UnitStat_ResistArcaneShadow</CorrespondingResistStat>
+        <UnitStatGrouping>CombatStat</UnitStatGrouping>
+    </UnitStatType>
+
+    <UnitStatType InternalName="UnitStat_Defense_ArcaneShadow">
+        <DisplayName>Arcane Shadow Defense</DisplayName>
+        <DisplayNameShort>SH DEF</DisplayNameShort>
+        <Description>Ability to absorb Arcane Shadow attacks.</Description>
+        <Icon>Stat_DefensePoison_Icon.png</Icon>
+        <DefaultValue>0.0</DefaultValue>
+        <Hidden>1</Hidden>
+        <IsDefenseStat>1</IsDefenseStat>
+        <UnitStatGrouping>CombatStat</UnitStatGrouping>
+    </UnitStatType>
+
+    <UnitStatType InternalName="UnitStat_ResistArcaneShadow">
+        <DisplayName>Arcane Shadow Resist</DisplayName>
+        <DisplayNameShort>SH RES</DisplayNameShort>
+        <Description>Reduces Arcane Shadow damage by this percent.</Description>
+        <Icon>Stat_DefensePoison_Icon.png</Icon>
+        <DefaultValue>0.0</DefaultValue>
+        <Hidden>1</Hidden>
+        <UnitStatGrouping>CombatStat</UnitStatGrouping>
+		<UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+		<UnitStatGrouping>UnitDesignStat</UnitStatGrouping>
+    </UnitStatType>
+
+	<UnitStatType InternalName="UnitStat_SpellDamage_ArcaneLight">
+		<DisplayName>Arcane Light Spell Damage</DisplayName>
+		<Description>Percentage bonus to the amount of Arcane Light damage done by spells.</Description>
+		<Icon>Stat_SpawnRating_Icon.png</Icon>
+		<Hidden>1</Hidden>
+        <DefaultValue>1.0</DefaultValue>
+		<DisplayPercentage>1</DisplayPercentage>
+    </UnitStatType>
+
+	<UnitStatType InternalName="UnitStat_SpellDamage_ArcaneShadow">
+		<DisplayName>Arcane Shadow Spell Damage</DisplayName>
+		<Description>Percentage bonus to the amount of Arcane Shadow damage done by spells.</Description>
+		<Icon>Stat_SpawnRating_Icon.png</Icon>
+		<Hidden>1</Hidden>
+        <DefaultValue>1.0</DefaultValue>
+		<DisplayPercentage>1</DisplayPercentage>
+    </UnitStatType>
+
+<!-- Removed from "UnitStat_Attack_Sword"
+
+	<IsPhysicalStat>0</IsPhysicalStat>
+	<IsAttackStat>0</IsAttackStat>
+	<CorrespondingDefenseStat>UnitStat_Defense_Pierce</CorrespondingDefenseStat>
+	<CorrespondingResistStat>UnitStat_ResistPierce</CorrespondingResistStat>
+	<UnitStatGrouping>UnitDetailsAttribute</UnitStatGrouping>
+	<UnitStatGrouping>CombatStat</UnitStatGrouping>
+
+-->
+
+</PlayerAbilityTypes>

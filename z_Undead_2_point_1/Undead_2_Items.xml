@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Created with the Elemental Editor -->
+<!-- CoreItems.xml -->
+<!-- -->
+<GameItemTypes>
+ 
+<GameItemType InternalName="FirstAidKit">
+        <DisplayName>First Aid Kit</DisplayName>
+        <Description>A good first aid kit is more than a remedy in times of need, it is a guard against the everyday infections and bruises that a less prepared army must simply endure.</Description>
+        <Type>Accessory</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>20</AdditionalTrainingTurns>
+        <ShopValue>20</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_HealthRegen</StrVal>
+            <Value>1</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_HitPoints</StrVal>
+            <Value>2</Value>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>40</Likelihood>
+        <RarityDisplay>Common</RarityDisplay>
+        <IsUsable>0</IsUsable>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>War_Colleges</Attribute>
+        </Prereq>
+			<Prereq>
+				<Type>RestrictedAbilityBonusOption</Type>
+				<Attribute>DLC04_UndeadFaction</Attribute>
+				<Target>Player</Target>
+			</Prereq>		
+            <AIData AIPersonality="AI_General">
+                <AIPriority>18</AIPriority>
+            </AIData>
+        <ArtDef>FirstAidKit_ArtDef</ArtDef>
+        <GameItemTypeArtDef InternalName="FirstAidKit_ArtDef">
+            <GameItemTypeModelPack InternalName="FirstAidKit_Default">
+                <IconFile>FirstAidKit_Item.png</IconFile>
+                <TintR>0</TintR>
+                <TintG>0</TintG>
+                <TintB>0</TintB>
+                <GameItemTypeModel>
+                </GameItemTypeModel>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+    </GameItemType>
+
+	
+	 <GameItemType InternalName="Rations">
+        <DisplayName>Rations</DisplayName>
+        <Description>An army travels on its stomach.  At least one without arms and legs.  Then it goes stomach, back, stomach, back...</Description>
+        <Type>Accessory</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>30</AdditionalTrainingTurns>
+        <ShopValue>30</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_HitPoints</StrVal>
+            <Value>3</Value>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>40</Likelihood>
+        <RarityDisplay>Common</RarityDisplay>
+        <IsUsable>0</IsUsable>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Craftsmanship</Attribute>
+        </Prereq>
+			<Prereq>
+				<Type>RestrictedAbilityBonusOption</Type>
+				<Attribute>DLC04_UndeadFaction</Attribute>
+				<Target>Player</Target>
+			</Prereq>		
+            <AIData AIPersonality="AI_General">
+                <AIPriority>9</AIPriority>
+            </AIData>
+        <ArtDef>Rations_ArtDef</ArtDef>
+        <GameItemTypeArtDef InternalName="Rations_ArtDef">
+            <GameItemTypeModelPack InternalName="Rations_Default">
+                <IconFile>Rations_Item.png</IconFile>
+                <TintR>0</TintR>
+                <TintG>0</TintG>
+                <TintB>0</TintB>
+                <GameItemTypeModel>
+                </GameItemTypeModel>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+    </GameItemType>
+	
+</GameItemTypes>

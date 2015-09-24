@@ -1,0 +1,608 @@
+<ImprovementTypes>
+
+    <ImprovementType InternalName="EnchantedGarden">
+        <DisplayName>Enchanted Garden</DisplayName>
+        <Description>Enchanted Gardens provide life power every turn.</Description>
+        <AllowedPerFaction>1</AllowedPerFaction>		
+        <RequiresCity>1</RequiresCity>		
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>Conclave</RequiredImprovement>		
+        <LaborToBuild>80</LaborToBuild>
+		<Prereq>
+            <Type>Allegiance</Type>
+            <Attribute>Kingdom</Attribute>
+        </Prereq>
+        <GameModifier>
+            <ModType>ConstructionResourceCost</ModType>
+            <Attribute>VerdantEssence</Attribute>
+            <Value>-100</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ConstructionResourceCost</ModType>
+            <Attribute>Mana</Attribute>
+            <Value>-10</Value>
+        </GameModifier>				
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>LifeMana</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Life Power</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Mana</Attribute>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Mana per Life Power</Provides>
+            <Calculate InternalName="Calc" ValueOwner="OwnerCity">
+                <Expression><![CDATA[[GetNumLifeShards]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value" ValueOwner="OwnerCity">
+                <Expression><![CDATA[[Calc]]]></Expression>
+            </Calculate>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <ArtDef>EnchantedGarden_ArtDef</ArtDef>
+        <ImprovementTypeArtDef InternalName="EnchantedGarden_ArtDef">
+            <ImprovementTypeArtSubPack InternalName="EnchantedGarden_Default">
+                <TileDesign>EnchantedGarden_02</TileDesign>
+                <ConstructionTileDesign>K_Construction1x1_01</ConstructionTileDesign>
+                <DrawnIcon>Improvement_AncientTemple.png</DrawnIcon>
+                <DrawnIconConstruction>Improvement_AncientTemple_C.png</DrawnIconConstruction>
+                <Thumbnail>K_Oar_Mine_01_Thumb.png</Thumbnail>
+                <Medallions InternalName="">
+                    <All>K_Life_Altar_Thumb_01.png</All>
+                </Medallions>
+            </ImprovementTypeArtSubPack>
+        </ImprovementTypeArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="StoneShrine">
+        <DisplayName>Stone Shrine</DisplayName>
+        <Description>Stone Shrines provide Earth power every season.</Description>
+        <AllowedPerFaction>1</AllowedPerFaction>		
+        <RequiresCity>1</RequiresCity>		
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>Conclave</RequiredImprovement>		
+        <LaborToBuild>80</LaborToBuild>
+        <GameModifier>
+            <ModType>ConstructionResourceCost</ModType>
+            <Attribute>MineralEssence</Attribute>
+            <Value>-100</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ConstructionResourceCost</ModType>
+            <Attribute>Mana</Attribute>
+            <Value>-10</Value>
+        </GameModifier>				
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>EarthMana</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Earth Power</Provides>
+        </GameModifier>
+		<GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Mana</Attribute>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Mana per Earth Power</Provides>
+            <Calculate InternalName="Calc" ValueOwner="OwnerCity">
+                <Expression><![CDATA[[GetNumEarthShards]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value" ValueOwner="OwnerCity">
+                <Expression><![CDATA[[Calc]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <ArtDef>Art_StoneShrine</ArtDef>
+    <ImprovementTypeArtDef InternalName="Art_StoneShrine">
+        <ImprovementTypeArtSubPack InternalName="Art_StoneShrine_Default">
+            <TileDesign>StoneShrine_02</TileDesign>
+            <ConstructionTileDesign>K_Construction1x1_01</ConstructionTileDesign>
+                <DrawnIcon>Improvement_AncientTemple.png</DrawnIcon>
+                <DrawnIconConstruction>Improvement_AncientTemple_C.png</DrawnIconConstruction>
+                <Thumbnail>K_Oar_Mine_01_Thumb.png</Thumbnail>
+            <Medallions InternalName="">
+                <All>K_Earth_Altar_Thumb_01.png</All>
+            </Medallions>
+        </ImprovementTypeArtSubPack>
+    </ImprovementTypeArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="PitOfFire">
+        <DisplayName>Pit Of Fire</DisplayName>
+        <Description>Pits Of Fire provide Fire power every season.</Description>
+        <AllowedPerFaction>1</AllowedPerFaction>		
+        <RequiresCity>1</RequiresCity>		
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>Conclave</RequiredImprovement>		
+        <LaborToBuild>80</LaborToBuild>
+        <GameModifier>
+            <ModType>ConstructionResourceCost</ModType>
+            <Attribute>EmberEssence</Attribute>
+            <Value>-100</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ConstructionResourceCost</ModType>
+            <Attribute>Mana</Attribute>
+            <Value>-10</Value>
+        </GameModifier>				
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>FireMana</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Fire Power</Provides>
+        </GameModifier>
+		<GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Mana</Attribute>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Mana per Fire Power</Provides>
+            <Calculate InternalName="Calc" ValueOwner="OwnerCity">
+                <Expression><![CDATA[[GetNumFireShards]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value" ValueOwner="OwnerCity">
+                <Expression><![CDATA[[Calc]]]></Expression>
+            </Calculate>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <ArtDef>PitOfFire_ArtDef</ArtDef>
+    <ImprovementTypeArtDef InternalName="PitOfFire_ArtDef">
+        <ImprovementTypeArtSubPack InternalName="Art_PitOfFire_Default">
+            <TileDesign>Pit_Of_Fire_01</TileDesign>
+            <ConstructionTileDesign>K_Construction1x1_01</ConstructionTileDesign>
+                <DrawnIcon>Improvement_AncientTemple.png</DrawnIcon>
+                <DrawnIconConstruction>Improvement_AncientTemple_C.png</DrawnIconConstruction>
+                <Thumbnail>K_Oar_Mine_01_Thumb.png</Thumbnail>
+            <Medallions InternalName="">
+                <All>K_Fire_Altar_Thumb_01.png</All>
+            </Medallions>
+        </ImprovementTypeArtSubPack>
+    </ImprovementTypeArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="ShimmeringPool">
+        <DisplayName>Shimmering Pool</DisplayName>
+        <Description>Shimmering Pools provide Water power every season.</Description>
+        <AllowedPerFaction>1</AllowedPerFaction>		
+        <RequiresCity>1</RequiresCity>		
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>Conclave</RequiredImprovement>		
+        <LaborToBuild>80</LaborToBuild>
+        <GameModifier>
+            <ModType>ConstructionResourceCost</ModType>
+            <Attribute>WaveEssence</Attribute>
+            <Value>-20</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ConstructionResourceCost</ModType>
+            <Attribute>Mana</Attribute>
+            <Value>-10</Value>
+        </GameModifier>						
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>WaterMana</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Water Power</Provides>
+        </GameModifier>
+		<GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Mana</Attribute>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Mana per Water Power</Provides>
+            <Calculate InternalName="Calc" ValueOwner="OwnerCity">
+                <Expression><![CDATA[[GetNumWaterShards]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value" ValueOwner="OwnerCity">
+                <Expression><![CDATA[[Calc]]]></Expression>
+            </Calculate>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <ArtDef>ShimmeringPool_ArtDef</ArtDef>
+    <ImprovementTypeArtDef InternalName="ShimmeringPool_ArtDef">
+        <ImprovementTypeArtSubPack InternalName="Art_ShimmeringPool_Default">
+            <TileDesign>ShimmeringPool_02</TileDesign>
+            <ConstructionTileDesign>K_Construction1x1_01</ConstructionTileDesign>
+                <DrawnIcon>Improvement_AncientTemple.png</DrawnIcon>
+                <DrawnIconConstruction>Improvement_AncientTemple_C.png</DrawnIconConstruction>
+                <Thumbnail>K_Oar_Mine_01_Thumb.png</Thumbnail>
+            <Medallions InternalName="">
+                <All>K_Water_Altar_Thumb_01.png</All>
+            </Medallions>
+        </ImprovementTypeArtSubPack>
+    </ImprovementTypeArtDef>
+    </ImprovementType>
+
+
+<ImprovementType InternalName="WindShrine">
+        <DisplayName>Wind Shrine</DisplayName>
+        <Description>Wind Shrines provide air power every season.</Description>
+        <AllowedPerFaction>1</AllowedPerFaction>		
+        <RequiresCity>1</RequiresCity>	
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>Conclave</RequiredImprovement>		
+        <LaborToBuild>80</LaborToBuild>
+        <GameModifier>
+            <ModType>ConstructionResourceCost</ModType>
+            <Attribute>GaleEssence</Attribute>
+            <Value>-100</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ConstructionResourceCost</ModType>
+            <Attribute>Mana</Attribute>
+            <Value>-10</Value>
+        </GameModifier>				
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>AirMana</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Air Power</Provides>
+        </GameModifier>
+		<GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Mana</Attribute>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Mana per Air Power</Provides>
+            <Calculate InternalName="Calc" ValueOwner="OwnerCity">
+                <Expression><![CDATA[[GetNumAirShards]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value" ValueOwner="OwnerCity">
+                <Expression><![CDATA[[Calc]]]></Expression>
+            </Calculate>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <ArtDef>WindShrine_ArtDef</ArtDef>
+    <ImprovementTypeArtDef InternalName="WindShrine_ArtDef">
+        <ImprovementTypeArtSubPack InternalName="WindShrine_Default">
+            <TileDesign>WindShrine_02</TileDesign>
+            <ConstructionTileDesign>K_Construction1x1_01</ConstructionTileDesign>
+                <DrawnIcon>Improvement_AncientTemple.png</DrawnIcon>
+                <DrawnIconConstruction>Improvement_AncientTemple_C.png</DrawnIconConstruction>
+                <Thumbnail>K_Oar_Mine_01_Thumb.png</Thumbnail>
+            <Medallions InternalName="">
+                <All>K_Air_Altar_Thumb_01.png</All>
+            </Medallions>
+        </ImprovementTypeArtSubPack>
+    </ImprovementTypeArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="SilenceShrine">
+        <DisplayName>Silence Shrine</DisplayName>
+        <Description>Silence Shrines provide Death power every season.</Description>
+        <AllowedPerFaction>1</AllowedPerFaction>		
+        <RequiresCity>1</RequiresCity>		
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>Conclave</RequiredImprovement>		
+        <LaborToBuild>80</LaborToBuild>
+		<Prereq>
+            <Type>Allegiance</Type>
+            <Attribute>Empire</Attribute>
+        </Prereq>
+        <GameModifier>
+            <ModType>ConstructionResourceCost</ModType>
+            <Attribute>FamineEssence</Attribute>
+            <Value>-100</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ConstructionResourceCost</ModType>
+            <Attribute>Mana</Attribute>
+            <Value>-10</Value>
+        </GameModifier>				
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>DeathMana</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Death Power</Provides>
+        </GameModifier>
+		<GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Mana</Attribute>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Mana per Death Power</Provides>
+            <Calculate InternalName="Calc" ValueOwner="OwnerCity">
+                <Expression><![CDATA[[GetNumDeathShards]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value" ValueOwner="OwnerCity">
+                <Expression><![CDATA[[Calc]]]></Expression>
+            </Calculate>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <ArtDef>SilenceShrine_ArtDef</ArtDef>
+        <ImprovementTypeArtDef InternalName="SilenceShrine_ArtDef">
+            <ImprovementTypeArtSubPack InternalName="SilenceShrine_Default">
+                <TileDesign>SilenceShrine_02</TileDesign>
+                <ConstructionTileDesign>K_Construction1x1_01</ConstructionTileDesign>
+                <DrawnIcon>Improvement_AncientTemple.png</DrawnIcon>
+                <DrawnIconConstruction>Improvement_AncientTemple_C.png</DrawnIconConstruction>
+                <Thumbnail>K_Oar_Mine_01_Thumb.png</Thumbnail>
+                <Medallions InternalName="">
+                    <All>F_Death_Altar_Thumb_01.png</All>
+                </Medallions>
+            </ImprovementTypeArtSubPack>
+        </ImprovementTypeArtDef>
+    </ImprovementType>
+	
+	<ImprovementType InternalName="EnchantedGarden_2">
+        <DisplayName>Enchanted Garden</DisplayName>
+        <Description>Enchanted Gardens provide life power every turn.</Description>
+        <RequiresForceUnlock>1</RequiresForceUnlock>		
+        <AllowedPerFaction>1</AllowedPerFaction>		
+        <RequiresCity>1</RequiresCity>		
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>SwampTerrain</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <ZOCMinRadius>3</ZOCMinRadius>
+        <ZOCMaxRadius>3</ZOCMaxRadius>
+        <ZOCRadiusTurnsBeforeUpdate>1</ZOCRadiusTurnsBeforeUpdate>
+        <HideInBuildList>1</HideInBuildList>
+        <LaborToBuild>-1</LaborToBuild>		
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>LifeMana</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Life Power</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Mana</Attribute>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Mana per Life Power</Provides>
+            <Calculate InternalName="Calc" ValueOwner="OwnerCity">
+                <Expression><![CDATA[[GetNumLifeShards]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value" ValueOwner="OwnerCity">
+                <Expression><![CDATA[[Calc]]]></Expression>
+            </Calculate>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <ArtDef>EnchantedGarden_ArtDef</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="StoneShrine_2">
+        <DisplayName>Stone Shrine</DisplayName>
+        <Description>Stone Shrines provide Earth power every season.</Description>
+        <RequiresForceUnlock>1</RequiresForceUnlock>		
+        <AllowedPerFaction>1</AllowedPerFaction>		
+        <RequiresCity>1</RequiresCity>		
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>MountainRange</PreferredTerrain>
+        <PreferredTerrain>MountainSide</PreferredTerrain>
+        <ZOCMinRadius>3</ZOCMinRadius>
+        <ZOCMaxRadius>3</ZOCMaxRadius>
+        <ZOCRadiusTurnsBeforeUpdate>1</ZOCRadiusTurnsBeforeUpdate>
+        <HideInBuildList>1</HideInBuildList>
+        <LaborToBuild>-1</LaborToBuild>		
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>EarthMana</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Earth Power</Provides>
+        </GameModifier>
+		<GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Mana</Attribute>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Mana per Earth Power</Provides>
+            <Calculate InternalName="Calc" ValueOwner="OwnerCity">
+                <Expression><![CDATA[[GetNumEarthShards]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value" ValueOwner="OwnerCity">
+                <Expression><![CDATA[[Calc]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <ArtDef>Art_StoneShrine</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="PitOfFire_2">
+        <DisplayName>Pit Of Fire</DisplayName>
+        <Description>Pits Of Fire provide Fire power every season.</Description>
+        <RequiresForceUnlock>1</RequiresForceUnlock>		
+        <AllowedPerFaction>1</AllowedPerFaction>		
+        <RequiresCity>1</RequiresCity>		
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>BurningLands</PreferredTerrain>
+        <ZOCMinRadius>3</ZOCMinRadius>
+        <ZOCMaxRadius>3</ZOCMaxRadius>
+        <ZOCRadiusTurnsBeforeUpdate>1</ZOCRadiusTurnsBeforeUpdate>
+        <HideInBuildList>1</HideInBuildList>
+        <LaborToBuild>-1</LaborToBuild>		
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>FireMana</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Fire Power</Provides>
+        </GameModifier>
+		<GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Mana</Attribute>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Mana per Fire Power</Provides>
+            <Calculate InternalName="Calc" ValueOwner="OwnerCity">
+                <Expression><![CDATA[[GetNumFireShards]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value" ValueOwner="OwnerCity">
+                <Expression><![CDATA[[Calc]]]></Expression>
+            </Calculate>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <ArtDef>PitOfFire_ArtDef</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="ShimmeringPool_2">
+        <DisplayName>Shimmering Pool</DisplayName>
+        <Description>Shimmering Pools provide Water power every season.</Description>
+        <RequiresForceUnlock>1</RequiresForceUnlock>		
+        <AllowedPerFaction>1</AllowedPerFaction>		
+        <RequiresCity>1</RequiresCity>		
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>Submerged</PreferredTerrain>
+        <ZOCMinRadius>3</ZOCMinRadius>
+        <ZOCMaxRadius>3</ZOCMaxRadius>
+        <ZOCRadiusTurnsBeforeUpdate>1</ZOCRadiusTurnsBeforeUpdate>
+        <HideInBuildList>1</HideInBuildList>
+        <LaborToBuild>-1</LaborToBuild>					
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>WaterMana</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Water Power</Provides>
+        </GameModifier>
+		<GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Mana</Attribute>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Mana per Water Power</Provides>
+            <Calculate InternalName="Calc" ValueOwner="OwnerCity">
+                <Expression><![CDATA[[GetNumWaterShards]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value" ValueOwner="OwnerCity">
+                <Expression><![CDATA[[Calc]]]></Expression>
+            </Calculate>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <ArtDef>ShimmeringPool_ArtDef</ArtDef>
+    </ImprovementType>
+
+
+<ImprovementType InternalName="WindShrine_2">
+        <DisplayName>Wind Shrine</DisplayName>
+        <Description>Wind Shrines provide air power every season.</Description>
+        <RequiresForceUnlock>1</RequiresForceUnlock>		
+        <AllowedPerFaction>1</AllowedPerFaction>		
+        <RequiresCity>1</RequiresCity>	
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <ZOCMinRadius>3</ZOCMinRadius>
+        <ZOCMaxRadius>3</ZOCMaxRadius>
+        <ZOCRadiusTurnsBeforeUpdate>1</ZOCRadiusTurnsBeforeUpdate>
+        <HideInBuildList>1</HideInBuildList>
+        <LaborToBuild>-1</LaborToBuild>			
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>AirMana</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Air Power</Provides>
+        </GameModifier>
+		<GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Mana</Attribute>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Mana per Air Power</Provides>
+            <Calculate InternalName="Calc" ValueOwner="OwnerCity">
+                <Expression><![CDATA[[GetNumAirShards]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value" ValueOwner="OwnerCity">
+                <Expression><![CDATA[[Calc]]]></Expression>
+            </Calculate>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <ArtDef>WindShrine_ArtDef</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="SilenceShrine_2">
+        <DisplayName>Silence Shrine</DisplayName>
+        <Description>Silence Shrines provide Death power every season.</Description>
+        <RequiresForceUnlock>1</RequiresForceUnlock>		
+        <AllowedPerFaction>1</AllowedPerFaction>		
+        <RequiresCity>1</RequiresCity>		
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>DesertTerrain</PreferredTerrain>
+        <ZOCMinRadius>3</ZOCMinRadius>
+        <ZOCMaxRadius>3</ZOCMaxRadius>
+        <ZOCRadiusTurnsBeforeUpdate>1</ZOCRadiusTurnsBeforeUpdate>
+        <HideInBuildList>1</HideInBuildList>
+        <LaborToBuild>-1</LaborToBuild>			
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>DeathMana</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Death Power</Provides>
+        </GameModifier>
+		<GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Mana</Attribute>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Mana per Death Power</Provides>
+            <Calculate InternalName="Calc" ValueOwner="OwnerCity">
+                <Expression><![CDATA[[GetNumDeathShards]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value" ValueOwner="OwnerCity">
+                <Expression><![CDATA[[Calc]]]></Expression>
+            </Calculate>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <ArtDef>SilenceShrine_ArtDef</ArtDef>
+    </ImprovementType>
+
+</ImprovementTypes>

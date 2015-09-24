@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Created with the Elemental Editor -->
+<!-- CoreWeapons.xml -->
+
+<!-- Disabled
+
+<GameItemTypes>
+
+    <GameItemType InternalName="EldritchAmmo">
+        <DisplayName>Eldritch Glyphs</DisplayName>
+        <Description>Glyphs that allow this unit to attack from afar with Eldritch rot.</Description>
+        <Type>Weapon</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockRangedAction</Attribute>
+                <StrVal>BowAttack_Eldritch</StrVal>
+                <Provides>Ranged attack</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Common</RarityDisplay>
+        <TacticalRange>9</TacticalRange>
+        <SupportUnitType>EldritchSoldier</SupportUnitType>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <ArtDef>AmuletOfFlames_ArtDef</ArtDef>
+    </GameItemType>
+
+</GameItemTypes>
+
+-->

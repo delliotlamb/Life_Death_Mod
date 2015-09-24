@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AIDifficultyLevels>
+	<AIDifficultyLevel InternalName="AIDiffLvl_Novice">
+		<DisplayName>Novice</DisplayName>
+		<AIEconomicRatio>0.50</AIEconomicRatio>
+		<AIFOWCheat>0</AIFOWCheat>
+		<AIHPRatio>0.75</AIHPRatio>
+		<AIStartingFundsRatio>0.50</AIStartingFundsRatio>
+		<AISovereignHPRatio>0.75</AISovereignHPRatio>
+		<AIUsesCombatMagic>0</AIUsesCombatMagic>
+		<AIIntelligenceFactor>0.10</AIIntelligenceFactor>
+	</AIDifficultyLevel>
+	<AIDifficultyLevel InternalName="AIDiffLvl_Beginner">
+		<DisplayName>Beginner</DisplayName>
+		<AIEconomicRatio>0.75</AIEconomicRatio>
+		<AIFOWCheat>0</AIFOWCheat>
+		<AIHPRatio>0.75</AIHPRatio>
+		<AIStartingFundsRatio>0.50</AIStartingFundsRatio>
+		<AISovereignHPRatio>1.0</AISovereignHPRatio>
+		<AIUsesCombatMagic>1</AIUsesCombatMagic>
+		<AIIntelligenceFactor>0.33</AIIntelligenceFactor>
+	</AIDifficultyLevel>
+	<AIDifficultyLevel InternalName="AIDiffLvl_Easy">
+		<DisplayName>Easy</DisplayName>
+		<AIEconomicRatio>0.90</AIEconomicRatio>
+		<AIFOWCheat>0</AIFOWCheat>
+		<AIHPRatio>0.90</AIHPRatio>
+		<AIStartingFundsRatio>0.50</AIStartingFundsRatio>
+		<AISovereignHPRatio>1.0</AISovereignHPRatio>
+		<AIUsesCombatMagic>1</AIUsesCombatMagic>
+		<AIIntelligenceFactor>0.90</AIIntelligenceFactor>
+	</AIDifficultyLevel>
+	<AIDifficultyLevel InternalName="AIDiffLvl_Normal">
+		<DisplayName>Normal</DisplayName>
+		<AIEconomicRatio>1.00</AIEconomicRatio>
+		<AIFOWCheat>0</AIFOWCheat>
+		<AIHPRatio>1.00</AIHPRatio>
+		<AIStartingFundsRatio>1.0</AIStartingFundsRatio>
+		<AISovereignHPRatio>1.0</AISovereignHPRatio>
+		<AIUsesCombatMagic>1</AIUsesCombatMagic>
+		<AIIntelligenceFactor>1.0</AIIntelligenceFactor>
+	</AIDifficultyLevel>
+	<AIDifficultyLevel InternalName="AIDiffLvl_Challenging">
+		<DisplayName>Challenging</DisplayName>
+		<AIEconomicRatio>1.0</AIEconomicRatio>
+		<AIFOWCheat>0</AIFOWCheat>
+		<AIHPRatio>1.0</AIHPRatio>
+		<AIStartingFundsRatio>1.0</AIStartingFundsRatio>
+		<AISovereignHPRatio>1.0</AISovereignHPRatio>
+		<AIUsesCombatMagic>1</AIUsesCombatMagic>
+		<AIIntelligenceFactor>1.30</AIIntelligenceFactor>
+	</AIDifficultyLevel>
+	<AIDifficultyLevel InternalName="AIDiffLvl_Hard">
+		<DisplayName>Hard</DisplayName>
+		<AIEconomicRatio>1.1</AIEconomicRatio>
+		<AIFOWCheat>0</AIFOWCheat>
+		<AIHPRatio>1.0</AIHPRatio>
+		<AIStartingFundsRatio>5.0</AIStartingFundsRatio>
+		<AISovereignHPRatio>2.0</AISovereignHPRatio>
+		<AIUsesCombatMagic>1</AIUsesCombatMagic>
+		<AIIntelligenceFactor>1.5</AIIntelligenceFactor>
+	</AIDifficultyLevel>
+	<AIDifficultyLevel InternalName="AIDiffLvl_Expert">
+		<DisplayName>Expert</DisplayName>
+		<AIEconomicRatio>1.25</AIEconomicRatio>
+		<AIFOWCheat>0</AIFOWCheat>
+		<AIHPRatio>1.0</AIHPRatio>
+		<AIStartingFundsRatio>10.0</AIStartingFundsRatio>
+		<AISovereignHPRatio>2.0</AISovereignHPRatio>
+		<AIUsesCombatMagic>1</AIUsesCombatMagic>
+		<AIIntelligenceFactor>2.0</AIIntelligenceFactor>
+	</AIDifficultyLevel>
+	<AIDifficultyLevel InternalName="AIDiffLvl_Ridiculous">
+		<DisplayName>Ridiculous</DisplayName>
+		<AIEconomicRatio>1.5</AIEconomicRatio>
+		<AIFOWCheat>1</AIFOWCheat>
+		<AIHPRatio>1.4</AIHPRatio>
+		<AIStartingFundsRatio>20.0</AIStartingFundsRatio>
+		<AISovereignHPRatio>2.0</AISovereignHPRatio>
+		<AIUsesCombatMagic>1</AIUsesCombatMagic>
+		<AIIntelligenceFactor>3.0</AIIntelligenceFactor>
+	</AIDifficultyLevel>
+  <AIDifficultyLevel InternalName="AIDiffLvl_Insane">
+    <DisplayName>Insane</DisplayName>
+    <AIEconomicRatio>2.0</AIEconomicRatio>
+    <AIFOWCheat>1</AIFOWCheat>
+    <AIHPRatio>1.5</AIHPRatio>
+    <AIStartingFundsRatio>1000.0</AIStartingFundsRatio>
+    <AISovereignHPRatio>3.0</AISovereignHPRatio>
+    <AIUsesCombatMagic>1</AIUsesCombatMagic>
+    <AIIntelligenceFactor>10.0</AIIntelligenceFactor>
+  </AIDifficultyLevel>
+	<AIDifficultyLevel InternalName="AIDiffLvl_SemiRidiculous">
+		<DisplayName>Semi-Ridiculous</DisplayName>
+		<AIEconomicRatio>1.35</AIEconomicRatio>
+		<AIFOWCheat>1</AIFOWCheat>
+		<AIHPRatio>1.0</AIHPRatio>
+		<AIStartingFundsRatio>20.0</AIStartingFundsRatio>
+		<AISovereignHPRatio>2.0</AISovereignHPRatio>
+		<AIUsesCombatMagic>1</AIUsesCombatMagic>
+		<AIIntelligenceFactor>3.0</AIIntelligenceFactor>
+	</AIDifficultyLevel>  
+</AIDifficultyLevels>

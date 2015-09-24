@@ -1,0 +1,73 @@
+<Spells>
+
+<SpellDef InternalName="CatapultSiegeAttack">
+        <DisplayName>Catapult Siege</DisplayName>
+        <Description>Attack for 10 physical damage to the entire target army (increased by any attack bonuses given at training). Can attack stationed units.</Description>
+        <Image>Improvement_SiegeFactory.png</Image>
+        <IconFG>TrainUnitIcon_Catapult.png</IconFG>
+		<Cooldown>1</Cooldown>
+        <AutoUnlock>1</AutoUnlock>		
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+        <UnitAppSpecifier>ApplyToAll</UnitAppSpecifier>		
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <Range>2</Range>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>CatapultSiege</Attribute>
+        </Prereq>		
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Pierce</AttackStat>			
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitStat_CombinedAttack] - 18]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>100</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Catapult_Hit1</HitSoundFX>
+        <HitSoundFX>Spell_Catapult_Hit2</HitSoundFX>
+        <MissSoundFX>Catapult_Miss1</MissSoundFX>
+        <MissSoundFX>Catapult_Miss2</MissSoundFX>
+        <SpellCastSoundFX>Catapult_Toss</SpellCastSoundFX>
+        <SpellCastEffectName>Catapult_Particle</SpellCastEffectName>
+        <SpellCastEffectScale>0.9</SpellCastEffectScale>
+        <SpellCastProjectile>1</SpellCastProjectile>
+        <SpellCastProjectileSpeed>500</SpellCastProjectileSpeed>
+    </SpellDef>
+	
+<SpellDef InternalName="Trigger_CatapultNoSpell">
+	<DisplayName>Catapult Default</DisplayName>
+	<Description>No Tactical Spells for Catapults</Description>
+    <Image>Improvement_SiegeFactory.png</Image>
+    <IconFG>TrainUnitIcon_Catapult.png</IconFG>
+	<CanStack>0</CanStack>
+	<SpellBookSortCategory>Unit</SpellBookSortCategory>
+	<SpellBookSortSubCategory>UnitEnchantment</SpellBookSortSubCategory>
+	<SpellType>Tactical</SpellType>
+	<SpellClass>Offensive</SpellClass>
+	<SpellSubClass>Buff</SpellSubClass>
+	<SpellTargetType>Self</SpellTargetType>
+	<IgnoreCastAnim>1</IgnoreCastAnim>
+	<IsCastable>0</IsCastable>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>PreventSpellcasting</Attribute>
+            <Duration>-1</Duration>
+            <!--<PerTurn>1</PerTurn>-->
+        </GameModifier>      
+	<AIData AIPersonality="AI_General">
+		<AIPriority>5</AIPriority>
+	</AIData>        
+</SpellDef>
+	
+	</Spells>

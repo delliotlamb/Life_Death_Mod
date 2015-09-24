@@ -1,0 +1,1082 @@
+<AbilityBonuses>
+
+<AbilityBonus InternalName="PathOfTheSorcererAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusType>Unit_Level_Path</AbilityBonusType>
+        <AbilityBonusOption InternalName="PathOfTheSorcerer">
+            <DisplayName>Sorcerer</DisplayName>
+            <Description>Casts world-changing strategic and weighty tactical spells, while obsessing in the science of magic.</Description>
+            <Icon>Ability_Sorcerer_Path_Icon.png</Icon>
+            <TraitTreePicture>trait_tree_unit_sorcerer.png</TraitTreePicture>
+            <BackgroundColor>96,75,126</BackgroundColor>
+            <HighlightColor>140,78,224</HighlightColor>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_PathOfTheSorcerer</StrVal>
+                <Value>1</Value>
+                <Provides>Unlocks traits that teach new spells</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>ProduceResource</Attribute>
+                <StrVal>Research</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Research per Season</Provides>
+            </GameModifier>
+            <!--<GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_SpellDamage_SorcererTactical</StrVal>
+                <Value>50</Value>
+                <Provides>+50% Tactical Spell Damage</Provides>
+            </GameModifier>	
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>BattleAutoCastSpell</Attribute>
+                <StrVal>SorcererConcentration_Ability</StrVal>
+                <Value>100</Value>
+                <Provides>+1 to Tactical casting times</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MagicPower</StrVal>
+                <Value>10</Value>
+                <Provides>+10 Spell Mastery</Provides>
+            </GameModifier>-->			
+            <RequiredLevel>2</RequiredLevel>
+            <Type>Ability</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+<!-- begin tactical tree -->
+
+    <AbilityBonus InternalName="Prodigy_SorcererAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="Prodigy_Sorcerer">
+            <DisplayName>Concentration I</DisplayName>
+            <Description>+20 Spell Mastery, +30% tactical spell damage, +1 to tactical cast times</Description>
+            <Icon>Ability_ConcentrationI_Icon.png</Icon>
+            <PerkTreePosX>0</PerkTreePosX>
+            <PerkTreePosY>0</PerkTreePosY>
+            <!--<GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MagicPower</StrVal>
+                <Value>15</Value>
+                <Provides>+15 Spell Mastery</Provides>
+            </GameModifier>-->
+            <!--<GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_SpellDamage</StrVal>
+                <Value>20</Value>
+                <Provides>+20% Spell Damage</Provides>
+            </GameModifier>-->
+			<GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_SpellDamage_SorcererTactical</StrVal>
+                <Value>30</Value>
+                <Provides>+30% Tactical Spell Damage</Provides>
+            </GameModifier>	
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>BattleAutoCastSpell</Attribute>
+                <StrVal>SorcererConcentration_Ability</StrVal>
+                <Value>100</Value>
+                <Provides>+1 to Tactical casting times</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MagicPower</StrVal>
+                <Value>20</Value>
+                <Provides>+20 Spell Mastery</Provides>
+            </GameModifier>
+            <Type>Spell</Type>
+            <UpgradePathID>Prodigy_Sorcerer</UpgradePathID>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>PathOfTheSorcerer</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+<AbilityBonus InternalName="Prodigy2_SorcererAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="Prodigy2_Sorcerer">
+            <DisplayName>Concentration II</DisplayName>
+            <Description>+15 Spell Mastery, +20% Spell Damage</Description>
+            <Icon>Ability_ConcentrationII_Icon.png</Icon>
+            <PerkTreePosX>1</PerkTreePosX>
+            <PerkTreePosY>0</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MagicPower</StrVal>
+                <Value>20</Value>
+                <Provides>+20 Spell Mastery</Provides>
+            </GameModifier>
+            <!--<GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_SpellDamage</StrVal>
+                <Value>25</Value>
+                <Provides>+25% Spell Damage</Provides>
+            </GameModifier>-->
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_SpellDamage</StrVal>
+                <Value>20</Value>
+                <Provides>+20% Spell Damage</Provides>
+            </GameModifier>			
+            <Type>Spell</Type>
+            <UpgradePathID>Prodigy_Sorcerer</UpgradePathID>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Prodigy_Sorcerer</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="Prodigy3_SorcererAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="Prodigy3_Sorcerer">
+            <DisplayName>Concentration III</DisplayName>
+            <Description>+15 Spell Mastery, +20% Spell Damage</Description>
+            <Icon>Ability_ConcentrationIII_Icon.png</Icon>
+            <PerkTreePosX>2</PerkTreePosX>
+            <PerkTreePosY>0</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MagicPower</StrVal>
+                <Value>20</Value>
+                <Provides>+20 Spell Mastery</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_SpellDamage</StrVal>
+                <Value>20</Value>
+                <Provides>+20% Spell Damage</Provides>
+            </GameModifier>			
+            <Type>Spell</Type>
+            <UpgradePathID>Prodigy_Sorcerer</UpgradePathID>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Prodigy2_Sorcerer</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+<AbilityBonus InternalName="Affinity_SorcererAbility">
+	<AbilityBonusType>Unit_Level</AbilityBonusType>
+	<AbilityBonusOption InternalName="Affinity_Sorcerer">
+            <DisplayName>Affinity</DisplayName>
+            <Description>-10% the mana cost for tactical spells</Description>
+            <Icon>Ability_Affinity_Icon.png</Icon>
+            <PerkTreePosX>3</PerkTreePosX>
+            <PerkTreePosY>0</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_TacticalSpellManaCost_Multiplier</StrVal>
+                <Value>-0.1</Value>
+                <Provides>-10% mana cost for tactical spells</Provides>
+            </GameModifier>
+            <Type>Defensive</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Prodigy3_Sorcerer</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="GravimancyAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusType>Unit_Spell_Rank</AbilityBonusType>
+        <AbilityBonusOption InternalName="Gravimancy">
+            <DisplayName>Gravimancy</DisplayName>
+            <Description>Allows the unit to cast Meteor and Gravitic Hold.</Description>
+            <Icon>Ability_Gravimancy_Icon.png</Icon>
+            <PerkTreePosX>4</PerkTreePosX>
+            <PerkTreePosY>0</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Provides>Unlocks the following spells.</Provides>
+            </GameModifier>
+            <Type>Spell</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Affinity_Sorcerer</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="AuralmancyAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusType>Unit_Spell_Rank</AbilityBonusType>
+        <AbilityBonusOption InternalName="Auralmancy">
+            <DisplayName>Auralmancy</DisplayName>
+            <Description>Allows the unit to cast Anti-Acoustic Wave and Bewitching Words.</Description>
+            <Icon>Ability_Auralmancy_Icon.png</Icon>
+            <PerkTreePosX>2</PerkTreePosX>
+            <PerkTreePosY>1</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Provides>Unlocks the following spells.</Provides>
+            </GameModifier>
+            <Type>Spell</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Prodigy2_Sorcerer</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="Spell_ConsumeSpirit_SorcererAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusType>Unit_Spell_Rank</AbilityBonusType>
+        <AbilityBonusOption InternalName="Spell_ConsumeSpirit_Sorcerer">
+            <DisplayName>Extract Essence</DisplayName>
+            <Description>Allows the unit to cast Extract Essence</Description>
+            <Icon>T_ConsumeSpirit_Icon.png</Icon>
+            <PerkTreePosX>1</PerkTreePosX>
+            <PerkTreePosY>1</PerkTreePosY>
+            <Prereq>
+                <Type>Allegiance</Type>
+                <Attribute>Empire</Attribute>
+            </Prereq>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Prodigy_Sorcerer</Attribute>
+            </Prereq>
+            <GameModifier>
+                <Provides>Unlocks the following spell</Provides>
+            </GameModifier>
+            <CombatRating>20</CombatRating>
+            <IsCombatAbility>1</IsCombatAbility>
+            <Type>Spell</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="ArcanePhysicianAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="ArcanePhysician">
+            <DisplayName>Arcane Physician</DisplayName>
+            <Description>This unit's healing spells heal +75% more</Description>
+            <Icon>Ability_Compassion_Icon.png</Icon>
+            <PerkTreePosX>1</PerkTreePosX>
+            <PerkTreePosY>1</PerkTreePosY>
+            <Prereq>
+                <Type>Allegiance</Type>
+                <Attribute>Kingdom</Attribute>
+            </Prereq>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Prodigy_Sorcerer</Attribute>
+            </Prereq>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_BonusHealing</StrVal>
+                <Value>.75</Value>
+                <Provides>+75% Healing when casting healing spells</Provides>
+            </GameModifier>
+            <CombatRating>20</CombatRating>
+            <IsCombatAbility>1</IsCombatAbility>
+            <Type>Spell</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+<AbilityBonus InternalName="DestabilizeAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="Destabilize">
+            <DisplayName>Destabilization</DisplayName>
+            <Description>Destabilization reduces the Cold, Fire and Lightning Resistance of all enemies by 25%</Description>
+            <Icon>Ability_DestabilizingPresence_Icon.png</Icon>
+            <PerkTreePosX>5</PerkTreePosX>
+            <PerkTreePosY>0</PerkTreePosY>
+            <GameModifier>
+                <Provides>Unlocks Destabilization, which reduces the Cold, Fire and Lightning Resistance of all enemies by 25%</Provides>
+            </GameModifier>
+            <Type>Aggressive</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Gravimancy</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+<!-- spell resistance traits -->
+
+<AbilityBonus InternalName="SpellResistance_SorcererAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusType>Unit_Spell_Rank</AbilityBonusType>
+        <AbilityBonusOption InternalName="SpellResistance_Sorcerer">
+            <DisplayName>Arcane Resistance I</DisplayName>
+            <Description>+15 Spell Resistance</Description>
+            <Icon>Ability_SpellResistanceI_Icon.png</Icon>
+            <PerkTreePosX>0</PerkTreePosX>
+            <PerkTreePosY>4</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MagicResist</StrVal>
+                <Value>15</Value>
+                <Provides>+15 Spell Resistance</Provides>
+            </GameModifier>
+            <GameModifier>
+                <Provides>Unlocks the following spells</Provides>
+            </GameModifier>
+            <Type>Defensive</Type>
+            <UpgradePathID>SpellResistance_Sorcerer</UpgradePathID>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>PathOfTheSorcerer</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+<AbilityBonus InternalName="SpellResistance_Sorcerer2Ability">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="SpellResistance_Sorcerer2">
+            <DisplayName>Arcane Resistance II</DisplayName>
+            <Description>+25 Spell Resistance</Description>
+            <Icon>Ability_SpellResistanceII_Icon.png</Icon>
+            <PerkTreePosX>1</PerkTreePosX>
+            <PerkTreePosY>4</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MagicResist</StrVal>
+                <Value>25</Value>
+                <Provides>+25 Spell Resistance</Provides>
+            </GameModifier>
+            <Type>Defensive</Type>
+            <UpgradePathID>SpellResistance_Sorcerer</UpgradePathID>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>SpellResistance_Sorcerer</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+<!-- begin strategic spell tree -->
+
+<AbilityBonus InternalName="Knowledge_SorcererAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusType>Unit_Spell_Rank</AbilityBonusType>
+        <AbilityBonusOption InternalName="Knowledge_Sorcerer">
+            <DisplayName>Erudition</DisplayName>
+            <Description>+1 Research per season, 25% Experience</Description>
+            <Icon>Ability_Knowledge_Icon.png</Icon>
+            <PerkTreePosX>0</PerkTreePosX>
+            <PerkTreePosY>3</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>ProduceResource</Attribute>
+                <StrVal>Research</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Research per Season</Provides>
+            </GameModifier>				
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ExpBonus</StrVal>
+                <Value>25</Value>
+                <Provides>+25% Experience</Provides>
+            </GameModifier>
+            <Type>Defensive</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>PathOfTheSorcerer</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="VisimancyAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusType>Unit_Spell_Rank</AbilityBonusType>
+        <AbilityBonusOption InternalName="Visimancy">
+            <DisplayName>Visimancy</DisplayName>
+            <Description>Allows the unit to cast Eyes Of The Eagle, and Find Minerals</Description>
+            <Icon>Ability_Visimancy_Icon.png</Icon>
+            <PerkTreePosX>1</PerkTreePosX>
+            <PerkTreePosY>3</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Provides>Unlocks the following spells</Provides>
+            </GameModifier>
+            <Type>Spell</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Knowledge_Sorcerer</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="AlterationAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusType>Unit_Spell_Rank</AbilityBonusType>
+        <AbilityBonusOption InternalName="Alteration">
+            <DisplayName>Alteration</DisplayName>
+            <Description>Enchant units to fly, or magically craft a boat to navigate the seas.</Description>
+            <Icon>Ability_Alteration_Icon.png</Icon>
+            <PerkTreePosX>2</PerkTreePosX>
+            <PerkTreePosY>3</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Provides>Unlocks the following spells</Provides>
+            </GameModifier>
+            <Type>Spell</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Visimancy</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="MetamancyAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusType>Unit_Spell_Rank</AbilityBonusType>
+        <AbilityBonusOption InternalName="Metamancy">
+            <DisplayName>Metamancy</DisplayName>
+            <Description>Allows the unit to cast spells that create resources</Description>
+            <Icon>Ability_Metamancy_Icon.png</Icon>
+            <PerkTreePosX>3</PerkTreePosX>
+            <PerkTreePosY>2</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Provides>Unlocks the following spells</Provides>
+            </GameModifier>
+            <Type>Spell</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Alteration</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="ElemancyAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusType>Unit_Spell_Rank</AbilityBonusType>
+        <AbilityBonusOption InternalName="Elemancy">
+            <DisplayName>Elemancy</DisplayName>
+            <Description>Allows the unit to cast spells which generate specific elemental power from cities, based on the caster's spell traits, or spells that give elemental spell traits but weaken those corresponding spells for your faction.</Description>
+            <Icon>Ability_Elemenancy_Icon.png</Icon>
+            <PerkTreePosX>3</PerkTreePosX>
+            <PerkTreePosY>3</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Provides>Unlocks the following spells</Provides>
+            </GameModifier>
+            <Type>Spell</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Alteration</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="AgrimancyAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusType>Unit_Spell_Rank</AbilityBonusType>
+        <AbilityBonusOption InternalName="Agrimancy">
+            <DisplayName>Agrimancy</DisplayName>
+            <Description>Allows the unit to incite the growth of grains</Description>
+            <Icon>Ability_Agrimancy_Icon.png</Icon>
+            <PerkTreePosX>2</PerkTreePosX>
+            <PerkTreePosY>4</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Provides>Unlocks the following spells</Provides>
+            </GameModifier>
+            <Type>Spell</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Visimancy</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="FaunamancyAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusType>Unit_Spell_Rank</AbilityBonusType>
+        <AbilityBonusOption InternalName="Faunamancy">
+            <DisplayName>Faunamancy</DisplayName>
+            <Description>Allows the unit to locate undiscovered beasts, for domestication or hunting.</Description>
+            <Icon>Ability_Faunamancy_Icon.png</Icon>
+            <PerkTreePosX>3</PerkTreePosX>
+            <PerkTreePosY>4</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Provides>Unlocks the following spells</Provides>
+            </GameModifier>
+            <Type>Spell</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Alteration</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="AnthuamancyAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusType>Unit_Spell_Rank</AbilityBonusType>
+        <AbilityBonusOption InternalName="Anthuamancy">
+            <DisplayName>Prismancy</DisplayName>
+            <Description>Allows the Sorcerer to change the element type of shards.</Description>
+            <Icon>Ability_Anthuamancy_Icon.png</Icon>
+            <PerkTreePosX>4</PerkTreePosX>
+            <PerkTreePosY>4</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Provides>Unlocks the following spells</Provides>
+            </GameModifier>
+            <Type>Spell</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Elemancy</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="GnosimancyAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusType>Unit_Spell_Rank</AbilityBonusType>
+        <AbilityBonusOption InternalName="Gnosimancy">
+            <DisplayName>Gnosimancy</DisplayName>
+            <Description>+2 Research, Allows the unit to cast Guided Ethereal Journey.</Description>
+            <Icon>Ability_Gnosimancy_Icon.png</Icon>
+            <PerkTreePosX>2</PerkTreePosX>
+            <PerkTreePosY>2</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>ProduceResource</Attribute>
+                <StrVal>Research</StrVal>
+                <Value>2</Value>
+                <Provides>+2 Research per Season</Provides>
+            </GameModifier>			
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Provides>Unlocks the following spells</Provides>
+            </GameModifier>
+            <Type>Spell</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Visimancy</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="IllusomancyAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusType>Unit_Spell_Rank</AbilityBonusType>
+        <AbilityBonusOption InternalName="Illusomancy">
+            <DisplayName>Illusomancy</DisplayName>
+            <Description>Allows the unit to cast Confusion In The Ranks and Mantle Of Charisma</Description>
+            <Icon>Ability_Illusomancy_Icon.png</Icon>
+            <PerkTreePosX>4</PerkTreePosX>
+            <PerkTreePosY>3</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Provides>Unlocks the following spells</Provides>
+            </GameModifier>
+            <Type>Spell</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Elemancy</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+
+<AbilityBonus InternalName="Attunement_SorcererAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="Attunement_Sorcerer">
+            <DisplayName>Mana Sensitivity</DisplayName>
+            <Description>+5 Mana per Season</Description>
+            <Icon>Ability_ManaSensitivity_Icon.png</Icon>
+            <PerkTreePosX>4</PerkTreePosX>
+            <PerkTreePosY>2</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>ProduceResource</Attribute>
+                <StrVal>Mana</StrVal>
+                <Value>5</Value>
+                <Provides>+5 Mana per Season</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_HitPoints</StrVal>
+                <Value>-5</Value>
+                <Provides>-5 Hit Points</Provides>
+            </GameModifier>
+	    <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_CombatSpeed</StrVal>
+                <Value>-2</Value>
+                <Provides>-2 Initiative</Provides>
+            </GameModifier>
+            <Type>Army</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Elemancy</Attribute>
+            </Prereq>
+            <Type>Defensive</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+<AbilityBonus InternalName="Attunement2_SorcererAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="Attunement2_Sorcerer">
+            <DisplayName>Mana Addiction</DisplayName>
+            <Description>+10 Mana per Season</Description>
+            <Icon>Ability_ManaAddiction_Icon.png</Icon>
+            <PerkTreePosX>5</PerkTreePosX>
+            <PerkTreePosY>2</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>ProduceResource</Attribute>
+                <StrVal>Mana</StrVal>
+                <Value>10</Value>
+                <Provides>+10 Mana per Season</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_HitPoints</StrVal>
+                <Multiplier>0.8</Multiplier>
+		<Provides>-20% hit points</Provides>
+            </GameModifier>            
+	    <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_CombatSpeed</StrVal>
+                <Value>-2</Value>
+                <Provides>-2 Initiative</Provides>
+            </GameModifier>
+            <Type>Army</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Attunement_Sorcerer</Attribute>
+            </Prereq>
+            <Type>Defensive</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="UnstableMagicAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="UnstableMagic">
+            <DisplayName>Volatile Power</DisplayName>
+            <Description>Casting a tactical spell damages this unit by 20 points. Spell mastery and tactical spell damage are greatly raised.</Description>
+            <Icon>Ability_UnstableMagic_Icon.png</Icon>
+            <PerkTreePosX>6</PerkTreePosX>
+            <PerkTreePosY>0</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>CastAppliesSpell</Attribute>
+                <StrVal>UnstableMagic</StrVal>
+                <Provides>Casting a spell does 20 damage to the caster</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MagicPower</StrVal>
+                <Value>40</Value>
+                <Provides>+40 Spell Mastery</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_SpellDamage_SorcererTactical</StrVal>
+                <Value>40</Value>
+                <Provides>+40% Tactical Spell Damage</Provides>
+            </GameModifier>			
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Destabilize</Attribute>
+            </Prereq>
+            <Type>Defensive</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+
+    <AbilityBonus InternalName="PhysimancyAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusType>Unit_Spell_Rank</AbilityBonusType>
+        <AbilityBonusOption InternalName="Physimancy">
+            <DisplayName>Physimancy</DisplayName>
+            <Description>Allows the unit to cast spells which re-write the rules of reality itself.</Description>
+            <Icon>Ability_Physimancy_Icon.png</Icon>
+            <PerkTreePosX>5</PerkTreePosX>
+            <PerkTreePosY>4</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Provides>Unlocks the following spells</Provides>
+            </GameModifier>
+            <Type>Spell</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Illusomancy</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+<AbilityBonus InternalName="ArcaneTalentAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="ArcaneTalent">
+            <DisplayName>Arcane Talent</DisplayName>
+            <Description>+1 Mana per Season</Description>
+            <Icon>Ability_Attunement_Icon.png</Icon>
+            <PerkTreePosX>0</PerkTreePosX>
+            <PerkTreePosY>1</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>ProduceResource</Attribute>
+                <StrVal>Mana</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Mana per Season</Provides>
+            </GameModifier>
+            <Type>Defensive</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>PathOfTheSorcerer</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+ <AbilityBonus InternalName="ContractWithFlamesAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="ContractWithFlames">
+            <DisplayName>Bargain With Entropy</DisplayName>
+            <Description>+30% Spell Damage, additional +30% with Fire spells, -40% hit points</Description>
+            <Icon>Ability_VolcanicRites_Icon.png</Icon>
+            <PerkTreePosX>4</PerkTreePosX>
+            <PerkTreePosY>1</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_SpellDamage_Fire</StrVal>
+                <Value>.30</Value>
+                <Provides>+30% Spell Damage with Fire spells</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_SpellDamage</StrVal>
+                <Value>30</Value>
+                <Provides>+30% Spell Damage</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_HitPoints</StrVal>
+                <Multiplier>0.6</Multiplier>
+				<Provides>-40% hit points</Provides>
+            </GameModifier>
+            <Type>Aggressive</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Affinity_Sorcerer</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+
+<!--<AbilityBonus InternalName="ResidentAbility">
+<AbilityBonusOption InternalName="Resident">
+            <DisplayName>Resident</DisplayName>
+            <Description>This unit is permanently stationed in one city to study magic.</Description>
+            <Icon>Ability_Assassin_Icon.png</Icon>
+            <GameModifier>
+                <Provides>This unit is permanently stationed in one city to study magic.</Provides>
+            </GameModifier>
+            <Type>Defensive</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>-->
+
+    <AbilityBonus InternalName="Lucimancy_SorcererAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusType>Unit_Spell_Rank</AbilityBonusType>
+        <AbilityBonusOption InternalName="Lucimancy_Sorcerer">
+            <DisplayName>Lucimancy</DisplayName>
+            <Description>Allows the unit to cast Searing Light and Lightray Form.</Description>
+            <Icon>Lucimancy_Sorcerer.png</Icon>
+            <PerkTreePosX>3</PerkTreePosX>
+            <PerkTreePosY>1</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Provides>Unlocks the following spells.</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_IsLifeUser</StrVal>
+                <Value>1</Value>
+                <Provides>This unit counts as a user of Life Magic</Provides>
+            </GameModifier>
+            <Type>Spell</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Prodigy3_Sorcerer</Attribute>
+            </Prereq>
+            <Prereq>
+                <Type>Allegiance</Type>
+                <Attribute>Kingdom</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+
+    <AbilityBonus InternalName="Umbramancy_SorcererAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusType>Unit_Spell_Rank</AbilityBonusType>
+        <AbilityBonusOption InternalName="Umbramancy_Sorcerer">
+            <DisplayName>Umbramancy</DisplayName>
+            <Description>Allows the unit to cast Enshadowed Blade, Shadowlance, and Shadowthread Shift.</Description>
+            <Icon>Umbramancy_Sorcerer.png</Icon>
+            <PerkTreePosX>3</PerkTreePosX>
+            <PerkTreePosY>1</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Provides>Unlocks the following spells.</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_IsDeathUser</StrVal>
+                <Value>1</Value>
+                <Provides>This unit counts as a user of Death Magic</Provides>
+            </GameModifier>
+            <Type>Spell</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Prodigy3_Sorcerer</Attribute>
+            </Prereq>
+            <Prereq>
+                <Type>Allegiance</Type>
+                <Attribute>Empire</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+	    <!--<AbilityBonus InternalName="Savant_SorcererAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="Savant_Sorcerer">
+            <DisplayName>Effortless Casting</DisplayName>
+            <Description>-1 to Casting Times</Description>
+            <Icon>Ability_Savant_Icon.png</Icon>
+            <PerkTreePosX>5</PerkTreePosX>
+            <PerkTreePosY>1</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_SpellCastTimeModifier</StrVal>
+                <Value>-1</Value>
+                <Provides>-1 to Casting Times</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MagicResist</StrVal>
+                <Value>-20</Value>
+                <Provides>-20 Spell Resist</Provides>
+            </GameModifier>			
+            <Type>Spell</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Gravimancy</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>-->
+	
+	    <AbilityBonus InternalName="ArmorProficiency1Ability_Sorcerer">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="ArmorProficiency1_Sorcerer">
+            <DisplayName>Chain Mail Proficiency</DisplayName>
+            <Description>Allows the unit to wear Chain Mail armor</Description>
+            <Icon>Ability_ChainMailProficiency_Icon.png</Icon>
+            <PerkTreePosX>0</PerkTreePosX>
+            <PerkTreePosY>2</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ArmorProficiency</StrVal>
+                <Value>1</Value>
+                <Provides>Allows the unit to wear Chain Mail armor</Provides>
+            </GameModifier>
+            <Type>Defensive</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>PathOfTheSorcerer</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+	    <AbilityBonus InternalName="ArmorProficiency2Ability_Sorcerer">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="ArmorProficiency2_Sorcerer">
+            <DisplayName>Plate Mail Proficiency</DisplayName>
+            <Description>Allows the unit to wear Plate Mail armor</Description>
+            <Icon>Ability_PlateMailProficiency_Icon.png</Icon>
+            <PerkTreePosX>1</PerkTreePosX>
+            <PerkTreePosY>2</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ArmorProficiency</StrVal>
+                <Value>1</Value>
+                <Provides>Allows the unit to wear Plate Mail armor</Provides>
+            </GameModifier>
+            <MinimumLevel>4</MinimumLevel>			
+            <Type>Defensive</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>ArmorProficiency1_Sorcerer</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+</AbilityBonuses>

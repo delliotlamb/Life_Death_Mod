@@ -1,0 +1,99 @@
+<QuestLocations>
+
+
+<QuestLocationType InternalName="QuestLoc_Camp_Paladin">
+        <Name>Camp</Name>
+        <Description>This is a camp, seemingly for refugees. But the fire is very large - and the footprints suggest a populaton too large to subsist on just hunting and gathering alone.</Description>
+        <Unique>1</Unique>
+        <Rarity>-1</Rarity>
+        <MinDistanceFromStartingPoints>0</MinDistanceFromStartingPoints>		
+        <Destructable>0</Destructable>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <TileDesign>Q_Camp_01</TileDesign>
+        <DrawnIcon>Quest_Camp.png</DrawnIcon>
+        <IconSize>75</IconSize>
+        <OnSelectSFX>Click_Campfire</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>Q_Camp_01.png</All>
+        </Medallions>
+    </QuestLocationType>
+
+
+<QuestLocationType InternalName="QuestLoc_Inn_Paladin">
+        <Name>A Humble Inn</Name>
+        <Description>This is a house of food and drink, set to appeal to travelers - and their money.</Description>
+        <Unique>1</Unique>
+        <Rarity>-1</Rarity>
+        <MinDistanceFromStartingPoints>0</MinDistanceFromStartingPoints>		
+        <Destructable>0</Destructable>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <TileDesign>Q_Kingdom_Inn_01</TileDesign>
+        <DrawnIcon>Quest_HumbleInn.png</DrawnIcon>
+        <IconSize>75</IconSize>
+        <OnSelectSFX>Click_Inn</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>Q_Kingdom_Inn_01.png</All>
+        </Medallions>
+    </QuestLocationType>
+
+<QuestLocationType InternalName="QuestLoc_Camp_Paladin2">
+        <Name>Camp</Name>
+        <Description>A large group of refugees is gathered here, acompanied by livestock and cargoes of tools and foodstuffs. This is a population of the civilized, only recently set to transit. What are they seeking, or running from?</Description>
+        <Unique>1</Unique>
+        <Rarity>-1</Rarity>
+        <MinDistanceFromStartingPoints>0</MinDistanceFromStartingPoints>		
+        <Destructable>0</Destructable>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <TileDesign>Q_Camp_01</TileDesign>
+        <DrawnIcon>Quest_Camp.png</DrawnIcon>
+        <IconSize>75</IconSize>
+        <OnSelectSFX>Click_Campfire</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>Q_Camp_01.png</All>
+        </Medallions>
+    </QuestLocationType>
+
+
+<QuestLocationType InternalName="QuestLoc_Graveyard_Paladin">
+        <Name>An Ancient Graveyard</Name>
+        <Description>Over the tombstones, too numerous to count, spirits fly freely. Somehow your search for a mount has brought you to this nexus of consciousnesses, living and dead. Do you dare risk seeking your mount here?</Description>
+        <Unique>1</Unique>
+        <Rarity>-1</Rarity>
+        <MinDistanceFromStartingPoints>0</MinDistanceFromStartingPoints>		
+        <Destructable>0</Destructable>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <TileDesign>G_Graveyard_01</TileDesign>
+        <DrawnIcon>Treasure_LostGraveyard.png</DrawnIcon>
+        <IconSize>75</IconSize>
+        <OnSelectSFX>Click_Tomb</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>G_Graveyard_01.png</All>
+        </Medallions>
+    </QuestLocationType>
+
+	
+<QuestLocationType InternalName="QuestLoc_Camp_Paladin3">
+        <Name>Camp</Name>
+        <Description>The people here do not bustle - in fact none can even be standing. Are they indeed still alive? What has happened to the people here? </Description>
+        <Unique>1</Unique>
+        <Rarity>-1</Rarity>
+        <MinDistanceFromStartingPoints>0</MinDistanceFromStartingPoints>		
+        <Destructable>0</Destructable>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <TileDesign>Q_Camp_01</TileDesign>
+        <DrawnIcon>Quest_Camp.png</DrawnIcon>
+        <IconSize>75</IconSize>
+        <OnSelectSFX>Click_Campfire</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>Q_Camp_01.png</All>
+        </Medallions>
+    </QuestLocationType>
+    
+-->
+
+</QuestLocations>

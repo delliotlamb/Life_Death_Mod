@@ -1,0 +1,3462 @@
+<ImprovementTypes>   
+    <ImprovementType InternalName="PublicForum">
+        <DisplayName>Public Forum</DisplayName>
+        <Description>The true heart of the city. Citizens can gather here to barter, haggle, and discuss politics. But most of all, ideas flow freely and dissenting thoughts are given voice. Over time, the public forum will give this city the massive benefits - and problems - of a Republic.</Description>
+        <RequiresCity>1</RequiresCity>
+        <BarredTerrain>River</BarredTerrrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>        
+		<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq> 
+        <LaborToBuild>2</LaborToBuild>          
+		<!-- Trying without growth bonus for now
+		<GameModifier>
+                <ModType>ResourceMultiplier</ModType>
+                <Attribute>Prestige</Attribute>
+                <Value>1.25</Value>
+                <Provides>+25% Growth in this city</Provides>
+        </GameModifier> -->
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Research</Attribute>
+            <Value>1.7</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+30% Research in this city (Negates Republic penalty)</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>ProductionPerMaterials</Attribute>
+            <Value>6</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>Negates Republic penalty to production in this city</Provides>
+        </GameModifier>		
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>1.4</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+40% Gildar in this city</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Unrest</Attribute>
+            <Value>-58</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>Negates Republic Unrest in this city</Provides>
+        </GameModifier>
+	    <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Additive_Unrest</StrVal>
+            <Value>18</Value>
+            <Provides>+18% Unrest in all your other cities</Provides>
+      	</GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>1000</AIPriority>
+            <AITag>Mining</AITag>
+        </AIData>
+        <ArtDef>Art_PublicForum</ArtDef>
+    </ImprovementType>
+
+    <ImprovementType InternalName="Palace">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+
+    <ImprovementType InternalName="TownHall">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+
+    <ImprovementType InternalName="BellTower">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+
+<ImprovementType InternalName="Senate">
+        <DisplayName>Senate Chambers</DisplayName>
+        <Description>Build meeting chambers for your senate, proving your Republic's commitment to non-centralized rule. the host city will see reduced -20 unrest and increased growth, but all cities will receive -10% unrest.</Description>
+        <AllowedPerFaction>1</AllowedPerFaction>
+        <RequiresCity>1</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <ZOCMinRadius>1</ZOCMinRadius>
+        <ZOCMaxRadius>1</ZOCMaxRadius>
+        <ZOCRadiusTurnsBeforeUpdate>0</ZOCRadiusTurnsBeforeUpdate>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Cooperation</Attribute>
+        </Prereq>
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <LaborToBuild>648</LaborToBuild>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Unrest</Attribute>
+            <Value>-20</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>-20% Unrest</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+            <UpgradeComparisonText>Unrest</UpgradeComparisonText>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Additive_Unrest</StrVal>
+            <Value>-10</Value>
+            <Provides>-10% Unrest in all your cities</Provides>
+        </GameModifier>
+        <GameModifier>
+            <Value>1</Value>
+            <Provides>+1 Zone of Control</Provides>
+            <UpgradeComparisonID>2</UpgradeComparisonID>
+            <UpgradeComparisonText>Zone of Control</UpgradeComparisonText>
+            <UpgradeComparisonTooltipValue>1</UpgradeComparisonTooltipValue>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Prestige</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Growth</Provides>
+            <UpgradeComparisonID>3</UpgradeComparisonID>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+            <AITag>Economy</AITag>
+        </AIData>
+        <ArtDef>Art_Palace</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="TownHall_Republic">
+        <DisplayName>Senator's Hall</DisplayName>
+        <Description>The Senator's Hall will increase the borders of a city and reduce its Unrest level.</Description>
+        <RequiresCity>1</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <UpgradesToImprovement>Senate</UpgradesToImprovement>
+        <UpgradeTier>2</UpgradeTier>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <ZOCMinRadius>1</ZOCMinRadius>
+        <ZOCMaxRadius>1</ZOCMaxRadius>
+        <ZOCRadiusTurnsBeforeUpdate>0</ZOCRadiusTurnsBeforeUpdate>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Administration</Attribute>
+        </Prereq>
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <LaborToBuild>208</LaborToBuild>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Unrest</Attribute>
+            <Value>-10</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>-10% Unrest</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+            <UpgradeComparisonText>Unrest</UpgradeComparisonText>
+        </GameModifier>
+        <GameModifier>
+            <Value>1</Value>
+            <Provides>+1 Zone of Control</Provides>
+            <UpgradeComparisonID>2</UpgradeComparisonID>
+            <UpgradeComparisonText>Zone of Control</UpgradeComparisonText>
+            <UpgradeComparisonTooltipValue>1</UpgradeComparisonTooltipValue>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>7</AIPriority>
+            <AITag>Economy</AITag>
+        </AIData>
+        <ArtDef>Art_TownHall</ArtDef>
+    </ImprovementType>
+
+    <ImprovementType InternalName="BellTower_Republic">
+        <DisplayName>Magistrate Tower</DisplayName>
+        <Description>Magistrate Towers keep a city running in an orderly manner by lowering Unrest.</Description>
+        <RequiresCity>1</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <UpgradesToImprovement>TownHall_Republic</UpgradesToImprovement>
+        <UpgradeTier>1</UpgradeTier>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Civics</Attribute>
+        </Prereq>
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <LaborToBuild>128</LaborToBuild>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Unrest</Attribute>
+            <Value>-5</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>-5% Unrest</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+            <UpgradeComparisonText>Unrest</UpgradeComparisonText>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>8</AIPriority>
+            <AITag>Workshop</AITag>
+        </AIData>
+        <ArtDef>Art_BellTower</ArtDef>
+    </ImprovementType>
+
+<!-- wonder turn-offs follow 
+
+    <ImprovementType InternalName="EreogsTower">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType> 
+
+    <ImprovementType InternalName="GreatMill">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+    <ImprovementType InternalName="HostensLibrary">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+    <ImprovementType InternalName="IronWorks">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+    <ImprovementType InternalName="MerchantcrossBazaar">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+    <ImprovementType InternalName="TreasuryVault">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+	
+	-->
+
+<!-- more republic turn-offs start here -->
+
+    <ImprovementType InternalName="WargDen">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+    <ImprovementType InternalName="Stable">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+    <ImprovementType InternalName="Pasture">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+    <ImprovementType InternalName="Orchard">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+    <ImprovementType InternalName="GoldMine">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+    <ImprovementType InternalName="Farm">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+<ImprovementType InternalName="Grocer">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+<ImprovementType InternalName="Bakery">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+<ImprovementType InternalName="Butcher">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+    <ImprovementType InternalName="IrrigatedFarm">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+    <ImprovementType InternalName="CrystalTrove">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+    <ImprovementType InternalName="CrystalQuarry">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+    <ImprovementType InternalName="IronMine">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+    <ImprovementType InternalName="Smelter">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+    <ImprovementType InternalName="Foundry">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+    <ImprovementType InternalName="CrystalMine">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+    <ImprovementType InternalName="ClayQuarry">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+    <ImprovementType InternalName="Apiary">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+    <ImprovementType InternalName="Workshop">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+    <ImprovementType InternalName="Mason">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+    <ImprovementType InternalName="Mill">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+    <ImprovementType InternalName="Garden">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+    <ImprovementType InternalName="Granary">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+    <ImprovementType InternalName="Storehouse">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+    <ImprovementType InternalName="Brewery">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+<ImprovementType InternalName="LaborGuild">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+<ImprovementType InternalName="Market">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+<ImprovementType InternalName="TaxOffice">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+
+<ImprovementType InternalName="LoggingCamp">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+<ImprovementType InternalName="LumberYard">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+<ImprovementType InternalName="TimberMill">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+<ImprovementType InternalName="Merchant">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+
+<ImprovementType InternalName="Pier">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+<ImprovementType InternalName="Docks">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+<ImprovementType InternalName="Harbor">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+<ImprovementType InternalName="Watermill">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+
+<!-- these below will get turned off and replaced with almost a copy, but cost gold per turn
+
+    <ImprovementType InternalName="Outpost_Fortify">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+    <ImprovementType InternalName="Outpost_Armory">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+    <ImprovementType InternalName="Outpost_Caltrops">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+    <ImprovementType InternalName="Outpost_Abbey">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+    <ImprovementType InternalName="Outpost_Stables">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+
+
+    <ImprovementType InternalName="Outpost_Consulate">
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+    </ImprovementType>
+	
+	-->
+
+<!-- Co-op versions of buildings follow -->
+
+    <ImprovementType InternalName="Apiary_Republic">
+        <DisplayName>Labor's Apiary</DisplayName>
+        <Description>Apiaries reduce the Unrest for your entire faction.</Description>
+        <IgnoreDuplicateImpLimit>1</IgnoreDuplicateImpLimit>
+        <RequiresResource>1</RequiresResource>
+        <SupportedResourceType>BeeHive</SupportedResourceType>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <LaborToBuild>96</LaborToBuild>
+        <HideInHiergamenon>1</HideInHiergamenon>
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Additive_Unrest</StrVal>
+            <Value>-3</Value>
+            <Provides>-3% to Unrest for your faction</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Gildar per Season</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+            <AITag>Economy</AITag>
+        </AIData>
+        <ArtDef>Art_Apiary</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="ClayQuarry_Republic">
+        <DisplayName>Labor's Clay Quarry</DisplayName>
+        <Description>Clay Quarries can be built on Clay Pits to add a Material to the attached city.</Description>
+        <IgnoreDuplicateImpLimit>1</IgnoreDuplicateImpLimit>
+        <RequiresResource>1</RequiresResource>
+        <SupportedResourceType>Clay</SupportedResourceType>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <LaborToBuild>80</LaborToBuild>
+        <HideInHiergamenon>1</HideInHiergamenon>
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>TileYieldMaterials</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Material</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Gildar per Season</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+            <AITag>Economy</AITag>
+        </AIData>
+        <ArtDef>Art_ClayQuarry</ArtDef>
+    </ImprovementType>
+
+    <ImprovementType InternalName="CrystalMine_Republic">
+        <DisplayName>Labor's Crystal Mine</DisplayName>
+        <Description>Crystal Mines upgrade from Crystal Quarries. They provide you with additional Crystal every Season.</Description>
+        <IgnoreDuplicateImpLimit>1</IgnoreDuplicateImpLimit>
+        <RequiresCity>1</RequiresCity>
+        <RequiresResource>1</RequiresResource>
+        <SupportedResourceType>Crystal</SupportedResourceType>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <UpgradesToImprovement>CrystalTrove_Republic</UpgradesToImprovement>
+        <UpgradeTier>2</UpgradeTier>
+        <HideInHiergamenon>1</HideInHiergamenon>
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Rituals</Attribute>
+        </Prereq>
+        <LaborToBuild>270</LaborToBuild>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>RefinedCrystal</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Crystal per Season</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Gildar per Season</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+            <AITag>Mining</AITag>
+        </AIData>
+        <ArtDef>Art_CrystalMine</ArtDef>
+    </ImprovementType>
+
+    <ImprovementType InternalName="CrystalQuarry_Republic">
+        <DisplayName>Labor's Crystal Quarry</DisplayName>
+        <Description>Crystal Quarrys can be built on Crystal Deposits. They provide you with Crystal every Season.</Description>
+        <IgnoreDuplicateImpLimit>1</IgnoreDuplicateImpLimit>
+        <RequiresCity>1</RequiresCity>
+        <RequiresResource>1</RequiresResource>
+        <SupportedResourceType>Crystal</SupportedResourceType>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <UpgradesToImprovement>CrystalMine_Republic</UpgradesToImprovement>
+        <UpgradeTier>1</UpgradeTier>
+        <LaborToBuild>120</LaborToBuild>
+        <HideInHiergamenon>1</HideInHiergamenon>
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>RefinedCrystal</Attribute>
+            <Value>0.5</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+0.5 Crystal per Season</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Gildar per Season</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+            <AITag>Mining</AITag>
+        </AIData>
+        <ArtDef>Art_CrystalQuarry</ArtDef>
+    </ImprovementType>
+
+    <ImprovementType InternalName="CrystalTrove_Republic">
+        <DisplayName>Labor's Crystal Trove</DisplayName>
+        <Description>Crystal Troves upgrade from Crystal Mines. They provide you with additional Crystal every Season.</Description>
+        <IgnoreDuplicateImpLimit>1</IgnoreDuplicateImpLimit>
+        <RequiresCity>1</RequiresCity>
+        <RequiresResource>1</RequiresResource>
+        <SupportedResourceType>Crystal</SupportedResourceType>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <UpgradeTier>3</UpgradeTier>
+        <HideInHiergamenon>1</HideInHiergamenon>
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Glyph_Stones</Attribute>
+        </Prereq>
+        <LaborToBuild>594</LaborToBuild>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>RefinedCrystal</Attribute>
+            <Value>2</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+2 Crystal per Season</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Gildar per Season</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+            <AITag>Mining</AITag>
+        </AIData>
+        <ArtDef>Art_CrystalTrove</ArtDef>
+    </ImprovementType>
+
+ <ImprovementType InternalName="Farm_Republic">
+        <DisplayName>Labor's Farm</DisplayName>
+        <Description>Farms can be built on Wild Grain. They provide additional Grain yields for a city.</Description>
+        <IgnoreDuplicateImpLimit>1</IgnoreDuplicateImpLimit>
+        <RequiresResource>1</RequiresResource>
+        <SupportedResourceType>Grain</SupportedResourceType>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <UpgradesToImprovement>IrrigatedFarm_Republic</UpgradesToImprovement>
+        <LaborToBuild>80</LaborToBuild>
+        <HideInHiergamenon>1</HideInHiergamenon>
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>TileYieldGrain</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Grain</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Gildar per Season</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+            <AITag>Prestige</AITag>
+        </AIData>
+        <ArtDef>Art_Farm</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="IrrigatedFarm_Republic">
+        <DisplayName>Labor's Irrigated Farm</DisplayName>
+        <Description>Irrigated Farms upgrade from Farms. Expert crop rotation provide amazing long-term yields for a city.</Description>
+        <IgnoreDuplicateImpLimit>1</IgnoreDuplicateImpLimit>
+        <RequiresResource>1</RequiresResource>
+        <SupportedResourceType>Grain</SupportedResourceType>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <UpgradeTier>2</UpgradeTier>
+        <HideInHiergamenon>1</HideInHiergamenon>
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Agriculture</Attribute>
+        </Prereq>
+        <LaborToBuild>208</LaborToBuild>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>TileYieldGrain</Attribute>
+            <Value>3</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+3 Grain</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Gildar per Season</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+            <AITag>Prestige</AITag>
+        </AIData>
+        <ArtDef>Art_IrrigatedFarm</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="Orchard_Republic">
+        <DisplayName>Labor's Orchard</DisplayName>
+        <Description>Orchards can be built on Fruit Groves. They provide additional Grain yields for a city.</Description>
+        <IgnoreDuplicateImpLimit>1</IgnoreDuplicateImpLimit>
+        <RequiresResource>1</RequiresResource>
+        <SupportedResourceType>Fruit</SupportedResourceType>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <LaborToBuild>80</LaborToBuild>
+        <HideInHiergamenon>1</HideInHiergamenon>
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>TileYieldGrain</Attribute>
+            <Value>2</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+2 Grains</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Gildar per Season</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>8</AIPriority>
+            <AITag>Prestige</AITag>
+        </AIData>
+        <ArtDef>Art_Orchard</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="Foundry_Republic">
+        <DisplayName>Labor's Foundry</DisplayName>
+        <Description>Foundries upgrade from Smelters. They provide you with additional Metal every Season.</Description>
+        <IgnoreDuplicateImpLimit>1</IgnoreDuplicateImpLimit>
+        <RequiresResource>1</RequiresResource>
+        <SupportedResourceType>IronOre</SupportedResourceType>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <UpgradeTier>3</UpgradeTier>
+        <HideInHiergamenon>1</HideInHiergamenon>
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Construction</Attribute>
+        </Prereq>
+        <LaborToBuild>324</LaborToBuild>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Metal</Attribute>
+            <Value>3</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+3 Metal per Season</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Gildar per Season</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>10</AIPriority>
+            <AITag>Crystal</AITag>
+        </AIData>
+        <ArtDef>Art_Foundry</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="GoldMine_Republic">
+        <DisplayName>Labor's Gold Mine</DisplayName>
+        <Description>Gold Mines can be built on Gold Deposits. They produce Gildar every Season.</Description>
+        <IgnoreDuplicateImpLimit>1</IgnoreDuplicateImpLimit>
+        <RequiresCity>1</RequiresCity>
+        <RequiresResource>1</RequiresResource>
+        <SupportedResourceType>GoldDepositBonusType</SupportedResourceType>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <LaborToBuild>120</LaborToBuild>
+        <HideInHiergamenon>1</HideInHiergamenon>
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>4</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+4 Gildar per Season</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+            <AITag>Economy</AITag>
+        </AIData>
+        <ArtDef>Art_ClaimedGoldDeposit</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="Pasture_Republic">
+        <DisplayName>Labor's Pasture</DisplayName>
+        <Description>Pastures can be built on Wild Game and increase the Hit Points of your units.</Description>
+        <IgnoreDuplicateImpLimit>1</IgnoreDuplicateImpLimit>
+        <RequiresResource>1</RequiresResource>
+        <SupportedResourceType>WildGame</SupportedResourceType>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Animal_Husbandry</Attribute>
+        </Prereq>
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <LaborToBuild>128</LaborToBuild>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Gildar per Season</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_UnitStat_HitPoints</StrVal>
+            <Value>3</Value>
+            <Provides>+3% Hit Points for your faction</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+            <AITag>Prestige</AITag>
+        </AIData>
+        <ArtDef>Art_Pasture</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="IronMineRepublic">
+        <DisplayName>Labor's Iron Mine</DisplayName>
+        <Description>Iron Mines can be built on Iron Ore. They provide Metal every Season.</Description>
+        <IgnoreDuplicateImpLimit>1</IgnoreDuplicateImpLimit>
+        <RequiresResource>1</RequiresResource>
+        <SupportedResourceType>IronOre</SupportedResourceType>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <UpgradesToImprovement>Smelter_Republic</UpgradesToImprovement>
+        <UpgradeTier>1</UpgradeTier>
+        <LaborToBuild>80</LaborToBuild>
+        <HideInHiergamenon>1</HideInHiergamenon>
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Metal</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Metal per Season</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Gildar per Season</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+            <AITag>Mining</AITag>
+        </AIData>
+        <ArtDef>Art_IronMine</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="Smelter_Republic">
+        <DisplayName>Labor's Smelter</DisplayName>
+        <Description>Smelters upgrade from Iron Mines. They provide you with additional Metal every Season.</Description>
+        <IgnoreDuplicateImpLimit>1</IgnoreDuplicateImpLimit>
+        <RequiresResource>1</RequiresResource>
+        <SupportedResourceType>IronOre</SupportedResourceType>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <UpgradesToImprovement>Foundry_Republic</UpgradesToImprovement>
+        <UpgradeTier>2</UpgradeTier>
+        <HideInHiergamenon>1</HideInHiergamenon>
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Mining</Attribute>
+        </Prereq>
+        <LaborToBuild>166</LaborToBuild>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Metal</Attribute>
+            <Value>2</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+2 Metal per Season</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Gildar per Season</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>10</AIPriority>
+            <AITag>Workshop</AITag>
+        </AIData>
+        <ArtDef>Art_Smelter</ArtDef>
+    </ImprovementType>
+
+    <ImprovementType InternalName="Stable_Republic">
+        <DisplayName>Labor's Stable</DisplayName>
+        <Description>Stables can be built on Wild Horses. They provide you with a Horse every 5 seasons.</Description>
+        <IgnoreDuplicateImpLimit>1</IgnoreDuplicateImpLimit>
+        <RequiresResource>1</RequiresResource>
+        <SupportedResourceType>Horses</SupportedResourceType>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <UpgradeTier>1</UpgradeTier>
+        <HideInHiergamenon>1</HideInHiergamenon>
+		<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Mounted_Warfare</Attribute>
+        </Prereq>
+        <LaborToBuild>80</LaborToBuild>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Horses</Attribute>
+            <Value>0.2</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Horse per 5 Seasons</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Gildar per Season</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_MOUNT</AIPrefType>
+            <AIPriority>5</AIPriority>
+            <AITag>Farming</AITag>
+        </AIData>
+        <ArtDef>Art_Stable</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="WargDen_Republic">
+        <DisplayName>Labor's Warg Den</DisplayName>
+        <Description>Warg Dens can be built on Wild Wargs. They provide a Warg every 5 seasons.</Description>
+        <IgnoreDuplicateImpLimit>1</IgnoreDuplicateImpLimit>
+        <RequiresResource>1</RequiresResource>
+        <SupportedResourceType>Wargs</SupportedResourceType>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <UpgradeTier>1</UpgradeTier>
+        <HideInHiergamenon>1</HideInHiergamenon>
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Warg_Riding</Attribute>
+        </Prereq>
+        <LaborToBuild>166</LaborToBuild>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Wargs</Attribute>
+            <Value>0.2</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+2 Warg per 10 Seasons</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Gildar per Season</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_MOUNT</AIPrefType>
+            <AIPriority>5</AIPriority>
+            <AITag>Workshop</AITag>
+        </AIData>
+        <ArtDef>Art_Kennel</ArtDef>
+    </ImprovementType>
+
+<!-- non-resource republic versions follow below -->
+
+<ImprovementType InternalName="Workshop_Republic">
+        <DisplayName>Labor's Workshop</DisplayName>
+        <Description>Workshops boost the Production a city gets from its Material yields.</Description>
+        <RequiresCity>1</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <UpgradesToImprovement>Mason_Republic</UpgradesToImprovement>
+        <UpgradeTier>1</UpgradeTier>
+        <HideInHiergamenon>1</HideInHiergamenon>
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Restoration</Attribute>
+        </Prereq>
+        <LaborToBuild>103</LaborToBuild>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>ProductionPerMaterials</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Production per Material</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+            <UpgradeComparisonText>Production per Material</UpgradeComparisonText>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Gildar per Season</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>9</AIPriority>
+            <AITag>Workshop</AITag>
+            <AIEarlyBuildUpMultiplier>10</AIEarlyBuildUpMultiplier>
+        </AIData>
+        <ArtDef>Art_Workshop</ArtDef>
+    </ImprovementType>
+
+ <ImprovementType InternalName="Mason_Republic">
+        <DisplayName>Labor's Mason</DisplayName>
+        <Description>Masons improve the production and construction efficiency of cities they are built in.</Description>
+        <RequiresCity>1</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <UpgradesToImprovement>Mill_Republic</UpgradesToImprovement>
+        <UpgradeTier>2</UpgradeTier>
+        <HideInHiergamenon>1</HideInHiergamenon>
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Construction</Attribute>
+        </Prereq>
+        <LaborToBuild>166</LaborToBuild>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>ProductionPerMaterials</Attribute>
+            <Value>2</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+2 Production per Material</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+            <UpgradeComparisonText>Production per Material</UpgradeComparisonText>
+        </GameModifier>
+        <GameModifier>
+            <ModType>City</ModType>
+            <Attribute>BuildingDiscount</Attribute>
+            <Value>0.2</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+20% Improvement Production</Provides>
+            <UpgradeComparisonID>2</UpgradeComparisonID>
+            <UpgradeComparisonText>Improvement Production</UpgradeComparisonText>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Gildar per Season</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>10</AIPriority>
+            <AITag>Workshop</AITag>
+        </AIData>
+        <ArtDef>Art_Mason</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="Mill_Republic">
+        <DisplayName>Labor's Mill</DisplayName>
+        <Description>Mills improve the production and construction efficiency of cities they are built in.</Description>
+        <RequiresCity>1</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <UpgradeTier>3</UpgradeTier>
+        <UpgradesToImprovement>LaborGuild_Republic</UpgradesToImprovement>
+        <HideInHiergamenon>1</HideInHiergamenon>
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Craftsmanship</Attribute>
+        </Prereq>
+        <LaborToBuild>432</LaborToBuild>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>ProductionPerMaterials</Attribute>
+            <Value>4</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+4 Production per Material</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+            <UpgradeComparisonText>Production per Material</UpgradeComparisonText>
+        </GameModifier>
+        <GameModifier>
+            <ModType>City</ModType>
+            <Attribute>BuildingDiscount</Attribute>
+            <Value>0.2</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+20% Improvement Production</Provides>
+            <UpgradeComparisonID>2</UpgradeComparisonID>
+            <UpgradeComparisonText>Improvement Production</UpgradeComparisonText>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Gildar per Season</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>10</AIPriority>
+            <AITag>Workshop</AITag>
+        </AIData>
+        <ArtDef>Art_Mill</ArtDef>
+    </ImprovementType>
+
+    <ImprovementType InternalName="Merchant_Republic">
+        <DisplayName>Labor's Merchant</DisplayName>
+        <Description>Merchants are a great source of additional Gildar.</Description>
+        <RequiresCity>1</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <LaborToBuild>64</LaborToBuild>
+        <HideInHiergamenon>1</HideInHiergamenon>
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>3</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+3 Gildar per Season</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>12</AIPriority>
+            <AITag>Merchant</AITag>
+        </AIData>
+        <ArtDef>Art_Merchant</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="Garden_Republic">
+        <DisplayName>Labor's Garden</DisplayName>
+        <Description>Gardens provide food for the people, increasing the amount of Food provided by Grain yield in cities they are built in.</Description>
+        <RequiresCity>1</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <UpgradesToImprovement>Granary_Republic</UpgradesToImprovement>
+        <UpgradeTier>1</UpgradeTier>
+        <HideInHiergamenon>1</HideInHiergamenon>
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Restoration</Attribute>
+        </Prereq>
+        <LaborToBuild>193</LaborToBuild>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>FoodPerGrain</Attribute>
+            <Value>15</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+15 Food per Grain</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+            <UpgradeComparisonText>Food per Grain</UpgradeComparisonText>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Gildar per Season</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>10</AIPriority>
+            <AITag>Economy</AITag>
+        </AIData>
+        <ArtDef>Art_Garden</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="Granary_Republic">
+        <DisplayName>Labor's Granary</DisplayName>
+        <Description>Granaries greatly increase the amount of food gathered from each Grain yield in a city.</Description>
+        <RequiresCity>1</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <UpgradesToImprovement>Storehouse_Republic</UpgradesToImprovement>
+        <UpgradeTier>2</UpgradeTier>
+        <HideInHiergamenon>1</HideInHiergamenon>
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Agriculture</Attribute>
+        </Prereq>
+        <LaborToBuild>312</LaborToBuild>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>FoodPerGrain</Attribute>
+            <Value>35</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+35 Food per Grain</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+            <UpgradeComparisonText>Food per Grain</UpgradeComparisonText>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Gildar per Season</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>25</AIPriority>
+            <AITag>Economy</AITag>
+        </AIData>
+        <ArtDef>Art_Granary</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="Storehouse_Republic">
+        <DisplayName>Labor's Storehouse</DisplayName>
+        <Description>By storing your harvest, and encouraging crop rotation and superior agricultural science, Storehouses will allow your farmers to produce much more Food for each of your Grain yields.</Description>
+        <RequiresCity>1</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <UpgradeTier>3</UpgradeTier>
+        <HideInHiergamenon>1</HideInHiergamenon>
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Animal_Husbandry</Attribute>
+        </Prereq>
+        <LaborToBuild>432</LaborToBuild>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>FoodPerGrain</Attribute>
+            <Value>50</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+50 Food per Grain</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+            <UpgradeComparisonText>Food per Grain</UpgradeComparisonText>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Gildar per Season</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>25</AIPriority>
+            <AITag>Economy</AITag>
+        </AIData>
+        <ArtDef>Art_Storehouse</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="Market_Republic">
+        <DisplayName>Labor's Market</DisplayName>
+        <Description>Markets provide additional Gildar every Season in cities they are built in.</Description>
+        <RequiresCity>1</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>TradeGuild</RequiredImprovement>
+        <UpgradesToImprovement>TaxOffice_Republic</UpgradesToImprovement>
+        <UpgradeTier>1</UpgradeTier>
+        <HideInHiergamenon>1</HideInHiergamenon>
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Trading</Attribute>
+        </Prereq>
+        <LaborToBuild>249</LaborToBuild>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>5</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+5 Gildar per Season</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>12</AIPriority>
+            <AITag>Merchant</AITag>
+        </AIData>
+        <ArtDef>Art_Market</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="TaxOffice_Republic">
+        <DisplayName>Labor's Tax Office</DisplayName>
+        <Description>Tax Offices increase the Gildar production of any city they are constructed in. But it will increase local unrest by 3%, so choose wisely when you build it.</Description>
+        <RequiresCity>1</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>TradeGuild</RequiredImprovement>
+        <UpgradeTier>2</UpgradeTier>
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Cooperation</Attribute>
+        </Prereq>
+        <LaborToBuild>486</LaborToBuild>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>5</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+5 Gildar per Season</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <IsProductionQueueEmpty>1</IsProductionQueueEmpty>
+            <Provides>+30% Gildar when Producing Wealth</Provides>
+            <Calculate InternalName="Calc" ValueOwner="OwnerCity">
+                <Expression><![CDATA[[Constructing_ProduceWealth] * 0.3]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value" ValueOwner="OwnerCity">
+                <Expression><![CDATA[[Calc] + 1]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Unrest</Attribute>
+            <Value>3</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+3% Unrest</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>9</AIPriority>
+            <AITag>Economy</AITag>
+        </AIData>
+        <ArtDef>Art_TaxOffice</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="LoggingCamp_Republic">
+        <DisplayName>Labor's Logging Camp</DisplayName>
+        <Description>Logging Camps provide additional Production per Material yield.  They can only be built on forests.</Description>
+        <RequiresCity>1</RequiresCity>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <UpgradesToImprovement>LumberYard_Republic</UpgradesToImprovement>
+        <UpgradeTier>1</UpgradeTier>
+        <LaborToBuild>48</LaborToBuild>
+        <HideInHiergamenon>1</HideInHiergamenon>  
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>ProductionPerMaterials</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Production per Material</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+            <UpgradeComparisonText>Production per Material</UpgradeComparisonText>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Gildar per Season</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+            <AITag>Workshop</AITag>
+        </AIData>
+        <ArtDef>Art_LoggingCamp</ArtDef>
+    </ImprovementType>
+
+    <ImprovementType InternalName="LumberYard_Republic">
+        <DisplayName>Labor's Lumber Yard</DisplayName>
+        <Description>Lumber Yards upgrade from Logging Camps. They provide additional Production per Material yield.</Description>
+        <RequiresCity>1</RequiresCity>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <UpgradesToImprovement>TimberMill_Republic</UpgradesToImprovement>
+        <UpgradeTier>2</UpgradeTier>
+        <HideInHiergamenon>1</HideInHiergamenon>  
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Weaponry</Attribute>
+        </Prereq>
+        <LaborToBuild>166</LaborToBuild>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>ProductionPerMaterials</Attribute>
+            <Value>2</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+2 Production per Material</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+            <UpgradeComparisonText>Production per Material</UpgradeComparisonText>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Gildar per Season</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+            <AITag>Workshop</AITag>
+        </AIData>
+        <ArtDef>Art_LumberYard</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="TimberMill_Republic">
+        <DisplayName>Labor's Timber Mill</DisplayName>
+        <Description>Timber Mills upgrade from Lumber Yards. They provide additional Production per Material yield.</Description>
+        <RequiresCity>1</RequiresCity>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <UpgradeTier>3</UpgradeTier>
+        <HideInHiergamenon>1</HideInHiergamenon>  
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Weaponsmithing</Attribute>
+        </Prereq>
+        <LaborToBuild>432</LaborToBuild>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>ProductionPerMaterials</Attribute>
+            <Value>3</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+3 Production per Material</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+            <UpgradeComparisonText>Production per Material</UpgradeComparisonText>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Gildar per Season</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+            <AITag>Workshop</AITag>
+        </AIData>
+        <ArtDef>Art_TimberMill</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="Pier_Republic">
+        <DisplayName>Labor's Pier</DisplayName>
+        <Description>Piers can only be built on rivers. They increase Food in cities they are constructed in.</Description>
+        <RequiresCity>1</RequiresCity>
+        <PreferredTerrain>River</PreferredTerrain>
+        <EncloseInCityWalls>0</EncloseInCityWalls>
+        <UpgradesToImprovement>Docks_Republic</UpgradesToImprovement>
+        <UpgradeTier>1</UpgradeTier>
+        <LaborToBuild>96</LaborToBuild>
+        <HideInHiergamenon>1</HideInHiergamenon>  
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>FoodPerGrain</Attribute>
+            <Value>5</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+5 Food per Grain</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+            <UpgradeComparisonText>Food per Grain</UpgradeComparisonText>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Gildar per Season</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>10</AIPriority>
+            <AITag>Economy</AITag>
+        </AIData>
+        <ArtDef>Art_Pier</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="Docks_Republic">
+        <DisplayName>Labor's Docks</DisplayName>
+        <Description>Docks are upgraded from Piers. They increase Gildar and Food in cities they are constructed in.</Description>
+        <RequiresCity>1</RequiresCity>
+        <PreferredTerrain>River</PreferredTerrain>
+        <EncloseInCityWalls>0</EncloseInCityWalls>
+        <UpgradesToImprovement>Harbor_Republic</UpgradesToImprovement>
+        <UpgradeTier>2</UpgradeTier>
+        <HideInHiergamenon>1</HideInHiergamenon>  
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Civics</Attribute>
+        </Prereq>
+        <LaborToBuild>208</LaborToBuild>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>FoodPerGrain</Attribute>
+            <Value>5</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+5 Food per Grain</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+            <UpgradeComparisonText>Food per Grain</UpgradeComparisonText>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>1.1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+10% Gildar</Provides>
+            <UpgradeComparisonID>2</UpgradeComparisonID>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Gildar per Season</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>10</AIPriority>
+            <AITag>Economy</AITag>
+        </AIData>
+        <ArtDef>Art_Docks</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="Harbor_Republic">
+        <DisplayName>Labor's Harbor</DisplayName>
+        <Description>Harbors are upgraded from Docks. They increase Gildar and Food in cities they are constructed in.</Description>
+        <RequiresCity>1</RequiresCity>
+        <PreferredTerrain>River</PreferredTerrain>
+        <EncloseInCityWalls>0</EncloseInCityWalls>
+        <UpgradesToImprovement>Watermill_Republic</UpgradesToImprovement>
+        <UpgradeTier>3</UpgradeTier>
+        <HideInHiergamenon>1</HideInHiergamenon>  
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Trading</Attribute>
+        </Prereq>
+        <LaborToBuild>540</LaborToBuild>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>FoodPerGrain</Attribute>
+            <Value>10</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+10 Food per Grain</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+            <UpgradeComparisonText>Food per Grain</UpgradeComparisonText>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>1.2</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+20% Gildar</Provides>
+            <UpgradeComparisonID>2</UpgradeComparisonID>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Gildar per Season</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>10</AIPriority>
+            <AITag>Economy</AITag>
+        </AIData>
+        <ArtDef>Art_Harbor</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="Watermill_Republic">
+        <DisplayName>Labor's Watermill</DisplayName>
+        <Description>Watermills are upgraded from Harbors. They increase Gildar, Production and Food in cities they are constructed in.</Description>
+        <RequiresCity>1</RequiresCity>
+        <PreferredTerrain>River</PreferredTerrain>
+        <EncloseInCityWalls>0</EncloseInCityWalls>
+        <UpgradeTier>4</UpgradeTier>
+        <HideInHiergamenon>1</HideInHiergamenon>  
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Allegiance</Type>
+            <Attribute>Kingdom</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Economics</Attribute>
+        </Prereq>
+        <LaborToBuild>1124</LaborToBuild>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>FoodPerGrain</Attribute>
+            <Value>15</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+15 Food per Grain</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+            <UpgradeComparisonText>Food per Grain</UpgradeComparisonText>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>1.2</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+20% Gildar</Provides>
+            <UpgradeComparisonID>2</UpgradeComparisonID>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>ProductionPerMaterials</Attribute>
+            <Value>3</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+3 Production per Material</Provides>
+            <UpgradeComparisonID>3</UpgradeComparisonID>
+            <UpgradeComparisonText>Production per Material</UpgradeComparisonText>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Gildar per Season</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>10</AIPriority>
+            <AITag>Workshop</AITag>
+        </AIData>
+        <ArtDef>Watermill_ArtDef</ArtDef>
+    </ImprovementType>
+
+ <ImprovementType InternalName="Grocer_Republic">
+        <DisplayName>Labor's Grocer</DisplayName>
+        <Description>Grocers increase the amount of food cities gain from Grain yields across the nation.</Description>
+        <RequiresCity>1</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>TradeGuild</RequiredImprovement>
+        <UpgradesToImprovement>Bakery_Republic</UpgradesToImprovement>
+        <UpgradeTier>1</UpgradeTier>
+        <LaborToBuild>208</LaborToBuild>
+        <HideInHiergamenon>1</HideInHiergamenon>  
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Additive_FoodPerGrain</StrVal>
+            <Value>5</Value>
+            <Provides>+5 Food per Grain for your Faction</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+            <UpgradeComparisonText>Faction Food per Grain</UpgradeComparisonText>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Gildar per Season</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>15</AIPriority>
+            <AITag>Economy</AITag>
+        </AIData>
+        <UnlocksShopItem>Bread</UnlocksShopItem>
+        <ArtDef>Art_Grocer</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="Bakery_Republic">
+        <DisplayName>Labor's Bakery</DisplayName>
+        <Description>Bakeries increase the amount of Food a faction gets from Grain tile yields.</Description>
+        <RequiresCity>1</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>TradeGuild</RequiredImprovement>
+        <UpgradesToImprovement>Butcher_Republic</UpgradesToImprovement>
+        <UpgradeTier>2</UpgradeTier>
+        <HideInHiergamenon>1</HideInHiergamenon>  
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Agriculture</Attribute>
+        </Prereq>
+        <LaborToBuild>312</LaborToBuild>
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Additive_FoodPerGrain</StrVal>
+            <Value>10</Value>
+            <Provides>+10 Food per Grain for your Faction</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+            <UpgradeComparisonText>Faction Food per Grain</UpgradeComparisonText>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Gildar per Season</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>20</AIPriority>
+            <AITag>Economy</AITag>
+        </AIData>
+        <UnlocksShopItem>Bread</UnlocksShopItem>
+        <ArtDef>Art_Bakery</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="Butcher_Republic">
+        <DisplayName>Labor's Butcher</DisplayName>
+        <Description>Republic butchers salt-pack meat and provide expert stew and meat-bread recipes, greatly increasing the amount of Food a faction gets from Grain tile yields.</Description>
+        <RequiresCity>1</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>TradeGuild</RequiredImprovement>
+        <UpgradesToImprovement>Brewery_Republic</UpgradesToImprovement>
+        <UpgradeTier>3</UpgradeTier>
+        <HideInHiergamenon>1</HideInHiergamenon>  
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Animal_Husbandry</Attribute>
+        </Prereq>
+        <LaborToBuild>600</LaborToBuild>
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Additive_FoodPerGrain</StrVal>
+            <Value>20</Value>
+            <Provides>+20 Food per Grain for your faction</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+            <UpgradeComparisonText>Faction Food per Grain</UpgradeComparisonText>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Gildar per Season</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>15</AIPriority>
+            <AITag>Economy</AITag>
+        </AIData>
+        <UnlocksShopItem>Bread</UnlocksShopItem>
+        <ArtDef>Art_Butcher</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="Brewery_Republic">
+        <DisplayName>Labor's Brewery</DisplayName>
+        <Description>The Brewery will greatly increase the amount of Food a faction gets from Grain tile yields.</Description>
+        <AllowedPerFaction>1</AllowedPerFaction>
+        <RequiresCity>1</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>TradeGuild</RequiredImprovement>
+        <UpgradeTier>4</UpgradeTier>
+        <HideInHiergamenon>1</HideInHiergamenon>  
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Entertainment</Attribute>
+        </Prereq>
+        <LaborToBuild>1406</LaborToBuild>
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Additive_FoodPerGrain</StrVal>
+            <Value>40</Value>
+            <Provides>+40 Food per Grain for your faction</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+            <UpgradeComparisonText>Faction Food per Grain</UpgradeComparisonText>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Gildar per Season</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>20</AIPriority>
+            <AITag>Prestige</AITag>
+        </AIData>
+        <UnlocksShopItem>Bread</UnlocksShopItem>
+        <ArtDef>Art_Brewery</ArtDef>
+    </ImprovementType>
+
+<!-- outpost new structures
+
+<ImprovementType InternalName="Outpost_Abbey_Republic">
+        <DisplayName>Abbey</DisplayName>
+        <Description>Decreases the cost of tactical spells cast in this outpost's borders.</Description>
+        <HideInBuildList>1</HideInBuildList>
+        <IsOutpostUpgrade>1</IsOutpostUpgrade>
+        <OutpostBonuses_FriendlyOnly>1</OutpostBonuses_FriendlyOnly>
+        <HideInHiergamenon>1</HideInHiergamenon>  
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Rituals</Attribute>
+        </Prereq>
+        <LaborToBuild>208</LaborToBuild>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_TacticalSpellManaCost_Multiplier</StrVal>
+            <Value>-0.5</Value>
+            <Provides>Halves the cost of tactical spells</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>-1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>-1 Gildar per Season</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+        </GameModifier>
+        <ArtDef>Art_Outpost_Abbey</ArtDef>
+    </ImprovementType>
+    
+    <ImprovementType InternalName="Outpost_Armory_Republic">
+        <DisplayName>Armory</DisplayName>
+        <Description>Increases the attack of friendly units in this outpost's borders.</Description>
+        <HideInBuildList>1</HideInBuildList>
+        <IsOutpostUpgrade>1</IsOutpostUpgrade>
+        <OutpostBonuses_FriendlyOnly>1</OutpostBonuses_FriendlyOnly>
+        <HideInHiergamenon>1</HideInHiergamenon>  
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <LaborToBuild>80</LaborToBuild>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>25</Value>
+            <Operator>%</Operator>
+            <Provides>+25% Attack to friendly units in Zone of Control</Provides>
+        </GameModifier>        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>-1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>-1 Gildar per Season</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+        </GameModifier>
+        <ArtDef>Art_Outpost_Armory</ArtDef>
+    </ImprovementType>
+
+    <ImprovementType InternalName="Outpost_Caltrops_Republic">
+        <DisplayName>Caltrops</DisplayName>
+        <Description>Reduces the movement of enemy units in this outpost's borders.</Description>
+        <HideInBuildList>1</HideInBuildList>
+        <IsOutpostUpgrade>1</IsOutpostUpgrade>
+        <OutpostBonuses_EnemyOnly>1</OutpostBonuses_EnemyOnly>
+        <HideInHiergamenon>1</HideInHiergamenon>  
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Siege_Weapons</Attribute>
+        </Prereq>
+        <LaborToBuild>208</LaborToBuild>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>MovementCostChange</Attribute>
+            <Value>2</Value>
+            <Operator>x</Operator>
+            <Provides>Halves enemy units movement in Zone of Control</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>-1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>-1 Gildar per Season</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+        </GameModifier>
+        <ArtDef>Art_Outpost_Caltrops</ArtDef>
+    </ImprovementType>
+
+    <ImprovementType InternalName="Outpost_Consulate_Republic">
+        <DisplayName>Labor's Consulate</DisplayName>
+        <Description>Increases the Growth of the city attached to this outpost.</Description>
+        <HideInBuildList>1</HideInBuildList>
+        <IsOutpostUpgrade>1</IsOutpostUpgrade>
+        <HideInHiergamenon>1</HideInHiergamenon>  
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Cooperation</Attribute>
+        </Prereq>
+        <LaborToBuild>540</LaborToBuild>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Prestige</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Growth to the attached city</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Gildar per Season</Provides>
+        </GameModifier>
+        <ArtDef>Art_Outpost_Consulate</ArtDef>
+    </ImprovementType>
+
+    <ImprovementType InternalName="Outpost_Fortify_Republic">
+        <DisplayName>Fortify</DisplayName>
+        <Description>Increases the defense of friendly units in this outpost's borders.</Description>
+        <HideInBuildList>1</HideInBuildList>
+        <IsOutpostUpgrade>1</IsOutpostUpgrade>
+        <OutpostBonuses_FriendlyOnly>1</OutpostBonuses_FriendlyOnly>
+        <HideInHiergamenon>1</HideInHiergamenon>  
+        <LaborToBuild>80</LaborToBuild>
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <Value>25</Value>
+            <Operator>%</Operator>
+            <Provides>+25% Defense to friendly units in Zone of Control</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>-1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>-1 Gildar per Season</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+        </GameModifier>
+        <ArtDef>Art_Outpost_Fortify</ArtDef>
+    </ImprovementType>
+
+    <ImprovementType InternalName="Outpost_Stables_Republic">
+        <DisplayName>Stables</DisplayName>
+        <Description>Increases movement of friendly units in this outpost's borders.</Description>
+        <HideInBuildList>1</HideInBuildList>
+        <IsOutpostUpgrade>1</IsOutpostUpgrade>
+        <OutpostBonuses_FriendlyOnly>1</OutpostBonuses_FriendlyOnly>
+        <HideInHiergamenon>1</HideInHiergamenon>  
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Mounted_Warfare</Attribute>
+        </Prereq>
+        <LaborToBuild>166</LaborToBuild>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>MovementCostChange</Attribute>
+            <Value>0.5</Value>
+            <Operator>x</Operator>
+            <Provides>Doubles friendly units movement in Zone of Control</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>-1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>-1 Gildar per Season</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+        </GameModifier>
+        <ArtDef>Art_Outpost_Stables</ArtDef>
+    </ImprovementType>
+	
+	-->
+
+<!-- Below are the Republic-only buildings for towns and conclaves -->
+
+<ImprovementType InternalName="CivilCourt">
+        <DisplayName>Civil Court</DisplayName>
+        <Description>This court gives your local populace the means to resolve disputes non-violently and without getting the local Senator's administration involved. Peer-juries pass verdicts, and the court's rulings can be recognized by the Senate, in the case of appeals.</Description>
+        <RequiresCity>1</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain> 
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>TradeGuild</RequiredImprovement>       
+		<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq> 
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Civics</Attribute>
+        </Prereq>
+        <LaborToBuild>120</LaborToBuild>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Unrest</Attribute>
+            <Value>-5</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>-5% Unrest</Provides>
+            <UpgradeComparisonText>Unrest</UpgradeComparisonText>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>ProductionPerMaterials</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Production per Material</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+            <UpgradeComparisonText>Production per Material</UpgradeComparisonText>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>8</AIPriority>
+            <AITag>Workshop</AITag>
+        </AIData>
+        <ArtDef>Art_CivilCourt</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="CommunityNewspaper">
+        <DisplayName>Community News Press</DisplayName>
+        <Description>A news press run by laborers and farmers, it keeps your citizens aware of the Senate's activities and invested in the society.</Description>
+        <RequiresCity>1</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain> 
+        <UpgradesToImprovement>PressGuild</UpgradesToImprovement>
+        <UpgradeTier>1</UpgradeTier> 
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>TradeGuild</RequiredImprovement>       
+		<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq> 
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Literacy</Attribute>
+        </Prereq>
+        <LaborToBuild>300</LaborToBuild>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Unrest</Attribute>
+            <Value>-5</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>-5% Unrest</Provides>
+            <UpgradeComparisonText>Unrest</UpgradeComparisonText>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Fame</Attribute>
+            <Value>5</Value>
+            <Provides>+5 Fame</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>8</AIPriority>
+            <AITag>Workshop</AITag>
+        </AIData>
+        <ArtDef>Art_Almshouse</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="PressGuild">
+        <DisplayName>Republic Press Guild</DisplayName>
+        <Description>A guild of reporters who anazlyze and report on what is happening in the Republic, aggregating reports from the local presses. The Senators would rather they took some gildar and kept quiet, but your people appreciate the agendas of Senators being put into daylight. So much shared information also boosts your whole Republic's trade and research.</Description>
+        <AllowedPerFaction>1</AllowedPerFaction>
+        <RequiresCity>1</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <UpgradeTier>2</UpgradeTier> 
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>TradeGuild</RequiredImprovement>       
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq> 
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Guilds</Attribute>
+        </Prereq>
+        <LaborToBuild>800</LaborToBuild>
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Additive_Unrest</StrVal>
+            <Value>-10</Value>
+            <Provides>-10% Unrest in all your cities</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Gold</StrVal>
+            <Value>5</Value>
+            <Provides>+5% Gildar in all your cities</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Research</StrVal>
+            <Value>5</Value>
+            <Provides>+5% Research in all your cities</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Fame</Attribute>
+            <Value>10</Value>
+            <Provides>+10 Fame</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>8</AIPriority>
+            <AITag>Workshop</AITag>
+        </AIData>
+        <ArtDef>Art_Almshouse</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="ExchangeForum">
+        <DisplayName>Exchange Forum</DisplayName>
+        <Description>A gathering of laborers, farmers, and merchants that barter and make offers to match surplus with demand. This exchange gives price signals to your Labor's economy, increasing efficiency and reducing waste.</Description>
+        <RequiresCity>1</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <UpgradesToImprovement>ExchangeGuild</UpgradesToImprovement>
+        <UpgradeTier>1</UpgradeTier> 
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>TradeGuild</RequiredImprovement>       
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq> 
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Trading</Attribute>
+        </Prereq>
+        <LaborToBuild>120</LaborToBuild>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Production</Attribute>
+            <Value>1.10</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+10% Production in this city</Provides>
+            <UpgradeComparisonID>2</UpgradeComparisonID>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>1.1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+10% Gildar in this city</Provides>
+            <UpgradeComparisonID>2</UpgradeComparisonID>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Food</Attribute>
+            <Value>1.1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+10% Food in this city</Provides>
+            <UpgradeComparisonID>3</UpgradeComparisonID>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>8</AIPriority>
+            <AITag>Workshop</AITag>
+        </AIData>
+        <ArtDef>Art_ExchangeForum</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="ExchangeGuild">
+        <DisplayName>Exchange Guild</DisplayName>
+        <Description>A more organized connection between local exchanges, this guild allows the price signals of each city to reach every city, making your economy more self-aware and efficient.</Description>
+        <AllowedPerFaction>1</AllowedPerFaction>
+        <RequiresCity>1</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain> 
+        <UpgradeTier>2</UpgradeTier> 
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>TradeGuild</RequiredImprovement>       
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Economics</Attribute>
+        </Prereq> 
+        <LaborToBuild>800</LaborToBuild>
+                   <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Production</Attribute>
+            <Value>1.20</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+20% Production in this city</Provides>
+            <UpgradeComparisonID>2</UpgradeComparisonID>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>1.2</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+20% Gildar in this city</Provides>
+            <UpgradeComparisonID>2</UpgradeComparisonID>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Food</Attribute>
+            <Value>1.2</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+20% Food in this city</Provides>
+            <UpgradeComparisonID>3</UpgradeComparisonID>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Additive_ProductionPerMaterials</StrVal>
+            <Value>2</Value>
+            <Provides>+2 Production per Material in all your cities</Provides>
+            <UpgradeComparisonID>3</UpgradeComparisonID>
+            <UpgradeComparisonText>Faction Prod. per Material</UpgradeComparisonText>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Additive_FoodPerGrain</StrVal>
+            <Value>15</Value>
+            <Provides>+15 Food per Grain for your faction</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+            <UpgradeComparisonText>Faction Food per Grain</UpgradeComparisonText>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Gold</StrVal>
+            <Value>10</Value>
+            <Provides>+10% Gildar in all your cities</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Fame</Attribute>
+            <Value>10</Value>
+            <Provides>+10 Fame</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>1000</AIPriority>
+            <AITag>Mining</AITag>
+        </AIData>
+        <ArtDef>Art_Bank</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="LaborArena">
+        <DisplayName>Labor Arena</DisplayName>
+        <Description>Contests of efficiency and production quality between craftsmen, artisans, and farmer drives efficiency, and new economic discovery.</Description>
+        <RequiresCity>1</RequiresCity>
+        <AllowedPerFaction>1</AllowedPerFaction>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain> 
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>TradeGuild</RequiredImprovement>       
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Craftsmanship</Attribute>
+        </Prereq>  
+        <LaborToBuild>740</LaborToBuild>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Research</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Research</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Additive_ProductionPerMaterials</StrVal>
+            <Value>1</Value>
+            <Provides>+1 Production per Material in all your cities</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Additive_FoodPerGrain</StrVal>
+            <Value>5</Value>
+            <Provides>+5 Food per Grain for your faction</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Fame</Attribute>
+            <Value>10</Value>
+            <Provides>+10 Fame</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>1000</AIPriority>
+            <AITag>Mining</AITag>
+        </AIData>
+        <ArtDef>Art_GreatArena</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="PensionGuild">
+        <DisplayName>Pension Guild</DisplayName>
+        <Description>An bank for labor pensions, as well as a credit union for farmers and mills. The pension guild ensures that pension promises for career labor are met, and helps credit flow to your production economy. This strengthens the social contract, and encourages harder work.</Description>
+        <AllowedPerFaction>1</AllowedPerFaction>
+        <RequiresCity>1</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain> 
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>TradeGuild</RequiredImprovement>       
+		<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Economics</Attribute>
+        </Prereq>  
+        <LaborToBuild>1000</LaborToBuild>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>4</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+4 Gildar per Season locally</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Gold</StrVal>
+            <Value>20</Value>
+            <Provides>+20% Gildar in all your cities</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Additive_ProductionPerMaterials</StrVal>
+            <Value>2</Value>
+            <Provides>+2 Production per Material in all your cities</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Additive_Unrest</StrVal>
+            <Value>-20</Value>
+            <Provides>-20% Unrest in all your cities</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>1000</AIPriority>
+            <AITag>Mining</AITag>
+        </AIData>
+        <ArtDef>Art_Archivist</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="AcademicArena">
+        <DisplayName>Academic Arena</DisplayName>
+        <Description>A competition of reason, deduction, and technology. Boosts research in every city +5%.</Description>
+        <AllowedPerFaction>1</AllowedPerFaction>
+        <RequiresCity>1</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>Conclave</RequiredImprovement>        
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Higher_Education</Attribute>
+        </Prereq>
+        <LaborToBuild>750</LaborToBuild>
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Research</StrVal>
+            <Value>5</Value>
+            <Provides>+5% Research in all your cities</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>1000</AIPriority>
+            <AITag>Mining</AITag>
+        </AIData>
+        <ArtDef>Art_GreatArena</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="SanitationSystem_Conclave">
+        <DisplayName>Crude Sanitation System</DisplayName>
+        <Description>A network of plumbing that allows human excrement to be hygenically removed from the denser population centers. Increases growth and allows for denser populations, which in turn makes food distribution more efficient.</Description>
+        <RequiresCity>1</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>Conclave</RequiredImprovement>     
+		<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Craftsmanship</Attribute>
+        </Prereq>
+        <LaborToBuild>950</LaborToBuild>
+            <GameModifier>
+                <ModType>Resource</ModType>
+                <Attribute>Prestige</Attribute>
+                <Value>1</Value>
+				<PerTurn>1</PerTurn>
+                <Provides>+1 Growth</Provides>
+            </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Food</Attribute>
+            <Value>1.1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+10% Food in this city</Provides>
+            <UpgradeComparisonID>3</UpgradeComparisonID>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>1000</AIPriority>
+            <AITag>Mining</AITag>
+        </AIData>
+        <ArtDef>Art_Sewer</ArtDef>
+    </ImprovementType>
+	
+	<ImprovementType InternalName="SanitationSystem_Town">
+        <DisplayName>Crude Sanitation System</DisplayName>
+        <Description>A network of plumbing that allows human excrement to be hygenically removed from the denser population centers. Increases growth and allows for denser populations, which in turn makes food distribution more efficient.</Description>
+        <RequiresCity>1</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>TradeGuild</RequiredImprovement>
+		<HideInHiergamenon>1</HideInHiergamenon> 		
+		<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Craftsmanship</Attribute>
+        </Prereq>
+        <LaborToBuild>950</LaborToBuild>
+            <GameModifier>
+                <ModType>Resource</ModType>
+                <Attribute>Prestige</Attribute>
+                <Value>1</Value>
+				<PerTurn>1</PerTurn>
+                <Provides>+1 Growth</Provides>
+            </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Food</Attribute>
+            <Value>1.1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+10% Food in this city</Provides>
+            <UpgradeComparisonID>3</UpgradeComparisonID>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>1000</AIPriority>
+            <AITag>Mining</AITag>
+        </AIData>
+        <ArtDef>Art_Sewer</ArtDef>
+    </ImprovementType>
+	
+<!-- 
+<ImprovementType InternalName="AgriculturalUniversity_Town">
+        <DisplayName>Agricultural University</DisplayName>
+        <Description>An academic institution that teaches farmers the advanced practices of crop rotation, composting, pest control and irrigation to maximize your Republic's food output.</Description>
+        <RequiresCity>1</RequiresCity>
+        <AllowedPerFaction>1</AllowedPerFaction>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>TradeGuild</RequiredImprovement>
+        <HideInHiergamenon>1</HideInHiergamenon> 		
+		<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Higher_Education</Attribute>
+        </Prereq>
+        <LaborToBuild>550</LaborToBuild>
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Additive_FoodPerGrain</StrVal>
+            <Value>75</Value>
+            <Provides>+75 Food per Grain for your faction</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>1000</AIPriority>
+            <AITag>Mining</AITag>
+        </AIData>
+        <ArtDef>Art_TenfellUniversity</ArtDef>
+    </ImprovementType>
+	
+	-->
+
+<ImprovementType InternalName="TradeAcademy_Conclave">
+        <DisplayName>Trade Academy</DisplayName>
+        <Description>A school not for aristocrats or academics, but the common laborer, that he might find gainful employment and be a fully productive citizen.</Description>
+        <RequiresCity>1</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>Conclave</RequiredImprovement> 
+        <HideInHiergamenon>1</HideInHiergamenon>       
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Administration</Attribute>
+        </Prereq> 
+        <LaborToBuild>150</LaborToBuild>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>ProductionPerMaterials</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Production per Material</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+            <UpgradeComparisonText>Production per Material</UpgradeComparisonText>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Unrest</Attribute>
+            <Value>-5</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>-5% Unrest in this city</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+            <UpgradeComparisonText>Unrest</UpgradeComparisonText>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>1000</AIPriority>
+            <AITag>Mining</AITag>
+        </AIData>
+        <ArtDef>Art_School</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="TradeAcademy_Town">
+        <DisplayName>Trade Academy</DisplayName>
+        <Description>A school not for aristocrats or academics, but the common laborer, that he might find gainful employment and be a fully productive citizen.</Description>
+        <RequiresCity>1</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>TradeGuild</RequiredImprovement>       
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Administration</Attribute>
+        </Prereq> 
+        <LaborToBuild>150</LaborToBuild>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>ProductionPerMaterials</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Production per Material</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+            <UpgradeComparisonText>Production per Material</UpgradeComparisonText>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Unrest</Attribute>
+            <Value>-5</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>-5% Unrest in this city</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+            <UpgradeComparisonText>Unrest</UpgradeComparisonText>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>1000</AIPriority>
+            <AITag>Mining</AITag>
+        </AIData>
+        <ArtDef>Art_School</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="CommunityNewspaper_Conclave">
+        <DisplayName>Community News Press</DisplayName>
+        <Description>A news press run by laborers and farmers, it keeps your citizens aware of the Senate's activities and invested in the society.</Description>
+        <RequiresCity>1</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain> 
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>Conclave</RequiredImprovement>
+        <HideInHiergamenon>1</HideInHiergamenon>       
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq> 
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Literacy</Attribute>
+        </Prereq>
+        <LaborToBuild>300</LaborToBuild>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Unrest</Attribute>
+            <Value>-5</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>-5% Unrest</Provides>
+            <UpgradeComparisonText>Unrest</UpgradeComparisonText>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Fame</Attribute>
+            <Value>5</Value>
+            <Provides>+5 Fame</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>8</AIPriority>
+            <AITag>Workshop</AITag>
+        </AIData>
+        <ArtDef>Art_Almshouse</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="ExchangeForum_Conclave">
+        <DisplayName>Exchange Forum</DisplayName>
+        <Description>A gathering of laborers, farmers, and merchants that barter and make offers to match surplus with demand. This exchange gives price signals to your Labor's economy, increasing efficiency and reducing waste.</Description>
+        <RequiresCity>1</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>Conclave</RequiredImprovement>
+        <HideInHiergamenon>1</HideInHiergamenon>       
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq> 
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Trading</Attribute>
+        </Prereq>
+        <LaborToBuild>120</LaborToBuild>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Production</Attribute>
+            <Value>1.10</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+10% Production in this city</Provides>
+            <UpgradeComparisonID>2</UpgradeComparisonID>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>1.1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+10% Gildar in this city</Provides>
+            <UpgradeComparisonID>2</UpgradeComparisonID>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Food</Attribute>
+            <Value>1.1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+10% Food in this city</Provides>
+            <UpgradeComparisonID>3</UpgradeComparisonID>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>8</AIPriority>
+            <AITag>Workshop</AITag>
+        </AIData>
+        <ArtDef>Art_ExchangeForum<</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="CivilCourt_Conclave">
+        <DisplayName>Civil Court</DisplayName>
+        <Description>This court gives your local populace the means to resolve disputes non-violently and without getting the local Senator's administration involved. Peer-juries pass verdicts, and the court's rulings can be recognized by the Senate, in the case of appeals.</Description>
+        <RequiresCity>1</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain> 
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>Conclave</RequiredImprovement>
+        <HideInHiergamenon>1</HideInHiergamenon>        
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq> 
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Civics</Attribute>
+        </Prereq>
+        <LaborToBuild>120</LaborToBuild>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Unrest</Attribute>
+            <Value>-5</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>-5% Unrest</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+            <UpgradeComparisonText>Unrest</UpgradeComparisonText>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>ProductionPerMaterials</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Production per Material</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+            <UpgradeComparisonText>Production per Material</UpgradeComparisonText>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>8</AIPriority>
+            <AITag>Workshop</AITag>
+        </AIData>
+        <ArtDef>Art_CivilCourt</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="LaborGuild_Republic">
+        <DisplayName>Labor Union Guild</DisplayName>
+        <Description>Competing parties of labor meet here, seeking to place workers where needed and negotiate with Senators seeking new laws. Ultimately this improves the quality of life for your labor force, and the wealth of your society.</Description>
+        <AllowedPerFaction>1</AllowedPerFaction>
+        <RequiresCity>1</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <UpgradeTier>4</UpgradeTier>
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq> 
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Guilds</Attribute>
+        </Prereq>
+        <LaborToBuild>1124</LaborToBuild>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>ProductionPerMaterials</Attribute>
+            <Value>5</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+5 Production per Material</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+            <UpgradeComparisonText>Production per Material</UpgradeComparisonText>
+        </GameModifier>
+        <GameModifier>
+            <ModType>City</ModType>
+            <Attribute>BuildingDiscount</Attribute>
+            <Value>0.25</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+25% Improvement Production</Provides>
+            <UpgradeComparisonID>2</UpgradeComparisonID>
+            <UpgradeComparisonText>Improvement Production</UpgradeComparisonText>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Additive_ProductionPerMaterials</StrVal>
+            <Value>2</Value>
+            <Provides>+2 Production per Material in all your cities</Provides>
+            <UpgradeComparisonID>3</UpgradeComparisonID>
+            <UpgradeComparisonText>Faction Prod. per Material</UpgradeComparisonText>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Additive_Unrest</StrVal>
+            <Value>-10</Value>
+            <Provides>-10% Unrest in all your cities</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Gold</StrVal>
+            <Value>10</Value>
+            <Provides>+10% Gildar in all your cities</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+            <AITag>Workshop</AITag>
+        </AIData>
+        <ArtDef>LaborGuild_ArtDef</ArtDef>
+        <ImprovementTypeArtDef InternalName="LaborGuild_ArtDef">
+            <ImprovementTypeArtSubPack InternalName="LaborGuild_Default">
+                <TileDesign>K_Assassins_Guild_01</TileDesign>
+                <ConstructionTileDesign>K_Construction1x1_01</ConstructionTileDesign>
+                <DrawnIcon>Improvement_LaborGuild.png</DrawnIcon>
+                <DrawnIconConstruction>Improvement_LaborGuild_C.png</DrawnIconConstruction>
+                <Thumbnail>K_Guild_Master_01_Thumb.png</Thumbnail>
+                <Medallions InternalName="">
+                    <All>K_Guild_Master_01_Thumb.png</All>
+                </Medallions>
+            </ImprovementTypeArtSubPack>
+        </ImprovementTypeArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="CourierPost_Conclave">
+        <DisplayName>Courier Post</DisplayName>
+        <Description>This post extends the Republic's letter-carrying service into this city, boosting its economy and quelling unrest by informing the people of the activites of Senators in other city-states.</Description>
+        <RequiresCity>1</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>Conclave</RequiredImprovement>
+        <HideInHiergamenon>1</HideInHiergamenon>       
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Mounted_Warfare</Attribute>
+        </Prereq>
+        <LaborToBuild>120</LaborToBuild>
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Additive_Unrest</StrVal>
+            <Value>-2</Value>
+            <Provides>-2% Unrest in all your cities</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Gold</StrVal>
+            <Value>3</Value>
+            <Provides>+3% Gildar in all your cities</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Research</StrVal>
+            <Value>3</Value>
+            <Provides>+3% Research in all your cities</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_MOUNT</AIPrefType>
+            <AIPriority>5</AIPriority>
+            <AITag>Farming</AITag>
+        </AIData>
+        <ArtDef>Art_Courier_Post</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="CourierPost_Town">
+        <DisplayName>Courier Post</DisplayName>
+        <Description>This post extends the Republic's letter-carrying service into this city, boosting its economy and quelling unrest by informing the people of the activites of Senators in other city-states. By building a network of these posts, your republican society will more easily tolerate growing larger.</Description>
+        <RequiresCity>1</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>TradeGuild</RequiredImprovement>       
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Mounted_Warfare</Attribute>
+        </Prereq>
+        <LaborToBuild>120</LaborToBuild>
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Additive_Unrest</StrVal>
+            <Value>-2</Value>
+            <Provides>-2% Unrest in all your cities</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Gold</StrVal>
+            <Value>3</Value>
+            <Provides>+3% Gildar in all your cities</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Research</StrVal>
+            <Value>3</Value>
+            <Provides>+3% Research in all your cities</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_MOUNT</AIPrefType>
+            <AIPriority>5</AIPriority>
+            <AITag>Farming</AITag>
+        </AIData>
+        <ArtDef>Art_Courier_Post</ArtDef>
+    </ImprovementType>
+
+<!-- disabled for now
+
+<ImprovementType InternalName="TrainingYard_Republic_Town">
+        <DisplayName>Republic Militia Corps</DisplayName>
+        <Description>Militia Corps organize the volunteer militia, with the side benefit of improving the quality of the city's military training.</Description>
+        <RequiresCity>1</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>TradeGuild</RequiredImprovement>
+        <UpgradesToImprovement>Barracks_Republic_Town</UpgradesToImprovement>
+        <UpgradeTier>1</UpgradeTier>
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <LaborToBuild>180</LaborToBuild>
+        <GameModifier>
+            <ModType>CityTrainingBonus</ModType>
+            <Attribute>TrainingBonus_ApplyUnitModifier_Add</Attribute>
+            <StrVal>UnitStat_Accuracy</StrVal>
+            <Value>6</Value>
+            <Provides>+6 Accuracy for Trained Units</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+            <UpgradeComparisonText>Trained Unit Accuracy</UpgradeComparisonText>
+        </GameModifier>
+        <GameModifier>
+            <ModType>City</ModType>
+            <Attribute>TrainingDiscount</Attribute>
+            <Value>0.05</Value>
+            <Provides>-5% Unit Training cost</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+            <UpgradeComparisonText>Unit Training Discount</UpgradeComparisonText>
+        </GameModifier>
+        <GameModifier>
+            <ModType>CityDefenseSummon</ModType>
+            <Attribute>SummonUnitByClass</Attribute>
+            <Value>1</Value>
+            <Multiplier>3</Multiplier>
+            <Provides>+1 City Defender Unit</Provides>
+            <UnitClass>CityDefender</UnitClass>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+            <AITag>CommandPost</AITag>
+        </AIData>
+        <ArtDef>Art_TrainingYard</ArtDef>
+    </ImprovementType>
+
+    <ImprovementType InternalName="Barracks_Republic_Town">
+        <DisplayName>Republican Defense Corps</DisplayName>
+        <Description>A magnet for volunteer militia fighters throughout the Republic. It will boost the quality of troops you build in this town, but will require some food and gold support.</Description>
+        <AllowedPerFaction>1</AllowedPerFaction>
+        <RequiresCity>1</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>TradeGuild</RequiredImprovement>
+        <UpgradeTier>2</UpgradeTier>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Training</Attribute>
+        </Prereq>
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <LaborToBuild>208</LaborToBuild>
+        <GameModifier>
+            <ModType>CityTrainingBonus</ModType>
+            <Attribute>TrainingBonus_ApplyUnitModifier_Add</Attribute>
+            <StrVal>UnitStat_Accuracy</StrVal>
+            <Value>8</Value>
+            <Provides>+8 Accuracy for Trained Units</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+            <UpgradeComparisonText>Trained Unit Accuracy</UpgradeComparisonText>
+        </GameModifier>
+        <GameModifier>
+            <ModType>CityTrainingBonus</ModType>
+            <Attribute>TrainingBonus_LevelUpUnit</Attribute>
+            <Value>1</Value>
+            <Provides>+1 Level for Trained Units</Provides>
+            <UpgradeComparisonID>3</UpgradeComparisonID>
+            <UpgradeComparisonText>Trained Unit Level</UpgradeComparisonText>
+        </GameModifier>
+        <GameModifier>
+            <ModType>City</ModType>
+            <Attribute>TrainingDiscount</Attribute>
+            <Value>0.10</Value>
+            <Provides>-10% Unit Training cost</Provides>
+            <UpgradeComparisonID>2</UpgradeComparisonID>
+            <UpgradeComparisonText>Unit Training Discount</UpgradeComparisonText>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>-1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>-1 Gildar per Season</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>FoodPerGrain</Attribute>
+            <Value>-5</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>-5 Food per Grain</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+            <UpgradeComparisonText>Food per Grain</UpgradeComparisonText>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+            <AITag>CommandPost</AITag>
+        </AIData>
+        <ArtDef>Art_Barracks</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="TrainingYard_Republic_Conclave">
+        <DisplayName>Republic Militia Corps</DisplayName>
+        <Description>Militia Corps organize the volunteer militia, with the side benefit of giving units trained here bare-bones discipline and skill.</Description>
+        <RequiresCity>1</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>Conclave</RequiredImprovement>
+        <HideInHiergamenon>1</HideInHiergamenon>  
+	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Republic</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <LaborToBuild>180</LaborToBuild>
+        <GameModifier>
+            <ModType>CityTrainingBonus</ModType>
+            <Attribute>TrainingBonus_ApplyUnitModifier_Add</Attribute>
+            <StrVal>UnitStat_Accuracy</StrVal>
+            <Value>8</Value>
+            <Provides>+8 Accuracy for Trained Units</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+            <UpgradeComparisonText>Trained Unit Accuracy</UpgradeComparisonText>
+        </GameModifier>
+        <GameModifier>
+            <ModType>City</ModType>
+            <Attribute>TrainingDiscount</Attribute>
+            <Value>0.1</Value>
+            <Provides>-10% Unit Training cost</Provides>
+            <UpgradeComparisonID>1</UpgradeComparisonID>
+            <UpgradeComparisonText>Unit Training Discount</UpgradeComparisonText>
+        </GameModifier>
+        <GameModifier>
+            <ModType>CityDefenseSummon</ModType>
+            <Attribute>SummonUnitByClass</Attribute>
+            <Value>1</Value>
+            <Multiplier>3</Multiplier>
+            <Provides>+1 City Defender Unit</Provides>
+            <UnitClass>CityDefender</UnitClass>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+            <AITag>CommandPost</AITag>
+        </AIData>
+        <ArtDef>Art_TrainingYard</ArtDef>
+    </ImprovementType>
+
+-->
+
+</ImprovementTypes>

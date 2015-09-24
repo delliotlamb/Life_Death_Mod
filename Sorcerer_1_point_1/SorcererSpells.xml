@@ -1,0 +1,3990 @@
+<Spells>
+
+<SpellDef InternalName="ChaosInTheRanks">
+        <DisplayName>Chaos In The Ranks</DisplayName>
+        <Description>Units in the targeted army are randomly scattered around the adjacent surrounding tiles.</Description>
+        <Image>T_Pandemonium_Painting.png</Image>
+        <IconFG>T_DirgeofCeresa_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <Cooldown>3</Cooldown>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Debuff</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+        <UnitAppSpecifier>ApplyToAll</UnitAppSpecifier>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Illusomancy</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>75</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DisperseStack</Attribute>
+            <Radius>1</Radius>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>80</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Confusion_01</HitSoundFX>
+    </SpellDef>
+
+<SpellDef InternalName="AntiAcousticWave">
+        <DisplayName>Anti-Acoustic Wave</DisplayName>
+        <Description>All enemy units are silenced and lose 25% dodge unless they resist.</Description>
+        <Image>S_Evade_Painting.png</Image>
+        <IconFG>Icon_ManaToMaintain.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CanStack>0</CanStack>
+        <CastTime>0</CastTime>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Debuff</SpellSubClass>
+        <SpellTargetType>AllEnemyUnits</SpellTargetType>
+        <IsResistable>1</IsResistable>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Auralmancy</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>30</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>PreventSpellcasting</Attribute>
+            <DisplayName>Silenced</DisplayName>
+            <Duration>-1</Duration>
+            <!--<PerTurn>1</PerTurn>-->
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Dodge</StrVal>
+            <Duration>5</Duration>
+            <Calculate InternalName="Calc" ValueOwner="TargetUnit">
+                <Expression><![CDATA[[UnitStat_Dodge] * -0.25]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>30</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_HorrificWailImpact_01</HitSoundFX>
+        <SpellCastSoundFX>Spell_HorrificWailTravel_01</SpellCastSoundFX>
+        <SpellDefEffect>
+            <EffectName>T_HorrificWail_Impact_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>1</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+            <PlayOnAllTargets>1</PlayOnAllTargets>
+        </SpellDefEffect>
+        <SpellDefEffect>
+            <EffectName>T_HorrificWail_Particle</EffectName>
+            <LocalPosition>0,20,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+            <PlayOnCaster>1</PlayOnCaster>
+        </SpellDefEffect>
+    </SpellDef>
+
+<SpellDef InternalName="BewitchingWords">
+        <DisplayName>Bewitching Chant</DisplayName>
+        <Description>All enemy units are dazed for 2 turns unless they resist.</Description>
+        <Image>T_Confusion_Painting.png</Image>
+        <IconFG>Ability_Blindness.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CanStack>0</CanStack>
+        <CastTime>1</CastTime>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Debuff</SpellSubClass>
+        <SpellTargetType>AllEnemyUnits</SpellTargetType>
+        <IsResistable>1</IsResistable>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Auralmancy</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>35</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>TacticalUnit</ModType>
+            <Attribute>ChanceToLoseNextTurn</Attribute>
+            <DisplayName>Bewitched</DisplayName>
+            <Duration>2</Duration>
+            <Effect>E_Daze_Particle</Effect>
+            <PerTurn>1</PerTurn>
+            <Value>100</Value>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>30</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Daze_01</HitSoundFX>
+    </SpellDef>
+
+<SpellDef InternalName="GraviticHold">
+        <DisplayName>Gravitic Hold</DisplayName>
+        <Description>All enemy units lose -6 initiative (-2 if they resist) and have their movement reduced to 1.</Description>
+        <Image>T_Chaos_Painting.png</Image>
+        <IconFG>T_Confusion_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CanStack>0</CanStack>
+        <CastTime>1</CastTime>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Debuff</SpellSubClass>
+        <SpellTargetType>AllEnemyUnits</SpellTargetType>
+        <IsResistable>1</IsResistable>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Gravimancy</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>75</Amount>
+        </SpellResourceCost>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_CombatSpeed</StrVal>
+                <Value>-6</Value>
+				<Duration>-1</Duration>
+                <DisplayName>Gravity</DisplayName>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_CombatSpeed</StrVal>
+                <Value>-2</Value>
+				<Duration>-1</Duration>
+				<IsForSpellResist>1</IsForSpellResist>
+                <DisplayName>Gravity</DisplayName>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>SetUnitStat</Attribute>
+            <StrVal>UnitStat_Moves</StrVal>
+            <Effect>E_Wither_Particle</Effect>
+            <Duration>-1</Duration>
+            <Value>1</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>SetUnitStat</Attribute>
+            <StrVal>UnitStat_Moves</StrVal>
+            <Effect>E_Wither_Particle</Effect>
+            <Duration>-1</Duration>
+            <IsForSpellResist>1</IsForSpellResist>
+            <Value>1</Value>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>30</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Wither_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>T_Wither_Particle</EffectName>
+            <LocalPosition>0,30,0</LocalPosition>
+            <EffectScale>.75</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+<SpellDef InternalName="SummonMeteor">
+        <DisplayName>Summon Meteor</DisplayName>
+        <Description>Does 20 physical damage (+5 per Earth shard) and 20 Fire Damage (+3 per Air and Fire shard) to all units within 3 tiles of the impact point, multiplied by each member of that unit. Beware of hitting your own units!</Description>
+        <Image>S_FallingStar_Painting.png</Image>
+        <IconFG>S_FallingStar_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CastTime>3</CastTime>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+        <AllowFriendlyFireInRadius>1</AllowFriendlyFireInRadius>
+        <Radius>3</Radius>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Gravimancy</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>150</Amount>
+        </SpellResourceCost>
+		<GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Pierce</AttackStat>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumEarthShards] * 5]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc2">
+                <Expression><![CDATA[[Calc] + 20]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc3" ValueOwner="TargetUnit">
+                <Expression><![CDATA[[Unit_GetTroopCount]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc2] * [Calc3]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Fire</AttackStat>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumAirShards] + [UnitOwner_GetNumFireShards]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc2" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[Calc] * 3]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc3">
+                <Expression><![CDATA[[Calc2] + 20]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc4" ValueOwner="TargetUnit">
+                <Expression><![CDATA[[Unit_GetTroopCount]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc3] * [Calc4]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>100</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_FallingStar_01</HitSoundFX>
+        <ModifierDelay>1.5</ModifierDelay>
+        <WorldLightOverrideTime>4</WorldLightOverrideTime>
+        <WorldLightOverrideAmbiant>0,0,0</WorldLightOverrideAmbiant>
+        <WorldLightOverrideDiffuse>35,50,48</WorldLightOverrideDiffuse>
+        <WorldLightOverrideRim0>22,116,176</WorldLightOverrideRim0>
+        <WorldLightOverrideRim1>17,212,164</WorldLightOverrideRim1>
+        <SpellDefEffect>
+            <EffectName>S_FallingStar_Particle</EffectName>
+            <LocalPosition>0, 0 ,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+            <PlayOnAllTargets>1</PlayOnAllTargets>
+        </SpellDefEffect>
+    </SpellDef>
+
+<SpellDef InternalName="BeautifulDistractions">
+        <DisplayName>Beautiful Distractions</DisplayName>
+        <Description>Reduces Unrest in the target city by 10%, and increases growth by 1.</Description>
+        <Image>T_Wellspring_Painting.png</Image>
+        <IconFG>T_Wellspring_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <SpellBookSortCategory>City</SpellBookSortCategory>
+        <SpellBookSortSubCategory>CityEnchantment</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>ImpResourceBooster</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>FriendlyCity</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Illusomancy</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Unrest</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>-10</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Prestige</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>1</Value>
+        </GameModifier>
+        <ValidTerrainCategory>City</ValidTerrainCategory>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>30</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_BlessCity_01</HitSoundFX>
+        <SpellCastEffectName>Brilliance</SpellCastEffectName>
+        <SpellCastEffectScale>.4</SpellCastEffectScale>
+        <SpellDefEffect>
+            <EffectName>S_Inspiration_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>0.75</EffectScale>
+            <EffectDelay>0.5</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+<SpellDef InternalName="ExtractEssence">
+        <DisplayName>Extract Essence</DisplayName>
+        <Description>Target unit takes the caster's level in damage.  If this kills the target the caster gains 20 Mana.</Description>
+        <FormattedDescription>Target unit takes %d damage.  If this kills the target the caster gains 20 Mana.</FormattedDescription>
+        <Image>T_DrainLife_Painting.png</Image>
+        <IconFG>T_ConsumeSpirit_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+		<Cooldown>5</Cooldown>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+        <IsResistable>1</IsResistable>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Spell_ConsumeSpirit_Sorcerer</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>0</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>CurHealth</Attribute>
+            <IsForFormattedDescription>1</IsForFormattedDescription>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[Unit_GetLevel] * -1]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="ValueForFormattedDescription">
+                <Expression><![CDATA[[Calc]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Mana</Attribute>
+            <ApplyToCaster>1</ApplyToCaster>
+            <ApplyIfSpellTargetKilled>1</ApplyIfSpellTargetKilled>
+            <Value>20</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>CurHealth</Attribute>
+            <IsForSpellResist>1</IsForSpellResist>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[Unit_GetLevel] * -.5]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_ManaBlastImpact_01</HitSoundFX>
+        <SpellCastSoundFX>Spell_ManaBlastTravel_01</SpellCastSoundFX>
+        <SpellCastEffectName>T_ManaBlast_Particle</SpellCastEffectName>
+        <SpellCastEffectScale>1</SpellCastEffectScale>
+        <SpellCastProjectile>1</SpellCastProjectile>
+        <SpellCastProjectileSpeed>700</SpellCastProjectileSpeed>
+        <SpellDefEffect>
+            <EffectName>T_ConsumeSpirit_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>0.5</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+        <SpellDefEffect>
+            <EffectName>T_ConsumeSpiritGain_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>0.5</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+            <PlayOnCaster>1</PlayOnCaster>
+        </SpellDefEffect>
+    </SpellDef>
+
+<SpellDef InternalName="DetonateSpell">
+        <DisplayName>Detonate Spell</DisplayName>
+        <Description>Disrupts a spell an enemy unit is casting, does 30 damage, and dazes them for 2 turns, unless they resist.</Description>
+        <Image>S_Corruption_Painting.png</Image>
+        <IconFG>T_Counterspell_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Debuff</SpellSubClass>
+        <SpellTargetType>EnemyCaster</SpellTargetType>
+		<AllowFriendlyFireInRadius>1</AllowFriendlyFireInRadius>
+        <IsResistable>1</IsResistable>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>SpellResistance_Sorcerer</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>20</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>TacticalUnit</ModType>
+            <Attribute>DisruptSpellCharge</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>CurHealth</Attribute>
+            <Value>-30</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>TacticalUnit</ModType>
+            <Attribute>ChanceToLoseNextTurn</Attribute>
+            <DisplayName>Dazed</DisplayName>
+            <Duration>2</Duration>
+            <Value>100</Value>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>500</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Feedback_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>T_FlameWave_Particle</EffectName>
+            <LocalPosition>0,20,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+    <SpellDef InternalName="EyesOfTheEagle_Sorcerer">
+        <DisplayName>Eyes of the Eagle</DisplayName>
+        <Description>Permanently reveals a 3 tile radius around the selected area.</Description>
+        <Image>S_EyesoftheEagle_Painting.png</Image>
+        <IconFG>S_EyesoftheEagle_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CanStack>0</CanStack>
+        <SpellBookSortCategory>World</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Buff</SpellSubClass>
+        <!--<SpellTargetType>FOWTerritory</SpellTargetType>-->
+		<SpellTargetType>Any</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Visimancy</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>15</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>Reveal</Attribute>
+            <Duration>1</Duration>
+            <Value>3</Value>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_EyesOfTheEagle_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_EyesoftheEagle_Particle</EffectName>
+            <LocalPosition>0,50,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+
+<SpellDef InternalName="SummonShip">
+        <DisplayName>Craft Ship</DisplayName>
+        <Description>Summons a ship on ocean terrain. Keep in mind you may need to create beach terrain for the ship to transport your units to and from land.</Description>
+        <Image>Tech_Seafaring.png</Image>
+        <IconFG>Tech_Seafaring.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>AnyKnownTerritory</SpellTargetType>
+	<SpellTargetTileOccupied>FriendlyOrEmpty</SpellTargetTileOccupied>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Alteration</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>30</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>SummonUnit</Attribute>
+            <UnitClass>Ship</UnitClass>
+			<Value>1</Value>
+        </GameModifier>
+        <ValidTerrainType>Submerged</ValidTerrainType>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>70</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_SummonFireElemental_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_SummonFireElemental_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>0.5</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+
+
+<SpellDef InternalName="GiftOfFlight">
+        <DisplayName>Gift Of Flight</DisplayName>
+        <Description>Target Champion can levitate, and travel as if a bird.</Description>
+        <Image>S_CloudWalk_Painting.png</Image>
+        <IconFG>S_CloudWalk_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CanStack>0</CanStack>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitEnchantment</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Buff</SpellSubClass>
+        <SpellTargetType>FriendlyChampionOrSov</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Alteration</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>100</Amount>
+        </SpellResourceCost>
+	    <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>ChangeMovementType</Attribute>
+                <StrVal>Air</StrVal>
+                <Value>2</Value>
+                <Provides>Unit can travel on any tile</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>MovementCostOverRide</Attribute>
+                <StrVal>Forest</StrVal>
+                <Value>8</Value>
+                <PerTurn>1</PerTurn>
+                <Provides>No movement penalty in Forests</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>MovementCostOverRide</Attribute>
+                <StrVal>SwampTerrain</StrVal>
+                <Value>8</Value>
+                <PerTurn>1</PerTurn>
+                <Provides>No movement penalty in Swamps</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>MovementCostOverRide</Attribute>
+                <StrVal>HillsTerrain</StrVal>
+                <Value>8</Value>
+                <PerTurn>1</PerTurn>
+                <Provides>No movement penalty on Hills</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>MovementCostOverRide</Attribute>
+                <StrVal>River</StrVal>
+                <Value>8</Value>
+                <PerTurn>1</PerTurn>
+                <Provides>No movement penalty on Rivers</Provides>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Moves</StrVal>
+            <Value>1</Value>
+            <Duration>-1</Duration>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnlockUnitAbility</Attribute>
+            <StrVal>UnitStat_BG_IsFlyingAbility</StrVal>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Knockback_01</HitSoundFX>
+    </SpellDef>
+
+<!--<SpellDef InternalName="JourneyOfTheMind">
+        <DisplayName>Journey Of The Mind</DisplayName>
+        <Description>The Sorcerer gains a level after casting for 18 turns.</Description>
+        <Image>Tech_Higher_Education.png</Image>
+        <IconFG>T_NobleLegacy_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CanStack>0</CanStack>
+		<CastTime>15</CastTime>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitEnchantment</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <PreventStackingWith>YearOfMeditation</PreventStackingWith>
+        <PreventStackingWith>ExtractKnowledge</PreventStackingWith>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Gnosimancy</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>90</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>TargetUnitLevelUp</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_DestinyGift_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_Paragon_Particle</EffectName>
+            <LocalPosition>0,30,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>-->
+
+<SpellDef InternalName="YearOfMeditation">
+        <DisplayName>Year Of Meditation</DisplayName>
+        <Description>The Sorcerer gains 25 xp.</Description>
+        <Image>Academy_Medallion.png</Image>
+        <IconFG>S_Tutelage_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CanStack>0</CanStack>
+	<CastTime>4</CastTime>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitEnchantment</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <PreventStackingWith>JourneyOfTheMind</PreventStackingWith>
+        <PreventStackingWith>ExtractKnowledge</PreventStackingWith>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Knowledge_Sorcerer</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>30</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>GiveExperience</Attribute>
+            <Value>20</Value>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_DestinyGift_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_Paragon_Particle</EffectName>
+            <LocalPosition>0,30,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+<SpellDef InternalName="ArcaneRevelations">
+        <DisplayName>Arcane Revelations</DisplayName>
+        <Description>Produces +3 Research in the enchanted city.</Description>
+        <Image>S_IneluctableVision_Icon.png</Image>
+        <IconFG>S_Revelation_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CanStack>0</CanStack>
+        <SpellBookSortCategory>City</SpellBookSortCategory>
+        <SpellBookSortSubCategory>CityEnchantment</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>ImpResourceBooster</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>FriendlyCity</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Gnosimancy</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Research</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>3</Value>
+        </GameModifier>
+        <ValidTerrainCategory>City</ValidTerrainCategory>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>100</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Inspiration_01</HitSoundFX>
+        <SpellCastEffectName>Brilliance</SpellCastEffectName>
+        <SpellCastEffectScale>.4</SpellCastEffectScale>
+        <SpellDefEffect>
+            <EffectName>S_Inspiration_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>0.75</EffectScale>
+            <EffectDelay>0.5</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+<SpellDef InternalName="WaterOsmosis">
+        <DisplayName>Osmosis Of Water</DisplayName>
+        <Description>Target unit gains the Water Apprentice spell trait. Costs 1 shard essence.</Description>
+        <Image>S_MantleofOceans_Painting.png</Image>
+        <IconFG>Water_Dot.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CanStack>0</CanStack>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitEnchantment</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Buff</SpellSubClass>
+        <SpellTargetType>FriendlyChampionOrSov</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Elemancy</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_ShardEssence</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnlockUnitAbility</Attribute>
+            <StrVal>Water1</StrVal>
+        </GameModifier>
+		<GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ShardEssence</StrVal>
+            <ApplyToCaster>1</ApplyToCaster>
+            <Value>-1</Value>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>20</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_MantleOfOceans_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_MantleofOceans_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+<SpellDef InternalName="FireOsmosis">
+        <DisplayName>Osmosis Of Fire</DisplayName>
+        <Description>Target unit gains the Fire Apprentice spell trait. Costs 1 shard essence.</Description>
+        <Image>S_MantleofFire_Painting.png</Image>
+        <IconFG>Fire_Dot.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CanStack>0</CanStack>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitEnchantment</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Buff</SpellSubClass>
+        <SpellTargetType>FriendlyChampionOrSov</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Elemancy</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_ShardEssence</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnlockUnitAbility</Attribute>
+            <StrVal>Fire1</StrVal>
+        </GameModifier>
+		<GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ShardEssence</StrVal>
+            <ApplyToCaster>1</ApplyToCaster>
+            <Value>-1</Value>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>20</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_FireBreath</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_MantleofOceans_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+<SpellDef InternalName="AirOsmosis">
+        <DisplayName>Osmosis Of Air</DisplayName>
+        <Description>Target unit gains the Air Apprentice spell trait. Costs 1 shard essence.</Description>
+        <Image>S_Tornado_Painting.png</Image>
+        <IconFG>Air_Dot.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CanStack>0</CanStack>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitEnchantment</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Buff</SpellSubClass>
+        <SpellTargetType>FriendlyChampionOrSov</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Elemancy</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_ShardEssence</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnlockUnitAbility</Attribute>
+            <StrVal>Air1</StrVal>
+        </GameModifier>
+		<GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ShardEssence</StrVal>
+            <ApplyToCaster>1</ApplyToCaster>
+            <Value>-1</Value>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>20</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_GuardianWind_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_MantleofOceans_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+<SpellDef InternalName="EarthOsmosis">
+        <DisplayName>Osmosis Of Earth</DisplayName>
+        <Description>Target unit gains the Earth Apprentice spell trait. Costs 1 shard essence.</Description>
+        <Image>S_CreateMountain_Painting.png</Image>
+        <IconFG>Earth_Dot.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CanStack>0</CanStack>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitEnchantment</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Buff</SpellSubClass>
+        <SpellTargetType>FriendlyChampionOrSov</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Elemancy</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_ShardEssence</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnlockUnitAbility</Attribute>
+            <StrVal>Earth1</StrVal>
+            <Provides>Grants the Earth Apprentice ability</Provides>
+        </GameModifier>
+		<GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ShardEssence</StrVal>
+            <ApplyToCaster>1</ApplyToCaster>
+            <Value>-1</Value>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>20</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_EnchantedHammers_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_MantleofOceans_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+<SpellDef InternalName="LifeOsmosis">
+        <DisplayName>Osmosis Of Life</DisplayName>
+        <Description>Target unit gains the Life Apprentice spell trait. Costs 1 shard essence.</Description>
+        <Image>T_Heal_Painting.png</Image>
+        <IconFG>Life_Dot.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CanStack>0</CanStack>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitEnchantment</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Buff</SpellSubClass>
+        <SpellTargetType>FriendlyChampionOrSov</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Elemancy</Attribute>
+        </Prereq>
+            <Prereq>
+                <Type>Allegiance</Type>
+                <Attribute>Kingdom</Attribute>
+            </Prereq>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_ShardEssence</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnlockUnitAbility</Attribute>
+            <StrVal>Life1</StrVal>
+            <Provides>Grants the Life Apprentice ability</Provides>
+        </GameModifier>
+		<GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ShardEssence</StrVal>
+            <ApplyToCaster>1</ApplyToCaster>
+            <Value>-1</Value>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>20</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_BirthOfSummer_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>Revive_Land</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+<SpellDef InternalName="DeathOsmosis">
+        <DisplayName>Osmosis Of Death</DisplayName>
+        <Description>Target unit gains the Death Apprentice spell trait. Costs 1 shard essence.</Description>
+        <Image>T_TouchofEntropy_Painting.png</Image>
+        <IconFG>Death_Dot.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CanStack>0</CanStack>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitEnchantment</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Buff</SpellSubClass>
+        <SpellTargetType>FriendlyChampionOrSov</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Elemancy</Attribute>
+        </Prereq>
+            <Prereq>
+                <Type>Allegiance</Type>
+                <Attribute>Empire</Attribute>
+            </Prereq>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_ShardEssence</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnlockUnitAbility</Attribute>
+            <StrVal>Death1</StrVal>
+            <Provides>Grants the Death Apprentice ability</Provides>
+        </GameModifier>
+		<GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ShardEssence</StrVal>
+            <ApplyToCaster>1</ApplyToCaster>
+            <Value>-1</Value>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>20</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Antipathy_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_Blight_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+<SpellDef InternalName="CultureOfFire">
+        <DisplayName>Culture Of Fire</DisplayName>
+        <Description>Produces +0.5 Fire Power in the enchanted city.</Description>
+        <Image>S_Firestorm_Painting.png</Image>
+        <IconFG>S_AnnointedByFire_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CanStack>0</CanStack>
+        <SpellBookSortCategory>City</SpellBookSortCategory>
+        <SpellBookSortSubCategory>CityEnchantment</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>ImpResourceBooster</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>FriendlyCity</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Elemancy</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Fire1</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>FireMana</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>.5</Value>
+        </GameModifier>
+        <ValidTerrainCategory>City</ValidTerrainCategory>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>100</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Inspiration_01</HitSoundFX>
+        <SpellCastEffectName>Brilliance</SpellCastEffectName>
+        <SpellCastEffectScale>.4</SpellCastEffectScale>
+        <SpellDefEffect>
+            <EffectName>S_Inspiration_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>0.75</EffectScale>
+            <EffectDelay>0.5</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+
+<SpellDef InternalName="CultureOfWater">
+        <DisplayName>Culture Of Water</DisplayName>
+        <Description>Produces +.5 Water Power in the enchanted city.</Description>
+        <Image>S_FreezeSeas_Painting.png</Image>
+        <IconFG>S_TidalWave_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CanStack>0</CanStack>
+        <SpellBookSortCategory>City</SpellBookSortCategory>
+        <SpellBookSortSubCategory>CityEnchantment</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>ImpResourceBooster</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>FriendlyCity</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Elemancy</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Water1</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>WaterMana</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>.5</Value>
+        </GameModifier>
+        <ValidTerrainCategory>City</ValidTerrainCategory>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>100</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Inspiration_01</HitSoundFX>
+        <SpellCastEffectName>Brilliance</SpellCastEffectName>
+        <SpellCastEffectScale>.4</SpellCastEffectScale>
+        <SpellDefEffect>
+            <EffectName>S_Inspiration_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>0.75</EffectScale>
+            <EffectDelay>0.5</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+<SpellDef InternalName="CultureOfAir">
+        <DisplayName>Culture Of Air</DisplayName>
+        <Description>Produces +.5 Air Power in the enchanted city.</Description>
+        <Image>T_ObscuringFog_Painting.png</Image>
+        <IconFG>S_Tornado_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CanStack>0</CanStack>
+        <SpellBookSortCategory>City</SpellBookSortCategory>
+        <SpellBookSortSubCategory>CityEnchantment</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>ImpResourceBooster</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>FriendlyCity</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Elemancy</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Air1</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>AirMana</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>.5</Value>
+        </GameModifier>
+        <ValidTerrainCategory>City</ValidTerrainCategory>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>100</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Inspiration_01</HitSoundFX>
+        <SpellCastEffectName>Brilliance</SpellCastEffectName>
+        <SpellCastEffectScale>.4</SpellCastEffectScale>
+        <SpellDefEffect>
+            <EffectName>S_Inspiration_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>0.75</EffectScale>
+            <EffectDelay>0.5</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+<SpellDef InternalName="CultureOfEarth">
+        <DisplayName>Culture Of Earth</DisplayName>
+        <Description>Produces +.5 Earth Power in the enchanted city.</Description>
+        <Image>S_CreateMountain_Painting.png</Image>
+        <IconFG>S_CreateMountain_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CanStack>0</CanStack>
+        <SpellBookSortCategory>City</SpellBookSortCategory>
+        <SpellBookSortSubCategory>CityEnchantment</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>ImpResourceBooster</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>FriendlyCity</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Elemancy</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Earth1</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>EarthMana</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>.5</Value>
+        </GameModifier>
+        <ValidTerrainCategory>City</ValidTerrainCategory>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>100</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Inspiration_01</HitSoundFX>
+        <SpellCastEffectName>Brilliance</SpellCastEffectName>
+        <SpellCastEffectScale>.4</SpellCastEffectScale>
+        <SpellDefEffect>
+            <EffectName>S_Inspiration_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>0.75</EffectScale>
+            <EffectDelay>0.5</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+<SpellDef InternalName="CultureOfLife">
+        <DisplayName>Culture Of Life</DisplayName>
+        <Description>Produces +.5 Life Power in the enchanted city.</Description>
+        <Image>ReviveLand_Painting.png</Image>
+        <IconFG>T_Growth_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CanStack>0</CanStack>
+        <SpellBookSortCategory>City</SpellBookSortCategory>
+        <SpellBookSortSubCategory>CityEnchantment</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>ImpResourceBooster</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>FriendlyCity</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Elemancy</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Life1</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>Allegiance</Type>
+            <Attribute>Kingdom</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>LifeMana</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>.5</Value>
+        </GameModifier>
+        <ValidTerrainCategory>City</ValidTerrainCategory>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>100</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Inspiration_01</HitSoundFX>
+        <SpellCastEffectName>Brilliance</SpellCastEffectName>
+        <SpellCastEffectScale>.4</SpellCastEffectScale>
+        <SpellDefEffect>
+            <EffectName>S_Inspiration_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>0.75</EffectScale>
+            <EffectDelay>0.5</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+<SpellDef InternalName="CultureOfDeath">
+        <DisplayName>Culture Of Death</DisplayName>
+        <Description>Produces +.5 Death Power in the enchanted city.</Description>
+        <Image>T_Infection_Painting.png</Image>
+        <IconFG>T_Kill_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CanStack>0</CanStack>
+        <SpellBookSortCategory>City</SpellBookSortCategory>
+        <SpellBookSortSubCategory>CityEnchantment</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>ImpResourceBooster</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>FriendlyCity</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Elemancy</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Death1</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>Allegiance</Type>
+            <Attribute>Empire</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>DeathMana</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>.5</Value>
+        </GameModifier>
+        <ValidTerrainCategory>City</ValidTerrainCategory>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>100</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Inspiration_01</HitSoundFX>
+        <SpellCastEffectName>Brilliance</SpellCastEffectName>
+        <SpellCastEffectScale>.4</SpellCastEffectScale>
+        <SpellDefEffect>
+            <EffectName>S_Inspiration_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>0.75</EffectScale>
+            <EffectDelay>0.5</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+<!--<SpellDef InternalName="FindElementals">
+        <DisplayName>Sense Elemental Energy</DisplayName>
+        <Description>Sense Elementals hiding beyond mortal sight, and agitate them into appearing.</Description>
+        <Image>S_SpellofMaking_Painting.png</Image>
+        <IconFG>S_Corruption_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <SpellBookSortCategory>World</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Buff</SpellSubClass>
+        <SpellTargetType>NeutralGround</SpellTargetType>
+        <AppliesRandomModifier>1</AppliesRandomModifier>
+		<Cooldown>5</Cooldown>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Anthuamancy</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>100</Amount>
+        </SpellResourceCost>
+                <GameModifier>
+                    <ModType>Map</ModType>
+                    <Attribute>CreateGoodieHut</Attribute>
+                    <StrVal>Fire Elemental Lair</StrVal>
+                    <Unitclass>Lair_FireElemental</Unitclass>
+                    <Radius>8</Radius>
+                </GameModifier>
+                <GameModifier>
+                    <ModType>Map</ModType>
+                    <Attribute>CreateGoodieHut</Attribute>
+                    <StrVal>Air Elemental Lair</StrVal>
+                    <Unitclass>Lair_AirElemental</Unitclass>
+                    <Radius>8</Radius>
+                </GameModifier>
+                <GameModifier>
+                    <ModType>Map</ModType>
+                    <Attribute>CreateGoodieHut</Attribute>
+                    <StrVal>Earth Elemental Lair</StrVal>
+                    <Unitclass>Lair_EarthElemental</Unitclass>
+                    <Radius>8</Radius>
+                </GameModifier>
+                <GameModifier>
+                    <ModType>Map</ModType>
+                    <Attribute>CreateGoodieHut</Attribute>
+                    <StrVal>Fire Elemental Lair</StrVal>
+                    <Unitclass>Lair_FireElemental</Unitclass>
+                    <Radius>8</Radius>
+                </GameModifier>
+                <GameModifier>
+                    <ModType>Map</ModType>
+                    <Attribute>CreateGoodieHut</Attribute>
+                    <StrVal>Ice Elemental Lair</StrVal>
+                    <Unitclass>Lair_IceElemental</Unitclass>
+                    <Radius>8</Radius>
+                </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>30</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_IneluctableVision_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_IneluctableVision_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>-->
+
+<SpellDef InternalName="FindBeasts">
+        <DisplayName>Find Beasts</DisplayName>
+        <Description>Draw hidden beasts to the target tile - they may prove useful as resources, or as prey to hunt. Take care, as your discovery will be known to all.</Description>
+        <Image>S_EyesoftheEagle_Painting.png</Image>
+        <IconFG>S_SummonersBoon_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <SpellBookSortCategory>World</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Buff</SpellSubClass>
+        <SpellTargetType>NeutralGround</SpellTargetType>
+        <AppliesRandomModifier>1</AppliesRandomModifier>
+		<Cooldown>5</Cooldown>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Faunamancy</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>35</Amount>
+        </SpellResourceCost>
+                <GameModifier>
+                    <ModType>Map</ModType>
+                    <Attribute>CreateGoodieHut</Attribute>
+                    <StrVal>Warg's Ground</StrVal>
+                    <Unitclass>Lair_TimberWarg</Unitclass>
+                    <Radius>6</Radius>
+                </GameModifier>
+                <GameModifier>
+                    <ModType>Map</ModType>
+                    <Attribute>CreateGoodieHut</Attribute>
+                    <StrVal>Wolf's Ground</StrVal>
+                    <Unitclass>Lair_Wolf</Unitclass>
+                    <Radius>6</Radius>
+                </GameModifier>
+                <GameModifier>
+                    <ModType>Map</ModType>
+                    <Attribute>CreateGoodieHut</Attribute>
+                    <StrVal>Bear's Ground</StrVal>
+                    <Unitclass>Lair_Bear</Unitclass>
+                    <Radius>8</Radius>
+                </GameModifier>
+                <GameModifier>
+                    <ModType>Map</ModType>
+                    <Attribute>CreateGoodieHut</Attribute>
+                    <StrVal>Spider's Refuge</StrVal>
+                    <Unitclass>Lair_BlackWidow</Unitclass>
+                    <Radius>6</Radius>
+                </GameModifier>
+            <GameModifier>
+                <ModType>Map</ModType>
+                <Attribute>CreateResourceHoard</Attribute>
+                <StrVal>Resource_TwlightBees</StrVal>
+                <Value>1</Value>
+                <Radius>6</Radius>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Map</ModType>
+                <Attribute>CreateResourceHoard</Attribute>
+                <StrVal>Resource_WildGame</StrVal>
+                <Value>1</Value>
+                <Radius>6</Radius>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Map</ModType>
+                <Attribute>CreateResourceHoard</Attribute>
+                <StrVal>Resource_Horses</StrVal>
+                <Value>1</Value>
+                <Radius>6</Radius>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Map</ModType>
+                <Attribute>CreateResourceHoard</Attribute>
+                <StrVal>Resource_Wargs</StrVal>
+                <Value>1</Value>
+                <Radius>6</Radius>
+            </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>30</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_IneluctableVision_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_IneluctableVision_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+<SpellDef InternalName="FindCrops">
+        <DisplayName>Incite Crops</DisplayName>
+        <Description>Sense out hidden soils that can support crops, and induce new growth. This may slightly increase your food per grain, or add a whole new grain.</Description>
+        <Image>ReviveLand_Painting.png</Image>
+        <IconFG>S_BirthOfSummer_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <SpellBookSortCategory>City</SpellBookSortCategory>
+        <SpellBookSortSubCategory>CityEnchantment</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>ImpResourceBooster</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>FriendlyCity</SpellTargetType>
+        <AppliesRandomModifier>1</AppliesRandomModifier>
+		<Cooldown>5</Cooldown>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Agrimancy</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>100</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>TileYieldGrain</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>1</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>FoodPerGrain</Attribute>
+            <Duration>-1</Duration>			
+            <Value>3</Value>
+            <PerTurn>1</PerTurn>
+        </GameModifier>		
+        <ValidTerrainCategory>City</ValidTerrainCategory>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>30</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_IneluctableVision_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_IneluctableVision_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+<SpellDef InternalName="ForgeIron">
+        <DisplayName>Forge Iron</DisplayName>
+        <Description>Convert 100 mana into 32 iron.</Description>
+        <Image>S_Alchemy_Painting.png</Image>
+        <IconFG>Enchant_Dot.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <SpellBookSortCategory>World</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Other</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Metamancy</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>100</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Metal</Attribute>
+            <Value>32</Value>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Alchemy_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_Alchemy_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>.75</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+<SpellDef InternalName="ForgeCrystal">
+        <DisplayName>Forge Crystal</DisplayName>
+        <Description>Convert 100 mana into 25 Crystal.</Description>
+        <Image>S_Alchemy_Painting.png</Image>
+        <IconFG>Enchant_Dot.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <SpellBookSortCategory>World</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Other</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Metamancy</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>100</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>RefinedCrystal</Attribute>
+            <Value>25</Value>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Alchemy_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_Alchemy_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>.75</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+<SpellDef InternalName="ForgeGold">
+        <DisplayName>Forge Gold</DisplayName>
+        <Description>Convert 100 mana into 95 gold.</Description>
+        <Image>S_Alchemy_Painting.png</Image>
+        <IconFG>Enchant_Dot.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <SpellBookSortCategory>World</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Other</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Metamancy</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>100</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>95</Value>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Alchemy_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_Alchemy_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>.75</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+
+    <SpellDef InternalName="Destabilize">
+        <DisplayName>Destabilizing Presence</DisplayName>
+        <Description>Reduces the Cold, Fire and Lightning Resistance of all enemies by 33% unless they resist.</Description>
+        <Image>S_CloakOfFear_Painting.png</Image>
+        <IconFG>S_CloakOfFear_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>		
+        <CanStack>0</CanStack>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitCurse</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Debuff</SpellSubClass>
+        <SpellTargetType>AllEnemyUnits</SpellTargetType>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <IsResistable>1</IsResistable>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Destabilize</Attribute>
+        </Prereq>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ResistFire</StrVal>
+            <Duration>-1</Duration>
+            <Value>-33</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ResistCold</StrVal>
+            <Duration>-1</Duration>
+            <Value>-33</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ResistLightning</StrVal>
+            <Duration>-1</Duration>
+            <Value>-33</Value>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>25</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_FearWave_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>T_Fear_Impact_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>1</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+            <PlayOnAllTargets>1</PlayOnAllTargets>
+        </SpellDefEffect>
+        <SpellDefEffect>
+            <EffectName>T_FearWave_Particle</EffectName>
+            <LocalPosition>0,20,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+        <SpellDefEffect>
+            <EffectName>T_FearWave_Particle</EffectName>
+            <LocalPosition>0,20,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+
+<SpellDef InternalName="MineralSight">
+        <DisplayName>Mineral Sight</DisplayName>
+        <Description>Find crystal, metals or clay hidden just below the surface. You may discover little, or a hoard of incredible value.</Description>
+        <Image>S_IneluctableVision_Painting.png</Image>
+        <IconFG>S_IneluctableVision_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <SpellBookSortCategory>City</SpellBookSortCategory>
+        <SpellBookSortSubCategory>CityEnchantment</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>ImpResourceBooster</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>FriendlyCity</SpellTargetType>
+        <AppliesRandomModifier>1</AppliesRandomModifier>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Visimancy</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>100</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>TileYieldMaterials</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Duration>-1</Duration>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Duration>-1</Duration>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>5</Value>
+            <PerTurn>1</PerTurn>
+            <Duration>-1</Duration>
+        </GameModifier>		
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>RefinedCrystal</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Duration>-1</Duration>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Metal</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Duration>-1</Duration>
+        </GameModifier>			
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Metal</Attribute>
+            <Value>3</Value>
+            <PerTurn>1</PerTurn>
+            <Duration>-1</Duration>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Metal</Attribute>
+            <Value>5</Value>
+            <PerTurn>1</PerTurn>
+            <Duration>-1</Duration>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>30</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_IneluctableVision_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_IneluctableVision_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+
+
+ <SpellDef InternalName="UnstableMagic">
+        <DisplayName>Unstable Magic</DisplayName>
+        <Description>This unit loses 20 health after every spell cast.</Description>
+        <Image>T_Shockwave_Painting.png</Image>
+        <IconFG>T_Shockwave_Icon.png</IconFG>
+		<HideInHiergamenon>1</HideInHiergamenon>
+		<IsSpecialAbility>1</IsSpecialAbility>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Heal</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Heal</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+	<Radius>2</Radius>
+	<GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>CurHealth</Attribute>
+	    <Value>-20</Value>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>15</AIPriority>
+        </AIData>
+    </SpellDef>
+
+<SpellDef InternalName="CrystalStorm">
+        <DisplayName>Crystal Storm</DisplayName>
+        <Description>Does 10 damage (+5 per Air and Earth shard) to all armies within a 2 tile radius.</Description>
+        <Image>S_Consume_Painting.png</Image>
+        <IconFG>S_Consume_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <Cooldown>1</Cooldown>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+        <UnitAppSpecifier>ApplyToAll</UnitAppSpecifier>
+        <Radius>2</Radius>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Metamancy</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>RefinedCrystal</Resource>
+            <Amount>100</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Pierce</AttackStat>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumAirShards] + [UnitOwner_GetNumEarthShards]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc2">
+                <Expression><![CDATA[[Calc] * 5]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc2] + 10]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <ValidTerrainCategory>Forest</ValidTerrainCategory>
+        <ValidTerrainCategory>Land</ValidTerrainCategory>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>100</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_FlameWaveTravel_01</HitSoundFX>
+        <HitSoundFX>Spell_FlameWaveTravel_02</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>T_Blizzard_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>0.5</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+<SpellDef InternalName="SoulOfIron">
+        <DisplayName>Soul Of Iron</DisplayName>
+        <Description>This champion's defense is increased +8 (+1 per Earth Shard), and attack +3 (+1 per Earth Shard).</Description>
+        <Image>T_StoneSkin_Painting.png</Image>
+        <IconFG>S_CreateMountain_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CanStack>0</CanStack>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitEnchantment</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Buff</SpellSubClass>
+        <SpellTargetType>FriendlyChampionOrSov</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Metamancy</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Metal</Resource>
+            <Amount>120</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Metal</Resource>
+			<PerTurn>1</PerTurn>
+            <Amount>5</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Boost</StrVal>
+            <Duration>-1</Duration>
+            <Effect>E_NaturesCloak_Particle</Effect>
+            <HasUpgradableValue>1</HasUpgradableValue>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumEarthShards] + 3]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <Duration>-1</Duration>
+            <HasUpgradableValue>1</HasUpgradableValue>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumEarthShards] + 8]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>20</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_GiftOfIron_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>T_StoneSkin_Particle</EffectName>
+            <LocalPosition>0,25,0</LocalPosition>
+            <EffectScale>.4</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+            <PlayOnAllTargets>1</PlayOnAllTargets>
+        </SpellDefEffect>
+    </SpellDef>
+
+<SpellDef InternalName="FocusedAdmiration">
+        <DisplayName>Singularity Of Admiration</DisplayName>
+        <Description>This champion's hit points and attack are increased by 10%.</Description>
+        <Image>S_AuraofMight_Painting.png</Image>
+        <IconFG>S_Glory_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CanStack>0</CanStack>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitEnchantment</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Buff</SpellSubClass>
+        <SpellTargetType>FriendlyChampionOrSov</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Metamancy</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Fame</Resource>
+            <Amount>80</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Fame</Resource>
+			<PerTurn>1</PerTurn>
+            <Amount>2</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Duration>-1</Duration>
+            <Multiplier>1.1</Multiplier>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_HitPoints</StrVal>
+            <Duration>-1</Duration>
+            <Multiplier>1.1</Multiplier>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>20</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Crusade_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_Crusade_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+            <PlayOnAllTargets>1</PlayOnAllTargets>
+        </SpellDefEffect>
+    </SpellDef>
+
+	<SpellDef InternalName="TowerOfGreed">
+        <DisplayName>Tower Of Greed</DisplayName>
+        <Description>Creates an Arcane Monolith on the map which extends your Zone of Control.</Description>
+        <Image>S_ArcaneMonolith_Painting.png</Image>
+        <IconFG>S_ArcaneMonolith_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CanStack>0</CanStack>
+        <SpellBookSortCategory>World</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Map</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Terraform</SpellClass>
+        <SpellSubClass>BuildOutpost</SpellSubClass>
+        <SpellTargetType>NeutralGround</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Metamancy</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Gold</Resource>
+            <Amount>300</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>BuildWildImprovement</Attribute>
+            <StrVal>Outpost_ArcaneMonolith</StrVal>
+        </GameModifier>
+        <ValidTerrainCategory>City</ValidTerrainCategory>
+        <ValidTerrainCategory>Forest</ValidTerrainCategory>
+        <ValidTerrainCategory>Land</ValidTerrainCategory>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>100</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Avarice_01</HitSoundFX>
+        <SpellCastEffectName>Brilliance</SpellCastEffectName>
+        <SpellCastEffectScale>.4</SpellCastEffectScale>
+        <SpellDefEffect>
+            <EffectName>S_Inspiration_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>0.75</EffectScale>
+            <EffectDelay>0.5</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+	
+	
+<SpellDef InternalName="RaiseFortress">
+        <DisplayName>Raise Fortress</DisplayName>
+        <Description>Creates an Arcane Monolith on Plains which extends your Zone of Control slightly, but gives units significant attack and defense bonuses.</Description>
+        <Image>CityWalls_Medallion_Full.png</Image>
+        <IconFG>City_Level_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CanStack>0</CanStack>
+        <SpellBookSortCategory>World</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Map</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Terraform</SpellClass>
+        <SpellSubClass>BuildOutpost</SpellSubClass>
+        <SpellTargetType>NeutralGround</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Alteration</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Metal</Resource>
+            <Amount>20</Amount>
+        </SpellResourceCost>		
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>BuildWildImprovement</Attribute>
+            <StrVal>Outpost_SorcererFortress</StrVal>
+        </GameModifier>
+        <ValidTerrainType>Land</ValidTerrainType>
+        <ValidTerrainType>Rugged_Land</ValidTerrainType>
+        <ValidTerrainType>Fertile_Land</ValidTerrainType>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>100</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Avarice_01</HitSoundFX>
+        <SpellCastEffectName>Brilliance</SpellCastEffectName>
+        <SpellCastEffectScale>.4</SpellCastEffectScale>
+        <SpellDefEffect>
+            <EffectName>S_Inspiration_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>0.75</EffectScale>
+            <EffectDelay>0.5</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+     
+<SpellDef InternalName="ReWriteCulture">
+        <DisplayName>Re-Write Culture</DisplayName>
+        <Description>Cities no longer suffer the non-contiguous unrest penalty, allowing all cities to freely sprawl.</Description>
+        <Image>S_TimeStop_Painting.png</Image>
+        <IconFG>S_Timestop_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CanStack>0</CanStack>
+	<Cooldown>1000</Cooldown>
+        <SpellBookSortCategory>World</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Buff</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Physimancy</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>80</Amount>
+        </SpellResourceCost>
+      <GameModifier>
+        <ModType>Map</ModType>
+        <Attribute>ChangeWorld</Attribute>
+        <StrVal>NonZOCContiguousCityUnrestPenalty</StrVal>
+        <StrVal2>0</StrVal2>
+      </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_IneluctableVision_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_IneluctableVision_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+<SpellDef InternalName="ReWritePolitics">
+        <DisplayName>Re-Write Politics</DisplayName>
+        <Description>Drastically lowers the Unrest penalty per city.</Description>
+        <Image>S_TimeStop_Painting.png</Image>
+        <IconFG>S_Timestop_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CanStack>0</CanStack>
+	<Cooldown>1000</Cooldown>
+        <SpellBookSortCategory>World</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Buff</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Physimancy</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>80</Amount>
+        </SpellResourceCost>
+      <GameModifier>
+        <ModType>Map</ModType>
+        <Attribute>ChangeWorld</Attribute>
+        <StrVal>CityCountUnrestPenalty</StrVal>
+        <StrVal2>1</StrVal2>
+      </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_IneluctableVision_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_IneluctableVision_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+<SpellDef InternalName="ReWriteEconomics">
+        <DisplayName>Re-Write Economics</DisplayName>
+        <Description>Drastically lowers the cost to Rush production.</Description>
+        <Image>S_TimeStop_Painting.png</Image>
+        <IconFG>S_Timestop_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CanStack>0</CanStack>
+	<Cooldown>1000</Cooldown>
+        <SpellBookSortCategory>World</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Buff</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Physimancy</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>80</Amount>
+        </SpellResourceCost>
+      <GameModifier>
+        <ModType>Map</ModType>
+        <Attribute>ChangeWorld</Attribute>
+        <StrVal>CostPerLaborToRushProduction</StrVal>
+        <StrVal2>.5</StrVal2>
+      </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_IneluctableVision_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_IneluctableVision_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+
+<SpellDef InternalName="ReWriteRevival">
+        <DisplayName>Re-Write Revival</DisplayName>
+        <Description>Defeated Champions are immobilized for 30 turns. Sovereigns forfeit 90% of their mana to escape death.</Description>
+        <Image>S_TimeStop_Painting.png</Image>
+        <IconFG>S_Timestop_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CanStack>0</CanStack>
+	<Cooldown>1000</Cooldown>
+        <SpellBookSortCategory>World</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Buff</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Physimancy</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>80</Amount>
+        </SpellResourceCost>
+      <GameModifier>
+        <ModType>Map</ModType>
+        <Attribute>ChangeWorld</Attribute>
+        <StrVal>ReviveSovereignImmobilizationDuration</StrVal>
+        <StrVal2>30</StrVal2>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Map</ModType>
+        <Attribute>ChangeWorld</Attribute>
+        <StrVal>ReviveSovereignManaPercentageCost</StrVal>
+        <StrVal2>.9</StrVal2>
+      </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_IneluctableVision_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_IneluctableVision_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+
+<SpellDef InternalName="ReWriteChanneling">
+        <DisplayName>Re-Write Channeling</DisplayName>
+        <Description>Sovereigns produce twenty times as much base mana per turn.</Description>
+        <Image>S_TimeStop_Painting.png</Image>
+        <IconFG>S_Timestop_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CanStack>0</CanStack>
+		<Cooldown>1000</Cooldown>
+        <SpellBookSortCategory>World</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Buff</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Physimancy</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>80</Amount>
+        </SpellResourceCost>
+      <GameModifier>
+        <ModType>Map</ModType>
+        <Attribute>ChangeWorld</Attribute>
+        <StrVal>Sovereign_GlobalManaPerTurn</StrVal>
+        <StrVal2>20</StrVal2>
+      </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_IneluctableVision_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_IneluctableVision_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+<SpellDef InternalName="Consume_Sorcerer">
+        <DisplayName>Pulverize Shard</DisplayName>
+        <Description>Destroy a shard in your territory, giving you 2 shard essence, opening up spells that give champions spell traits, or a spell that does massive damage to an enemy army.</Description>
+        <Image>S_Consume_Painting.png</Image>
+        <IconFG>S_Consume_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <SpellBookSortCategory>World</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Other</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>AnyShard</SpellTargetType>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Elemancy</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>20</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>DestroyObjects</Attribute>
+            <BoolVal1>1</BoolVal1>
+        </GameModifier>
+		<GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ShardEssence</StrVal>
+            <ApplyToCaster>1</ApplyToCaster>
+            <Value>2</Value>
+        </GameModifier>	
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Consume_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_Corruption_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>2</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+<!-- <SpellDef InternalName="ImpassableTerrain">
+        <DisplayName>Impassable Terrain</DisplayName>
+        <Description>Shift and tear apart the land, creating a jagged and impassable mountain terrain.</Description>
+        <Image>S_Earthquake_Painting.png</Image>
+        <IconFG>Icon_Stone.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <SpellBookSortCategory>World</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Map</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Terraform</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>NeutralGround</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Alteration</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>75</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>DestroyObjects</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>PlaceTerrain</Attribute>
+            <TerrainType>MountainRange</TerrainType>
+        </GameModifier>
+        <ValidTerrainType>Land</ValidTerrainType>
+        <ValidTerrainType>Rugged_Land</ValidTerrainType>
+        <ValidTerrainType>Fertile_Land</ValidTerrainType>
+        <ValidTerrainType>DesertTerrain</ValidTerrainType>
+        <ValidTerrainType>SwampTerrain</ValidTerrainType>
+        <ValidTerrainType>ArcticTerrain</ValidTerrainType>
+        <ValidTerrainType>Forest</ValidTerrainType>
+        <ValidTerrainType>Beach</ValidTerrainType>
+        <ValidTerrainType>HillsTerrain</ValidTerrainType>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_RaiseLand_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_RaiseLand_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>0.3</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>-->
+	
+	<SpellDef InternalName="WarpReality">
+        <DisplayName>Warp Space</DisplayName>
+        <Description>Suck a tile into spatial paradox, destroying any resources. A miasma of geometric contradictions prevents any unit from entering the tile, even flying units.</Description>
+        <Image>S_Antipathy_Painting.png</Image>
+        <IconFG>512_Mask.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+		<CastTime>1</CastTime>
+        <SpellBookSortCategory>World</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Map</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Terraform</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>NeutralGround</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Physimancy</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>40</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>DestroyObjects</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>PlaceTerrain</Attribute>
+            <TerrainType>Unknown</TerrainType>
+        </GameModifier>
+        <ValidTerrainCategory>City</ValidTerrainCategory>
+        <ValidTerrainCategory>Forest</ValidTerrainCategory>
+        <ValidTerrainCategory>Land</ValidTerrainCategory>
+        <ValidTerrainCategory>Mountain</ValidTerrainCategory>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_FearWave_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>Y_SummonDeathDemon_Particle</EffectName>
+            <LocalPosition>0,20,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+<SpellDef InternalName="FuryOfTheShards">
+        <DisplayName>Fury Of The Shards</DisplayName>
+        <Description>Target enemy army takes 50 (+10 per air and fire shard) lightning damage. Costs 2 shard essence.</Description>
+        <Image>T_Storm_Painting.png</Image>
+        <IconFG>T_ChainLightning_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>
+        <UnitAppSpecifier>ApplyToAll</UnitAppSpecifier>
+        <Radius>0</Radius>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_ShardEssence</Attribute>
+            <Value>2</Value>
+        </Prereq>		
+		<GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ShardEssence</StrVal>
+            <ApplyToCaster>1</ApplyToCaster>
+            <Value>-2</Value>
+        </GameModifier>	
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Lightning</AttackStat>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumAirShards] + [UnitOwner_GetNumFireShards]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc2" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[Calc] * 10]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc2] + 50]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>50</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Storm_01</HitSoundFX>
+        <WorldLightOverrideTime>2</WorldLightOverrideTime>
+        <WorldLightOverrideAmbiant>30,30,30</WorldLightOverrideAmbiant>
+        <WorldLightOverrideDiffuse>30,30,30</WorldLightOverrideDiffuse>
+        <WorldLightOverrideRim0>212,0,192</WorldLightOverrideRim0>
+        <WorldLightOverrideRim1>0,132,234</WorldLightOverrideRim1>
+        <SpellDefEffect>
+            <EffectName>T_Storm_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0.25</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+<SpellDef InternalName="RaiseLand_Sorcerer">
+        <DisplayName>Smooth Cliffs</DisplayName>
+        <Description>Turn cliff into beach.</Description>
+        <Image>S_RaiseLand_Painting.png</Image>
+        <IconFG>S_RaiseLand_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <SpellBookSortCategory>World</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Map</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Terraform</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>NeutralGround</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Alteration</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>15</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>RaiseLand</Attribute>
+        </GameModifier>
+        <ValidTerrainType>Cliff</ValidTerrainType>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_RaiseLand_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_RaiseLand_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>0.3</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+	
+	<SpellDef InternalName="PrismBlade">
+        <DisplayName>Prism Blade</DisplayName>
+        <Description>Enchanted champion's weapon does one of the following, at random: +4 fire, cold, lightning, or physical damage.</Description>
+        <Image>S_MoriansChant_Painting.png</Image>
+        <IconFG>T_NobleLegacy_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CanStack>0</CanStack>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitEnchantment</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Buff</SpellSubClass>
+        <SpellTargetType>FriendlyChampionOrSov</SpellTargetType>
+		<AppliesRandomModifier>1</AppliesRandomModifier>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Alteration</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>15</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Fire</StrVal>
+            <Duration>-1</Duration>
+			<Value>4</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Cold</StrVal>
+            <Duration>-1</Duration>
+			<Value>4</Value>
+        </GameModifier>	
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Lightning</StrVal>
+            <Duration>-1</Duration>
+			<Value>4</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Duration>-1</Duration>
+			<Value>4</Value>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>50</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Courage_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_BurningBlade_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>0.75</EffectScale>
+            <EffectDelay>0.25</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+	<!--<SpellDef InternalName="JourneyOfTheMind2">
+        <DisplayName>Guided Ethereal Journey</DisplayName>
+        <Description>Target friendly champion gains a level, but is immobilized and greatly weakened for 15 turns.</Description>
+        <Image>Tech_Higher_Education.png</Image>
+        <IconFG>T_NobleLegacy_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CanStack>0</CanStack>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitEnchantment</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>FriendlyChampionOrSov</SpellTargetType>
+        <PreventStackingWith>YearOfMeditation</PreventStackingWith>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Gnosimancy</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>90</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>TargetUnitLevelUp</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Duration>15</Duration>
+	    <Value>-8</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>Immobilize</Attribute>
+            <Duration>15</Duration>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Duration>15</Duration>
+            <Multiplier>.5</Multiplier>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_HitPoints</StrVal>
+            <Duration>15</Duration>
+            <Multiplier>0.5</Multiplier>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_DestinyGift_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_Paragon_Particle</EffectName>
+            <LocalPosition>0,30,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>-->
+
+<!--<SpellDef InternalName="ResidenceOfResearch">
+        <DisplayName>Residence Of Research</DisplayName>
+        <Description>The Sorcerer becomes PERMANENTLY stationed where this is cast. But he gains the resident ability, can conduct magical experiments for experience, mana, or research, and a resident sovereign can summon a new Apprentice.</Description>
+        <Image>Building_Human_Wizard Tower1.png</Image>
+        <IconFG>S_Ingenuity_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CanStack>0</CanStack>
+		<Cooldown>4000</Cooldown>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitEnchantment</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>PathOfTheSorcerer</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsInTower</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>Immobilize</Attribute>
+            <Duration>4000</Duration>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnlockUnitAbility</Attribute>
+            <StrVal>Resident</StrVal>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_DestinyGift_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_Paragon_Particle</EffectName>
+            <LocalPosition>0,30,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>-->
+
+<SpellDef InternalName="MagicalExperiment">
+        <DisplayName>Magical Experiment</DisplayName>
+        <Description>The Sorcerer toils for 6 turns to extract new knowledge and more magical mastery. This may bear great fruit of knowledge (XP, mana, or research), but beware unintended consequences: these experiments have a tiny chance of bringing about disaster.</Description>
+        <Image>Academy_Medallion.png</Image>
+        <IconFG>T_HealingLight_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CanStack>0</CanStack>
+		<CastTime>10</CastTime>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitEnchantment</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <AppliesRandomModifier>1</AppliesRandomModifier>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsInTower</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>PathOfTheSorcerer</Attribute>
+        </Prereq>		
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>RefinedCrystal</Resource>
+            <Amount>10</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>TargetUnitLevelUp</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>TargetUnitLevelUp</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Mana</Attribute>
+            <Value>100</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Research</Attribute>
+            <Value>300</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Research</Attribute>
+            <Value>400</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Research</Attribute>
+            <Value>1000</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Mana</Attribute>
+            <Value>100</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>GiveExperience</Attribute>
+            <Value>100</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>GiveExperience</Attribute>
+            <Value>300</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>GiveExperience</Attribute>
+            <Value>500</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Mana</Attribute>
+            <Value>200</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>CreateGoodieHut</Attribute>
+            <StrVal>Awoken Sleeper</StrVal>
+            <UnitClass>Lair_ClambercoilDragon</UnitClass>
+            <Radius>4</Radius>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Mana_Stone</Attribute>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_DestinyGift_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_Paragon_Particle</EffectName>
+            <LocalPosition>0,30,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+<SpellDef InternalName="RecruitApprentice">
+        <DisplayName>Recruit Sorcerer's Apprentice</DisplayName>
+        <Description>Seek out a magical student to become your Apprentice - they will join you as a henchman, a champion that does not split xp.</Description>
+        <Image>Building_Human_Wizard Tower1.png</Image>
+        <IconFG>S_Ingenuity_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CanStack>0</CanStack>
+		<Cooldown>4000</Cooldown>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitEnchantment</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <CasterMustBeSov>1</CasterMustBeSov>
+        <AppliesRandomModifier>1</AppliesRandomModifier>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsInTower</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>PathOfTheSorcerer</Attribute>
+        </Prereq>		
+        <SpellResourceCost>
+            <Resource>Fame</Resource>
+            <Amount>25</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnitJoinArmy</Attribute>
+            <StrVal>Quendar_Apprentice1</StrVal>
+            <UnitClass>Champion</UnitClass>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnitJoinArmy</Attribute>
+            <StrVal>Quendar_Apprentice2</StrVal>
+            <UnitClass>Champion</UnitClass>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnitJoinArmy</Attribute>
+            <StrVal>Amarian_Apprentice2</StrVal>
+            <UnitClass>Champion</UnitClass>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnitJoinArmy</Attribute>
+            <StrVal>Amarian_Apprentice1</StrVal>
+            <UnitClass>Champion</UnitClass>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_DestinyGift_01</HitSoundFX>
+    </SpellDef>
+
+    <SpellDef InternalName="FamiliarChampion_Sorcerer">
+        <DisplayName>Sovereign Binding</DisplayName>
+        <Description>The sovereign Sorcerer can bind essence to a champion, allowing that champion to cast all the spells of the sovereign. This binding takes a small toll on the champion's initative (-2) and spell mastery(-10), however.</Description>
+        <Image>M_WargFamiliar_Card.png</Image>
+        <IconFG>T_SummonFamiliar_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CanStack>0</CanStack>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitEnchantment</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Buff</SpellSubClass>
+        <SpellTargetType>FriendlyChampion</SpellTargetType>
+        <CasterMustBeSov>1</CasterMustBeSov>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Alteration</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>100</Amount>
+        </SpellResourceCost>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>CanCastSovSpells</Attribute>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+  	    <Value>-2</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_MagicPower</StrVal>
+  	    <Value>-10</Value>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_SummonFamiliar_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_SummonEarthElemental_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>0.5</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+	<!--
+	
+ <SpellDef InternalName="LightrayNova_Sorcerer">
+        <DisplayName>Lightray Form</DisplayName>
+        <Description>Teleport to any location in tactical combat, stunning any enemies within 1 tile.</Description>
+	<Image>S_Return_Painting.png</Image>
+        <IconFG>T_Blink_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <Cooldown>5</Cooldown>
+	    <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+        <SpellTargetTileOccupied>Empty</SpellTargetTileOccupied>
+        <IgnoreInvalidTargetsInRadius>1</IgnoreInvalidTargetsInRadius>
+        <Radius>1</Radius>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Lucimancy_Sorcerer</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>60</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>TransportUnit</Attribute>
+            <ApplyToSpellRadiusCenterOnly>1</ApplyToSpellRadiusCenterOnly>
+        </GameModifier>
+        <GameModifier>
+            <ModType>TacticalUnit</ModType>
+            <Attribute>ChanceToLoseNextTurn</Attribute>
+            <DisplayName>Stunned</DisplayName>
+            <Duration>1</Duration>
+            <Value>100</Value>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+               <HitSoundFX>Spell_Blind_01</HitSoundFX>
+        <WorldLightOverrideTime>4</WorldLightOverrideTime>
+        <WorldLightOverrideAmbiant>1500,1500,1500</WorldLightOverrideAmbiant>
+        <WorldLightOverrideDiffuse>500,500,500</WorldLightOverrideDiffuse>
+        <WorldLightOverrideRim0>240,240,240</WorldLightOverrideRim0>
+        <WorldLightOverrideRim1>240,240,240</WorldLightOverrideRim1>
+        <SpellDefEffect>
+            <EffectName>S_BlindingLight_Particle</EffectName>
+            <LocalPosition>0,60,0</LocalPosition>
+            <EffectScale>2</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+            <PlayOnCaster>1</PlayOnCaster>
+        </SpellDefEffect>
+    </SpellDef>
+
+ <SpellDef InternalName="ShadowthreadShift_Sorcerer">
+        <DisplayName>Shadowthread Form</DisplayName>
+        <Description>Teleport to any location in Tactical combat, and your dodge is increased by 60 (+5 per death shard) for 3 turns.</Description>
+		<Image>T_ObscuringFog_Painting.png</Image>
+        <IconFG>Ability_ShadowShift_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <Cooldown>5</Cooldown>
+		<SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>EmptyTile</SpellTargetType>
+        <SpellTargetTileOccupied>Empty</SpellTargetTileOccupied>
+        <IgnoreInvalidTargetsInRadius>1</IgnoreInvalidTargetsInRadius>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Umbramancy_Sorcerer</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>60</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>TransportUnit</Attribute>
+            <ApplyToSpellRadiusCenterOnly>1</ApplyToSpellRadiusCenterOnly>
+        </GameModifier>
+		<GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Dodge</StrVal>
+            <DisplayName>Shadowthread</DisplayName>
+			<ApplyToCaster>1</ApplyToCaster>
+            <Duration>3</Duration>
+            <Effect>S_CloakOfFear_Particle</Effect>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumDeathShards] * 2.5]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc] + 30]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Antipathy_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_Blight_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+	</SpellDef>
+	
+	-->
+
+<SpellDef InternalName="Shadowlance_Sorcerer">
+        <DisplayName>Shadow Lance</DisplayName>
+        <Description>A bolt of night strikes the victim doing 40 Arcane Shadow damage (+4 per death shard), half if they resist.</Description>
+        <FormattedDescription>A bolt of night strikes a random enemy group for %d Arcane Shadow damage.</FormattedDescription>
+        <Image>Tech_Arcane_Weapons.png</Image>
+        <IconFG>T_ShadowBolt_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+	<CastTime>1</CastTime>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+        <IsResistable>1</IsResistable>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Umbramancy_Sorcerer</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>40</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_ArcaneShadow</AttackStat>
+            <IsForFormattedDescription>1</IsForFormattedDescription>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumDeathShards] * 4]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc2" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[Calc] + 40]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc3" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[Calc2] * [UnitStat_SpellDamage_ArcaneShadow]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc3]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="ValueForFormattedDescription">
+                <Expression><![CDATA[[Calc3]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_ArcaneShadow</AttackStat>
+            <IsForSpellResist>1</IsForSpellResist>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumDeathShards] * 2]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc2" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[Calc] + 20]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc3" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[Calc2] * [UnitStat_SpellDamage_ArcaneShadow]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc3]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="ValueForFormattedDescription">
+                <Expression><![CDATA[[Calc3]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>40</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Wither_01</HitSoundFX>
+        <SpellCastSoundFX>Spell_Shadowbolt_Travel</SpellCastSoundFX>
+        <SpellCastEffectName>T_ShadowBolt_Particle</SpellCastEffectName>
+        <SpellCastEffectScale>0.30</SpellCastEffectScale>
+        <SpellCastProjectile>1</SpellCastProjectile>
+        <SpellCastProjectileSpeed>800</SpellCastProjectileSpeed>
+    </SpellDef>
+
+    <SpellDef InternalName="SearingLight_Sorcerer">
+        <DisplayName>Searing Light</DisplayName>
+        <Description>Calls down a focused wrath of light from above, dealing 40 Arcane Light damage (+4 per Life shard), half if the unit resists.</Description>
+        <FormattedDescription>Lightning strikes a random enemy group for %d Arcane Light damage.</FormattedDescription>
+        <Image>Tech_Arcane_Weapons.png</Image>
+        <IconFG>T_BlindingLight_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CastTime>1</CastTime>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+        <IsResistable>1</IsResistable>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Lucimancy_Sorcerer</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>40</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_ArcaneLight</AttackStat>
+            <IsForFormattedDescription>1</IsForFormattedDescription>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumLifeShards] * 4]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc2" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[Calc] + 40]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc3" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[Calc2] * [UnitStat_SpellDamage_ArcaneLight]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc3]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="ValueForFormattedDescription">
+                <Expression><![CDATA[[Calc3]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_ArcaneLight</AttackStat>
+            <IsForSpellResist>1</IsForSpellResist>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumLifeShards] * 2]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc2" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[Calc] + 20]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc3" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[Calc2] * [UnitStat_SpellDamage_ArcaneLight]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc3]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="ValueForFormattedDescription">
+                <Expression><![CDATA[[Calc3]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>100</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_SummonDeathDemon_01</HitSoundFX>
+        <ModifierDelay>1</ModifierDelay>
+        <SpellDefEffect>
+            <EffectName>S_CalloftheTitans_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>.9</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+	<SpellDef InternalName="SorcererConcentration_Ability">
+	<DisplayName>Sorcerer's Concentration</DisplayName>
+	<Description>Adjusts spell damage and casting time based on Sorcerer's abilities</Description>
+	<Image>T_Focus_Painting.png</Image>
+	<IconFG>T_Focus_Icon.png</IconFG>
+	<CanStack>0</CanStack>
+	<SpellBookSortCategory>Unit</SpellBookSortCategory>
+	<SpellBookSortSubCategory>UnitEnchantment</SpellBookSortSubCategory>
+	<SpellType>Tactical</SpellType>
+	<SpellClass>Offensive</SpellClass>
+	<SpellSubClass>Buff</SpellSubClass>
+	<SpellTargetType>Self</SpellTargetType>
+	<IgnoreCastAnim>1</IgnoreCastAnim>
+	<IsCastable>0</IsCastable>
+	<GameModifier>
+		<ModType>Unit</ModType>
+		<Attribute>AdjustUnitStat</Attribute>
+		<StrVal>UnitStat_SpellDamage</StrVal>
+		<Duration>-1</Duration>
+		<Calculate InternalName="Calc" ValueOwner="CastingUnit">
+			<Expression><![CDATA[[UnitStat_SpellDamage_SorcererTactical]]]></Expression>
+		</Calculate>
+		<Calculate InternalName="Value">
+			<Expression><![CDATA[[Calc]]]></Expression>
+		</Calculate>
+	</GameModifier>
+	<GameModifier>
+		<ModType>Unit</ModType>
+		<Attribute>AdjustUnitStat</Attribute>
+		<StrVal>UnitStat_SpellCastTimeModifier</StrVal>
+		<Duration>-1</Duration>
+		<Value>1</Value>
+	</GameModifier>			
+	<AIData AIPersonality="AI_General">
+		<AIPriority>0</AIPriority>
+	</AIData>        
+</SpellDef>
+	
+    <SpellDef InternalName="PrismShift_Air">
+        <DisplayName>Prism Shift: Air</DisplayName>
+        <Description>Transforms a shard in your empire into an Air shard.</Description>
+        <Image>S_Corruption_Painting.png</Image>
+        <IconFG>S_Corruption_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>		
+        <SpellBookSortCategory>World</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Other</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>RegularShard</SpellTargetType>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Anthuamancy</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Air1</Attribute>
+        </Prereq>		
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>60</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>ChangeShardType</Attribute>
+            <StrVal>AirShard</StrVal>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Consume_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_Corruption_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>2</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+
+    <SpellDef InternalName="PrismShift_Earth">
+        <DisplayName>Prism Shift: Earth</DisplayName>
+        <Description>Transforms a shard in your empire into an Earth shard.</Description>
+        <Image>S_Corruption_Painting.png</Image>
+        <IconFG>S_Corruption_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>		
+        <SpellBookSortCategory>World</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Other</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>RegularShard</SpellTargetType>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Anthuamancy</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Earth1</Attribute>
+        </Prereq>		
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>60</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>ChangeShardType</Attribute>
+            <StrVal>EarthShard</StrVal>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Consume_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_Corruption_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>2</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+    <SpellDef InternalName="PrismShift_Fire">
+        <DisplayName>Prism Shift: Fire</DisplayName>
+        <Description>Transforms a shard in your empire into a Fire shard.</Description>
+        <Image>S_Corruption_Painting.png</Image>
+        <IconFG>S_Corruption_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>		
+        <SpellBookSortCategory>World</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Other</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>RegularShard</SpellTargetType>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Anthuamancy</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Fire1</Attribute>
+        </Prereq>		
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>60</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>ChangeShardType</Attribute>
+            <StrVal>FireShard</StrVal>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Consume_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_Corruption_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>2</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+    <SpellDef InternalName="PrismShift_Water">
+        <DisplayName>Prism Shift: Water</DisplayName>
+        <Description>Transforms a shard in your empire into a Water shard.</Description>
+        <Image>S_Corruption_Painting.png</Image>
+        <IconFG>S_Corruption_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>		
+        <SpellBookSortCategory>World</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Other</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>RegularShard</SpellTargetType>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Anthuamancy</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Water1</Attribute>
+        </Prereq>		
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>60</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>ChangeShardType</Attribute>
+            <StrVal>WaterShard</StrVal>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Consume_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_Corruption_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>2</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>	
+	
+	<SpellDef InternalName="ArcaneVacuum">
+        <DisplayName>Arcane Vacuum</DisplayName>
+        <Description>The Sorcerer becomes immune to magic for 3 turns.</Description>
+        <Image>S_ManaShield_Painting.png</Image>
+        <IconFG>Stat_MagicResist_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CanStack>0</CanStack>
+		<Cooldown>99</Cooldown>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitEnchantment</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>PathOfTheSorcerer</Attribute>
+        </Prereq>
+	        <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>ProtectFromSpells</Attribute>
+				<Duration>3</Duration>
+				<DisplayName>Spell Immune</DisplayName>				
+            </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Counterspell_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_ManaShield_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>0.6</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+	
+	<!-- Adept Spells Follow -->
+	
+	<SpellDef InternalName="CultureOfFire_Adept">
+        <DisplayName>Culture Of Fire</DisplayName>
+        <Description>Produces +.5 Fire Power in the enchanted city.</Description>
+        <Image>S_Firestorm_Painting.png</Image>
+        <IconFG>S_AnnointedByFire_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CanStack>0</CanStack>
+        <SpellBookSortCategory>City</SpellBookSortCategory>
+        <SpellBookSortSubCategory>CityEnchantment</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>ImpResourceBooster</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>FriendlyCity</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Elemancy</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>FireAdept1</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>FireMana</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>.5</Value>
+        </GameModifier>
+        <ValidTerrainCategory>City</ValidTerrainCategory>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>100</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Inspiration_01</HitSoundFX>
+        <SpellCastEffectName>Brilliance</SpellCastEffectName>
+        <SpellCastEffectScale>.4</SpellCastEffectScale>
+        <SpellDefEffect>
+            <EffectName>S_Inspiration_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>0.75</EffectScale>
+            <EffectDelay>0.5</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+
+<SpellDef InternalName="CultureOfWater_Adept">
+        <DisplayName>Culture Of Water</DisplayName>
+        <Description>Produces +.5 Water Power in the enchanted city.</Description>
+        <Image>S_FreezeSeas_Painting.png</Image>
+        <IconFG>S_TidalWave_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CanStack>0</CanStack>
+        <SpellBookSortCategory>City</SpellBookSortCategory>
+        <SpellBookSortSubCategory>CityEnchantment</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>ImpResourceBooster</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>FriendlyCity</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Elemancy</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>WaterAdept1</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>WaterMana</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>.5</Value>
+        </GameModifier>
+        <ValidTerrainCategory>City</ValidTerrainCategory>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>100</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Inspiration_01</HitSoundFX>
+        <SpellCastEffectName>Brilliance</SpellCastEffectName>
+        <SpellCastEffectScale>.4</SpellCastEffectScale>
+        <SpellDefEffect>
+            <EffectName>S_Inspiration_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>0.75</EffectScale>
+            <EffectDelay>0.5</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+<SpellDef InternalName="CultureOfAir_Adept">
+        <DisplayName>Culture Of Air</DisplayName>
+        <Description>Produces +.5 Air Power in the enchanted city.</Description>
+        <Image>T_ObscuringFog_Painting.png</Image>
+        <IconFG>S_Tornado_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CanStack>0</CanStack>
+        <SpellBookSortCategory>City</SpellBookSortCategory>
+        <SpellBookSortSubCategory>CityEnchantment</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>ImpResourceBooster</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>FriendlyCity</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Elemancy</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>AirAdept1</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>AirMana</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>.5</Value>
+        </GameModifier>
+        <ValidTerrainCategory>City</ValidTerrainCategory>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>100</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Inspiration_01</HitSoundFX>
+        <SpellCastEffectName>Brilliance</SpellCastEffectName>
+        <SpellCastEffectScale>.4</SpellCastEffectScale>
+        <SpellDefEffect>
+            <EffectName>S_Inspiration_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>0.75</EffectScale>
+            <EffectDelay>0.5</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+<SpellDef InternalName="CultureOfEarth_Adept">
+        <DisplayName>Culture Of Earth</DisplayName>
+        <Description>Produces +.5 Earth Power in the enchanted city.</Description>
+        <Image>S_CreateMountain_Painting.png</Image>
+        <IconFG>S_CreateMountain_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CanStack>0</CanStack>
+        <SpellBookSortCategory>City</SpellBookSortCategory>
+        <SpellBookSortSubCategory>CityEnchantment</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>ImpResourceBooster</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>FriendlyCity</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Elemancy</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>EarthAdept1</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>EarthMana</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>.5</Value>
+        </GameModifier>
+        <ValidTerrainCategory>City</ValidTerrainCategory>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>100</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Inspiration_01</HitSoundFX>
+        <SpellCastEffectName>Brilliance</SpellCastEffectName>
+        <SpellCastEffectScale>.4</SpellCastEffectScale>
+        <SpellDefEffect>
+            <EffectName>S_Inspiration_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>0.75</EffectScale>
+            <EffectDelay>0.5</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+<SpellDef InternalName="CultureOfLife_Adept">
+        <DisplayName>Culture Of Life</DisplayName>
+        <Description>Produces +.5 Life Power in the enchanted city.</Description>
+        <Image>ReviveLand_Painting.png</Image>
+        <IconFG>T_Growth_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CanStack>0</CanStack>
+        <SpellBookSortCategory>City</SpellBookSortCategory>
+        <SpellBookSortSubCategory>CityEnchantment</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>ImpResourceBooster</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>FriendlyCity</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Elemancy</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>LifeAdept1</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>Allegiance</Type>
+            <Attribute>Kingdom</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>LifeMana</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>.5</Value>
+        </GameModifier>
+        <ValidTerrainCategory>City</ValidTerrainCategory>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>100</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Inspiration_01</HitSoundFX>
+        <SpellCastEffectName>Brilliance</SpellCastEffectName>
+        <SpellCastEffectScale>.4</SpellCastEffectScale>
+        <SpellDefEffect>
+            <EffectName>S_Inspiration_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>0.75</EffectScale>
+            <EffectDelay>0.5</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+	
+	<SpellDef InternalName="PrismShift_Air_Adept">
+        <DisplayName>Prism Shift: Air</DisplayName>
+        <Description>Transforms a shard in your empire into an Air shard.</Description>
+        <Image>S_Corruption_Painting.png</Image>
+        <IconFG>S_Corruption_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>		
+        <SpellBookSortCategory>World</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Other</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>RegularShard</SpellTargetType>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Anthuamancy</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>AirAdept1</Attribute>
+        </Prereq>		
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>60</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>ChangeShardType</Attribute>
+            <StrVal>AirShard</StrVal>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Consume_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_Corruption_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>2</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+
+    <SpellDef InternalName="PrismShift_Earth_Adept">
+        <DisplayName>Prism Shift: Earth</DisplayName>
+        <Description>Transforms a shard in your empire into an Earth shard.</Description>
+        <Image>S_Corruption_Painting.png</Image>
+        <IconFG>S_Corruption_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>		
+        <SpellBookSortCategory>World</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Other</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>RegularShard</SpellTargetType>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Anthuamancy</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>EarthAdept1</Attribute>
+        </Prereq>		
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>60</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>ChangeShardType</Attribute>
+            <StrVal>EarthShard</StrVal>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Consume_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_Corruption_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>2</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+    <SpellDef InternalName="PrismShift_Fire_Adept">
+        <DisplayName>Prism Shift: Fire</DisplayName>
+        <Description>Transforms a shard in your empire into a Fire shard.</Description>
+        <Image>S_Corruption_Painting.png</Image>
+        <IconFG>S_Corruption_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>		
+        <SpellBookSortCategory>World</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Other</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>RegularShard</SpellTargetType>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Anthuamancy</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>FireAdept1</Attribute>
+        </Prereq>		
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>60</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>ChangeShardType</Attribute>
+            <StrVal>FireShard</StrVal>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Consume_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_Corruption_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>2</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+    <SpellDef InternalName="PrismShift_Water_Adept">
+        <DisplayName>Prism Shift: Water</DisplayName>
+        <Description>Transforms a shard in your empire into a Water shard.</Description>
+        <Image>S_Corruption_Painting.png</Image>
+        <IconFG>S_Corruption_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>		
+        <SpellBookSortCategory>World</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Other</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>RegularShard</SpellTargetType>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Anthuamancy</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>WaterAdept1</Attribute>
+        </Prereq>		
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>60</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>ChangeShardType</Attribute>
+            <StrVal>WaterShard</StrVal>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Consume_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_Corruption_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>2</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>	
+
+	
+	<SpellDef InternalName="BloodSeason">
+        <DisplayName>Blood Season</DisplayName>
+        <Description>All players declare war with any non-allies. This will override non-aggression pacts and tribute treaties.</Description>
+        <Image>F_Conquest_Full.png</Image>
+        <IconFG>S_BloodCurse_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>			
+        <Cooldown>100</Cooldown>
+        <SpellBookSortCategory>World</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Debuff</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Physimancy</Attribute>
+        </Prereq>		
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>200</Amount>
+        </SpellResourceCost>
+            <GameModifier>
+                <ModType>Map</ModType>
+                <Attribute>AllPlayersDeclareWar</Attribute>
+            </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Antipathy_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_Blight_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+	
+	<SpellDef InternalName="FiresOfRevolution">
+        <DisplayName>Fires Of Revolution</DisplayName>
+        <Description>Take control of target city. Can be cast on Allies, breaking the alliance.</Description>
+        <Image>S_Inspiration_Painting.png</Image>
+        <IconFG>S_BrokenLoyalties_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>		
+        <SpellBookSortCategory>City</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Charm</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>ImpResourceBooster</SpellClass>
+        <SpellSubClass>Debuff</SpellSubClass>
+        <SpellTargetType>EnemyCity</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Illusomancy</Attribute>
+        </Prereq>			
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>500</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Fame</Resource>
+            <Amount>200</Amount>
+        </SpellResourceCost>		
+        <GameModifier>
+            <ModType>City</ModType>
+            <Attribute>TransferCityControl</Attribute>
+            <BoolVal1>1</BoolVal1>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Antipathy_01</HitSoundFX>
+        <SpellCastEffectName>Brilliance</SpellCastEffectName>
+        <SpellCastEffectScale>0.4</SpellCastEffectScale>
+        <SpellDefEffect>
+            <EffectName>S_Blight_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+	
+</Spells>

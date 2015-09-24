@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with the Elemental Editor -->
+<!-- Techs_Amarian.xml -->
+<!-- -->
+
+
+<Techs>
+   
+            
+    <TechDef InternalName="Refined_Arcana">
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Mana</StrVal>
+            <Value>-15</Value>
+            <Icon>Mana_Stat_Icon.png</Icon>
+            <Provides>-15% Mana (Net +10% per research)</Provides>
+        </GameModifier>
+    </TechDef>
+	
+	 <TechDef InternalName="Logistics">
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Gold</StrVal>
+            <Value>-10</Value>
+            <Icon>Res_Icon_Gold.png</Icon>
+            <Provides>-10% Gildar factionwide to support larger armies</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Additive_FoodPerGrain</StrVal>
+            <Value>-10</Value>
+            <Icon>Res_Icon_Food.png</Icon>
+            <Provides>-10 Food per Grain factionwide to support larger armies</Provides>
+        </GameModifier>
+
+	 <TechDef InternalName="Company">
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Gold</StrVal>
+            <Value>-10</Value>
+            <Icon>Res_Icon_Gold.png</Icon>
+            <Provides>-10% Gildar factionwide to support larger armies</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Additive_FoodPerGrain</StrVal>
+            <Value>-10</Value>
+            <Icon>Res_Icon_Food.png</Icon>
+            <Provides>-10 Food per Grain factionwide to support larger armies</Provides>
+        </GameModifier>			
+    </TechDef>
+    
+</Techs>
+
+

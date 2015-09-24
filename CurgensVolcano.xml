@@ -1,0 +1,56 @@
+<Spells>
+
+<!-- This makes the Ai capable of using Volcano against enemies. Credit to Primal_Savage -->
+
+<SpellDef InternalName="CurgensVolcano">
+        <DisplayName>Curgen's Volcano</DisplayName>
+        <Description>Raises a volcano in the midst of an enemy city.  The volcano destroys whatever is in the way: resources, units, improvements, cities, and even sovereigns (and subsequently their faction).</Description>
+        <Image>S_CurgensVolcano_Painting.png</Image>
+        <IconFG>S_CurgensVolcano_Icon.png</IconFG>
+        <CastTime>2</CastTime>
+		<Cooldown>100</Cooldown>
+        <SpellBookSortCategory>City</SpellBookSortCategory>
+        <SpellBookSortSubCategory>CityCurse</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>ImpResourceBooster</SpellClass>
+        <SpellSubClass>Debuff</SpellSubClass>
+        <SpellTargetType>EnemyCity</SpellTargetType>
+        <CasterMustBeSov>1</CasterMustBeSov>
+        <Radius>2</Radius>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>1200</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>DestroyObjects</Attribute>
+        </GameModifier>
+        <ValidTerrainCategory>City</ValidTerrainCategory>
+        <!--<ValidTerrainCategory>Forest</ValidTerrainCategory>
+        <ValidTerrainCategory>Land</ValidTerrainCategory>
+        <ValidTerrainCategory>Mountain</ValidTerrainCategory>-->
+        <AIData AIPersonality="AI_General">
+            <AIPriority>10000</AIPriority>
+        </AIData>
+        <CameraShakeDuration>4.25</CameraShakeDuration>
+        <CameraShakeStrength>0.25</CameraShakeStrength>
+        <HitSoundFX>Spell_Volcano_01</HitSoundFX>
+        <SoundMinDist>1000</SoundMinDist>
+        <SoundMaxDist>10000</SoundMaxDist>
+        <TerrainStamp>valcano</TerrainStamp>
+        <StampMorphTime>5</StampMorphTime>
+        <WorldLightOverrideTime>5</WorldLightOverrideTime>
+        <WorldLightOverrideAmbiant>70,70,70</WorldLightOverrideAmbiant>
+        <WorldLightOverrideDiffuse>80,80,80</WorldLightOverrideDiffuse>
+        <WorldLightOverrideRim0>60,60,60</WorldLightOverrideRim0>
+        <WorldLightOverrideRim1>60,60,60</WorldLightOverrideRim1>
+        <SpellDefEffect>
+            <EffectName>LavaEruption1_New</EffectName>
+            <LocalPosition>0,150,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>1</EffectDelay>
+            <SnapToTerrain>0</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+	
+</Spells>

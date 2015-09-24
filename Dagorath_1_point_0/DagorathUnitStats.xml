@@ -1,0 +1,39 @@
+<PlayerAbilityTypes>
+
+    <UnitStatType InternalName="UnitStat_Attack_Eldritch">
+        <DisplayName>Eldritch Rot</DisplayName>
+        <DisplayNameShort>Eldritch</DisplayNameShort>
+        <Description>The Eldritch Rot damage that this unit can deal.</Description>
+        <Icon>Stat_AttackPoison_Icon.png</Icon>
+        <DefaultValue>0.0</DefaultValue>
+        <Hidden>1</Hidden>
+        <IsAttackStat>1</IsAttackStat>
+        <CorrespondingDefenseStat>UnitStat_Defense_Eldritch</CorrespondingDefenseStat>
+        <CorrespondingResistStat>UnitStat_ResistEldritch</CorrespondingResistStat>
+        <UnitStatGrouping>CombatStat</UnitStatGrouping>
+    </UnitStatType>
+
+    <UnitStatType InternalName="UnitStat_Defense_Eldritch">
+        <DisplayName>Eldritch Defense</DisplayName>
+        <DisplayNameShort>FRE DEF</DisplayNameShort>
+        <Description>Ability to absorb Eldritch attacks.</Description>
+        <Icon>Stat_DefensePoison_Icon.png</Icon>
+        <DefaultValue>0.0</DefaultValue>
+        <Hidden>1</Hidden>
+        <IsDefenseStat>1</IsDefenseStat>
+        <UnitStatGrouping>CombatStat</UnitStatGrouping>
+    </UnitStatType>
+
+    <UnitStatType InternalName="UnitStat_ResistEldritch">
+        <DisplayName>Eldritch Resist</DisplayName>
+        <DisplayNameShort>ELD RES</DisplayNameShort>
+        <Description>Reduces Eldritch damage by this percent.</Description>
+        <Icon>Stat_DefensePoison_Icon.png</Icon>
+        <DefaultValue>0.0</DefaultValue>
+        <Hidden>1</Hidden>
+        <UnitStatGrouping>CombatStat</UnitStatGrouping>
+		<UnitStatGrouping>UnitDetailsCombatStat</UnitStatGrouping>
+		<UnitStatGrouping>UnitDesignStat</UnitStatGrouping>
+    </UnitStatType>
+
+</PlayerAbilityTypes>

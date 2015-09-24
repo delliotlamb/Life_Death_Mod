@@ -1,0 +1,964 @@
+<GameItemTypes>
+
+<GameItemType InternalName="Broadsword_DesertHunger">
+        <DisplayName>Desert Hunger</DisplayName>
+        <Description>This sword has been found and discarded by dozens of mighty warriors. The blade seems to be brittle dry bone. Yet when drenched in fresh blood, its grows stronger, sharper and magically deadlier.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>OneHanded</WeaponType>
+        <WeaponUpgradeType>Blade</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>360</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>18</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>2</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxCounterAttack</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Counterattack per round</Provides>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsSword</StrVal>
+            <Value>1</Value>
+            <Provides>Enables abilities that require Swords</Provides>
+        </GameModifier>			
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Enrage_Damage_Bonus</StrVal>
+                <Value>.5</Value>
+                <Provides>+50% damage with every successful strike</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>10</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>370</AIPriority>
+        </AIData>
+        <ArtDef>Broadsword_Berserkers_ArtDef</ArtDef>
+    </GameItemType>
+
+    <GameItemType InternalName="Longsword_Searingray">
+        <DisplayName>Searingray Edge</DisplayName>
+        <Description>A young father travelled many miles searching for a compassionate healer to save his dying son. He arrived to find the healer murdered by bandits. But in the grip of that corpse's hand awaited one of these swords of vengeance.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>OneHanded</WeaponType>
+        <WeaponUpgradeType>Blade</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>120</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>20</Value>
+        </GameModifier>
+        <GameModifier>
+            	<ModType>Unit</ModType>
+            	<Attribute>AdjustUnitStat</Attribute>
+            	<StrVal>UnitStat_Attack_ArcaneLight</StrVal>
+            	<Value>10</Value>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>2</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxCounterAttack</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Counterattack per round</Provides>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsSword</StrVal>
+            <Value>1</Value>
+            <Provides>Enables abilities that require Swords</Provides>
+        </GameModifier>			
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Pierce</StrVal>
+                <StrVal2>Undead</StrVal2>
+                <Value>10</Value>
+                <Provides>+10 Attack vs Undead</Provides>
+                <vsUnitType>1</vsUnitType>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>423</AIPriority>
+        </AIData>
+        <ArtDef>Longsword_Angel_ArtDef</ArtDef>
+    </GameItemType>
+	
+	<GameItemType InternalName="WoodShield2">
+        <DisplayName>Enchanted Oakbranch Shield</DisplayName>
+        <Description>Yuor foes may laugh at this simple wood shield. But the oak branch from which it was carved stands hard as rock, and the magic within it can defeat death itself.</Description>
+        <Type>Defense</Type>
+        <WeaponType>Shield</WeaponType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>4</AdditionalTrainingTurns>
+        <ShopValue>20</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <Value>8</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Dodge</StrVal>
+            <Value>6</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Tactical_Auto_Defense_Boost</StrVal>
+            <Value>15</Value>
+            <Provides>+15 Defense when Defending</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnlockCombatAbility</Attribute>
+            <StrVal>ShieldBash_Ability</StrVal>
+            <Provides>Shield Bash- Knocks the victim back a tile</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsShield</StrVal>
+            <Value>1</Value>
+            <Provides>Enables abilities that require Shields</Provides>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>DeathWard_Tactical</StrVal>
+                <Provides>If this unit is killed in battle they are resurrected with half their hit points.  This enchantment lasts for 5 actions or until the unit is resurrected.</Provides>
+            </GameModifier>		
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>		
+            <AIData AIPersonality="AI_General">
+                <AIPriority>24</AIPriority>
+            </AIData>
+        <ArtDef>WoodShield_ArtDef</ArtDef>
+    </GameItemType>
+
+    <GameItemType InternalName="Token_MagicalSeed2">
+        <DisplayName>Magical Seed</DisplayName>
+        <Description>This seed contains the enduring spirit of life itself, which even cataclysm itself could not eradicate. Plant it where you would wish to see life return to the land.</Description>
+        <ShopValue>90</ShopValue>
+            <GameModifier>
+                <ModType>Map</ModType>
+                <Attribute>CreateResourceHoard</Attribute>
+                <StrVal>Resource_FruitGrove</StrVal>
+				<Provides>A new crop will spring up wherever you plant this seed.</Provides>
+                <Value>1</Value>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <IsUsable>1</IsUsable>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>0</AIPriority>
+            </AIData>
+        <ArtDef>Token_MagicalSeed2_ArtDef</ArtDef>
+        <GameItemTypeArtDef InternalName="Token_MagicalSeed2_ArtDef">
+            <GameItemTypeModelPack InternalName="Token_MagicalSeed2_Default">
+                <IconFile>Seed1.png</IconFile>
+                <TintR>53</TintR>
+                <TintG>55</TintG>
+                <TintB>182</TintB>
+                <SFX>Equip_MagicRing_01</SFX>
+                <SFX>Equip_MagicRing_02</SFX>
+                <SFX>Equip_MagicRing_03</SFX>
+                <SFX>Equip_MagicRing_04</SFX>
+                <GameItemTypeModel>
+                </GameItemTypeModel>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>		
+    </GameItemType>
+
+	<!--
+	
+    <GameItemType InternalName="Token_MagicalSeed3">
+        <DisplayName>Magical Seed</DisplayName>
+        <Description>This seed contains the enduring spirit of life itself, which even cataclysm itself could not eradicate. Who knows what will come from planting it?</Description>
+        <ShopValue>90</ShopValue>
+            <GameModifier>
+                <ModType>Map</ModType>
+                <Attribute>CreateResourceHoard</Attribute>
+                <StrVal>Resource_WildGrain</StrVal>
+				<Provides>What gift will life bestow, where this seed is set to grow?</Provides>
+                <Value>1</Value>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <IsUsable>1</IsUsable>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>0</AIPriority>
+            </AIData>
+        <ArtDef>Token_MagicalSeed_ArtDef</ArtDef>
+    </GameItemType>
+	
+	-->
+	
+	    <GameItemType InternalName="Token_MagicalSeed3">
+        <DisplayName>Magical Seed</DisplayName>
+        <Description>This seed contains the enduring spirit of life itself, which even cataclysm itself could not eradicate.</Description>
+        <ShopValue>90</ShopValue>
+            <GameModifier>
+                <ModType>Map</ModType>
+                <Attribute>CreateResourceHoard</Attribute>
+                <StrVal>Resource_WildGrain</StrVal>
+				<Provides>A new crop will spring up wherever you plant this seed.</Provides>
+                <Value>1</Value>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <IsUsable>1</IsUsable>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>0</AIPriority>
+            </AIData>
+        <ArtDef>Token_MagicalSeed2_ArtDef</ArtDef>
+    </GameItemType>
+	
+	<!--
+	
+	<GameItemType InternalName="Token_MagicalSeed4">
+        <DisplayName>Magical Seed</DisplayName>
+        <Description>This seed contains the enduring spirit of life itself, which even cataclysm itself could not eradicate. Who knows what will come from planting it?</Description>
+        <ShopValue>90</ShopValue>
+	    <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UseSpell</Attribute>
+            <StrVal>VerdantRenewal_Ability</StrVal>
+			<Provides>What gift will life bestow, where this seed is set to grow?</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <IsUsable>1</IsUsable>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>0</AIPriority>
+            </AIData>
+        <ArtDef>Token_MagicalSeed_ArtDef</ArtDef>
+    </GameItemType>
+	
+	-->
+
+<GameItemType InternalName="Longsword_Freezing2">
+        <DisplayName>Glacier Brand</DisplayName>
+        <Description>This well-crafted blade cannot be heated, instead sucking the warmth from the air around it. If your enemies survive its slashes, the frostbite will keep them down.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>OneHanded</WeaponType>
+        <WeaponUpgradeType>Blade</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>900</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>22</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Cold</StrVal>
+            <Value>12</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>2</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsSword</StrVal>
+            <Value>1</Value>
+            <Provides>Enables abilities that require Swords</Provides>
+        </GameModifier>		
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxCounterAttack</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Counterattack per round</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Likelihood>0</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>484</AIPriority>
+        </AIData>
+        <ArtDef>Longsword_Freezing_ArtDef</ArtDef>
+</GameItemType>
+
+<GameItemType InternalName="TowerShield_Obsidian2">
+        <DisplayName>Heavy Obsidian Shield</DisplayName>
+        <Description>Only the stoutest can keep this heavy shield aloft in combat, but the protection against blow and spell it provides is worth the strain.</Description>
+        <Type>Defense</Type>
+        <WeaponType>Shield</WeaponType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>900</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <Value>22</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Dodge</StrVal>
+            <Value>20</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_MagicResist</StrVal>
+            <Value>40</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Tactical_Auto_Defense_Boost</StrVal>
+            <Value>30</Value>
+            <Provides>+30 Defense when Defending</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnlockCombatAbility</Attribute>
+            <StrVal>ShieldBash_Ability</StrVal>
+            <Provides>Shield Bash- Knocks the victim back a tile</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsShield</StrVal>
+            <Value>1</Value>
+            <Provides>Enables abilities that require Shields</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Likelihood>0</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>180</AIPriority>
+            </AIData>
+        <ArtDef>TowerShield_Obsidian_ArtDef</ArtDef>
+    </GameItemType>
+
+    <GameItemType InternalName="PlateBreastpiece_Impenetrable2">
+        <DisplayName>Mountainsoul Cuirass</DisplayName>
+        <Description>This plate breastpiece is unmatched in its durability against sword and spell, yet weighs nearly nothing. When worn, its plates grow or shrink to fit the user. Thus even those normally paralyzed by armor to wear this cuirass comfortably.</Description>
+        <Type>Torso</Type>
+        <Type>Surcoat</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>4110</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <Value>20</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_MagicResist</StrVal>
+            <Value>20</Value>
+            <Provides>+20 Spell Resistance</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ResistCold</StrVal>
+            <Value>20</Value>
+            <Provides>+20% Cold resistance</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ResistFire</StrVal>
+            <Value>20</Value>
+            <Provides>+20% Fire resistance</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ResistLightning</StrVal>
+            <Value>20</Value>
+            <Provides>+20% Lightning resistance</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Likelihood>0</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>180</AIPriority>
+            </AIData>
+        <ArtDef>Art_PlateBreastpiece_Reinforced</ArtDef>
+    </GameItemType>
+
+    <GameItemType InternalName="Longsword_Flaming2">
+        <DisplayName>Longsword Of Flames</DisplayName>
+        <Description>Though not as potent as the legendary Pyre Brand, this sword still burns hot enough to kill almost anything alive.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>OneHanded</WeaponType>
+        <WeaponUpgradeType>Blade</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>900</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>22</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Fire</StrVal>
+            <Value>12</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>2</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsSword</StrVal>
+            <Value>1</Value>
+            <Provides>Enables abilities that require Swords</Provides>
+        </GameModifier>		
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxCounterAttack</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Counterattack per round</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>680</AIPriority>
+        </AIData>
+        <ArtDef>Longsword_Flaming_ArtDef</ArtDef>
+    </GameItemType>
+	
+	    <GameItemType InternalName="PlateVambraces_Volcanic2">
+        <DisplayName>Eruption Gauntlets</DisplayName>
+        <Description>These gauntlets contain the raw power of a volcanic eruption within. Hope you are not wearing them, should the enchantment ever fail.</Description>
+        <Type>Forearms</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>600</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-1</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <Value>6</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ResistFire</StrVal>
+            <Value>50</Value>
+            <Provides>+50% Fire resistance</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Fire</StrVal>
+            <Value>10</Value>
+        </GameModifier>		
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_ArmorProficiency</Attribute>
+            <Value>2</Value>
+        </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>60</AIPriority>
+            </AIData>
+        <ArtDef>Art_PlateVambraces_Volcanic</ArtDef>
+    </GameItemType>
+	
+	    <GameItemType InternalName="Greataxe_Flaming2">
+        <DisplayName>Furnace Axe</DisplayName>
+        <Description>It's hard to say which is worse, the heat it exudes or the terrible cut of its blade. Together they make this weapon legendary in its killing ability.</Description>
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>TwoHanded</WeaponType>
+        <WeaponUpgradeType>Axe</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>2500</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>22</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Fire</StrVal>
+            <Value>15</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-2</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_BackswingChance</StrVal>
+                <Value>100</Value>
+                <Provides>Backswing- If the attack misses the unit gets a second attack against the same target</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Cleave_Ability</StrVal>
+                <Provides>Cleave- Strike 3 adjacent enemies</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>792</AIPriority>
+        </AIData>
+        <ArtDef>Greataxe_Flaming_ArtDef</ArtDef>
+    </GameItemType>
+
+    <GameItemType InternalName="CloakOfTheNight2">
+        <DisplayName>Cloak of Nothingness</DisplayName>
+        <Description>Those who wear this cloak command the power of night, making them difficult to hit and imbuing their attacks with a deadly magical darkness.</Description>
+        <Type>Cloak</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>300</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Dodge</StrVal>
+            <Value>20</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_ArcaneShadow</StrVal>
+            <Value>5</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ResistArcaneLight</StrVal>
+            <Value>100</Value>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <IsUsable>0</IsUsable>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>600</AIPriority>
+            </AIData>
+        <ArtDef>CloakOfTheNight_ArtDef</ArtDef>
+    </GameItemType>
+
+
+<GameItemType InternalName="GoldenBelt2">
+        <DisplayName>Belt Of The Trench King</DisplayName>
+        <Description>Despite the smell of seaweed, this belt glows beautifully and shows no flaws. Its wearer has his strength imbued, and moves swiftly, as if bolstered by an invisible undertoe.</Description>
+        <Type>Accessory</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>300</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>2</Value>
+            <Provides>+2 Initiative</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_AttackBoost</StrVal>
+            <Value>6</Value>
+            <Provides>+6 Attack</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Dodge</StrVal>
+            <Value>10</Value>
+            <Provides>+10 Dodge</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Accuracy</StrVal>
+            <Value>10</Value>
+            <Provides>+10 Accuracy</Provides>
+        </GameModifier>		
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <IsUsable>0</IsUsable>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>10</AIPriority>
+            </AIData>
+        <ArtDef>GoldenBelt_ArtDef</ArtDef>
+    </GameItemType>
+
+    <GameItemType InternalName="TomeoftheWaves2">
+        <DisplayName>Tome of the Tide Kingdoms</DisplayName>
+        <Description>This book contains the secrets of the undersea peoples, their history with channeling and their fight to survive the Cataclysm. Any who read it shall understand Elemental in a whole new way.</Description>
+        <ShopValue>90</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>GiveExperience</Attribute>
+            <Value>500</Value>
+            <Provides>+500 Experience</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <IsUsable>1</IsUsable>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>0</AIPriority>
+            </AIData>
+        <ArtDef>TomeoftheWaves_ArtDef</ArtDef>>
+    </GameItemType>
+	
+	<GameItemType InternalName="YewLongbow_Breezefly">
+        <DisplayName>Breezefly Bow</DisplayName>
+        <Description>Impossibly light yet sturdy, this bow draws with airy ease, and strikes with the force of a hurricane.</Description>
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>Bow</WeaponType>
+        <WeaponUpgradeType>Bow</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>900</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Accuracy</StrVal>
+            <Value>15</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>36</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_IsBow</StrVal>
+                <Value>1</Value>
+                <Provides>Enables abilities that require Bows</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockRangedAction</Attribute>
+                <StrVal>BowAttack_Basic</StrVal>
+                <Provides>Ranged attack</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <TacticalRange>20</TacticalRange>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_BOW</AIPrefType>
+            <AIPriority>446</AIPriority>
+        </AIData>
+        <ArtDef>YewLongbow_Perfect_ArtDef</ArtDef>
+    </GameItemType>
+	
+	<GameItemType InternalName="Warhammer_Thundergod">
+        <DisplayName>Thunderlord's Hammer</DisplayName>
+        <Description>If there were a deity of Thunder, he or she would swing a hammer like this one.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>Blunt</WeaponType>
+        <WeaponUpgradeType>Blunt</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>900</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>24</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Lightning</StrVal>
+            <Value>20</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-4</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_BashChance</StrVal>
+                <Value>100</Value>
+                <Provides>Bash- Has a chance equal to the damage done of knocking the victim prone</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>CrushingBlow</StrVal>
+                <Provides>Crushing Blow- +100% Attack, but you lose your next action</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_BLUNT</AIPrefType>
+            <AIPriority>192</AIPriority>
+        </AIData>
+        <ArtDef>Warhammer_Static_ArtDef</ArtDef>
+    </GameItemType>
+	
+	<GameItemType InternalName="Maul_FistOfTheMountain">
+        <DisplayName>Rage Of The Mountain</DisplayName>
+        <Description>Few occurrences anger the mountains. But all their brewing hatred for wind, rain and pickaxe has coalesced into this weapon.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>Blunt</WeaponType>
+        <WeaponUpgradeType>Blunt</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>1230</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>46</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ArmorPierce</StrVal>
+                <Value>33</Value>
+                <Provides>Ignores 33% of the victim's Defense</Provides>
+            </GameModifier>		
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-4</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_BashChance</StrVal>
+                <Value>100</Value>
+                <Provides>Bash- Has a chance equal to the damage done of knocking the victim prone</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>CrushingBlow</StrVal>
+                <Provides>Crushing Blow- +100% Attack, but you lose your next action</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_BLUNT</AIPrefType>
+            <AIPriority>820</AIPriority>
+        </AIData>
+        <ArtDef>Maul_Titanic_ArtDef</ArtDef>
+    </GameItemType>
+	
+	<GameItemType InternalName="SilverFlute2">
+        <DisplayName>Windfavor Piccolo</DisplayName>
+        <Description>Learn to play a simple melody on this instrument, and winds shall become your mightiest weapon.</Description>
+        <Type>Accessory</Type>
+        <CanBeEquipped>1</CanBeEquipped>		
+        <ShopValue>600</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UseSpell</Attribute>
+            <StrVal>PiccolosWrath_Ability</StrVal>
+            <Provides>All enemies lose their next turn unless they resist.  Doing this destroys the flute.</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <IsUsable>0</IsUsable>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>0</AIPriority>
+            </AIData>
+        <ArtDef>SilverFlute_ArtDef</ArtDef>
+    </GameItemType>
+	
+		<GameItemType InternalName="OilJug">
+        <DisplayName>Oil Jug</DisplayName>
+        <Description>This jug allows units to, once per battle, either toss molotov coktails, or units with bows can light a section of the battle on fire.</Description>
+        <Type>Accessory</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>30</AdditionalTrainingTurns>
+        <ShopValue>20</ShopValue>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Craftsmanship</Attribute>
+        </Prereq>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_HasOil</StrVal>
+			<Provides>Allows troops to light tiles on fire in combat, once per battle.</Provides>
+            <Value>1</Value>
+        </GameModifier>			
+			<GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>OilMolotov_Ability</StrVal>				
+				<Provides>Once per battle this unit can toss a molotov cocktail (costs 30 gold).</Provides>
+            </GameModifier>
+			<GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>OiledArrows_Ability</StrVal>				
+				<Provides>If the unit is an archer, they can launch a burning arrow volley instead.</Provides>
+            </GameModifier>			
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>40</Likelihood>
+        <RarityDisplay>Common</RarityDisplay>
+        <IsUsable>0</IsUsable>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>9</AIPriority>
+            </AIData>
+        <ArtDef>OilJug_ArtDef</ArtDef>
+        <GameItemTypeArtDef InternalName="OilJug_ArtDef">
+            <GameItemTypeModelPack InternalName="OilJug_Default">
+                <IconFile>CeramicBottle1.png</IconFile>
+                <TintR>0</TintR>
+                <TintG>0</TintG>
+                <TintB>0</TintB>
+                <GameItemTypeModel>
+                </GameItemTypeModel>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+    </GameItemType>
+	
+	
+	<!--
+	<GameItemType InternalName="OilPouch">
+        <DisplayName>Archer's Oil Pouch</DisplayName>
+        <Description>This jug allows archers, once per battle, to light a section of the battle on fire.</Description>
+        <Type>Accessory</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>30</AdditionalTrainingTurns>
+        <ShopValue>20</ShopValue>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Craftsmanship</Attribute>				
+			<GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>BurningArrows2</StrVal>				
+				<Provides>Unlocks Oiled Arrowheads: A 3x3 square of tiles is hit by burning arrows, lighting it on fire.</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>40</Likelihood>
+        <RarityDisplay>Common</RarityDisplay>
+        <IsUsable>0</IsUsable>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>9</AIPriority>
+            </AIData>
+        <ArtDef>OilPouch_ArtDef</ArtDef>
+        <GameItemTypeArtDef InternalName="OilPouch_ArtDef">
+            <GameItemTypeModelPack InternalName="OilPouch_Default">
+                <IconFile>WaterJug1.png</IconFile>
+                <TintR>0</TintR>
+                <TintG>0</TintG>
+                <TintB>0</TintB>
+                <GameItemTypeModel>
+                </GameItemTypeModel>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+    </GameItemType>
+	
+	-->
+	
+
+</GameItemTypes>

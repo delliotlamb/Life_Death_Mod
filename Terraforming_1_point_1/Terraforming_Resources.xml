@@ -1,0 +1,148 @@
+<ResourceTypes>  
+
+<ResourceType InternalName="VerdantEssence">
+    <DisplayName>Verdant Favor</DisplayName>
+    <Type>VerdantEssence</Type>
+    <Description>Measure of connection to wild, abundant life.</Description>
+    <IconColor>0,0,0</IconColor>
+    <Icon>Gfx//Icons//Icon_TerritoryBonus.png</Icon>
+    <HideInHiergamenon>1</HideInHiergamenon>
+    <ModelColor>0,0,0</ModelColor>
+    <Production>1.0</Production>
+    <Global>1</Global>
+    <Rarity>0.0</Rarity>
+    <Shared>0</Shared>
+    <TradedByCaravans>0</TradedByCaravans>
+    <ShownInGlobalDisplay>1</ShownInGlobalDisplay>
+    <!-- AI Info -->
+    <AIData AIPersonality="AI_General">
+      <AITag>Fame</AITag>
+    </AIData>
+  </ResourceType>
+
+  <!-- Arctic out for now
+
+<ResourceType InternalName="ArcticEssence">
+    <DisplayName>Arctic Favor</DisplayName>
+    <Type>ArcticEssence</Type>
+    <Description>Measure of connection to ice and glacier.</Description>
+    <IconColor>0,0,0</IconColor>
+    <Icon>Gfx//Icons//Stat_AttackCold_Icon.png</Icon>
+    <HideInHiergamenon>1</HideInHiergamenon>
+    <ModelColor>0,0,0</ModelColor>
+    <Production>1.0</Production>
+    <Global>1</Global>
+    <Rarity>0.0</Rarity>
+    <Shared>0</Shared>
+    <TradedByCaravans>0</TradedByCaravans>
+    <ShownInGlobalDisplay>1</ShownInGlobalDisplay>
+    <AIData AIPersonality="AI_General">
+      <AITag>Fame</AITag>
+    </AIData>
+  </ResourceType>
+
+  -->
+  
+<ResourceType InternalName="WaveEssence">
+    <DisplayName>Ocean's Favor</DisplayName>
+    <Type>WaveEssence</Type>
+    <Description>Measure of connection to pool and stream.</Description>
+    <IconColor>0,0,0</IconColor>
+    <Icon>Gfx//Icons//Water_32.png</Icon>
+    <HideInHiergamenon>1</HideInHiergamenon>
+    <ModelColor>0,0,0</ModelColor>
+    <Production>1.0</Production>
+    <Global>1</Global>
+    <Rarity>0.0</Rarity>
+    <Shared>0</Shared>
+    <TradedByCaravans>0</TradedByCaravans>
+    <ShownInGlobalDisplay>1</ShownInGlobalDisplay>
+    <!-- AI Info -->
+    <AIData AIPersonality="AI_General">
+      <AITag>Fame</AITag>
+    </AIData>
+  </ResourceType>
+
+
+<ResourceType InternalName="EmberEssence">
+    <DisplayName>Ember's Favor</DisplayName>
+    <Type>EmberEssence</Type>
+    <Description>Measure of connection to smoldering flame in wait.</Description>
+    <IconColor>0,0,0</IconColor>
+    <Icon>Gfx//Icons//Ability_Fireball.png</Icon>
+    <HideInHiergamenon>1</HideInHiergamenon>
+    <ModelColor>0,0,0</ModelColor>
+    <Production>1.0</Production>
+    <Global>1</Global>
+    <Rarity>0.0</Rarity>
+    <Shared>0</Shared>
+    <TradedByCaravans>0</TradedByCaravans>
+    <ShownInGlobalDisplay>1</ShownInGlobalDisplay>
+    <!-- AI Info -->
+    <AIData AIPersonality="AI_General">
+      <AITag>Fame</AITag>
+    </AIData>
+  </ResourceType>
+
+<ResourceType InternalName="MineralEssence">
+    <DisplayName>Mineral Favor</DisplayName>
+    <Type>MineralEssence</Type>
+    <Description>Measure of connection to rock and gem.</Description>
+    <IconColor>0,0,0</IconColor>
+    <Icon>Gfx//Icons//Ability_Enduring_Icon.png</Icon>
+    <HideInHiergamenon>1</HideInHiergamenon>
+    <ModelColor>0,0,0</ModelColor>
+    <Production>1.0</Production>
+    <Global>1</Global>
+    <Rarity>0.0</Rarity>
+    <Shared>0</Shared>
+    <TradedByCaravans>0</TradedByCaravans>
+    <ShownInGlobalDisplay>1</ShownInGlobalDisplay>
+    <!-- AI Info -->
+    <AIData AIPersonality="AI_General">
+      <AITag>Fame</AITag>
+    </AIData>
+  </ResourceType>
+
+<ResourceType InternalName="GaleEssence">
+    <DisplayName>Gale Favor</DisplayName>
+    <Type>GaleEssence</Type>
+    <Description>Measure of connection to the hidden fury of air.</Description>
+    <IconColor>0,0,0</IconColor>
+    <Icon>Gfx//Icons//Ability_Storm.png</Icon>
+    <HideInHiergamenon>1</HideInHiergamenon>
+    <ModelColor>0,0,0</ModelColor>
+    <Production>1.0</Production>
+    <Global>1</Global>
+    <Rarity>0.0</Rarity>
+    <Shared>0</Shared>
+    <TradedByCaravans>0</TradedByCaravans>
+    <ShownInGlobalDisplay>1</ShownInGlobalDisplay>
+    <!-- AI Info -->
+    <AIData AIPersonality="AI_General">
+      <AITag>Fame</AITag>
+    </AIData>
+  </ResourceType>
+
+<ResourceType InternalName="FamineEssence">
+    <DisplayName>Starvation's Favor</DisplayName>
+    <Type>FamineEssence</Type>
+    <Description>Measure of connection to the cruel scarcity of death.</Description>
+    <IconColor>0,0,0</IconColor>
+    <Icon>Gfx//Icons//Ability_TouchofEntropy.png</Icon>
+    <HideInHiergamenon>1</HideInHiergamenon>
+    <ModelColor>0,0,0</ModelColor>
+    <Production>1.0</Production>
+    <Global>1</Global>
+    <Rarity>0.0</Rarity>
+    <Shared>0</Shared>
+    <TradedByCaravans>0</TradedByCaravans>
+    <ShownInGlobalDisplay>1</ShownInGlobalDisplay>
+    <!-- AI Info -->
+    <AIData AIPersonality="AI_General">
+      <AITag>Fame</AITag>
+    </AIData>
+  </ResourceType>
+
+
+</ResourceTypes>

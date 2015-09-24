@@ -1,0 +1,329 @@
+<GoodieHutTypes>
+
+
+
+<GoodieHutType InternalName="GH_Squire_Kingdom">
+        <Name>Old Battlefield</Name>
+        <Description>The site of a long-forgotten battle from the time before this one, or perhaps a more recent struggle. Whoever has answered your call shall be drawn here. Will it be a willing squire, or an enemy of your ideals?</Description>
+        <Rarity>-1</Rarity>
+        <MinDistanceFromStartingPoints>6</MinDistanceFromStartingPoints>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <SpawnRating>0</SpawnRating>
+        <TileDesign>G_Ancient_Battlefield_WithChest_01</TileDesign>
+        <TileDesignForTerrain>Scrapyard:G_Scrapyard_Scrap_4</TileDesignForTerrain>
+        <DrawnIcon>Artifact_Bones1_ClothIcon.dds</DrawnIcon>
+        <OnSelectSFX>Click_Wood_Metal_Rustle</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>G_Ancient_Battlefield_01.png</All>
+        </Medallions>
+        <Treasure>
+            <Title>Squire Reporting</Title>
+            <Desc>A capable and willing squire offers you his service.</Desc>
+            <Liklihood>25</Liklihood>
+            <SFX>Goodie_AncientBattle_01</SFX>
+            <GameModifier InternalName="Reward1">
+                <ModType>Unit</ModType>
+                <Attribute>UnitJoinArmy</Attribute>
+                <StrVal>Paladin_Henchman_Tarth</StrVal>
+                <StrVal2>Tarth Squire</StrVal2>
+                <Value>2</Value>
+                <UnitClass>Champion</UnitClass>
+            </GameModifier>
+        </Treasure>
+        <Treasure>
+            <Title>Squire Reporting</Title>
+            <Desc>A capable and willing squire offers you his service.</Desc>
+            <Liklihood>25</Liklihood>
+            <SFX>Goodie_AncientBattle_01</SFX>
+            <GameModifier InternalName="Reward1">
+                <ModType>Unit</ModType>
+                <Attribute>UnitJoinArmy</Attribute>
+                <StrVal>Paladin_Henchman_Amarian</StrVal>
+                <StrVal2>Amarian Squire</StrVal2>
+                <Value>2</Value>
+                <UnitClass>Champion</UnitClass>
+            </GameModifier>
+        </Treasure>
+        <Treasure>
+            <Title>Squire Reporting</Title>
+            <Desc>A capable and willing squire offers you his service.</Desc>
+            <Liklihood>25</Liklihood>
+            <SFX>Goodie_AncientBattle_01</SFX>
+            <GameModifier InternalName="Reward1">
+                <ModType>Unit</ModType>
+                <Attribute>UnitJoinArmy</Attribute>
+                <StrVal>Paladin_Henchman_Ironeer</StrVal>
+                <StrVal2>Ironeer Squire</StrVal2>
+                <Value>2</Value>
+                <UnitClass>Champion</UnitClass>
+            </GameModifier>
+        </Treasure>
+        <Treasure>
+            <Title>Squire Reporting</Title>
+            <Desc>A capable and willing squire offers you his service.</Desc>
+            <Liklihood>25</Liklihood>
+            <SFX>Goodie_AncientBattle_01</SFX>
+            <GameModifier InternalName="Reward1">
+                <ModType>Unit</ModType>
+                <Attribute>UnitJoinArmy</Attribute>
+                <StrVal>Paladin_Henchman_Mancer</StrVal>
+                <StrVal2>Mancer Squire</StrVal2>
+                <Value>2</Value>
+                <UnitClass>Champion</UnitClass>
+            </GameModifier>
+        </Treasure>
+    </GoodieHutType>
+
+<GoodieHutType InternalName="GH_Squire_Kingdom2">
+        <Name>Old Battlefield</Name>
+        <Description>The site of a long-forgotten battle from the time before this one, or perhaps a more recent struggle. Whoever has answered your call shall be drawn here. Will it be a willing squire, or an enemy of your ideals?</Description>
+        <Rarity>-1</Rarity>
+        <MinDistanceFromStartingPoints>6</MinDistanceFromStartingPoints>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <SpawnRating>0</SpawnRating>
+        <TileDesign>G_Ancient_Battlefield_WithChest_01</TileDesign>
+        <TileDesignForTerrain>Scrapyard:G_Scrapyard_Scrap_4</TileDesignForTerrain>
+        <DrawnIcon>Artifact_Bones1_ClothIcon.dds</DrawnIcon>
+        <OnSelectSFX>Click_Wood_Metal_Rustle</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>G_Ancient_Battlefield_01.png</All>
+        </Medallions>
+        <Encounter>
+            <Liklihood>25</Liklihood>
+            <SpawnOnClear>1</SpawnOnClear>
+            <WillRespawn>0</WillRespawn>
+            <TacticalMap>T_Cave_Generic_01</TacticalMap>
+            <WanderingRadius>0</WanderingRadius>
+            <UnitInstance>
+                <UnitType>Champion_Antipaladin</UnitType>
+                <Level>22</Level>
+            </UnitInstance>
+        </Encounter>
+    </GoodieHutType>
+
+
+<GoodieHutType InternalName="GH_Squire_Empire">
+        <Name>Old Battlefield</Name>
+        <Description>The site of a long-forgotten battle from the time before this one, or perhaps a more recent struggle. Whoever has answered your call shall be drawn here. Will it be a willing squire, or an enemy of your ideals?</Description>
+        <Rarity>-1</Rarity>
+        <MinDistanceFromStartingPoints>6</MinDistanceFromStartingPoints>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <SpawnRating>0</SpawnRating>
+        <TileDesign>G_Ancient_Battlefield_WithChest_01</TileDesign>
+        <TileDesignForTerrain>Scrapyard:G_Scrapyard_Scrap_4</TileDesignForTerrain>
+        <DrawnIcon>Artifact_Bones1_ClothIcon.dds</DrawnIcon>
+        <OnSelectSFX>Click_Wood_Metal_Rustle</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>G_Ancient_Battlefield_01.png</All>
+        </Medallions>
+        <Treasure>
+            <Title>Squire Reporting</Title>
+            <Desc>A capable and willing squire offers you his service.</Desc>
+            <Liklihood>25</Liklihood>
+            <SFX>Goodie_AncientBattle_01</SFX>
+            <GameModifier InternalName="Reward1">
+                <ModType>Unit</ModType>
+                <Attribute>UnitJoinArmy</Attribute>
+                <StrVal>Trog_Henchman_Paladin</StrVal>
+                <StrVal2>Trog Squire</StrVal2>
+                <Value>2</Value>
+                <UnitClass>Champion</UnitClass>
+            </GameModifier>
+        </Treasure>
+        <Treasure>
+            <Title>Squire Reporting</Title>
+            <Desc>A capable and willing squire offers you his service.</Desc>
+            <Liklihood>25</Liklihood>
+            <SFX>Goodie_AncientBattle_01</SFX>
+            <GameModifier InternalName="Reward1">
+                <ModType>Unit</ModType>
+                <Attribute>UnitJoinArmy</Attribute>
+                <StrVal>Wraith_Henchman_Paladin</StrVal>
+                <StrVal2>Wraith Squire</StrVal2>
+                <Value>2</Value>
+                <UnitClass>Champion</UnitClass>
+            </GameModifier>
+        </Treasure>
+        <Treasure>
+            <Title>Squire Reporting</Title>
+            <Desc>A capable and willing squire offers you his service.</Desc>
+            <Liklihood>25</Liklihood>
+            <SFX>Goodie_AncientBattle_01</SFX>
+            <GameModifier InternalName="Reward1">
+                <ModType>Unit</ModType>
+                <Attribute>UnitJoinArmy</Attribute>
+                <StrVal>Quendar_Henchman_Paladin</StrVal>
+                <StrVal2>Quendar Squire</StrVal2>
+                <Value>2</Value>
+                <UnitClass>Champion</UnitClass>
+            </GameModifier>
+        </Treasure>
+        <Treasure>
+            <Title>Squire Reporting</Title>
+            <Desc>A capable and willing squire offers you his service.</Desc>
+            <Liklihood>25</Liklihood>
+            <SFX>Goodie_AncientBattle_01</SFX>
+            <GameModifier InternalName="Reward1">
+                <ModType>Unit</ModType>
+                <Attribute>UnitJoinArmy</Attribute>
+                <StrVal>Urxen_Henchman_Paladin</StrVal>
+                <StrVal2>Urxen Squire</StrVal2>
+                <Value>2</Value>
+                <UnitClass>Champion</UnitClass>
+            </GameModifier>
+        </Treasure>
+    </GoodieHutType>
+
+<GoodieHutType InternalName="GH_Squire_Empire2">
+        <Name>Old Battlefield</Name>
+        <Description>The site of a long-forgotten battle from the time before this one, or perhaps a more recent struggle. Whoever has answered your call shall be drawn here. Will it be a willing squire, or an enemy of your ideals?</Description>
+        <Rarity>-1</Rarity>
+        <MinDistanceFromStartingPoints>6</MinDistanceFromStartingPoints>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <SpawnRating>0</SpawnRating>
+        <TileDesign>G_Ancient_Battlefield_WithChest_01</TileDesign>
+        <TileDesignForTerrain>Scrapyard:G_Scrapyard_Scrap_4</TileDesignForTerrain>
+        <DrawnIcon>Artifact_Bones1_ClothIcon.dds</DrawnIcon>
+        <OnSelectSFX>Click_Wood_Metal_Rustle</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>G_Ancient_Battlefield_01.png</All>
+        </Medallions>
+                <Encounter>
+            <Liklihood>25</Liklihood>
+            <SpawnOnClear>1</SpawnOnClear>
+            <WillRespawn>0</WillRespawn>
+            <TacticalMap>T_Cave_Generic_01</TacticalMap>
+            <WanderingRadius>0</WanderingRadius>
+            <UnitInstance>
+                <UnitType>Champion_Paladin</UnitType>
+                <Level>22</Level>
+            </UnitInstance>
+        </Encounter>
+    </GoodieHutType>
+
+<GoodieHutType InternalName="Treasure_AncientBattlefield_Paladin">
+        <Name>Forgotten Battlefield</Name>
+        <Description>No one knows who fought and died here, or how long ago. Looters picked it clean long ago, but there is a strange energy drawing you here.
+		</Description>
+        <Rarity>-1</Rarity>
+        <MinDistanceFromStartingPoints>6</MinDistanceFromStartingPoints>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <SpawnRating>0</SpawnRating>
+        <TileDesign>G_Ancient_Battlefield_WithChest_01</TileDesign>
+        <TileDesignForTerrain>Scrapyard:G_Scrapyard_Scrap_4</TileDesignForTerrain>
+        <DrawnIcon>Artifact_Bones1_ClothIcon.dds</DrawnIcon>
+        <OnSelectSFX>Click_Wood_Metal_Rustle</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>G_Ancient_Battlefield_01.png</All>
+        </Medallions>
+        <Treasure>
+            <Title>Found Item</Title>
+            <Desc>Among cracked old pieces of armor, a hilt is visible protruding from the dried clay.</Desc>
+            <Liklihood>50</Liklihood>
+            <SFX>Goodie_AncientBattle_01</SFX>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <Attribute>Broadsword</Attribute>
+            </GameModifier>
+        </Treasure>
+        <Treasure>
+            <Title>Found Item</Title>
+            <Desc>Among cracked old pieces of armor, a hilt is visible protruding from the dried clay.</Desc>
+            <Liklihood>50</Liklihood>
+            <SFX>Goodie_AncientBattle_01</SFX>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <Attribute>Longsword_Golem</Attribute>
+            </GameModifier>
+        </Treasure>		
+		
+    </GoodieHutType>
+
+
+<GoodieHutType InternalName="GH_Bonded_Mount">
+        <Name>Calling Grounds</Name>
+        <Description>Your spirit animal awaits you, here.</Description>
+        <Rarity>-1</Rarity>
+        <MinDistanceFromStartingPoints>6</MinDistanceFromStartingPoints>
+        <BarredTerrain>River</BarredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <SpawnRating>0</SpawnRating>
+        <TileDesign>G_Ancient_Battlefield_WithChest_01</TileDesign>
+        <TileDesignForTerrain>Scrapyard:G_Scrapyard_Scrap_4</TileDesignForTerrain>
+        <DrawnIcon>Artifact_Bones1_ClothIcon.dds</DrawnIcon>
+        <OnSelectSFX>Click_Wood_Metal_Rustle</OnSelectSFX>
+        <Medallions InternalName="">
+            <All>G_Ancient_Battlefield_01.png</All>
+        </Medallions>
+        <Treasure>
+            <Title>Mount Found</Title>
+            <Desc>Your bound animal brother has appeared, and will never leave your side willingly.</Desc>
+            <Liklihood>20</Liklihood>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <Attribute>Warhorse_Paladin</Attribute>
+            </GameModifier>
+        </Treasure>
+        <Treasure>
+            <Title>Mount Found</Title>
+            <Desc>Your bound animal brother has appeared, and will never leave your side willingly.</Desc>
+            <Liklihood>20</Liklihood>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <Attribute>WargMount_Paladin</Attribute>
+            </GameModifier>
+        </Treasure>
+        <Treasure>
+            <Title>Mount Found</Title>
+            <Desc>Your bound animal brother has appeared, and will never leave your side willingly.</Desc>
+            <Liklihood>16</Liklihood>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <Attribute>SpiritWargMount</Attribute>
+            </GameModifier>
+        </Treasure>
+        <Treasure>
+            <Title>Mount Found</Title>
+            <Desc>Your bound animal brother has appeared, and will never leave your side willingly.</Desc>
+            <Liklihood>14</Liklihood>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <Attribute>Mount_RavenousHarridan</Attribute>
+            </GameModifier>
+        </Treasure>
+        <Treasure>
+            <Title>Mount Found</Title>
+            <Desc>Your bound animal brother has appeared, and will never leave your side willingly.</Desc>
+            <Liklihood>14</Liklihood>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <Attribute>Mount_YoungDragon</Attribute>
+            </GameModifier>
+        </Treasure>
+        <Treasure>
+            <Title>Mount Found</Title>
+            <Desc>Your bound animal brother has appeared, and will never leave your side willingly.</Desc>
+            <Liklihood>8</Liklihood>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <Attribute>WarBoarMount</Attribute>
+            </GameModifier>
+        </Treasure>
+        <Treasure>
+            <Title>Mount Found</Title>
+            <Desc>Your bound animal brother has appeared, and will never leave your side willingly.</Desc>
+            <Liklihood>8</Liklihood>
+            <GameModifier>
+                <ModType>GiveItem</ModType>
+                <Attribute>Mount_MireSkath</Attribute>
+            </GameModifier>
+        </Treasure>
+    </GoodieHutType>
+
+
+</GoodieHutTypes>

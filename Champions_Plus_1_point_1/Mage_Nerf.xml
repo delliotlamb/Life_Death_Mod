@@ -1,0 +1,169 @@
+<!-- problem: strategic spells still massively boosted. Reduce each incremental bonus?
+-->
+
+<AbilityBonuses>
+
+    <AbilityBonus InternalName="Evoker2Ability">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="Evoker2">
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_SpellDamage</StrVal>
+                <Value>-10</Value>
+                <Provides>-10% Spell Damage (+10% net)</Provides>
+            </GameModifier>
+			<GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_SpellDamage_SorcererTactical</StrVal>
+                <Value>-10</Value>
+                <Provides>+10% Tactical Spell Damage</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_TacticalSpellManaCost_Multiplier</StrVal>
+                <Value>0.1</Value>
+                <Provides>+10% mana cost for tactical spells</Provides>
+            </GameModifier>			
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+    <AbilityBonus InternalName="Evoker3Ability">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="Evoker3">
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_SpellDamage</StrVal>
+                <Value>-10</Value>
+                <Provides>-10% Spell Damage (+10% net)</Provides>
+            </GameModifier>
+			<GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_SpellDamage_SorcererTactical</StrVal>
+                <Value>-10</Value>
+                <Provides>+10% Tactical Spell Damage</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_TacticalSpellManaCost_Multiplier</StrVal>
+                <Value>0.1</Value>
+                <Provides>+10% mana cost for tactical spells</Provides>
+            </GameModifier>				
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+    <AbilityBonus InternalName="Evoker4Ability">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="Evoker4">
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_SpellDamage</StrVal>
+                <Value>-10</Value>
+                <Provides>-10% Spell Damage (+10% net)</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_SpellDamage_SorcererTactical</StrVal>
+                <Value>-10</Value>
+                <Provides>+10% Tactical Spell Damage</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_TacticalSpellManaCost_Multiplier</StrVal>
+                <Value>0.1</Value>
+                <Provides>+10% mana cost for tactical spells</Provides>
+            </GameModifier>				
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+    <AbilityBonus InternalName="EvokerAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="Evoker">
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_SpellDamage</StrVal>
+                <Value>-10</Value>
+                <Provides>-10% Spell Damage (+10% net)</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>BattleAutoCastSpell</Attribute>
+                <StrVal>MageNerf_Ability</StrVal>
+                <Value>100</Value>
+                <Provides>Mage gets tactical spell damage bonuses</Provides>
+            </GameModifier>			
+			<GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_SpellDamage_SorcererTactical</StrVal>
+                <Value>-10</Value>
+                <Provides>+10% Tactical Spell Damage</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_TacticalSpellManaCost_Multiplier</StrVal>
+                <Value>0.1</Value>
+                <Provides>+10% mana cost for tactical spells</Provides>
+            </GameModifier>				
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="SavantAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="Savant">
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MagicResist</StrVal>
+                <Value>-20</Value>
+                <Provides>-20 Spell Resistance</Provides>
+            </GameModifier>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+</AbilityBonuses>
+
+<Spells>
+
+<SpellDef InternalName="MageNerf_Ability">
+	<DisplayName>Mage Spellboost</DisplayName>
+	<Description>Boosts spell damagee based on Mage's abilities</Description>
+	<Image>T_Focus_Painting.png</Image>
+	<IconFG>T_Focus_Icon.png</IconFG>
+	<CanStack>0</CanStack>
+	<SpellBookSortCategory>Unit</SpellBookSortCategory>
+	<SpellBookSortSubCategory>UnitEnchantment</SpellBookSortSubCategory>
+	<SpellType>Tactical</SpellType>
+	<SpellClass>Offensive</SpellClass>
+	<SpellSubClass>Buff</SpellSubClass>
+	<SpellTargetType>Self</SpellTargetType>
+	<IgnoreCastAnim>1</IgnoreCastAnim>
+	<IsCastable>0</IsCastable>
+	<GameModifier>
+		<ModType>Unit</ModType>
+		<Attribute>AdjustUnitStat</Attribute>
+		<StrVal>UnitStat_SpellDamage</StrVal>
+		<Duration>-1</Duration>
+		<Calculate InternalName="Calc" ValueOwner="CastingUnit">
+			<Expression><![CDATA[[UnitStat_SpellDamage_SorcererTactical]]]></Expression>
+		</Calculate>
+		<Calculate InternalName="Value">
+			<Expression><![CDATA[[Calc]]]></Expression>
+		</Calculate>
+	</GameModifier>			
+	<AIData AIPersonality="AI_General">
+		<AIPriority>0</AIPriority>
+	</AIData>        
+</SpellDef>
+
+</Spells>

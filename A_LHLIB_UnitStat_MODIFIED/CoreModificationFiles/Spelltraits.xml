@@ -1,0 +1,850 @@
+<?xml version="1.0"?>
+<Container>
+  <AbilityBonus InternalName="Earth1Ability">
+    <AbilityBonusOption InternalName="Earth1">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_Spellbooks</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Spellbook</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Earth2Ability">
+    <AbilityBonusOption InternalName="Earth2">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Earth3Ability">
+    <AbilityBonusOption InternalName="Earth3">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Earth4Ability">
+    <AbilityBonusOption InternalName="Earth4">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Earth5Ability">
+    <AbilityBonusOption InternalName="Earth5">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Death1Ability">
+    <AbilityBonusOption InternalName="Death1">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_Spellbooks</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Spellbook</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Death2Ability">
+    <AbilityBonusOption InternalName="Death2">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Death3Ability">
+    <AbilityBonusOption InternalName="Death3">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Death4Ability">
+    <AbilityBonusOption InternalName="Death4">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Death5Ability">
+    <AbilityBonusOption InternalName="Death5">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Life1Ability">
+    <AbilityBonusOption InternalName="Life1">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_Spellbooks</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Spellbook</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Life2Ability">
+    <AbilityBonusOption InternalName="Life2">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Life3Ability">
+    <AbilityBonusOption InternalName="Life3">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Life4Ability">
+    <AbilityBonusOption InternalName="Life4">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Life5Ability">
+    <AbilityBonusOption InternalName="Life5">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Air1Ability">
+    <AbilityBonusOption InternalName="Air1">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_Spellbooks</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Spellbook</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Air2Ability">
+    <AbilityBonusOption InternalName="Air2">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Air3Ability">
+    <AbilityBonusOption InternalName="Air3">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Air4Ability">
+    <AbilityBonusOption InternalName="Air4">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Air5Ability">
+    <AbilityBonusOption InternalName="Air5">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Fire1Ability">
+    <AbilityBonusOption InternalName="Fire1">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_Spellbooks</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Spellbook</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Fire2Ability">
+    <AbilityBonusOption InternalName="Fire2">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Fire3Ability">
+    <AbilityBonusOption InternalName="Fire3">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Fire4Ability">
+    <AbilityBonusOption InternalName="Fire4">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Fire5Ability">
+    <AbilityBonusOption InternalName="Fire5">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Water1Ability">
+    <AbilityBonusOption InternalName="Water1">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_Spellbooks</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Spellbook</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Water2Ability">
+    <AbilityBonusOption InternalName="Water2">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Water3Ability">
+    <AbilityBonusOption InternalName="Water3">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Water4Ability">
+    <AbilityBonusOption InternalName="Water4">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Water5Ability">
+    <AbilityBonusOption InternalName="Water5">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="EarthAdept1Ability">
+    <AbilityBonusOption InternalName="EarthAdept1">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_Spellbooks</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Spellbook</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="EarthAdept2Ability">
+    <AbilityBonusOption InternalName="EarthAdept2">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="EarthAdept3Ability">
+    <AbilityBonusOption InternalName="EarthAdept3">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="FireAdept1Ability">
+    <AbilityBonusOption InternalName="FireAdept1">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_Spellbooks</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Spellbook</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="FireAdept2Ability">
+    <AbilityBonusOption InternalName="FireAdept2">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="FireAdept3Ability">
+    <AbilityBonusOption InternalName="FireAdept3">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="WaterAdept1Ability">
+    <AbilityBonusOption InternalName="WaterAdept1">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_Spellbooks</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Spellbook</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="WaterAdept2Ability">
+    <AbilityBonusOption InternalName="WaterAdept2">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="WaterAdept3Ability">
+    <AbilityBonusOption InternalName="WaterAdept3">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="AirAdept1Ability">
+    <AbilityBonusOption InternalName="AirAdept1">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_Spellbooks</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Spellbook</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="AirAdept2Ability">
+    <AbilityBonusOption InternalName="AirAdept2">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="AirAdept3Ability">
+    <AbilityBonusOption InternalName="AirAdept3">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="LifeAdept1Ability">
+    <AbilityBonusOption InternalName="LifeAdept1">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_Spellbooks</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Spellbook</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="LifeAdept2Ability">
+    <AbilityBonusOption InternalName="LifeAdept2">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="LifeAdept3Ability">
+    <AbilityBonusOption InternalName="LifeAdept3">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="AbjurationAbility">
+    <AbilityBonusOption InternalName="Abjuration">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="AeromancyAbility">
+    <AbilityBonusOption InternalName="Aeromancy">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="GeomancyAbility">
+    <AbilityBonusOption InternalName="Geomancy">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="HydromancyAbility">
+    <AbilityBonusOption InternalName="Hydromancy">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Necromancy2Ability">
+    <AbilityBonusOption InternalName="Necromancy2">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Necromancy1Ability">
+    <AbilityBonusOption InternalName="Necromancy1">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="PyromancyAbility">
+    <AbilityBonusOption InternalName="Pyromancy">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="SovereignBondAbility">
+    <AbilityBonusOption InternalName="SovereignBond">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Spell_ArcaneVeilAbility">
+    <AbilityBonusOption InternalName="Spell_ArcaneVeil">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Spell_ConsumeSpiritAbility">
+    <AbilityBonusOption InternalName="Spell_ConsumeSpirit">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Spell_FirstAidAbility">
+    <AbilityBonusOption InternalName="Spell_FirstAid">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Spell_InfernoAbility">
+    <AbilityBonusOption InternalName="Spell_Inferno">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="Spell_WithstandAbility">
+    <AbilityBonusOption InternalName="Spell_Withstand">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="SummonAirElementalAbility">
+    <AbilityBonusOption InternalName="SummonAirElemental">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="SummonCragSpawnAbility">
+    <AbilityBonusOption InternalName="SummonCragSpawn">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="SummonEarthElementalAbility">
+    <AbilityBonusOption InternalName="SummonEarthElemental">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="SummonFireElementalAbility">
+    <AbilityBonusOption InternalName="SummonFireElemental">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="SummonGraveElementalAbility">
+    <AbilityBonusOption InternalName="SummonGraveElemental">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="SummonIceElementalAbility">
+    <AbilityBonusOption InternalName="SummonIceElemental">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="SummonIgnysAbility">
+    <AbilityBonusOption InternalName="SummonIgnys">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="SummonLightbringerAbility">
+    <AbilityBonusOption InternalName="SummonLightbringer">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="SummonLightbringerAbility">
+    <AbilityBonusOption InternalName="SummonLightbringer">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="SummonMasteryAbility">
+    <AbilityBonusOption InternalName="SummonMastery">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="SummonSentinelAbility">
+    <AbilityBonusOption InternalName="SummonSentinel">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+  <AbilityBonus InternalName="SummonWispAbility">
+    <AbilityBonusOption InternalName="SummonWisp">
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_BG_GreyMagic</StrVal>
+        <Value>1</Value>
+        <Provides>+1 Grey magic</Provides>
+      </GameModifier>
+    </AbilityBonusOption>
+  </AbilityBonus>
+</Container>

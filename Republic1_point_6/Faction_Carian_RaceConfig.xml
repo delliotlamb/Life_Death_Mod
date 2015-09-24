@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<RaceConfigs>
+	<DataChecksum NoParse="1">
+		<Ignore>DisplayName, ShortName, Capital, Description, UnitSkinColor, UnitHairColor, UnitClothColor, BuildingPrimaryColor, BuildingSecondaryColor, BuildingRoofColor, BuildingStyle, UnitStyle, WorkerName</Ignore>
+		<Translate>DisplayName, ShortName, Capital, Description, WorkerName</Translate>
+	</DataChecksum>
+	<RaceConfig InternalName="CustomFaction_Carian">
+		<DisplayName>Carian Republic</DisplayName>
+		<Description>Forced to become nomads after the cataclysm, the Carian - or Black Mancers, to some - cherished their heritage of knowledge nontheless. Much was lost, but one secret was closely guarded: the knowledge of a civilization system learned from another time and place. Thus the ideals of a great Carian Republic were kept alive in story and song. All they require now is a strong leader to protect them while civility and enlightenment can out-grow savagery and feudalism.</Description>
+		<AIPersonality>AI_General</AIPersonality>
+        <Capital>Al-Carian</Capital>
+        <City>Labor's Rest</City>
+        <City>Par-Civica</City>
+        <City>Carian Firma</City>
+        <City>Fel Meiran</City>
+        <City>Carian Brava</City>
+        <City>Ackel Mar</City>
+        <City>Mesura</City>
+        <City>Reiraback</City>
+        <City>Carian Traversa</City>
+		<ShortName>Carian</ShortName>
+        <LeaderName>Proconsul Eianor</LeaderName>
+        <PopulaceName>Men</PopulaceName>
+		<FactionAllegiance>Kingdom</FactionAllegiance>
+		<SelAbilityBonusOption>MeritBeforeBlood</SelAbilityBonusOption>
+		<SelAbilityBonusOption>Republic</SelAbilityBonusOption>
+		<SelAbilityBonusOption>Secret_Scholar</SelAbilityBonusOption>
+		<SelAbilityBonusOption>Endgame_Player</SelAbilityBonusOption>
+		<!--<IsCustom>true</IsCustom>
+		<IsModDependent>true</IsModDependent>-->
+		<RaceInternalName>Race_Type_BlackMancers</RaceInternalName>
+		<RaceDisplayName>Black Mancers</RaceDisplayName>
+		<UnitScale>1.0000</UnitScale>
+		<RaceClassification>Men</RaceClassification>
+		<MusicTheme>temp_alliance00</MusicTheme>
+		<Alignment>Neutral</Alignment>
+		<UnitSkinColor>214,145,100,255</UnitSkinColor>
+		<UnitHairColor>0,0,0,255</UnitHairColor>
+		<FactionColor>51,102,153,255</FactionColor>
+		<UnitMetalColor>255,255,207,255</UnitMetalColor>
+		<UnitClothing1Color>138,95,54,255</UnitClothing1Color>
+		<UnitClothing2Color>235,110,28,255</UnitClothing2Color>
+		<BuildingPrimaryColor>138,95,54,255</BuildingPrimaryColor>
+		<BuildingSecondaryColor>127,113,88,255</BuildingSecondaryColor>
+		<BuildingRoofColor>148,148,0,255</BuildingRoofColor>
+		<BuildingStyle>KingdomStyle</BuildingStyle>
+		<EnvironmentTerrainType>2</EnvironmentTerrainType>
+		<PreferredLogoType>GenericCrest10</PreferredLogoType>
+		<NonBuildableEnvironmentType>DeadEnvironment</NonBuildableEnvironmentType>
+		<TechTree>TechTree_Amarian</TechTree>
+		<FactionType>Major</FactionType>
+		<RemCustomizationPts>0</RemCustomizationPts>
+		<A_Additive_FoodPerGrain>25.0000</A_Additive_FoodPerGrain>
+		<A_Additive_GoldTakeAwayPerTaxPercentage>1.0000</A_Additive_GoldTakeAwayPerTaxPercentage>
+		<A_Additive_ProductionEffectPerUnrest>1.0000</A_Additive_ProductionEffectPerUnrest>
+		<A_Additive_ProductionPerMaterials>8.0000</A_Additive_ProductionPerMaterials>
+		<A_Additive_ResearchEffectPerUnrest>1.0000</A_Additive_ResearchEffectPerUnrest>
+		<A_GoodieRating>1.0000</A_GoodieRating>
+		<A_GrainYield>1.0000</A_GrainYield>
+		<A_ManaRegeneration>1.0000</A_ManaRegeneration>
+		<A_MaterialsYield>1.0000</A_MaterialsYield>
+		<A_MaxArmySize>5.0000</A_MaxArmySize>
+		<A_NPCSpawnRating>2.0000</A_NPCSpawnRating>
+		<A_QuestingRating>5.0000</A_QuestingRating>
+		<A_Traits>4.0000</A_Traits>
+		<A_UnitUpgrades>100.0000</A_UnitUpgrades>
+	</RaceConfig>
+</RaceConfigs>

@@ -1,0 +1,2017 @@
+<AbilityBonuses>
+
+<AbilityBonus InternalName="PathOfThePaladinAbility">
+	<AbilityBonusType>Unit_Level</AbilityBonusType>
+	<AbilityBonusType>Unit_Level_Path</AbilityBonusType>
+	<AbilityBonusOption InternalName="PathOfThePaladin">
+		<DisplayName>Paladin</DisplayName>
+		<Description>Paladins seek justice - either by defending or oppressing the weak - with magic and sword.</Description>
+            <Icon>PathOfThePaladin_Icon.png</Icon>
+            <TraitTreePicture>trait_tree_unit_paladin.png</TraitTreePicture>
+		<BackgroundColor>255,255,255</BackgroundColor>
+		<HighlightColor>166,166,160</HighlightColor>
+	        <GameModifier>
+                    <ModType>Unit</ModType>
+                    <Attribute>AdjustUnitStat</Attribute>
+                    <StrVal>UnitStat_PathOfThePaladin</StrVal>
+                    <Provides>Unlocks traits that increase sword damage, give bonuses when fighting small groups, and unlock close range spells.</Provides>
+                    <Value>1</Value>
+                </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <Value>2</Value>
+                <Provides>+2 Attack</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_CombatSpeed</StrVal>
+                <Value>-2</Value>
+                <Provides>-2 Initiative when in an army of 5 or greater</Provides>
+                <WhenOverArmySize>5</WhenOverArmySize>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_HitPoints</StrVal>
+                <Value>1</Value>
+                <PerLevel>1</PerLevel>
+                <Provides>+1 Hit Point per Level</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ArmorProficiency</StrVal>
+                <Value>1</Value>
+                <Provides>Allows the unit to wear Chain Mail armor</Provides>
+            </GameModifier>
+		<GameModifier>
+			<Provides>Can use the Desperation Strike spell (Kingdom) or Gather Fury spell (Empire)</Provides>
+		</GameModifier>			
+		<RequiredLevel>2</RequiredLevel>
+		<Type>Ability</Type>
+		<AIData AIPersonality="AI_General">
+			<AIPriority>5</AIPriority>
+		</AIData>
+	</AbilityBonusOption>
+</AbilityBonus>
+
+    <AbilityBonus InternalName="DefenderAbility_Level_Paladin">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="Defender_Level_Paladin">
+            <DisplayName>Discipline of Battle</DisplayName>
+            <Description>+10 Defense when Defending, -.5 Gildar in tithes, per Season.</Description>
+            <Icon>Ability_DamageReflection_Icon.png</Icon>
+            <PerkTreePosX>0</PerkTreePosX>
+            <PerkTreePosY>0</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Tactical_Auto_Defense_Boost</StrVal>
+                <Value>10</Value>
+                <Provides>+10 Defense when Defending</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>ProduceResource</Attribute>
+                <StrVal>Gold</StrVal>
+                <Value>-.5</Value>
+                <Provides>-.5 Gildar in tithes, per Season</Provides>
+            </GameModifier>
+            <IsCombatAbility>1</IsCombatAbility>
+            <Type>Defensive</Type>
+            <UpgradePathID>Defender</UpgradePathID>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>PathOfThePaladin</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+<AbilityBonus InternalName="Attack_PaladinAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="Attack_Paladin">
+            <DisplayName>Seasoned Warrior</DisplayName>
+            <Description>+2 attack and +8 Accuracy</Description>
+            <Icon>Ability_LethalI_Icon.png</Icon>
+            <PerkTreePosX>1</PerkTreePosX>
+            <PerkTreePosY>0</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <Value>3</Value>
+                <Provides>+3 Attack</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Accuracy</StrVal>
+                <Value>8</Value>
+                <Provides>+8 Accuracy</Provides>
+            </GameModifier>
+            <Type>Defensive</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Defender_Level_Paladin</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+
+    <AbilityBonus InternalName="Stalwart1Ability_Level_Paladin">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="Stalwart1_Level_Paladin">
+            <DisplayName>Justice Makes Us An Army</DisplayName>
+            <Description>+2 attack and initiative and +10% experience when in an army of 3 or less, additional +2 attack and initiative, and +20% bonus experience when in an army of 2 or less</Description>
+            <Icon>Ability_TrainHenchmen_Icon.png</Icon>
+            <PerkTreePosX>1</PerkTreePosX>
+            <PerkTreePosY>1</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <Value>2</Value>
+                <Provides>+2 Attack when in an army of 3 or smaller</Provides>
+                <WhenUnderArmySize>3</WhenUnderArmySize>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_CombatSpeed</StrVal>
+                <Value>2</Value>
+                <Provides>+2 Initiative when in an army of 3 or smaller</Provides>
+                <WhenUnderArmySize>3</WhenUnderArmySize>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ExpBonus</StrVal>
+                <Value>20</Value>
+                <Provides>+20% Experience when in an army of 3 or smaller</Provides>
+                <WhenUnderArmySize>3</WhenUnderArmySize>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <Value>3</Value>
+                <Provides>+3 Attack when in an army of 2 or smaller</Provides>
+                <WhenUnderArmySize>2</WhenUnderArmySize>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_CombatSpeed</StrVal>
+                <Value>3</Value>
+                <Provides>+3 Initiative when in an army of 2 or smaller</Provides>
+                <WhenUnderArmySize>2</WhenUnderArmySize>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ExpBonus</StrVal>
+                <Value>30</Value>
+                <Provides>+30% Experience when in an army of 2 or smaller</Provides>
+                <WhenUnderArmySize>2</WhenUnderArmySize>
+            </GameModifier>
+            <Type>Defensive</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Defender_Level_Paladin</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="LoneHeroAbility_Level_Paladin">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="LoneHero_Level_Paladin">
+            <DisplayName>Lone Crusader</DisplayName>
+            <Description>+3 attack and +3 initiative, -30% mana cost, as well as 40% bonus experience, when in an army alone (in addition to other army size bonuses).</Description>
+            <Icon>Ability_Loner_Icon.png</Icon>
+            <PerkTreePosX>2</PerkTreePosX>
+            <PerkTreePosY>1</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_CombatSpeed</StrVal>
+                <Value>3</Value>
+                <Provides>+3 Initiative when in an army alone</Provides>
+                <WhenUnderArmySize>1</WhenUnderArmySize>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <Value>3</Value>
+                <Provides>+3 Attack when in an army alone</Provides>
+                <WhenUnderArmySize>1</WhenUnderArmySize>
+            </GameModifier>
+			            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_TacticalSpellManaCost_Multiplier</StrVal>
+                <Value>-0.3</Value>
+                <Provides>-30% tactical mana cost when in an army alone</Provides>
+                <WhenUnderArmySize>1</WhenUnderArmySize>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ExpBonus</StrVal>
+                <Value>40</Value>
+                <Provides>+40% Experience when in an army alone</Provides>
+                <WhenUnderArmySize>1</WhenUnderArmySize>
+            </GameModifier>
+            <Type>Army</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Stalwart1_Level_Paladin</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+   <AbilityBonus InternalName="Endurance1Ability_Paladin">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="Endurance1_Paladin">
+            <DisplayName>Discipline Of Constitution</DisplayName>
+            <Description>+10 Hit Points, +25% poison resist, -.5 Gildar in tithes, per Season</Description>
+            <Icon>Ability_EnduranceI_Icon.png</Icon>
+            <PerkTreePosX>0</PerkTreePosX>
+            <PerkTreePosY>2</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_HitPoints</StrVal>
+                <Value>10</Value>
+                <Provides>+10 Hit Points</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ResistPoison</StrVal>
+                <Value>25</Value>
+                <Provides>25% resistance to Poison</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>ProduceResource</Attribute>
+                <StrVal>Gold</StrVal>
+                <Value>-.5</Value>
+                <Provides>-.5 Gildar in tithes, per Season</Provides>
+            </GameModifier>
+            <Type>Defensive</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>PathOfThePaladin</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+   <AbilityBonus InternalName="Endurance2Ability_Paladin">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="Endurance2_Paladin">
+            <DisplayName>Discipline Of Constitution II</DisplayName>
+            <Description>+15 Hit Points, +50% poison resist</Description>
+            <Icon>Ability_EnduranceII_Icon.png</Icon>
+            <PerkTreePosX>1</PerkTreePosX>
+            <PerkTreePosY>2</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_HitPoints</StrVal>
+                <Value>15</Value>
+                <Provides>+15 Hit Points</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ResistPoison</StrVal>
+                <Value>50</Value>
+                <Provides>+50% resistance to Poison</Provides>
+            </GameModifier>
+            <Type>Defensive</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Endurance1_Paladin</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="IgnorePainAbility_Paladin">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="IgnorePain_Paladin">
+            <DisplayName>Justice Feels No Pain</DisplayName>
+            <Description>+30 Hit Points</Description>
+            <Icon>Ability_IgnorePain_Icon.png</Icon>
+            <PerkTreePosX>2</PerkTreePosX>
+            <PerkTreePosY>2</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_HitPoints</StrVal>
+                <Value>30</Value>
+            </GameModifier>
+            <MinimumLevel>8</MinimumLevel>
+            <Type>Defensive</Type>
+           <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Endurance2_Paladin</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="ArmorProficiency2Ability_Paladin">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="ArmorProficiency2_Paladin">
+            <DisplayName>Discipline Of Armor</DisplayName>
+            <Description>Allows the unit to wear Plate Mail armor, and costs -.5 Gildar in tithes per season</Description>
+            <Icon>Ability_PlateMailProficiency_Icon.png</Icon>
+            <PerkTreePosX>0</PerkTreePosX>
+            <PerkTreePosY>1</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ArmorProficiency</StrVal>
+                <Value>1</Value>
+                <Provides>Allows the unit to wear Plate Mail armor</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>ProduceResource</Attribute>
+                <StrVal>Gold</StrVal>
+                <Value>-.5</Value>
+                <Provides>-.5 Gildar in tithes, per Season</Provides>
+            </GameModifier>
+            <Type>Defensive</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>PathOfThePaladin</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+
+    <AbilityBonus InternalName="SwordsmanAbility_Paladin">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="Swordsman_Paladin">
+            <DisplayName>Sword Skill</DisplayName>
+            <Description>+50% to Counterattack damage, +2 sword attack, +3 accuracy, and +3 to dodge when wielding a sword</Description>
+            <Icon>Ability_SwordsmanI_Icon.png</Icon>
+            <PerkTreePosX>2</PerkTreePosX>
+            <PerkTreePosY>0</PerkTreePosY>
+			<GameModifier>
+				<ModType>Unit</ModType>
+				<Attribute>BattleAutoCastSpell</Attribute>
+				<StrVal>PaladinSwordSkill</StrVal>
+				<Value>100</Value>
+				<Provides>Paladin now gets special bonuses when wielding a broadsword, longsword, or greatsword</Provides>
+			</GameModifier>				
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_CounterDamage_Sword</StrVal>
+                <Value>0.50</Value>
+                <Provides>+50% to Counterattack damage with a sword</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Sword</StrVal>
+                <Value>2</Value>
+                <Provides>+2 Sword Attack</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Accuracy_Sword</StrVal>
+                <Value>3</Value>
+                <Provides>+3 Sword Accuracy</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Dodge_Sword</StrVal>
+                <Value>3</Value>
+                <Provides>+3 Dodge when wielding a sword</Provides>
+            </GameModifier>			
+            <Type>Aggressive</Type>
+            <UpgradePathID>Swordsman</UpgradePathID>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Attack_Paladin</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+
+    <AbilityBonus InternalName="Spell_ShieldLungeAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="Spell_ShieldLunge">
+            <DisplayName>Shield Hammer</DisplayName>
+            <Description>Allows the unit to use the Shield Hammer ability, that deals damage and knocks a unit prone.</Description>
+            <Icon>Ability_ArchingShieldBash_Icon.png</Icon>
+            <PerkTreePosX>3</PerkTreePosX>
+            <PerkTreePosY>1</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>ShieldLunge</StrVal>
+                <Provides>Strike from above with your shield, doing damage and knocking them prone unless they resist.</Provides>
+            </GameModifier>
+            <IsCombatAbility>1</IsCombatAbility>
+            <Type>Defensive</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Swordsman_Paladin</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="Parry1Ability_Paladin">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="Parry1_Paladin">
+            <DisplayName>Parrying</DisplayName>
+            <Description>+3 sword attack, +4 Sword Accuracy and +1 Sword Counterattack</Description>
+            <Icon>Ability_SwordsmanII_Icon.png</Icon>
+            <PerkTreePosX>3</PerkTreePosX>
+            <PerkTreePosY>0</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Counter_Sword</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Counterattack with a sword</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Sword</StrVal>
+                <Value>3</Value>
+                <Provides>+3 Sword Attack</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Accuracy_Sword</StrVal>
+                <Value>4</Value>
+                <Provides>+4 Sword Accuracy</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Dodge_Sword</StrVal>
+                <Value>4</Value>
+                <Provides>+4 Dodge when wielding a sword</Provides>
+            </GameModifier>
+            <Type>Aggressive</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Swordsman_Paladin</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="Parry2Ability_Paladin">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="Parry2_Paladin">
+            <DisplayName>Master Of The Blade</DisplayName>
+            <Description>Additional +1 Sword Counterattack per turn, +3 sword attack, +5 sword accuracy and unlocks Soulblade Strike ability</Description>
+            <Icon>Ability_SwordsmanIII_Icon.png</Icon>
+            <PerkTreePosX>4</PerkTreePosX>
+            <PerkTreePosY>0</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Counter_Sword</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Counterattack with a sword</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>SoulbladeStrike</StrVal>
+                <Provides>Unlocks soulblade strike, a sword-only attack that ignores armor and can damage spirits.</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Sword</StrVal>
+                <Value>4</Value>
+                <Provides>+4 Sword Attack</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Accuracy_Sword</StrVal>
+                <Value>5</Value>
+                <Provides>+5 Sword Accuracy</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Dodge_Sword</StrVal>
+                <Value>5</Value>
+                <Provides>+5 Dodge when wielding a sword</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_CombatSpeed_Sword</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Initiative when wielding a sword</Provides>
+            </GameModifier>
+            <Type>Aggressive</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Parry1_Paladin</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+<AbilityBonus InternalName="BashPaladinAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="BashPaladin">
+            <DisplayName>Art Of The Sword</DisplayName>
+            <Description>As a great swordsman taught, you attacks are placed to unbalance and interrupt your enemy. +4 sword attack, +1 sword accuracy per level, +5 dodge with a sword, +2 initiative with a sword, and every attack has a chance to knock prone, equal to the damage done.</Description>          
+	    <Icon>Ability_SwordsmanIV_Icon.png</Icon>
+            <PerkTreePosX>5</PerkTreePosX>
+            <PerkTreePosY>0</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_BashChance_Sword</StrVal>
+                <Value>100</Value>
+                <Provides>Has a chance (equal to the damage done) to knock victims prone, when using a sword</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Sword</StrVal>
+                <Value>5</Value>
+                <Provides>+5 Sword Attack</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Accuracy_Sword</StrVal>
+                <Value>6</Value>
+                <Provides>+6 Sword Accuracy</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Dodge_Sword</StrVal>
+                <Value>6</Value>
+                <Provides>+6 Dodge when wielding a sword</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_CombatSpeed_Sword</StrVal>
+                <Value>2</Value>
+                <Provides>+2 Initiative when wielding a sword</Provides>
+            </GameModifier>
+            <IsCombatAbility>1</IsCombatAbility>
+            <Type>Aggressive</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Parry2_Paladin</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="EnemyOfTheDead_LevelAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="EnemyOfTheDead_Level">
+            <DisplayName>Enemy Of Death</DisplayName>
+            <Description>+6 attack versus undead, demons, and users of Death magic</Description>
+            <Icon>Ability_EnemyOfUndead3_Icon.png</Icon>
+            <PerkTreePosX>0</PerkTreePosX>
+            <PerkTreePosY>3</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>UnitStat_BG_IsUndead</StrVal2>
+                <Value>6</Value>
+                <Provides>+6 Attack vs Undead (if not undead)</Provides>
+                <vsHigher>1</vsHigher>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>UnitStat_BG_IsDLCUndead</StrVal2>
+                <Value>6</Value>
+                <Provides>-</Provides>
+                <vsHigher>1</vsHigher>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>UnitStat_BG_IsDemon</StrVal2>
+                <Value>6</Value>
+                <Provides>+6 Attack vs Demons (if not a demon)</Provides>
+                <vsHigher>1</vsHigher>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>UnitStat_IsDeathUser</StrVal2>
+                <Value>6</Value>
+                <Provides>+6 Attack vs Death users (if not death user)</Provides>
+                <vsHigher>1</vsHigher>
+            </GameModifier>
+            <IsCombatAbility>1</IsCombatAbility>
+            <Type>Aggressive</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>PathOfThePaladin</Attribute>
+            </Prereq>
+            <Prereq>
+                <Type>Allegiance</Type>
+                <Attribute>Kingdom</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="Underdog_Paladin_LevelAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="Underdog_Paladin_Level">
+            <DisplayName>Justice Does Not Cower</DisplayName>
+            <Description>+6 attack versus Oversized Creatures, and +6 attack versus units with a higher level.</Description>
+            <Icon>Ability_Underdog_Icon.png</Icon>
+            <PerkTreePosX>1</PerkTreePosX>
+            <PerkTreePosY>3</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>UnitStat_BG_IsOversized</StrVal2>
+                <Value>6</Value>
+                <Provides>+6 Attack vs Oversized (unless this unit is oversized)</Provides>
+                <vsHigher>1</vsHigher>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>UnitStat_Level</StrVal2>
+                <Value>6</Value>
+                <Provides>+6 Attack vs higher level units</Provides>
+                <vsHigher>1</vsHigher>
+            </GameModifier>
+            <IsCombatAbility>1</IsCombatAbility>
+            <Type>Aggressive</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>EnemyOfTheDead_Level</Attribute>
+            </Prereq>
+            <Prereq>
+                <Type>Allegiance</Type>
+                <Attribute>Kingdom</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="ArcaneWillpowerAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusType>Unit_Spell_Rank</AbilityBonusType>
+        <AbilityBonusOption InternalName="ArcaneWillpower">
+            <DisplayName>Discipline Of Willpower</DisplayName>
+            <Description>Unlocks spells based on your allegiance. Costs -.5 gold per turn in tithes.</Description>
+            <Icon>Arcane_Willpower.png</Icon>
+            <PerkTreePosX>0</PerkTreePosX>
+            <PerkTreePosY>4</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Provides>Unlocks the following spells:</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>ProduceResource</Attribute>
+                <StrVal>Gold</StrVal>
+                <Value>-.5</Value>
+                <Provides>-.5 Gildar in tithes, per Season</Provides>
+            </GameModifier>
+            <Type>Spell</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>PathOfThePaladin</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+
+    <AbilityBonus InternalName="SpellResistanceAbility_Level_Paladin">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="SpellResistance_Level_Paladin">
+            <DisplayName>Adamant Will</DisplayName>
+            <Description>+25 Spell Resistance</Description>
+            <Icon>Ability_SpellResistance_Icon.png</Icon>
+            <PerkTreePosX>3</PerkTreePosX>
+            <PerkTreePosY>3</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MagicResist</StrVal>
+                <Value>25</Value>
+                <Provides>+25 Spell Resistance</Provides>
+            </GameModifier>
+            <IsCombatAbility>1</IsCombatAbility>
+            <Type>Defensive</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>RighteousFury</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="CompassionAbility_Paladin">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="Compassion_Paladin">
+            <DisplayName>Compassion</DisplayName>
+            <Description>+50% Healing when casting healing spells</Description>
+            <Icon>Ability_Compassion_Icon.png</Icon>
+            <PerkTreePosX>4</PerkTreePosX>
+            <PerkTreePosY>3</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_BonusHealing</StrVal>
+                <Value>0.5</Value>
+                <Provides>+50% Healing when casting healing spells</Provides>
+            </GameModifier>
+            <Type>Aggressive</Type>
+            <Prereq>
+                <Type>Allegiance</Type>
+                <Attribute>Kingdom</Attribute>
+            </Prereq>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Prodigy_Paladin</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+
+
+    <AbilityBonus InternalName="ArcaneWeaponryAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusType>Unit_Spell_Rank</AbilityBonusType>
+        <AbilityBonusOption InternalName="ArcaneWeaponry">
+            <DisplayName>Arcane Weaponry</DisplayName>
+            <Description>Unlocks Counterspell strike, Quest For Justice, and combo spells based on your elemental spell traits or adept traits.</Description>
+            <Icon>Soulblade_Strike.png</Icon>
+            <PerkTreePosX>1</PerkTreePosX>
+            <PerkTreePosY>4</PerkTreePosY>
+        <GameModifier>
+		<Provides>Opens up new spells with unit's corresponding spell traits or level 2 adept traits.</Provides>
+        </GameModifier>
+            <Type>Spell</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>ArcaneWillpower</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="ProdigyAbility_Paladin">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="Prodigy_Paladin">
+            <DisplayName>Arcane Knight</DisplayName>
+            <Description>+10 Spell Mastery, +2 Arcane Light attack</Description>
+            <Icon>Ability_ProdigyI_Icon.png</Icon>
+            <PerkTreePosX>3</PerkTreePosX>
+            <PerkTreePosY>4</PerkTreePosY>
+            <Prereq>
+                <Type>Allegiance</Type>
+                <Attribute>Kingdom</Attribute>
+            </Prereq>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MagicPower</StrVal>
+                <Value>10</Value>
+                <Provides>+10 Spell Mastery</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_ArcaneLight</StrVal>
+                <Value>2</Value>
+                <Provides>+2 Arcane Light attack</Provides>
+            </GameModifier>
+            <Type>Spell</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>RighteousFury</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="Prodigy2Ability_Paladin">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="Prodigy2_Paladin">
+            <DisplayName>Arcane Knight II</DisplayName>
+            <Description>+10 Spell Mastery, +3 Arcane Light attack</Description>
+            <Icon>Ability_ProdigyII_Icon.png</Icon>
+            <PerkTreePosX>4</PerkTreePosX>
+            <PerkTreePosY>4</PerkTreePosY>
+            <Prereq>
+                <Type>Allegiance</Type>
+                <Attribute>Kingdom</Attribute>
+            </Prereq>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MagicPower</StrVal>
+                <Value>10</Value>
+                <Provides>+10 Spell Mastery</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_ArcaneLight</StrVal>
+                <Value>3</Value>
+                <Provides>+3 Arcane Light attack</Provides>
+            </GameModifier>
+            <Type>Spell</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Prodigy_Paladin</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="ProdigyAbility_AntiPaladin">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="Prodigy_AntiPaladin">
+            <DisplayName>Arcane Knight</DisplayName>
+            <Description>+10 Spell Mastery, +2 Arcane Shadow Attack</Description>
+            <Icon>Ability_ProdigyI_Icon.png</Icon>
+            <PerkTreePosX>3</PerkTreePosX>
+            <PerkTreePosY>4</PerkTreePosY>
+            <Prereq>
+                <Type>Allegiance</Type>
+                <Attribute>Empire</Attribute>
+            </Prereq>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MagicPower</StrVal>
+                <Value>10</Value>
+                <Provides>+10 Spell Mastery</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_ArcaneShadow</StrVal>
+                <Value>2</Value>
+                <Provides>+2 Arcane Shadow attack</Provides>
+            </GameModifier>
+            <Type>Spell</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>RighteousFury</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="Prodigy2Ability_AntiPaladin">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="Prodigy2_AntiPaladin">
+            <DisplayName>Arcane Knight II</DisplayName>
+            <Description>+10 Spell Mastery, +3 Arcane Shadow attack</Description>
+            <Icon>Ability_ProdigyII_Icon.png</Icon>
+            <PerkTreePosX>4</PerkTreePosX>
+            <PerkTreePosY>4</PerkTreePosY>
+            <Prereq>
+                <Type>Allegiance</Type>
+                <Attribute>Empire</Attribute>
+            </Prereq>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MagicPower</StrVal>
+                <Value>10</Value>
+                <Provides>+10 Spell Mastery</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_ArcaneShadow</StrVal>
+                <Value>3</Value>
+                <Provides>+3 Arcane Shadow attack</Provides>
+            </GameModifier>
+            <Type>Spell</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Prodigy_AntiPaladin</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+	<!-- bonded mount was X4 Y3 -->
+	
+<AbilityBonus InternalName="BondedMountAbility">
+	<AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusType>Unit_Spell_Rank</AbilityBonusType>
+	<AbilityBonusOption InternalName="BondedMount">
+		<DisplayName>Arcane Bonds</DisplayName>
+		<Description>Unlock a spell that call forth a bonded mount.</Description>
+		<Icon>Bonded_Mount.png</Icon>
+		<PerkTreePosX>2</PerkTreePosX>
+		<PerkTreePosY>3</PerkTreePosY>
+		<GameModifier>
+			<Provides>Unlocks Bonded Mount, which summons a unique mount.</Provides>
+		</GameModifier>		
+		<Type>Spell</Type>
+		<Prereq>
+			<Type>AbilityBonusOption</Type>
+			<Target>Unit</Target>
+			<Attribute>ArcaneWeaponry</Attribute>
+		</Prereq>
+		<Prereq>
+            <Type>Allegiance</Type>
+            <Attribute>Kingdom</Attribute>
+        </Prereq>
+		<AIData AIPersonality="AI_General">
+			<AIPriority>5</AIPriority>
+		</AIData>
+	</AbilityBonusOption>
+</AbilityBonus>
+
+<AbilityBonus InternalName="BondedMount_EmpireAbility">
+	<AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusType>Unit_Spell_Rank</AbilityBonusType>
+	<AbilityBonusOption InternalName="BondedMount_Empire">
+		<DisplayName>Arcane Bonds</DisplayName>
+		<Description>Unlock a spell that calls forth a bonded mount.</Description>
+		<Icon>Bonded_Mount.png</Icon>
+		<PerkTreePosX>2</PerkTreePosX>
+		<PerkTreePosY>3</PerkTreePosY>
+		<GameModifier>
+			<Provides>Unlocks Bonded Mount, which summons a unique mount.</Provides>
+		</GameModifier>		
+		<Type>Spell</Type>
+		<Prereq>
+			<Type>AbilityBonusOption</Type>
+			<Target>Unit</Target>
+			<Attribute>ArcaneWeaponry</Attribute>
+		</Prereq>
+		<Prereq>
+                <Type>Allegiance</Type>
+                <Attribute>Empire</Attribute>
+        </Prereq>
+		<AIData AIPersonality="AI_General">
+			<AIPriority>5</AIPriority>
+		</AIData>
+	</AbilityBonusOption>
+</AbilityBonus>
+
+
+    <AbilityBonus InternalName="RighteousFuryAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusType>Unit_Spell_Rank</AbilityBonusType>
+        <AbilityBonusOption InternalName="RighteousFury">
+            <DisplayName>Righteous Fury</DisplayName>
+            <Description>Unlocks devastating close range spells corresponding to this unit's level 3 spell traits.</Description>
+            <Icon>Arcane_Weaponry_Icon.png</Icon>
+            <PerkTreePosX>2</PerkTreePosX>
+            <PerkTreePosY>4</PerkTreePosY>
+        <GameModifier>
+		<Provides>Unlocks the following spells</Provides>
+        </GameModifier>
+            <Type>Aggressive</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>ArcaneWeaponry</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="Evoker1Ability_Paladin">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="Evoker1_Paladin">
+            <DisplayName>Luminous Judgement</DisplayName>
+            <Description>+20% Spell Damage, +20% Arcane Light Spell Damage, +25% Arcane Shadow Resist</Description>
+            <Icon>Ability_EvokerI_Icon.png</Icon>
+            <PerkTreePosX>5</PerkTreePosX>
+            <PerkTreePosY>4</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_SpellDamage</StrVal>
+                <Value>20</Value>
+                <Provides>+20% Spell Damage</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_SpellDamage_ArcaneLight</StrVal>
+                <Value>.2</Value>
+                <Provides>+20% Arcane Light Spell Damage</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ResistArcaneShadow</StrVal>
+                <Value>25</Value>
+                <Provides>+25% Arcane Shadow Resist</Provides>
+            </GameModifier>
+            <IsCombatAbility>1</IsCombatAbility>
+            <Type>Spell</Type>
+            <Prereq>
+                <Type>Allegiance</Type>
+                <Attribute>Kingdom</Attribute>
+            </Prereq>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Prodigy2_Paladin</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="Evoker1Ability_AntiPaladin">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="Evoker1_AntiPaladin">
+            <DisplayName>Umbral Judgement</DisplayName>
+            <Description>+20% Spell Damage, +20% Spell Damage with Arcane Shadow spells, +25% Arcane Light Resist</Description>
+            <Icon>Ability_EvokerI_Icon.png</Icon>
+            <PerkTreePosX>5</PerkTreePosX>
+            <PerkTreePosY>4</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_SpellDamage</StrVal>
+                <Value>20</Value>
+                <Provides>+20% Spell Damage</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_SpellDamage_ArcaneShadow</StrVal>
+                <Value>0.2</Value>
+                <Provides>+20% Spell Damage with Arcane Shadow spells</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ResistArcaneLight</StrVal>
+                <Value>25</Value>
+                <Provides>+25% Arcane Light Resist</Provides>
+            </GameModifier>
+            <IsCombatAbility>1</IsCombatAbility>
+            <Type>Spell</Type>
+            <Prereq>
+                <Type>Allegiance</Type>
+                <Attribute>Empire</Attribute>
+            </Prereq>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Prodigy2_AntiPaladin</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+
+    <AbilityBonus InternalName="LucimancyAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusType>Unit_Spell_Rank</AbilityBonusType>
+        <AbilityBonusOption InternalName="Lucimancy">
+            <DisplayName>Lucimancy</DisplayName>
+            <Description>Allows the unit to cast Searing Light, Lightray Form, and I Shall Not Fall (With Life V).</Description>
+            <Icon>Lucimancy.png</Icon>
+            <PerkTreePosX>6</PerkTreePosX>
+            <PerkTreePosY>4</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Provides>Unlocks the following spells.</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_IsLifeUser</StrVal>
+                <Value>1</Value>
+                <Provides>This unit counts as a user of Life Magic</Provides>
+            </GameModifier>
+            <Type>Spell</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Evoker1_Paladin</Attribute>
+            </Prereq>
+            <Prereq>
+                <Type>Allegiance</Type>
+                <Attribute>Kingdom</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="Spell_BladeRushAbility_Paladin">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="Spell_BladeRush_Paladin">
+            <DisplayName>Charging Cut</DisplayName>
+            <Description>Allows the unit to use the Charging Cut ability when equipped with a sword.</Description>
+            <Icon>Ability_BladeRush_Icon.png</Icon>
+            <PerkTreePosX>6</PerkTreePosX>
+            <PerkTreePosY>0</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>BladeRush_Paladin</StrVal>
+                <Provides>Teleport through enemies in a straight line, dealing damage equal to your attack to any in your way. Requires a sword.</Provides>
+            </GameModifier>
+            <CombatRating>10</CombatRating>
+            <IsCombatAbility>1</IsCombatAbility>
+            <Type>Ability</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>BashPaladin</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="Channel_LifeAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="Channel_Life">
+            <DisplayName>Embody Life</DisplayName>
+            <Description>Unlocks Embody Life.</Description>
+            <Icon>Channel_Light.png</Icon>
+            <PerkTreePosX>7</PerkTreePosX>
+            <PerkTreePosY>4</PerkTreePosY>
+            <GameModifier>
+                <Provides>Unlocks Embody Life</Provides>
+            </GameModifier>
+            <Type>Spell</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Lucimancy</Attribute>
+            </Prereq>
+            <Prereq>
+                <Type>Allegiance</Type>
+                <Attribute>Kingdom</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+<AbilityBonus InternalName="Channel_DeathAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="Channel_Death">
+            <DisplayName>Embody Death</DisplayName>
+            <Description>Unlocks Embody Death.</Description>
+            <Icon>Channel_Death.png</Icon>
+            <PerkTreePosX>7</PerkTreePosX>
+            <PerkTreePosY>4</PerkTreePosY>
+            <GameModifier>
+                <Provides>Unlocks Embody Death</Provides>
+            </GameModifier>
+            <Type>Spell</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Umbramancy</Attribute>
+            </Prereq>
+            <Prereq>
+                <Type>Allegiance</Type>
+                <Attribute>Empire</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+<AbilityBonus InternalName="Spell_TenSpineSliceAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="Spell_TenSpineSlice">
+            <DisplayName>Ten-Spine Slice</DisplayName>
+            <Description>Allows the unit to use the Ten-Spine Slice, an attack that does +25% damage for each member of the enemy group, if using a sword.</Description>
+            <Icon>Ability_Decimate_Icon.png</Icon>
+            <PerkTreePosX>6</PerkTreePosX>
+            <PerkTreePosY>1</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>TenSpineSlice</StrVal>
+                <Provides>An attack that does +25% damage for each member of the enemy group, if using a sword.</Provides>
+            </GameModifier>
+            <CombatRating>10</CombatRating>
+            <IsCombatAbility>1</IsCombatAbility>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>BashPaladin</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+<!-- anti-paladin traits below -->
+
+    <AbilityBonus InternalName="ElementalSlayer_LevelAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="ElementalSlayer_Level">
+            <DisplayName>Destroyer Of Life</DisplayName>
+            <Description>+6 Attack against units with a lower attack, +6 Attack vs opponents with lower Health, and +6 attack versus Life magic users</Description>
+            <Icon>Ability_DeathWorship_Icon.png</Icon>
+            <PerkTreePosX>0</PerkTreePosX>
+            <PerkTreePosY>3</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>UnitStat_CombinedAttack</StrVal2>
+                <Value>+6</Value>
+                <BonusValue>.5</BonusValue>
+                <Provides>+6 Attack vs Units with a lower Combined Attack</Provides>
+                <vsLower>1</vsLower>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>UnitStat_HitPoints</StrVal2>
+                <Value>6</Value>
+                <Provides>+6 Attack vs opponents with lower Health</Provides>
+                <vsLower>1</vsLower>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>UnitStat_IsLifeUser</StrVal2>
+                <Value>6</Value>
+                <BonusValue>.5</BonusValue>
+                <Provides>+6 Attack vs Life magic users</Provides>
+                <vsHigher>1</vsHigher>
+            </GameModifier>
+            <IsCombatAbility>1</IsCombatAbility>
+            <Type>Aggressive</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>PathOfThePaladin</Attribute>
+            </Prereq>
+            <Prereq>
+                <Type>Allegiance</Type>
+                <Attribute>Empire</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="ElementalSlayer2_LevelAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="ElementalSlayer2_Level">
+            <DisplayName>One True Sovereign</DisplayName>
+            <Description>+6 attack versus Champions, and additional +6 attack against Sovereigns</Description>
+            <Icon>Ability_Brute_Icon.png</Icon>
+            <PerkTreePosX>1</PerkTreePosX>
+            <PerkTreePosY>3</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>Champion</StrVal2>
+                <Value>6</Value>
+                <Provides>+6 Attack vs Champions</Provides>
+                <vsUnitType>1</vsUnitType>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal2>UnitStat_IsSovereign</StrVal2>
+                <Value>6</Value>
+                <BonusValue>.5</BonusValue>
+                <Provides>+6 Attack vs Sovereigns</Provides>
+                <vsHigher>1</vsHigher>
+            </GameModifier>
+            <IsCombatAbility>1</IsCombatAbility>
+            <Type>Aggressive</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>ElementalSlayer_Level</Attribute>
+            </Prereq>
+            <Prereq>
+                <Type>Allegiance</Type>
+                <Attribute>Empire</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="SadismAbility_Paladin">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="Sadism_Paladin">
+            <DisplayName>Arcane Sadism</DisplayName>
+            <Description>The Anti-Paladin gains 10 life each time he kills a unit.</Description>
+            <Icon>Ability_Harbinger_Icon.png</Icon>
+            <PerkTreePosX>4</PerkTreePosX>
+            <PerkTreePosY>3</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_HPFromKills</StrVal>
+                <Value>10</Value>
+            </GameModifier>
+            <IsCombatAbility>1</IsCombatAbility>
+            <Type>Aggressive</Type>
+            <Prereq>
+                <Type>Allegiance</Type>
+                <Attribute>Empire</Attribute>
+            </Prereq>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Prodigy_AntiPaladin</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="UmbramancyAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusType>Unit_Spell_Rank</AbilityBonusType>
+        <AbilityBonusOption InternalName="Umbramancy">
+            <DisplayName>Umbramancy</DisplayName>
+            <Description>Allows the unit to cast Shadow Lance, Shadowthread Shift, and Reaper's Cut (with Death V).</Description>
+            <Icon>Umbramancy.png</Icon>
+            <PerkTreePosX>6</PerkTreePosX>
+            <PerkTreePosY>4</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Provides>Unlocks the following spells.</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_IsDeathUser</StrVal>
+                <Value>1</Value>
+                <Provides>This unit counts as a user of Death Magic</Provides>
+            </GameModifier>
+            <Type>Spell</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Evoker1_AntiPaladin</Attribute>
+            </Prereq>
+            <Prereq>
+                <Type>Allegiance</Type>
+                <Attribute>Empire</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+<!-- quest-consequence abilities -->
+
+
+<AbilityBonus InternalName="Noblemans_DueAbility">
+        <AbilityBonusOption InternalName="Noblemans_Due">
+            <DisplayName>Nobleman's Due</DisplayName>
+            <Description>-5 mana per turn</Description>
+            <Icon>Ability_Slave_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>ProduceResource</Attribute>
+                <StrVal>Mana</StrVal>
+                <Value>-5</Value>
+                <Provides>-5 Mana per Season</Provides>
+            </GameModifier>
+            <Type>Offensive</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+<AbilityBonus InternalName="ExpendedEssenceAbility">
+        <AbilityBonusOption InternalName="ExpendedEssence">
+            <DisplayName>Expended Essence</DisplayName>
+            <Description>-25% to Accuracy, Spell Mastery and Hit Points</Description>
+            <Icon>Ability_BrokenSpirit_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Accuracy</StrVal>
+                <Multiplier>0.75</Multiplier>
+                <Provides>-25% Accuracy</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MagicPower</StrVal>
+                <Multiplier>0.75</Multiplier>
+                <Provides>-25% Spell Mastery</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_HitPoints</StrVal>
+                <Multiplier>0.75</Multiplier>
+                <Provides>-25% Hit Points</Provides>
+            </GameModifier>
+            <Type>Weakness</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+<AbilityBonus InternalName="MarkOfUzzerraddaxAbility">
+        <AbilityBonusOption InternalName="MarkOfUzzerraddax">
+            <DisplayName>Mark Of Uzzerraddax</DisplayName>
+            <Description>-5% hit points, +10 spell mastery, -10 spell resist</Description>
+            <Icon>Ability_Hallucinations_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MagicResist</StrVal>
+                <Value>-10</Value>
+                <Provides>-10 Spell Resistance</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MagicPower</StrVal>
+                <Value>10</Value>
+                <Provides>+10 Spell Mastery</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_HitPoints</StrVal>
+                <Multiplier>0.95</Multiplier>
+                <Provides>-5% Hit Points</Provides>
+            </GameModifier>
+            <Type>Weakness</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+
+<!-- End quest-reward abilities -->
+
+
+<AbilityBonus InternalName="RighteousReputationAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusType>Unit_Spell_Rank</AbilityBonusType>
+        <AbilityBonusOption InternalName="RighteousReputation">
+            <DisplayName>Righteous Reputation</DisplayName>
+            <Description>Unlocks Call Squire.</Description>
+            <Icon>Righteous_Fury.png</Icon>
+            <PerkTreePosX>3</PerkTreePosX>
+            <PerkTreePosY>2</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Provides>Unlocks the following spells:</Provides>
+            </GameModifier>
+            <Type>Spell</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>LoneHero_Level_Paladin</Attribute>
+            </Prereq>
+            <Prereq>
+                <Type>Allegiance</Type>
+                <Attribute>Kingdom</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+
+
+<AbilityBonus InternalName="RighteousReputation_AntiPaladinAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusType>Unit_Spell_Rank</AbilityBonusType>
+        <AbilityBonusOption InternalName="RighteousReputation_AntiPaladin">
+            <DisplayName>Righteous Reputation</DisplayName>
+            <Description>Unlocks Call Squire.</Description>
+            <Icon>Righteous_Fury.png</Icon>
+            <PerkTreePosX>3</PerkTreePosX>
+            <PerkTreePosY>2</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Provides>Unlocks the following spells:</Provides>
+            </GameModifier>
+            <Type>Spell</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>LoneHero_Level_Paladin</Attribute>
+            </Prereq>
+            <Prereq>
+                <Type>Allegiance</Type>
+                <Attribute>Empire</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+
+<AbilityBonus InternalName="Life1Ability">
+        <AbilityBonusType>Champion_Spellbook</AbilityBonusType>
+        <AbilityBonusType>Unit_Spell_Rank</AbilityBonusType>
+            <SpellbookType>Life</SpellbookType>
+        <AbilityBonusOption InternalName="Life1">
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_IsLifeUser</StrVal>
+                <Value>1</Value>
+                <Provides>This unit counts as a user of Life Magic</Provides>
+            </GameModifier>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+<AbilityBonus InternalName="Death1Ability">
+        <AbilityBonusType>Champion_Spellbook</AbilityBonusType>
+        <AbilityBonusType>Unit_Spell_Rank</AbilityBonusType>
+            <SpellbookType>Death</SpellbookType>
+        <AbilityBonusOption InternalName="Death1">
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_IsDeathUser</StrVal>
+                <Value>1</Value>
+                <Provides>This unit counts as a user of Death Magic</Provides>
+            </GameModifier>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+<!-- no longer used
+
+<AbilityBonus InternalName="Outcast2Ability">
+        <AbilityBonusOption InternalName="Outcast2">
+            <DisplayName>Disgraced</DisplayName>
+            <Description>-10% to Hit Points, -2 initiative</Description>
+            <Icon>Ability_BrokenSpirit_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_CombatSpeed</StrVal>
+                <Value>-2</Value>
+                <Provides>-2 Initiative</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_HitPoints</StrVal>
+                <Multiplier>0.9</Multiplier>
+                <Provides>-10% Hit Points</Provides>
+            </GameModifier>
+            <Type>Weakness</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>-->
+
+<!-- Adds IsDeathUser to these abilities --> 
+
+<AbilityBonus InternalName="Spell_BlindnessAbility">
+        <AbilityBonusOption InternalName="Spell_Blindness">
+            <DisplayName>Blindness</DisplayName>
+            <Description>Allows the unit to cast Blindness</Description>
+            <Icon>T_Blindness_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_IsDeathUser</StrVal>
+                <Value>1</Value>
+                <Provides>This unit counts as a user of Death Magic</Provides>
+            </GameModifier>
+            <CombatRating>10</CombatRating>
+            <IsCombatAbility>1</IsCombatAbility>
+            <Type>Spell</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="Spell_DespairAbility">
+        <AbilityBonusOption InternalName="Spell_Despair">
+            <DisplayName>Despair</DisplayName>
+            <Description>Allows the unit to cast Despair</Description>
+            <Icon>T_DrainLife_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_IsDeathUser</StrVal>
+                <Value>1</Value>
+                <Provides>This unit counts as a user of Death Magic</Provides>
+            </GameModifier>
+            <CombatRating>300</CombatRating>
+            <IsCombatAbility>1</IsCombatAbility>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="Spell_CurseAbility">
+        <AbilityBonusOption InternalName="Spell_Curse">
+            <DisplayName>Curse</DisplayName>
+            <Description>Allows the unit to cast Curse</Description>
+            <Icon>T_Curse_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_IsDeathUser</StrVal>
+                <Value>1</Value>
+                <Provides>This unit counts as a user of Death Magic</Provides>
+            </GameModifier>
+            <CombatRating>10</CombatRating>
+            <IsCombatAbility>1</IsCombatAbility>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="Trigger_MassCurseAbility">
+        <AbilityBonusOption InternalName="Trigger_MassCurse">
+            <DisplayName>Mass Curse</DisplayName>
+            <Description>Mass Curse is triggered when combat begins</Description>
+            <Icon>Ability_GreaterCurse_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_IsDeathUser</StrVal>
+                <Value>1</Value>
+                <Provides>This unit counts as a user of Death Magic</Provides>
+            </GameModifier>
+            <CombatRating>100</CombatRating>
+            <Type>Ability</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="Spell_TouchOfEntropyAbility">
+        <AbilityBonusOption InternalName="Spell_TouchOfEntropy">
+            <DisplayName>Touch of Entropy</DisplayName>
+            <Description>Allows the unit to cast Touch of Entropy</Description>
+            <Icon>T_TouchOfEntropy_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_IsDeathUser</StrVal>
+                <Value>1</Value>
+                <Provides>This unit counts as a user of Death Magic</Provides>
+            </GameModifier>
+            <CombatRating>50</CombatRating>
+            <IsCombatAbility>1</IsCombatAbility>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="Spell_CloakOfFearAbility">
+        <AbilityBonusOption InternalName="Spell_CloakOfFear">
+            <DisplayName>Cloak of Fear</DisplayName>
+            <Description>Allows the unit to cast Cloak of Fear</Description>
+            <Icon>S_CloakOfFear_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_IsDeathUser</StrVal>
+                <Value>1</Value>
+                <Provides>This unit counts as a user of Death Magic</Provides>
+            </GameModifier>
+            <CombatRating>25</CombatRating>
+            <IsCombatAbility>1</IsCombatAbility>
+            <Type>Spell</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="Trigger_FearAbility">
+        <AbilityBonusOption InternalName="Trigger_Fear">
+            <DisplayName>Fear</DisplayName>
+            <Description>Fear is triggered when combat begins</Description>
+            <Icon>Ability_Fear_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_IsDeathUser</StrVal>
+                <Value>1</Value>
+                <Provides>This unit counts as a user of Death Magic</Provides>
+            </GameModifier>
+            <CombatRating>100</CombatRating>
+            <Type>Ability</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="Spell_ContagionAbility">
+        <AbilityBonusOption InternalName="Spell_Contagion">
+            <DisplayName>Contagion</DisplayName>
+            <Description>Allows the unit to cast Contagion</Description>
+            <Icon>T_Contagion_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_IsDeathUser</StrVal>
+                <Value>1</Value>
+                <Provides>This unit counts as a user of Death Magic</Provides>
+            </GameModifier>
+            <CombatRating>50</CombatRating>
+            <IsCombatAbility>1</IsCombatAbility>
+            <Type>Spell</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+<!-- Adds IsLifeUser to these abilities -->
+
+    <AbilityBonus InternalName="Spell_HealingLightAbility">
+        <AbilityBonusOption InternalName="Spell_HealingLight">
+            <DisplayName>Healing Light</DisplayName>
+            <Description>Allows the unit to cast Healing Light</Description>
+            <Icon>T_HealingLight_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_IsLifeUser</StrVal>
+                <Value>1</Value>
+                <Provides>This unit counts as a user of Life Magic</Provides>
+            </GameModifier>
+            <CombatRating>10</CombatRating>
+            <IsCombatAbility>1</IsCombatAbility>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="Spell_WellspringAbility">
+        <AbilityBonusOption InternalName="Spell_Wellspring">
+            <DisplayName>Wellspring</DisplayName>
+            <Description>Allows the unit to cast Wellspring</Description>
+            <Icon>T_Wellspring_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_IsLifeUser</StrVal>
+                <Value>1</Value>
+                <Provides>This unit counts as a user of Life Magic</Provides>
+            </GameModifier>
+            <CombatRating>50</CombatRating>
+            <IsCombatAbility>1</IsCombatAbility>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="Spell_DeathWard">
+        <AbilityBonusOption InternalName="Spell_DeathWard">
+            <DisplayName>Death Ward</DisplayName>
+            <Description>Allows the unit to cast Death Ward in battle</Description>
+            <Icon>S_DeathWard_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_IsLifeUser</StrVal>
+                <Value>1</Value>
+                <Provides>This unit counts as a user of Life Magic</Provides>
+            </GameModifier>
+            <CombatRating>10</CombatRating>
+            <IsCombatAbility>1</IsCombatAbility>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="Necromancy1Ability">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusType>Unit_Spell_Rank</AbilityBonusType>
+        <AbilityBonusOption InternalName="Necromancy1">
+            <DisplayName>Necromancy</DisplayName>
+            <Description>Allows the unit to raise skeletons in battle</Description>
+            <Icon>Ability_Necromancy_Icon.png</Icon>
+            <PerkTreePosX>1</PerkTreePosX>
+            <PerkTreePosY>4</PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_IsDeathUser</StrVal>
+                <Value>1</Value>
+                <Provides>This unit counts as a user of Death Magic</Provides>
+            </GameModifier>
+            <Type>Spell</Type>
+            <UpgradePathID>Necromancy</UpgradePathID>
+            <Prereq>
+                <Type>Allegiance</Type>
+                <Attribute>Empire</Attribute>
+            </Prereq>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Summon1</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="Spell_HorrificWailAbility">
+        <AbilityBonusOption InternalName="Spell_HorrificWail">
+            <DisplayName>Horrific Wail</DisplayName>
+            <Description>Allows the unit to cast Horrific Wail</Description>
+            <Icon>T_HorrificWail_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_IsDeathUser</StrVal>
+                <Value>1</Value>
+                <Provides>This unit counts as a user of Death Magic</Provides>
+            </GameModifier>
+            <CombatRating>50</CombatRating>
+            <IsCombatAbility>1</IsCombatAbility>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+		    <AbilityBonus InternalName="WitchcraftAbility">
+        <AbilityBonusOption InternalName="Witchcraft">
+            <DisplayName>Witchcraft</DisplayName>
+            <Description>Allows the unit to use the Wellspring, Curse and Contagion spells</Description>
+            <Icon>Ability_Warlock_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_IsDeathUser</StrVal>
+                <Value>1</Value>
+                <Provides>This unit counts as a user of Death Magic</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_IsLifeUser</StrVal>
+                <Value>1</Value>
+                <Provides>This unit counts as a user of Life Magic</Provides>
+            </GameModifier>			
+            <Type>Spell</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+</AbilityBonuses>

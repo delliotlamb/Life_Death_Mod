@@ -1,0 +1,133 @@
+<!--<?xml version="1.0" encoding="iso-8859-1"?>
+<GameItemTypes>
+    <DataChecksum NoParse="1">
+        <Ignore>DispName</Ignore>
+        <Translate>DisplayName,Description</Translate>
+    </DataChecksum>
+    <GameItemType InternalName="F_Male_Quendar_Head_02">
+        <DisplayName>Fallen - Male Quendar Head 2</DisplayName>
+        <Type>Face</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <RandomPeasantUnitLiklihood>50</RandomPeasantUnitLiklihood>
+        <RandomMerchantUnitLiklihood>50</RandomMerchantUnitLiklihood>
+        <RandomHeroUnitLiklihood>50</RandomHeroUnitLiklihood>
+        <ArtDef>F_Male_Quendar_Head_02_ArtDef</ArtDef>
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Heroic</Attribute>
+            <Target>Player</Target>
+        </Prereq>		
+        <GameItemTypeArtDef InternalName="F_Male_Quendar_Head_02_ArtDef">
+            <GameItemTypeModelPack InternalName="F_Male_Quendar_Head_02_Default">
+                <IconFile>FallenSovereignMaleHeadG.png</IconFile>
+                <SupportedUnitModelType>HenchmanMale</SupportedUnitModelType>
+                <GameItemTypeModel>
+                    <ModelFile>F_Male_Magnar_Head_Mesh_01.hkb</ModelFile>
+                    <AttachmentType>Skinned</AttachmentType>
+                </GameItemTypeModel>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+    </GameItemType>
+	
+	<GameItemType InternalName="F_Male_Quendar_Horns_05">
+        <DisplayName>Fallen - Male Quendar Horns 1</DisplayName>
+        <Type>Head</Type>
+        <Subtype>Hair</Subtype>
+        <CanBeEquipped>1</CanBeEquipped>
+        <RandomPeasantUnitLiklihood>50</RandomPeasantUnitLiklihood>
+        <RandomMerchantUnitLiklihood>50</RandomMerchantUnitLiklihood>
+        <RandomHeroUnitLiklihood>50</RandomHeroUnitLiklihood>
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Heroic</Attribute>
+            <Target>Player</Target>
+        </Prereq>		
+        <ArtDef>F_Male_Quendar_Horns_05_ArtDef</ArtDef>
+        <GameItemTypeArtDef InternalName="F_Male_Quendar_Horns_05_ArtDef">
+            <GameItemTypeModelPack InternalName="F_Male_Quendar_Horns_05_Default">
+                <IconFile>FallenSovereignMaleHeadG.png</IconFile>
+                <SupportedUnitModelType>HenchmanMale</SupportedUnitModelType>
+                <GameItemTypeModel>
+                    <ModelFile>F_Male_Magnar_Horns_Mesh_01.hkb</ModelFile>
+                    <AttachmentType>Skinned</AttachmentType>
+                </GameItemTypeModel>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+    </GameItemType>
+    <GameItemType InternalName="F_Male_Quendar_Horns_06">
+        <DisplayName>Fallen - Male Quendar Horns 2</DisplayName>
+        <Type>Head</Type>
+        <Subtype>Hair</Subtype>
+        <CanBeEquipped>1</CanBeEquipped>
+        <RandomPeasantUnitLiklihood>50</RandomPeasantUnitLiklihood>
+        <RandomMerchantUnitLiklihood>50</RandomMerchantUnitLiklihood>
+        <RandomHeroUnitLiklihood>50</RandomHeroUnitLiklihood>
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Heroic</Attribute>
+            <Target>Player</Target>
+        </Prereq>		
+        <ArtDef>F_Male_Quendar_Horns_06_ArtDef</ArtDef>
+        <GameItemTypeArtDef InternalName="F_Male_Quendar_Horns_06_ArtDef">
+            <GameItemTypeModelPack InternalName="F_Male_Quendar_Horns_06_Default">
+                <IconFile>FallenSovereignMaleHeadG.png</IconFile>
+                <SupportedUnitModelType>HenchmanMale</SupportedUnitModelType>
+                <GameItemTypeModel>
+                    <ModelFile>F_Male_Magnar_Horns_Mesh_02.hkb</ModelFile>
+                    <AttachmentType>Skinned</AttachmentType>
+                </GameItemTypeModel>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+    </GameItemType>
+    <GameItemType InternalName="F_Male_Quendar_Horns_07">
+        <DisplayName>Fallen - Male Quendar Horns 3</DisplayName>
+        <Type>Head</Type>
+        <Subtype>Hair</Subtype>
+        <CanBeEquipped>1</CanBeEquipped>
+        <RandomPeasantUnitLiklihood>50</RandomPeasantUnitLiklihood>
+        <RandomMerchantUnitLiklihood>50</RandomMerchantUnitLiklihood>
+        <RandomHeroUnitLiklihood>50</RandomHeroUnitLiklihood>
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Heroic</Attribute>
+            <Target>Player</Target>
+        </Prereq>		
+        <ArtDef>F_Male_Quendar_Horns_07_ArtDef</ArtDef>
+        <GameItemTypeArtDef InternalName="F_Male_Quendar_Horns_07_ArtDef">
+            <GameItemTypeModelPack InternalName="F_Male_Quendar_Horns_07_Default">
+                <IconFile>FallenSovereignMaleHeadG.png</IconFile>
+                <SupportedUnitModelType>HenchmanMale</SupportedUnitModelType>
+                <GameItemTypeModel>
+                    <ModelFile>F_Male_Magnar_Horns_Mesh_03.hkb</ModelFile>
+                    <AttachmentType>Skinned</AttachmentType>
+                </GameItemTypeModel>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+    </GameItemType>
+    <GameItemType InternalName="F_Male_Quendar_Horns_08">
+        <DisplayName>Fallen - Male Quendar Horns 4</DisplayName>
+        <Type>Head</Type>
+        <Subtype>Hair</Subtype>
+        <CanBeEquipped>1</CanBeEquipped>
+        <RandomPeasantUnitLiklihood>50</RandomPeasantUnitLiklihood>
+        <RandomMerchantUnitLiklihood>50</RandomMerchantUnitLiklihood>
+        <RandomHeroUnitLiklihood>50</RandomHeroUnitLiklihood>
+        <Prereq>
+            <Type>RestrictedAbilityBonusOption</Type>
+            <Attribute>Heroic</Attribute>
+            <Target>Player</Target>
+        </Prereq>		
+        <ArtDef>F_Male_Quendar_Horns_08_ArtDef</ArtDef>
+        <GameItemTypeArtDef InternalName="F_Male_Quendar_Horns_08_ArtDef">
+            <GameItemTypeModelPack InternalName="F_Male_Quendar_Horns_08_Default">
+                <IconFile>FallenSovereignMaleHeadG.png</IconFile>
+                <SupportedUnitModelType>HenchmanMale</SupportedUnitModelType>
+                <GameItemTypeModel>
+                    <ModelFile>F_Male_Magnar_Horns_Mesh_04.hkb</ModelFile>
+                    <AttachmentType>Skinned</AttachmentType>
+                </GameItemTypeModel>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+    </GameItemType>
+	
+</GameItemTypes>-->

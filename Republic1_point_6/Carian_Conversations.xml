@@ -1,0 +1,221 @@
+<FlavorTextEntries>
+
+    <FlavorText>
+        <Topic>Talk_DeclareWar</Topic>
+        <Faction>CustomFaction_Carian</Faction>
+        <Text>We abhor war. But in observance of your actions, the peace-loving people of [S_FactionShortName] have no other choice but to arm themselves and march for your borders. [S_LeaderName] declares war upon you today!</Text>
+		<Text>On behalf of the Proconsul, by will of its Senators and their states, [S_FactionShortName] declares war upon the [L_FactionName]!</Text>
+        <Text>We have watched your activities. The games between us end today. Know this, [L_LeaderName], that I shall meet you on the field of battle and show no mercy.</Text>
+		<Text>On behalf of our Proconsul, sworn to defend the city states of [S_FactionShortName], know that we today march in war against you!</Text>
+    </FlavorText>
+    <FlavorText>
+        <Topic>Talk_EnteringForeignTerritory</Topic>
+        <Faction>CustomFaction_Carian</Faction>
+        <Text>You trespass on the sovereign territory of a city-state of [S_FactionShortName]. Begone immediately or we shall mobilize our soldiers to passionately defend their homes.</Text>
+    </FlavorText>
+    <FlavorText>
+        <Topic>Talk_FirstContact</Topic>
+        <Faction>CustomFaction_Carian</Faction>
+        <Rule>1</Rule>
+        <Text>This is an incredible time, [L_LeaderName], when we can work together to make a new world from the wastes. Let us remember the wonders of the old Magi, and cooperate to achieve an even greater peace.</Text>
+        <Text>The [S_FactionShortName] value knowledge and learning above all else. Let us look ahead, [L_LeaderName], to a time beyond mere imperialism and seizing of territory. Let us a forge a new, better age together.</Text>
+    </FlavorText>
+    <FlavorText>
+        <Topic>Talk_FirstContact</Topic>
+        <Faction>CustomFaction_Carian</Faction>
+        <Rule>2</Rule>
+        <Text>I have read of your kind, [L_LeaderName]. The people of [L_FactionShortName] are beautiful and unique, in their way. Let us live in peace, and we shall honor your right to do the same.</Text>
+        <Text>[L_LeaderName] - my scholars have informed me of the history of [L_FactionName]. The [S_FactionShortName] rejoices at the prospect of growing alongside your people into the new age. Let us cooperate rather than compete.</Text>
+        <Text>[L_LeaderName], I greet you. The people of [S_FactionShortName] look forward to productive cooperation with yours.</Text>
+    </FlavorText>
+    <FlavorText>
+        <Topic>Talk_FirstContact</Topic>
+        <Faction>CustomFaction_Carian</Faction>
+        <ListeningFaction>KingdomOfAltar</ListeningFaction>
+        <R_OK>Talk_FirstContact_R_OK_KingdomToKingdom</R_OK>
+        <Text>Greetings, [L_LeaderName] of Altar. In the name of our Proconsul, [S_LeaderName], we recognize your nation and endeavour to remake the world in cooperation with you.</Text>
+        <Text>[L_LeaderName]! The humble hospitality of the [S_FactionShortName] is yours, if you would have it.  These are dangerous but opportune times, and we are open to peace and cooperation with you if you can but respect our Republican ways.</Text>
+        <Text>We are both rebels in our own right, [L_LeaderName]. The [S_FactionShortName] will build a New Republic, and if you can respect our ways we may yet become fast allies.</Text>
+    </FlavorText>
+    <FlavorText>
+        <Topic>Talk_FirstContact</Topic>
+        <Faction>CustomFaction_Carian</Faction>
+        <ListeningFaction>KingdomOfCapitar</ListeningFaction>
+        <R_OK>Talk_FirstContact_R_OK_KingdomToKingdom</R_OK>
+        <Text>[L_LeaderName] of Capitar. We of the [S_FactionShortName] are eager to build a strong, prosperous political economy in the world. We are excited to discuss how our merchants and laborers can work together for mutual benefit.</Text>
+		<Text>[L_LeaderName] of Capitar, greetings! Despite the distaste for concentrated wealth here in [S_FactionShortName], we know we could stand to learn much from your shrewd traders and merchants. Let us cooperate to make both our societies greater.</Text>
+    </FlavorText>
+    <FlavorText>
+        <Topic>Talk_FirstContact</Topic>
+        <Faction>CustomFaction_Carian</Faction>
+        <ListeningFaction>KingdomOfGilden</ListeningFaction>
+        <R_OK>Talk_FirstContact_R_OK_KingdomToKingdom</R_OK>
+        <Text>[L_LeaderName] of Gilden, we are honored to finally meet your resolute people. Let us meet and break bread together soon. Surely in working together, we can remake the world into a brighter age.</Text>
+    </FlavorText>
+	
+    <FlavorText>
+        <Topic>Talk_FirstContact</Topic>
+        <Faction>CustomFaction_Carian</Faction>
+        <ListeningFaction>KingdomOfTarth</ListeningFaction>
+        <R_OK>Talk_FirstContact_R_OK_KingdomToKingdom</R_OK>
+        <Text>[L_LeaderName] and the people of Tarth, I greet you. We share your deep hunger for freedom, and distrust of those who would take it. Let us work together to make all the world free of bondage.</Text>
+    </FlavorText>
+    <FlavorText>
+        <Topic>Talk_FirstContact</Topic>
+        <Faction>CustomFaction_Carian</Faction>
+        <ListeningFaction>EmpireOfKraxis</ListeningFaction>
+        <R_OK>Talk_FirstContact_R_OK_EmpireToKingdom</R_OK>
+        <Text>[L_LeaderName] of Kraxis. We care little for the rumors spread by kingdoms of your fidelity. If you can but respect our way of government, we shall respect yours, and cooperate with you towards a new era of peace.</Text>
+    </FlavorText>
+    <FlavorText>
+        <Topic>Talk_FirstContact</Topic>
+        <Faction>CustomFaction_Carian</Faction>
+        <ListeningFaction>EmpireOfMagnar</ListeningFaction>
+        <R_OK>Talk_FirstContact_R_OK_EmpireToKingdom</R_OK>
+        <Text>I send greetings, [L_LeaderName] of Magnar. We have little faith in the traditions of Curgen. But if you can respect our way of government, you may find us friends in building a future together.</Text>
+    </FlavorText>
+    <FlavorText>
+        <Topic>Talk_FirstContact</Topic>
+        <Faction>CustomFaction_Carian</Faction>
+        <ListeningFaction>EmpireOfResoln</ListeningFaction>
+        <R_OK>Talk_FirstContact_R_OK_EmpireToKingdom</R_OK>
+        <Text>Greetings, [L_LeaderName] of Resoln. We know little of you and your people. If you would meet with us in peace, we shall readily listen to your story, and working in peace together we might both prosper.</Text>
+    </FlavorText>
+    <FlavorText>
+        <Topic>Talk_FirstContact</Topic>
+        <Faction>CustomFaction_Carian</Faction>
+        <ListeningFaction>EmpireOfUmber</ListeningFaction>
+        <R_OK>Talk_FirstContact_R_OK_EmpireToKingdom</R_OK>
+        <Text>[L_LeaderName] of Umber, we know of your long and resolute history. You will find us to be valuable trading partners, perhaps even friends, if you only can respect our way of government.</Text>
+    </FlavorText>
+    <FlavorText>
+        <Topic>Talk_FirstContact</Topic>
+        <Faction>CustomFaction_Carian</Faction>
+        <ListeningFaction>EmpireOfYithril</ListeningFaction>
+        <R_OK>Talk_FirstContact_R_OK_EmpireToKingdom</R_OK>
+        <Text>Greetings, [L_LeaderName] of Yithril. We of [S_FactionShortName] respect your might. Let us keep open dialogues as this world rebuilds, for you will find us useful allies.</Text>
+		<Text>[L_LeaderName] of Yithril. We of [S_FactionShortName] are no Trogs. But our minds give us might, and if you respect our Republic we shall not impede your activities.</Text>
+    </FlavorText>
+    <FlavorText>
+        <Topic>Talk_Greeting_Generic</Topic>
+        <Faction>CustomFaction_Carian</Faction>
+        <Rule>1</Rule>
+        <Text>Welcome to the embassy of [S_FactionShortName], [L_LeaderName]. Speak your mind.</Text>
+        <Text>Ah, [L_LeaderName]. [S_FactionShortName] welcomes you.</Text>
+        <Text>Our city bustles with activity. But we readily invest time in diplomacy.</Text>
+    </FlavorText>
+    <FlavorText>
+        <Topic>Talk_Greeting_Generic</Topic>
+        <Faction>CustomFaction_Carian</Faction>
+        <Text>Welcome to [S_FactionShortName], [L_LeaderName]. What business has brought you?</Text>
+		<Text>[L_LeaderName], we are listening.</Text>
+		<Text>[L_LeaderName], in our forum all speak their mind and gain knowledge. Today your voice will be heard.</Text>
+    </FlavorText>
+    <FlavorText>
+        <Topic>Talk_Greeting_GenericTrade</Topic>
+        <Faction>CustomFaction_Carian</Faction>
+        <Text>Show how we both might benefit.</Text>
+		<Text>A proposal for trade? Interesting, go on.</Text>
+		<Text>If the [S_FactionShortName] people might benefit, then state your bargain.</Text>
+    </FlavorText>
+	
+	<FlavorText>
+    <Topic>Talk_WorldSituation</Topic>
+    <Faction>CustomFaction_Carian</Faction>
+    <Rule>1</Rule>
+    <Text>[L_LeaderName]. We are free of body and of mind. We will fight to maintain our social freedoms. Let no mistake be made about this.</Text>
+    <Text>Greetings in peace, [L_LeaderName]. Every day our people labor diligently to build a better world. Let us be sure to reach it together in peace.</Text>
+    <Text>I have been to your capital, [L_LeaderName]. [L_CAPITAL_CITY] is a beautiful city. If only all of its citizens were afforded the social freedoms of [S_CAPITAL_CITY].</Text>
+    <Text>Hail [L_LeaderName]! Rumor has it that [BEST_CHAMPION] is powerful over all others. But no single individual, even mighty, holds rights over a society.</Text>
+    <Text>I have come to warn you, [L_LeaderName]. Your capital is only [DISTANCE_L_CAPITAL] leagues from the most foul monster we've discovered. It is called [BEST_MONSTER]. Take care you stick to the roads.</Text>
+    <Text>They say a Channeler can live for hundreds of years. I hope we can witness peace on this world, in our old age.</Text>
+    <Text>The Spell of Making is part of the recently found book, "Book of Mastery". Let us be clear that we do not trust this knowledge, and we would snatch it from Ereog's hands and burn it if such an act were possible.</Text>
+    <Text>We have [S_MONEY] gildar. You have [L_MONEY] gildar. Economic cooperation is always of interest to us.</Text>
+    <Text>Some chaos is a good thing. New ideas do not come from rigid doctrine. And concentrated wealth is resistant to adaptation.</Text>
+    <Text>[L_LeaderName]. Security can only certain by political economy. Force will always betray, sooner or later.</Text>
+    <R_OK>Talk_Generic_R_OK</R_OK>
+  </FlavorText>
+
+  <FlavorText>
+    <Topic>Talk_WorldSituation</Topic>
+    <Faction>CustomFaction_Carian</Faction>
+    <Rule>2</Rule>
+    <Text>[L_LeaderName], the keeping of slaves is an abomination before our values. We have been known to kill slavers to free their victims. Let this be clear between us.</Text>
+    <Text>[L_LeaderName]. Strength is worshipped by so many. Yet strength is nothing before time and entropy.</Text>
+    <Text>[L_LeaderName]. I have been to your capital, [L_CAPITAL_CITY]. Despite our differences, there is a grandeur there.</Text>
+    <Text>[L_LeaderName]. We truly wish to cooperate and find peace. But if you cannot release the obsession for power and conquest that is legacy of the Titans, our conflict may be inevitable.</Text>
+    <Text>[L_LeaderName], we hear tales of the deeds of [BEST_CHAMPION]. Alas, what is even a mighty individual against an entire social system?</Text>
+    <Text>[L_LeaderName]. Your capital is only [DISTANCE_L_CAPITAL] leagues from the most foul monster we've discovered. It is called [BEST_MONSTER]. Despite our differences, we would rather see you avoid its wrath.</Text>
+    <Text>They say the Forge of the Overlord brought the Titans. The Titans created Fallen and poisoned their minds with submissive ideologies and bloodthirsty values. Our people would rather see the Forge forgotten to time, for its power brings unpredictable chaos.</Text>
+    <Text>The Spell of Making is magic that was thought lost from the world. While the Book of Mastery has been found, no one can yet translate its ancient words. But through Arcane Mastery, we might soon have this knowledge. Know that we would use it to hide our society from the world, not rule over others.</Text>
+    <Text>We have [S_MONEY] gildar. You have [L_MONEY] gildar. Perhaps there will be opportunity for trade between us, [L_LeaderName].</Text>
+    <Text>In the distant past, our ancestors were slaves at various times. We do not look kindly on slavery.</Text>
+    <Text>[L_LeaderName]. When will you realize that the doctrine of the Titans was meant to blind you into servitude, not empower you?</Text>
+    <R_OK>Talk_Generic_R_OK</R_OK>
+  </FlavorText>
+  
+  <!-- Endgame text -->
+  
+  <!--** Military Victory **-->
+	<FlavorText>
+		<Topic>EndGameWnd_VictoryGeneric</Topic>
+    <Faction>CustomFaction_Carian</Faction>		
+		<Text>A new dawn rises for [LeaderName] and the battle-weary people of the [FactionNameLong]. With the death of their final adversary bringing an end to all wars, the brave soldiers of [FactionNameShort] have sheathed their weapons to become farmers and merchants. Will an age of war ended by the sword give way to lasting peace?</Text>
+	</FlavorText>
+
+	<!--** Campaign Victory **-->
+	<FlavorText>
+		<Topic>EndGameWnd_VictoryCampaign</Topic>
+		<Faction>CustomFaction_Carian</Faction>		
+		<Text>[LeaderName] fought bravely, and The [FactionNameLong] shall endure into the next age. Let us hope the sacrifices made were worth their price.</Text>
+	</FlavorText>
+
+	<!--** Quest Victory **-->
+	<FlavorText>
+		<Topic>EndGameWnd_VictoryQuest</Topic>
+    <Faction>CustomFaction_Carian</Faction>		
+		<Text>Through the Scepter of Dominion you can feel the connection with all the creatures of Elemental.  With it no enemy can stand against [FactionNameShort]. The age of war is past, and now [LeaderName] can ensure peace and tolerance in [WorldName] so long as [LeaderHisHer] breathes.</Text>
+	</FlavorText>
+
+	<!--** Spell Victory **-->
+	<FlavorText>
+		<Topic>EndGameWnd_VictorySpell</Topic>
+    <Faction>CustomFaction_Carian</Faction>		
+		<Text>In a display of power unseen since the Titans walked the land, [LeaderName] bound the arcane energy within every last elemental shard on [WorldName] to [LeaderHisHer] will. With their ability to channel magic suddenly rendered useless, [LeaderName]'s enemies soon abdicated, as their people lost faith in their supremacy. [FactionNameLong] holds dominion over all [WorldName], allowing [LeaderName] to protect the Republic eternally.</Text>
+	</FlavorText>
+
+	<!--** Diplomacy Victory **-->
+	<FlavorText>
+    <Topic>EndGameWnd_VictoryDiplomacy</Topic>
+    <Faction>CustomFaction_Carian</Faction>	
+    <Text>An era of peace has descended upon [WorldName]. The people of the [FactionNameLong], and every remaining faction, travel freely across [WorldName] conducting business under an atmosphere of tolerance and cooperation ushered in by [LeaderName] and [LeaderHisHer] diplomatic efforts. The time of bloodshed is past, and the finest era of [WorldName] may still be yet to come.</Text>
+  </FlavorText>
+
+  <!--** Score/Timeline Victory **-->
+  <FlavorText>
+    <Topic>EndGameWnd_VictoryTurnLimit</Topic>
+    <Faction>CustomFaction_Carian</Faction>	
+    <Text>Twilight falls on the current age and scholars have united in declaring the [FactionNameLong] as the worlds' dominant civilization. Balancing military might with social fortitude and magical prowess, [LeaderName] has proven [LeaderHisHer] greatness as a leader and the name [FactionNameShort] will be forever honored as one of the greatest civilizations to grace the land.</Text>
+  </FlavorText>
+
+  <!--** Player Retired **-->
+  <FlavorText>
+    <Topic>EndGameWnd_Retire</Topic>
+    <Faction>CustomFaction_Carian</Faction>	
+    <Text>[LeaderName] sits, alone in the throne room of [FactionNameShort]. A fog of hopelessness clouds [LeaderHisHer] every thought. [LeaderHisHer] people begged for a leader - but their bickering with his policies was too exhausting. [LeaderHisHer] army longed for an able general - but the sword was too heavy. [LeaderHisHer] foes beat their chests - but [LeaderName] could muster neither fear nor ire. [LeaderHisHer] abdicates the post as Proconsul, leaving the fate of [FactionNameShort] to fortune.</Text>
+  </FlavorText>
+
+  <FlavorText>
+    <Topic>EndGameWnd_RetireFromEndlessGame</Topic>
+    <Faction>CustomFaction_Carian</Faction>	
+    <Text>[LeaderName] has grown restless. As another season passes, and the great leader views [LeaderHisHer] what has become of the Republican experiment, [FactionNameShort]'s ruler feels little satisfaction. The joys of a victorious battle, the thrill of adventuring the untamed wilds, the excitement of seeing ideals become reality were all fading memories. It is time for the reign of [FactionNameShort]'s Sovereign to be passed onto another, and [LeaderName] will disappear off into the wilds.</Text>
+  </FlavorText>
+  
+  <!--** Defeat **-->
+	<FlavorText>
+		<Topic>EndGameWnd_DefeatGeneric</Topic>
+    <Faction>CustomFaction_Carian</Faction>		
+		<Text>The bloodstained flag of [FactionNameShort] lay tattered and torn, in the firm grasp of the broken [LeaderName]. Those few soldiers still standing in defense of The [FactionNameLong] fight a hopeless battle. The ideals of the [FactionNameShort] have failed to prove their worth, and shall be lost to history.</Text>
+	</FlavorText>
+	
+	</FlavorTextEntries>

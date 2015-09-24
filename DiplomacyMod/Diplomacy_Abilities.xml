@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Created with the Elemental Editor -->
+<!-- CoreAbilities.xml -->
+<!-- -->
+<AbilityBonuses>
+	
+	<!-- here -->
+    <AbilityBonus InternalName="Spy_Ability">
+        <AbilityBonusOption InternalName="Spy">
+            <DisplayName>Spy</DisplayName>
+            <Description>+1 Sight range. This unit can cast spells that incite revolution or steal enemy secrets.</Description>
+            <Icon>Individual.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>CanCastSpells</Attribute>
+                <Provides>When within 1 tiles of an enemy city, this unit can incite revolution</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>BattleAutoCastSpell</Attribute>
+                <StrVal>Trigger_SpyNoSpell</StrVal>
+                <Value>100</Value>
+                <Provides>Can create outposts.</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Defection_Ability</StrVal>
+                <Provides>Can use the Defection ability in battle, which turns enemy troops to your cause</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>DiplomaticImmunity_Ability</StrVal>
+                <Provides>Can use the Diplomatic Immunity to escape from combat</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>DiplomaticImmunity_Ability</StrVal>
+                <Provides>Can use the Diplomatic Collapse to set all players at war</Provides>
+            </GameModifier>				
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Sight</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Sight Range</Provides>
+            </GameModifier>			
+            <IsCombatAbility>1</IsCombatAbility>
+            <Type>Spell</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+	    <AbilityBonusOption InternalName="Diplomat">
+		<GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>DiplomaticCapital</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>			
+            <Provides>+1 Diplomatic Capital Per Turn</Provides>
+        </GameModifier>
+        </AbilityBonusOption>
+	
+</AbilityBonuses>

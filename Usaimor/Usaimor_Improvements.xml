@@ -1,0 +1,58 @@
+<ImprovementTypes>
+
+<ImprovementType InternalName="MartialLibrary">
+        <DisplayName>Martial Library</DisplayName>
+        <Description>A Martial Library grants trained units the War Student ability, +1 starting level and training costs are reduced by 10%. Trained units present in the city gain 1 xp per season.</Description>
+        <RequiresCity>1</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>Conclave</RequiredImprovement>		
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>WarScholarship</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Training</Attribute>
+        </Prereq>		
+        <LaborToBuild>250</LaborToBuild>
+        <GameModifier>
+            <ModType>CityTrainingBonus</ModType>
+            <Attribute>TrainingBonus_ApplyAbilityBonus</Attribute>
+            <StrVal>Warscholar</StrVal>
+            <Provides>Grants trained units +2 armor piercing per level, +2 Accuracy per level, +25% Experience.</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>City</ModType>
+            <Attribute>TrainingDiscount</Attribute>
+            <Value>0.10</Value>
+            <Provides>-10% Unit Training cost</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>CityTrainingBonus</ModType>
+            <Attribute>TrainingBonus_LevelUpUnit</Attribute>
+            <Value>1</Value>
+            <Provides>+1 Level for Trained Units</Provides>
+        </GameModifier>		
+        <GameModifier>
+            <ModType>StationedUnitStatBonus</ModType>
+            <StrVal>UnitStat_Experience</StrVal>
+            <StrVal2>OnlyTrainedUnits</StrVal2>
+            <Value>1</Value>
+            <BonusValue>100</BonusValue>
+            <Provides>Stationed non-champion units gain 1xp/season</Provides>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>100</AIPriority>
+            <AITag>CommandPost</AITag>
+        </AIData>
+        <ArtDef>Art_MartialLibrary</ArtDef>
+    </ImprovementType>
+	
+	
+</ImprovementTypes>

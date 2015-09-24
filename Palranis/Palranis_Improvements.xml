@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- DLC04_Improvements.xml -->
+<!-- -->
+<ImprovementTypes>
+	
+    <ImprovementType InternalName="Trial_Pit">
+        <DisplayName>Trial Pit</DisplayName>
+        <Description>Trial Pits enact a brutal ideology of eugenics by forcing your population to fight for their lives to earn citizenship. Your social fabric will be torn, but the warriors trained here will be truly exceptional, allowing powerful new troop customizations.</Description>
+        <RequiresCity>1</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <LaborToBuild>200</LaborToBuild>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>OnlyTheStrong</Attribute>
+            <Target>Player</Target>
+        </Prereq>		
+        <!--<GameModifier>
+            <ModType>ConstructionResourceCost</ModType>
+            <Attribute>Fame</Attribute>
+            <Value>-3</Value>
+        </GameModifier>-->
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>CombatTrials</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Combat Trial per season</Provides>
+        </GameModifier>	
+        <GameModifier>
+            <ModType>CityTrainingBonus</ModType>
+            <Attribute>TrainingBonus_LevelUpUnit</Attribute>
+            <Value>1</Value>
+            <Provides>+1 Levels for Trained Units</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Unrest</Attribute>
+            <Value>5</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+5% Unrest</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Research</Attribute>
+            <Value>.95</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>-5% Research</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Production</Attribute>
+            <Value>.95</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>-5% Production</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>.95</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>-5% Gildar</Provides>
+        </GameModifier>
+	<GameModifier>
+                <ModType>ResourceMultiplier</ModType>
+                <Attribute>Prestige</Attribute>
+                <Value>.5</Value>
+                <Provides>-50% Growth in this city</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>StationedUnitStatBonus</ModType>
+            <StrVal>UnitStat_Experience</StrVal>
+            <StrVal2>OnlyTrainedUnits</StrVal2>
+            <Value>1</Value>
+            <BonusValue>100</BonusValue>
+            <Provides>Stationed non-champion units gain 1xp/season</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>StationedUnitStatBonus</ModType>
+            <StrVal>UnitStat_Experience</StrVal>
+            <StrVal2>OnlyChampions</StrVal2>
+            <Value>1</Value>
+            <Operator>25</Operator>
+            <Provides>Stationed champions gain 1xp/season</Provides>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>10000</AIPriority>
+            <AITag>CommandPost</AITag>
+            <AIAtWarMultiplier>2</AIAtWarMultiplier>
+        </AIData>
+        <ArtDef>Trial_Pit_ArtDef</ArtDef>
+    </ImprovementType>
+
+</ImprovementTypes>
