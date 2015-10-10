@@ -33,19 +33,7 @@
             <Value>1</Value>
             <PerTurn>1</PerTurn>
             <Provides>+1 Life Power</Provides>
-        </GameModifier>
-        <GameModifier>
-            <ModType>Resource</ModType>
-            <Attribute>Mana</Attribute>
-            <PerTurn>1</PerTurn>
-            <Provides>+1 Mana per Life Power</Provides>
-            <Calculate InternalName="Calc" ValueOwner="OwnerCity">
-                <Expression><![CDATA[[GetNumLifeShards]]]></Expression>
-            </Calculate>
-            <Calculate InternalName="Value" ValueOwner="OwnerCity">
-                <Expression><![CDATA[[Calc]]]></Expression>
-            </Calculate>
-        </GameModifier>		
+        </GameModifier>	
         <AIData AIPersonality="AI_General">
             <AIPriority>5</AIPriority>
         </AIData>
@@ -94,18 +82,6 @@
             <PerTurn>1</PerTurn>
             <Provides>+1 Earth Power</Provides>
         </GameModifier>
-		<GameModifier>
-            <ModType>Resource</ModType>
-            <Attribute>Mana</Attribute>
-            <PerTurn>1</PerTurn>
-            <Provides>+1 Mana per Earth Power</Provides>
-            <Calculate InternalName="Calc" ValueOwner="OwnerCity">
-                <Expression><![CDATA[[GetNumEarthShards]]]></Expression>
-            </Calculate>
-            <Calculate InternalName="Value" ValueOwner="OwnerCity">
-                <Expression><![CDATA[[Calc]]]></Expression>
-            </Calculate>
-        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>5</AIPriority>
         </AIData>
@@ -153,18 +129,6 @@
             <Value>1</Value>
             <PerTurn>1</PerTurn>
             <Provides>+1 Fire Power</Provides>
-        </GameModifier>
-		<GameModifier>
-            <ModType>Resource</ModType>
-            <Attribute>Mana</Attribute>
-            <PerTurn>1</PerTurn>
-            <Provides>+1 Mana per Fire Power</Provides>
-            <Calculate InternalName="Calc" ValueOwner="OwnerCity">
-                <Expression><![CDATA[[GetNumFireShards]]]></Expression>
-            </Calculate>
-            <Calculate InternalName="Value" ValueOwner="OwnerCity">
-                <Expression><![CDATA[[Calc]]]></Expression>
-            </Calculate>
         </GameModifier>		
         <AIData AIPersonality="AI_General">
             <AIPriority>5</AIPriority>
@@ -213,19 +177,7 @@
             <Value>1</Value>
             <PerTurn>1</PerTurn>
             <Provides>+1 Water Power</Provides>
-        </GameModifier>
-		<GameModifier>
-            <ModType>Resource</ModType>
-            <Attribute>Mana</Attribute>
-            <PerTurn>1</PerTurn>
-            <Provides>+1 Mana per Water Power</Provides>
-            <Calculate InternalName="Calc" ValueOwner="OwnerCity">
-                <Expression><![CDATA[[GetNumWaterShards]]]></Expression>
-            </Calculate>
-            <Calculate InternalName="Value" ValueOwner="OwnerCity">
-                <Expression><![CDATA[[Calc]]]></Expression>
-            </Calculate>
-        </GameModifier>		
+        </GameModifier>	
         <AIData AIPersonality="AI_General">
             <AIPriority>5</AIPriority>
         </AIData>
@@ -274,19 +226,7 @@
             <Value>1</Value>
             <PerTurn>1</PerTurn>
             <Provides>+1 Air Power</Provides>
-        </GameModifier>
-		<GameModifier>
-            <ModType>Resource</ModType>
-            <Attribute>Mana</Attribute>
-            <PerTurn>1</PerTurn>
-            <Provides>+1 Mana per Air Power</Provides>
-            <Calculate InternalName="Calc" ValueOwner="OwnerCity">
-                <Expression><![CDATA[[GetNumAirShards]]]></Expression>
-            </Calculate>
-            <Calculate InternalName="Value" ValueOwner="OwnerCity">
-                <Expression><![CDATA[[Calc]]]></Expression>
-            </Calculate>
-        </GameModifier>		
+        </GameModifier>	
         <AIData AIPersonality="AI_General">
             <AIPriority>5</AIPriority>
         </AIData>
@@ -338,19 +278,7 @@
             <Value>1</Value>
             <PerTurn>1</PerTurn>
             <Provides>+1 Death Power</Provides>
-        </GameModifier>
-		<GameModifier>
-            <ModType>Resource</ModType>
-            <Attribute>Mana</Attribute>
-            <PerTurn>1</PerTurn>
-            <Provides>+1 Mana per Death Power</Provides>
-            <Calculate InternalName="Calc" ValueOwner="OwnerCity">
-                <Expression><![CDATA[[GetNumDeathShards]]]></Expression>
-            </Calculate>
-            <Calculate InternalName="Value" ValueOwner="OwnerCity">
-                <Expression><![CDATA[[Calc]]]></Expression>
-            </Calculate>
-        </GameModifier>		
+        </GameModifier>	
         <AIData AIPersonality="AI_General">
             <AIPriority>5</AIPriority>
         </AIData>
@@ -368,6 +296,8 @@
             </ImprovementTypeArtSubPack>
         </ImprovementTypeArtDef>
     </ImprovementType>
+	
+	<!-- these can only work if they get new tiles that support outpost upgrades (graphically - they are all too short for high tower
 	
 	<ImprovementType InternalName="EnchantedGarden_2">
         <DisplayName>Enchanted Garden</DisplayName>
@@ -389,18 +319,6 @@
             <Value>1</Value>
             <PerTurn>1</PerTurn>
             <Provides>+1 Life Power</Provides>
-        </GameModifier>
-        <GameModifier>
-            <ModType>Resource</ModType>
-            <Attribute>Mana</Attribute>
-            <PerTurn>1</PerTurn>
-            <Provides>+1 Mana per Life Power</Provides>
-            <Calculate InternalName="Calc" ValueOwner="OwnerCity">
-                <Expression><![CDATA[[GetNumLifeShards]]]></Expression>
-            </Calculate>
-            <Calculate InternalName="Value" ValueOwner="OwnerCity">
-                <Expression><![CDATA[[Calc]]]></Expression>
-            </Calculate>
         </GameModifier>		
         <AIData AIPersonality="AI_General">
             <AIPriority>5</AIPriority>
@@ -603,6 +521,17 @@
             <AIPriority>5</AIPriority>
         </AIData>
         <ArtDef>SilenceShrine_ArtDef</ArtDef>
+    </ImprovementType>
+	
+	-->
+	
+	<ImprovementType InternalName="LoggingCamp">
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>VerdantEssence</Attribute>
+            <Value>-5</Value>
+            <Provides>-5 Verdant Favor</Provides>
+        </GameModifier>
     </ImprovementType>
 
 </ImprovementTypes>

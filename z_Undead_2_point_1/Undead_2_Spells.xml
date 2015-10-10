@@ -35,7 +35,42 @@
         <HitSoundFX>Spell_FearWave_01</HitSoundFX>
     </SpellDef>
 	
-	
+	<SpellDef InternalName="ConvertLifeShard">
+        <DisplayName>ConvertLifeShard</DisplayName>
+        <Description>The tide of undeath you bring to the land may be resisted by the shards. This spell converts any rebellious Life Shards back to a Death Shard.</Description>
+        <Image>S_Corruption_Painting.png</Image>
+        <IconFG>Icon_Death.png</IconFG>
+		<AutoUnlock>1</AutoUnlock>
+        <SpellBookSortCategory>World</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Map</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Terraform</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>AnyShard</SpellTargetType>
+        <CasterMustBeSov>1</CasterMustBeSov>		
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Blood_Undead</Attribute>
+        </Prereq>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>PlaceEnvironment</Attribute>
+            <TerrainType>DeadEnvironment</TerrainType>
+        </GameModifier>
+        <ValidTerrainCategory>Forest</ValidTerrainCategory>
+        <ValidTerrainCategory>Land</ValidTerrainCategory>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_BirthOfSummer_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>Revive_Land</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
 	
 	
 	

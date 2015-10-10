@@ -4,7 +4,7 @@
         <AbilityBonusOption InternalName="VerdantBlessing">
             <DisplayName>Verdant Blessing</DisplayName>
             <Description>+1 Life Power per turn</Description>
-            <Icon>Ability_Hardy_Icon.png</Icon>
+            <Icon>Icon_Life.png</Icon>
 			<GameModifier>
 				<ModType>Resource</ModType>
 				<Attribute>LifeMana</Attribute>
@@ -43,7 +43,7 @@
         <AbilityBonusOption InternalName="WaveBlessing">
             <DisplayName>Wave Blessing</DisplayName>
             <Description>+1 Water Power per turn</Description>
-            <Icon>Ability_Hydromancy_Icon.png</Icon>
+            <Icon>Icon_Water.png</Icon>
 			<GameModifier>
 				<ModType>Resource</ModType>
 				<Attribute>WaterMana</Attribute>
@@ -62,7 +62,7 @@
         <AbilityBonusOption InternalName="GaleBlessing">
             <DisplayName>Gale Blessing</DisplayName>
             <Description>+1 Air Power per turn</Description>
-            <Icon>Ability_ImmuneToLightning_Icon.png</Icon>
+            <Icon>Icon_Air.png</Icon>
 			<GameModifier>
 				<ModType>Resource</ModType>
 				<Attribute>AirMana</Attribute>
@@ -81,7 +81,7 @@
         <AbilityBonusOption InternalName="EmberBlessing">
             <DisplayName>Blessing Of Embers</DisplayName>
             <Description>+1 Fire Power per turn</Description>
-            <Icon>Ability_ImmuneToFire_Icon.png</Icon>
+            <Icon>Icon_Fire.png</Icon>
 			<GameModifier>
 				<ModType>Resource</ModType>
 				<Attribute>FireMana</Attribute>
@@ -100,7 +100,7 @@
         <AbilityBonusOption InternalName="MineralBlessing">
             <DisplayName>Mineral Blessing</DisplayName>
             <Description>+1 Earth Power per turn</Description>
-            <Icon>Ability_TemperedSteel_Icon.png</Icon>
+            <Icon>Icon_Earth.png</Icon>
 			<GameModifier>
 				<ModType>Resource</ModType>
 				<Attribute>EarthMana</Attribute>
@@ -119,7 +119,7 @@
         <AbilityBonusOption InternalName="StarvationBlessing">
             <DisplayName>Starvation's Blessing</DisplayName>
             <Description>+1 Death Power per turn</Description>
-            <Icon>Ability_Necromancy_Icon.png</Icon>
+            <Icon>Icon_Death.png</Icon>
 			<GameModifier>
 				<ModType>Resource</ModType>
 				<Attribute>DeathMana</Attribute>

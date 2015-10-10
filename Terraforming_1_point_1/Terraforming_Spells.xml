@@ -178,72 +178,6 @@
         </SpellDefEffect>
     </SpellDef>
 
-<!-- Paint spell Life 
-
-<SpellDef InternalName="InciteForest">
-        <DisplayName>Incite Forest</DisplayName>
-        <Description>Turn selected Plains into forest over revived land. You will gain 5 Verdant Favor, and lose 1 Gale Favor. If the forest grows in the right place you may reveal a new city location.</Description>
-        <Image>Incite_Forest_Painting.png</Image>
-        <IconFG>Incite_Forest.png</IconFG>
-		<AutoUnlock>1</AutoUnlock>
-        <SpellBookSortCategory>World</SpellBookSortCategory>
-        <SpellBookSortSubCategory>Map</SpellBookSortSubCategory>
-        <SpellType>Strategic</SpellType>
-        <SpellClass>Terraform</SpellClass>
-        <SpellSubClass>Other</SpellSubClass>
-        <SpellTargetType>NeutralGround</SpellTargetType>
-        <Prereq>
-            <Type>AbilityBonusOption</Type>
-            <Attribute>Life3</Attribute>
-        </Prereq>
-        <SpellResourceCost>
-            <Resource>Mana</Resource>
-            <Amount>6</Amount>
-        </SpellResourceCost>
-		<GameModifier>
-            <ModType>Map</ModType>
-            <Attribute>DestroyObjects</Attribute>
-        </GameModifier>
-        <GameModifier>
-            <ModType>Map</ModType>
-            <Attribute>PlaceTerrain</Attribute>
-            <TerrainType>Forest</TerrainType>
-        </GameModifier>
-        <GameModifier>
-            <ModType>Map</ModType>
-            <Attribute>PlaceEnvironment</Attribute>
-            <TerrainType>GrasslandEnvironment</TerrainType>
-        </GameModifier>
-            <GameModifier>
-                <ModType>Resource</ModType>
-                <Attribute>VerdantEssence</Attribute>
-				<ApplyToCaster>1</ApplyToCaster>
-                <Value>5</Value>
-			</GameModifier>
-            <GameModifier>
-                <ModType>Resource</ModType>
-                <Attribute>GaleEssence</Attribute>
-				<ApplyToCaster>1</ApplyToCaster>
-                <Value>-1</Value>
-            </GameModifier>
-        <ValidTerrainType>Land</ValidTerrainType>
-        <ValidTerrainType>Rugged_Land</ValidTerrainType>
-        <ValidTerrainType>Fertile_Land</ValidTerrainType>
-        <AIData AIPersonality="AI_General">
-            <AIPriority>0</AIPriority>
-        </AIData>
-        <HitSoundFX>Spell_GentleRain_01</HitSoundFX>
-        <SpellCastEffectName>Brilliance</SpellCastEffectName>
-        <SpellCastEffectScale>.4</SpellCastEffectScale>
-        <SpellDefEffect>
-            <EffectName>S_Inspiration_Particle</EffectName>
-            <LocalPosition>0,0,0</LocalPosition>
-            <EffectScale>0.75</EffectScale>
-            <EffectDelay>0.5</EffectDelay>
-            <SnapToTerrain>1</SnapToTerrain>
-        </SpellDefEffect>
-    </SpellDef> -->
-
 
 <!-- Paint spell Life/Water -->
 
@@ -413,8 +347,8 @@
 	<!-- Animate Trees -->
 	
 	<SpellDef InternalName="AnimateTrees">
-        <DisplayName>Animate Bog</DisplayName>
-        <Description>Transform a swamp or forest tile into a level 1 (+1 per life shard) Nature's Wrath Unit.</Description>
+        <DisplayName>Animate Trees</DisplayName>
+        <Description>Transform a forest tile into a level 1 (+1 per life shard) Nature's Wrath Unit.</Description>
         <Image>M_Morian_Card.png</Image>
         <IconFG>Improvement_IruTAlavar.png</IconFG>
 		<AutoUnlock>1</AutoUnlock>		
@@ -452,7 +386,6 @@
             </Calculate>
         </GameModifier>		
         <ValidTerrainType>Forest</ValidTerrainType>	
-        <ValidTerrainType>SwampTerrain</ValidTerrainType>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
         </AIData>
@@ -467,11 +400,11 @@
     </SpellDef>
 	
 
-<SpellDef InternalName="BirthOfVerdance">
-        <DisplayName>Create Forest</DisplayName>
-        <Description>Turn all tiles within 1 radius of Plains into Forest. You will gain 40 Verdant Favor.</Description>
+<SpellDef InternalName="InciteForest">
+        <DisplayName>Incite Forest</DisplayName>
+        <Description>Turn all tiles within 1 radius of Plains into Forest. You will gain 40 Verdant Favor, but BEWARE, the fast-growing roots will destroy any resources or lairs in the way (but not shards).</Description>
         <Image>Spread_Verdance_Painting.png</Image>
-        <IconFG>Spread_Verdance.png</IconFG>
+        <IconFG>Incite_Forest.png</IconFG>
 		<AutoUnlock>1</AutoUnlock>
         <SpellBookSortCategory>World</SpellBookSortCategory>
         <SpellBookSortSubCategory>Map</SpellBookSortSubCategory>
@@ -2471,7 +2404,6 @@
         </SpellDefEffect>
     </SpellDef>
 	
-	<!-- butt -->
 	
 <SpellDef InternalName="GreatBlaze">
         <DisplayName>Great Blaze</DisplayName>
@@ -2482,10 +2414,10 @@
 		<Cooldown>1</Cooldown>
 		<CanStack>1</CanStack>
         <SpellBookSortCategory>City</SpellBookSortCategory>
-        <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
+        <SpellBookSortSubCategory>CityCurse</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
-        <SpellClass>Offensive</SpellClass>
-        <SpellSubClass>Other</SpellSubClass>
+        <SpellClass>ImpResourceBooster</SpellClass>
+        <SpellSubClass>Debuff</SpellSubClass>
         <SpellTargetType>EnemyCity</SpellTargetType>	
         <Radius>2</Radius>
         <Prereq>
@@ -2543,7 +2475,7 @@
                 <Value>10</Value>
             </GameModifier>			
         <AIData AIPersonality="AI_General">
-            <AIPriority>0</AIPriority>
+            <AIPriority>100</AIPriority>
         </AIData>
         <HitSoundFX>Spell_RainofFire_03</HitSoundFX>
         <ModifierDelay>1.5</ModifierDelay>
@@ -2621,7 +2553,7 @@
 
 <SpellDef InternalName="BlessingOfEmbers">
         <DisplayName>Blessing Of Embers</DisplayName>
-        <Description>This unit generates 1 fire power per turn, gains +4 fire attack, and +20% fire spell damage.</Description>
+        <Description>This unit generates 1 fire power per turn, gains +2 fire attack, and +20% fire spell damage.</Description>
         <Image>Blessing_Of_Embers_Painting.png</Image>
         <IconFG>Blessing_Of_Embers.png</IconFG>
 		<AutoUnlock>1</AutoUnlock>		
@@ -2651,7 +2583,7 @@
             <ModType>Unit</ModType>
             <Attribute>DefendableDamage</Attribute>
             <AttackStat>UnitStat_Attack_Fire</AttackStat>
-			<Value>4</Value>
+			<Value>2</Value>
         </GameModifier>		
             <GameModifier>
                 <ModType>Unit</ModType>
@@ -4282,10 +4214,10 @@
         <Cooldown>1</Cooldown>
 		<CanStack>1</CanStack>
         <SpellBookSortCategory>City</SpellBookSortCategory>
-        <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
+        <SpellBookSortSubCategory>CityCurse</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
-        <SpellClass>Offensive</SpellClass>
-        <SpellSubClass>Other</SpellSubClass>
+        <SpellClass>ImpResourceBooster</SpellClass>
+        <SpellSubClass>Debuff</SpellSubClass>
         <SpellTargetType>EnemyCity</SpellTargetType>
         <Prereq>
             <Type>AbilityBonusOption</Type>
@@ -4325,7 +4257,7 @@
             <Value>-2</Value>
         </GameModifier>		
         <AIData AIPersonality="AI_General">
-            <AIPriority>70</AIPriority>
+            <AIPriority>100</AIPriority>
         </AIData>
         <CameraShakeDuration>2.25</CameraShakeDuration>
         <CameraShakeStrength>0.25</CameraShakeStrength>
@@ -4453,7 +4385,7 @@
 	
 	<SpellDef InternalName="BringPlague">
         <DisplayName>Plague On The Soil</DisplayName>
-        <Description>Target city loses -50% to Food and Production, while defending units get a penalty of -2 to initiative, -3 hit points, -2 attack, and -10 accuracy.</Description>
+        <Description>Target city loses -50% to Food and Production, while defending units get a penalty of -2 to initiative, -3 hit points, and -10 accuracy.</Description>
         <Image>Artifact_ToppledWalls1.png</Image>
         <IconFG>S_Blight_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -4463,7 +4395,7 @@
         <SpellClass>ImpResourceBooster</SpellClass>
         <SpellSubClass>Debuff</SpellSubClass>
         <SpellTargetType>EnemyCity</SpellTargetType>
-		<Radius>3</Radius>
+		<Radius>2</Radius>
         <Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Death5</Attribute>
@@ -4477,35 +4409,34 @@
             <Attribute>Production</Attribute>
             <Value>.5</Value>
             <PerTurn>1</PerTurn>
+            <Duration>-1</Duration>			
         </GameModifier>
         <GameModifier>
             <ModType>ResourceMultiplier</ModType>
             <Attribute>Food</Attribute>
             <Value>.5</Value>
             <PerTurn>1</PerTurn>
+            <Duration>-1</Duration>			
         </GameModifier>
         <GameModifier>
             <ModType>City</ModType>
             <Attribute>AdjustDefendingUnit</Attribute>
             <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Duration>-1</Duration>			
             <Value>-2</Value>
         </GameModifier>
         <GameModifier>
             <ModType>City</ModType>
             <Attribute>AdjustDefendingUnit</Attribute>
             <StrVal>UnitStat_HitPoints</StrVal>
+            <Duration>-1</Duration>			
             <Value>-3</Value>
         </GameModifier>
         <GameModifier>
             <ModType>City</ModType>
             <Attribute>AdjustDefendingUnit</Attribute>
-            <StrVal>UnitStat_Attack_Pierce</StrVal>
-            <Value>-2</Value>
-        </GameModifier>
-        <GameModifier>
-            <ModType>City</ModType>
-            <Attribute>AdjustDefendingUnit</Attribute>
             <StrVal>UnitStat_Accuracy</StrVal>
+            <Duration>-1</Duration>			
             <Value>-10</Value>
         </GameModifier>
         <GameModifier>
@@ -4520,7 +4451,7 @@
                 <Value>15</Value>
             </GameModifier>
         <AIData AIPersonality="AI_General">
-            <AIPriority>5</AIPriority>
+            <AIPriority>100</AIPriority>
         </AIData>
         <HitSoundFX>Spell_Wither_01</HitSoundFX>
         <SpellDefEffect>
@@ -5583,6 +5514,8 @@
         </SpellDefEffect>
     </SpellDef>
 	
+	<!--
+	
 	<SpellDef InternalName="LifeSanctuary">
         <DisplayName>Life Sanctuary</DisplayName>
         <Description>Creates a sanctuary outpost that generates life power, either in swamp or forest.</Description>
@@ -5783,5 +5716,7 @@
         </AIData>
         <HitSoundFX>Spell_ArcaneMonolith_01</HitSoundFX>
     </SpellDef>
+	
+	-->
 
 </Spells>

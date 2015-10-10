@@ -2514,7 +2514,7 @@
 	
 	    <GameItemType InternalName="Pike_Pinnacle">
         <DisplayName>Pinnacle Pike</DisplayName>
-        <Description>.</Description>
+        <Description>An imposing piercing weapon of the highest quality.</Description>
         <Type>Weapon</Type>
         <Type>Defense</Type>
         <WeaponType>Spear</WeaponType>

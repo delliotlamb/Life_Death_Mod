@@ -2120,7 +2120,7 @@
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_Attack_Pierce</StrVal>
-            <Value>15</Value>
+            <Value>14</Value>
         </GameModifier>
             <GameModifier>
                 <ModType>Unit</ModType>
@@ -2181,7 +2181,7 @@
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_Attack_Pierce</StrVal>
-            <Value>15</Value>
+            <Value>14</Value>
         </GameModifier>
             <GameModifier>
                 <ModType>Unit</ModType>
@@ -2248,7 +2248,7 @@
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_Attack_Pierce</StrVal>
-            <Value>16</Value>
+            <Value>15</Value>
         </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
@@ -2327,7 +2327,7 @@
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_Attack_Pierce</StrVal>
-            <Value>16</Value>
+            <Value>15</Value>
         </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
@@ -2407,7 +2407,7 @@
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_Attack_Pierce</StrVal>
-            <Value>11</Value>
+            <Value>9</Value>
         </GameModifier>
             <GameModifier>
                 <ModType>Unit</ModType>
@@ -2473,7 +2473,7 @@
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_Attack_Pierce</StrVal>
-            <Value>11</Value>
+            <Value>9</Value>
         </GameModifier>
             <GameModifier>
                 <ModType>Unit</ModType>

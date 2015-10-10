@@ -512,6 +512,7 @@
     </ImprovementType>
 
 <ImprovementType InternalName="Pier">
+		<PreferredTerrain>River</PreferredTerrain>
         <Prereq>
             <Type>RestrictedAbilityBonusOption</Type>
             <Attribute>Republic</Attribute>
@@ -1599,7 +1600,7 @@
         <UpgradeTier>1</UpgradeTier>
         <LaborToBuild>48</LaborToBuild>
         <HideInHiergamenon>1</HideInHiergamenon>  
-	<Prereq>
+		<Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Republic</Attribute>
             <Target>Player</Target>
@@ -1718,7 +1719,7 @@
         <UpgradeTier>1</UpgradeTier>
         <LaborToBuild>96</LaborToBuild>
         <HideInHiergamenon>1</HideInHiergamenon>  
-	<Prereq>
+		<Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Republic</Attribute>
             <Target>Player</Target>
@@ -3458,5 +3459,18 @@
     </ImprovementType>
 
 -->
+
+    <ImprovementType InternalName="LoggingCamp_Republic">
+        <PreferredTerrain>Category:Forest</PreferredTerrain>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>VerdantEssence</Attribute>
+            <Value>-5</Value>
+            <Provides>-5 Verdant Favor</Provides>
+        </GameModifier>		
+    </ImprovementType>
+    <ImprovementType InternalName="Pier_Republic">
+		<PreferredTerrain>River</PreferredTerrain>
+	</ImprovementType>
 
 </ImprovementTypes>

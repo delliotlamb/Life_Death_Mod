@@ -932,9 +932,9 @@
             <GameModifier>
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
-                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal>UnitStat_ChanceToCrit</StrVal>
                 <Value>1</Value>
-                <Provides>+1 attack</Provides>
+                <Provides>+1 Critical Chance</Provides>
             </GameModifier>
         </AbilityBonusOption>
     </AbilityBonus>
@@ -945,9 +945,9 @@
             <GameModifier>
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
-                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal>UnitStat_ChanceToCrit</StrVal>
                 <Value>2</Value>
-                <Provides>+2 attack</Provides>
+                <Provides>+2 Critical Chance</Provides>
             </GameModifier>
         </AbilityBonusOption>
     </AbilityBonus>
@@ -958,9 +958,9 @@
             <GameModifier>
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
-                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <StrVal>UnitStat_ChanceToCrit</StrVal>
                 <Value>3</Value>
-                <Provides>+3 attack</Provides>
+                <Provides>+3 Critical Chance</Provides>
             </GameModifier>
         </AbilityBonusOption>
     </AbilityBonus>

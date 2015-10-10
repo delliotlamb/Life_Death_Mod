@@ -2212,8 +2212,7 @@
         <SpellType>Strategic</SpellType>
         <SpellClass>Defensive</SpellClass>
         <SpellSubClass>Summon</SpellSubClass>
-        <SpellTargetType>Self</SpellTargetType>
-        <AppliesRandomModifier>1</AppliesRandomModifier>		
+        <SpellTargetType>Self</SpellTargetType>	
         <CasterMustBeSov>1</CasterMustBeSov>		
         <Prereq>
             <Type>UnitStat</Type>

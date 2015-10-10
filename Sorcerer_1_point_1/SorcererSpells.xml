@@ -1053,7 +1053,7 @@
 
 <SpellDef InternalName="CultureOfFire">
         <DisplayName>Culture Of Fire</DisplayName>
-        <Description>Produces +0.5 Fire Power in the enchanted city.</Description>
+        <Description>Produces +1 Fire Power in the enchanted city, but reduces research, gold, and production by 20%.</Description>
         <Image>S_Firestorm_Painting.png</Image>
         <IconFG>S_AnnointedByFire_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -1074,15 +1074,36 @@
         </Prereq>
         <SpellResourceCost>
             <Resource>Mana</Resource>
-            <Amount>50</Amount>
+            <Amount>100</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Resource</ModType>
             <Attribute>FireMana</Attribute>
             <Duration>-1</Duration>
             <PerTurn>1</PerTurn>
-            <Value>.5</Value>
+            <Value>1</Value>
         </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Research</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>0.8</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Production</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>0.8</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Gold</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>0.8</Value>
+        </GameModifier>			
         <ValidTerrainCategory>City</ValidTerrainCategory>
         <AIData AIPersonality="AI_General">
             <AIPriority>100</AIPriority>
@@ -1102,7 +1123,7 @@
 
 <SpellDef InternalName="CultureOfWater">
         <DisplayName>Culture Of Water</DisplayName>
-        <Description>Produces +.5 Water Power in the enchanted city.</Description>
+        <Description>Produces +1 Water Power in the enchanted city, but reduces research, gold, and production by 20%.</Description>
         <Image>S_FreezeSeas_Painting.png</Image>
         <IconFG>S_TidalWave_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -1123,15 +1144,36 @@
         </Prereq>
         <SpellResourceCost>
             <Resource>Mana</Resource>
-            <Amount>50</Amount>
+            <Amount>100</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Resource</ModType>
             <Attribute>WaterMana</Attribute>
             <Duration>-1</Duration>
             <PerTurn>1</PerTurn>
-            <Value>.5</Value>
+            <Value>1</Value>
         </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Research</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>0.8</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Production</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>0.8</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Gold</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>0.8</Value>
+        </GameModifier>		
         <ValidTerrainCategory>City</ValidTerrainCategory>
         <AIData AIPersonality="AI_General">
             <AIPriority>100</AIPriority>
@@ -1150,7 +1192,7 @@
 
 <SpellDef InternalName="CultureOfAir">
         <DisplayName>Culture Of Air</DisplayName>
-        <Description>Produces +.5 Air Power in the enchanted city.</Description>
+        <Description>Produces +1 Air Power in the enchanted city, but reduces research, gold, and production by 20%.</Description>
         <Image>T_ObscuringFog_Painting.png</Image>
         <IconFG>S_Tornado_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -1171,15 +1213,36 @@
         </Prereq>
         <SpellResourceCost>
             <Resource>Mana</Resource>
-            <Amount>50</Amount>
+            <Amount>100</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Resource</ModType>
             <Attribute>AirMana</Attribute>
             <Duration>-1</Duration>
             <PerTurn>1</PerTurn>
-            <Value>.5</Value>
+            <Value>1</Value>
         </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Research</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>0.8</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Production</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>0.8</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Gold</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>0.8</Value>
+        </GameModifier>		
         <ValidTerrainCategory>City</ValidTerrainCategory>
         <AIData AIPersonality="AI_General">
             <AIPriority>100</AIPriority>
@@ -1198,7 +1261,7 @@
 
 <SpellDef InternalName="CultureOfEarth">
         <DisplayName>Culture Of Earth</DisplayName>
-        <Description>Produces +.5 Earth Power in the enchanted city.</Description>
+        <Description>Produces +1 Earth Power in the enchanted city, but reduces research, gold, and production by 20%.</Description>
         <Image>S_CreateMountain_Painting.png</Image>
         <IconFG>S_CreateMountain_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -1219,15 +1282,36 @@
         </Prereq>
         <SpellResourceCost>
             <Resource>Mana</Resource>
-            <Amount>50</Amount>
+            <Amount>100</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Resource</ModType>
             <Attribute>EarthMana</Attribute>
             <Duration>-1</Duration>
             <PerTurn>1</PerTurn>
-            <Value>.5</Value>
+            <Value>1</Value>
         </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Research</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>0.8</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Production</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>0.8</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Gold</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>0.8</Value>
+        </GameModifier>		
         <ValidTerrainCategory>City</ValidTerrainCategory>
         <AIData AIPersonality="AI_General">
             <AIPriority>100</AIPriority>
@@ -1246,7 +1330,7 @@
 
 <SpellDef InternalName="CultureOfLife">
         <DisplayName>Culture Of Life</DisplayName>
-        <Description>Produces +.5 Life Power in the enchanted city.</Description>
+        <Description>Produces +1 Life Power in the enchanted city, but reduces research, gold, and production by 20%.</Description>
         <Image>ReviveLand_Painting.png</Image>
         <IconFG>T_Growth_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -1271,15 +1355,36 @@
         </Prereq>
         <SpellResourceCost>
             <Resource>Mana</Resource>
-            <Amount>50</Amount>
+            <Amount>100</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Resource</ModType>
             <Attribute>LifeMana</Attribute>
             <Duration>-1</Duration>
             <PerTurn>1</PerTurn>
-            <Value>.5</Value>
+            <Value>1</Value>
         </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Research</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>0.8</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Production</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>0.8</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Gold</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>0.8</Value>
+        </GameModifier>		
         <ValidTerrainCategory>City</ValidTerrainCategory>
         <AIData AIPersonality="AI_General">
             <AIPriority>100</AIPriority>
@@ -1298,7 +1403,7 @@
 
 <SpellDef InternalName="CultureOfDeath">
         <DisplayName>Culture Of Death</DisplayName>
-        <Description>Produces +.5 Death Power in the enchanted city.</Description>
+        <Description>Produces +1 Death Power in the enchanted city, but reduces research, gold, and production by 20%.</Description>
         <Image>T_Infection_Painting.png</Image>
         <IconFG>T_Kill_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -1323,15 +1428,36 @@
         </Prereq>
         <SpellResourceCost>
             <Resource>Mana</Resource>
-            <Amount>50</Amount>
+            <Amount>100</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Resource</ModType>
             <Attribute>DeathMana</Attribute>
             <Duration>-1</Duration>
             <PerTurn>1</PerTurn>
-            <Value>.5</Value>
+            <Value>1</Value>
         </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Research</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>0.8</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Production</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>0.8</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Gold</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>0.8</Value>
+        </GameModifier>		
         <ValidTerrainCategory>City</ValidTerrainCategory>
         <AIData AIPersonality="AI_General">
             <AIPriority>100</AIPriority>
@@ -1509,11 +1635,11 @@
         </SpellDefEffect>
     </SpellDef>
 
-<SpellDef InternalName="FindCrops">
+<SpellDef InternalName="InciteCrops">
         <DisplayName>Incite Crops</DisplayName>
         <Description>Sense out hidden soils that can support crops, and induce new growth. This may slightly increase your food per grain, or add a whole new grain.</Description>
         <Image>ReviveLand_Painting.png</Image>
-        <IconFG>S_BirthOfSummer_Icon.png</IconFG>
+        <IconFG>Spread_Verdance.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
         <SpellBookSortCategory>City</SpellBookSortCategory>
         <SpellBookSortSubCategory>CityEnchantment</SpellBookSortSubCategory>
@@ -2429,7 +2555,7 @@
         </SpellDefEffect>
     </SpellDef>-->
 	
-	<SpellDef InternalName="WarpReality">
+	<SpellDef InternalName="WarpSpace">
         <DisplayName>Warp Space</DisplayName>
         <Description>Suck a tile into spatial paradox, destroying any resources. A miasma of geometric contradictions prevents any unit from entering the tile, even flying units.</Description>
         <Image>S_Antipathy_Painting.png</Image>
@@ -2448,7 +2574,7 @@
         </Prereq>
         <SpellResourceCost>
             <Resource>Mana</Resource>
-            <Amount>40</Amount>
+            <Amount>45</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Map</ModType>
@@ -2575,7 +2701,7 @@
 	
 	<SpellDef InternalName="PrismBlade">
         <DisplayName>Prism Blade</DisplayName>
-        <Description>Enchanted champion's weapon does one of the following, at random: +4 fire, cold, lightning, or physical damage.</Description>
+        <Description>Enchanted champion's weapon does one of the following, at random: +3 fire, cold, lightning, or physical damage.</Description>
         <Image>S_MoriansChant_Painting.png</Image>
         <IconFG>T_NobleLegacy_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -2600,28 +2726,28 @@
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_Attack_Fire</StrVal>
             <Duration>-1</Duration>
-			<Value>4</Value>
+			<Value>3</Value>
         </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_Attack_Cold</StrVal>
             <Duration>-1</Duration>
-			<Value>4</Value>
+			<Value>3</Value>
         </GameModifier>	
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_Attack_Lightning</StrVal>
             <Duration>-1</Duration>
-			<Value>4</Value>
+			<Value>3</Value>
         </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_Attack_Pierce</StrVal>
             <Duration>-1</Duration>
-			<Value>4</Value>
+			<Value>3</Value>
         </GameModifier>		
         <AIData AIPersonality="AI_General">
             <AIPriority>50</AIPriority>
@@ -2945,13 +3071,13 @@
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_CombatSpeed</StrVal>
-  	    <Value>-2</Value>
+			<Value>-2</Value>
         </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_MagicPower</StrVal>
-  	    <Value>-10</Value>
+			<Value>-10</Value>
         </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>

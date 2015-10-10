@@ -1,5 +1,4 @@
 <!--<Spells>
-
     <SpellDef InternalName="GuardedStrike">
         <DisplayName>Guarded Strike</DisplayName>
         <Description>A defensive strike for half normal damage that leaves the attacker defending.</Description>

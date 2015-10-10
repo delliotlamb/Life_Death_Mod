@@ -129,7 +129,6 @@
             <Attribute>Race_Type_Cypher</Attribute>
         </Prereq>
         <SelectedAbilityBonusOption>Blood_Quendar</SelectedAbilityBonusOption>
-        <SelectedAbilityBonusOption>Hallucinations</SelectedAbilityBonusOption>
         <SelectedAbilityBonusOption>WaterAdept1</SelectedAbilityBonusOption>
         <SelectedAbilityBonusOption>Outcast</SelectedAbilityBonusOption>
         <Equipment>Spear</Equipment>
@@ -183,7 +182,6 @@
             <Attribute>Race_Type_Cypher</Attribute>
         </Prereq>		
         <SelectedAbilityBonusOption>Blood_Krax</SelectedAbilityBonusOption>
-        <SelectedAbilityBonusOption>MissingFinger</SelectedAbilityBonusOption>
         <SelectedAbilityBonusOption>WaterAdept1</SelectedAbilityBonusOption>
         <SelectedAbilityBonusOption>Outcast</SelectedAbilityBonusOption>
         <AutoCreateEquipment>Spear_Krax</AutoCreateEquipment>
@@ -241,7 +239,6 @@
             <Attribute>Race_Type_Cypher</Attribute>
         </Prereq>
         <SelectedAbilityBonusOption>Blood_Trog</SelectedAbilityBonusOption>
-        <SelectedAbilityBonusOption>MissingEar</SelectedAbilityBonusOption>
         <SelectedAbilityBonusOption>AirAdept1</SelectedAbilityBonusOption>
         <SelectedAbilityBonusOption>Outcast</SelectedAbilityBonusOption>
         <Equipment>Club</Equipment>
@@ -296,7 +293,6 @@
             <Attribute>Race_Type_Cypher</Attribute>
         </Prereq>
         <SelectedAbilityBonusOption>Blood_Amarian</SelectedAbilityBonusOption>
-        <SelectedAbilityBonusOption>MissingFinger</SelectedAbilityBonusOption>
         <SelectedAbilityBonusOption>EarthAdept1</SelectedAbilityBonusOption>
         <SelectedAbilityBonusOption>Outcast</SelectedAbilityBonusOption>
         <Equipment>Staff</Equipment>
@@ -348,7 +344,6 @@
             <Attribute>Race_Type_Cypher</Attribute>
         </Prereq>
         <SelectedAbilityBonusOption>Blood_Tarth</SelectedAbilityBonusOption>
-        <SelectedAbilityBonusOption>Pneumonia</SelectedAbilityBonusOption>
         <SelectedAbilityBonusOption>FireAdept1</SelectedAbilityBonusOption>
         <SelectedAbilityBonusOption>Outcast</SelectedAbilityBonusOption>
         <Equipment>Spear</Equipment>
@@ -404,7 +399,6 @@
             <Attribute>Race_Type_Cypher</Attribute>
         </Prereq>
         <SelectedAbilityBonusOption>Counterattack</SelectedAbilityBonusOption>
-        <SelectedAbilityBonusOption>Hallucinations</SelectedAbilityBonusOption>
         <SelectedAbilityBonusOption>WaterAdept1</SelectedAbilityBonusOption>
         <SelectedAbilityBonusOption>Outcast</SelectedAbilityBonusOption>
         <Backstory>(silent stare)</Backstory>
@@ -455,8 +449,7 @@
         </Prereq>
         <SelectedAbilityBonusOption>AirAdept1</SelectedAbilityBonusOption>
         <SelectedAbilityBonusOption>Outcast</SelectedAbilityBonusOption>
-        <SelectedAbilityBonusOption>CallousedHide</SelectedAbilityBonusOption>
-        <SelectedAbilityBonusOption>Pneumonia</SelectedAbilityBonusOption>		
+        <SelectedAbilityBonusOption>CallousedHide</SelectedAbilityBonusOption>	
         <Backstory>(silent stare)</Backstory>
         <Medallions InternalName="">
             <All>M_SquamategoF_Card_01.png</All>
@@ -503,7 +496,6 @@
             <Attribute>Race_Type_Cypher</Attribute>
         </Prereq>
         <SelectedAbilityBonusOption>Spirit</SelectedAbilityBonusOption>
-        <SelectedAbilityBonusOption>Hallucinations</SelectedAbilityBonusOption>
         <SelectedAbilityBonusOption>EarthAdept1</SelectedAbilityBonusOption>
         <SelectedAbilityBonusOption>Outcast</SelectedAbilityBonusOption>
         <Backstory>I had great missions in life. In this next form, my ambitions have not entirely dissipated.</Backstory>
@@ -675,7 +667,6 @@
         </Prereq>
         <SelectedAbilityBonusOption>Blood_Mancer</SelectedAbilityBonusOption>
         <SelectedAbilityBonusOption>Outcast</SelectedAbilityBonusOption>
-        <SelectedAbilityBonusOption>Pneumonia</SelectedAbilityBonusOption>
         <SelectedAbilityBonusOption>WaterAdept1</SelectedAbilityBonusOption>
         <Backstory>I am no trader. I care little for money or trade, but your society seems to have a purpose I can follow.</Backstory>
         <Equipment>Club</Equipment>
@@ -729,7 +720,6 @@
         </Prereq>
         <SelectedAbilityBonusOption>Blood_Ironeer</SelectedAbilityBonusOption>
         <SelectedAbilityBonusOption>Outcast</SelectedAbilityBonusOption>
-        <SelectedAbilityBonusOption>TwistedKnee</SelectedAbilityBonusOption>
         <SelectedAbilityBonusOption>AirAdept1</SelectedAbilityBonusOption>
         <Backstory>I am a poor armorer. But I am hearty, and will lend you a stout arm to defeat your foes.</Backstory>
         <Equipment>Club</Equipment>
@@ -786,7 +776,6 @@
         </Prereq>
         <SelectedAbilityBonusOption>Blood_Urxen</SelectedAbilityBonusOption>
         <SelectedAbilityBonusOption>Outcast</SelectedAbilityBonusOption>
-        <SelectedAbilityBonusOption>TwistedAnkle</SelectedAbilityBonusOption>
         <SelectedAbilityBonusOption>WaterAdept1</SelectedAbilityBonusOption>
         <Backstory>My kind are rarely pensive. But I have many ideas, and know I am called to greatness. Give me a chance to prove my potential.</Backstory>
         <Equipment>Club</Equipment>
@@ -835,10 +824,10 @@
             <Level>1</Level>
             <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
             <UnitStat_HitPoints>10</UnitStat_HitPoints>
-	    <UnitStat_BG_IsChampion>1</UnitStat_BG_IsChampion>
-	    <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
-	    <UnitStat_BG_IsMale>1</UnitStat_BG_IsMale>
-	    <UnitStat_BG_IsRace_Wraiths>1</UnitStat_BG_IsRace_Wraiths>
+			<UnitStat_BG_IsChampion>1</UnitStat_BG_IsChampion>
+			<UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
+			<UnitStat_BG_IsMale>1</UnitStat_BG_IsMale>
+			<UnitStat_BG_IsRace_Wraiths>1</UnitStat_BG_IsRace_Wraiths>
         </LevelMilestone>
         <Prereq>
             <Type>Race</Type>
@@ -846,7 +835,6 @@
         </Prereq>
         <SelectedAbilityBonusOption>Blood_Wraith</SelectedAbilityBonusOption>
         <SelectedAbilityBonusOption>Outcast</SelectedAbilityBonusOption>
-        <SelectedAbilityBonusOption>TyphoidFever</SelectedAbilityBonusOption>
         <SelectedAbilityBonusOption>FireAdept1</SelectedAbilityBonusOption>
         <Backstory>We are all bound to Ceresa, by magic. But at distance, the bond weakens. I know my destiny is not as a Wraith servant, but for something more.</Backstory>
         <Equipment>Club</Equipment>
@@ -899,7 +887,6 @@
 			<UnitStat_BG_IsImmortal>1</UnitStat_BG_IsImmortal>			
         </LevelMilestone>
         <SelectedAbilityBonusOption>Outcast</SelectedAbilityBonusOption>
-        <SelectedAbilityBonusOption>Amnesia</SelectedAbilityBonusOption>
         <SelectedAbilityBonusOption>FireAdept1</SelectedAbilityBonusOption>
         <SelectedAbilityBonusOption>Spirit</SelectedAbilityBonusOption>
         <Backstory>I was bound to a channeler long ago. She was murdered, and yet I did not fade away. For a long time I have wandered, and I believe I can now serve you.</Backstory>
