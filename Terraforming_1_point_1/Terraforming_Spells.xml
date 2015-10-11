@@ -185,7 +185,7 @@
         <DisplayName>Incite Wetland</DisplayName>
         <Description>Turn Plains into living bogs. The swamps might seem ugly, but the incredible abundance of life there will gain you 5 Verdant Favor.</Description>
         <Image>G_Great_Swamp_Tree_01.png</Image>
-        <IconFG>Incite_Forest.png.png</IconFG>
+        <IconFG>T_Barbs_Icon.png</IconFG>
 		<AutoUnlock>1</AutoUnlock>
         <SpellBookSortCategory>World</SpellBookSortCategory>
         <SpellBookSortSubCategory>Map</SpellBookSortSubCategory>
@@ -455,7 +455,7 @@
 
 <SpellDef InternalName="VerdantBlessing">
         <DisplayName>Blessing Of Nature</DisplayName>
-        <Description>This unit generates 1 life power per turn, gets +10 HP, no movement penalty in forest.</Description>
+        <Description>This unit generates 1 life power per turn, gets +5 starting stamina, and no movement penalty in forest.</Description>
         <Image>Wildflowers.png</Image>
         <IconFG>S_CurePlague_Icon.png</IconFG>
 		<AutoUnlock>1</AutoUnlock>		
@@ -486,7 +486,7 @@
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_Stamina_Starting</StrVal>
             <Duration>-1</Duration>
-            <Provides>This unit starts battle with 5 Stamina</Provides>			
+            <Provides>This unit starts battle with an additional 5 Stamina</Provides>			
 			<Value>5</Value>
         </GameModifier>
             <GameModifier>

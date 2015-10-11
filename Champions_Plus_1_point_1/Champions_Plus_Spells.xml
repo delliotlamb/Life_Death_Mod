@@ -1954,7 +1954,7 @@
 	
 	<SpellDef InternalName="ArmorersWrit_Master_Ability">
         <DisplayName>Plate Master's Writ</DisplayName>
-        <Description>Order a Pinnacle Plate Mail armor set</Description>
+        <Description>Order a Pinnacle Plate Mail armor set. Can be used only once per game!</Description>
         <Image>PlateArmor.png</Image>
         <IconFG>Armor_F_ReinforcedPlateCuirass.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -2012,7 +2012,7 @@
 	
 	<SpellDef InternalName="ArmorersWrit_Master2_Ability">
         <DisplayName>Chain Master's Writ</DisplayName>
-        <Description>Order a Pinnacle Chain Mail armor set</Description>
+        <Description>Order a Pinnacle Chain Mail armor set. Can only be used once per game!</Description>
         <Image>PlateArmor.png</Image>
         <IconFG>Armor_F_ReinforcedChainShirt.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -2070,7 +2070,7 @@
 	
 	<SpellDef InternalName="ArcaneArmorersWrit2_Ability">
         <DisplayName>Writ Of Transcendent Platemail</DisplayName>
-        <Description>Order a Transcendent Plate Armor set. Only one transcendent armor set can be summoned per game! Transcendent plate focuses on increasing the owner's defense against a variety of physical and magical threats.</Description>
+        <Description>Order a Transcendent Plate Armor set. Only one set can be summoned per game! Transcendent plate focuses on increasing the owner's defense against a variety of physical and magical threats.</Description>
         <Image>Fallen_Medallion.png</Image>
         <IconFG>Armor_F_ImpenetrablePlateCuirass.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -2136,7 +2136,7 @@
 	
 	<SpellDef InternalName="ArcaneArmorersWrit3_Ability">
         <DisplayName>Writ Of Transcendent Chainmail</DisplayName>
-        <Description>Order a Transcendent Chainmail Armor set. Only one transcendent armor set can be summoned per game! Transcendent chain armor is enchanted to augment the performance of the owner as much as protect them.</Description>
+        <Description>Order a Transcendent Chainmail Armor set. Only one set can be summoned per game! Transcendent chain armor is enchanted to augment the performance of the owner as much as protect them.</Description>
         <Image>Fallen_Medallion.png</Image>
         <IconFG>Armor_F_OphidianScaleShirt.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -2202,7 +2202,7 @@
 	
 	<SpellDef InternalName="ArcaneWeaponsmith_Sword_Ability">
         <DisplayName>Writ Of Transcendent Swordcraft</DisplayName>
-        <Description>Order a Transcendent Sword. Only one transcendent weapon can be ordered per game!</Description>
+        <Description>Order a Transcendent Sword. Only one transcendent sword can be ordered per game!</Description>
         <Image>Refined_Attack.png</Image>
         <IconFG>W_Longsword_Heartseeker_Icon_01.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -2248,7 +2248,7 @@
 	
 		<SpellDef InternalName="ArcaneWeaponsmith_Axe_Ability">
         <DisplayName>Writ Of Transcendent Axecraft</DisplayName>
-        <Description>Order a Transcendent Axe. Only one transcendent weapon can be ordered per game!</Description>
+        <Description>Order a Transcendent Axe. Only one transcendent axe can be ordered per game!</Description>
         <Image>Refined_Attack.png</Image>
         <IconFG>W_GreatAxe_Pendulum_Icon_01.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -2294,7 +2294,7 @@
 	
 	<SpellDef InternalName="ArcaneWeaponsmith_Mace_Ability">
         <DisplayName>Writ Of Transcendent Macecraft</DisplayName>
-        <Description>Order a Transcendent Blunt Weapon. Only one transcendent weapon can be ordered per game!</Description>
+        <Description>Order a Transcendent Blunt Weapon. Only one transcendent mace can be ordered per game!</Description>
         <Image>Refined_Attack.png</Image>
         <IconFG>W_Maul_Berserkers_Icon_01.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -2340,7 +2340,7 @@
 	
 	<SpellDef InternalName="ArcaneWeaponsmith_Bow_Ability">
         <DisplayName>Writ Of Transcendent Bowcraft</DisplayName>
-        <Description>Order a Transcendent Bow. Only one transcendent weapon can be ordered per game!</Description>
+        <Description>Order a Transcendent Bow. Only one transcendent bow can be ordered per game!</Description>
         <Image>Tech_Longbows.png</Image>
         <IconFG>W_Longbow_Yew_Brutal_Icon_01.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -2386,7 +2386,7 @@
 	
 	<SpellDef InternalName="ArcaneWeaponsmith_Lance_Ability">
         <DisplayName>Writ Of Transcendent Lancecraft</DisplayName>
-        <Description>Order a Transcendent Lance. Only one transcendent weapon can be ordered per game!</Description>
+        <Description>Order a Transcendent Lance. Only one transcendent lance can be ordered per game!</Description>
         <Image>Refined_Attack.png</Image>
         <IconFG>W_Pike_Masterwork_Icon_01.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
