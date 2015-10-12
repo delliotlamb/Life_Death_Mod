@@ -148,7 +148,7 @@
         <RequiresResource>1</RequiresResource>
         <SupportedResourceType>LifeShard</SupportedResourceType>
         <PreferredTerrain>Category:Land</PreferredTerrain>
-        <UpgradesToImprovement>LifeShrine</UpgradesToImprovement>
+        <UpgradesToImprovement>LifeShrine_Andris</UpgradesToImprovement>
         <UpgradeTier>1</UpgradeTier>
         <Prereq>
             <Type>Allegiance</Type>
@@ -202,7 +202,7 @@
         <RequiresResource>1</RequiresResource>
         <SupportedResourceType>LifeShard</SupportedResourceType>
         <PreferredTerrain>Category:Land</PreferredTerrain>
-        <UpgradesToImprovement>LifeTemple</UpgradesToImprovement>
+        <UpgradesToImprovement>LifeTemple_Andris</UpgradesToImprovement>
         <UpgradeTier>2</UpgradeTier>
         <Prereq>
             <Type>Allegiance</Type>
@@ -234,6 +234,13 @@
             <Provides>+1 Life Power</Provides>
             <UpgradeComparisonID>2</UpgradeComparisonID>
         </GameModifier>
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Mana</StrVal>
+            <Value>5</Value>
+            <Provides>+5% Mana in all your cities</Provides>
+        </GameModifier>		
         <GameModifier>
             <ModType>Player</ModType>
             <Attribute>LimitedUnitCap</Attribute>
@@ -287,6 +294,13 @@
             <Provides>+1 Life Power</Provides>
             <UpgradeComparisonID>2</UpgradeComparisonID>
         </GameModifier>
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Mana</StrVal>
+            <Value>10</Value>
+            <Provides>+10% Mana in all your cities</Provides>
+        </GameModifier>		
         <GameModifier>
             <ModType>Player</ModType>
             <Attribute>LimitedUnitCap</Attribute>
