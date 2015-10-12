@@ -3614,7 +3614,7 @@
 	
 	<SpellDef InternalName="CultureOfFire_Adept">
         <DisplayName>Culture Of Fire</DisplayName>
-        <Description>Produces +.5 Fire Power in the enchanted city.</Description>
+        <Description>Produces +1 Fire Power in the enchanted city, but reduces research, production, and gold by 20%.</Description>
         <Image>S_Firestorm_Painting.png</Image>
         <IconFG>S_AnnointedByFire_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -3625,6 +3625,7 @@
         <SpellClass>ImpResourceBooster</SpellClass>
         <SpellSubClass>Other</SpellSubClass>
         <SpellTargetType>FriendlyCity</SpellTargetType>
+        <PreventStackingWith>CultureOfFire</PreventStackingWith>		
         <Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Elemancy</Attribute>
@@ -3635,14 +3636,35 @@
         </Prereq>
         <SpellResourceCost>
             <Resource>Mana</Resource>
-            <Amount>50</Amount>
+            <Amount>100</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Resource</ModType>
             <Attribute>FireMana</Attribute>
             <Duration>-1</Duration>
             <PerTurn>1</PerTurn>
-            <Value>.5</Value>
+            <Value>1</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Research</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>0.8</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Production</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>0.8</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Gold</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>0.8</Value>
         </GameModifier>
         <ValidTerrainCategory>City</ValidTerrainCategory>
         <AIData AIPersonality="AI_General">
@@ -3663,7 +3685,7 @@
 
 <SpellDef InternalName="CultureOfWater_Adept">
         <DisplayName>Culture Of Water</DisplayName>
-        <Description>Produces +.5 Water Power in the enchanted city.</Description>
+        <Description>Produces +1 Water Power in the enchanted city, but reduces research, production, and gold by 20%.</Description>
         <Image>S_FreezeSeas_Painting.png</Image>
         <IconFG>S_TidalWave_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -3674,6 +3696,7 @@
         <SpellClass>ImpResourceBooster</SpellClass>
         <SpellSubClass>Other</SpellSubClass>
         <SpellTargetType>FriendlyCity</SpellTargetType>
+        <PreventStackingWith>CultureOfWater</PreventStackingWith>		
         <Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Elemancy</Attribute>
@@ -3684,14 +3707,35 @@
         </Prereq>
         <SpellResourceCost>
             <Resource>Mana</Resource>
-            <Amount>50</Amount>
+            <Amount>100</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Resource</ModType>
             <Attribute>WaterMana</Attribute>
             <Duration>-1</Duration>
             <PerTurn>1</PerTurn>
-            <Value>.5</Value>
+            <Value>1</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Research</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>0.8</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Production</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>0.8</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Gold</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>0.8</Value>
         </GameModifier>
         <ValidTerrainCategory>City</ValidTerrainCategory>
         <AIData AIPersonality="AI_General">
@@ -3711,7 +3755,7 @@
 
 <SpellDef InternalName="CultureOfAir_Adept">
         <DisplayName>Culture Of Air</DisplayName>
-        <Description>Produces +.5 Air Power in the enchanted city.</Description>
+        <Description>Produces +1 Air Power in the enchanted city, but reduces research, production, and gold by 20%.</Description>
         <Image>T_ObscuringFog_Painting.png</Image>
         <IconFG>S_Tornado_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -3722,6 +3766,7 @@
         <SpellClass>ImpResourceBooster</SpellClass>
         <SpellSubClass>Other</SpellSubClass>
         <SpellTargetType>FriendlyCity</SpellTargetType>
+        <PreventStackingWith>CultureOfAir</PreventStackingWith>		
         <Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Elemancy</Attribute>
@@ -3732,14 +3777,35 @@
         </Prereq>
         <SpellResourceCost>
             <Resource>Mana</Resource>
-            <Amount>50</Amount>
+            <Amount>100</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Resource</ModType>
             <Attribute>AirMana</Attribute>
             <Duration>-1</Duration>
             <PerTurn>1</PerTurn>
-            <Value>.5</Value>
+            <Value>1</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Research</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>0.8</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Production</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>0.8</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Gold</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>0.8</Value>
         </GameModifier>
         <ValidTerrainCategory>City</ValidTerrainCategory>
         <AIData AIPersonality="AI_General">
@@ -3759,7 +3825,7 @@
 
 <SpellDef InternalName="CultureOfEarth_Adept">
         <DisplayName>Culture Of Earth</DisplayName>
-        <Description>Produces +.5 Earth Power in the enchanted city.</Description>
+        <Description>Produces +1 Earth Power in the enchanted city, but reduces research, production, and gold by 20%.</Description>
         <Image>S_CreateMountain_Painting.png</Image>
         <IconFG>S_CreateMountain_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -3770,6 +3836,7 @@
         <SpellClass>ImpResourceBooster</SpellClass>
         <SpellSubClass>Other</SpellSubClass>
         <SpellTargetType>FriendlyCity</SpellTargetType>
+        <PreventStackingWith>CultureOfEarth</PreventStackingWith>		
         <Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Elemancy</Attribute>
@@ -3780,14 +3847,35 @@
         </Prereq>
         <SpellResourceCost>
             <Resource>Mana</Resource>
-            <Amount>50</Amount>
+            <Amount>100</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Resource</ModType>
             <Attribute>EarthMana</Attribute>
             <Duration>-1</Duration>
             <PerTurn>1</PerTurn>
-            <Value>.5</Value>
+            <Value>1</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Research</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>0.8</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Production</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>0.8</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Gold</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>0.8</Value>
         </GameModifier>
         <ValidTerrainCategory>City</ValidTerrainCategory>
         <AIData AIPersonality="AI_General">
@@ -3807,7 +3895,7 @@
 
 <SpellDef InternalName="CultureOfLife_Adept">
         <DisplayName>Culture Of Life</DisplayName>
-        <Description>Produces +.5 Life Power in the enchanted city.</Description>
+        <Description>Produces +1 Life Power in the enchanted city, but reduces research, production, and gold by 20%.</Description>
         <Image>ReviveLand_Painting.png</Image>
         <IconFG>T_Growth_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -3818,6 +3906,7 @@
         <SpellClass>ImpResourceBooster</SpellClass>
         <SpellSubClass>Other</SpellSubClass>
         <SpellTargetType>FriendlyCity</SpellTargetType>
+        <PreventStackingWith>CultureOfLife</PreventStackingWith>		
         <Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Elemancy</Attribute>
@@ -3832,14 +3921,35 @@
         </Prereq>
         <SpellResourceCost>
             <Resource>Mana</Resource>
-            <Amount>50</Amount>
+            <Amount>100</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Resource</ModType>
             <Attribute>LifeMana</Attribute>
             <Duration>-1</Duration>
             <PerTurn>1</PerTurn>
-            <Value>.5</Value>
+            <Value>1</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Research</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>0.8</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Production</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>0.8</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Gold</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>0.8</Value>
         </GameModifier>
         <ValidTerrainCategory>City</ValidTerrainCategory>
         <AIData AIPersonality="AI_General">
@@ -3859,7 +3969,7 @@
 	
 	<SpellDef InternalName="PrismShift_Air_Adept">
         <DisplayName>Prism Shift: Air</DisplayName>
-        <Description>Transforms a shard in your empire into an Air shard.</Description>
+        <Description>Transforms a shard in your empire into an Air shard</Description>
         <Image>S_Corruption_Painting.png</Image>
         <IconFG>S_Corruption_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>		
@@ -3869,7 +3979,7 @@
         <SpellClass>Other</SpellClass>
         <SpellSubClass>Other</SpellSubClass>
         <SpellTargetType>RegularShard</SpellTargetType>
-        <SpellTargetZOCType>Friendly</SpellTargetZOCType>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>	
         <Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Anthuamancy</Attribute>
