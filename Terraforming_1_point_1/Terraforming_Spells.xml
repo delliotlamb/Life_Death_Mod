@@ -203,7 +203,7 @@
         </Prereq>-->
         <SpellResourceCost>
             <Resource>Mana</Resource>
-            <Amount>5</Amount>
+            <Amount>6</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Map</ModType>
@@ -419,7 +419,7 @@
         </Prereq>		
         <SpellResourceCost>
             <Resource>Mana</Resource>
-            <Amount>100</Amount>		
+            <Amount>40</Amount>		
         </SpellResourceCost>
         <GameModifier>
             <ModType>Map</ModType>
