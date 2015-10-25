@@ -27,7 +27,7 @@
         </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>10000</AIPriority>
-            <AITag>Mining</AITag>
+            <AITag>Study</AITag>
         </AIData>
         <ArtDef>Art_Dagorath_Gate</ArtDef>
     </ImprovementType>
@@ -90,8 +90,8 @@
             <Provides>-1 Growth</Provides>
         </GameModifier>
         <AIData AIPersonality="AI_General">
-            <AIPriority>100000</AIPriority>
-            <AITag>Merchant</AITag>
+            <AIPriority>10000</AIPriority>
+            <AITag>Victory</AITag>
         </AIData>
         <ArtDef>Art_StableGate</ArtDef>
     </ImprovementType>

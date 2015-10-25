@@ -71,7 +71,7 @@
 		<SelectedAbilityBonusOption>Death2</SelectedAbilityBonusOption>
 		<SelectedAbilityBonusOption>Attunement</SelectedAbilityBonusOption>
 		<SelectedAbilityBonusOption>Fire1</SelectedAbilityBonusOption>
-		<SelectedAbilityBonusOption>Endgame</SelectedAbilityBonusOption>
+		<!--<SelectedAbilityBonusOption>Endgame</SelectedAbilityBonusOption>-->
 		<GameModifier InternalName="GameModifier 2646">
 			<ModType>Resource</ModType>
 			<Attribute>Unrest</Attribute>
@@ -818,32 +818,27 @@
         <HasWages>0</HasWages>
         <IsSovereign>0</IsSovereign>
         <IsUniqueButBuildable>1</IsUniqueButBuildable>
-	<AllowGrouping>1</AllowGrouping>
-	<LevelMilestone InternalName="L1">
+		<AllowGrouping>1</AllowGrouping>
+		<LevelMilestone InternalName="L1">
             <Level>1</Level>
             <UnitStat_Attack_Pierce>7</UnitStat_Attack_Pierce>
             <UnitStat_CombatSpeed>20</UnitStat_CombatSpeed>
             <UnitStat_HitPoints>8</UnitStat_HitPoints>
             <UnitStat_Moves>3</UnitStat_Moves>
             <UnitStat_Defense_Pierce>2</UnitStat_Defense_Pierce>
-	    <UnitStat_BG_IsDemon>1</UnitStat_BG_IsDemon>
-	    <UnitStat_BG_IsUndead>1</UnitStat_BG_IsUndead>
-	    <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
-	    <UnitStat_BG_IsNotAlive>1</UnitStat_BG_IsNotAlive>
+			<UnitStat_BG_IsDemon>1</UnitStat_BG_IsDemon>
+			<UnitStat_BG_IsUndead>1</UnitStat_BG_IsUndead>
+			<UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
+			<UnitStat_BG_IsNotAlive>1</UnitStat_BG_IsNotAlive>
         </LevelMilestone>
         <SelectedAbilityBonusOption>ImmuneToPoison</SelectedAbilityBonusOption>
         <SelectedAbilityBonusOption>VulnerableToLightning</SelectedAbilityBonusOption>
         <SelectedAbilityBonusOption>Claws_Dagorath</SelectedAbilityBonusOption>
         <Prereq>
             <Type>AbilityBonusOption</Type>
-            <Attribute>VoidBound11</Attribute>
+            <Attribute>VoidBound</Attribute>
             <Target>Player</Target>
         </Prereq>
-        <ProductionRequirement>
-            <Type>Resource</Type>
-            <Attribute>Mana</Attribute>
-            <Value>1</Value>
-        </ProductionRequirement>
         <ProductionRequirement>
             <Type>Resource</Type>
             <Attribute>Population</Attribute>
@@ -871,7 +866,7 @@
         <UnitModelType>Dagorath_Demon</UnitModelType>
     </UnitType>
 
-<UnitType InternalName="Unit_Horror_Dagorath">
+	<UnitType InternalName="Unit_Horror_Dagorath">
         <DisplayName>Horror</DisplayName>
         <Description>These horrors have come through stable gates to crush your enemies.</Description>
         <CanBeDesigned>1</CanBeDesigned>
@@ -879,17 +874,17 @@
         <HasWages>0</HasWages>
         <IsSovereign>0</IsSovereign>
         <IsUniqueButBuildable>1</IsUniqueButBuildable>
-	<AllowGrouping>1</AllowGrouping>
-	<LevelMilestone InternalName="L1">
+		<AllowGrouping>1</AllowGrouping>
+		<LevelMilestone InternalName="L1">
             <Level>1</Level>
             <UnitStat_Attack_Pierce>12</UnitStat_Attack_Pierce>
             <UnitStat_CombatSpeed>22</UnitStat_CombatSpeed>
             <UnitStat_HitPoints>14</UnitStat_HitPoints>
-	    <UnitStat_Defense_Pierce>0</UnitStat_Defense_Pierce>
+			<UnitStat_Defense_Pierce>0</UnitStat_Defense_Pierce>
             <UnitStat_Moves>3</UnitStat_Moves>
-	    <UnitStat_BG_IsDemon>1</UnitStat_BG_IsDemon>
-	    <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
-	    <UnitStat_BG_IsNotAlive>1</UnitStat_BG_IsNotAlive>
+			<UnitStat_BG_IsDemon>1</UnitStat_BG_IsDemon>
+			<UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
+			<UnitStat_BG_IsNotAlive>1</UnitStat_BG_IsNotAlive>
         </LevelMilestone>
         <SelectedAbilityBonusOption>Void_Spawn</SelectedAbilityBonusOption>
         <SelectedAbilityBonusOption>ImmuneToPoison</SelectedAbilityBonusOption>
@@ -909,7 +904,7 @@
         <Medallions InternalName="">
             <All>Lurk.png</All>
         </Medallions>
-	<AnimationPack>DemonAnimationPack</AnimationPack>
+		<AnimationPack>DemonAnimationPack</AnimationPack>
         <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
         <ClothMapScale>1.5</ClothMapScale>
         <Color_Skin>30,25,0,255</Color_Skin>
@@ -924,7 +919,7 @@
         <SoundPack>SoundPack_Demon1</SoundPack>
         <TacticalModelScale>1.4</TacticalModelScale>
         <Texture_Skin>M_Demon_Texture_01.png</Texture_Skin>
-	<EffectAttachment>
+		<EffectAttachment>
             <Attachment>chest_center_Lcf</Attachment>
             <EffectName>A_CyndrumDemon_Particle</EffectName>
             <EffectPosition>0,0,0</EffectPosition>
@@ -1024,7 +1019,7 @@
         </EffectAttachment>
     </UnitType>
 
-<UnitType InternalName="Unit_Horror_Dagorath_Company">
+	<!--<UnitType InternalName="Unit_Horror_Dagorath_Company">
         <DisplayName>Horror</DisplayName>
         <Description>These horrors have come through stable gates to crush your enemies.</Description>
         <CanBeDesigned>1</CanBeDesigned>
@@ -1032,18 +1027,18 @@
         <HasWages>0</HasWages>
         <IsSovereign>0</IsSovereign>
         <IsUniqueButBuildable>1</IsUniqueButBuildable>
-	<AllowGrouping>1</AllowGrouping>
+		<AllowGrouping>1</AllowGrouping>
         <GroupingType>UnitGroupingType_Company</GroupingType>
-	<LevelMilestone InternalName="L1">
+		<LevelMilestone InternalName="L1">
             <Level>1</Level>
             <UnitStat_Attack_Pierce>12</UnitStat_Attack_Pierce>
             <UnitStat_CombatSpeed>22</UnitStat_CombatSpeed>
             <UnitStat_HitPoints>14</UnitStat_HitPoints>
-	    <UnitStat_Defense_Pierce>0</UnitStat_Defense_Pierce>
+			<UnitStat_Defense_Pierce>0</UnitStat_Defense_Pierce>
             <UnitStat_Moves>3</UnitStat_Moves>
-	    <UnitStat_BG_IsDemon>1</UnitStat_BG_IsDemon>
-	    <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
-	    <UnitStat_BG_IsNotAlive>1</UnitStat_BG_IsNotAlive>
+			<UnitStat_BG_IsDemon>1</UnitStat_BG_IsDemon>
+			<UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
+			<UnitStat_BG_IsNotAlive>1</UnitStat_BG_IsNotAlive>
         </LevelMilestone>
         <SelectedAbilityBonusOption>Void_Spawn</SelectedAbilityBonusOption>
         <SelectedAbilityBonusOption>ImmuneToPoison</SelectedAbilityBonusOption>
@@ -1051,7 +1046,7 @@
         <SelectedAbilityBonusOption>Claws_Dagorath</SelectedAbilityBonusOption>
         <Prereq>
             <Type>AbilityBonusOption</Type>
-            <Attribute>VoidBound11</Attribute>
+            <Attribute>VoidBound</Attribute>
             <Target>Player</Target>
         </Prereq>
         <ProductionRequirement>
@@ -1063,7 +1058,7 @@
         <Medallions InternalName="">
             <All>Lurk.png</All>
         </Medallions>
-	<AnimationPack>DemonAnimationPack</AnimationPack>
+		<AnimationPack>DemonAnimationPack</AnimationPack>
         <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
         <ClothMapScale>1.5</ClothMapScale>
         <Color_Skin>30,25,0,255</Color_Skin>
@@ -1078,7 +1073,7 @@
         <SoundPack>SoundPack_Demon1</SoundPack>
         <TacticalModelScale>1.4</TacticalModelScale>
         <Texture_Skin>M_Demon_Texture_01.png</Texture_Skin>
-	<EffectAttachment>
+		<EffectAttachment>
             <Attachment>chest_center_Lcf</Attachment>
             <EffectName>A_CyndrumDemon_Particle</EffectName>
             <EffectPosition>0,0,0</EffectPosition>
@@ -1179,7 +1174,7 @@
     </UnitType>
 
 	
-<UnitType InternalName="Unit_Horror_Dagorath_Group">
+	<UnitType InternalName="Unit_Horror_Dagorath_Group">
         <DisplayName>Horror</DisplayName>
         <Description>These horrors have come through stable gates to crush your enemies.</Description>
         <CanBeDesigned>1</CanBeDesigned>
@@ -1187,14 +1182,14 @@
         <HasWages>0</HasWages>
         <IsSovereign>0</IsSovereign>
         <IsUniqueButBuildable>1</IsUniqueButBuildable>
-	<AllowGrouping>1</AllowGrouping>
+		<AllowGrouping>1</AllowGrouping>
         <GroupingType>UnitGroupingType_Group</GroupingType>
-	<LevelMilestone InternalName="L1">
+		<LevelMilestone InternalName="L1">
             <Level>1</Level>
             <UnitStat_Attack_Pierce>12</UnitStat_Attack_Pierce>
             <UnitStat_CombatSpeed>22</UnitStat_CombatSpeed>
             <UnitStat_HitPoints>14</UnitStat_HitPoints>
-	    <UnitStat_Defense_Pierce>0</UnitStat_Defense_Pierce>
+			<UnitStat_Defense_Pierce>0</UnitStat_Defense_Pierce>
             <UnitStat_Moves>3</UnitStat_Moves>
 	    <UnitStat_BG_IsDemon>1</UnitStat_BG_IsDemon>
 	    <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
@@ -1218,7 +1213,7 @@
         <Medallions InternalName="">
             <All>Lurk.png</All>
         </Medallions>
-	<AnimationPack>DemonAnimationPack</AnimationPack>
+		<AnimationPack>DemonAnimationPack</AnimationPack>
         <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
         <ClothMapScale>1.5</ClothMapScale>
         <Color_Skin>30,25,0,255</Color_Skin>
@@ -1233,7 +1228,7 @@
         <SoundPack>SoundPack_Demon1</SoundPack>
         <TacticalModelScale>1.4</TacticalModelScale>
         <Texture_Skin>M_Demon_Texture_01.png</Texture_Skin>
-	<EffectAttachment>
+		<EffectAttachment>
             <Attachment>chest_center_Lcf</Attachment>
             <EffectName>A_CyndrumDemon_Particle</EffectName>
             <EffectPosition>0,0,0</EffectPosition>
@@ -1331,7 +1326,7 @@
             <EffectRotation>0,0,0</EffectRotation>
             <EffectScale>0.8</EffectScale>
         </EffectAttachment>
-    </UnitType>
+    </UnitType>-->
 
 
 
@@ -1775,6 +1770,39 @@
         </EffectAttachment>
     </UnitType>
 
+	<UnitType InternalName="Generic_Urxen_Slave">
+        <DisplayName>Peasant</DisplayName>
+        <Description>A peasant with a stick.</Description>
+        <RaceType>Race_Type_Urxen</RaceType>
+        <CanBeDesigned>0</CanBeDesigned>
+        <Gender>Female</Gender>
+        <AdditionalTrainingTurns>20</AdditionalTrainingTurns>
+        <IsSovereign>0</IsSovereign>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+        </LevelMilestone>
+        <SelectedAbilityBonusOption>Slave</SelectedAbilityBonusOption>
+        <Equipment>Club</Equipment>
+        <Equipment>F_Female_Head_Mesh_03</Equipment>
+        <Equipment>Long_Bob_Hair</Equipment>
+        <Backstory>For a thousand years, following their banishment from Imperium, the Urxen roamed the great Umbran wastes. There, in the shadow of the mountain ranges ruled by the Titan Ilosa, she who became the Lady Umber, they forged a special relationship with the creatures of Elemental, a bond that not even the Cataclysm could break.  Even now, the Urxen can call to their cause the great serpents of this world - the naja and the ophidian - and command them in battle.</Backstory>
+        <AnimationPack>SoldierAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>1</ClothPoseIndex>
+        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+        <InfoCardBackground>BG_BarrenForest</InfoCardBackground>
+        <ModelPath>Gfx\HKB\Units\K_Female_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Generic_Female</SoundPack>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\Eyeblink_F4_Blk.png</Texture_Eyes>
+        <Texture_Skin>Urxen_Skin_F_01.png</Texture_Skin>
+        <UnitModelType>UrxenFemale</UnitModelType>
+    </UnitType>
 	
 
 </UnitTypes>
