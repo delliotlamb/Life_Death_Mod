@@ -10,10 +10,10 @@
 		<GenericUnitType_Male>Generic_Slave</GenericUnitType_Male>
 		<GenericUnitType_Female>Generic_Urxen_Slave</GenericUnitType_Female>
         <TraderUnitType>TraderTest</TraderUnitType>
-        <StartingUnitType>Unit_Pioneer_RedQuendar</StartingUnitType>
+        <StartingUnitType>Urxen_Pioneer</StartingUnitType>
         <StartingUnitType>Unit_Catapult</StartingUnitType>
-        <StartingUnitType>Unit_Scout_RedQuendar</StartingUnitType>
-        <SageUnitType>Sage_RedQuendar</SageUnitType>
+        <StartingUnitType>Urxen_Scout</StartingUnitType>
+        <SageUnitType>Unit_Demon_Sage</SageUnitType>
         <ShopkeeperUnitType>Shopkeeper_RedQuendar</ShopkeeperUnitType>
         <MusicTheme>AncientShadow</MusicTheme>
 	</RaceType>

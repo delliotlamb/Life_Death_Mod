@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Created with the Elemental Editor -->
-<!-- CoreMonsterUnitTypes.xml -->
+
 
 <UnitTypes>
    
@@ -65,7 +63,7 @@
 		<AIMilitaryStrategy>Swordsman</AIMilitaryStrategy>
 		<PossibleAITrait>Builder</PossibleAITrait>
         <PossibleAITrait>Sorcerer</PossibleAITrait>
-		<SelectedAbilityBonusOption>Blood_RedQuendar</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Blood_Quendar</SelectedAbilityBonusOption>
 		<SelectedAbilityBonusOption>Scholar</SelectedAbilityBonusOption>
 		<SelectedAbilityBonusOption>Death1</SelectedAbilityBonusOption>
 		<SelectedAbilityBonusOption>Death2</SelectedAbilityBonusOption>
@@ -90,7 +88,7 @@
             <Attribute>SummonUnit</Attribute>
             <Value>1</Value>
             <Multiplier>3</Multiplier>
-            <UnitClass>SpearWarriors</UnitClass>
+            <UnitClass>Generic_Slave_Dagorath</UnitClass>
         </GameModifier>
 		<IsSovereign>1</IsSovereign>
 		<FactionToLead>Faction_Dagorath</FactionToLead>
@@ -329,7 +327,7 @@
         <UnitModelType>QuendarMale</UnitModelType>
     </UnitType>
     
-<UnitType InternalName="Generic_RedQuendar_Female">
+<!--<UnitType InternalName="Generic_RedQuendar_Female">
         <DisplayName>Red Quendar Peon</DisplayName>
         <Description>A peasant with a stick.</Description>
         <RaceType>Race_Type_RedQuendar</RaceType>
@@ -402,9 +400,9 @@
         <TacticalModelScale>1.5</TacticalModelScale>
         <Texture_Skin>Magnar_Skin_M_01.dds</Texture_Skin>
         <UnitModelType>QuendarMale</UnitModelType>
-    </UnitType>
+    </UnitType>-->
 
-<UnitType InternalName="Unit_Scout_RedQuendar">
+<!-- <UnitType InternalName="Unit_Scout_RedQuendar">
         <DisplayName>Scout</DisplayName>
         <Description>Use scouts to explore the world.</Description>
         <Class>Scout</Class>
@@ -499,88 +497,8 @@
         <Texture_Eyes>gfx\eyes\blinks\Eyeblink_F5_Red.png</Texture_Eyes>
         <Texture_Skin>Magnar_Skin_F_01.dds</Texture_Skin>
         <UnitModelType>QuendarFemale</UnitModelType>
-    </UnitType>
+    </UnitType>-->
 
-<UnitType InternalName="Sage_RedQuendar">
-        <DisplayName>Red Quendar Sage</DisplayName>
-        <RaceType>Race_Type_RedQuendar</RaceType>
-        <CanBeDesigned>0</CanBeDesigned>
-        <Gender>Male</Gender>
-        <IsSovereign>0</IsSovereign>
-        <LevelMilestone InternalName="L1">
-            <Level>1</Level>
-	<UnitStat_IsMale>1</UnitStat_IsMale>
-			<UnitStat_BG_IsEmpire>1</UnitStat_BG_IsEmpire>
-			<UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
-			<UnitStat_BG_IsRace_RedQuendar>1</UnitStat_BG_IsRace_RedQuendar>
-        </LevelMilestone>
-        <SelectedAbilityBonusOption>Blood_RedQuendar</SelectedAbilityBonusOption>
-        <Equipment>F_Male_Quendar_Head_01</Equipment>
-        <Equipment>Fallen_Basic_Pants_ID2</Equipment>
-        <Equipment>Large_Sion_Boots_ID2</Equipment>
-        <Equipment>DarkWizardRobeID2</Equipment>
-        <Equipment>F_Male_Quendar_Horns_03</Equipment>
-        <AnimationPack>MerchantAnimationPack</AnimationPack>
-        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
-        <ClothMapScale>1.6</ClothMapScale>
-        <ClothPoseIndex>15</ClothPoseIndex>
-        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
-        <EyeTexture>gfx\eyes\blinks\eyeblink_m6_Lime.png</EyeTexture>
-        <InfoCardBackground>BG_Lava</InfoCardBackground>
-        <InfoCardBackgroundFlipped>0</InfoCardBackgroundFlipped>
-        <ModelPath>F_Female_Magnar_Body_Mesh_01.hkb</ModelPath>
-        <ModelScale>1</ModelScale>
-        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
-        <OnHitParticleName>Bloody_OnHit</OnHitParticleName>
-        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
-        <TacticalModelScale>1.5</TacticalModelScale>
-        <Texture_Eyes>gfx\eyes\blinks\eyeblink_m6_Lime.png</Texture_Eyes>
-        <Texture_Skin>Magnar_Skin_M_01.dds</Texture_Skin>
-        <UnitModelType>QuendarMale</UnitModelType>
-    </UnitType>
-
-<UnitType InternalName="Shopkeeper_RedQuendar">
-        <DisplayName>Red Quendar Shopkeeper</DisplayName>
-        <RaceType>Race_Type_RedQuendar</RaceType>
-        <CanBeDesigned>0</CanBeDesigned>
-        <Gender>Female</Gender>
-        <IsSovereign>0</IsSovereign>
-        <LevelMilestone InternalName="L1">
-            <Level>1</Level>
-	<UnitStat_IsMale>1</UnitStat_IsMale>
-			<UnitStat_BG_IsEmpire>1</UnitStat_BG_IsEmpire>
-			<UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
-			<UnitStat_BG_IsRace_RedQuendar>1</UnitStat_BG_IsRace_RedQuendar>
-        </LevelMilestone>
-        <SelectedAbilityBonusOption>Blood_RedQuendar</SelectedAbilityBonusOption>
-        <Equipment>F_Female_Quendar_Head_01</Equipment>
-        <Equipment>F_Female_Quendar_Horns_01</Equipment>
-        <Equipment>TightBoots_Light</Equipment>
-        <Equipment>Shortsleeve_Empire_Shirt_Female_ID1</Equipment>
-        <Equipment>Wraith_Overskirt_ID2_Flipped</Equipment>
-        <AnimationPack>MerchantAnimationPack</AnimationPack>
-        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
-        <ClothMapScale>1.6</ClothMapScale>
-        <ClothPoseIndex>15</ClothPoseIndex>
-        <Color_Clothing1>80,15,15,255</Color_Clothing1>
-        <Color_Clothing2>40,35,35,255</Color_Clothing2>
-        <Color_Hair>200,200,200,255</Color_Hair>
-        <Color_Metal>60,50,50,255</Color_Metal>
-        <Color_Skin>160,90,75,255</Color_Skin>
-        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
-        <EyeTexture>gfx\eyes\blinks\Eyeblink_F6_red.png</EyeTexture>
-        <InfoCardBackground>BG_Lava</InfoCardBackground>
-        <InfoCardBackgroundFlipped>0</InfoCardBackgroundFlipped>
-        <ModelPath>F_Female_Magnar_Body_Mesh_01.hkb</ModelPath>
-        <ModelScale>1</ModelScale>
-        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
-        <OnHitParticleName>Bloody_OnHit</OnHitParticleName>
-        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
-        <TacticalModelScale>1.5</TacticalModelScale>
-        <Texture_Eyes>gfx\eyes\blinks\Eyeblink_F6_red.png</Texture_Eyes>
-        <Texture_Skin>Magnar_Skin_F_01.dds</Texture_Skin>
-        <UnitModelType>QuendarFemale</UnitModelType>
-    </UnitType>
 
 <UnitType InternalName="Unit_CityDefender_RedQuendar">
         <DisplayName>City Militia</DisplayName>
@@ -641,7 +559,7 @@
     </UnitType>
 
 
-<UnitType InternalName="Unit_CityArcher_Quendar">
+<UnitType InternalName="Unit_CityArcher_RedQuendar">
         <DisplayName>City Archer</DisplayName>
         <Class>CityArcher</Class>
         <RaceType>Race_Type_RedQuendar</RaceType>
@@ -691,7 +609,7 @@
     </UnitType>
 
 
-	<UnitType InternalName="SpearWarriors">
+	<!--<UnitType InternalName="SpearWarriors">
 		<DisplayName>Spear Warriors</DisplayName>
 		<Quote>'I will break my enemy's spirits...then bones.'</Quote>
 		<Backstory>'Discipline is first, second, and third when building an effective fighting force. Little else matters.' Indeed, the Red Quendar know these words well - for by losing themselves in discipline, they need not face the madness of the quest of their leader, who shall make Elemental into a Shadow World beyond recognition.</Backstory>
@@ -805,7 +723,7 @@
 		<AllowGrouping>true</AllowGrouping>
 		<SoundPack>SoundPack_Generic_Male</SoundPack>
 		<IsChampion>0</IsChampion>
-	</UnitType>
+	</UnitType>-->
 
 <!-- Demons follow -->
 
@@ -848,7 +766,7 @@
         <Medallions InternalName="">
             <All>Lurk.png</All>
         </Medallions>
-	<AnimationPack>DemonAnimationPack</AnimationPack>
+		<AnimationPack>DemonAnimationPack</AnimationPack>
         <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
         <ClothMapScale>.8</ClothMapScale>
         <Color_Skin>30,25,0,255</Color_Skin>
@@ -1540,7 +1458,7 @@
         <IsSovereign>0</IsSovereign>
         <AllowGrouping>0</AllowGrouping>
         <HasWages>0</HasWages>
-	<LevelMilestone InternalName="L1">
+		<LevelMilestone InternalName="L1">
             <Level>1</Level>
             <UnitStat_Attack_Eldritch>10</UnitStat_Attack_Eldritch>
             <UnitStat_Attack_Pierce>12</UnitStat_Attack_Pierce>
@@ -1549,9 +1467,9 @@
             <UnitStat_HitPoints>45</UnitStat_HitPoints>
 			<UnitStat_Defense_Pierce>0</UnitStat_Defense_Pierce>
             <UnitStat_Moves>3</UnitStat_Moves>
-	    <UnitStat_BG_IsDemon>1</UnitStat_BG_IsDemon>
-	    <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
-	    <UnitStat_BG_IsNotAlive>1</UnitStat_BG_IsNotAlive>
+			<UnitStat_BG_IsDemon>1</UnitStat_BG_IsDemon>
+			<UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
+			<UnitStat_BG_IsNotAlive>1</UnitStat_BG_IsNotAlive>
         </LevelMilestone>
         <SelectedAbilityBonusOption>Void_Spawn3</SelectedAbilityBonusOption>
         <SelectedAbilityBonusOption>ImmuneToPoison</SelectedAbilityBonusOption>
@@ -1589,7 +1507,7 @@
         <Texture_Skin>M_Fire_Elemental_Resoln_Texture_01.dds</Texture_Skin>
     </UnitType>
 
-<UnitType InternalName="HorrorChampion">
+	<UnitType InternalName="HorrorChampion">
         <DisplayName>Eldritch Prince</DisplayName>
         <Description>This creature could only come through a stable portal to Elemental. It gains levels like a hero and cast spells, but can die permanently.</Description>
         <!--<DividesBattleExp>0</DividesBattleExp>-->
@@ -1602,7 +1520,7 @@
         <IsSovereign>0</IsSovereign>
         <!--<IsUniqueButBuildable>1</IsUniqueButBuildable>-->
 		<AllowGrouping>0</AllowGrouping>
-	<LevelMilestone InternalName="L1">
+		<LevelMilestone InternalName="L1">
             <Level>1</Level>
             <UnitStat_Attack_Pierce>25</UnitStat_Attack_Pierce>
             <UnitStat_CombatSpeed>24</UnitStat_CombatSpeed>
@@ -1655,7 +1573,7 @@
         <Medallions InternalName="">
             <All>M_Imp_Card_01.png</All>
         </Medallions>
-	<AnimationPack>DemonAnimationPack</AnimationPack>
+		<AnimationPack>DemonAnimationPack</AnimationPack>
         <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
         <ClothMapScale>1.7</ClothMapScale>
         <Color_Skin>30,25,0,255</Color_Skin>
@@ -1670,7 +1588,7 @@
         <SoundPack>SoundPack_BurningWraith</SoundPack>
         <TacticalModelScale>1.6</TacticalModelScale>
         <Texture_Skin>M_Demon_Texture_01.png</Texture_Skin>
-	<EffectAttachment>
+		<EffectAttachment>
             <Attachment>chest_center_Lcf</Attachment>
             <EffectName>A_CyndrumDemon_Particle</EffectName>
             <EffectPosition>0,0,0</EffectPosition>
@@ -1771,21 +1689,27 @@
     </UnitType>
 
 	<UnitType InternalName="Generic_Urxen_Slave">
-        <DisplayName>Peasant</DisplayName>
+        <DisplayName>Urxen Slave</DisplayName>
         <Description>A peasant with a stick.</Description>
         <RaceType>Race_Type_Urxen</RaceType>
         <CanBeDesigned>0</CanBeDesigned>
         <Gender>Female</Gender>
-        <AdditionalTrainingTurns>20</AdditionalTrainingTurns>
+        <AdditionalTrainingTurns>0</AdditionalTrainingTurns>
+        <HasWages>0</HasWages>		
         <IsSovereign>0</IsSovereign>
+        <IsStartingUnitType>1</IsStartingUnitType>		
         <LevelMilestone InternalName="L1">
             <Level>1</Level>
+			<UnitStat_IsFemale>1</UnitStat_IsFemale>			
+			<UnitStat_BG_IsEmpire>1</UnitStat_BG_IsEmpire>
+			<UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
+			<UnitStat_BG_IsRace_Urxen>1</UnitStat_BG_IsRace_Urxen>				
         </LevelMilestone>
         <SelectedAbilityBonusOption>Slave</SelectedAbilityBonusOption>
         <Equipment>Club</Equipment>
         <Equipment>F_Female_Head_Mesh_03</Equipment>
         <Equipment>Long_Bob_Hair</Equipment>
-        <Backstory>For a thousand years, following their banishment from Imperium, the Urxen roamed the great Umbran wastes. There, in the shadow of the mountain ranges ruled by the Titan Ilosa, she who became the Lady Umber, they forged a special relationship with the creatures of Elemental, a bond that not even the Cataclysm could break.  Even now, the Urxen can call to their cause the great serpents of this world - the naja and the ophidian - and command them in battle.</Backstory>
+        <Backstory>Dagorath will enslave any population he can control, not merely men. These Urxen tribes were desperate and starving when they encountered Dagorath's dark study. Now, they are too beaten in body and mind to even imagine that an empire of Urxen blood could be possible.</Backstory>
         <AnimationPack>SoldierAnimationPack</AnimationPack>
         <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
         <ClothMapScale>1.6</ClothMapScale>
@@ -1804,5 +1728,264 @@
         <UnitModelType>UrxenFemale</UnitModelType>
     </UnitType>
 	
+	<UnitType InternalName="Urxen_Scout">
+        <DisplayName>Urxen Scout</DisplayName>
+        <Description>Use scouts to explore the world.</Description>
+        <Class>Scout</Class>
+        <RaceType>Race_Type_Urxen</RaceType>
+        <CanBeDesigned>0</CanBeDesigned>
+        <Gender>Female</Gender>
+        <AdditionalTrainingTurns>0</AdditionalTrainingTurns>
+        <HasWages>0</HasWages>		
+        <IsSovereign>0</IsSovereign>
+        <IsStartingUnitType>1</IsStartingUnitType>		
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+			<UnitStat_IsFemale>1</UnitStat_IsFemale>			
+			<UnitStat_BG_IsEmpire>1</UnitStat_BG_IsEmpire>
+			<UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
+			<UnitStat_BG_IsRace_Urxen>1</UnitStat_BG_IsRace_Urxen>				
+        </LevelMilestone>
+        <SelectedAbilityBonusOption>Slave</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Scout</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Weak</SelectedAbilityBonusOption>		
+        <Equipment>Staff</Equipment>
+        <Equipment>F_Female_Head_Mesh_03</Equipment>
+        <Equipment>Long_Bob_Hair</Equipment>
+        <Backstory>Dagorath will enslave any population he can control, not merely men. These Urxen tribes were desperate and starving when they encountered Dagorath's dark study. Now, they are too beaten in body and mind to even imagine that an empire of Urxen blood could be possible.</Backstory>
+        <AnimationPack>SoldierAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>1</ClothPoseIndex>
+        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+        <InfoCardBackground>BG_BarrenForest</InfoCardBackground>
+        <ModelPath>Gfx\HKB\Units\K_Female_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Generic_Female</SoundPack>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\Eyeblink_F4_Blk.png</Texture_Eyes>
+        <Texture_Skin>Urxen_Skin_F_01.png</Texture_Skin>
+        <UnitModelType>UrxenFemale</UnitModelType>
+    </UnitType>	
+
+	<UnitType InternalName="Urxen_Pioneer">
+        <DisplayName>Slave Pioneer</DisplayName>
+        <Description>Pioneers are equipped with the necessary supplies to start new settlements and create outposts.</Description>
+        <Class>Pioneer</Class>
+        <RaceType>Race_Type_Urxen</RaceType>
+        <CanBeDesigned>0</CanBeDesigned>
+        <Gender>Female</Gender>
+        <AdditionalTrainingTurns>48</AdditionalTrainingTurns>
+        <HasWages>0</HasWages>		
+        <IsSovereign>0</IsSovereign>
+        <IsStartingUnitType>1</IsStartingUnitType>
+        <IsUniqueButBuildable>1</IsUniqueButBuildable>
+        <GroupingType>UnitGroupingType_Party</GroupingType>
+        <TrainUnitIcon>TrainUnitIcon_Pioneer.png</TrainUnitIcon>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnlockAction</Attribute>
+            <StrVal>BuildTown</StrVal>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnlockAction</Attribute>
+            <StrVal>BuildImprovement</StrVal>
+            <StrVal2>Outpost</StrVal2>
+        </GameModifier>		
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+			<UnitStat_IsFemale>1</UnitStat_IsFemale>			
+			<UnitStat_BG_IsEmpire>1</UnitStat_BG_IsEmpire>
+			<UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
+			<UnitStat_BG_IsRace_Urxen>1</UnitStat_BG_IsRace_Urxen>			
+        </LevelMilestone>
+        <SelectedAbilityBonusOption>Slave</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Scout</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Weak</SelectedAbilityBonusOption>		
+        <Equipment>Staff</Equipment>
+        <Equipment>F_Female_Head_Mesh_03</Equipment>
+        <Equipment>Long_Bob_Hair</Equipment>
+        <Prereq>
+            <Type>Race</Type>
+            <Attribute>Race_Type_RedQuendar</Attribute>
+        </Prereq>
+        <ProductionRequirement>
+            <Type>Resource</Type>
+            <Attribute>Population</Attribute>
+            <Value>10</Value>
+        </ProductionRequirement>		
+        <Backstory>Dagorath will enslave any population he can control, not merely men. These Urxen tribes were desperate and starving when they encountered Dagorath's dark study. Now, they are too beaten in body and mind to even imagine that an empire of Urxen blood could be possible.</Backstory>
+        <AnimationPack>SoldierAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>1</ClothPoseIndex>
+        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+        <InfoCardBackground>BG_BarrenForest</InfoCardBackground>
+        <ModelPath>Gfx\HKB\Units\K_Female_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Generic_Female</SoundPack>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\Eyeblink_F4_Blk.png</Texture_Eyes>
+        <Texture_Skin>Urxen_Skin_F_01.png</Texture_Skin>
+        <UnitModelType>UrxenFemale</UnitModelType>
+    </UnitType>	
+	
+	<UnitType InternalName="Generic_Slave_Dagorath">
+        <DisplayName>Slave</DisplayName>
+        <Description>The broken citizens of Dagorath are also its soldiers.</Description>
+        <RaceType>Race_Type_Krax</RaceType>
+        <CanBeDesigned>0</CanBeDesigned>
+        <Gender>Male</Gender>
+        <AdditionalTrainingTurns>0</AdditionalTrainingTurns>
+        <HasWages>0</HasWages>
+        <IsSovereign>0</IsSovereign>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+			<UnitStat_IsMale>1</UnitStat_IsMale>
+			<UnitStat_BG_IsEmpire>1</UnitStat_BG_IsEmpire>
+			<UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
+			<UnitStat_BG_IsRace_Krax>1</UnitStat_BG_IsRace_Krax>			
+        </LevelMilestone>
+        <SelectedAbilityBonusOption>Slave</SelectedAbilityBonusOption>
+        <Equipment>Club</Equipment>
+        <Equipment>K_Male_Head_03</Equipment>
+        <Backstory>Dagorath has mastered a strange spell that breaks the will, and tinges the skin red. These slaves have never known anything but Quendar captivity, and do not have the will to fight Dagorath;s influence.</Backstory>
+        <AnimationPack>OldManAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>1</ClothPoseIndex>
+        <!--<Color_Skin>190,145,110,255</Color_Skin>-->
+        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\eyes\blinks\eyeblink_m2_ltblue.png</EyeTexture>
+        <InfoCardBackground>BG_Lava</InfoCardBackground>
+        <ModelPath>gfx\hkb\Units\F_Male_Sion_Mesh_01.hkb</ModelPath>
+        <ModelScale>0.9</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Generic_Male</SoundPack>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\eyeblink_m2_ltblue.png</Texture_Eyes>
+        <Texture_Skin>K_Male_Slave_Texture_01.png</Texture_Skin>
+        <UnitModelType>SlaveMale</UnitModelType>
+    </UnitType>
+	
+
+	<UnitType InternalName="Shopkeeper_RedQuendar">
+        <DisplayName>Red Quendar Shopkeeper</DisplayName>
+        <RaceType>Race_Type_RedQuendar</RaceType>
+        <CanBeDesigned>0</CanBeDesigned>
+        <Gender>Female</Gender>
+        <IsSovereign>0</IsSovereign>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+			<UnitStat_IsMale>1</UnitStat_IsMale>
+			<UnitStat_BG_IsEmpire>1</UnitStat_BG_IsEmpire>
+			<UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
+			<UnitStat_BG_IsRace_RedQuendar>1</UnitStat_BG_IsRace_RedQuendar>
+        </LevelMilestone>
+        <SelectedAbilityBonusOption>Blood_RedQuendar</SelectedAbilityBonusOption>
+        <Equipment>F_Female_Quendar_Head_01</Equipment>
+        <Equipment>F_Female_Quendar_Horns_01</Equipment>
+        <Equipment>TightBoots_Light</Equipment>
+        <Equipment>Shortsleeve_Empire_Shirt_Female_ID1</Equipment>
+        <Equipment>Wraith_Overskirt_ID2_Flipped</Equipment>
+        <AnimationPack>MerchantAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>15</ClothPoseIndex>
+        <Color_Clothing1>80,15,15,255</Color_Clothing1>
+        <Color_Clothing2>40,35,35,255</Color_Clothing2>
+        <Color_Hair>200,200,200,255</Color_Hair>
+        <Color_Metal>60,50,50,255</Color_Metal>
+        <Color_Skin>160,90,75,255</Color_Skin>
+        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\eyes\blinks\Eyeblink_F6_red.png</EyeTexture>
+        <InfoCardBackground>BG_Lava</InfoCardBackground>
+        <InfoCardBackgroundFlipped>0</InfoCardBackgroundFlipped>
+        <ModelPath>F_Female_Magnar_Body_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\Eyeblink_F6_red.png</Texture_Eyes>
+        <Texture_Skin>Magnar_Skin_F_01.dds</Texture_Skin>
+        <UnitModelType>QuendarFemale</UnitModelType>
+    </UnitType>	
+	
+	<!--<UnitType InternalName="Sage_RedQuendar">
+        <DisplayName>Red Quendar Sage</DisplayName>
+        <RaceType>Race_Type_RedQuendar</RaceType>
+        <CanBeDesigned>0</CanBeDesigned>
+        <Gender>Male</Gender>
+        <IsSovereign>0</IsSovereign>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+			<UnitStat_IsMale>1</UnitStat_IsMale>
+			<UnitStat_BG_IsEmpire>1</UnitStat_BG_IsEmpire>
+			<UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
+			<UnitStat_BG_IsRace_RedQuendar>1</UnitStat_BG_IsRace_RedQuendar>
+        </LevelMilestone>
+        <SelectedAbilityBonusOption>Blood_RedQuendar</SelectedAbilityBonusOption>
+        <Equipment>F_Male_Quendar_Head_01</Equipment>
+        <Equipment>Fallen_Basic_Pants_ID2</Equipment>
+        <Equipment>Large_Sion_Boots_ID2</Equipment>
+        <Equipment>DarkWizardRobeID2</Equipment>
+        <Equipment>F_Male_Quendar_Horns_03</Equipment>
+        <AnimationPack>MerchantAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>15</ClothPoseIndex>
+        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\eyes\blinks\eyeblink_m6_Lime.png</EyeTexture>
+        <InfoCardBackground>BG_Lava</InfoCardBackground>
+        <InfoCardBackgroundFlipped>0</InfoCardBackgroundFlipped>
+        <ModelPath>F_Female_Magnar_Body_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\eyeblink_m6_Lime.png</Texture_Eyes>
+        <Texture_Skin>Magnar_Skin_M_01.dds</Texture_Skin>
+        <UnitModelType>QuendarMale</UnitModelType>
+    </UnitType>-->
+
+	<UnitType InternalName="Unit_Demon_Sage">
+        <DisplayName>Demon Sage</DisplayName>
+        <CreatureType>Undead</CreatureType>
+        <CanBeDesigned>0</CanBeDesigned>		
+        <IsSovereign>0</IsSovereign>
+		<LevelMilestone InternalName="L1">
+            <Level>1</Level>
+        </LevelMilestone>
+        <Medallions InternalName="">
+            <All>Lurk.png</All>
+        </Medallions>
+		<AnimationPack>DemonAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>.8</ClothMapScale>
+        <Color_Skin>30,25,0,255</Color_Skin>
+        <CutSceneDataPack>LurkUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx/eyes/male_brown_eye.png</EyeTexture>
+        <InfoCardBackground>BG4_Dark</InfoCardBackground>
+        <MaxScaleMainMap>1.08</MaxScaleMainMap>
+        <MaxScaleTacticalMap>1</MaxScaleTacticalMap>
+        <ModelPath>gfx/hkb/Monsters/M_Demon_Mesh_01.hkb</ModelPath>
+        <ModelScale>1.0</ModelScale>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Demon1</SoundPack>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Skin>M_Demon_Texture_01.png</Texture_Skin>
+        <UnitModelType>Dagorath_Demon</UnitModelType>
+    </UnitType>	
 
 </UnitTypes>
