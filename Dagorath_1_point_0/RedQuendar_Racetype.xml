@@ -7,7 +7,7 @@
 		<UnitHairColor>200,200,200</UnitHairColor>
 		<MaleUnitType>Generic_Sovereign_RedQuendar_Male</MaleUnitType>
 		<FemaleUnitType>Generic_Sovereign_RedQuendar_Female</FemaleUnitType>
-		<GenericUnitType_Male>Generic_Slave</GenericUnitType_Male>
+		<GenericUnitType_Male>Generic_Slave_Dagorath</GenericUnitType_Male>
 		<GenericUnitType_Female>Generic_Urxen_Slave</GenericUnitType_Female>
         <TraderUnitType>TraderTest</TraderUnitType>
         <StartingUnitType>Urxen_Pioneer</StartingUnitType>

@@ -26,7 +26,7 @@
 		<RaceDisplayName>Red Quendar</RaceDisplayName>
 		<UnitScale>1.0000</UnitScale>
 		<RaceClassification>Fallen</RaceClassification>
-		<MusicTheme>temp_war00</MusicTheme>
+		<MusicTheme>AncientShadow</MusicTheme>
 		<Alignment>Neutral</Alignment>
 		<UnitSkinColor>240,21,13,255</UnitSkinColor>
 		<UnitHairColor>200,200,200,255</UnitHairColor>
@@ -49,7 +49,7 @@
 		<SelAbilityBonusOption>RedMarkOfDagorath</SelAbilityBonusOption>
 		<SelAbilityBonusOption>VoidBound</SelAbilityBonusOption>
 		<SelAbilityBonusOption>Enchanters</SelAbilityBonusOption>
-		<SelAbilityBonusOption>Endgame_Empire</SelAbilityBonusOption>
+		<!--<SelAbilityBonusOption>Endgame_Empire</SelAbilityBonusOption>-->
 		<A_Additive_FoodPerGrain>25.0000</A_Additive_FoodPerGrain>
 		<A_Additive_GoldTakeAwayPerTaxPercentage>1.0000</A_Additive_GoldTakeAwayPerTaxPercentage>
 		<A_Additive_ProductionEffectPerUnrest>1.0000</A_Additive_ProductionEffectPerUnrest>
