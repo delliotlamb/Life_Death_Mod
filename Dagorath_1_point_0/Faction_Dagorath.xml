@@ -45,7 +45,7 @@
 		<Spellbook>DeathSpellbook</Spellbook>
 		<FactionType>Major</FactionType>
 		<RemCustomizationPts>0</RemCustomizationPts>
-		<SelAbilityBonusOption>AdeptsTech</SelAbilityBonusOption>
+		<SelAbilityBonusOption>FleshBoundTome</SelAbilityBonusOption>
 		<SelAbilityBonusOption>RedMarkOfDagorath</SelAbilityBonusOption>
 		<SelAbilityBonusOption>VoidBound</SelAbilityBonusOption>
 		<SelAbilityBonusOption>Enchanters</SelAbilityBonusOption>

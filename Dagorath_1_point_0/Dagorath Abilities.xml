@@ -386,7 +386,7 @@
         </AbilityBonusOption>
     </AbilityBonus>
 	
-	 <AbilityBonus InternalName="FireEater_Red_Ability">
+	 <!--<AbilityBonus InternalName="FireEater_Red_Ability">
         <AbilityBonusType>Unit_Design</AbilityBonusType>
         <AbilityBonusOption InternalName="FireEater_Red">
             <DisplayName>Enduring Scales</DisplayName>
@@ -495,6 +495,6 @@
                 <AIPriority>5</AIPriority>
             </AIData>
         </AbilityBonusOption>
-    </AbilityBonus>
+    </AbilityBonus>-->
 
 </AbilityBonuses>

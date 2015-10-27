@@ -154,7 +154,7 @@
         </SpellDefEffect>
     </SpellDef>
 
--->
+
 
 <SpellDef InternalName="Endure_Pain_Dagorath">
         <DisplayName>Endure</DisplayName>
@@ -276,7 +276,7 @@
             <EffectDelay>0</EffectDelay>
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
-    </SpellDef>
+    </SpellDef>-->
 
     <SpellDef InternalName="EldritchRot_Effect">
         <DisplayName>Eldritch Rot</DisplayName>
@@ -366,6 +366,8 @@
 
 -->
 
+<!--
+
     <SpellDef InternalName="OpenVoidGate">
         <DisplayName>Void Call</DisplayName>
         <Description>Creates a Void Gate in neutral territory. The gate counts as an outpost. Once open, the gate will allow powerful demons to enter this world in your service.</Description>
@@ -411,7 +413,7 @@
         </SpellDefEffect>
     </SpellDef>
 
-
+-->
 
     <SpellDef InternalName="EldritchWarp">
         <DisplayName>Eldritch Warp</DisplayName>
@@ -539,7 +541,7 @@
         <HitSoundFX>Spell_Shadow_World</HitSoundFX>
     </SpellDef>
 
-	-->
+	
 	
 	<SpellDef InternalName="Sacrificial_Lamb">
         <DisplayName>Sacrificial Rites</DisplayName>
@@ -554,7 +556,7 @@
         <SpellSubClass>Other</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <IsSpecialAbility>1</IsSpecialAbility>		
-        <!--<SpellTypeDrain>1</SpellTypeDrain>-->
+        <SpellTypeDrain>1</SpellTypeDrain>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>CurHealth</Attribute>
@@ -593,7 +595,7 @@
         <SpellSubClass>Other</SpellSubClass>
         <SpellTargetType>FriendlyTrainedUnit</SpellTargetType>
         <IsSpecialAbility>1</IsSpecialAbility>		
-        <!--<SpellTypeDrain>1</SpellTypeDrain>-->
+        <SpellTypeDrain>1</SpellTypeDrain>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>CurHealth</Attribute>
@@ -617,6 +619,6 @@
             <AIPriority>0</AIPriority>
         </AIData>
         <HitSoundFX>Spell_CullTheWeak_01</HitSoundFX>
-    </SpellDef>
+    </SpellDef>-->
 
 </Spells>
