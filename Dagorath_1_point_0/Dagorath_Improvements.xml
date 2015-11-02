@@ -93,7 +93,8 @@
             <AIPriority>10000</AIPriority>
             <AITag>Victory</AITag>
         </AIData>
-        <ArtDef>Art_StableGate</ArtDef>
+        <!--<ArtDef>Art_StableGate</ArtDef>-->
+		<ArtDef>Art_Dagorath_Gate</ArtDef>
     </ImprovementType>
 	
 </ImprovementTypes>

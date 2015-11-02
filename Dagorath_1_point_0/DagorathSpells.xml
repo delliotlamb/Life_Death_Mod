@@ -620,5 +620,56 @@
         </AIData>
         <HitSoundFX>Spell_CullTheWeak_01</HitSoundFX>
     </SpellDef>-->
+	
+	<SpellDef InternalName="EldritchParasites">
+        <DisplayName>Eldritch Parasites</DisplayName>
+        <Description>The city produces .2 Eldritch Presence per turn, but growth is reduced by 1.</Description>
+        <Image>T_InfernalCovenant_Painting.png</Image>
+        <IconFG>T_InfernalCovenant_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CanStack>0</CanStack>
+		<Cooldown>5</Cooldown>
+        <SpellBookSortCategory>City</SpellBookSortCategory>
+        <SpellBookSortSubCategory>CityEnchantment</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>ImpResourceBooster</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>FriendlyCity</SpellTargetType>
+		<CasterMustBeSov>1</CasterMustBeSov>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>VoidBound</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>100</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>EldritchEnergy</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>.2</Value>
+        </GameModifier>
+		<GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Prestige</Attribute>
+			<Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>-1</Value>
+        </GameModifier>		
+        <ValidTerrainCategory>City</ValidTerrainCategory>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>10000</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Teleport_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>T_InfernalCovenant_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
 
 </Spells>
