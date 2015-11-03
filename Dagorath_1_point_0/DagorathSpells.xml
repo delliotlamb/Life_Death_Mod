@@ -621,8 +621,8 @@
         <HitSoundFX>Spell_CullTheWeak_01</HitSoundFX>
     </SpellDef>-->
 	
-	<SpellDef InternalName="EldritchParasites">
-        <DisplayName>Eldritch Parasites</DisplayName>
+	<SpellDef InternalName="EldritchPossession">
+        <DisplayName>Eldritch Possession</DisplayName>
         <Description>The city produces .2 Eldritch Presence per turn, but growth is reduced by 1.</Description>
         <Image>T_InfernalCovenant_Painting.png</Image>
         <IconFG>T_InfernalCovenant_Icon.png</IconFG>
