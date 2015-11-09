@@ -480,8 +480,7 @@
         <SpellType>Strategic</SpellType>
         <SpellClass>Defensive</SpellClass>
         <SpellSubClass>Buff</SpellSubClass>
-        <!--<SpellTargetType>FOWTerritory</SpellTargetType>-->
-		<SpellTargetType>Any</SpellTargetType>
+        <SpellTargetType>FOWTerritory</SpellTargetType>
         <Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Visimancy</Attribute>
