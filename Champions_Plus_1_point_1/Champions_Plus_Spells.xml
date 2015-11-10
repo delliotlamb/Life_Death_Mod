@@ -4726,8 +4726,8 @@
 	
 	<SpellDef InternalName="Thrust_Ability">
         <DisplayName>Thrust</DisplayName>
-        <Description>Launch an Attack that ignores 40% of the target's armor</Description>
-        <FormattedDescription>Launch a %d Attack that ignores 50% of the target's armor</FormattedDescription>
+        <Description>Launch an attack that ignores 30% of the target's armor.</Description>
+        <FormattedDescription>Launch a %d Attack that ignores 30% of the target's armor.</FormattedDescription>
         <IconFG>Ability_Warriors_Icon.png</IconFG>
         <StaminaCost>7</StaminaCost>
         <SpellBookSortCategory>Unit</SpellBookSortCategory>
@@ -4752,7 +4752,7 @@
             <StrVal>UnitStat_ArmorPierce</StrVal>
             <ApplyToCaster>1</ApplyToCaster>
             <IsPreHitSpellModifier>1</IsPreHitSpellModifier>
-            <Value>40</Value>
+            <Value>30</Value>
         </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>

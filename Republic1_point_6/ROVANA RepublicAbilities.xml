@@ -107,12 +107,6 @@
                 <StrVal>UnitStat_ExpBonus</StrVal>
                 <Value>10</Value>
                 <Provides>+10% Experience</Provides>
-            </GameModifier>
-            <GameModifier>
-                <ModType>Unit</ModType>
-                <Attribute>UnlockCombatAbility</Attribute>
-                <StrVal>RainOfArrows</StrVal>
-                <Provides>.</Provides>
             </GameModifier>			
             <GameModifier>
                 <ModType>Unit</ModType>
@@ -120,8 +114,20 @@
                 <StrVal>UnitStat_Accuracy</StrVal>
                 <Value>1</Value>
                 <PerLevel>1</PerLevel>
-                <Provides>+1 Accuracy per Level</Provides>
-            </GameModifier>			
+                <Provides>+1 Accuracy per Level</Provides>    
+            </GameModifier>				
+			<GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>RainOfArrows</StrVal>
+                <Provides>.</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Thrust_Ability</StrVal>
+                <Provides>.</Provides>
+            </GameModifier>
             <AIData AIPersonality="AI_General">
                 <AIPriority>5</AIPriority>
             </AIData>
