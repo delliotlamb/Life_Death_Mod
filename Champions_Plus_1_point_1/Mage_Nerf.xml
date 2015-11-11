@@ -24,7 +24,7 @@
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
                 <StrVal>UnitStat_TacticalSpellManaCost_Multiplier</StrVal>
-                <Value>0.1</Value>
+                <Value>0.10</Value>
                 <Provides>+10% mana cost for tactical spells</Provides>
             </GameModifier>			
         </AbilityBonusOption>
@@ -137,7 +137,7 @@
 
 <SpellDef InternalName="MageNerf_Ability">
 	<DisplayName>Mage Spellboost</DisplayName>
-	<Description>Boosts spell damagee based on Mage's abilities</Description>
+	<Description>Boosts spell damage based on Mage's abilities</Description>
 	<Image>T_Focus_Painting.png</Image>
 	<IconFG>T_Focus_Icon.png</IconFG>
 	<CanStack>0</CanStack>

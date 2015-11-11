@@ -629,7 +629,7 @@
         <Range>1</Range>
 		<Prereq>
             <Type>UnitStat</Type>
-            <Attribute>UnitStat_IsAssassinateReady</Attribute>
+            <Attribute>UnitStat_Assassinate_Ready</Attribute>
             <Value>1</Value>
         </Prereq>
         <GameModifier>
@@ -1174,7 +1174,7 @@
         <DefaultValue>0</DefaultValue>
     </UnitStatType>
 	
-	<UnitStatType InternalName="UnitStat_AssassinateReady">
+	<UnitStatType InternalName="UnitStat_Assassinate_Ready">
         <DisplayName>Assassination Ready?</DisplayName>
         <Description>Unitstat required to be able to assassinate champions or sovereigns</Description>
         <Hidden>1</Hidden>

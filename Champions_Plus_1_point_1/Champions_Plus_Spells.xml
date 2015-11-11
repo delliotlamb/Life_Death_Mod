@@ -4727,7 +4727,6 @@
 	<SpellDef InternalName="Thrust_Ability">
         <DisplayName>Thrust</DisplayName>
         <Description>Launch an attack that ignores 30% of the target's armor.</Description>
-        <FormattedDescription>Launch a %d Attack that ignores 30% of the target's armor.</FormattedDescription>
         <IconFG>Ability_Warriors_Icon.png</IconFG>
         <StaminaCost>7</StaminaCost>
         <SpellBookSortCategory>Unit</SpellBookSortCategory>
@@ -4763,12 +4762,69 @@
         </AIData>
         <CasterAnimationType>31</CasterAnimationType>
         <HitSoundFX>Spell_TrueStrike_01</HitSoundFX>
+    </SpellDef>
+	
+	<SpellDef InternalName="FallingStar">
+        <DisplayName>Falling Star</DisplayName>
+        <Description>Does 18 fire damage (+3 per air and fire shard) to all armies within 1 tile of the impact point. BEWARE - this spell will leave scarred earth behind, wiping out resources and even cities.</Description>
+        <Image>S_FallingStar_Painting.png</Image>
+        <IconFG>S_FallingStar_Icon.png</IconFG>
+        <Cooldown>1</Cooldown>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+        <UnitAppSpecifier>ApplyToAll</UnitAppSpecifier>
+        <AlwaysPromptForCaster>0</AlwaysPromptForCaster>
+        <CasterMustBeSov>1</CasterMustBeSov>
+        <Radius>1</Radius>
+        <!--<SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>100</Amount>
+        </SpellResourceCost>-->
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Fire</AttackStat>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumAirShards] + [UnitOwner_GetNumFireShards]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc2" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[Calc] * 3]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc2] + 18]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>PlaceTerrain</Attribute>
+            <TerrainType>BurningLands</TerrainType>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>PlaceEnvironment</Attribute>
+            <TerrainType>BarrenEnvironment</TerrainType>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>100</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_FallingStar_01</HitSoundFX>
+        <ModifierDelay>1</ModifierDelay>
+        <WorldLightOverrideTime>4</WorldLightOverrideTime>
+        <WorldLightOverrideAmbiant>0,0,0</WorldLightOverrideAmbiant>
+        <WorldLightOverrideDiffuse>35,50,48</WorldLightOverrideDiffuse>
+        <WorldLightOverrideRim0>22,116,176</WorldLightOverrideRim0>
+        <WorldLightOverrideRim1>17,212,164</WorldLightOverrideRim1>
         <SpellDefEffect>
-            <EffectName>Y_TrueStrike_Particle</EffectName>
-            <LocalPosition>0,0,0</LocalPosition>
+            <EffectName>S_FallingStar_Particle</EffectName>
+            <LocalPosition>0, 0 ,0</LocalPosition>
             <EffectScale>1</EffectScale>
             <EffectDelay>0</EffectDelay>
             <SnapToTerrain>1</SnapToTerrain>
+            <PlayOnAllTargets>1</PlayOnAllTargets>
         </SpellDefEffect>
     </SpellDef>
 	
