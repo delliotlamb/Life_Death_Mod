@@ -54,6 +54,16 @@
             <Provides>-10 Food per Grain factionwide to support larger armies</Provides>
         </GameModifier>			
     </TechDef>
+	
+	<TechDef InternalName="Third_Book_Of_The_Magi">
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>UnlockSpell</Attribute>
+            <StrVal>FallingStar2</StrVal>
+            <Icon>S_FallingStar_Icon.png</Icon>
+            <Provides>Spell: Meteor Strike, more powerful variation of Falling Star</Provides>
+        </GameModifier>
+    </TechDef>
     
 </Techs>
 

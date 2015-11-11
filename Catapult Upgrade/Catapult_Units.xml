@@ -50,7 +50,7 @@
         <Equipment>CatapultAmmo</Equipment>
         <Prereq>
             <Type>Tech</Type>
-            <Attribute>Siege_Weapons</Attribute>
+            <Attribute>Higher_Education</Attribute>
         </Prereq>
         <ProductionRequirement>
             <Type>Resource</Type>

@@ -1690,6 +1690,176 @@
 
 <!-- Fire Spells-->
 
+<!-- overwrites pillar of flame and firestorm. Bot have terraforming resources consequences, and I upped the damage for firestorm - otherwise it;s hard to justify the 200 mana cost. -->
+
+<SpellDef InternalName="PillarOfFlame">
+        <DisplayName>Pillar of Flame</DisplayName>
+        <Description>Target enemy army takes 8 fire damage (+2 per fire shard). Can only be cast within your territory. You will gain 10 Ember Favor and lose 5 Verdant Favor.</Description>
+        <Image>S_PillarofFlame_Painting.png</Image>
+        <IconFG>S_PillarOfFlame_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <Cooldown>1</Cooldown>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>
+        <UnitAppSpecifier>ApplyToAll</UnitAppSpecifier>
+        <Radius>0</Radius>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Fire2</Attribute>
+        </Prereq>
+        <!--<SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>48</Amount>
+        </SpellResourceCost>-->
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Fire</AttackStat>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumFireShards] * 2]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc2">
+                <Expression><![CDATA[[Calc] + 8]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc3" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[Calc2] * [UnitStat_SpellDamage_Fire]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc3]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>PlaceEnvironment</Attribute>
+            <TerrainType>BarrenEnvironment</TerrainType>
+        </GameModifier>			
+            <GameModifier>
+                <ModType>Resource</ModType>
+                <Attribute>EmberEssence</Attribute>
+				<ApplyToCaster>1</ApplyToCaster>
+                <Value>10</Value>
+            </GameModifier>	
+            <GameModifier>
+                <ModType>Resource</ModType>
+                <Attribute>VerdantEssence</Attribute>
+				<ApplyToCaster>1</ApplyToCaster>
+                <Value>-5</Value>
+            </GameModifier>			
+        <AIData AIPersonality="AI_General">
+            <AIPriority>50</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_PillarOfFlame_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_PillarofFlame_Particle</EffectName>
+            <LocalPosition>0, 0 ,0</LocalPosition>
+            <EffectScale>0.75</EffectScale>
+            <EffectDelay>0.25</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+	
+	<SpellDef InternalName="Firestorm">
+        <DisplayName>Firestorm</DisplayName>
+        <Description>All units in target army take 18 fire damage (+2 per fire shard). Firestorm leaves a fire raging in the affected tile for 10 turns. You will gain 20 Ember Favor and lose 10 Verdant Favor.</Description>
+        <Image>S_Firestorm_Painting.png</Image>
+        <IconFG>S_Firestorm_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <Cooldown>1</Cooldown>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+        <TargetUnitsCanBeStationed>0</TargetUnitsCanBeStationed>
+        <UnitAppSpecifier>ApplyToAll</UnitAppSpecifier>
+        <Radius>0</Radius>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Fire5</Attribute>
+        </Prereq>
+        <!--<SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>200</Amount>
+        </SpellResourceCost>-->
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Fire</AttackStat>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumFireShards] * 2]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc2">
+                <Expression><![CDATA[[Calc] + 18]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc3" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[Calc2] * [UnitStat_SpellDamage_Fire]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc3]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>CreateWorldProp</Attribute>
+            <StrVal>TD_Groundfire</StrVal>
+            <Duration>10</Duration>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Fire</AttackStat>
+            <ApplyToTile>1</ApplyToTile>
+            <Duration>0</Duration>
+            <DurationOnTile>10</DurationOnTile>
+            <Calculate InternalName="Calc" ValueOwner="TargetUnit">
+                <Expression><![CDATA[[Unit_GetTroopCount] * 5]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>PlaceTerrain</Attribute>
+            <TerrainType>BurningLands</TerrainType>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>PlaceEnvironment</Attribute>
+            <TerrainType>BarrenEnvironment</TerrainType>
+        </GameModifier>		
+            <GameModifier>
+                <ModType>Resource</ModType>
+                <Attribute>EmberEssence</Attribute>
+				<ApplyToCaster>1</ApplyToCaster>
+                <Value>20</Value>
+            </GameModifier>	
+            <GameModifier>
+                <ModType>Resource</ModType>
+                <Attribute>VerdantEssence</Attribute>
+				<ApplyToCaster>1</ApplyToCaster>
+                <Value>-10</Value>
+            </GameModifier>			
+        <AIData AIPersonality="AI_General">
+            <AIPriority>80</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_RainofFire_03</HitSoundFX>
+        <ModifierDelay>1.1</ModifierDelay>
+        <SpellDefEffect>
+            <EffectName>S_Firestorm_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>.5</EffectScale>
+            <EffectDelay>1</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
 <SpellDef InternalName="InviteFire">
         <DisplayName>Invite Fire</DisplayName>
         <Description>Ignite a tile under an enemy for 3 turns. Any enemy unit passing through the tile takes 5 fire damage.</Description>
@@ -1891,141 +2061,11 @@
         <SpellCastProjectileSpeed>700</SpellCastProjectileSpeed>
     </SpellDef>
 	
-	<SpellDef InternalName="OiledArrows_Ability">
-        <DisplayName>Oiled Arrowheads</DisplayName>
-        <Description>A 3x3 square of tiles is hit by burning arrows, lighting it on fire. Units caught in the fire take 4 fire damage per member.</Description>
-        <IconFG>Ability_Embers.png</IconFG>
-        <StaminaCost>3</StaminaCost>		
-        <Cooldown>99</Cooldown>
-        <SpellBookSortCategory>Unit</SpellBookSortCategory>
-        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
-        <SpellType>Tactical</SpellType>
-        <SpellClass>Offensive</SpellClass>
-        <SpellSubClass>Damage</SpellSubClass>
-        <SpellTargetType>EnemyUnit</SpellTargetType>
-        <HideInHiergamenon>1</HideInHiergamenon>
-        <IgnoreInvalidTargetsInRadius>1</IgnoreInvalidTargetsInRadius>
-        <IsCastable>0</IsCastable>
-        <IsSpecialAbility>1</IsSpecialAbility>
-        <Radius>1</Radius>
-	    <Prereq>
-            <Type>UnitStat</Type>
-            <Attribute>UnitStat_IsBow</Attribute>
-            <Value>1</Value>
-        </Prereq>
-	    <Prereq>
-            <Type>UnitStat</Type>
-            <Attribute>UnitStat_HasOil</Attribute>
-            <Value>1</Value>
-        </Prereq>		
-        <SpellResourceCost>
-            <Resource>Gold</Resource>
-            <Amount>30</Amount>
-        </SpellResourceCost>		
-        <GameModifier>
-            <ModType>Map</ModType>
-            <Attribute>CreateWorldProp</Attribute>
-            <StrVal>TD_Groundfire</StrVal>
-            <Duration>-1</Duration>
-        </GameModifier>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>DefendableDamage</Attribute>
-            <AttackStat>UnitStat_Attack_Fire</AttackStat>
-            <ApplyToTile>1</ApplyToTile>
-            <Duration>0</Duration>
-            <DurationOnTile>-1</DurationOnTile>
-            <Calculate InternalName="Calc" ValueOwner="TargetUnit">
-                <Expression><![CDATA[[Unit_GetTroopCount] * 4]]></Expression>
-            </Calculate>
-            <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc]]]></Expression>
-            </Calculate>
-        </GameModifier>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_HasOil</StrVal>
-			<ApplyToCaster>1</ApplyToCaster>
-			<Duration>-1</Duration>
-            <Value>-1</Value>
-        </GameModifier>		
-        <AIData AIPersonality="AI_General">
-            <AIPriority>0</AIPriority>
-        </AIData>
-        <CasterAnimationType>31</CasterAnimationType>
-        <HitSoundFX>Spell_FlamingArrow_Hit_01</HitSoundFX>
-        <HitSoundFX>Spell_FlamingArrow_Hit_02</HitSoundFX>
-        <SpellCastSoundFX>Spell_BowAttack_FlamingCast_01</SpellCastSoundFX>
-        <SpellCastEffectName>A_FlamingLongbow_Particle</SpellCastEffectName>
-        <SpellCastEffectScale>0.3</SpellCastEffectScale>
-        <SpellCastProjectile>1</SpellCastProjectile>
-        <SpellCastProjectileSpeed>700</SpellCastProjectileSpeed>
-    </SpellDef>
 	
-	<SpellDef InternalName="OilMolotov_Ability">
-        <DisplayName>Toss Molotov</DisplayName>
-        <Description>A square of tiles is set on fire. Any units caught in the fire takes 5 fire damage per member.</Description>
-        <IconFG>Stat_AttackFire_Icon.png</IconFG>
-        <StaminaCost>3</StaminaCost>		
-        <Cooldown>99</Cooldown>
-        <SpellBookSortCategory>Unit</SpellBookSortCategory>
-        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
-        <SpellType>Tactical</SpellType>
-        <SpellClass>Offensive</SpellClass>
-        <SpellSubClass>Damage</SpellSubClass>
-        <SpellTargetType>EnemyUnit</SpellTargetType>
-        <HideInHiergamenon>1</HideInHiergamenon>
-        <IgnoreInvalidTargetsInRadius>1</IgnoreInvalidTargetsInRadius>
-        <IsCastable>0</IsCastable>
-        <IsSpecialAbility>1</IsSpecialAbility>
-        <Range>3</Range>
-	    <Prereq>
-            <Type>UnitStat</Type>
-            <Attribute>UnitStat_HasOil</Attribute>
-            <Value>1</Value>
-        </Prereq>		
-        <SpellResourceCost>
-            <Resource>Gold</Resource>
-            <Amount>30</Amount>
-        </SpellResourceCost>		
-        <GameModifier>
-            <ModType>Map</ModType>
-            <Attribute>CreateWorldProp</Attribute>
-            <StrVal>TD_Groundfire</StrVal>
-            <Duration>-1</Duration>
-        </GameModifier>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>DefendableDamage</Attribute>
-            <AttackStat>UnitStat_Attack_Fire</AttackStat>
-            <ApplyToTile>1</ApplyToTile>
-            <Duration>0</Duration>
-            <DurationOnTile>-1</DurationOnTile>
-            <Calculate InternalName="Calc" ValueOwner="TargetUnit">
-                <Expression><![CDATA[[Unit_GetTroopCount] * 5]]></Expression>
-            </Calculate>
-            <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc]]]></Expression>
-            </Calculate>
-        </GameModifier>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_HasOil</StrVal>
-			<ApplyToCaster>1</ApplyToCaster>
-			<Duration>-1</Duration>
-            <Value>-1</Value>
-        </GameModifier>		
-        <AIData AIPersonality="AI_General">
-            <AIPriority>0</AIPriority>
-        </AIData>
-        <HitSoundFX>IceElemental_Death</HitSoundFX>
-    </SpellDef>
 
 <SpellDef InternalName="ForestFire">
-        <DisplayName>Wild Fire</DisplayName>
-        <Description>Light Forest or Plains ablaze to attack an enemy unit in friendly territory forest, and any enemy unit within 1 tile. Units caught by the fire take 12 fire damage (+3 per fire shard) and the environment is left barren. You will lose 10 Verdant Favor as well, while gaining 5 Ember Favor and 1 Famine Favor.</Description>
+        <DisplayName>Forest Fire</DisplayName>
+        <Description>Light Forest ablaze to attack an enemy unit in friendly territory forest, and any enemy unit within 1 tile. Units caught by the fire take 12 fire damage (+3 per fire shard) and the environment is left barren. You will lose 10 Verdant Favor as well, while gaining 5 Ember Favor and 1 Famine Favor.</Description>
         <Image>Hungering_Fire_Painting.png</Image>
         <IconFG>Hungering_Fire.png</IconFG>
 		<AutoUnlock>1</AutoUnlock>
@@ -2095,9 +2135,6 @@
                 <Value>5</Value>
             </GameModifier>			
         <ValidTerrainType>Forest</ValidTerrainType>
-        <ValidTerrainType>Land</ValidTerrainType>
-        <ValidTerrainType>Rugged_Land</ValidTerrainType>
-        <ValidTerrainType>Fertile_Land</ValidTerrainType>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
         </AIData>
@@ -2242,7 +2279,7 @@
 
 <SpellDef InternalName="Thaw">
         <DisplayName>Thaw</DisplayName>
-        <Description>Turn Arctic into Plains, gaining 1 Verdant Favor.</Description>
+        <Description>Turn Arctic into Plains, gaining 1 Verdant Favor and losing 1 Wave Favor..</Description>
         <Image>Thaw_Painting.png</Image>
         <IconFG>thaw.png</IconFG>
 		<AutoUnlock>1</AutoUnlock>
@@ -2269,12 +2306,12 @@
             <Attribute>PlaceTerrain</Attribute>
             <TerrainType>Land</TerrainType>
         </GameModifier>
-            <!--<GameModifier>
+            <GameModifier>
                 <ModType>Resource</ModType>
-                <Attribute>ArcticEssence</Attribute>
+                <Attribute>WaveEssence</Attribute>
 				<ApplyToCaster>1</ApplyToCaster>
-                <Value>-.5</Value>
-            </GameModifier>-->
+                <Value>-1</Value>
+            </GameModifier>
             <GameModifier>
                 <ModType>Resource</ModType>
                 <Attribute>VerdantEssence</Attribute>
@@ -2350,9 +2387,7 @@
 
 <!-- 'Ultimate' Fire spell -->
 
-<!-- 'Ultimate' Fire spell -->
-
-<SpellDef InternalName="SummonFlameArmy">
+<SpellDef InternalName="AnimateBurningLands">
         <DisplayName>Animate Burning Lands</DisplayName>
         <Description>Summons a level 1 (+1 per fire shard) Greater Fire Elemental on Burning Lands terrain.</Description>
         <Image>S_SummonFireElemental_Painting.png</Image>
@@ -2490,7 +2525,7 @@
  
  <SpellDef InternalName="AwakenEmbers">
         <DisplayName>Awaken Embers</DisplayName>
-        <Description>Attack an enemy army on Burning Lands with an all-consuming blaze for 15 Fire damage (+3 per fire shard).</Description>
+        <Description>Attack an enemy army on Burning Lands with an all-consuming blaze for 12 Fire damage (+3 per fire shard).</Description>
         <Image>Great_Blaze_Painting.png</Image>
         <IconFG>Hungering_Fire.png</IconFG>
 		<AutoUnlock>1</AutoUnlock>		
@@ -2521,7 +2556,7 @@
                 <Expression><![CDATA[[Calc] * 3]]></Expression>
             </Calculate>
             <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc2] + 15]]></Expression>
+                <Expression><![CDATA[[Calc2] + 12]]></Expression>
             </Calculate>
         </GameModifier>
         <GameModifier>
@@ -5719,72 +5754,137 @@
 	
 	-->
 	
-		<SpellDef InternalName="FallingStar2">
-        <DisplayName>Meteor Strike</DisplayName>
-        <Description>Does 30 fire damage (+3 per fire shard) to all armies within 1 tile of the impact point. BEWARE - this spell will leave scarred earth behind, wiping out resources or even cities.</Description>
-        <Image>S_FallingStar_Painting.png</Image>
-        <IconFG>S_FallingStar_Icon.png</IconFG>
-        <Cooldown>1</Cooldown>
+	<SpellDef InternalName="OiledArrows_Ability">
+        <DisplayName>Oiled Arrowheads</DisplayName>
+        <Description>A 3x3 square of tiles is hit by burning arrows, lighting it on fire. Units caught in the fire take 4 fire damage per member.</Description>
+        <IconFG>Ability_Embers.png</IconFG>
+        <StaminaCost>3</StaminaCost>		
+        <Cooldown>99</Cooldown>
         <SpellBookSortCategory>Unit</SpellBookSortCategory>
         <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
-        <SpellType>Strategic</SpellType>
+        <SpellType>Tactical</SpellType>
         <SpellClass>Offensive</SpellClass>
         <SpellSubClass>Damage</SpellSubClass>
         <SpellTargetType>EnemyUnit</SpellTargetType>
-        <UnitAppSpecifier>ApplyToAll</UnitAppSpecifier>
-        <AlwaysPromptForCaster>0</AlwaysPromptForCaster>
-        <CasterMustBeSov>1</CasterMustBeSov>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <IgnoreInvalidTargetsInRadius>1</IgnoreInvalidTargetsInRadius>
+        <IsCastable>0</IsCastable>
+        <IsSpecialAbility>1</IsSpecialAbility>
         <Radius>1</Radius>
-		 <Prereq>
-            <Type>AbilityBonusOption</Type>
-            <Attribute>Fire5</Attribute>
+	    <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsBow</Attribute>
+            <Value>1</Value>
         </Prereq>
+	    <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_HasOil</Attribute>
+            <Value>1</Value>
+        </Prereq>		
         <SpellResourceCost>
-            <Resource>Mana</Resource>
-            <Amount>350</Amount>
-        </SpellResourceCost>
+            <Resource>Gold</Resource>
+            <Amount>30</Amount>
+        </SpellResourceCost>		
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>CreateWorldProp</Attribute>
+            <StrVal>TD_Groundfire</StrVal>
+            <Duration>-1</Duration>
+        </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>DefendableDamage</Attribute>
             <AttackStat>UnitStat_Attack_Fire</AttackStat>
-            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
-                <Expression><![CDATA[[UnitOwner_GetNumFireShards]]]></Expression>
-            </Calculate>
-            <Calculate InternalName="Calc2" ValueOwner="CastingUnit">
-                <Expression><![CDATA[[Calc] * 3]]></Expression>
+            <ApplyToTile>1</ApplyToTile>
+            <Duration>0</Duration>
+            <DurationOnTile>-1</DurationOnTile>
+            <Calculate InternalName="Calc" ValueOwner="TargetUnit">
+                <Expression><![CDATA[[Unit_GetTroopCount] * 4]]></Expression>
             </Calculate>
             <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc2] + 30]]></Expression>
+                <Expression><![CDATA[[Calc]]]></Expression>
             </Calculate>
         </GameModifier>
         <GameModifier>
-            <ModType>Map</ModType>
-            <Attribute>PlaceTerrain</Attribute>
-            <TerrainType>BurningLands</TerrainType>
-        </GameModifier>
-        <GameModifier>
-            <ModType>Map</ModType>
-            <Attribute>PlaceEnvironment</Attribute>
-            <TerrainType>BarrenEnvironment</TerrainType>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_HasOil</StrVal>
+			<ApplyToCaster>1</ApplyToCaster>
+			<Duration>-1</Duration>
+            <Value>-1</Value>
         </GameModifier>		
         <AIData AIPersonality="AI_General">
-            <AIPriority>100</AIPriority>
+            <AIPriority>0</AIPriority>
         </AIData>
-        <HitSoundFX>Spell_FallingStar_01</HitSoundFX>
-        <ModifierDelay>1</ModifierDelay>
-        <WorldLightOverrideTime>4</WorldLightOverrideTime>
-        <WorldLightOverrideAmbiant>0,0,0</WorldLightOverrideAmbiant>
-        <WorldLightOverrideDiffuse>35,50,48</WorldLightOverrideDiffuse>
-        <WorldLightOverrideRim0>22,116,176</WorldLightOverrideRim0>
-        <WorldLightOverrideRim1>17,212,164</WorldLightOverrideRim1>
-        <SpellDefEffect>
-            <EffectName>S_FallingStar_Particle</EffectName>
-            <LocalPosition>0, 0 ,0</LocalPosition>
-            <EffectScale>1</EffectScale>
-            <EffectDelay>0</EffectDelay>
-            <SnapToTerrain>1</SnapToTerrain>
-            <PlayOnAllTargets>1</PlayOnAllTargets>
-        </SpellDefEffect>
+        <CasterAnimationType>31</CasterAnimationType>
+        <HitSoundFX>Spell_FlamingArrow_Hit_01</HitSoundFX>
+        <HitSoundFX>Spell_FlamingArrow_Hit_02</HitSoundFX>
+        <SpellCastSoundFX>Spell_BowAttack_FlamingCast_01</SpellCastSoundFX>
+        <SpellCastEffectName>A_FlamingLongbow_Particle</SpellCastEffectName>
+        <SpellCastEffectScale>0.3</SpellCastEffectScale>
+        <SpellCastProjectile>1</SpellCastProjectile>
+        <SpellCastProjectileSpeed>700</SpellCastProjectileSpeed>
     </SpellDef>
+	
+	<SpellDef InternalName="OilMolotov_Ability">
+        <DisplayName>Toss Molotov</DisplayName>
+        <Description>A square of tiles is set on fire. Any units caught in the fire takes 5 fire damage per member.</Description>
+        <IconFG>Stat_AttackFire_Icon.png</IconFG>
+        <StaminaCost>3</StaminaCost>		
+        <Cooldown>99</Cooldown>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <IgnoreInvalidTargetsInRadius>1</IgnoreInvalidTargetsInRadius>
+        <IsCastable>0</IsCastable>
+        <IsSpecialAbility>1</IsSpecialAbility>
+        <Range>3</Range>
+	    <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_HasOil</Attribute>
+            <Value>1</Value>
+        </Prereq>		
+        <SpellResourceCost>
+            <Resource>Gold</Resource>
+            <Amount>30</Amount>
+        </SpellResourceCost>		
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>CreateWorldProp</Attribute>
+            <StrVal>TD_Groundfire</StrVal>
+            <Duration>-1</Duration>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Fire</AttackStat>
+            <ApplyToTile>1</ApplyToTile>
+            <Duration>0</Duration>
+            <DurationOnTile>-1</DurationOnTile>
+            <Calculate InternalName="Calc" ValueOwner="TargetUnit">
+                <Expression><![CDATA[[Unit_GetTroopCount] * 5]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_HasOil</StrVal>
+			<ApplyToCaster>1</ApplyToCaster>
+			<Duration>-1</Duration>
+            <Value>-1</Value>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+        <HitSoundFX>IceElemental_Death</HitSoundFX>
+    </SpellDef>
+	
 
 </Spells>

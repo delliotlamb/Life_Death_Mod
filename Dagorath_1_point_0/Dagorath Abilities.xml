@@ -6,7 +6,7 @@
             <DisplayName>Void Sight</DisplayName>
             <Description>Allows you to cast Void Call, which opens gates in spacetime to recruit otherworldly demons, and its greater variation.</Description>
             <!--<Icon>Ability_Daze_Icon.png</Icon>-->
-			<Icon>T_Beguile_Icon</Icon>
+			<Icon>T_Beguile_Icon.png</Icon>
             <GameModifier>
                 <ModType>Player</ModType>
                 <Attribute>UnlockSpell</Attribute>

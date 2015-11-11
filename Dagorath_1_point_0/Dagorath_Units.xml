@@ -677,6 +677,7 @@
         <AdditionalTrainingTurns>0</AdditionalTrainingTurns>
         <IgnoreItemTrainingCosts>1</IgnoreItemTrainingCosts>
         <IsSovereign>0</IsSovereign>
+        <IsUniqueButBuildable>1</IsUniqueButBuildable>		
         <AllowGrouping>0</AllowGrouping>
         <HasWages>0</HasWages>
 		<LevelMilestone InternalName="L1">
@@ -734,12 +735,12 @@
         <!--<DividesBattleExp>0</DividesBattleExp>-->
         <CanBeDesigned>1</CanBeDesigned>
         <GetPerksOnLevelUp>1</GetPerksOnLevelUp>
-        <IsNPC>1</IsNPC>
+        <!--<IsNPC>1</IsNPC>-->
         <!--<IsChampion>1</IsChampion>-->
         <AdditionalTrainingTurns>0</AdditionalTrainingTurns>
         <HasWages>0</HasWages>
         <IsSovereign>0</IsSovereign>
-        <!--<IsUniqueButBuildable>1</IsUniqueButBuildable>-->
+        <IsUniqueButBuildable>1</IsUniqueButBuildable>
 		<AllowGrouping>0</AllowGrouping>
 		<LevelMilestone InternalName="L1">
             <Level>1</Level>
@@ -1067,6 +1068,10 @@
         <AdditionalTrainingTurns>0</AdditionalTrainingTurns>
         <HasWages>0</HasWages>
         <IsSovereign>0</IsSovereign>
+        <Prereq>
+            <Type>Race</Type>
+            <Attribute>Race_Type_RedQuendar</Attribute>
+        </Prereq>		
         <LevelMilestone InternalName="L1">
             <Level>1</Level>
 			<UnitStat_IsMale>1</UnitStat_IsMale>
@@ -1077,12 +1082,11 @@
         <SelectedAbilityBonusOption>Slave</SelectedAbilityBonusOption>
         <Equipment>Club</Equipment>
         <Equipment>K_Male_Head_03</Equipment>
-        <Backstory>Dagorath has mastered a strange spell that breaks the will, and tinges the skin red. These slaves have never known anything but Quendar captivity, and do not have the will to fight Dagorath;s influence.</Backstory>
+        <Backstory>Dagorath has mastered a strange spell that breaks the will, and tinges the skin red. These slaves have never known anything but Quendar captivity, and have no will to fight Dagorath's influence.</Backstory>
         <AnimationPack>OldManAnimationPack</AnimationPack>
         <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
         <ClothMapScale>1.6</ClothMapScale>
         <ClothPoseIndex>1</ClothPoseIndex>
-        <!--<Color_Skin>190,145,110,255</Color_Skin>-->
         <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
         <EyeTexture>gfx\eyes\blinks\eyeblink_m2_ltblue.png</EyeTexture>
         <InfoCardBackground>BG_Lava</InfoCardBackground>
