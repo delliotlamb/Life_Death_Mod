@@ -4766,7 +4766,7 @@
 	
 	<SpellDef InternalName="FallingStar">
         <DisplayName>Falling Star</DisplayName>
-        <Description>Does 18 fire damage (+3 per air and fire shard) to all armies within 1 tile of the impact point. BEWARE - this spell will leave scarred earth behind, wiping out resources and even cities.</Description>
+        <Description>This spell cannot be cast.</Description>
         <Image>S_FallingStar_Painting.png</Image>
         <IconFG>S_FallingStar_Icon.png</IconFG>
         <Cooldown>1</Cooldown>
@@ -4780,6 +4780,11 @@
         <AlwaysPromptForCaster>0</AlwaysPromptForCaster>
         <CasterMustBeSov>1</CasterMustBeSov>
         <Radius>1</Radius>
+		<Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_NeverGonnaHappen</Attribute>
+            <Value>1</Value>
+        </Prereq>
         <!--<SpellResourceCost>
             <Resource>Mana</Resource>
             <Amount>100</Amount>
@@ -4827,5 +4832,6 @@
             <PlayOnAllTargets>1</PlayOnAllTargets>
         </SpellDefEffect>
     </SpellDef>
+	
 	
 </Spells>
