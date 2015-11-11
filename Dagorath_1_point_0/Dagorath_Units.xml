@@ -110,77 +110,9 @@
 	</UnitType>
 
 
-<UnitType InternalName="Unit_Pioneer_RedQuendar">
-        <DisplayName>Pioneer</DisplayName>
-        <Description>Pioneers are equipped with the necessary supplies to start new settlements and create outposts.</Description>
-        <Class>Pioneer</Class>
-        <RaceType>Race_Type_RedQuendar</RaceType>
-        <Gender>Female</Gender>
-        <AdditionalTrainingTurns>48</AdditionalTrainingTurns>
-        <HasWages>0</HasWages>
-        <IsSovereign>0</IsSovereign>
-        <IsStartingUnitType>1</IsStartingUnitType>
-        <IsUniqueButBuildable>1</IsUniqueButBuildable>
-        <GroupingType>UnitGroupingType_Party</GroupingType>
-        <TrainUnitIcon>TrainUnitIcon_Pioneer.png</TrainUnitIcon>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>UnlockAction</Attribute>
-            <StrVal>BuildTown</StrVal>
-        </GameModifier>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>UnlockAction</Attribute>
-            <StrVal>BuildImprovement</StrVal>
-            <StrVal2>Outpost</StrVal2>
-        </GameModifier>
-        <LevelMilestone InternalName="L1">
-            <Level>1</Level>
-	<UnitStat_IsFemale>1</UnitStat_IsFemale>
-			<UnitStat_BG_IsEmpire>1</UnitStat_BG_IsEmpire>
-			<UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
-			<UnitStat_BG_IsRace_RedQuendar>1</UnitStat_BG_IsRace_RedQuendar>
-        </LevelMilestone>
-        <SelectedAbilityBonusOption>Blood_RedQuendar</SelectedAbilityBonusOption>
-        <SelectedAbilityBonusOption>Weak</SelectedAbilityBonusOption>
-        <Equipment>F_Female_Quendar_Head_01</Equipment>
-        <Equipment>F_Female_Quendar_Horns_01</Equipment>
-        <Equipment>Longsleeve_Empire_Shirt_Female_ID1</Equipment>
-        <Equipment>Wraith_Doublet_ID1</Equipment>
-        <Equipment>Empire_Overskirt_ID2</Equipment>
-        <Prereq>
-            <Type>Race</Type>
-            <Attribute>Race_Type_RedQuendar</Attribute>
-        </Prereq>
-        <ProductionRequirement>
-            <Type>Resource</Type>
-            <Attribute>Population</Attribute>
-            <Value>10</Value>
-        </ProductionRequirement>
-        <Backstory>These citizens rush to found new cities and outposts quickly - by founding the initial territory of Dagorath's empire, their families will be exempt from sacrifice.</Backstory>
-        <AnimationPack>FemaleSovereignAnimationPack</AnimationPack>
-        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
-        <ClothMapScale>1.6</ClothMapScale>
-        <ClothPoseIndex>6</ClothPoseIndex>
-        <Color_Hair>210,210,210,255</Color_Hair>
-        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
-        <EyeTexture>gfx\eyes\blinks\Eyeblink_F6_red.png</EyeTexture>
-        <InfoCardBackground>BG_Lava</InfoCardBackground>
-        <InfoCardBackgroundFlipped>0</InfoCardBackgroundFlipped>
-        <ModelPath>F_Female_Magnar_Body_Mesh_01.hkb</ModelPath>
-        <ModelScale>1</ModelScale>
-        <MovementType>land</MovementType>
-        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
-        <OnHitParticleName>Bloody_OnHit</OnHitParticleName>
-        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
-        <SoundPack>SoundPack_Generic_Female</SoundPack>
-        <TacticalModelScale>1.5</TacticalModelScale>
-        <Texture_Eyes>gfx\eyes\blinks\Eyeblink_F6_red.png</Texture_Eyes>
-        <Texture_Skin>Magnar_Skin_F_01.dds</Texture_Skin>
-        <UnitModelType>QuendarFemale</UnitModelType>
-    </UnitType>
+	
 
-<UnitType InternalName="Generic_Sovereign_RedQuendar_Female">
+	<UnitType InternalName="Generic_Sovereign_RedQuendar_Female">
         <DisplayName>Red Quendar Sovereign</DisplayName>
         <Class>Sovereign</Class>
         <CreatureType>Champion</CreatureType>
@@ -216,7 +148,7 @@
             <UnitStat_CombatSpeed>22</UnitStat_CombatSpeed>
             <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
             <UnitStat_HitPoints>20</UnitStat_HitPoints>
-	<UnitStat_IsFemale>1</UnitStat_IsFemale>
+			<UnitStat_IsFemale>1</UnitStat_IsFemale>
 			<UnitStat_BG_IsChampion>1</UnitStat_BG_IsChampion>
 			<UnitStat_BG_IsEmpire>1</UnitStat_BG_IsEmpire>
 			<UnitStat_BG_IsSovereign>1</UnitStat_BG_IsSovereign>
@@ -327,403 +259,7 @@
         <UnitModelType>QuendarMale</UnitModelType>
     </UnitType>
     
-<!--<UnitType InternalName="Generic_RedQuendar_Female">
-        <DisplayName>Red Quendar Peon</DisplayName>
-        <Description>A peasant with a stick.</Description>
-        <RaceType>Race_Type_RedQuendar</RaceType>
-        <CanBeDesigned>0</CanBeDesigned>
-        <Gender>Female</Gender>
-        <AdditionalTrainingTurns>20</AdditionalTrainingTurns>
-        <IsSovereign>0</IsSovereign>
-        <LevelMilestone InternalName="L1">
-            <Level>1</Level>
-	<UnitStat_IsFemale>1</UnitStat_IsFemale>
-			<UnitStat_BG_IsEmpire>1</UnitStat_BG_IsEmpire>
-			<UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
-			<UnitStat_BG_IsRace_RedQuendar>1</UnitStat_BG_IsRace_RedQuendar>
-        </LevelMilestone>
-        <SelectedAbilityBonusOption>Blood_RedQuendar</SelectedAbilityBonusOption>
-        <Equipment>Club</Equipment>
-        <Equipment>F_Female_Quendar_Head_01</Equipment>
-        <Equipment>F_Female_Quendar_Horns_01</Equipment>
-        <Backstory>'Discipline is first, second, and third when building an effective fighting force. Little else matters.' Indeed, the Red Quendar know these words well - for by losing themselves in discipline, they need not face the madness of the quest of their leader, who shall make Elemental into a Shadow World beyond recognition.</Backstory>
-        <AnimationPack>SoldierAnimationPack</AnimationPack>
-        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
-        <ClothMapScale>1.6</ClothMapScale>
-        <ClothPoseIndex>1</ClothPoseIndex>
-        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
-        <EyeTexture>gfx\eyes\blinks\eyeblink_f3_grn.png</EyeTexture>
-        <InfoCardBackground>BG_Lava</InfoCardBackground>
-        <ModelPath>F_Female_Magnar_Body_Mesh_01.hkb</ModelPath>
-        <ModelScale>1</ModelScale>
-        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
-        <OnHitParticleName>Bloody_OnHit</OnHitParticleName>
-        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
-        <SoundPack>SoundPack_Generic_Female</SoundPack>
-        <TacticalModelScale>1.5</TacticalModelScale>
-        <Texture_Skin>Magnar_Skin_F_01.dds</Texture_Skin>
-        <UnitModelType>QuendarFemale</UnitModelType>
-    </UnitType>
 
-    <UnitType InternalName="Generic_RedQuendar_Male">
-        <DisplayName>Red Quendar Peon</DisplayName>
-        <Description>A peasant with a stick.</Description>
-        <RaceType>Race_Type_RedQuendar</RaceType>
-        <CanBeDesigned>0</CanBeDesigned>
-        <Gender>Male</Gender>
-        <AdditionalTrainingTurns>20</AdditionalTrainingTurns>
-        <IsSovereign>0</IsSovereign>
-        <LevelMilestone InternalName="L1">
-            <Level>1</Level>
-	<UnitStat_IsMale>1</UnitStat_IsMale>
-			<UnitStat_BG_IsEmpire>1</UnitStat_BG_IsEmpire>
-			<UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
-			<UnitStat_BG_IsRace_RedQuendar>1</UnitStat_BG_IsRace_RedQuendar>
-        </LevelMilestone>
-        <SelectedAbilityBonusOption>Blood_RedQuendar</SelectedAbilityBonusOption>
-        <Equipment>Club</Equipment>
-        <Equipment>F_Male_Quendar_Head_01</Equipment>
-        <Backstory>'Discipline is first, second, and third when building an effective fighting force. Little else matters.' Indeed, the Red Quendar know these words well - for by losing themselves in discipline, they need not face the madness of the quest of their leader, who shall make Elemental into a Shadow World beyond recognition.</Backstory>
-        <AnimationPack>SoldierAnimationPack</AnimationPack>
-        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
-        <ClothMapScale>1.6</ClothMapScale>
-        <ClothPoseIndex>1</ClothPoseIndex>
-        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
-        <EyeTexture>gfx\eyes\blinks\eyeblink_f3_grn.png</EyeTexture>
-        <InfoCardBackground>BG_Lava</InfoCardBackground>
-        <ModelPath>F_Male_Magnar_Body_Mesh_01.hkb</ModelPath>
-        <ModelScale>1</ModelScale>
-        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
-        <OnHitParticleName>Bloody_OnHit</OnHitParticleName>
-        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
-        <SoundPack>SoundPack_Generic_Male</SoundPack>
-        <TacticalModelScale>1.5</TacticalModelScale>
-        <Texture_Skin>Magnar_Skin_M_01.dds</Texture_Skin>
-        <UnitModelType>QuendarMale</UnitModelType>
-    </UnitType>-->
-
-<!-- <UnitType InternalName="Unit_Scout_RedQuendar">
-        <DisplayName>Scout</DisplayName>
-        <Description>Use scouts to explore the world.</Description>
-        <Class>Scout</Class>
-        <RaceType>Race_Type_RedQuendar</RaceType>
-        <CanBeDesigned>1</CanBeDesigned>
-        <Gender>Female</Gender>
-        <AdditionalTrainingTurns>20</AdditionalTrainingTurns>
-        <IsSovereign>0</IsSovereign>
-        <IsStartingUnitType>1</IsStartingUnitType>
-        <LevelMilestone InternalName="L1">
-            <Level>1</Level>
-	<UnitStat_IsMale>1</UnitStat_IsMale>
-			<UnitStat_BG_IsEmpire>1</UnitStat_BG_IsEmpire>
-			<UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
-			<UnitStat_BG_IsRace_RedQuendar>1</UnitStat_BG_IsRace_RedQuendar>
-        </LevelMilestone>
-        <SelectedAbilityBonusOption>Blood_RedQuendar</SelectedAbilityBonusOption>
-        <SelectedAbilityBonusOption>Scout</SelectedAbilityBonusOption>
-        <SelectedAbilityBonusOption>Weak</SelectedAbilityBonusOption>
-        <Equipment>Staff</Equipment>
-        <Equipment>F_Female_Quendar_Head_01</Equipment>
-        <Equipment>F_Female_Quendar_Horns_01</Equipment>
-        <Equipment>Bards_Cloak_ID2</Equipment>
-        <Equipment>Empire_Doublet_ID1</Equipment>
-        <Equipment>Shortsleeve_Empire_Shirt_Female_ID2</Equipment>
-        <Equipment>Female_Noblemans_Pants</Equipment>
-        <Equipment>TightBoots_Light</Equipment>
-        <Equipment>SionVambraces</Equipment>
-        <EquipmentUpgradeDef>
-            <EquipmentSlot>Weapon</EquipmentSlot>
-            <WeaponUpgradeType>Spear</WeaponUpgradeType>
-            <EquipmentSlot>Defense</EquipmentSlot>
-            <SelectionCriteria>MaximizeSum</SelectionCriteria>
-            <ComparisonAttribute>UnitStat_Attack_Pierce</ComparisonAttribute>
-            <ComparisonAttribute>UnitStat_Attack_Cold</ComparisonAttribute>
-            <ComparisonAttribute>UnitStat_Attack_Fire</ComparisonAttribute>
-            <ComparisonAttribute>UnitStat_Attack_Lightning</ComparisonAttribute>
-            <ComparisonAttribute>UnitStat_Attack_Poison</ComparisonAttribute>
-            <ForUpgradeActionOnly>1</ForUpgradeActionOnly>
-        </EquipmentUpgradeDef>
-        <EquipmentUpgradeDef>
-            <EquipmentSlot>Torso</EquipmentSlot>
-            <EquipmentSlot>Surcoat</EquipmentSlot>
-            <SelectionCriteria>MaximizeSum</SelectionCriteria>
-            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
-            <ForUpgradeActionOnly>1</ForUpgradeActionOnly>
-        </EquipmentUpgradeDef>
-        <EquipmentUpgradeDef>
-            <EquipmentSlot>LowerBody</EquipmentSlot>
-            <SelectionCriteria>MaximizeSum</SelectionCriteria>
-            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
-            <ForUpgradeActionOnly>1</ForUpgradeActionOnly>
-        </EquipmentUpgradeDef>
-        <EquipmentUpgradeDef>
-            <EquipmentSlot>Boots</EquipmentSlot>
-            <SelectionCriteria>MaximizeSum</SelectionCriteria>
-            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
-            <ForUpgradeActionOnly>1</ForUpgradeActionOnly>
-        </EquipmentUpgradeDef>
-        <EquipmentUpgradeDef>
-            <EquipmentSlot>Head</EquipmentSlot>
-            <SelectionCriteria>MaximizeSum</SelectionCriteria>
-            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
-            <ForUpgradeActionOnly>1</ForUpgradeActionOnly>
-        </EquipmentUpgradeDef>
-        <EquipmentUpgradeDef>
-            <EquipmentSlot>Forearms</EquipmentSlot>
-            <SelectionCriteria>MaximizeSum</SelectionCriteria>
-            <ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
-            <ForUpgradeActionOnly>1</ForUpgradeActionOnly>
-        </EquipmentUpgradeDef>
-        <Prereq>
-            <Type>Race</Type>
-            <Attribute>Race_Type_RedQuendar</Attribute>
-        </Prereq>
-        <Backstory>'Discipline is first, second, and third when building an effective fighting force. Little else matters.' Indeed, the Red Quendar know these words well - for by losing themselves in discipline, they need not face the madness of the quest of their leader, who shall make Elemental into a Shadow World beyond recognition.</Backstory>
-        <AnimationPack>SoldierAnimationPack</AnimationPack>
-        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
-        <ClothMapScale>1.6</ClothMapScale>
-        <ClothPoseIndex>9</ClothPoseIndex>
-        <Color_Hair>203,203,203,255</Color_Hair>
-        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
-        <EyeTexture>gfx\eyes\blinks\Eyeblink_F5_Red.png</EyeTexture>
-        <InfoCardBackground>BG_Lava</InfoCardBackground>
-        <ModelPath>F_Female_Magnar_Body_Mesh_01.hkb</ModelPath>
-        <ModelScale>1</ModelScale>
-        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
-        <OnHitParticleName>Bloody_OnHit</OnHitParticleName>
-        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
-        <SoundPack>SoundPack_Generic_Female</SoundPack>
-        <TacticalModelScale>1.5</TacticalModelScale>
-        <Texture_Eyes>gfx\eyes\blinks\Eyeblink_F5_Red.png</Texture_Eyes>
-        <Texture_Skin>Magnar_Skin_F_01.dds</Texture_Skin>
-        <UnitModelType>QuendarFemale</UnitModelType>
-    </UnitType>-->
-
-
-<UnitType InternalName="Unit_CityDefender_RedQuendar">
-        <DisplayName>City Militia</DisplayName>
-        <Class>CityDefender</Class>
-        <RaceType>Race_Type_RedQuendar</RaceType>
-        <CanBeDesigned>0</CanBeDesigned>
-        <Gender>Male</Gender>
-        <HasWages>0</HasWages>
-        <IsSovereign>0</IsSovereign>
-        <LevelMilestone InternalName="L1">
-            <Level>1</Level>
-	<UnitStat_IsMale>1</UnitStat_IsMale>
-			<UnitStat_BG_IsEmpire>1</UnitStat_BG_IsEmpire>
-			<UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
-			<UnitStat_BG_IsMilitia>1</UnitStat_BG_IsMilitia>
-			<UnitStat_BG_IsRace_RedQuendar>1</UnitStat_BG_IsRace_RedQuendar>
-        </LevelMilestone>
-        <SelectedAbilityBonusOption>Blood_RedQuendar</SelectedAbilityBonusOption>
-        <Equipment>F_Male_Quendar_Head_01</Equipment>
-        <Equipment>F_Male_Quendar_Horns_03</Equipment>
-        <Equipment>Fallen_Shirt_ID1</Equipment>
-        <Equipment>Fallen_Leather_Pants_ID1</Equipment>
-        <Equipment>Large_Sion_Boots_ID2</Equipment>
-        <Equipment>F_Warn_Surcoat_Solid_ID2</Equipment>
-        <EquipmentUpgradeDef>
-            <EquipmentSlot>Weapon</EquipmentSlot>
-            <WeaponUpgradeType>Blunt</WeaponUpgradeType>
-            <SelectionCriteria>MaximizeSum</SelectionCriteria>
-            <ComparisonAttribute>UnitStat_Attack_Pierce</ComparisonAttribute>
-            <ComparisonAttribute>UnitStat_Attack_Cold</ComparisonAttribute>
-            <ComparisonAttribute>UnitStat_Attack_Fire</ComparisonAttribute>
-            <ComparisonAttribute>UnitStat_Attack_Lightning</ComparisonAttribute>
-            <ComparisonAttribute>UnitStat_Attack_Poison</ComparisonAttribute>
-        </EquipmentUpgradeDef>
-        <Prereq>
-            <Type>Race</Type>
-            <Attribute>Race_Type_RedQuendar</Attribute>
-        </Prereq>
-        <Backstory>'Discipline is first, second, and third when building an effective fighting force. Little else matters.' Indeed, the Red Quendar know these words well - for by losing themselves in discipline, they need not face the madness of the quest of their leader, who shall make Elemental into a Shadow World beyond recognition.</Backstory>
-        <AnimationPack>MaleSovereignAnimationPack</AnimationPack>
-        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
-        <ClothMapScale>1.6</ClothMapScale>
-        <ClothPoseIndex>1</ClothPoseIndex>
-        <Color_Hair>213,213,213,255</Color_Hair>
-        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
-        <EyeTexture>gfx\eyes\blinks\eyeblink_m7_Red.png</EyeTexture>
-        <InfoCardBackground>BG_Lava</InfoCardBackground>
-        <ModelPath>F_Male_Magnar_Body_Mesh_01.hkb</ModelPath>
-        <ModelScale>1</ModelScale>
-        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
-        <OnHitParticleName>Bloody_OnHit</OnHitParticleName>
-        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
-        <SoundPack>SoundPack_Generic_Male</SoundPack>
-        <TacticalModelScale>1.5</TacticalModelScale>
-        <Texture_Eyes>gfx\eyes\blinks\eyeblink_m7_Red.png</Texture_Eyes>
-        <Texture_Skin>Magnar_Skin_M_01.dds</Texture_Skin>
-        <UnitModelType>QuendarMale</UnitModelType>
-    </UnitType>
-
-
-<UnitType InternalName="Unit_CityArcher_RedQuendar">
-        <DisplayName>City Archer</DisplayName>
-        <Class>CityArcher</Class>
-        <RaceType>Race_Type_RedQuendar</RaceType>
-        <CanBeDesigned>0</CanBeDesigned>
-        <Gender>Male</Gender>
-        <HasWages>0</HasWages>
-        <IsSovereign>0</IsSovereign>
-        <LevelMilestone InternalName="L1">
-            <Level>1</Level>
-	<UnitStat_IsMale>1</UnitStat_IsMale>
-			<UnitStat_BG_IsEmpire>1</UnitStat_BG_IsEmpire>
-			<UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
-			<UnitStat_BG_IsMilitia>1</UnitStat_BG_IsMilitia>
-			<UnitStat_BG_IsRace_RedQuendar>1</UnitStat_BG_IsRace_RedQuendar>
-        </LevelMilestone>
-        <SelectedAbilityBonusOption>Blood_RedQuendar</SelectedAbilityBonusOption>
-        <Equipment>Shortbow_Crude</Equipment>
-        <Equipment>F_Male_Quendar_Head_01</Equipment>
-        <Equipment>F_Male_Quendar_Horns_03</Equipment>
-        <Equipment>Fallen_Shirt_ID1</Equipment>
-        <Equipment>Fallen_Leather_Pants_ID1</Equipment>
-        <Equipment>Large_Sion_Boots_ID2</Equipment>
-        <Equipment>F_Warn_Surcoat_Solid_ID2</Equipment>
-        <Prereq>
-            <Type>Race</Type>
-            <Attribute>Race_Type_RedQuendar</Attribute>
-        </Prereq>
-        <Backstory>'Discipline is first, second, and third when building an effective fighting force. Little else matters.' Indeed, the Red Quendar know these words well - for by losing themselves in discipline, they need not face the madness of the quest of their leader, who shall make Elemental into a Shadow World beyond recognition.</Backstory>
-        <AnimationPack>MaleSovereignAnimationPack</AnimationPack>
-        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
-        <ClothMapScale>1.6</ClothMapScale>
-        <ClothPoseIndex>1</ClothPoseIndex>
-        <Color_Hair>213,213,213,255</Color_Hair>
-        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
-        <EyeTexture>gfx\eyes\blinks\eyeblink_m7_Red.png</EyeTexture>
-        <InfoCardBackground>BG_Lava</InfoCardBackground>
-        <ModelPath>F_Male_Magnar_Body_Mesh_01.hkb</ModelPath>
-        <ModelScale>1</ModelScale>
-        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
-        <OnHitParticleName>Bloody_OnHit</OnHitParticleName>
-        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
-        <SoundPack>SoundPack_Generic_Male</SoundPack>
-        <TacticalModelScale>1.5</TacticalModelScale>
-        <Texture_Eyes>gfx\eyes\blinks\eyeblink_m7_Red.png</Texture_Eyes>
-        <Texture_Skin>Magnar_Skin_M_01.dds</Texture_Skin>
-        <UnitModelType>QuendarMale</UnitModelType>
-    </UnitType>
-
-
-	<!--<UnitType InternalName="SpearWarriors">
-		<DisplayName>Spear Warriors</DisplayName>
-		<Quote>'I will break my enemy's spirits...then bones.'</Quote>
-		<Backstory>'Discipline is first, second, and third when building an effective fighting force. Little else matters.' Indeed, the Red Quendar know these words well - for by losing themselves in discipline, they need not face the madness of the quest of their leader, who shall make Elemental into a Shadow World beyond recognition.</Backstory>
-		<HasEssence>false</HasEssence>
-		<ModelPath>F_Male_Magnar_Body_Mesh_01.hkb</ModelPath>
-		<SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
-		<EyeTexture>gfx\eyes\blinks\eyeblink_m6_Orange.png</EyeTexture>
-		<AnimationPack>SoldierAnimationPack</AnimationPack>
-		<ShowAsSingleUnit>false</ShowAsSingleUnit>
-		<CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
-		<ModelScale>0.9979</ModelScale>
-		<TacticalModelScale>1.5000</TacticalModelScale>
-		<EquipmentScale>1.0000</EquipmentScale>
-		<ClothMapScale>1.6000</ClothMapScale>
-		<BattleAnimationBehavior>Melee</BattleAnimationBehavior>
-		<MovementType>land</MovementType>
-		<BobbingFrequency>0.0000</BobbingFrequency>
-		<ClothPoseIndex>3</ClothPoseIndex>
-		<InfoCardBackground>BG_Chasm</InfoCardBackground>
-		<InfoCardBackgroundFlipped>0</InfoCardBackgroundFlipped>
-		<CanBeDesigned>1</CanBeDesigned>
-		<UserDesigned>true</UserDesigned>
-		<IsModDependent>false</IsModDependent>
-		<Medallions InternalName=""/>
-		<MovingSFX>TEMP_KnightMarching1</MovingSFX>
-		<LevelMilestone InternalName="">
-			<Level>1</Level>
-			<UnitStat_BG_IsEmpire>1.0000</UnitStat_BG_IsEmpire>
-			<UnitStat_BG_IsHumanoid>1.0000</UnitStat_BG_IsHumanoid>
-			<UnitStat_BG_IsRace_RedQuendar>1.0000</UnitStat_BG_IsRace_RedQuendar>
-			<UnitStat_IsMale>1.0000</UnitStat_IsMale>
-		</LevelMilestone>
-		<Equipment>F_Male_Quendar_Head_01</Equipment>
-		<Equipment>LeatherBreastpiece_Padded</Equipment>
-		<Equipment>LeatherVambraces_Soldiers</Equipment>
-		<Equipment>LeatherBoots_Soldiers</Equipment>
-		<Equipment>Sion_Cloak_ID3</Equipment>
-		<Equipment>F_Male_Quendar_Horns_03</Equipment>
-		<EquipmentUpgradeDef>
-			<SelectionCriterion>MaximizeBest</SelectionCriterion>
-			<ComparisonAttribute>UnitStat_Attack_Pierce</ComparisonAttribute>
-			<WeaponUpgradeType>Spear</WeaponUpgradeType>
-			<EquipmentSlot>Weapon</EquipmentSlot>
-			<EquipmentSlot>Defense</EquipmentSlot>
-			<ForUpgradeActionOnly>0</ForUpgradeActionOnly>
-		</EquipmentUpgradeDef>
-		<EquipmentUpgradeDef>
-			<SelectionCriterion>MaximizeSum</SelectionCriterion>
-			<ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
-			<EquipmentSlot>Head</EquipmentSlot>
-			<ForUpgradeActionOnly>0</ForUpgradeActionOnly>
-		</EquipmentUpgradeDef>
-		<EquipmentUpgradeDef>
-			<SelectionCriterion>MaximizeSum</SelectionCriterion>
-			<ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
-			<EquipmentSlot>LowerBody</EquipmentSlot>
-			<ForUpgradeActionOnly>0</ForUpgradeActionOnly>
-		</EquipmentUpgradeDef>
-		<EquipmentUpgradeDef>
-			<SelectionCriterion>MaximizeSum</SelectionCriterion>
-			<ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
-			<EquipmentSlot>Torso</EquipmentSlot>
-			<EquipmentSlot>Surcoat</EquipmentSlot>
-			<ForUpgradeActionOnly>1</ForUpgradeActionOnly>
-		</EquipmentUpgradeDef>
-		<EquipmentUpgradeDef>
-			<SelectionCriterion>MaximizeSum</SelectionCriterion>
-			<ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
-			<EquipmentSlot>Forearms</EquipmentSlot>
-			<ForUpgradeActionOnly>1</ForUpgradeActionOnly>
-		</EquipmentUpgradeDef>
-		<EquipmentUpgradeDef>
-			<SelectionCriterion>MaximizeSum</SelectionCriterion>
-			<ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
-			<EquipmentSlot>Boots</EquipmentSlot>
-			<ForUpgradeActionOnly>1</ForUpgradeActionOnly>
-		</EquipmentUpgradeDef>
-		<Color_Hair>200,200,200,255</Color_Hair>
-		<Color_Skin>240,21,13,255</Color_Skin>
-		<Color_Clothing1>0,0,0,255</Color_Clothing1>
-		<Color_Clothing2>255,255,255,255</Color_Clothing2>
-		<Color_Metal>128,128,128,255</Color_Metal>
-		<Color_Primary>0,0,0,255</Color_Primary>
-		<Color_Secondary>0,0,0,255</Color_Secondary>
-		<Color_Roof>0,0,0,255</Color_Roof>
-		<Color_TerrainBlend>255,255,255,255</Color_TerrainBlend>
-		<Color_TerrainOnly>255,255,255,255</Color_TerrainOnly>
-		<Color_Trans>255,255,255,255</Color_Trans>
-		<Color_ScrollTransMask>255,255,255,255</Color_ScrollTransMask>
-		<Color_Eyes>255,255,255,255</Color_Eyes>
-		<Color_Crest>255,255,255,255</Color_Crest>
-		<Texture_Skin>Magnar_Skin_M_01.dds</Texture_Skin>
-		<Texture_Eyes>gfx\eyes\blinks\eyeblink_m6_Orange.png</Texture_Eyes>
-		<CreatorFactionName>Faction_Dagorath</CreatorFactionName>
-		<Gender>Male</Gender>
-		<UnitModelType>QuendarMale</UnitModelType>
-		<SelectedAbilityBonusOption>Blood_RedQuendar</SelectedAbilityBonusOption>
-		<IsSovereign>0</IsSovereign>
-		<HasWages>1</HasWages>
-		<NPCFreeRecruit>0</NPCFreeRecruit>
-		<RaceType>Race_Type_RedQuendar</RaceType>
-		<IgnoreItemTrainingCosts>false</IgnoreItemTrainingCosts>
-		<AdditionalTrainingTurns>20.0000</AdditionalTrainingTurns>
-		<WageOverride>0.0000</WageOverride>
-		<UnitTypeVersion>1</UnitTypeVersion>
-		<TileRadius>0</TileRadius>
-		<GetPerksOnLevelUp>0</GetPerksOnLevelUp>
-		<DividesBattleExp>1</DividesBattleExp>
-		<CanSqueeze>0</CanSqueeze>
-		<OnHitParticleName>Bloody_OnHit</OnHitParticleName>
-		<AllowGrouping>true</AllowGrouping>
-		<SoundPack>SoundPack_Generic_Male</SoundPack>
-		<IsChampion>0</IsChampion>
-	</UnitType>-->
 
 <!-- Demons follow -->
 
@@ -937,318 +473,7 @@
         </EffectAttachment>
     </UnitType>
 
-	<!--<UnitType InternalName="Unit_Horror_Dagorath_Company">
-        <DisplayName>Horror</DisplayName>
-        <Description>These horrors have come through stable gates to crush your enemies.</Description>
-        <CanBeDesigned>1</CanBeDesigned>
-        <AdditionalTrainingTurns>0</AdditionalTrainingTurns>
-        <HasWages>0</HasWages>
-        <IsSovereign>0</IsSovereign>
-        <IsUniqueButBuildable>1</IsUniqueButBuildable>
-		<AllowGrouping>1</AllowGrouping>
-        <GroupingType>UnitGroupingType_Company</GroupingType>
-		<LevelMilestone InternalName="L1">
-            <Level>1</Level>
-            <UnitStat_Attack_Pierce>12</UnitStat_Attack_Pierce>
-            <UnitStat_CombatSpeed>22</UnitStat_CombatSpeed>
-            <UnitStat_HitPoints>14</UnitStat_HitPoints>
-			<UnitStat_Defense_Pierce>0</UnitStat_Defense_Pierce>
-            <UnitStat_Moves>3</UnitStat_Moves>
-			<UnitStat_BG_IsDemon>1</UnitStat_BG_IsDemon>
-			<UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
-			<UnitStat_BG_IsNotAlive>1</UnitStat_BG_IsNotAlive>
-        </LevelMilestone>
-        <SelectedAbilityBonusOption>Void_Spawn</SelectedAbilityBonusOption>
-        <SelectedAbilityBonusOption>ImmuneToPoison</SelectedAbilityBonusOption>
-        <SelectedAbilityBonusOption>VulnerableToLightning</SelectedAbilityBonusOption>
-        <SelectedAbilityBonusOption>Claws_Dagorath</SelectedAbilityBonusOption>
-        <Prereq>
-            <Type>AbilityBonusOption</Type>
-            <Attribute>VoidBound</Attribute>
-            <Target>Player</Target>
-        </Prereq>
-        <ProductionRequirement>
-            <Type>Resource</Type>
-            <Attribute>EldritchEnergy</Attribute>
-            <Value>1</Value>
-        </ProductionRequirement>
-        <Backstory>These presences, taken flesh, are an affront to the nature of Elemental itself. They will rend the enemies of Dagorath, that even more might be ferried into this spacetime.</Backstory>
-        <Medallions InternalName="">
-            <All>Lurk.png</All>
-        </Medallions>
-		<AnimationPack>DemonAnimationPack</AnimationPack>
-        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
-        <ClothMapScale>1.5</ClothMapScale>
-        <Color_Skin>30,25,0,255</Color_Skin>
-        <CutSceneDataPack>LurkUnitCutscenePack</CutSceneDataPack>
-        <EyeTexture>gfx/eyes/male_brown_eye.png</EyeTexture>
-        <InfoCardBackground>BG4_Dark</InfoCardBackground>
-        <MaxScaleMainMap>1.08</MaxScaleMainMap>
-        <MaxScaleTacticalMap>1</MaxScaleTacticalMap>
-        <ModelPath>gfx/hkb/Monsters/M_Demon_Mesh_01.hkb</ModelPath>
-        <ModelScale>1.4</ModelScale>
-        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
-        <SoundPack>SoundPack_Demon1</SoundPack>
-        <TacticalModelScale>1.4</TacticalModelScale>
-        <Texture_Skin>M_Demon_Texture_01.png</Texture_Skin>
-		<EffectAttachment>
-            <Attachment>chest_center_Lcf</Attachment>
-            <EffectName>A_CyndrumDemon_Particle</EffectName>
-            <EffectPosition>0,0,0</EffectPosition>
-            <EffectRotation>0,0,0</EffectRotation>
-            <EffectScale>1</EffectScale>
-        </EffectAttachment>
-        <EffectAttachment>
-            <Attachment>bicep_left_Lcf</Attachment>
-            <EffectName>A_CyndrumDemon_Particle</EffectName>
-            <EffectPosition>0,0,0</EffectPosition>
-            <EffectRotation>0,0,0</EffectRotation>
-            <EffectScale>0.8</EffectScale>
-        </EffectAttachment>
-        <EffectAttachment>
-            <Attachment>bicep_right_Lcf</Attachment>
-            <EffectName>A_CyndrumDemon_Particle</EffectName>
-            <EffectPosition>0,0,0</EffectPosition>
-            <EffectRotation>0,0,0</EffectRotation>
-            <EffectScale>0.8</EffectScale>
-        </EffectAttachment>
-        <EffectAttachment>
-            <Attachment>forearm_right_Lcf</Attachment>
-            <EffectName>A_CyndrumDemon_Particle</EffectName>
-            <EffectPosition>0,0,0</EffectPosition>
-            <EffectRotation>0,0,0</EffectRotation>
-            <EffectScale>0.8</EffectScale>
-        </EffectAttachment>
-        <EffectAttachment>
-            <Attachment>forearm_left_Lcf</Attachment>
-            <EffectName>A_CyndrumDemon_Particle</EffectName>
-            <EffectPosition>0,0,0</EffectPosition>
-            <EffectRotation>0,0,0</EffectRotation>
-            <EffectScale>0.8</EffectScale>
-        </EffectAttachment>
-        <EffectAttachment>
-            <Attachment>thigh_left_Lcf</Attachment>
-            <EffectName>A_CyndrumDemon_Particle</EffectName>
-            <EffectPosition>0,0,0</EffectPosition>
-            <EffectRotation>0,0,0</EffectRotation>
-            <EffectScale>0.8</EffectScale>
-        </EffectAttachment>
-        <EffectAttachment>
-            <Attachment>thigh_right_Lcf</Attachment>
-            <EffectName>A_CyndrumDemon_Particle</EffectName>
-            <EffectPosition>0,0,0</EffectPosition>
-            <EffectRotation>0,0,0</EffectRotation>
-            <EffectScale>0.8</EffectScale>
-        </EffectAttachment>
-        <EffectAttachment>
-            <Attachment>calf_right_Lcf</Attachment>
-            <EffectName>A_CyndrumDemon_Particle</EffectName>
-            <EffectPosition>0,0,0</EffectPosition>
-            <EffectRotation>0,0,0</EffectRotation>
-            <EffectScale>0.8</EffectScale>
-        </EffectAttachment>
-        <EffectAttachment>
-            <Attachment>calf_left_Lcf</Attachment>
-            <EffectName>A_CyndrumDemon_Particle</EffectName>
-            <EffectPosition>0,0,0</EffectPosition>
-            <EffectRotation>0,0,0</EffectRotation>
-            <EffectScale>0.8</EffectScale>
-        </EffectAttachment>
-        <EffectAttachment>
-            <Attachment>hand_right_Lcf</Attachment>
-            <EffectName>A_CyndrumDemon_Particle</EffectName>
-            <EffectPosition>0,0,0</EffectPosition>
-            <EffectRotation>0,0,0</EffectRotation>
-            <EffectScale>0.8</EffectScale>
-        </EffectAttachment>
-        <EffectAttachment>
-            <Attachment>hand_left_Lcf</Attachment>
-            <EffectName>A_CyndrumDemon_Particle</EffectName>
-            <EffectPosition>0,0,0</EffectPosition>
-            <EffectRotation>0,0,0</EffectRotation>
-            <EffectScale>0.8</EffectScale>
-        </EffectAttachment>
-        <EffectAttachment>
-            <Attachment>foot_right_Lcf</Attachment>
-            <EffectName>A_CyndrumDemon_Particle</EffectName>
-            <EffectPosition>0,5,0</EffectPosition>
-            <EffectRotation>0,0,0</EffectRotation>
-            <EffectScale>0.8</EffectScale>
-        </EffectAttachment>
-        <EffectAttachment>
-            <Attachment>foot_left_Lcf</Attachment>
-            <EffectName>A_CyndrumDemon_Particle</EffectName>
-            <EffectPosition>0,5,0</EffectPosition>
-            <EffectRotation>0,0,0</EffectRotation>
-            <EffectScale>0.8</EffectScale>
-        </EffectAttachment>
-        <EffectAttachment>
-            <Attachment>head_Lcf</Attachment>
-            <EffectName>A_CyndrumDemon_Particle</EffectName>
-            <EffectPosition>0,0,0</EffectPosition>
-            <EffectRotation>0,0,0</EffectRotation>
-            <EffectScale>0.8</EffectScale>
-        </EffectAttachment>
-    </UnitType>
-
-	
-	<UnitType InternalName="Unit_Horror_Dagorath_Group">
-        <DisplayName>Horror</DisplayName>
-        <Description>These horrors have come through stable gates to crush your enemies.</Description>
-        <CanBeDesigned>1</CanBeDesigned>
-        <AdditionalTrainingTurns>0</AdditionalTrainingTurns>
-        <HasWages>0</HasWages>
-        <IsSovereign>0</IsSovereign>
-        <IsUniqueButBuildable>1</IsUniqueButBuildable>
-		<AllowGrouping>1</AllowGrouping>
-        <GroupingType>UnitGroupingType_Group</GroupingType>
-		<LevelMilestone InternalName="L1">
-            <Level>1</Level>
-            <UnitStat_Attack_Pierce>12</UnitStat_Attack_Pierce>
-            <UnitStat_CombatSpeed>22</UnitStat_CombatSpeed>
-            <UnitStat_HitPoints>14</UnitStat_HitPoints>
-			<UnitStat_Defense_Pierce>0</UnitStat_Defense_Pierce>
-            <UnitStat_Moves>3</UnitStat_Moves>
-	    <UnitStat_BG_IsDemon>1</UnitStat_BG_IsDemon>
-	    <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
-	    <UnitStat_BG_IsNotAlive>1</UnitStat_BG_IsNotAlive>
-        </LevelMilestone>
-        <SelectedAbilityBonusOption>Void_Spawn</SelectedAbilityBonusOption>
-        <SelectedAbilityBonusOption>ImmuneToPoison</SelectedAbilityBonusOption>
-        <SelectedAbilityBonusOption>VulnerableToLightning</SelectedAbilityBonusOption>
-        <SelectedAbilityBonusOption>Claws_Dagorath</SelectedAbilityBonusOption>
-        <Prereq>
-            <Type>AbilityBonusOption</Type>
-            <Attribute>VoidBound11</Attribute>
-            <Target>Player</Target>
-        </Prereq>
-        <ProductionRequirement>
-            <Type>Resource</Type>
-            <Attribute>EldritchEnergy</Attribute>
-            <Value>1</Value>
-        </ProductionRequirement>
-        <Backstory>These presences, taken flesh, are an affront to the nature of Elemental itself. They will rend the enemies of Dagorath, that even more might be ferried into this spacetime.</Backstory>
-        <Medallions InternalName="">
-            <All>Lurk.png</All>
-        </Medallions>
-		<AnimationPack>DemonAnimationPack</AnimationPack>
-        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
-        <ClothMapScale>1.5</ClothMapScale>
-        <Color_Skin>30,25,0,255</Color_Skin>
-        <CutSceneDataPack>LurkUnitCutscenePack</CutSceneDataPack>
-        <EyeTexture>gfx/eyes/male_brown_eye.png</EyeTexture>
-        <InfoCardBackground>BG4_Dark</InfoCardBackground>
-        <MaxScaleMainMap>1.08</MaxScaleMainMap>
-        <MaxScaleTacticalMap>1</MaxScaleTacticalMap>
-        <ModelPath>gfx/hkb/Monsters/M_Demon_Mesh_01.hkb</ModelPath>
-        <ModelScale>1.4</ModelScale>
-        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
-        <SoundPack>SoundPack_Demon1</SoundPack>
-        <TacticalModelScale>1.4</TacticalModelScale>
-        <Texture_Skin>M_Demon_Texture_01.png</Texture_Skin>
-		<EffectAttachment>
-            <Attachment>chest_center_Lcf</Attachment>
-            <EffectName>A_CyndrumDemon_Particle</EffectName>
-            <EffectPosition>0,0,0</EffectPosition>
-            <EffectRotation>0,0,0</EffectRotation>
-            <EffectScale>1</EffectScale>
-        </EffectAttachment>
-        <EffectAttachment>
-            <Attachment>bicep_left_Lcf</Attachment>
-            <EffectName>A_CyndrumDemon_Particle</EffectName>
-            <EffectPosition>0,0,0</EffectPosition>
-            <EffectRotation>0,0,0</EffectRotation>
-            <EffectScale>0.8</EffectScale>
-        </EffectAttachment>
-        <EffectAttachment>
-            <Attachment>bicep_right_Lcf</Attachment>
-            <EffectName>A_CyndrumDemon_Particle</EffectName>
-            <EffectPosition>0,0,0</EffectPosition>
-            <EffectRotation>0,0,0</EffectRotation>
-            <EffectScale>0.8</EffectScale>
-        </EffectAttachment>
-        <EffectAttachment>
-            <Attachment>forearm_right_Lcf</Attachment>
-            <EffectName>A_CyndrumDemon_Particle</EffectName>
-            <EffectPosition>0,0,0</EffectPosition>
-            <EffectRotation>0,0,0</EffectRotation>
-            <EffectScale>0.8</EffectScale>
-        </EffectAttachment>
-        <EffectAttachment>
-            <Attachment>forearm_left_Lcf</Attachment>
-            <EffectName>A_CyndrumDemon_Particle</EffectName>
-            <EffectPosition>0,0,0</EffectPosition>
-            <EffectRotation>0,0,0</EffectRotation>
-            <EffectScale>0.8</EffectScale>
-        </EffectAttachment>
-        <EffectAttachment>
-            <Attachment>thigh_left_Lcf</Attachment>
-            <EffectName>A_CyndrumDemon_Particle</EffectName>
-            <EffectPosition>0,0,0</EffectPosition>
-            <EffectRotation>0,0,0</EffectRotation>
-            <EffectScale>0.8</EffectScale>
-        </EffectAttachment>
-        <EffectAttachment>
-            <Attachment>thigh_right_Lcf</Attachment>
-            <EffectName>A_CyndrumDemon_Particle</EffectName>
-            <EffectPosition>0,0,0</EffectPosition>
-            <EffectRotation>0,0,0</EffectRotation>
-            <EffectScale>0.8</EffectScale>
-        </EffectAttachment>
-        <EffectAttachment>
-            <Attachment>calf_right_Lcf</Attachment>
-            <EffectName>A_CyndrumDemon_Particle</EffectName>
-            <EffectPosition>0,0,0</EffectPosition>
-            <EffectRotation>0,0,0</EffectRotation>
-            <EffectScale>0.8</EffectScale>
-        </EffectAttachment>
-        <EffectAttachment>
-            <Attachment>calf_left_Lcf</Attachment>
-            <EffectName>A_CyndrumDemon_Particle</EffectName>
-            <EffectPosition>0,0,0</EffectPosition>
-            <EffectRotation>0,0,0</EffectRotation>
-            <EffectScale>0.8</EffectScale>
-        </EffectAttachment>
-        <EffectAttachment>
-            <Attachment>hand_right_Lcf</Attachment>
-            <EffectName>A_CyndrumDemon_Particle</EffectName>
-            <EffectPosition>0,0,0</EffectPosition>
-            <EffectRotation>0,0,0</EffectRotation>
-            <EffectScale>0.8</EffectScale>
-        </EffectAttachment>
-        <EffectAttachment>
-            <Attachment>hand_left_Lcf</Attachment>
-            <EffectName>A_CyndrumDemon_Particle</EffectName>
-            <EffectPosition>0,0,0</EffectPosition>
-            <EffectRotation>0,0,0</EffectRotation>
-            <EffectScale>0.8</EffectScale>
-        </EffectAttachment>
-        <EffectAttachment>
-            <Attachment>foot_right_Lcf</Attachment>
-            <EffectName>A_CyndrumDemon_Particle</EffectName>
-            <EffectPosition>0,5,0</EffectPosition>
-            <EffectRotation>0,0,0</EffectRotation>
-            <EffectScale>0.8</EffectScale>
-        </EffectAttachment>
-        <EffectAttachment>
-            <Attachment>foot_left_Lcf</Attachment>
-            <EffectName>A_CyndrumDemon_Particle</EffectName>
-            <EffectPosition>0,5,0</EffectPosition>
-            <EffectRotation>0,0,0</EffectRotation>
-            <EffectScale>0.8</EffectScale>
-        </EffectAttachment>
-        <EffectAttachment>
-            <Attachment>head_Lcf</Attachment>
-            <EffectName>A_CyndrumDemon_Particle</EffectName>
-            <EffectPosition>0,0,0</EffectPosition>
-            <EffectRotation>0,0,0</EffectRotation>
-            <EffectScale>0.8</EffectScale>
-        </EffectAttachment>
-    </UnitType>-->
-
-
-
-<UnitType InternalName="Massacre_Hero">
+	<UnitType InternalName="Massacre_Hero">
         <DisplayName>Champion Of Massacres</DisplayName>
         <Description>Only a level 5 city has the population necessary to create one of these powerful demons, but if you do so your enemies stand little chance.</Description>
         <DividesBattleExp>0</DividesBattleExp>
@@ -1260,7 +485,7 @@
         <HasWages>0</HasWages>
         <IsSovereign>0</IsSovereign>
         <IsUniqueButBuildable>1</IsUniqueButBuildable>
-	<AllowGrouping>0</AllowGrouping>
+		<AllowGrouping>0</AllowGrouping>
         <LevelMilestone InternalName="L1">
             <Level>1</Level>
             <UnitStat_Accuracy>80</UnitStat_Accuracy>
@@ -1282,10 +507,6 @@
             <Type>AbilityBonusOption</Type>
             <Attribute>VoidBound</Attribute>
             <Target>Player</Target>
-        </Prereq>
-        <Prereq>
-            <Type>Tech</Type>
-            <Attribute>Black_Quire</Attribute>
         </Prereq>
         <ProductionRequirement>
             <Type>Resource</Type>
@@ -1921,6 +1142,114 @@
         <UnitModelType>QuendarFemale</UnitModelType>
     </UnitType>	
 	
+	<UnitType InternalName="Unit_CityDefender_RedQuendar">
+        <DisplayName>City Militia</DisplayName>
+        <Class>CityDefender</Class>
+        <RaceType>Race_Type_RedQuendar</RaceType>
+        <CanBeDesigned>0</CanBeDesigned>
+        <Gender>Male</Gender>
+        <HasWages>0</HasWages>
+        <IsSovereign>0</IsSovereign>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+			<UnitStat_IsMale>1</UnitStat_IsMale>
+			<UnitStat_BG_IsEmpire>1</UnitStat_BG_IsEmpire>
+			<UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
+			<UnitStat_BG_IsMilitia>1</UnitStat_BG_IsMilitia>
+			<UnitStat_BG_IsRace_RedQuendar>1</UnitStat_BG_IsRace_RedQuendar>
+        </LevelMilestone>
+        <SelectedAbilityBonusOption>Blood_RedQuendar</SelectedAbilityBonusOption>
+        <Equipment>F_Male_Quendar_Head_01</Equipment>
+        <Equipment>F_Male_Quendar_Horns_03</Equipment>
+        <Equipment>Fallen_Shirt_ID1</Equipment>
+        <Equipment>Fallen_Leather_Pants_ID1</Equipment>
+        <Equipment>Large_Sion_Boots_ID2</Equipment>
+        <Equipment>F_Warn_Surcoat_Solid_ID2</Equipment>
+        <EquipmentUpgradeDef>
+            <EquipmentSlot>Weapon</EquipmentSlot>
+            <WeaponUpgradeType>Blunt</WeaponUpgradeType>
+            <SelectionCriteria>MaximizeSum</SelectionCriteria>
+            <ComparisonAttribute>UnitStat_Attack_Pierce</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Cold</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Fire</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Lightning</ComparisonAttribute>
+            <ComparisonAttribute>UnitStat_Attack_Poison</ComparisonAttribute>
+        </EquipmentUpgradeDef>
+        <Prereq>
+            <Type>Race</Type>
+            <Attribute>Race_Type_RedQuendar</Attribute>
+        </Prereq>
+        <Backstory>'Discipline is first, second, and third when building an effective fighting force. Little else matters.' Indeed, the Red Quendar know these words well - for by losing themselves in discipline, they need not face the madness of the quest of their leader, who shall make Elemental into a Shadow World beyond recognition.</Backstory>
+        <AnimationPack>MaleSovereignAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>1</ClothPoseIndex>
+        <Color_Hair>213,213,213,255</Color_Hair>
+        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\eyes\blinks\eyeblink_m7_Red.png</EyeTexture>
+        <InfoCardBackground>BG_Lava</InfoCardBackground>
+        <ModelPath>F_Male_Magnar_Body_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Generic_Male</SoundPack>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\eyeblink_m7_Red.png</Texture_Eyes>
+        <Texture_Skin>Magnar_Skin_M_01.dds</Texture_Skin>
+        <UnitModelType>QuendarMale</UnitModelType>
+    </UnitType>
+
+
+	<UnitType InternalName="Unit_CityArcher_RedQuendar">
+        <DisplayName>City Archer</DisplayName>
+        <Class>CityArcher</Class>
+        <RaceType>Race_Type_RedQuendar</RaceType>
+        <CanBeDesigned>0</CanBeDesigned>
+        <Gender>Male</Gender>
+        <HasWages>0</HasWages>
+        <IsSovereign>0</IsSovereign>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+			<UnitStat_IsMale>1</UnitStat_IsMale>
+			<UnitStat_BG_IsEmpire>1</UnitStat_BG_IsEmpire>
+			<UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
+			<UnitStat_BG_IsMilitia>1</UnitStat_BG_IsMilitia>
+			<UnitStat_BG_IsRace_RedQuendar>1</UnitStat_BG_IsRace_RedQuendar>
+        </LevelMilestone>
+        <SelectedAbilityBonusOption>Blood_RedQuendar</SelectedAbilityBonusOption>
+        <Equipment>Shortbow_Crude</Equipment>
+        <Equipment>F_Male_Quendar_Head_01</Equipment>
+        <Equipment>F_Male_Quendar_Horns_03</Equipment>
+        <Equipment>Fallen_Shirt_ID1</Equipment>
+        <Equipment>Fallen_Leather_Pants_ID1</Equipment>
+        <Equipment>Large_Sion_Boots_ID2</Equipment>
+        <Equipment>F_Warn_Surcoat_Solid_ID2</Equipment>
+        <Prereq>
+            <Type>Race</Type>
+            <Attribute>Race_Type_RedQuendar</Attribute>
+        </Prereq>
+        <Backstory>'Discipline is first, second, and third when building an effective fighting force. Little else matters.' Indeed, the Red Quendar know these words well - for by losing themselves in discipline, they need not face the madness of the quest of their leader, who shall make Elemental into a Shadow World beyond recognition.</Backstory>
+        <AnimationPack>MaleSovereignAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>1</ClothPoseIndex>
+        <Color_Hair>213,213,213,255</Color_Hair>
+        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\eyes\blinks\eyeblink_m7_Red.png</EyeTexture>
+        <InfoCardBackground>BG_Lava</InfoCardBackground>
+        <ModelPath>F_Male_Magnar_Body_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Generic_Male</SoundPack>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\eyeblink_m7_Red.png</Texture_Eyes>
+        <Texture_Skin>Magnar_Skin_M_01.dds</Texture_Skin>
+        <UnitModelType>QuendarMale</UnitModelType>
+    </UnitType>
+	
 	<!--<UnitType InternalName="Sage_RedQuendar">
         <DisplayName>Red Quendar Sage</DisplayName>
         <RaceType>Race_Type_RedQuendar</RaceType>
@@ -1987,5 +1316,314 @@
         <Texture_Skin>M_Demon_Texture_01.png</Texture_Skin>
         <UnitModelType>Dagorath_Demon</UnitModelType>
     </UnitType>	
+	
+	<!--<UnitType InternalName="Unit_Horror_Dagorath_Company">
+        <DisplayName>Horror</DisplayName>
+        <Description>These horrors have come through stable gates to crush your enemies.</Description>
+        <CanBeDesigned>1</CanBeDesigned>
+        <AdditionalTrainingTurns>0</AdditionalTrainingTurns>
+        <HasWages>0</HasWages>
+        <IsSovereign>0</IsSovereign>
+        <IsUniqueButBuildable>1</IsUniqueButBuildable>
+		<AllowGrouping>1</AllowGrouping>
+        <GroupingType>UnitGroupingType_Company</GroupingType>
+		<LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_Attack_Pierce>12</UnitStat_Attack_Pierce>
+            <UnitStat_CombatSpeed>22</UnitStat_CombatSpeed>
+            <UnitStat_HitPoints>14</UnitStat_HitPoints>
+			<UnitStat_Defense_Pierce>0</UnitStat_Defense_Pierce>
+            <UnitStat_Moves>3</UnitStat_Moves>
+			<UnitStat_BG_IsDemon>1</UnitStat_BG_IsDemon>
+			<UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
+			<UnitStat_BG_IsNotAlive>1</UnitStat_BG_IsNotAlive>
+        </LevelMilestone>
+        <SelectedAbilityBonusOption>Void_Spawn</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>ImmuneToPoison</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>VulnerableToLightning</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Claws_Dagorath</SelectedAbilityBonusOption>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>VoidBound</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <ProductionRequirement>
+            <Type>Resource</Type>
+            <Attribute>EldritchEnergy</Attribute>
+            <Value>1</Value>
+        </ProductionRequirement>
+        <Backstory>These presences, taken flesh, are an affront to the nature of Elemental itself. They will rend the enemies of Dagorath, that even more might be ferried into this spacetime.</Backstory>
+        <Medallions InternalName="">
+            <All>Lurk.png</All>
+        </Medallions>
+		<AnimationPack>DemonAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.5</ClothMapScale>
+        <Color_Skin>30,25,0,255</Color_Skin>
+        <CutSceneDataPack>LurkUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx/eyes/male_brown_eye.png</EyeTexture>
+        <InfoCardBackground>BG4_Dark</InfoCardBackground>
+        <MaxScaleMainMap>1.08</MaxScaleMainMap>
+        <MaxScaleTacticalMap>1</MaxScaleTacticalMap>
+        <ModelPath>gfx/hkb/Monsters/M_Demon_Mesh_01.hkb</ModelPath>
+        <ModelScale>1.4</ModelScale>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Demon1</SoundPack>
+        <TacticalModelScale>1.4</TacticalModelScale>
+        <Texture_Skin>M_Demon_Texture_01.png</Texture_Skin>
+		<EffectAttachment>
+            <Attachment>chest_center_Lcf</Attachment>
+            <EffectName>A_CyndrumDemon_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>1</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>bicep_left_Lcf</Attachment>
+            <EffectName>A_CyndrumDemon_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.8</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>bicep_right_Lcf</Attachment>
+            <EffectName>A_CyndrumDemon_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.8</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>forearm_right_Lcf</Attachment>
+            <EffectName>A_CyndrumDemon_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.8</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>forearm_left_Lcf</Attachment>
+            <EffectName>A_CyndrumDemon_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.8</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>thigh_left_Lcf</Attachment>
+            <EffectName>A_CyndrumDemon_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.8</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>thigh_right_Lcf</Attachment>
+            <EffectName>A_CyndrumDemon_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.8</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>calf_right_Lcf</Attachment>
+            <EffectName>A_CyndrumDemon_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.8</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>calf_left_Lcf</Attachment>
+            <EffectName>A_CyndrumDemon_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.8</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>hand_right_Lcf</Attachment>
+            <EffectName>A_CyndrumDemon_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.8</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>hand_left_Lcf</Attachment>
+            <EffectName>A_CyndrumDemon_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.8</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>foot_right_Lcf</Attachment>
+            <EffectName>A_CyndrumDemon_Particle</EffectName>
+            <EffectPosition>0,5,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.8</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>foot_left_Lcf</Attachment>
+            <EffectName>A_CyndrumDemon_Particle</EffectName>
+            <EffectPosition>0,5,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.8</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>head_Lcf</Attachment>
+            <EffectName>A_CyndrumDemon_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.8</EffectScale>
+        </EffectAttachment>
+    </UnitType>
+
+	
+	<UnitType InternalName="Unit_Horror_Dagorath_Group">
+        <DisplayName>Horror</DisplayName>
+        <Description>These horrors have come through stable gates to crush your enemies.</Description>
+        <CanBeDesigned>1</CanBeDesigned>
+        <AdditionalTrainingTurns>0</AdditionalTrainingTurns>
+        <HasWages>0</HasWages>
+        <IsSovereign>0</IsSovereign>
+        <IsUniqueButBuildable>1</IsUniqueButBuildable>
+		<AllowGrouping>1</AllowGrouping>
+        <GroupingType>UnitGroupingType_Group</GroupingType>
+		<LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_Attack_Pierce>12</UnitStat_Attack_Pierce>
+            <UnitStat_CombatSpeed>22</UnitStat_CombatSpeed>
+            <UnitStat_HitPoints>14</UnitStat_HitPoints>
+			<UnitStat_Defense_Pierce>0</UnitStat_Defense_Pierce>
+            <UnitStat_Moves>3</UnitStat_Moves>
+	    <UnitStat_BG_IsDemon>1</UnitStat_BG_IsDemon>
+	    <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
+	    <UnitStat_BG_IsNotAlive>1</UnitStat_BG_IsNotAlive>
+        </LevelMilestone>
+        <SelectedAbilityBonusOption>Void_Spawn</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>ImmuneToPoison</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>VulnerableToLightning</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Claws_Dagorath</SelectedAbilityBonusOption>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>VoidBound11</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <ProductionRequirement>
+            <Type>Resource</Type>
+            <Attribute>EldritchEnergy</Attribute>
+            <Value>1</Value>
+        </ProductionRequirement>
+        <Backstory>These presences, taken flesh, are an affront to the nature of Elemental itself. They will rend the enemies of Dagorath, that even more might be ferried into this spacetime.</Backstory>
+        <Medallions InternalName="">
+            <All>Lurk.png</All>
+        </Medallions>
+		<AnimationPack>DemonAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.5</ClothMapScale>
+        <Color_Skin>30,25,0,255</Color_Skin>
+        <CutSceneDataPack>LurkUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx/eyes/male_brown_eye.png</EyeTexture>
+        <InfoCardBackground>BG4_Dark</InfoCardBackground>
+        <MaxScaleMainMap>1.08</MaxScaleMainMap>
+        <MaxScaleTacticalMap>1</MaxScaleTacticalMap>
+        <ModelPath>gfx/hkb/Monsters/M_Demon_Mesh_01.hkb</ModelPath>
+        <ModelScale>1.4</ModelScale>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Demon1</SoundPack>
+        <TacticalModelScale>1.4</TacticalModelScale>
+        <Texture_Skin>M_Demon_Texture_01.png</Texture_Skin>
+		<EffectAttachment>
+            <Attachment>chest_center_Lcf</Attachment>
+            <EffectName>A_CyndrumDemon_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>1</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>bicep_left_Lcf</Attachment>
+            <EffectName>A_CyndrumDemon_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.8</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>bicep_right_Lcf</Attachment>
+            <EffectName>A_CyndrumDemon_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.8</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>forearm_right_Lcf</Attachment>
+            <EffectName>A_CyndrumDemon_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.8</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>forearm_left_Lcf</Attachment>
+            <EffectName>A_CyndrumDemon_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.8</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>thigh_left_Lcf</Attachment>
+            <EffectName>A_CyndrumDemon_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.8</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>thigh_right_Lcf</Attachment>
+            <EffectName>A_CyndrumDemon_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.8</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>calf_right_Lcf</Attachment>
+            <EffectName>A_CyndrumDemon_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.8</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>calf_left_Lcf</Attachment>
+            <EffectName>A_CyndrumDemon_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.8</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>hand_right_Lcf</Attachment>
+            <EffectName>A_CyndrumDemon_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.8</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>hand_left_Lcf</Attachment>
+            <EffectName>A_CyndrumDemon_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.8</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>foot_right_Lcf</Attachment>
+            <EffectName>A_CyndrumDemon_Particle</EffectName>
+            <EffectPosition>0,5,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.8</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>foot_left_Lcf</Attachment>
+            <EffectName>A_CyndrumDemon_Particle</EffectName>
+            <EffectPosition>0,5,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.8</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>head_Lcf</Attachment>
+            <EffectName>A_CyndrumDemon_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.8</EffectScale>
+        </EffectAttachment>
+    </UnitType>-->
 
 </UnitTypes>

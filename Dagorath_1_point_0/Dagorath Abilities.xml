@@ -31,14 +31,14 @@
         <AbilityBonusType>Player</AbilityBonusType>
 		<AbilityBonusOption InternalName="RedMarkOfDagorath">
             <DisplayName>Red Mark Of Dagorath</DisplayName>
-            <Description>-5% Research, -10% gildar, +5% Unrest.</Description>
+            <Description>-10% Research, -10% gildar</Description>
             <Icon>Ability_Reap1_Icon.png</Icon>
             <GameModifier>
                 <ModType>Player</ModType>
                 <Attribute>AbilityBonus</Attribute>
                 <StrVal>A_Research</StrVal>
-                <Value>-5</Value>
-                <Provides>-5% to Research</Provides>
+                <Value>-10</Value>
+                <Provides>-10% to Research</Provides>
             </GameModifier>
 			<GameModifier>
 				<ModType>Player</ModType>
@@ -48,13 +48,13 @@
 				<Icon>Res_Icon_Gold.png</Icon>
 				<Provides>-10% Gildar</Provides>
 			</GameModifier>
-			<GameModifier>
+            <GameModifier>
                 <ModType>Player</ModType>
                 <Attribute>AbilityBonus</Attribute>
                 <StrVal>A_Additive_Unrest</StrVal>
-                <Value>5</Value>
-                <Provides>+5% Unrest</Provides>
-            </GameModifier>
+                <Value>-5</Value>
+                <Provides>-5% Unrest in all cities</Provides>
+            </GameModifier>			
             <Cost>-1</Cost>
             <Type>Weakness</Type>
             <AIData AIPersonality="AI_General">
@@ -63,7 +63,7 @@
         </AbilityBonusOption>
     </AbilityBonus>
 
-<AbilityBonus InternalName="ClawsAbility_Dagorath">
+	<AbilityBonus InternalName="ClawsAbility_Dagorath">
         <AbilityBonusType>Unit_Design</AbilityBonusType>
         <AbilityBonusOption InternalName="Claws_Dagorath">
             <DisplayName>Void Claws</DisplayName>
@@ -74,7 +74,7 @@
                 <Attribute>AdjustUnitStat</Attribute>
                 <StrVal>UnitStat_ArmorPierce</StrVal>
                 <Value>5</Value>
-		<PerLevel>1</PerLevel>
+				<PerLevel>1</PerLevel>
                 <Provides>Ignores 5%, per level, of the victim's Defense</Provides>
             </GameModifier>
             <AdditionalTrainingTurns>0</AdditionalTrainingTurns>
@@ -87,7 +87,7 @@
     </AbilityBonus>
 
 
-<AbilityBonus InternalName="Blood_RedQuendarAbility">
+	<!--<AbilityBonus InternalName="Blood_RedQuendarAbility">
         <AbilityBonusOption InternalName="Blood_RedQuendar">
             <DisplayName>Red Quendar Blood</DisplayName>
             <Description>+50% Fire Resistance, -50% Cold Resistance and the ability to use the Endure ability</Description>
@@ -122,9 +122,9 @@
                 <AIPriority>5</AIPriority>
             </AIData>
         </AbilityBonusOption>
-    </AbilityBonus>
+    </AbilityBonus>-->
 
-<AbilityBonus InternalName="CallousedHide_Dagorath_Ability">
+	<AbilityBonus InternalName="CallousedHide_Dagorath_Ability">
         <AbilityBonusOption InternalName="CallousedHide_Dagorath">
             <DisplayName>Void Flesh</DisplayName>
             <Description>+2 Defense per Level</Description>
@@ -145,13 +145,17 @@
     </AbilityBonus>
 
 
-<AbilityBonus InternalName="Void_Spawn_Ability">
+	<AbilityBonus InternalName="Void_Spawn_Ability">
         <AbilityBonusOption InternalName="Void_Spawn">
             <DisplayName>Child Of Void</DisplayName>
             <Description>+5 Eldritch Rot damage per turn, +20 spell resist, +20 Hp from kills, kills add a member to this unit, +2 Defense per Level</Description>
             <Icon>Ability_Binding_Icon.png</Icon>
       	    <GameModifier>
-        	<Provides>Unit counts as Demon</Provides>
+				<ModType>Unit</ModType>
+				<Attribute>AdjustUnitStat</Attribute>
+				<StrVal>UnitStat_BG_IsDemon</StrVal>
+				<Value>1</Value>			
+				<Provides>Unit counts as Demon</Provides>
       	    </GameModifier>
             <GameModifier>
                 <ModType>Unit</ModType>
@@ -159,12 +163,12 @@
                 <StrVal>EldritchRot_Effect</StrVal>
                 <Provides>Units struck suffer 5 Eldritch Rot damage per turn.</Provides>
             </GameModifier>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_MagicResist</StrVal>
-            <Value>20</Value>
-        </GameModifier>
+			<GameModifier>
+				<ModType>Unit</ModType>
+				<Attribute>AdjustUnitStat</Attribute>
+				<StrVal>UnitStat_MagicResist</StrVal>
+				<Value>20</Value>
+			</GameModifier>
             <GameModifier>
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
@@ -193,13 +197,17 @@
         </AbilityBonusOption>
     </AbilityBonus>
 
-<AbilityBonus InternalName="Void_Spawn2_Ability">
+	<AbilityBonus InternalName="Void_Spawn2_Ability">
         <AbilityBonusOption InternalName="Void_Spawn2">
             <DisplayName>Prince Of The Void</DisplayName>
             <Description>+8 Eldritch Rot damage per turn, Ignores 10% per level of the victim's Defense, +20 spell resist, +30 Hp from kills, +2 Defense per Level.</Description>
             <Icon>Ability_Binding_Icon.png</Icon>
       	    <GameModifier>
-        	<Provides>Unit counts as Demon</Provides>
+				<ModType>Unit</ModType>
+				<Attribute>AdjustUnitStat</Attribute>
+				<StrVal>UnitStat_BG_IsDemon</StrVal>
+				<Value>1</Value>			
+				<Provides>Unit counts as Demon</Provides>
       	    </GameModifier>
             <GameModifier>
                 <ModType>Unit</ModType>
@@ -212,15 +220,15 @@
                 <Attribute>AdjustUnitStat</Attribute>
                 <StrVal>UnitStat_ArmorPierce</StrVal>
                 <Value>10</Value>
-		<PerLevel>1</PerLevel>
+				<PerLevel>1</PerLevel>
                 <Provides>Ignores 10%, per level, of the victim's Defense</Provides>
             </GameModifier>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_MagicResist</StrVal>
-            <Value>20</Value>
-        </GameModifier>
+			<GameModifier>
+				<ModType>Unit</ModType>
+				<Attribute>AdjustUnitStat</Attribute>
+				<StrVal>UnitStat_MagicResist</StrVal>
+				<Value>20</Value>
+			</GameModifier>
             <GameModifier>
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
@@ -247,13 +255,17 @@
         </AbilityBonusOption>
     </AbilityBonus>
 
-<AbilityBonus InternalName="Void_Spawn3_Ability">
+	<AbilityBonus InternalName="Void_Spawn3_Ability">
         <AbilityBonusOption InternalName="Void_Spawn3">
             <DisplayName>Flayer Of The Void</DisplayName>
             <Description>+20 spell resist, +30 Hp from kills, +2 Defense per Level.</Description>
             <Icon>Ability_Binding_Icon.png</Icon>
       	    <GameModifier>
-        	<Provides>Unit counts as Demon</Provides>
+				<ModType>Unit</ModType>
+				<Attribute>AdjustUnitStat</Attribute>
+				<StrVal>UnitStat_BG_IsDemon</StrVal>
+				<Value>1</Value>			
+				<Provides>Unit counts as Demon</Provides>
       	    </GameModifier>
             <GameModifier>
                 <ModType>Unit</ModType>
@@ -261,12 +273,12 @@
                 <StrVal>EldritchWarp</StrVal>
                 <Provides>Can deal Eldritch Rot damage at range every turn</Provides>
             </GameModifier>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_MagicResist</StrVal>
-            <Value>20</Value>
-        </GameModifier>
+			<GameModifier>
+				<ModType>Unit</ModType>
+				<Attribute>AdjustUnitStat</Attribute>
+				<StrVal>UnitStat_MagicResist</StrVal>
+				<Value>20</Value>
+			</GameModifier>
             <GameModifier>
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
@@ -288,20 +300,24 @@
         </AbilityBonusOption>
     </AbilityBonus>
 
-<AbilityBonus InternalName="Walking_Massacre_Ability">
+	<AbilityBonus InternalName="Walking_Massacre_Ability">
         <AbilityBonusOption InternalName="Walking_Massacre">
             <DisplayName>Walking Massacre</DisplayName>
             <Description>Casts Fear at the beginning of combat, +25 HP from kills, Immune to Poison, +20 spell resist, -50% lightning resist, +10% armor piercing per level</Description>
             <Icon>Ability_Binding_Icon.png</Icon>
       	    <GameModifier>
-        	<Provides>Unit counts as Demon</Provides>
+				<ModType>Unit</ModType>
+				<Attribute>AdjustUnitStat</Attribute>
+				<StrVal>UnitStat_BG_IsDemon</StrVal>
+				<Value>1</Value>			
+				<Provides>Unit counts as Demon</Provides>
       	    </GameModifier>
       	    <GameModifier>
-        	<ModType>Unit</ModType>
-        	<Attribute>AdjustUnitStat</Attribute>
-        	<StrVal>UnitStat_BG_IsOversized</StrVal>
-        	<Value>1</Value>
-        	<Provides>Unit counts as Oversized</Provides>
+				<ModType>Unit</ModType>
+				<Attribute>AdjustUnitStat</Attribute>
+				<StrVal>UnitStat_BG_IsOversized</StrVal>
+				<Value>1</Value>
+				<Provides>Unit counts as Oversized</Provides>
       	    </GameModifier>
             <GameModifier>
                 <ModType>Unit</ModType>
@@ -337,12 +353,12 @@
                 <Value>100</Value>
                 <Provides>Immune to Poison damage</Provides>
             </GameModifier>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_MagicResist</StrVal>
-            <Value>20</Value>
-        </GameModifier>
+			<GameModifier>
+				<ModType>Unit</ModType>
+				<Attribute>AdjustUnitStat</Attribute>
+				<StrVal>UnitStat_MagicResist</StrVal>
+				<Value>20</Value>
+			</GameModifier>
             <GameModifier>
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
@@ -362,7 +378,7 @@
                 <Attribute>AdjustUnitStat</Attribute>
                 <StrVal>UnitStat_ArmorPierce</StrVal>
                 <Value>10</Value>
-		<PerLevel>1</PerLevel>
+				<PerLevel>1</PerLevel>
                 <Provides>Ignores 10%, per level, of the victim's Defense</Provides>
             </GameModifier>
             <GameModifier>
@@ -373,13 +389,6 @@
                 <PerLevel>1</PerLevel>
                 <Provides>+3 Defense per Level</Provides>
             </GameModifier>
-      <GameModifier>
-        <ModType>Unit</ModType>
-        <Attribute>AdjustUnitStat</Attribute>
-        <StrVal>UnitStat_BG_IsOversized</StrVal>
-        <Value>1</Value>
-        <Provides>Unit counts as Oversized</Provides>
-      </GameModifier>
             <Type>Defensive</Type>
             <AIData AIPersonality="AI_General">
                 <AIPriority>10000</AIPriority>
