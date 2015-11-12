@@ -968,7 +968,7 @@
 
 <SpellDef InternalName="ArcticEmbrace">
         <DisplayName>Arctic Embrace</DisplayName>
-        <Description>Transform plains into a wind-blasted frozen snowscape, giving you 1 Wave Essence. Take care as it will destroy any resources in its way.</Description>
+        <Description>Transform plains into a wind-blasted frozen snowscape, giving you 10 Wave Favor and costing 10 Verdant Favor. Take care as it will destroy any resources in its way.</Description>
         <Image>Arctic_Embrace_Painting.png</Image>
         <IconFG>Arctic_Embrace.png</IconFG>
 		<AutoUnlock>1</AutoUnlock>
@@ -978,13 +978,14 @@
         <SpellClass>Terraform</SpellClass>
         <SpellSubClass>Other</SpellSubClass>
         <SpellTargetType>NeutralGround</SpellTargetType>
+		<Radius>1</Radius>
         <Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Water5</Attribute>
         </Prereq>
         <SpellResourceCost>
             <Resource>Mana</Resource>
-            <Amount>6</Amount>
+            <Amount>40</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Map</ModType>
@@ -995,13 +996,13 @@
                 <ModType>Resource</ModType>
                 <Attribute>WaveEssence</Attribute>
 				<ApplyToCaster>1</ApplyToCaster>
-                <Value>1</Value>
+                <Value>10</Value>
             </GameModifier>
             <GameModifier>
                 <ModType>Resource</ModType>
                 <Attribute>VerdantEssence</Attribute>
 				<ApplyToCaster>1</ApplyToCaster>
-                <Value>-1</Value>
+                <Value>-10</Value>
             </GameModifier>
         <ValidTerrainType>Land</ValidTerrainType>
         <ValidTerrainType>Rugged_Land</ValidTerrainType>
@@ -1020,7 +1021,7 @@
         </SpellDefEffect>
     </SpellDef>
 	
--->
+
 
 <!-- Paint anti-forest -->
 
@@ -5884,6 +5885,102 @@
             <AIPriority>0</AIPriority>
         </AIData>
         <HitSoundFX>IceElemental_Death</HitSoundFX>
+    </SpellDef>
+	
+		<SpellDef InternalName="FallingStar2">
+        <DisplayName>Meteor Strike</DisplayName>
+        <Description>Does 25 fire damage (+3 per fire shard) and 25 physical damage (+3 per Air shard) to all armies within 1 tile of the impact point. You will gain significant Ember and Famine favor, while equally losing Verdant favor. BEWARE - this spell will leave scarred earth behind, wiping out resources or even cities.</Description>
+        <Image>S_FallingStar_Painting.png</Image>
+        <IconFG>S_FallingStar_Icon.png</IconFG>
+        <Cooldown>1</Cooldown>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+        <UnitAppSpecifier>ApplyToAll</UnitAppSpecifier>
+        <AlwaysPromptForCaster>0</AlwaysPromptForCaster>
+        <CasterMustBeSov>1</CasterMustBeSov>
+        <Radius>1</Radius>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>500</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Fire</AttackStat>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumFireShards]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc2" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[Calc] * 3]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc2] + 25]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Pierce</AttackStat>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumAirShards]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc2" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[Calc] * 3]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc2] + 25]]></Expression>
+            </Calculate>
+        </GameModifier>		
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>PlaceTerrain</Attribute>
+            <TerrainType>BurningLands</TerrainType>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>PlaceEnvironment</Attribute>
+            <TerrainType>BarrenEnvironment</TerrainType>
+        </GameModifier>	
+            <GameModifier>
+                <ModType>Resource</ModType>
+                <Attribute>EmberEssence</Attribute>
+				<ApplyToCaster>1</ApplyToCaster>
+                <Value>40</Value>
+            </GameModifier>	
+            <GameModifier>
+                <ModType>Resource</ModType>
+                <Attribute>FamineEssence</Attribute>
+				<ApplyToCaster>1</ApplyToCaster>
+                <Value>20</Value>
+            </GameModifier>			
+            <GameModifier>
+                <ModType>Resource</ModType>
+                <Attribute>VerdantEssence</Attribute>
+				<ApplyToCaster>1</ApplyToCaster>
+                <Value>-35</Value>
+            </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>1000</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_FallingStar_01</HitSoundFX>
+        <ModifierDelay>1</ModifierDelay>
+        <WorldLightOverrideTime>4</WorldLightOverrideTime>
+        <WorldLightOverrideAmbiant>0,0,0</WorldLightOverrideAmbiant>
+        <WorldLightOverrideDiffuse>35,50,48</WorldLightOverrideDiffuse>
+        <WorldLightOverrideRim0>22,116,176</WorldLightOverrideRim0>
+        <WorldLightOverrideRim1>17,212,164</WorldLightOverrideRim1>
+        <SpellDefEffect>
+            <EffectName>S_FallingStar_Particle</EffectName>
+            <LocalPosition>0, 0 ,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+            <PlayOnAllTargets>1</PlayOnAllTargets>
+        </SpellDefEffect>
     </SpellDef>
 	
 
