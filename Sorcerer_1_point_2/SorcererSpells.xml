@@ -417,7 +417,7 @@
         </SpellDefEffect>
     </SpellDef>
 
-<SpellDef InternalName="DetonateSpell">
+<!--<SpellDef InternalName="DetonateSpell">
         <DisplayName>Detonate Spell</DisplayName>
         <Description>Disrupts a spell an enemy unit is casting, does 30 damage, and dazes them for 2 turns, unless they resist.</Description>
         <Image>S_Corruption_Painting.png</Image>
@@ -466,7 +466,7 @@
             <EffectDelay>0</EffectDelay>
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
-    </SpellDef>
+    </SpellDef>-->
 
     <SpellDef InternalName="EyesOfTheEagle_Sorcerer">
         <DisplayName>Eyes of the Eagle</DisplayName>

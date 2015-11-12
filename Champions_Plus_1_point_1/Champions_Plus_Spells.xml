@@ -4835,7 +4835,7 @@
 	
 	<SpellDef InternalName="FallingStar2">
         <DisplayName>Meteor Strike</DisplayName>
-        <Description>Does 30 fire damage (+3 per fire shard) and 20 physical damage to all armies within 1 tile of the impact point. BEWARE - this spell will leave scarred earth behind, wiping out resources or even cities.</Description>
+        <Description>Does 20 fire damage (+3 per fire shard) and 20 physical damage (+3 per Air shard) to all armies within 1 tile of the impact point. BEWARE - this spell will leave scarred earth behind, wiping out resources or even cities.</Description>
         <Image>S_FallingStar_Painting.png</Image>
         <IconFG>S_FallingStar_Icon.png</IconFG>
         <Cooldown>1</Cooldown>
@@ -4855,7 +4855,7 @@
         </Prereq>
         <SpellResourceCost>
             <Resource>Mana</Resource>
-            <Amount>350</Amount>
+            <Amount>400</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Unit</ModType>
@@ -4868,14 +4868,22 @@
                 <Expression><![CDATA[[Calc] * 3]]></Expression>
             </Calculate>
             <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc2] + 30]]></Expression>
+                <Expression><![CDATA[[Calc2] + 20]]></Expression>
             </Calculate>
         </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>DefendableDamage</Attribute>
             <AttackStat>UnitStat_Attack_Pierce</AttackStat>
-			<Value>30</Value>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumAirShards]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc2" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[Calc] * 3]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc2] + 20]]></Expression>
+            </Calculate>
         </GameModifier>		
         <GameModifier>
             <ModType>Map</ModType>

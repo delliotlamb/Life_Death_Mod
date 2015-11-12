@@ -20,7 +20,7 @@
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_CombatSpeed</StrVal>
-            <Value>3</Value>
+            <Value>2</Value>
         </GameModifier>		
             <GameModifier>
                 <ModType>Unit</ModType>

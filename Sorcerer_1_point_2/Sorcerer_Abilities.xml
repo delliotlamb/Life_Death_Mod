@@ -5,7 +5,7 @@
         <AbilityBonusType>Unit_Level_Path</AbilityBonusType>
         <AbilityBonusOption InternalName="PathOfTheSorcerer">
             <DisplayName>Sorcerer</DisplayName>
-            <Description>Casts world-changing strategic and weighty tactical spells, while obsessing in the science of magic.</Description>
+            <Description>Casts mighty strategic spells, but slow tactical spells, while obsessing in the science of magic.</Description>
             <Icon>Ability_Sorcerer_Path_Icon.png</Icon>
             <TraitTreePicture>trait_tree_unit_sorcerer.png</TraitTreePicture>
             <BackgroundColor>96,75,126</BackgroundColor>
@@ -80,9 +80,16 @@
 			<GameModifier>
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_SpellDamage</StrVal>
+                <Value>10</Value>
+                <Provides>+10% Spell Damage</Provides>
+            </GameModifier>				
+			<GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
                 <StrVal>UnitStat_SpellDamage_SorcererTactical</StrVal>
-                <Value>30</Value>
-                <Provides>+30% Tactical Spell Damage</Provides>
+                <Value>10</Value>
+                <Provides>+10% Tactical Spell Damage</Provides>
             </GameModifier>	
             <GameModifier>
                 <ModType>Unit</ModType>
@@ -133,12 +140,19 @@
                 <Value>25</Value>
                 <Provides>+25% Spell Damage</Provides>
             </GameModifier>-->
-            <GameModifier>
+			<GameModifier>
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
                 <StrVal>UnitStat_SpellDamage</StrVal>
-                <Value>20</Value>
-                <Provides>+20% Spell Damage</Provides>
+                <Value>10</Value>
+                <Provides>+10% Spell Damage</Provides>
+            </GameModifier>				
+			<GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_SpellDamage_SorcererTactical</StrVal>
+                <Value>10</Value>
+                <Provides>+10% Tactical Spell Damage</Provides>
             </GameModifier>			
             <Type>Spell</Type>
             <UpgradePathID>Prodigy_Sorcerer</UpgradePathID>
@@ -168,13 +182,20 @@
                 <Value>20</Value>
                 <Provides>+20 Spell Mastery</Provides>
             </GameModifier>
-            <GameModifier>
+			<GameModifier>
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
                 <StrVal>UnitStat_SpellDamage</StrVal>
-                <Value>20</Value>
-                <Provides>+20% Spell Damage</Provides>
-            </GameModifier>			
+                <Value>10</Value>
+                <Provides>+10% Spell Damage</Provides>
+            </GameModifier>				
+			<GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_SpellDamage_SorcererTactical</StrVal>
+                <Value>10</Value>
+                <Provides>+10% Tactical Spell Damage</Provides>
+            </GameModifier>		
             <Type>Spell</Type>
             <UpgradePathID>Prodigy_Sorcerer</UpgradePathID>
             <Prereq>
@@ -771,7 +792,7 @@
         <AbilityBonusType>Unit_Level</AbilityBonusType>
         <AbilityBonusOption InternalName="UnstableMagic">
             <DisplayName>Volatile Power</DisplayName>
-            <Description>Casting a tactical spell damages this unit by 20 points. Spell mastery and tactical spell damage are greatly raised.</Description>
+            <Description>Casting a tactical spell damages this unit by 20 points. Spell mastery and spell damage are greatly raised.</Description>
             <Icon>Ability_UnstableMagic_Icon.png</Icon>
             <PerkTreePosX>6</PerkTreePosX>
             <PerkTreePosY>0</PerkTreePosY>
@@ -785,15 +806,15 @@
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
                 <StrVal>UnitStat_MagicPower</StrVal>
-                <Value>40</Value>
-                <Provides>+40 Spell Mastery</Provides>
+                <Value>25</Value>
+                <Provides>+25 Spell Mastery</Provides>
             </GameModifier>
             <GameModifier>
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
-                <StrVal>UnitStat_SpellDamage_SorcererTactical</StrVal>
-                <Value>40</Value>
-                <Provides>+40% Tactical Spell Damage</Provides>
+                <StrVal>UnitStat_SpellDamage</StrVal>
+                <Value>20</Value>
+                <Provides>+20% Spell Damage</Provides>
             </GameModifier>			
             <Prereq>
                 <Type>AbilityBonusOption</Type>
@@ -860,11 +881,11 @@
         </AbilityBonusOption>
     </AbilityBonus>
 
- <AbilityBonus InternalName="ContractWithFlamesAbility">
+ <AbilityBonus InternalName="BargainWithEntropyAbility">
         <AbilityBonusType>Unit_Level</AbilityBonusType>
-        <AbilityBonusOption InternalName="ContractWithFlames">
+        <AbilityBonusOption InternalName="BargainWithEntropy">
             <DisplayName>Bargain With Entropy</DisplayName>
-            <Description>+30% Spell Damage, additional +30% with Fire spells, -40% hit points</Description>
+            <Description>+20% Spell Damage, additional +20% with Fire spells, -40% hit points</Description>
             <Icon>Ability_VolcanicRites_Icon.png</Icon>
             <PerkTreePosX>4</PerkTreePosX>
             <PerkTreePosY>1</PerkTreePosY>
@@ -872,15 +893,15 @@
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
                 <StrVal>UnitStat_SpellDamage_Fire</StrVal>
-                <Value>.30</Value>
-                <Provides>+30% Spell Damage with Fire spells</Provides>
+                <Value>.20</Value>
+                <Provides>+20% Spell Damage with Fire spells</Provides>
             </GameModifier>
             <GameModifier>
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
                 <StrVal>UnitStat_SpellDamage</StrVal>
-                <Value>30</Value>
-                <Provides>+30% Spell Damage</Provides>
+                <Value>10</Value>
+                <Provides>+10% Spell Damage</Provides>
             </GameModifier>
             <GameModifier>
                 <ModType>Unit</ModType>
