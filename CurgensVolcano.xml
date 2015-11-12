@@ -4,7 +4,7 @@
 
 <SpellDef InternalName="CurgensVolcano">
         <DisplayName>Curgen's Volcano</DisplayName>
-        <Description>Raises a volcano in the midst of an enemy city.  The volcano destroys whatever is in the way: resources, units, improvements, cities, and even sovereigns (and subsequently their faction).</Description>
+        <Description>Raises a volcano in the midst of an enemy city.  The volcano destroys whatever is in the way: resources, units, improvements, cities, and even sovereigns (and subsequently their faction). Also, 400 of this spells' casting cost is refunded upon cast.</Description>
         <Image>S_CurgensVolcano_Painting.png</Image>
         <IconFG>S_CurgensVolcano_Icon.png</IconFG>
         <CastTime>2</CastTime>
@@ -25,6 +25,12 @@
             <ModType>Map</ModType>
             <Attribute>DestroyObjects</Attribute>
         </GameModifier>
+            <GameModifier>
+                <ModType>Resource</ModType>
+                <Attribute>Mana</Attribute>
+				<ApplyToCaster>1</ApplyToCaster>
+                <Value>400</Value>
+            </GameModifier>		
         <ValidTerrainCategory>City</ValidTerrainCategory>
         <!--<ValidTerrainCategory>Forest</ValidTerrainCategory>
         <ValidTerrainCategory>Land</ValidTerrainCategory>

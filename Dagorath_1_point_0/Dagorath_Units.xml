@@ -939,7 +939,7 @@
         <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
         <InfoCardBackground>BG_BarrenForest</InfoCardBackground>
         <ModelPath>Gfx\HKB\Units\K_Female_Mesh_01.hkb</ModelPath>
-        <ModelScale>1</ModelScale>
+        <ModelScale>.9</ModelScale>
         <MovingSFX>TEMP_KnightMarching1</MovingSFX>
         <OnHitParticleName>Bloody_OnHit</OnHitParticleName>
         <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
@@ -982,7 +982,7 @@
         <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
         <InfoCardBackground>BG_BarrenForest</InfoCardBackground>
         <ModelPath>Gfx\HKB\Units\K_Female_Mesh_01.hkb</ModelPath>
-        <ModelScale>1</ModelScale>
+        <ModelScale>.9</ModelScale>
         <MovingSFX>TEMP_KnightMarching1</MovingSFX>
         <OnHitParticleName>Bloody_OnHit</OnHitParticleName>
         <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
@@ -1048,7 +1048,7 @@
         <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
         <InfoCardBackground>BG_BarrenForest</InfoCardBackground>
         <ModelPath>Gfx\HKB\Units\K_Female_Mesh_01.hkb</ModelPath>
-        <ModelScale>1</ModelScale>
+        <ModelScale>.9</ModelScale>
         <MovingSFX>TEMP_KnightMarching1</MovingSFX>
         <OnHitParticleName>Bloody_OnHit</OnHitParticleName>
         <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
