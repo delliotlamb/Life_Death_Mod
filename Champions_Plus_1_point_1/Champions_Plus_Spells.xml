@@ -4833,4 +4833,45 @@
         </SpellDefEffect>
     </SpellDef>
 	
+	<SpellDef InternalName="DefensiveForesight">
+        <DisplayName>Defensive Foresight</DisplayName>
+        <Description>If an enemy army attacks, your troops will have full foresight of the enemy's intent, strengths, and weaknesses. As a result your troops will gain +4 initiative, +20% armor piercing, and +20 accuracy in defensive actions. Can only be cast once per game.</Description>
+        <Image>Stat_MagicResist_Icon.png</Image>
+        <IconFG>F_Conquest_Full.png</IconFG>
+        <CanStack>0</CanStack>
+		<Cooldown>1000</Cooldown>
+        <SpellBookSortCategory>City</SpellBookSortCategory>
+        <SpellBookSortSubCategory>CityEnchantment</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Buff</SpellSubClass>
+        <SpellTargetType>FriendlyCity</SpellTargetType>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>300</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>City</ModType>
+            <Attribute>AdjustDefendingUnit</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>4</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>City</ModType>
+            <Attribute>AdjustDefendingUnit</Attribute>
+            <StrVal>UnitStat_ArmorPierce</StrVal>
+            <Value>20</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>City</ModType>
+            <Attribute>AdjustDefendingUnit</Attribute>
+            <StrVal>UnitStat_Accuracy</StrVal>
+            <Value>20</Value>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>1000</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_GlyphOfLife_01</HitSoundFX>
+    </SpellDef>
+	
 </Spells>

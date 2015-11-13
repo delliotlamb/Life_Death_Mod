@@ -63,6 +63,13 @@
             <Icon>S_FallingStar_Icon.png</Icon>
             <Provides>Spell: Meteor Strike, more powerful variation of Falling Star</Provides>
         </GameModifier>
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>UnlockSpell</Attribute>
+            <StrVal>DefensiveForesight</StrVal>
+            <Icon>Stat_MagicResist_Icon.png</Icon>
+            <Provides>Spell: Defensive Foresight</Provides>
+        </GameModifier>		
     </TechDef>
     
 </Techs>
