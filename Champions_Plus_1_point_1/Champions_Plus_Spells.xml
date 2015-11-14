@@ -4835,11 +4835,11 @@
 	
 	<SpellDef InternalName="DefensiveForesight">
         <DisplayName>Defensive Foresight</DisplayName>
-        <Description>If an enemy army attacks, your troops will have full foresight of the enemy's intent, strengths, and weaknesses. As a result your troops will gain +4 initiative, +20% armor piercing, and +20 accuracy in defensive actions. Can only be cast once per game.</Description>
+        <Description>If an enemy army attacks, your troops will have full foresight of the enemy's intent, strengths, and weaknesses. As a result your troops will gain +4 initiative, +20% armor piercing, +10 Defense, and +20 accuracy in defensive actions.</Description>
         <Image>Stat_MagicResist_Icon.png</Image>
-        <IconFG>F_Conquest_Full.png</IconFG>
+        <IconFG>Stat_Intelligence_Icon.png</IconFG>
         <CanStack>0</CanStack>
-		<Cooldown>1000</Cooldown>
+		<Cooldown>30</Cooldown>
         <SpellBookSortCategory>City</SpellBookSortCategory>
         <SpellBookSortSubCategory>CityEnchantment</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -4848,7 +4848,7 @@
         <SpellTargetType>FriendlyCity</SpellTargetType>
         <SpellResourceCost>
             <Resource>Mana</Resource>
-            <Amount>300</Amount>
+            <Amount>200</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>City</ModType>
@@ -4867,7 +4867,13 @@
             <Attribute>AdjustDefendingUnit</Attribute>
             <StrVal>UnitStat_Accuracy</StrVal>
             <Value>20</Value>
-        </GameModifier>		
+        </GameModifier>
+        <GameModifier>
+            <ModType>City</ModType>
+            <Attribute>AdjustDefendingUnit</Attribute>
+            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <Value>10</Value>
+        </GameModifier>			
         <AIData AIPersonality="AI_General">
             <AIPriority>1000</AIPriority>
         </AIData>

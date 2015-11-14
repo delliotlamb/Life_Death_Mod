@@ -67,7 +67,7 @@
             <ModType>Player</ModType>
             <Attribute>UnlockSpell</Attribute>
             <StrVal>DefensiveForesight</StrVal>
-            <Icon>Stat_MagicResist_Icon.png</Icon>
+            <Icon>Stat_Intelligence_Icon.png</Icon>
             <Provides>Spell: Defensive Foresight</Provides>
         </GameModifier>		
     </TechDef>
