@@ -246,7 +246,6 @@
         <SpellClass>Offensive</SpellClass>
         <SpellSubClass>Debuff</SpellSubClass>
         <SpellTargetType>EnemyUnit</SpellTargetType>
-        <SpellTargetZOCType>Friendly</SpellTargetZOCType>
         <UnitAppSpecifier>ApplyToAll</UnitAppSpecifier>
         <Prereq>
             <Type>AbilityBonusOption</Type>
@@ -1691,7 +1690,7 @@
 
 <!-- Fire Spells-->
 
-<!-- overwrites pillar of flame and firestorm. Bot have terraforming resources consequences, and I upped the damage for firestorm - otherwise it;s hard to justify the 200 mana cost. -->
+<!-- overwrites pillar of flame and firestorm. Bot have terraforming resources consequences, and I upped the damage for firestorm - otherwise it's hard to justify the 200 mana cost. -->
 
 <SpellDef InternalName="PillarOfFlame">
         <DisplayName>Pillar of Flame</DisplayName>
@@ -1766,7 +1765,7 @@
 	
 	<SpellDef InternalName="Firestorm">
         <DisplayName>Firestorm</DisplayName>
-        <Description>All units in target army take 18 fire damage (+2 per fire shard). Firestorm leaves a fire raging in the affected tile for 10 turns. You will gain 20 Ember Favor and lose 10 Verdant Favor.</Description>
+        <Description>All units in target army take 25 fire damage (+2 per fire shard). Firestorm leaves a fire raging in the affected tile for 10 turns. You will gain 20 Ember Favor and lose 10 Verdant Favor.</Description>
         <Image>S_Firestorm_Painting.png</Image>
         <IconFG>S_Firestorm_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -1796,7 +1795,7 @@
                 <Expression><![CDATA[[UnitOwner_GetNumFireShards] * 2]]></Expression>
             </Calculate>
             <Calculate InternalName="Calc2">
-                <Expression><![CDATA[[Calc] + 18]]></Expression>
+                <Expression><![CDATA[[Calc] + 25]]></Expression>
             </Calculate>
             <Calculate InternalName="Calc3" ValueOwner="CastingUnit">
                 <Expression><![CDATA[[Calc2] * [UnitStat_SpellDamage_Fire]]]></Expression>
@@ -2066,7 +2065,7 @@
 
 <SpellDef InternalName="ForestFire">
         <DisplayName>Forest Fire</DisplayName>
-        <Description>Light Forest ablaze to attack an enemy unit in friendly territory forest, and any enemy unit within 1 tile. Units caught by the fire take 12 fire damage (+3 per fire shard) and the environment is left barren. You will lose 10 Verdant Favor as well, while gaining 5 Ember Favor and 1 Famine Favor.</Description>
+        <Description>Light Forest ablaze to attack an enemy unit in friendly territory forest, and any enemy unit within 1 tile. Units caught by the fire take 10 fire damage (+3 per fire shard) and the environment is left barren. You will lose 10 Verdant Favor as well, while gaining 5 Ember Favor and 1 Famine Favor.</Description>
         <Image>Hungering_Fire_Painting.png</Image>
         <IconFG>Hungering_Fire.png</IconFG>
 		<AutoUnlock>1</AutoUnlock>
@@ -2077,7 +2076,6 @@
         <SpellClass>Offensive</SpellClass>
         <SpellSubClass>Damage</SpellSubClass>
         <SpellTargetType>EnemyUnit</SpellTargetType>
-        <SpellTargetZOCType>Friendly</SpellTargetZOCType>
         <UnitAppSpecifier>ApplyToAll</UnitAppSpecifier>
         <CasterMustBeSov>1</CasterMustBeSov>		
         <Radius>1</Radius>
@@ -2097,7 +2095,7 @@
                 <Expression><![CDATA[[UnitOwner_GetNumFireShards] * 3]]></Expression>
             </Calculate>
             <Calculate InternalName="Calc2">
-                <Expression><![CDATA[[Calc] + 12]]></Expression>
+                <Expression><![CDATA[[Calc] + 10]]></Expression>
             </Calculate>
             <Calculate InternalName="Calc3" ValueOwner="CastingUnit">
                 <Expression><![CDATA[[Calc2] * [UnitStat_SpellDamage_Fire]]]></Expression>
@@ -2985,7 +2983,7 @@
         </Prereq>
         <SpellResourceCost>
             <Resource>Mana</Resource>
-            <Amount>6</Amount>
+            <Amount>4</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Map</ModType>
@@ -3026,7 +3024,7 @@
 
     <SpellDef InternalName="RelentlessGales">
         <DisplayName>Chaotic Gales</DisplayName>
-        <Description>Targeted army on a Plains tile has its units randomly scattered around 1 surrounding tile.</Description>
+        <Description>Targeted army on a Plains tile has its units randomly scattered around 1 surrounding tile, leaving them highly vulnerable to a focused assault.</Description>
         <Image>S_Tornado_Painting.png</Image>
         <IconFG>T_TitansBreath_Icon.png</IconFG>
 		<AutoUnlock>1</AutoUnlock>		
@@ -3036,8 +3034,7 @@
         <SpellType>Strategic</SpellType>
         <SpellClass>Offensive</SpellClass>
         <SpellSubClass>Debuff</SpellSubClass>
-        <SpellTargetType>EnemyUnit</SpellTargetType>
-        <SpellTargetZOCType>Friendly</SpellTargetZOCType>		
+        <SpellTargetType>EnemyUnit</SpellTargetType>		
         <UnitAppSpecifier>ApplyToAll</UnitAppSpecifier>
         <Prereq>
             <Type>AbilityBonusOption</Type>
@@ -3045,7 +3042,7 @@
         </Prereq>		
         <SpellResourceCost>
             <Resource>GaleEssence</Resource>
-            <Amount>40</Amount>
+            <Amount>80</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Unit</ModType>
@@ -4099,7 +4096,6 @@
         <SpellClass>Offensive</SpellClass>
         <SpellSubClass>Debuff</SpellSubClass>
         <SpellTargetType>EnemyUnit</SpellTargetType>
-        <SpellTargetZOCType>Friendly</SpellTargetZOCType>
         <UnitAppSpecifier>ApplyToAll</UnitAppSpecifier>
         <Prereq>
             <Type>AbilityBonusOption</Type>
@@ -4926,7 +4922,6 @@
         <SpellClass>Offensive</SpellClass>
         <SpellSubClass>Debuff</SpellSubClass>
         <SpellTargetType>EnemyUnit</SpellTargetType>
-        <SpellTargetZOCType>Friendly</SpellTargetZOCType>
         <UnitAppSpecifier>ApplyToAll</UnitAppSpecifier>
         <Prereq>
             <Type>AbilityBonusOption</Type>
@@ -5907,34 +5902,6 @@
             <Resource>Mana</Resource>
             <Amount>400</Amount>
         </SpellResourceCost>
-        <!--<GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>DefendableDamage</Attribute>
-            <AttackStat>UnitStat_Attack_Fire</AttackStat>
-            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
-                <Expression><![CDATA[[UnitOwner_GetNumFireShards]]]></Expression>
-            </Calculate>
-            <Calculate InternalName="Calc2" ValueOwner="CastingUnit">
-                <Expression><![CDATA[[Calc] * 3]]></Expression>
-            </Calculate>
-            <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc2] + 25]]></Expression>
-            </Calculate>
-        </GameModifier>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>DefendableDamage</Attribute>
-            <AttackStat>UnitStat_Attack_Pierce</AttackStat>
-            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
-                <Expression><![CDATA[[UnitOwner_GetNumAirShards]]]></Expression>
-            </Calculate>
-            <Calculate InternalName="Calc2" ValueOwner="CastingUnit">
-                <Expression><![CDATA[[Calc] * 3]]></Expression>
-            </Calculate>
-            <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc2] + 25]]></Expression>
-            </Calculate>
-        </GameModifier>-->	
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>DefendableDamage</Attribute>
