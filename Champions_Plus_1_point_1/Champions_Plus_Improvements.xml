@@ -1250,5 +1250,17 @@
             <Value>-1750</Value>
         </GameModifier>
     </ImprovementType>
+	
+	<ImprovementType InternalName="EreogsTower">
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Mana</Attribute>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Mana per Essence</Provides>
+            <Calculate InternalName="Value" ValueOwner="OwnerCity">
+                <Expression><![CDATA[[TileYieldEssence]]]></Expression>
+            </Calculate>
+        </GameModifier>
+    </ImprovementType>
     
 </ImprovementTypes>
