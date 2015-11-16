@@ -133,14 +133,14 @@
             <Attribute>SummonUnit</Attribute>
             <Value>1</Value>
             <Multiplier>3</Multiplier>
-            <UnitClass>Unit_Spearman_Quendar</UnitClass>
+            <UnitClass>Unit_Demon_Dagorath</UnitClass>
         </GameModifier>
         <GameModifier>
             <ModType>Map</ModType>
             <Attribute>SummonUnit</Attribute>
             <Value>1</Value>
             <Multiplier>3</Multiplier>
-            <UnitClass>Unit_Peasant_Quendar</UnitClass>
+            <UnitClass>Generic_Slave_Dagorath</UnitClass>
         </GameModifier>
         <LevelMilestone InternalName="L1">
             <Level>1</Level>
@@ -207,14 +207,14 @@
             <Attribute>SummonUnit</Attribute>
             <Value>1</Value>
             <Multiplier>3</Multiplier>
-            <UnitClass>Unit_Spearman_Quendar</UnitClass>
+            <UnitClass>Unit_Demon_Dagorath</UnitClass>
         </GameModifier>
         <GameModifier>
             <ModType>Map</ModType>
             <Attribute>SummonUnit</Attribute>
             <Value>1</Value>
             <Multiplier>3</Multiplier>
-            <UnitClass>Unit_Peasant_Quendar</UnitClass>
+            <UnitClass>Generic_Slave_Dagorath</UnitClass>
         </GameModifier>
         <LevelMilestone InternalName="L1">
             <Level>1</Level>
@@ -263,7 +263,7 @@
 
 <!-- Demons follow -->
 
-<UnitType InternalName="Unit_Demon_Dagorath">
+<!--<UnitType InternalName="Unit_Demon_Dagorath">
         <DisplayName>Demon</DisplayName>
         <Description>When sacrificed according to Dagorath's secret rituals, the death of his citizens shall welcome these lesser terrors into Elemental, ready to fight for the opening of more gates.</Description>
         <CreatureType>Undead</CreatureType>
@@ -318,7 +318,7 @@
         <TacticalModelScale>1.5</TacticalModelScale>
         <Texture_Skin>M_Demon_Texture_01.png</Texture_Skin>
         <UnitModelType>Dagorath_Demon</UnitModelType>
-    </UnitType>
+    </UnitType>-->
 
 	<UnitType InternalName="Unit_Horror_Dagorath">
         <DisplayName>Horror</DisplayName>
@@ -366,7 +366,7 @@
         <EyeTexture>gfx/eyes/male_brown_eye.png</EyeTexture>
         <InfoCardBackground>BG4_Dark</InfoCardBackground>
         <MaxScaleMainMap>1.08</MaxScaleMainMap>
-        <MaxScaleTacticalMap>1</MaxScaleTacticalMap>
+        <!--<MaxScaleTacticalMap>1</MaxScaleTacticalMap>-->
         <ModelPath>gfx/hkb/Monsters/M_Demon_Mesh_01.hkb</ModelPath>
         <ModelScale>1.4</ModelScale>
         <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
@@ -803,7 +803,7 @@
         <EyeTexture>gfx/eyes/male_brown_eye.png</EyeTexture>
         <InfoCardBackground>BG4_Dark</InfoCardBackground>
         <MaxScaleMainMap>1.08</MaxScaleMainMap>
-        <MaxScaleTacticalMap>1</MaxScaleTacticalMap>
+        <!--<MaxScaleTacticalMap>1</MaxScaleTacticalMap>-->
         <ModelPath>gfx/hkb/Monsters/M_Demon_Mesh_01.hkb</ModelPath>
         <ModelScale>1.6</ModelScale>
         <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>

@@ -36,6 +36,67 @@
         <ArtDef>Art_ArcanaWard</ArtDef>
     </ImprovementType>
 	
+	<ImprovementType InternalName="PillarOfForesight">
+        <DisplayName>Pillar Of Foresight</DisplayName>
+        <Description>This magical pillar will give city defenders a massive advantage when defending.</Description>
+        <RequiresCity>1</RequiresCity>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <LaborToBuild>1200</LaborToBuild>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Book_Of_Mastery</Attribute>
+        </Prereq>		
+        <GameModifier>
+            <ModType>ConstructionResourceCost</ModType>
+            <Attribute>Metal</Attribute>
+            <Value>-20</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ConstructionResourceCost</ModType>
+            <Attribute>RefinedCrystal</Attribute>
+            <Value>-100</Value>
+        </GameModifier>	
+        <GameModifier>
+            <ModType>City</ModType>
+            <Attribute>AdjustDefendingUnit</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>4</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>City</ModType>
+            <Attribute>AdjustDefendingUnit</Attribute>
+            <StrVal>UnitStat_ArmorPierce</StrVal>
+            <Value>20</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>City</ModType>
+            <Attribute>AdjustDefendingUnit</Attribute>
+            <StrVal>UnitStat_Accuracy</StrVal>
+            <Value>20</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>City</ModType>
+            <Attribute>AdjustDefendingUnit</Attribute>
+            <StrVal>UnitStat_Dodge</StrVal>
+            <Value>10</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>City</ModType>
+            <Attribute>AdjustDefendingUnit</Attribute>
+            <StrVal>UnitStat_DodgeAgainstRanged</StrVal>
+            <Value>10</Value>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>1000</AIPriority>
+            <AITag>Defensive</AITag>
+        </AIData>
+        <ArtDef>Art_PillarOfForesight</ArtDef>
+    </ImprovementType>
+	
 	<ImprovementType InternalName="Smithy">
         <DisplayName>Smithy</DisplayName>
         <Description>Allows the crafting of chainmail for champions. A champion must be present in the city to summon the items like a spell.</Description>

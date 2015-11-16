@@ -35,6 +35,7 @@
             <Icon>Res_Icon_Food.png</Icon>
             <Provides>-10 Food per Grain factionwide to support larger armies</Provides>
         </GameModifier>
+    </TechDef>		
 
 	 <TechDef InternalName="Company">
         <GameModifier>
@@ -62,15 +63,18 @@
             <StrVal>FallingStar2</StrVal>
             <Icon>S_FallingStar_Icon.png</Icon>
             <Provides>Spell: Meteor Strike, more powerful variation of Falling Star</Provides>
-        </GameModifier>
-        <GameModifier>
-            <ModType>Player</ModType>
-            <Attribute>UnlockSpell</Attribute>
-            <StrVal>DefensiveForesight</StrVal>
-            <Icon>Stat_Intelligence_Icon.png</Icon>
-            <Provides>Spell: Defensive Foresight</Provides>
         </GameModifier>		
     </TechDef>
+		
+	<!--<TechDef InternalName="Book_Of_Mastery">
+	    <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>UnlockSpell</Attribute>
+            <StrVal>Spell_DefensiveForesight</StrVal>
+            <Icon>Stat_Intelligence_Icon.png</Icon>
+            <Provides>Spell: Defensive Foresight</Provides>
+        </GameModifier>
+    </TechDef>-->
     
 </Techs>
 

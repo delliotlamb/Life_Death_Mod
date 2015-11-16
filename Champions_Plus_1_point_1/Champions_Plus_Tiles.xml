@@ -2193,4 +2193,143 @@
 		<TileDesignPath InternalName="_path0"/>
 	</TileDesign>
 	
+	<TileDesign InternalName="A_Pillar_Of_Foresight">
+		<DisplayName>A_Pillar_Of_Foresight</DisplayName>
+		<Thumbnail>\Game\Gfx\tile_icon.png</Thumbnail>
+		<LowResShadow>A_Pillar_Of_Foresight_shadow.png</LowResShadow>
+		<HighResShadow>A_Pillar_Of_Foresight_shadow.png</HighResShadow>
+		<ShadowTransparency>60</ShadowTransparency>
+		<IsCore>0</IsCore>
+		<IsHiddenFromEditor>0</IsHiddenFromEditor>
+		<SubTileFlags>1</SubTileFlags>
+		<TileDesignObject InternalName="_obj0">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>AdvancedDungeon_Tower1</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>3.504013,1.000000,-0.816467</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj1">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>AdvancedDungeon_QuarterCircle</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-5.862602,0.000000,8.859589</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.5600</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj2">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>AdvancedDungeon_QuarterCircle</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>14.330368,0.000000,-10.914192</Position>
+			<Rotation>0.000000,3.141593,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.5600</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj3">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>AdvancedDungeon_QuarterCircle</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-6.060719,0.000000,-10.854919</Position>
+			<Rotation>0.000000,4.712389,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.5600</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj4">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>AdvancedDungeon_QuarterCircle</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>14.526890,0.000000,9.020081</Position>
+			<Rotation>0.000000,1.570796,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.5600</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj5">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>Statue_KingdomGuard1</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>14.569069,0.000000,-17.816864</Position>
+			<Rotation>0.000000,5.585054,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.8000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj6">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>Statue_KingdomGuard1</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-10.136093,0.000000,-15.740952</Position>
+			<Rotation>0.000000,0.785398,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.8000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj7">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>Statue_KingdomGuard1</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-9.301514,0.000000,15.344681</Position>
+			<Rotation>0.000000,2.356194,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.8000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj8">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>Statue_KingdomGuard1</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>16.942719,0.000000,16.467636</Position>
+			<Rotation>0.000000,3.926991,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.8000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignPath InternalName="_path0"/>
+		<EffectTrigger InternalName="Artifact_Sparkle_01">
+			<EffectName>Artifact_Sparkle_01</EffectName>
+			<LocalPosition>4.565094,0.000000,-16.571701</LocalPosition>
+			<Scale>0.5000</Scale>
+			<IndefiniteRepeat>1</IndefiniteRepeat>
+			<SpawnOnCreation>1</SpawnOnCreation>
+		</EffectTrigger>
+		<EffectTrigger InternalName="Artifact_Sparkle_01">
+			<EffectName>Artifact_Sparkle_01</EffectName>
+			<LocalPosition>-10.772888,0.000000,2.018112</LocalPosition>
+			<Scale>0.5000</Scale>
+			<IndefiniteRepeat>1</IndefiniteRepeat>
+			<SpawnOnCreation>1</SpawnOnCreation>
+		</EffectTrigger>
+		<EffectTrigger InternalName="Artifact_Sparkle_01">
+			<EffectName>Artifact_Sparkle_01</EffectName>
+			<LocalPosition>18.776045,0.000000,0.247910</LocalPosition>
+			<Scale>0.5000</Scale>
+			<IndefiniteRepeat>1</IndefiniteRepeat>
+			<SpawnOnCreation>1</SpawnOnCreation>
+		</EffectTrigger>
+		<EffectTrigger InternalName="Artifact_Sparkle_01">
+			<EffectName>Artifact_Sparkle_01</EffectName>
+			<LocalPosition>5.451294,0.000000,14.274811</LocalPosition>
+			<Scale>0.5000</Scale>
+			<IndefiniteRepeat>1</IndefiniteRepeat>
+			<SpawnOnCreation>1</SpawnOnCreation>
+		</EffectTrigger>
+	</TileDesign>
+	
 </TileDesigns>

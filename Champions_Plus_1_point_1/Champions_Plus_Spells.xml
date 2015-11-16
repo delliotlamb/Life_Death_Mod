@@ -4833,9 +4833,9 @@
         </SpellDefEffect>
     </SpellDef>
 	
-	<SpellDef InternalName="DefensiveForesight">
+	<!--<SpellDef InternalName="Spell_DefensiveForesight">
         <DisplayName>Defensive Foresight</DisplayName>
-        <Description>If an enemy army attacks, your troops will have full foresight of the enemy's intent, strengths, and weaknesses. As a result your troops will gain +4 initiative, +20% armor piercing, +10 Defense, and +20 accuracy in defensive actions.</Description>
+        <Description>If an enemy army attacks, your troops will have full foresight of the enemy's intent, strengths, and weaknesses. As a result your troops will gain +4 initiative, +20% armor piercing, +10 Dodge, +10 Dodge vs ranged, and +20 accuracy in defensive actions.</Description>
         <Image>Stat_MagicResist_Icon.png</Image>
         <IconFG>Stat_Intelligence_Icon.png</IconFG>
         <CanStack>0</CanStack>
@@ -4871,13 +4871,19 @@
         <GameModifier>
             <ModType>City</ModType>
             <Attribute>AdjustDefendingUnit</Attribute>
-            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <StrVal>UnitStat_Dodge</StrVal>
             <Value>10</Value>
-        </GameModifier>			
+        </GameModifier>
+        <GameModifier>
+            <ModType>City</ModType>
+            <Attribute>AdjustDefendingUnit</Attribute>
+            <StrVal>UnitStat_DodgeAgainstRanged</StrVal>
+            <Value>10</Value>
+        </GameModifier>		
         <AIData AIPersonality="AI_General">
             <AIPriority>1000</AIPriority>
         </AIData>
         <HitSoundFX>Spell_GlyphOfLife_01</HitSoundFX>
-    </SpellDef>
+    </SpellDef>-->
 	
 </Spells>
