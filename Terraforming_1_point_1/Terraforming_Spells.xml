@@ -5884,7 +5884,7 @@
 	
 		<SpellDef InternalName="FallingStar2">
         <DisplayName>Meteor Strike</DisplayName>
-        <Description>Does 15 fire damage (+2 per fire shard) and 15 physical damage (+2 per Air shard), per unit member, to all armies within 1 tile of the impact point. You will gain significant Ember and Famine favor, while equally losing Verdant favor. BEWARE - this spell will leave scarred earth behind, wiping out resources or even cities.</Description>
+        <Description>Does 12 fire damage (+2 per fire shard) and 12 physical damage (+2 per Air shard), per unit member, to all armies within 1 tile of the impact point. You will gain significant Ember and Famine favor, while equally losing Verdant favor. BEWARE - this spell will leave scarred earth behind, wiping out resources or even cities.</Description>
         <Image>S_FallingStar_Painting.png</Image>
         <IconFG>S_FallingStar_Icon.png</IconFG>
         <Cooldown>1</Cooldown>
@@ -5910,7 +5910,7 @@
                 <Expression><![CDATA[[UnitOwner_GetNumFireShards] * 2]]></Expression>
             </Calculate>
             <Calculate InternalName="Calc2">
-                <Expression><![CDATA[[Calc] + 15]]></Expression>
+                <Expression><![CDATA[[Calc] + 12]]></Expression>
             </Calculate>
             <Calculate InternalName="Calc3" ValueOwner="TargetUnit">
                 <Expression><![CDATA[[Unit_GetTroopCount]]]></Expression>
@@ -5927,7 +5927,7 @@
                 <Expression><![CDATA[[UnitOwner_GetNumEarthShards] * 2]]></Expression>
             </Calculate>
             <Calculate InternalName="Calc2">
-                <Expression><![CDATA[[Calc] + 15]]></Expression>
+                <Expression><![CDATA[[Calc] + 12]]></Expression>
             </Calculate>
             <Calculate InternalName="Calc3" ValueOwner="TargetUnit">
                 <Expression><![CDATA[[Unit_GetTroopCount]]]></Expression>
@@ -5939,7 +5939,8 @@
         <GameModifier>
             <ModType>Map</ModType>
             <Attribute>PlaceTerrain</Attribute>
-            <TerrainType>BurningLands</TerrainType>
+            <!--<TerrainType>BurningLands</TerrainType>-->
+			<TerrainType>Rugged_Land</TerrainType>
         </GameModifier>
         <GameModifier>
             <ModType>Map</ModType>

@@ -150,12 +150,12 @@
         </ImprovementTypeArtSubPack>
     </ImprovementTypeArtDef>
 	
-		<ImprovementTypeArtDef InternalName="Art_PillarOfForesight">
+	<ImprovementTypeArtDef InternalName="Art_PillarOfForesight">
         <ImprovementTypeArtSubPack InternalName="Art_PillarOfForesight_Kingdom">
             <SupportedBuildingStyle>KingdomStyle</SupportedBuildingStyle>
             <TileDesign>A_Pillar_Of_Foresight</TileDesign>
             <ConstructionTileDesign>K_Construction1x1_01</ConstructionTileDesign>
-            <DrawnIcon>Improvement_TowerOfTheMagi.png</DrawnIcon>
+            <DrawnIcon>Improvement_EreogsTower.png</DrawnIcon>
             <DrawnIconConstruction>Improvement_TowerOfTheMagi_C.png</DrawnIconConstruction>
             <Thumbnail>K_Tower_of_The_Magi_Thumb_01.png</Thumbnail>
             <Medallions InternalName="">
@@ -166,7 +166,7 @@
             <SupportedBuildingStyle>EmpireStyle</SupportedBuildingStyle>
             <TileDesign>A_Pillar_Of_Foresight</TileDesign>
             <ConstructionTileDesign>F_Construction1x1_01</ConstructionTileDesign>
-            <DrawnIcon>Improvement_TowerOfTheMagi.png</DrawnIcon>
+            <DrawnIcon>Improvement_EreogsTower.png</DrawnIcon>
             <DrawnIconConstruction>Improvement_TowerOfTheMagi_C.png</DrawnIconConstruction>
             <Thumbnail>F_Tower_of_The_Magi_Thumb_01.png</Thumbnail>
             <Medallions InternalName="">
@@ -175,4 +175,4 @@
         </ImprovementTypeArtSubPack>
     </ImprovementTypeArtDef>
 
-    </ImprovementTypeArtDefs>
+   </ImprovementTypeArtDefs>
