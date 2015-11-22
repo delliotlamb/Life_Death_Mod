@@ -716,7 +716,7 @@
 <SpellDef InternalName="ArcaneRevelations">
         <DisplayName>Arcane Revelations</DisplayName>
         <Description>Produces +3 Research in the enchanted city.</Description>
-        <Image>S_IneluctableVision_Icon.png</Image>
+        <Image>Tech_Refined_Education.png</Image>
         <IconFG>S_Revelation_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
         <CanStack>0</CanStack>
@@ -2601,7 +2601,7 @@
         </SpellDefEffect>
     </SpellDef>
 
-<SpellDef InternalName="FuryOfTheShards">
+<!--<SpellDef InternalName="FuryOfTheShards">
         <DisplayName>Fury Of The Shards</DisplayName>
         <Description>Target enemy army takes 50 (+10 per air and fire shard) lightning damage. Costs 2 shard essence.</Description>
         <Image>T_Storm_Painting.png</Image>
@@ -2658,7 +2658,7 @@
             <EffectDelay>0.25</EffectDelay>
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
-    </SpellDef>
+    </SpellDef>-->
 
 <SpellDef InternalName="RaiseLand_Sorcerer">
         <DisplayName>Smooth Cliffs</DisplayName>
@@ -2700,7 +2700,7 @@
 	
 	<SpellDef InternalName="PrismBlade">
         <DisplayName>Prism Blade</DisplayName>
-        <Description>Enchanted champion's weapon does one of the following, at random: +3 fire, cold, lightning, or physical damage.</Description>
+        <Description>Enchanted champion's weapon does one of the following, at random: +2 fire, cold, lightning, or physical damage.</Description>
         <Image>S_MoriansChant_Painting.png</Image>
         <IconFG>T_NobleLegacy_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -2725,31 +2725,31 @@
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_Attack_Fire</StrVal>
             <Duration>-1</Duration>
-			<Value>3</Value>
+			<Value>2</Value>
         </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_Attack_Cold</StrVal>
             <Duration>-1</Duration>
-			<Value>3</Value>
+			<Value>2</Value>
         </GameModifier>	
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_Attack_Lightning</StrVal>
             <Duration>-1</Duration>
-			<Value>3</Value>
+			<Value>2</Value>
         </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_Attack_Pierce</StrVal>
             <Duration>-1</Duration>
-			<Value>3</Value>
+			<Value>2</Value>
         </GameModifier>		
         <AIData AIPersonality="AI_General">
-            <AIPriority>50</AIPriority>
+            <AIPriority>500</AIPriority>
         </AIData>
         <HitSoundFX>Spell_Courage_01</HitSoundFX>
         <SpellDefEffect>

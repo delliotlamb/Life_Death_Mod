@@ -772,7 +772,7 @@
         <Description>Cast on an assassin with the Executioner II trait to allow that Assassin to permanently assassinate ONE sovereign or champion.</Description>
         <Image>F_Domination_Full.png</Image>
         <IconFG>T_Kill_Icon.png</IconFG>
-		<Cooldown>50</Cooldown>
+		<Cooldown>5</Cooldown>
 		<AutoUnlock>1</AutoUnlock>
         <SpellBookSortCategory>Unit</SpellBookSortCategory>
         <SpellBookSortSubCategory>UnitEnchantment</SpellBookSortSubCategory>
@@ -799,7 +799,7 @@
                 <Expression><![CDATA[[UnitStat_MarkOfRegicide]]]></Expression>
             </Calculate>
             <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc] > 0]]></Expression>
+                <Expression><![CDATA[[Calc] < 1]]></Expression>
             </Calculate>
         </ValueCalcWrapper>			
         </AIData>

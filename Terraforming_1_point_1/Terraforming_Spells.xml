@@ -547,6 +547,10 @@
 			<GameModifier>
 				<ModType>GiveItem</ModType>
 				<Attribute>WoodShield2</Attribute>
+			</GameModifier>	
+			<GameModifier>
+				<ModType>GiveItem</ModType>
+				<Attribute>Potion_Restoration</Attribute>
 			</GameModifier>			
         <ValidTerrainCategory>Forest</ValidTerrainCategory>
         <AIData AIPersonality="AI_General">
@@ -1276,6 +1280,10 @@
 				<ModType>GiveItem</ModType>
 				<Attribute>Longsword_Freezing2</Attribute>
 			</GameModifier>
+			<GameModifier>
+				<ModType>GiveItem</ModType>
+				<Attribute>Potion_Prismatic</Attribute>
+			</GameModifier>			
         <ValidTerrainType>Submerged</ValidTerrainType>
         <ValidTerrainType>Beach</ValidTerrainType>		
         <AIData AIPersonality="AI_General">
@@ -2671,7 +2679,11 @@
             <GameModifier>
 				<ModType>GiveItem</ModType>
 				<Attribute>PlateVambraces_Volcanic2</Attribute>
-			</GameModifier>				
+			</GameModifier>	
+            <GameModifier>
+				<ModType>GiveItem</ModType>
+				<Attribute>RingOfAsh</Attribute>
+			</GameModifier>			
         <ValidTerrainType>BurningLands</ValidTerrainType>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
@@ -3191,6 +3203,10 @@
             <ModType>GiveItem</ModType>
             <Attribute>SilverFlute2</Attribute>
         </GameModifier>		
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Pike_AirElemental</Attribute>
+        </GameModifier>			
         <ValidTerrainType>Land</ValidTerrainType>
         <ValidTerrainType>Rugged_Land</ValidTerrainType>
         <ValidTerrainType>Fertile_Land</ValidTerrainType>
@@ -3977,6 +3993,10 @@
 			<GameModifier>
 				<ModType>GiveItem</ModType>
 				<Attribute>Maul_FistOfTheMountain</Attribute>
+			</GameModifier>	
+			<GameModifier>
+				<ModType>GiveItem</ModType>
+				<Attribute>MarakataRing</Attribute>
 			</GameModifier>			
         <ValidTerrainType>HillsTerrain</ValidTerrainType>
         <AIData AIPersonality="AI_General">
@@ -4691,6 +4711,10 @@
 			<GameModifier>
 				<ModType>GiveItem</ModType>
 				<Attribute>Broadsword_DesertHunger</Attribute>
+			</GameModifier>
+			<GameModifier>
+				<ModType>GiveItem</ModType>
+				<Attribute>Shortsword_Serrated</Attribute>
 			</GameModifier>			
         <ValidTerrainType>DesertTerrain</ValidTerrainType>
         <AIData AIPersonality="AI_General">
