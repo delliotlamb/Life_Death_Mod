@@ -4886,4 +4886,45 @@
         <HitSoundFX>Spell_GlyphOfLife_01</HitSoundFX>
     </SpellDef>-->
 	
+	<SpellDef InternalName="FlameDart_Champion">
+        <DisplayName>Champion Flame Dart</DisplayName>
+        <Description>This spell is a testing spell to see if the 'Enemy Champion' value for 'SpellTargetType' tag works.</Description>
+        <Image>T_FlameDart_Painting.png</Image>
+        <IconFG>Y_FireBreath_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <Cooldown>3</Cooldown>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>EnemyChampion</SpellTargetType>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>1</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Fire</AttackStat>
+			<Value>20</Value>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_FlameDart_01</HitSoundFX>
+        <SpellCastSoundFX>Spell_FlameDartTravel_01</SpellCastSoundFX>
+        <SpellCastEffectName>T_FlameDart_Particle</SpellCastEffectName>
+        <SpellCastEffectScale>0.30</SpellCastEffectScale>
+        <SpellCastProjectile>1</SpellCastProjectile>
+        <SpellCastProjectileSpeed>800</SpellCastProjectileSpeed>
+        <SpellDefEffect>
+            <EffectName>E_FlameDartImpact_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+	
 </Spells>

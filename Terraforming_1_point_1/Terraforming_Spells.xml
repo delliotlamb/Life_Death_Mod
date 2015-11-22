@@ -1593,6 +1593,7 @@
         <Image>Flooding_Painting.png</Image>
         <IconFG>Flooding.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
+		<CastTime>1</CastTime>		
         <SpellBookSortCategory>World</SpellBookSortCategory>
         <SpellBookSortSubCategory>Map</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -3468,6 +3469,7 @@
         <Image>S_Earthquake_Painting.png</Image>
         <IconFG>Terraform_Dot.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
+		<CastTime>1</CastTime>
         <SpellBookSortCategory>World</SpellBookSortCategory>
         <SpellBookSortSubCategory>Map</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
