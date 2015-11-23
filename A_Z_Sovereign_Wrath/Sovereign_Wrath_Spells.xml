@@ -1,0 +1,135 @@
+<Spells>
+
+<SpellDef InternalName="SovereignsWrath">
+        <DisplayName>Sovereign's Wrath</DisplayName>
+        <Description>A Sovereign can render champions - or even other sovereigns - vulnerable to permanent death.</Description>
+        <Image>RoyalFuneral.png.png</Image>
+        <IconFG>Ability_Soulburning.png</IconFG>
+		<StaminaCost>3</StaminaCost>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitCurse</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+        <ApproachTargetTile>1</ApproachTargetTile>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <IsCastable>0</IsCastable>
+        <CanBeDodged>1</CanBeDodged>
+        <Range>1</Range>
+        <SpellResourceCost>
+            <Resource>SovereignWrath</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>		
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>PermanentDeath</Attribute>
+            <DisplayName>Made Mortal!</DisplayName>			
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+        </GameModifier>	
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>>SovereignWrath</Attribute>
+            <ApplyToCaster>1</ApplyToCaster>
+            <Value>50</Value>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>1000</AIPriority>
+			<ValueCalcWrapper>
+				<ValueType>IsTargetWorthy</ValueType>
+				<Calculate InternalName="Calc" ValueOwner="TargetUnit">
+					<Expression><![CDATA[[Unit_BG_IsChampion]]]></Expression>
+				</Calculate>
+				<Calculate InternalName="Value">
+					<Expression><![CDATA[[Calc] > 0]]></Expression>
+				</Calculate>
+			</ValueCalcWrapper>
+        </AIData>
+        <CasterAnimationType>30</CasterAnimationType>
+        <HitSoundFX>Spell_Shadowbolt_Hit</HitSoundFX>
+        <MissSoundFX>Miss_Swing1</MissSoundFX>
+        <MissSoundFX>Miss_Swing2</MissSoundFX>
+        <SpellDefEffect>
+            <EffectName>T_Curse_Particle</EffectName>
+            <LocalPosition>0,50,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>		
+    </SpellDef>
+	
+	<SpellDef InternalName="Sovereign_Smite">
+        <DisplayName>Sovereign's Smite</DisplayName>
+        <Description>An attack that does +100% damage for each member of the enemy group</Description>
+        <IconFG>Ability_Shockwave.png</IconFG>
+		<StaminaCost>3</StaminaCost>		
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+        <ApproachTargetTile>1</ApproachTargetTile>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <IsCastable>0</IsCastable>
+        <CanBeDodged>1</CanBeDodged>
+        <UseWeaponRange>1</UseWeaponRange>
+        <SpellResourceCost>
+            <Resource>SovereignWrath</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>		
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Pierce</AttackStat>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitStat_CombinedAttack]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc2" ValueOwner="TargetUnit">
+                <Expression><![CDATA[[Unit_GetTroopCount]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc] * [Calc2]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>>SovereignWrath</Attribute>
+            <ApplyToCaster>1</ApplyToCaster>
+            <Value>50</Value>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+			<ValueCalcWrapper>
+				<ValueType>IsTargetWorthy</ValueType>
+				<Calculate InternalName="Calc" ValueOwner="TargetUnit">
+					<Expression><![CDATA[[Unit_BG_IsChampion]]]></Expression>
+				</Calculate>
+				<Calculate InternalName="Value">
+					<Expression><![CDATA[[Calc] < 1]]></Expression>
+				</Calculate>
+			</ValueCalcWrapper>			
+        </AIData>
+        <CameraShakeDuration>0.5</CameraShakeDuration>
+        <CameraShakeStrength>0.2</CameraShakeStrength>
+        <HitSoundFX>Hit_HeavyClub1</HitSoundFX>
+        <MissSoundFX>Miss_Swing1</MissSoundFX>
+        <MissSoundFX>Miss_Swing2</MissSoundFX>
+        <SpellDefEffect>
+            <EffectName>Y_Ability_CrushingBlow</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>0.6</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+</Spells>
+
+
+
+
+
