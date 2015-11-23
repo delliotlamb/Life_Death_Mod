@@ -1,7 +1,101 @@
 <Spells>
 
+ <SpellDef InternalName="TagTester">
+        <DisplayName>TagTester</DisplayName>
+        <Description>Test to see if EnemyChampionOrSov is a viable tag.</Description>
+        <Image>T_FlameDart_Painting.png</Image>
+        <IconFG>T_FlameDart_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <Cooldown>3</Cooldown>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>EnemyChampionOrSov</SpellTargetType>
+        <IsResistable>1</IsResistable>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Fire</AttackStat>
+            <IsForFormattedDescription>1</IsForFormattedDescription>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumFireShards] + [Unit_GetLevel]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc2" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[Calc] * [UnitStat_SpellDamage_Fire]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc2] * 2]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Fire</AttackStat>
+            <IsForSpellResist>1</IsForSpellResist>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumFireShards] + [Unit_GetLevel]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc2" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[Calc] * [UnitStat_SpellDamage_Fire]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc2]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>40</AIPriority>
+        <ValueCalcWrapper>
+            <ValueType>IsTargetWorthy</ValueType>
+            <Calculate InternalName="Calc" ValueOwner="TargetUnit">
+                <Expression><![CDATA[[UnitStat_ResistFire]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc] < 75]]></Expression>
+            </Calculate>
+        </ValueCalcWrapper>
+        </AIData>
+        <HitSoundFX>Spell_FlameDart_01</HitSoundFX>
+        <SpellCastSoundFX>Spell_FlameDartTravel_01</SpellCastSoundFX>
+        <SpellCastEffectName>T_FlameDart_Particle</SpellCastEffectName>
+        <SpellCastEffectScale>0.30</SpellCastEffectScale>
+        <SpellCastProjectile>1</SpellCastProjectile>
+        <SpellCastProjectileSpeed>800</SpellCastProjectileSpeed>
+        <SpellDefEffect>
+            <EffectName>E_FlameDartImpact_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+<SpellDef InternalName="TestPermanentDeath">
+        <DisplayName>Test Permanent Death</DisplayName>
+        <Description>This might be a toggle-able flag, it might not.</Description>
+        <Image>S_BurningBlade_Painting.png</Image>
+        <IconFG>S_BurningBlade_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CanStack>0</CanStack>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitEnchantment</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Buff</SpellSubClass>
+        <SpellTargetType>FriendlyChampionOrSov</SpellTargetType>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>PermanentDeath</Attribute>	
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>50</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_BurningBlade_01</HitSoundFX>
+    </SpellDef>
+
 <SpellDef InternalName="SovereignsWrath">
-        <DisplayName>Sovereign's Wrath</DisplayName>
+        <DisplayName>Sever Essence</DisplayName>
         <Description>A Sovereign can render champions - or even other sovereigns - vulnerable to permanent death.</Description>
         <Image>RoyalFuneral.png.png</Image>
         <IconFG>Ability_Soulburning.png</IconFG>
@@ -24,7 +118,7 @@
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>PermanentDeath</Attribute>
-            <DisplayName>Made Mortal!</DisplayName>			
+            <DisplayName>Severed!</DisplayName>		
         </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
@@ -71,7 +165,7 @@
         <SpellType>Tactical</SpellType>
         <SpellClass>Offensive</SpellClass>
         <SpellSubClass>Damage</SpellSubClass>
-        <SpellTargetType>EnemyUnit</SpellTargetType>
+        <SpellTargetType>EnemyTrainedUnit</SpellTargetType>
         <ApproachTargetTile>1</ApproachTargetTile>
         <HideInHiergamenon>1</HideInHiergamenon>
         <IsCastable>0</IsCastable>
@@ -102,8 +196,8 @@
             <Value>50</Value>
         </GameModifier>		
         <AIData AIPersonality="AI_General">
-            <AIPriority>5</AIPriority>
-			<ValueCalcWrapper>
+            <AIPriority>1000</AIPriority>
+			<!--<ValueCalcWrapper>
 				<ValueType>IsTargetWorthy</ValueType>
 				<Calculate InternalName="Calc" ValueOwner="TargetUnit">
 					<Expression><![CDATA[[Unit_BG_IsChampion]]]></Expression>
@@ -111,7 +205,7 @@
 				<Calculate InternalName="Value">
 					<Expression><![CDATA[[Calc] < 1]]></Expression>
 				</Calculate>
-			</ValueCalcWrapper>			
+			</ValueCalcWrapper>-->		
         </AIData>
         <CameraShakeDuration>0.5</CameraShakeDuration>
         <CameraShakeStrength>0.2</CameraShakeStrength>
