@@ -71,6 +71,7 @@
 		<SelectedAbilityBonusOption>Air1</SelectedAbilityBonusOption>
 		<SelectedAbilityBonusOption>Tactician</SelectedAbilityBonusOption>
 		<SelectedAbilityBonusOption>Hardy</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>SovereignWrath</SelectedAbilityBonusOption>		
 		<GameModifier InternalName="GameModifier 2709">
 			<ModType>Resource</ModType>
 			<Attribute>Unrest</Attribute>

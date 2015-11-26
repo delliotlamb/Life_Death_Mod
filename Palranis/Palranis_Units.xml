@@ -65,7 +65,8 @@
 		<SelectedAbilityBonusOption>Might</SelectedAbilityBonusOption>
 		<SelectedAbilityBonusOption>Hardy</SelectedAbilityBonusOption>		
 		<SelectedAbilityBonusOption>Water1</SelectedAbilityBonusOption>
-		<SelectedAbilityBonusOption>Earth1</SelectedAbilityBonusOption>	
+		<SelectedAbilityBonusOption>Earth1</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>SovereignWrath</SelectedAbilityBonusOption>		
 		<GameModifier InternalName="GameModifier 615">
 			<ModType>Resource</ModType>
 			<Attribute>Unrest</Attribute>

@@ -66,6 +66,7 @@
 		<SelectedAbilityBonusOption>Life1</SelectedAbilityBonusOption>		
 		<SelectedAbilityBonusOption>Might</SelectedAbilityBonusOption>
 		<SelectedAbilityBonusOption>Hardy</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>SovereignWrath</SelectedAbilityBonusOption>		
 		<GameModifier InternalName="GameModifier 1810">
 			<ModType>Resource</ModType>
 			<Attribute>Unrest</Attribute>

@@ -3,14 +3,14 @@
 <AbilityBonus InternalName="SovereignWrath_Ability">
         <AbilityBonusOption InternalName="SovereignWrath">
             <DisplayName>Sovereign's Wrath</DisplayName>
-            <Description>AI Sovereigns can use a melee ability that renders champions or sovereigns vulnerable to permanent death - beware!</Description>
+            <Description>AI Sovereigns can crush trained troops, and sometimes permanently kill champions and other sovereigns. Beware them!</Description>
             <Icon>Ability_Inefficient_Icon.png</Icon>
             <GameModifier>
                 <ModType>Unit</ModType>
                 <Attribute>ProduceResource</Attribute>
                 <StrVal>Sovereign_Wrath</StrVal>
                 <Value>1</Value>
-				<Provides>Channelers left in power too long may surprise you...</Provides>
+				<Provides>AI Sovereigns can crush trained troops, and sometimes permanently kill champions and other sovereigns. Beware them!</Provides>
             </GameModifier>		
             <AIData AIPersonality="AI_General">
                 <AIPriority>5</AIPriority>
