@@ -11,13 +11,7 @@
                 <StrVal>Sovereign_Wrath</StrVal>
                 <Value>1</Value>
 				<Provides>Channelers left in power too long may surprise you...</Provides>
-            </GameModifier>
-            <GameModifier>
-                <ModType>Unit</ModType>
-                <Attribute>UnlockCombatAbility</Attribute>
-                <StrVal>Sovereign_Smite</StrVal>
-                <Provides>An attack that does +100% damage for each member of the enemy group.</Provides>
-            </GameModifier>			
+            </GameModifier>		
             <AIData AIPersonality="AI_General">
                 <AIPriority>5</AIPriority>
             </AIData>

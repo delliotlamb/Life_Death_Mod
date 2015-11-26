@@ -94,12 +94,12 @@
         <HitSoundFX>Spell_BurningBlade_01</HitSoundFX>
     </SpellDef>
 
-<SpellDef InternalName="SovereignsWrath">
+<SpellDef InternalName="Sovereign_Sever">
         <DisplayName>Sever Essence</DisplayName>
-        <Description>A Sovereign can render champions - or even other sovereigns - vulnerable to permanent death.</Description>
-        <Image>RoyalFuneral.png.png</Image>
+        <Description>A Sovereign can render champions - or even other sovereigns - vulnerable to permanent death, unless resisted.</Description>
+        <Image>RoyalFuneral.png</Image>
         <IconFG>Ability_Soulburning.png</IconFG>
-		<StaminaCost>3</StaminaCost>
+		<AutoUnlock>1</AutoUnlock>
         <SpellBookSortCategory>Unit</SpellBookSortCategory>
         <SpellBookSortSubCategory>UnitCurse</SpellBookSortSubCategory>
         <SpellType>Tactical</SpellType>
@@ -108,9 +108,13 @@
         <SpellTargetType>EnemyUnit</SpellTargetType>
         <ApproachTargetTile>1</ApproachTargetTile>
         <HideInHiergamenon>1</HideInHiergamenon>
-        <IsCastable>0</IsCastable>
+        <IsResistable>1</IsResistable>		
         <CanBeDodged>1</CanBeDodged>
         <Range>1</Range>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>SovereignWrath</Attribute>
+        </Prereq>		
         <SpellResourceCost>
             <Resource>SovereignWrath</Resource>
             <Amount>50</Amount>
@@ -126,7 +130,14 @@
         </GameModifier>	
         <GameModifier>
             <ModType>Resource</ModType>
-            <Attribute>>SovereignWrath</Attribute>
+            <Attribute>SovereignWrath</Attribute>
+            <ApplyToCaster>1</ApplyToCaster>
+            <Value>50</Value>
+        </GameModifier>	
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>SovereignWrath</Attribute>
+			<IsForSpellResist>1</IsForSpellResist>
             <ApplyToCaster>1</ApplyToCaster>
             <Value>50</Value>
         </GameModifier>		
@@ -159,7 +170,7 @@
         <DisplayName>Sovereign's Smite</DisplayName>
         <Description>An attack that does +100% damage for each member of the enemy group</Description>
         <IconFG>Ability_Shockwave.png</IconFG>
-		<StaminaCost>3</StaminaCost>		
+		<AutoUnlock>1</AutoUnlock>	
         <SpellBookSortCategory>Unit</SpellBookSortCategory>
         <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
         <SpellType>Tactical</SpellType>
@@ -168,9 +179,12 @@
         <SpellTargetType>EnemyTrainedUnit</SpellTargetType>
         <ApproachTargetTile>1</ApproachTargetTile>
         <HideInHiergamenon>1</HideInHiergamenon>
-        <IsCastable>0</IsCastable>
         <CanBeDodged>1</CanBeDodged>
-        <UseWeaponRange>1</UseWeaponRange>
+        <Range>1</Range>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>SovereignWrath</Attribute>
+        </Prereq>		
         <SpellResourceCost>
             <Resource>SovereignWrath</Resource>
             <Amount>50</Amount>
@@ -191,7 +205,7 @@
         </GameModifier>
         <GameModifier>
             <ModType>Resource</ModType>
-            <Attribute>>SovereignWrath</Attribute>
+            <Attribute>SovereignWrath</Attribute>
             <ApplyToCaster>1</ApplyToCaster>
             <Value>50</Value>
         </GameModifier>		
