@@ -774,22 +774,14 @@
             <Type>AbilityBonusOption</Type>
             <Attribute>Elemancy</Attribute>
         </Prereq>
-        <Prereq>
-            <Type>UnitStat</Type>
-            <Attribute>UnitStat_ShardEssence</Attribute>
-            <Value>1</Value>
-        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>100</Amount>
+        </SpellResourceCost>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>UnlockUnitAbility</Attribute>
             <StrVal>Water1</StrVal>
-        </GameModifier>
-		<GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_ShardEssence</StrVal>
-            <ApplyToCaster>1</ApplyToCaster>
-            <Value>-1</Value>
         </GameModifier>		
         <AIData AIPersonality="AI_General">
             <AIPriority>20</AIPriority>
@@ -821,22 +813,14 @@
             <Type>AbilityBonusOption</Type>
             <Attribute>Elemancy</Attribute>
         </Prereq>
-        <Prereq>
-            <Type>UnitStat</Type>
-            <Attribute>UnitStat_ShardEssence</Attribute>
-            <Value>1</Value>
-        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>100</Amount>
+        </SpellResourceCost>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>UnlockUnitAbility</Attribute>
             <StrVal>Fire1</StrVal>
-        </GameModifier>
-		<GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_ShardEssence</StrVal>
-            <ApplyToCaster>1</ApplyToCaster>
-            <Value>-1</Value>
         </GameModifier>		
         <AIData AIPersonality="AI_General">
             <AIPriority>20</AIPriority>
@@ -868,22 +852,14 @@
             <Type>AbilityBonusOption</Type>
             <Attribute>Elemancy</Attribute>
         </Prereq>
-        <Prereq>
-            <Type>UnitStat</Type>
-            <Attribute>UnitStat_ShardEssence</Attribute>
-            <Value>1</Value>
-        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>100</Amount>
+        </SpellResourceCost>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>UnlockUnitAbility</Attribute>
             <StrVal>Air1</StrVal>
-        </GameModifier>
-		<GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_ShardEssence</StrVal>
-            <ApplyToCaster>1</ApplyToCaster>
-            <Value>-1</Value>
         </GameModifier>		
         <AIData AIPersonality="AI_General">
             <AIPriority>20</AIPriority>
@@ -915,23 +891,15 @@
             <Type>AbilityBonusOption</Type>
             <Attribute>Elemancy</Attribute>
         </Prereq>
-        <Prereq>
-            <Type>UnitStat</Type>
-            <Attribute>UnitStat_ShardEssence</Attribute>
-            <Value>1</Value>
-        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>100</Amount>
+        </SpellResourceCost>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>UnlockUnitAbility</Attribute>
             <StrVal>Earth1</StrVal>
             <Provides>Grants the Earth Apprentice ability</Provides>
-        </GameModifier>
-		<GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_ShardEssence</StrVal>
-            <ApplyToCaster>1</ApplyToCaster>
-            <Value>-1</Value>
         </GameModifier>		
         <AIData AIPersonality="AI_General">
             <AIPriority>20</AIPriority>
@@ -967,23 +935,15 @@
                 <Type>Allegiance</Type>
                 <Attribute>Kingdom</Attribute>
             </Prereq>
-        <Prereq>
-            <Type>UnitStat</Type>
-            <Attribute>UnitStat_ShardEssence</Attribute>
-            <Value>1</Value>
-        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>100</Amount>
+        </SpellResourceCost>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>UnlockUnitAbility</Attribute>
             <StrVal>Life1</StrVal>
             <Provides>Grants the Life Apprentice ability</Provides>
-        </GameModifier>
-		<GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_ShardEssence</StrVal>
-            <ApplyToCaster>1</ApplyToCaster>
-            <Value>-1</Value>
         </GameModifier>		
         <AIData AIPersonality="AI_General">
             <AIPriority>20</AIPriority>
@@ -1019,23 +979,15 @@
                 <Type>Allegiance</Type>
                 <Attribute>Empire</Attribute>
             </Prereq>
-        <Prereq>
-            <Type>UnitStat</Type>
-            <Attribute>UnitStat_ShardEssence</Attribute>
-            <Value>1</Value>
-        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>100</Amount>
+        </SpellResourceCost>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>UnlockUnitAbility</Attribute>
             <StrVal>Death1</StrVal>
             <Provides>Grants the Death Apprentice ability</Provides>
-        </GameModifier>
-		<GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_ShardEssence</StrVal>
-            <ApplyToCaster>1</ApplyToCaster>
-            <Value>-1</Value>
         </GameModifier>		
         <AIData AIPersonality="AI_General">
             <AIPriority>20</AIPriority>
@@ -1473,9 +1425,9 @@
         </SpellDefEffect>
     </SpellDef>
 
-<!--<SpellDef InternalName="FindElementals">
+<SpellDef InternalName="FindElementals">
         <DisplayName>Sense Elemental Energy</DisplayName>
-        <Description>Sense Elementals hiding beyond mortal sight, and agitate them into appearing.</Description>
+        <Description>Sense Elemental concentration hiding beyond mortal sight. You may find sleeping elementals, or perhaps a hidden elemental shard.</Description>
         <Image>S_SpellofMaking_Painting.png</Image>
         <IconFG>S_Corruption_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -1495,6 +1447,40 @@
             <Resource>Mana</Resource>
             <Amount>100</Amount>
         </SpellResourceCost>
+		        <GameModifier>
+                    <ModType>Map</ModType>
+                    <Attribute>CreateGoodieHut</Attribute>
+                    <StrVal>Fire Elemental Lair</StrVal>
+                    <Unitclass>Lair_FireElemental</Unitclass>
+                    <Radius>8</Radius>
+                </GameModifier>
+                <GameModifier>
+                    <ModType>Map</ModType>
+                    <Attribute>CreateGoodieHut</Attribute>
+                    <StrVal>Air Elemental Lair</StrVal>
+                    <Unitclass>Lair_AirElemental</Unitclass>
+                    <Radius>8</Radius>
+                </GameModifier>
+                <GameModifier>
+                    <ModType>Map</ModType>
+                    <Attribute>CreateGoodieHut</Attribute>
+                    <StrVal>Earth Elemental Lair</StrVal>
+                    <Unitclass>Lair_EarthElemental</Unitclass>
+                    <Radius>8</Radius>
+                </GameModifier>
+                <GameModifier>
+                    <ModType>Map</ModType>
+                    <Attribute>CreateGoodieHut</Attribute>
+                    <StrVal>Ice Elemental Lair</StrVal>
+                    <Unitclass>Lair_IceElemental</Unitclass>
+                    <Radius>8</Radius>
+                </GameModifier>
+				<GameModifier>
+					<ModType>Map</ModType>
+					<Attribute>CreateShard</Attribute>
+					<StrVal>ElementalAirShard02</StrVal>
+					<Radius>8</Radius>
+				</GameModifier>
                 <GameModifier>
                     <ModType>Map</ModType>
                     <Attribute>CreateGoodieHut</Attribute>
@@ -1519,17 +1505,34 @@
                 <GameModifier>
                     <ModType>Map</ModType>
                     <Attribute>CreateGoodieHut</Attribute>
-                    <StrVal>Fire Elemental Lair</StrVal>
-                    <Unitclass>Lair_FireElemental</Unitclass>
-                    <Radius>8</Radius>
-                </GameModifier>
-                <GameModifier>
-                    <ModType>Map</ModType>
-                    <Attribute>CreateGoodieHut</Attribute>
                     <StrVal>Ice Elemental Lair</StrVal>
                     <Unitclass>Lair_IceElemental</Unitclass>
                     <Radius>8</Radius>
                 </GameModifier>
+				<GameModifier>
+					<ModType>Map</ModType>
+					<Attribute>CreateShard</Attribute>
+					<StrVal>ElementalAirShard02</StrVal>
+					<Radius>8</Radius>
+				</GameModifier>	
+				<GameModifier>
+					<ModType>Map</ModType>
+					<Attribute>CreateShard</Attribute>
+					<StrVal>ElementalFireShard01</StrVal>
+					<Radius>8</Radius>
+				</GameModifier>
+				<GameModifier>
+					<ModType>Map</ModType>
+					<Attribute>CreateShard</Attribute>
+					<StrVal>ElementalWaterShard03</StrVal>
+					<Radius>8</Radius>
+				</GameModifier>
+				<GameModifier>
+					<ModType>Map</ModType>
+					<Attribute>CreateShard</Attribute>
+					<StrVal>ElementalEarthShard01</StrVal>
+					<Radius>8</Radius>
+				</GameModifier>				
         <AIData AIPersonality="AI_General">
             <AIPriority>30</AIPriority>
         </AIData>
@@ -1541,7 +1544,7 @@
             <EffectDelay>0</EffectDelay>
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
-    </SpellDef>-->
+    </SpellDef>
 
 <SpellDef InternalName="FindBeasts">
         <DisplayName>Find Beasts</DisplayName>
@@ -2031,10 +2034,10 @@
     </SpellDef>
 
 <SpellDef InternalName="SoulOfIron">
-        <DisplayName>Soul Of Iron</DisplayName>
+        <DisplayName>Wrought Of Iron</DisplayName>
         <Description>This champion's defense is increased +8 (+1 per Earth Shard), and attack +3 (+1 per Earth Shard).</Description>
-        <Image>T_StoneSkin_Painting.png</Image>
-        <IconFG>S_CreateMountain_Icon.png</IconFG>
+        <Image>M_FallenGuardianWard_Card.png</Image>
+        <IconFG>T_GiftOfIron_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
         <CanStack>0</CanStack>
         <SpellBookSortCategory>Unit</SpellBookSortCategory>
@@ -2457,6 +2460,7 @@
         </SpellDefEffect>
     </SpellDef>
 
+	<!--
 <SpellDef InternalName="Consume_Sorcerer">
         <DisplayName>Pulverize Shard</DisplayName>
         <Description>Destroy a shard in your territory, giving you 2 shard essence, opening up spells that give champions spell traits, or a spell that does massive damage to an enemy army.</Description>
@@ -2502,6 +2506,8 @@
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
     </SpellDef>
+	
+	-->
 
 <!-- <SpellDef InternalName="ImpassableTerrain">
         <DisplayName>Impassable Terrain</DisplayName>
