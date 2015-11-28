@@ -31,6 +31,7 @@ This mod was meant to go with the republic faction trait, but can be used on its
             </Calculate>
         </GameModifier>
     </ImprovementType>
+	
     <ImprovementType InternalName="CityHub2">
         <GameModifier>
             <ModType>StationedUnitStatBonus</ModType>

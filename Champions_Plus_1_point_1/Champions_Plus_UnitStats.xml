@@ -190,14 +190,15 @@
 	<UnitStatGrouping>CombatStat</UnitStatGrouping>
 </UnitStatType>
 
-	<!-- Overwrites Crushing Blow Unitstat to make Calc tags simpler in my Crushing Blow overwrite 
+	<!-- Overwrites Crushing Blow Unitstat to make Calc tags simpler in my Crushing Blow overwrite -->
 
     <UnitStatType InternalName="UnitStat_BonusCrushingBlow">
         <DisplayName>Bonus Crushing Blow Damage</DisplayName>
         <Description>Multiplier to Attack for the Crushing Blow ability</Description>
         <Hidden>1</Hidden>
-        <DefaultValue>1.25</DefaultValue>
-    </UnitStatType>-->
+		<UnitStatGrouping>CombatStat</UnitStatGrouping>			
+        <DefaultValue>1.33</DefaultValue>
+    </UnitStatType>
 	
 	    <UnitStatType InternalName="UnitStat_BonusRainOfArrows">
         <DisplayName>Bonus Rain Of Arrows Damage</DisplayName>

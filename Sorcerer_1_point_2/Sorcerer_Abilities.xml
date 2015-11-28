@@ -84,13 +84,13 @@
                 <Value>10</Value>
                 <Provides>+10% Spell Damage</Provides>
             </GameModifier>				
-			<GameModifier>
+			<!--<GameModifier>
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
                 <StrVal>UnitStat_SpellDamage_SorcererTactical</StrVal>
                 <Value>10</Value>
-                <Provides>+10% Tactical Spell Damage</Provides>
-            </GameModifier>	
+                <Provides>+%10 Tactical Spell Damage</Provides>
+            </GameModifier>-->
             <GameModifier>
                 <ModType>Unit</ModType>
                 <Attribute>BattleAutoCastSpell</Attribute>
@@ -146,14 +146,14 @@
                 <StrVal>UnitStat_SpellDamage</StrVal>
                 <Value>10</Value>
                 <Provides>+10% Spell Damage</Provides>
-            </GameModifier>				
-			<GameModifier>
+            </GameModifier>			
+			<!--<GameModifier>
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
                 <StrVal>UnitStat_SpellDamage_SorcererTactical</StrVal>
                 <Value>10</Value>
                 <Provides>+10% Tactical Spell Damage</Provides>
-            </GameModifier>			
+            </GameModifier>-->		
             <Type>Spell</Type>
             <UpgradePathID>Prodigy_Sorcerer</UpgradePathID>
             <Prereq>
@@ -189,13 +189,13 @@
                 <Value>10</Value>
                 <Provides>+10% Spell Damage</Provides>
             </GameModifier>				
-			<GameModifier>
+			<!--<GameModifier>
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
                 <StrVal>UnitStat_SpellDamage_SorcererTactical</StrVal>
                 <Value>10</Value>
                 <Provides>+10% Tactical Spell Damage</Provides>
-            </GameModifier>		
+            </GameModifier>-->		
             <Type>Spell</Type>
             <UpgradePathID>Prodigy_Sorcerer</UpgradePathID>
             <Prereq>
@@ -792,7 +792,7 @@
         <AbilityBonusType>Unit_Level</AbilityBonusType>
         <AbilityBonusOption InternalName="UnstableMagic">
             <DisplayName>Volatile Power</DisplayName>
-            <Description>Casting a tactical spell damages this unit by 20 points. Spell mastery and spell damage are greatly raised.</Description>
+            <Description>Casting a tactical spell damages this unit by 20 points. Spell mastery gets +25 and spell damage gets +10%.</Description>
             <Icon>Ability_UnstableMagic_Icon.png</Icon>
             <PerkTreePosX>6</PerkTreePosX>
             <PerkTreePosY>0</PerkTreePosY>
@@ -813,8 +813,8 @@
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
                 <StrVal>UnitStat_SpellDamage</StrVal>
-                <Value>20</Value>
-                <Provides>+20% Spell Damage</Provides>
+                <Value>10</Value>
+                <Provides>+10% Spell Damage</Provides>
             </GameModifier>			
             <Prereq>
                 <Type>AbilityBonusOption</Type>
@@ -885,7 +885,7 @@
         <AbilityBonusType>Unit_Level</AbilityBonusType>
         <AbilityBonusOption InternalName="BargainWithEntropy">
             <DisplayName>Bargain With Entropy</DisplayName>
-            <Description>+20% Spell Damage, additional +20% with Fire spells, -40% hit points</Description>
+            <Description>+10% Spell Damage, additional +20% with Fire spells, -40% hit points</Description>
             <Icon>Ability_VolcanicRites_Icon.png</Icon>
             <PerkTreePosX>4</PerkTreePosX>
             <PerkTreePosY>1</PerkTreePosY>

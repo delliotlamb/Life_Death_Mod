@@ -4057,15 +4057,15 @@
         </AIData>
     </SpellDef>
 	
-	<!-- Reduction of Crushing Blow to 25% 	
+ 	
 	
 	<SpellDef InternalName="CrushingBlow">
         <DisplayName>Crushing Blow</DisplayName>
-        <Description>Attack with a 25% damage bonus, but you lose your next action.</Description>
+        <Description>Attack with a 33% damage bonus, but you lose your next action.</Description>
         <FormattedDescription>Launch a %d Attack, but you lose your next action.</FormattedDescription>
         <IconFG>Ability_CrushingBlow_Icon.png</IconFG>
         <CanStack>1</CanStack>
-        <Cooldown>5</Cooldown>
+		<StaminaCost>5</StaminaCost>
         <SpellBookSortCategory>Unit</SpellBookSortCategory>
         <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
         <SpellType>Tactical</SpellType>
@@ -4120,7 +4120,56 @@
         </SpellDefEffect>
     </SpellDef>
 	
-	-->
+	<SpellDef InternalName="AssassinsStrike">
+        <DisplayName>Assassin's Strike</DisplayName>
+        <Description>Strike with +25 Attack bonus</Description>
+        <FormattedDescription>Launch a %d Attack</FormattedDescription>
+        <IconFG>Ability_AssassinsStrike_Icon.png</IconFG>
+		<StaminaCost>7</StaminaCost>		
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+        <ApproachTargetTile>1</ApproachTargetTile>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <IsCastable>0</IsCastable>
+        <CanBeDodged>1</CanBeDodged>
+        <IsSpecialAbility>1</IsSpecialAbility>
+        <UseWeaponRange>1</UseWeaponRange>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Pierce</AttackStat>
+            <IsForFormattedDescription>1</IsForFormattedDescription>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitStat_CombinedAttack]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc2" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[Calc] + 25]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc2]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="ValueForFormattedDescription">
+                <Expression><![CDATA[[Calc2]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>1000</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_CrushingBlow_01</HitSoundFX>
+        <MissSoundFX>Miss_Swing1</MissSoundFX>
+        <MissSoundFX>Miss_Swing2</MissSoundFX>
+        <SpellDefEffect>
+            <EffectName>Y_Ability_CrushingBlow</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>0.6</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
 	
 
 	

@@ -9,8 +9,8 @@
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
                 <StrVal>UnitStat_SpellDamage</StrVal>
-                <Value>-10</Value>
-                <Provides>-10% Spell Damage (+10% net)</Provides>
+                <Value>-15</Value>
+                <Provides>-15% Spell Damage (+5% net)</Provides>
             </GameModifier>
 			<GameModifier>
                 <ModType>Unit</ModType>
@@ -36,8 +36,8 @@
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
                 <StrVal>UnitStat_SpellDamage</StrVal>
-                <Value>-10</Value>
-                <Provides>-10% Spell Damage (+10% net)</Provides>
+                <Value>-15</Value>
+                <Provides>-15% Spell Damage (+5% net)</Provides>
             </GameModifier>
 			<GameModifier>
                 <ModType>Unit</ModType>
@@ -63,8 +63,8 @@
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
                 <StrVal>UnitStat_SpellDamage</StrVal>
-                <Value>-10</Value>
-                <Provides>-10% Spell Damage (+10% net)</Provides>
+                <Value>-15</Value>
+                <Provides>-15% Spell Damage (+5% net)</Provides>
             </GameModifier>
             <GameModifier>
                 <ModType>Unit</ModType>
@@ -90,8 +90,8 @@
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
                 <StrVal>UnitStat_SpellDamage</StrVal>
-                <Value>-10</Value>
-                <Provides>-10% Spell Damage (+10% net)</Provides>
+                <Value>-15</Value>
+                <Provides>-15% Spell Damage (+5% net)</Provides>
             </GameModifier>
             <GameModifier>
                 <ModType>Unit</ModType>
