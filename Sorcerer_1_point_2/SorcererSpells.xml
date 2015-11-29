@@ -3236,12 +3236,14 @@
         <AIData AIPersonality="AI_General">
             <AIPriority>1000</AIPriority>
         </AIData>
-        <HitSoundFX>Spell_Wither_01</HitSoundFX>
-        <SpellCastSoundFX>Spell_Shadowbolt_Travel</SpellCastSoundFX>
-        <SpellCastEffectName>T_ShadowBolt_Particle</SpellCastEffectName>
-        <SpellCastEffectScale>0.30</SpellCastEffectScale>
-        <SpellCastProjectile>1</SpellCastProjectile>
-        <SpellCastProjectileSpeed>800</SpellCastProjectileSpeed>
+        <HitSoundFX>Spell_Shadowbolt_Hit</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>Y_SummonDeathDemon_Particle</EffectName>
+            <LocalPosition>0,20,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
     </SpellDef>
 
     <SpellDef InternalName="PillarOfWrath">
