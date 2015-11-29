@@ -307,6 +307,13 @@
             <GameModifier>
                 <Provides>Unlocks the following spell</Provides>
             </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_SpellDamage_ArcaneShadow</StrVal>
+                <Value>.20</Value>
+                <Provides>+20% Spell Damage with Arcane Shadow spells</Provides>
+            </GameModifier>				
             <CombatRating>20</CombatRating>
             <IsCombatAbility>1</IsCombatAbility>
             <Type>Spell</Type>
@@ -340,6 +347,13 @@
                 <Value>.75</Value>
                 <Provides>+75% Healing when casting healing spells</Provides>
             </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_SpellDamage_ArcaneLight</StrVal>
+                <Value>.20</Value>
+                <Provides>+20% Spell Damage with Arcane Light spells</Provides>
+            </GameModifier>			
             <CombatRating>20</CombatRating>
             <IsCombatAbility>1</IsCombatAbility>
             <Type>Spell</Type>
@@ -896,6 +910,13 @@
                 <Value>.20</Value>
                 <Provides>+20% Spell Damage with Fire spells</Provides>
             </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_SpellDamage_Fire</StrVal>
+                <Value>.20</Value>
+                <Provides>+20% Spell Damage with Fire spells</Provides>
+            </GameModifier>			
             <GameModifier>
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>

@@ -1096,7 +1096,7 @@
         <AbilityBonusType>Unit_Level</AbilityBonusType>
         <AbilityBonusOption InternalName="Evoker1_Paladin">
             <DisplayName>Luminous Judgement</DisplayName>
-            <Description>+20% Spell Damage, +20% Arcane Light Spell Damage, +25% Arcane Shadow Resist</Description>
+            <Description>+10% Spell Damage, +20% Arcane Light Spell Damage, +25% Arcane Shadow Resist</Description>
             <Icon>Ability_EvokerI_Icon.png</Icon>
             <PerkTreePosX>5</PerkTreePosX>
             <PerkTreePosY>4</PerkTreePosY>
@@ -1104,8 +1104,8 @@
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
                 <StrVal>UnitStat_SpellDamage</StrVal>
-                <Value>20</Value>
-                <Provides>+20% Spell Damage</Provides>
+                <Value>10</Value>
+                <Provides>+10% Spell Damage</Provides>
             </GameModifier>
             <GameModifier>
                 <ModType>Unit</ModType>
@@ -1142,7 +1142,7 @@
         <AbilityBonusType>Unit_Level</AbilityBonusType>
         <AbilityBonusOption InternalName="Evoker1_AntiPaladin">
             <DisplayName>Umbral Judgement</DisplayName>
-            <Description>+20% Spell Damage, +20% Spell Damage with Arcane Shadow spells, +25% Arcane Light Resist</Description>
+            <Description>+10% Spell Damage, +20% Spell Damage with Arcane Shadow spells, +25% Arcane Light Resist</Description>
             <Icon>Ability_EvokerI_Icon.png</Icon>
             <PerkTreePosX>5</PerkTreePosX>
             <PerkTreePosY>4</PerkTreePosY>
@@ -1150,8 +1150,8 @@
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
                 <StrVal>UnitStat_SpellDamage</StrVal>
-                <Value>20</Value>
-                <Provides>+20% Spell Damage</Provides>
+                <Value>10</Value>
+                <Provides>+10% Spell Damage</Provides>
             </GameModifier>
             <GameModifier>
                 <ModType>Unit</ModType>
