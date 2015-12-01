@@ -1,0 +1,24 @@
+<ResourceTypes>  
+
+<ResourceType InternalName="ShardEssence">
+    <DisplayName>Shard Essence</DisplayName>
+    <Type>ShardEssence</Type>
+    <Description>The internal energy of an elemental shard.</Description>
+    <IconColor>0,0,0</IconColor>
+    <Icon>Gfx//Icons//Ability_Embers.png</Icon>
+    <HideInHiergamenon>1</HideInHiergamenon>
+    <ModelColor>0,0,0</ModelColor>
+    <Production>1.0</Production>
+    <Global>1</Global>
+    <Rarity>0.0</Rarity>
+    <Shared>0</Shared>
+    <TradedByCaravans>0</TradedByCaravans>
+    <ShownInGlobalDisplay>1</ShownInGlobalDisplay>
+    <!-- AI Info -->
+    <AIData AIPersonality="AI_General">
+      <AITag>Fame</AITag>
+    </AIData>
+  </ResourceType>
+
+
+</ResourceTypes>

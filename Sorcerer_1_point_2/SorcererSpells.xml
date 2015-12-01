@@ -2438,10 +2438,10 @@
         </SpellDefEffect>
     </SpellDef>
 
-	<!--
+
 <SpellDef InternalName="Consume_Sorcerer">
         <DisplayName>Pulverize Shard</DisplayName>
-        <Description>Destroy a shard in your territory, giving you 2 shard essence, opening up spells that give champions spell traits, or a spell that does massive damage to an enemy army.</Description>
+        <Description>Destroy a shard in your territory, giving you 2 shard essence.</Description>
         <Image>S_Consume_Painting.png</Image>
         <IconFG>S_Consume_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -2458,20 +2458,18 @@
         </Prereq>
         <SpellResourceCost>
             <Resource>Mana</Resource>
-            <Amount>20</Amount>
+            <Amount>10</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Map</ModType>
             <Attribute>DestroyObjects</Attribute>
             <BoolVal1>1</BoolVal1>
         </GameModifier>
-		<GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_ShardEssence</StrVal>
-            <ApplyToCaster>1</ApplyToCaster>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>ShardEssence</Attribute>
             <Value>2</Value>
-        </GameModifier>	
+        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>5</AIPriority>
         </AIData>
@@ -2485,7 +2483,58 @@
         </SpellDefEffect>
     </SpellDef>
 	
-	-->
+	<SpellDef InternalName="MantleOfTheShards">
+        <DisplayName>Mantle Of The Shards</DisplayName>
+        <Description>DOES NOT YET WORK - Target champion's Spell Resistance gets +2 per Earth shard, Accuracy gets +2 per fire shard, Spell Mastery gets +2 per air shard, and Dodge gets +2 per water shard.</Description>
+        <Image>T_Stoneskin_Painting.png</Image>
+        <IconFG>T_Stoneskin_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CanStack>0</CanStack>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitEnchantment</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Buff</SpellSubClass>
+        <SpellTargetType>FriendlyChampionOrSov</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Elemancy</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>15</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <PerTurn>1</PerTurn>
+            <Amount>1</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <Duration>-1</Duration>
+            <HasUpgradableValue>1</HasUpgradableValue>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumEarthShards]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc] + 3]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>20</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_StoneSkin_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>T_StoneSkin_Particle</EffectName>
+            <LocalPosition>0,25,0</LocalPosition>
+            <EffectScale>.4</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+	
 
 <!-- <SpellDef InternalName="ImpassableTerrain">
         <DisplayName>Impassable Terrain</DisplayName>
@@ -2585,49 +2634,41 @@
         </SpellDefEffect>
     </SpellDef>
 
-<!--<SpellDef InternalName="FuryOfTheShards">
+	<SpellDef InternalName="FuryOfTheShards">
         <DisplayName>Fury Of The Shards</DisplayName>
-        <Description>Target enemy army takes 50 (+10 per air and fire shard) lightning damage. Costs 2 shard essence.</Description>
+        <Description>Target enemy army in friendly territory takes 30 (+1 per each type of shard) damage. Costs 2 shard essence.</Description>
         <Image>T_Storm_Painting.png</Image>
-        <IconFG>T_ChainLightning_Icon.png</IconFG>
+        <IconFG>T_DirgeofCeresa_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
         <SpellBookSortCategory>Unit</SpellBookSortCategory>
         <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
         <SpellClass>Offensive</SpellClass>
+        <SpellClass>Offensive</SpellClass>
         <SpellSubClass>Damage</SpellSubClass>
         <SpellTargetType>EnemyUnit</SpellTargetType>
-        <SpellTargetZOCType>Friendly</SpellTargetZOCType>
-        <UnitAppSpecifier>ApplyToAll</UnitAppSpecifier>
-        <Radius>0</Radius>
-        <Prereq>
-            <Type>UnitStat</Type>
-            <Attribute>UnitStat_ShardEssence</Attribute>
-            <Value>2</Value>
-        </Prereq>		
-		<GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_ShardEssence</StrVal>
-            <ApplyToCaster>1</ApplyToCaster>
-            <Value>-2</Value>
-        </GameModifier>	
+        <SpellResourceCost>
+            <Resource>ShardEssence</Resource>
+            <Amount>2</Amount>
+        </SpellResourceCost>			
         <GameModifier>
             <ModType>Unit</ModType>
-            <Attribute>DefendableDamage</Attribute>
-            <AttackStat>UnitStat_Attack_Lightning</AttackStat>
+            <Attribute>CurHealth</Attribute>
             <Calculate InternalName="Calc" ValueOwner="CastingUnit">
                 <Expression><![CDATA[[UnitOwner_GetNumAirShards] + [UnitOwner_GetNumFireShards]]]></Expression>
             </Calculate>
             <Calculate InternalName="Calc2" ValueOwner="CastingUnit">
-                <Expression><![CDATA[[Calc] * 10]]></Expression>
+                <Expression><![CDATA[[UnitOwner_GetNumEarthShards] + [UnitOwner_GetNumWaterShards]]]></Expression>
+            </Calculate>			
+            <Calculate InternalName="Calc3" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[Calc] + [Calc2]]]></Expression>
             </Calculate>
             <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc2] + 50]]></Expression>
+                <Expression><![CDATA[[Calc3] + 30]]></Expression>
             </Calculate>
         </GameModifier>
         <AIData AIPersonality="AI_General">
-            <AIPriority>50</AIPriority>
+            <AIPriority>0</AIPriority>
         </AIData>
         <HitSoundFX>Spell_Storm_01</HitSoundFX>
         <WorldLightOverrideTime>2</WorldLightOverrideTime>
@@ -2636,15 +2677,15 @@
         <WorldLightOverrideRim0>212,0,192</WorldLightOverrideRim0>
         <WorldLightOverrideRim1>0,132,234</WorldLightOverrideRim1>
         <SpellDefEffect>
-            <EffectName>T_Storm_Particle</EffectName>
-            <LocalPosition>0,0,0</LocalPosition>
-            <EffectScale>1</EffectScale>
+            <EffectName>S_PillarofFlame_Particle</EffectName>
+            <LocalPosition>0, 0 ,0</LocalPosition>
+            <EffectScale>0.75</EffectScale>
             <EffectDelay>0.25</EffectDelay>
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
-    </SpellDef>-->
+    </SpellDef>
 
-<SpellDef InternalName="RaiseLand_Sorcerer">
+	<SpellDef InternalName="RaiseLand_Sorcerer">
         <DisplayName>Smooth Cliffs</DisplayName>
         <Description>Turn cliff into beach.</Description>
         <Image>S_RaiseLand_Painting.png</Image>
@@ -3210,7 +3251,7 @@
         </Prereq>
         <SpellResourceCost>
             <Resource>Mana</Resource>
-            <Amount>80</Amount>
+            <Amount>120</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Unit</ModType>
@@ -3266,7 +3307,7 @@
         </Prereq>
         <SpellResourceCost>
             <Resource>Mana</Resource>
-            <Amount>80</Amount>
+            <Amount>120</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Unit</ModType>
