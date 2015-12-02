@@ -4882,10 +4882,9 @@
         </SpellDefEffect>
     </SpellDef>
 	
-	<SpellDef InternalName="JudgementByFlame">
-        <DisplayName>Judgement By Flame</DisplayName>
-        <Description>Consume a single target in flame for 40 (+4 per fire shard) in fire damage.</Description>
-        <FormattedDescription>Consume a single target in flame for %d fire damage.</FormattedDescription>
+	<SpellDef InternalName="ConsumingFlame">
+        <DisplayName>Consuming Flame</DisplayName>
+        <Description>Consume a unit in flame for 36 (+4 per fire shard) in fire damage, multiplied by the members of that unit.</Description>
         <Image>S_PillarofFlame_Painting.png</Image>
         <IconFG>S_PillarofFlame_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -4914,16 +4913,13 @@
                 <Expression><![CDATA[[UnitOwner_GetNumFireShards] * 4]]></Expression>
             </Calculate>
             <Calculate InternalName="Calc2">
-                <Expression><![CDATA[[Calc] + 40]]></Expression>
+                <Expression><![CDATA[[Calc] + 36]]></Expression>
             </Calculate>
             <Calculate InternalName="Calc3" ValueOwner="CastingUnit">
                 <Expression><![CDATA[[Calc2] * [UnitStat_SpellDamage_Fire]]]></Expression>
             </Calculate>
-            <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc3]]]></Expression>
-            </Calculate>
-            <Calculate InternalName="ValueForFormattedDescription">
-                <Expression><![CDATA[[Calc3]]]></Expression>
+            <Calculate InternalName="Value" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[Calc3] * [UnitStat_SpellDamage_Fire]]]></Expression>
             </Calculate>
         </GameModifier>
         <GameModifier>
@@ -4935,7 +4931,7 @@
                 <Expression><![CDATA[[UnitOwner_GetNumFireShards] * 2]]></Expression>
             </Calculate>
             <Calculate InternalName="Calc2">
-                <Expression><![CDATA[[Calc] + 20]]></Expression>
+                <Expression><![CDATA[[Calc] + 18]]></Expression>
             </Calculate>
             <Calculate InternalName="Calc3" ValueOwner="CastingUnit">
                 <Expression><![CDATA[[Calc2] * [UnitStat_SpellDamage_Fire]]]></Expression>
