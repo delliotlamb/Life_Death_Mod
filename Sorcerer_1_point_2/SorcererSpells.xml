@@ -2756,7 +2756,7 @@
         <DisplayName>Prism Blade</DisplayName>
         <Description>Enchanted champion's weapon does one of the following, at random: +2 fire, cold, lightning, or physical damage.</Description>
         <Image>S_MoriansChant_Painting.png</Image>
-        <IconFG>T_NobleLegacy_Icon.png</IconFG>
+        <IconFG>S_MoriansChant_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
         <CanStack>0</CanStack>
         <SpellBookSortCategory>Unit</SpellBookSortCategory>

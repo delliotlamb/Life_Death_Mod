@@ -771,7 +771,7 @@
         <DisplayName>Anointment Of Regicide</DisplayName>
         <Description>Cast on an assassin with the Executioner II trait to allow that Assassin to permanently assassinate ONE sovereign or champion.</Description>
         <Image>F_Domination_Full.png</Image>
-        <IconFG>T_Kill_Icon.png</IconFG>
+        <IconFG>S_Sacrifice_Icon.png</IconFG>
 		<Cooldown>5</Cooldown>
 		<AutoUnlock>1</AutoUnlock>
         <SpellBookSortCategory>Unit</SpellBookSortCategory>

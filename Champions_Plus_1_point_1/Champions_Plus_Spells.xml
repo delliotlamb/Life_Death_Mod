@@ -4882,6 +4882,98 @@
         </SpellDefEffect>
     </SpellDef>
 	
+	<SpellDef InternalName="JudgementByFlame">
+        <DisplayName>Judgement By Flame</DisplayName>
+        <Description>Consume a single target in flame for 40 (+4 per fire shard) in fire damage.</Description>
+        <FormattedDescription>Consume a single target in flame for %d fire damage.</FormattedDescription>
+        <Image>S_PillarofFlame_Painting.png</Image>
+        <IconFG>S_PillarofFlame_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CastTime>2</CastTime>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+        <IsResistable>1</IsResistable>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Fire4</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>40</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Fire</AttackStat>
+            <IsForFormattedDescription>1</IsForFormattedDescription>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumFireShards] * 4]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc2">
+                <Expression><![CDATA[[Calc] + 40]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc3" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[Calc2] * [UnitStat_SpellDamage_Fire]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc3]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="ValueForFormattedDescription">
+                <Expression><![CDATA[[Calc3]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Fire</AttackStat>
+            <IsForSpellResist>1</IsForSpellResist>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumFireShards] * 2]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc2">
+                <Expression><![CDATA[[Calc] + 20]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc3" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[Calc2] * [UnitStat_SpellDamage_Fire]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc3]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="ValueForFormattedDescription">
+                <Expression><![CDATA[[Calc3]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>1000</AIPriority>
+        <ValueCalcWrapper>
+            <ValueType>IsTargetWorthy</ValueType>
+            <Calculate InternalName="Calc" ValueOwner="TargetUnit">
+                <Expression><![CDATA[[UnitStat_ResistFire]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc] < 55]]></Expression>
+            </Calculate>
+        </ValueCalcWrapper>
+        </AIData>
+        <!--<HitSoundFX>Spell_FireBallExplode_01</HitSoundFX>-->
+		<SpellCastSoundFX>Spell_FireBreath</SpellCastSoundFX>
+        <WorldLightOverrideTime>3</WorldLightOverrideTime>
+        <WorldLightOverrideAmbiant>20,20,20</WorldLightOverrideAmbiant>
+        <WorldLightOverrideRim0>255,217,66</WorldLightOverrideRim0>
+        <WorldLightOverrideRim1>255,115,66</WorldLightOverrideRim1>
+        <SpellDefEffect>
+            <EffectName>S_PillarofFlame_Particle</EffectName>
+            <LocalPosition>0, 0 ,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0.25</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+	
 	<!--<SpellDef InternalName="Spell_DefensiveForesight">
         <DisplayName>Defensive Foresight</DisplayName>
         <Description>If an enemy army attacks, your troops will have full foresight of the enemy's intent, strengths, and weaknesses. As a result your troops will gain +4 initiative, +20% armor piercing, +10 Dodge, +10 Dodge vs ranged, and +20 accuracy in defensive actions.</Description>
