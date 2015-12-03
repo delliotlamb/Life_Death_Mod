@@ -138,7 +138,7 @@
 
 <SpellDef InternalName="GraviticHold">
         <DisplayName>Gravitic Hold</DisplayName>
-        <Description>All enemy units lose -6 initiative (-2 if they resist) and have their movement reduced to 1.</Description>
+        <Description>All enemy units are immobilized, lose -6 initiative, lose 75% dodge, lose 25% accuracy, and have their movement reduced by 1.</Description>
         <Image>T_Chaos_Painting.png</Image>
         <IconFG>T_Confusion_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -157,7 +157,7 @@
         </Prereq>
         <SpellResourceCost>
             <Resource>Mana</Resource>
-            <Amount>75</Amount>
+            <Amount>100</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Unit</ModType>
@@ -168,9 +168,35 @@
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
                 <StrVal>UnitStat_CombatSpeed</StrVal>
-                <Value>-6</Value>
-				<Duration>-1</Duration>
+                <Value>-4</Value>
+				<Duration>2</Duration>
             </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Dodge</StrVal>
+                <Multiplier>0.25</Multiplier>
+				<Duration>2</Duration>
+            </GameModifier>		
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Accuracy</StrVal>
+                <Multiplier>0.75</Multiplier>
+				<Duration>2</Duration>
+            </GameModifier>			
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Moves</StrVal>
+                <Value>-1</Value>
+				<Duration>2</Duration>
+            </GameModifier>	
+			<GameModifier>
+				<ModType>Unit</ModType>
+				<Attribute>Immobilize</Attribute>
+				<Duration>2</Duration>
+			</GameModifier>			
         <AIData AIPersonality="AI_General">
             <AIPriority>30</AIPriority>
         </AIData>

@@ -4971,7 +4971,7 @@
             </Calculate>
         </ValueCalcWrapper>
         </AIData>
-        <HitSoundFX>Spell_FireBallExplode_01</HitSoundFX>
+        <HitSoundFX>Spell_RainofFire_03</HitSoundFX>
         <WorldLightOverrideTime>3</WorldLightOverrideTime>
         <WorldLightOverrideAmbiant>20,20,20</WorldLightOverrideAmbiant>
         <WorldLightOverrideRim0>255,217,66</WorldLightOverrideRim0>
