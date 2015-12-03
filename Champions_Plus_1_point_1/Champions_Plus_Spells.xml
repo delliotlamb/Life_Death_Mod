@@ -4943,18 +4943,11 @@
                 <Expression><![CDATA[[Calc3]]]></Expression>
             </Calculate>
         </GameModifier>
-        <!--<GameModifier>
+        <GameModifier>
             <ModType>Map</ModType>
             <Attribute>CreateWorldProp</Attribute>
             <StrVal>Artifact_Valcano_Lava</StrVal>
 			<ApplyToTile>1</ApplyToTile>
-            <Duration>-1</Duration>
-        </GameModifier>-->
-        <GameModifier>
-            <ModType>Map</ModType>
-            <Attribute>CreateWorldProp</Attribute>
-            <StrVal>LavaPool</StrVal>
-		    <ApplyToTile>1</ApplyToTile>
             <Duration>-1</Duration>
         </GameModifier>
         <GameModifier>
@@ -4978,8 +4971,7 @@
             </Calculate>
         </ValueCalcWrapper>
         </AIData>
-        <!--<HitSoundFX>Spell_FireBallExplode_01</HitSoundFX>-->
-		<SpellCastSoundFX>Spell_FireBreath</SpellCastSoundFX>
+        <HitSoundFX>Spell_FireBallExplode_01</HitSoundFX>
         <WorldLightOverrideTime>3</WorldLightOverrideTime>
         <WorldLightOverrideAmbiant>20,20,20</WorldLightOverrideAmbiant>
         <WorldLightOverrideRim0>255,217,66</WorldLightOverrideRim0>
