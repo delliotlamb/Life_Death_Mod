@@ -1896,7 +1896,7 @@
             <Attribute>CreateWorldProp</Attribute>
             <StrVal>TD_Groundfire</StrVal>
             <Duration>-1</Duration>
-        </GameModifier>
+        </GameModifier>				
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>DefendableDamage</Attribute>

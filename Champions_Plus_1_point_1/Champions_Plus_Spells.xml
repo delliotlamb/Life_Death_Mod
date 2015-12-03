@@ -4884,7 +4884,7 @@
 	
 	<SpellDef InternalName="ConsumingFlame">
         <DisplayName>Consuming Flame</DisplayName>
-        <Description>Consume a unit in flame for 36 (+4 per fire shard) in fire damage, multiplied by the members of that unit.</Description>
+        <Description>Consume a unit in flame for 36 (+4 per fire shard) in fire damage, multiplied by the members of that unit. Leaves behind lava that does 30 fire damage to any who enter that tile.</Description>
         <Image>S_PillarofFlame_Painting.png</Image>
         <IconFG>S_PillarofFlame_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -4943,6 +4943,29 @@
                 <Expression><![CDATA[[Calc3]]]></Expression>
             </Calculate>
         </GameModifier>
+        <!--<GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>CreateWorldProp</Attribute>
+            <StrVal>Artifact_Valcano_Lava</StrVal>
+			<ApplyToTile>1</ApplyToTile>
+            <Duration>-1</Duration>
+        </GameModifier>-->
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>CreateWorldProp</Attribute>
+            <StrVal>LavaPool</StrVal>
+		    <ApplyToTile>1</ApplyToTile>
+            <Duration>-1</Duration>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Fire</AttackStat>
+            <ApplyToTile>1</ApplyToTile>
+            <Duration>0</Duration>
+            <DurationOnTile>-1</DurationOnTile>
+			<Value>30</Value>
+        </GameModifier>		
         <AIData AIPersonality="AI_General">
             <AIPriority>1000</AIPriority>
         <ValueCalcWrapper>
