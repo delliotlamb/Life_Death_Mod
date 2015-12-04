@@ -4884,7 +4884,7 @@
 	
 	<SpellDef InternalName="ConsumingFlame">
         <DisplayName>Consuming Flame</DisplayName>
-        <Description>Consume a unit in flame for 36 (+4 per fire shard) in fire damage, multiplied by the members of that unit. Leaves behind lava that does 30 fire damage to any who enter that tile.</Description>
+        <Description>Consume a unit in flame for 36 (+4 per fire shard) in fire damage, multiplied by the members of that unit. Leaves behind flame that does 10 fire damage to any who enter that tile.</Description>
         <Image>S_PillarofFlame_Painting.png</Image>
         <IconFG>S_PillarofFlame_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -4946,7 +4946,7 @@
         <GameModifier>
             <ModType>Map</ModType>
             <Attribute>CreateWorldProp</Attribute>
-            <StrVal>Artifact_Valcano_Lava</StrVal>
+            <StrVal>TD_Groundfire</StrVal>
 			<ApplyToTile>1</ApplyToTile>
             <Duration>-1</Duration>
         </GameModifier>
@@ -4957,7 +4957,7 @@
             <ApplyToTile>1</ApplyToTile>
             <Duration>0</Duration>
             <DurationOnTile>-1</DurationOnTile>
-			<Value>30</Value>
+			<Value>10</Value>
         </GameModifier>		
         <AIData AIPersonality="AI_General">
             <AIPriority>1000</AIPriority>
@@ -4971,11 +4971,7 @@
             </Calculate>
         </ValueCalcWrapper>
         </AIData>
-        <HitSoundFX>Spell_RainofFire_03</HitSoundFX>
-        <WorldLightOverrideTime>3</WorldLightOverrideTime>
-        <WorldLightOverrideAmbiant>20,20,20</WorldLightOverrideAmbiant>
-        <WorldLightOverrideRim0>255,217,66</WorldLightOverrideRim0>
-        <WorldLightOverrideRim1>255,115,66</WorldLightOverrideRim1>
+        <HitSoundFX>Spell_PillarOfFlame_01</HitSoundFX>
         <SpellDefEffect>
             <EffectName>S_PillarofFlame_Particle</EffectName>
             <LocalPosition>0, 0 ,0</LocalPosition>

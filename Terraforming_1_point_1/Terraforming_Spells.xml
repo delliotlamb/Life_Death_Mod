@@ -1703,7 +1703,7 @@
 
 <SpellDef InternalName="PillarOfFlame">
         <DisplayName>Pillar of Flame</DisplayName>
-        <Description>Target enemy army takes 8 fire damage (+2 per fire shard). Can only be cast within your territory. You will gain 10 Ember Favor and lose 5 Verdant Favor.</Description>
+        <Description>Target enemy army takes 8 fire damage (+2 per fire shard). Can only be cast within your territory. You will gain 3 Ember Favor and lose 1 Verdant Favor.</Description>
         <Image>S_PillarofFlame_Painting.png</Image>
         <IconFG>S_PillarOfFlame_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -1751,13 +1751,13 @@
                 <ModType>Resource</ModType>
                 <Attribute>EmberEssence</Attribute>
 				<ApplyToCaster>1</ApplyToCaster>
-                <Value>10</Value>
+                <Value>3</Value>
             </GameModifier>	
             <GameModifier>
                 <ModType>Resource</ModType>
                 <Attribute>VerdantEssence</Attribute>
 				<ApplyToCaster>1</ApplyToCaster>
-                <Value>-5</Value>
+                <Value>-1</Value>
             </GameModifier>			
         <AIData AIPersonality="AI_General">
             <AIPriority>50</AIPriority>
@@ -1774,7 +1774,7 @@
 	
 	<SpellDef InternalName="Firestorm">
         <DisplayName>Firestorm</DisplayName>
-        <Description>All units in target army take 25 fire damage (+2 per fire shard). Firestorm leaves a fire raging in the affected tile for 10 turns. You will gain 20 Ember Favor and lose 10 Verdant Favor.</Description>
+        <Description>All units in target army take 20 fire damage (+3 per fire shard), multiplied by each member of the unit. Firestorm leaves a fire raging in the affected tile for 10 turns. You will gain 5 Ember Favor and lose 1 Verdant Favor.</Description>
         <Image>S_Firestorm_Painting.png</Image>
         <IconFG>S_Firestorm_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -1801,16 +1801,16 @@
             <Attribute>DefendableDamage</Attribute>
             <AttackStat>UnitStat_Attack_Fire</AttackStat>
             <Calculate InternalName="Calc" ValueOwner="CastingUnit">
-                <Expression><![CDATA[[UnitOwner_GetNumFireShards] * 2]]></Expression>
+                <Expression><![CDATA[[UnitOwner_GetNumFireShards] * 3]]></Expression>
             </Calculate>
             <Calculate InternalName="Calc2">
-                <Expression><![CDATA[[Calc] + 25]]></Expression>
+                <Expression><![CDATA[[Calc] + 20]]></Expression>
             </Calculate>
-            <Calculate InternalName="Calc3" ValueOwner="CastingUnit">
+            <Calculate InternalName="Calc3" ValueOwner="TargetUnit">
+                <Expression><![CDATA[[Calc2] * [Unit_GetTroopCount]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value" ValueOwner="CastingUnit">
                 <Expression><![CDATA[[Calc2] * [UnitStat_SpellDamage_Fire]]]></Expression>
-            </Calculate>
-            <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc3]]]></Expression>
             </Calculate>
         </GameModifier>
         <GameModifier>
@@ -1847,13 +1847,13 @@
                 <ModType>Resource</ModType>
                 <Attribute>EmberEssence</Attribute>
 				<ApplyToCaster>1</ApplyToCaster>
-                <Value>20</Value>
+                <Value>5</Value>
             </GameModifier>	
             <GameModifier>
                 <ModType>Resource</ModType>
                 <Attribute>VerdantEssence</Attribute>
 				<ApplyToCaster>1</ApplyToCaster>
-                <Value>-10</Value>
+                <Value>-1</Value>
             </GameModifier>			
         <AIData AIPersonality="AI_General">
             <AIPriority>80</AIPriority>
@@ -2154,7 +2154,7 @@
 
 <SpellDef InternalName="ScorchEarth">
         <DisplayName>Scorch Earth</DisplayName>
-        <Description>Bathe plains with raging inferno, leaving it a baking plane of embers. This will gain you 5 Ember Favor.</Description>
+        <Description>Bathe plains with raging inferno, leaving it a baking plane of embers. This will gain you 5 Ember Favor, 1 Famine Favor, and lose you 1 Verdant Favor.</Description>
         <Image>Scorch_Earth_Painting.png</Image>
         <IconFG>Scorch_Earth.png</IconFG>
 		<AutoUnlock>1</AutoUnlock>
