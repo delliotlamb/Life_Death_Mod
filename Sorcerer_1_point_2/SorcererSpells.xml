@@ -20,7 +20,7 @@
         </Prereq>
         <SpellResourceCost>
             <Resource>Mana</Resource>
-            <Amount>75</Amount>
+            <Amount>120</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Unit</ModType>
@@ -2578,7 +2578,7 @@
             </Calculate>
         </GameModifier>
         <AIData AIPersonality="AI_General">
-            <AIPriority>20</AIPriority>
+            <AIPriority>50</AIPriority>
         </AIData>
         <HitSoundFX>Spell_BloodCurse_01</HitSoundFX>
         <SpellDefEffect>
@@ -2829,7 +2829,7 @@
 			<Value>2</Value>
         </GameModifier>		
         <AIData AIPersonality="AI_General">
-            <AIPriority>500</AIPriority>
+            <AIPriority>50</AIPriority>
         </AIData>
         <HitSoundFX>Spell_Courage_01</HitSoundFX>
         <SpellDefEffect>
@@ -3115,7 +3115,7 @@
             <UnitClass>Champion</UnitClass>
         </GameModifier>
         <AIData AIPersonality="AI_General">
-            <AIPriority>0</AIPriority>
+            <AIPriority>20</AIPriority>
         </AIData>
         <HitSoundFX>Spell_DestinyGift_01</HitSoundFX>
     </SpellDef>
