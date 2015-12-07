@@ -3496,9 +3496,13 @@
             <Type>AbilityBonusOption</Type>
             <Attribute>Earth3</Attribute>
         </Prereq>
-        <SpellResourceCost>
+        <!--<SpellResourceCost>
             <Resource>Mana</Resource>
             <Amount>45</Amount>
+        </SpellResourceCost>-->
+		<SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>65</Amount>
         </SpellResourceCost>
 			<GameModifier>
 				<ModType>Map</ModType>

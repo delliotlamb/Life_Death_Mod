@@ -2740,6 +2740,7 @@
         </SpellDefEffect>
     </SpellDef>
 
+	<!--	
 	<SpellDef InternalName="RaiseLand_Sorcerer">
         <DisplayName>Smooth Cliffs</DisplayName>
         <Description>Turn cliff into beach.</Description>
@@ -2777,6 +2778,7 @@
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
     </SpellDef>
+	-->
 	
 	<SpellDef InternalName="PrismBlade">
         <DisplayName>Prism Blade</DisplayName>
