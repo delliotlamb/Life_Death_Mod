@@ -1601,7 +1601,7 @@
         <Image>Flooding_Painting.png</Image>
         <IconFG>Flooding.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
-		<CastTime>1</CastTime>		
+		<Cooldown>1</Cooldown>		
         <SpellBookSortCategory>World</SpellBookSortCategory>
         <SpellBookSortSubCategory>Map</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -3485,7 +3485,7 @@
         <Image>S_Earthquake_Painting.png</Image>
         <IconFG>Terraform_Dot.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
-		<CastTime>1</CastTime>
+		<Cooldown>1</Cooldown>
         <SpellBookSortCategory>World</SpellBookSortCategory>
         <SpellBookSortSubCategory>Map</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -5917,7 +5917,7 @@
         <Description>Does 12 fire damage (+2 per fire shard) and 12 physical damage (+2 per Air shard), per unit member, to all armies within 1 tile of the impact point. You will gain significant Ember and Famine favor, while equally losing Verdant favor. BEWARE - this spell will leave scarred earth behind, wiping out resources or even cities.</Description>
         <Image>S_FallingStar_Painting.png</Image>
         <IconFG>S_FallingStar_Icon.png</IconFG>
-        <Cooldown>1</Cooldown>
+        <Cooldown>3</Cooldown>
         <SpellBookSortCategory>Unit</SpellBookSortCategory>
         <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -5970,7 +5970,7 @@
             <ModType>Map</ModType>
             <Attribute>PlaceTerrain</Attribute>
             <!--<TerrainType>BurningLands</TerrainType>-->
-			<TerrainType>Rugged_Land</TerrainType>
+			<TerrainType>Fertile_Land</TerrainType>
         </GameModifier>
         <GameModifier>
             <ModType>Map</ModType>

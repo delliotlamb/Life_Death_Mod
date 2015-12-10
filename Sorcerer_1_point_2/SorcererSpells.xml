@@ -779,8 +779,8 @@
             <Attribute>Elemancy</Attribute>
         </Prereq>
         <SpellResourceCost>
-            <Resource>Mana</Resource>
-            <Amount>100</Amount>
+            <Resource>ShardEssence</Resource>
+            <Amount>1</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Unit</ModType>
@@ -818,8 +818,8 @@
             <Attribute>Elemancy</Attribute>
         </Prereq>
         <SpellResourceCost>
-            <Resource>Mana</Resource>
-            <Amount>100</Amount>
+            <Resource>ShardEssence</Resource>
+            <Amount>1</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Unit</ModType>
@@ -857,8 +857,8 @@
             <Attribute>Elemancy</Attribute>
         </Prereq>
         <SpellResourceCost>
-            <Resource>Mana</Resource>
-            <Amount>100</Amount>
+            <Resource>ShardEssence</Resource>
+            <Amount>1</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Unit</ModType>
@@ -896,8 +896,8 @@
             <Attribute>Elemancy</Attribute>
         </Prereq>
         <SpellResourceCost>
-            <Resource>Mana</Resource>
-            <Amount>100</Amount>
+            <Resource>ShardEssence</Resource>
+            <Amount>1</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Unit</ModType>
@@ -940,8 +940,8 @@
                 <Attribute>Kingdom</Attribute>
             </Prereq>
         <SpellResourceCost>
-            <Resource>Mana</Resource>
-            <Amount>100</Amount>
+            <Resource>ShardEssence</Resource>
+            <Amount>1</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Unit</ModType>
@@ -984,8 +984,8 @@
                 <Attribute>Empire</Attribute>
             </Prereq>
         <SpellResourceCost>
-            <Resource>Mana</Resource>
-            <Amount>100</Amount>
+            <Resource>ShardEssence</Resource>
+            <Amount>1</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Unit</ModType>
