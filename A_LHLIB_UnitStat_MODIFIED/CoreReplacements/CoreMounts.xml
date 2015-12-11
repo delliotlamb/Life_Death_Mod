@@ -56,17 +56,17 @@
         <Provides>Assassins cannot sneak or lay traps with this mount</Provides>		
         <Value>-1</Value>
       </GameModifier>	  
-            <GameModifier>
-                <ModType>Unit</ModType>
-                <Attribute>AdjustUnitStat</Attribute>
-                <BoolVal1>1</BoolVal1>
-                <StrVal>UnitStat_Attack_Pierce</StrVal>
-                <StrVal2>UnitStat_IsBow</StrVal2>
-                <Value>3</Value>
-                <BonusValue>0.5</BonusValue>
-                <Provides>+3 Attack when using a Bow</Provides>
-                <vsHigher>1</vsHigher>
-            </GameModifier>
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <BoolVal1>1</BoolVal1>
+        <StrVal>UnitStat_Attack_Pierce</StrVal>
+        <StrVal2>UnitStat_IsBow</StrVal2>
+        <Value>3</Value>
+        <BonusValue>0.5</BonusValue>
+        <Provides>+3 Attack when using a Bow</Provides>
+        <vsHigher>1</vsHigher>
+      </GameModifier>
       <GameModifier>
         <ModType>Unit</ModType>
         <Attribute>AdjustUnitStat</Attribute>
@@ -75,13 +75,7 @@
         <Value>1</Value>
         <Provides>+1 Attack vs unmounted opponents</Provides>
         <vsLower>1</vsLower>
-      </GameModifier>			
-      <GameModifier>
-        <ModType>Unit</ModType>
-        <Attribute>AdjustUnitStat</Attribute>
-        <StrVal>UnitStat_Moves</StrVal>
-        <Value>2</Value>
-      </GameModifier>			
+      </GameModifier>						
       <CutSceneDataPack>HorseMountCutScenePack</CutSceneDataPack>
       <Prereq>
         <Type>RestrictedAbilityBonusOption</Type>
@@ -170,6 +164,15 @@
                 <Provides>+3 Attack when using a Bow</Provides>
                 <vsHigher>1</vsHigher>
             </GameModifier>	  
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_Attack_Boost</StrVal>
+        <StrVal2>UnitStat_BG_IsUsingMount</StrVal2>
+        <Value>1</Value>
+        <Provides>+1 Attack vs unmounted opponents</Provides>
+        <vsLower>1</vsLower>
+      </GameModifier>				
       <CutSceneDataPack>HorseMountCutScenePack</CutSceneDataPack>
       <Prereq>
         <Type>RestrictedAbilityBonusOption</Type>
@@ -333,6 +336,15 @@
                 <Provides>+3 Attack when using a Bow</Provides>
                 <vsHigher>1</vsHigher>
             </GameModifier>	  
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <StrVal>UnitStat_Attack_Boost</StrVal>
+        <StrVal2>UnitStat_BG_IsUsingMount</StrVal2>
+        <Value>1</Value>
+        <Provides>+1 Attack vs unmounted opponents</Provides>
+        <vsLower>1</vsLower>
+      </GameModifier>			
       <CutSceneDataPack>HorseMountCutScenePack</CutSceneDataPack>
       <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
       <Prereq>
