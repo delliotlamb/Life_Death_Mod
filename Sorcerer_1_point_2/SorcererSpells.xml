@@ -20,7 +20,7 @@
         </Prereq>
         <SpellResourceCost>
             <Resource>Mana</Resource>
-            <Amount>120</Amount>
+            <Amount>130</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Unit</ModType>
