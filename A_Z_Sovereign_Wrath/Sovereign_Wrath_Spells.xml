@@ -48,7 +48,7 @@
             <Value>50</Value>
         </GameModifier>		
         <AIData AIPersonality="AI_General">
-            <AIPriority>1000</AIPriority>
+            <AIPriority>900</AIPriority>
 			<ValueCalcWrapper>
 				<ValueType>IsTargetWorthy</ValueType>
 				<Calculate InternalName="Calc" ValueOwner="TargetUnit">

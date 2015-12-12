@@ -3478,7 +3478,7 @@
         </SpellDefEffect>
     </SpellDef>
 	
-	
+	<!--
 	<SpellDef InternalName="HillsToMountain">
         <DisplayName>Fortify Hills</DisplayName>
         <Description>Push Hills up into jagged mountain terrain, blocking passage to non-flying units. You will gain 5 Mineral favor but lose 5 gale favor.</Description>
@@ -3496,10 +3496,6 @@
             <Type>AbilityBonusOption</Type>
             <Attribute>Earth3</Attribute>
         </Prereq>
-        <!--<SpellResourceCost>
-            <Resource>Mana</Resource>
-            <Amount>45</Amount>
-        </SpellResourceCost>-->
 		<SpellResourceCost>
             <Resource>Mana</Resource>
             <Amount>65</Amount>
@@ -3534,7 +3530,7 @@
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
     </SpellDef>
-	
+	-->
 	
 <SpellDef InternalName="SoulOfOre">
         <DisplayName>Soul Of Ore</DisplayName>
@@ -5357,7 +5353,7 @@
 	
 	<SpellDef InternalName="TidalWave">
         <DisplayName>Tidal Wave</DisplayName>
-        <Description>Summon a wave that does 3 damage (+1 per water shard) per member. Tidal wave can only be cast on a target within 4 tiles of a water tile.</Description>
+        <Description>Summon a wave that does 5 damage (+1 per water shard) per member. Tidal wave can only be cast on a target within 4 tiles of a water tile.</Description>
         <Image>S_Erosion_Painting.png</Image>
         <IconFG>S_TidalWave_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -5384,7 +5380,7 @@
                 <Expression><![CDATA[[UnitOwner_GetNumWaterShards]]]></Expression>
             </Calculate>
             <Calculate InternalName="Calc2">
-                <Expression><![CDATA[[Calc] + 3]]></Expression>
+                <Expression><![CDATA[[Calc] + 5]]></Expression>
             </Calculate>
             <Calculate InternalName="Calc3" ValueOwner="TargetUnit">
                 <Expression><![CDATA[[Unit_GetTroopCount]]]></Expression>

@@ -2665,5 +2665,35 @@
         <ArtDef>Warhammer_Forge_ArtDef</ArtDef>
     </GameItemType>
 	
+	<GameItemType InternalName="Scroll_Blizzard">
+        <DisplayName>Frost Storm Scroll</DisplayName>
+        <Description>Use this scroll to do 8 cold damage (+1 per water shard) per member to enemy units.</Description>
+        <ShopValue>90</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UseSpell</Attribute>
+            <StrVal>Blizzard_Ability_Scroll</StrVal>
+            <Provides>Allows the unit to cast Frost Storm, which does cold damage to all units within a 2 tile radius</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>20</Likelihood>
+        <RarityDisplay>Uncommon</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <IsUsable>0</IsUsable>
+        <UsableInBattle>1</UsableInBattle>
+        <UsableOnlyOnceInBattle>0</UsableOnlyOnceInBattle>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>0</AIPriority>
+            </AIData>
+        <ArtDef>Scroll_Blizzard_ArtDef</ArtDef>
+        <GameItemTypeArtDef InternalName="Scroll_Blizzard_ArtDef">
+            <GameItemTypeModelPack InternalName="Scroll_Blizzard_Default">
+                <IconFile>Item_BlizzardScroll_Icon.png</IconFile>
+                <GameItemTypeModel>
+                </GameItemTypeModel>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+    </GameItemType>
 	
 </GameItemTypes>

@@ -3571,7 +3571,7 @@
 	
 	<SpellDef InternalName="Blizzard">
         <DisplayName>Blizzard</DisplayName>
-        <Description>Units take 8 cold damage (+1 per water shard) per member.</Description>
+        <Description>Units take 16 cold damage (+1 per water shard) per member.</Description>
         <FormattedDescription>Units take %d cold damage per member.</FormattedDescription>
         <Image>T_Blizzard_Painting.png</Image>
         <IconFG>T_Blizzard_Icon.png</IconFG>
@@ -3603,7 +3603,7 @@
                 <Expression><![CDATA[[UnitOwner_GetNumWaterShards]]]></Expression>
             </Calculate>
             <Calculate InternalName="Calc2">
-                <Expression><![CDATA[[Calc] + 8]]></Expression>
+                <Expression><![CDATA[[Calc] + 16]]></Expression>
             </Calculate>
             <Calculate InternalName="Calc3" ValueOwner="TargetUnit">
                 <Expression><![CDATA[[Unit_GetTroopCount]]]></Expression>
@@ -3624,7 +3624,7 @@
                 <Expression><![CDATA[[UnitOwner_GetNumWaterShards] * .5]]></Expression>
             </Calculate>
             <Calculate InternalName="Calc2">
-                <Expression><![CDATA[[Calc] + 4]]></Expression>
+                <Expression><![CDATA[[Calc] + 8]]></Expression>
             </Calculate>
             <Calculate InternalName="Calc3" ValueOwner="TargetUnit">
                 <Expression><![CDATA[[Unit_GetTroopCount]]]></Expression>
@@ -3664,8 +3664,8 @@
         </SpellDefEffect>
     </SpellDef>
 	
-    <SpellDef InternalName="Blizzard_Ability">
-        <DisplayName>Blizzard</DisplayName>
+    <SpellDef InternalName="Blizzard_Ability_Scroll">
+        <DisplayName>Frost Storm</DisplayName>
         <Description>Units take 8 cold damage (+1 per water shard) per member.</Description>
         <FormattedDescription>Units take %d cold damage per member.</FormattedDescription>
         <Image>T_Blizzard_Painting.png</Image>
