@@ -5261,7 +5261,7 @@
                 <Expression><![CDATA[[UnitOwner_GetNumLifeShards] + [Calc]]]></Expression>
             </Calculate>			
             <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc]]]></Expression>
+                <Expression><![CDATA[[Calc2]]]></Expression>
             </Calculate>
         </GameModifier>
         <GameModifier>
@@ -5277,7 +5277,7 @@
                 <Expression><![CDATA[[UnitOwner_GetNumLifeShards] + [Calc]]]></Expression>
             </Calculate>			
             <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc]]]></Expression>
+                <Expression><![CDATA[[Calc2]]]></Expression>
             </Calculate>
         </GameModifier>
         <GameModifier>
@@ -5293,7 +5293,7 @@
                 <Expression><![CDATA[[UnitOwner_GetNumLifeShards] + [Calc]]]></Expression>
             </Calculate>			
             <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc]]]></Expression>
+                <Expression><![CDATA[[Calc2]]]></Expression>
             </Calculate>
         </GameModifier>
         <AIData AIPersonality="AI_General">

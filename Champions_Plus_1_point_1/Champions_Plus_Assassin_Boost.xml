@@ -610,7 +610,7 @@
 	
 	<SpellDef InternalName="Assassinate">
         <DisplayName>Assassinate</DisplayName>
-        <Description>Once per battle, attack to permanently kill a champion or sovereign, if it connects. Accuracy is reduced by 3 for every hit point the target currently has remaining - only attempt on a nearly dead unit! Cannot be used again if a sovereign is killed.</Description>
+        <Description>Once per battle, attack to permanently kill a champion or sovereign, if it connects. Accuracy is reduced by 3 for every hit point the target currently has remaining - only attempt on a nearly dead unit! If it hits, cannot be used again until Anointment Of Regicide is re-cast.</Description>
         <Image>RoyalFuneral.png.png</Image>
         <IconFG>Improvement_FloodedGraveyard.png</IconFG>
 		<StaminaCost>7</StaminaCost>
