@@ -2,8 +2,8 @@
 
 	<ResourceType InternalName="SovereignWrath">
         <DisplayName>Sovereign Wrath</DisplayName>
-        <Type>ForbiddenLore</Type>
-        <Description>A Sovereign's ability to sever the essence of other channelers.</Description>
+        <Type>SovereignWrath</Type>
+        <Description>A Sovereign's ability to cast exceptional spells.</Description>
 		<HarvestType>Mining</HarvestType>
         <IconColor>0,0,0</IconColor>
         <Icon>Gfx//Icons//Ability_Shockwave.png</Icon>

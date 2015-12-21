@@ -320,6 +320,18 @@
             <PerTurn>1</PerTurn>
             <Provides>+1 Life Power</Provides>
         </GameModifier>		
+		<GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Mana</Attribute>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Mana per Life Power</Provides>
+            <Calculate InternalName="Calc" ValueOwner="OwnerCity">
+                <Expression><![CDATA[[GetNumLifeShards]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value" ValueOwner="OwnerCity">
+                <Expression><![CDATA[[Calc]]]></Expression>
+            </Calculate>
+        </GameModifier>		
         <AIData AIPersonality="AI_General">
             <AIPriority>5</AIPriority>
         </AIData>
@@ -529,8 +541,9 @@
         <GameModifier>
             <ModType>Resource</ModType>
             <Attribute>VerdantEssence</Attribute>
-            <Value>-5</Value>
-            <Provides>-5 Verdant Favor</Provides>
+			<PerTurn>1</PerTurn>
+            <Value>-1</Value>
+            <Provides>-1 Verdant Favor per Turn</Provides>
         </GameModifier>
     </ImprovementType>
 

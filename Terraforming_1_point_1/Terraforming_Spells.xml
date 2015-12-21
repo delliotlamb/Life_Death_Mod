@@ -235,7 +235,7 @@
 
     <SpellDef InternalName="NaturesRevenge">
         <DisplayName>Keep Away From The Branches!</DisplayName>
-        <Description>Target enemy army in friendly forest or swamp takes 8 physical damage (+1 per life shard), per member.</Description>
+        <Description>Target enemy army in friendly forest or swamp takes 5 physical damage (+1 per life shard), per member.</Description>
         <Image>Keep_Away_From_The_Trees_Painting.png</Image>
         <IconFG>Keep_Away_From_The_Trees.png</IconFG>
 		<AutoUnlock>1</AutoUnlock>		
@@ -247,6 +247,7 @@
         <SpellSubClass>Debuff</SpellSubClass>
         <SpellTargetType>EnemyUnit</SpellTargetType>
         <UnitAppSpecifier>ApplyToAll</UnitAppSpecifier>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>		
         <Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Life3</Attribute>
@@ -263,7 +264,7 @@
                 <Expression><![CDATA[[UnitOwner_GetNumLifeShards]]]></Expression>
             </Calculate>
             <Calculate InternalName="Calc2">
-                <Expression><![CDATA[[Calc] + 8]]></Expression>
+                <Expression><![CDATA[[Calc] + 5]]></Expression>
             </Calculate>
             <Calculate InternalName="Calc3" ValueOwner="TargetUnit">
                 <Expression><![CDATA[[Unit_GetTroopCount]]]></Expression>
@@ -3049,13 +3050,14 @@
         <SpellSubClass>Debuff</SpellSubClass>
         <SpellTargetType>EnemyUnit</SpellTargetType>		
         <UnitAppSpecifier>ApplyToAll</UnitAppSpecifier>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>		
         <Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Air3</Attribute>
         </Prereq>		
         <SpellResourceCost>
             <Resource>GaleEssence</Resource>
-            <Amount>80</Amount>
+            <Amount>40</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Unit</ModType>
@@ -3069,6 +3071,14 @@
         <ValidTerrainType>Rugged_Land</ValidTerrainType>
         <ValidTerrainType>Fertile_Land</ValidTerrainType>
         <HitSoundFX>Spell_Knockback_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>T_TitansBreath_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>0.25</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+            <PlayOnAllTargets>1</PlayOnAllTargets>
+        </SpellDefEffect>		
     </SpellDef>
 	
 
@@ -4119,6 +4129,7 @@
         <SpellSubClass>Debuff</SpellSubClass>
         <SpellTargetType>EnemyUnit</SpellTargetType>
         <UnitAppSpecifier>ApplyToAll</UnitAppSpecifier>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>		
         <Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Earth3</Attribute>
@@ -4937,7 +4948,7 @@
 	
 	<SpellDef InternalName="Sandstorm">
         <DisplayName>Choking Duststorm</DisplayName>
-        <Description>Inflicts the Dust Lung injury on all enemy units on Desert.</Description>
+        <Description>Immobilizes enemy army in friendly desert.</Description>
         <Image>T_TitansBreath_Painting.png</Image>
         <IconFG>T_ObscuringFog_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>		
@@ -4949,6 +4960,7 @@
         <SpellSubClass>Debuff</SpellSubClass>
         <SpellTargetType>EnemyUnit</SpellTargetType>
         <UnitAppSpecifier>ApplyToAll</UnitAppSpecifier>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>		
         <Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Death3</Attribute>
@@ -4957,10 +4969,10 @@
             <Resource>FamineEssence</Resource>
             <Amount>30</Amount>
         </SpellResourceCost>
-       <GameModifier>
+        <GameModifier>
             <ModType>Unit</ModType>
-            <Attribute>UnlockUnitAbility</Attribute>
-            <StrVal>DesertFever</StrVal>
+            <Attribute>Immobilize</Attribute>
+            <Duration>3</Duration>
         </GameModifier>
         <ValidTerrainType>DesertTerrain</ValidTerrainType>		
         <AIData AIPersonality="AI_General">
