@@ -1808,9 +1808,9 @@
 
     <SpellDef InternalName="Destabilize">
         <DisplayName>Destabilizing Presence</DisplayName>
-        <Description>Reduces the Cold, Fire and Lightning Resistance of an enemy army, for 1 turn.</Description>
+        <Description>Reduces the Cold, Fire and Lightning Resistance of an enemy army by 33% each, for 1 turn.</Description>
         <Image>S_CloakOfFear_Painting.png</Image>
-        <IconFG>S_CloakOfFear_Icon.png</IconFG>
+        <IconFG>T_Infection_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>		
         <CanStack>0</CanStack>
         <SpellBookSortCategory>Unit</SpellBookSortCategory>
@@ -1826,7 +1826,7 @@
         </Prereq>
         <SpellResourceCost>
             <Resource>Mana</Resource>
-            <Amount>50</Amount>
+            <Amount>85</Amount>
         </SpellResourceCost>		
         <GameModifier>
             <ModType>Unit</ModType>
