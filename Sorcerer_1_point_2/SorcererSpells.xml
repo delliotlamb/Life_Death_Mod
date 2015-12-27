@@ -1808,23 +1808,26 @@
 
     <SpellDef InternalName="Destabilize">
         <DisplayName>Destabilizing Presence</DisplayName>
-        <Description>Reduces the Cold, Fire and Lightning Resistance of all enemies by 33% unless they resist.</Description>
+        <Description>Reduces the Cold, Fire and Lightning Resistance of an enemy army, for 1 turn.</Description>
         <Image>S_CloakOfFear_Painting.png</Image>
         <IconFG>S_CloakOfFear_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>		
         <CanStack>0</CanStack>
         <SpellBookSortCategory>Unit</SpellBookSortCategory>
-        <SpellBookSortSubCategory>UnitCurse</SpellBookSortSubCategory>
-        <SpellType>Tactical</SpellType>
+        <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
         <SpellClass>Offensive</SpellClass>
         <SpellSubClass>Debuff</SpellSubClass>
-        <SpellTargetType>AllEnemyUnits</SpellTargetType>
-        <HideInHiergamenon>1</HideInHiergamenon>
-        <IsResistable>1</IsResistable>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+        <UnitAppSpecifier>ApplyToAll</UnitAppSpecifier>
         <Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Destabilize</Attribute>
         </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>		
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
@@ -1849,29 +1852,7 @@
         <AIData AIPersonality="AI_General">
             <AIPriority>25</AIPriority>
         </AIData>
-        <HitSoundFX>Spell_FearWave_01</HitSoundFX>
-        <SpellDefEffect>
-            <EffectName>T_Fear_Impact_Particle</EffectName>
-            <LocalPosition>0,0,0</LocalPosition>
-            <EffectScale>1</EffectScale>
-            <EffectDelay>1</EffectDelay>
-            <SnapToTerrain>1</SnapToTerrain>
-            <PlayOnAllTargets>1</PlayOnAllTargets>
-        </SpellDefEffect>
-        <SpellDefEffect>
-            <EffectName>T_FearWave_Particle</EffectName>
-            <LocalPosition>0,20,0</LocalPosition>
-            <EffectScale>1</EffectScale>
-            <EffectDelay>0</EffectDelay>
-            <SnapToTerrain>1</SnapToTerrain>
-        </SpellDefEffect>
-        <SpellDefEffect>
-            <EffectName>T_FearWave_Particle</EffectName>
-            <LocalPosition>0,20,0</LocalPosition>
-            <EffectScale>1</EffectScale>
-            <EffectDelay>0</EffectDelay>
-            <SnapToTerrain>1</SnapToTerrain>
-        </SpellDefEffect>
+        <HitSoundFX>Spell_Blind_01</HitSoundFX>
     </SpellDef>
 
 

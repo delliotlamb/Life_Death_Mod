@@ -2451,7 +2451,7 @@
 	
 <SpellDef InternalName="GreatBlaze">
         <DisplayName>Great Blaze</DisplayName>
-        <Description>Attack an enemy city with an all-consuming blaze which will reset production, destroy improvements, and reduces population. Defending units lose -2 initiative and Spell Resist for 1 turn. You will gain 10 ember essence.</Description>
+        <Description>Attack an enemy city with an all-consuming blaze which will reset production, destroy improvements, and reduces population. Defending units lose -2 initiative and Spell Resist for 1 turn. You will gain 20 ember essence.</Description>
         <Image>Great_Blaze_Painting.png</Image>
         <IconFG>Great_Blaze.png</IconFG>
 		<AutoUnlock>1</AutoUnlock>
@@ -2463,14 +2463,13 @@
         <SpellClass>ImpResourceBooster</SpellClass>
         <SpellSubClass>Debuff</SpellSubClass>
         <SpellTargetType>EnemyCity</SpellTargetType>	
-        <Radius>2</Radius>
         <Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Fire5</Attribute>
         </Prereq>		
         <SpellResourceCost>
             <Resource>Mana</Resource>
-            <Amount>125</Amount>
+            <Amount>175</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>City</ModType>
@@ -2503,20 +2502,15 @@
         </GameModifier>			
         <GameModifier>
             <ModType>Map</ModType>
-            <Attribute>PlaceEnvironment</Attribute>
-            <TerrainType>BarrenEnvironment</TerrainType>
-        </GameModifier>
-        <GameModifier>
-            <ModType>Map</ModType>
             <Attribute>CreateWorldProp</Attribute>
-            <StrVal>TD_Groundfire</StrVal>
+            <StrVal>TD_Groundfire2</StrVal>
             <Duration>1</Duration>
         </GameModifier>
             <GameModifier>
                 <ModType>Resource</ModType>
                 <Attribute>EmberEssence</Attribute>
 				<ApplyToCaster>1</ApplyToCaster>
-                <Value>10</Value>
+                <Value>20</Value>
             </GameModifier>			
         <AIData AIPersonality="AI_General">
             <AIPriority>100</AIPriority>
@@ -4460,7 +4454,6 @@
         <SpellClass>ImpResourceBooster</SpellClass>
         <SpellSubClass>Debuff</SpellSubClass>
         <SpellTargetType>EnemyCity</SpellTargetType>
-		<Radius>2</Radius>
         <Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Death5</Attribute>
@@ -4503,12 +4496,7 @@
             <StrVal>UnitStat_Accuracy</StrVal>
             <Duration>-1</Duration>			
             <Value>-10</Value>
-        </GameModifier>
-        <GameModifier>
-            <ModType>Map</ModType>
-            <Attribute>PlaceEnvironment</Attribute>
-            <TerrainType>BarrenEnvironment</TerrainType>
-        </GameModifier>		
+        </GameModifier>	
             <GameModifier>
                 <ModType>Resource</ModType>
                 <Attribute>FamineEssence</Attribute>
