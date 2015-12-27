@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<UnitTypes>
+	<UnitType InternalName="Apexor Warrior_908369840-46213">
+		<DisplayName>Apexor Warrior</DisplayName>
+		<Description>An exceptional fighter who dominated his trials of citizenship, and repeatedly returned to the trial pit. They gain levels like Sions, but unlike henchmen their death is permanent.</Description>
+		<Quote>'I'll open our gates and release death upon our foes.'</Quote>
+		<Backstory>These warriors know only combat. Only killing gives their lives meaning, only blood can satisfy them.</Backstory>
+		<HasEssence>false</HasEssence>
+		<ModelPath>F_Male_Magnar_Body_Mesh_01.hkb</ModelPath>
+		<SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+		<EyeTexture>gfx\eyes\blinks\eyeblink_f3_grn.png</EyeTexture>
+		<AnimationPack>SoldierAnimationPack</AnimationPack>
+		<ShowAsSingleUnit>false</ShowAsSingleUnit>
+		<CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+		<ModelScale>1.0000</ModelScale>
+		<TacticalModelScale>1.5000</TacticalModelScale>
+		<EquipmentScale>1.0000</EquipmentScale>
+		<ClothMapScale>1.6000</ClothMapScale>
+		<BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+		<MovementType>land</MovementType>
+		<BobbingFrequency>0.0000</BobbingFrequency>
+		<ClothPoseIndex>4</ClothPoseIndex>
+		<InfoCardBackground>BG49_FallenCastle</InfoCardBackground>
+		<InfoCardBackgroundFlipped>0</InfoCardBackgroundFlipped>
+		<CanBeDesigned>1</CanBeDesigned>
+		<UserDesigned>true</UserDesigned>
+		<IsModDependent>false</IsModDependent>
+		<Medallions InternalName=""/>
+		<MovingSFX>TEMP_KnightMarching1</MovingSFX>
+		<LevelMilestone InternalName="">
+			<Level>1</Level>
+			<UnitStat_Accuracy>80.0000</UnitStat_Accuracy>
+			<UnitStat_BG_IsEmpire>1.0000</UnitStat_BG_IsEmpire>
+			<UnitStat_BG_IsHumanoid>1.0000</UnitStat_BG_IsHumanoid>
+			<UnitStat_BG_IsMale>1.0000</UnitStat_BG_IsMale>
+			<UnitStat_BG_IsRace_Quendar>1.0000</UnitStat_BG_IsRace_Quendar>
+			<UnitStat_ChanceToCrit>1.0000</UnitStat_ChanceToCrit>
+			<UnitStat_CombatSpeed>22.0000</UnitStat_CombatSpeed>
+		</LevelMilestone>
+		<Equipment>F_Male_Quendar_Head_01</Equipment>
+		<Equipment>LeatherBoots_Soldiers</Equipment>
+		<Equipment>ToadVenom</Equipment>
+		<EquipmentUpgradeDef>
+			<SelectionCriterion>MaximizeBest</SelectionCriterion>
+			<ComparisonAttribute>UnitStat_Attack_Pierce</ComparisonAttribute>
+			<WeaponUpgradeType>Blunt</WeaponUpgradeType>
+			<EquipmentSlot>Weapon</EquipmentSlot>
+			<ForUpgradeActionOnly>0</ForUpgradeActionOnly>
+		</EquipmentUpgradeDef>
+		<EquipmentUpgradeDef>
+			<SelectionCriterion>MaximizeSum</SelectionCriterion>
+			<ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+			<EquipmentSlot>Head</EquipmentSlot>
+			<ForUpgradeActionOnly>0</ForUpgradeActionOnly>
+		</EquipmentUpgradeDef>
+		<EquipmentUpgradeDef>
+			<SelectionCriterion>MaximizeSum</SelectionCriterion>
+			<ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+			<EquipmentSlot>Torso</EquipmentSlot>
+			<EquipmentSlot>Surcoat</EquipmentSlot>
+			<ForUpgradeActionOnly>0</ForUpgradeActionOnly>
+		</EquipmentUpgradeDef>
+		<EquipmentUpgradeDef>
+			<SelectionCriterion>MaximizeSum</SelectionCriterion>
+			<ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+			<EquipmentSlot>Cloak</EquipmentSlot>
+			<ForUpgradeActionOnly>0</ForUpgradeActionOnly>
+		</EquipmentUpgradeDef>
+		<EquipmentUpgradeDef>
+			<SelectionCriterion>MaximizeSum</SelectionCriterion>
+			<ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+			<EquipmentSlot>Forearms</EquipmentSlot>
+			<ForUpgradeActionOnly>0</ForUpgradeActionOnly>
+		</EquipmentUpgradeDef>
+		<EquipmentUpgradeDef>
+			<SelectionCriterion>MaximizeSum</SelectionCriterion>
+			<ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+			<EquipmentSlot>Defense</EquipmentSlot>
+			<ForUpgradeActionOnly>0</ForUpgradeActionOnly>
+		</EquipmentUpgradeDef>
+		<EquipmentUpgradeDef>
+			<SelectionCriterion>MaximizeSum</SelectionCriterion>
+			<ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+			<EquipmentSlot>LowerBody</EquipmentSlot>
+			<ForUpgradeActionOnly>0</ForUpgradeActionOnly>
+		</EquipmentUpgradeDef>
+		<EquipmentUpgradeDef>
+			<SelectionCriterion>MaximizeSum</SelectionCriterion>
+			<ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+			<EquipmentSlot>Boots</EquipmentSlot>
+			<ForUpgradeActionOnly>1</ForUpgradeActionOnly>
+		</EquipmentUpgradeDef>
+		<ProductionRequirement InternalName="">
+			<Type>Resource</Type>
+			<Attribute>CombatTrials</Attribute>
+			<Value>30.0000</Value>
+		</ProductionRequirement>
+		<Texture_Skin>Magnar_Skin_M_01.dds</Texture_Skin>
+		<CreatorFactionName>CustomFaction_Palranis</CreatorFactionName>
+		<Gender>Male</Gender>
+		<UnitModelType>QuendarMale</UnitModelType>
+		<SelectedAbilityBonusOption>Blood_Quendar</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Apexor</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Fast</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>ArmorProficiency2</SelectedAbilityBonusOption>
+		<IsSovereign>0</IsSovereign>
+		<HasWages>1</HasWages>
+		<NPCFreeRecruit>0</NPCFreeRecruit>
+		<RaceType>Race_Type_Quendar</RaceType>
+		<IgnoreItemTrainingCosts>false</IgnoreItemTrainingCosts>
+		<AdditionalTrainingTurns>300.0000</AdditionalTrainingTurns>
+		<WageOverride>0.0000</WageOverride>
+		<UnitTypeVersion>1</UnitTypeVersion>
+		<TileRadius>0</TileRadius>
+		<GetPerksOnLevelUp>1</GetPerksOnLevelUp>
+		<DividesBattleExp>1</DividesBattleExp>
+		<CanSqueeze>0</CanSqueeze>
+		<OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+		<AllowGrouping>false</AllowGrouping>
+		<SoundPack>SoundPack_Generic_Male</SoundPack>
+		<Prereq InternalName="Prereq 928">
+			<Type>AbilityBonusOption</Type>
+			<Target>Player</Target>
+			<Attribute>OnlyTheStrong</Attribute>
+			<Value>0.0000</Value>
+		</Prereq>
+		<IsChampion>0</IsChampion>
+	</UnitType>
+</UnitTypes>

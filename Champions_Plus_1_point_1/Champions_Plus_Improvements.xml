@@ -1252,6 +1252,14 @@
         </GameModifier>
     </ImprovementType>
 	
+    <ImprovementType InternalName="Monument_TempleOfTheDragon">
+        <GameModifier>
+            <ModType>ConstructionResourceCost</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>-1750</Value>
+        </GameModifier>
+    </ImprovementType>	
+	
 	<ImprovementType InternalName="EreogsTower">
         <GameModifier>
             <ModType>Resource</ModType>
