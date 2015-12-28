@@ -1622,6 +1622,7 @@
         <IconFG>FallenLegendaryPlateHelmet.png</IconFG>
 		<AutoUnlock>1</AutoUnlock>
         <CanStack>0</CanStack>
+		<Cooldown>9000</Cooldown>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>

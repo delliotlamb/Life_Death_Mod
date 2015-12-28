@@ -541,9 +541,8 @@
         <GameModifier>
             <ModType>Resource</ModType>
             <Attribute>VerdantEssence</Attribute>
-			<PerTurn>1</PerTurn>
-            <Value>-1</Value>
-            <Provides>-1 Verdant Favor per Turn</Provides>
+            <Value>-5</Value>
+            <Provides>-5 Verdant Favor</Provides>
         </GameModifier>
     </ImprovementType>
 
