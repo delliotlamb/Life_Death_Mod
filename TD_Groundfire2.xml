@@ -5,7 +5,7 @@
 		<Translate>DisplayName</Translate>
 	</DataChecksum>
 	<TileDesign InternalName="TD_Groundfire2">
-		<DisplayName>TD_Groundfire</DisplayName>
+		<DisplayName>TD_Groundfire2</DisplayName>
 		<Thumbnail>\Game\Gfx\tile_icon.png</Thumbnail>
 		<DecalName>Gfx\Terrain\Decals\SnowShadow3.png</DecalName>
 		<LowResShadow>TD_Groundfire_shadow.png</LowResShadow>
@@ -17,7 +17,7 @@
 		<EffectTrigger InternalName="PEffect_Groundfire2">
 			<EffectName>PEffect_Groundfire</EffectName>
 			<LocalPosition>-0.436180,8.000000,-1.873398</LocalPosition>
-			<Scale>3.0000</Scale>
+			<Scale>2.0000</Scale>
 			<IndefiniteRepeat>1</IndefiniteRepeat>
 			<SpawnOnCreation>1</SpawnOnCreation>
 		</EffectTrigger>
