@@ -4942,25 +4942,9 @@
             <Calculate InternalName="ValueForFormattedDescription">
                 <Expression><![CDATA[[Calc3]]]></Expression>
             </Calculate>
-        </GameModifier>
-        <GameModifier>
-            <ModType>Map</ModType>
-            <Attribute>CreateWorldProp</Attribute>
-            <StrVal>TD_Groundfire</StrVal>
-			<ApplyToTile>1</ApplyToTile>
-            <Duration>-1</Duration>
-        </GameModifier>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>DefendableDamage</Attribute>
-            <AttackStat>UnitStat_Attack_Fire</AttackStat>
-            <ApplyToTile>1</ApplyToTile>
-            <Duration>0</Duration>
-            <DurationOnTile>-1</DurationOnTile>
-			<Value>10</Value>
         </GameModifier>		
         <AIData AIPersonality="AI_General">
-            <AIPriority>1000</AIPriority>
+            <AIPriority>100</AIPriority>
         <ValueCalcWrapper>
             <ValueType>IsTargetWorthy</ValueType>
             <Calculate InternalName="Calc" ValueOwner="TargetUnit">
