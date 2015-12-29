@@ -53,6 +53,8 @@
         <ArtDef>Broadsword_Berserkers_ArtDef</ArtDef>
     </GameItemType>
 
+	<!-- Life items -->
+	
     <GameItemType InternalName="Longsword_Searingray">
         <DisplayName>Searingray Edge</DisplayName>
         <Description>A young father travelled many miles searching for a compassionate healer to save his dying son. He arrived to find the healer murdered by bandits. But in the grip of that corpse's hand awaited one of these swords of vengeance.</Description>
@@ -115,7 +117,7 @@
 	
 	<GameItemType InternalName="WoodShield2">
         <DisplayName>Enchanted Oakbranch Shield</DisplayName>
-        <Description>Yuor foes may laugh at this simple wood shield. But the oak branch from which it was carved stands hard as rock, and the magic within it can defeat death itself.</Description>
+        <Description>Your foes may laugh at this simple wood shield. But the oak branch from which it was carved stands hard as rock, and the magic within it can defeat death itself.</Description>
         <Type>Defense</Type>
         <WeaponType>Shield</WeaponType>
         <CanBeEquipped>1</CanBeEquipped>
@@ -207,32 +209,6 @@
         </GameItemTypeArtDef>		
     </GameItemType>
 
-	<!--
-	
-    <GameItemType InternalName="Token_MagicalSeed3">
-        <DisplayName>Magical Seed</DisplayName>
-        <Description>This seed contains the enduring spirit of life itself, which even cataclysm itself could not eradicate. Who knows what will come from planting it?</Description>
-        <ShopValue>90</ShopValue>
-            <GameModifier>
-                <ModType>Map</ModType>
-                <Attribute>CreateResourceHoard</Attribute>
-                <StrVal>Resource_WildGrain</StrVal>
-				<Provides>What gift will life bestow, where this seed is set to grow?</Provides>
-                <Value>1</Value>
-            </GameModifier>
-        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
-        <Likelihood>-1</Likelihood>
-        <RarityDisplay>Unique</RarityDisplay>
-        <HeroOnly>1</HeroOnly>
-        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
-        <IsUsable>1</IsUsable>
-            <AIData AIPersonality="AI_General">
-                <AIPriority>0</AIPriority>
-            </AIData>
-        <ArtDef>Token_MagicalSeed_ArtDef</ArtDef>
-    </GameItemType>
-	
-	-->
 	
 	    <GameItemType InternalName="Token_MagicalSeed3">
         <DisplayName>Magical Seed</DisplayName>
@@ -257,32 +233,75 @@
         <ArtDef>Token_MagicalSeed2_ArtDef</ArtDef>
     </GameItemType>
 	
-	<!--
 	
-	<GameItemType InternalName="Token_MagicalSeed4">
-        <DisplayName>Magical Seed</DisplayName>
-        <Description>This seed contains the enduring spirit of life itself, which even cataclysm itself could not eradicate. Who knows what will come from planting it?</Description>
-        <ShopValue>90</ShopValue>
-	    <GameModifier>
+	<!-- Water Items -->
+
+	<GameItemType InternalName="GoldenBelt2">
+        <DisplayName>Belt Of The Trench King</DisplayName>
+        <Description>Despite the smell of seaweed, this belt glows beautifully and shows no flaws. Its wearer has his strength imbued, and moves swiftly, as if bolstered by an invisible undertoe.</Description>
+        <Type>Accessory</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>300</ShopValue>
+        <GameModifier>
             <ModType>Unit</ModType>
-            <Attribute>UseSpell</Attribute>
-            <StrVal>VerdantRenewal_Ability</StrVal>
-			<Provides>What gift will life bestow, where this seed is set to grow?</Provides>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>2</Value>
+            <Provides>+2 Initiative</Provides>
         </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_AttackBoost</StrVal>
+            <Value>6</Value>
+            <Provides>+6 Attack</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Dodge</StrVal>
+            <Value>10</Value>
+            <Provides>+10 Dodge</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Accuracy</StrVal>
+            <Value>10</Value>
+            <Provides>+10 Accuracy</Provides>
+        </GameModifier>		
         <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
         <Likelihood>-1</Likelihood>
         <RarityDisplay>Unique</RarityDisplay>
         <HeroOnly>1</HeroOnly>
         <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <IsUsable>0</IsUsable>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>10</AIPriority>
+            </AIData>
+        <ArtDef>GoldenBelt_ArtDef</ArtDef>
+    </GameItemType>
+
+    <GameItemType InternalName="TomeoftheWaves2">
+        <DisplayName>Tome of the Tide Kingdoms</DisplayName>
+        <Description>This book contains the secrets of the undersea peoples, their history with channeling and their fight to survive the Cataclysm. Any who read it shall understand Elemental in a whole new way.</Description>
+        <ShopValue>90</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>GiveExperience</Attribute>
+            <Value>500</Value>
+            <Provides>+500 Experience</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
         <IsUsable>1</IsUsable>
             <AIData AIPersonality="AI_General">
                 <AIPriority>0</AIPriority>
             </AIData>
-        <ArtDef>Token_MagicalSeed_ArtDef</ArtDef>
+        <ArtDef>TomeoftheWaves_ArtDef</ArtDef>>
     </GameItemType>
 	
-	-->
-
 <GameItemType InternalName="Longsword_Freezing2">
         <DisplayName>Glacier Brand</DisplayName>
         <Description>This well-crafted blade cannot be heated, instead sucking the warmth from the air around it. If your enemies survive its slashes, the frostbite will keep them down.</Description>
@@ -334,6 +353,46 @@
         </AIData>
         <ArtDef>Longsword_Freezing_ArtDef</ArtDef>
 </GameItemType>
+
+<!-- Earth Items -->
+
+<GameItemType InternalName="Omnikey">
+        <DisplayName>Omnikey</DisplayName>
+        <Description>No door, chest, or window made of any earthly material can remain sealed once this key is placed within its lock.</Description>
+        <Type>Accessory</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>500</ShopValue>
+            <GameModifier>
+                <ModType>Resource</ModType>
+                <Attribute>Unrest</Attribute>
+                <Value>-10</Value>
+                <Provides>-10% Unrest in the city this unit is in</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>UltraRare</RarityDisplay>
+        <HeroOnly>1</HeroOnly>	
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>		
+        <IsUsable>0</IsUsable>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>40</AIPriority>
+            </AIData>
+        <ArtDef>Omnikey_ArtDef</ArtDef>
+        <GameItemTypeArtDef InternalName="Omnikey_ArtDef">
+            <GameItemTypeModelPack InternalName="Omnikey_Default">
+                <IconFile>Key_Silver1.png</IconFile>
+                <TintR>240</TintR>
+                <TintG>10</TintG>
+                <TintB>10</TintB>
+                <SFX>Equip_MagicRing_01</SFX>
+                <SFX>Equip_MagicRing_02</SFX>
+                <SFX>Equip_MagicRing_03</SFX>
+                <SFX>Equip_MagicRing_04</SFX>
+                <GameItemTypeModel>
+                </GameItemTypeModel>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+    </GameItemType>
 
 <GameItemType InternalName="TowerShield_Obsidian2">
         <DisplayName>Heavy Obsidian Shield</DisplayName>
@@ -442,7 +501,60 @@
             </AIData>
         <ArtDef>Art_PlateBreastpiece_Reinforced</ArtDef>
     </GameItemType>
+	<GameItemType InternalName="Maul_FistOfTheMountain">
+        <DisplayName>Rage Of The Mountain</DisplayName>
+        <Description>Few occurrences anger the mountains. But all their brewing hatred for wind, rain and pickaxe has coalesced into this weapon.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>Blunt</WeaponType>
+        <WeaponUpgradeType>Blunt</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>1230</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>46</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ArmorPierce</StrVal>
+                <Value>33</Value>
+                <Provides>Ignores 33% of the victim's Defense</Provides>
+            </GameModifier>		
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-4</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_BashChance</StrVal>
+                <Value>100</Value>
+                <Provides>Bash- Has a chance equal to the damage done of knocking the victim prone</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>CrushingBlow</StrVal>
+                <Provides>Crushing Blow- +100% Attack, but you lose your next action</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_BLUNT</AIPrefType>
+            <AIPriority>820</AIPriority>
+        </AIData>
+        <ArtDef>Maul_Titanic_ArtDef</ArtDef>
+    </GameItemType>
 
+<!-- Fire Items -->	
+	
     <GameItemType InternalName="Longsword_Flaming2">
         <DisplayName>Longsword Of Flames</DisplayName>
         <Description>Though not as potent as the legendary Pyre Brand, this sword still burns hot enough to kill almost anything alive.</Description>
@@ -593,6 +705,8 @@
         <ArtDef>Greataxe_Flaming_ArtDef</ArtDef>
     </GameItemType>
 
+<!-- Death Items -->	
+	
     <GameItemType InternalName="CloakOfTheNight2">
         <DisplayName>Cloak of Nothingness</DisplayName>
         <Description>Those who wear this cloak command the power of night, making them difficult to hit and imbuing their attacks with a deadly magical darkness.</Description>
@@ -630,71 +744,7 @@
     </GameItemType>
 
 
-<GameItemType InternalName="GoldenBelt2">
-        <DisplayName>Belt Of The Trench King</DisplayName>
-        <Description>Despite the smell of seaweed, this belt glows beautifully and shows no flaws. Its wearer has his strength imbued, and moves swiftly, as if bolstered by an invisible undertoe.</Description>
-        <Type>Accessory</Type>
-        <CanBeEquipped>1</CanBeEquipped>
-        <ShopValue>300</ShopValue>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_CombatSpeed</StrVal>
-            <Value>2</Value>
-            <Provides>+2 Initiative</Provides>
-        </GameModifier>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_AttackBoost</StrVal>
-            <Value>6</Value>
-            <Provides>+6 Attack</Provides>
-        </GameModifier>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_Dodge</StrVal>
-            <Value>10</Value>
-            <Provides>+10 Dodge</Provides>
-        </GameModifier>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_Accuracy</StrVal>
-            <Value>10</Value>
-            <Provides>+10 Accuracy</Provides>
-        </GameModifier>		
-        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
-        <Likelihood>-1</Likelihood>
-        <RarityDisplay>Unique</RarityDisplay>
-        <HeroOnly>1</HeroOnly>
-        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
-        <IsUsable>0</IsUsable>
-            <AIData AIPersonality="AI_General">
-                <AIPriority>10</AIPriority>
-            </AIData>
-        <ArtDef>GoldenBelt_ArtDef</ArtDef>
-    </GameItemType>
-
-    <GameItemType InternalName="TomeoftheWaves2">
-        <DisplayName>Tome of the Tide Kingdoms</DisplayName>
-        <Description>This book contains the secrets of the undersea peoples, their history with channeling and their fight to survive the Cataclysm. Any who read it shall understand Elemental in a whole new way.</Description>
-        <ShopValue>90</ShopValue>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>GiveExperience</Attribute>
-            <Value>500</Value>
-            <Provides>+500 Experience</Provides>
-        </GameModifier>
-        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
-        <Likelihood>-1</Likelihood>
-        <RarityDisplay>Unique</RarityDisplay>
-        <IsUsable>1</IsUsable>
-            <AIData AIPersonality="AI_General">
-                <AIPriority>0</AIPriority>
-            </AIData>
-        <ArtDef>TomeoftheWaves_ArtDef</ArtDef>>
-    </GameItemType>
+<!-- Air Items -->
 	
 	<GameItemType InternalName="YewLongbow_Breezefly">
         <DisplayName>Breezefly Bow</DisplayName>
@@ -794,57 +844,6 @@
         <ArtDef>Warhammer_Static_ArtDef</ArtDef>
     </GameItemType>
 	
-	<GameItemType InternalName="Maul_FistOfTheMountain">
-        <DisplayName>Rage Of The Mountain</DisplayName>
-        <Description>Few occurrences anger the mountains. But all their brewing hatred for wind, rain and pickaxe has coalesced into this weapon.</Description>
-        <Type>Weapon</Type>
-        <WeaponType>Blunt</WeaponType>
-        <WeaponUpgradeType>Blunt</WeaponUpgradeType>
-        <CanBeEquipped>1</CanBeEquipped>
-        <ShopValue>1230</ShopValue>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_Attack_Pierce</StrVal>
-            <Value>46</Value>
-        </GameModifier>
-            <GameModifier>
-                <ModType>Unit</ModType>
-                <Attribute>AdjustUnitStat</Attribute>
-                <StrVal>UnitStat_ArmorPierce</StrVal>
-                <Value>33</Value>
-                <Provides>Ignores 33% of the victim's Defense</Provides>
-            </GameModifier>		
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_CombatSpeed</StrVal>
-            <Value>-4</Value>
-        </GameModifier>
-            <GameModifier>
-                <ModType>Unit</ModType>
-                <Attribute>AdjustUnitStat</Attribute>
-                <StrVal>UnitStat_BashChance</StrVal>
-                <Value>100</Value>
-                <Provides>Bash- Has a chance equal to the damage done of knocking the victim prone</Provides>
-            </GameModifier>
-            <GameModifier>
-                <ModType>Unit</ModType>
-                <Attribute>UnlockCombatAbility</Attribute>
-                <StrVal>CrushingBlow</StrVal>
-                <Provides>Crushing Blow- +100% Attack, but you lose your next action</Provides>
-            </GameModifier>
-        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
-        <Likelihood>-1</Likelihood>
-        <RarityDisplay>Unique</RarityDisplay>
-        <HeroOnly>1</HeroOnly>
-        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
-        <AIData AIPersonality="AI_General">
-            <AIPrefType>AIPrefType_BLUNT</AIPrefType>
-            <AIPriority>820</AIPriority>
-        </AIData>
-        <ArtDef>Maul_Titanic_ArtDef</ArtDef>
-    </GameItemType>
 	
 	<GameItemType InternalName="SilverFlute2">
         <DisplayName>Windfavor Piccolo</DisplayName>
@@ -869,6 +868,9 @@
             </AIData>
         <ArtDef>SilverFlute_ArtDef</ArtDef>
     </GameItemType>
+	
+	
+	<!-- Oil Jug -->
 	
 		<GameItemType InternalName="OilJug">
         <DisplayName>Oil Jug</DisplayName>
@@ -959,6 +961,327 @@
     </GameItemType>
 	
 	-->
+	
+	<!-- Troop equipment -->
+	
+	<GameItemType InternalName="WindCoins">
+        <DisplayName>Coins Of Five Winds</DisplayName>
+        <Description>These coins, lighter than air, confer faster reaction.</Description>
+        <Type>Accessory</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>20</AdditionalTrainingTurns>
+        <ShopValue>0</ShopValue>
+        <ProductionRequirement>
+            <Type>Resource</Type>
+            <Attribute>GaleEssence</Attribute>
+            <Value>2</Value>
+        </ProductionRequirement>		
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Dodge</StrVal>
+            <Value>8</Value>
+        </GameModifier>
+       <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_HitPoints</StrVal>
+            <Value>-1</Value>
+        </GameModifier>		
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>UltraRare</RarityDisplay>
+        <IsUsable>0</IsUsable>
+        <!--<Prereq>
+            <Type>Tech</Type>
+            <Attribute>Glyph_Stones</Attribute>
+        </Prereq>-->
+            <AIData AIPersonality="AI_General">
+                <AIPriority>0</AIPriority>
+            </AIData>
+        <ArtDef>WindCoins_ArtDef</ArtDef>
+        <GameItemTypeArtDef InternalName="WindCoins_ArtDef">
+            <GameItemTypeModelPack InternalName="WindCoins_Default">
+                <IconFile>Gold_Small1.png</IconFile>
+                <TintR>240</TintR>
+                <TintG>10</TintG>
+                <TintB>10</TintB>
+                <SFX>Equip_MagicRing_01</SFX>
+                <SFX>Equip_MagicRing_02</SFX>
+                <SFX>Equip_MagicRing_03</SFX>
+                <SFX>Equip_MagicRing_04</SFX>
+                <GameItemTypeModel>
+                </GameItemTypeModel>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+    </GameItemType>
+	
+		<GameItemType InternalName="OrefavorAnvil">
+        <DisplayName>Orefavor anvil</DisplayName>
+        <Description>This tiny anvil will slow down your troops, but give them unnatural resilience.</Description>
+        <Type>Accessory</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>20</AdditionalTrainingTurns>
+        <ShopValue>0</ShopValue>
+        <ProductionRequirement>
+            <Type>Resource</Type>
+            <Attribute>MineralEssence</Attribute>
+            <Value>2</Value>
+        </ProductionRequirement>		
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-1</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <Value>5</Value>
+        </GameModifier>		
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>UltraRare</RarityDisplay>
+        <IsUsable>0</IsUsable>
+        <!--<Prereq>
+            <Type>Tech</Type>
+            <Attribute>Glyph_Stones</Attribute>
+        </Prereq>-->
+            <AIData AIPersonality="AI_General">
+                <AIPriority>0</AIPriority>
+            </AIData>
+        <ArtDef>OrefavorAnvil_ArtDef</ArtDef>
+        <GameItemTypeArtDef InternalName="OrefavorAnvil_ArtDef">
+            <GameItemTypeModelPack InternalName="OrefavorAnvil_Default">
+                <IconFile>anvil_item.png</IconFile>
+                <TintR>240</TintR>
+                <TintG>10</TintG>
+                <TintB>10</TintB>
+                <SFX>Equip_MagicRing_01</SFX>
+                <SFX>Equip_MagicRing_02</SFX>
+                <SFX>Equip_MagicRing_03</SFX>
+                <SFX>Equip_MagicRing_04</SFX>
+                <GameItemTypeModel>
+                </GameItemTypeModel>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+    </GameItemType>
+	
+	<GameItemType InternalName="VolcanicPebble">
+        <DisplayName>Volcanic Pebble</DisplayName>
+        <Description>If your troops can endure the pain of carrying these explosive pebbles, they'll find their movement accelerated.</Description>
+        <Type>Accessory</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>20</AdditionalTrainingTurns>
+        <ShopValue>0</ShopValue>
+        <ProductionRequirement>
+            <Type>Resource</Type>
+            <Attribute>EmberEssence</Attribute>
+            <Value>2</Value>
+        </ProductionRequirement>		
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_HitPoints</StrVal>
+            <Value>-1</Value>
+        </GameModifier>		
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>1</Value>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>UltraRare</RarityDisplay>
+        <IsUsable>0</IsUsable>
+        <!--<Prereq>
+            <Type>Tech</Type>
+            <Attribute>Glyph_Stones</Attribute>
+        </Prereq>-->
+            <AIData AIPersonality="AI_General">
+                <AIPriority>0</AIPriority>
+            </AIData>
+        <ArtDef>VolcanicPebble_ArtDef</ArtDef>
+        <GameItemTypeArtDef InternalName="VolcanicPebble_ArtDef">
+            <GameItemTypeModelPack InternalName="VolcanicPebble_Default">
+                <IconFile>Trophy_DelinsHeart.png</IconFile>
+                <TintR>240</TintR>
+                <TintG>10</TintG>
+                <TintB>10</TintB>
+                <SFX>Equip_MagicRing_01</SFX>
+                <SFX>Equip_MagicRing_02</SFX>
+                <SFX>Equip_MagicRing_03</SFX>
+                <SFX>Equip_MagicRing_04</SFX>
+                <GameItemTypeModel>
+                </GameItemTypeModel>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+    </GameItemType>
+	
+		<GameItemType InternalName="TidewaterJug">
+        <DisplayName>Tidewater Jug</DisplayName>
+        <Description>Carrying a jug of this blessed seawater makes the bearer flow in battle, bending and parting where they instead might have otherwise broken.</Description>
+        <Type>Accessory</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>20</AdditionalTrainingTurns>
+        <ShopValue>0</ShopValue>
+        <ProductionRequirement>
+            <Type>Resource</Type>
+            <Attribute>WaveEssence</Attribute>
+            <Value>.5</Value>
+        </ProductionRequirement>		
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Dodge</StrVal>
+            <Value>6</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <Value>3</Value>
+        </GameModifier>	
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_HitPoints</StrVal>
+            <Value>2</Value>
+        </GameModifier>		
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>UltraRare</RarityDisplay>
+        <IsUsable>0</IsUsable>
+        <!--<Prereq>
+            <Type>Tech</Type>
+            <Attribute>Glyph_Stones</Attribute>
+        </Prereq>-->
+            <AIData AIPersonality="AI_General">
+                <AIPriority>0</AIPriority>
+            </AIData>
+        <ArtDef>TidewaterJug_ArtDef</ArtDef>
+        <GameItemTypeArtDef InternalName="TidewaterJug_ArtDef">
+            <GameItemTypeModelPack InternalName="TidewaterJug_Default">
+                <IconFile>WaterJug1.png</IconFile>
+                <TintR>240</TintR>
+                <TintG>10</TintG>
+                <TintB>10</TintB>
+                <SFX>Equip_MagicRing_01</SFX>
+                <SFX>Equip_MagicRing_02</SFX>
+                <SFX>Equip_MagicRing_03</SFX>
+                <SFX>Equip_MagicRing_04</SFX>
+                <GameItemTypeModel>
+                </GameItemTypeModel>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+    </GameItemType>
+	
+	<GameItemType InternalName="EnchantedFruit">
+        <DisplayName>Enchanted Fruit</DisplayName>
+        <Description>If your troops are eating this fruit as they march, their performance in battle will be far heartier..</Description>
+        <Type>Accessory</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>20</AdditionalTrainingTurns>
+        <ShopValue>0</ShopValue>
+        <ProductionRequirement>
+            <Type>Resource</Type>
+            <Attribute>VerdantEssence</Attribute>
+            <Value>4</Value>
+        </ProductionRequirement>		
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>1</Value>
+        </GameModifier>		
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>UltraRare</RarityDisplay>
+        <IsUsable>0</IsUsable>
+        <!--<Prereq>
+            <Type>Tech</Type>
+            <Attribute>Glyph_Stones</Attribute>
+        </Prereq>-->
+            <AIData AIPersonality="AI_General">
+                <AIPriority>0</AIPriority>
+            </AIData>
+        <ArtDef>EnchantedFruit_ArtDef</ArtDef>
+        <GameItemTypeArtDef InternalName="EnchantedFruit_ArtDef">
+            <GameItemTypeModelPack InternalName="EnchantedFruit_Default">
+                <IconFile>Apple1.png</IconFile>
+                <TintR>240</TintR>
+                <TintG>10</TintG>
+                <TintB>10</TintB>
+                <SFX>Equip_MagicRing_01</SFX>
+                <SFX>Equip_MagicRing_02</SFX>
+                <SFX>Equip_MagicRing_03</SFX>
+                <SFX>Equip_MagicRing_04</SFX>
+                <GameItemTypeModel>
+                </GameItemTypeModel>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+    </GameItemType>
+
+<GameItemType InternalName="PaleStone">
+        <DisplayName>Pale Stone</DisplayName>
+        <Description>Holding this tone drains away the bearer's vitality, but their fight as if possessed by death itself.</Description>
+        <Type>Accessory</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>20</AdditionalTrainingTurns>
+        <ShopValue>0</ShopValue>
+        <ProductionRequirement>
+            <Type>Resource</Type>
+            <Attribute>FamineEssence</Attribute>
+            <Value>2</Value>
+        </ProductionRequirement>		
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>1</Value>
+        </GameModifier>	
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>1</Value>
+        </GameModifier>	
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_HitPoints</StrVal>
+            <Value>-3</Value>
+        </GameModifier>		
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>UltraRare</RarityDisplay>
+        <IsUsable>0</IsUsable>
+        <!--<Prereq>
+            <Type>Tech</Type>
+            <Attribute>Glyph_Stones</Attribute>
+        </Prereq>-->
+            <AIData AIPersonality="AI_General">
+                <AIPriority>0</AIPriority>
+            </AIData>
+        <ArtDef>PaleStone_ArtDef</ArtDef>
+        <GameItemTypeArtDef InternalName="PaleStone_ArtDef">
+            <GameItemTypeModelPack InternalName="PaleStone_Default">
+                <IconFile>Life_Shard_Thumb.png</IconFile>
+                <TintR>240</TintR>
+                <TintG>10</TintG>
+                <TintB>10</TintB>
+                <SFX>Equip_MagicRing_01</SFX>
+                <SFX>Equip_MagicRing_02</SFX>
+                <SFX>Equip_MagicRing_03</SFX>
+                <SFX>Equip_MagicRing_04</SFX>
+                <GameItemTypeModel>
+                </GameItemTypeModel>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+    </GameItemType>	
+	
 	
 
 </GameItemTypes>

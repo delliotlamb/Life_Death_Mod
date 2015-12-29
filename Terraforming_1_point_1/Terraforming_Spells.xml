@@ -2503,7 +2503,7 @@
         <GameModifier>
             <ModType>Map</ModType>
             <Attribute>CreateWorldProp</Attribute>
-            <StrVal>TD_Groundfire2</StrVal>
+            <StrVal>TD_Groundfire</StrVal>
             <Duration>1</Duration>
         </GameModifier>
             <GameModifier>
@@ -2591,7 +2591,7 @@
 
 <SpellDef InternalName="BlessingOfEmbers">
         <DisplayName>Blessing Of Embers</DisplayName>
-        <Description>This unit generates 1 fire power per turn, gains +2 fire attack, and +20% fire spell damage.</Description>
+        <Description>This unit generates 1 fire power per turn, gains +2 fire attack, and +20% fire resist.</Description>
         <Image>Blessing_Of_Embers_Painting.png</Image>
         <IconFG>Blessing_Of_Embers.png</IconFG>
 		<AutoUnlock>1</AutoUnlock>		
@@ -2626,8 +2626,8 @@
             <GameModifier>
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
-                <StrVal>UnitStat_SpellDamage_Fire</StrVal>
-                <Value>0.15</Value>
+                <StrVal>UnitStat_ResistFire</StrVal>
+                <Value>0.20</Value>
             </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
