@@ -1494,6 +1494,174 @@
 		</Prereq>		
     </UnitType>-->
 	
+	<UnitType InternalName="Unit_Hero_Quendar1">
+        <DisplayName>Quendar Outcast</DisplayName>
+        <Description>These outcasts are like Altarian Henchmen, called to serve by the tolerance of your country.</Description>
+        <DividesBattleExp>0</DividesBattleExp>
+        <Gender>Male</Gender>
+        <IsNPC>1</IsNPC>
+        <IsChampion>1</IsChampion>
+        <IsSovereign>0</IsSovereign>
+        <GetPerksOnLevelUp>1</GetPerksOnLevelUp>
+        <AllowGrouping>0</AllowGrouping>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_HitPoints>10</UnitStat_HitPoints>
+	    <UnitStat_BG_IsChampion>1</UnitStat_BG_IsChampion>
+	    <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
+	    <UnitStat_BG_IsMale>1</UnitStat_BG_IsMale>
+	    <UnitStat_BG_IsRace_Quendar>1</UnitStat_BG_IsRace_Quendar>
+        </LevelMilestone>
+        <Prereq>
+            <Type>Race</Type>
+            <Attribute>Race_Type_Cypher</Attribute>
+        </Prereq>
+        <SelectedAbilityBonusOption>Blood_Quendar</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>AirAdept1</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Outcast</SelectedAbilityBonusOption>
+        <Equipment>Spear</Equipment>
+        <Equipment>F_Male_Quendar_Head_01</Equipment>
+        <Equipment>F_Male_Quendar_Horns_02</Equipment>
+        <Backstory>What was Curgen's imperative to his sons, if not honor? The Titans are gone, and it is time to serve a strong master once more. The Quendar prize honor and strength, but does not honor persist beyond battles and years? Do not those who prove a new strength, deserve honorable servants? I shall serve the country that promises to endure.</Backstory>
+        <AnimationPack>MaleSovereignAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>29</ClothPoseIndex>
+        <Color_Clothing1>64,82,105,255</Color_Clothing1>
+        <Color_Clothing2>255,255,207,255</Color_Clothing2>
+        <Color_Hair>218,218,218,255</Color_Hair>
+        <Color_Metal>60,50,50,255</Color_Metal>
+        <Color_Skin>208,116,88,255</Color_Skin>
+        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\eyes\blinks\eyeblink_m7_Yellow.png</EyeTexture>
+        <Medallions InternalName="">
+            <All>ObsidianLegion_Medallion.png</All>
+        </Medallions>
+        <ModelPath>F_Male_Magnar_Body_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Generic_Male</SoundPack>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\eyeblink_m7_Yellow.png</Texture_Eyes>
+        <Texture_Skin>Magnar_Skin_M_01.dds</Texture_Skin>
+        <UnitModelType>QuendarMale</UnitModelType>
+    </UnitType>
+	
+	<UnitType InternalName="Unit_Hero_Quendar2">
+        <DisplayName>Quendar Outcast</DisplayName>
+        <Description>These outcasts are like Altarian Henchmen, called to serve by the tolerance of your country.</Description>
+        <DividesBattleExp>0</DividesBattleExp>
+        <Gender>Male</Gender>
+        <IsNPC>1</IsNPC>
+        <IsChampion>1</IsChampion>
+        <IsSovereign>0</IsSovereign>
+        <GetPerksOnLevelUp>1</GetPerksOnLevelUp>
+        <AllowGrouping>0</AllowGrouping>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_HitPoints>10</UnitStat_HitPoints>
+	    <UnitStat_BG_IsChampion>1</UnitStat_BG_IsChampion>
+	    <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
+	    <UnitStat_BG_IsMale>1</UnitStat_BG_IsMale>
+	    <UnitStat_BG_IsRace_Quendar>1</UnitStat_BG_IsRace_Quendar>
+        </LevelMilestone>
+        <Prereq>
+            <Type>Race</Type>
+            <Attribute>Race_Type_Cypher</Attribute>
+        </Prereq>
+        <SelectedAbilityBonusOption>Blood_Quendar</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>FireAdept1</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Outcast</SelectedAbilityBonusOption>
+        <Equipment>Spear</Equipment>
+        <Equipment>F_Male_Quendar_Head_01</Equipment>
+        <Equipment>F_Male_Quendar_Horns_02</Equipment>
+        <Backstory>What was Curgen's imperative to his sons, if not honor? The Titans are gone, and it is time to serve a strong master once more. The Quendar prize honor and strength, but does not honor persist beyond battles and years? Do not those who prove a new strength, deserve honorable servants? I shall serve the country that promises to endure.</Backstory>
+        <AnimationPack>MaleSovereignAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>29</ClothPoseIndex>
+        <Color_Clothing1>64,82,105,255</Color_Clothing1>
+        <Color_Clothing2>255,255,207,255</Color_Clothing2>
+        <Color_Hair>218,218,218,255</Color_Hair>
+        <Color_Metal>60,50,50,255</Color_Metal>
+        <Color_Skin>208,116,88,255</Color_Skin>
+        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\eyes\blinks\eyeblink_m7_Yellow.png</EyeTexture>
+        <Medallions InternalName="">
+            <All>ObsidianLegion_Medallion.png</All>
+        </Medallions>
+        <ModelPath>F_Male_Magnar_Body_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Generic_Male</SoundPack>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\eyeblink_m7_Yellow.png</Texture_Eyes>
+        <Texture_Skin>Magnar_Skin_M_01.dds</Texture_Skin>
+        <UnitModelType>QuendarMale</UnitModelType>
+    </UnitType>
+	
+	<UnitType InternalName="Unit_Hero_Quendar3">
+        <DisplayName>Quendar Outcast</DisplayName>
+        <Description>These outcasts are like Altarian Henchmen, called to serve by the tolerance of your country.</Description>
+        <DividesBattleExp>0</DividesBattleExp>
+        <Gender>Male</Gender>
+        <IsNPC>1</IsNPC>
+        <IsChampion>1</IsChampion>
+        <IsSovereign>0</IsSovereign>
+        <GetPerksOnLevelUp>1</GetPerksOnLevelUp>
+        <AllowGrouping>0</AllowGrouping>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_HitPoints>10</UnitStat_HitPoints>
+	    <UnitStat_BG_IsChampion>1</UnitStat_BG_IsChampion>
+	    <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
+	    <UnitStat_BG_IsMale>1</UnitStat_BG_IsMale>
+	    <UnitStat_BG_IsRace_Quendar>1</UnitStat_BG_IsRace_Quendar>
+        </LevelMilestone>
+        <Prereq>
+            <Type>Race</Type>
+            <Attribute>Race_Type_Cypher</Attribute>
+        </Prereq>
+        <SelectedAbilityBonusOption>Blood_Quendar</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>EarthAdept1</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Outcast</SelectedAbilityBonusOption>
+        <Equipment>Spear</Equipment>
+        <Equipment>F_Male_Quendar_Head_01</Equipment>
+        <Equipment>F_Male_Quendar_Horns_02</Equipment>
+        <Backstory>What was Curgen's imperative to his sons, if not honor? The Titans are gone, and it is time to serve a strong master once more. The Quendar prize honor and strength, but does not honor persist beyond battles and years? Do not those who prove a new strength, deserve honorable servants? I shall serve the country that promises to endure.</Backstory>
+        <AnimationPack>MaleSovereignAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <ClothMapScale>1.6</ClothMapScale>
+        <ClothPoseIndex>29</ClothPoseIndex>
+        <Color_Clothing1>64,82,105,255</Color_Clothing1>
+        <Color_Clothing2>255,255,207,255</Color_Clothing2>
+        <Color_Hair>218,218,218,255</Color_Hair>
+        <Color_Metal>60,50,50,255</Color_Metal>
+        <Color_Skin>208,116,88,255</Color_Skin>
+        <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx\eyes\blinks\eyeblink_m7_Yellow.png</EyeTexture>
+        <Medallions InternalName="">
+            <All>ObsidianLegion_Medallion.png</All>
+        </Medallions>
+        <ModelPath>F_Male_Magnar_Body_Mesh_01.hkb</ModelPath>
+        <ModelScale>1</ModelScale>
+        <MovingSFX>TEMP_KnightMarching1</MovingSFX>
+        <OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Generic_Male</SoundPack>
+        <TacticalModelScale>1.5</TacticalModelScale>
+        <Texture_Eyes>gfx\eyes\blinks\eyeblink_m7_Yellow.png</Texture_Eyes>
+        <Texture_Skin>Magnar_Skin_M_01.dds</Texture_Skin>
+        <UnitModelType>QuendarMale</UnitModelType>		
+    </UnitType>
+	
 </UnitTypes>
 
 <Spells>
@@ -1582,18 +1750,6 @@
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>UnitJoinArmy</Attribute>
-            <StrVal>Unit_Hero_Quendar</StrVal>
-            <UnitClass>Champion</UnitClass>
-        </GameModifier>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>UnitJoinArmy</Attribute>
-            <StrVal>Unit_Hero_Trog</StrVal>
-            <UnitClass>Champion</UnitClass>
-        </GameModifier>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>UnitJoinArmy</Attribute>
             <StrVal>Unit_Hero_Ironeer</StrVal>
             <UnitClass>Champion</UnitClass>
         </GameModifier>
@@ -1630,6 +1786,7 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <CasterMustBeSov>1</CasterMustBeSov>
+        <AppliesRandomModifier>1</AppliesRandomModifier>		
         <Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_QuendarAwaiting</Attribute>
@@ -1655,11 +1812,22 @@
         </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_QuendarAwaiting</StrVal>
-			<ApplyToCaster>1</ApplyToCaster>
-            <Value>-1</Value>
-        </GameModifier>			
+            <Attribute>UnitJoinArmy</Attribute>
+            <StrVal>Unit_Hero_Quendar1</StrVal>
+            <UnitClass>Champion</UnitClass>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnitJoinArmy</Attribute>
+            <StrVal>Unit_Hero_Quendar2</StrVal>
+            <UnitClass>Champion</UnitClass>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnitJoinArmy</Attribute>
+            <StrVal>Unit_Hero_Quendar3</StrVal>
+            <UnitClass>Champion</UnitClass>
+        </GameModifier>		
         <AIData AIPersonality="AI_General">
             <AIPriority>100</AIPriority>
         </AIData>

@@ -4061,7 +4061,7 @@
 	
 	<SpellDef InternalName="CrushingBlow">
         <DisplayName>Crushing Blow</DisplayName>
-        <Description>Attack with a 33% damage bonus, but you lose your next action.</Description>
+        <Description>Attack with a 50% damage bonus, but you lose your next action.</Description>
         <FormattedDescription>Launch a %d Attack, but you lose your next action.</FormattedDescription>
         <IconFG>Ability_CrushingBlow_Icon.png</IconFG>
         <CanStack>1</CanStack>

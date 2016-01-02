@@ -1,57 +1,5 @@
 <GameItemTypes>
 
-<GameItemType InternalName="Broadsword_DesertHunger">
-        <DisplayName>Desert Hunger</DisplayName>
-        <Description>This sword has been found and discarded by dozens of mighty warriors. The blade seems to be brittle dry bone. Yet when drenched in fresh blood, its grows stronger, sharper and magically deadlier.</Description>
-        <Type>Weapon</Type>
-        <WeaponType>OneHanded</WeaponType>
-        <WeaponUpgradeType>Blade</WeaponUpgradeType>
-        <CanBeEquipped>1</CanBeEquipped>
-        <ShopValue>360</ShopValue>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_Attack_Pierce</StrVal>
-            <Value>18</Value>
-        </GameModifier>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_CombatSpeed</StrVal>
-            <Value>2</Value>
-        </GameModifier>
-            <GameModifier>
-                <ModType>Unit</ModType>
-                <Attribute>AdjustUnitStat</Attribute>
-                <StrVal>UnitStat_MaxCounterAttack</StrVal>
-                <Value>1</Value>
-                <Provides>+1 Counterattack per round</Provides>
-            </GameModifier>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_IsSword</StrVal>
-            <Value>1</Value>
-            <Provides>Enables abilities that require Swords</Provides>
-        </GameModifier>			
-            <GameModifier>
-                <ModType>Unit</ModType>
-                <Attribute>AdjustUnitStat</Attribute>
-                <StrVal>UnitStat_Enrage_Damage_Bonus</StrVal>
-                <Value>.5</Value>
-                <Provides>+50% damage with every successful strike</Provides>
-            </GameModifier>
-        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
-        <Likelihood>10</Likelihood>
-        <RarityDisplay>Unique</RarityDisplay>
-        <HeroOnly>1</HeroOnly>
-        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
-        <AIData AIPersonality="AI_General">
-            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
-            <AIPriority>370</AIPriority>
-        </AIData>
-        <ArtDef>Broadsword_Berserkers_ArtDef</ArtDef>
-    </GameItemType>
 
 	<!-- Life items -->
 	
@@ -73,7 +21,7 @@
             	<ModType>Unit</ModType>
             	<Attribute>AdjustUnitStat</Attribute>
             	<StrVal>UnitStat_Attack_ArcaneLight</StrVal>
-            	<Value>10</Value>
+            	<Value>8</Value>
             </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
@@ -159,7 +107,7 @@
                 <ModType>Unit</ModType>
                 <Attribute>UnlockCombatAbility</Attribute>
                 <StrVal>DeathWard_Tactical</StrVal>
-                <Provides>If this unit is killed in battle they are resurrected with half their hit points.  This enchantment lasts for 5 actions or until the unit is resurrected.</Provides>
+                <Provides>Unlocks Death Ward: If this unit is killed in battle they are resurrected with half their hit points.  This enchantment lasts for 5 actions or until the unit is resurrected.</Provides>
             </GameModifier>		
         <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
         <Likelihood>-1</Likelihood>
@@ -320,7 +268,7 @@
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_Attack_Cold</StrVal>
-            <Value>12</Value>
+            <Value>10</Value>
         </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
@@ -513,7 +461,7 @@
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_Attack_Pierce</StrVal>
-            <Value>46</Value>
+            <Value>35</Value>
         </GameModifier>
             <GameModifier>
                 <ModType>Unit</ModType>
@@ -636,7 +584,14 @@
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_Attack_Fire</StrVal>
-            <Value>10</Value>
+            <Value>6</Value>
+        </GameModifier>	
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_SpellDamage_Fire</StrVal>
+            <Value>0.10</Value>
+            <Provides>+10% damage from Fire spells</Provides>
         </GameModifier>		
         <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
         <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
@@ -673,7 +628,7 @@
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_Attack_Fire</StrVal>
-            <Value>15</Value>
+            <Value>12</Value>
         </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
@@ -706,6 +661,59 @@
     </GameItemType>
 
 <!-- Death Items -->	
+	
+	<GameItemType InternalName="Broadsword_DesertHunger">
+        <DisplayName>Desert Hunger</DisplayName>
+        <Description>This sword has been found and discarded by dozens of mighty warriors. The blade seems to be brittle dry bone. Yet when drenched in fresh blood, its grows stronger, sharper and magically deadlier.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>OneHanded</WeaponType>
+        <WeaponUpgradeType>Blade</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>360</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>18</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>2</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxCounterAttack</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Counterattack per round</Provides>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsSword</StrVal>
+            <Value>1</Value>
+            <Provides>Enables abilities that require Swords</Provides>
+        </GameModifier>			
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Enrage_Damage_Bonus</StrVal>
+                <Value>.3</Value>
+                <Provides>+30% damage with every successful strike</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>10</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>370</AIPriority>
+        </AIData>
+        <ArtDef>Broadsword_Berserkers_ArtDef</ArtDef>
+    </GameItemType>
 	
     <GameItemType InternalName="CloakOfTheNight2">
         <DisplayName>Cloak of Nothingness</DisplayName>
@@ -811,7 +819,7 @@
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_Attack_Lightning</StrVal>
-            <Value>20</Value>
+            <Value>10</Value>
         </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
@@ -830,7 +838,7 @@
                 <ModType>Unit</ModType>
                 <Attribute>UnlockCombatAbility</Attribute>
                 <StrVal>CrushingBlow</StrVal>
-                <Provides>Crushing Blow- +100% Attack, but you lose your next action</Provides>
+                <Provides>Crushing Blow- +50% Attack, but you lose your next action</Provides>
             </GameModifier>
         <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
         <Likelihood>-1</Likelihood>
@@ -973,6 +981,11 @@
         <ShopValue>0</ShopValue>
         <ProductionRequirement>
             <Type>Resource</Type>
+            <Attribute>RefinedCrystal</Attribute>
+            <Value>1</Value>
+        </ProductionRequirement>		
+        <ProductionRequirement>
+            <Type>Resource</Type>
             <Attribute>GaleEssence</Attribute>
             <Value>2</Value>
         </ProductionRequirement>		
@@ -1025,6 +1038,11 @@
         <ShopValue>0</ShopValue>
         <ProductionRequirement>
             <Type>Resource</Type>
+            <Attribute>RefinedCrystal</Attribute>
+            <Value>1</Value>
+        </ProductionRequirement>		
+        <ProductionRequirement>
+            <Type>Resource</Type>
             <Attribute>MineralEssence</Attribute>
             <Value>2</Value>
         </ProductionRequirement>		
@@ -1070,11 +1088,16 @@
 	
 	<GameItemType InternalName="VolcanicPebble">
         <DisplayName>Volcanic Pebble</DisplayName>
-        <Description>If your troops can endure the pain of carrying these explosive pebbles, they'll find their movement accelerated.</Description>
+        <Description>If your troops can endure the pain of carrying these explosive pebbles, they'll unleash fire upon their foes.</Description>
         <Type>Accessory</Type>
         <CanBeEquipped>1</CanBeEquipped>
         <AdditionalTrainingTurns>20</AdditionalTrainingTurns>
         <ShopValue>0</ShopValue>
+        <ProductionRequirement>
+            <Type>Resource</Type>
+            <Attribute>RefinedCrystal</Attribute>
+            <Value>1</Value>
+        </ProductionRequirement>		
         <ProductionRequirement>
             <Type>Resource</Type>
             <Attribute>EmberEssence</Attribute>
@@ -1089,7 +1112,7 @@
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <StrVal>UnitStat_Attack_Fire</StrVal>
             <Value>1</Value>
         </GameModifier>
         <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
@@ -1121,7 +1144,7 @@
     </GameItemType>
 	
 		<GameItemType InternalName="TidewaterJug">
-        <DisplayName>Tidewater Jug</DisplayName>
+        <DisplayName>Feytide Jug</DisplayName>
         <Description>Carrying a jug of this blessed seawater makes the bearer flow in battle, bending and parting where they instead might have otherwise broken.</Description>
         <Type>Accessory</Type>
         <CanBeEquipped>1</CanBeEquipped>
@@ -1129,14 +1152,19 @@
         <ShopValue>0</ShopValue>
         <ProductionRequirement>
             <Type>Resource</Type>
+            <Attribute>RefinedCrystal</Attribute>
+            <Value>1</Value>
+        </ProductionRequirement>		
+        <ProductionRequirement>
+            <Type>Resource</Type>
             <Attribute>WaveEssence</Attribute>
-            <Value>.5</Value>
+            <Value>1</Value>
         </ProductionRequirement>		
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_Dodge</StrVal>
-            <Value>6</Value>
+            <Value>15</Value>
         </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
@@ -1180,11 +1208,16 @@
 	
 	<GameItemType InternalName="EnchantedFruit">
         <DisplayName>Enchanted Fruit</DisplayName>
-        <Description>If your troops are eating this fruit as they march, their performance in battle will be far heartier..</Description>
+        <Description>If your troops are eating this fruit as they march, their performance in battle will be far heartier.</Description>
         <Type>Accessory</Type>
         <CanBeEquipped>1</CanBeEquipped>
         <AdditionalTrainingTurns>20</AdditionalTrainingTurns>
         <ShopValue>0</ShopValue>
+        <ProductionRequirement>
+            <Type>Resource</Type>
+            <Attribute>RefinedCrystal</Attribute>
+            <Value>1</Value>
+        </ProductionRequirement>		
         <ProductionRequirement>
             <Type>Resource</Type>
             <Attribute>VerdantEssence</Attribute>
@@ -1200,10 +1233,10 @@
         <Likelihood>-1</Likelihood>
         <RarityDisplay>UltraRare</RarityDisplay>
         <IsUsable>0</IsUsable>
-        <!--<Prereq>
-            <Type>Tech</Type>
-            <Attribute>Glyph_Stones</Attribute>
-        </Prereq>-->
+        <Prereq>
+            <Type>Allegiance</Type>
+            <Attribute>Kingdom</Attribute>
+        </Prereq>
             <AIData AIPersonality="AI_General">
                 <AIPriority>0</AIPriority>
             </AIData>
@@ -1226,11 +1259,16 @@
 
 <GameItemType InternalName="PaleStone">
         <DisplayName>Pale Stone</DisplayName>
-        <Description>Holding this tone drains away the bearer's vitality, but their fight as if possessed by death itself.</Description>
+        <Description>Holding this stone drains away the bearer's vitality, but they will fight as if possessed by death itself.</Description>
         <Type>Accessory</Type>
         <CanBeEquipped>1</CanBeEquipped>
         <AdditionalTrainingTurns>20</AdditionalTrainingTurns>
         <ShopValue>0</ShopValue>
+        <ProductionRequirement>
+            <Type>Resource</Type>
+            <Attribute>RefinedCrystal</Attribute>
+            <Value>1</Value>
+        </ProductionRequirement>		
         <ProductionRequirement>
             <Type>Resource</Type>
             <Attribute>FamineEssence</Attribute>
@@ -1258,10 +1296,10 @@
         <Likelihood>-1</Likelihood>
         <RarityDisplay>UltraRare</RarityDisplay>
         <IsUsable>0</IsUsable>
-        <!--<Prereq>
-            <Type>Tech</Type>
-            <Attribute>Glyph_Stones</Attribute>
-        </Prereq>-->
+        <Prereq>
+            <Type>Allegiance</Type>
+            <Attribute>Empire</Attribute>
+        </Prereq>
             <AIData AIPersonality="AI_General">
                 <AIPriority>0</AIPriority>
             </AIData>

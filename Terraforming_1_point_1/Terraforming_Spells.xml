@@ -531,7 +531,7 @@
         </Prereq>		
         <SpellResourceCost>
             <Resource>VerdantEssence</Resource>
-            <Amount>130</Amount>
+            <Amount>80</Amount>
         </SpellResourceCost>
 			<GameModifier>
 				<ModType>GiveItem</ModType>
@@ -972,7 +972,7 @@
 
 <SpellDef InternalName="ArcticEmbrace">
         <DisplayName>Arctic Embrace</DisplayName>
-        <Description>Transform plains into a wind-blasted frozen snowscape, giving you 10 Wave Favor and costing 10 Verdant Favor. Take care as it will destroy any resources in its way.</Description>
+        <Description>Transform plains (and tiles within 1 radius) into a wind-blasted frozen snowscape, giving you 10 Wave Favor and costing 10 Verdant Favor. Take care as it will destroy any resources in its way.</Description>
         <Image>Arctic_Embrace_Painting.png</Image>
         <IconFG>Arctic_Embrace.png</IconFG>
 		<AutoUnlock>1</AutoUnlock>
@@ -1267,7 +1267,7 @@
         </Prereq>		
         <SpellResourceCost>
             <Resource>WaveEssence</Resource>
-            <Amount>20</Amount>
+            <Amount>12</Amount>
         </SpellResourceCost>
 			<GameModifier>
 				<ModType>GiveItem</ModType>
@@ -1647,7 +1647,7 @@
     </SpellDef>
 
 	
-<SpellDef InternalName="InviteFrost">
+	<SpellDef InternalName="InviteFrost">
         <DisplayName>Invite Frost</DisplayName>
         <Description>Plunge the temperature of an enemy's tile, doing 5 cold damage to any enemy unit passing through it.</Description>
         <Image>Arctic_Wrath_Painting.png</Image>
@@ -1660,6 +1660,7 @@
         <SpellClass>Offensive</SpellClass>
         <SpellSubClass>Damage</SpellSubClass>
         <SpellTargetType>EnemyUnit</SpellTargetType>
+		<WaterShards>1</WaterShards>
 		<Range>3</Range>		
         <Prereq>
             <Type>AbilityBonusOption</Type>
@@ -2516,19 +2517,18 @@
             <AIPriority>100</AIPriority>
         </AIData>
         <HitSoundFX>Spell_RainofFire_03</HitSoundFX>
-        <ModifierDelay>1.5</ModifierDelay>
         <SpellDefEffect>
-            <EffectName>S_Firestorm_Particle</EffectName>
+            <EffectName>E_FireballExplosion_Particle</EffectName>
             <LocalPosition>0,0,0</LocalPosition>
-            <EffectScale>.5</EffectScale>
-            <EffectDelay>.5</EffectDelay>
+            <EffectScale>3</EffectScale>
+            <EffectDelay>0</EffectDelay>
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
     </SpellDef>
  
  <SpellDef InternalName="AwakenEmbers">
         <DisplayName>Awaken Embers</DisplayName>
-        <Description>Attack an enemy army on Burning Lands with an all-consuming blaze for 12 Fire damage (+3 per fire shard).</Description>
+        <Description>Attack an enemy army on Burning Lands with an all-consuming blaze for 15 Fire damage (+3 per fire shard).</Description>
         <Image>Great_Blaze_Painting.png</Image>
         <IconFG>Hungering_Fire.png</IconFG>
 		<AutoUnlock>1</AutoUnlock>		
@@ -2559,7 +2559,7 @@
                 <Expression><![CDATA[[Calc] * 3]]></Expression>
             </Calculate>
             <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc2] + 12]]></Expression>
+                <Expression><![CDATA[[Calc2] + 15]]></Expression>
             </Calculate>
         </GameModifier>
         <GameModifier>
@@ -2626,8 +2626,9 @@
             <GameModifier>
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
-                <StrVal>UnitStat_ResistFire</StrVal>
-                <Value>0.20</Value>
+                <StrVal>UnitStat_SpellDamage_Fire</StrVal>
+                <Value>0.15</Value>
+                <Provides>+15% Spell Damage with Fire spells</Provides>
             </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
@@ -2661,7 +2662,7 @@
         </Prereq>
         <SpellResourceCost>
             <Resource>EmberEssence</Resource>
-            <Amount>130</Amount>
+            <Amount>80</Amount>
         </SpellResourceCost>
             <GameModifier>
 				<ModType>GiveItem</ModType>
@@ -3193,7 +3194,7 @@
         </Prereq>		
         <SpellResourceCost>
             <Resource>GaleEssence</Resource>
-            <Amount>130</Amount>
+            <Amount>80</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
@@ -3984,7 +3985,7 @@
         </Prereq>
         <SpellResourceCost>
             <Resource>MineralEssence</Resource>
-            <Amount>130</Amount>
+            <Amount>80</Amount>
         </SpellResourceCost>
 			<GameModifier>
 				<ModType>GiveItem</ModType>
@@ -4697,7 +4698,7 @@
         </Prereq>
         <SpellResourceCost>
             <Resource>FamineEssence</Resource>
-            <Amount>150</Amount>
+            <Amount>80</Amount>
         </SpellResourceCost>
 			<GameModifier>
 				<ModType>GiveItem</ModType>

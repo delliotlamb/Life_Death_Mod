@@ -2228,8 +2228,8 @@
             </AIData>
         <ArtDef>Art_ChainGreaves_Masterwork3</ArtDef>
 		<!-- GET NEW ICON -->
-		<GameItemTypeArtDef InternalName="Art_ChainGreaves_Masterwork2">
-        <GameItemTypeModelPack InternalName="Art_ChainGreaves_Masterwork2_1">
+		<GameItemTypeArtDef InternalName="Art_ChainGreaves_Masterwork3">
+        <GameItemTypeModelPack InternalName="Art_ChainGreaves_Masterwork3_1">
             <SupportedUnitModelType>AmarianFemale</SupportedUnitModelType>
             <SupportedUnitModelType>AmarianMale</SupportedUnitModelType>
             <SupportedUnitModelType>HenchmanMale</SupportedUnitModelType>
@@ -2252,7 +2252,7 @@
                 <AttachmentType>Skinned</AttachmentType>
             </GameItemTypeModel>
         </GameItemTypeModelPack>
-        <GameItemTypeModelPack InternalName="Art_ChainGreaves_Masterwork2_2">
+        <GameItemTypeModelPack InternalName="Art_ChainGreaves_Masterwork3_2">
             <SupportedUnitModelType>FallenMale</SupportedUnitModelType>
             <SupportedUnitModelType>QuendarMale</SupportedUnitModelType>
             <SupportedUnitModelType>UrxenMale</SupportedUnitModelType>
@@ -2267,7 +2267,7 @@
                 <AttachmentType>Skinned</AttachmentType>
             </GameItemTypeModel>
         </GameItemTypeModelPack>
-        <GameItemTypeModelPack InternalName="Art_ChainGreaves_Masterwork2_3">
+        <GameItemTypeModelPack InternalName="Art_ChainGreaves_Masterwork3_3">
             <SupportedUnitModelType>Banshee</SupportedUnitModelType>
             <SupportedUnitModelType>EmpireFemale</SupportedUnitModelType>
             <SupportedUnitModelType>EmpireMale</SupportedUnitModelType>

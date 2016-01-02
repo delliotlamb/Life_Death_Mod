@@ -2,8 +2,7 @@
 
     <ImprovementType InternalName="EnchantedGarden">
         <DisplayName>Enchanted Garden</DisplayName>
-        <Description>Enchanted Gardens provide life power every turn.</Description>
-        <AllowedPerFaction>1</AllowedPerFaction>		
+        <Description>Enchanted Gardens provide life power every turn.</Description>		
         <RequiresCity>1</RequiresCity>		
         <BarredTerrain>River</BarredTerrain>
         <BarredTerrain>SwampTerrain</BarredTerrain>
@@ -54,8 +53,7 @@
 
 <ImprovementType InternalName="StoneShrine">
         <DisplayName>Stone Shrine</DisplayName>
-        <Description>Stone Shrines provide Earth power every season.</Description>
-        <AllowedPerFaction>1</AllowedPerFaction>		
+        <Description>Stone Shrines provide Earth power every season.</Description>		
         <RequiresCity>1</RequiresCity>		
         <BarredTerrain>River</BarredTerrain>
         <BarredTerrain>SwampTerrain</BarredTerrain>
@@ -102,8 +100,7 @@
 
 <ImprovementType InternalName="PitOfFire">
         <DisplayName>Pit Of Fire</DisplayName>
-        <Description>Pits Of Fire provide Fire power every season.</Description>
-        <AllowedPerFaction>1</AllowedPerFaction>		
+        <Description>Pits Of Fire provide Fire power every season.</Description>		
         <RequiresCity>1</RequiresCity>		
         <BarredTerrain>River</BarredTerrain>
         <BarredTerrain>SwampTerrain</BarredTerrain>
@@ -150,8 +147,7 @@
 
 <ImprovementType InternalName="ShimmeringPool">
         <DisplayName>Shimmering Pool</DisplayName>
-        <Description>Shimmering Pools provide Water power every season.</Description>
-        <AllowedPerFaction>1</AllowedPerFaction>		
+        <Description>Shimmering Pools provide Water power every season.</Description>		
         <RequiresCity>1</RequiresCity>		
         <BarredTerrain>River</BarredTerrain>
         <BarredTerrain>SwampTerrain</BarredTerrain>
@@ -199,8 +195,7 @@
 
 <ImprovementType InternalName="WindShrine">
         <DisplayName>Wind Shrine</DisplayName>
-        <Description>Wind Shrines provide air power every season.</Description>
-        <AllowedPerFaction>1</AllowedPerFaction>		
+        <Description>Wind Shrines provide air power every season.</Description>	
         <RequiresCity>1</RequiresCity>	
         <BarredTerrain>River</BarredTerrain>
         <BarredTerrain>SwampTerrain</BarredTerrain>
@@ -247,8 +242,7 @@
 
 <ImprovementType InternalName="SilenceShrine">
         <DisplayName>Silence Shrine</DisplayName>
-        <Description>Silence Shrines provide Death power every season.</Description>
-        <AllowedPerFaction>1</AllowedPerFaction>		
+        <Description>Silence Shrines provide Death power every season.</Description>	
         <RequiresCity>1</RequiresCity>		
         <BarredTerrain>River</BarredTerrain>
         <BarredTerrain>SwampTerrain</BarredTerrain>
@@ -544,6 +538,42 @@
             <Value>-5</Value>
             <Provides>-5 Verdant Favor</Provides>
         </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>GaleEssence</Attribute>
+            <Value>1</Value>
+            <Provides>+1 Gale Favor</Provides>
+        </GameModifier>		
     </ImprovementType>
+	
+	<ImprovementType InternalName="LumberYard">
+		<GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>VerdantEssence</Attribute>
+            <Value>-10</Value>
+            <Provides>-10 Verdant Favor</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>GaleEssence</Attribute>
+            <Value>1</Value>
+            <Provides>+1 Gale Favor</Provides>
+        </GameModifier>		
+	</ImprovementType>
+		
+	<ImprovementType InternalName="TimberMill">	
+		<GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>VerdantEssence</Attribute>
+            <Value>-20</Value>
+            <Provides>-20 Verdant Favor</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>GaleEssence</Attribute>
+            <Value>1</Value>
+            <Provides>+1 Gale Favor</Provides>
+        </GameModifier>		
+	</ImprovementType>
 
 </ImprovementTypes>

@@ -1762,13 +1762,13 @@ Of the thousands that have set out to destroy Vetrar, only a handful has even re
     <AbilityBonus InternalName="ElementalLordAbility">
         <AbilityBonusOption InternalName="ElementalLord">
             <DisplayName>Elemental Lord</DisplayName>
-            <Description>+10 Initiative, +30 Spell Resist, +8 HP per level, +33 Resist against all Elements</Description>
+            <Description>+15 Initiative, +30 Spell Resist, +100 HP, +25 Resist against all Elements</Description>
             <Icon>Ability_SummonMastery_Icon.png</Icon>
             <GameModifier>
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
                 <StrVal>UnitStat_CombatSpeed</StrVal>
-                <Value>10</Value>
+                <Value>15</Value>
             </GameModifier>
             <GameModifier>
                 <ModType>Unit</ModType>
@@ -1780,23 +1780,31 @@ Of the thousands that have set out to destroy Vetrar, only a handful has even re
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
                 <StrVal>UnitStat_ResistFire</StrVal>
-                <Value>33</Value>
-                <Provides>+33% Fire Resistance</Provides>
-            </GameModifier>
+                <Value>25</Value>
+                <Provides>+25% Fire Resistance</Provides>
+            </GameModifier>	
             <GameModifier>
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
                 <StrVal>UnitStat_ResistCold</StrVal>
-                <Value>33</Value>
-                <Provides>+33% Cold Resistance</Provides>
+                <Value>25</Value>
+                <Provides>+25% Cold Resistance</Provides>
             </GameModifier>
             <GameModifier>
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
                 <StrVal>UnitStat_ResistLightning</StrVal>
-                <Value>33</Value>
-                <Provides>+33% Lightning Resistance</Provides>
-            </GameModifier>			
+                <Value>25</Value>
+                <Provides>+25% Lightning Resistance</Provides>
+            </GameModifier>		
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_HitPoints</StrVal>
+                <Value>100</Value>
+                <Provides>+100 Hit Points</Provides>
+            </GameModifier>	
+            <CombatRating>1000</CombatRating>			
             <Type>Aggressive</Type>
             <AIData AIPersonality="AI_General">
                 <AIPriority>5</AIPriority>

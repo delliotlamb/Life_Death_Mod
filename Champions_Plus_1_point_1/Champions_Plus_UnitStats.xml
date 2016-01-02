@@ -197,7 +197,7 @@
         <Description>Multiplier to Attack for the Crushing Blow ability</Description>
         <Hidden>1</Hidden>
 		<UnitStatGrouping>CombatStat</UnitStatGrouping>			
-        <DefaultValue>1.33</DefaultValue>
+        <DefaultValue>1.50</DefaultValue>
     </UnitStatType>
 	
 	    <UnitStatType InternalName="UnitStat_BonusRainOfArrows">

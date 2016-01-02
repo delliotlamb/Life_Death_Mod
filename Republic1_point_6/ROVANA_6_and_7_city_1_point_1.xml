@@ -1087,7 +1087,7 @@ This mod was meant to go with the republic faction trait, but can be used on its
                     <Attribute>AbilityBonus</Attribute>
                     <StrVal>A_Prestige</StrVal>
                     <Value>-50</Value>
-            <Provides>-50% Growth in all your cities</Provides>
+					<Provides>-50% Growth in all your cities</Provides>
                 </GameModifier>
         <GameModifier>
             <ModType>Resource</ModType>
