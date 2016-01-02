@@ -401,7 +401,7 @@
 	
 
 <SpellDef InternalName="InciteForest">
-        <DisplayName>Incite Forest</DisplayName>
+        <DisplayName>Birth Forest</DisplayName>
         <Description>Turn all tiles within 1 radius of Plains into Forest. You will gain 40 Verdant Favor, but BEWARE, the fast-growing roots will destroy any resources or lairs in the way (but not shards).</Description>
         <Image>Spread_Verdance_Painting.png</Image>
         <IconFG>Incite_Forest.png</IconFG>
@@ -416,7 +416,7 @@
         <Radius>1</Radius>
         <Prereq>
             <Type>AbilityBonusOption</Type>
-            <Attribute>Life5</Attribute>
+            <Attribute>Life1</Attribute>
         </Prereq>		
         <SpellResourceCost>
             <Resource>Mana</Resource>
@@ -983,11 +983,11 @@
         <SpellClass>Terraform</SpellClass>
         <SpellSubClass>Other</SpellSubClass>
         <SpellTargetType>NeutralGround</SpellTargetType>
-		<WaterShards>1</WaterShards>		
+		<WaterShards>5</WaterShards>		
 		<Radius>1</Radius>
         <Prereq>
             <Type>AbilityBonusOption</Type>
-            <Attribute>Water5</Attribute>
+            <Attribute>Water1</Attribute>
         </Prereq>
         <SpellResourceCost>
             <Resource>Mana</Resource>
@@ -2467,10 +2467,10 @@
         <SpellSubClass>Debuff</SpellSubClass>
         <SpellTargetType>EnemyCity</SpellTargetType>
 		<FireShards>5</FireShards>		
-        <!--<Prereq>
+        <Prereq>
             <Type>AbilityBonusOption</Type>
-            <Attribute>Fire5</Attribute>
-        </Prereq>-->		
+            <Attribute>Fire1</Attribute>
+        </Prereq>		
         <SpellResourceCost>
             <Resource>Mana</Resource>
             <Amount>175</Amount>
@@ -2510,12 +2510,12 @@
             <StrVal>TD_Groundfire</StrVal>
             <Duration>1</Duration>
         </GameModifier>
-            <GameModifier>
-                <ModType>Resource</ModType>
-                <Attribute>EmberEssence</Attribute>
-				<ApplyToCaster>1</ApplyToCaster>
-                <Value>20</Value>
-            </GameModifier>			
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>EmberEssence</Attribute>
+			<ApplyToCaster>1</ApplyToCaster>
+            <Value>20</Value>
+        </GameModifier>			
         <AIData AIPersonality="AI_General">
             <AIPriority>100</AIPriority>
         </AIData>
@@ -3140,11 +3140,11 @@
         <SpellSubClass>Damage</SpellSubClass>
         <SpellTargetType>EnemyUnit</SpellTargetType>
         <UnitAppSpecifier>ApplyToAll</UnitAppSpecifier>
-		<AirShards>1</AirShards>
-        <!--<Prereq>
+		<AirShards>5</AirShards>
+        <Prereq>
             <Type>AbilityBonusOption</Type>
-            <Attribute>Air5</Attribute>
-        </Prereq>-->
+            <Attribute>Air1</Attribute>
+        </Prereq>
         <SpellResourceCost>
             <Resource>Mana</Resource>
             <Amount>130</Amount>
@@ -3488,10 +3488,9 @@
         </SpellDefEffect>
     </SpellDef>
 	
-	<!--
-	<SpellDef InternalName="HillsToMountain">
+	<SpellDef InternalName="FortifyHills">
         <DisplayName>Fortify Hills</DisplayName>
-        <Description>Push Hills up into jagged mountain terrain, blocking passage to non-flying units. You will gain 5 Mineral favor but lose 5 gale favor.</Description>
+        <Description>Push Hills up into jagged mountain terrain, blocking passage to non-flying units. Can only be cast 1 tile away from caster. You will gain 5 Mineral favor but lose 5 gale favor.</Description>
         <Image>S_Earthquake_Painting.png</Image>
         <IconFG>Terraform_Dot.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -3502,13 +3501,14 @@
         <SpellClass>Terraform</SpellClass>
         <SpellSubClass>Other</SpellSubClass>
         <SpellTargetType>NeutralGround</SpellTargetType>
+		<Range>1</Range>
         <Prereq>
             <Type>AbilityBonusOption</Type>
-            <Attribute>Earth3</Attribute>
+            <Attribute>Earth4</Attribute>
         </Prereq>
 		<SpellResourceCost>
             <Resource>Mana</Resource>
-            <Amount>65</Amount>
+            <Amount>60</Amount>
         </SpellResourceCost>
 			<GameModifier>
 				<ModType>Map</ModType>
@@ -3540,7 +3540,6 @@
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
     </SpellDef>
-	-->
 	
 <SpellDef InternalName="SoulOfOre">
         <DisplayName>Soul Of Ore</DisplayName>
@@ -4083,12 +4082,12 @@
         <SpellClass>Terraform</SpellClass>
         <SpellSubClass>Other</SpellSubClass>
         <SpellTargetType>Any</SpellTargetType>
-		<EarthShards>1</EarthShards>
+		<EarthShards>5</EarthShards>
         <Radius>1</Radius>
-        <!--<Prereq>
+        <Prereq>
             <Type>AbilityBonusOption</Type>
-            <Attribute>Earth5</Attribute>
-        </Prereq>-->
+            <Attribute>Earth1</Attribute>
+        </Prereq>
         <SpellResourceCost>
             <Resource>Mana</Resource>
             <Amount>175</Amount>
@@ -4099,17 +4098,18 @@
             <TerrainType>MountainRange</TerrainType>
         </GameModifier>
         <GameModifier>		
-                <ModType>Resource</ModType>
-                <Attribute>MineralEssence</Attribute>
-				<ApplyToCaster>1</ApplyToCaster>
-                <Value>45</Value>
-            </GameModifier>		
+            <ModType>Resource</ModType>
+            <Attribute>MineralEssence</Attribute>
+			<ApplyToCaster>1</ApplyToCaster>
+            <Value>45</Value>
+        </GameModifier>		
         <GameModifier>		
-                <ModType>Resource</ModType>
-                <Attribute>GaleEssence</Attribute>
-				<ApplyToCaster>1</ApplyToCaster>
-                <Value>-45</Value>
-            </GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>GaleEssence</Attribute>
+			<ApplyToCaster>1</ApplyToCaster>
+            <Value>-45</Value>
+        </GameModifier>
+        <ValidTerrainType>HillsTerrain</ValidTerrainType>			
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
         </AIData>
@@ -4462,10 +4462,10 @@
         <SpellClass>ImpResourceBooster</SpellClass>
         <SpellSubClass>Debuff</SpellSubClass>
         <SpellTargetType>EnemyCity</SpellTargetType>
-		<DeathShards>1</DeathShards>		
+		<DeathShards>5</DeathShards>		
         <Prereq>
             <Type>AbilityBonusOption</Type>
-            <Attribute>Death5</Attribute>
+            <Attribute>Death1</Attribute>
         </Prereq>
         <SpellResourceCost>
             <Resource>Mana</Resource>
