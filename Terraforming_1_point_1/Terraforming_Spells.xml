@@ -411,7 +411,8 @@
         <SpellType>Strategic</SpellType>
         <SpellClass>Terraform</SpellClass>
         <SpellSubClass>Other</SpellSubClass>
-        <SpellTargetType>NeutralGround</SpellTargetType>		
+        <SpellTargetType>NeutralGround</SpellTargetType>	
+		<LifeShards>5</LifeShards>
         <Radius>1</Radius>
         <Prereq>
             <Type>AbilityBonusOption</Type>
@@ -982,6 +983,7 @@
         <SpellClass>Terraform</SpellClass>
         <SpellSubClass>Other</SpellSubClass>
         <SpellTargetType>NeutralGround</SpellTargetType>
+		<WaterShards>1</WaterShards>		
 		<Radius>1</Radius>
         <Prereq>
             <Type>AbilityBonusOption</Type>
@@ -1596,9 +1598,9 @@
 
 <!-- Paint spell Water:liquid -->
 
-<SpellDef InternalName="SummonOcean">
+	<SpellDef InternalName="SummonOcean">
         <DisplayName>Flooding</DisplayName>
-        <Description>Flood Beach with water, leaving submerged terrain as well as giving you 5 Wave Favor but costing 3 Mineral Essence. Caster must be within 3 tiles of the target Hills.</Description>
+        <Description>Flood Beach with water, leaving submerged terrain as well as giving you 5 Wave Favor but costing 3 Mineral Essence. Caster must be within 1 tiles of the target beach.</Description>
         <Image>Flooding_Painting.png</Image>
         <IconFG>Flooding.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -1609,11 +1611,10 @@
         <SpellClass>Terraform</SpellClass>
         <SpellSubClass>Other</SpellSubClass>
         <SpellTargetType>NeutralGround</SpellTargetType>
-        <RequiredTerrainType>Submerged</RequiredTerrainType>
-        <RequiredTerrainTypeMaxDist>2</RequiredTerrainTypeMaxDist>		
+        <Range>1</Range>
         <Prereq>
             <Type>AbilityBonusOption</Type>
-            <Attribute>Water3</Attribute>
+            <Attribute>Water4</Attribute>
         </Prereq>
         <SpellResourceCost>
             <Resource>Mana</Resource>
@@ -1662,10 +1663,10 @@
         <SpellTargetType>EnemyUnit</SpellTargetType>
 		<WaterShards>1</WaterShards>
 		<Range>3</Range>		
-        <Prereq>
+        <!--<Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Water1</Attribute>
-        </Prereq>
+        </Prereq>-->
         <SpellResourceCost>
             <Resource>Mana</Resource>
             <Amount>10</Amount>
@@ -1871,7 +1872,7 @@
         </SpellDefEffect>
     </SpellDef>
 
-<SpellDef InternalName="InviteFire">
+	<SpellDef InternalName="InviteFire">
         <DisplayName>Invite Fire</DisplayName>
         <Description>Ignite a tile under an enemy for 3 turns. Any enemy unit passing through the tile takes 5 fire damage.</Description>
         <Image>Incineration_Painting.png</Image>
@@ -1884,11 +1885,12 @@
         <SpellClass>Offensive</SpellClass>
         <SpellSubClass>Damage</SpellSubClass>
         <SpellTargetType>EnemyUnit</SpellTargetType>
+		<FireShards>1</FireShards>		
 		<Range>3</Range>		
-        <Prereq>
+        <!--<Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Fire1</Attribute>
-        </Prereq>
+        </Prereq>-->
         <SpellResourceCost>
             <Resource>Mana</Resource>
             <Amount>10</Amount>
@@ -2450,7 +2452,7 @@
     </SpellDef>
 	
 	
-<SpellDef InternalName="GreatBlaze">
+	<SpellDef InternalName="GreatBlaze">
         <DisplayName>Great Blaze</DisplayName>
         <Description>Attack an enemy city with an all-consuming blaze which will reset production, destroy improvements, and reduces population. Defending units lose -2 initiative and Spell Resist for 1 turn. You will gain 20 ember essence.</Description>
         <Image>Great_Blaze_Painting.png</Image>
@@ -2463,11 +2465,12 @@
         <SpellType>Strategic</SpellType>
         <SpellClass>ImpResourceBooster</SpellClass>
         <SpellSubClass>Debuff</SpellSubClass>
-        <SpellTargetType>EnemyCity</SpellTargetType>	
-        <Prereq>
+        <SpellTargetType>EnemyCity</SpellTargetType>
+		<FireShards>5</FireShards>		
+        <!--<Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Fire5</Attribute>
-        </Prereq>		
+        </Prereq>-->		
         <SpellResourceCost>
             <Resource>Mana</Resource>
             <Amount>175</Amount>
@@ -2743,7 +2746,7 @@
         </SpellDefEffect>	
     </SpellDef>
 
-<SpellDef InternalName="InviteStorm">
+	<SpellDef InternalName="InviteStorm">
         <DisplayName>Invite Storm</DisplayName>
         <Description>Incite a stormcloud in an enemy tile for 3 turns, doing 6 lightning damage to any enemy unit passing through it.</Description>
         <Image>T_Storm_Painting.png</Image>
@@ -2756,11 +2759,12 @@
         <SpellClass>Offensive</SpellClass>
         <SpellSubClass>Damage</SpellSubClass>
         <SpellTargetType>EnemyUnit</SpellTargetType>
+		<AirShards>1</AirShards>		
 		<Range>3</Range>
-        <Prereq>
+        <!--<Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Air1</Attribute>
-        </Prereq>
+        </Prereq>-->
         <SpellResourceCost>
             <Resource>Mana</Resource>
             <Amount>10</Amount>
@@ -3136,10 +3140,11 @@
         <SpellSubClass>Damage</SpellSubClass>
         <SpellTargetType>EnemyUnit</SpellTargetType>
         <UnitAppSpecifier>ApplyToAll</UnitAppSpecifier>
-        <Prereq>
+		<AirShards>1</AirShards>
+        <!--<Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Air5</Attribute>
-        </Prereq>
+        </Prereq>-->
         <SpellResourceCost>
             <Resource>Mana</Resource>
             <Amount>130</Amount>
@@ -4064,7 +4069,7 @@
     </SpellDef>
 
 
-<SpellDef InternalName="RaiseMountain">
+	<SpellDef InternalName="RaiseMountain">
         <DisplayName>Raise Mountain</DisplayName>
         <Description>Raise a mountain from Hills, gaining 45 Mineral Favor and losing 45 Gale Favor. Any resources nearby may be destroyed by the shifting rock, so beware! THE CASTER MUST BE ARMY LEADER.</Description>
         <Image>S_CreateMountain_Painting.png</Image>
@@ -4078,11 +4083,12 @@
         <SpellClass>Terraform</SpellClass>
         <SpellSubClass>Other</SpellSubClass>
         <SpellTargetType>Any</SpellTargetType>
+		<EarthShards>1</EarthShards>
         <Radius>1</Radius>
-        <Prereq>
+        <!--<Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Earth5</Attribute>
-        </Prereq>
+        </Prereq>-->
         <SpellResourceCost>
             <Resource>Mana</Resource>
             <Amount>175</Amount>
@@ -4179,11 +4185,12 @@
         <SpellClass>Offensive</SpellClass>
         <SpellSubClass>Damage</SpellSubClass>
         <SpellTargetType>EnemyUnit</SpellTargetType>
+		<EarthShards>1</EarthShards>
 		<Range>3</Range>		
-        <Prereq>
+        <!--<Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Earth1</Attribute>
-        </Prereq>
+        </Prereq>-->
         <SpellResourceCost>
             <Resource>Mana</Resource>
             <Amount>10</Amount>
@@ -4455,6 +4462,7 @@
         <SpellClass>ImpResourceBooster</SpellClass>
         <SpellSubClass>Debuff</SpellSubClass>
         <SpellTargetType>EnemyCity</SpellTargetType>
+		<DeathShards>1</DeathShards>		
         <Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Death5</Attribute>
