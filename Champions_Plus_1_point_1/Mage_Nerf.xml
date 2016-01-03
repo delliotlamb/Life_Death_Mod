@@ -127,6 +127,13 @@
                 <Value>-20</Value>
                 <Provides>-20 Spell Resistance</Provides>
             </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MagicPower</StrVal>
+                <Value>-20</Value>
+                <Provides>-20 Spell Mastery</Provides>
+            </GameModifier>			
         </AbilityBonusOption>
     </AbilityBonus>
 

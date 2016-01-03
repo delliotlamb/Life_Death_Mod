@@ -973,8 +973,8 @@
 	<!-- Troop equipment -->
 	
 	<GameItemType InternalName="WindCoins">
-        <DisplayName>Coins Of Five Winds</DisplayName>
-        <Description>These coins, lighter than air, confer faster reaction.</Description>
+        <DisplayName>Stormcoin Purse</DisplayName>
+        <Description>These coins, lighter than air, hold the power of thunder within and pass their properties onto any bearer.</Description>
         <Type>Accessory</Type>
         <CanBeEquipped>1</CanBeEquipped>
         <AdditionalTrainingTurns>20</AdditionalTrainingTurns>
@@ -992,14 +992,14 @@
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_Dodge</StrVal>
-            <Value>8</Value>
+            <StrVal>UnitStat_Attack_Lightning</StrVal>
+            <Value>1</Value>
         </GameModifier>
        <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_HitPoints</StrVal>
-            <Value>-1</Value>
+            <Value>-2</Value>
         </GameModifier>		
         <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
         <Likelihood>-1</Likelihood>
@@ -1056,8 +1056,14 @@
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_Defense_Pierce</StrVal>
-            <Value>5</Value>
-        </GameModifier>		
+            <Value>3</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_HitPoints</StrVal>
+            <Value>2</Value>
+        </GameModifier>			
         <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
         <Likelihood>-1</Likelihood>
         <RarityDisplay>UltraRare</RarityDisplay>
@@ -1107,7 +1113,7 @@
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_HitPoints</StrVal>
-            <Value>-1</Value>
+            <Value>-2</Value>
         </GameModifier>		
         <GameModifier>
             <ModType>Unit</ModType>
@@ -1164,7 +1170,7 @@
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_Dodge</StrVal>
-            <Value>15</Value>
+            <Value>10</Value>
         </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
@@ -1177,6 +1183,12 @@
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_HitPoints</StrVal>
             <Value>2</Value>
+        </GameModifier>	
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_MagicResist</StrVal>
+            <Value>5</Value>
         </GameModifier>		
         <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
         <Likelihood>-1</Likelihood>
