@@ -9,16 +9,15 @@
 		<Thumbnail>\Game\Gfx\tile_icon.png</Thumbnail>
 		<LowResShadow>TD_HealingTile_shadow.png</LowResShadow>
 		<HighResShadow>TD_HealingTile_shadow.png</HighResShadow>
-		<ShadowTransparency>60</ShadowTransparency>
+		<ShadowTransparency>59</ShadowTransparency>
 		<IsCore>0</IsCore>
 		<IsHiddenFromEditor>0</IsHiddenFromEditor>
 		<SubTileFlags>15</SubTileFlags>
 		<TileDesignPath InternalName="_path0"/>
-		<TileDesignPath InternalName="_path1"/>
-		<EffectTrigger InternalName="Purple_Dust">
-			<EffectName>Purple_Dust</EffectName>
-			<LocalPosition>0.284225,0.000000,-1.230225</LocalPosition>
-			<Scale>0.6300</Scale>
+		<EffectTrigger InternalName="A_LightbringerLeg_Particle">
+			<EffectName>A_LightbringerLeg_Particle</EffectName>
+			<LocalPosition>-1.447048,0.000000,-1.614487</LocalPosition>
+			<Scale>0.9300</Scale>
 			<IndefiniteRepeat>1</IndefiniteRepeat>
 			<SpawnOnCreation>1</SpawnOnCreation>
 		</EffectTrigger>
