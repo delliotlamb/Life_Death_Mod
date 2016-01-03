@@ -3314,7 +3314,7 @@
 	
 	<SpellDef InternalName="FlameDart">
         <DisplayName>Flame Dart</DisplayName>
-        <Description>A fiery dart strikes for the caster's level + 20 (+2 per fire shard) in fire damage.</Description>
+        <Description>A fiery dart strikes for the caster's level plus 20 in fire damage (+2 per fire shard).</Description>
         <FormattedDescription>A fiery dart strikes for %d fire damage.</FormattedDescription>
         <Image>T_FlameDart_Painting.png</Image>
         <IconFG>T_FlameDart_Icon.png</IconFG>
@@ -5016,6 +5016,86 @@
             <AIPriority>1000</AIPriority>
         </AIData>
         <HitSoundFX>Spell_GlyphOfLife_01</HitSoundFX>
+    </SpellDef>
+	
+	<SpellDef InternalName="LightningBolt">
+        <DisplayName>Lightning Bolt</DisplayName>
+        <Description>Does 16 (+1 per Level) Lightning damage to all units in a line 5 tiles long.</Description>
+        <FormattedDescription>Does %d Lightning damage to all units in a line 5 tiles long.</FormattedDescription>
+        <Image>AirCrystal_Medallion.png</Image>
+        <IconFG>T_ChainLightning_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+        <IgnoreInvalidTargetsInRadius>1</IgnoreInvalidTargetsInRadius>
+        <IsResistable>1</IsResistable>
+        <Radius>5</Radius>
+        <RadiusType>LINE_BACKWARD</RadiusType>
+        <Range>5</Range>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Aeromancy</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>25</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Lightning</AttackStat>
+            <IsForFormattedDescription>1</IsForFormattedDescription>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[Unit_GetLevel]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc] + 16]]></Expression>
+            </Calculate>
+            <Calculate InternalName="ValueForFormattedDescription">
+                <Expression><![CDATA[[Calc] + 16]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Lightning</AttackStat>
+            <IsForSpellResist>1</IsForSpellResist>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[Unit_GetLevel] / 2]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc] + 8]]></Expression>
+            </Calculate>
+            <Calculate InternalName="ValueForFormattedDescription">
+                <Expression><![CDATA[[Calc] + 8]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>75</AIPriority>
+            <AIMinSpellTargets>2</AIMinSpellTargets>
+        <ValueCalcWrapper>
+            <ValueType>IsTargetWorthy</ValueType>
+            <Calculate InternalName="Calc" ValueOwner="TargetUnit">
+                <Expression><![CDATA[[UnitStat_ResistLightning]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc] < 75]]></Expression>
+            </Calculate>
+        </ValueCalcWrapper>
+        </AIData>
+        <HitSoundFX>Spell_Storm_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>Y_StaticBlast_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>2</EffectScale>
+            <EffectDelay>0.25</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+            <PlayOnAllTargets>1</PlayOnAllTargets>
+        </SpellDefEffect>
     </SpellDef>
 	
 	

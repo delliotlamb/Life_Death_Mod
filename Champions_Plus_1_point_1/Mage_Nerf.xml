@@ -124,16 +124,16 @@
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
                 <StrVal>UnitStat_MagicResist</StrVal>
-                <Value>-20</Value>
-                <Provides>-20 Spell Resistance</Provides>
+                <Value>-10</Value>
+                <Provides>-10 Spell Resistance</Provides>
             </GameModifier>
             <GameModifier>
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
-                <StrVal>UnitStat_MagicPower</StrVal>
-                <Value>-20</Value>
-                <Provides>-20 Spell Mastery</Provides>
-            </GameModifier>			
+                <StrVal>UnitStat_TacticalSpellManaCost_Multiplier</StrVal>
+                <Value>0.50</Value>
+                <Provides>+50% mana cost for tactical spells</Provides>
+            </GameModifier>				
         </AbilityBonusOption>
     </AbilityBonus>
 
