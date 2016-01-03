@@ -73,48 +73,6 @@
 
 <!-- Life Spells -->
 
-<SpellDef InternalName="InviteRejuvenation">
-        <DisplayName>Invite Rejuvenation</DisplayName>
-        <Description>Fill a tile under an ally with healing energy for 3 turns. Any unit passing through the tile heals 5 damage.</Description>
-        <Image>S_Regeneration_Painting.png</Image>
-        <IconFG>S_Regeneration_Icon.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>
-		<Cooldown>10</Cooldown>		
-        <SpellBookSortCategory>Unit</SpellBookSortCategory>
-        <SpellBookSortSubCategory>Heal</SpellBookSortSubCategory>
-        <SpellType>Tactical</SpellType>
-        <SpellClass>Defensive</SpellClass>
-        <SpellSubClass>Heal</SpellSubClass>
-        <SpellTargetType>FriendlyUnit</SpellTargetType>
-		<LifeShards>1</LifeShards>		
-		<Range>3</Range>		
-        <!--<Prereq>
-            <Type>AbilityBonusOption</Type>
-            <Attribute>Fire1</Attribute>
-        </Prereq>-->
-        <SpellResourceCost>
-            <Resource>Mana</Resource>
-            <Amount>10</Amount>
-        </SpellResourceCost>
-        <GameModifier>
-            <ModType>Map</ModType>
-            <Attribute>CreateWorldProp</Attribute>
-            <StrVal>TD_HealingTile</StrVal>
-            <Duration>-1</Duration>
-        </GameModifier>				
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>CurHealth</Attribute>
-            <ApplyToTile>1</ApplyToTile>
-            <Duration>0</Duration>
-            <DurationOnTile>-1</DurationOnTile>
-			<Value>5</Value>
-        </GameModifier>
-        <AIData AIPersonality="AI_General">
-            <AIPriority>100</AIPriority>
-        </AIData>
-        <HitSoundFX>Spell_MassRegeneration_01</HitSoundFX>
-    </SpellDef>
 
 <SpellDef InternalName="InvigorateWastes">
         <DisplayName>Invigorate Wastes</DisplayName>
@@ -455,11 +413,10 @@
         <SpellClass>Terraform</SpellClass>
         <SpellSubClass>Other</SpellSubClass>
         <SpellTargetType>NeutralGround</SpellTargetType>	
-		<LifeShards>5</LifeShards>
         <Radius>1</Radius>
         <Prereq>
             <Type>AbilityBonusOption</Type>
-            <Attribute>Life1</Attribute>
+            <Attribute>Life5</Attribute>
         </Prereq>		
         <SpellResourceCost>
             <Resource>Mana</Resource>
@@ -609,7 +566,65 @@
 <!-- Water Spells -->
 
 
-<!-- needs an 'ultimate.' -->
+    <SpellDef InternalName="GripOfWinter">
+        <DisplayName>Grip of Winter</DisplayName>
+        <Description>Massively slows all production, training, and food production in target city.</Description>
+        <Image>S_GripofWinter_Painting.png</Image>
+        <IconFG>S_GripofWinter_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CanStack>0</CanStack>
+        <SpellBookSortCategory>City</SpellBookSortCategory>
+        <SpellBookSortSubCategory>CityCurse</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>EnemyCity</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Water5</Attribute>
+        </Prereq>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Production</Attribute>
+            <Value>.9</Value>
+            <PerTurn>1</PerTurn>
+            <Duration>-1</Duration>			
+        </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Food</Attribute>
+            <Value>.75</Value>
+            <PerTurn>1</PerTurn>
+            <Duration>-1</Duration>			
+        </GameModifier>
+        <GameModifier>
+            <ModType>City</ModType>
+            <Attribute>TrainingDiscount</Attribute>
+            <Value>-.9</Value>
+            <Duration>-1</Duration>				
+        </GameModifier>		
+        <GameModifier>
+            <ModType>City</ModType>
+            <Duration>-1</Duration>
+            <Effect>E_GripofWinter_Particle</Effect>
+            <PerTurn>1</PerTurn>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>100</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Grip_of_Winter</HitSoundFX>
+        <WorldLightOverrideTime>6</WorldLightOverrideTime>
+        <WorldLightOverrideDiffuse>135,150,148</WorldLightOverrideDiffuse>
+        <WorldLightOverrideRim0>22,116,176</WorldLightOverrideRim0>
+        <WorldLightOverrideRim1>17,212,164</WorldLightOverrideRim1>
+        <SpellDefEffect>
+            <EffectName>S_GripofWinter_Particle</EffectName>
+            <LocalPosition>0,25,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
 
 
 <SpellDef InternalName="SummonSeaMonster">
@@ -1025,12 +1040,11 @@
         <SpellType>Strategic</SpellType>
         <SpellClass>Terraform</SpellClass>
         <SpellSubClass>Other</SpellSubClass>
-        <SpellTargetType>NeutralGround</SpellTargetType>
-		<WaterShards>5</WaterShards>		
+        <SpellTargetType>NeutralGround</SpellTargetType>		
 		<Radius>1</Radius>
         <Prereq>
             <Type>AbilityBonusOption</Type>
-            <Attribute>Water1</Attribute>
+            <Attribute>Water5</Attribute>
         </Prereq>
         <SpellResourceCost>
             <Resource>Mana</Resource>
@@ -1691,56 +1705,7 @@
     </SpellDef>
 
 	
-	<SpellDef InternalName="InviteFrost">
-        <DisplayName>Invite Frost</DisplayName>
-        <Description>Plunge the temperature of an enemy's tile, doing 5 cold damage to any enemy unit passing through it.</Description>
-        <Image>Arctic_Wrath_Painting.png</Image>
-        <IconFG>Arctic_Wrath.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>
-		<Cooldown>10</Cooldown>		
-        <SpellBookSortCategory>Unit</SpellBookSortCategory>
-        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
-        <SpellType>Tactical</SpellType>
-        <SpellClass>Offensive</SpellClass>
-        <SpellSubClass>Damage</SpellSubClass>
-        <SpellTargetType>EnemyUnit</SpellTargetType>
-		<WaterShards>1</WaterShards>
-		<Range>3</Range>		
-        <!--<Prereq>
-            <Type>AbilityBonusOption</Type>
-            <Attribute>Water1</Attribute>
-        </Prereq>-->
-        <SpellResourceCost>
-            <Resource>Mana</Resource>
-            <Amount>10</Amount>
-        </SpellResourceCost>
-        <GameModifier>
-            <ModType>Map</ModType>
-            <Attribute>CreateWorldProp</Attribute>
-            <StrVal>TD_FrostWall</StrVal>
-            <Duration>-1</Duration>
-        </GameModifier>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>DefendableDamage</Attribute>
-            <AttackStat>UnitStat_Attack_Cold</AttackStat>
-            <ApplyToTile>1</ApplyToTile>
-            <Duration>0</Duration>
-            <DurationOnTile>-1</DurationOnTile>
-			<Value>5</Value>
-        </GameModifier>
-        <AIData AIPersonality="AI_General">
-            <AIPriority>100</AIPriority>
-        </AIData>
-        <HitSoundFX>Spell_FreezeGroup_01</HitSoundFX>
-        <SpellDefEffect>
-            <EffectName>S_Freeze_Particle</EffectName>
-            <LocalPosition>0,0,0</LocalPosition>
-            <EffectScale>3</EffectScale>
-            <EffectDelay>0</EffectDelay>
-            <SnapToTerrain>1</SnapToTerrain>
-        </SpellDefEffect>
-    </SpellDef>
+	
 
 
 <!-- Fire Spells-->
@@ -1915,49 +1880,7 @@
         </SpellDefEffect>
     </SpellDef>
 
-	<SpellDef InternalName="InviteFire">
-        <DisplayName>Invite Fire</DisplayName>
-        <Description>Ignite a tile under an enemy for 3 turns. Any enemy unit passing through the tile takes 5 fire damage.</Description>
-        <Image>Incineration_Painting.png</Image>
-        <IconFG>U_Inferno_Icon.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>
-		<Cooldown>10</Cooldown>		
-        <SpellBookSortCategory>Unit</SpellBookSortCategory>
-        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
-        <SpellType>Tactical</SpellType>
-        <SpellClass>Offensive</SpellClass>
-        <SpellSubClass>Damage</SpellSubClass>
-        <SpellTargetType>EnemyUnit</SpellTargetType>
-		<FireShards>1</FireShards>		
-		<Range>3</Range>		
-        <!--<Prereq>
-            <Type>AbilityBonusOption</Type>
-            <Attribute>Fire1</Attribute>
-        </Prereq>-->
-        <SpellResourceCost>
-            <Resource>Mana</Resource>
-            <Amount>10</Amount>
-        </SpellResourceCost>
-        <GameModifier>
-            <ModType>Map</ModType>
-            <Attribute>CreateWorldProp</Attribute>
-            <StrVal>TD_Groundfire</StrVal>
-            <Duration>-1</Duration>
-        </GameModifier>				
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>DefendableDamage</Attribute>
-            <AttackStat>UnitStat_Attack_Fire</AttackStat>
-            <ApplyToTile>1</ApplyToTile>
-            <Duration>0</Duration>
-            <DurationOnTile>-1</DurationOnTile>
-			<Value>5</Value>
-        </GameModifier>
-        <AIData AIPersonality="AI_General">
-            <AIPriority>100</AIPriority>
-        </AIData>
-        <HitSoundFX>Spell_Inferno_01</HitSoundFX>
-    </SpellDef>
+	
 
 
     <SpellDef InternalName="SoulOfTheAsh">
@@ -2508,11 +2431,10 @@
         <SpellType>Strategic</SpellType>
         <SpellClass>ImpResourceBooster</SpellClass>
         <SpellSubClass>Debuff</SpellSubClass>
-        <SpellTargetType>EnemyCity</SpellTargetType>
-		<FireShards>5</FireShards>		
+        <SpellTargetType>EnemyCity</SpellTargetType>	
         <Prereq>
             <Type>AbilityBonusOption</Type>
-            <Attribute>Fire1</Attribute>
+            <Attribute>Fire5</Attribute>
         </Prereq>		
         <SpellResourceCost>
             <Resource>Mana</Resource>
@@ -2789,49 +2711,6 @@
         </SpellDefEffect>	
     </SpellDef>
 
-	<SpellDef InternalName="InviteStorm">
-        <DisplayName>Invite Storm</DisplayName>
-        <Description>Incite a stormcloud in an enemy tile for 3 turns, doing 6 lightning damage to any enemy unit passing through it.</Description>
-        <Image>T_Storm_Painting.png</Image>
-        <IconFG>S_Tornado_Icon.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>
-		<Cooldown>10</Cooldown>
-        <SpellBookSortCategory>Unit</SpellBookSortCategory>
-        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
-        <SpellType>Tactical</SpellType>
-        <SpellClass>Offensive</SpellClass>
-        <SpellSubClass>Damage</SpellSubClass>
-        <SpellTargetType>EnemyUnit</SpellTargetType>
-		<AirShards>1</AirShards>		
-		<Range>3</Range>
-        <!--<Prereq>
-            <Type>AbilityBonusOption</Type>
-            <Attribute>Air1</Attribute>
-        </Prereq>-->
-        <SpellResourceCost>
-            <Resource>Mana</Resource>
-            <Amount>10</Amount>
-        </SpellResourceCost>
-        <GameModifier>
-            <ModType>Map</ModType>
-            <Attribute>CreateWorldProp</Attribute>
-            <StrVal>TD_StormWall</StrVal>
-            <Duration>-1</Duration>
-        </GameModifier>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>DefendableDamage</Attribute>
-            <AttackStat>UnitStat_Attack_Lightning</AttackStat>
-            <ApplyToTile>1</ApplyToTile>
-            <Duration>0</Duration>
-            <DurationOnTile>-1</DurationOnTile>
-			<Value>6</Value>
-        </GameModifier>
-        <AIData AIPersonality="AI_General">
-            <AIPriority>100</AIPriority>
-        </AIData>
-        <HitSoundFX>Spell_Storm_01</HitSoundFX>
-    </SpellDef>
 	
 	<!-- old ultimate 
 	
@@ -3183,10 +3062,9 @@
         <SpellSubClass>Damage</SpellSubClass>
         <SpellTargetType>EnemyUnit</SpellTargetType>
         <UnitAppSpecifier>ApplyToAll</UnitAppSpecifier>
-		<AirShards>5</AirShards>
         <Prereq>
             <Type>AbilityBonusOption</Type>
-            <Attribute>Air1</Attribute>
+            <Attribute>Air5</Attribute>
         </Prereq>
         <SpellResourceCost>
             <Resource>Mana</Resource>
@@ -3531,7 +3409,7 @@
         </SpellDefEffect>
     </SpellDef>
 	
-	<SpellDef InternalName="FortifyHills">
+	<!--<SpellDef InternalName="FortifyHills">
         <DisplayName>Fortify Hills</DisplayName>
         <Description>Push Hills up into jagged mountain terrain, blocking passage to non-flying units. Can only be cast 1 tile away from caster. You will gain 5 Mineral favor but lose 5 gale favor.</Description>
         <Image>S_Earthquake_Painting.png</Image>
@@ -3582,7 +3460,7 @@
             <EffectDelay>0</EffectDelay>
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
-    </SpellDef>
+    </SpellDef>-->
 	
 <SpellDef InternalName="SoulOfOre">
         <DisplayName>Soul Of Ore</DisplayName>
@@ -4125,11 +4003,10 @@
         <SpellClass>Terraform</SpellClass>
         <SpellSubClass>Other</SpellSubClass>
         <SpellTargetType>Any</SpellTargetType>
-		<EarthShards>5</EarthShards>
         <Radius>1</Radius>
         <Prereq>
             <Type>AbilityBonusOption</Type>
-            <Attribute>Earth1</Attribute>
+            <Attribute>Earth5</Attribute>
         </Prereq>
         <SpellResourceCost>
             <Resource>Mana</Resource>
@@ -4214,50 +4091,6 @@
         </SpellDefEffect>
     </SpellDef>
 	
-	
-	<SpellDef InternalName="InviteJaggedRock">
-        <DisplayName>Invite Jagged Rock</DisplayName>
-        <Description>Razor-sharp flint juts up from below the earth, doing 10 damage to any unit entering the tile.</Description>
-        <Image>S_CreateMountain_Painting.png</Image>
-        <IconFG>S_Consume_Icon.png</IconFG>
-		<AutoUnlock>1</AutoUnlock>
-		<Cooldown>10</Cooldown>
-        <SpellBookSortCategory>Unit</SpellBookSortCategory>
-        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
-        <SpellType>Tactical</SpellType>
-        <SpellClass>Offensive</SpellClass>
-        <SpellSubClass>Damage</SpellSubClass>
-        <SpellTargetType>EnemyUnit</SpellTargetType>
-		<EarthShards>1</EarthShards>
-		<Range>3</Range>		
-        <!--<Prereq>
-            <Type>AbilityBonusOption</Type>
-            <Attribute>Earth1</Attribute>
-        </Prereq>-->
-        <SpellResourceCost>
-            <Resource>Mana</Resource>
-            <Amount>10</Amount>
-        </SpellResourceCost>
-        <GameModifier>
-            <ModType>Map</ModType>
-            <Attribute>CreateWorldProp</Attribute>
-            <StrVal>flint_tile1</StrVal>
-            <Duration>-1</Duration>
-        </GameModifier>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>DefendableDamage</Attribute>
-            <AttackStat>UnitStat_Attack_Pierce</AttackStat>
-            <ApplyToTile>1</ApplyToTile>
-            <Duration>0</Duration>
-            <DurationOnTile>-1</DurationOnTile>
-			<Value>10</Value>
-        </GameModifier>	
-        <AIData AIPersonality="AI_General">
-            <AIPriority>100</AIPriority>
-        </AIData>
-        <HitSoundFX>Spell_PullOfTheEarth_01</HitSoundFX>
-    </SpellDef>
 
 <SpellDef InternalName="MineralBlessing">
         <DisplayName>Blessing Of Minerals</DisplayName>
@@ -4385,49 +4218,7 @@
 <!-- Death Spells -->
 
 
-<SpellDef InternalName="InviteFilth">
-        <DisplayName>Invite Filth</DisplayName>
-        <Description>Fill a tile under an enemy with toxins for 3 turns. Any enemy unit passing through the tile takes 5 poison damage.</Description>
-        <Image>T_Infection_Painting.png</Image>
-        <IconFG>T_Infection_Icon.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>
-		<Cooldown>10</Cooldown>		
-        <SpellBookSortCategory>Unit</SpellBookSortCategory>
-        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
-        <SpellType>Tactical</SpellType>
-        <SpellClass>Offensive</SpellClass>
-        <SpellSubClass>Damage</SpellSubClass>
-        <SpellTargetType>EnemyUnit</SpellTargetType>
-		<DeathShards>1</DeathShards>		
-		<Range>3</Range>		
-        <!--<Prereq>
-            <Type>AbilityBonusOption</Type>
-            <Attribute>Fire1</Attribute>
-        </Prereq>-->
-        <SpellResourceCost>
-            <Resource>Mana</Resource>
-            <Amount>10</Amount>
-        </SpellResourceCost>
-        <GameModifier>
-            <ModType>Map</ModType>
-            <Attribute>CreateWorldProp</Attribute>
-            <StrVal>TD_Filth</StrVal>
-            <Duration>-1</Duration>
-        </GameModifier>				
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>DefendableDamage</Attribute>
-            <AttackStat>UnitStat_Attack_Poison</AttackStat>
-            <ApplyToTile>1</ApplyToTile>
-            <Duration>0</Duration>
-            <DurationOnTile>-1</DurationOnTile>
-			<Value>5</Value>
-        </GameModifier>
-        <AIData AIPersonality="AI_General">
-            <AIPriority>100</AIPriority>
-        </AIData>
-        <HitSoundFX>Spell_Contagion_01</HitSoundFX>
-    </SpellDef>
+	
 
 <SpellDef InternalName="SoulOfTheSands">
         <DisplayName>Soul Of The Sands</DisplayName>
@@ -4548,11 +4339,10 @@
         <SpellType>Strategic</SpellType>
         <SpellClass>ImpResourceBooster</SpellClass>
         <SpellSubClass>Debuff</SpellSubClass>
-        <SpellTargetType>EnemyCity</SpellTargetType>
-		<DeathShards>5</DeathShards>		
+        <SpellTargetType>EnemyCity</SpellTargetType>		
         <Prereq>
             <Type>AbilityBonusOption</Type>
-            <Attribute>Death1</Attribute>
+            <Attribute>Death5</Attribute>
         </Prereq>
         <SpellResourceCost>
             <Resource>Mana</Resource>
@@ -6106,6 +5896,346 @@
             <PlayOnAllTargets>1</PlayOnAllTargets>
         </SpellDefEffect>
     </SpellDef>
+	
+	<!-- 1 shard spells -->
+	
+	<SpellDef InternalName="InviteJaggedRock">
+        <DisplayName>Invite Jagged Rock</DisplayName>
+        <Description>Razor-sharp flint juts up from below the earth, doing 10 damage to any unit entering the tile.</Description>
+        <Image>S_CreateMountain_Painting.png</Image>
+        <IconFG>S_Consume_Icon.png</IconFG>
+		<AutoUnlock>1</AutoUnlock>
+		<Cooldown>10</Cooldown>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+		<EarthShards>1</EarthShards>
+		<Range>3</Range>		
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>10</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>CreateWorldProp</Attribute>
+            <StrVal>flint_tile1</StrVal>
+            <Duration>-1</Duration>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Pierce</AttackStat>
+            <ApplyToTile>1</ApplyToTile>
+            <Duration>0</Duration>
+            <DurationOnTile>-1</DurationOnTile>
+			<Value>10</Value>
+        </GameModifier>	
+        <AIData AIPersonality="AI_General">
+            <AIPriority>100</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_PullOfTheEarth_01</HitSoundFX>
+    </SpellDef>
+	
+	<SpellDef InternalName="InviteFilth">
+        <DisplayName>Invite Filth</DisplayName>
+        <Description>Fill a tile under an enemy with toxins for 3 turns. Any enemy unit passing through the tile takes 5 poison damage.</Description>
+        <Image>T_Infection_Painting.png</Image>
+        <IconFG>T_Infection_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+		<Cooldown>10</Cooldown>		
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+		<DeathShards>1</DeathShards>		
+		<Range>3</Range>		
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>10</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>CreateWorldProp</Attribute>
+            <StrVal>TD_Filth</StrVal>
+            <Duration>-1</Duration>
+        </GameModifier>				
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Poison</AttackStat>
+            <ApplyToTile>1</ApplyToTile>
+            <Duration>0</Duration>
+            <DurationOnTile>-1</DurationOnTile>
+			<Value>5</Value>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>100</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Contagion_01</HitSoundFX>
+    </SpellDef>
+	
+	<SpellDef InternalName="InviteStorm">
+        <DisplayName>Invite Storm</DisplayName>
+        <Description>Incite a stormcloud in an enemy tile for 3 turns, doing 6 lightning damage to any enemy unit passing through it.</Description>
+        <Image>T_Storm_Painting.png</Image>
+        <IconFG>S_Tornado_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+		<Cooldown>10</Cooldown>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+		<AirShards>1</AirShards>		
+		<Range>3</Range>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>10</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>CreateWorldProp</Attribute>
+            <StrVal>TD_StormWall</StrVal>
+            <Duration>-1</Duration>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Lightning</AttackStat>
+            <ApplyToTile>1</ApplyToTile>
+            <Duration>0</Duration>
+            <DurationOnTile>-1</DurationOnTile>
+			<Value>6</Value>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>100</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Storm_01</HitSoundFX>
+    </SpellDef>
+	
+	<SpellDef InternalName="InviteFrost">
+        <DisplayName>Invite Frost</DisplayName>
+        <Description>Plunge the temperature of an enemy's tile, doing 5 cold damage to any enemy unit passing through it.</Description>
+        <Image>Arctic_Wrath_Painting.png</Image>
+        <IconFG>Arctic_Wrath.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+		<Cooldown>10</Cooldown>		
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+		<WaterShards>1</WaterShards>
+		<Range>3</Range>		
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>10</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>CreateWorldProp</Attribute>
+            <StrVal>TD_FrostWall</StrVal>
+            <Duration>-1</Duration>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Cold</AttackStat>
+            <ApplyToTile>1</ApplyToTile>
+            <Duration>0</Duration>
+            <DurationOnTile>-1</DurationOnTile>
+			<Value>5</Value>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>100</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_FreezeGroup_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_Freeze_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>3</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+	
+	
+<SpellDef InternalName="InviteRejuvenation">
+        <DisplayName>Invite Rejuvenation</DisplayName>
+        <Description>Fill a tile under an ally with healing energy for 3 turns. Any unit passing through the tile heals 5 damage.</Description>
+        <Image>S_Regeneration_Painting.png</Image>
+        <IconFG>S_Regeneration_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+		<Cooldown>10</Cooldown>		
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Heal</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Heal</SpellSubClass>
+        <SpellTargetType>FriendlyUnit</SpellTargetType>
+		<LifeShards>1</LifeShards>		
+		<Range>3</Range>		
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>10</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>CreateWorldProp</Attribute>
+            <StrVal>TD_HealingTile</StrVal>
+            <Duration>-1</Duration>
+        </GameModifier>				
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>CurHealth</Attribute>
+            <ApplyToTile>1</ApplyToTile>
+            <Duration>0</Duration>
+            <DurationOnTile>-1</DurationOnTile>
+			<Value>5</Value>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>100</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_MassRegeneration_01</HitSoundFX>
+    </SpellDef>
+	
+	<SpellDef InternalName="InviteFire">
+        <DisplayName>Invite Fire</DisplayName>
+        <Description>Ignite a tile under an enemy for 3 turns. Any enemy unit passing through the tile takes 5 fire damage.</Description>
+        <Image>Incineration_Painting.png</Image>
+        <IconFG>U_Inferno_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+		<Cooldown>10</Cooldown>		
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+		<FireShards>1</FireShards>		
+		<Range>3</Range>		
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>10</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>CreateWorldProp</Attribute>
+            <StrVal>TD_Groundfire</StrVal>
+            <Duration>-1</Duration>
+        </GameModifier>				
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Fire</AttackStat>
+            <ApplyToTile>1</ApplyToTile>
+            <Duration>0</Duration>
+            <DurationOnTile>-1</DurationOnTile>
+			<Value>5</Value>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>100</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Inferno_01</HitSoundFX>
+    </SpellDef>
+	
+	<!-- 3 shard spells -->
+	
+	<SpellDef InternalName="WaterShardWrath">
+        <DisplayName>Water Shard's Wrath</DisplayName>
+        <Description>A beam of ice shoots at an enemy for 20 (+2 per water shard) cold damage.</Description>
+        <FormattedDescription>A beam of ice shoots at an enemy for 20 (+2 per water shard) cold damage.</FormattedDescription>
+        <Image>S_Freeze_Painting.png</Image>
+        <IconFG>Icon_Water.png</IconFG>
+		<Cooldown>3</Cooldown>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+        <IsResistable>1</IsResistable>
+		<WaterShards>3</WaterShards>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Water1</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>15</Amount>
+        </SpellResourceCost>		
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Cold</AttackStat>
+            <IsForFormattedDescription>1</IsForFormattedDescription>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumWaterShards] * 2]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc2" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[Calc] + 20]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[Calc2]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="ValueForFormattedDescription">
+                <Expression><![CDATA[[Calc2]]]></Expression>
+            </Calculate>			
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Cold</AttackStat>
+            <IsForSpellResist>1</IsForSpellResist>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumWaterShards]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc2" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[Calc] + 10]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[Calc2]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="ValueForFormattedDescription">
+                <Expression><![CDATA[[Calc2]]]></Expression>
+            </Calculate>			
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>100</AIPriority>
+        <ValueCalcWrapper>
+            <ValueType>IsTargetWorthy</ValueType>
+            <Calculate InternalName="Calc" ValueOwner="TargetUnit">
+                <Expression><![CDATA[[UnitStat_ResistCold]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc] < 75]]></Expression>
+            </Calculate>
+        </ValueCalcWrapper>
+        </AIData>
+        <HitSoundFX>Spell_IceArrow_Hit_01</HitSoundFX>
+        <HitSoundFX>Spell_IceArrow_Hit_02</HitSoundFX>
+        <SpellCastSoundFX>Spell_BowAttack_FreezingCast_01</SpellCastSoundFX>
+        <SpellCastEffectName>A_IceStaff_Projectile_Particle</SpellCastEffectName>
+        <SpellCastEffectScale>0.5</SpellCastEffectScale>
+        <SpellCastProjectile>1</SpellCastProjectile>
+        <SpellCastProjectileSpeed>600</SpellCastProjectileSpeed>
+        <SpellDefEffect>
+            <EffectName>A_HailstoneStaff_Impact_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>0.9</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+	
+	<!-- 5 shard spells -->
 	
 
 </Spells>
