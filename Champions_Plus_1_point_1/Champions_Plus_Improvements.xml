@@ -36,7 +36,7 @@
         <ArtDef>Art_ArcanaWard</ArtDef>
     </ImprovementType>
 	
-	<ImprovementType InternalName="PillarOfForesight">
+	<!--<ImprovementType InternalName="PillarOfForesight">
         <DisplayName>Pillar Of Foresight</DisplayName>
         <Description>This magical pillar will give city defenders a massive advantage when defending.</Description>
 		<AllowedPerFaction>1</AllowedPerFaction>		
@@ -96,7 +96,7 @@
             <AITag>Defensive</AITag>
         </AIData>
         <ArtDef>Art_PillarOfForesight</ArtDef>
-    </ImprovementType>
+    </ImprovementType>-->
 	
 	<ImprovementType InternalName="Smithy">
         <DisplayName>Smithy</DisplayName>

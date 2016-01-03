@@ -4979,8 +4979,8 @@
         <SpellSubClass>Buff</SpellSubClass>
         <SpellTargetType>FriendlyCity</SpellTargetType>
         <SpellResourceCost>
-            <Resource>SovereignWrath</Resource>
-            <Amount>50</Amount>
+            <Resource>Mana</Resource>
+            <Amount>400</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>City</ModType>

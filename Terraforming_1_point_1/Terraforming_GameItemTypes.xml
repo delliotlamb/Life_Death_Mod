@@ -1015,7 +1015,7 @@
         <ArtDef>WindCoins_ArtDef</ArtDef>
         <GameItemTypeArtDef InternalName="WindCoins_ArtDef">
             <GameItemTypeModelPack InternalName="WindCoins_Default">
-                <IconFile>Gold_Small1.png</IconFile>
+                <IconFile>Gold_Large1.png</IconFile>
                 <TintR>240</TintR>
                 <TintG>10</TintG>
                 <TintB>10</TintB>
@@ -1164,7 +1164,7 @@
         <ProductionRequirement>
             <Type>Resource</Type>
             <Attribute>WaveEssence</Attribute>
-            <Value>1</Value>
+            <Value>.5</Value>
         </ProductionRequirement>		
         <GameModifier>
             <ModType>Unit</ModType>
@@ -1188,7 +1188,7 @@
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_MagicResist</StrVal>
-            <Value>5</Value>
+            <Value>10</Value>
         </GameModifier>		
         <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
         <Likelihood>-1</Likelihood>
@@ -1235,12 +1235,13 @@
             <Attribute>VerdantEssence</Attribute>
             <Value>4</Value>
         </ProductionRequirement>		
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_Attack_Pierce</StrVal>
-            <Value>1</Value>
-        </GameModifier>		
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Stamina_Starting</StrVal>
+                <Value>2</Value>
+                <Provides>+2 to the Army's Starting Stamina</Provides>
+            </GameModifier>	
         <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
         <Likelihood>-1</Likelihood>
         <RarityDisplay>UltraRare</RarityDisplay>

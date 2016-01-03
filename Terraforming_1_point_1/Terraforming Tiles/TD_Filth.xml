@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<TileDesigns>
+	<DataChecksum NoParse="1">
+		<Ignore>DisplayName</Ignore>
+		<Translate>DisplayName</Translate>
+	</DataChecksum>
+	<TileDesign InternalName="TD_Filth">
+		<DisplayName>TD_Filth</DisplayName>
+		<Thumbnail>\Game\Gfx\tile_icon.png</Thumbnail>
+		<LowResShadow>TD_Filth_shadow.png</LowResShadow>
+		<HighResShadow>TD_Filth_shadow.png</HighResShadow>
+		<ShadowTransparency>60</ShadowTransparency>
+		<IsCore>0</IsCore>
+		<IsHiddenFromEditor>0</IsHiddenFromEditor>
+		<SubTileFlags>15</SubTileFlags>
+		<TileDesignPath InternalName="_path0"/>
+		<EffectTrigger InternalName="Poison_Shot">
+			<EffectName>Poison_Shot</EffectName>
+			<LocalPosition>0.369888,-33.000000,1.587158</LocalPosition>
+			<Scale>0.5000</Scale>
+			<IndefiniteRepeat>1</IndefiniteRepeat>
+			<SpawnOnCreation>1</SpawnOnCreation>
+		</EffectTrigger>
+	</TileDesign>
+</TileDesigns>
