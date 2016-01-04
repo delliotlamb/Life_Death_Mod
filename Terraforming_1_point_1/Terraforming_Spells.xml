@@ -6150,8 +6150,8 @@
 	
 	<SpellDef InternalName="WaterShardWrath">
         <DisplayName>Wrath Of Water Shards</DisplayName>
-        <Description>A beam of ice shoots at an enemy for 16 (+4 per water shard) cold damage.</Description>
-        <FormattedDescription>A beam of ice shoots at an enemy for %d cold damage.</FormattedDescription>
+        <Description>A bolt of cold shoots at an enemy for 16 (+4 per water shard) cold damage.</Description>
+        <FormattedDescription>A bolt of cold shoots at an enemy for %d cold damage.</FormattedDescription>
         <Image>T_Blizzard_Painting.png</Image>
         <IconFG>Icon_Water.png</IconFG>
 		<AutoUnlock>1</AutoUnlock>
@@ -6216,17 +6216,17 @@
             </Calculate>
         </ValueCalcWrapper>
         </AIData>
-        <HitSoundFX>Spell_IceArrow_Hit_01</HitSoundFX>
-        <HitSoundFX>Spell_IceArrow_Hit_02</HitSoundFX>
+        <HitSoundFX>Spell_FreezingArrow_Hit_01</HitSoundFX>
+        <HitSoundFX>Spell_FreezingArrow_Hit_02</HitSoundFX>
         <SpellCastSoundFX>Spell_BowAttack_FreezingCast_01</SpellCastSoundFX>
-        <SpellCastEffectName>A_IceStaff_Projectile_Particle</SpellCastEffectName>
-        <SpellCastEffectScale>0.5</SpellCastEffectScale>
+        <SpellCastEffectName>A_HailstoneStaff_Projectile_Particle</SpellCastEffectName>
+        <SpellCastEffectScale>2.0</SpellCastEffectScale>
         <SpellCastProjectile>1</SpellCastProjectile>
-        <SpellCastProjectileSpeed>600</SpellCastProjectileSpeed>
+        <SpellCastProjectileSpeed>500</SpellCastProjectileSpeed>
         <SpellDefEffect>
             <EffectName>A_HailstoneStaff_Impact_Particle</EffectName>
             <LocalPosition>0,0,0</LocalPosition>
-            <EffectScale>0.9</EffectScale>
+            <EffectScale>2</EffectScale>
             <EffectDelay>0</EffectDelay>
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
@@ -6298,7 +6298,7 @@
         <IconFG>Icon_Air.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
 		<Cooldown>3</Cooldown>
-		<CastingTime>1</CastingTime>
+		<CastTime>1</CastTime>
         <SpellBookSortCategory>Unit</SpellBookSortCategory>
         <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
         <SpellType>Tactical</SpellType>
@@ -6476,8 +6476,8 @@
     </SpellDef>
 	
 	<SpellDef InternalName="FlameLance">
-        <DisplayName>Flame Lance</DisplayName>
-        <Description>Does 20 (+4 per Fire Shard) Fire damage to all units in a line 3 tiles long.</Description>
+        <DisplayName>Wrath Of Fire Shards</DisplayName>
+        <Description>Does 24 (+4 per Fire Shard) Fire damage to all units in a line 3 tiles long.</Description>
         <FormattedDescription>Does %d Fire damage to all units in a line 3 tiles long.</FormattedDescription>
         <Image>T_FlameDart_Painting.png</Image>
         <IconFG>Icon_Fire.png</IconFG>
@@ -6507,10 +6507,10 @@
                 <Expression><![CDATA[[UnitOwner_GetNumFireShards] * 4]]></Expression>
             </Calculate>
             <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc] + 20]]></Expression>
+                <Expression><![CDATA[[Calc] + 24]]></Expression>
             </Calculate>
             <Calculate InternalName="ValueForFormattedDescription">
-                <Expression><![CDATA[[Calc] + 20]]></Expression>
+                <Expression><![CDATA[[Calc] + 24]]></Expression>
             </Calculate>
         </GameModifier>
         <GameModifier>
@@ -6522,10 +6522,10 @@
                 <Expression><![CDATA[[UnitOwner_GetNumFireShards] * 2]]></Expression>
             </Calculate>
             <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc] + 10]]></Expression>
+                <Expression><![CDATA[[Calc] + 12]]></Expression>
             </Calculate>
             <Calculate InternalName="ValueForFormattedDescription">
-                <Expression><![CDATA[[Calc] + 10]]></Expression>
+                <Expression><![CDATA[[Calc] + 12]]></Expression>
             </Calculate>
         </GameModifier>
         <AIData AIPersonality="AI_General">
