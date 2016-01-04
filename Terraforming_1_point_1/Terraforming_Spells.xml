@@ -6429,7 +6429,7 @@
 	
 	<SpellDef InternalName="LifeShardWrath">
         <DisplayName>Boon of Life Shards</DisplayName>
-        <Description>All friendly units get +2 Stamina per Life shard.</Description>
+        <Description>All friendly units get +1 Stamina per Life shard.</Description>
         <Image>T_Hope_Painting.png</Image>
         <IconFG>Icon_Life.png</IconFG>
 		<AutoUnlock>1</AutoUnlock>		
@@ -6455,7 +6455,7 @@
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_Stamina</StrVal>
             <Calculate InternalName="Calc" ValueOwner="CastingUnit">
-                <Expression><![CDATA[[UnitOwner_GetNumLifeShards] * 2]]></Expression>
+                <Expression><![CDATA[[UnitOwner_GetNumLifeShards]]]></Expression>
             </Calculate>
             <Calculate InternalName="Value">
                 <Expression><![CDATA[[Calc]]]></Expression>
