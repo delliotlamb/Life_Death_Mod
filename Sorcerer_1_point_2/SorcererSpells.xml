@@ -2683,6 +2683,10 @@
         <SpellClass>Offensive</SpellClass>
         <SpellSubClass>Damage</SpellSubClass>
         <SpellTargetType>EnemyUnit</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Elemancy</Attribute>
+        </Prereq>		
         <SpellResourceCost>
             <Resource>ShardEssence</Resource>
             <Amount>2</Amount>

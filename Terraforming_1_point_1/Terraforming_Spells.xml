@@ -3477,6 +3477,10 @@
         <SpellTargetType>FriendlyUnit</SpellTargetType>
         <UnitAppSpecifier>ApplyToAll</UnitAppSpecifier>
         <CasterMustBeSov>1</CasterMustBeSov>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Earth3</Attribute>
+        </Prereq>		
         <SpellResourceCost>
             <Resource>MineralEssence</Resource>
             <Amount>30</Amount>
@@ -5953,7 +5957,11 @@
         <SpellSubClass>Damage</SpellSubClass>
         <SpellTargetType>EnemyUnit</SpellTargetType>
 		<DeathShards>1</DeathShards>		
-		<Range>3</Range>		
+		<Range>3</Range>
+        <Prereq>
+            <Type>Allegiance</Type>
+            <Attribute>Empire</Attribute>
+        </Prereq>		
         <SpellResourceCost>
             <Resource>Mana</Resource>
             <Amount>10</Amount>
@@ -6081,7 +6089,11 @@
         <SpellSubClass>Heal</SpellSubClass>
         <SpellTargetType>FriendlyUnit</SpellTargetType>
 		<LifeShards>1</LifeShards>		
-		<Range>3</Range>		
+		<Range>3</Range>	
+        <Prereq>
+            <Type>Allegiance</Type>
+            <Attribute>Kingdom</Attribute>
+        </Prereq>		
         <SpellResourceCost>
             <Resource>Mana</Resource>
             <Amount>10</Amount>
