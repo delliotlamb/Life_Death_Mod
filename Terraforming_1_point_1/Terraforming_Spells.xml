@@ -2381,7 +2381,7 @@
 	
 	<SpellDef InternalName="Eruption">
         <DisplayName>Eruption</DisplayName>
-        <Description>Summon a minor volcano among your enemies, setting a 2x2 secton of the battlefield ablaze.</Description>
+        <Description>Summon a minor volcano among your enemies, flooding a 2x2 section of the battlefield with lava that does 20 fire damage to any unit present.</Description>
         <Image>S_CurgensVolcano_Painting.png</Image>
         <IconFG>S_CurgensVolcano_Icon.png</IconFG>
         <CastTime>2</CastTime>
@@ -2399,7 +2399,7 @@
         <GameModifier>
             <ModType>Map</ModType>
             <Attribute>CreateWorldProp</Attribute>
-            <StrVal>TD_Groundfire</StrVal>
+            <StrVal>TD_LavaTile1</StrVal>
             <Duration>-1</Duration>
         </GameModifier>				
         <GameModifier>
@@ -2409,7 +2409,7 @@
             <ApplyToTile>1</ApplyToTile>
             <Duration>0</Duration>
             <DurationOnTile>-1</DurationOnTile>
-			<Value>10</Value>
+			<Value>20</Value>
         </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>100</AIPriority>
@@ -2431,7 +2431,9 @@
             <EffectDelay>1</EffectDelay>
             <SnapToTerrain>0</SnapToTerrain>
         </SpellDefEffect>
-    </SpellDef><SpellDef InternalName="HungeringFire">
+    </SpellDef>
+	
+	<SpellDef InternalName="HungeringFire">
         <DisplayName>Kindling Curse</DisplayName>
         <Description>Target unit has its fire resist reduced by 5 (extra -4 per fire shard).</Description>
         <Image>Hungering_Fire_Painting.png</Image>
@@ -2568,9 +2570,9 @@
         </AIData>
         <HitSoundFX>Spell_RainofFire_03</HitSoundFX>
         <SpellDefEffect>
-            <EffectName>E_FireballExplosion_Particle</EffectName>
+            <EffectName>Hit_Fire1</EffectName>
             <LocalPosition>0,0,0</LocalPosition>
-            <EffectScale>3</EffectScale>
+            <EffectScale>2</EffectScale>
             <EffectDelay>0</EffectDelay>
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
@@ -6603,24 +6605,21 @@
         </SpellDefEffect>
     </SpellDef>
 	
-	<SpellDef InternalName="FlameLance">
+	<SpellDef InternalName="FireShardWrath">
         <DisplayName>Wrath Of Fire Shards</DisplayName>
-        <Description>Does 24 (+4 per Fire Shard) Fire damage to all units in a line 3 tiles long.</Description>
-        <FormattedDescription>Does %d Fire damage to all units in a line 3 tiles long.</FormattedDescription>
+        <Description>Does 12 (+4 per Fire Shard) non-elemental damage to a unit.</Description>
+        <FormattedDescription>Does %d non-elemental damage to a unit.</FormattedDescription>
         <Image>T_FlameDart_Painting.png</Image>
         <IconFG>Icon_Fire.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
+		<Cooldown>5</Cooldown>
         <SpellBookSortCategory>Unit</SpellBookSortCategory>
         <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
         <SpellType>Tactical</SpellType>
         <SpellClass>Offensive</SpellClass>
         <SpellSubClass>Damage</SpellSubClass>
         <SpellTargetType>EnemyUnit</SpellTargetType>
-        <IgnoreInvalidTargetsInRadius>1</IgnoreInvalidTargetsInRadius>
         <IsResistable>1</IsResistable>
-        <Radius>3</Radius>
-        <RadiusType>LINE_FORWARD</RadiusType>
-        <Range>1</Range>
 		<FireShards>3</FireShards>	
         <Prereq>
             <Type>AbilityBonusOption</Type>
@@ -6632,50 +6631,45 @@
         </SpellResourceCost>
         <GameModifier>
             <ModType>Unit</ModType>
-            <Attribute>DefendableDamage</Attribute>
-            <AttackStat>UnitStat_Attack_Fire</AttackStat>
+            <Attribute>CurHealth</Attribute>
             <IsForFormattedDescription>1</IsForFormattedDescription>
             <Calculate InternalName="Calc" ValueOwner="CastingUnit">
-                <Expression><![CDATA[[UnitOwner_GetNumFireShards] * 4]]></Expression>
+                <Expression><![CDATA[[UnitOwner_GetNumFireShards] * -4]]></Expression>
             </Calculate>
             <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc] + 24]]></Expression>
+                <Expression><![CDATA[[Calc] - 12]]></Expression>
             </Calculate>
             <Calculate InternalName="ValueForFormattedDescription">
-                <Expression><![CDATA[[Calc] + 24]]></Expression>
+                <Expression><![CDATA[[Calc] - 12]]></Expression>
             </Calculate>
         </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
-            <Attribute>DefendableDamage</Attribute>
-            <AttackStat>UnitStat_Attack_Fire</AttackStat>
+            <Attribute>CurHealth</Attribute>
             <IsForSpellResist>1</IsForSpellResist>
             <Calculate InternalName="Calc" ValueOwner="CastingUnit">
-                <Expression><![CDATA[[UnitOwner_GetNumFireShards] * 2]]></Expression>
+                <Expression><![CDATA[[UnitOwner_GetNumFireShards] * -4]]></Expression>
             </Calculate>
             <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc] + 12]]></Expression>
-            </Calculate>
-            <Calculate InternalName="ValueForFormattedDescription">
-                <Expression><![CDATA[[Calc] + 12]]></Expression>
+                <Expression><![CDATA[[Calc] - 12]]></Expression>
             </Calculate>
         </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>100</AIPriority>
-            <AIMinSpellTargets>2</AIMinSpellTargets>
-        <ValueCalcWrapper>
-            <ValueType>IsTargetWorthy</ValueType>
-            <Calculate InternalName="Calc" ValueOwner="TargetUnit">
-                <Expression><![CDATA[[UnitStat_ResistFire]]]></Expression>
-            </Calculate>
-            <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc] < 75]]></Expression>
-            </Calculate>
-        </ValueCalcWrapper>
         </AIData>
-        <SpellCastSoundFX>Spells_DragonFire_01</SpellCastSoundFX>
-        <SpellCastEffectName>Y_Firebreath_Particle</SpellCastEffectName>
-        <SpellCastEffectScale>2.0</SpellCastEffectScale>
+        <HitSoundFX>Spell_FlameDart_01</HitSoundFX>
+        <SpellCastSoundFX>Spell_FlameDartTravel_01</SpellCastSoundFX>		
+        <SpellCastEffectName>A_LightningLongbow_Particle</SpellCastEffectName>
+        <SpellCastEffectScale>1</SpellCastEffectScale>
+        <SpellCastProjectile>1</SpellCastProjectile>
+        <SpellCastProjectileSpeed>1000</SpellCastProjectileSpeed>
+        <SpellDefEffect>
+            <EffectName>A_LightningLongbow_Impact_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>		
     </SpellDef>
 	
 	

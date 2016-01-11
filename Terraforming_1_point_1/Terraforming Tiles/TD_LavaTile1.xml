@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<TileDesigns>
+	<DataChecksum NoParse="1">
+		<Ignore>DisplayName</Ignore>
+		<Translate>DisplayName</Translate>
+	</DataChecksum>
+	<TileDesign InternalName="TD_LavaTile1">
+		<DisplayName>TD_LavaTile1</DisplayName>
+		<Thumbnail>\Game\Gfx\tile_icon.png</Thumbnail>
+		<LowResShadow>TD_LavaTile1_shadow.png</LowResShadow>
+		<HighResShadow>TD_LavaTile1_shadow.png</HighResShadow>
+		<ShadowTransparency>60</ShadowTransparency>
+		<IsCore>0</IsCore>
+		<IsHiddenFromEditor>0</IsHiddenFromEditor>
+		<SubTileFlags>15</SubTileFlags>
+		<TileDesignPath InternalName="_path0"/>
+		<EffectTrigger InternalName="LavaPool">
+			<EffectName>LavaPool</EffectName>
+			<LocalPosition>-1.752441,0.000000,3.152740</LocalPosition>
+			<Scale>0.2000</Scale>
+			<IndefiniteRepeat>1</IndefiniteRepeat>
+			<SpawnOnCreation>1</SpawnOnCreation>
+		</EffectTrigger>
+	</TileDesign>
+</TileDesigns>
