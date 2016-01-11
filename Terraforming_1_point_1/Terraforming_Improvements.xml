@@ -3,6 +3,7 @@
     <ImprovementType InternalName="EnchantedGarden">
         <DisplayName>Enchanted Garden</DisplayName>
         <Description>Enchanted Gardens provide life power every turn.</Description>		
+        <AllowedPerFaction>1</AllowedPerFaction>		
         <RequiresCity>1</RequiresCity>		
         <BarredTerrain>River</BarredTerrain>
         <BarredTerrain>SwampTerrain</BarredTerrain>
@@ -33,6 +34,13 @@
             <PerTurn>1</PerTurn>
             <Provides>+1 Life Power</Provides>
         </GameModifier>	
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>TileYieldGrain</Attribute>
+            <Duration>-1</Duration>
+            <PerTurn>1</PerTurn>
+            <Value>1</Value>
+        </GameModifier>		
         <AIData AIPersonality="AI_General">
             <AIPriority>5</AIPriority>
         </AIData>
@@ -53,7 +61,8 @@
 
 <ImprovementType InternalName="StoneShrine">
         <DisplayName>Stone Shrine</DisplayName>
-        <Description>Stone Shrines provide Earth power every season.</Description>		
+        <Description>Stone Shrines provide Earth power every season.</Description>	
+        <AllowedPerFaction>1</AllowedPerFaction>		
         <RequiresCity>1</RequiresCity>		
         <BarredTerrain>River</BarredTerrain>
         <BarredTerrain>SwampTerrain</BarredTerrain>
@@ -80,6 +89,13 @@
             <PerTurn>1</PerTurn>
             <Provides>+1 Earth Power</Provides>
         </GameModifier>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>TileYieldMaterials</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>+1 Material</Provides>
+        </GameModifier>		
         <AIData AIPersonality="AI_General">
             <AIPriority>5</AIPriority>
         </AIData>
@@ -100,7 +116,8 @@
 
 <ImprovementType InternalName="PitOfFire">
         <DisplayName>Pit Of Fire</DisplayName>
-        <Description>Pits Of Fire provide Fire power every season.</Description>		
+        <Description>Pits Of Fire provide Fire power every season.</Description>
+        <AllowedPerFaction>1</AllowedPerFaction>		
         <RequiresCity>1</RequiresCity>		
         <BarredTerrain>River</BarredTerrain>
         <BarredTerrain>SwampTerrain</BarredTerrain>
@@ -127,6 +144,18 @@
             <PerTurn>1</PerTurn>
             <Provides>+1 Fire Power</Provides>
         </GameModifier>		
+		<GameModifier>
+            <ModType>City</ModType>
+            <Attribute>WallOfFire</Attribute>
+            <Duration>-1</Duration>
+        </GameModifier>
+        <GameModifier>
+            <ModType>City</ModType>
+            <Attribute>BattleAutoCastSpell</Attribute>
+            <StrVal>WallOfFire_Effect2</StrVal>
+            <Duration>-1</Duration>
+			<Provides>Attacking units take 10 (+3 per fire shard) in fire damage when combat begins.</Provides>
+        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>5</AIPriority>
         </AIData>
@@ -147,7 +176,8 @@
 
 <ImprovementType InternalName="ShimmeringPool">
         <DisplayName>Shimmering Pool</DisplayName>
-        <Description>Shimmering Pools provide Water power every season.</Description>		
+        <Description>Shimmering Pools provide Water power every season.</Description>			
+		<AllowedPerFaction>1</AllowedPerFaction>
         <RequiresCity>1</RequiresCity>		
         <BarredTerrain>River</BarredTerrain>
         <BarredTerrain>SwampTerrain</BarredTerrain>
@@ -174,6 +204,13 @@
             <PerTurn>1</PerTurn>
             <Provides>+1 Water Power</Provides>
         </GameModifier>	
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Additive_FoodPerGrain</StrVal>
+            <Value>10</Value>
+            <Provides>+10 Food per Grain for your Faction</Provides>
+        </GameModifier>		
         <AIData AIPersonality="AI_General">
             <AIPriority>5</AIPriority>
         </AIData>
@@ -196,6 +233,7 @@
 <ImprovementType InternalName="WindShrine">
         <DisplayName>Wind Shrine</DisplayName>
         <Description>Wind Shrines provide air power every season.</Description>	
+        <AllowedPerFaction>1</AllowedPerFaction>		
         <RequiresCity>1</RequiresCity>	
         <BarredTerrain>River</BarredTerrain>
         <BarredTerrain>SwampTerrain</BarredTerrain>
@@ -222,6 +260,13 @@
             <PerTurn>1</PerTurn>
             <Provides>+1 Air Power</Provides>
         </GameModifier>	
+        <GameModifier>
+            <ModType>CityDefenseSummon</ModType>
+            <Attribute>SummonUnit</Attribute>
+            <Value>1</Value>
+            <Provides>+1 Defending Air Elemental</Provides>
+            <UnitClass>AirElemental</UnitClass>
+        </GameModifier>		
         <AIData AIPersonality="AI_General">
             <AIPriority>5</AIPriority>
         </AIData>
@@ -242,7 +287,8 @@
 
 <ImprovementType InternalName="SilenceShrine">
         <DisplayName>Silence Shrine</DisplayName>
-        <Description>Silence Shrines provide Death power every season.</Description>	
+        <Description>Silence Shrines provide Death power every season.</Description>
+        <AllowedPerFaction>1</AllowedPerFaction>		
         <RequiresCity>1</RequiresCity>		
         <BarredTerrain>River</BarredTerrain>
         <BarredTerrain>SwampTerrain</BarredTerrain>
@@ -273,6 +319,13 @@
             <PerTurn>1</PerTurn>
             <Provides>+1 Death Power</Provides>
         </GameModifier>	
+        <GameModifier>
+            <ModType>CityDefenseSummon</ModType>
+            <Attribute>SummonUnit</Attribute>
+            <Value>1</Value>
+            <Provides>+1 Defending Grave Elemental</Provides>
+            <UnitClass>GraveElemental_Ancient</UnitClass>
+        </GameModifier>		
         <AIData AIPersonality="AI_General">
             <AIPriority>5</AIPriority>
         </AIData>

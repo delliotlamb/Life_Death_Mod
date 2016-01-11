@@ -581,8 +581,82 @@
         <SpellTargetType>EnemyCity</SpellTargetType>
         <Prereq>
             <Type>AbilityBonusOption</Type>
+            <Attribute>NotGonnaHappen</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <PerTurn>1</PerTurn>
+            <Amount>-14</Amount>
+        </SpellResourceCost>		
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Production</Attribute>
+            <Value>.9</Value>
+            <PerTurn>1</PerTurn>
+            <Duration>-1</Duration>			
+        </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Food</Attribute>
+            <Value>.75</Value>
+            <PerTurn>1</PerTurn>
+            <Duration>-1</Duration>			
+        </GameModifier>
+        <GameModifier>
+            <ModType>City</ModType>
+            <Attribute>TrainingDiscount</Attribute>
+            <Value>-.9</Value>
+            <Duration>-1</Duration>				
+        </GameModifier>		
+        <GameModifier>
+            <ModType>City</ModType>
+            <Duration>-1</Duration>
+            <Effect>E_GripofWinter_Particle</Effect>
+            <PerTurn>1</PerTurn>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>100</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Grip_of_Winter</HitSoundFX>
+        <WorldLightOverrideTime>6</WorldLightOverrideTime>
+        <WorldLightOverrideDiffuse>135,150,148</WorldLightOverrideDiffuse>
+        <WorldLightOverrideRim0>22,116,176</WorldLightOverrideRim0>
+        <WorldLightOverrideRim1>17,212,164</WorldLightOverrideRim1>
+        <SpellDefEffect>
+            <EffectName>S_GripofWinter_Particle</EffectName>
+            <LocalPosition>0,25,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+	
+	<SpellDef InternalName="GripOfWinter2">
+        <DisplayName>Grip of Winter</DisplayName>
+        <Description>Massively slows all production, training, and food production in target city.</Description>
+        <Image>S_GripofWinter_Painting.png</Image>
+        <IconFG>S_GripofWinter_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <CanStack>0</CanStack>
+        <SpellBookSortCategory>City</SpellBookSortCategory>
+        <SpellBookSortSubCategory>CityCurse</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>EnemyCity</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
             <Attribute>Water5</Attribute>
         </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>120</Amount>
+        </SpellResourceCost>		
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <PerTurn>1</PerTurn>
+            <Amount>2</Amount>
+        </SpellResourceCost>		
         <GameModifier>
             <ModType>ResourceMultiplier</ModType>
             <Attribute>Production</Attribute>
@@ -5905,7 +5979,7 @@
 	
 	<SpellDef InternalName="InviteJaggedRock">
         <DisplayName>Invite Jagged Rock</DisplayName>
-        <Description>Razor-sharp flint juts up from below the earth, doing 10 damage to any unit entering the tile.</Description>
+        <Description>Razor-sharp flint juts up from below the earth, doing 15 damage to any unit entering the tile.</Description>
         <Image>S_CreateMountain_Painting.png</Image>
         <IconFG>S_Consume_Icon.png</IconFG>
 		<AutoUnlock>1</AutoUnlock>
@@ -5917,7 +5991,10 @@
         <SpellSubClass>Damage</SpellSubClass>
         <SpellTargetType>EnemyUnit</SpellTargetType>
 		<EarthShards>1</EarthShards>
-		<Range>3</Range>		
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Earth1</Attribute>
+        </Prereq>	
         <SpellResourceCost>
             <Resource>Mana</Resource>
             <Amount>10</Amount>
@@ -5935,7 +6012,7 @@
             <ApplyToTile>1</ApplyToTile>
             <Duration>0</Duration>
             <DurationOnTile>-1</DurationOnTile>
-			<Value>10</Value>
+			<Value>15</Value>
         </GameModifier>	
         <AIData AIPersonality="AI_General">
             <AIPriority>100</AIPriority>
@@ -5945,7 +6022,7 @@
 	
 	<SpellDef InternalName="InviteFilth">
         <DisplayName>Invite Filth</DisplayName>
-        <Description>Fill a tile under an enemy with toxins for 3 turns. Any enemy unit passing through the tile takes 5 poison damage.</Description>
+        <Description>Fill a tile under an enemy with toxins for 3 turns. Any enemy unit passing through the tile takes 10 poison damage.</Description>
         <Image>T_Infection_Painting.png</Image>
         <IconFG>T_Infection_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -5957,7 +6034,10 @@
         <SpellSubClass>Damage</SpellSubClass>
         <SpellTargetType>EnemyUnit</SpellTargetType>
 		<DeathShards>1</DeathShards>		
-		<Range>3</Range>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Death1</Attribute>
+        </Prereq>
         <Prereq>
             <Type>Allegiance</Type>
             <Attribute>Empire</Attribute>
@@ -5979,7 +6059,7 @@
             <ApplyToTile>1</ApplyToTile>
             <Duration>0</Duration>
             <DurationOnTile>-1</DurationOnTile>
-			<Value>5</Value>
+			<Value>10</Value>
         </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>100</AIPriority>
@@ -5989,7 +6069,7 @@
 	
 	<SpellDef InternalName="InviteStorm">
         <DisplayName>Invite Storm</DisplayName>
-        <Description>Incite a stormcloud in an enemy tile for 3 turns, doing 6 lightning damage to any enemy unit passing through it.</Description>
+        <Description>Incite a stormcloud in an enemy tile for 3 turns, doing 10 lightning damage to any enemy unit passing through it.</Description>
         <Image>T_Storm_Painting.png</Image>
         <IconFG>S_Tornado_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -6001,7 +6081,10 @@
         <SpellSubClass>Damage</SpellSubClass>
         <SpellTargetType>EnemyUnit</SpellTargetType>
 		<AirShards>1</AirShards>		
-		<Range>3</Range>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Air1</Attribute>
+        </Prereq>
         <SpellResourceCost>
             <Resource>Mana</Resource>
             <Amount>10</Amount>
@@ -6019,7 +6102,7 @@
             <ApplyToTile>1</ApplyToTile>
             <Duration>0</Duration>
             <DurationOnTile>-1</DurationOnTile>
-			<Value>6</Value>
+			<Value>10</Value>
         </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>100</AIPriority>
@@ -6029,7 +6112,7 @@
 	
 	<SpellDef InternalName="InviteFrost">
         <DisplayName>Invite Frost</DisplayName>
-        <Description>Plunge the temperature of an enemy's tile, doing 5 cold damage to any enemy unit passing through it.</Description>
+        <Description>Plunge the temperature of an enemy's tile, doing 10 cold damage to any enemy unit passing through it.</Description>
         <Image>Arctic_Wrath_Painting.png</Image>
         <IconFG>Arctic_Wrath.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -6041,7 +6124,10 @@
         <SpellSubClass>Damage</SpellSubClass>
         <SpellTargetType>EnemyUnit</SpellTargetType>
 		<WaterShards>1</WaterShards>
-		<Range>3</Range>		
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Water1</Attribute>
+        </Prereq>	
         <SpellResourceCost>
             <Resource>Mana</Resource>
             <Amount>10</Amount>
@@ -6059,7 +6145,7 @@
             <ApplyToTile>1</ApplyToTile>
             <Duration>0</Duration>
             <DurationOnTile>-1</DurationOnTile>
-			<Value>5</Value>
+			<Value>10</Value>
         </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>100</AIPriority>
@@ -6077,7 +6163,7 @@
 	
 <SpellDef InternalName="InviteRejuvenation">
         <DisplayName>Invite Rejuvenation</DisplayName>
-        <Description>Fill a tile under an ally with healing energy for 3 turns. Any unit passing through the tile heals 5 damage.</Description>
+        <Description>Fill a tile under an ally with healing energy for 3 turns. Any unit passing through the tile heals 6 damage.</Description>
         <Image>S_Regeneration_Painting.png</Image>
         <IconFG>S_Regeneration_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -6089,7 +6175,10 @@
         <SpellSubClass>Heal</SpellSubClass>
         <SpellTargetType>FriendlyUnit</SpellTargetType>
 		<LifeShards>1</LifeShards>		
-		<Range>3</Range>	
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Life1</Attribute>
+        </Prereq>	
         <Prereq>
             <Type>Allegiance</Type>
             <Attribute>Kingdom</Attribute>
@@ -6110,7 +6199,7 @@
             <ApplyToTile>1</ApplyToTile>
             <Duration>0</Duration>
             <DurationOnTile>-1</DurationOnTile>
-			<Value>5</Value>
+			<Value>6</Value>
         </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>100</AIPriority>
@@ -6120,7 +6209,7 @@
 	
 	<SpellDef InternalName="InviteFire">
         <DisplayName>Invite Fire</DisplayName>
-        <Description>Ignite a tile under an enemy for 3 turns. Any enemy unit passing through the tile takes 5 fire damage.</Description>
+        <Description>Ignite a tile under an enemy for 3 turns. Any enemy unit passing through the tile takes 10 fire damage.</Description>
         <Image>Incineration_Painting.png</Image>
         <IconFG>U_Inferno_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -6131,8 +6220,11 @@
         <SpellClass>Offensive</SpellClass>
         <SpellSubClass>Damage</SpellSubClass>
         <SpellTargetType>EnemyUnit</SpellTargetType>
-		<FireShards>1</FireShards>		
-		<Range>3</Range>		
+		<FireShards>1</FireShards>	
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Fire1</Attribute>
+        </Prereq>				
         <SpellResourceCost>
             <Resource>Mana</Resource>
             <Amount>10</Amount>
@@ -6150,7 +6242,7 @@
             <ApplyToTile>1</ApplyToTile>
             <Duration>0</Duration>
             <DurationOnTile>-1</DurationOnTile>
-			<Value>5</Value>
+			<Value>10</Value>
         </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>100</AIPriority>
@@ -6176,6 +6268,10 @@
         <SpellTargetType>EnemyUnit</SpellTargetType>
         <IsResistable>1</IsResistable>
 		<WaterShards>3</WaterShards>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Water1</Attribute>
+        </Prereq>		
         <SpellResourceCost>
             <Resource>Mana</Resource>
             <Amount>25</Amount>
@@ -6260,6 +6356,10 @@
         <SpellTargetType>EnemyUnit</SpellTargetType>
 		<Radius>1</Radius>
 		<EarthShards>3</EarthShards>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Earth1</Attribute>
+        </Prereq>		
         <SpellResourceCost>
             <Resource>Mana</Resource>
             <Amount>25</Amount>
@@ -6320,7 +6420,11 @@
         <AllowFriendlyFireInRadius>1</AllowFriendlyFireInRadius>
         <Radius>1</Radius>
         <IsResistable>1</IsResistable>		
-		<AirShards>1</AirShards>
+		<AirShards>3</AirShards>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Air1</Attribute>
+        </Prereq>		
         <SpellResourceCost>
             <Resource>Mana</Resource>
             <Amount>25</Amount>
@@ -6386,8 +6490,8 @@
         <IsResistable>1</IsResistable>		
 		<DeathShards>3</DeathShards>
         <Prereq>
-            <Type>Allegiance</Type>
-            <Attribute>Empire</Attribute>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Death1</Attribute>
         </Prereq>		
         <SpellResourceCost>
             <Resource>Mana</Resource>
@@ -6455,6 +6559,10 @@
         <SpellTargetType>AllFriendlyUnits</SpellTargetType>
 		<LifeShards>3</LifeShards>	
         <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Life1</Attribute>
+        </Prereq>		
+        <Prereq>
             <Type>Allegiance</Type>
             <Attribute>Kingdom</Attribute>
         </Prereq>		
@@ -6505,7 +6613,11 @@
         <Radius>3</Radius>
         <RadiusType>LINE_FORWARD</RadiusType>
         <Range>1</Range>
-		<FireShards>3</FireShards>		
+		<FireShards>3</FireShards>	
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Fire1</Attribute>
+        </Prereq>		
         <SpellResourceCost>
             <Resource>Mana</Resource>
             <Amount>25</Amount>
@@ -6560,5 +6672,48 @@
 	
 	<!-- 5 shard spells -->
 	
+	<!-- alternative wal of fire spell -->
+	
+	<SpellDef InternalName="WallOfFire_Effect2">
+        <DisplayName>Wall of Fire</DisplayName>
+        <Description>Units that attack this city take 10 (+3 per fire shard) in fire damage at the start of combat.</Description>
+        <FormattedDescription>Units that attack this city take %d fire damage at the start of combat.</FormattedDescription>
+        <Image>S_WallofFire_Painting.png</Image>
+        <IconFG>S_MantleofFire_Icon.png</IconFG>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitEnchantment</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>AllEnemyUnits</SpellTargetType>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <IsCastable>0</IsCastable>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Fire</AttackStat>
+            <IsForFormattedDescription>1</IsForFormattedDescription>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumFireShards] * 3]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc] + 10]]></Expression>
+            </Calculate>
+            <Calculate InternalName="ValueForFormattedDescription">
+                <Expression><![CDATA[[Calc] + 10]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>50</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_WallOfFireEffect_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_WallofFire_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>0.75</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
 
 </Spells>

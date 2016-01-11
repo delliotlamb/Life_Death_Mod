@@ -2492,7 +2492,7 @@
 	
 	<SpellDef InternalName="MantleOfTheShards">
         <DisplayName>Mantle Of The Shards</DisplayName>
-        <Description>Target champion gets +1 Spell Resistance To Its Army per Earth shard, +3% fire spell damage per fire shard, +1 Dodge To Its Army per air shard, and also reduces unrest in a stationed city by 2% per water shard.</Description>
+        <Description>Target champion's army gets +1 Spell Resistance per Earth shard, +1 spell mastery per fire shard, +1 Dodge per air shard, and +5% bonus experience per water shard.</Description>
         <Image>T_CandleCloak_Painting.png</Image>
         <IconFG>T_NobleLegacy_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -2525,14 +2525,14 @@
         </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_SpellDamage_Fire</StrVal>
+            <Attribute>AdjustArmyStat</Attribute>
+            <StrVal>UnitStat_MagicPower</StrVal>
             <Duration>-1</Duration>
             <Calculate InternalName="Calc" ValueOwner="CastingUnit">
                 <Expression><![CDATA[[UnitOwner_GetNumFireShards]]]></Expression>
             </Calculate>
             <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc] * .03]]></Expression>
+                <Expression><![CDATA[[Calc]]]></Expression>
             </Calculate>
         </GameModifier>
         <GameModifier>
@@ -2548,14 +2548,15 @@
             </Calculate>
         </GameModifier>
         <GameModifier>
-            <ModType>Resource</ModType>
-            <Attribute>Unrest</Attribute>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustArmyStat</Attribute>
+            <StrVal>UnitStat_ExpBonus</StrVal>
             <Duration>-1</Duration>
             <Calculate InternalName="Calc" ValueOwner="CastingUnit">
                 <Expression><![CDATA[[UnitOwner_GetNumWaterShards]]]></Expression>
             </Calculate>
             <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc] * 2]]></Expression>
+                <Expression><![CDATA[[Calc] * 5]]></Expression>
             </Calculate>
         </GameModifier>
         <AIData AIPersonality="AI_General">
