@@ -205,12 +205,12 @@
             <Provides>+1 Water Power</Provides>
         </GameModifier>	
         <GameModifier>
-            <ModType>Player</ModType>
-            <Attribute>AbilityBonus</Attribute>
-            <StrVal>A_Additive_FoodPerGrain</StrVal>
-            <Value>10</Value>
-            <Provides>+10 Food per Grain for your Faction</Provides>
-        </GameModifier>		
+            <ModType>Resource</ModType>
+            <Attribute>Unrest</Attribute>
+            <Value>-10</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>-10% Unrest</Provides>
+        </GameModifier>	
         <AIData AIPersonality="AI_General">
             <AIPriority>5</AIPriority>
         </AIData>
