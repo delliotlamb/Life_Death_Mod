@@ -2379,7 +2379,59 @@
     </SpellDef>
 
 	
-<SpellDef InternalName="HungeringFire">
+	<SpellDef InternalName="Eruption">
+        <DisplayName>Eruption</DisplayName>
+        <Description>Summon a minor volcano among your enemies, setting a 2x2 secton of the battlefield ablaze.</Description>
+        <Image>S_CurgensVolcano_Painting.png</Image>
+        <IconFG>S_CurgensVolcano_Icon.png</IconFG>
+        <CastTime>2</CastTime>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+        <Radius>2</Radius>
+        <SpellResourceCost>
+            <Resource>EmberEssence</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>CreateWorldProp</Attribute>
+            <StrVal>TD_Groundfire</StrVal>
+            <Duration>-1</Duration>
+        </GameModifier>				
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Fire</AttackStat>
+            <ApplyToTile>1</ApplyToTile>
+            <Duration>0</Duration>
+            <DurationOnTile>-1</DurationOnTile>
+			<Value>10</Value>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>100</AIPriority>
+        </AIData>
+        <CameraShakeDuration>4.25</CameraShakeDuration>
+        <CameraShakeStrength>0.25</CameraShakeStrength>
+        <HitSoundFX>Spell_Volcano_01</HitSoundFX>
+        <SoundMinDist>1000</SoundMinDist>
+        <SoundMaxDist>10000</SoundMaxDist>
+        <WorldLightOverrideTime>5</WorldLightOverrideTime>
+        <WorldLightOverrideAmbiant>70,70,70</WorldLightOverrideAmbiant>
+        <WorldLightOverrideDiffuse>80,80,80</WorldLightOverrideDiffuse>
+        <WorldLightOverrideRim0>60,60,60</WorldLightOverrideRim0>
+        <WorldLightOverrideRim1>60,60,60</WorldLightOverrideRim1>
+        <SpellDefEffect>
+            <EffectName>LavaEruption1_New</EffectName>
+            <LocalPosition>0,150,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>1</EffectDelay>
+            <SnapToTerrain>0</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef><SpellDef InternalName="HungeringFire">
         <DisplayName>Kindling Curse</DisplayName>
         <Description>Target unit has its fire resist reduced by 5 (extra -4 per fire shard).</Description>
         <Image>Hungering_Fire_Painting.png</Image>
@@ -2389,51 +2441,7 @@
         <SpellBookSortSubCategory>UnitCurse</SpellBookSortSubCategory>
         <SpellType>Tactical</SpellType>
         <SpellClass>Offensive</SpellClass>
-        <SpellSubClass>Debuff</SpellSubClass>
-        <SpellTargetType>EnemyUnit</SpellTargetType>
-        <IsResistable>1</IsResistable>
-        <Prereq>
-            <Type>AbilityBonusOption</Type>
-            <Attribute>Fire1</Attribute>
-        </Prereq>			
-        <SpellResourceCost>
-            <Resource>EmberEssence</Resource>
-            <Amount>20</Amount>
-        </SpellResourceCost>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_ResistFire</StrVal>
-            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
-                <Expression><![CDATA[[UnitOwner_GetNumFireShards] * -4]]></Expression>
-            </Calculate>
-            <Calculate InternalName="Calc2">
-                <Expression><![CDATA[[Calc] - 5]]></Expression>
-            </Calculate>
-            <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc2]]]></Expression>
-            </Calculate>
-        </GameModifier>
-        <AIData AIPersonality="AI_General">
-            <AIPriority>10</AIPriority>
-		<ValueCalcWrapper>
-            <ValueType>IsTargetWorthy</ValueType>
-            <Calculate InternalName="Calc" ValueOwner="TargetUnit">
-                <Expression><![CDATA[[UnitStat_ResistFire]]]></Expression>
-            </Calculate>
-            <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc] > 50]]></Expression>
-            </Calculate>
-        </ValueCalcWrapper>
-        </AIData>
-        <HitSoundFX>Spell_RainofFire_03</HitSoundFX>
-        <SpellDefEffect>
-            <EffectName>S_MantleofFire_Particle</EffectName>
-            <LocalPosition>0,0,0</LocalPosition>
-            <EffectScale>1</EffectScale>
-            <EffectDelay>0</EffectDelay>
-            <SnapToTerrain>1</SnapToTerrain>
-        </SpellDefEffect>		
+        <SpellSubClass>Debuff</SpellSub
     </SpellDef>
 	
 
@@ -2633,7 +2641,7 @@
 
 <SpellDef InternalName="BlessingOfEmbers">
         <DisplayName>Blessing Of Embers</DisplayName>
-        <Description>This unit generates 1 fire power per turn, gains +2 fire attack, and +20% fire resist.</Description>
+        <Description>This unit generates 1 fire power per turn, gains +2 fire attack, and +15% fire spell damage.</Description>
         <Image>Blessing_Of_Embers_Painting.png</Image>
         <IconFG>Blessing_Of_Embers.png</IconFG>
 		<AutoUnlock>1</AutoUnlock>		
@@ -3431,7 +3439,7 @@
 
 	<SpellDef InternalName="LoosenRock">
         <DisplayName>Shift Bedrock</DisplayName>
-        <Description>Turn Plains or Cliff into beach. Lose .2 Mineral Favor while gaining .2 Gale Favor.</Description>
+        <Description>Turn Plains or Cliff into beach. Lose 2 Mineral Favor while gaining 2 Gale Favor.</Description>
         <Image>S_SaltTheEarth_Painting.png</Image>
         <IconFG>S_LowerLand_Icon.png</IconFG>
 		<AutoUnlock>1</AutoUnlock>
@@ -3457,14 +3465,14 @@
 		<GameModifier>
                 <ModType>Resource</ModType>
                 <Attribute>GaleEssence</Attribute>
-            <ApplyToCaster>1</ApplyToCaster>
-                <Value>.2</Value>
+				<ApplyToCaster>1</ApplyToCaster>
+                <Value>2</Value>
             </GameModifier>
             <GameModifier>
                 <ModType>Resource</ModType>
                 <Attribute>MineralEssence</Attribute>
             <ApplyToCaster>1</ApplyToCaster>
-                <Value>-.2</Value>
+                <Value>-2</Value>
             </GameModifier>
         <ValidTerrainType>Land</ValidTerrainType>
         <ValidTerrainType>Rugged_Land</ValidTerrainType>
@@ -6669,6 +6677,8 @@
         <SpellCastEffectName>Y_Firebreath_Particle</SpellCastEffectName>
         <SpellCastEffectScale>2.0</SpellCastEffectScale>
     </SpellDef>
+	
+	
 	
 	<!-- 5 shard spells -->
 	
