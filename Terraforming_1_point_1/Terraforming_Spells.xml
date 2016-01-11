@@ -2432,19 +2432,7 @@
             <SnapToTerrain>0</SnapToTerrain>
         </SpellDefEffect>
     </SpellDef>
-	
-	<SpellDef InternalName="HungeringFire">
-        <DisplayName>Kindling Curse</DisplayName>
-        <Description>Target unit has its fire resist reduced by 5 (extra -4 per fire shard).</Description>
-        <Image>Hungering_Fire_Painting.png</Image>
-        <IconFG>Hungering_Fire.png</IconFG>
-		<AutoUnlock>1</AutoUnlock>		
-        <SpellBookSortCategory>Unit</SpellBookSortCategory>
-        <SpellBookSortSubCategory>UnitCurse</SpellBookSortSubCategory>
-        <SpellType>Tactical</SpellType>
-        <SpellClass>Offensive</SpellClass>
-        <SpellSubClass>Debuff</SpellSub
-    </SpellDef>
+
 	
 
 <!-- 'Ultimate' Fire spell -->
@@ -6355,7 +6343,7 @@
         <Description>A rain of boulder hits enemies within a 1 tile radius for 24 (+4 per Earth shard) physical damage.</Description>
         <FormattedDescription>A rain of boulder hits enemies within a 1 tile radius for %d physical damage.</FormattedDescription>
         <Image>S_CreateMountain_Painting.png</Image>
-        <IconFG>Icon_Water.png</IconFG>
+        <IconFG>Icon_Earth.png</IconFG>
 		<AutoUnlock>1</AutoUnlock>
 		<Cooldown>3</Cooldown>
         <SpellBookSortCategory>Unit</SpellBookSortCategory>
