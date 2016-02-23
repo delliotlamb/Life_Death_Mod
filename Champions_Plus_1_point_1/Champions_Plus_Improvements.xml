@@ -602,6 +602,13 @@
             <AIPriority>0</AIPriority>
             <AITag>Economy</AITag>
         </AIData>
+		<UnlocksShopItem>ChainBreastpiece_Skeleton</UnlocksShopItem>
+		<UnlocksShopItem>PlateBreastpiece_Rusty</UnlocksShopItem>
+		<UnlocksShopItem>PlateHelmet_Rusty</UnlocksShopItem>
+		<UnlocksShopItem>RustyShield</UnlocksShopItem>
+		<UnlocksShopItem>KiteShield_Golem</UnlocksShopItem>
+		<UnlocksShopItem>Longsword_Golem</UnlocksShopItem>
+		<UnlocksShopItem>Axe_Golem</UnlocksShopItem>	
         <ArtDef>Art_Archaeologist</ArtDef>
     </ImprovementType>
 	

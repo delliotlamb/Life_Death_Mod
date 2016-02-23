@@ -2381,7 +2381,7 @@
 	
 	<SpellDef InternalName="Magma">
         <DisplayName>Magma</DisplayName>
-        <Description>Flood a 1x1 section of the battlefield with lava that does 20 fire damage to any unit present.</Description>
+        <Description>Flood a 1x1 section of the battlefield with lava that does 15 fire damage to any unit present.</Description>
         <Image>S_CurgensVolcano_Painting.png</Image>
         <IconFG>S_CurgensVolcano_Icon.png</IconFG>
 		<AutoUnlock>1</AutoUnlock>
@@ -2400,7 +2400,7 @@
         </Prereq>		
         <SpellResourceCost>
             <Resource>EmberEssence</Resource>
-            <Amount>30</Amount>
+            <Amount>50</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Map</ModType>
@@ -2420,7 +2420,7 @@
         <AIData AIPersonality="AI_General">
             <AIPriority>100</AIPriority>
         </AIData>
-        <HitSoundFX>Spell_Volcano_01</HitSoundFX>
+        <HitSoundFX>Click_Fire_Shard_2</HitSoundFX>
     </SpellDef>
 
 	

@@ -2614,7 +2614,15 @@
         </GameModifier>
         <GameModifier>
             <ModType>GiveItem</ModType>
-            <Attribute>CloakOfStars</Attribute>
+            <Attribute>RingOfWisdom</Attribute>
+        </GameModifier>		
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Loot_DeadRat</Attribute>
+        </GameModifier>	
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Loot_DeadRat</Attribute>
         </GameModifier>		
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
