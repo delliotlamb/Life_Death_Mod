@@ -2379,27 +2379,28 @@
     </SpellDef>
 
 	
-	<SpellDef InternalName="Eruption">
-        <DisplayName>Eruption</DisplayName>
-        <Description>Summon a minor volcano among your enemies, flooding a 2x2 section of the battlefield with lava that does 20 fire damage to any unit present.</Description>
+	<SpellDef InternalName="Magma">
+        <DisplayName>Magma</DisplayName>
+        <Description>Flood a 1x1 section of the battlefield with lava that does 20 fire damage to any unit present.</Description>
         <Image>S_CurgensVolcano_Painting.png</Image>
         <IconFG>S_CurgensVolcano_Icon.png</IconFG>
 		<AutoUnlock>1</AutoUnlock>
         <CastTime>2</CastTime>
+		<Cooldown>10</Cooldown>
         <SpellBookSortCategory>Unit</SpellBookSortCategory>
         <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
         <SpellType>Tactical</SpellType>
         <SpellClass>Offensive</SpellClass>
         <SpellSubClass>Damage</SpellSubClass>
         <SpellTargetType>EnemyUnit</SpellTargetType>
-        <Radius>2</Radius>
+        <Radius>1</Radius>
         <Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Fire1</Attribute>
         </Prereq>		
         <SpellResourceCost>
             <Resource>EmberEssence</Resource>
-            <Amount>50</Amount>
+            <Amount>30</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Map</ModType>
@@ -2414,28 +2415,12 @@
             <ApplyToTile>1</ApplyToTile>
             <Duration>0</Duration>
             <DurationOnTile>-1</DurationOnTile>
-			<Value>20</Value>
+			<Value>15</Value>
         </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>100</AIPriority>
         </AIData>
-        <CameraShakeDuration>4.25</CameraShakeDuration>
-        <CameraShakeStrength>0.25</CameraShakeStrength>
         <HitSoundFX>Spell_Volcano_01</HitSoundFX>
-        <SoundMinDist>1000</SoundMinDist>
-        <SoundMaxDist>10000</SoundMaxDist>
-        <WorldLightOverrideTime>5</WorldLightOverrideTime>
-        <WorldLightOverrideAmbiant>70,70,70</WorldLightOverrideAmbiant>
-        <WorldLightOverrideDiffuse>80,80,80</WorldLightOverrideDiffuse>
-        <WorldLightOverrideRim0>60,60,60</WorldLightOverrideRim0>
-        <WorldLightOverrideRim1>60,60,60</WorldLightOverrideRim1>
-        <SpellDefEffect>
-            <EffectName>LavaEruption1_New</EffectName>
-            <LocalPosition>0,150,0</LocalPosition>
-            <EffectScale>1</EffectScale>
-            <EffectDelay>1</EffectDelay>
-            <SnapToTerrain>0</SnapToTerrain>
-        </SpellDefEffect>
     </SpellDef>
 
 	
