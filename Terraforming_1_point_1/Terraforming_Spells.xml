@@ -2384,6 +2384,7 @@
         <Description>Summon a minor volcano among your enemies, flooding a 2x2 section of the battlefield with lava that does 20 fire damage to any unit present.</Description>
         <Image>S_CurgensVolcano_Painting.png</Image>
         <IconFG>S_CurgensVolcano_Icon.png</IconFG>
+		<AutoUnlock>1</AutoUnlock>
         <CastTime>2</CastTime>
         <SpellBookSortCategory>Unit</SpellBookSortCategory>
         <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
@@ -2392,6 +2393,10 @@
         <SpellSubClass>Damage</SpellSubClass>
         <SpellTargetType>EnemyUnit</SpellTargetType>
         <Radius>2</Radius>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Fire1</Attribute>
+        </Prereq>		
         <SpellResourceCost>
             <Resource>EmberEssence</Resource>
             <Amount>50</Amount>
