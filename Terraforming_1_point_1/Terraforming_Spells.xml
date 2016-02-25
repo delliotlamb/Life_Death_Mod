@@ -2331,7 +2331,7 @@
 
 <SpellDef InternalName="Thaw">
         <DisplayName>Thaw</DisplayName>
-        <Description>Turn Arctic into Plains, gaining 1 Verdant Favor and losing 1 Wave Favor..</Description>
+        <Description>Turn Arctic into Plains, gaining 1 Verdant Favor and losing 1 Wave Favor.</Description>
         <Image>Thaw_Painting.png</Image>
         <IconFG>thaw.png</IconFG>
 		<AutoUnlock>1</AutoUnlock>
@@ -6461,7 +6461,7 @@
 	
 	<SpellDef InternalName="DeathShardWrath">
         <DisplayName>Wrath Of Death Shards</DisplayName>
-        <Description>Inflict 20 poison damage (+4 per death shard) on an enemy.</Description>
+        <Description>Inflict 10 poison damage (+4 per death shard) on an enemy.</Description>
         <FormattedDescription>Inflict %d poison damage on an enemy.</FormattedDescription>
         <Image>T_Contagion_Painting.png</Image>
         <IconFG>Icon_Death.png</IconFG>
@@ -6494,10 +6494,10 @@
                 <Expression><![CDATA[[UnitOwner_GetNumDeathShards] * 4]]></Expression>
             </Calculate>
             <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc] + 16]]></Expression>
+                <Expression><![CDATA[[Calc] + 10]]></Expression>
             </Calculate>
             <Calculate InternalName="ValueForFormattedDescription">
-                <Expression><![CDATA[[Calc] + 16]]></Expression>
+                <Expression><![CDATA[[Calc] + 10]]></Expression>
             </Calculate>
         </GameModifier>
         <GameModifier>
@@ -6509,7 +6509,7 @@
                 <Expression><![CDATA[[UnitOwner_GetNumDeathShards] * 2]]></Expression>
             </Calculate>
             <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc] + 8]]></Expression>
+                <Expression><![CDATA[[Calc] + 5]]></Expression>
             </Calculate>
         </GameModifier>
         <AIData AIPersonality="AI_General">
@@ -6654,7 +6654,9 @@
 	
 	<!-- 5 shard spells -->
 	
-	<!-- alternative wal of fire spell -->
+	<!-- none right now! -->
+	
+	<!-- alternative wall of fire spell -->
 	
 	<SpellDef InternalName="WallOfFire_Effect2">
         <DisplayName>Wall of Fire</DisplayName>
