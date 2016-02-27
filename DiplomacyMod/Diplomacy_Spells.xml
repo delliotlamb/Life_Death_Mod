@@ -2,7 +2,7 @@
 		
 		<SpellDef InternalName="RecruitSpy">
         <DisplayName>Recruit Spy</DisplayName>
-        <Description>Recruit a Spy that can use accumulated Influence against your enemies, or to claim new territory.</Description>
+        <Description>Recruit a Spy that can use accumulated Influence against your enemies, or to benefit your realm.</Description>
         <Image>Sovereign_YoungWizard.png</Image>
         <IconFG>Individual.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -90,6 +90,46 @@
         </SpellDefEffect>
     </SpellDef>
 	
+	<SpellDef InternalName="FlatteryAndBribes">
+        <DisplayName>Courting And Bribes</DisplayName>
+        <Description>Spend gold to gain Diplomatic Capital - only castable within 1 tile of a foreign city.</Description>
+        <Image>Rank_Janusk.png</Image>
+        <IconFG>S_Alchemy_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+		<Cooldown>1</Cooldown>
+        <SpellBookSortCategory>City</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Charm</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>ImpResourceBooster</SpellClass>
+        <SpellSubClass>Debuff</SpellSubClass>
+		<Range>1</Range>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Spy</Attribute>
+        </Prereq>			
+        <SpellResourceCost>
+            <Resource>Gold</Resource>
+            <Amount>100</Amount>
+        </SpellResourceCost>				
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>DiplomaticCapital</Attribute>
+            <ApplyToCaster>1</ApplyToCaster>
+            <Value>20</Value>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Alchemy_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_Alchemy_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>.75</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+	
 	<SpellDef InternalName="TerritorialClaim">
         <DisplayName>Territorial Claim</DisplayName>
         <Description>Creates an outpost.</Description>
@@ -110,11 +150,11 @@
         </Prereq>
         <SpellResourceCost>
             <Resource>Gold</Resource>
-            <Amount>25</Amount>
+            <Amount>75</Amount>
         </SpellResourceCost>		
         <SpellResourceCost>
             <Resource>DiplomaticCapital</Resource>
-            <Amount>40</Amount>
+            <Amount>50</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Map</ModType>
@@ -319,7 +359,7 @@
 	
 	<SpellDef InternalName="EmphasizedDeeds">
         <DisplayName>Emphasized Position</DisplayName>
-        <Description>Gain 50 Diplomatic Capital.</Description>
+        <Description>Gain 40 Diplomatic Capital.</Description>
         <Image>Kingdom_Sovereign1.png</Image>
         <IconFG>Action_Treaty.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
