@@ -4216,7 +4216,7 @@
 	
 	<SpellDef InternalName="Earthquake">
         <DisplayName>Earthquake</DisplayName>
-        <Description>Destroys random city improvements, resets the production queue and halves the population of the targeted city. Defending units lose -2 to initiative and hit points for 1 turn.</Description>
+        <Description>Destroys random city improvements, resets the production queue and halves the population of the targeted city. Defending units lose -2 to initiative and hit points for 1 turn. There is a small chance that the entire city will be destroyed.</Description>
         <Image>S_Earthquake_Painting.png</Image>
         <IconFG>S_Earthquake_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>

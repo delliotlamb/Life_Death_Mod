@@ -382,8 +382,8 @@
 	
 	<SpellDef InternalName="Sabotage">
         <DisplayName>Incite Sabotage</DisplayName>
-        <Description>Resets the production queue, with a chance of destroying other improvements.</Description>
-        <Image>S_Earthquake_Painting.png</Image>
+        <Description>Resets the production queue, with a chance of destroying other improvements. There is a small chance that the entire city will be destroyed.</Description>
+        <Image>BurningFarm.png</Image>
         <IconFG>Improvement_DestroyedLot.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
         <Cooldown>1</Cooldown>

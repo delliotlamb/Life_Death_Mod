@@ -1,6 +1,6 @@
 <Spells>
 
-<!-- This makes the Ai capable of using Volcano against enemies. Credit to Primal_Savage -->
+<!-- This makes the AI capable of using Volcano against enemies. Credit to Primal_Savage -->
 
 <SpellDef InternalName="CurgensVolcano">
         <DisplayName>Curgen's Volcano</DisplayName>
@@ -12,15 +12,15 @@
         <SpellBookSortCategory>City</SpellBookSortCategory>
         <SpellBookSortSubCategory>CityCurse</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
-        <SpellClass>ImpResourceBooster</SpellClass>
+        <SpellClass>Offensive</SpellClass>
         <SpellSubClass>Debuff</SpellSubClass>
         <SpellTargetType>EnemyCity</SpellTargetType>
         <CasterMustBeSov>1</CasterMustBeSov>
         <Radius>2</Radius>
-        <SpellResourceCost>
+        <!--<SpellResourceCost>
             <Resource>Mana</Resource>
             <Amount>1200</Amount>
-        </SpellResourceCost>
+        </SpellResourceCost>-->
         <GameModifier>
             <ModType>Map</ModType>
             <Attribute>DestroyObjects</Attribute>

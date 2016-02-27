@@ -390,7 +390,7 @@
         <AbilityBonusType>Unit_Level</AbilityBonusType>
         <AbilityBonusOption InternalName="Swordsman_Paladin">
             <DisplayName>Sword Skill</DisplayName>
-            <Description>+50% to Counterattack damage, +2 sword attack, +3 accuracy, and +3 to dodge when wielding a sword</Description>
+            <Description>+50% to Counterattack damage, +1 sword attack, +3 accuracy, and +3 to dodge when wielding a sword</Description>
             <Icon>Ability_SwordsmanI_Icon.png</Icon>
             <PerkTreePosX>2</PerkTreePosX>
             <PerkTreePosY>0</PerkTreePosY>
@@ -412,8 +412,8 @@
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
                 <StrVal>UnitStat_Attack_Sword</StrVal>
-                <Value>2</Value>
-                <Provides>+2 Sword Attack</Provides>
+                <Value>1</Value>
+                <Provides>+1 Sword Attack</Provides>
             </GameModifier>
             <GameModifier>
                 <ModType>Unit</ModType>
@@ -474,7 +474,7 @@
         <AbilityBonusType>Unit_Level</AbilityBonusType>
         <AbilityBonusOption InternalName="Parry1_Paladin">
             <DisplayName>Parrying</DisplayName>
-            <Description>+3 sword attack, +4 Sword Accuracy and +1 Sword Counterattack</Description>
+            <Description>+2 sword attack, +4 Sword Accuracy and +1 Sword Counterattack</Description>
             <Icon>Ability_SwordsmanII_Icon.png</Icon>
             <PerkTreePosX>3</PerkTreePosX>
             <PerkTreePosY>0</PerkTreePosY>
@@ -489,8 +489,8 @@
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
                 <StrVal>UnitStat_Attack_Sword</StrVal>
-                <Value>3</Value>
-                <Provides>+3 Sword Attack</Provides>
+                <Value>2</Value>
+                <Provides>+2 Sword Attack</Provides>
             </GameModifier>
             <GameModifier>
                 <ModType>Unit</ModType>
@@ -543,8 +543,8 @@
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
                 <StrVal>UnitStat_Attack_Sword</StrVal>
-                <Value>4</Value>
-                <Provides>+4 Sword Attack</Provides>
+                <Value>3</Value>
+                <Provides>+3 Sword Attack</Provides>
             </GameModifier>
             <GameModifier>
                 <ModType>Unit</ModType>
@@ -582,24 +582,24 @@
 <AbilityBonus InternalName="BashPaladinAbility">
         <AbilityBonusType>Unit_Level</AbilityBonusType>
         <AbilityBonusOption InternalName="BashPaladin">
-            <DisplayName>Art Of The Sword</DisplayName>
-            <Description>As a great swordsman taught, you attacks are placed to unbalance and interrupt your enemy. +4 sword attack, +1 sword accuracy per level, +5 dodge with a sword, +2 initiative with a sword, and every attack has a chance to knock prone, equal to the damage done.</Description>          
+        <DisplayName>Art Of The Sword</DisplayName>
+        <Description>As a great swordsman taught, you attacks are placed to unbalance and interrupt your enemy. +4 sword attack, +1 sword accuracy per level, +5 dodge with a sword, +2 initiative with a sword, and every attack has a chance to knock prone, equal to the damage done.</Description> 
 	    <Icon>Ability_SwordsmanIV_Icon.png</Icon>
-            <PerkTreePosX>5</PerkTreePosX>
-            <PerkTreePosY>0</PerkTreePosY>
-            <GameModifier>
-                <ModType>Unit</ModType>
-                <Attribute>AdjustUnitStat</Attribute>
-                <StrVal>UnitStat_BashChance_Sword</StrVal>
-                <Value>100</Value>
-                <Provides>Has a chance (equal to the damage done) to knock victims prone, when using a sword</Provides>
-            </GameModifier>
-            <GameModifier>
+        <PerkTreePosX>5</PerkTreePosX>
+        <PerkTreePosY>0</PerkTreePosY>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_BashChance_Sword</StrVal>
+            <Value>100</Value>
+            <Provides>Has a chance (equal to the damage done) to knock victims prone, when using a sword</Provides>
+        </GameModifier>
+        <GameModifier>
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
                 <StrVal>UnitStat_Attack_Sword</StrVal>
-                <Value>5</Value>
-                <Provides>+5 Sword Attack</Provides>
+                <Value>4</Value>
+                <Provides>+4 Sword Attack</Provides>
             </GameModifier>
             <GameModifier>
                 <ModType>Unit</ModType>

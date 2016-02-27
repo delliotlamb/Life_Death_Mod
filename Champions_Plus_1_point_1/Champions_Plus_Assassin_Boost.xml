@@ -659,12 +659,7 @@
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_Assassinate_Ready</StrVal>
             <ApplyToCaster>1</ApplyToCaster>
-            <Calculate InternalName="Calc" ValueOwner="TargetUnit">
-                <Expression><![CDATA[[Unit_BG_IsSovereign]]]></Expression>
-            </Calculate>
-            <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc] * -1]]></Expression>
-            </Calculate>           
+			<Value>-1</Value>
         </GameModifier>		
         <AIData AIPersonality="AI_General">
             <AIPriority>1000</AIPriority>
@@ -734,7 +729,7 @@
         <SpellCastProjectileSpeed>1100</SpellCastProjectileSpeed>
     </SpellDef>-->
 	
-	<SpellDef InternalName="Escape_Assassin_Ability">
+	<!--<SpellDef InternalName="Escape_Assassin_Ability">
         <DisplayName>Slip From Sight</DisplayName>
         <Description>All units flee from the battlefield.</Description>
         <Image>T_Escape_Painting.png</Image>
@@ -765,12 +760,12 @@
             <SnapToTerrain>1</SnapToTerrain>
             <PlayOnAllTargets>1</PlayOnAllTargets>
         </SpellDefEffect>
-    </SpellDef>
+    </SpellDef>-->
 	
 	<SpellDef InternalName="MarkOfRegicide">
         <DisplayName>Anointment Of Regicide</DisplayName>
         <Description>Cast on an assassin with the Executioner II trait to allow that Assassin to permanently assassinate ONE sovereign or champion.</Description>
-        <Image>F_Domination_Full.png</Image>
+        <Image>RoyalFuneral.png</Image>
         <IconFG>S_Sacrifice_Icon.png</IconFG>
 		<Cooldown>5</Cooldown>
 		<AutoUnlock>1</AutoUnlock>
@@ -783,7 +778,7 @@
         <CasterMustBeSov>1</CasterMustBeSov>
         <SpellResourceCost>
             <Resource>Mana</Resource>
-            <Amount>500</Amount>
+            <Amount>700</Amount>
         </SpellResourceCost>		
 				<GameModifier>
 					<ModType>Unit</ModType>
@@ -792,16 +787,16 @@
 					<Value>1</Value>
 				</GameModifier>
         <AIData AIPersonality="AI_General">
-            <AIPriority>1000</AIPriority>
+            <AIPriority>0</AIPriority>
         <ValueCalcWrapper>
             <ValueType>IsTargetWorthy</ValueType>
             <Calculate InternalName="Calc" ValueOwner="TargetUnit">
-                <Expression><![CDATA[[UnitStat_MarkOfRegicide]]]></Expression>
+                <Expression><![CDATA[[UnitStat_PathOfTheAssassin]]]></Expression>
             </Calculate>
             <Calculate InternalName="Value">
                 <Expression><![CDATA[[Calc] < 1]]></Expression>
             </Calculate>
-        </ValueCalcWrapper>			
+        </ValueCalcWrapper>	
         </AIData>
         <HitSoundFX>Spell_Antipathy_01</HitSoundFX>
         <SpellDefEffect>
@@ -985,7 +980,7 @@
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
                 <StrVal>UnitStat_BonusDamage_Poison</StrVal>
-                <Multiplier>1.25</Multiplier>
+                <Value>.25</Value>
                 <Provides>+25% to melee poison damage effects</Provides>
             </GameModifier>
         </AbilityBonusOption>
@@ -997,8 +992,9 @@
             <GameModifier>
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_BonusDamage_Poison</StrVal>
+                <Value>.25</Value>
                 <Provides>+25% to melee poison damage effects</Provides>
-				<Value>.25</Value>
             </GameModifier>
         </AbilityBonusOption>
     </AbilityBonus>
@@ -1006,13 +1002,6 @@
     <AbilityBonus InternalName="VitalStrike4Ability">
         <AbilityBonusType>Unit_Level</AbilityBonusType>
         <AbilityBonusOption InternalName="VitalStrike4">
-            <GameModifier>
-                <ModType>Unit</ModType>
-                <Attribute>AdjustUnitStat</Attribute>
-                <StrVal>UnitStat_Attack_Poison</StrVal>
-                <Multiplier>2</Multiplier>
-                <Provides>+100% Poison damage</Provides>
-            </GameModifier>
             <GameModifier>
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
@@ -1102,7 +1091,7 @@
         </AbilityBonusOption>
     </AbilityBonus>
 	
-	<AbilityBonus InternalName="AcrobatAbility_Level">
+	<!--<AbilityBonus InternalName="AcrobatAbility_Level">
         <AbilityBonusType>Unit_Level</AbilityBonusType>
         <AbilityBonusOption InternalName="Acrobat_Level">
 	            <GameModifier>
@@ -1112,9 +1101,9 @@
                 <Provides>Grants the ability to escape from battle (leaving any allies behind to fight)</Provides>
             </GameModifier>
         </AbilityBonusOption>
-    </AbilityBonus>
+    </AbilityBonus>-->
 	
-	<AbilityBonus InternalName="Dodge2Ability">
+	<!--<AbilityBonus InternalName="Dodge2Ability">
         <AbilityBonusType>Unit_Level</AbilityBonusType>
         <AbilityBonusOption InternalName="Dodge2">
             <GameModifier>
@@ -1139,7 +1128,7 @@
                 <Provides>No Movement penalty on Hills</Provides>
             </GameModifier>
         </AbilityBonusOption>
-    </AbilityBonus>
+    </AbilityBonus>-->
 	
  <AbilityBonus InternalName="RainOfArrowsAbility">
         <AbilityBonusOption InternalName="RainOfArrows">
