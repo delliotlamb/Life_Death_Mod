@@ -195,7 +195,7 @@
 	</AIData>        
 	</SpellDef>
 	
-	    <SpellDef InternalName="Defection_Ability">
+	<SpellDef InternalName="Defection_Ability">
         <DisplayName>Call To Defect</DisplayName>
         <Description>Convert a trained unit to your cause unless they resist.</Description>
         <Image>S_DestinysGift_Painting.png</Image>
@@ -317,7 +317,7 @@
         </SpellDefEffect>
     </SpellDef>
 	
-	    <SpellDef InternalName="SpiritOfDiplomacy">
+	<SpellDef InternalName="SpiritOfDiplomacy">
         <DisplayName>Aura Of Cooperation</DisplayName>
         <Description>+1 Influence per turn</Description>
         <Image>Diplomacy_Medallion_Full.png</Image>

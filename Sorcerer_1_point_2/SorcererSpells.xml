@@ -2829,9 +2829,9 @@
         </SpellDefEffect>
     </SpellDef>
 
-	<!--<SpellDef InternalName="JourneyOfTheMind2">
+	<SpellDef InternalName="JourneyOfTheMind2">
         <DisplayName>Guided Ethereal Journey</DisplayName>
-        <Description>Target friendly champion gains a level, but is immobilized and greatly weakened for 15 turns.</Description>
+        <Description>Target friendly champion gains a level, but permanently loses 5 hit points and spell resistance.</Description>
         <Image>Tech_Higher_Education.png</Image>
         <IconFG>T_NobleLegacy_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -2842,14 +2842,13 @@
         <SpellClass>Defensive</SpellClass>
         <SpellSubClass>Other</SpellSubClass>
         <SpellTargetType>FriendlyChampionOrSov</SpellTargetType>
-        <PreventStackingWith>YearOfMeditation</PreventStackingWith>
         <Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Gnosimancy</Attribute>
         </Prereq>
         <SpellResourceCost>
             <Resource>Mana</Resource>
-            <Amount>90</Amount>
+            <Amount>120</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Unit</ModType>
@@ -2858,29 +2857,15 @@
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_CombatSpeed</StrVal>
-            <Duration>15</Duration>
-	    <Value>-8</Value>
-        </GameModifier>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>Immobilize</Attribute>
-            <Duration>15</Duration>
-        </GameModifier>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_Attack_Pierce</StrVal>
-            <Duration>15</Duration>
-            <Multiplier>.5</Multiplier>
-        </GameModifier>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_HitPoints</StrVal>
-            <Duration>15</Duration>
-            <Multiplier>0.5</Multiplier>
+            <Value>-5</Value>
         </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_MagicResist</StrVal>
+            <Value>-5</Value>
+        </GameModifier>		
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
         </AIData>
@@ -2892,7 +2877,7 @@
             <EffectDelay>0</EffectDelay>
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
-    </SpellDef>-->
+    </SpellDef>
 
 <!--<SpellDef InternalName="ResidenceOfResearch">
         <DisplayName>Residence Of Research</DisplayName>
@@ -2975,62 +2960,55 @@
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>TargetUnitLevelUp</Attribute>
+			<DisplayName>Level Up</DisplayName>
         </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>TargetUnitLevelUp</Attribute>
-        </GameModifier>
-        <GameModifier>
-            <ModType>Resource</ModType>
-            <Attribute>Mana</Attribute>
-            <Value>100</Value>
+			<DisplayName>Level Up</DisplayName>
         </GameModifier>
         <GameModifier>
             <ModType>Resource</ModType>
             <Attribute>Research</Attribute>
-            <Value>300</Value>
-        </GameModifier>
-        <GameModifier>
-            <ModType>Resource</ModType>
-            <Attribute>Research</Attribute>
+			<DisplayName>+400 Research</DisplayName>
             <Value>400</Value>
         </GameModifier>
         <GameModifier>
             <ModType>Resource</ModType>
             <Attribute>Research</Attribute>
+			<DisplayName>+1000 Research</DisplayName>
             <Value>1000</Value>
         </GameModifier>
         <GameModifier>
-            <ModType>Resource</ModType>
-            <Attribute>Mana</Attribute>
+            <ModType>Unit</ModType>
+            <Attribute>GiveExperience</Attribute>
+			<DisplayName>+100 Experience</DisplayName>
             <Value>100</Value>
         </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>GiveExperience</Attribute>
-            <Value>100</Value>
-        </GameModifier>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>GiveExperience</Attribute>
+			<DisplayName>+300 Experience</DisplayName>
             <Value>300</Value>
         </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>GiveExperience</Attribute>
+			<DisplayName>+500 Experience</DisplayName>
             <Value>500</Value>
         </GameModifier>
         <GameModifier>
             <ModType>Resource</ModType>
             <Attribute>Mana</Attribute>
+			<DisplayName>+200 Mana</DisplayName>
             <Value>200</Value>
         </GameModifier>
         <GameModifier>
             <ModType>Map</ModType>
             <Attribute>CreateGoodieHut</Attribute>
-            <StrVal>Awoken Sleeper</StrVal>
-            <UnitClass>Lair_ClambercoilDragon</UnitClass>
-            <Radius>4</Radius>
+            <StrVal>Awoken Nightmares</StrVal>
+            <UnitClass>Lair_DeathDemon</UnitClass>
+            <Radius>5</Radius>
         </GameModifier>
         <GameModifier>
             <ModType>GiveItem</ModType>
@@ -3076,7 +3054,7 @@
         </Prereq>		
         <SpellResourceCost>
             <Resource>Fame</Resource>
-            <Amount>25</Amount>
+            <Amount>40</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Unit</ModType>
@@ -3110,7 +3088,7 @@
 
     <SpellDef InternalName="FamiliarChampion_Sorcerer">
         <DisplayName>Sovereign Binding</DisplayName>
-        <Description>The sovereign Sorcerer can bind essence to a champion, allowing that champion to cast all the spells of the sovereign. This binding takes a small toll on the champion's initative (-2) and spell mastery(-10), however.</Description>
+        <Description>The sovereign Sorcerer can bind essence to a champion, allowing that champion to cast all the spells of the sovereign. This binding takes a small toll on the champion's initative (-1) and spell mastery(-5), however.</Description>
         <Image>M_WargFamiliar_Card.png</Image>
         <IconFG>T_SummonFamiliar_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -3138,13 +3116,13 @@
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_CombatSpeed</StrVal>
-			<Value>-2</Value>
+			<Value>-1</Value>
         </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_MagicPower</StrVal>
-			<Value>-10</Value>
+			<Value>-5</Value>
         </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>

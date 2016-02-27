@@ -1164,31 +1164,31 @@
         <ProductionRequirement>
             <Type>Resource</Type>
             <Attribute>WaveEssence</Attribute>
-            <Value>.5</Value>
+            <Value>.25</Value>
         </ProductionRequirement>		
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_Dodge</StrVal>
-            <Value>10</Value>
+            <Value>5</Value>
         </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_Defense_Pierce</StrVal>
-            <Value>3</Value>
+            <Value>1</Value>
         </GameModifier>	
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_HitPoints</StrVal>
-            <Value>2</Value>
+            <Value>1</Value>
         </GameModifier>	
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_MagicResist</StrVal>
-            <Value>10</Value>
+            <Value>3</Value>
         </GameModifier>		
         <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
         <Likelihood>-1</Likelihood>
@@ -1233,14 +1233,14 @@
         <ProductionRequirement>
             <Type>Resource</Type>
             <Attribute>VerdantEssence</Attribute>
-            <Value>4</Value>
+            <Value>3</Value>
         </ProductionRequirement>		
             <GameModifier>
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
                 <StrVal>UnitStat_Stamina_Starting</StrVal>
                 <Value>2</Value>
-                <Provides>+2 to the Army's Starting Stamina</Provides>
+                <Provides>+2 Starting Stamina</Provides>
             </GameModifier>	
         <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
         <Likelihood>-1</Likelihood>
