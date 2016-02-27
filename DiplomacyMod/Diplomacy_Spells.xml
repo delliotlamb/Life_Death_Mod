@@ -21,7 +21,7 @@
         </Prereq>		
         <SpellResourceCost>
             <Resource>DiplomaticCapital</Resource>
-            <Amount>10</Amount>
+            <Amount>45</Amount>
         </SpellResourceCost>
         <SpellResourceCost>
             <Resource>Gold</Resource>
@@ -177,7 +177,7 @@
         </SpellResourceCost>
         <SpellResourceCost>
             <Resource>DiplomaticCapital</Resource>
-            <Amount>75</Amount>
+            <Amount>50</Amount>
         </SpellResourceCost>		
         <GameModifier>
             <ModType>Unit</ModType>
@@ -393,14 +393,19 @@
         <SpellClass>Offensive</SpellClass>
         <SpellSubClass>Other</SpellSubClass>
         <SpellTargetType>EnemyCity</SpellTargetType>
+		<Range>1</Range>
         <Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Spy</Attribute>
         </Prereq>		
         <SpellResourceCost>
             <Resource>DiplomaticCapital</Resource>
-            <Amount>100</Amount>
+            <Amount>75</Amount>
         </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Gold</Resource>
+            <Amount>100</Amount>
+        </SpellResourceCost>		
         <GameModifier>
             <ModType>City</ModType>
             <Attribute>Earthquake</Attribute>

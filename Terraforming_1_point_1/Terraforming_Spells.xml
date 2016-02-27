@@ -607,7 +607,7 @@
             <Attribute>TrainingDiscount</Attribute>
             <Value>-.9</Value>
             <Duration>-1</Duration>				
-        </GameModifier>		
+        </GameModifier>	
         <GameModifier>
             <ModType>City</ModType>
             <Duration>-1</Duration>
@@ -633,7 +633,7 @@
 	
 	<SpellDef InternalName="GripOfWinter2">
         <DisplayName>Grip of Winter</DisplayName>
-        <Description>Massively slows all production, training, and food production in target city.</Description>
+        <Description>Massively slows all production and food harvesting in target city.</Description>
         <Image>S_GripofWinter_Painting.png</Image>
         <IconFG>S_GripofWinter_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -671,12 +671,12 @@
             <PerTurn>1</PerTurn>
             <Duration>-1</Duration>			
         </GameModifier>
-        <GameModifier>
+        <!--<GameModifier>
             <ModType>City</ModType>
             <Attribute>TrainingDiscount</Attribute>
             <Value>-.9</Value>
             <Duration>-1</Duration>				
-        </GameModifier>		
+        </GameModifier>-->		
         <GameModifier>
             <ModType>City</ModType>
             <Duration>-1</Duration>
@@ -2491,7 +2491,7 @@
         <SpellBookSortCategory>City</SpellBookSortCategory>
         <SpellBookSortSubCategory>CityCurse</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
-        <SpellClass>ImpResourceBooster</SpellClass>
+        <SpellClass>Offensive</SpellClass>
         <SpellSubClass>Debuff</SpellSubClass>
         <SpellTargetType>EnemyCity</SpellTargetType>	
         <Prereq>
@@ -4225,7 +4225,7 @@
         <SpellBookSortCategory>City</SpellBookSortCategory>
         <SpellBookSortSubCategory>CityCurse</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
-        <SpellClass>ImpResourceBooster</SpellClass>
+        <SpellClass>Offensive</SpellClass>
         <SpellSubClass>Debuff</SpellSubClass>
         <SpellTargetType>EnemyCity</SpellTargetType>
         <Prereq>
@@ -4403,7 +4403,7 @@
         <SpellBookSortCategory>City</SpellBookSortCategory>
         <SpellBookSortSubCategory>CityCurse</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
-        <SpellClass>ImpResourceBooster</SpellClass>
+        <SpellClass>Offensive</SpellClass>
         <SpellSubClass>Debuff</SpellSubClass>
         <SpellTargetType>EnemyCity</SpellTargetType>		
         <Prereq>

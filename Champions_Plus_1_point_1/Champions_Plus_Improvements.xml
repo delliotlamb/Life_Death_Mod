@@ -1236,12 +1236,26 @@
         </GameModifier>
     </ImprovementType>-->
 	
-	    <ImprovementType InternalName="Apothecary">
+	<ImprovementType InternalName="Apothecary">
         <GameModifier>
             <Provides>Also unlocks poison vials</Provides>
         </GameModifier>		
         <UnlocksShopItem>PoisonVial</UnlocksShopItem>
     </ImprovementType>
+	
+	<ImprovementType InternalName="Alchemist">
+        <GameModifier>
+            <Provides>Also unlocks poison vials</Provides>
+        </GameModifier>		
+        <UnlocksShopItem>PoisonVial</UnlocksShopItem>
+    </ImprovementType>
+
+	<ImprovementType InternalName="AlchemyLab">
+        <GameModifier>
+            <Provides>Also unlocks poison vials</Provides>
+        </GameModifier>		
+        <UnlocksShopItem>PoisonVial</UnlocksShopItem>
+    </ImprovementType>	
 	
 	<ImprovementType InternalName="Camp_FellDragon">
         <GameModifier>

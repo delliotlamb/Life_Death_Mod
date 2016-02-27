@@ -45,6 +45,7 @@
 			<UnitStat_IsAtDiplomat>-1</UnitStat_IsAtDiplomat>
 			<UnitStat_IsAtWeaponsmith>-1</UnitStat_IsAtWeaponsmith>			
 		</LevelMilestone>
+		<SelectedAbilityBonusOption>Negotiator</SelectedAbilityBonusOption>
 		<Equipment>K_Male_Head_01</Equipment>
 		<Equipment>Sovereign_FlatCap_Hair_ID1</Equipment>
 		<Equipment>Kraxis_Beard</Equipment>
