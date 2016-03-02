@@ -1034,6 +1034,7 @@
         </GameModifier>
     </ImprovementType>
 	
+	<!--
 	<ImprovementType InternalName="AirShrine">  
         <GameModifier>
             <ModType>Player</ModType>
@@ -1133,6 +1134,7 @@
             <Provides>+5% Mana in all your cities</Provides>
         </GameModifier>
     </ImprovementType>
+	-->
 	
 	<!-- Leaving level 1 shrines untouched for now
 	
