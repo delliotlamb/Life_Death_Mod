@@ -574,7 +574,7 @@
         <Description>A bolt of cold shoots at an enemy for 16 (+4 per water shard) cold damage.</Description>
         <FormattedDescription>A bolt of cold shoots at an enemy for %d cold damage.</FormattedDescription>
         <Image>T_Blizzard_Painting.png</Image>
-        <IconFG>Icon_Water.png</IconFG>
+        <IconFG>PMV_Ability_IceBeam.png.png</IconFG>
 		<AutoUnlock>1</AutoUnlock>
 		<Cooldown>3</Cooldown>
         <SpellBookSortCategory>Unit</SpellBookSortCategory>
@@ -3190,7 +3190,7 @@
         </SpellDefEffect>
     </SpellDef>
 	
-	<!-- Trained troop special ability group -->
+	<!-- Trained troop special ability group 
 	
 	<SpellDef InternalName="FlameTongue">
         <DisplayName>Flame Tongue</DisplayName>
@@ -3280,10 +3280,6 @@
         <IsCastable>0</IsCastable>
         <IsResistable>1</IsResistable>
         <IsSpecialAbility>1</IsSpecialAbility>
-        <!--<SpellResourceCost>
-            <Resource>Mana</Resource>
-            <Amount>16</Amount>
-        </SpellResourceCost>-->
 		<GameModifier>
             <ModType>Unit</ModType>
             <Attribute>DefendableDamage</Attribute>
@@ -3349,6 +3345,7 @@
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
     </SpellDef>
+	-->
 	
 	<!-- Flame dart group -->
 	
