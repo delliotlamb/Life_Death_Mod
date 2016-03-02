@@ -574,7 +574,7 @@
         <Description>A bolt of cold shoots at an enemy for 16 (+4 per water shard) cold damage.</Description>
         <FormattedDescription>A bolt of cold shoots at an enemy for %d cold damage.</FormattedDescription>
         <Image>T_Blizzard_Painting.png</Image>
-        <IconFG>PMV_Ability_IceBeam.png.png</IconFG>
+        <IconFG>PMV_Ability_IceBeam.png</IconFG>
 		<AutoUnlock>1</AutoUnlock>
 		<Cooldown>3</Cooldown>
         <SpellBookSortCategory>Unit</SpellBookSortCategory>
@@ -584,15 +584,10 @@
         <SpellSubClass>Damage</SpellSubClass>
         <SpellTargetType>EnemyUnit</SpellTargetType>
         <IsResistable>1</IsResistable>
-		<WaterShards>3</WaterShards>
         <Prereq>
             <Type>AbilityBonusOption</Type>
-            <Attribute>Water1</Attribute>
-        </Prereq>		
-        <SpellResourceCost>
-            <Resource>Mana</Resource>
-            <Amount>25</Amount>
-        </SpellResourceCost>		
+            <Attribute>Water3</Attribute>
+        </Prereq>				
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>DefendableDamage</Attribute>
@@ -671,15 +666,10 @@
         <SpellSubClass>Damage</SpellSubClass>
         <SpellTargetType>EnemyUnit</SpellTargetType>
         <IsResistable>1</IsResistable>
-		<WaterShards>3</WaterShards>
         <Prereq>
             <Type>AbilityBonusOption</Type>
-            <Attribute>Water1</Attribute>
-        </Prereq>		
-        <SpellResourceCost>
-            <Resource>Mana</Resource>
-            <Amount>25</Amount>
-        </SpellResourceCost>		
+            <Attribute>Water3</Attribute>
+        </Prereq>				
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>DefendableDamage</Attribute>

@@ -1744,6 +1744,7 @@ The Ice Elemental's weakness is fire; it is immune to cold, and all poisons of t
             <Level>1</Level>
             <UnitStat_Attack_Pierce>20</UnitStat_Attack_Pierce>
             <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_HitPoints>20</UnitStat_HitPoints>			
             <UnitStat_CombatSpeed>23</UnitStat_CombatSpeed>
             <UnitStat_Intelligence>1</UnitStat_Intelligence>
             <UnitStat_Moves>4</UnitStat_Moves>
@@ -1795,6 +1796,7 @@ The Ice Elemental's weakness is fire; it is immune to cold, and all poisons of t
             <Level>1</Level>
             <UnitStat_Attack_Pierce>20</UnitStat_Attack_Pierce>
             <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_HitPoints>20</UnitStat_HitPoints>			
             <UnitStat_CombatSpeed>20</UnitStat_CombatSpeed>
             <UnitStat_Defense_Pierce>5</UnitStat_Defense_Pierce>
             <UnitStat_Intelligence>1</UnitStat_Intelligence>
@@ -1844,10 +1846,10 @@ The Ice Elemental's weakness is fire; it is immune to cold, and all poisons of t
             <Level>1</Level>
             <UnitStat_Accuracy>75</UnitStat_Accuracy>
             <UnitStat_Attack_Pierce>10</UnitStat_Attack_Pierce>
-            <UnitStat_ChanceToCrit>7</UnitStat_ChanceToCrit>
-            <UnitStat_CombatSpeed>28</UnitStat_CombatSpeed>
+            <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+            <UnitStat_HitPoints>20</UnitStat_HitPoints>			
+            <UnitStat_CombatSpeed>23</UnitStat_CombatSpeed>
             <UnitStat_Defense_Pierce>3</UnitStat_Defense_Pierce>
-            <UnitStat_HitPoints>6</UnitStat_HitPoints>
             <UnitStat_Intelligence>1</UnitStat_Intelligence>
             <UnitStat_Moves>4</UnitStat_Moves>
 			<UnitStat_BG_IsChampion>1</UnitStat_BG_IsChampion>
@@ -1897,6 +1899,9 @@ The Ice Elemental's weakness is fire; it is immune to cold, and all poisons of t
             <UnitStat_CombatSpeed>20</UnitStat_CombatSpeed>
             <UnitStat_Intelligence>1</UnitStat_Intelligence>
             <UnitStat_Moves>3</UnitStat_Moves>
+			<UnitStat_BG_IsChampion>1</UnitStat_BG_IsChampion>
+			<UnitStat_BG_IsMonster>1</UnitStat_BG_IsMonster>
+			<UnitStat_BG_IsBeast>1</UnitStat_BG_IsBeast>			
         </LevelMilestone>
         <SelectedAbilityBonusOption>TangledWeb</SelectedAbilityBonusOption>
         <SelectedAbilityBonusOption>Venomous1</SelectedAbilityBonusOption>
