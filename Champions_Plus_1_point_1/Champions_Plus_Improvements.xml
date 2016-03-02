@@ -604,7 +604,8 @@
         </AIData>
 		<UnlocksShopItem>ChainBreastpiece_Skeleton</UnlocksShopItem>
 		<UnlocksShopItem>PlateBreastpiece_Rusty</UnlocksShopItem>
-		<UnlocksShopItem>PlateHelmet_Rusty</UnlocksShopItem>
+		<UnlocksShopItem>PlateHelmet_Rusty</UnlocksShopItem>		
+		<UnlocksShopItem>PlateGreaves_Rusty</UnlocksShopItem>
 		<UnlocksShopItem>RustyShield</UnlocksShopItem>
 		<UnlocksShopItem>KiteShield_Golem</UnlocksShopItem>
 		<UnlocksShopItem>Longsword_Golem</UnlocksShopItem>
