@@ -42,7 +42,7 @@
 
 
     <SpellDef InternalName="SummonDragon">
-        <DisplayName>Fanciful Nonsense</DisplayName>
+        <DisplayName>Summon Dragon</DisplayName>
         <Description>Summon A Dragon? There is no such spell! Even Ereog never managed such a feat.</Description>
         <Image>F_DragonAlly.png</Image>
         <IconFG>T_VatulasDragonslayer_Icon.png</IconFG>
@@ -97,19 +97,13 @@
                 <Expression><![CDATA[[Calc] + 12]]></Expression>
             </Calculate>
         </GameModifier>
-		<GameModifier>
-            <ModType>Resource</ModType>
-            <Attribute>ForbiddenLore</Attribute>
-            <ApplyToCaster>1</ApplyToCaster>
-            <Value>500</Value>
-        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>10000</AIPriority>
         </AIData>
     </SpellDef>
 
     <SpellDef InternalName="SummonTitan">
-        <DisplayName>Foolish Waste Of Breath</DisplayName>
+        <DisplayName>Summon Titan</DisplayName>
         <Description>Summon back the Titans? They are long gone now, and only a doomed channeler would waste time on such pursuits.</Description>
         <Image>T_ParidensReturn_Painting.png</Image>
         <IconFG>T_ParidensReturn_Icon.png</IconFG>
@@ -203,13 +197,7 @@
             <Calculate InternalName="Value">
                 <Expression><![CDATA[[Calc] + 15]]></Expression>
             </Calculate>
-        </GameModifier>
-		<GameModifier>
-            <ModType>Resource</ModType>
-            <Attribute>ForbiddenLore</Attribute>
-            <ApplyToCaster>1</ApplyToCaster>
-            <Value>500</Value>
-        </GameModifier>		
+        </GameModifier>	
         <AIData AIPersonality="AI_General">
             <AIPriority>10000</AIPriority>
         </AIData>

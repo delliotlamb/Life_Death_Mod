@@ -1,7 +1,7 @@
 <ImprovementTypes>
 
 <ImprovementType InternalName="ArcaneBeacon_Kingdom">
-        <DisplayName>Nonsensical Structure</DisplayName>
+        <DisplayName>Unknown Structure</DisplayName>
         <Description>The myth of Arcane beacons that allow incredible feats of summoning has already been disproved. Not worth wasting idle chatter upon.</Description>
         <RequiresCity>1</RequiresCity>
         <AllowedPerFaction>1</AllowedPerFaction>
@@ -19,7 +19,7 @@
         <GameModifier>
             <ModType>ConstructionResourceCost</ModType>
             <Attribute>ForbiddenLore</Attribute>
-            <Value>-325</Value>
+            <Value>-326</Value>
         </GameModifier>
                 <GameModifier>
                     <ModType>Player</ModType>
@@ -34,7 +34,7 @@
     </ImprovementType>
 
 <ImprovementType InternalName="ArcaneBeacon_Empire">
-        <DisplayName>Nonsensical Structure</DisplayName>
+        <DisplayName>Unknown Structure</DisplayName>
         <Description>The myth of Arcane beacons that allow incredible feats of summoning has already been disproved. Not worth wasting idle chatter upon.</Description>
         <RequiresCity>1</RequiresCity>
         <AllowedPerFaction>1</AllowedPerFaction>
@@ -52,7 +52,7 @@
         <GameModifier>
             <ModType>ConstructionResourceCost</ModType>
             <Attribute>ForbiddenLore</Attribute>
-            <Value>-325</Value>
+            <Value>-326</Value>
         </GameModifier>
                 <GameModifier>
                     <ModType>Player</ModType>

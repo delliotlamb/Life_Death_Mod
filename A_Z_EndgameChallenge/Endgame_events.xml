@@ -9,11 +9,7 @@
     <QuestClass>Minor</QuestClass>
     <Repeatable>0</Repeatable>
     <TriggerType>TurnNumber</TriggerType>
-    <!--
 	<TriggerData>325</TriggerData>
-	-->
-	<!-- -->
-	<TriggerData>5</TriggerData>
     <TriggerOrigin>EventLocation</TriggerOrigin>
     <TriggerChance>18000</TriggerChance>
     <PostTriggerChance>18000</PostTriggerChance>
