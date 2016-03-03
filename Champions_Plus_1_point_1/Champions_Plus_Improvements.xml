@@ -1295,5 +1295,108 @@
             </Calculate>
         </GameModifier>
     </ImprovementType>
+	
+	<ImprovementType InternalName="Monument_HowlingChasm">
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Mana</Attribute>
+            <PerTurn>1</PerTurn>
+            <Provides>+3 Mana</Provides>
+            <Value>3</Value>
+        </GameModifier>	
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Mana</StrVal>
+            <Value>30</Value>
+            <Provides>+30% Mana in all your cities</Provides>
+        </GameModifier>		
+    </ImprovementType>
+	
+    <ImprovementType InternalName="Monument_IruTAlavar">
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Mana</Attribute>
+            <PerTurn>1</PerTurn>
+            <Provides>+3 Mana</Provides>
+            <Value>3</Value>
+        </GameModifier>	
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Mana</StrVal>
+            <Value>30</Value>
+            <Provides>+30% Mana in all your cities</Provides>
+        </GameModifier>			
+        </GameModifier>			
+    </ImprovementType>
+	
+    <ImprovementType InternalName="Monument_PillarOfMascrinthus">
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Mana</Attribute>
+            <PerTurn>1</PerTurn>
+            <Provides>+3 Mana</Provides>
+            <Value>3</Value>
+        </GameModifier>	
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Mana</StrVal>
+            <Value>30</Value>
+            <Provides>+30% Mana in all your cities</Provides>
+        </GameModifier>			
+	</ImprovementType>
+
+    <ImprovementType InternalName="Monument_PitOfSarpah">
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Mana</Attribute>
+            <PerTurn>1</PerTurn>
+            <Provides>+3 Mana</Provides>
+            <Value>3</Value>
+        </GameModifier>	
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Mana</StrVal>
+            <Value>30</Value>
+            <Provides>+30% Mana in all your cities</Provides>
+        </GameModifier>		
+    </ImprovementType>
+	
+    <ImprovementType InternalName="Monument_Puraudrah">
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Mana</Attribute>
+            <PerTurn>1</PerTurn>
+            <Provides>+3 Mana</Provides>
+            <Value>3</Value>
+        </GameModifier>	
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Mana</StrVal>
+            <Value>30</Value>
+            <Provides>+30% Mana in all your cities</Provides>
+        </GameModifier>			
+    </ImprovementType>
+	
+	<ImprovementType InternalName="Monument_FloodedGraveyard">
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Mana</Attribute>
+            <PerTurn>1</PerTurn>
+            <Provides>+3 Mana</Provides>
+            <Value>3</Value>
+        </GameModifier>	
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Mana</StrVal>
+            <Value>30</Value>
+            <Provides>+30% Mana in all your cities</Provides>
+        </GameModifier>			
+    </ImprovementType>
     
 </ImprovementTypes>
