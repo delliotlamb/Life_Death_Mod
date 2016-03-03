@@ -1,0 +1,33 @@
+<Quests>
+<QuestDef InternalName="Quest_Endgame_Arrives">
+    <DisplayName>Your Rivals Have Studied In Secret...</DisplayName>
+    <Description>The other nations have long been secretly pouring through old tomes, searching for secrets of unspeakable power. The kingdoms can now fill the skies with Dragon allies, while the Empires can summon the Titans anew. You have neither advantage. 
+
+	So long as enemy Sovereigns are healthy and mobile they shall summon more and more legendary units into their armies. Prepare for a new scale of war!</Description>
+    <AllowQuestRejection>0</AllowQuestRejection>
+    <FullscreenMovie>Movies\Minicut_Event_Eclipse.bik</FullscreenMovie>
+    <QuestClass>Minor</QuestClass>
+    <Repeatable>0</Repeatable>
+    <TriggerType>TurnNumber</TriggerType>
+    <!--
+	<TriggerData>325</TriggerData>
+	-->
+	<!-- -->
+	<TriggerData>5</TriggerData>
+    <TriggerOrigin>EventLocation</TriggerOrigin>
+    <TriggerChance>18000</TriggerChance>
+    <PostTriggerChance>18000</PostTriggerChance>
+    <Treasure>
+            <GameModifier>
+                <ModType>Resource</ModType>
+                <Attribute>ForbiddenLore</Attribute>
+                <Value>-900</Value>
+            </GameModifier>
+    </Treasure>
+    <QuestObjectiveDef>
+      <ObjectiveID>0</ObjectiveID>
+      <QuestEnd>1</QuestEnd>
+    </QuestObjectiveDef>
+  </QuestDef>
+
+</Quests>

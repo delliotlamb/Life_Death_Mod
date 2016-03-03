@@ -1,0 +1,15 @@
+<ImprovementTypeArtDefs>
+    <ImprovementTypeArtDef InternalName="Art_Endgame_Gate">
+            <ImprovementTypeArtSubPack InternalName="Endgame_Gate_Default">
+                <TileDesign>Dagorath_Gate_Tower_01</TileDesign>
+                <ConstructionTileDesign>F_Construction1x1_01</ConstructionTileDesign>
+                <DrawnIcon>Improvement_SacrificialAltar.png</DrawnIcon>
+                <DrawnIconConstruction>Improvement_SacrificialAltar_C.png</DrawnIconConstruction>
+                <Thumbnail>G_Quest_Shadow_Rift_01.png</Thumbnail>
+                <Medallions InternalName="">
+                    <All>G_Quest_Shadow_Rift_01.png</All>
+                </Medallions>
+            </ImprovementTypeArtSubPack>
+    </ImprovementTypeArtDef>
+	
+</ImprovementTypeArtDefs>

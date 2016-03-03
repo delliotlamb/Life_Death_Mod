@@ -1,0 +1,24 @@
+<!--<PlayerAbilityTypes>
+
+<UnitStatType InternalName="UnitStat_GetsDragons">
+	<DisplayName>Gets Dragons</DisplayName>
+	<Description>Can summon Dragons</Description>
+	<Icon>Stat_Radius_Icon.png</Icon>
+	<DefaultValue>0.0</DefaultValue>
+	<Hidden>0</Hidden>
+	<UnitStatGrouping>CombatStat</UnitStatGrouping>
+</UnitStatType>
+
+
+<UnitStatType InternalName="UnitStat_GetsTitans">
+	<DisplayName>Gets Titans</DisplayName>
+	<Description>Can summon Titans</Description>
+	<Icon>Stat_Radius_Icon.png</Icon>
+	<DefaultValue>0.0</DefaultValue>
+	<Hidden>0</Hidden>
+	<UnitStatGrouping>CombatStat</UnitStatGrouping>
+</UnitStatType>
+
+
+
+</PlayerAbilityTypes>-->

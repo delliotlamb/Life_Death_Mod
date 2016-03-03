@@ -1,0 +1,82 @@
+<ResourceTypes>
+
+<ResourceType InternalName="ForbiddenLore">
+        <DisplayName>Fruitless Scholarship</DisplayName>
+        <Type>ForbiddenLore</Type>
+        <Description>Dangerous, long-lost magical knowledge.</Description>
+		<HarvestType>Mining</HarvestType>
+        <IconColor>0,0,0</IconColor>
+        <Icon>Gfx//Icons//Icon_Metal.png</Icon>
+        <ClothIcon>gfx\\TacticalIcons\\MetalOre_1.png</ClothIcon>
+		<HideInHiergamenon>1</HideInHiergamenon>
+        <ModelColor>0,0,0</ModelColor>
+        <Production>1.0</Production>
+        <Worth>0</Worth>
+        <Global>1</Global>
+        <Rarity>0.0</Rarity>
+        <Shared>0</Shared>
+        <TradedByCaravans>0</TradedByCaravans>
+        <ShownInGlobalDisplay>0</ShownInGlobalDisplay>
+        <DiplomaticPerceivedValuePerUnit>0</DiplomaticPerceivedValuePerUnit>
+        <Medallions InternalName="IronOre_Res_Medallions">
+            <All>Res_Ores_Plains.png</All>
+        </Medallions>
+        <!-- AI Info -->
+        <AIData AIPersonality="AI_General">
+            <AITag>Metal</AITag>
+        </AIData>
+    </ResourceType>
+
+<!--<ResourceType InternalName="DraconicLore">
+        <DisplayName>Esoteric Lore</DisplayName>
+        <Type>DraconicLore</Type>
+        <Description>Ability to summon Dragons.</Description>
+	<HarvestType>Mining</HarvestType>
+        <IconColor>0,0,0</IconColor>
+        <Icon>Gfx//Icons//Ability_Urban_Icon.png</Icon>
+        <ClothIcon>gfx\\TacticalIcons\\MetalOre_1.png</ClothIcon>
+	<HideInHiergamenon>1</HideInHiergamenon>
+        <ModelColor>0,0,0</ModelColor>
+        <Production>1.0</Production>
+        <Worth>0</Worth>
+        <Global>1</Global>
+        <Rarity>0.0</Rarity>
+        <Shared>0</Shared>
+        <TradedByCaravans>0</TradedByCaravans>
+        <ShownInGlobalDisplay>0</ShownInGlobalDisplay>
+        <DiplomaticPerceivedValuePerUnit>0</DiplomaticPerceivedValuePerUnit>
+        <Medallions InternalName="IronOre_Res_Medallions">
+            <All>Res_Ores_Plains.png</All>
+        </Medallions>
+        <AIData AIPersonality="AI_General">
+            <AITag>Metal</AITag>
+        </AIData>
+    </ResourceType>
+
+<ResourceType InternalName="TitanLore">
+        <DisplayName>Titan Lore</DisplayName>
+        <Type>TitanLore</Type>
+        <Description>Ability to summon Titans</Description>
+	<HarvestType>Mining</HarvestType>
+        <IconColor>0,0,0</IconColor>
+        <Icon>Gfx//Icons//Ability_Embers.png</Icon>
+        <ClothIcon>gfx\\TacticalIcons\\MetalOre_1.png</ClothIcon>
+	<HideInHiergamenon>1</HideInHiergamenon>
+        <ModelColor>0,0,0</ModelColor>
+        <Production>1.0</Production>
+        <Worth>0</Worth>
+        <Global>1</Global>
+        <Rarity>0.0</Rarity>
+        <Shared>0</Shared>
+        <TradedByCaravans>0</TradedByCaravans>
+        <ShownInGlobalDisplay>0</ShownInGlobalDisplay>
+        <DiplomaticPerceivedValuePerUnit>0</DiplomaticPerceivedValuePerUnit>
+        <Medallions InternalName="IronOre_Res_Medallions">
+            <All>Res_Ores_Plains.png</All>
+        </Medallions>
+        <AIData AIPersonality="AI_General">
+            <AITag>Metal</AITag>
+        </AIData>
+    </ResourceType>-->
+
+    </ResourceTypes>

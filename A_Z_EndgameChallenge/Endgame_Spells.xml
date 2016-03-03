@@ -1,0 +1,358 @@
+<Spells>
+
+<!-- works, but only gives spell to sovereign
+
+<SpellDef InternalName="ApplyForbiddenLore">
+        <DisplayName>Apply Forbidden Lore</DisplayName>
+        <Description>The rumors about ultimate summoning spells are a waste of time. No such thing will ever occur.</Description>
+        <Image>Brilliance_Painting.png</Image>
+        <IconFG>Marker_PlaceHolder.png</IconFG>
+        <CanStack>0</CanStack>
+	<Cooldown>4000</Cooldown>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitEnchantment</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <CasterMustBeSov>1</CasterMustBeSov>
+        <AppliesRandomModifier>1</AppliesRandomModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_GetsDragons</StrVal>
+	    <Duration>-1</Duration>
+  	    <Value>1</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_GetsTitans</StrVal>
+	    <Duration>-1</Duration>
+  	    <Value>1</Value>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>10000</AIPriority>
+        </AIData>
+    </SpellDef>
+
+-->
+
+
+
+
+    <SpellDef InternalName="SummonDragon">
+        <DisplayName>Fanciful Nonsense</DisplayName>
+        <Description>Summon A Dragon? There is no such spell! Even Ereog never managed such a feat.</Description>
+        <Image>F_DragonAlly.png</Image>
+        <IconFG>T_VatulasDragonslayer_Icon.png</IconFG>
+        <CanStack>0</CanStack>
+		<Cooldown>3</Cooldown>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+		<CasterMustBeSov>1</CasterMustBeSov>
+        <!--<AppliesRandomModifier>1</AppliesRandomModifier>-->
+        <Range>0</Range>		
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>1</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>SummonUnit</Attribute>
+            <StrVal>Allied Dragon</StrVal>
+            <UnitClass>AshwakeDragon</UnitClass>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumFireShards] + [UnitStat_BonusSummonLevel]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc] + 16]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>SummonUnit</Attribute>
+            <StrVal>Allied Dragon</StrVal>
+            <UnitClass>StormDragon</UnitClass>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumAirShards] + [UnitStat_BonusSummonLevel]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc] + 13]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>SummonUnit</Attribute>
+            <StrVal>Allied Dragon</StrVal>
+            <UnitClass>ClambercoilDragon</UnitClass>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumWaterShards] + [UnitStat_BonusSummonLevel]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc] + 12]]></Expression>
+            </Calculate>
+        </GameModifier>
+		<GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>ForbiddenLore</Attribute>
+            <ApplyToCaster>1</ApplyToCaster>
+            <Value>500</Value>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>10000</AIPriority>
+        </AIData>
+    </SpellDef>
+
+    <SpellDef InternalName="SummonTitan">
+        <DisplayName>Foolish Waste Of Breath</DisplayName>
+        <Description>Summon back the Titans? They are long gone now, and only a doomed channeler would waste time on such pursuits.</Description>
+        <Image>T_ParidensReturn_Painting.png</Image>
+        <IconFG>T_ParidensReturn_Icon.png</IconFG>
+		<Cooldown>3</Cooldown>
+        <CanStack>0</CanStack>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+		<CasterMustBeSov>1</CasterMustBeSov>
+        <!--<AppliesRandomModifier>1</AppliesRandomModifier>-->
+        <Range>0</Range>
+        <Prereq>
+            <Type>Allegiance</Type>
+            <Attribute>Empire</Attribute>
+        </Prereq>		
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>1</Amount>
+        </SpellResourceCost>
+        <!--<GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>SummonUnit</Attribute>
+            <StrVal>Returned Titan</StrVal>
+            <UnitClass>Titan</UnitClass>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumDeathShards] + [UnitStat_BonusSummonLevel]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc] + 20]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>SummonUnit</Attribute>
+            <StrVal>Returned Titan</StrVal>
+            <UnitClass>Titan</UnitClass>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumDeathShards] + [UnitStat_BonusSummonLevel]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc] + 20]]></Expression>
+            </Calculate>
+        </GameModifier>-->
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>SummonUnit</Attribute>
+            <StrVal>Returned Titan</StrVal>
+            <UnitClass>Titan</UnitClass>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumDeathShards] + [UnitStat_BonusSummonLevel]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc] + 20]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>SummonUnit</Attribute>
+            <StrVal>Returned Titan Elder</StrVal>
+            <UnitClass>Titan_Elite</UnitClass>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumDeathShards] + [UnitStat_BonusSummonLevel]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc] + 22]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>SummonUnit</Attribute>
+            <StrVal>Returned Titan General</StrVal>
+            <UnitClass>Titan_General</UnitClass>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumDeathShards] + [UnitStat_BonusSummonLevel]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc] + 20]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>SummonUnit</Attribute>
+            <StrVal>Returned Titan Warrior</StrVal>
+            <UnitClass>Titan_Warrior</UnitClass>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumDeathShards] + [UnitStat_BonusSummonLevel]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc] + 15]]></Expression>
+            </Calculate>
+        </GameModifier>
+		<GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>ForbiddenLore</Attribute>
+            <ApplyToCaster>1</ApplyToCaster>
+            <Value>500</Value>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>10000</AIPriority>
+        </AIData>
+    </SpellDef>
+
+<!--
+<SpellDef InternalName="SummonOldOne">
+        <DisplayName>Summon Old One</DisplayName>
+        <Description>A dreaded Old one has come here from beyond the stars. There is no hope for any who oppose it.</Description>
+        <Image>F_DragonAlly.png</Image>
+        <IconFG>T_VatulasDragonslayer_Icon.png</IconFG>
+        <CanStack>0</CanStack>
+		<Cooldown>4000</Cooldown>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <AppliesRandomModifier>1</AppliesRandomModifier>
+        <Range>0</Range>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>1</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>SummonUnit</Attribute>
+            <StrVal>Old One</StrVal>
+            <UnitClass>OldOne</UnitClass>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitStat_BonusSummonLevel]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc] + 30]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>10000</AIPriority>
+        </AIData>
+    </SpellDef>-->
+
+<SpellDef InternalName="Mass_Slow_Ability">
+        <DisplayName>Mass Slow</DisplayName>
+        <Description>All enemy units suffer -3 to Initiative (-1 per water shard) unless they resist.</Description>
+        <FormattedDescription>Target enemy unit suffers -%d to Initiative unless they resist.</FormattedDescription>
+        <Image>T_Slow_Painting.png</Image>
+        <IconFG>T_Slow_Icon.png</IconFG>
+	<Cooldown>5</Cooldown>
+        <CanStack>0</CanStack>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitCurse</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Debuff</SpellSubClass>
+        <SpellTargetType>AllEnemyUnits</SpellTargetType>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <IsResistable>1</IsResistable>
+        <IsSpecialAbility>1</IsSpecialAbility>
+        <PreventStackingWith>Slow</PreventStackingWith>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <IsForFormattedDescription>1</IsForFormattedDescription>
+            <DisplayName>Slowed</DisplayName>
+            <Duration>-1</Duration>
+            <Effect>E_Slow_Particle</Effect>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumWaterShards] * -1]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc] - 3]]></Expression>
+            </Calculate>
+            <Calculate InternalName="ValueForFormattedDescription">
+                <Expression><![CDATA[[Calc] - 3]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>1000</AIPriority>
+        <ValueCalcWrapper>
+            <ValueType>IsTargetWorthy</ValueType>
+            <Calculate InternalName="Calc" ValueOwner="TargetUnit">
+                <Expression><![CDATA[[Unit_GetHPCurrent]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc] > 10]]></Expression>
+            </Calculate>
+        </ValueCalcWrapper>
+        </AIData>
+        <HitSoundFX>Spell_FreezeGroup</HitSoundFX>
+    </SpellDef>
+
+<SpellDef InternalName="ProtectionFromNature">
+        <DisplayName>Protection from Nature</DisplayName>
+        <Description>All allied units gain 50% Fire, Cold, and Lightning Resistance.</Description>
+        <Image>S_NaturesCloak_Painting.png</Image>
+        <IconFG>S_NaturesCloak_Painting.png</IconFG>
+        <CanStack>0</CanStack>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitEnchantment</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Buff</SpellSubClass>
+        <SpellTargetType>AllFriendlyUnits</SpellTargetType>
+        <IsSpecialAbility>1</IsSpecialAbility>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ResistFire</StrVal>
+            <Duration>-1</Duration>
+            <Value>50</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ResistCold</StrVal>
+            <Duration>-1</Duration>
+            <Value>50</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ResistLightning</StrVal>
+            <Duration>-1</Duration>
+            <Value>50</Value>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>1000</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_NaturesCloak_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_NaturesCloak_Particle</EffectName>
+            <LocalPosition>0,20,0</LocalPosition>
+            <EffectScale>0.7</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
+
+</Spells>
+
+
+
+
+

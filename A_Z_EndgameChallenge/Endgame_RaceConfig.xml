@@ -1,0 +1,39 @@
+<!--
+<RaceConfigs>
+    <RaceConfig InternalName="KingdomOfAltar">
+        <SelAbilityBonusOption>Endgame_Player</SelAbilityBonusOption>
+    </RaceConfig>
+    <RaceConfig InternalName="KingdomOfCapitar"> 
+        <SelAbilityBonusOption>Endgame_Player</SelAbilityBonusOption>
+    </RaceConfig>
+    <RaceConfig InternalName="KingdomOfGilden">  
+        <SelAbilityBonusOption>Endgame_Player</SelAbilityBonusOption>
+    </RaceConfig>
+    <RaceConfig InternalName="KingdomOfPariden">
+        <SelAbilityBonusOption>Endgame_Player</SelAbilityBonusOption>
+    </RaceConfig>
+    <RaceConfig InternalName="KingdomOfTarth">
+        <SelAbilityBonusOption>Endgame_Player</SelAbilityBonusOption>
+    </RaceConfig>
+    <RaceConfig InternalName="EmpireOfKraxis">
+        <SelAbilityBonusOption>Endgame_Empire</SelAbilityBonusOption>
+    </RaceConfig>
+    <RaceConfig InternalName="EmpireOfMagnar">
+        <SelAbilityBonusOption>Endgame_Empire</SelAbilityBonusOption>
+    </RaceConfig>
+    <RaceConfig InternalName="EmpireOfResoln">
+        <SelAbilityBonusOption>Endgame_Empire</SelAbilityBonusOption>
+    </RaceConfig>
+    <RaceConfig InternalName="EmpireOfUmber">
+        <SelAbilityBonusOption>Endgame_Empire</SelAbilityBonusOption>
+    </RaceConfig>
+    <RaceConfig InternalName="EmpireOfYithril">
+        <SelAbilityBonusOption>Endgame_Empire</SelAbilityBonusOption>
+    </RaceConfig>
+    <RaceConfig InternalName="EmpireOfTheDead">
+        <SelAbilityBonusOption>Endgame_Empire</SelAbilityBonusOption>
+    </RaceConfig>     
+
+
+</RaceConfigs>
+-->

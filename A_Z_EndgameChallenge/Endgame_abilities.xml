@@ -1,0 +1,166 @@
+<AbilityBonuses>
+
+<AbilityBonus InternalName="Endgame_Ability">
+        <AbilityBonusOption InternalName="Endgame">
+            <DisplayName>Esoteric Lore</DisplayName>
+            <Description>Could the pursuit of such esoteric, lost knowledge ever bear fruit?</Description>
+            <Icon>Ability_Inefficient_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>ProduceResource</Attribute>
+                <StrVal>ForbiddenLore</StrVal>
+                <Value>1</Value>
+            <Provides>Channelers left in power too long may surprise you...</Provides>
+            </GameModifier>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+<!--<AbilityBonus InternalName="Endgame_Player_Ability">
+        <AbilityBonusOption InternalName="Endgame_Player">
+            <DisplayName>Esoteric Lore</DisplayName>
+            <Description>Channelers left in power too long may surprise you...</Description>
+            <Icon>Ability_Inefficient_Icon.png</Icon>
+            <GameModifier>
+                <Provides>Channelers left in power too long may surprise you...</Provides>
+            </GameModifier>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+<AbilityBonus InternalName="Endgame_Empire_Ability">
+        <AbilityBonusOption InternalName="Endgame_Empire">
+            <DisplayName>Esoteric Lore</DisplayName>
+            <Description>Channelers left in power too long may surprise you...</Description>
+            <Icon>Ability_Inefficient_Icon.png</Icon>
+            <GameModifier>
+                <Provides>Channelers left in power too long may surprise you...</Provides>
+            </GameModifier>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+<AbilityBonus InternalName="Endgame_Dagorath_Ability">
+        <AbilityBonusOption InternalName="Endgame_Dagorath">
+            <DisplayName>Esoteric Lore</DisplayName>
+            <Description>Channelers left in power too long may surprise you...</Description>
+            <Icon>Ability_Inefficient_Icon.png</Icon>
+            <GameModifier>
+                <Provides>Channelers left in power too long may surprise you...</Provides>
+            </GameModifier>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+	
+
+<AbilityBonus InternalName="DurableAbility">
+        <AbilityBonusOption InternalName="Durable">
+            <DisplayName>From Out Of Space</DisplayName>
+            <Description>+50% Fire, Cold, and Lightning Resistance, Immune To Magic</Description>
+            <Icon>Ability_ImmuneToMagic_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ResistFire</StrVal>
+                <Value>50</Value>
+                <Provides>+50% Fire Resistance</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ResistCold</StrVal>
+                <Value>50</Value>
+                <Provides>+50% Cold Resistance</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ResistLightning</StrVal>
+                <Value>50</Value>
+                <Provides>+50% Lightning Resistance</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>ProtectFromSpells</Attribute>
+                <Provides>Immune to Magic</Provides>
+            </GameModifier>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+-->
+
+<!-- 10-23-14 removed original three game modifiers because their inclusion was effectively doubling up originally intended penalty (-25% to accuracy, HP, and magicpower became -50%) 
+-->
+
+    <AbilityBonus InternalName="BrokenSpiritAbility">
+        <AbilityBonusOption InternalName="BrokenSpirit">
+            <DisplayName>Broken Spirit</DisplayName>
+            <Description>-25% to Accuracy, Spell Mastery and Hit Points</Description>
+            <Icon>Ability_BrokenSpirit_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>ProduceResource</Attribute>
+                <StrVal>ForbiddenLore</StrVal>
+                <Value>-1</Value>
+            <Provides>Forbidden Lore is negated</Provides>
+            </GameModifier>
+            <Type>Weakness</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+ <AbilityBonus InternalName="Spell_MassSlowAbility">
+        <AbilityBonusOption InternalName="Spell_MassSlow">
+            <DisplayName>Mass Slow</DisplayName>
+            <Description>Allows the unit to cast Mass Slow</Description>
+            <Icon>T_Slow_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Mass_Slow_Ability</StrVal>
+                <Provides>All enemy units suffer -3 to Initiative (-1 per water shard) unless they resist</Provides>
+            </GameModifier>
+            <CombatRating>10</CombatRating>
+            <IsCombatAbility>1</IsCombatAbility>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    
+    <AbilityBonus InternalName="Trigger_ProtectionFromNature">
+        <AbilityBonusOption InternalName="Trigger_ProtectionFromNature">
+            <DisplayName>Protection From Nature</DisplayName>
+            <Description>+50 Fire, Cold, Lightning Resist to all allies</Description>
+            <Icon>S_NaturesCloak_Icon.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>BattleAutoCastSpell</Attribute>
+                <StrVal>ProtectionFromNature</StrVal>
+                <Value>100</Value>
+                <Provides>Triggered when combat begins</Provides>
+            </GameModifier>
+            <CombatRating>100</CombatRating>
+            <Type>Ability</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+</AbilityBonuses>

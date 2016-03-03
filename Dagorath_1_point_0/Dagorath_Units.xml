@@ -69,7 +69,7 @@
 		<SelectedAbilityBonusOption>Death2</SelectedAbilityBonusOption>
 		<SelectedAbilityBonusOption>Attunement</SelectedAbilityBonusOption>
 		<SelectedAbilityBonusOption>Fire1</SelectedAbilityBonusOption>
-		<SelectedAbilityBonusOption>SovereignWrath</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Endgame</SelectedAbilityBonusOption>
 		<GameModifier InternalName="GameModifier 2646">
 			<ModType>Resource</ModType>
 			<Attribute>Unrest</Attribute>
