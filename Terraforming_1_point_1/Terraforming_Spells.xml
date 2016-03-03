@@ -607,7 +607,7 @@
             <Attribute>TrainingDiscount</Attribute>
             <Value>-.9</Value>
             <Duration>-1</Duration>				
-        </GameModifier>		
+        </GameModifier>	
         <GameModifier>
             <ModType>City</ModType>
             <Duration>-1</Duration>
@@ -633,7 +633,7 @@
 	
 	<SpellDef InternalName="GripOfWinter2">
         <DisplayName>Grip of Winter</DisplayName>
-        <Description>Massively slows all production, training, and food production in target city.</Description>
+        <Description>Massively slows all production and food harvesting in target city.</Description>
         <Image>S_GripofWinter_Painting.png</Image>
         <IconFG>S_GripofWinter_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -671,12 +671,12 @@
             <PerTurn>1</PerTurn>
             <Duration>-1</Duration>			
         </GameModifier>
-        <GameModifier>
+        <!--<GameModifier>
             <ModType>City</ModType>
             <Attribute>TrainingDiscount</Attribute>
             <Value>-.9</Value>
             <Duration>-1</Duration>				
-        </GameModifier>		
+        </GameModifier>-->		
         <GameModifier>
             <ModType>City</ModType>
             <Duration>-1</Duration>
@@ -2491,7 +2491,7 @@
         <SpellBookSortCategory>City</SpellBookSortCategory>
         <SpellBookSortSubCategory>CityCurse</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
-        <SpellClass>ImpResourceBooster</SpellClass>
+        <SpellClass>Offensive</SpellClass>
         <SpellSubClass>Debuff</SpellSubClass>
         <SpellTargetType>EnemyCity</SpellTargetType>	
         <Prereq>
@@ -4216,7 +4216,7 @@
 	
 	<SpellDef InternalName="Earthquake">
         <DisplayName>Earthquake</DisplayName>
-        <Description>Destroys random city improvements, resets the production queue and halves the population of the targeted city. Defending units lose -2 to initiative and hit points for 1 turn.</Description>
+        <Description>Destroys random city improvements, resets the production queue and halves the population of the targeted city. Defending units lose -2 to initiative and hit points for 1 turn. There is a small chance that the entire city will be destroyed.</Description>
         <Image>S_Earthquake_Painting.png</Image>
         <IconFG>S_Earthquake_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -4225,7 +4225,7 @@
         <SpellBookSortCategory>City</SpellBookSortCategory>
         <SpellBookSortSubCategory>CityCurse</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
-        <SpellClass>ImpResourceBooster</SpellClass>
+        <SpellClass>Offensive</SpellClass>
         <SpellSubClass>Debuff</SpellSubClass>
         <SpellTargetType>EnemyCity</SpellTargetType>
         <Prereq>
@@ -4370,6 +4370,11 @@
             <Attribute>PlaceTerrain</Attribute>
             <TerrainType>DesertTerrain</TerrainType>
         </GameModifier>
+		<GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>PlaceEnvironment</Attribute>
+            <TerrainType>DeadEnvironment</TerrainType>
+        </GameModifier>	
             <GameModifier>
                 <ModType>Resource</ModType>
                 <Attribute>FamineEssence</Attribute>
@@ -4403,7 +4408,7 @@
         <SpellBookSortCategory>City</SpellBookSortCategory>
         <SpellBookSortSubCategory>CityCurse</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
-        <SpellClass>ImpResourceBooster</SpellClass>
+        <SpellClass>Offensive</SpellClass>
         <SpellSubClass>Debuff</SpellSubClass>
         <SpellTargetType>EnemyCity</SpellTargetType>		
         <Prereq>
@@ -4887,12 +4892,13 @@
     </SpellDef>
 	
 	<SpellDef InternalName="Sandstorm">
-        <DisplayName>Choking Duststorm</DisplayName>
-        <Description>Immobilizes enemy army in friendly desert.</Description>
+        <DisplayName>Sandstorm</DisplayName>
+        <Description>Immobilizes enemy army in friendly desert for 2 turns.</Description>
         <Image>T_TitansBreath_Painting.png</Image>
         <IconFG>T_ObscuringFog_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>		
         <CanStack>1</CanStack>
+		<Cooldown>1</Cooldown>
         <SpellBookSortCategory>Unit</SpellBookSortCategory>
         <SpellBookSortSubCategory>UnitCurse</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -4907,24 +4913,25 @@
         </Prereq>	
         <SpellResourceCost>
             <Resource>FamineEssence</Resource>
-            <Amount>30</Amount>
+            <Amount>5</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>Immobilize</Attribute>
-            <Duration>3</Duration>
+            <Duration>2</Duration>
         </GameModifier>
         <ValidTerrainType>DesertTerrain</ValidTerrainType>		
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
         </AIData>
-        <HitSoundFX>Spell_Sacrifice_01</HitSoundFX>
+        <HitSoundFX>Spell_Knockback_01</HitSoundFX>
         <SpellDefEffect>
-            <EffectName>T_Wither_Particle</EffectName>
-            <LocalPosition>0,30,0</LocalPosition>
-            <EffectScale>.75</EffectScale>
+            <EffectName>T_TitansBreath_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>0.25</EffectScale>
             <EffectDelay>0</EffectDelay>
             <SnapToTerrain>1</SnapToTerrain>
+            <PlayOnAllTargets>1</PlayOnAllTargets>
         </SpellDefEffect>
     </SpellDef>
 	
@@ -5001,7 +5008,7 @@
         <Range>3</Range>
         <SpellResourceCost>
             <Resource>WaveEssence</Resource>
-            <Amount>60</Amount>
+            <Amount>100</Amount>
         </SpellResourceCost>		
         <Prereq>
             <Type>AbilityBonusOption</Type>
@@ -6238,7 +6245,7 @@
         <HitSoundFX>Spell_Inferno_01</HitSoundFX>
     </SpellDef>
 	
-	<!-- 3 shard spells -->
+	<!-- 3 shard spells 
 	
 	<SpellDef InternalName="WaterShardWrath">
         <DisplayName>Wrath Of Water Shards</DisplayName>
@@ -6650,7 +6657,7 @@
         </SpellDefEffect>		
     </SpellDef>
 	
-	
+	-->
 	
 	<!-- 5 shard spells -->
 	
@@ -6698,6 +6705,182 @@
             <EffectDelay>0</EffectDelay>
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
+    </SpellDef>
+	
+
+		
+	<SpellDef InternalName="CallHenchman_Water">
+        <DisplayName>Treat With Waves</DisplayName>
+        <Description>Call a non-humanoid henchman.</Description>
+        <Image>M_Warg_SiltSkath_Card_01.png</Image>
+        <IconFG>M_Warg_SiltSkath_Card_01.png</IconFG>
+		<AutoUnlock>1</AutoUnlock>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>	
+        <CasterMustBeSov>1</CasterMustBeSov>		
+        <SpellResourceCost>
+            <Resource>WaveEssence</Resource>
+            <Amount>15</Amount>
+        </SpellResourceCost>		
+       <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnitJoinArmy</Attribute>
+            <StrVal>Speaker_Water</StrVal>
+            <UnitClass>Champion</UnitClass>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_DestinyGift_01</HitSoundFX>
+    </SpellDef>
+	
+		<SpellDef InternalName="CallHenchman_Air">
+        <DisplayName>Treat With Gales</DisplayName>
+        <Description>Call a non-humanoid henchman.</Description>
+        <Image>M_Stalker_Card.png</Image>
+        <IconFG>M_Stalker_Card.png</IconFG>
+		<AutoUnlock>1</AutoUnlock>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>	
+        <CasterMustBeSov>1</CasterMustBeSov>		
+        <SpellResourceCost>
+            <Resource>GaleEssence</Resource>
+            <Amount>125</Amount>
+        </SpellResourceCost>		
+       <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnitJoinArmy</Attribute>
+            <StrVal>Speaker_Air</StrVal>
+            <UnitClass>Champion</UnitClass>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_DestinyGift_01</HitSoundFX>
+    </SpellDef>
+	
+	<SpellDef InternalName="CallHenchman_Earth">
+        <DisplayName>Treat With Minerals</DisplayName>
+        <Description>Call a non-humanoid henchman.</Description>
+        <Image>M_SquamategoF_Card_01.png</Image>
+        <IconFG>M_SquamategoF_Card_01.png</IconFG>
+		<AutoUnlock>1</AutoUnlock>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>	
+        <CasterMustBeSov>1</CasterMustBeSov>		
+        <SpellResourceCost>
+            <Resource>MineralEssence</Resource>
+            <Amount>125</Amount>
+        </SpellResourceCost>		
+       <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnitJoinArmy</Attribute>
+            <StrVal>Speaker_Earth</StrVal>
+            <UnitClass>Champion</UnitClass>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_DestinyGift_01</HitSoundFX>
+    </SpellDef>
+	
+		<SpellDef InternalName="CallHenchman_Fire">
+        <DisplayName>Treat With Embers</DisplayName>
+        <Description>Call a non-humanoid henchman.</Description>
+        <Image>M_Serpent_Naja_Card.png</Image>
+        <IconFG>M_Serpent_Naja_Card.png</IconFG>
+		<AutoUnlock>1</AutoUnlock>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>	
+        <CasterMustBeSov>1</CasterMustBeSov>		
+        <SpellResourceCost>
+            <Resource>EmberEssence</Resource>
+            <Amount>125</Amount>
+        </SpellResourceCost>		
+       <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnitJoinArmy</Attribute>
+            <StrVal>Speaker_Fire</StrVal>
+            <UnitClass>Champion</UnitClass>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_DestinyGift_01</HitSoundFX>
+    </SpellDef>
+	
+		<SpellDef InternalName="CallHenchman_Death">
+        <DisplayName>Treat With Famine</DisplayName>
+        <Description>Call a non-humanoid henchman.</Description>
+        <Image>M_Ravenous Harridan_Giant_Card_01.png</Image>
+        <IconFG>M_Ravenous Harridan_Giant_Card_01.png</IconFG>
+		<AutoUnlock>1</AutoUnlock>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>	
+        <CasterMustBeSov>1</CasterMustBeSov>		
+        <SpellResourceCost>
+            <Resource>FamineEssence</Resource>
+            <Amount>125</Amount>
+        </SpellResourceCost>		
+       <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnitJoinArmy</Attribute>
+            <StrVal>Speaker_Death</StrVal>
+            <UnitClass>Champion</UnitClass>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_DestinyGift_01</HitSoundFX>
+    </SpellDef>
+	
+		<SpellDef InternalName="CallHenchman_Life">
+        <DisplayName>Treat With Verdance</DisplayName>
+        <Description>Call a non-humanoid henchman.</Description>
+        <Image>M_Wolf_EbbenWolf_Card.png</Image>
+        <IconFG>M_Wolf_EbbenWolf_Card.png</IconFG>
+		<AutoUnlock>1</AutoUnlock>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>	
+        <CasterMustBeSov>1</CasterMustBeSov>		
+        <SpellResourceCost>
+            <Resource>VerdantEssence</Resource>
+            <Amount>125</Amount>
+        </SpellResourceCost>		
+       <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnitJoinArmy</Attribute>
+            <StrVal>Speaker_Life</StrVal>
+            <UnitClass>Champion</UnitClass>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_DestinyGift_01</HitSoundFX>
     </SpellDef>
 
 </Spells>

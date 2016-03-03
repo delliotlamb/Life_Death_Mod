@@ -670,11 +670,11 @@
             <PerkTreePosX>2</PerkTreePosX>
             <PerkTreePosY>2</PerkTreePosY>
             <GameModifier>
-                <ModType>Unit</ModType>
-                <Attribute>ProduceResource</Attribute>
-                <StrVal>Research</StrVal>
-                <Value>2</Value>
-                <Provides>+2 Research per Season</Provides>
+                <ModType>Player</ModType>
+                <Attribute>AbilityBonus</Attribute>
+                <StrVal>A_Research</StrVal>
+                <Value>5</Value>
+                <Provides>Faction gets +5% Research</Provides>
             </GameModifier>			
             <GameModifier>
                 <ModType>Unit</ModType>

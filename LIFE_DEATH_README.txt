@@ -75,7 +75,7 @@ delliotlamb@gmail.com
 
 Thanks to Brad and Derek and everyone at Stardock for making a great game. And Heavenfall, parrotmath, Primal_Savage, abob101, and all the modders that have helped me out.
 
-Graphics are by Fsemprini. Additional graphics by Soronarr and Primal_Savage.
+Graphics are by Fsemprini. Additional graphics by Soronarr and Primal_Savage. Ice Beam image borrowed from Hellions' excellent "Pillagers, Micreants, Villains" sub-mod.
 
 Thanks to hellions for adding paladin unitstat support to his Black Market Bazaar items. (download this mod! Black Market Bazaar and Champions Bonanaza are great!)
 

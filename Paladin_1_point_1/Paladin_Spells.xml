@@ -230,6 +230,7 @@
         <Image>S_Blight_Painting.png</Image>
         <IconFG>T_ArcaneVeil_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
+		<Cooldown>5</Cooldown>
         <SpellBookSortCategory>Unit</SpellBookSortCategory>
         <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
         <SpellType>Tactical</SpellType>
@@ -4019,6 +4020,7 @@
         <Image>S_Blight_Painting.png</Image>
         <IconFG>T_ArcaneVeil_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
+		<Cooldown>5</Cooldown>
         <SpellBookSortCategory>Unit</SpellBookSortCategory>
         <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
         <SpellType>Tactical</SpellType>

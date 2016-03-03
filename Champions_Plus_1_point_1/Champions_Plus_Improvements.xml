@@ -604,7 +604,8 @@
         </AIData>
 		<UnlocksShopItem>ChainBreastpiece_Skeleton</UnlocksShopItem>
 		<UnlocksShopItem>PlateBreastpiece_Rusty</UnlocksShopItem>
-		<UnlocksShopItem>PlateHelmet_Rusty</UnlocksShopItem>
+		<UnlocksShopItem>PlateHelmet_Rusty</UnlocksShopItem>		
+		<UnlocksShopItem>PlateGreaves_Rusty</UnlocksShopItem>
 		<UnlocksShopItem>RustyShield</UnlocksShopItem>
 		<UnlocksShopItem>KiteShield_Golem</UnlocksShopItem>
 		<UnlocksShopItem>Longsword_Golem</UnlocksShopItem>
@@ -1034,6 +1035,7 @@
         </GameModifier>
     </ImprovementType>
 	
+	<!--
 	<ImprovementType InternalName="AirShrine">  
         <GameModifier>
             <ModType>Player</ModType>
@@ -1133,6 +1135,7 @@
             <Provides>+5% Mana in all your cities</Provides>
         </GameModifier>
     </ImprovementType>
+	-->
 	
 	<!-- Leaving level 1 shrines untouched for now
 	
@@ -1236,12 +1239,26 @@
         </GameModifier>
     </ImprovementType>-->
 	
-	    <ImprovementType InternalName="Apothecary">
+	<ImprovementType InternalName="Apothecary">
         <GameModifier>
             <Provides>Also unlocks poison vials</Provides>
         </GameModifier>		
         <UnlocksShopItem>PoisonVial</UnlocksShopItem>
     </ImprovementType>
+	
+	<ImprovementType InternalName="Alchemist">
+        <GameModifier>
+            <Provides>Also unlocks poison vials</Provides>
+        </GameModifier>		
+        <UnlocksShopItem>PoisonVial</UnlocksShopItem>
+    </ImprovementType>
+
+	<ImprovementType InternalName="AlchemyLab">
+        <GameModifier>
+            <Provides>Also unlocks poison vials</Provides>
+        </GameModifier>		
+        <UnlocksShopItem>PoisonVial</UnlocksShopItem>
+    </ImprovementType>	
 	
 	<ImprovementType InternalName="Camp_FellDragon">
         <GameModifier>
@@ -1277,6 +1294,109 @@
                 <Expression><![CDATA[[TileYieldEssence]]]></Expression>
             </Calculate>
         </GameModifier>
+    </ImprovementType>
+	
+	<ImprovementType InternalName="Monument_HowlingChasm">
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Mana</Attribute>
+            <PerTurn>1</PerTurn>
+            <Provides>+3 Mana</Provides>
+            <Value>3</Value>
+        </GameModifier>	
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Mana</StrVal>
+            <Value>30</Value>
+            <Provides>+30% Mana in all your cities</Provides>
+        </GameModifier>		
+    </ImprovementType>
+	
+    <ImprovementType InternalName="Monument_IruTAlavar">
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Mana</Attribute>
+            <PerTurn>1</PerTurn>
+            <Provides>+3 Mana</Provides>
+            <Value>3</Value>
+        </GameModifier>	
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Mana</StrVal>
+            <Value>30</Value>
+            <Provides>+30% Mana in all your cities</Provides>
+        </GameModifier>			
+        </GameModifier>			
+    </ImprovementType>
+	
+    <ImprovementType InternalName="Monument_PillarOfMascrinthus">
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Mana</Attribute>
+            <PerTurn>1</PerTurn>
+            <Provides>+3 Mana</Provides>
+            <Value>3</Value>
+        </GameModifier>	
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Mana</StrVal>
+            <Value>30</Value>
+            <Provides>+30% Mana in all your cities</Provides>
+        </GameModifier>			
+	</ImprovementType>
+
+    <ImprovementType InternalName="Monument_PitOfSarpah">
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Mana</Attribute>
+            <PerTurn>1</PerTurn>
+            <Provides>+3 Mana</Provides>
+            <Value>3</Value>
+        </GameModifier>	
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Mana</StrVal>
+            <Value>30</Value>
+            <Provides>+30% Mana in all your cities</Provides>
+        </GameModifier>		
+    </ImprovementType>
+	
+    <ImprovementType InternalName="Monument_Puraudrah">
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Mana</Attribute>
+            <PerTurn>1</PerTurn>
+            <Provides>+3 Mana</Provides>
+            <Value>3</Value>
+        </GameModifier>	
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Mana</StrVal>
+            <Value>30</Value>
+            <Provides>+30% Mana in all your cities</Provides>
+        </GameModifier>			
+    </ImprovementType>
+	
+	<ImprovementType InternalName="Monument_FloodedGraveyard">
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Mana</Attribute>
+            <PerTurn>1</PerTurn>
+            <Provides>+3 Mana</Provides>
+            <Value>3</Value>
+        </GameModifier>	
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Mana</StrVal>
+            <Value>30</Value>
+            <Provides>+30% Mana in all your cities</Provides>
+        </GameModifier>			
     </ImprovementType>
     
 </ImprovementTypes>
