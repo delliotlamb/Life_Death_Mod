@@ -6714,7 +6714,6 @@
         <Description>Call a non-humanoid henchman.</Description>
         <Image>M_Warg_SiltSkath_Card_01.png</Image>
         <IconFG>M_Warg_SiltSkath_Card_01.png</IconFG>
-		<AutoUnlock>1</AutoUnlock>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -6743,7 +6742,6 @@
         <Description>Call a non-humanoid henchman.</Description>
         <Image>M_Stalker_Card.png</Image>
         <IconFG>M_Stalker_Card.png</IconFG>
-		<AutoUnlock>1</AutoUnlock>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -6772,7 +6770,6 @@
         <Description>Call a non-humanoid henchman.</Description>
         <Image>M_SquamategoF_Card_01.png</Image>
         <IconFG>M_SquamategoF_Card_01.png</IconFG>
-		<AutoUnlock>1</AutoUnlock>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -6801,7 +6798,6 @@
         <Description>Call a non-humanoid henchman.</Description>
         <Image>M_Serpent_Naja_Card.png</Image>
         <IconFG>M_Serpent_Naja_Card.png</IconFG>
-		<AutoUnlock>1</AutoUnlock>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -6825,12 +6821,11 @@
         <HitSoundFX>Spell_DestinyGift_01</HitSoundFX>
     </SpellDef>
 	
-		<SpellDef InternalName="CallHenchman_Death">
+	<SpellDef InternalName="CallHenchman_Death">
         <DisplayName>Treat With Famine</DisplayName>
         <Description>Call a non-humanoid henchman.</Description>
         <Image>M_Ravenous Harridan_Giant_Card_01.png</Image>
         <IconFG>M_Ravenous Harridan_Giant_Card_01.png</IconFG>
-		<AutoUnlock>1</AutoUnlock>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -6854,12 +6849,11 @@
         <HitSoundFX>Spell_DestinyGift_01</HitSoundFX>
     </SpellDef>
 	
-		<SpellDef InternalName="CallHenchman_Life">
+	<SpellDef InternalName="CallHenchman_Life">
         <DisplayName>Treat With Verdance</DisplayName>
         <Description>Call a non-humanoid henchman.</Description>
         <Image>M_Wolf_EbbenWolf_Card.png</Image>
         <IconFG>M_Wolf_EbbenWolf_Card.png</IconFG>
-		<AutoUnlock>1</AutoUnlock>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
