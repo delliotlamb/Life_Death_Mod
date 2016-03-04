@@ -191,7 +191,7 @@
         <WorldLightOverrideRim0>212,0,192</WorldLightOverrideRim0>
         <WorldLightOverrideRim1>0,132,234</WorldLightOverrideRim1>
     </SpellDef>
-<SpellDef InternalName="Mass_Slow_Ability">
+<!--<SpellDef InternalName="Mass_Slow_Ability">
         <DisplayName>Mass Slow</DisplayName>
         <Description>All enemy units suffer -3 to Initiative (-.5 per water shard) unless they resist.</Description>
         <FormattedDescription>Target enemy unit suffers -%d to Initiative unless they resist.</FormattedDescription>
@@ -240,7 +240,7 @@
         </ValueCalcWrapper>
         </AIData>
         <HitSoundFX>Spell_FreezeGroup</HitSoundFX>
-    </SpellDef>
+    </SpellDef>-->
 
     <SpellDef InternalName="Death_Mastery">
         <DisplayName>Grip of Death</DisplayName>
@@ -583,7 +583,7 @@
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
     </SpellDef>
-    <SpellDef InternalName="CurgensVolcano2">
+    <!--<SpellDef InternalName="CurgensVolcano2">
         <DisplayName>Overlord's Wrath</DisplayName>
         <Description>Elemental's fury raises a volcano in the midst of your enemies.  The volcano destroys resources, improvements and even cities on the land it targets.</Description>
         <Image>S_CurgensVolcano_Painting.png</Image>
@@ -630,7 +630,7 @@
             <EffectDelay>1</EffectDelay>
             <SnapToTerrain>0</SnapToTerrain>
         </SpellDefEffect>
-    </SpellDef>
+    </SpellDef>-->
 <SpellDef InternalName="Domination_Spell2">
         <DisplayName>Will Of Elemental</DisplayName>
         <Description>Take control of enemy unit.</Description>
@@ -836,7 +836,7 @@
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
     </SpellDef>
-    <SpellDef InternalName="ProtectionFromNature">
+    <!--<SpellDef InternalName="ProtectionFromNature">
         <DisplayName>Protection from Nature</DisplayName>
         <Description>All allied units gain 50% Fire, Cold, and Lightning Resistance.</Description>
         <Image>S_NaturesCloak_Painting.png</Image>
@@ -881,7 +881,7 @@
             <EffectDelay>0</EffectDelay>
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
-    </SpellDef>
+    </SpellDef>-->
     <SpellDef InternalName="CurgensVolcano3">
         <DisplayName>Atrocity Of Uzzeraddax</DisplayName>
         <Description>Sacrifice half your population to summon a volcano in a 2 tile radius.  The volcano destroys resources, improvements and even cities on the land it targets.</Description>

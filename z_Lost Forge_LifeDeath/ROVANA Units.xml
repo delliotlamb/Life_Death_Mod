@@ -259,7 +259,7 @@ And the Forge, despite its resistance, has conferred untold power onto Tiarmand.
         <Texture_Skin>F_Male_Default_Texture_01.png</Texture_Skin>
         <UnitModelType>FallenMale</UnitModelType>
     </UnitType>
-    <UnitType InternalName="Titan_General">
+    <!--<UnitType InternalName="Titan_General">
         <DisplayName>Drednir General</DisplayName>
         <CanBeDesigned>0</CanBeDesigned>
         <IsSovereign>0</IsSovereign>
@@ -511,7 +511,7 @@ And the Forge, despite its resistance, has conferred untold power onto Tiarmand.
         <TacticalModelScale>2</TacticalModelScale>
         <Texture_Skin>F_Male_Default_Texture_01.png</Texture_Skin>
         <UnitModelType>FallenMale</UnitModelType>
-    </UnitType>
+    </UnitType>-->
     <UnitType InternalName="Darzomil">
         <DisplayName>Darzomil</DisplayName>
         <CreatureType>Elemental</CreatureType>
@@ -892,7 +892,7 @@ And the Forge, despite its resistance, has conferred untold power onto Tiarmand.
             <EffectScale>0.3</EffectScale>
         </EffectAttachment>
     </UnitType>
-    <UnitType InternalName="Drednir_Warrior">
+    <!--<UnitType InternalName="Drednir_Warrior">
         <DisplayName>Drednir Warrior</DisplayName>
         <CanBeDesigned>0</CanBeDesigned>
         <IsSovereign>0</IsSovereign>
@@ -1394,7 +1394,7 @@ And the Forge, despite its resistance, has conferred untold power onto Tiarmand.
         <TacticalModelScale>2</TacticalModelScale>
         <Texture_Skin>F_Male_Default_Texture_01.png</Texture_Skin>
         <UnitModelType>FallenMale</UnitModelType>
-    </UnitType>
+    </UnitType>-->
     <UnitType InternalName="Aloulai_Knight">
         <DisplayName>Aloulai Knight</DisplayName>
         <CreatureType>Elemental</CreatureType>
@@ -2713,7 +2713,7 @@ Now that the Titans have returned, they know where they will have the most power
         <SoundPack>SoundPack_Golem1</SoundPack>
         <Texture_Skin>Gfx\HKB\Monsters\M_Golem_Texture_01.png</Texture_Skin>
     </UnitType>
-    <UnitType InternalName="Titan_General2">
+    <!--<UnitType InternalName="Titan_General2">
         <DisplayName>Drednir General</DisplayName>
         <CanBeDesigned>0</CanBeDesigned>
         <IsSovereign>0</IsSovereign>
@@ -2965,7 +2965,7 @@ Now that the Titans have returned, they know where they will have the most power
         <TacticalModelScale>2</TacticalModelScale>
         <Texture_Skin>F_Male_Default_Texture_01.png</Texture_Skin>
         <UnitModelType>FallenMale</UnitModelType>
-    </UnitType>
+    </UnitType>-->
     <UnitType InternalName="Champion_KanOrlis">
         <DisplayName>Spirit Of Kan-Orlis</DisplayName>
         <UnitDisplayName>Spirit Of Kan-Orlis</UnitDisplayName>
