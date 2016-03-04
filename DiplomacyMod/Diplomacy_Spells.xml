@@ -457,4 +457,42 @@
         <HitSoundFX>Raze</HitSoundFX>
     </SpellDef>
 	
+	<SpellDef InternalName="CivicRelations">
+        <DisplayName>Civic Relations</DisplayName>
+        <Description>-5% Unrest for your faction</Description>
+        <Image>Kingdom_Worker1.png</Image>
+        <IconFG>Action_Scroll.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <Cooldown>10</Cooldown>
+        <SpellBookSortCategory>World</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Buff</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Administrator2</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>DiplomaticCapital</Resource>
+            <Amount>250</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Gold</Resource>
+            <Amount>200</Amount>
+        </SpellResourceCost>		
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_Additive_Unrest</StrVal>
+            <Value>-5</Value>
+            <Provides>-5% Unrest in all your cities</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>25</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Crusade_01</HitSoundFX>
+    </SpellDef>
+	
 </Spells>
