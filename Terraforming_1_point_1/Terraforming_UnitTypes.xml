@@ -1657,7 +1657,9 @@ The Ice Elemental's weakness is fire; it is immune to cold, and all poisons of t
             <Type>Race</Type>
             <Attribute>Race_Type_Cypher</Attribute>
         </Prereq>	
-        <SelectedAbilityBonusOption>DeadlyBite</SelectedAbilityBonusOption>		
+        <SelectedAbilityBonusOption>DeadlyBite</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Counterattack</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>PackTactics</SelectedAbilityBonusOption>	
         <SelectedAbilityBonusOption>LifeAdept1</SelectedAbilityBonusOption>
         <Backstory>(silent stare)</Backstory>
         <Medallions InternalName="">
@@ -1706,7 +1708,10 @@ The Ice Elemental's weakness is fire; it is immune to cold, and all poisons of t
             <Attribute>Race_Type_Cypher</Attribute>
         </Prereq>
         <SelectedAbilityBonusOption>EarthAdept1</SelectedAbilityBonusOption>
-        <SelectedAbilityBonusOption>CallousedHide</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Charge</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Bash</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Knockback</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>ImmuneToCounterattack</SelectedAbilityBonusOption>
         <Backstory>(silent stare)</Backstory>
         <Medallions InternalName="">
             <All>M_SquamategoF_Card_01.png</All>
@@ -1756,7 +1761,11 @@ The Ice Elemental's weakness is fire; it is immune to cold, and all poisons of t
             <Type>Race</Type>
             <Attribute>Race_Type_Cypher</Attribute>
         </Prereq>
-      <SelectedAbilityBonusOption>Charge</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Charge</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>ImmuneToCounterattack</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Dodge1</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Dodge2</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Counterattack</SelectedAbilityBonusOption>
       <SelectedAbilityBonusOption>AirAdept1</SelectedAbilityBonusOption>	  
         <Backstory>(silent stare)</Backstory>
         <Medallions InternalName="">
@@ -1805,10 +1814,10 @@ The Ice Elemental's weakness is fire; it is immune to cold, and all poisons of t
 			<UnitStat_BG_IsMonster>1</UnitStat_BG_IsMonster>
 			<UnitStat_BG_IsBeast>1</UnitStat_BG_IsBeast>			
         </LevelMilestone>
-        <SelectedAbilityBonusOption>DeadlyBite</SelectedAbilityBonusOption>
 		<SelectedAbilityBonusOption>WaterAdept1</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>DeadlyBite</SelectedAbilityBonusOption>
         <SelectedAbilityBonusOption>VulnerableToFire</SelectedAbilityBonusOption>
-        <SelectedAbilityBonusOption>Tough</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Counterattack</SelectedAbilityBonusOption>
         <Backstory>(empty stare)</Backstory>
         <Medallions InternalName="">
             <All>M_Warg_Skath_Card_01.png</All>
@@ -1857,6 +1866,9 @@ The Ice Elemental's weakness is fire; it is immune to cold, and all poisons of t
 			<UnitStat_BG_IsBeast>1</UnitStat_BG_IsBeast>				
         </LevelMilestone>
         <SelectedAbilityBonusOption>Venomous2</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>ImmuneToCounterattack</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Dodge1</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Dodge2</SelectedAbilityBonusOption>
         <SelectedAbilityBonusOption>FireAdept1</SelectedAbilityBonusOption>
         <Backstory>(empty stare)</Backstory>
         <Medallions InternalName="">
@@ -1896,6 +1908,7 @@ The Ice Elemental's weakness is fire; it is immune to cold, and all poisons of t
             <Level>1</Level>
             <UnitStat_Attack_Pierce>16</UnitStat_Attack_Pierce>
             <UnitStat_ChanceToCrit>1</UnitStat_ChanceToCrit>
+			<UnitStat_HitPoints>20</UnitStat_HitPoints>	
             <UnitStat_CombatSpeed>20</UnitStat_CombatSpeed>
             <UnitStat_Intelligence>1</UnitStat_Intelligence>
             <UnitStat_Moves>3</UnitStat_Moves>
@@ -1905,6 +1918,7 @@ The Ice Elemental's weakness is fire; it is immune to cold, and all poisons of t
         </LevelMilestone>
         <SelectedAbilityBonusOption>TangledWeb</SelectedAbilityBonusOption>
         <SelectedAbilityBonusOption>Venomous1</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>Tough</SelectedAbilityBonusOption>
         <SelectedAbilityBonusOption>Death1</SelectedAbilityBonusOption>
         <Backstory>(empty stare)</Backstory>
         <Medallions InternalName="">
