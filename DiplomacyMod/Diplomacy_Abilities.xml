@@ -6,6 +6,7 @@
 	
 	<!-- here -->
     <AbilityBonus InternalName="Spy_Ability">
+		<AbilityBonusType>Unit_Level</AbilityBonusType>
         <AbilityBonusOption InternalName="Spy">
             <DisplayName>Spy</DisplayName>
             <Description>+1 Sight range. This unit can cast spells that incite revolution or steal enemy secrets.</Description>

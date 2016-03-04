@@ -1,6 +1,6 @@
 <Spells>
 		
-		<SpellDef InternalName="RecruitSpy">
+	<SpellDef InternalName="RecruitSpy">
         <DisplayName>Recruit Spy</DisplayName>
         <Description>Recruit a Spy that can use accumulated Influence against your enemies, or to benefit your realm.</Description>
         <Image>Sovereign_YoungWizard.png</Image>
@@ -13,6 +13,7 @@
         <SpellClass>Defensive</SpellClass>
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
+		<CasterMustBeSov>1</CasterMustBeSov>
         <HideInHiergamenon>1</HideInHiergamenon>
         <Prereq>
             <Type>UnitStat</Type>
@@ -42,6 +43,37 @@
         </GameModifier>	
         <AIData AIPersonality="AI_General">
             <AIPriority>5</AIPriority>
+        </AIData>
+    </SpellDef>
+	
+	<SpellDef InternalName="RecruitSpy_Commander">
+        <DisplayName>Recruit Spy</DisplayName>
+        <Description>Recruit a Spy that can use accumulated Influence against your enemies, or to benefit your realm.</Description>
+        <Image>Sovereign_YoungWizard.png</Image>
+        <IconFG>Individual.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+		<Cooldown>5</Cooldown>		
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Spy_Commander</Attribute>
+        </Prereq>				
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>SummonUnit</Attribute>
+            <StrVal>Trustworthy Gentleman</StrVal>
+            <UnitClass>Unit_Spy</UnitClass>
+            <Duration>-1</Duration>
+			<Value>1</Value>
+        </GameModifier>	
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
         </AIData>
     </SpellDef>
 		
