@@ -5047,7 +5047,7 @@
 	
 	<SpellDef InternalName="LightningBolt">
         <DisplayName>Lightning Bolt</DisplayName>
-        <Description>Does 16 (+1 per Level) Lightning damage to all units in a line 5 tiles long.</Description>
+        <Description>Does 10 (+1 per Level, +1 per air shard) Lightning damage to all units in a line 5 tiles long.</Description>
         <FormattedDescription>Does %d Lightning damage to all units in a line 5 tiles long.</FormattedDescription>
         <Image>AirCrystal_Medallion.png</Image>
         <IconFG>T_ChainLightning_Icon.png</IconFG>
@@ -5067,23 +5067,19 @@
             <Type>AbilityBonusOption</Type>
             <Attribute>Aeromancy</Attribute>
         </Prereq>
-        <SpellResourceCost>
-            <Resource>Mana</Resource>
-            <Amount>25</Amount>
-        </SpellResourceCost>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>DefendableDamage</Attribute>
             <AttackStat>UnitStat_Attack_Lightning</AttackStat>
             <IsForFormattedDescription>1</IsForFormattedDescription>
             <Calculate InternalName="Calc" ValueOwner="CastingUnit">
-                <Expression><![CDATA[[Unit_GetLevel]]]></Expression>
+                <Expression><![CDATA[[Unit_GetLevel] + [UnitOwner_GetNumAirShards]]]></Expression>
             </Calculate>
             <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc] + 16]]></Expression>
+                <Expression><![CDATA[[Calc] + 10]]></Expression>
             </Calculate>
             <Calculate InternalName="ValueForFormattedDescription">
-                <Expression><![CDATA[[Calc] + 16]]></Expression>
+                <Expression><![CDATA[[Calc] + 10]]></Expression>
             </Calculate>
         </GameModifier>
         <GameModifier>
@@ -5092,13 +5088,16 @@
             <AttackStat>UnitStat_Attack_Lightning</AttackStat>
             <IsForSpellResist>1</IsForSpellResist>
             <Calculate InternalName="Calc" ValueOwner="CastingUnit">
-                <Expression><![CDATA[[Unit_GetLevel] / 2]]></Expression>
+                <Expression><![CDATA[[Unit_GetLevel] + [UnitOwner_GetNumAirShards]]]></Expression>
             </Calculate>
+            <Calculate InternalName="Calc2" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[Calc] / 2]]></Expression>
+            </Calculate>			
             <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc] + 8]]></Expression>
+                <Expression><![CDATA[[Calc2] + 5]]></Expression>
             </Calculate>
             <Calculate InternalName="ValueForFormattedDescription">
-                <Expression><![CDATA[[Calc] + 8]]></Expression>
+                <Expression><![CDATA[[Calc2] + 5]]></Expression>
             </Calculate>
         </GameModifier>
         <AIData AIPersonality="AI_General">

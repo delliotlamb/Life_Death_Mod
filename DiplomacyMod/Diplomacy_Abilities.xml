@@ -69,13 +69,13 @@
 		<AbilityBonus InternalName="NegotiatorAbility">
         <AbilityBonusOption InternalName="Negotiator">
             <DisplayName>Negotiator</DisplayName>
-            <Description>-10% Unrest in the city this unit is in</Description>
+            <Description>-5% Unrest in the city this unit is in</Description>
             <Icon>Ability_Diplomatic_Icon.png</Icon>
             <GameModifier>
                 <ModType>Resource</ModType>
                 <Attribute>Unrest</Attribute>
-                <Value>-10</Value>
-                <Provides>-10% Unrest in the city this unit is in</Provides>
+                <Value>-5</Value>
+                <Provides>-5% Unrest in the city this unit is in</Provides>
             </GameModifier>
             <Type>Army</Type>
             <AIData AIPersonality="AI_General">
