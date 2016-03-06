@@ -4188,7 +4188,7 @@
         <SpellBookSortCategory>City</SpellBookSortCategory>
         <SpellBookSortSubCategory>Charm</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
-        <SpellClass>ImpResourceBooster</SpellClass>
+        <SpellClass>Offensive</SpellClass>
         <SpellSubClass>Debuff</SpellSubClass>
         <SpellTargetType>EnemyCity</SpellTargetType>
         <Prereq>

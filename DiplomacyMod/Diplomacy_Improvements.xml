@@ -80,7 +80,7 @@
         <ArtDef>Art_Outpost_Base</ArtDef>
     </ImprovementType>
 	
-		   <ImprovementType InternalName="Camp_Mercenary">
+	<!--<ImprovementType InternalName="Camp_Mercenary">
 		<GameModifier>
             <ModType>Resource</ModType>
             <Attribute>DiplomaticCapital</Attribute>
@@ -88,9 +88,9 @@
             <PerTurn>1</PerTurn>			
             <Provides>+.25 Diplomatic Capital Per Turn</Provides>
         </GameModifier> 
-    </ImprovementType>
+    </ImprovementType>-->
 
-	<ImprovementType InternalName="Camp_OrderOfAsok">
+	<!--<ImprovementType InternalName="Camp_OrderOfAsok">
 		<GameModifier>
             <ModType>Resource</ModType>
             <Attribute>DiplomaticCapital</Attribute>
@@ -98,7 +98,7 @@
             <PerTurn>1</PerTurn>			
             <Provides>+.25 Diplomatic Capital Per Turn</Provides>
         </GameModifier> 	
-    </ImprovementType>
+    </ImprovementType>-->
 	
 	    <!--<ImprovementType InternalName="EmigrationOffice">
 		<GameModifier>
@@ -124,9 +124,9 @@
 		<GameModifier>
             <ModType>Resource</ModType>
             <Attribute>DiplomaticCapital</Attribute>
-            <Value>1</Value>
+            <Value>2</Value>
             <PerTurn>1</PerTurn>			
-            <Provides>+1 Diplomatic Capital Per Turn</Provides>
+            <Provides>+2 Diplomatic Capital Per Turn</Provides>
         </GameModifier>
     </ImprovementType>
 	

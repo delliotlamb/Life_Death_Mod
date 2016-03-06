@@ -100,7 +100,7 @@
         </SpellResourceCost>		
         <SpellResourceCost>
             <Resource>DiplomaticCapital</Resource>
-            <Amount>300</Amount>
+            <Amount>500</Amount>
         </SpellResourceCost>		
         <GameModifier>
             <ModType>City</ModType>
@@ -462,7 +462,7 @@
         <SpellBookSortCategory>City</SpellBookSortCategory>
         <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
-        <SpellClass>Offensive</SpellClass>
+        <SpellClass>ImpResourceBooster</SpellClass>
         <SpellSubClass>Other</SpellSubClass>
         <SpellTargetType>EnemyCity</SpellTargetType>
 		<Range>1</Range>
@@ -491,11 +491,11 @@
 	
 	<SpellDef InternalName="CivicRelations">
         <DisplayName>Civic Relations</DisplayName>
-        <Description>-5% Unrest for your faction</Description>
+        <Description>-5% Unrest for your faction, castable once per game</Description>
         <Image>Kingdom_Worker1.png</Image>
         <IconFG>Action_Scroll.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
-        <Cooldown>10</Cooldown>
+        <Cooldown>1000</Cooldown>
         <SpellBookSortCategory>World</SpellBookSortCategory>
         <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -525,6 +525,66 @@
             <AIPriority>25</AIPriority>
         </AIData>
         <HitSoundFX>Spell_Crusade_01</HitSoundFX>
+    </SpellDef>
+	
+	<SpellDef InternalName="SeedCorruption">
+        <DisplayName>Seed Corruption</DisplayName>
+        <Description>-60% to gold income, production, iron and crystal yields .</Description>
+        <Image>BurningFarm.png</Image>
+        <IconFG>Improvement_DestroyedLot.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <Cooldown>1</Cooldown>
+        <SpellBookSortCategory>City</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>ImpResourceBooster</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>EnemyCity</SpellTargetType>
+		<Range>1</Range>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Spy</Attribute>
+        </Prereq>		
+        <SpellResourceCost>
+            <Resource>DiplomaticCapital</Resource>
+            <Amount>150</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Gold</Resource>
+            <Amount>300</Amount>
+        </SpellResourceCost>		
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Production</Attribute>
+            <Value>.4</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>-60% Production</Provides>
+        </GameModifier>
+		<GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Metal</Attribute>
+            <Value>.4</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>-60% Metal</Provides>
+        </GameModifier>
+		<GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>RefinedCrystal</Attribute>
+            <Value>.4</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>-60% Crystal</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ResourceMultiplier</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>.4</Value>
+            <PerTurn>1</PerTurn>
+            <Provides>-60% Gold</Provides>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>70</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Alchemy_01</HitSoundFX>
     </SpellDef>
 	
 </Spells>
