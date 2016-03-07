@@ -488,5 +488,13 @@
         </AbilityBonusOption>
     </AbilityBonus>
 	
+	<AbilityBonus InternalName="Loremaster3Ability">
+        <AbilityBonusOption InternalName="Loremaster3">
+			<GameModifier>
+                <Provides>Unlocks Alliance Doctrine, granting the Alliances tech</Provides>
+            </GameModifier>
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
 	
 	</AbilityBonuses>
