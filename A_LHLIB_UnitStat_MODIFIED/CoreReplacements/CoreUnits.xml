@@ -10741,6 +10741,7 @@ But in the morning the raiders were gone and I was the only one alive, though I 
 		<SelectedAbilityBonusOption>Fire1</SelectedAbilityBonusOption>
 		<SelectedAbilityBonusOption>Discipline_Level</SelectedAbilityBonusOption>
 		<SelectedAbilityBonusOption>TrainHenchmen</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Endgame</SelectedAbilityBonusOption>
 		<AutoCreateEquipment>Shortsword_Crude</AutoCreateEquipment>
 		<Equipment>K_Male_Head_01</Equipment>
 		<Equipment>Sovereign_Warrior_Shirt_ID1</Equipment>
@@ -10837,6 +10838,7 @@ You know that power will not rest until all of Elemental is subjugated to its wi
 		<SelectedAbilityBonusOption>Air1</SelectedAbilityBonusOption>
 		<SelectedAbilityBonusOption>Tactician</SelectedAbilityBonusOption>
 		<SelectedAbilityBonusOption>Cautious</SelectedAbilityBonusOption>
+				<SelectedAbilityBonusOption>Endgame</SelectedAbilityBonusOption>
 		<AutoCreateEquipment>Axe</AutoCreateEquipment>
 		<Equipment>K_Male_Head_05</Equipment>
 		<Equipment>CarrodusGreatcoat</Equipment>
@@ -10936,6 +10938,7 @@ Your first step on the road to writing that history begins now.</LorebookIntroTe
 		<SelectedAbilityBonusOption>Attunement</SelectedAbilityBonusOption>
 		<SelectedAbilityBonusOption>SovereignBond</SelectedAbilityBonusOption>
 		<SelectedAbilityBonusOption>Scarred</SelectedAbilityBonusOption>
+				<SelectedAbilityBonusOption>Endgame</SelectedAbilityBonusOption>
 		<AutoCreateEquipment>Staff_Queens</AutoCreateEquipment>
 		<Equipment>K_Female_Head_04</Equipment>
 		<Equipment>K_Female_Slim_Hair</Equipment>
@@ -11028,6 +11031,7 @@ Now you seek more. The world has changed, and you have changed with it. Power, y
 		<SelectedAbilityBonusOption>Air1</SelectedAbilityBonusOption>
 		<SelectedAbilityBonusOption>Air2</SelectedAbilityBonusOption>
 		<SelectedAbilityBonusOption>Life1</SelectedAbilityBonusOption>
+				<SelectedAbilityBonusOption>Endgame</SelectedAbilityBonusOption>
 		<AutoCreateEquipment>Shortbow_Crude</AutoCreateEquipment>
 		<AutoCreateEquipment>LeatherVambraces_Dragonfly</AutoCreateEquipment>
 		<Equipment>K_Female_Head_02</Equipment>
@@ -11126,6 +11130,7 @@ This you are determined to change. For as your youth belies your years of experi
 		<SelectedAbilityBonusOption>Fire2</SelectedAbilityBonusOption>
 		<SelectedAbilityBonusOption>Water1</SelectedAbilityBonusOption>
 		<SelectedAbilityBonusOption>Wealthy</SelectedAbilityBonusOption>
+				<SelectedAbilityBonusOption>Endgame</SelectedAbilityBonusOption>
 		<AutoCreateEquipment>Staff_War</AutoCreateEquipment>
 		<Equipment>F_Head_Wraith_Mesh_01</Equipment>
 		<Equipment>Kraxis_Boots</Equipment>
@@ -11227,6 +11232,7 @@ History shows it was the Amarian who abandoned the Krax - who left your armies t
 		<SelectedAbilityBonusOption>Might</SelectedAbilityBonusOption>
 		<SelectedAbilityBonusOption>Discipline_Level</SelectedAbilityBonusOption>
 		<SelectedAbilityBonusOption>Cruel</SelectedAbilityBonusOption>
+				<SelectedAbilityBonusOption>Endgame</SelectedAbilityBonusOption>
 		<AutoCreateEquipment>Warhammer</AutoCreateEquipment>
 		<Equipment>F_Male_Head_06</Equipment>
 		<Equipment>Sion_Cloak_ID1</Equipment>
@@ -11325,6 +11331,7 @@ When Morrigan died, you made your way to Cyndrum, where you served the Lady Umbe
 		<SelectedAbilityBonusOption>Fire2</SelectedAbilityBonusOption>
 		<SelectedAbilityBonusOption>Brilliant</SelectedAbilityBonusOption>
 		<SelectedAbilityBonusOption>TrainSlaves</SelectedAbilityBonusOption>
+				<SelectedAbilityBonusOption>Endgame</SelectedAbilityBonusOption>
 		<AutoCreateEquipment>Staff_War</AutoCreateEquipment>
 		<Equipment>F_Male_Quendar_Head_01</Equipment>
 		<Equipment>F_Male_Quendar_Horns_01</Equipment>
@@ -11423,6 +11430,7 @@ Now it is your time. You are ready to raise an Empire of your own; to discipline
 		<SelectedAbilityBonusOption>Life1</SelectedAbilityBonusOption>
 		<SelectedAbilityBonusOption>Hardy</SelectedAbilityBonusOption>
 		<SelectedAbilityBonusOption>TrainGolems</SelectedAbilityBonusOption>
+				<SelectedAbilityBonusOption>Endgame</SelectedAbilityBonusOption>
 		<AutoCreateEquipment>Warhammer_Battle</AutoCreateEquipment>
 		<Equipment>K_Male_Head_02</Equipment>
 		<Equipment>Sovereign_Yoren_Head_Accessory</Equipment>
@@ -11520,6 +11528,7 @@ Your sojourn lasted nearly a decade. In that time you became a master of the cha
 		<SelectedAbilityBonusOption>Life1</SelectedAbilityBonusOption>
 		<SelectedAbilityBonusOption>Water1</SelectedAbilityBonusOption>
 		<SelectedAbilityBonusOption>Weak</SelectedAbilityBonusOption>
+				<SelectedAbilityBonusOption>Endgame</SelectedAbilityBonusOption>
 		<AutoCreateEquipment>Staff_Queens</AutoCreateEquipment>
 		<AutoCreateEquipment>ProcipineesCrown</AutoCreateEquipment>
 		<Equipment>K_Female_Head_01</Equipment>
@@ -11617,6 +11626,7 @@ Your father was Amarian III - Amarian the Sojourner. He bequeathed to you not ju
 		<SelectedAbilityBonusOption>Earth1</SelectedAbilityBonusOption>
 		<SelectedAbilityBonusOption>Hardy</SelectedAbilityBonusOption>
 		<SelectedAbilityBonusOption>TrainJuggernauts</SelectedAbilityBonusOption>
+				<SelectedAbilityBonusOption>Endgame</SelectedAbilityBonusOption>
 		<AutoCreateEquipment>Axe_Trog</AutoCreateEquipment>
 		<AutoCreateEquipment>PlateVambraces_Strength</AutoCreateEquipment>
 		<Equipment>F_Male_Head_01</Equipment>

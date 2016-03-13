@@ -3,7 +3,7 @@
 
 	<ImprovementType InternalName="ArcanaWard">
         <DisplayName>Arcana Ward</DisplayName>
-        <Description>An Arcana Ward protects the city from the spells of enemy casters.</Description>
+        <Description>An Arcana Ward protects the city from the offensive spells of enemy casters (will not prevent diplomacy effects by spies).</Description>
         <RequiresCity>1</RequiresCity>
         <BarredTerrain>River</BarredTerrain>
         <BarredTerrain>SwampTerrain</BarredTerrain>

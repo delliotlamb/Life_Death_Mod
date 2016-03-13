@@ -41,6 +41,12 @@
             <PerTurn>1</PerTurn>
             <Value>1</Value>
         </GameModifier>		
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>UnlockSpell</Attribute>
+            <StrVal>CallHenchman_Life</StrVal>
+			<Provides>Allows you to call an Elemental Henchman</Provides>
+        </GameModifier>		
         <AIData AIPersonality="AI_General">
             <AIPriority>5</AIPriority>
         </AIData>
@@ -95,6 +101,12 @@
             <Value>1</Value>
             <PerTurn>1</PerTurn>
             <Provides>+1 Material</Provides>
+        </GameModifier>		
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>UnlockSpell</Attribute>
+            <StrVal>CallHenchman_Earth</StrVal>
+			<Provides>Allows you to call an Elemental Henchman</Provides>
         </GameModifier>		
         <AIData AIPersonality="AI_General">
             <AIPriority>5</AIPriority>
@@ -156,6 +168,12 @@
             <Duration>-1</Duration>
 			<Provides>Attacking units take 10 (+3 per fire shard) in fire damage when combat begins.</Provides>
         </GameModifier>
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>UnlockSpell</Attribute>
+            <StrVal>CallHenchman_Fire</StrVal>
+			<Provides>Allows you to call an Elemental Henchman</Provides>
+        </GameModifier>		
         <AIData AIPersonality="AI_General">
             <AIPriority>5</AIPriority>
         </AIData>
@@ -211,6 +229,12 @@
             <PerTurn>1</PerTurn>
             <Provides>-10% Unrest</Provides>
         </GameModifier>	
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>UnlockSpell</Attribute>
+            <StrVal>CallHenchman_Water</StrVal>
+			<Provides>Allows you to call an Elemental Henchman</Provides>
+        </GameModifier>		
         <AIData AIPersonality="AI_General">
             <AIPriority>5</AIPriority>
         </AIData>
@@ -266,6 +290,12 @@
             <Value>1</Value>
             <Provides>+1 Defending Air Elemental</Provides>
             <UnitClass>AirElemental</UnitClass>
+        </GameModifier>	
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>UnlockSpell</Attribute>
+            <StrVal>CallHenchman_Air</StrVal>
+			<Provides>Allows you to call an Elemental Henchman</Provides>
         </GameModifier>		
         <AIData AIPersonality="AI_General">
             <AIPriority>5</AIPriority>
@@ -325,6 +355,12 @@
             <Value>1</Value>
             <Provides>+1 Defending Grave Elemental</Provides>
             <UnitClass>GraveElemental_Ancient</UnitClass>
+        </GameModifier>	
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>UnlockSpell</Attribute>
+            <StrVal>CallHenchman_Death</StrVal>
+			<Provides>Allows you to call an Elemental Henchman</Provides>
         </GameModifier>		
         <AIData AIPersonality="AI_General">
             <AIPriority>5</AIPriority>

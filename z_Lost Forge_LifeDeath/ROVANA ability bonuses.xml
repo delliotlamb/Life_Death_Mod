@@ -91,7 +91,7 @@
             </AIData>
         </AbilityBonusOption>
     </AbilityBonus>
-    <AbilityBonus InternalName="Spell_MassSlowAbility">
+    <!--<AbilityBonus InternalName="Spell_MassSlowAbility">
         <AbilityBonusOption InternalName="Spell_MassSlow">
             <DisplayName>Mass Slow</DisplayName>
             <Description>Allows the unit to cast Mass Slow</Description>
@@ -108,7 +108,7 @@
                 <AIPriority>5</AIPriority>
             </AIData>
         </AbilityBonusOption>
-    </AbilityBonus>
+    </AbilityBonus>-->
     <AbilityBonus InternalName="SummonDemonHordeAbility">
         <AbilityBonusOption InternalName="SummonDemonicHorde">
             <DisplayName>Summon Drednii Horde</DisplayName>
@@ -222,7 +222,7 @@
             </AIData>
         </AbilityBonusOption>
     </AbilityBonus>
-    <AbilityBonus InternalName="Trigger_ProtectionFromNature">
+    <!--<AbilityBonus InternalName="Trigger_ProtectionFromNature">
         <AbilityBonusOption InternalName="Trigger_ProtectionFromNature">
             <DisplayName>Protection From Nature</DisplayName>
             <Description>+50 Fire, Cold, Lightning Resist to all allies</Description>
@@ -240,9 +240,9 @@
                 <AIPriority>5</AIPriority>
             </AIData>
         </AbilityBonusOption>
-    </AbilityBonus>
+    </AbilityBonus>-->
 
-    <AbilityBonus InternalName="ExpendedEssence">
+    <!--<AbilityBonus InternalName="ExpendedEssence">
         <AbilityBonusOption InternalName="ExpendedEssence">
             <DisplayName>Expended Essence</DisplayName>
             <Description>-10% to Accuracy, Spell Mastery and Hit Points</Description>
@@ -273,5 +273,5 @@
                 <AIPriority>5</AIPriority>
             </AIData>
         </AbilityBonusOption>
-    </AbilityBonus>
+    </AbilityBonus>-->
 </AbilityBonuses>

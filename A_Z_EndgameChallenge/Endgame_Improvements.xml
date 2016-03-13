@@ -1,0 +1,105 @@
+<ImprovementTypes>
+
+<ImprovementType InternalName="ArcaneBeacon_Kingdom">
+        <DisplayName>Unknown Structure</DisplayName>
+        <Description>The myth of Arcane beacons that allow incredible feats of summoning has already been disproved. Not worth wasting idle chatter upon.</Description>
+        <RequiresCity>1</RequiresCity>
+        <AllowedPerFaction>1</AllowedPerFaction>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <LaborToBuild>1</LaborToBuild>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <Prereq>
+            <Type>Allegiance</Type>
+            <Attribute>Kingdom</Attribute>
+        </Prereq>
+        <GameModifier>
+            <ModType>ConstructionResourceCost</ModType>
+            <Attribute>ForbiddenLore</Attribute>
+            <Value>-401</Value>
+        </GameModifier>
+                <GameModifier>
+                    <ModType>Player</ModType>
+                    <Attribute>UnlockSpell</Attribute>
+                    <StrVal>SummonDragon</StrVal>
+                </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>10000</AIPriority>
+            <AITag>Mining</AITag>
+        </AIData>
+        <ArtDef>Art_Monument_TempleOfTheDragon</ArtDef>
+    </ImprovementType>
+
+<ImprovementType InternalName="ArcaneBeacon_Empire">
+        <DisplayName>Unknown Structure</DisplayName>
+        <Description>The myth of Arcane beacons that allow incredible feats of summoning has already been disproved. Not worth wasting idle chatter upon.</Description>
+        <RequiresCity>1</RequiresCity>
+        <AllowedPerFaction>1</AllowedPerFaction>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <LaborToBuild>1</LaborToBuild>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <Prereq>
+            <Type>Allegiance</Type>
+            <Attribute>Empire</Attribute>
+        </Prereq>
+        <GameModifier>
+            <ModType>ConstructionResourceCost</ModType>
+            <Attribute>ForbiddenLore</Attribute>
+            <Value>-326</Value>
+        </GameModifier>
+                <GameModifier>
+                    <ModType>Player</ModType>
+                    <Attribute>UnlockSpell</Attribute>
+                    <StrVal>SummonTitan</StrVal>
+                </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>10000</AIPriority>
+            <AITag>Mining</AITag>
+        </AIData>
+        <ArtDef>Art_Endgame_Gate</ArtDef>
+    </ImprovementType>
+
+	
+	
+<!--<ImprovementType InternalName="ArcaneBeacon_Dagorath">
+        <DisplayName>Otherworld Gate</DisplayName>
+        <Description>The myth of Arcane beacons that allow incredible feats of summoning has already been disproved. Not worth wasting idle chatter upon.</Description>
+        <RequiresCity>1</RequiresCity>
+        <AllowedPerFaction>1</AllowedPerFaction>
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <LaborToBuild>1</LaborToBuild>
+        <HideInHiergamenon>1</HideInHiergamenon>
+   	<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Endgame_Dagorath</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <GameModifier>
+            <ModType>ConstructionResourceCost</ModType>
+            <Attribute>ForbiddenLore</Attribute>
+            <Value>-325</Value>
+        </GameModifier>
+                <GameModifier>
+                    <ModType>Player</ModType>
+                    <Attribute>UnlockSpell</Attribute>
+                    <StrVal>SummonOldOne</StrVal>
+                </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>10000</AIPriority>
+            <AITag>Mining</AITag>
+        </AIData>
+        <ArtDef>Art_Dagorath_Gate</ArtDef>
+    </ImprovementType>-->
+
+</ImprovementTypes>

@@ -121,8 +121,8 @@
 
     <SpellDef InternalName="FlameStrike">
         <DisplayName>Flame Strike</DisplayName>
-        <Description>Your weapon conflagrates a target for your attack value plus 30 fire damage (additional +2 per fire shard), half if the victim resists.</Description>
-        <FormattedDescription>Your weapon conflagrates a target for your attack value plus %d fire damage, half if the victim resists.</FormattedDescription>
+        <Description>Your weapon conflagrates a target for your combined attack value ( +2 per fire shard), half if the victim resists.</Description>
+        <FormattedDescription>Your weapon conflagrates a target for %d fire damage, half if the victim resists.</FormattedDescription>
         <Image>T_FlameDart_Painting.png</Image>
         <IconFG>T_FeedTheFire_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -148,15 +148,6 @@
             <Resource>Mana</Resource>
             <Amount>15</Amount>
         </SpellResourceCost>
-		<GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>DefendableDamage</Attribute>
-		</GameModifier>
-		<GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>DefendableDamage</Attribute>
-			<IsForSpellResist>1</IsForSpellResist>
-		</GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>DefendableDamage</Attribute>
@@ -166,7 +157,7 @@
                 <Expression><![CDATA[[UnitOwner_GetNumFireShards] * 2]]></Expression>
             </Calculate>
             <Calculate InternalName="Calc2">
-                <Expression><![CDATA[[Calc] + 30]]></Expression>
+                <Expression><![CDATA[[UnitStat_CombinedAttack] + [Calc] + 30]]></Expression>
             </Calculate>
             <Calculate InternalName="Calc3" ValueOwner="CastingUnit">
                 <Expression><![CDATA[[Calc2] * [UnitStat_SpellDamage_Fire]]]></Expression>
@@ -184,16 +175,19 @@
             <AttackStat>UnitStat_Attack_Fire</AttackStat>
             <IsForSpellResist>1</IsForSpellResist>
             <Calculate InternalName="Calc" ValueOwner="CastingUnit">
-                <Expression><![CDATA[[UnitOwner_GetNumFireShards]]]></Expression>
+                <Expression><![CDATA[[UnitOwner_GetNumFireShards] * 2]]></Expression>
             </Calculate>
             <Calculate InternalName="Calc2">
-                <Expression><![CDATA[[Calc] + 15]]></Expression>
+                <Expression><![CDATA[[UnitStat_CombinedAttack] + [Calc] + 30]]></Expression>
             </Calculate>
             <Calculate InternalName="Calc3" ValueOwner="CastingUnit">
                 <Expression><![CDATA[[Calc2] * [UnitStat_SpellDamage_Fire]]]></Expression>
             </Calculate>
             <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc3]]]></Expression>
+                <Expression><![CDATA[[Calc3] / 2]]></Expression>
+            </Calculate>
+            <Calculate InternalName="ValueForFormattedDescription">
+                <Expression><![CDATA[[Calc3] / 2]]></Expression>
             </Calculate>
         </GameModifier>
         <AIData AIPersonality="AI_General">
@@ -211,8 +205,6 @@
         <CasterAnimationType>30</CasterAnimationType>
         <HitSoundFX>Spell_FlameDart_01</HitSoundFX>
         <SpellCastSoundFX>Spell_FlameDartTravel_01</SpellCastSoundFX>
-        <SpellCastEffectName>T_FlameDart_Particle</SpellCastEffectName>
-        <SpellCastEffectScale>0.30</SpellCastEffectScale>
         <SpellDefEffect>
             <EffectName>E_FlameDartImpact_Particle</EffectName>
             <LocalPosition>0,0,0</LocalPosition>
@@ -1032,8 +1024,8 @@
 
     <SpellDef InternalName="FrostStrike">
         <DisplayName>Frost Slash</DisplayName>
-        <Description>Your weapon does a third of your attack rating in physical damage and 10 cold damage to 3 adjacent enemies (additional +2 cold damage per water shard).</Description>
-		<FormattedDescription>Your weapon does a third of your attack rating in physicaldamage and  %d cold damage to 3 adjacent enemies.</FormattedDescription>
+        <Description>Your weapon does your attack rating in cold damage to 3 adjacent enemies (additional +2 cold damage per water shard).</Description>
+		<FormattedDescription>Your weapon does %d cold damage to 3 adjacent enemies.</FormattedDescription>
         <Image>S_Freeze_Painting.png</Image>
         <IconFG>S_Freeze_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -1064,39 +1056,19 @@
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>DefendableDamage</Attribute>
-            <AttackStat>UnitStat_Attack_Pierce</AttackStat>
-            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
-                <Expression><![CDATA[[UnitStat_CombinedAttack] / 3]]></Expression>
-            </Calculate>
-            <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc]]]></Expression>
-            </Calculate>
-        </GameModifier>
-		<GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>DefendableDamage</Attribute>
-            <AttackStat>UnitStat_Attack_Pierce</AttackStat>
-			<IsForSpellResist>1</IsForSpellResist>
-            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
-                <Expression><![CDATA[[UnitStat_CombinedAttack] / 3]]></Expression>
-            </Calculate>
-            <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc]]]></Expression>
-            </Calculate>
-        </GameModifier>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>DefendableDamage</Attribute>
             <AttackStat>UnitStat_Attack_Cold</AttackStat>
 			<IsForFormattedDescription>1</IsForFormattedDescription>
             <Calculate InternalName="Calc" ValueOwner="CastingUnit">
                 <Expression><![CDATA[[UnitOwner_GetNumWaterShards] * 2]]></Expression>
             </Calculate>
+			<Calculate InternalName="Calc2" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitStat_CombinedAttack] + [Calc]]]></Expression>
+            </Calculate>
             <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc] + 10]]></Expression>
+                <Expression><![CDATA[[Calc2]]]></Expression>
             </Calculate>
             <Calculate InternalName="ValueForFormattedDescription">
-                <Expression><![CDATA[[Calc] + [Calc2]]]></Expression>
+                <Expression><![CDATA[[Calc2]]]></Expression>
             </Calculate>
         </GameModifier>
 		<GameModifier>
@@ -1105,10 +1077,16 @@
             <AttackStat>UnitStat_Attack_Cold</AttackStat>
 			<IsForSpellResist>1</IsForSpellResist>
             <Calculate InternalName="Calc" ValueOwner="CastingUnit">
-                <Expression><![CDATA[[UnitOwner_GetNumWaterShards]]]></Expression>
+                <Expression><![CDATA[[UnitOwner_GetNumWaterShards] * 2]]></Expression>
+            </Calculate>
+			<Calculate InternalName="Calc2" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitStat_CombinedAttack] + [Calc]]]></Expression>
             </Calculate>
             <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc] + 5]]></Expression>
+                <Expression><![CDATA[[Calc2] / 2]]></Expression>
+            </Calculate>
+            <Calculate InternalName="ValueForFormattedDescription">
+                <Expression><![CDATA[[Calc2] / 2]]></Expression>
             </Calculate>
         </GameModifier>
         <AIData AIPersonality="AI_General">
@@ -3782,30 +3760,7 @@
             <Resource>Mana</Resource>
             <Amount>15</Amount>
         </SpellResourceCost>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>DefendableDamage</Attribute>
-            <AttackStat>UnitStat_Attack_Pierce</AttackStat>
-            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
-                <Expression><![CDATA[[UnitStat_CombinedAttack] / 3]]></Expression>
-            </Calculate>
-            <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc]]]></Expression>
-            </Calculate>
-        </GameModifier>
-		<GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>DefendableDamage</Attribute>
-            <AttackStat>UnitStat_Attack_Pierce</AttackStat>
-			<IsForSpellResist>1</IsForSpellResist>
-            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
-                <Expression><![CDATA[[UnitStat_CombinedAttack] / 3]]></Expression>
-            </Calculate>
-            <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc]]]></Expression>
-            </Calculate>
-        </GameModifier>
-        <GameModifier>
+               <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>DefendableDamage</Attribute>
             <AttackStat>UnitStat_Attack_Cold</AttackStat>
@@ -3813,11 +3768,14 @@
             <Calculate InternalName="Calc" ValueOwner="CastingUnit">
                 <Expression><![CDATA[[UnitOwner_GetNumWaterShards] * 2]]></Expression>
             </Calculate>
+			<Calculate InternalName="Calc2" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitStat_CombinedAttack] + [Calc]]]></Expression>
+            </Calculate>
             <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc] + 10]]></Expression>
+                <Expression><![CDATA[[Calc2]]]></Expression>
             </Calculate>
             <Calculate InternalName="ValueForFormattedDescription">
-                <Expression><![CDATA[[Calc] + [Calc2]]]></Expression>
+                <Expression><![CDATA[[Calc2]]]></Expression>
             </Calculate>
         </GameModifier>
 		<GameModifier>
@@ -3826,10 +3784,16 @@
             <AttackStat>UnitStat_Attack_Cold</AttackStat>
 			<IsForSpellResist>1</IsForSpellResist>
             <Calculate InternalName="Calc" ValueOwner="CastingUnit">
-                <Expression><![CDATA[[UnitOwner_GetNumWaterShards]]]></Expression>
+                <Expression><![CDATA[[UnitOwner_GetNumWaterShards] * 2]]></Expression>
+            </Calculate>
+			<Calculate InternalName="Calc2" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitStat_CombinedAttack] + [Calc]]]></Expression>
             </Calculate>
             <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc] + 5]]></Expression>
+                <Expression><![CDATA[[Calc2] / 2]]></Expression>
+            </Calculate>
+            <Calculate InternalName="ValueForFormattedDescription">
+                <Expression><![CDATA[[Calc2] / 2]]></Expression>
             </Calculate>
         </GameModifier>
         <AIData AIPersonality="AI_General">

@@ -1,0 +1,41 @@
+<GameItemTypes>
+
+    <GameItemType InternalName="Maul_DrednirMaul">
+        <DisplayName>Drednir Maul</DisplayName>
+        <Description>The hammer of the Drednir. Hits impossibly hard yet can be swung with ease.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>Blunt</WeaponType>
+        <WeaponUpgradeType>Blunt</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>2995</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>40</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_BashChance</StrVal>
+                <Value>100</Value>
+                <Provides>Bash- Has a chance equal to the damage done of knocking the victim prone</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>CrushingBlow</StrVal>
+                <Provides>Crushing Blow- +100% Attack, but you lose your next action</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_BLUNT</AIPrefType>
+            <AIPriority>600</AIPriority>
+        </AIData>
+        <ArtDef>Maul_CurgensHammer_ArtDef</ArtDef>
+    </GameItemType>
+    
+</GameItemTypes>

@@ -569,9 +569,9 @@
         </SpellDefEffect>
     </SpellDef>
 	
-	<SpellDef InternalName="Pandemonium">
+	<SpellDef InternalName="FrostBolt">
         <DisplayName>Frost Bolt</DisplayName>
-        <Description>A bolt of cold shoots at an enemy for 16 (+4 per water shard) cold damage.</Description>
+        <Description>A bolt of cold shoots at an enemy for 16 (+2 per water shard) cold damage.</Description>
         <FormattedDescription>A bolt of cold shoots at an enemy for %d cold damage.</FormattedDescription>
         <Image>T_Blizzard_Painting.png</Image>
         <IconFG>PMV_Ability_IceBeam.png</IconFG>
@@ -587,14 +587,18 @@
         <Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Water3</Attribute>
-        </Prereq>				
+        </Prereq>	
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>20</Amount>
+        </SpellResourceCost>		
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>DefendableDamage</Attribute>
             <AttackStat>UnitStat_Attack_Cold</AttackStat>
             <IsForFormattedDescription>1</IsForFormattedDescription>
             <Calculate InternalName="Calc" ValueOwner="CastingUnit">
-                <Expression><![CDATA[[UnitOwner_GetNumWaterShards] * 4]]></Expression>
+                <Expression><![CDATA[[UnitOwner_GetNumWaterShards] * 2]]></Expression>
             </Calculate>
             <Calculate InternalName="Calc2" ValueOwner="CastingUnit">
                 <Expression><![CDATA[[Calc] + 16]]></Expression>
@@ -612,7 +616,7 @@
             <AttackStat>UnitStat_Attack_Cold</AttackStat>
             <IsForSpellResist>1</IsForSpellResist>
             <Calculate InternalName="Calc" ValueOwner="CastingUnit">
-                <Expression><![CDATA[[UnitOwner_GetNumWaterShards * 2]]]></Expression>
+                <Expression><![CDATA[[UnitOwner_GetNumWaterShards]]]></Expression>
             </Calculate>
             <Calculate InternalName="Calc2" ValueOwner="CastingUnit">
                 <Expression><![CDATA[[Calc] + 8]]></Expression>
@@ -651,9 +655,9 @@
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
     </SpellDef>
-    <SpellDef InternalName="Pandemonium_Adept">
+    <SpellDef InternalName="FrostBolt_Adept">
         <DisplayName>Frost Bolt</DisplayName>
-        <Description>A bolt of cold shoots at an enemy for 16 (+4 per water shard) cold damage.</Description>
+        <Description>A bolt of cold shoots at an enemy for 16 (+2 per water shard) cold damage.</Description>
         <FormattedDescription>A bolt of cold shoots at an enemy for %d cold damage.</FormattedDescription>
         <Image>T_Blizzard_Painting.png</Image>
         <IconFG>PMV_Ability_IceBeam.png</IconFG>
@@ -668,15 +672,19 @@
         <IsResistable>1</IsResistable>
         <Prereq>
             <Type>AbilityBonusOption</Type>
-            <Attribute>Water3</Attribute>
-        </Prereq>				
+            <Attribute>WaterAdept3</Attribute>
+        </Prereq>	
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>20</Amount>
+        </SpellResourceCost>		
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>DefendableDamage</Attribute>
             <AttackStat>UnitStat_Attack_Cold</AttackStat>
             <IsForFormattedDescription>1</IsForFormattedDescription>
             <Calculate InternalName="Calc" ValueOwner="CastingUnit">
-                <Expression><![CDATA[[UnitOwner_GetNumWaterShards] * 4]]></Expression>
+                <Expression><![CDATA[[UnitOwner_GetNumWaterShards] * 2]]></Expression>
             </Calculate>
             <Calculate InternalName="Calc2" ValueOwner="CastingUnit">
                 <Expression><![CDATA[[Calc] + 16]]></Expression>
@@ -694,7 +702,7 @@
             <AttackStat>UnitStat_Attack_Cold</AttackStat>
             <IsForSpellResist>1</IsForSpellResist>
             <Calculate InternalName="Calc" ValueOwner="CastingUnit">
-                <Expression><![CDATA[[UnitOwner_GetNumWaterShards * 2]]]></Expression>
+                <Expression><![CDATA[[UnitOwner_GetNumWaterShards]]]></Expression>
             </Calculate>
             <Calculate InternalName="Calc2" ValueOwner="CastingUnit">
                 <Expression><![CDATA[[Calc] + 8]]></Expression>
@@ -5047,7 +5055,7 @@
 	
 	<SpellDef InternalName="LightningBolt">
         <DisplayName>Lightning Bolt</DisplayName>
-        <Description>Does 16 (+1 per Level) Lightning damage to all units in a line 5 tiles long.</Description>
+        <Description>Does 10 (+1 per Level, +1 per air shard) Lightning damage to all units in a line 5 tiles long.</Description>
         <FormattedDescription>Does %d Lightning damage to all units in a line 5 tiles long.</FormattedDescription>
         <Image>AirCrystal_Medallion.png</Image>
         <IconFG>T_ChainLightning_Icon.png</IconFG>
@@ -5067,23 +5075,19 @@
             <Type>AbilityBonusOption</Type>
             <Attribute>Aeromancy</Attribute>
         </Prereq>
-        <SpellResourceCost>
-            <Resource>Mana</Resource>
-            <Amount>25</Amount>
-        </SpellResourceCost>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>DefendableDamage</Attribute>
             <AttackStat>UnitStat_Attack_Lightning</AttackStat>
             <IsForFormattedDescription>1</IsForFormattedDescription>
             <Calculate InternalName="Calc" ValueOwner="CastingUnit">
-                <Expression><![CDATA[[Unit_GetLevel]]]></Expression>
+                <Expression><![CDATA[[Unit_GetLevel] + [UnitOwner_GetNumAirShards]]]></Expression>
             </Calculate>
             <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc] + 16]]></Expression>
+                <Expression><![CDATA[[Calc] + 10]]></Expression>
             </Calculate>
             <Calculate InternalName="ValueForFormattedDescription">
-                <Expression><![CDATA[[Calc] + 16]]></Expression>
+                <Expression><![CDATA[[Calc] + 10]]></Expression>
             </Calculate>
         </GameModifier>
         <GameModifier>
@@ -5092,13 +5096,16 @@
             <AttackStat>UnitStat_Attack_Lightning</AttackStat>
             <IsForSpellResist>1</IsForSpellResist>
             <Calculate InternalName="Calc" ValueOwner="CastingUnit">
-                <Expression><![CDATA[[Unit_GetLevel] / 2]]></Expression>
+                <Expression><![CDATA[[Unit_GetLevel] + [UnitOwner_GetNumAirShards]]]></Expression>
             </Calculate>
+            <Calculate InternalName="Calc2" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[Calc] / 2]]></Expression>
+            </Calculate>			
             <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc] + 8]]></Expression>
+                <Expression><![CDATA[[Calc2] + 5]]></Expression>
             </Calculate>
             <Calculate InternalName="ValueForFormattedDescription">
-                <Expression><![CDATA[[Calc] + 8]]></Expression>
+                <Expression><![CDATA[[Calc2] + 5]]></Expression>
             </Calculate>
         </GameModifier>
         <AIData AIPersonality="AI_General">
@@ -5170,5 +5177,34 @@
         </SpellDefEffect>
     </SpellDef>
 	
+	<SpellDef InternalName="AllianceDoctrine">
+        <DisplayName>Alliance Doctrine</DisplayName>
+        <Description>Unlocks the Alliances tech</Description>
+        <Image>Tech_Alliances.png</Image>
+        <IconFG>Icon_CityStationBonus.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <SpellBookSortCategory>World</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Buff</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Loremaster3</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>DiplomaticCapital</Resource>
+            <Amount>10</Amount>
+        </SpellResourceCost>
+		<GameModifier>
+			<ModType>Player</ModType>
+			<Attribute>UnlockTech</Attribute>
+			<StrVal>Alliances</StrVal>
+		</GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+    </SpellDef>
 	
 </Spells>
