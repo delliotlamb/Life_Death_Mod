@@ -3,10 +3,9 @@
 <!-- CoreAbilities.xml -->
 <!-- -->
 <AbilityBonuses>
-	
+
 	<!-- here -->
     <AbilityBonus InternalName="Spy_Ability">
-		<AbilityBonusType>Unit_Level</AbilityBonusType>
         <AbilityBonusOption InternalName="Spy">
             <DisplayName>Spy</DisplayName>
             <Description>+1 Sight range. This unit can cast spells that incite revolution or steal enemy secrets.</Description>
@@ -40,32 +39,32 @@
                 <Attribute>UnlockCombatAbility</Attribute>
                 <StrVal>DiplomaticImmunity_Ability</StrVal>
                 <Provides>Can use the Diplomatic Collapse to set all players at war</Provides>
-            </GameModifier>				
+            </GameModifier>
             <GameModifier>
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
                 <StrVal>UnitStat_Sight</StrVal>
                 <Value>1</Value>
                 <Provides>+1 Sight Range</Provides>
-            </GameModifier>			
+            </GameModifier>
             <IsCombatAbility>1</IsCombatAbility>
             <Type>Spell</Type>
             <AIData AIPersonality="AI_General">
-                <AIPriority>5</AIPriority>
+                <AIPriority>0</AIPriority>
             </AIData>
         </AbilityBonusOption>
     </AbilityBonus>
-	
+
 	    <AbilityBonusOption InternalName="Diplomat">
 		<GameModifier>
             <ModType>Resource</ModType>
             <Attribute>DiplomaticCapital</Attribute>
             <Value>1</Value>
-            <PerTurn>1</PerTurn>			
+            <PerTurn>1</PerTurn>
             <Provides>+1 Diplomatic Capital Per Turn</Provides>
         </GameModifier>
         </AbilityBonusOption>
-		
+
 		<AbilityBonus InternalName="NegotiatorAbility">
         <AbilityBonusOption InternalName="Negotiator">
             <DisplayName>Negotiator</DisplayName>
@@ -83,5 +82,5 @@
             </AIData>
         </AbilityBonusOption>
     </AbilityBonus>
-	
+
 </AbilityBonuses>
