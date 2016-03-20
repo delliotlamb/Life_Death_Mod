@@ -19,7 +19,7 @@
         <GameModifier>
             <ModType>ConstructionResourceCost</ModType>
             <Attribute>ForbiddenLore</Attribute>
-            <Value>-401</Value>
+            <Value>-356</Value>
         </GameModifier>
                 <GameModifier>
                     <ModType>Player</ModType>
@@ -52,7 +52,7 @@
         <GameModifier>
             <ModType>ConstructionResourceCost</ModType>
             <Attribute>ForbiddenLore</Attribute>
-            <Value>-326</Value>
+            <Value>-356</Value>
         </GameModifier>
                 <GameModifier>
                     <ModType>Player</ModType>

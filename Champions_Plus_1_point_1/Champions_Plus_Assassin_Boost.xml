@@ -76,7 +76,7 @@
     </SpellDef>
 
 <!-- disabled for now. All attacks get poison damage with the unlocking ability
-	
+
     <SpellDef InternalName="PoisonedNick">
         <DisplayName>Poisoned Arrow</DisplayName>
         <Description>If this ranged attack hits, the target enemy takes 6 poison damage per round.</Description>
@@ -136,7 +136,7 @@
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
     </SpellDef>
-	
+
 	-->
 
     <SpellDef InternalName="ThrowMolotov">
@@ -376,7 +376,7 @@
         <HitSoundFX>Spell_Poisoned2_01</HitSoundFX>
         <HitSoundFX>Spell_Poisoned2_02</HitSoundFX>
     </SpellDef>
-	
+
 	<SpellDef InternalName="AssassinInfiltrate">
 	<DisplayName>Assassin Infiltration</DisplayName>
 	<Description>Assassin can place traps or choose where to begin the battle</Description>
@@ -401,10 +401,10 @@
         <GameModifier>
             <ModType>TacticalUnit</ModType>
             <Attribute>GoNext</Attribute>
-        </GameModifier>       
+        </GameModifier>
 	<AIData AIPersonality="AI_General">
 		<AIPriority>5</AIPriority>
-	</AIData>        
+	</AIData>
 </SpellDef>
 
     <SpellDef InternalName="Sneak_Assassin">
@@ -426,7 +426,7 @@
             <Type>UnitStat</Type>
             <Attribute>UnitStat_Infiltrate</Attribute>
             <Value>1</Value>
-        </Prereq>		
+        </Prereq>
         <GameModifier>
             <ModType>Map</ModType>
             <Attribute>TransportUnit</Attribute>
@@ -451,18 +451,18 @@
             <ModType>TacticalUnit</ModType>
 			<ApplyToCaster>1</ApplyToCaster>
             <Attribute>GoNext</Attribute>
-        </GameModifier> 		
+        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
         </AIData>
     </SpellDef>
-	
+
 	    <SpellDef InternalName="Spike_Trap">
         <DisplayName>Spike Trap</DisplayName>
         <Description>Set a trap on a tile that does damage to any unit crossing it. Usable only on the first turn of combat.</Description>
         <Image>U_Inferno_Painting.png</Image>
         <IconFG>DestroyBuildingIcon.png</IconFG>
-        <Cooldown>99</Cooldown>		
+        <Cooldown>99</Cooldown>
         <SpellBookSortCategory>World</SpellBookSortCategory>
         <SpellBookSortSubCategory>Map</SpellBookSortSubCategory>
         <SpellType>Tactical</SpellType>
@@ -509,7 +509,7 @@
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
     </SpellDef>
-	
+
 	<SpellDef InternalName="Poison_Trap">
         <DisplayName>Poison Trap</DisplayName>
         <Description>Set a trap on a tile that does poison damage to any unit crossing it. Usable only on the first turn of combat.</Description>
@@ -561,7 +561,7 @@
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
     </SpellDef>
-	
+
 	<SpellDef InternalName="Eviscerate">
         <DisplayName>Eviscerate</DisplayName>
         <Description>Attack for an automatic critical hit.</Description>
@@ -607,13 +607,13 @@
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
     </SpellDef>
-	
+
 	<SpellDef InternalName="Assassinate">
         <DisplayName>Assassinate</DisplayName>
-        <Description>Once per battle, attack to permanently kill a champion or sovereign, if it connects. Accuracy is reduced by 3 for every hit point the target currently has remaining - only attempt on a nearly dead unit! If it hits, cannot be used again until Anointment Of Regicide is re-cast.</Description>
+        <Description>A champion or sovereign is subject to permanent death, if this attack connects. Accuracy is reduced by 3 for every hit point the target currently has remaining - only attempt on a nearly dead unit!.</Description>
         <Image>RoyalFuneral.png.png</Image>
         <IconFG>Improvement_FloodedGraveyard.png</IconFG>
-		<!--<StaminaCost>7</StaminaCost>-->
+		    <!--<StaminaCost>7</StaminaCost>-->
         <Cooldown>99</Cooldown>
         <SpellBookSortCategory>Unit</SpellBookSortCategory>
         <SpellBookSortSubCategory>UnitCurse</SpellBookSortSubCategory>
@@ -627,11 +627,10 @@
         <CanBeDodged>1</CanBeDodged>
         <IsSpecialAbility>1</IsSpecialAbility>
         <Range>1</Range>
-		<Prereq>
-            <Type>UnitStat</Type>
-            <Attribute>UnitStat_Assassinate_Ready</Attribute>
-            <Value>1</Value>
-        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>900</Amount>
+        </SpellResourceCost>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
@@ -643,12 +642,12 @@
             </Calculate>
             <Calculate InternalName="Value">
                 <Expression><![CDATA[[Calc] * -1]]></Expression>
-            </Calculate>           
-        </GameModifier>		
+            </Calculate>
+        </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>PermanentDeath</Attribute>
-            <DisplayName>Assassinated!</DisplayName>			
+            <DisplayName>Assassinated!</DisplayName>
         </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
@@ -660,7 +659,7 @@
             <StrVal>UnitStat_Assassinate_Ready</StrVal>
             <ApplyToCaster>1</ApplyToCaster>
 			<Value>-1</Value>
-        </GameModifier>		
+        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>1000</AIPriority>
 			<ValueCalcWrapper>
@@ -684,9 +683,9 @@
             <EffectScale>1.0</EffectScale>
             <EffectDelay>0</EffectDelay>
             <SnapToTerrain>1</SnapToTerrain>
-        </SpellDefEffect>		
+        </SpellDefEffect>
     </SpellDef>
-	
+
 		<!--<SpellDef InternalName="RainOfArrows">
         <DisplayName>Rain of Arrows</DisplayName>
         <Description>Fires arrows at all enemies in a 2 tile radius.</Description>
@@ -728,7 +727,7 @@
         <SpellCastProjectile>1</SpellCastProjectile>
         <SpellCastProjectileSpeed>1100</SpellCastProjectileSpeed>
     </SpellDef>-->
-	
+
 	<!--<SpellDef InternalName="Escape_Assassin_Ability">
         <DisplayName>Slip From Sight</DisplayName>
         <Description>All units flee from the battlefield.</Description>
@@ -761,8 +760,8 @@
             <PlayOnAllTargets>1</PlayOnAllTargets>
         </SpellDefEffect>
     </SpellDef>-->
-	
-	<SpellDef InternalName="MarkOfRegicide">
+
+	<!--<SpellDef InternalName="MarkOfRegicide">
         <DisplayName>Anointment Of Regicide</DisplayName>
         <Description>Cast on an assassin with the Executioner II trait to allow that Assassin to permanently assassinate ONE sovereign or champion.</Description>
         <Image>RoyalFuneral.png</Image>
@@ -779,7 +778,7 @@
         <SpellResourceCost>
             <Resource>Mana</Resource>
             <Amount>700</Amount>
-        </SpellResourceCost>		
+        </SpellResourceCost>
 				<GameModifier>
 					<ModType>Unit</ModType>
 					<Attribute>AdjustUnitStat</Attribute>
@@ -796,7 +795,7 @@
             <Calculate InternalName="Value">
                 <Expression><![CDATA[[Calc] < 1]]></Expression>
             </Calculate>
-        </ValueCalcWrapper>	
+        </ValueCalcWrapper>
         </AIData>
         <HitSoundFX>Spell_Antipathy_01</HitSoundFX>
         <SpellDefEffect>
@@ -806,8 +805,8 @@
             <EffectDelay>0</EffectDelay>
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
-    </SpellDef>
-	
+    </SpellDef>-->
+
 	<!-- <SpellDef InternalName="AssassinsStrike">
         <DisplayName>Assassin's Strike</DisplayName>
         <Description>Attack at +3 Attack per Stamina</Description>
@@ -869,7 +868,7 @@
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
     </SpellDef>-->
-	
+
 </Spells>
 
 <AbilityBonuses>
@@ -900,14 +899,14 @@
                 <Attribute>UnlockCombatAbility</Attribute>
                 <StrVal>Poison_Trap</StrVal>
                 <Provides>Can lay poison traps on first round of combat</Provides>
-            </GameModifier>-->		
+            </GameModifier>-->
             <GameModifier>
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
                 <StrVal>UnitStat_Attack_Poison</StrVal>
                 <Value>3</Value>
                 <Provides>+3 Poison attack</Provides>
-            </GameModifier>		
+            </GameModifier>
             <IsCombatAbility>1</IsCombatAbility>
             <Type>Ability</Type>
             <Prereq>
@@ -946,7 +945,7 @@
             </GameModifier>
         </AbilityBonusOption>
     </AbilityBonus>
-	
+
     <AbilityBonus InternalName="Precision3Ability_Level">
         <AbilityBonusType>Unit_Level</AbilityBonusType>
         <AbilityBonusOption InternalName="Precision3_Level">
@@ -972,10 +971,10 @@
             </GameModifier>
         </AbilityBonusOption>
     </AbilityBonus>
-	
+
     <AbilityBonus InternalName="VitalStrike2Ability">
         <AbilityBonusType>Unit_Level</AbilityBonusType>
-        <AbilityBonusOption InternalName="VitalStrike2">	
+        <AbilityBonusOption InternalName="VitalStrike2">
             <GameModifier>
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
@@ -985,7 +984,7 @@
             </GameModifier>
         </AbilityBonusOption>
     </AbilityBonus>
-	
+
     <AbilityBonus InternalName="VitalStrike3Ability">
         <AbilityBonusType>Unit_Level</AbilityBonusType>
         <AbilityBonusOption InternalName="VitalStrike3">
@@ -998,7 +997,7 @@
             </GameModifier>
         </AbilityBonusOption>
     </AbilityBonus>
-	
+
     <AbilityBonus InternalName="VitalStrike4Ability">
         <AbilityBonusType>Unit_Level</AbilityBonusType>
         <AbilityBonusOption InternalName="VitalStrike4">
@@ -1071,7 +1070,7 @@
             </GameModifier>
         </AbilityBonusOption>
     </AbilityBonus>
-	
+
 	    <AbilityBonus InternalName="Executioner2Ability">
         <AbilityBonusType>Unit_Level</AbilityBonusType>
         <AbilityBonusOption InternalName="Executioner2">
@@ -1080,17 +1079,17 @@
                 <Attribute>UnlockCombatAbility</Attribute>
                 <StrVal>Assassinate</StrVal>
                 <Provides>Unlocks assassinate: attack weakened champions to permanently kill them.</Provides>
-            </GameModifier>	
+            </GameModifier>
             <GameModifier>
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
                 <StrVal>UnitStat_MarkOfRegicide</StrVal>
                 <Value>1</Value>
                 <Provides>This unit can be targeted by Mark Of Regicide</Provides>
-            </GameModifier>			
+            </GameModifier>
         </AbilityBonusOption>
     </AbilityBonus>
-	
+
 	<!--<AbilityBonus InternalName="AcrobatAbility_Level">
         <AbilityBonusType>Unit_Level</AbilityBonusType>
         <AbilityBonusOption InternalName="Acrobat_Level">
@@ -1102,7 +1101,7 @@
             </GameModifier>
         </AbilityBonusOption>
     </AbilityBonus>-->
-	
+
 	<!--<AbilityBonus InternalName="Dodge2Ability">
         <AbilityBonusType>Unit_Level</AbilityBonusType>
         <AbilityBonusOption InternalName="Dodge2">
@@ -1129,7 +1128,7 @@
             </GameModifier>
         </AbilityBonusOption>
     </AbilityBonus>-->
-	
+
  <AbilityBonus InternalName="RainOfArrowsAbility">
         <AbilityBonusOption InternalName="RainOfArrows">
             <GameModifier>
@@ -1141,7 +1140,7 @@
             </GameModifier>
         </AbilityBonusOption>
     </AbilityBonus>
-	
+
 </AbilityBonuses>
 
 <PlayerAbilityTypes>
@@ -1154,7 +1153,7 @@
         <DefaultValue>1.0</DefaultValue>
 		<DisplayPercentage>1</DisplayPercentage>
     </UnitStatType>
-	
+
 	<UnitStatType InternalName="UnitStat_Infiltrate">
 		<DisplayName>Infiltration</DisplayName>
 		<Description>Is this unit infiltrating prior to battle?</Description>
@@ -1162,7 +1161,7 @@
 		<Hidden>1</Hidden>
         <DefaultValue>0</DefaultValue>
     </UnitStatType>
-	
+
 	<UnitStatType InternalName="UnitStat_Assassinate_Ready">
         <DisplayName>Assassination Ready?</DisplayName>
         <Description>Unitstat required to be able to assassinate champions or sovereigns</Description>
@@ -1170,7 +1169,7 @@
 		<UnitStatGrouping>CombatStat</UnitStatGrouping>
         <DefaultValue>1.0</DefaultValue>
     </UnitStatType>
-	
+
 	<UnitStatType InternalName="UnitStat_MarkOfRegicide">
         <DisplayName>Regicide Eligible</DisplayName>
         <Description>Used solely for AI targeting of Mark Of Regicide spell</Description>
@@ -1178,6 +1177,6 @@
 		<UnitStatGrouping>CombatStat</UnitStatGrouping>
         <DefaultValue>0</DefaultValue>
     </UnitStatType>
-	
+
 
 </PlayerAbilityTypes>
