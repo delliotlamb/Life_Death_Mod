@@ -146,7 +146,9 @@
         <Color_Skin>208,116,88,255</Color_Skin>
         <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
         <EyeTexture>gfx\eyes\blinks\eyeblink_m7_Yellow.png</EyeTexture>
-        <InfoCardBackground>BG_Lava</InfoCardBackground>
+         <Medallions InternalName="">
+            <All>ObsidianLegion_Medallion.png</All>
+        </Medallions>
         <ModelPath>F_Male_Magnar_Body_Mesh_01.hkb</ModelPath>
         <ModelScale>1</ModelScale>
         <MovingSFX>TEMP_KnightMarching1</MovingSFX>
@@ -201,7 +203,9 @@
         <Color_Skin>208,163,128,255</Color_Skin>
         <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
         <EyeTexture>gfx\eyes\blinks\eyeblink_f3_grn.png</EyeTexture>
-        <InfoCardBackground>BG_EmpireHills</InfoCardBackground>
+         <Medallions InternalName="">
+            <All>FE_Camp_Rihossa.png</All>
+        </Medallions>
         <ModelPath>Gfx\HKB\Units\K_Female_Mesh_01.hkb</ModelPath>
         <ModelScale>1</ModelScale>
         <MovingSFX>TEMP_KnightMarching1</MovingSFX>
@@ -255,8 +259,9 @@
         <Color_Skin>133,128,128,255</Color_Skin>
         <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
         <EyeTexture>gfx\eyes\blinks\eyeblink_m5_White.png</EyeTexture>
-        <InfoCardBackground>BG_EmpireRugged</InfoCardBackground>
-        <InfoCardBackgroundFlipped>0</InfoCardBackgroundFlipped>
+        <Medallions InternalName="">
+            <All>FE_Camp_MuutiYanaMedallion.png</All>
+        </Medallions>
         <ModelPath>Gfx\HKB\Units\F_Male_Mesh_01.hkb</ModelPath>
         <ModelScale>1</ModelScale>
         <MovingSFX>TEMP_KnightMarching1</MovingSFX>
@@ -265,7 +270,7 @@
         <SoundPack>SoundPack_Generic_Male</SoundPack>
         <TacticalModelScale>1.6</TacticalModelScale>
         <Texture_Eyes>gfx\eyes\blinks\eyeblink_m5_White.png</Texture_Eyes>
-        <Texture_Skin>Trog_Skin_M_03.png</Texture_Skin>
+        <Texture_Skin>Trog_Skin_M_01.png</Texture_Skin>
         <UnitModelType>FallenMale</UnitModelType>
     </UnitType>
 
@@ -306,8 +311,9 @@
         <Color_Hair>195,160,110,255</Color_Hair>
         <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
         <EyeTexture>gfx\eyes\blinks\eyeblink_m3_brwn.png</EyeTexture>
-        <InfoCardBackground>BG_River</InfoCardBackground>
-        <InfoCardBackgroundFlipped>0</InfoCardBackgroundFlipped>
+        <Medallions InternalName="">
+            <All>FE_Campaign_Valiero.png</All>
+        </Medallions>
         <ModelPath>Gfx\HKB\Units\K_Male_Mesh_01.hkb</ModelPath>
         <ModelScale>1</ModelScale>
         <MovingSFX>TEMP_KnightMarching1</MovingSFX>
@@ -357,8 +363,9 @@
         <Color_Hair>73,48,38,255</Color_Hair>
         <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
         <EyeTexture>gfx\eyes\blinks\eyeblink_m2_olive.png</EyeTexture>
-        <InfoCardBackground>BG_Swamp</InfoCardBackground>
-        <InfoCardBackgroundFlipped>0</InfoCardBackgroundFlipped>
+        <Medallions InternalName="">
+            <All>B1_C4_TarthanBowmen.png</All>
+        </Medallions>
         <ModelPath>Gfx\HKB\Units\K_Male_Mesh_01.hkb</ModelPath>
         <ModelScale>1</ModelScale>
         <MovingSFX>TEMP_KnightMarching1</MovingSFX>
@@ -413,8 +420,9 @@
         <ClothPoseIndex>0</ClothPoseIndex>
         <CutSceneDataPack>HenchmanCutscenePack</CutSceneDataPack>
         <EyeTexture>gfx\eyes\blinks\eyeblink_m2_grayblue.png</EyeTexture>
-        <InfoCardBackground>BG_KingdomRugged</InfoCardBackground>
-        <InfoCardBackgroundFlipped>0</InfoCardBackgroundFlipped>
+        <Medallions InternalName="">
+            <All>Peasant.png</All>
+        </Medallions>
         <ModelPath>Gfx\HKB\Units\K_Male_Mesh_01.hkb</ModelPath>
         <ModelScale>1</ModelScale>
         <MovingSFX>TEMP_KnightMarching1</MovingSFX>
@@ -467,8 +475,9 @@
         <ClothPoseIndex>0</ClothPoseIndex>
         <CutSceneDataPack>HenchmanCutscenePack</CutSceneDataPack>
         <EyeTexture>gfx\eyes\blinks\eyeblink_m2_grayblue.png</EyeTexture>
-        <InfoCardBackground>BG_KingdomRugged</InfoCardBackground>
-        <InfoCardBackgroundFlipped>0</InfoCardBackgroundFlipped>
+        <Medallions InternalName="">
+            <All>Rank_Janusk.png</All>
+        </Medallions>
         <ModelPath>Gfx\HKB\Units\K_Male_Mesh_01.hkb</ModelPath>
         <ModelScale>1</ModelScale>
         <MovingSFX>TEMP_KnightMarching1</MovingSFX>
@@ -527,7 +536,9 @@
         <Color_Skin>155,155,160,255</Color_Skin>
         <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
         <EyeTexture>gfx\eyes\blinks\Eyeblink_F4_Red.png</EyeTexture>
-        <InfoCardBackground>BG_BarrenForest</InfoCardBackground>
+        <Medallions InternalName="">
+            <All>F_Wizard_F.png</All>
+        </Medallions>
         <ModelPath>Gfx\HKB\Units\K_Female_Mesh_01.hkb</ModelPath>
         <ModelScale>1</ModelScale>
         <MovingSFX>TEMP_KnightMarching1</MovingSFX>
@@ -585,7 +596,9 @@
         <Color_Skin>145,155,170,255</Color_Skin>
         <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
         <EyeTexture>gfx\eyes\blinks\eyeblink_m5_gold.png</EyeTexture>
-        <InfoCardBackground>BG_Chasm</InfoCardBackground>
+         <Medallions InternalName="">
+            <All>M_Sion_01_Card.png</All>
+        </Medallions>
         <ModelPath>Gfx\HKB\Units\K_Male_Mesh_01.hkb</ModelPath>
         <ModelScale>1</ModelScale>
         <MovingSFX>TEMP_KnightMarching1</MovingSFX>
@@ -1200,20 +1213,18 @@
         <Color_Skin>133,128,128,255</Color_Skin>
         <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
         <EyeTexture>gfx\eyes\blinks\eyeblink_m5_White.png</EyeTexture>
-        <InfoCardBackground>BG_EmpireRugged</InfoCardBackground>
-        <InfoCardBackgroundFlipped>0</InfoCardBackgroundFlipped>
+        <Medallions InternalName="">
+            <All>FE_Camp_MuutiYanaMedallion.png</All>
+        </Medallions>
         <ModelPath>Gfx\HKB\Units\F_Male_Mesh_01.hkb</ModelPath>
         <ModelScale>1</ModelScale>
-        <Medallions InternalName="">
-            <All>Peddler.png</All>
-        </Medallions>		
         <MovingSFX>TEMP_KnightMarching1</MovingSFX>
         <OnHitParticleName>Bloody_OnHit</OnHitParticleName>
         <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
         <SoundPack>SoundPack_Generic_Male</SoundPack>
         <TacticalModelScale>1.6</TacticalModelScale>
         <Texture_Eyes>gfx\eyes\blinks\eyeblink_m5_White.png</Texture_Eyes>
-        <Texture_Skin>Trog_Skin_M_03.png</Texture_Skin>
+        <Texture_Skin>Trog_Skin_M_01.png</Texture_Skin>
         <UnitModelType>FallenMale</UnitModelType>
 		<Prereq>
 			<Type>AbilityBonusOption</Type>
