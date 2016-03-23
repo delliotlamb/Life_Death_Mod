@@ -3654,15 +3654,6 @@
             <Resource>Mana</Resource>
             <Amount>15</Amount>
         </SpellResourceCost>
-		<GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>DefendableDamage</Attribute>
-		</GameModifier>
-		<GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>DefendableDamage</Attribute>
-			<IsForSpellResist>1</IsForSpellResist>
-		</GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>DefendableDamage</Attribute>

@@ -42,7 +42,7 @@
 			<Value>1</Value>
         </GameModifier>	
         <AIData AIPersonality="AI_General">
-            <AIPriority>5</AIPriority>
+            <AIPriority>0</AIPriority>
         </AIData>
     </SpellDef>
 	
@@ -96,7 +96,7 @@
         </Prereq>			
         <SpellResourceCost>
             <Resource>Gold</Resource>
-            <Amount>500</Amount>
+            <Amount>1000</Amount>
         </SpellResourceCost>		
         <SpellResourceCost>
             <Resource>DiplomaticCapital</Resource>
@@ -186,7 +186,7 @@
         </SpellResourceCost>		
         <SpellResourceCost>
             <Resource>DiplomaticCapital</Resource>
-            <Amount>50</Amount>
+            <Amount>80</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Map</ModType>
@@ -223,7 +223,7 @@
             <!--<PerTurn>1</PerTurn>-->
         </GameModifier>      
 	<AIData AIPersonality="AI_General">
-		<AIPriority>5</AIPriority>
+		<AIPriority>0</AIPriority>
 	</AIData>        
 	</SpellDef>
 	
@@ -249,7 +249,7 @@
         </SpellResourceCost>
         <SpellResourceCost>
             <Resource>DiplomaticCapital</Resource>
-            <Amount>50</Amount>
+            <Amount>100</Amount>
         </SpellResourceCost>		
         <GameModifier>
             <ModType>Unit</ModType>
@@ -257,7 +257,7 @@
             <Value>100</Value>
         </GameModifier>
         <AIData AIPersonality="AI_General">
-            <AIPriority>1000</AIPriority>
+            <AIPriority>0</AIPriority>
         </AIData>
         <HitSoundFX>Spell_SilverTongue_01</HitSoundFX>
         <SpellDefEffect>
@@ -329,7 +329,7 @@
         <IsSpecialAbility>1</IsSpecialAbility>
         <SpellResourceCost>
             <Resource>DiplomaticCapital</Resource>
-            <Amount>25</Amount>
+            <Amount>50</Amount>
         </SpellResourceCost>		
         <GameModifier>
             <ModType>TacticalUnit</ModType>
@@ -440,14 +440,14 @@
         </Prereq>		
         <SpellResourceCost>
             <Resource>DiplomaticCapital</Resource>
-            <Amount>200</Amount>
+            <Amount>300</Amount>
         </SpellResourceCost>
             <GameModifier>
                 <ModType>Map</ModType>
                 <Attribute>AllPlayersDeclareWar</Attribute>
             </GameModifier>
         <AIData AIPersonality="AI_General">
-            <AIPriority>5</AIPriority>
+            <AIPriority>0</AIPriority>
         </AIData>
         <HitSoundFX>Spell_CalltoArms_01</HitSoundFX>
     </SpellDef>
@@ -472,7 +472,7 @@
         </Prereq>		
         <SpellResourceCost>
             <Resource>DiplomaticCapital</Resource>
-            <Amount>75</Amount>
+            <Amount>150</Amount>
         </SpellResourceCost>
         <SpellResourceCost>
             <Resource>Gold</Resource>
@@ -484,7 +484,7 @@
             <!--<Radius>1</Radius>-->
         </GameModifier>
         <AIData AIPersonality="AI_General">
-            <AIPriority>70</AIPriority>
+            <AIPriority>0</AIPriority>
         </AIData>
         <HitSoundFX>Raze</HitSoundFX>
     </SpellDef>
@@ -508,7 +508,7 @@
         </Prereq>
         <SpellResourceCost>
             <Resource>DiplomaticCapital</Resource>
-            <Amount>250</Amount>
+            <Amount>300</Amount>
         </SpellResourceCost>
         <SpellResourceCost>
             <Resource>Gold</Resource>
@@ -522,7 +522,7 @@
             <Provides>-5% Unrest in all your cities</Provides>
         </GameModifier>
         <AIData AIPersonality="AI_General">
-            <AIPriority>25</AIPriority>
+            <AIPriority>0</AIPriority>
         </AIData>
         <HitSoundFX>Spell_Crusade_01</HitSoundFX>
     </SpellDef>
@@ -547,7 +547,7 @@
         </Prereq>		
         <SpellResourceCost>
             <Resource>DiplomaticCapital</Resource>
-            <Amount>150</Amount>
+            <Amount>200</Amount>
         </SpellResourceCost>
         <SpellResourceCost>
             <Resource>Gold</Resource>
@@ -582,7 +582,7 @@
             <Provides>-60% Gold</Provides>
         </GameModifier>
         <AIData AIPersonality="AI_General">
-            <AIPriority>70</AIPriority>
+            <AIPriority>0</AIPriority>
         </AIData>
         <HitSoundFX>Spell_Alchemy_01</HitSoundFX>
     </SpellDef>

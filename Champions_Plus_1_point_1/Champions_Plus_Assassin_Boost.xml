@@ -608,9 +608,9 @@
         </SpellDefEffect>
     </SpellDef>
 	
-	<SpellDef InternalName="Assassinate">
-        <DisplayName>Assassinate</DisplayName>
-        <Description>Once per battle, attack to permanently kill a champion or sovereign, if it connects. Accuracy is reduced by 3 for every hit point the target currently has remaining - only attempt on a nearly dead unit! If it hits, cannot be used again until Anointment Of Regicide is re-cast.</Description>
+	<SpellDef InternalName="SeveringCut">
+        <DisplayName>Mortal Blow</DisplayName>
+        <Description>If this attack hits, the target will be forever subject to permanent death - even a sovereign! Accuracy is reduced by 3 for every hit point the target currently has remaining - only attempt on a nearly dead unit!</Description>
         <Image>RoyalFuneral.png.png</Image>
         <IconFG>Improvement_FloodedGraveyard.png</IconFG>
 		<!--<StaminaCost>7</StaminaCost>-->
@@ -627,11 +627,10 @@
         <CanBeDodged>1</CanBeDodged>
         <IsSpecialAbility>1</IsSpecialAbility>
         <Range>1</Range>
-		<Prereq>
-            <Type>UnitStat</Type>
-            <Attribute>UnitStat_Assassinate_Ready</Attribute>
-            <Value>1</Value>
-        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>700</Amount>
+        </SpellResourceCost>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
@@ -648,18 +647,11 @@
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>PermanentDeath</Attribute>
-            <DisplayName>Assassinated!</DisplayName>			
+            <DisplayName>Permanent Death!</DisplayName>			
         </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>DefendableDamage</Attribute>
-        </GameModifier>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_Assassinate_Ready</StrVal>
-            <ApplyToCaster>1</ApplyToCaster>
-			<Value>-1</Value>
         </GameModifier>		
         <AIData AIPersonality="AI_General">
             <AIPriority>1000</AIPriority>
@@ -762,7 +754,7 @@
         </SpellDefEffect>
     </SpellDef>-->
 	
-	<SpellDef InternalName="MarkOfRegicide">
+	<!--<SpellDef InternalName="MarkOfRegicide">
         <DisplayName>Anointment Of Regicide</DisplayName>
         <Description>Cast on an assassin with the Executioner II trait to allow that Assassin to permanently assassinate ONE sovereign or champion.</Description>
         <Image>RoyalFuneral.png</Image>
@@ -806,7 +798,7 @@
             <EffectDelay>0</EffectDelay>
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
-    </SpellDef>
+    </SpellDef>-->
 	
 	<!-- <SpellDef InternalName="AssassinsStrike">
         <DisplayName>Assassin's Strike</DisplayName>
