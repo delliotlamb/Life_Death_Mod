@@ -1,12 +1,12 @@
 <Spells>
-		
+
 	<SpellDef InternalName="RecruitSpy">
         <DisplayName>Recruit Spy</DisplayName>
         <Description>Recruit a Spy that can use accumulated Influence against your enemies, or to benefit your realm.</Description>
         <Image>Sovereign_YoungWizard.png</Image>
         <IconFG>Individual.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
-		<Cooldown>5</Cooldown>		
+		<Cooldown>5</Cooldown>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -19,7 +19,7 @@
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtDiplomat</Attribute>
             <Value>1</Value>
-        </Prereq>		
+        </Prereq>
         <SpellResourceCost>
             <Resource>DiplomaticCapital</Resource>
             <Amount>45</Amount>
@@ -32,7 +32,7 @@
             <Resource>Gold</Resource>
             <PerTurn>1</PerTurn>
             <Amount>3</Amount>
-        </SpellResourceCost>		
+        </SpellResourceCost>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>SummonUnit</Attribute>
@@ -40,19 +40,19 @@
             <UnitClass>Unit_Spy</UnitClass>
             <Duration>-1</Duration>
 			<Value>1</Value>
-        </GameModifier>	
+        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
         </AIData>
     </SpellDef>
-	
+
 	<SpellDef InternalName="RecruitSpy_Commander">
         <DisplayName>Recruit Spy</DisplayName>
         <Description>Recruit a Spy that can use accumulated Influence against your enemies, or to benefit your realm.</Description>
         <Image>Sovereign_YoungWizard.png</Image>
         <IconFG>Individual.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
-		<Cooldown>5</Cooldown>		
+		<Cooldown>5</Cooldown>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -63,7 +63,7 @@
         <Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Spy_Commander</Attribute>
-        </Prereq>				
+        </Prereq>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>SummonUnit</Attribute>
@@ -71,12 +71,12 @@
             <UnitClass>Unit_Spy</UnitClass>
             <Duration>-1</Duration>
 			<Value>1</Value>
-        </GameModifier>	
+        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
         </AIData>
     </SpellDef>
-		
+
 	<SpellDef InternalName="InciteRevolution">
         <DisplayName>Incite Revolution</DisplayName>
         <Description>Take control of target city. Can be cast on Allies, breaking the alliance.</Description>
@@ -93,7 +93,7 @@
         <Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Spy</Attribute>
-        </Prereq>			
+        </Prereq>
         <SpellResourceCost>
             <Resource>Gold</Resource>
             <Amount>1000</Amount>
@@ -101,7 +101,7 @@
         <SpellResourceCost>
             <Resource>DiplomaticCapital</Resource>
             <Amount>500</Amount>
-        </SpellResourceCost>		
+        </SpellResourceCost>
         <GameModifier>
             <ModType>City</ModType>
             <Attribute>TransferCityControl</Attribute>
@@ -121,7 +121,7 @@
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
     </SpellDef>
-	
+
 	<SpellDef InternalName="FlatteryAndBribes">
         <DisplayName>Courting And Bribes</DisplayName>
         <Description>Spend gold to gain Diplomatic Capital - only castable within 1 tile of a foreign city.</Description>
@@ -138,11 +138,11 @@
         <Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Spy</Attribute>
-        </Prereq>			
+        </Prereq>
         <SpellResourceCost>
             <Resource>Gold</Resource>
             <Amount>100</Amount>
-        </SpellResourceCost>				
+        </SpellResourceCost>
         <GameModifier>
             <ModType>Resource</ModType>
             <Attribute>DiplomaticCapital</Attribute>
@@ -161,13 +161,13 @@
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
     </SpellDef>
-	
+
 	<SpellDef InternalName="TerritorialClaim">
         <DisplayName>Territorial Claim</DisplayName>
         <Description>Creates an outpost.</Description>
         <Image>Fort.png</Image>
         <IconFG>S_Empower_Icon.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>			
+        <AutoUnlock>1</AutoUnlock>
         <CanStack>0</CanStack>
         <SpellBookSortCategory>World</SpellBookSortCategory>
         <SpellBookSortSubCategory>Map</SpellBookSortSubCategory>
@@ -175,7 +175,7 @@
         <SpellClass>Terraform</SpellClass>
         <SpellSubClass>BuildOutpost</SpellSubClass>
         <SpellTargetType>NeutralGround</SpellTargetType>
-		<Range>2</Range>		
+		<Range>2</Range>
         <Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Spy</Attribute>
@@ -183,7 +183,7 @@
         <SpellResourceCost>
             <Resource>Gold</Resource>
             <Amount>75</Amount>
-        </SpellResourceCost>		
+        </SpellResourceCost>
         <SpellResourceCost>
             <Resource>DiplomaticCapital</Resource>
             <Amount>80</Amount>
@@ -201,7 +201,7 @@
         </AIData>
         <HitSoundFX>Spell_ArcaneMonolith_01</HitSoundFX>
     </SpellDef>
-	
+
 	<SpellDef InternalName="Trigger_SpyNoSpell">
 	<DisplayName>Spy No Spell</DisplayName>
 	<Description>No Tactical Spells for Spies</Description>
@@ -221,12 +221,12 @@
             <Attribute>PreventSpellcasting</Attribute>
             <Duration>-1</Duration>
             <!--<PerTurn>1</PerTurn>-->
-        </GameModifier>      
+        </GameModifier>
 	<AIData AIPersonality="AI_General">
 		<AIPriority>0</AIPriority>
-	</AIData>        
+	</AIData>
 	</SpellDef>
-	
+
 	<SpellDef InternalName="Defection_Ability">
         <DisplayName>Call To Defect</DisplayName>
         <Description>Convert a trained unit to your cause unless they resist.</Description>
@@ -241,7 +241,7 @@
         <SpellTargetType>EnemyTrainedUnit</SpellTargetType>
         <SpellTargetCreatureType>Men</SpellTargetCreatureType>
         <IsResistable>1</IsResistable>
-        <IsSpecialAbility>1</IsSpecialAbility>		
+        <IsSpecialAbility>1</IsSpecialAbility>
         <Range>1</Range>
         <SpellResourceCost>
             <Resource>Gold</Resource>
@@ -268,13 +268,13 @@
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
     </SpellDef>
-	
+
 	<!--<SpellDef InternalName="Defection2_Ability">
         <DisplayName>Better Offer</DisplayName>
         <Description>Convert an enemy champion to your cause (-1% success chance per target level).</Description>
         <Image>S_DestinysGift_Painting.png</Image>
         <IconFG>T_SilverTongue_Icon.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>		
+        <AutoUnlock>1</AutoUnlock>
         <Cooldown>99</Cooldown>
         <SpellBookSortCategory>Unit</SpellBookSortCategory>
         <SpellBookSortSubCategory>Charm</SpellBookSortSubCategory>
@@ -286,7 +286,7 @@
         <Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Spy</Attribute>
-        </Prereq>		
+        </Prereq>
         <SpellResourceCost>
             <Resource>Gold</Resource>
             <Amount>200</Amount>
@@ -294,7 +294,7 @@
         <SpellResourceCost>
             <Resource>DiplomaticCapital</Resource>
             <Amount>100</Amount>
-        </SpellResourceCost>		
+        </SpellResourceCost>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>CharmTarget</Attribute>
@@ -312,7 +312,7 @@
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
     </SpellDef>-->
-	
+
 
 	<SpellDef InternalName="DiplomaticImmunity_Ability">
         <DisplayName>Diplomatic Immunity</DisplayName>
@@ -348,7 +348,7 @@
             <PlayOnAllTargets>1</PlayOnAllTargets>
         </SpellDefEffect>
     </SpellDef>
-	
+
 	<SpellDef InternalName="SpiritOfDiplomacy">
         <DisplayName>Aura Of Cooperation</DisplayName>
         <Description>+1 Influence per turn</Description>
@@ -366,7 +366,7 @@
         <SpellResourceCost>
             <Resource>Mana</Resource>
             <Amount>45</Amount>
-        </SpellResourceCost>		
+        </SpellResourceCost>
         <GameModifier>
             <ModType>Resource</ModType>
             <Attribute>DiplomaticCapital</Attribute>
@@ -388,14 +388,14 @@
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
     </SpellDef>
-	
+
 	<SpellDef InternalName="EmphasizedDeeds">
         <DisplayName>Emphasized Position</DisplayName>
         <Description>Gain 40 Diplomatic Capital.</Description>
         <Image>Kingdom_Sovereign1.png</Image>
         <IconFG>Action_Treaty.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
-        <Cooldown>1</Cooldown>		
+        <Cooldown>1</Cooldown>
         <SpellBookSortCategory>World</SpellBookSortCategory>
         <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -405,7 +405,7 @@
         <Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Illusomancy</Attribute>
-        </Prereq>		
+        </Prereq>
         <SpellResourceCost>
             <Resource>Mana</Resource>
             <Amount>100</Amount>
@@ -420,13 +420,13 @@
         </AIData>
         <HitSoundFX>Spell_Alchemy_01</HitSoundFX>
     </SpellDef>
-	
+
 	<SpellDef InternalName="DiplomaticChaos">
         <DisplayName>Diplomatic Collapse</DisplayName>
         <Description>All players declare war with any non-allies. This will override non-aggression pacts and tribute treaties. Usable only once per game.</Description>
         <Image>F_Conquest_Full.png</Image>
         <IconFG>S_MoriansChant_Icon.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>			
+        <AutoUnlock>1</AutoUnlock>
         <Cooldown>1000</Cooldown>
         <SpellBookSortCategory>World</SpellBookSortCategory>
         <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
@@ -437,7 +437,7 @@
         <Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Spy</Attribute>
-        </Prereq>		
+        </Prereq>
         <SpellResourceCost>
             <Resource>DiplomaticCapital</Resource>
             <Amount>300</Amount>
@@ -451,7 +451,7 @@
         </AIData>
         <HitSoundFX>Spell_CalltoArms_01</HitSoundFX>
     </SpellDef>
-	
+
 	<SpellDef InternalName="Sabotage">
         <DisplayName>Incite Sabotage</DisplayName>
         <Description>Resets the production queue, with a chance of destroying other improvements. There is a small chance that the entire city will be destroyed.</Description>
@@ -469,7 +469,7 @@
         <Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Spy</Attribute>
-        </Prereq>		
+        </Prereq>
         <SpellResourceCost>
             <Resource>DiplomaticCapital</Resource>
             <Amount>150</Amount>
@@ -477,7 +477,7 @@
         <SpellResourceCost>
             <Resource>Gold</Resource>
             <Amount>100</Amount>
-        </SpellResourceCost>		
+        </SpellResourceCost>
         <GameModifier>
             <ModType>City</ModType>
             <Attribute>Earthquake</Attribute>
@@ -488,7 +488,7 @@
         </AIData>
         <HitSoundFX>Raze</HitSoundFX>
     </SpellDef>
-	
+
 	<SpellDef InternalName="CivicRelations">
         <DisplayName>Civic Relations</DisplayName>
         <Description>-5% Unrest for your faction, castable once per game</Description>
@@ -513,7 +513,7 @@
         <SpellResourceCost>
             <Resource>Gold</Resource>
             <Amount>200</Amount>
-        </SpellResourceCost>		
+        </SpellResourceCost>
         <GameModifier>
             <ModType>Player</ModType>
             <Attribute>AbilityBonus</Attribute>
@@ -526,7 +526,7 @@
         </AIData>
         <HitSoundFX>Spell_Crusade_01</HitSoundFX>
     </SpellDef>
-	
+
 	<SpellDef InternalName="SeedCorruption">
         <DisplayName>Seed Corruption</DisplayName>
         <Description>-60% to gold income, production, iron and crystal yields .</Description>
@@ -544,7 +544,7 @@
         <Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Spy</Attribute>
-        </Prereq>		
+        </Prereq>
         <SpellResourceCost>
             <Resource>DiplomaticCapital</Resource>
             <Amount>200</Amount>
@@ -552,7 +552,7 @@
         <SpellResourceCost>
             <Resource>Gold</Resource>
             <Amount>300</Amount>
-        </SpellResourceCost>		
+        </SpellResourceCost>
         <GameModifier>
             <ModType>ResourceMultiplier</ModType>
             <Attribute>Production</Attribute>
@@ -586,5 +586,5 @@
         </AIData>
         <HitSoundFX>Spell_Alchemy_01</HitSoundFX>
     </SpellDef>
-	
+
 </Spells>
