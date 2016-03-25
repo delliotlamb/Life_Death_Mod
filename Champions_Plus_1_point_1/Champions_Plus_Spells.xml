@@ -2100,7 +2100,7 @@
 	
 	<SpellDef InternalName="ArcaneArmorersWrit2_Ability">
         <DisplayName>Writ Of Transcendent Platemail</DisplayName>
-        <Description>Order a Transcendent Plate Armor set. Only one set can be summoned per game! Transcendent plate focuses on increasing the owner's defense against a variety of physical and magical threats.</Description>
+        <Description>Order a Transcendent Plate Armor set. Only one set can be summoned per game! Transcendent plate focuses on increasing the owner's defense and survivability to superhuman levels.</Description>
         <Image>Fallen_Medallion.png</Image>
         <IconFG>Armor_F_ImpenetrablePlateCuirass.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -2112,9 +2112,14 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <CasterMustBeSov>1</CasterMustBeSov>		
-        <Prereq>
+        <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtArcaneArmorer_Tran</Attribute>
+            <Value>1</Value>
+        </Prereq>-->
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtForgeOverlord</Attribute>
             <Value>1</Value>
         </Prereq>		
         <SpellResourceCost>
@@ -2178,9 +2183,14 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <CasterMustBeSov>1</CasterMustBeSov>		
-        <Prereq>
+        <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtArcaneArmorer_Tran</Attribute>
+            <Value>1</Value>
+        </Prereq>-->
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtForgeOverlord</Attribute>
             <Value>1</Value>
         </Prereq>		
         <SpellResourceCost>
@@ -2244,9 +2254,14 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>	
         <CasterMustBeSov>1</CasterMustBeSov>		
-        <Prereq>
+        <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtArcaneWeaponsmith_Tran</Attribute>
+            <Value>1</Value>
+        </Prereq>-->
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtForgeOverlord</Attribute>
             <Value>1</Value>
         </Prereq>		
         <SpellResourceCost>
@@ -2290,9 +2305,14 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>		
         <CasterMustBeSov>1</CasterMustBeSov>		
-        <Prereq>
+        <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtArcaneWeaponsmith_Tran</Attribute>
+            <Value>1</Value>
+        </Prereq>-->
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtForgeOverlord</Attribute>
             <Value>1</Value>
         </Prereq>		
         <SpellResourceCost>
@@ -2336,9 +2356,14 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <CasterMustBeSov>1</CasterMustBeSov>		
-        <Prereq>
+        <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtArcaneWeaponsmith_Tran</Attribute>
+            <Value>1</Value>
+        </Prereq>-->
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtForgeOverlord</Attribute>
             <Value>1</Value>
         </Prereq>		
         <SpellResourceCost>
@@ -2382,9 +2407,14 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <CasterMustBeSov>1</CasterMustBeSov>		
-        <Prereq>
+        <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtArcaneWeaponsmith_Tran</Attribute>
+            <Value>1</Value>
+        </Prereq>-->
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtForgeOverlord</Attribute>
             <Value>1</Value>
         </Prereq>		
         <SpellResourceCost>
@@ -2428,9 +2458,14 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <CasterMustBeSov>1</CasterMustBeSov>		
-        <Prereq>
+        <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtArcaneWeaponsmith_Tran</Attribute>
+            <Value>1</Value>
+        </Prereq>-->
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtForgeOverlord</Attribute>
             <Value>1</Value>
         </Prereq>		
         <SpellResourceCost>

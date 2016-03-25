@@ -190,6 +190,15 @@
 	<UnitStatGrouping>CombatStat</UnitStatGrouping>
 </UnitStatType>
 
+	<UnitStatType InternalName="UnitStat_AtForgeOverlord">
+        <DisplayName>Present At Forge</DisplayName>
+        <Description>Unitstat showing presence in the Forge Of The Overlord</Description>
+		<Icon>FactionPowerWnd_ForgeOverlord_Icon</Icon>
+        <Hidden>1</Hidden>
+		<UnitStatGrouping>CombatStat</UnitStatGrouping>
+        <DefaultValue>0.0</DefaultValue>
+    </UnitStatType>
+
 	<!-- Overwrites Crushing Blow Unitstat to make Calc tags simpler in my Crushing Blow overwrite -->
 
     <UnitStatType InternalName="UnitStat_BonusCrushingBlow">
@@ -208,7 +217,7 @@
         <DefaultValue>1.0</DefaultValue>
     </UnitStatType>
 	
-		<UnitStatType InternalName="UnitStat_PriorityTargetReady">
+	<UnitStatType InternalName="UnitStat_PriorityTargetReady">
         <DisplayName>Priority Target Ready?</DisplayName>
         <Description>Unitstat required for a commander to use Priority Target.</Description>
         <Hidden>1</Hidden>
@@ -216,4 +225,6 @@
         <DefaultValue>1.0</DefaultValue>
     </UnitStatType>
 
+
+	
 </PlayerAbilityTypes>

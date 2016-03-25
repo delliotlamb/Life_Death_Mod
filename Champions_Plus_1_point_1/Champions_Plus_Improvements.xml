@@ -1398,5 +1398,37 @@
             <Provides>+30% Mana in all your cities</Provides>
         </GameModifier>			
     </ImprovementType>
+	
+	<ImprovementType InternalName="TowerOfMagic4">
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Arcane_Weapons</Attribute>
+        </Prereq>
+		<GameModifier>
+            <ModType>City</ModType>
+            <Attribute>AdjustDefendingUnit</Attribute>
+            <StrVal>UnitStat_IsAtForgeOverlord</StrVal>
+            <Value>1</Value>
+            <Provides>Champions can order Warg Mounts when present, summoning the items like a spell</Provides>
+        </GameModifier>
+        <!--<GameModifier>
+            <ModType>ConstructionResourceCost</ModType>
+            <Attribute>Metal</Attribute>
+            <Value>-50</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ConstructionResourceCost</ModType>
+            <Attribute>RefinedCrystal</Attribute>
+            <Value>-50</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ConstructionResourceCost</ModType>
+            <Attribute>Gold</Attribute>
+            <Value>-50</Value>
+        </GameModifier>-->
+        <GameModifier>
+            <Provides>Allows the player to craft transcendant weapons and armor (with arcane armor tech)</Provides>
+        </GameModifier>
+    </ImprovementType>
     
 </ImprovementTypes>

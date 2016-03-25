@@ -204,7 +204,7 @@
         <CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
         <EyeTexture>gfx\eyes\blinks\eyeblink_f3_grn.png</EyeTexture>
          <Medallions InternalName="">
-            <All>FE_Camp_Rihossa.png</All>
+            <All>FE_Camp_Jane.png</All>
         </Medallions>
         <ModelPath>Gfx\HKB\Units\K_Female_Mesh_01.hkb</ModelPath>
         <ModelScale>1</ModelScale>
@@ -511,7 +511,7 @@
             <UnitStat_HitPoints>10</UnitStat_HitPoints>
 	    <UnitStat_BG_IsChampion>1</UnitStat_BG_IsChampion>
 	    <UnitStat_BG_IsHumanoid>1</UnitStat_BG_IsHumanoid>
-	    <UnitStat_BG_IsMale>1</UnitStat_BG_IsMale>
+	    <UnitStat_BG_IsFemale>1</UnitStat_BG_IsFemale>
 	    <UnitStat_BG_IsRace_Urxen>1</UnitStat_BG_IsRace_Urxen>
         </LevelMilestone>
         <Prereq>
