@@ -495,6 +495,67 @@
             </GameModifier>
         </AbilityBonusOption>
     </AbilityBonus>
+
+    <AbilityBonus InternalName="BattleFury_WarriorAbility">
+	<AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="BattleFury_Warrior">
+            <DisplayName>Adrenaline</DisplayName>
+            <Description>This unit gets +1 Attack for each point of Stamina</Description>
+            <Icon>Ability_BattleFury_Icon.png</Icon>
+            <PerkTreePosX>6</PerkTreePosX>
+            <PerkTreePosY>4</PerkTreePosY>			
+            <IsCombatAbility>1</IsCombatAbility>
+            <Type>Offensive</Type>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Boost</StrVal>
+                <Value>1</Value>
+                <PerStamina>1</PerStamina>
+                <Provides>This unit gets an Attack bonus equal to its Stamina</Provides>
+            </GameModifier>
+	    <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Reckless</Attribute>
+            </Prereq>
+            <CombatRating>25</CombatRating>
+            <IsCombatAbility>1</IsCombatAbility>
+            <Type>Aggressive</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+
+    <AbilityBonus InternalName="BattleHardenedAbility">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="BattleHardened">
+            <DisplayName>Battle Hardened</DisplayName>
+            <Description>+2 Defense per Stamina</Description>
+            <Icon>Ability_Recoil_Icon.png</Icon>
+            <PerkTreePosX>6</PerkTreePosX>
+            <PerkTreePosY></PerkTreePosY>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Defense_Pierce</StrVal>
+                <Value>2</Value>
+                <PerStamina>1</PerStamina>
+                <Provides>This unit gets +2 defense per Stamina</Provides>
+            </GameModifier>
+            <IsCombatAbility>1</IsCombatAbility>
+            <Type>Defensive</Type>
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>Guardian2</Attribute>
+            </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
 	
 	
 	</AbilityBonuses>

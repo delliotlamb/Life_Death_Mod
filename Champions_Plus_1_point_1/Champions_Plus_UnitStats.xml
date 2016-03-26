@@ -190,7 +190,7 @@
 	<UnitStatGrouping>CombatStat</UnitStatGrouping>
 </UnitStatType>
 
-	<UnitStatType InternalName="UnitStat_AtForgeOverlord">
+	<UnitStatType InternalName="UnitStat_IsAtForgeOverlord">
         <DisplayName>Present At Forge</DisplayName>
         <Description>Unitstat showing presence in the Forge Of The Overlord</Description>
 		<Icon>FactionPowerWnd_ForgeOverlord_Icon</Icon>

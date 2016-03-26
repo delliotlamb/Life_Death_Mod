@@ -18,12 +18,12 @@
         <GameModifier>
             <ModType>ConstructionResourceCost</ModType>
             <Attribute>Metal</Attribute>
-            <Value>-20</Value>
+            <Value>-50</Value>
         </GameModifier>
         <GameModifier>
             <ModType>ConstructionResourceCost</ModType>
             <Attribute>RefinedCrystal</Attribute>
-            <Value>-100</Value>
+            <Value>-50</Value>
         </GameModifier>	
         <GameModifier>
             <ModType>City</ModType>
@@ -36,7 +36,7 @@
         <ArtDef>Art_ArcanaWard</ArtDef>
     </ImprovementType>
 	
-	<!--<ImprovementType InternalName="PillarOfForesight">
+	<ImprovementType InternalName="PillarOfForesight">
         <DisplayName>Pillar Of Foresight</DisplayName>
         <Description>This magical pillar will give city defenders a massive advantage when defending.</Description>
 		<AllowedPerFaction>1</AllowedPerFaction>		
@@ -54,12 +54,12 @@
         <GameModifier>
             <ModType>ConstructionResourceCost</ModType>
             <Attribute>Metal</Attribute>
-            <Value>-20</Value>
+            <Value>-50</Value>
         </GameModifier>
         <GameModifier>
             <ModType>ConstructionResourceCost</ModType>
             <Attribute>RefinedCrystal</Attribute>
-            <Value>-100</Value>
+            <Value>-50</Value>
         </GameModifier>	
         <GameModifier>
             <ModType>City</ModType>
@@ -96,7 +96,7 @@
             <AITag>Defensive</AITag>
         </AIData>
         <ArtDef>Art_PillarOfForesight</ArtDef>
-    </ImprovementType>-->
+    </ImprovementType>
 	
 	<ImprovementType InternalName="Smithy">
         <DisplayName>Smithy</DisplayName>
@@ -1398,6 +1398,45 @@
             <Provides>+30% Mana in all your cities</Provides>
         </GameModifier>			
     </ImprovementType>
+
+     <ImprovementType InternalName="TowerOfMagic1">
+        <GameModifier>
+            <ModType>ConstructionResourceCost</ModType>
+            <Attribute>Metal</Attribute>
+            <Value>-50</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ConstructionResourceCost</ModType>
+            <Attribute>RefinedCrystal</Attribute>
+            <Value>-50</Value>
+        </GameModifier>      
+    </ImprovementType>
+
+    <ImprovementType InternalName="TowerOfMagic2">
+        <GameModifier>
+            <ModType>ConstructionResourceCost</ModType>
+            <Attribute>Metal</Attribute>
+            <Value>-50</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ConstructionResourceCost</ModType>
+            <Attribute>RefinedCrystal</Attribute>
+            <Value>-50</Value>
+        </GameModifier> 
+    </ImprovementType>
+   
+    <ImprovementType InternalName="TowerOfMagic3">
+        <GameModifier>
+            <ModType>ConstructionResourceCost</ModType>
+            <Attribute>Metal</Attribute>
+            <Value>-50</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>ConstructionResourceCost</ModType>
+            <Attribute>RefinedCrystal</Attribute>
+            <Value>-50</Value>
+        </GameModifier> 
+    </ImprovementType>
 	
     <ImprovementType InternalName="TowerOfMagic4">
         <Prereq>
@@ -1409,12 +1448,19 @@
             <Attribute>AdjustDefendingUnit</Attribute>
             <StrVal>UnitStat_IsAtForgeOverlord</StrVal>
             <Value>1</Value>
-            <Provides>Allows the player to craft transcendant weapons and armor (with arcane armor tech)</Provides>
+            <Provides>Allows the player to craft transcendant weapons and armor, when present at the Forge (armor requires arcane armor tech)</Provides>
         </GameModifier>
-        <!--<GameModifier>
+	<GameModifier>
+            <ModType>City</ModType>
+            <Attribute>AdjustDefendingUnit</Attribute>
+            <StrVal>UnitStat_IsAtForgeOverlord</StrVal>
+            <Value>1</Value>
+            <Provides>Requires both Book Of Mastery AND Arcane Weaponry Techs to build</Provides>
+        </GameModifier>
+        <GameModifier>
             <ModType>ConstructionResourceCost</ModType>
             <Attribute>Metal</Attribute>
-            <Value>-50</Value>
+            <Value>-100</Value>
         </GameModifier>
         <GameModifier>
             <ModType>ConstructionResourceCost</ModType>
@@ -1424,8 +1470,8 @@
         <GameModifier>
             <ModType>ConstructionResourceCost</ModType>
             <Attribute>Gold</Attribute>
-            <Value>-50</Value>
-        </GameModifier>-->
+            <Value>-100</Value>
+        </GameModifier>
     </ImprovementType>
     
 </ImprovementTypes>

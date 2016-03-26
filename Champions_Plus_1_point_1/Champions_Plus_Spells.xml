@@ -2100,11 +2100,10 @@
 
 	<SpellDef InternalName="ArcaneArmorersWrit2_Ability">
         <DisplayName>Writ Of Transcendent Platemail</DisplayName>
-        <Description>Order a Transcendent Plate Armor set. Only one set can be summoned per game! Transcendent plate focuses on increasing the owner's defense and survivability to superhuman levels.</Description>
+        <Description>Craft a Transcendent Plate Armor set. Transcendent plate focuses on increasing the owner's defense and survivability to superhuman levels.</Description>
         <Image>Fallen_Medallion.png</Image>
         <IconFG>Armor_F_ImpenetrablePlateCuirass.png</IconFG>
         <!--<AutoUnlock>1</AutoUnlock>-->
-	<Cooldown>1000</Cooldown>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -2124,15 +2123,15 @@
         </Prereq>
         <SpellResourceCost>
             <Resource>RefinedCrystal</Resource>
-            <Amount>250</Amount>
+            <Amount>100</Amount>
         </SpellResourceCost>
         <SpellResourceCost>
             <Resource>Metal</Resource>
             <Amount>100</Amount>
         </SpellResourceCost>
         <SpellResourceCost>
-            <Resource>Gold</Resource>
-            <Amount>400</Amount>
+            <Resource>Mana</Resource>
+            <Amount>100</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
@@ -2171,11 +2170,10 @@
 
 	<SpellDef InternalName="ArcaneArmorersWrit3_Ability">
         <DisplayName>Writ Of Transcendent Chainmail</DisplayName>
-        <Description>Order a Transcendent Chainmail Armor set. Only one set can be summoned per game! Transcendent chain armor is enchanted to augment the performance of the owner as much as protect them.</Description>
+        <Description>Craft a Transcendent Chainmail Armor set. Transcendent chain armor is enchanted to augment the performance of the owner as much as protect them.</Description>
         <Image>Fallen_Medallion.png</Image>
         <IconFG>Armor_F_OphidianScaleShirt.png</IconFG>
         <!--<AutoUnlock>1</AutoUnlock>-->
-	<Cooldown>1000</Cooldown>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -2195,15 +2193,15 @@
         </Prereq>
         <SpellResourceCost>
             <Resource>RefinedCrystal</Resource>
-            <Amount>200</Amount>
+            <Amount>100</Amount>
         </SpellResourceCost>
         <SpellResourceCost>
             <Resource>Metal</Resource>
-            <Amount>50</Amount>
+            <Amount>100</Amount>
         </SpellResourceCost>
         <SpellResourceCost>
-            <Resource>Gold</Resource>
-            <Amount>350</Amount>
+            <Resource>Mana</Resource>
+            <Amount>100</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
@@ -2242,11 +2240,10 @@
 
 	<SpellDef InternalName="ArcaneWeaponsmith_Sword_Ability">
         <DisplayName>Writ Of Transcendent Swordcraft</DisplayName>
-        <Description>Order a Transcendent Sword. Only one transcendent sword can be ordered per game!</Description>
+        <Description>Craft a Transcendent Sword.</Description>
         <Image>Refined_Attack.png</Image>
         <IconFG>W_Longsword_Heartseeker_Icon_01.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
-		<Cooldown>1000</Cooldown>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -2273,8 +2270,8 @@
             <Amount>50</Amount>
         </SpellResourceCost>
         <SpellResourceCost>
-            <Resource>Gold</Resource>
-            <Amount>150</Amount>
+            <Resource>Mana</Resource>
+            <Amount>50</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
@@ -2293,11 +2290,10 @@
 
 		<SpellDef InternalName="ArcaneWeaponsmith_Axe_Ability">
         <DisplayName>Writ Of Transcendent Axecraft</DisplayName>
-        <Description>Order a Transcendent Axe. Only one transcendent axe can be ordered per game!</Description>
+        <Description>Craft a Transcendent Axe.</Description>
         <Image>Refined_Attack.png</Image>
         <IconFG>W_GreatAxe_Pendulum_Icon_01.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
-		<Cooldown>1000</Cooldown>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -2324,8 +2320,8 @@
             <Amount>50</Amount>
         </SpellResourceCost>
         <SpellResourceCost>
-            <Resource>Gold</Resource>
-            <Amount>150</Amount>
+            <Resource>Mana</Resource>
+            <Amount>50</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
@@ -2344,11 +2340,10 @@
 
 	<SpellDef InternalName="ArcaneWeaponsmith_Mace_Ability">
         <DisplayName>Writ Of Transcendent Macecraft</DisplayName>
-        <Description>Order a Transcendent Blunt Weapon. Only one transcendent mace can be ordered per game!</Description>
+        <Description>Craft a Transcendent Blunt Weapon.</Description>
         <Image>Refined_Attack.png</Image>
         <IconFG>W_Maul_Berserkers_Icon_01.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
-		<Cooldown>1000</Cooldown>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -2375,8 +2370,8 @@
             <Amount>50</Amount>
         </SpellResourceCost>
         <SpellResourceCost>
-            <Resource>Gold</Resource>
-            <Amount>150</Amount>
+            <Resource>Mana</Resource>
+            <Amount>50</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
@@ -2395,11 +2390,10 @@
 
 	<SpellDef InternalName="ArcaneWeaponsmith_Bow_Ability">
         <DisplayName>Writ Of Transcendent Bowcraft</DisplayName>
-        <Description>Order a Transcendent Bow. Only one transcendent bow can be ordered per game!</Description>
+        <Description>Craft a Transcendent Bow.</Description>
         <Image>Tech_Longbows.png</Image>
         <IconFG>W_Longbow_Yew_Brutal_Icon_01.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
-		<Cooldown>1000</Cooldown>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -2426,8 +2420,8 @@
             <Amount>50</Amount>
         </SpellResourceCost>
         <SpellResourceCost>
-            <Resource>Gold</Resource>
-            <Amount>150</Amount>
+            <Resource>Mana</Resource>
+            <Amount>50</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
@@ -2446,11 +2440,10 @@
 
 	<SpellDef InternalName="ArcaneWeaponsmith_Lance_Ability">
         <DisplayName>Writ Of Transcendent Lancecraft</DisplayName>
-        <Description>Order a Transcendent Lance. Only one transcendent lance can be ordered per game!</Description>
+        <Description>Craft a Transcendent Spear.</Description>
         <Image>Refined_Attack.png</Image>
         <IconFG>W_Pike_Masterwork_Icon_01.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
-		<Cooldown>1000</Cooldown>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -2477,8 +2470,8 @@
             <Amount>50</Amount>
         </SpellResourceCost>
         <SpellResourceCost>
-            <Resource>Gold</Resource>
-            <Amount>150</Amount>
+            <Resource>Mana</Resource>
+            <Amount>50</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
