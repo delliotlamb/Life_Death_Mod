@@ -75,6 +75,26 @@
             <Provides>Spell: Defensive Foresight</Provides>
         </GameModifier>
     </TechDef>
+
+    <TechDef InternalName="Arcane_Armor">
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>UnlockSpell</Attribute>
+            <StrVal>ArcaneArmorersWrit2_Ability</StrVal>
+            <Icon>Armor_F_ImpenetrablePlateCuirass.png</Icon>
+            <Provides>Spell: Transcendent Platemail</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>UnlockSpell</Attribute>
+            <StrVal>ArcaneArmorersWrit2_Ability</StrVal>
+            <Icon>Armor_F_OphidianScaleShirt.png</Icon>
+            <Provides>Spell: Transcendent Chainmail</Provides>
+        </GameModifier>
+    </TechDef>
+
+
+
     
 </Techs>
 

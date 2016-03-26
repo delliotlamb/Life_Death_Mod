@@ -54,7 +54,7 @@
 			<ApplyToCaster>1</ApplyToCaster>
             <Duration>-1</Duration>
             <Value>-1</Value>
-        </GameModifier>		
+        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>1000</AIPriority>
         <ValueCalcWrapper>
@@ -229,7 +229,7 @@
         </AIData>
         <HitSoundFX>Spell_FreezeGroup_01</HitSoundFX>
     </SpellDef>
-	
+
 	<SpellDef InternalName="WallOfStorms">
         <DisplayName>Wall of Storms</DisplayName>
         <Description>7 tiles in a line erupt into a lightning storm that remains for the rest of the battle.  Any unit passing through takes damage.</Description>
@@ -281,11 +281,11 @@
         </AIData>
         <HitSoundFX>Spell_Storm_01</HitSoundFX>
     </SpellDef>
-    
+
 	<!-- EARTH SPELL UPGRADES -->
-	
+
 	<!-- HURL BOULDER GROUP -->
-	
+
 	    <SpellDef InternalName="HurlBoulder_Spell">
         <DisplayName>Hurl Boulder</DisplayName>
         <Description>Launches a boulder for 12 damage (+4 per earth shard).</Description>
@@ -304,7 +304,7 @@
         <Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Earth1</Attribute>
-        </Prereq>		
+        </Prereq>
         <SpellResourceCost>
             <Resource>Mana</Resource>
             <Amount>6</Amount>
@@ -425,9 +425,9 @@
         <SpellCastProjectile>1</SpellCastProjectile>
         <SpellCastProjectileSpeed>500</SpellCastProjectileSpeed>
     </SpellDef>
-	
+
 	<!-- CHAOS AND PANDEMONIUM GROUP -->
-	
+
 	 <SpellDef InternalName="Chaos">
         <DisplayName>Chaos</DisplayName>
         <Description>Does a random effect to target enemy unit unless they resist.</Description>
@@ -568,7 +568,7 @@
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
     </SpellDef>
-	
+
 	<SpellDef InternalName="FrostBolt">
         <DisplayName>Frost Bolt</DisplayName>
         <Description>A bolt of cold shoots at an enemy for 16 (+2 per water shard) cold damage.</Description>
@@ -587,11 +587,11 @@
         <Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Water3</Attribute>
-        </Prereq>	
+        </Prereq>
         <SpellResourceCost>
             <Resource>Mana</Resource>
             <Amount>20</Amount>
-        </SpellResourceCost>		
+        </SpellResourceCost>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>DefendableDamage</Attribute>
@@ -608,7 +608,7 @@
             </Calculate>
             <Calculate InternalName="ValueForFormattedDescription">
                 <Expression><![CDATA[[Calc2]]]></Expression>
-            </Calculate>			
+            </Calculate>
         </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
@@ -626,7 +626,7 @@
             </Calculate>
             <Calculate InternalName="ValueForFormattedDescription">
                 <Expression><![CDATA[[Calc2]]]></Expression>
-            </Calculate>			
+            </Calculate>
         </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>100</AIPriority>
@@ -673,11 +673,11 @@
         <Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>WaterAdept3</Attribute>
-        </Prereq>	
+        </Prereq>
         <SpellResourceCost>
             <Resource>Mana</Resource>
             <Amount>20</Amount>
-        </SpellResourceCost>		
+        </SpellResourceCost>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>DefendableDamage</Attribute>
@@ -694,7 +694,7 @@
             </Calculate>
             <Calculate InternalName="ValueForFormattedDescription">
                 <Expression><![CDATA[[Calc2]]]></Expression>
-            </Calculate>			
+            </Calculate>
         </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
@@ -712,7 +712,7 @@
             </Calculate>
             <Calculate InternalName="ValueForFormattedDescription">
                 <Expression><![CDATA[[Calc2]]]></Expression>
-            </Calculate>			
+            </Calculate>
         </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>100</AIPriority>
@@ -741,9 +741,9 @@
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
     </SpellDef>
-	
+
 	<!-- SHOCKWAVE GROUP -->
-	
+
 	    <SpellDef InternalName="Shockwave">
         <DisplayName>Shockwave</DisplayName>
         <Description>A minor earthquake damages all enemies within 1 radius of the caster for 10 (+1 per earth shard) damage, per member. All targets are knocked down, unless they resist.</Description>
@@ -775,7 +775,7 @@
             <ModType>TacticalUnit</ModType>
             <Attribute>TargetKnockedProne</Attribute>
             <Duration>1</Duration>
-        </GameModifier>		
+        </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>DefendableDamage</Attribute>
@@ -810,7 +810,7 @@
             <Calculate InternalName="Value">
                 <Expression><![CDATA[[Calc2] * [Calc3]]]></Expression>
             </Calculate>
-        </GameModifier>	
+        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>1000</AIPriority>
         </AIData>
@@ -859,7 +859,7 @@
             <Attribute>TargetKnockedProne</Attribute>
             <DisplayName>Crushed</DisplayName>
             <Duration>1</Duration>
-        </GameModifier>		
+        </GameModifier>
                <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>DefendableDamage</Attribute>
@@ -894,7 +894,7 @@
             <Calculate InternalName="Value">
                 <Expression><![CDATA[[Calc2] * [Calc3]]]></Expression>
             </Calculate>
-        </GameModifier>		
+        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>1000</AIPriority>
         </AIData>
@@ -950,7 +950,7 @@
             <Attribute>TargetKnockedProne</Attribute>
             <DisplayName>Crushed</DisplayName>
             <Duration>1</Duration>
-        </GameModifier>		
+        </GameModifier>
                <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>DefendableDamage</Attribute>
@@ -985,7 +985,7 @@
             <Calculate InternalName="Value">
                 <Expression><![CDATA[[Calc2] * [Calc3]]]></Expression>
             </Calculate>
-        </GameModifier>	
+        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>200</AIPriority>
         </AIData>
@@ -1011,7 +1011,7 @@
     </SpellDef>
 
 	<!-- Spell De-scales follow -->
-	
+
 	    <SpellDef InternalName="Slow">
         <DisplayName>Slow</DisplayName>
         <Description>Target enemy unit suffers -3 to Initiative (-.5 per water shard) unless they resist.</Description>
@@ -1454,32 +1454,32 @@
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
     </SpellDef>
-	
+
 	<!-- These are the equipment spells modified for building unitstat pre-reqs -->
-	
+
 	<SpellDef InternalName="TannersWrit_Ability">
         <DisplayName>Tanner's Writ</DisplayName>
         <Description>Order a Leather armor set.</Description>
         <Image>LeatherArmor.png</Image>
         <IconFG>K_LeatherChest1_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
-		<Cooldown>5</Cooldown>		
+		<Cooldown>5</Cooldown>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
         <SpellClass>Defensive</SpellClass>
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
-        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>		
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
         <Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtTanner</Attribute>
             <Value>1</Value>
-        </Prereq>		
+        </Prereq>
         <SpellResourceCost>
             <Resource>Gold</Resource>
             <Amount>120</Amount>
-        </SpellResourceCost>	
+        </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>LeatherBreastpiece</Attribute>
@@ -1503,19 +1503,19 @@
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>WoodShield</Attribute>
-        </GameModifier>			
+        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
         </AIData>
     </SpellDef>
-	
+
 	<SpellDef InternalName="SmithsWrit_Ability">
         <DisplayName>Smith's Writ</DisplayName>
         <Description>Order a Chainmail armor set</Description>
         <Image>Tech_Armor.png</Image>
         <IconFG>Armor_F_ChainShirt.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
-		<Cooldown>5</Cooldown>		
+		<Cooldown>5</Cooldown>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -1527,7 +1527,7 @@
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtBlacksmith</Attribute>
             <Value>1</Value>
-        </Prereq>		
+        </Prereq>
         <SpellResourceCost>
             <Resource>Metal</Resource>
             <Amount>18</Amount>
@@ -1535,7 +1535,7 @@
         <SpellResourceCost>
             <Resource>Gold</Resource>
             <Amount>50</Amount>
-        </SpellResourceCost>		
+        </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>ChainBreastpiece</Attribute>
@@ -1555,7 +1555,7 @@
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>ChainGreaves</Attribute>
-        </GameModifier>	
+        </GameModifier>
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>KiteShield</Attribute>
@@ -1563,19 +1563,19 @@
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>BeltOfReinforcing</Attribute>
-        </GameModifier>		
+        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
         </AIData>
     </SpellDef>
-	
+
 	<SpellDef InternalName="SmithsWrit_Ability_LightPlate">
         <DisplayName>Smith's Writ</DisplayName>
         <Description>Order a Light Platemail armor set</Description>
         <Image>Tech_Armor.png</Image>
         <IconFG>MasterFullHeavyPlateMail.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
-		<Cooldown>5</Cooldown>		
+		<Cooldown>5</Cooldown>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -1587,7 +1587,7 @@
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtBlacksmith_LightPlate</Attribute>
             <Value>1</Value>
-        </Prereq>		
+        </Prereq>
         <SpellResourceCost>
             <Resource>Metal</Resource>
             <Amount>23</Amount>
@@ -1595,7 +1595,7 @@
         <SpellResourceCost>
             <Resource>Gold</Resource>
             <Amount>50</Amount>
-        </SpellResourceCost>		
+        </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>PlateBreastpiece_Light</Attribute>
@@ -1615,7 +1615,7 @@
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>PlateGreaves_Light</Attribute>
-        </GameModifier>	
+        </GameModifier>
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>KiteShield</Attribute>
@@ -1623,19 +1623,19 @@
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>BeltOfReinforcing</Attribute>
-        </GameModifier>		
+        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
         </AIData>
     </SpellDef>
-	
+
 		<SpellDef InternalName="ArmorersWrit_Ability">
         <DisplayName>Armorer's Writ</DisplayName>
         <Description>Order a Plate Mail armor set</Description>
         <Image>PlateArmor.png</Image>
         <IconFG>MasterFullHeavyPlateMail2.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
-		<Cooldown>5</Cooldown>		
+		<Cooldown>5</Cooldown>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -1652,7 +1652,7 @@
 		<Prereq>
             <Type>Tech</Type>
             <Attribute>Heavy_Armor</Attribute>
-        </Prereq>		
+        </Prereq>
         <SpellResourceCost>
             <Resource>Metal</Resource>
             <Amount>31</Amount>
@@ -1660,7 +1660,7 @@
         <SpellResourceCost>
             <Resource>Gold</Resource>
             <Amount>100</Amount>
-        </SpellResourceCost>		
+        </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>PlateBreastpiece</Attribute>
@@ -1680,7 +1680,7 @@
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>PlateGreaves</Attribute>
-        </GameModifier>	
+        </GameModifier>
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>TowerShield</Attribute>
@@ -1688,20 +1688,20 @@
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>BeltOfReinforcing</Attribute>
-        </GameModifier>		
+        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
         </AIData>
     </SpellDef>
-	
-	
+
+
 	<SpellDef InternalName="ArmorersWrit_Ability_MasterworkChain">
         <DisplayName>Armorer's Writ</DisplayName>
         <Description>Order a Masterwork Chainmail armor set</Description>
         <Image>PlateArmor.png</Image>
         <IconFG>Armor_K_MasterworkChainShirt.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
-		<Cooldown>5</Cooldown>		
+		<Cooldown>5</Cooldown>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -1723,7 +1723,7 @@
 		<Prereq>
             <Type>Tech</Type>
             <Attribute>Heavy_Armor</Attribute>
-        </Prereq>		
+        </Prereq>
         <SpellResourceCost>
             <Resource>Metal</Resource>
             <Amount>20</Amount>
@@ -1731,7 +1731,7 @@
         <SpellResourceCost>
             <Resource>Gold</Resource>
             <Amount>100</Amount>
-        </SpellResourceCost>		
+        </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>ChainBreastpiece_Masterwork</Attribute>
@@ -1751,7 +1751,7 @@
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>ChainGreaves_Masterwork</Attribute>
-        </GameModifier>	
+        </GameModifier>
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>TowerShield</Attribute>
@@ -1759,12 +1759,12 @@
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>BeltOfReinforcing</Attribute>
-        </GameModifier>		
+        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
         </AIData>
     </SpellDef>
-	
+
 
 <SpellDef InternalName="EnchantersWrit_Ability">
         <DisplayName>Enchanter's Writ</DisplayName>
@@ -1772,7 +1772,7 @@
         <Image>WeddingRings.png</Image>
         <IconFG>BeltofSpeed_Item.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
-		<Cooldown>5</Cooldown>		
+		<Cooldown>5</Cooldown>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -1784,7 +1784,7 @@
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtEnchanter</Attribute>
             <Value>1</Value>
-        </Prereq>		
+        </Prereq>
         <SpellResourceCost>
             <Resource>RefinedCrystal</Resource>
             <Amount>11</Amount>
@@ -1792,7 +1792,7 @@
         <SpellResourceCost>
             <Resource>Gold</Resource>
             <Amount>50</Amount>
-        </SpellResourceCost>		
+        </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>RingOfEmbers</Attribute>
@@ -1812,19 +1812,19 @@
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>Robe_Monks</Attribute>
-        </GameModifier>		
+        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
         </AIData>
     </SpellDef>
-	
+
 	<SpellDef InternalName="MystantumWrit_Ability">
         <DisplayName>Mystantum Writ</DisplayName>
         <Description>Order Mystantum armor set and sword in bulk</Description>
         <Image>Refined_Defense_Tech.png</Image>
         <IconFG>MasterLightPlateMailCuirass2.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
-		<Cooldown>5</Cooldown>		
+		<Cooldown>5</Cooldown>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -1836,7 +1836,7 @@
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtEnchanter</Attribute>
             <Value>1</Value>
-        </Prereq>		
+        </Prereq>
         <SpellResourceCost>
             <Resource>RefinedCrystal</Resource>
             <Amount>14</Amount>
@@ -1844,7 +1844,7 @@
         <SpellResourceCost>
             <Resource>Gold</Resource>
             <Amount>50</Amount>
-        </SpellResourceCost>		
+        </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>RoundShield_Mystantum</Attribute>
@@ -1860,19 +1860,19 @@
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>MystantumGreaves</Attribute>
-        </GameModifier>	
+        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
         </AIData>
     </SpellDef>
-	
+
 	<SpellDef InternalName="MasterEnchantersWrit_Ability">
         <DisplayName>Master Enchanter's Writ</DisplayName>
         <Description>Order advanced enchanted items in bulk</Description>
         <Image>EnchantedSword1.png</Image>
         <IconFG>AmuletofHaste_Item.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
-		<Cooldown>5</Cooldown>		
+		<Cooldown>5</Cooldown>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -1884,7 +1884,7 @@
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtMasterEnchanter</Attribute>
             <Value>1</Value>
-        </Prereq>		
+        </Prereq>
         <SpellResourceCost>
             <Resource>RefinedCrystal</Resource>
             <Amount>43</Amount>
@@ -1892,7 +1892,7 @@
         <SpellResourceCost>
             <Resource>Gold</Resource>
             <Amount>200</Amount>
-        </SpellResourceCost>		
+        </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>Robe_Aegis</Attribute>
@@ -1900,7 +1900,7 @@
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>CloakOfShadows</Attribute>
-        </GameModifier>		
+        </GameModifier>
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>AmuletofWarding</Attribute>
@@ -1916,7 +1916,7 @@
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>AmuletOfFlames</Attribute>
-        </GameModifier>	
+        </GameModifier>
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>DragonHideCloak</Attribute>
@@ -1924,12 +1924,12 @@
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>IceWargCloak</Attribute>
-        </GameModifier>	
+        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
         </AIData>
     </SpellDef>
-	
+
 	<SpellDef InternalName="ArcaneArmorersWrit_Ability">
         <DisplayName>Arcane Armorer's Writ</DisplayName>
         <Description>Order a Champion's Armor set</Description>
@@ -1948,7 +1948,7 @@
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtArcaneArmorer</Attribute>
             <Value>1</Value>
-        </Prereq>		
+        </Prereq>
         <SpellResourceCost>
             <Resource>RefinedCrystal</Resource>
             <Amount>33</Amount>
@@ -1956,7 +1956,7 @@
         <SpellResourceCost>
             <Resource>Gold</Resource>
             <Amount>200</Amount>
-        </SpellResourceCost>		
+        </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>PlateBreastpiece_Champions</Attribute>
@@ -1976,31 +1976,31 @@
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>PlateGreaves_Champions</Attribute>
-        </GameModifier>			
+        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
         </AIData>
     </SpellDef>
-	
+
 	<SpellDef InternalName="ArmorersWrit_Master_Ability">
         <DisplayName>Plate Master's Writ</DisplayName>
         <Description>Order a Pinnacle Plate Mail armor set. Can be used only once per game!</Description>
         <Image>PlateArmor.png</Image>
         <IconFG>Armor_F_ReinforcedPlateCuirass.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
-		<Cooldown>1000</Cooldown>		
+		<Cooldown>1000</Cooldown>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
         <SpellClass>Defensive</SpellClass>
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
-		<CasterMustBeSov>1</CasterMustBeSov>		
+		<CasterMustBeSov>1</CasterMustBeSov>
         <Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtPlateArmorer_Master</Attribute>
             <Value>1</Value>
-        </Prereq>		
+        </Prereq>
         <SpellResourceCost>
             <Resource>Metal</Resource>
             <Amount>55</Amount>
@@ -2008,7 +2008,7 @@
         <SpellResourceCost>
             <Resource>Gold</Resource>
             <Amount>200</Amount>
-        </SpellResourceCost>		
+        </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>PlateBreastpiece2</Attribute>
@@ -2034,31 +2034,31 @@
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_IsAtPlateArmorer_Master</StrVal>
             <Value>-1</Value>
-        </GameModifier>		
+        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
         </AIData>
     </SpellDef>
-	
+
 	<SpellDef InternalName="ArmorersWrit_Master2_Ability">
         <DisplayName>Chain Master's Writ</DisplayName>
         <Description>Order a Pinnacle Chain Mail armor set. Can only be used once per game!</Description>
         <Image>PlateArmor.png</Image>
         <IconFG>Armor_F_ReinforcedChainShirt.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
-		<Cooldown>1000</Cooldown>		
+		<Cooldown>1000</Cooldown>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
         <SpellClass>Defensive</SpellClass>
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
-		<CasterMustBeSov>1</CasterMustBeSov>		
+		<CasterMustBeSov>1</CasterMustBeSov>
         <Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtPlateArmorer_Master</Attribute>
             <Value>1</Value>
-        </Prereq>		
+        </Prereq>
         <SpellResourceCost>
             <Resource>Metal</Resource>
             <Amount>55</Amount>
@@ -2066,7 +2066,7 @@
         <SpellResourceCost>
             <Resource>Gold</Resource>
             <Amount>200</Amount>
-        </SpellResourceCost>		
+        </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>ChainGreaves_Masterwork2</Attribute>
@@ -2074,7 +2074,7 @@
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>ChainBreastpiece_Masterwork2</Attribute>
-        </GameModifier>		
+        </GameModifier>
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>ChainHelmet_Masterwork2</Attribute>
@@ -2092,26 +2092,26 @@
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_IsAtPlateArmorer_Master</StrVal>
             <Value>-1</Value>
-        </GameModifier>		
+        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
         </AIData>
     </SpellDef>
-	
+
 	<SpellDef InternalName="ArcaneArmorersWrit2_Ability">
         <DisplayName>Writ Of Transcendent Platemail</DisplayName>
         <Description>Order a Transcendent Plate Armor set. Only one set can be summoned per game! Transcendent plate focuses on increasing the owner's defense and survivability to superhuman levels.</Description>
         <Image>Fallen_Medallion.png</Image>
         <IconFG>Armor_F_ImpenetrablePlateCuirass.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>
-		<Cooldown>1000</Cooldown>
+        <!--<AutoUnlock>1</AutoUnlock>-->
+	<Cooldown>1000</Cooldown>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
         <SpellClass>Defensive</SpellClass>
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
-        <CasterMustBeSov>1</CasterMustBeSov>		
+        <CasterMustBeSov>1</CasterMustBeSov>
         <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtArcaneArmorer_Tran</Attribute>
@@ -2121,7 +2121,7 @@
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtForgeOverlord</Attribute>
             <Value>1</Value>
-        </Prereq>		
+        </Prereq>
         <SpellResourceCost>
             <Resource>RefinedCrystal</Resource>
             <Amount>250</Amount>
@@ -2129,11 +2129,11 @@
         <SpellResourceCost>
             <Resource>Metal</Resource>
             <Amount>100</Amount>
-        </SpellResourceCost>		
+        </SpellResourceCost>
         <SpellResourceCost>
             <Resource>Gold</Resource>
             <Amount>400</Amount>
-        </SpellResourceCost>		
+        </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>PlateGreaves_Champions2</Attribute>
@@ -2141,7 +2141,7 @@
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>PlateBreastpiece_Impenetrable3</Attribute>
-        </GameModifier>		
+        </GameModifier>
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>PlateHelmet_Champions2</Attribute>
@@ -2163,26 +2163,26 @@
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_IsAtArcaneArmorer_Tran</StrVal>
             <Value>-1</Value>
-        </GameModifier>	
+        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
         </AIData>
     </SpellDef>
-	
+
 	<SpellDef InternalName="ArcaneArmorersWrit3_Ability">
         <DisplayName>Writ Of Transcendent Chainmail</DisplayName>
         <Description>Order a Transcendent Chainmail Armor set. Only one set can be summoned per game! Transcendent chain armor is enchanted to augment the performance of the owner as much as protect them.</Description>
         <Image>Fallen_Medallion.png</Image>
         <IconFG>Armor_F_OphidianScaleShirt.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>
-		<Cooldown>1000</Cooldown>
+        <!--<AutoUnlock>1</AutoUnlock>-->
+	<Cooldown>1000</Cooldown>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
         <SpellClass>Defensive</SpellClass>
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
-        <CasterMustBeSov>1</CasterMustBeSov>		
+        <CasterMustBeSov>1</CasterMustBeSov>
         <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtArcaneArmorer_Tran</Attribute>
@@ -2192,7 +2192,7 @@
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtForgeOverlord</Attribute>
             <Value>1</Value>
-        </Prereq>		
+        </Prereq>
         <SpellResourceCost>
             <Resource>RefinedCrystal</Resource>
             <Amount>200</Amount>
@@ -2200,11 +2200,11 @@
         <SpellResourceCost>
             <Resource>Metal</Resource>
             <Amount>50</Amount>
-        </SpellResourceCost>		
+        </SpellResourceCost>
         <SpellResourceCost>
             <Resource>Gold</Resource>
             <Amount>350</Amount>
-        </SpellResourceCost>		
+        </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>ChainGreaves_Transcendent</Attribute>
@@ -2212,7 +2212,7 @@
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>ChainBreastpiece_Transcendent</Attribute>
-        </GameModifier>		
+        </GameModifier>
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>ChainHelmet_Transcendent</Attribute>
@@ -2234,12 +2234,12 @@
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_IsAtArcaneArmorer_Tran</StrVal>
             <Value>-1</Value>
-        </GameModifier>	
+        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
         </AIData>
     </SpellDef>
-	
+
 	<SpellDef InternalName="ArcaneWeaponsmith_Sword_Ability">
         <DisplayName>Writ Of Transcendent Swordcraft</DisplayName>
         <Description>Order a Transcendent Sword. Only one transcendent sword can be ordered per game!</Description>
@@ -2252,8 +2252,8 @@
         <SpellType>Strategic</SpellType>
         <SpellClass>Defensive</SpellClass>
         <SpellSubClass>Summon</SpellSubClass>
-        <SpellTargetType>Self</SpellTargetType>	
-        <CasterMustBeSov>1</CasterMustBeSov>		
+        <SpellTargetType>Self</SpellTargetType>
+        <CasterMustBeSov>1</CasterMustBeSov>
         <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtArcaneWeaponsmith_Tran</Attribute>
@@ -2263,7 +2263,7 @@
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtForgeOverlord</Attribute>
             <Value>1</Value>
-        </Prereq>		
+        </Prereq>
         <SpellResourceCost>
             <Resource>RefinedCrystal</Resource>
             <Amount>50</Amount>
@@ -2271,11 +2271,11 @@
         <SpellResourceCost>
             <Resource>Metal</Resource>
             <Amount>50</Amount>
-        </SpellResourceCost>		
+        </SpellResourceCost>
         <SpellResourceCost>
             <Resource>Gold</Resource>
             <Amount>150</Amount>
-        </SpellResourceCost>				
+        </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>Longsword_Terror</Attribute>
@@ -2285,12 +2285,12 @@
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_IsAtArcaneWeaponsmith_Tran</StrVal>
             <Value>-1</Value>
-        </GameModifier>		
+        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
         </AIData>
     </SpellDef>
-	
+
 		<SpellDef InternalName="ArcaneWeaponsmith_Axe_Ability">
         <DisplayName>Writ Of Transcendent Axecraft</DisplayName>
         <Description>Order a Transcendent Axe. Only one transcendent axe can be ordered per game!</Description>
@@ -2303,8 +2303,8 @@
         <SpellType>Strategic</SpellType>
         <SpellClass>Defensive</SpellClass>
         <SpellSubClass>Summon</SpellSubClass>
-        <SpellTargetType>Self</SpellTargetType>		
-        <CasterMustBeSov>1</CasterMustBeSov>		
+        <SpellTargetType>Self</SpellTargetType>
+        <CasterMustBeSov>1</CasterMustBeSov>
         <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtArcaneWeaponsmith_Tran</Attribute>
@@ -2314,7 +2314,7 @@
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtForgeOverlord</Attribute>
             <Value>1</Value>
-        </Prereq>		
+        </Prereq>
         <SpellResourceCost>
             <Resource>RefinedCrystal</Resource>
             <Amount>50</Amount>
@@ -2322,11 +2322,11 @@
         <SpellResourceCost>
             <Resource>Metal</Resource>
             <Amount>50</Amount>
-        </SpellResourceCost>		
+        </SpellResourceCost>
         <SpellResourceCost>
             <Resource>Gold</Resource>
             <Amount>150</Amount>
-        </SpellResourceCost>		
+        </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>Greataxe_Pendulum2</Attribute>
@@ -2336,12 +2336,12 @@
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_IsAtArcaneWeaponsmith_Tran</StrVal>
             <Value>-1</Value>
-        </GameModifier>		
+        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
         </AIData>
     </SpellDef>
-	
+
 	<SpellDef InternalName="ArcaneWeaponsmith_Mace_Ability">
         <DisplayName>Writ Of Transcendent Macecraft</DisplayName>
         <Description>Order a Transcendent Blunt Weapon. Only one transcendent mace can be ordered per game!</Description>
@@ -2355,7 +2355,7 @@
         <SpellClass>Defensive</SpellClass>
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
-        <CasterMustBeSov>1</CasterMustBeSov>		
+        <CasterMustBeSov>1</CasterMustBeSov>
         <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtArcaneWeaponsmith_Tran</Attribute>
@@ -2365,7 +2365,7 @@
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtForgeOverlord</Attribute>
             <Value>1</Value>
-        </Prereq>		
+        </Prereq>
         <SpellResourceCost>
             <Resource>RefinedCrystal</Resource>
             <Amount>50</Amount>
@@ -2373,11 +2373,11 @@
         <SpellResourceCost>
             <Resource>Metal</Resource>
             <Amount>50</Amount>
-        </SpellResourceCost>		
+        </SpellResourceCost>
         <SpellResourceCost>
             <Resource>Gold</Resource>
             <Amount>150</Amount>
-        </SpellResourceCost>				
+        </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>Maul_Rockshattering</Attribute>
@@ -2387,12 +2387,12 @@
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_IsAtArcaneWeaponsmith_Tran</StrVal>
             <Value>-1</Value>
-        </GameModifier>		
+        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
         </AIData>
     </SpellDef>
-	
+
 	<SpellDef InternalName="ArcaneWeaponsmith_Bow_Ability">
         <DisplayName>Writ Of Transcendent Bowcraft</DisplayName>
         <Description>Order a Transcendent Bow. Only one transcendent bow can be ordered per game!</Description>
@@ -2406,7 +2406,7 @@
         <SpellClass>Defensive</SpellClass>
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
-        <CasterMustBeSov>1</CasterMustBeSov>		
+        <CasterMustBeSov>1</CasterMustBeSov>
         <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtArcaneWeaponsmith_Tran</Attribute>
@@ -2416,7 +2416,7 @@
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtForgeOverlord</Attribute>
             <Value>1</Value>
-        </Prereq>		
+        </Prereq>
         <SpellResourceCost>
             <Resource>RefinedCrystal</Resource>
             <Amount>50</Amount>
@@ -2424,26 +2424,26 @@
         <SpellResourceCost>
             <Resource>Metal</Resource>
             <Amount>50</Amount>
-        </SpellResourceCost>		
+        </SpellResourceCost>
         <SpellResourceCost>
             <Resource>Gold</Resource>
             <Amount>150</Amount>
-        </SpellResourceCost>				
+        </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>YewLongbow_Vengeful</Attribute>
-        </GameModifier>	
+        </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_IsAtArcaneWeaponsmith_Tran</StrVal>
             <Value>-1</Value>
-        </GameModifier>		
+        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
         </AIData>
     </SpellDef>
-	
+
 	<SpellDef InternalName="ArcaneWeaponsmith_Lance_Ability">
         <DisplayName>Writ Of Transcendent Lancecraft</DisplayName>
         <Description>Order a Transcendent Lance. Only one transcendent lance can be ordered per game!</Description>
@@ -2457,7 +2457,7 @@
         <SpellClass>Defensive</SpellClass>
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
-        <CasterMustBeSov>1</CasterMustBeSov>		
+        <CasterMustBeSov>1</CasterMustBeSov>
         <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtArcaneWeaponsmith_Tran</Attribute>
@@ -2467,7 +2467,7 @@
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtForgeOverlord</Attribute>
             <Value>1</Value>
-        </Prereq>		
+        </Prereq>
         <SpellResourceCost>
             <Resource>RefinedCrystal</Resource>
             <Amount>50</Amount>
@@ -2475,11 +2475,11 @@
         <SpellResourceCost>
             <Resource>Metal</Resource>
             <Amount>50</Amount>
-        </SpellResourceCost>		
+        </SpellResourceCost>
         <SpellResourceCost>
             <Resource>Gold</Resource>
             <Amount>150</Amount>
-        </SpellResourceCost>		
+        </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>Pike_Spectre</Attribute>
@@ -2489,12 +2489,12 @@
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_IsAtArcaneWeaponsmith_Tran</StrVal>
             <Value>-1</Value>
-        </GameModifier>		
+        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
         </AIData>
     </SpellDef>
-	
+
 		<SpellDef InternalName="ArcaneWeaponsmith_Ability">
         <DisplayName>Writ Of Arcane Weaponry</DisplayName>
         <Description>Order the full set of high-end arcane weapons.</Description>
@@ -2508,20 +2508,20 @@
         <SpellClass>Defensive</SpellClass>
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
-        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>		
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
         <Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtArcaneWeaponsmith</Attribute>
             <Value>1</Value>
-        </Prereq>		
+        </Prereq>
         <SpellResourceCost>
             <Resource>RefinedCrystal</Resource>
             <Amount>34</Amount>
-        </SpellResourceCost>		
+        </SpellResourceCost>
         <SpellResourceCost>
             <Resource>Gold</Resource>
             <Amount>150</Amount>
-        </SpellResourceCost>		
+        </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>Staff_Freezing</Attribute>
@@ -2533,7 +2533,7 @@
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>Longbow_Ignys</Attribute>
-        </GameModifier>		
+        </GameModifier>
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>Longsword_Freezing</Attribute>
@@ -2545,12 +2545,12 @@
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>Maul_Doom</Attribute>
-        </GameModifier>				
+        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
         </AIData>
     </SpellDef>
-	
+
 	<SpellDef InternalName="Weaponsmith_Pinnacle_Ability">
         <DisplayName>Writ Of Pinnacle Weaponry</DisplayName>
         <Description>Order a pinnacle sword, axe, pike, maul, and bow. Only one pinnacle weapon set can be ordered per game!</Description>
@@ -2563,21 +2563,21 @@
         <SpellType>Strategic</SpellType>
         <SpellClass>Defensive</SpellClass>
         <SpellSubClass>Summon</SpellSubClass>
-        <SpellTargetType>Self</SpellTargetType>		
-        <CasterMustBeSov>1</CasterMustBeSov>		
+        <SpellTargetType>Self</SpellTargetType>
+        <CasterMustBeSov>1</CasterMustBeSov>
         <Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtWeaponsmith</Attribute>
             <Value>1</Value>
-        </Prereq>		
+        </Prereq>
         <SpellResourceCost>
             <Resource>Metal</Resource>
             <Amount>50</Amount>
-        </SpellResourceCost>		
+        </SpellResourceCost>
         <SpellResourceCost>
             <Resource>Gold</Resource>
             <Amount>300</Amount>
-        </SpellResourceCost>				
+        </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>Maul_Pinnacle</Attribute>
@@ -2597,42 +2597,42 @@
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>Longsword_Pinnacle</Attribute>
-        </GameModifier>		
+        </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_IsAtWeaponsmith</StrVal>
             <Value>-1</Value>
-        </GameModifier>		
+        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
         </AIData>
     </SpellDef>
-	
+
 	<SpellDef InternalName="ArchaeologistsWrit_Ability">
         <DisplayName>Archaeologist's Writ</DisplayName>
         <Description>Order an expedition that will return a piece of weathered equipment. There is a small chance of a rare artifact being found instead...</Description>
         <Image>Artifact_Swamp1.png</Image>
         <IconFG>Armor_GolemShield.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
-		<Cooldown>5</Cooldown>		
+		<Cooldown>5</Cooldown>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
         <SpellClass>Defensive</SpellClass>
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
-        <AppliesRandomModifier>1</AppliesRandomModifier>		
+        <AppliesRandomModifier>1</AppliesRandomModifier>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
         <Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtArchaeologist</Attribute>
             <Value>1</Value>
-        </Prereq>		
+        </Prereq>
         <SpellResourceCost>
             <Resource>Gold</Resource>
             <Amount>50</Amount>
-        </SpellResourceCost>		
+        </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>ChainBreastpiece_Skeleton</Attribute>
@@ -2640,7 +2640,7 @@
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>ChainBreastpiece_Skeleton</Attribute>
-        </GameModifier>		
+        </GameModifier>
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>PlateBreastpiece_Rusty</Attribute>
@@ -2660,11 +2660,11 @@
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>KiteShield_Golem</Attribute>
-        </GameModifier>		
+        </GameModifier>
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>Longsword_Golem</Attribute>
-        </GameModifier>	
+        </GameModifier>
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>Axe_Golem</Attribute>
@@ -2680,39 +2680,39 @@
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>RingOfWisdom</Attribute>
-        </GameModifier>		
+        </GameModifier>
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>Loot_DeadRat</Attribute>
-        </GameModifier>	
+        </GameModifier>
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>Loot_DeadRat</Attribute>
-        </GameModifier>		
+        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
         </AIData>
     </SpellDef>
-	
+
 	<SpellDef InternalName="RanchersWrit_Ability">
         <DisplayName>Rancher's Writ</DisplayName>
         <Description>Order a pair of horses as mounts.</Description>
         <Image>Res_Horses_Plains.png</Image>
         <IconFG>Horse_Resource_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
-		<Cooldown>5</Cooldown>		
+		<Cooldown>5</Cooldown>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
         <SpellClass>Defensive</SpellClass>
         <SpellSubClass>Summon</SpellSubClass>
-        <SpellTargetType>Self</SpellTargetType>	
+        <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
         <Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtRanch</Attribute>
             <Value>1</Value>
-        </Prereq>		
+        </Prereq>
         <SpellResourceCost>
             <Resource>Gold</Resource>
             <Amount>25</Amount>
@@ -2720,7 +2720,7 @@
         <SpellResourceCost>
             <Resource>Horses</Resource>
             <Amount>2</Amount>
-        </SpellResourceCost>		
+        </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>BasicHorseMount</Attribute>
@@ -2728,31 +2728,31 @@
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>BasicHorseMount2</Attribute>
-        </GameModifier>			
+        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
         </AIData>
     </SpellDef>
-	
+
 	<SpellDef InternalName="RanchersWrit_Dead_Ability">
         <DisplayName>Rancher's Writ</DisplayName>
         <Description>Order a pair of undead horses as mounts.</Description>
         <Image>Res_Horses_Plains.png</Image>
         <IconFG>Horse_Resource_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
-		<Cooldown>5</Cooldown>		
+		<Cooldown>5</Cooldown>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
         <SpellClass>Defensive</SpellClass>
         <SpellSubClass>Summon</SpellSubClass>
-        <SpellTargetType>Self</SpellTargetType>	
+        <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
         <Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtRanch_Dead</Attribute>
             <Value>1</Value>
-        </Prereq>		
+        </Prereq>
         <SpellResourceCost>
             <Resource>Gold</Resource>
             <Amount>25</Amount>
@@ -2760,7 +2760,7 @@
         <SpellResourceCost>
             <Resource>Horses</Resource>
             <Amount>2</Amount>
-        </SpellResourceCost>		
+        </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>UndeadHorseMount</Attribute>
@@ -2768,31 +2768,31 @@
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>UndeadHorseMount</Attribute>
-        </GameModifier>			
+        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
         </AIData>
     </SpellDef>
-	
+
 	<SpellDef InternalName="RanchersWrit_Ability_LegacyOfSerrane">
         <DisplayName>Rancher's Writ</DisplayName>
         <Description>Order a pair of warhorses as mounts.</Description>
         <Image>Res_Horses_Plains.png</Image>
         <IconFG>Horse_Resource_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
-		<Cooldown>5</Cooldown>		
+		<Cooldown>5</Cooldown>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
         <SpellClass>Defensive</SpellClass>
         <SpellSubClass>Summon</SpellSubClass>
-        <SpellTargetType>Self</SpellTargetType>	
+        <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
         <Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtRanch_LegacyOfSerrane</Attribute>
             <Value>1</Value>
-        </Prereq>		
+        </Prereq>
         <SpellResourceCost>
             <Resource>Gold</Resource>
             <Amount>25</Amount>
@@ -2800,7 +2800,7 @@
         <SpellResourceCost>
             <Resource>Horses</Resource>
             <Amount>2</Amount>
-        </SpellResourceCost>		
+        </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>WarHorseMount</Attribute>
@@ -2808,31 +2808,31 @@
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>WarHorseMount</Attribute>
-        </GameModifier>			
+        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
         </AIData>
     </SpellDef>
-	
+
 	<SpellDef InternalName="KennelsWrit_Ability">
         <DisplayName>Kennel's Writ</DisplayName>
         <Description>Order a pair of Wargs as mounts.</Description>
         <Image>M_Warg_PlainsWarg_Card.png</Image>
         <IconFG>Icon_Wargs.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
-		<Cooldown>5</Cooldown>		
+		<Cooldown>5</Cooldown>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
         <SpellClass>Defensive</SpellClass>
         <SpellSubClass>Summon</SpellSubClass>
-        <SpellTargetType>Self</SpellTargetType>	
+        <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
         <Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtKennel</Attribute>
             <Value>1</Value>
-        </Prereq>		
+        </Prereq>
         <SpellResourceCost>
             <Resource>Gold</Resource>
             <Amount>25</Amount>
@@ -2840,7 +2840,7 @@
         <SpellResourceCost>
             <Resource>Wargs</Resource>
             <Amount>2</Amount>
-        </SpellResourceCost>		
+        </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>BasicWargMount2</Attribute>
@@ -2848,12 +2848,12 @@
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>BasicWargMount</Attribute>
-        </GameModifier>			
+        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
         </AIData>
     </SpellDef>
-	
+
 		<SpellDef InternalName="ProvisionistsWrit_Ability">
         <DisplayName>Provisionist's Writ</DisplayName>
         <Description>Order food and equipment to keep your champions well supplied.</Description>
@@ -2866,17 +2866,17 @@
         <SpellType>Strategic</SpellType>
         <SpellClass>Defensive</SpellClass>
         <SpellSubClass>Summon</SpellSubClass>
-        <SpellTargetType>Self</SpellTargetType>		
+        <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
         <Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtProvisionist</Attribute>
             <Value>1</Value>
-        </Prereq>		
+        </Prereq>
         <SpellResourceCost>
             <Resource>Gold</Resource>
             <Amount>70</Amount>
-        </SpellResourceCost>		
+        </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>FirstAidKit</Attribute>
@@ -2896,7 +2896,7 @@
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>LeatherBoots_Soldiers</Attribute>
-        </GameModifier>	
+        </GameModifier>
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>LeatherVambraces_Soldiers</Attribute>
@@ -2905,7 +2905,7 @@
             <AIPriority>0</AIPriority>
         </AIData>
     </SpellDef>
-	
+
 	<SpellDef InternalName="ProvisionistsWrit_Dead_Ability">
         <DisplayName>Clerk's Writ</DisplayName>
         <Description>Order equipment to keep your champions well supplied.</Description>
@@ -2918,17 +2918,17 @@
         <SpellType>Strategic</SpellType>
         <SpellClass>Defensive</SpellClass>
         <SpellSubClass>Summon</SpellSubClass>
-        <SpellTargetType>Self</SpellTargetType>	
+        <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
         <Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtProvisionist_Dead</Attribute>
             <Value>1</Value>
-        </Prereq>		
+        </Prereq>
         <SpellResourceCost>
             <Resource>Gold</Resource>
             <Amount>40</Amount>
-        </SpellResourceCost>		
+        </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>LeatherBoots_Soldiers</Attribute>
@@ -2936,17 +2936,17 @@
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>Whetstone</Attribute>
-        </GameModifier>		
+        </GameModifier>
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>LeatherVambraces_Soldiers</Attribute>
-        </GameModifier>	
+        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
         </AIData>
     </SpellDef>
-	
-	
+
+
 	    <SpellDef InternalName="TitansBreath_Ability2">
         <DisplayName>Titan's Breath</DisplayName>
         <Description>A gust of wind blows all enemy units back a tile and, unless they resist, knocks them prone.</Description>
@@ -2990,7 +2990,7 @@
             <PlayOnAllTargets>1</PlayOnAllTargets>
         </SpellDefEffect>
     </SpellDef>
-	
+
 	<SpellDef InternalName="GlyphOfLife">
         <DisplayName>Glyph of Life</DisplayName>
         <Description>Defending units start with regeneration (they heal 1 hit point per life shard per turn).</Description>
@@ -3071,13 +3071,13 @@
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
     </SpellDef>
-	
+
 	<SpellDef InternalName="Hunters_Sense">
         <DisplayName>Hunter's Sense</DisplayName>
         <Description>Find beasts to hunt - just know that the beasts may be found in inconvenient places, and your prey may cause you unexpected trouble if in your territory!</Description>
         <Image>S_EyesoftheEagle_Painting.png</Image>
         <IconFG>S_SummonersBoon_Icon.png</IconFG>
-		<Cooldown>5</Cooldown>		
+		<Cooldown>5</Cooldown>
         <SpellBookSortCategory>World</SpellBookSortCategory>
         <SpellBookSortSubCategory>Map</SpellBookSortSubCategory>
 		<SpellType>Strategic</SpellType>
@@ -3125,9 +3125,9 @@
         </AIData>
         <HitSoundFX>Spell_NaturesCall_01</HitSoundFX>
     </SpellDef>
-	
+
 	<!-- Fixes Mantle of Oceans -->
-	
+
 	<SpellDef InternalName="MantleOfOceans">
         <DisplayName>Mantle of Oceans</DisplayName>
         <Description>The mana cost of all tactical spells this unit casts is reduced by 40%</Description>
@@ -3169,7 +3169,7 @@
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
     </SpellDef>
-	
+
 	<SpellDef InternalName="Freeze">
         <DisplayName>Freeze</DisplayName>
         <Description>Target enemy army is -2 Initiative (-.5 per water shard) and immobilized for 3 seasons (including current season). Must be cast in your territory.</Description>
@@ -3222,9 +3222,9 @@
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
     </SpellDef>
-	
-	<!-- Trained troop special ability group 
-	
+
+	<!-- Trained troop special ability group
+
 	<SpellDef InternalName="FlameTongue">
         <DisplayName>Flame Tongue</DisplayName>
         <Description>Does 2 fire damage (+1 per level) to the victim.  This damage is multiplied by the number of casting units.</Description>
@@ -3296,7 +3296,7 @@
         <SpellCastEffectName>T_FlameTongue_Particle</SpellCastEffectName>
         <SpellCastEffectScale>1</SpellCastEffectScale>
     </SpellDef>
-	
+
 	<SpellDef InternalName="SoulSpark">
         <DisplayName>Soul Spark</DisplayName>
         <Description>Does 3 (+1 per 2 levels) lightning damage to the victim.  This damage is multiplied by the amount of units casting.</Description>
@@ -3379,9 +3379,9 @@
         </SpellDefEffect>
     </SpellDef>
 	-->
-	
+
 	<!-- Flame dart group -->
-	
+
 	<SpellDef InternalName="FlameDart">
         <DisplayName>Flame Dart</DisplayName>
         <Description>A fiery dart strikes for the caster's level plus 20 in fire damage (+2 per fire shard).</Description>
@@ -3421,7 +3421,7 @@
             </Calculate>
             <Calculate InternalName="Value" ValueOwner="CastingUnit">
                 <Expression><![CDATA[[Calc3] * [UnitStat_SpellDamage_Fire]]]></Expression>
-            </Calculate>			
+            </Calculate>
             <Calculate InternalName="ValueForFormattedDescription">
                 <Expression><![CDATA[[Calc3] * [UnitStat_SpellDamage_Fire]]]></Expression>
             </Calculate>
@@ -3442,7 +3442,7 @@
             </Calculate>
             <Calculate InternalName="Value" ValueOwner="CastingUnit">
                 <Expression><![CDATA[[Calc3] * [UnitStat_SpellDamage_Fire]]]></Expression>
-            </Calculate>			
+            </Calculate>
         </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>40</AIPriority>
@@ -3501,7 +3501,7 @@
             </Calculate>
             <Calculate InternalName="Value" ValueOwner="CastingUnit">
                 <Expression><![CDATA[[Calc3] * [UnitStat_SpellDamage_Fire]]]></Expression>
-            </Calculate>			
+            </Calculate>
             <Calculate InternalName="ValueForFormattedDescription">
                 <Expression><![CDATA[[Calc3] * [UnitStat_SpellDamage_Fire]]]></Expression>
             </Calculate>
@@ -3522,7 +3522,7 @@
             </Calculate>
             <Calculate InternalName="Value" ValueOwner="CastingUnit">
                 <Expression><![CDATA[[Calc3] * [UnitStat_SpellDamage_Fire]]]></Expression>
-            </Calculate>			
+            </Calculate>
         </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>40</AIPriority>
@@ -3589,7 +3589,7 @@
             </Calculate>
             <Calculate InternalName="Value" ValueOwner="CastingUnit">
                 <Expression><![CDATA[[Calc3] * [UnitStat_SpellDamage_Fire]]]></Expression>
-            </Calculate>			
+            </Calculate>
             <Calculate InternalName="ValueForFormattedDescription">
                 <Expression><![CDATA[[Calc3] * [UnitStat_SpellDamage_Fire]]]></Expression>
             </Calculate>
@@ -3610,7 +3610,7 @@
             </Calculate>
             <Calculate InternalName="Value" ValueOwner="CastingUnit">
                 <Expression><![CDATA[[Calc3] * [UnitStat_SpellDamage_Fire]]]></Expression>
-            </Calculate>			
+            </Calculate>
         </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>40</AIPriority>
@@ -3638,7 +3638,7 @@
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
     </SpellDef>
-	
+
 	<SpellDef InternalName="Blizzard">
         <DisplayName>Blizzard</DisplayName>
         <Description>Units take 16 cold damage (+1 per water shard) per member.</Description>
@@ -3733,7 +3733,7 @@
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
     </SpellDef>
-	
+
     <SpellDef InternalName="Blizzard_Ability_Scroll">
         <DisplayName>Frost Storm</DisplayName>
         <Description>Units take 8 cold damage (+1 per water shard) per member.</Description>
@@ -3822,7 +3822,7 @@
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
     </SpellDef>
-	
+
 	<!--<SpellDef InternalName="AuraOfMight">
         <DisplayName>Aura of Might</DisplayName>
         <Description>All units trained in this city are +2 Defense (+1 per Essence).</Description>
@@ -3866,7 +3866,7 @@
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
     </SpellDef>-->
-	
+
 	<!--<SpellDef InternalName="Meditation">
         <DisplayName>Meditation</DisplayName>
         <Description>+1 Mana in the enchanted city.</Description>
@@ -3903,7 +3903,7 @@
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
     </SpellDef>-->
-	
+
 	<SpellDef InternalName="HeartOfFire">
         <DisplayName>Heart of Fire</DisplayName>
         <Description>All units trained in this city get +1 Fire Attack but it increases the Unrest in the city by 5%.</Description>
@@ -3927,7 +3927,7 @@
             <StrVal>UnitStat_Attack_Fire</StrVal>
             <Duration>-1</Duration>
 			<Value>1</Value>
-        </GameModifier>		
+        </GameModifier>
         <GameModifier>
             <ModType>Resource</ModType>
             <Attribute>Unrest</Attribute>
@@ -3948,7 +3948,7 @@
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
     </SpellDef>
-	
+
 	<SpellDef InternalName="AuraOfGrace">
         <DisplayName>Aura of Grace</DisplayName>
         <Description>All units trained in this city are +1 Initiative.</Description>
@@ -3972,7 +3972,7 @@
             <StrVal>UnitStat_CombatSpeed</StrVal>
             <Duration>-1</Duration>
 			<Value>1</Value>
-        </GameModifier>	
+        </GameModifier>
         <ValidTerrainCategory>City</ValidTerrainCategory>
         <AIData AIPersonality="AI_General">
             <AIPriority>3</AIPriority>
@@ -3986,7 +3986,7 @@
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
     </SpellDef>
-	
+
 	<SpellDef InternalName="PullOfTheEarth">
         <DisplayName>Pull of the Earth</DisplayName>
         <Description>Units within range are knocked prone unless they resist.</Description>
@@ -4030,7 +4030,7 @@
             <SnapToTerrain>0</SnapToTerrain>
         </SpellDefEffect>
     </SpellDef>
-	
+
 	<SpellDef InternalName="Longsword_Terror_Effect">
         <DisplayName>Longsword_Terror_Effect</DisplayName>
         <Description>Target adjacent enemy loses their next action, unless they resist.</Description>
@@ -4060,9 +4060,9 @@
             <AIPriority>5</AIPriority>
         </AIData>
     </SpellDef>
-	
+
 	<!-- Added content spells -->
-	
+
 		<SpellDef InternalName="Stoneveins">
         <DisplayName>Stone Veins</DisplayName>
         <Description>Target unit receives 33% (+10% per earth shard) resistance vs poison.</Description>
@@ -4101,7 +4101,7 @@
         </AIData>
         <HitSoundFX>Spell_ManaShield_01</HitSoundFX>
     </SpellDef>
-	
+
 	 <SpellDef InternalName="Trigger_OnDeathsDoor">
         <DisplayName>On Death's Door</DisplayName>
         <Description>This champion will instantly and permanently die upon entering combat.</Description>
@@ -4121,14 +4121,14 @@
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>PermanentDeath</Attribute>
-        </GameModifier>        
+        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>5</AIPriority>
         </AIData>
     </SpellDef>
-	
- 	
-	
+
+
+
 	<SpellDef InternalName="CrushingBlow">
         <DisplayName>Crushing Blow</DisplayName>
         <Description>Attack with a 50% damage bonus, but you lose your next action.</Description>
@@ -4189,13 +4189,13 @@
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
     </SpellDef>
-	
+
 	<SpellDef InternalName="AssassinsStrike">
         <DisplayName>Assassin's Strike</DisplayName>
         <Description>Strike with +25 Attack bonus</Description>
         <FormattedDescription>Launch a %d Attack</FormattedDescription>
         <IconFG>Ability_AssassinsStrike_Icon.png</IconFG>
-		<StaminaCost>7</StaminaCost>		
+		<StaminaCost>7</StaminaCost>
         <SpellBookSortCategory>Unit</SpellBookSortCategory>
         <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
         <SpellType>Tactical</SpellType>
@@ -4240,11 +4240,11 @@
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
     </SpellDef>
-	
 
-	
-	<!-- Overwrites of weapon abilities follow 
-	
+
+
+	<!-- Overwrites of weapon abilities follow
+
 	<SpellDef InternalName="Impale_Ability">
         <DisplayName>Impale</DisplayName>
         <Description>Strikes the target unit and the one behind him (Champions get bonus damage).</Description>
@@ -4278,7 +4278,7 @@
             </Calculate>
             <Calculate InternalName="Calc3" ValueOwner="CastingUnit">
                 <Expression><![CDATA[[UnitStat_BonusImpale] + [Calc2]]]></Expression>
-            </Calculate>			
+            </Calculate>
             <Calculate InternalName="Value">
                 <Expression><![CDATA[[Calc] * [Calc3]]></Expression>
             </Calculate>
@@ -4294,7 +4294,7 @@
         <MissSoundFX>Miss_Swing1</MissSoundFX>
         <MissSoundFX>Miss_Swing2</MissSoundFX>
     </SpellDef>
-	
+
 	<SpellDef InternalName="CrushingBlow">
         <DisplayName>Crushing Blow</DisplayName>
         <Description>+33% Attack, but you lose your next action (Champions get bonus damage).</Description>
@@ -4327,7 +4327,7 @@
             </Calculate>
             <Calculate InternalName="Calc3" ValueOwner="CastingUnit">
                 <Expression><![CDATA[[[UnitStat_CombinedAttack] * [Calc2]]]></Expression>
-            </Calculate>			
+            </Calculate>
             <Calculate InternalName="Value">
                 <Expression><![CDATA[[Calc3]]]></Expression>
             </Calculate>
@@ -4358,7 +4358,7 @@
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
     </SpellDef>
-	
+
 	<SpellDef InternalName="CrushingBlowTester">
         <DisplayName>Crushing Blow Tester</DisplayName>
         <Description>Target unit receives the Crushing Blow value as resistance vs Fire.</Description>
@@ -4386,7 +4386,7 @@
             </Calculate>
             <Calculate InternalName="Calc3" ValueOwner="CastingUnit">
                 <Expression><![CDATA[[[UnitStat_CombinedAttack] * [Calc2]]]></Expression>
-            </Calculate>			
+            </Calculate>
             <Calculate InternalName="Value">
                 <Expression><![CDATA[[Calc3]]]></Expression>
             </Calculate>
@@ -4399,7 +4399,7 @@
         </AIData>
         <HitSoundFX>Spell_NaturesCloak_01</HitSoundFX>
     </SpellDef>
-	
+
 	<SpellDef InternalName="Cleave_Ability">
         <DisplayName>Cleave</DisplayName>
         <Description>Swing at 3 adjacent enemies (Champions get bonus damage).</Description>
@@ -4433,7 +4433,7 @@
             </Calculate>
             <Calculate InternalName="Calc3" ValueOwner="CastingUnit">
                 <Expression><![CDATA[[UnitStat_BonusCleave] + [Calc2]]]></Expression>
-            </Calculate>			
+            </Calculate>
             <Calculate InternalName="Value">
                 <Expression><![CDATA[[Calc] * [Calc3]]></Expression>
             </Calculate>
@@ -4457,8 +4457,8 @@
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
     </SpellDef>
-	
-	
+
+
 	<SpellDef InternalName="ShieldBash_Ability">
         <DisplayName>Shield Bash</DisplayName>
         <Description>Inflict damage equal to your defense, and knock the victim back 1 tile.</Description>
@@ -4488,7 +4488,7 @@
             <Calculate InternalName="Value">
                 <Expression><![CDATA[[Calc] * 100]]></Expression>
             </Calculate>
-        </GameModifier>		
+        </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>DefendableDamage</Attribute>
@@ -4524,9 +4524,9 @@
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
     </SpellDef>
-	
-	
-	
+
+
+
 	 <SpellDef InternalName="AutoDefend">
         <DisplayName>Defending</DisplayName>
         <Description>When a unit passes their attack action, their Defense is improved until their next action.</Description>
@@ -4552,7 +4552,7 @@
             </Calculate>
             <Calculate InternalName="Calc2" ValueOwner="CastingUnit">
                 <Expression><![CDATA[[UnitStat_BG_IsChampion] * 10]]></Expression>
-            </Calculate>			
+            </Calculate>
             <Calculate InternalName="Value">
                 <Expression><![CDATA[[Calc] + [Calc2]]]></Expression>
             </Calculate>
@@ -4583,11 +4583,11 @@
             <Calculate InternalName="Value">
                 <Expression><![CDATA[[Calc]]]></Expression>
             </Calculate>
-        </GameModifier>		
+        </GameModifier>
     </SpellDef>-->
-	
+
 	<!-- Swarm helps Champions more than trained troops
-	
+
 	<SpellDef InternalName="SwarmBonus">
         <DisplayName>Swarm Bonus</DisplayName>
         <Description>When a unit attacks, they get a bonus from allies that surround their target.</Description>
@@ -4622,20 +4622,20 @@
             <ModType>Unit</ModType>
             <Attribute>SetUnitStat</Attribute>
             <StrVal>UnitStat_UnitStat_ArmorPierce</StrVal>
-            <Duration>1</Duration>			
+            <Duration>1</Duration>
             <Calculate InternalName="Calc" ValueOwner="CastingUnit">
                 <Expression><![CDATA[[UnitStat_BG_IsChampion] * 10]]></Expression>
             </Calculate>
             <Calculate InternalName="Value">
                 <Expression><![CDATA[[Calc]]]></Expression>
             </Calculate>
-        </GameModifier>			
+        </GameModifier>
     </SpellDef>
-	
+
 	-->
-	
+
 	<!-- Blood Curse as-is is way too good! -->
-	
+
 	<SpellDef InternalName="BloodCurse">
         <DisplayName>Blood Curse</DisplayName>
         <Description>Target city sacrifices half its citizens.  The caster receives a hit point for every 8 citizens citizen sacrificed.  The caster no long heals naturally.  Only the sovereign can cast this spell.</Description>
@@ -4695,13 +4695,13 @@
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
     </SpellDef>
-	
+
 	<!-- Overwrites Rain Of Arrows to add a bonus damage unitstat -->
-	
+
 	<SpellDef InternalName="RainOfArrows">
         <DisplayName>Rain Of Arrows</DisplayName>
         <Description>Fires arrows at all enemies in a 1 tile radius for half damage, but with -10 Accuracy. Be careful not to hit your own units!</Description>
-        <FormattedDescription>Fires arrows at all enemies in a 1 tile radius for %d damage, but with -10 Accuracy. Be careful not to hit your own units!</FormattedDescription>		
+        <FormattedDescription>Fires arrows at all enemies in a 1 tile radius for %d damage, but with -10 Accuracy. Be careful not to hit your own units!</FormattedDescription>
         <IconFG>Ability_RainofArrows_Icon.png</IconFG>
 		<StaminaCost>7</StaminaCost>
         <SpellBookSortCategory>Unit</SpellBookSortCategory>
@@ -4728,7 +4728,7 @@
             <ApplyToCaster>1</ApplyToCaster>
             <IsPreHitSpellModifier>1</IsPreHitSpellModifier>
             <Value>-10</Value>
-        </GameModifier>		
+        </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>DefendableDamage</Attribute>
@@ -4737,13 +4737,13 @@
             </Calculate>
             <Calculate InternalName="Calc2" ValueOwner="CastingUnit">
                 <Expression><![CDATA[[UnitStat_BonusRainOfArrows]]]></Expression>
-            </Calculate>			
+            </Calculate>
             <Calculate InternalName="Value">
                 <Expression><![CDATA[[Calc] * [Calc2]]></Expression>
             </Calculate>
             <Calculate InternalName="ValueForFormattedDescription">
                 <Expression><![CDATA[[Calc] * [Calc2]]]></Expression>
-            </Calculate>			
+            </Calculate>
         </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>100</AIPriority>
@@ -4760,8 +4760,8 @@
         <SpellCastProjectile>1</SpellCastProjectile>
         <SpellCastProjectileSpeed>1100</SpellCastProjectileSpeed>
     </SpellDef>
-	
-	
+
+
  <SpellDef InternalName="Trigger_SurvivorsGuilt">
         <DisplayName>Survivors Guilt</DisplayName>
         <Description>Unit is +1 Dodge per air shard, +1 Initiative per fire shard, +1 Spell Mastery per water shard and +1 Spell Resistance per earth shard.  This spell is automatically cast on Amarian units at the start of battle.</Description>
@@ -4842,7 +4842,7 @@
             <AIPriority>5</AIPriority>
         </AIData>
     </SpellDef>
-	
+
 	<SpellDef InternalName="Thrust_Ability">
         <DisplayName>Thrust</DisplayName>
         <Description>Launch an attack that ignores 80% of the target's armor.</Description>
@@ -4863,7 +4863,7 @@
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsSword</Attribute>
             <Value>1</Value>
-        </Prereq>		
+        </Prereq>
 		<GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
@@ -4882,7 +4882,7 @@
         <CasterAnimationType>31</CasterAnimationType>
         <HitSoundFX>Spell_TrueStrike_01</HitSoundFX>
     </SpellDef>
-	
+
 	<SpellDef InternalName="FallingStar">
         <DisplayName>Falling Star</DisplayName>
         <Description>This spell cannot be entirely recovered from incomplete tomes.</Description>
@@ -4931,7 +4931,7 @@
             <ModType>Map</ModType>
             <Attribute>PlaceEnvironment</Attribute>
             <TerrainType>BarrenEnvironment</TerrainType>
-        </GameModifier>		
+        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>100</AIPriority>
         </AIData>
@@ -4951,7 +4951,7 @@
             <PlayOnAllTargets>1</PlayOnAllTargets>
         </SpellDefEffect>
     </SpellDef>
-	
+
 	<SpellDef InternalName="ConsumingFlame">
         <DisplayName>Consuming Flame</DisplayName>
         <Description>Consume a unit in flame for 36 (+4 per fire shard) in fire damage, multiplied by the members of that unit. Leaves behind flame that does 10 fire damage to any who enter that tile.</Description>
@@ -5012,7 +5012,7 @@
             <Calculate InternalName="ValueForFormattedDescription">
                 <Expression><![CDATA[[Calc3]]]></Expression>
             </Calculate>
-        </GameModifier>		
+        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>100</AIPriority>
         <ValueCalcWrapper>
@@ -5034,7 +5034,7 @@
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
     </SpellDef>
-	
+
 	<SpellDef InternalName="Spell_DefensiveForesight">
         <DisplayName>Defensive Foresight</DisplayName>
         <Description>If an enemy army attacks, your troops will have full foresight of the enemy's intent, strengths, and weaknesses. As a result your troops will gain +4 initiative, +20% armor piercing, +10 Dodge, +10 Dodge vs ranged, and +20 accuracy in defensive actions.</Description>
@@ -5081,13 +5081,13 @@
             <Attribute>AdjustDefendingUnit</Attribute>
             <StrVal>UnitStat_DodgeAgainstRanged</StrVal>
             <Value>10</Value>
-        </GameModifier>		
+        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>1000</AIPriority>
         </AIData>
         <HitSoundFX>Spell_GlyphOfLife_01</HitSoundFX>
     </SpellDef>
-	
+
 	<SpellDef InternalName="LightningBolt">
         <DisplayName>Lightning Bolt</DisplayName>
         <Description>Does 10 (+1 per Level, +1 per air shard) Lightning damage to all units in a line 5 tiles long.</Description>
@@ -5135,7 +5135,7 @@
             </Calculate>
             <Calculate InternalName="Calc2" ValueOwner="CastingUnit">
                 <Expression><![CDATA[[Calc] / 2]]></Expression>
-            </Calculate>			
+            </Calculate>
             <Calculate InternalName="Value">
                 <Expression><![CDATA[[Calc2] + 5]]></Expression>
             </Calculate>
@@ -5166,7 +5166,7 @@
             <PlayOnAllTargets>1</PlayOnAllTargets>
         </SpellDefEffect>
     </SpellDef>
-	
+
 	<SpellDef InternalName="Sacrifice">
         <DisplayName>Sacrifice</DisplayName>
         <Description>Target city sacrifices half its citizens to produce 0.5 mana per sacrifice.</Description>
@@ -5211,7 +5211,7 @@
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
     </SpellDef>
-	
+
 	<SpellDef InternalName="AllianceDoctrine">
         <DisplayName>Alliance Doctrine</DisplayName>
         <Description>Unlocks the Alliances tech</Description>
@@ -5241,5 +5241,5 @@
             <AIPriority>5</AIPriority>
         </AIData>
     </SpellDef>
-	
+
 </Spells>
