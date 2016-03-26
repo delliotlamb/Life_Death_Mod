@@ -38,8 +38,7 @@
 	
 	<ImprovementType InternalName="PillarOfForesight">
         <DisplayName>Pillar Of Foresight</DisplayName>
-        <Description>This magical pillar will give city defenders a massive advantage when defending.</Description>
-		<AllowedPerFaction>1</AllowedPerFaction>		
+        <Description>This magical pillar will give city defenders a massive advantage when defending.</Description>		
         <RequiresCity>1</RequiresCity>
         <BarredTerrain>River</BarredTerrain>
         <BarredTerrain>SwampTerrain</BarredTerrain>
@@ -1461,16 +1460,19 @@
             <ModType>ConstructionResourceCost</ModType>
             <Attribute>Metal</Attribute>
             <Value>-100</Value>
+	    <Provides>Total Metal cost of 150</Provides>
         </GameModifier>
         <GameModifier>
             <ModType>ConstructionResourceCost</ModType>
             <Attribute>RefinedCrystal</Attribute>
             <Value>-50</Value>
+	    <Provides>Total Crystal cost of 10</Provides>
         </GameModifier>
         <GameModifier>
             <ModType>ConstructionResourceCost</ModType>
             <Attribute>Gold</Attribute>
             <Value>-100</Value>
+	    <Provides>Total Gold cost of 150</Provides>
         </GameModifier>
     </ImprovementType>
     

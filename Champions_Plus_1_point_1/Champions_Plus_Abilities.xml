@@ -533,9 +533,9 @@
         <AbilityBonusOption InternalName="BattleHardened">
             <DisplayName>Battle Hardened</DisplayName>
             <Description>+2 Defense per Stamina</Description>
-            <Icon>Ability_Recoil_Icon.png</Icon>
+            <Icon>Ability_TemperedSteel_Icon.png</Icon>
             <PerkTreePosX>6</PerkTreePosX>
-            <PerkTreePosY></PerkTreePosY>
+            <PerkTreePosY>1</PerkTreePosY>
             <GameModifier>
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>

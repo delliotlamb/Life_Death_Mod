@@ -4,6 +4,7 @@
     <ImprovementType InternalName="SorcerersTower">
         <DisplayName>Sorcerer's Tower</DisplayName>
         <Description>Constructing this building allows your Sorcerer to conduct Magical Experiments (appears in Spellbook when stationed). Also allows purchase of the Sorcerer's Staff.</Description>
+	<AllowedPerFaction>1</AllowedPerFaction>
         <RequiresCity>1</RequiresCity>
         <BarredTerrain>River</BarredTerrain>
         <BarredTerrain>SwampTerrain</BarredTerrain>
