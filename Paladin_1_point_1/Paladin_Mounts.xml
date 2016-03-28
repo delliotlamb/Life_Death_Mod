@@ -50,25 +50,23 @@
             <StrVal>UnitStat_Moves</StrVal>
             <Value>3</Value>
         </GameModifier>
-            <GameModifier>
-                <ModType>Unit</ModType>
-                <Attribute>AdjustUnitStat</Attribute>
-                <BoolVal1>1</BoolVal1>
-                <StrVal>UnitStat_Attack_Pierce</StrVal>
-                <StrVal2>UnitStat_IsBow</StrVal2>
-                <Value>3</Value>
-                <BonusValue>0.5</BonusValue>
-                <Provides>+3 Attack when using a Bow</Provides>
-                <vsHigher>1</vsHigher>
-            </GameModifier>	
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <BoolVal1>1</BoolVal1>
+        <StrVal>UnitStat_Attack_Pierce</StrVal>
+        <StrVal2>UnitStat_IsBow</StrVal2>
+        <Value>1</Value>
+        <BonusValue>0.5</BonusValue>
+        <Provides>Additional +1 Attack when using a Bow</Provides>
+        <vsHigher>1</vsHigher>
+      </GameModifier>
       <GameModifier>
         <ModType>Unit</ModType>
         <Attribute>AdjustUnitStat</Attribute>
         <StrVal>UnitStat_Attack_Boost</StrVal>
-        <StrVal2>UnitStat_BG_IsUsingMount</StrVal2>
         <Value>1</Value>
-        <Provides>+1 Attack vs unmounted opponents</Provides>
-        <vsLower>1</vsLower>
+        <Provides>+1 Attack</Provides>
       </GameModifier>			
         <GameModifier>
             <ModType>Unit</ModType>
@@ -134,9 +132,9 @@
                 <BoolVal1>1</BoolVal1>
                 <StrVal>UnitStat_Attack_Pierce</StrVal>
                 <StrVal2>UnitStat_IsBow</StrVal2>
-                <Value>3</Value>
+                <Value>1</Value>
                 <BonusValue>0.5</BonusValue>
-                <Provides>+3 Attack when using a Bow</Provides>
+                <Provides>+1 Attack when using a Bow</Provides>
                 <vsHigher>1</vsHigher>
             </GameModifier>			
         <GameModifier>
@@ -328,25 +326,23 @@
             <StrVal>UnitStat_Moves</StrVal>
             <Value>2</Value>
         </GameModifier>
-            <GameModifier>
-                <ModType>Unit</ModType>
-                <Attribute>AdjustUnitStat</Attribute>
-                <BoolVal1>1</BoolVal1>
-                <StrVal>UnitStat_Attack_Pierce</StrVal>
-                <StrVal2>UnitStat_IsBow</StrVal2>
-                <Value>3</Value>
-                <BonusValue>0.5</BonusValue>
-                <Provides>+3 Attack when using a Bow</Provides>
-                <vsHigher>1</vsHigher>
-            </GameModifier>		
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <BoolVal1>1</BoolVal1>
+        <StrVal>UnitStat_Attack_Pierce</StrVal>
+        <StrVal2>UnitStat_IsBow</StrVal2>
+        <Value>1</Value>
+        <BonusValue>0.5</BonusValue>
+        <Provides>Additional +1 Attack when using a Bow</Provides>
+        <vsHigher>1</vsHigher>
+      </GameModifier>
       <GameModifier>
         <ModType>Unit</ModType>
         <Attribute>AdjustUnitStat</Attribute>
         <StrVal>UnitStat_Attack_Boost</StrVal>
-        <StrVal2>UnitStat_BG_IsUsingMount</StrVal2>
         <Value>1</Value>
-        <Provides>+1 Attack vs unmounted opponents</Provides>
-        <vsLower>1</vsLower>
+        <Provides>+1 Attack</Provides>
       </GameModifier>			
         <CutSceneDataPack>DragonMountCutScenePack</CutSceneDataPack>
         <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
@@ -398,25 +394,23 @@
                 <StrVal>DeadlyBite</StrVal>
                 <Provides>A devastating bite that strikes for three times the unit's Attack</Provides>
             </GameModifier>
-            <GameModifier>
-                <ModType>Unit</ModType>
-                <Attribute>AdjustUnitStat</Attribute>
-                <BoolVal1>1</BoolVal1>
-                <StrVal>UnitStat_Attack_Pierce</StrVal>
-                <StrVal2>UnitStat_IsBow</StrVal2>
-                <Value>3</Value>
-                <BonusValue>0.5</BonusValue>
-                <Provides>+3 Attack when using a Bow</Provides>
-                <vsHigher>1</vsHigher>
-            </GameModifier>	
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <BoolVal1>1</BoolVal1>
+        <StrVal>UnitStat_Attack_Pierce</StrVal>
+        <StrVal2>UnitStat_IsBow</StrVal2>
+        <Value>1</Value>
+        <BonusValue>0.5</BonusValue>
+        <Provides>Additional +1 Attack when using a Bow</Provides>
+        <vsHigher>1</vsHigher>
+      </GameModifier>
       <GameModifier>
         <ModType>Unit</ModType>
         <Attribute>AdjustUnitStat</Attribute>
         <StrVal>UnitStat_Attack_Boost</StrVal>
-        <StrVal2>UnitStat_BG_IsUsingMount</StrVal2>
         <Value>1</Value>
-        <Provides>+1 Attack vs unmounted opponents</Provides>
-        <vsLower>1</vsLower>
+        <Provides>+1 Attack</Provides>
       </GameModifier>			
         <CutSceneDataPack>WargMountCutScenePack</CutSceneDataPack>
         <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
@@ -480,9 +474,9 @@
                 <BoolVal1>1</BoolVal1>
                 <StrVal>UnitStat_Attack_Pierce</StrVal>
                 <StrVal2>UnitStat_IsBow</StrVal2>
-                <Value>3</Value>
+                <Value>1</Value>
                 <BonusValue>0.5</BonusValue>
-                <Provides>+3 Attack when using a Bow</Provides>
+                <Provides>+1 Attack when using a Bow</Provides>
                 <vsHigher>1</vsHigher>
             </GameModifier>			
         <CutSceneDataPack>SpiderMountCutScenePack</CutSceneDataPack>
@@ -558,25 +552,23 @@
                 <StrVal>UnitStat_MaxCounterAttack</StrVal>
                 <Value>1</Value>
             </GameModifier>
-            <GameModifier>
-                <ModType>Unit</ModType>
-                <Attribute>AdjustUnitStat</Attribute>
-                <BoolVal1>1</BoolVal1>
-                <StrVal>UnitStat_Attack_Pierce</StrVal>
-                <StrVal2>UnitStat_IsBow</StrVal2>
-                <Value>3</Value>
-                <BonusValue>0.5</BonusValue>
-                <Provides>+3 Attack when using a Bow</Provides>
-                <vsHigher>1</vsHigher>
-            </GameModifier>	
+      <GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <BoolVal1>1</BoolVal1>
+        <StrVal>UnitStat_Attack_Pierce</StrVal>
+        <StrVal2>UnitStat_IsBow</StrVal2>
+        <Value>1</Value>
+        <BonusValue>0.5</BonusValue>
+        <Provides>Additional +1 Attack when using a Bow</Provides>
+        <vsHigher>1</vsHigher>
+      </GameModifier>
       <GameModifier>
         <ModType>Unit</ModType>
         <Attribute>AdjustUnitStat</Attribute>
         <StrVal>UnitStat_Attack_Boost</StrVal>
-        <StrVal2>UnitStat_BG_IsUsingMount</StrVal2>
         <Value>1</Value>
-        <Provides>+1 Attack vs unmounted opponents</Provides>
-        <vsLower>1</vsLower>
+        <Provides>+1 Attack</Provides>
       </GameModifier>			
         <CutSceneDataPack>WargMountCutScenePack</CutSceneDataPack>
         <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>

@@ -1070,16 +1070,16 @@
             <GameModifier>
                 <ModType>Unit</ModType>
                 <Attribute>UnlockCombatAbility</Attribute>
-                <StrVal>Assassinate</StrVal>
-                <Provides>Unlocks assassinate: attack weakened champions to permanently kill them.</Provides>
+                <StrVal>SeveringCut</StrVal>
+                <Provides>Unlocks Severing Cut: strike a champion or sovereign to subject them to permanent death.</Provides>
             </GameModifier>
-            <GameModifier>
+            <!--<GameModifier>
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
                 <StrVal>UnitStat_MarkOfRegicide</StrVal>
                 <Value>1</Value>
                 <Provides>This unit can be targeted by Mark Of Regicide</Provides>
-            </GameModifier>
+            </GameModifier>-->
         </AbilityBonusOption>
     </AbilityBonus>
 

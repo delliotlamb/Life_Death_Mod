@@ -4876,6 +4876,7 @@
         <HitSoundFX>Spell_TrueStrike_01</HitSoundFX>
     </SpellDef>
 
+	<!-- turns off vanilla falling star
 	<SpellDef InternalName="FallingStar">
         <DisplayName>Falling Star</DisplayName>
         <Description>This spell cannot be entirely recovered from incomplete tomes.</Description>
@@ -4897,10 +4898,6 @@
             <Attribute>UnitStat_NeverGonnaHappen</Attribute>
             <Value>1</Value>
         </Prereq>
-        <!--<SpellResourceCost>
-            <Resource>Mana</Resource>
-            <Amount>100</Amount>
-        </SpellResourceCost>-->
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>DefendableDamage</Attribute>
@@ -4943,7 +4940,7 @@
             <SnapToTerrain>1</SnapToTerrain>
             <PlayOnAllTargets>1</PlayOnAllTargets>
         </SpellDefEffect>
-    </SpellDef>
+    </SpellDef>-->
 
 	<SpellDef InternalName="ConsumingFlame">
         <DisplayName>Consuming Flame</DisplayName>
