@@ -2099,7 +2099,7 @@
     </SpellDef>
 
 	<SpellDef InternalName="ArcaneArmorersWrit2_Ability">
-        <DisplayName>Writ Of Transcendent Platemail</DisplayName>
+        <DisplayName>Forge Transcendent Platemail</DisplayName>
         <Description>Craft a Transcendent Plate Armor set. Transcendent plate focuses on increasing the owner's defense and survivability to superhuman levels.</Description>
         <Image>Fallen_Medallion.png</Image>
         <IconFG>Armor_F_ImpenetrablePlateCuirass.png</IconFG>
@@ -2169,7 +2169,7 @@
     </SpellDef>
 
 	<SpellDef InternalName="ArcaneArmorersWrit3_Ability">
-        <DisplayName>Writ Of Transcendent Chainmail</DisplayName>
+        <DisplayName>Forge Transcendent Chainmail</DisplayName>
         <Description>Craft a Transcendent Chainmail Armor set. Transcendent chain armor is enchanted to augment the performance of the owner as much as protect them.</Description>
         <Image>Fallen_Medallion.png</Image>
         <IconFG>Armor_F_OphidianScaleShirt.png</IconFG>
@@ -2238,8 +2238,8 @@
         </AIData>
     </SpellDef>
 
-	<SpellDef InternalName="ArcaneWeaponsmith_Sword_Ability">
-        <DisplayName>Writ Of Transcendent Swordcraft</DisplayName>
+	<SpellDef InternalName="ArcaneWeaponsmith_TerrorSword_Ability">
+        <DisplayName>Forge Terror Blade</DisplayName>
         <Description>Craft a Transcendent Sword.</Description>
         <Image>Refined_Attack.png</Image>
         <IconFG>W_Longsword_Heartseeker_Icon_01.png</IconFG>
@@ -2288,7 +2288,7 @@
         </AIData>
     </SpellDef>
 
-		<SpellDef InternalName="ArcaneWeaponsmith_Axe_Ability">
+    <SpellDef InternalName="ArcaneWeaponsmith_Axe_Ability">
         <DisplayName>Writ Of Transcendent Axecraft</DisplayName>
         <Description>Craft a Transcendent Axe.</Description>
         <Image>Refined_Attack.png</Image>

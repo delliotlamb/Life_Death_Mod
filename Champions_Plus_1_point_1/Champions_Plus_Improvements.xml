@@ -503,13 +503,25 @@
             <Value>1</Value>
             <Provides>Can order Champion's Armor, summoning items like a spell</Provides>
         </GameModifier>
-        <GameModifier>
+        <!--<GameModifier>
             <ModType>City</ModType>
             <Attribute>AdjustDefendingUnit</Attribute>
             <StrVal>UnitStat_IsAtArcaneArmorer_Tran</StrVal>
             <Value>1</Value>
             <Provides>A sovereign can order Transcendent Armor, once per game</Provides>
-        </GameModifier>		
+        </GameModifier>-->
+                <GameModifier>
+                    <ModType>Player</ModType>
+                    <Attribute>UnlockSpell</Attribute>
+                    <StrVal>ArcaneArmorersWrit2_Ability</StrVal>
+		     <Provides>Can Forge Transcendent Plate Mail (Only When Present At Forge Of The Overlord)</Provides>
+                </GameModifier>	
+                <GameModifier>
+                    <ModType>Player</ModType>
+                    <Attribute>UnlockSpell</Attribute>
+                    <StrVal>ArcaneArmorersWrit3_Ability</StrVal>
+		     <Provides>Can Forge Transcendent Chain Mail (Only When Present At Forge Of The Overlord)</Provides>
+                </GameModifier>		
         <GameModifier>
             <ModType>City</ModType>
             <Attribute>AdjustDefendingUnit</Attribute>
@@ -555,16 +567,46 @@
             <Value>1</Value>
             <Provides>Champions can order a set of magic weapons when present, summoning the items like a spell</Provides>
         </GameModifier>
-        <GameModifier>
+        <!--<GameModifier>
             <ModType>City</ModType>
             <Attribute>AdjustDefendingUnit</Attribute>
             <StrVal>UnitStat_IsAtArcaneWeaponsmith_Tran</StrVal>
             <Value>1</Value>
             <Provides>A Sovereign can order Transcendent Magic Weapons, once per game</Provides>
-        </GameModifier>		
-        <GameModifier>
+        </GameModifier>-->
+                <GameModifier>
+                    <ModType>Player</ModType>
+                    <Attribute>UnlockSpell</Attribute>
+                    <StrVal>ArcaneWeaponsmith_TerrorSword_Ability</StrVal>
+		    <Provides>Can Forge Terror Blade (Only When Present At Forge Of The Overlord)</Provides>
+                </GameModifier>
+                <GameModifier>
+                    <ModType>Player</ModType>
+                    <Attribute>UnlockSpell</Attribute>
+                    <StrVal>ArcaneWeaponsmith_Axe_Ability</StrVal>
+		    <Provides>Can Forge Transcendent Axe (Only When Present At Forge Of The Overlord)</Provides>
+                </GameModifier>	
+                <GameModifier>
+                    <ModType>Player</ModType>
+                    <Attribute>UnlockSpell</Attribute>
+                    <StrVal>ArcaneWeaponsmith_Mace_Ability</StrVal>
+		    <Provides>Can Forge Transcendent Maul (Only When Present At Forge Of The Overlord)</Provides>
+                </GameModifier>	
+                <GameModifier>
+                    <ModType>Player</ModType>
+                    <Attribute>UnlockSpell</Attribute>
+                    <StrVal>ArcaneWeaponsmith_Bow_Ability</StrVal>
+		    <Provides>Can Forge Transcendent Bow (Only When Present At Forge Of The Overlord)</Provides>
+                </GameModifier>	
+                <GameModifier>
+                    <ModType>Player</ModType>
+                    <Attribute>UnlockSpell</Attribute>
+                    <StrVal>ArcaneWeaponsmith_Lance_Ability</StrVal>
+		    <Provides>Can Forge Transcendent Spear (Only When Present At Forge Of The Overlord)</Provides>
+                </GameModifier>			
+        <!--<GameModifier>
             <Provides>Unlocks new weapons in the shop</Provides>
-        </GameModifier>		
+        </GameModifier>-->	
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
             <AITag>Study</AITag>
@@ -1398,6 +1440,8 @@
         </GameModifier>			
     </ImprovementType>
 
+     <!--
+
      <ImprovementType InternalName="TowerOfMagic1">
         <GameModifier>
             <ModType>ConstructionResourceCost</ModType>
@@ -1436,12 +1480,19 @@
             <Value>-50</Value>
         </GameModifier> 
     </ImprovementType>
+
+     -->
 	
     <ImprovementType InternalName="TowerOfMagic4">
-        <Prereq>
+        <!--
+	<Prereq>
             <Type>Tech</Type>
             <Attribute>Arcane_Weapons</Attribute>
         </Prereq>
+	<GameModifier>
+            <Provides>Requires both Book Of Mastery AND Arcane Weaponry Techs to build</Provides>
+        </GameModifier>
+	-->
 	<GameModifier>
             <ModType>City</ModType>
             <Attribute>AdjustDefendingUnit</Attribute>
@@ -1449,30 +1500,24 @@
             <Value>1</Value>
             <Provides>Allows the player to craft transcendant weapons and armor, when present at the Forge (armor requires arcane armor tech)</Provides>
         </GameModifier>
-	<GameModifier>
-            <ModType>City</ModType>
-            <Attribute>AdjustDefendingUnit</Attribute>
-            <StrVal>UnitStat_IsAtForgeOverlord</StrVal>
-            <Value>1</Value>
-            <Provides>Requires both Book Of Mastery AND Arcane Weaponry Techs to build</Provides>
-        </GameModifier>
+
         <GameModifier>
             <ModType>ConstructionResourceCost</ModType>
             <Attribute>Metal</Attribute>
             <Value>-100</Value>
-	    <Provides>Total Metal cost of 150</Provides>
+	    <Provides>TOTAL METAL COST: 150</Provides>
         </GameModifier>
         <GameModifier>
             <ModType>ConstructionResourceCost</ModType>
             <Attribute>RefinedCrystal</Attribute>
             <Value>-50</Value>
-	    <Provides>Total Crystal cost of 10</Provides>
+	    <Provides>TOTAL METAL COST: 100</Provides>
         </GameModifier>
         <GameModifier>
             <ModType>ConstructionResourceCost</ModType>
             <Attribute>Gold</Attribute>
             <Value>-100</Value>
-	    <Provides>Total Gold cost of 150</Provides>
+	    <Provides>TOTAL GOLD COST: 150</Provides>
         </GameModifier>
     </ImprovementType>
     

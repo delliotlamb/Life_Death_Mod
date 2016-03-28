@@ -281,7 +281,7 @@
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_ResistFire</StrVal>
-            <Value>50</Value>
+            <Value>66</Value>
         </GameModifier>				
         <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
         <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
@@ -382,12 +382,6 @@
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_CombatSpeed</StrVal>
-            <Value>-1</Value>
-        </GameModifier>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_Defense_Pierce</StrVal>
             <Value>8</Value>
         </GameModifier>
@@ -395,7 +389,7 @@
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_ResistLightning</StrVal>
-            <Value>50</Value>
+            <Value>66</Value>
         </GameModifier>		
         <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
         <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
@@ -420,13 +414,7 @@
         <CanBeEquipped>1</CanBeEquipped>
         <AdditionalTrainingTurns>12</AdditionalTrainingTurns>
         <HideInHiergamenon>1</HideInHiergamenon>
-        <ShopValue>600</ShopValue>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_CombatSpeed</StrVal>
-            <Value>-1</Value>
-        </GameModifier>		
+        <ShopValue>600</ShopValue>		
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
@@ -437,7 +425,7 @@
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_ResistCold</StrVal>
-            <Value>50</Value>
+            <Value>66</Value>
         </GameModifier>		
         <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
         <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
@@ -546,7 +534,7 @@
 	
 	<GameItemType InternalName="PlateBreastpiece_Impenetrable3">
         <DisplayName>Transcendent Plate Cuirass</DisplayName>
-        <Description>A master armorer's lifetime achievement. The wearer has unnatural ability to endure harm.</Description>
+        <Description>A master armorer's lifetime achievement. No one may harm the wearer without suffering the full brunt of their very own wrath.</Description>
         <Type>Torso</Type>
         <Type>Surcoat</Type>
         <CanBeEquipped>1</CanBeEquipped>
@@ -555,7 +543,7 @@
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_CombatSpeed</StrVal>
-            <Value>-2</Value>
+            <Value>-1</Value>
         </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
@@ -563,13 +551,12 @@
             <StrVal>UnitStat_Defense_Pierce</StrVal>
             <Value>17</Value>
         </GameModifier>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_HitPoints</StrVal>
-            <Value>40</Value>
-            <Provides>+40 Hit Points</Provides>
-        </GameModifier>			
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_DamageReflect</StrVal>
+                <Value>1</Value>
+            </GameModifier>			
         <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
         <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
         <Likelihood>-1</Likelihood>
@@ -588,7 +575,7 @@
 	
 	<GameItemType InternalName="TowerShield_Impenetrable2">
         <DisplayName>Transcendent Tower Shield</DisplayName>
-        <Description>A master armorer's lifetime achievement. Heat is pushed away from it like shadow from sunlight.</Description>
+        <Description>A master armorer's lifetime achievement. It prevents enemies from overwhelming its bearer, muddling their attempts to concentrate force.</Description>
         <Type>Defense</Type>
         <WeaponType>Shield</WeaponType>
         <CanBeEquipped>1</CanBeEquipped>
@@ -665,7 +652,7 @@
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_MagicResist</StrVal>
-            <Value>50</Value>
+            <Value>75</Value>
         </GameModifier>		
         <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
         <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
@@ -996,7 +983,13 @@
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_Attack_Pierce</StrVal>
-            <Value>35</Value>
+            <Value>30</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_ArcaneShadow</StrVal>
+            <Value>15</Value>
         </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
@@ -1098,7 +1091,7 @@
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_Attack_Pierce</StrVal>
-            <Value>35</Value>
+            <Value>45</Value>
         </GameModifier>
             <GameModifier>
                 <ModType>Unit</ModType>
@@ -1153,7 +1146,7 @@
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_Attack_Pierce</StrVal>
-            <Value>34</Value>
+            <Value>45</Value>
         </GameModifier>
             <GameModifier>
                 <ModType>Unit</ModType>
@@ -1193,13 +1186,13 @@
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_Attack_Pierce</StrVal>
-            <Value>60</Value>
+            <Value>90</Value>
         </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_CombatSpeed</StrVal>
-            <Value>-6</Value>
+            <Value>-4</Value>
         </GameModifier>		
             <GameModifier>
                 <ModType>Unit</ModType>
@@ -1212,7 +1205,7 @@
                 <ModType>Unit</ModType>
                 <Attribute>UnlockCombatAbility</Attribute>
                 <StrVal>CrushingBlow</StrVal>
-                <Provides>Crushing Blow- +100% Attack, but you lose your next action</Provides>
+                <Provides>Crushing Blow- +50% Attack, but you lose your next action</Provides>
             </GameModifier>
         <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
         <Likelihood>-1</Likelihood>
@@ -1228,7 +1221,7 @@
 	
 	<GameItemType InternalName="Greataxe_Pendulum2">
         <DisplayName>Centrifuge Axe</DisplayName>
-        <Description>Even a child could halve an ox with this axe, whose swing is augmented by magic. Take care which warrior is allowed its use.</Description>
+        <Description>Even a child could halve an ox with this axe, whose swing is augmented by magic to be inexplicably mighty. Take care which warrior is allowed its use.</Description>
         <Type>Weapon</Type>
         <Type>Defense</Type>
         <WeaponType>TwoHanded</WeaponType>
@@ -1245,7 +1238,7 @@
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_CombatSpeed</StrVal>
-            <Value>-4</Value>
+            <Value>-1</Value>
         </GameModifier>
             <GameModifier>
                 <ModType>Unit</ModType>
@@ -2112,7 +2105,7 @@
 	
 		<GameItemType InternalName="ChainBoots_Transcendent">
         <DisplayName>Transcendent Chain Boots</DisplayName>
-        <Description>Despite the significant weight of these metal boots, its wearer will glide like a gymnast across the batlefield.</Description>
+        <Description>Despite the significant weight of these metal boots, its wearer will glide like a gymnast across the battlefield.</Description>
         <Type>Boots</Type>
         <CanBeEquipped>1</CanBeEquipped>
         <HideInHiergamenon>1</HideInHiergamenon>
@@ -2156,12 +2149,6 @@
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_CombatSpeed</StrVal>
-            <Value>-1</Value>
-        </GameModifier>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_Defense_Pierce</StrVal>
             <Value>10</Value>
         </GameModifier>
@@ -2169,8 +2156,8 @@
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_SpellDamage</StrVal>
-            <Value>20</Value>
-            <Provides>+20% Spell Damage</Provides>
+            <Value>30</Value>
+            <Provides>+30% Spell Damage</Provides>
         </GameModifier>
         <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
 		<IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
@@ -2196,11 +2183,6 @@
         <HideInHiergamenon>1</HideInHiergamenon>
         <ShopValue>400</ShopValue>
         <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_CombatSpeed</StrVal>
-            <Value>-1</Value>
-        </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
@@ -2211,7 +2193,7 @@
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_ExpBonus</StrVal>
-            <Value>30</Value>
+            <Value>50</Value>
         </GameModifier>	
         <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
 		<IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
@@ -2309,8 +2291,8 @@
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
                 <StrVal>UnitStat_MagicPower</StrVal>
-                <Value>20</Value>
-                <Provides>+20 Spell Mastery</Provides>
+                <Value>25</Value>
+                <Provides>+25 Spell Mastery</Provides>
             </GameModifier>		
         <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
 		<IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
@@ -2345,8 +2327,8 @@
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
                 <StrVal>UnitStat_Attack_Pierce</StrVal>
-                <Multiplier>1.2</Multiplier>
-                <Provides>+20% Attack</Provides>
+                <Multiplier>1.3</Multiplier>
+                <Provides>+30% Attack</Provides>
             </GameModifier>			
         <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
 		<IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
@@ -2393,9 +2375,9 @@
             <GameModifier>
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
-                <StrVal>UnitStat_TacticalHealthRegen</StrVal>
-				<Provides>+2 Tactical Health Regeneration</Provides>
-                <Value>2</Value>
+                <StrVal>UnitStat_MagicResist</StrVal>
+		<Provides>+30 Spell Resist</Provides>
+                <Value>30</Value>
             </GameModifier>	
         <GameModifier>
             <ModType>Unit</ModType>
