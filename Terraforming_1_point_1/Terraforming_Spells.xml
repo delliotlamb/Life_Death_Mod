@@ -2486,7 +2486,7 @@
         <Image>Great_Blaze_Painting.png</Image>
         <IconFG>Great_Blaze.png</IconFG>
 		<AutoUnlock>1</AutoUnlock>
-		<Cooldown>1</Cooldown>
+		<Cooldown>10</Cooldown>
 		<CanStack>1</CanStack>
         <SpellBookSortCategory>City</SpellBookSortCategory>
         <SpellBookSortSubCategory>CityCurse</SpellBookSortSubCategory>
@@ -2528,7 +2528,7 @@
             <ModType>City</ModType>
             <Attribute>AdjustDefendingUnit</Attribute>
             <StrVal>UnitStat_MagicResist</StrVal>
-			<Duration>1</Duration>
+	    <Duration>1</Duration>
             <Value>-5</Value>
         </GameModifier>			
         <GameModifier>
@@ -2544,7 +2544,7 @@
             <Value>20</Value>
         </GameModifier>			
         <AIData AIPersonality="AI_General">
-            <AIPriority>100</AIPriority>
+            <AIPriority>300</AIPriority>
         </AIData>
         <HitSoundFX>Spell_RainofFire_03</HitSoundFX>
         <SpellDefEffect>
@@ -2561,7 +2561,8 @@
         <Description>Attack an enemy army on Burning Lands with an all-consuming blaze for 15 Fire damage (+3 per fire shard).</Description>
         <Image>Great_Blaze_Painting.png</Image>
         <IconFG>Hungering_Fire.png</IconFG>
-		<AutoUnlock>1</AutoUnlock>		
+		<AutoUnlock>1</AutoUnlock>
+	<Cooldown>10</Cooldown>		
         <SpellBookSortCategory>Unit</SpellBookSortCategory>
         <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -4220,7 +4221,7 @@
         <Image>S_Earthquake_Painting.png</Image>
         <IconFG>S_Earthquake_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
-        <Cooldown>1</Cooldown>
+        <Cooldown>10</Cooldown>
 		<CanStack>1</CanStack>
         <SpellBookSortCategory>City</SpellBookSortCategory>
         <SpellBookSortSubCategory>CityCurse</SpellBookSortSubCategory>
@@ -4266,7 +4267,7 @@
             <Value>-2</Value>
         </GameModifier>		
         <AIData AIPersonality="AI_General">
-            <AIPriority>100</AIPriority>
+            <AIPriority>300</AIPriority>
         </AIData>
         <CameraShakeDuration>2.25</CameraShakeDuration>
         <CameraShakeStrength>0.25</CameraShakeStrength>
@@ -4405,6 +4406,7 @@
         <Image>Artifact_ToppledWalls1.png</Image>
         <IconFG>S_Blight_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
+	<Cooldown>10</Cooldown>
         <SpellBookSortCategory>City</SpellBookSortCategory>
         <SpellBookSortSubCategory>CityCurse</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -4461,7 +4463,7 @@
                 <Value>15</Value>
             </GameModifier>
         <AIData AIPersonality="AI_General">
-            <AIPriority>100</AIPriority>
+            <AIPriority>300</AIPriority>
         </AIData>
         <HitSoundFX>Spell_Wither_01</HitSoundFX>
         <SpellDefEffect>
