@@ -556,6 +556,25 @@
             </AIData>
         </AbilityBonusOption>
     </AbilityBonus>
+
+    <AbilityBonus InternalName="UnmovingAbility">
+        <AbilityBonusOption InternalName="Unmoving">
+            <DisplayName>Unmoving</DisplayName>
+            <Description>Unmoving</Description>
+            <Icon>Ability_EternalGuard_Icon.png</Icon>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>Immobilize</Attribute>
+            <Duration>-1</Duration>
+        </GameModifier>
+            <CombatRating>5</CombatRating>
+            <IsCombatAbility>1</IsCombatAbility>
+            <Type>Defensive</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
 	
 	
 	</AbilityBonuses>

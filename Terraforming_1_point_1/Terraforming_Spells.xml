@@ -5867,13 +5867,12 @@
         <HitSoundFX>IceElemental_Death</HitSoundFX>
     </SpellDef>
 	
-<!--
-		<SpellDef InternalName="FallingStar2">
+     <SpellDef InternalName="FallingStar2">
         <DisplayName>Meteor Strike</DisplayName>
         <Description>Does 12 fire damage (+2 per fire shard) and 12 physical damage (+2 per Air shard), per unit member, to all armies within 1 tile of the impact point. You will gain significant Ember and Famine favor, while equally losing Verdant favor. BEWARE - this spell will leave scarred earth behind, wiping out resources or even cities.</Description>
         <Image>S_FallingStar_Painting.png</Image>
         <IconFG>S_FallingStar_Icon.png</IconFG>
-        <Cooldown>3</Cooldown>
+        <Cooldown>10</Cooldown>
         <SpellBookSortCategory>Unit</SpellBookSortCategory>
         <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -5925,8 +5924,8 @@
         <GameModifier>
             <ModType>Map</ModType>
             <Attribute>PlaceTerrain</Attribute>
-            <!--<TerrainType>BurningLands</TerrainType>-->
-			<TerrainType>Fertile_Land</TerrainType>
+            <TerrainType>BurningLands</TerrainType>
+	     <!--<TerrainType>Fertile_Land</TerrainType>-->
         </GameModifier>
         <GameModifier>
             <ModType>Map</ModType>
@@ -5942,7 +5941,7 @@
             <GameModifier>
                 <ModType>Resource</ModType>
                 <Attribute>FamineEssence</Attribute>
-				<ApplyToCaster>1</ApplyToCaster>
+		<ApplyToCaster>1</ApplyToCaster>
                 <Value>20</Value>
             </GameModifier>			
             <GameModifier>
@@ -5969,7 +5968,7 @@
             <SnapToTerrain>1</SnapToTerrain>
             <PlayOnAllTargets>1</PlayOnAllTargets>
         </SpellDefEffect>
-    </SpellDef>-->
+    </SpellDef>
 	
 	<!-- 1 shard spells -->
 	

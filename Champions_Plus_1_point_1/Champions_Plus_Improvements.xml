@@ -18,7 +18,7 @@
         <GameModifier>
             <ModType>ConstructionResourceCost</ModType>
             <Attribute>Metal</Attribute>
-            <Value>-50</Value>
+            <Value>-20</Value>
         </GameModifier>
         <GameModifier>
             <ModType>ConstructionResourceCost</ModType>
@@ -28,6 +28,14 @@
         <GameModifier>
             <ModType>City</ModType>
             <Attribute>ProtectFromSpells</Attribute>
+	    <Provides>City is protected from city-targeting spells and most unit-damaging spells</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>LimitedUnitCap</Attribute>
+            <StrVal>ArcanaWardGuardian</StrVal>
+            <Value>1</Value>
+            <Provides>Recruit an Arcana Ward Guardian in this city</Provides>
         </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>1000</AIPriority>

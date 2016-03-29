@@ -56,7 +56,7 @@
         </GameModifier>			
     </TechDef>
 	
-	<!--<TechDef InternalName="Third_Book_Of_The_Magi">
+	<TechDef InternalName="Third_Book_Of_The_Magi">
         <GameModifier>
             <ModType>Player</ModType>
             <Attribute>UnlockSpell</Attribute>
@@ -64,7 +64,7 @@
             <Icon>S_FallingStar_Icon.png</Icon>
             <Provides>Spell: Meteor Strike, more powerful variation of Falling Star</Provides>
         </GameModifier>		
-    </TechDef>-->
+    </TechDef>
 		
 	<!--<TechDef InternalName="Book_Of_Mastery">
 	    <GameModifier>
@@ -76,22 +76,6 @@
         </GameModifier>
     </TechDef>-->
 
-    <TechDef InternalName="Arcane_Armor">
-        <GameModifier>
-            <ModType>Player</ModType>
-            <Attribute>UnlockSpell</Attribute>
-            <StrVal>ArcaneArmorersWrit2_Ability</StrVal>
-            <Icon>Armor_F_ImpenetrablePlateCuirass.png</Icon>
-            <Provides>Spell: Transcendent Platemail</Provides>
-        </GameModifier>
-        <GameModifier>
-            <ModType>Player</ModType>
-            <Attribute>UnlockSpell</Attribute>
-            <StrVal>ArcaneArmorersWrit3_Ability</StrVal>
-            <Icon>Armor_F_OphidianScaleShirt.png</Icon>
-            <Provides>Spell: Transcendent Chainmail</Provides>
-        </GameModifier>
-    </TechDef>
 
  <TechDef InternalName="Refined_Training">
         <GameModifier>

@@ -4876,7 +4876,7 @@
         <HitSoundFX>Spell_TrueStrike_01</HitSoundFX>
     </SpellDef>
 
-	<!-- turns off vanilla falling star
+	<!-- turns off vanilla falling star-->
 	<SpellDef InternalName="FallingStar">
         <DisplayName>Falling Star</DisplayName>
         <Description>This spell cannot be entirely recovered from incomplete tomes.</Description>
@@ -4940,7 +4940,7 @@
             <SnapToTerrain>1</SnapToTerrain>
             <PlayOnAllTargets>1</PlayOnAllTargets>
         </SpellDefEffect>
-    </SpellDef>-->
+    </SpellDef>
 
 	<SpellDef InternalName="ConsumingFlame">
         <DisplayName>Consuming Flame</DisplayName>
@@ -5231,5 +5231,6 @@
             <AIPriority>5</AIPriority>
         </AIData>
     </SpellDef>
+
 
 </Spells>
