@@ -747,7 +747,6 @@
 	    <SpellDef InternalName="Shockwave">
         <DisplayName>Shockwave</DisplayName>
         <Description>A minor earthquake damages all enemies within 1 radius of the caster for 10 (+1 per earth shard) damage, per member. All targets are knocked down, unless they resist.</Description>
-        <FormattedDescription>A minor earthquake damages all enemies within 1 radius of the caster for %d damage. All targets are knocked down, unless they resist.</FormattedDescription>
         <Image>T_Shockwave_Painting.png</Image>
         <IconFG>T_Shockwave_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -5231,6 +5230,5 @@
             <AIPriority>5</AIPriority>
         </AIData>
     </SpellDef>
-
 
 </Spells>
