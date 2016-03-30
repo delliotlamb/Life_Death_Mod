@@ -747,7 +747,6 @@
 	    <SpellDef InternalName="Shockwave">
         <DisplayName>Shockwave</DisplayName>
         <Description>A minor earthquake damages all enemies within 1 radius of the caster for 10 (+1 per earth shard) damage, per member. All targets are knocked down, unless they resist.</Description>
-        <FormattedDescription>A minor earthquake damages all enemies within 1 radius of the caster for %d damage. All targets are knocked down, unless they resist.</FormattedDescription>
         <Image>T_Shockwave_Painting.png</Image>
         <IconFG>T_Shockwave_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -5205,6 +5204,86 @@
         <AIData AIPersonality="AI_General">
             <AIPriority>5</AIPriority>
         </AIData>
+    </SpellDef>
+	
+	    <SpellDef InternalName="Shockwave_Effect">
+        <DisplayName>Shockwave Effect</DisplayName>
+        <Description>A minor earthquake damages all enemies within 1 radius of the caster for 10 (+2 per earth shard) damage.</Description>
+        <Image>T_Shockwave_Painting.png</Image>
+        <IconFG>T_Shockwave_Icon.png</IconFG>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+        <IgnoreInvalidTargetsInRadius>1</IgnoreInvalidTargetsInRadius>
+        <IsResistable>1</IsResistable>
+        <Radius>1</Radius>
+        <Range>0</Range>
+        <GameModifier>
+            <ModType>TacticalUnit</ModType>
+            <Attribute>TargetKnockedProne</Attribute>
+            <Duration>1</Duration>
+        </GameModifier>		
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Pierce</AttackStat>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumEarthShards]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc2">
+                <Expression><![CDATA[[Calc] + 10]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc3" ValueOwner="TargetUnit">
+                <Expression><![CDATA[[Unit_GetTroopCount]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc2] * [Calc3]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Pierce</AttackStat>
+            <IsForSpellResist>1</IsForSpellResist>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumEarthShards] / 2]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc2">
+                <Expression><![CDATA[[Calc] + 5]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc3" ValueOwner="TargetUnit">
+                <Expression><![CDATA[[Unit_GetTroopCount]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc2] * [Calc3]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>80</AIPriority>
+            <AIMinSpellTargets>2</AIMinSpellTargets>
+        </AIData>
+        <CameraShakeDuration>1.25</CameraShakeDuration>
+        <CameraShakeStrength>0.25</CameraShakeStrength>
+        <HitSoundFX>Spell_Shockwave_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>T_Shockwave_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+            <PlayOnAllTargets>0</PlayOnAllTargets>
+        </SpellDefEffect>
+        <SpellDefEffect>
+            <EffectName>T_Shockwave_Impact_Particle</EffectName>
+            <LocalPosition>0,50,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>0.25</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+            <PlayOnAllTargets>1</PlayOnAllTargets>
+        </SpellDefEffect>
     </SpellDef>
 	
 </Spells>
