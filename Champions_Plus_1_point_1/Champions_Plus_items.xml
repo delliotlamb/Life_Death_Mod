@@ -2858,5 +2858,274 @@
             </GameItemTypeModelPack>
         </GameItemTypeArtDef>
     </GameItemType>
+
+<GameItemType InternalName="TelekineticLattice">
+        <DisplayName>Telekinetic Lattice</DisplayName>
+        <Description>A concentration of arcane energies meant to awaken abilities in its owner.</Description>
+        <Type>Accessory</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>300</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnlockCombatAbility</Attribute>
+            <StrVal>Push_Ability</StrVal>
+            <Provides>Allows the unit to cast Push (knock enemy back and do 25% of spell mastery as damage, barring a resist they are also knocked prone).</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>20</Likelihood>
+        <RarityDisplay>Rare</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <IsUsable>0</IsUsable>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>10</AIPriority>
+            </AIData>
+        <ArtDef>TelekineticLattice_ArtDef</ArtDef>
+        <GameItemTypeArtDef InternalName="TelekineticLattice_ArtDef">
+            <GameItemTypeModelPack InternalName="TelekineticLattice_Default">
+                <IconFile>DestinySliver_Item.png</IconFile>
+                <TintR>0</TintR>
+                <TintG>0</TintG>
+                <TintB>0</TintB>
+                <SFX>Equip_Cloak_01</SFX>
+                <SFX>Equip_Cloak_02</SFX>
+                <SFX>Equip_Cloak_03</SFX>
+                <SupportedUnitModelType>AmarianFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>AmarianMale</SupportedUnitModelType>
+                <SupportedUnitModelType>Banshee</SupportedUnitModelType>
+                <SupportedUnitModelType>DarklingMale</SupportedUnitModelType>
+                <SupportedUnitModelType>EmpireFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>EmpireMale</SupportedUnitModelType>
+                <SupportedUnitModelType>FallenFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>FallenMale</SupportedUnitModelType>
+                <SupportedUnitModelType>HenchmanMale</SupportedUnitModelType>
+                <SupportedUnitModelType>IroneerFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>IroneerMale</SupportedUnitModelType>
+                <SupportedUnitModelType>KingdomFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>KingdomMale</SupportedUnitModelType>
+                <SupportedUnitModelType>MancerFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>MancerMale</SupportedUnitModelType>
+                <SupportedUnitModelType>QuendarFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>QuendarMale</SupportedUnitModelType>
+                <SupportedUnitModelType>Skeleton</SupportedUnitModelType>
+                <SupportedUnitModelType>SlaveMale</SupportedUnitModelType>
+                <SupportedUnitModelType>TarthanFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>TarthanMale</SupportedUnitModelType>
+                <SupportedUnitModelType>UrxenFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>UrxenMale</SupportedUnitModelType>
+                <SupportedUnitModelType>WraithFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>WraithMale</SupportedUnitModelType>
+                <GameItemTypeModel>
+                    <ModelFile>Gfx\HKB\Clothes\F_Male_Cloak_Sion_Mesh_01.hkb</ModelFile>
+                    <Texture_All>Gfx\HKB\Clothes\K_Male_DarklingCloak_Texture_01.png</Texture_All>
+                    <AttachmentType>Skinned</AttachmentType>
+                </GameItemTypeModel>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+    </GameItemType>
+
+  <GameItemType InternalName="FlamebearersSignet">
+        <DisplayName>Flamebearer's Signet</DisplayName>
+        <Description>More than one has donned this ring, admired it, but tossed it aside as useless. Its value is in enchancement - those who already carry an echantment of flame with find that such magic is suddenly more potent in battle.</Description>
+        <Type>Accessory</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>250</ShopValue>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Fire</StrVal>
+                <Multiplier>1.33</Multiplier>
+                <Provides>+33% Fire Attack</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Rare</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <IsUsable>0</IsUsable>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>90</AIPriority>
+            </AIData>
+        <ArtDef>FlamebearersSignet_ArtDef</ArtDef>
+        <GameItemTypeArtDef InternalName="FlamebearersSignet_ArtDef">
+            <GameItemTypeModelPack InternalName="FlamebearersSignet_Default">
+                <IconFile>SignetRing_Item.png</IconFile>
+                <TintR>0</TintR>
+                <TintG>0</TintG>
+                <TintB>0</TintB>
+                <SFX>Equip_MagicRing_01</SFX>
+                <SFX>Equip_MagicRing_02</SFX>
+                <SFX>Equip_MagicRing_03</SFX>
+                <SFX>Equip_MagicRing_04</SFX>
+                <GameItemTypeModel>
+                </GameItemTypeModel>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+    </GameItemType>
+
+<GameItemType InternalName="CanineToken">
+        <DisplayName>Canine Token</DisplayName>
+        <Description>Holding this tiny charm bestows the wearer with enhanced reflexes.</Description>
+        <Type>Accessory</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>180</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Dodge</StrVal>
+            <Value>8</Value>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Rare</RarityDisplay>
+        <IsUsable>0</IsUsable>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>0</AIPriority>
+            </AIData>
+        <ArtDef>CanineToken_ArtDef</ArtDef>
+        <GameItemTypeArtDef InternalName="CanineToken_ArtDef">
+            <GameItemTypeModelPack InternalName="CanineToken_Default">
+                <IconFile>TokenoftheFriend_Item.png</IconFile>
+                <TintR>240</TintR>
+                <TintG>10</TintG>
+                <TintB>10</TintB>
+                <SFX>Equip_MagicRing_01</SFX>
+                <SFX>Equip_MagicRing_02</SFX>
+                <SFX>Equip_MagicRing_03</SFX>
+                <SFX>Equip_MagicRing_04</SFX>
+                <GameItemTypeModel>
+                </GameItemTypeModel>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+    </GameItemType>
+
+<GameItemType InternalName="SpectreRing">
+        <DisplayName>Spectre Ring</DisplayName>
+        <Description>This ring, more enchtantment now than matter, increases the wearer's awareness of hostile projectiles.</Description>
+        <Type>Accessory</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>275</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_DodgeAgainstRanged</StrVal>
+            <Value>25</Value>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Rare</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <IsUsable>0</IsUsable>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>65</AIPriority>
+            </AIData>
+        <ArtDef>SpectreRing_ArtDef</ArtDef>
+        <GameItemTypeArtDef InternalName="SpectreRing_ArtDef">
+            <GameItemTypeModelPack InternalName="SpectreRing_Default">
+                <IconFile>BandoftheStalwart_Item_BG.png</IconFile>
+                <TintR>0</TintR>
+                <TintG>0</TintG>
+                <TintB>0</TintB>
+                <SFX>Equip_MagicRing_01</SFX>
+                <SFX>Equip_MagicRing_02</SFX>
+                <SFX>Equip_MagicRing_03</SFX>
+                <SFX>Equip_MagicRing_04</SFX>
+                <GameItemTypeModel>
+                </GameItemTypeModel>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+    </GameItemType>
+
+<GameItemType InternalName="WarriorFang">
+        <DisplayName>Warrior Fang</DisplayName>
+        <Description>This glyph was not fashioned to resemble a tooth - it was made to increase the bearer's ferocity, and fittingly chose its own form.</Description>
+        <Type>Accessory</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>415</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Stamina_Starting</StrVal>
+            <Value>2</Value>
+            <Provides>+2 Starting Stamina</Provides>
+        </GameModifier>
+	    <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_BonusCleave</StrVal>
+                <Value>0.25</Value>
+                <Provides>+25% damage when using the Cleave ability</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_BonusImpale</StrVal>
+                <Value>0.25</Value>
+                <Provides>+25% damage when using the Impale ability</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_BonusCrushingBlow</StrVal>
+                <Value>0.25</Value>
+                <Provides>+25% Attack when using the Crushing Blow ability</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Rare</RarityDisplay>
+        <IsUsable>0</IsUsable>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>40</AIPriority>
+            </AIData>
+        <ArtDef>warriorFang_ArtDef</ArtDef>
+        <GameItemTypeArtDef InternalName="warriorFang_ArtDef">
+            <GameItemTypeModelPack InternalName="warriorFang_Default">
+                <IconFile>DrakeTooth.png</IconFile>
+                <TintR>0</TintR>
+                <TintG>0</TintG>
+                <TintB>0</TintB>
+                <SFX>Equip_MagicRing_01</SFX>
+                <SFX>Equip_MagicRing_02</SFX>
+                <SFX>Equip_MagicRing_03</SFX>
+                <SFX>Equip_MagicRing_04</SFX>
+                <GameItemTypeModel>
+                </GameItemTypeModel>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+    </GameItemType>
+
+ <GameItemType InternalName="GlyphOfJourneys">
+        <DisplayName>Glyph-charms Of Journeying</DisplayName>
+        <Description>This champion can equip armor one level higher than their abilities would otherwise allow.</Description>
+        <Type>Accessory</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>8</AdditionalTrainingTurns>
+        <ShopValue>295</ShopValue>
+                    <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ArmorProficiency</StrVal>
+                <Value>1</Value>
+                <Provides>Allows the unit to wear armor of one higher level(none allows chain, chain allows plate)</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Rare</RarityDisplay>
+        <IsUsable>0</IsUsable>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>80</AIPriority>
+            </AIData>
+        <ArtDef>TrollCharm_ArtDef</ArtDef>
+        <GameItemTypeArtDef InternalName="TrollCharm_ArtDef">
+            <GameItemTypeModelPack InternalName="TrollCharm_Default">
+                <IconFile>TrollCharm_Item.png</IconFile>
+                <TintR>240</TintR>
+                <TintG>10</TintG>
+                <TintB>10</TintB>
+                <SFX>Equip_MagicRing_01</SFX>
+                <SFX>Equip_MagicRing_02</SFX>
+                <SFX>Equip_MagicRing_03</SFX>
+                <SFX>Equip_MagicRing_04</SFX>
+                <GameItemTypeModel>
+                </GameItemTypeModel>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+    </GameItemType>
 	
 </GameItemTypes>
