@@ -2702,7 +2702,7 @@
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_ChanceToCrit</StrVal>
-            <Value>10</Value>
+            <Value>20</Value>
         </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
@@ -2721,8 +2721,8 @@
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
                 <StrVal>UnitStat_CritDamageMultiplier</StrVal>
-                <Value>2.5</Value>
-                <Provides>+250% Critical Damage</Provides>
+                <Value>4</Value>
+                <Provides>+400% Critical Damage</Provides>
             </GameModifier>
         <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
         <RarityDisplay>Unique</RarityDisplay>
@@ -3126,6 +3126,741 @@
                 </GameItemTypeModel>
             </GameItemTypeModelPack>
         </GameItemTypeArtDef>
+    </GameItemType>
+	
+	<GameItemType InternalName="Longsword_ArcaneBrilliance">
+        <DisplayName>Longsword Of Arcane Brilliance</DisplayName>
+        <Description>This blade hums with a mysterious vibration, ready to exude deadly rays of destruction upon its bearer's command.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>OneHanded</WeaponType>
+        <WeaponUpgradeType>Blade</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>1980</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>25</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_ArcaneLight</StrVal>
+            <Value>15</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>LightrayLeap_Ability</StrVal>
+                <Provides>Lightray Leap- this unit can teleport through enemies in a straight line, dealing Arcane Light damage.</Provides>
+            </GameModifier>	
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>2</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxCounterAttack</StrVal>
+                <Value>1</Value>
+                <Provides>+1 Counterattack per round</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>450</AIPriority>
+        </AIData>
+        <ArtDef>Longsword_ArcaneBrilliance_ArtDef</ArtDef>
+        <GameItemTypeArtDef InternalName="Longsword_ArcaneBrilliance_ArtDef">
+            <GameItemTypeModelPack InternalName="Longsword_ArcaneBrilliance_Default">
+                <IconFile>W_Broadsword_Masterwork_Icon_01.png</IconFile>
+                <TintR>207</TintR>
+                <TintG>53</TintG>
+                <TintB>16</TintB>
+                <AttackSFX>Hit_Sword_01</AttackSFX>
+                <AttackSFX>Hit_Sword_02</AttackSFX>
+                <AttackSFX>Hit_Sword_03</AttackSFX>
+                <AttackSFX>Hit_Sword_04</AttackSFX>
+                <EquipSFX>Equip_Sword_01</EquipSFX>
+                <EquipSFX>Equip_Sword_02</EquipSFX>
+                <EquipSFX>Equip_Sword_03</EquipSFX>
+                <SupportedUnitModelType>AmarianFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>AmarianMale</SupportedUnitModelType>
+                <SupportedUnitModelType>Banshee</SupportedUnitModelType>
+                <SupportedUnitModelType>DarklingMale</SupportedUnitModelType>
+                <SupportedUnitModelType>EmpireFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>EmpireMale</SupportedUnitModelType>
+                <SupportedUnitModelType>FallenFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>FallenMale</SupportedUnitModelType>
+                <SupportedUnitModelType>HenchmanMale</SupportedUnitModelType>
+                <SupportedUnitModelType>IroneerFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>IroneerMale</SupportedUnitModelType>
+                <SupportedUnitModelType>IronGolem</SupportedUnitModelType>
+                <SupportedUnitModelType>JuggernautMale</SupportedUnitModelType>
+                <SupportedUnitModelType>KingdomFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>KingdomMale</SupportedUnitModelType>
+                <SupportedUnitModelType>MancerFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>MancerMale</SupportedUnitModelType>
+                <SupportedUnitModelType>QuendarFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>QuendarMale</SupportedUnitModelType>
+                <SupportedUnitModelType>Skeleton</SupportedUnitModelType>
+                <SupportedUnitModelType>SlaveMale</SupportedUnitModelType>
+                <SupportedUnitModelType>TarthanFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>TarthanMale</SupportedUnitModelType>
+                <SupportedUnitModelType>UrxenFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>UrxenMale</SupportedUnitModelType>
+                <SupportedUnitModelType>WraithFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>WraithMale</SupportedUnitModelType>
+                <GameItemTypeModel>
+                    <ModelFile>gfx/hkb/Weapons/W_Longsword_Sharp_01.hkb</ModelFile>
+                    <Texture_All>gfx/hkb/Weapons/FE_Weapons_01.png</Texture_All>
+                    <Attachment>hand_right_Lcf</Attachment>
+                    <Color_Clothing1>232,190,28</Color_Clothing1>
+                    <Color_Metal>201,221,255</Color_Metal>
+		<EffectAttachment>
+            <Attachment>Effect_Loc_01</Attachment>
+            <EffectName>A_LightbringerSword_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.1</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>Effect_Loc_02</Attachment>
+            <EffectName>A_LightbringerSword_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.1</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>Effect_Loc_03</Attachment>
+            <EffectName>A_LightbringerSword_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.1</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>Effect_Loc_04</Attachment>
+            <EffectName>A_LightbringerSword_Particle</EffectName>
+            <EffectPosition>0,0,0</EffectPosition>
+            <EffectRotation>0,0,0</EffectRotation>
+            <EffectScale>0.1</EffectScale>
+        </EffectAttachment>					
+                </GameItemTypeModel>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+    </GameItemType>
+	
+	<GameItemType InternalName="Greataxe_Reaper">
+        <DisplayName>Reaper's Axe</DisplayName>
+        <DisplayName> Axe</DisplayName>
+        <Description>This axe is ever throbbing with the essence of death itself.</Description>
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>TwoHanded</WeaponType>
+        <WeaponUpgradeType>Axe</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>2500</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>36</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>MeleeAppliesSpell</Attribute>
+                <StrVal>Kill_Effect</StrVal>
+                <Provides>Those struck by this weapon must resist a spell or be instantly killed.</Provides>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-2</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_BackswingChance</StrVal>
+                <Value>100</Value>
+                <Provides>Backswing- If the attack misses the unit gets a second attack against the same target</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Cleave_Ability</StrVal>
+                <Provides>Cleave- Strike 3 adjacent enemies</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>792</AIPriority>
+        </AIData>
+        <ArtDef>Greataxe_Wrath_ArtDef</ArtDef>
+        <GameItemTypeArtDef InternalName="Greataxe_Wrath_ArtDef">
+            <GameItemTypeModelPack InternalName="Greataxe_Wrath_Default">
+                <IconFile>W_GreatAxe_Sunderer_Icon.png</IconFile>
+                <TintR>0</TintR>
+                <TintG>0</TintG>
+                <TintB>0</TintB>
+                <AttackSFX>Hit_FireAxe_01</AttackSFX>
+                <AttackSFX>Hit_FireAxe_02</AttackSFX>
+                <AttackSFX>Hit_FireAxe_03</AttackSFX>
+                <EquipSFX>Equip_WoodenItem_01</EquipSFX>
+                <EquipSFX>Equip_WoodenItem_02</EquipSFX>
+                <EquipSFX>Equip_WoodenItem_03</EquipSFX>
+                <OnHitParticleName>Hit_Fire1</OnHitParticleName>
+                <SupportedUnitModelType>AmarianFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>AmarianMale</SupportedUnitModelType>
+                <SupportedUnitModelType>Banshee</SupportedUnitModelType>
+                <SupportedUnitModelType>DarklingMale</SupportedUnitModelType>
+                <SupportedUnitModelType>EmpireFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>EmpireMale</SupportedUnitModelType>
+                <SupportedUnitModelType>FallenFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>FallenMale</SupportedUnitModelType>
+                <SupportedUnitModelType>HenchmanMale</SupportedUnitModelType>
+                <SupportedUnitModelType>IroneerFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>IroneerMale</SupportedUnitModelType>
+                <SupportedUnitModelType>IronGolem</SupportedUnitModelType>
+                <SupportedUnitModelType>JuggernautMale</SupportedUnitModelType>
+                <SupportedUnitModelType>KingdomFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>KingdomMale</SupportedUnitModelType>
+                <SupportedUnitModelType>MancerFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>MancerMale</SupportedUnitModelType>
+                <SupportedUnitModelType>QuendarFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>QuendarMale</SupportedUnitModelType>
+                <SupportedUnitModelType>Skeleton</SupportedUnitModelType>
+                <SupportedUnitModelType>SlaveMale</SupportedUnitModelType>
+                <SupportedUnitModelType>TarthanFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>TarthanMale</SupportedUnitModelType>
+                <SupportedUnitModelType>UrxenFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>UrxenMale</SupportedUnitModelType>
+                <SupportedUnitModelType>WraithFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>WraithMale</SupportedUnitModelType>
+                <GameItemTypeModel>
+                    <ModelFile>gfx/hkb/Weapons/W_Battle_Axe_Flaming_01.hkb</ModelFile>
+                    <Texture_All>gfx/hkb/Weapons/FE_Weapons_01.png</Texture_All>
+                    <Attachment>hand_right_Lcf</Attachment>
+                    <Color_Metal>70,0,0</Color_Metal>
+                    <Scale>1.5</Scale>
+                </GameItemTypeModel>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+    </GameItemType>
+
+	<GameItemType InternalName="Pike_Shockwave">
+        <DisplayName>Shockwave Lance</DisplayName>
+        <Description>This incredble weapon can send out a wave of incredible force with each and every strike. Entire armies can be ripped apart by its energies, but beware - the user is struck with by very same shockwave!</Description>
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>Spear</WeaponType>
+        <WeaponUpgradeType>Spear</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>1860</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>18</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>MeleeAppliesSpell</Attribute>
+                <StrVal>Shockwave_Effect</StrVal>
+                <Provides>Connecting with this weapon results in a shockwave, damaging all nearby enemies along with the wielder.</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ArmorPierce</StrVal>
+                <Value>33</Value>
+                <Provides>Ignores 33% of the victim's Defense</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>CannotBeCounterattacked</Attribute>
+                <Value>-1</Value>
+                <Provides>Immune to Counterattack</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Impale_Ability</StrVal>
+                <Provides>Impale- Strike an opponent and whoever is behind them</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+		<HeroOnly>1</HeroOnly>
+        <RarityDisplay>Unique</RarityDisplay>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_PIERCING</AIPrefType>
+            <AIPriority>450</AIPriority>
+        </AIData>
+        <ArtDef>Pike_Shockwave_ArtDef</ArtDef>
+        <GameItemTypeArtDef InternalName="Pike_Shockwave_ArtDef">
+            <GameItemTypeModelPack InternalName="Pike_Shockwave_Default">
+                <IconFile>W_Pike_Lightning_Icon_01.png</IconFile>
+                <TintR>0</TintR>
+                <TintG>0</TintG>
+                <TintB>0</TintB>
+                <AttackSFX>Hit_LightningPike_01</AttackSFX>
+                <AttackSFX>Hit_LightningPike_02</AttackSFX>
+                <AttackSFX>Hit_LightningPike_03</AttackSFX>
+                <EquipSFX>Equip_WoodenItem_01</EquipSFX>
+                <EquipSFX>Equip_WoodenItem_02</EquipSFX>
+                <EquipSFX>Equip_WoodenItem_03</EquipSFX>
+                <OnHitParticleName>Hit_Lightning1</OnHitParticleName>
+                <SupportedUnitModelType>AmarianFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>AmarianMale</SupportedUnitModelType>
+                <SupportedUnitModelType>Banshee</SupportedUnitModelType>
+                <SupportedUnitModelType>DarklingMale</SupportedUnitModelType>
+                <SupportedUnitModelType>EmpireFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>EmpireMale</SupportedUnitModelType>
+                <SupportedUnitModelType>FallenFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>FallenMale</SupportedUnitModelType>
+                <SupportedUnitModelType>HenchmanMale</SupportedUnitModelType>
+                <SupportedUnitModelType>IroneerFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>IroneerMale</SupportedUnitModelType>
+                <SupportedUnitModelType>IronGolem</SupportedUnitModelType>
+                <SupportedUnitModelType>JuggernautMale</SupportedUnitModelType>
+                <SupportedUnitModelType>KingdomFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>KingdomMale</SupportedUnitModelType>
+                <SupportedUnitModelType>MancerFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>MancerMale</SupportedUnitModelType>
+                <SupportedUnitModelType>QuendarFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>QuendarMale</SupportedUnitModelType>
+                <SupportedUnitModelType>Skeleton</SupportedUnitModelType>
+                <SupportedUnitModelType>SlaveMale</SupportedUnitModelType>
+                <SupportedUnitModelType>TarthanFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>TarthanMale</SupportedUnitModelType>
+                <SupportedUnitModelType>UrxenFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>UrxenMale</SupportedUnitModelType>
+                <SupportedUnitModelType>WraithFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>WraithMale</SupportedUnitModelType>
+                <GameItemTypeModel>
+                    <ModelFile>gfx/hkb/weapons/W_Pike_Lightning_01.hkb</ModelFile>
+                    <Texture_All>gfx/hkb/Weapons/FE_Weapons_01.png</Texture_All>
+                    <Attachment>hand_right_Lcf</Attachment>
+                    <Color_Metal>184,140,54</Color_Metal>
+                </GameItemTypeModel>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+    </GameItemType>
+	
+	<GameItemType InternalName="Longbow_Thundergod">
+        <DisplayName>Thunder God's Longbow</DisplayName>
+        <Description>Whosoever fires these arrows, shall deliver the wrath of all righteous storms.</Description>
+        <Type>Weapon</Type>
+        <Type>Defense</Type>
+        <WeaponType>Bow</WeaponType>
+        <WeaponUpgradeType>Bow</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>1720</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>14</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-4</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_IsBow</StrVal>
+                <Value>1</Value>
+                <Provides>Enables abilities that require Bows</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockRangedAction</Attribute>
+                <StrVal>BowAttack_Thundergod</StrVal>
+                <Provides>Ranged attack</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_Attack_Lightning</StrVal>
+                <Value>20</Value>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>-1</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <TacticalRange>20</TacticalRange>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Prereq>
+            <Type>UnitStat_Level</Type>
+            <Attribute>5</Attribute>
+        </Prereq>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_BOW</AIPrefType>
+            <AIPriority>230</AIPriority>
+        </AIData>
+        <ArtDef>Longbow_Shocking_ArtDef</ArtDef>
+        <GameItemTypeArtDef InternalName="Longbow_Shocking_ArtDef">
+            <GameItemTypeModelPack InternalName="Longbow_Shocking_Default">
+                <IconFile>W_Longbow_Lightining_Icon_01.png</IconFile>
+                <TintR>0</TintR>
+                <TintG>0</TintG>
+                <TintB>0</TintB>
+                <AttackSFX>Hit_Arrow1</AttackSFX>
+                <AttackSFX>Hit_Arrow2</AttackSFX>
+                <EquipSFX>Equip_BowandArrow_01</EquipSFX>
+                <EquipSFX>Equip_BowandArrow_02</EquipSFX>
+                <EquipSFX>Equip_BowandArrow_03</EquipSFX>
+                <OnHitParticleName>Hit_Lightning1</OnHitParticleName>
+                <SoundPack>SoundPack_Bow</SoundPack>
+                <SupportedUnitModelType>AmarianFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>AmarianMale</SupportedUnitModelType>
+                <SupportedUnitModelType>Banshee</SupportedUnitModelType>
+                <SupportedUnitModelType>DarklingMale</SupportedUnitModelType>
+                <SupportedUnitModelType>EmpireFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>EmpireMale</SupportedUnitModelType>
+                <SupportedUnitModelType>FallenFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>FallenMale</SupportedUnitModelType>
+                <SupportedUnitModelType>HenchmanMale</SupportedUnitModelType>
+                <SupportedUnitModelType>IroneerFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>IroneerMale</SupportedUnitModelType>
+                <SupportedUnitModelType>KingdomFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>KingdomMale</SupportedUnitModelType>
+                <SupportedUnitModelType>MancerFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>MancerMale</SupportedUnitModelType>
+                <SupportedUnitModelType>QuendarFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>QuendarMale</SupportedUnitModelType>
+                <SupportedUnitModelType>Skeleton</SupportedUnitModelType>
+                <SupportedUnitModelType>SlaveMale</SupportedUnitModelType>
+                <SupportedUnitModelType>TarthanFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>TarthanMale</SupportedUnitModelType>
+                <SupportedUnitModelType>UrxenFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>UrxenMale</SupportedUnitModelType>
+                <SupportedUnitModelType>WraithFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>WraithMale</SupportedUnitModelType>
+                <GameItemTypeModel>
+                    <ModelFile>Gfx\HKB\Weapons\W_Longbow_Shocking_01.hkb</ModelFile>
+                    <Texture_All>Gfx\HKB\Armor\FE_Weapons_02.png</Texture_All>
+                    <Attachment>hand_Left_Lcf</Attachment>
+                    <Color_All>232,158,28</Color_All>
+                </GameItemTypeModel>
+                <GameItemTypeModel>
+                    <ModelFile>Gfx\HKB\Armor\K_ArcherQuiver_01.hkb</ModelFile>
+                    <Texture_All>Gfx\HKB\Armor\K_Female_Armor_Archer_Texture_01.dds</Texture_All>
+                    <Attachment>back_Lcf</Attachment>
+                </GameItemTypeModel>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+    </GameItemType>
+	
+	<GameItemType InternalName="Maul_Imprisoning">
+        <DisplayName>Imprisoning Hammer</DisplayName>
+        <Description>The power of this weapon is enough to crush any mortal man. But a creature mighty enough to survive of its blows will find their legs bound magically, and pain overcoming them from unseen malice.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>Blunt</WeaponType>
+        <WeaponUpgradeType>Blunt</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>1795</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>45</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-4</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>MeleeAppliesSpell</Attribute>
+                <StrVal>Imprison</StrVal>
+                <Provides>Units struck aew imprisoned for 5 turns</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>MeleeAppliesSpell</Attribute>
+                <StrVal>Knockback_effect</StrVal>
+                <Provides>Knocks victims back 1 tile</Provides>
+            </GameModifier>			
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_BashChance</StrVal>
+                <Value>100</Value>
+                <Provides>Bash- Has a chance equal to the damage done of knocking the victim prone</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>CrushingBlow</StrVal>
+                <Provides>Crushing Blow- Attack with +50% power but lose your next turn</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_BLUNT</AIPrefType>
+            <AIPriority>1156</AIPriority>
+        </AIData>
+        <ArtDef>Maul_Crippling_ArtDef</ArtDef>
+        <GameItemTypeArtDef InternalName="Maul_Crippling_ArtDef">
+            <GameItemTypeModelPack InternalName="Maul_Crippling_Default">
+                <IconFile>W_Maul_Curgens_Icon_01.png</IconFile>
+                <TintR>0</TintR>
+                <TintG>0</TintG>
+                <TintB>0</TintB>
+                <AttackSFX>Hit_HeavyClub1</AttackSFX>
+                <AttackSFX>Hit_HeavyClub2</AttackSFX>
+                <EquipSFX>Equip_WoodenItem_01</EquipSFX>
+                <EquipSFX>Equip_WoodenItem_02</EquipSFX>
+                <EquipSFX>Equip_WoodenItem_03</EquipSFX>
+                <SupportedUnitModelType>AmarianFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>AmarianMale</SupportedUnitModelType>
+                <SupportedUnitModelType>Banshee</SupportedUnitModelType>
+                <SupportedUnitModelType>DarklingMale</SupportedUnitModelType>
+                <SupportedUnitModelType>EmpireFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>EmpireMale</SupportedUnitModelType>
+                <SupportedUnitModelType>FallenFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>FallenMale</SupportedUnitModelType>
+                <SupportedUnitModelType>HenchmanMale</SupportedUnitModelType>
+                <SupportedUnitModelType>IroneerFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>IroneerMale</SupportedUnitModelType>
+                <SupportedUnitModelType>IronGolem</SupportedUnitModelType>
+                <SupportedUnitModelType>JuggernautMale</SupportedUnitModelType>
+                <SupportedUnitModelType>KingdomFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>KingdomMale</SupportedUnitModelType>
+                <SupportedUnitModelType>MancerFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>MancerMale</SupportedUnitModelType>
+                <SupportedUnitModelType>QuendarFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>QuendarMale</SupportedUnitModelType>
+                <SupportedUnitModelType>Skeleton</SupportedUnitModelType>
+                <SupportedUnitModelType>SlaveMale</SupportedUnitModelType>
+                <SupportedUnitModelType>TarthanFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>TarthanMale</SupportedUnitModelType>
+                <SupportedUnitModelType>UrxenFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>UrxenMale</SupportedUnitModelType>
+                <SupportedUnitModelType>WraithFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>WraithMale</SupportedUnitModelType>
+                <GameItemTypeModel>
+                    <ModelFile>gfx/hkb/Weapons/W_Maul_Curgens_01.hkb</ModelFile>
+                    <Texture_All>gfx/hkb/Weapons/FE_Weapons_01.png</Texture_All>
+                    <Attachment>hand_right_Lcf</Attachment>
+                    <Color_Metal>184,140,54</Color_Metal>
+                </GameItemTypeModel>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+    </GameItemType>
+	
+	<GameItemType InternalName="Longsword_Tarantella">
+        <DisplayName>Fell Tarantella</DisplayName>
+        <Description>Upon gripping its handle, and a rhythmic cadence takes up the user's body, moving them with effortless grace, and dropping their sword arm with a lethal elegance. Opponenents, on the other hand, appear to the wielder as if awkward cripples.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>OneHanded</WeaponType>
+        <WeaponUpgradeType>Blade</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>3775</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>42</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_ArmorPierce</StrVal>
+                <Value>66</Value>
+                <Provides>Ignores 66% of the victim's Defense</Provides>
+            </GameModifier>		
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>16</Value>
+        </GameModifier>
+		<GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Dodge</StrVal>
+            <Value>50</Value>
+        </GameModifier>
+		<GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Moves</StrVal>
+            <Value>2</Value>
+        </GameModifier>		
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>CannotBeCounterattacked</Attribute>
+                <Provides>Unit never gets Counterattacked</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>ImmuneToSwarm</Attribute>
+                <Provides>Immune to Swarm</Provides>
+            </GameModifier>			
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_MaxCounterAttack</StrVal>
+                <Value>9</Value>
+                <Provides>+9 Counterattacks per round</Provides>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnlockCombatAbility</Attribute>
+            <StrVal>TarantellaStep</StrVal>
+            <Provides>Tarantella Step - cut through a line of enemies</Provides>
+        </GameModifier>			
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+		<HeroOnly>1</HeroOnly>
+        <RarityDisplay>Unique</RarityDisplay>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_CUTTING</AIPrefType>
+            <AIPriority>423</AIPriority>
+        </AIData>
+        <ArtDef>Longsword_Tarantella_ArtDef</ArtDef>
+        <GameItemTypeArtDef InternalName="Longsword_Tarantella_ArtDef">
+            <GameItemTypeModelPack InternalName="Longsword_Tarantella_Default">
+                <IconFile>W_Longsword_Legendary_Icon_01.png</IconFile>
+                <TintR>207</TintR>
+                <TintG>53</TintG>
+                <TintB>16</TintB>
+                <AttackSFX>Hit_Sword_01</AttackSFX>
+                <AttackSFX>Hit_Sword_02</AttackSFX>
+                <AttackSFX>Hit_Sword_03</AttackSFX>
+                <AttackSFX>Hit_Sword_04</AttackSFX>
+                <EquipSFX>Equip_Sword_01</EquipSFX>
+                <EquipSFX>Equip_Sword_02</EquipSFX>
+                <EquipSFX>Equip_Sword_03</EquipSFX>
+                <SupportedUnitModelType>AmarianFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>AmarianMale</SupportedUnitModelType>
+                <SupportedUnitModelType>Banshee</SupportedUnitModelType>
+                <SupportedUnitModelType>DarklingMale</SupportedUnitModelType>
+                <SupportedUnitModelType>EmpireFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>EmpireMale</SupportedUnitModelType>
+                <SupportedUnitModelType>FallenFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>FallenMale</SupportedUnitModelType>
+                <SupportedUnitModelType>HenchmanMale</SupportedUnitModelType>
+                <SupportedUnitModelType>IroneerFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>IroneerMale</SupportedUnitModelType>
+                <SupportedUnitModelType>IronGolem</SupportedUnitModelType>
+                <SupportedUnitModelType>JuggernautMale</SupportedUnitModelType>
+                <SupportedUnitModelType>KingdomFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>KingdomMale</SupportedUnitModelType>
+                <SupportedUnitModelType>MancerFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>MancerMale</SupportedUnitModelType>
+                <SupportedUnitModelType>QuendarFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>QuendarMale</SupportedUnitModelType>
+                <SupportedUnitModelType>Skeleton</SupportedUnitModelType>
+                <SupportedUnitModelType>SlaveMale</SupportedUnitModelType>
+                <SupportedUnitModelType>TarthanFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>TarthanMale</SupportedUnitModelType>
+                <SupportedUnitModelType>UrxenFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>UrxenMale</SupportedUnitModelType>
+                <SupportedUnitModelType>WraithFemale</SupportedUnitModelType>
+                <SupportedUnitModelType>WraithMale</SupportedUnitModelType>
+                <GameItemTypeModel>
+                    <ModelFile>gfx/hkb/Weapons/W_Longsword_Legendary_01.hkb</ModelFile>
+                    <Texture_All>gfx/hkb/Weapons/FE_Weapons_01.png</Texture_All>
+                    <Attachment>hand_right_Lcf</Attachment>
+                    <Color_Clothing1>232,158,28</Color_Clothing1>
+        <EffectAttachment>
+            <Attachment>Effect_Loc_01</Attachment>
+            <EffectName>W_SunBladeEffect_01</EffectName>
+            <EffectPosition>0,-4,-5</EffectPosition>
+            <EffectRotation>5,0,0</EffectRotation>
+            <EffectScale>0.5</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>Effect_Loc_01</Attachment>
+            <EffectName>W_SunBladeEffect_01</EffectName>
+            <EffectPosition>0,-4,-15</EffectPosition>
+            <EffectRotation>5,0,0</EffectRotation>
+            <EffectScale>0.5</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>Effect_Loc_01</Attachment>
+            <EffectName>W_SunBladeEffect_01</EffectName>
+            <EffectPosition>0,-4,-25</EffectPosition>
+            <EffectRotation>5,0,0</EffectRotation>
+            <EffectScale>0.5</EffectScale>
+        </EffectAttachment>
+        <EffectAttachment>
+            <Attachment>Effect_Loc_01</Attachment>
+            <EffectName>W_SunBladeEffect_01</EffectName>
+            <EffectPosition>0,-4,-35</EffectPosition>
+            <EffectRotation>5,0,0</EffectRotation>
+            <EffectScale>0.5</EffectScale>
+        </EffectAttachment>					
+                </GameItemTypeModel>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+    </GameItemType>
+	
+	<GameItemType InternalName="Mace_Legendcall">
+        <DisplayName>Legendcall Mace</DisplayName>
+        <Description>As mighty as this weapon's strike proves, its true power is in always standng ready to summon an army of dead warriors, returned to stand at the wielder's side.</Description>
+        <Type>Weapon</Type>
+        <WeaponType>Blunt</WeaponType>
+        <WeaponUpgradeType>Blunt</WeaponUpgradeType>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>3425</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>60</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+            <Value>-4</Value>
+        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_BashChance</StrVal>
+                <Value>100</Value>
+                <Provides>Bash- Has a chance equal to the damage done of knocking the victim prone</Provides>
+            </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnlockCombatAbility</Attribute>
+            <StrVal>Legendcall_Ability</StrVal>
+            <Provides>Summon Up to 9 Legendary Warriors</Provides>
+        </GameModifier>			
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>CrushingBlow</StrVal>
+                <Provides>Crushing Blow- Attack at +50% attack, but lose your next turn</Provides>
+            </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Rare</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <AIData AIPersonality="AI_General">
+            <AIPrefType>AIPrefType_BLUNT</AIPrefType>
+            <AIPriority>340</AIPriority>
+        </AIData>
+        <ArtDef>Mace_Bishops_ArtDef</ArtDef>
     </GameItemType>
 	
 </GameItemTypes>
