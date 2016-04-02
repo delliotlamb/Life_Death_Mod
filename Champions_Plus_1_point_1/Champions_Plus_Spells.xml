@@ -5013,7 +5013,7 @@
         </SpellDefEffect>
     </SpellDef>
 
-	<SpellDef InternalName="Spell_DefensiveForesight">
+	<!--<SpellDef InternalName="Spell_DefensiveForesight">
         <DisplayName>Defensive Foresight</DisplayName>
         <Description>If an enemy army attacks, your troops will have full foresight of the enemy's intent, strengths, and weaknesses. As a result your troops will gain +4 initiative, +20% armor piercing, +10 Dodge, +10 Dodge vs ranged, and +20 accuracy in defensive actions.</Description>
         <Image>Stat_MagicResist_Icon.png</Image>
@@ -5064,7 +5064,7 @@
             <AIPriority>1000</AIPriority>
         </AIData>
         <HitSoundFX>Spell_GlyphOfLife_01</HitSoundFX>
-    </SpellDef>
+    </SpellDef>-->
 
 	<SpellDef InternalName="LightningBolt">
         <DisplayName>Lightning Bolt</DisplayName>
@@ -5534,7 +5534,6 @@
         <Description>Call up to nine ghostly warriors to your side.</Description>
         <Image>Res_HowlingChasm.png</Image>
         <IconFG>Ability_TrainHenchmen_Icon.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>
         <CanStack>0</CanStack>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
@@ -6019,7 +6018,7 @@
 	
 	<SpellDef InternalName="Overlord_Armor_Ability">
         <DisplayName>Forge Overlord's Armor</DisplayName>
-        <Description>Create the ultimate set of armor.</Description>
+        <Description>Create the ultimate set of armor, wearable by any champion (no armor proficiency required).</Description>
         <Image>Refined_Attack.png</Image>
         <IconFG>W_Staff_Hellfire_Icon_01.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -6046,23 +6045,23 @@
         </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
-            <Attribute>Bow_Volcano</Attribute>
+            <Attribute>PlateVambraces_Overlord</Attribute>
         </GameModifier>
 		<GameModifier>
             <ModType>GiveItem</ModType>
-            <Attribute>Bow_Volcano</Attribute>
+            <Attribute>PlateBreastpiece_Overlord</Attribute>
         </GameModifier>
 		<GameModifier>
             <ModType>GiveItem</ModType>
-            <Attribute>Bow_Volcano</Attribute>
+            <Attribute>PlateGreaves_Overlord</Attribute>
         </GameModifier>
 		<GameModifier>
             <ModType>GiveItem</ModType>
-            <Attribute>Bow_Volcano</Attribute>
+            <Attribute>PlateHelmet_Overlord</Attribute>
         </GameModifier>
 		<GameModifier>
             <ModType>GiveItem</ModType>
-            <Attribute>Bow_Volcano</Attribute>
+            <Attribute>PlateBoots_Overlord</Attribute>
         </GameModifier>		
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>

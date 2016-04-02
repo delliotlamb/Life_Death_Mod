@@ -2823,7 +2823,7 @@
         <ArtDef>Longsword_Thunder_ArtDef</ArtDef>
         <GameItemTypeArtDef InternalName="Longsword_Thunder_ArtDef">
             <GameItemTypeModelPack InternalName="Longsword_Thunder_Default">
-                <IconFile>W_Longsword_Boreal_Icon_01.png</IconFile>
+                <IconFile>W_Greatsword_HeartOfTheGlacier_Icon_01.png</IconFile>
                 <TintR>207</TintR>
                 <TintG>53</TintG>
                 <TintB>16</TintB>
@@ -4057,5 +4057,167 @@
         <ArtDef>Yoren_Cloak_ID2_ArtDef</ArtDef>
     </GameItemType>
 	
+	
+	<GameItemType InternalName="PlateVambraces_Overlord">
+        <DisplayName>Overlord's Gauntlets</DisplayName>
+        <Description>These gauntlets imbue the wearer with the power of the stars.</Description>
+        <Type>Forearms</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>400</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <Value>20</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Lightning</StrVal>
+            <Value>25</Value>
+            <Provides>+25 Lightning Attack</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Bost</StrVal>
+            <Value>25</Value>
+            <Provides>+25 Attack</Provides>
+        </GameModifier>		
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Likelihood>0</Likelihood>
+        <RarityDisplay>UltraRare</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>150</AIPriority>
+            </AIData>
+        <ArtDef>Art_PlateVambraces_Titan</ArtDef>
+    </GameItemType>
+	
+	<GameItemType InternalName="PlateBreastpiece_Overlord">
+        <DisplayName>Overlord's Cuirass</DisplayName>
+        <Description>No one bearing this armor will fear death.</Description>
+        <Type>Torso</Type>
+        <Type>Surcoat</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>4800</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <Value>35</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_HealthRegen</StrVal>
+            <Value>100</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_TacticalHealthRegen</StrVal>
+            <Value>50</Value>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Likelihood>0</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>160</AIPriority>
+            </AIData>
+        <ArtDef>Art_PlateBreastplate_Titan</ArtDef>
+    </GameItemType>
+	
+	<GameItemType InternalName="PlateGreaves_Overlord">
+        <DisplayName>Overlord's Greaves</DisplayName>
+        <Description>To harm the one wearing this armor is to die.</Description>
+        <Type>LowerBody</Type>
+        <Type>Boots</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>3900</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <Value>28</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_DamageReflect</StrVal>
+            <Value>1</Value>
+            <Provides>Reflects 100% of the damage back at the attacker</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Likelihood>0</Likelihood>
+        <RarityDisplay>Unique</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>110</AIPriority>
+            </AIData>
+        <ArtDef>Art_PlateGreaves_Titan</ArtDef>
+    </GameItemType>
+	
+	<GameItemType InternalName="PlateHelmet_Overlord">
+        <DisplayName>Overlord's Crown</DisplayName>
+        <Description>Any who strike the wearer of this headpiece shall be stunned in punishment.</Description>
+        <Type>Head</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>750</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <Value>20</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>MeleeDefenseAppliesSpell</Attribute>
+            <StrVal>DreadGaze_Effect</StrVal>
+            <Provides>Attacking this unit causes the attacker to lose their next attack unless they resist.</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+        <Likelihood>0</Likelihood>
+        <RarityDisplay>UltraRare</RarityDisplay>
+        <HeroOnly>1</HeroOnly>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>130</AIPriority>
+            </AIData>
+        <ArtDef>Art_TitansCrown</ArtDef>
+    </GameItemType>
+	
+	<GameItemType InternalName="PlateBoots_Overlord">
+        <DisplayName>Overlord's Boots</DisplayName>
+        <Description>Magic has little hold over the bearer of these armored boots.</Description>
+        <Type>Boots</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <ShopValue>440</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <Value>20</Value>
+        </GameModifier>
+		<GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_MagicResist</StrVal>
+            <Value>100</Value>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>20</Likelihood>
+        <RarityDisplay>Rare</RarityDisplay>
+		<HeroOnly>1</HeroOnly>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>53</AIPriority>
+            </AIData>
+        <ArtDef>Art_PlateBoots_Overlord</ArtDef>
+    </GameItemType>
 
 </GameItemTypes>

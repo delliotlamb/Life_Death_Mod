@@ -511,13 +511,13 @@
             <Value>1</Value>
             <Provides>Can order Champion's Armor, summoning items like a spell</Provides>
         </GameModifier>
-        <!--<GameModifier>
+        <GameModifier>
             <ModType>City</ModType>
             <Attribute>AdjustDefendingUnit</Attribute>
             <StrVal>UnitStat_IsAtArcaneArmorer_Tran</StrVal>
             <Value>1</Value>
             <Provides>A sovereign can order Transcendent Armor, once per game</Provides>
-        </GameModifier>-->
+        </GameModifier>
                 <GameModifier>
                     <ModType>Player</ModType>
                     <Attribute>UnlockSpell</Attribute>
@@ -575,13 +575,13 @@
             <Value>1</Value>
             <Provides>Champions can order a set of magic weapons when present, summoning the items like a spell</Provides>
         </GameModifier>
-        <!--<GameModifier>
+        <GameModifier>
             <ModType>City</ModType>
             <Attribute>AdjustDefendingUnit</Attribute>
             <StrVal>UnitStat_IsAtArcaneWeaponsmith_Tran</StrVal>
             <Value>1</Value>
             <Provides>A Sovereign can order Transcendent Magic Weapons, once per game</Provides>
-        </GameModifier>-->
+        </GameModifier>
                 <GameModifier>
                     <ModType>Player</ModType>
                     <Attribute>UnlockSpell</Attribute>
