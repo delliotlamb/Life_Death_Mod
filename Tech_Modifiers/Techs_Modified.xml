@@ -99,7 +99,15 @@
         </GameModifier>
     </TechDef>
 
-
+    <TechDef InternalName="Glyph_Stones">
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>UnlockSpell</Attribute>
+            <StrVal>GlyphWrit_Ability</StrVal>
+            <Icon>DestinySliver_Item.png</Icon>
+            <Provides>Spell: Glyphcraft Writ (castable at enchanter)</Provides>
+        </GameModifier>
+    </TechDef>
 
     
 </Techs>

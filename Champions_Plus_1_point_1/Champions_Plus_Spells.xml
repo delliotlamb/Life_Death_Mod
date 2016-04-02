@@ -2110,14 +2110,9 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <CasterMustBeSov>1</CasterMustBeSov>
-        <!--<Prereq>
-            <Type>UnitStat</Type>
-            <Attribute>UnitStat_IsAtArcaneArmorer_Tran</Attribute>
-            <Value>1</Value>
-        </Prereq>-->
         <Prereq>
             <Type>UnitStat</Type>
-            <Attribute>UnitStat_IsAtForgeOverlord</Attribute>
+            <Attribute>UnitStat_IsAtArcaneArmorer_Tran</Attribute>
             <Value>1</Value>
         </Prereq>
         <SpellResourceCost>
@@ -2180,14 +2175,9 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <CasterMustBeSov>1</CasterMustBeSov>
-        <!--<Prereq>
-            <Type>UnitStat</Type>
-            <Attribute>UnitStat_IsAtArcaneArmorer_Tran</Attribute>
-            <Value>1</Value>
-        </Prereq>-->
         <Prereq>
             <Type>UnitStat</Type>
-            <Attribute>UnitStat_IsAtForgeOverlord</Attribute>
+            <Attribute>UnitStat_IsAtArcaneArmorer_Tran</Attribute>
             <Value>1</Value>
         </Prereq>
         <SpellResourceCost>
@@ -2241,7 +2231,7 @@
         <DisplayName>Forge Terror Blade</DisplayName>
         <Description>Craft a Transcendent Sword.</Description>
         <Image>Refined_Attack.png</Image>
-        <IconFG>W_Longsword_Heartseeker_Icon_01.png</IconFG>
+        <IconFG>W_Scimitar_Brutal_Trog_Icon_01.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
@@ -2250,14 +2240,13 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <CasterMustBeSov>1</CasterMustBeSov>
-        <!--<Prereq>
-            <Type>UnitStat</Type>
-            <Attribute>UnitStat_IsAtArcaneWeaponsmith_Tran</Attribute>
-            <Value>1</Value>
-        </Prereq>-->
+		<Prereq>
+            <Type>Allegiance</Type>
+            <Attribute>Empire</Attribute>
+        </Prereq>
         <Prereq>
             <Type>UnitStat</Type>
-            <Attribute>UnitStat_IsAtForgeOverlord</Attribute>
+            <Attribute>UnitStat_IsAtArcaneWeaponsmith_Tran</Attribute>
             <Value>1</Value>
         </Prereq>
         <SpellResourceCost>
@@ -2276,16 +2265,54 @@
             <ModType>GiveItem</ModType>
             <Attribute>Longsword_Terror</Attribute>
         </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+	
+	<SpellDef InternalName="ArcaneWeaponsmith_Longsword_Brilliance_Ability">
+        <DisplayName>Forge Longsword Of Brilliance</DisplayName>
+        <Description>Craft a Transcendent Sword.</Description>
+        <Image>Refined_Attack.png</Image>
+        <IconFG>W_Broadsword_Masterwork_Icon_01.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <CasterMustBeSov>1</CasterMustBeSov>
+		<Prereq>
+            <Type>Allegiance</Type>
+            <Attribute>Kingdom</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtArcaneWeaponsmith_Tran</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>RefinedCrystal</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Metal</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
         <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_IsAtArcaneWeaponsmith_Tran</StrVal>
-            <Value>-1</Value>
+            <ModType>GiveItem</ModType>
+            <Attribute>Longsword_ArcaneBrilliance</Attribute>
         </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
         </AIData>
     </SpellDef>
+
 
     <SpellDef InternalName="ArcaneWeaponsmith_Axe_Ability">
         <DisplayName>Writ Of Transcendent Axecraft</DisplayName>
@@ -2300,14 +2327,9 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <CasterMustBeSov>1</CasterMustBeSov>
-        <!--<Prereq>
-            <Type>UnitStat</Type>
-            <Attribute>UnitStat_IsAtArcaneWeaponsmith_Tran</Attribute>
-            <Value>1</Value>
-        </Prereq>-->
         <Prereq>
             <Type>UnitStat</Type>
-            <Attribute>UnitStat_IsAtForgeOverlord</Attribute>
+            <Attribute>UnitStat_IsAtArcaneWeaponsmith_Tran</Attribute>
             <Value>1</Value>
         </Prereq>
         <SpellResourceCost>
@@ -2325,12 +2347,6 @@
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>Greataxe_Pendulum2</Attribute>
-        </GameModifier>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_IsAtArcaneWeaponsmith_Tran</StrVal>
-            <Value>-1</Value>
         </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
@@ -2350,14 +2366,9 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <CasterMustBeSov>1</CasterMustBeSov>
-        <!--<Prereq>
-            <Type>UnitStat</Type>
-            <Attribute>UnitStat_IsAtArcaneWeaponsmith_Tran</Attribute>
-            <Value>1</Value>
-        </Prereq>-->
         <Prereq>
             <Type>UnitStat</Type>
-            <Attribute>UnitStat_IsAtForgeOverlord</Attribute>
+            <Attribute>UnitStat_IsAtArcaneWeaponsmith_Tran</Attribute>
             <Value>1</Value>
         </Prereq>
         <SpellResourceCost>
@@ -2374,7 +2385,7 @@
         </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
-            <Attribute>Maul_Rockshattering</Attribute>
+            <Attribute>Maul_Imprisoning</Attribute>
         </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
@@ -2391,7 +2402,7 @@
         <DisplayName>Writ Of Transcendent Bowcraft</DisplayName>
         <Description>Craft a Transcendent Bow.</Description>
         <Image>Tech_Longbows.png</Image>
-        <IconFG>W_Longbow_Yew_Brutal_Icon_01.png</IconFG>
+        <IconFG>W_Longbow_Lightining_Icon_01.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
@@ -2400,14 +2411,9 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <CasterMustBeSov>1</CasterMustBeSov>
-        <!--<Prereq>
-            <Type>UnitStat</Type>
-            <Attribute>UnitStat_IsAtArcaneWeaponsmith_Tran</Attribute>
-            <Value>1</Value>
-        </Prereq>-->
         <Prereq>
             <Type>UnitStat</Type>
-            <Attribute>UnitStat_IsAtForgeOverlord</Attribute>
+            <Attribute>UnitStat_IsAtArcaneWeaponsmith_Tran</Attribute>
             <Value>1</Value>
         </Prereq>
         <SpellResourceCost>
@@ -2424,13 +2430,7 @@
         </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
-            <Attribute>YewLongbow_Vengeful</Attribute>
-        </GameModifier>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_IsAtArcaneWeaponsmith_Tran</StrVal>
-            <Value>-1</Value>
+            <Attribute>Longbow_Thundergod</Attribute>
         </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
@@ -2450,14 +2450,9 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <CasterMustBeSov>1</CasterMustBeSov>
-        <!--<Prereq>
-            <Type>UnitStat</Type>
-            <Attribute>UnitStat_IsAtArcaneWeaponsmith_Tran</Attribute>
-            <Value>1</Value>
-        </Prereq>-->
         <Prereq>
             <Type>UnitStat</Type>
-            <Attribute>UnitStat_IsAtForgeOverlord</Attribute>
+            <Attribute>UnitStat_IsAtArcaneWeaponsmith_Tran</Attribute>
             <Value>1</Value>
         </Prereq>
         <SpellResourceCost>
@@ -2476,12 +2471,6 @@
             <ModType>GiveItem</ModType>
             <Attribute>Pike_Spectre</Attribute>
         </GameModifier>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_IsAtArcaneWeaponsmith_Tran</StrVal>
-            <Value>-1</Value>
-        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
         </AIData>
@@ -2489,7 +2478,7 @@
 
 		<SpellDef InternalName="ArcaneWeaponsmith_Ability">
         <DisplayName>Writ Of Arcane Weaponry</DisplayName>
-        <Description>Order the full set of high-end arcane weapons.</Description>
+        <Description>Order the full set of trained-unit-eligible high-end arcane weapons.</Description>
         <Image>Refined_Attack.png</Image>
         <IconFG>W_Staff_Hellfire_Icon_01.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -5339,6 +5328,67 @@
         <HitSoundFX>Spell_CullTheWeak_01</HitSoundFX>
     </SpellDef>
 	
+	<SpellDef InternalName="BowAttack_Volcano">
+        <DisplayName>Volcanic Bow Attack</DisplayName>
+        <Description>Attack a unit from a distance with a single arrow from your bow.</Description>
+        <Image>Action_BowArrow.png</Image>
+        <IconFG>Action_BowArrow.png</IconFG>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <IsCastable>0</IsCastable>
+        <IsRangedAttack>1</IsRangedAttack>
+		<Radius>2</Radius>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Fire</AttackStat>
+            <IsForFormattedDescription>1</IsForFormattedDescription>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumFireShards] * 4]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc2">
+                <Expression><![CDATA[[Calc] + 50]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc3" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[Calc2] * [UnitStat_SpellDamage_Fire]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc3]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="ValueForFormattedDescription">
+                <Expression><![CDATA[[Calc3]]]></Expression>
+            </Calculate>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <CameraShakeDuration>4.25</CameraShakeDuration>
+        <CameraShakeStrength>0.25</CameraShakeStrength>
+        <HitSoundFX>Spell_Volcano_01</HitSoundFX>
+        <SoundMinDist>1000</SoundMinDist>
+        <SoundMaxDist>10000</SoundMaxDist>
+        <WorldLightOverrideTime>5</WorldLightOverrideTime>
+        <WorldLightOverrideAmbiant>70,70,70</WorldLightOverrideAmbiant>
+        <WorldLightOverrideDiffuse>80,80,80</WorldLightOverrideDiffuse>
+        <WorldLightOverrideRim0>60,60,60</WorldLightOverrideRim0>
+        <WorldLightOverrideRim1>60,60,60</WorldLightOverrideRim1>
+        <SpellDefEffect>
+            <EffectName>LavaEruption1_New</EffectName>
+            <LocalPosition>0,150,0</LocalPosition>
+            <EffectScale>1</EffectScale>
+            <EffectDelay>1</EffectDelay>
+            <SnapToTerrain>0</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
 	
 	
 	<SpellDef InternalName="BowAttack_Thundergod">
@@ -5616,5 +5666,411 @@
         </AIData>
         <HitSoundFX>Spell_CrushingBlow_01</HitSoundFX>
     </SpellDef>
+	
+	<SpellDef InternalName="CharmCraft_Ability">
+        <DisplayName>Charmcraft Writ</DisplayName>
+        <Description>Order three especially enchanted charms for your champions.</Description>
+        <Image>SignetRing_Item.png.png</Image>
+        <IconFG>WeddingRings.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+		<Cooldown>5</Cooldown>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtEnchanter</Attribute>
+            <Value>1</Value>
+        </Prereq>
+		<SpellResourceCost>
+            <Resource>Gold</Resource>
+            <Amount>150</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>RefinedCrystal</Resource>
+            <Amount>30</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>MarksmansRing</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>SurvivorsSignet</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>PhantomRing</Attribute>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+	
+	<SpellDef InternalName="GlyphWrit_Ability">
+        <DisplayName>Glyphcraft Writ</DisplayName>
+        <Description>Order three especially enchanted glyph stones for your champions.</Description>
+        <Image>EnchantedSword1.png</Image>
+        <IconFG>DestinySliver_Item.png</IconFG>
+		<Cooldown>5</Cooldown>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtEnchanter</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>RefinedCrystal</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Gold</Resource>
+            <Amount>200</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>TelekineticGlyph</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>WarriorsFang</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>FlamebearersGlyph</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+	
+	<SpellDef InternalName="CloakWrit_Ability">
+        <DisplayName>Cloakcraft Writ</DisplayName>
+        <Description>Order three especially enchanted cloaks for your champions.</Description>
+        <Image>P_Chasm_01.png</Image>
+        <IconFG>DestinySliver_Item.png</IconFG>
+		<Cooldown>5</Cooldown>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtMasterEnchanter</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>RefinedCrystal</Resource>
+            <Amount>55</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Gold</Resource>
+            <Amount>225</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>ArrowslipCloak</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>NatureshieldCloak</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>SpellturningCloak</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+	
+	<SpellDef InternalName="ArcaneWeaponsmith_Ability">
+        <DisplayName>Writ Of Improved Enchanting</DisplayName>
+        <Description>Order a powerful enchanted sword and Maul.</Description>
+        <Image>Refined_Attack.png</Image>
+        <IconFG>W_Staff_Hellfire_Icon_01.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+		<Cooldown>1000</Cooldown>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtMasterEnchanter</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>RefinedCrystal</Resource>
+            <Amount>60</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Gold</Resource>
+            <Amount>30</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Maul_Rockshattering</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Longsword_Thunder</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+	
+		<SpellDef InternalName="Overlord_Axe_Ability">
+        <DisplayName>Forge Overlord's Axe</DisplayName>
+        <Description>Create the ultimate Axe.</Description>
+        <Image>Refined_Attack.png</Image>
+        <IconFG>W_Staff_Hellfire_Icon_01.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+		<Cooldown>1000</Cooldown>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtForgeOverlord</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>RefinedCrystal</Resource>
+            <Amount>60</Amount>
+        </SpellResourceCost>
+		<SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Greataxe_Reaper</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+	
+	<SpellDef InternalName="Overlord_Pike_Ability">
+        <DisplayName>Forge Overlord's Pike</DisplayName>
+        <Description>Create the ultimate Pike.</Description>
+        <Image>Refined_Attack.png</Image>
+        <IconFG>W_Staff_Hellfire_Icon_01.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+		<Cooldown>1000</Cooldown>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtForgeOverlord</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>RefinedCrystal</Resource>
+            <Amount>60</Amount>
+        </SpellResourceCost>
+		<SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Pike_Shockwave</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+	
+	<SpellDef InternalName="Overlord_Sword_Ability">
+        <DisplayName>Forge Overlord's Sword</DisplayName>
+        <Description>Create the ultimate sword.</Description>
+        <Image>Refined_Attack.png</Image>
+        <IconFG>W_Staff_Hellfire_Icon_01.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+		<Cooldown>1000</Cooldown>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtForgeOverlord</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>RefinedCrystal</Resource>
+            <Amount>60</Amount>
+        </SpellResourceCost>
+		<SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Longsword_Tarantella</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+	
+	<SpellDef InternalName="Overlord_Mace_Ability">
+        <DisplayName>Forge Overlord's Mace</DisplayName>
+        <Description>Create the ultimate blunt weapon.</Description>
+        <Image>Refined_Attack.png</Image>
+        <IconFG>W_Staff_Hellfire_Icon_01.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+		<Cooldown>1000</Cooldown>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtForgeOverlord</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>RefinedCrystal</Resource>
+            <Amount>60</Amount>
+        </SpellResourceCost>
+		<SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Mace_Legendcall</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+	
+	<SpellDef InternalName="Overlord_Bow_Ability">
+        <DisplayName>Forge Overlord's Bow</DisplayName>
+        <Description>Create the ultimate bow.</Description>
+        <Image>Refined_Attack.png</Image>
+        <IconFG>W_Staff_Hellfire_Icon_01.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+		<Cooldown>1000</Cooldown>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtForgeOverlord</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>RefinedCrystal</Resource>
+            <Amount>60</Amount>
+        </SpellResourceCost>
+		<SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Bow_Volcano</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+	
+	<SpellDef InternalName="Overlord_Armor_Ability">
+        <DisplayName>Forge Overlord's Armor</DisplayName>
+        <Description>Create the ultimate set of armor.</Description>
+        <Image>Refined_Attack.png</Image>
+        <IconFG>W_Staff_Hellfire_Icon_01.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+		<Cooldown>1000</Cooldown>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtForgeOverlord</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>RefinedCrystal</Resource>
+            <Amount>90</Amount>
+        </SpellResourceCost>
+		<SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Bow_Volcano</Attribute>
+        </GameModifier>
+		<GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Bow_Volcano</Attribute>
+        </GameModifier>
+		<GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Bow_Volcano</Attribute>
+        </GameModifier>
+		<GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Bow_Volcano</Attribute>
+        </GameModifier>
+		<GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Bow_Volcano</Attribute>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+	
 
+
+	
+	
 </Spells>
