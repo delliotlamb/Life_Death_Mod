@@ -3863,4 +3863,327 @@
         <ArtDef>Mace_Bishops_ArtDef</ArtDef>
     </GameItemType>
 	
+	<GameItemType InternalName="PhantomRing">
+        <DisplayName>Phantom Ring</DisplayName>
+        <Description>This ring is more magic than material, making the wearer difficult to strike, especially from afar.</Description>
+        <Type>Accessory</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>50</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_DodgeAgainstRanged</StrVal>
+            <Value>5</Value>
+        </GameModifier>
+		<GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Dodge</StrVal>
+            <Value>5</Value>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Rare</RarityDisplay>
+		<HeroOnly>1</HeroOnly>
+        <IsUsable>0</IsUsable>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>40</AIPriority>
+            </AIData>
+        <ArtDef>PhantomRing_ArtDef</ArtDef>
+        <GameItemTypeArtDef InternalName="PhantomRing_ArtDef">
+            <GameItemTypeModelPack InternalName="PhantomRing_Default">
+                <IconFile>BandoftheStalwart_Item_BG.png</IconFile>
+                <TintR>240</TintR>
+                <TintG>10</TintG>
+                <TintB>10</TintB>
+                <SFX>Equip_MagicRing_01</SFX>
+                <SFX>Equip_MagicRing_02</SFX>
+                <SFX>Equip_MagicRing_03</SFX>
+                <SFX>Equip_MagicRing_04</SFX>
+                <GameItemTypeModel>
+                </GameItemTypeModel>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+    </GameItemType>
+	
+		<GameItemType InternalName="SurvivorsSignet">
+        <DisplayName>Survivor's Signet</DisplayName>
+        <Description>This ring was enchanted for indispensible generals who rode into combat at the head of the ranks, to protect from swift death by errant missle 
+		or a single axe swipe - but it is still no substitute for a full set of armor.</Description>
+        <Type>Accessory</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>50</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_HitPoints</StrVal>
+            <Value>5</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <Value>3</Value>
+        </GameModifier>		
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Rare</RarityDisplay>
+		<HeroOnly>1</HeroOnly>
+        <IsUsable>0</IsUsable>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>40</AIPriority>
+            </AIData>
+        <ArtDef>SurvivorsSignet_ArtDef</ArtDef>
+        <GameItemTypeArtDef InternalName="SurvivorsSignet_ArtDef">
+            <GameItemTypeModelPack InternalName="SurvivorsSignet_Default">
+                <IconFile>SignetRing_Item.png</IconFile>
+                <TintR>240</TintR>
+                <TintG>10</TintG>
+                <TintB>10</TintB>
+                <SFX>Equip_MagicRing_01</SFX>
+                <SFX>Equip_MagicRing_02</SFX>
+                <SFX>Equip_MagicRing_03</SFX>
+                <SFX>Equip_MagicRing_04</SFX>
+                <GameItemTypeModel>
+                </GameItemTypeModel>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+    </GameItemType>
+	
+	<GameItemType InternalName="MarksmansRing">
+        <DisplayName>Ring Of Truestriking</DisplayName>
+        <Description>Bearing this ring, even a boy who has never gripped a sword shall strike true.</Description>
+        <Type>Accessory</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>50</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Pierce</StrVal>
+            <Value>2</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Accuracy</StrVal>
+            <Value>15</Value>
+        </GameModifier>			
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Rare</RarityDisplay>
+		<HeroOnly>1</HeroOnly>
+        <IsUsable>0</IsUsable>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>40</AIPriority>
+            </AIData>
+        <ArtDef>MarksmansRing_ArtDef</ArtDef>
+        <GameItemTypeArtDef InternalName="MarksmansRing_ArtDef">
+            <GameItemTypeModelPack InternalName="MarksmansRing_Default">
+                <IconFile>Item_RingofRestoration.png</IconFile>
+                <TintR>240</TintR>
+                <TintG>10</TintG>
+                <TintB>10</TintB>
+                <SFX>Equip_MagicRing_01</SFX>
+                <SFX>Equip_MagicRing_02</SFX>
+                <SFX>Equip_MagicRing_03</SFX>
+                <SFX>Equip_MagicRing_04</SFX>
+                <GameItemTypeModel>
+                </GameItemTypeModel>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+    </GameItemType>
+	
+	
+	
+	<GameItemType InternalName="FlamebearersGlyph">
+        <DisplayName>Flamebearer's Glyph</DisplayName>
+        <Description>Seemingly useless to many who have worn it, is magic only awakens when the bearer already carries an enchantment of flame. Those carrying spells of fire will see that their flame strikes with enchanced ferocity.</Description>
+        <Type>Accessory</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>180</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Attack_Fire</StrVal>
+            <Multiplier>1.33</Multiplier>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Rare</RarityDisplay>
+		<HeroOnly>1</HeroOnly>
+        <IsUsable>0</IsUsable>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>40</AIPriority>
+            </AIData>
+        <ArtDef>FlamebearersGlyph_ArtDef</ArtDef>
+        <GameItemTypeArtDef InternalName="FlamebearersGlyph_ArtDef">
+            <GameItemTypeModelPack InternalName="FlamebearersGlyph_Default">
+                <IconFile>AmuletofStrength_Item.png</IconFile>
+                <TintR>240</TintR>
+                <TintG>10</TintG>
+                <TintB>10</TintB>
+                <SFX>Equip_MagicRing_01</SFX>
+                <SFX>Equip_MagicRing_02</SFX>
+                <SFX>Equip_MagicRing_03</SFX>
+                <SFX>Equip_MagicRing_04</SFX>
+                <GameItemTypeModel>
+                </GameItemTypeModel>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+    </GameItemType>
+	
+		<GameItemType InternalName="WarriorsFang">
+        <DisplayName>Warrior's Fang</DisplayName>
+        <Description>This glyph was given no form by its designer, but itself took one fitting to its enchanted purpose - to make its bearer more lethal.</Description>
+        <Type>Accessory</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>180</ShopValue>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_BonusImpale</StrVal>
+                <Value>0.25</Value>
+                <Provides>+25% damage when using the Impale ability</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_BonusCrushingBlow</StrVal>
+                <Value>0.25</Value>
+                <Provides>+25% damage when using the Crushing Blow ability</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_BonusCleave</StrVal>
+                <Value>0.25</Value>
+                <Provides>+25% damage when using the Cleave ability</Provides>
+            </GameModifier>			
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Rare</RarityDisplay>
+		<HeroOnly>1</HeroOnly>
+        <IsUsable>0</IsUsable>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>40</AIPriority>
+            </AIData>
+        <ArtDef>WarriorsFang_ArtDef</ArtDef>
+        <GameItemTypeArtDef InternalName="WarriorsFang_ArtDef">
+            <GameItemTypeModelPack InternalName="WarriorsFang_Default">
+                <IconFile>DrakeTooth.png</IconFile>
+                <TintR>240</TintR>
+                <TintG>10</TintG>
+                <TintB>10</TintB>
+                <SFX>Equip_MagicRing_01</SFX>
+                <SFX>Equip_MagicRing_02</SFX>
+                <SFX>Equip_MagicRing_03</SFX>
+                <SFX>Equip_MagicRing_04</SFX>
+                <GameItemTypeModel>
+                </GameItemTypeModel>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+    </GameItemType>
+	
+		<GameItemType InternalName="TelekineticGlyph">
+        <DisplayName>Telekinetic Glyph</DisplayName>
+        <Description>Those wearing this glyph can push at enemies from afar with unseen force.</Description>
+        <Type>Accessory</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <ShopValue>200</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>UnlockCombatAbility</Attribute>
+            <StrVal>Push_Ability</StrVal>
+            <Provides>Allows the unit to cast Push</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Rare</RarityDisplay>
+		<HeroOnly>1</HeroOnly>
+        <IsUsable>0</IsUsable>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>100</AIPriority>
+            </AIData>
+        <ArtDef>TelekineticGlyph_ArtDef</ArtDef>
+        <GameItemTypeArtDef InternalName="TelekineticGlyph_ArtDef">
+            <GameItemTypeModelPack InternalName="TelekineticGlyph_Default">
+                <IconFile>DestinySliver_Item.png</IconFile>
+                <TintR>240</TintR>
+                <TintG>10</TintG>
+                <TintB>10</TintB>
+                <SFX>Equip_MagicRing_01</SFX>
+                <SFX>Equip_MagicRing_02</SFX>
+                <SFX>Equip_MagicRing_03</SFX>
+                <SFX>Equip_MagicRing_04</SFX>
+                <GameItemTypeModel>
+                </GameItemTypeModel>
+            </GameItemTypeModelPack>
+        </GameItemTypeArtDef>
+    </GameItemType>
+	
+	<GameItemType InternalName="ArrowslipCloak">
+        <DisplayName>Arrowslip Cloak</DisplayName>
+		<Description>This cloak augments the movement of the wearer to avoid arrows, bolts, or missiles - but provides no such boon against swinging hammers!</Description>
+        <Type>Cloak</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+		        <ShopValue>200</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_DodgeAgainstRanged</StrVal>
+            <Value>30</Value>
+        </GameModifier>			
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Rare</RarityDisplay>
+        <IsUsable>0</IsUsable>
+        <ArtDef>DarkWizardCloak_ArtDef</ArtDef>
+    </GameItemType>
+	
+	 <GameItemType InternalName="NatureshieldCloak">
+        <DisplayName>Natureshield Cloak</DisplayName>
+		<Description>When donned, this cloak provides general protection from elemental attacks - but not nearly enough to be truly safe.</Description>
+        <Type>Cloak</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+		        <ShopValue>200</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ResistFire</StrVal>
+            <Value>25</Value>
+            <Provides>+25% Fire resistance</Provides>
+        </GameModifier>	
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ResistCold</StrVal>
+            <Value>25</Value>
+            <Provides>+25% Cold resistance</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_ResistLightning</StrVal>
+            <Value>25</Value>
+            <Provides>+25% Lightning resistance</Provides>
+        </GameModifier>		
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Rare</RarityDisplay>
+        <IsUsable>0</IsUsable>
+        <ArtDef>Fancy_Cloak_ID1_ArtDef</ArtDef>
+    </GameItemType>
+	
+		 <GameItemType InternalName="SpellturningCloak">
+        <DisplayName>Spellturning Cloak</DisplayName>
+		<Description>When donned, this cloak helps to mitigate harmful spells.</Description>
+        <Type>Cloak</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+		        <ShopValue>200</ShopValue>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_MagicResist</StrVal>
+            <Value>20</Value>
+            <Provides>+20 Spell resistance</Provides>
+        </GameModifier>	
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <RarityDisplay>Rare</RarityDisplay>
+        <IsUsable>0</IsUsable>
+        <ArtDef>Yoren_Cloak_ID2_ArtDef</ArtDef>
+    </GameItemType>
+	
+
 </GameItemTypes>

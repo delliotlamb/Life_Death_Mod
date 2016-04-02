@@ -5549,5 +5549,72 @@
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
     </SpellDef>
+	
+	<SpellDef InternalName="Push_Ability">
+        <DisplayName>Push</DisplayName>
+        <Description>Knocks victims back 1 tile, does 25% of spell mastery as damage, and knocks them prone (unless they resist).</Description>
+        <FormattedDescription>Knocks victims back 1 tile, does %d damage, and knocks them prone (unless they resist).</FormattedDescription>		
+        <IconFG>Ability_Knockback_Icon.png</IconFG>
+        <Cooldown>10</Cooldown>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <IsCastable>0</IsCastable>
+        <IsSpecialAbility>1</IsSpecialAbility>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Pierce</AttackStat>
+            <IsForFormattedDescription>1</IsForFormattedDescription>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitStat_MagicPower] * .25]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="ValueForFormattedDescription">
+                <Expression><![CDATA[[Calc]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <GameModifier>
+            <ModType>TacticalUnit</ModType>
+            <Attribute>TargetMovesBack</Attribute>
+            <Value>2</Value>
+        </GameModifier>
+		<GameModifier>
+            <ModType>TacticalUnit</ModType>
+            <Attribute>TargetKnockedProne</Attribute>
+            <Duration>1</Duration>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Pierce</AttackStat>
+            <IsForSpellResist>1</IsForSpellResist>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitStat_MagicPower] * .25]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="ValueForFormattedDescription">
+                <Expression><![CDATA[[Calc]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <GameModifier>
+            <ModType>TacticalUnit</ModType>
+			<IsForSpellResist>1</IsForSpellResist>
+            <Attribute>TargetMovesBack</Attribute>
+            <Value>2</Value>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>5</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_CrushingBlow_01</HitSoundFX>
+    </SpellDef>
 
 </Spells>
