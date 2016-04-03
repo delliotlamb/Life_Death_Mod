@@ -609,6 +609,11 @@
             <AITag>CommandPost</AITag>
             <AIAtWarMultiplier>2</AIAtWarMultiplier>
         </AIData>
+		<UnlocksShopItem>Longsword_Pinnacle</UnlocksShopItem>
+		<UnlocksShopItem>BattleAxe_Pinnacle</UnlocksShopItem>
+		<UnlocksShopItem>Pike_Pinnacle</UnlocksShopItem>
+		<UnlocksShopItem>YewLongbow_Pinnacle</UnlocksShopItem>
+		<UnlocksShopItem>Maul_Pinnacle</UnlocksShopItem>
         <ArtDef>Art_Weaponsmith</ArtDef>
     </ImprovementType>
 	

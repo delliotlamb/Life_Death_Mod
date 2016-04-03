@@ -447,7 +447,7 @@
             <Provides>Allows purchase of Glyph Of Journeys And Wolf Charm</Provides>
         </GameModifier>		
         <AIData AIPersonality="AI_General">
-            <AIPriority>0</AIPriority>
+            <AIPriority>100</AIPriority>
             <AITag>Study</AITag>
         </AIData>
 		<UnlocksShopItem>WolfCharm</UnlocksShopItem>
@@ -489,7 +489,7 @@
             <Provides>Allows purchase of Glyph Of Journeys And Wolf Charm</Provides>
         </GameModifier>			
         <AIData AIPersonality="AI_General">
-            <AIPriority>0</AIPriority>
+            <AIPriority>100</AIPriority>
             <AITag>Study</AITag>
         </AIData>
 		<UnlocksShopItem>GlyphOfJourneys</UnlocksShopItem>	
@@ -541,11 +541,14 @@
             <Value>1</Value>
             <Provides>Can order Magic items</Provides>
         </GameModifier>	
-        <GameModifier>
-            <Provides>Allows purchase of Glyph Of Journeys And Wolf Charm</Provides>
-        </GameModifier>			
+                <GameModifier>
+                    <ModType>Player</ModType>
+                    <Attribute>UnlockSpell</Attribute>
+                    <StrVal>AI_Equipment_Armor</StrVal>
+					<Provides>Allows purchase of Glyph Of Journeys And Wolf Charm</Provides>
+                </GameModifier>				
         <AIData AIPersonality="AI_General">
-            <AIPriority>0</AIPriority>
+            <AIPriority>100</AIPriority>
             <AITag>Study</AITag>
         </AIData>	
 		<UnlocksShopItem>WolfCharm</UnlocksShopItem>
@@ -582,46 +585,21 @@
             <Attribute>AdjustDefendingUnit</Attribute>
             <StrVal>UnitStat_IsAtArcaneWeaponsmith_Tran</StrVal>
             <Value>1</Value>
-            <Provides>A Sovereign can order Transcendent Magic Weapons, once per game</Provides>
+            <Provides>A Sovereign can order Transcendent Magic Weapons</Provides>
         </GameModifier>
                 <GameModifier>
                     <ModType>Player</ModType>
                     <Attribute>UnlockSpell</Attribute>
-                    <StrVal>ArcaneWeaponsmith_TerrorSword_Ability</StrVal>
-		    <Provides>Can Forge Terror Blade (Only When Present At Forge Of The Overlord)</Provides>
-                </GameModifier>
-                <GameModifier>
-                    <ModType>Player</ModType>
-                    <Attribute>UnlockSpell</Attribute>
-                    <StrVal>ArcaneWeaponsmith_Axe_Ability</StrVal>
-		    <Provides>Can Forge Transcendent Axe (Only When Present At Forge Of The Overlord)</Provides>
-                </GameModifier>	
-                <GameModifier>
-                    <ModType>Player</ModType>
-                    <Attribute>UnlockSpell</Attribute>
-                    <StrVal>ArcaneWeaponsmith_Mace_Ability</StrVal>
-		    <Provides>Can Forge Transcendent Maul (Only When Present At Forge Of The Overlord)</Provides>
-                </GameModifier>	
-                <GameModifier>
-                    <ModType>Player</ModType>
-                    <Attribute>UnlockSpell</Attribute>
-                    <StrVal>ArcaneWeaponsmith_Bow_Ability</StrVal>
-		    <Provides>Can Forge Transcendent Bow (Only When Present At Forge Of The Overlord)</Provides>
-                </GameModifier>	
-                <GameModifier>
-                    <ModType>Player</ModType>
-                    <Attribute>UnlockSpell</Attribute>
-                    <StrVal>ArcaneWeaponsmith_Lance_Ability</StrVal>
-		    <Provides>Can Forge Transcendent Spear (Only When Present At Forge Of The Overlord)</Provides>
-                </GameModifier>			
-        <GameModifier>
-            <Provides>Unlocks new items in the shop</Provides>
-        </GameModifier>
+                    <StrVal>AI_Equipment_Weapons</StrVal>
+					<Provides>Unlocks new items in the shop</Provides>
+                </GameModifier>		
         <AIData AIPersonality="AI_General">
-            <AIPriority>0</AIPriority>
+            <AIPriority>100</AIPriority>
             <AITag>Study</AITag>
         </AIData>
-        <UnlocksShopItem>Staff_Sorcerer2</UnlocksShopItem>		
+        <UnlocksShopItem>Staff_Sorcerer2</UnlocksShopItem>	
+		<UnlocksShopItem>Longsword_Thunder</UnlocksShopItem>
+		<UnlocksShopItem>Maul_Rockshattering</UnlocksShopItem>		
         <ArtDef>Art_Weaponsmith</ArtDef>
     </ImprovementType>
 	
@@ -974,7 +952,7 @@
         </GameModifier>
     </ImprovementType>
 	
-		<ImprovementType InternalName="Weaponsmith">
+	<ImprovementType InternalName="Weaponsmith">
         <GameModifier>
             <ModType>City</ModType>
             <Attribute>AdjustDefendingUnit</Attribute>
@@ -982,6 +960,11 @@
             <Value>1</Value>
             <Provides>Sovereigns can order pinnacle weaponry like a summon spell.</Provides>
         </GameModifier>
+		<UnlocksShopItem>Longsword_Pinnacle</UnlocksShopItem>
+		<UnlocksShopItem>BattleAxe_Pinnacle</UnlocksShopItem>
+		<UnlocksShopItem>Pike_Pinnacle</UnlocksShopItem>
+		<UnlocksShopItem>YewLongbow_Pinnacle</UnlocksShopItem>
+		<UnlocksShopItem>Maul_Pinnacle</UnlocksShopItem>
     </ImprovementType>
 	
 	

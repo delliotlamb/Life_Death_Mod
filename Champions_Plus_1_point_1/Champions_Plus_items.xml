@@ -1161,7 +1161,7 @@
         <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
         <AIData AIPersonality="AI_General">
             <AIPrefType>AIPrefType_PIERCING</AIPrefType>
-            <AIPriority>655</AIPriority>
+            <AIPriority>1155</AIPriority>
         </AIData>
         <ArtDef>Pike_Krax_ArtDef</ArtDef>
     </GameItemType>
@@ -1300,7 +1300,7 @@
         <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
         <AIData AIPersonality="AI_General">
             <AIPrefType>AIPrefType_CUTTING</AIPrefType>
-            <AIPriority>460</AIPriority>
+            <AIPriority>1156</AIPriority>
         </AIData>
         <ArtDef>Greataxe_Pendulum_ArtDef</ArtDef>
     </GameItemType>
@@ -2453,7 +2453,7 @@
         <WeaponType>OneHanded</WeaponType>
         <WeaponUpgradeType>Blade</WeaponUpgradeType>
         <CanBeEquipped>1</CanBeEquipped>
-        <ShopValue>300</ShopValue>
+        <ShopValue>200</ShopValue>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
@@ -2500,7 +2500,7 @@
         <WeaponType>TwoHanded</WeaponType>
         <WeaponUpgradeType>Axe</WeaponUpgradeType>
         <CanBeEquipped>1</CanBeEquipped>
-        <ShopValue>300</ShopValue>
+        <ShopValue>200</ShopValue>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
@@ -2546,7 +2546,7 @@
         <WeaponType>Spear</WeaponType>
         <WeaponUpgradeType>Spear</WeaponUpgradeType>
         <CanBeEquipped>1</CanBeEquipped>
-        <ShopValue>300</ShopValue>
+        <ShopValue>200</ShopValue>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
@@ -2602,7 +2602,7 @@
         <WeaponUpgradeType>Bow</WeaponUpgradeType>
         <CanBeEquipped>1</CanBeEquipped>
         <AdditionalTrainingTurns>70</AdditionalTrainingTurns>
-        <ShopValue>105</ShopValue>
+        <ShopValue>200</ShopValue>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
@@ -2945,7 +2945,7 @@
         <RarityDisplay>Rare</RarityDisplay>
         <IsUsable>0</IsUsable>
             <AIData AIPersonality="AI_General">
-                <AIPriority>80</AIPriority>
+                <AIPriority>10000</AIPriority>
             </AIData>
         <ArtDef>TrollCharm_ArtDef</ArtDef>
         <GameItemTypeArtDef InternalName="TrollCharm_ArtDef">
@@ -3321,7 +3321,7 @@
         </Prereq>
         <AIData AIPersonality="AI_General">
             <AIPrefType>AIPrefType_BOW</AIPrefType>
-            <AIPriority>230</AIPriority>
+            <AIPriority>1156</AIPriority>
         </AIData>
         <ArtDef>Longbow_Shocking_ArtDef</ArtDef>
         <GameItemTypeArtDef InternalName="Longbow_Shocking_ArtDef">
@@ -4193,6 +4193,45 @@
                 <AIPriority>20</AIPriority>
             </AIData>
         <ArtDef>TrollCharm_ArtDef</ArtDef>
+    </GameItemType>
+	
+	<GameItemType InternalName="Robe_Aegis">
+        <DisplayName>Aegis Robe</DisplayName>
+        <Description>These robes combine a variety of enchantments that soften blows, turn enemy weapons aside and protect from even the sharpest blades.</Description>
+        <Type>Torso</Type>
+        <Type>Surcoat</Type>
+        <Type>Lowerbody</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>4</AdditionalTrainingTurns>
+        <ShopValue>240</ShopValue>
+        <ProductionRequirement>
+            <Type>Resource</Type>
+            <Attribute>RefinedCrystal</Attribute>
+            <Value>6</Value>
+        </ProductionRequirement>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <Value>6</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Dodge</StrVal>
+            <Value>5</Value>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>20</Likelihood>
+        <RarityDisplay>Uncommon</RarityDisplay>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>IHateThisItem</Attribute> <!-- Turned off -->
+        </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>70</AIPriority>
+            </AIData>
+        <ArtDef>Art_Robe_Aegis</ArtDef>
     </GameItemType>
 
 </GameItemTypes>

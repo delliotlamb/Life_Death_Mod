@@ -47,14 +47,14 @@
             <Duration>-1</Duration>
 			<Value>-2</Value>
         </GameModifier>
-        <GameModifier>
+        <!--<GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustArmyStat</Attribute>
             <StrVal>UnitStat_PriorityTargetReady</StrVal>
 			<ApplyToCaster>1</ApplyToCaster>
             <Duration>-1</Duration>
             <Value>-1</Value>
-        </GameModifier>
+        </GameModifier>-->
         <AIData AIPersonality="AI_General">
             <AIPriority>1000</AIPriority>
         <ValueCalcWrapper>
@@ -1994,7 +1994,7 @@
         <SpellClass>Defensive</SpellClass>
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
-		<CasterMustBeSov>1</CasterMustBeSov>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
         <Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtPlateArmorer_Master</Attribute>
@@ -2028,12 +2028,6 @@
             <ModType>GiveItem</ModType>
             <Attribute>PlateGreaves2</Attribute>
         </GameModifier>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_IsAtPlateArmorer_Master</StrVal>
-            <Value>-1</Value>
-        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
         </AIData>
@@ -2052,6 +2046,7 @@
         <SpellClass>Defensive</SpellClass>
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>		
         <Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtPlateArmorer_Master</Attribute>
@@ -2085,12 +2080,6 @@
             <ModType>GiveItem</ModType>
             <Attribute>ChainBoots_Masterwork2</Attribute>
         </GameModifier>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_IsAtPlateArmorer_Master</StrVal>
-            <Value>-1</Value>
-        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
         </AIData>
@@ -2108,6 +2097,7 @@
         <SpellClass>Defensive</SpellClass>
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
+		<AlwaysPromptForCaster>1</AlwaysPromptForCaster>
         <Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtArcaneArmorer_Tran</Attribute>
@@ -2149,12 +2139,6 @@
             <ModType>GiveItem</ModType>
             <Attribute>TowerShield_Impenetrable2</Attribute>
         </GameModifier>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_IsAtArcaneArmorer_Tran</StrVal>
-            <Value>-1</Value>
-        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
         </AIData>
@@ -2172,7 +2156,7 @@
         <SpellClass>Defensive</SpellClass>
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
-        <CasterMustBeSov>1</CasterMustBeSov>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
         <Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtArcaneArmorer_Tran</Attribute>
@@ -2214,12 +2198,6 @@
             <ModType>GiveItem</ModType>
             <Attribute>KiteShield_Mirror2</Attribute>
         </GameModifier>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_IsAtArcaneArmorer_Tran</StrVal>
-            <Value>-1</Value>
-        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
         </AIData>
@@ -2237,7 +2215,7 @@
         <SpellClass>Defensive</SpellClass>
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
-        <CasterMustBeSov>1</CasterMustBeSov>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
 		<Prereq>
             <Type>Allegiance</Type>
             <Attribute>Empire</Attribute>
@@ -2280,7 +2258,7 @@
         <SpellClass>Defensive</SpellClass>
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
-        <CasterMustBeSov>1</CasterMustBeSov>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
 		<Prereq>
             <Type>Allegiance</Type>
             <Attribute>Kingdom</Attribute>
@@ -2324,7 +2302,7 @@
         <SpellClass>Defensive</SpellClass>
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
-        <CasterMustBeSov>1</CasterMustBeSov>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
         <Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtArcaneWeaponsmith_Tran</Attribute>
@@ -2355,7 +2333,7 @@
         <DisplayName>Writ Of Transcendent Macecraft</DisplayName>
         <Description>Craft a Transcendent Blunt Weapon.</Description>
         <Image>Refined_Attack.png</Image>
-        <IconFG>W_Maul_Berserkers_Icon_01.png</IconFG>
+        <IconFG>W_Maul_Curgens_Icon_01.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
@@ -2363,7 +2341,7 @@
         <SpellClass>Defensive</SpellClass>
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
-        <CasterMustBeSov>1</CasterMustBeSov>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
         <Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtArcaneWeaponsmith_Tran</Attribute>
@@ -2385,12 +2363,6 @@
             <ModType>GiveItem</ModType>
             <Attribute>Maul_Imprisoning</Attribute>
         </GameModifier>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_IsAtArcaneWeaponsmith_Tran</StrVal>
-            <Value>-1</Value>
-        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
         </AIData>
@@ -2408,7 +2380,7 @@
         <SpellClass>Defensive</SpellClass>
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
-        <CasterMustBeSov>1</CasterMustBeSov>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
         <Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtArcaneWeaponsmith_Tran</Attribute>
@@ -2447,7 +2419,7 @@
         <SpellClass>Defensive</SpellClass>
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
-        <CasterMustBeSov>1</CasterMustBeSov>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>		
         <Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtArcaneWeaponsmith_Tran</Attribute>
@@ -2543,7 +2515,7 @@
         <SpellClass>Defensive</SpellClass>
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
-        <CasterMustBeSov>1</CasterMustBeSov>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
         <Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtWeaponsmith</Attribute>
@@ -2576,12 +2548,6 @@
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>Longsword_Pinnacle</Attribute>
-        </GameModifier>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_IsAtWeaponsmith</StrVal>
-            <Value>-1</Value>
         </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
@@ -5721,7 +5687,7 @@
         <DisplayName>Writ Of Improved Enchanting</DisplayName>
         <Description>Order a powerful enchanted sword and Maul.</Description>
         <Image>Refined_Attack.png</Image>
-        <IconFG>W_Staff_Hellfire_Icon_01.png</IconFG>
+        <IconFG>W_Maul_Berserkers_Icon_01.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
 		<Cooldown>1000</Cooldown>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
@@ -6143,5 +6109,87 @@
         </SpellDefEffect>
     </SpellDef>
 	
+	<SpellDef InternalName="AI_Equipment_Armor">
+        <DisplayName>What Spell?</DisplayName>
+        <Description>You really need to keep your spellbook more organized, this is just notes and scribbles.</Description>
+        <Image>Improvement_Academy.png</Image>
+        <IconFG>Ability_Amnesia_Icon.png</IconFG>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <CasterMustBeSov>1</CasterMustBeSov>
+        <SpellResourceCost>
+            <Resource>ForbiddenLore</Resource>
+            <Amount>1</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>ChainGreaves_Transcendent</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>ChainBreastpiece_Transcendent</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>ChainHelmet_Transcendent</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+			<Attribute>ChainVambraces_Transcendent</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>ChainBoots_Transcendent</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>KiteShield_Mirror2</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>1000</AIPriority>
+        </AIData>
+    </SpellDef>
+	
+	<SpellDef InternalName="AI_Equipment_Weapons">
+        <DisplayName>What Spell?</DisplayName>
+        <Description>You really need to keep your spellbook more organized, this is just notes and scribbles.</Description>
+        <Image>Improvement_Academy.png</Image>
+        <IconFG>Ability_Amnesia_Icon.png</IconFG>
+		<Cooldown>1000</Cooldown>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <CasterMustBeSov>1</CasterMustBeSov>
+        <SpellResourceCost>
+            <Resource>ForbiddenLore</Resource>
+            <Amount>1</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Greataxe_Pendulum2</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Maul_Imprisoning</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Longbow_Thundergod</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Pike_Spectre</Attribute>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>1000</AIPriority>
+        </AIData>
+    </SpellDef>
 	
 </Spells>
