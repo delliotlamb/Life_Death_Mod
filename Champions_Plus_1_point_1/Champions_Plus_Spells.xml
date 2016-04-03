@@ -6083,6 +6083,65 @@
         </SpellDefEffect>
     </SpellDef>
 
+	<SpellDef InternalName="Tornado">
+        <DisplayName>Tornado</DisplayName>
+        <Description>Units in the targeted army are randomly scattered around the surrounding tiles, immobilized for a turn and take 3 damage per air shard.</Description>
+        <Image>S_Tornado_Painting.png</Image>
+        <IconFG>S_Tornado_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <Cooldown>1</Cooldown>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Debuff</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+		<SpellTargetZOCType>Friendly</SpellTargetZOCType>
+        <UnitAppSpecifier>ApplyToAll</UnitAppSpecifier>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Air5</Attribute>
+        </Prereq>
+        <!--<SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>150</Amount>
+        </SpellResourceCost>-->
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Pierce</AttackStat>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumAirShards] * 3]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc2" ValueOwner="TargetUnit">
+                <Expression><![CDATA[[Unit_GetTroopCount]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc] * [Calc2]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>Immobilize</Attribute>
+            <Duration>1</Duration>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DisperseStack</Attribute>
+            <Radius>4</Radius>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>80</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Tornado_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_Tornado_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>0.75</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
+    </SpellDef>
 	
 	
 </Spells>

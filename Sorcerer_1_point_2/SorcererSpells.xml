@@ -20,12 +20,12 @@
         </Prereq>
         <SpellResourceCost>
             <Resource>Mana</Resource>
-            <Amount>130</Amount>
+            <Amount>50</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Unit</ModType>
-            <Attribute>DisperseStack</Attribute>
-            <Radius>1</Radius>
+            <Attribute>Immobilize</Attribute>
+            <Duration>3</Duration>
         </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>80</AIPriority>

@@ -3022,11 +3022,10 @@
 
     <SpellDef InternalName="RelentlessGales">
         <DisplayName>Chaotic Gales</DisplayName>
-        <Description>Targeted army on a Plains tile has its units randomly scattered around 1 surrounding tile, leaving them highly vulnerable to a focused assault.</Description>
-        <Image>S_Tornado_Painting.png</Image>
+        <Description>Targeted army on a friendly Plains tile is immobilized for 3 turns.</Description>
+        <Image>T_TitansBreath_Painting.png</Image>
         <IconFG>T_TitansBreath_Icon.png</IconFG>
 		<AutoUnlock>1</AutoUnlock>		
-        <Cooldown>1</Cooldown>
         <SpellBookSortCategory>Unit</SpellBookSortCategory>
         <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -3041,12 +3040,12 @@
         </Prereq>		
         <SpellResourceCost>
             <Resource>GaleEssence</Resource>
-            <Amount>40</Amount>
+            <Amount>10</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Unit</ModType>
-            <Attribute>DisperseStack</Attribute>
-            <Radius>1</Radius>
+            <Attribute>Immobilize</Attribute>
+            <Duration>3</Duration>
         </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
@@ -4233,10 +4232,10 @@
             <Type>AbilityBonusOption</Type>
             <Attribute>Earth5</Attribute>
         </Prereq>
-        <!--<SpellResourceCost>
+        <SpellResourceCost>
             <Resource>Mana</Resource>
-            <Amount>300</Amount>
-        </SpellResourceCost>-->
+            <Amount>200</Amount>
+        </SpellResourceCost>
         <GameModifier>
             <ModType>City</ModType>
             <Attribute>Earthquake</Attribute>
@@ -4265,6 +4264,12 @@
             <StrVal>UnitStat_HitPoints</StrVal>
 			<Duration>1</Duration>
             <Value>-2</Value>
+        </GameModifier>	
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>Mana</Attribute>
+            <ApplyToCaster>1</ApplyToCaster>
+            <Value>300</Value>
         </GameModifier>		
         <AIData AIPersonality="AI_General">
             <AIPriority>300</AIPriority>
@@ -5874,7 +5879,7 @@
         <Description>Does 12 fire damage (+2 per fire shard) and 12 physical damage (+2 per Air shard), per unit member, to all armies within 1 tile of the impact point. You will gain significant Ember and Famine favor, while equally losing Verdant favor. BEWARE - this spell will leave scarred earth behind, wiping out resources or even cities.</Description>
         <Image>S_FallingStar_Painting.png</Image>
         <IconFG>S_FallingStar_Icon.png</IconFG>
-        <Cooldown>10</Cooldown>
+        <Cooldown>5</Cooldown>
         <SpellBookSortCategory>Unit</SpellBookSortCategory>
         <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -5887,7 +5892,7 @@
         <Radius>1</Radius>
         <SpellResourceCost>
             <Resource>Mana</Resource>
-            <Amount>400</Amount>
+            <Amount>600</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Unit</ModType>
