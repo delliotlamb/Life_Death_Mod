@@ -2052,7 +2052,6 @@
         <SpellClass>Defensive</SpellClass>
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
-		<CasterMustBeSov>1</CasterMustBeSov>
         <Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtPlateArmorer_Master</Attribute>
@@ -2109,7 +2108,6 @@
         <SpellClass>Defensive</SpellClass>
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
-        <CasterMustBeSov>1</CasterMustBeSov>
         <Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtArcaneArmorer_Tran</Attribute>
@@ -5992,7 +5990,7 @@
     </SpellDef>
 	
 	<SpellDef InternalName="Brilliance_Ability">
-        <DisplayName>Blinding Light</DisplayName>
+        <DisplayName>Arcane Brilliance</DisplayName>
         <Description>Enemies within 1 tile take 24 Arcane light damage (+4 per life shard), while the caster enters a defensive stance.</Description>
 		<Description>Enemies within 1 tile take %d Arcane light damage, while the caster enters a defensive stance.</Description>
         <Image>S_Courage_Painting.png</Image>

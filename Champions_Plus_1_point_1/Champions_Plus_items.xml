@@ -275,7 +275,7 @@
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_Defense_Pierce</StrVal>
-            <Value>12</Value>
+            <Value>9</Value>
         </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
@@ -389,7 +389,7 @@
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_Defense_Pierce</StrVal>
-            <Value>8</Value>
+            <Value>7</Value>
         </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
@@ -431,7 +431,7 @@
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_Defense_Pierce</StrVal>
-            <Value>9</Value>
+            <Value>7</Value>
         </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
@@ -561,7 +561,7 @@
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_Defense_Pierce</StrVal>
-            <Value>17</Value>
+            <Value>13</Value>
         </GameModifier>
             <GameModifier>
                 <ModType>Unit</ModType>
@@ -608,8 +608,8 @@
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_Tactical_Auto_Defense_Boost</StrVal>
-            <Value>20</Value>
-            <Provides>+20 Defense when Defending</Provides>
+            <Value>22</Value>
+            <Provides>+22 Defense when Defending</Provides>
         </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
@@ -1163,7 +1163,7 @@
             <AIPrefType>AIPrefType_PIERCING</AIPrefType>
             <AIPriority>655</AIPriority>
         </AIData>
-        <ArtDef>Pike_Perfect_ArtDef</ArtDef>
+        <ArtDef>Pike_Krax_ArtDef</ArtDef>
     </GameItemType>
 	
 	<GameItemType InternalName="YewLongbow_Vengeful">
@@ -2189,7 +2189,7 @@
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_Defense_Pierce</StrVal>
-            <Value>10</Value>
+            <Value>12</Value>
         </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
@@ -3223,7 +3223,7 @@
         <ArtDef>Pike_Shockwave_ArtDef</ArtDef>
         <GameItemTypeArtDef InternalName="Pike_Shockwave_ArtDef">
             <GameItemTypeModelPack InternalName="Pike_Shockwave_Default">
-                <IconFile>W_Pike_Lightning_Icon_01.png</IconFile>
+                <IconFile>W_Pike_Holhiarn_01.png</IconFile>
                 <TintR>0</TintR>
                 <TintG>0</TintG>
                 <TintB>0</TintB>

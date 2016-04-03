@@ -178,7 +178,7 @@
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>UnitJoinArmy</Attribute>
-            <StrVal>Iru_Adept/StrVal>
+            <StrVal>Iru_Adept</StrVal>
             <UnitClass>Champion</UnitClass>
         </GameModifier>
         <AIData AIPersonality="AI_General">
