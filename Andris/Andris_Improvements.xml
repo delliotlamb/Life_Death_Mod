@@ -233,14 +233,7 @@
             <PerTurn>1</PerTurn>
             <Provides>+1 Life Power</Provides>
             <UpgradeComparisonID>2</UpgradeComparisonID>
-        </GameModifier>
-        <GameModifier>
-            <ModType>Player</ModType>
-            <Attribute>AbilityBonus</Attribute>
-            <StrVal>A_Mana</StrVal>
-            <Value>5</Value>
-            <Provides>+5% Mana in all your cities</Provides>
-        </GameModifier>		
+        </GameModifier>	
         <GameModifier>
             <ModType>Player</ModType>
             <Attribute>LimitedUnitCap</Attribute>
