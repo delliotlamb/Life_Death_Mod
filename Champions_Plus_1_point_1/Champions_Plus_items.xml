@@ -2886,8 +2886,8 @@
 
 
 
-<GameItemType InternalName="WolfToken">
-        <DisplayName>Wolf Token</DisplayName>
+<GameItemType InternalName="WolfCharm">
+        <DisplayName>Wolf Charm</DisplayName>
         <Description>Holding this tiny charm brings out the pack hunter in anyone.</Description>
         <Type>Accessory</Type>
         <CanBeEquipped>1</CanBeEquipped>
@@ -2900,6 +2900,8 @@
                 <Provides>This unit recieves triple the normal Swarm bonus</Provides>
             </GameModifier>
         <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+		<IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+		<HeroOnly>1</HeroOnly>
         <RarityDisplay>Rare</RarityDisplay>
         <IsUsable>0</IsUsable>
             <AIData AIPersonality="AI_General">
@@ -2938,6 +2940,8 @@
                 <Provides>Allows the unit to wear armor of one higher level(none allows chain, chain allows plate)</Provides>
             </GameModifier>
         <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+		<IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
+		<HeroOnly>1</HeroOnly>
         <RarityDisplay>Rare</RarityDisplay>
         <IsUsable>0</IsUsable>
             <AIData AIPersonality="AI_General">
@@ -2982,9 +2986,9 @@
         </GameModifier>
             <GameModifier>
                 <ModType>Unit</ModType>
-                <Attribute>MeleeAppliesSpell</Attribute>
-                <StrVal>BlindingLight</StrVal>
-                <Provides>Melee attacks blind nearby enemies</Provides>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Brilliance_Ability</StrVal>
+                <Provides>Allow this unit to cast Brilliance</Provides>
             </GameModifier>
 		<GameModifier>
             <ModType>Unit</ModType>
@@ -3061,35 +3065,7 @@
                     <Texture_All>gfx/hkb/Weapons/FE_Weapons_01.png</Texture_All>
                     <Attachment>hand_right_Lcf</Attachment>
                     <Color_Clothing1>232,190,28</Color_Clothing1>
-                    <Color_Metal>201,221,255</Color_Metal>
-		<EffectAttachment>
-            <Attachment>Effect_Loc_01</Attachment>
-            <EffectName>A_LightbringerSword_Particle</EffectName>
-            <EffectPosition>0,0,0</EffectPosition>
-            <EffectRotation>0,0,0</EffectRotation>
-            <EffectScale>0.1</EffectScale>
-        </EffectAttachment>
-        <EffectAttachment>
-            <Attachment>Effect_Loc_02</Attachment>
-            <EffectName>A_LightbringerSword_Particle</EffectName>
-            <EffectPosition>0,0,0</EffectPosition>
-            <EffectRotation>0,0,0</EffectRotation>
-            <EffectScale>0.1</EffectScale>
-        </EffectAttachment>
-        <EffectAttachment>
-            <Attachment>Effect_Loc_03</Attachment>
-            <EffectName>A_LightbringerSword_Particle</EffectName>
-            <EffectPosition>0,0,0</EffectPosition>
-            <EffectRotation>0,0,0</EffectRotation>
-            <EffectScale>0.1</EffectScale>
-        </EffectAttachment>
-        <EffectAttachment>
-            <Attachment>Effect_Loc_04</Attachment>
-            <EffectName>A_LightbringerSword_Particle</EffectName>
-            <EffectPosition>0,0,0</EffectPosition>
-            <EffectRotation>0,0,0</EffectRotation>
-            <EffectScale>0.1</EffectScale>
-        </EffectAttachment>					
+                    <Color_Metal>201,221,255</Color_Metal>					
                 </GameItemTypeModel>
             </GameItemTypeModelPack>
         </GameItemTypeArtDef>
@@ -3198,31 +3174,32 @@
 
 	<GameItemType InternalName="Pike_Shockwave">
         <DisplayName>Shockwave Lance</DisplayName>
-        <Description>This incredble weapon can send out a wave of incredible force with each and every strike. Entire armies can be ripped apart by its energies, but beware - the user is struck with by very same shockwave!</Description>
+        <Description>This incredble weapon can send out a wave of incredible force with its strike, ripping apart entire armies.</Description>
         <Type>Weapon</Type>
         <Type>Defense</Type>
         <WeaponType>Spear</WeaponType>
         <WeaponUpgradeType>Spear</WeaponUpgradeType>
         <CanBeEquipped>1</CanBeEquipped>
-        <ShopValue>1860</ShopValue>
+        <ShopValue>3000</ShopValue>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_Attack_Pierce</StrVal>
-            <Value>18</Value>
+            <Value>40</Value>
         </GameModifier>
             <GameModifier>
                 <ModType>Unit</ModType>
-                <Attribute>MeleeAppliesSpell</Attribute>
-                <StrVal>Shockwave_Effect</StrVal>
-                <Provides>Connecting with this weapon results in a shockwave, damaging all nearby enemies along with the wielder.</Provides>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_OverpowerMultiplier</StrVal>
+                <Value>1</Value>
+                <Provides>Overpower- Damage is multiplied by the number of units in the enemies group</Provides>
             </GameModifier>
             <GameModifier>
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
                 <StrVal>UnitStat_ArmorPierce</StrVal>
-                <Value>33</Value>
-                <Provides>Ignores 33% of the victim's Defense</Provides>
+                <Value>50</Value>
+                <Provides>Ignores 50% of the victim's Defense</Provides>
             </GameModifier>
             <GameModifier>
                 <ModType>Unit</ModType>
@@ -3250,9 +3227,7 @@
                 <TintR>0</TintR>
                 <TintG>0</TintG>
                 <TintB>0</TintB>
-                <AttackSFX>Hit_LightningPike_01</AttackSFX>
-                <AttackSFX>Hit_LightningPike_02</AttackSFX>
-                <AttackSFX>Hit_LightningPike_03</AttackSFX>
+                <AttackSFX>Spell_Shockwave_01</AttackSFX>
                 <EquipSFX>Equip_WoodenItem_01</EquipSFX>
                 <EquipSFX>Equip_WoodenItem_02</EquipSFX>
                 <EquipSFX>Equip_WoodenItem_03</EquipSFX>
@@ -3404,13 +3379,13 @@
 	
 	<GameItemType InternalName="Longbow_Volcano">
         <DisplayName>Volcanic Longbow</DisplayName>
-        <Description>Woe to he who stands where these arrows land, for the earth shall become fire and all flesh shall burn away.</Description>
+        <Description>Woe to he who stands where these arrows land, for the earth shall become fire and all flesh shall burn away. Take care you do not catch yourself in its blast!</Description>
         <Type>Weapon</Type>
         <Type>Defense</Type>
         <WeaponType>Bow</WeaponType>
         <WeaponUpgradeType>Bow</WeaponUpgradeType>
         <CanBeEquipped>1</CanBeEquipped>
-        <ShopValue>5720</ShopValue>
+        <ShopValue>3000</ShopValue>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
@@ -3456,7 +3431,7 @@
         <WeaponType>Blunt</WeaponType>
         <WeaponUpgradeType>Blunt</WeaponUpgradeType>
         <CanBeEquipped>1</CanBeEquipped>
-        <ShopValue>1795</ShopValue>
+        <ShopValue>3000</ShopValue>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
@@ -3558,7 +3533,7 @@
         <WeaponType>OneHanded</WeaponType>
         <WeaponUpgradeType>Blade</WeaponUpgradeType>
         <CanBeEquipped>1</CanBeEquipped>
-        <ShopValue>3775</ShopValue>
+        <ShopValue>3000</ShopValue>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
@@ -3685,7 +3660,7 @@
         <WeaponType>Blunt</WeaponType>
         <WeaponUpgradeType>Blunt</WeaponUpgradeType>
         <CanBeEquipped>1</CanBeEquipped>
-        <ShopValue>3425</ShopValue>
+        <ShopValue>3000</ShopValue>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
@@ -3985,7 +3960,7 @@
 		<Description>This cloak augments the movement of the wearer to avoid arrows, bolts, or missiles - but provides no such boon against swinging hammers!</Description>
         <Type>Cloak</Type>
         <CanBeEquipped>1</CanBeEquipped>
-		        <ShopValue>200</ShopValue>
+		<ShopValue>200</ShopValue>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
@@ -3994,8 +3969,9 @@
         </GameModifier>			
         <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
         <RarityDisplay>Rare</RarityDisplay>
+		<HeroOnly>1</HeroOnly>
         <IsUsable>0</IsUsable>
-        <ArtDef>DarkWizardCloak_ArtDef</ArtDef>
+        <ArtDef>ArrowslipCloak_ArtDef</ArtDef>
     </GameItemType>
 	
 	 <GameItemType InternalName="NatureshieldCloak">
@@ -4003,7 +3979,7 @@
 		<Description>When donned, this cloak provides general protection from elemental attacks - but not nearly enough to be truly safe.</Description>
         <Type>Cloak</Type>
         <CanBeEquipped>1</CanBeEquipped>
-		        <ShopValue>200</ShopValue>
+		<ShopValue>200</ShopValue>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
@@ -4027,8 +4003,9 @@
         </GameModifier>		
         <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
         <RarityDisplay>Rare</RarityDisplay>
+		<HeroOnly>1</HeroOnly>
         <IsUsable>0</IsUsable>
-        <ArtDef>Fancy_Cloak_ID1_ArtDef</ArtDef>
+        <ArtDef>NatureshieldCloak_ArtDef</ArtDef>
     </GameItemType>
 	
 		 <GameItemType InternalName="SpellturningCloak">
@@ -4036,7 +4013,7 @@
 		<Description>When donned, this cloak helps to mitigate harmful spells.</Description>
         <Type>Cloak</Type>
         <CanBeEquipped>1</CanBeEquipped>
-		        <ShopValue>200</ShopValue>
+		<ShopValue>200</ShopValue>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
@@ -4046,8 +4023,9 @@
         </GameModifier>	
         <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
         <RarityDisplay>Rare</RarityDisplay>
+		<HeroOnly>1</HeroOnly>
         <IsUsable>0</IsUsable>
-        <ArtDef>Yoren_Cloak_ID2_ArtDef</ArtDef>
+        <ArtDef>SpellturningCloak_ArtDef</ArtDef>
     </GameItemType>
 	
 	
@@ -4182,6 +4160,39 @@
                 <AIPriority>130</AIPriority>
             </AIData>
         <ArtDef>Art_TitansCrown</ArtDef>
+    </GameItemType>
+	
+	<GameItemType InternalName="TrollCharm">
+        <DisplayName>Troll Charm</DisplayName>
+        <Description>This bone charm increases the wearer's heal rate.</Description>
+        <Type>Accessory</Type>
+        <CanBeEquipped>1</CanBeEquipped>
+        <AdditionalTrainingTurns>8</AdditionalTrainingTurns>
+        <ShopValue>195</ShopValue>
+        <ProductionRequirement>
+            <Type>Resource</Type>
+            <Attribute>RefinedCrystal</Attribute>
+            <Value>2</Value>
+        </ProductionRequirement>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_HealthRegen</StrVal>
+            <Value>5</Value>
+            <Provides>+5 Healing per Season</Provides>
+        </GameModifier>
+        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
+        <Likelihood>20</Likelihood>
+        <RarityDisplay>Uncommon</RarityDisplay>
+        <IsUsable>0</IsUsable>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>ThisItemIsUseless</Attribute> <!-- Turned off -->
+        </Prereq>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>20</AIPriority>
+            </AIData>
+        <ArtDef>TrollCharm_ArtDef</ArtDef>
     </GameItemType>
 
 </GameItemTypes>

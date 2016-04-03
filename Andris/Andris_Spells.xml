@@ -156,12 +156,13 @@
         </AIData>
     </SpellDef>
 	
-	<SpellDef InternalName="SummonIruAllies">
-        <DisplayName>Summon Iru Ally</DisplayName>
-        <Description>Summons a level 5 (+1 per life shard) Iru Soldier.</Description>
+	<SpellDef InternalName="SummonIruHenchman">
+        <DisplayName>Summon Iru Henchman</DisplayName>
+        <Description>Summons a level 1 Iru Adept.</Description>
         <Image>Res_IruT'Alavar.png</Image>
         <IconFG>Life_Dot.png</IconFG>
         <CanStack>0</CanStack>
+		<Cooldown>1000</Cooldown>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -172,28 +173,16 @@
         <CasterMustBeSov>1</CasterMustBeSov>		
         <SpellResourceCost>
             <Resource>Mana</Resource>
-            <Amount>20</Amount>
-        </SpellResourceCost>
-        <SpellResourceCost>
-            <Resource>Mana</Resource>
-            <PerTurn>1</PerTurn>
-            <Amount>1</Amount>
+            <Amount>50</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Unit</ModType>
-            <Attribute>SummonUnit</Attribute>
-            <StrVal>Iru Soldier</StrVal>
-            <UnitClass>Iru_Soldier</UnitClass>
-            <Duration>-1</Duration>
-            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
-                <Expression><![CDATA[[UnitOwner_GetNumLifeShards] + [UnitStat_BonusSummonLevel]]]></Expression>
-            </Calculate>
-            <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc] + 5]]></Expression>
-            </Calculate>
+            <Attribute>UnitJoinArmy</Attribute>
+            <StrVal>Iru_Adept/StrVal>
+            <UnitClass>Champion</UnitClass>
         </GameModifier>
         <AIData AIPersonality="AI_General">
-            <AIPriority>70</AIPriority>
+            <AIPriority>1000</AIPriority>
         </AIData>
         <HitSoundFX>Spell_SummonFireElemental_01</HitSoundFX>
     </SpellDef>

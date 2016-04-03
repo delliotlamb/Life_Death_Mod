@@ -55,8 +55,8 @@
             <GameModifier>
                 <ModType>Player</ModType>
                 <Attribute>UnlockSpell</Attribute>
-                <StrVal>SummonIruAllies</StrVal>
-                <Provides>Unlocks Summon Iru Soldier</Provides>
+                <StrVal>SummonIruHenchman</StrVal>
+                <Provides>Unlocks Summon Iru Henchman</Provides>
             </GameModifier>
             <GameModifier>
                 <ModType>Player</ModType>
@@ -189,13 +189,13 @@
                 <ModType>Unit</ModType>
                 <Attribute>UnlockCombatAbility</Attribute>
                 <StrVal>Embers2</StrVal>
-                <Provides>Needles of fire shoot at an enemy for for 10 (+1 per level) damage</Provides>
+                <Provides>Embers: Needles of fire shoot at an enemy for for 10 (+1 per level) damage</Provides>
             </GameModifier>	
             <GameModifier>
                 <ModType>Unit</ModType>
                 <Attribute>UnlockCombatAbility</Attribute>
-                <StrVal>StinkingMud</StrVal>
-                <Provides>Changes the terrain within a 1 tile radius to mud.  Units can only move 1 tile per turn through mud.</Provides>
+                <StrVal>Fireball_Ability</StrVal>
+                <Provides>This unit can cast fireball</Provides>
             </GameModifier>		
             <CombatRating>40</CombatRating>
             <IsCombatAbility>1</IsCombatAbility>

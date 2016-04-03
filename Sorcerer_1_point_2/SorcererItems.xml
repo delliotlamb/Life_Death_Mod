@@ -116,21 +116,14 @@
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_Attack_Pierce</StrVal>
-            <Value>12</Value>
+            <Value>18</Value>
         </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_CombatSpeed</StrVal>
-            <Value>3</Value>
+            <Value>1</Value>
         </GameModifier>		
-            <GameModifier>
-                <ModType>Unit</ModType>
-                <Attribute>AdjustUnitStat</Attribute>
-                <StrVal>UnitStat_DodgeAgainstRanged</StrVal>
-                <Value>20</Value>
-                <Provides>+20 Dodge Versus Ranged Attacks</Provides>
-            </GameModifier>
             <GameModifier>
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>

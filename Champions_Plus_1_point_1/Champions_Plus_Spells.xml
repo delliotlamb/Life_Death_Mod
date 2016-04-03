@@ -5220,85 +5220,6 @@
         </AIData>
     </SpellDef>
 	
-	<SpellDef InternalName="Shockwave_Effect">
-        <DisplayName>Shockwave Effect</DisplayName>
-        <Description>A minor earthquake damages all enemies within 1 radius of the caster for 10 (+2 per earth shard) damage.</Description>
-        <Image>T_Shockwave_Painting.png</Image>
-        <IconFG>T_Shockwave_Icon.png</IconFG>
-        <SpellBookSortCategory>Unit</SpellBookSortCategory>
-        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
-        <SpellType>Tactical</SpellType>
-        <SpellClass>Offensive</SpellClass>
-        <SpellSubClass>Damage</SpellSubClass>
-        <SpellTargetType>EnemyUnit</SpellTargetType>
-        <IgnoreInvalidTargetsInRadius>1</IgnoreInvalidTargetsInRadius>
-        <IsResistable>1</IsResistable>
-        <Radius>1</Radius>
-        <Range>0</Range>
-        <GameModifier>
-            <ModType>TacticalUnit</ModType>
-            <Attribute>TargetKnockedProne</Attribute>
-            <Duration>1</Duration>
-        </GameModifier>		
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>DefendableDamage</Attribute>
-            <AttackStat>UnitStat_Attack_Pierce</AttackStat>
-            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
-                <Expression><![CDATA[[UnitOwner_GetNumEarthShards]]]></Expression>
-            </Calculate>
-            <Calculate InternalName="Calc2">
-                <Expression><![CDATA[[Calc] + 10]]></Expression>
-            </Calculate>
-            <Calculate InternalName="Calc3" ValueOwner="TargetUnit">
-                <Expression><![CDATA[[Unit_GetTroopCount]]]></Expression>
-            </Calculate>
-            <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc2] * [Calc3]]]></Expression>
-            </Calculate>
-        </GameModifier>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>DefendableDamage</Attribute>
-            <AttackStat>UnitStat_Attack_Pierce</AttackStat>
-            <IsForSpellResist>1</IsForSpellResist>
-            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
-                <Expression><![CDATA[[UnitOwner_GetNumEarthShards] / 2]]></Expression>
-            </Calculate>
-            <Calculate InternalName="Calc2">
-                <Expression><![CDATA[[Calc] + 5]]></Expression>
-            </Calculate>
-            <Calculate InternalName="Calc3" ValueOwner="TargetUnit">
-                <Expression><![CDATA[[Unit_GetTroopCount]]]></Expression>
-            </Calculate>
-            <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc2] * [Calc3]]]></Expression>
-            </Calculate>
-        </GameModifier>
-        <AIData AIPersonality="AI_General">
-            <AIPriority>80</AIPriority>
-            <AIMinSpellTargets>2</AIMinSpellTargets>
-        </AIData>
-        <CameraShakeDuration>1.25</CameraShakeDuration>
-        <CameraShakeStrength>0.25</CameraShakeStrength>
-        <HitSoundFX>Spell_Shockwave_01</HitSoundFX>
-        <SpellDefEffect>
-            <EffectName>T_Shockwave_Particle</EffectName>
-            <LocalPosition>0,0,0</LocalPosition>
-            <EffectScale>1</EffectScale>
-            <EffectDelay>0</EffectDelay>
-            <SnapToTerrain>1</SnapToTerrain>
-            <PlayOnAllTargets>0</PlayOnAllTargets>
-        </SpellDefEffect>
-        <SpellDefEffect>
-            <EffectName>T_Shockwave_Impact_Particle</EffectName>
-            <LocalPosition>0,50,0</LocalPosition>
-            <EffectScale>1</EffectScale>
-            <EffectDelay>0.25</EffectDelay>
-            <SnapToTerrain>1</SnapToTerrain>
-            <PlayOnAllTargets>1</PlayOnAllTargets>
-        </SpellDefEffect>
-    </SpellDef>
 	
 	<SpellDef InternalName="Kill_Effect">
         <DisplayName>Kill</DisplayName>
@@ -5339,6 +5260,7 @@
         <SpellClass>Offensive</SpellClass>
         <SpellSubClass>Damage</SpellSubClass>
         <SpellTargetType>EnemyUnit</SpellTargetType>
+		<AllowFriendlyFireInRadius>1</AllowFriendlyFireInRadius>
         <HideInHiergamenon>1</HideInHiergamenon>
         <IsCastable>0</IsCastable>
         <IsRangedAttack>1</IsRangedAttack>
@@ -5757,7 +5679,7 @@
         <DisplayName>Cloakcraft Writ</DisplayName>
         <Description>Order three especially enchanted cloaks for your champions.</Description>
         <Image>P_Chasm_01.png</Image>
-        <IconFG>DestinySliver_Item.png</IconFG>
+        <IconFG>WizardCloak_Dark.png</IconFG>
 		<AutoUnlock>1</AutoUnlock>
 		<Cooldown>5</Cooldown>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
@@ -5841,7 +5763,7 @@
         <DisplayName>Forge Overlord's Axe</DisplayName>
         <Description>Create the ultimate Axe.</Description>
         <Image>Refined_Attack.png</Image>
-        <IconFG>W_Staff_Hellfire_Icon_01.png</IconFG>
+        <IconFG>W_GreatAxe_Sunderer_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
 		<Cooldown>1000</Cooldown>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
@@ -5877,7 +5799,7 @@
         <DisplayName>Forge Overlord's Pike</DisplayName>
         <Description>Create the ultimate Pike.</Description>
         <Image>Refined_Attack.png</Image>
-        <IconFG>W_Staff_Hellfire_Icon_01.png</IconFG>
+        <IconFG>W_Pike_Holhiarn_01.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
 		<Cooldown>1000</Cooldown>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
@@ -5913,7 +5835,7 @@
         <DisplayName>Forge Overlord's Sword</DisplayName>
         <Description>Create the ultimate sword.</Description>
         <Image>Refined_Attack.png</Image>
-        <IconFG>W_Staff_Hellfire_Icon_01.png</IconFG>
+        <IconFG>W_Longsword_Legendary_Icon_01.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
 		<Cooldown>1000</Cooldown>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
@@ -5949,7 +5871,7 @@
         <DisplayName>Forge Overlord's Mace</DisplayName>
         <Description>Create the ultimate blunt weapon.</Description>
         <Image>Refined_Attack.png</Image>
-        <IconFG>W_Staff_Hellfire_Icon_01.png</IconFG>
+        <IconFG>W_Mace_Legendary_Icon_01.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
 		<Cooldown>1000</Cooldown>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
@@ -5985,7 +5907,7 @@
         <DisplayName>Forge Overlord's Bow</DisplayName>
         <Description>Create the ultimate bow.</Description>
         <Image>Refined_Attack.png</Image>
-        <IconFG>W_Staff_Hellfire_Icon_01.png</IconFG>
+        <IconFG>W_Longbow_Yew_Perfect_Icon_01.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
 		<Cooldown>1000</Cooldown>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
@@ -6020,8 +5942,8 @@
 	<SpellDef InternalName="Overlord_Armor_Ability">
         <DisplayName>Forge Overlord's Armor</DisplayName>
         <Description>Create the ultimate set of armor, wearable by any champion (no armor proficiency required).</Description>
-        <Image>Refined_Attack.png</Image>
-        <IconFG>W_Staff_Hellfire_Icon_01.png</IconFG>
+        <Image>T_ParidensReturn_Painting.png</Image>
+        <IconFG>VergaHelmet.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
 		<Cooldown>1000</Cooldown>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
@@ -6069,7 +5991,99 @@
         </AIData>
     </SpellDef>
 	
-
+	<SpellDef InternalName="Brilliance_Ability">
+        <DisplayName>Blinding Light</DisplayName>
+        <Description>Enemies within 1 tile take 24 Arcane light damage (+4 per life shard), while the caster enters a defensive stance.</Description>
+		<Description>Enemies within 1 tile take %d Arcane light damage, while the caster enters a defensive stance.</Description>
+        <Image>S_Courage_Painting.png</Image>
+        <IconFG>T_BlindingLight_Icon.png</IconFG>
+        <CanStack>1</CanStack>
+		<Cooldown>5</Cooldown>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitCurse</SpellBookSortSubCategory>
+        <SpellType>Tactical</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Debuff</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+        <AllowFriendlyFireInRadius>0</AllowFriendlyFireInRadius>
+        <IgnoreInvalidTargetsInRadius>1</IgnoreInvalidTargetsInRadius>
+        <IsSpecialAbility>1</IsSpecialAbility>
+        <Radius>1</Radius>
+        <Range>0</Range>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_ArcaneLight</AttackStat>
+            <IsForFormattedDescription>1</IsForFormattedDescription>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumLifeShards] * 4]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc] + 24]]></Expression>
+            </Calculate>
+            <Calculate InternalName="ValueForFormattedDescription">
+                <Expression><![CDATA[[Calc] + 24]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Defense_Pierce</StrVal>
+            <ApplyToCaster>1</ApplyToCaster>
+            <Duration>1</Duration>
+            <UpdateDurationAtTurnStart>1</UpdateDurationAtTurnStart>
+            <Effect>Y_Defend_Particle</Effect>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitStat_Tactical_Auto_Defense_Boost]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc]]]></Expression>
+            </Calculate>
+        </GameModifier>		
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Dodge</StrVal>
+            <ApplyToCaster>1</ApplyToCaster>
+            <Duration>1</Duration>
+            <UpdateDurationAtTurnStart>1</UpdateDurationAtTurnStart>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitStat_Tactical_Auto_Dodge_Boost]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc]]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_Stamina</StrVal>
+            <ApplyToCaster>1</ApplyToCaster>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitStat_Tactical_Auto_Stamina_Boost]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc]]]></Expression>
+            </Calculate>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>100</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_Blind_01</HitSoundFX>
+        <WorldLightOverrideTime>4</WorldLightOverrideTime>
+        <WorldLightOverrideAmbiant>1500,1500,1500</WorldLightOverrideAmbiant>
+        <WorldLightOverrideDiffuse>500,500,500</WorldLightOverrideDiffuse>
+        <WorldLightOverrideRim0>240,240,240</WorldLightOverrideRim0>
+        <WorldLightOverrideRim1>240,240,240</WorldLightOverrideRim1>
+        <SpellDefEffect>
+            <EffectName>S_BlindingLight_Particle</EffectName>
+            <LocalPosition>0,60,0</LocalPosition>
+            <EffectScale>2</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+            <PlayOnCaster>1</PlayOnCaster>
+        </SpellDefEffect>
+    </SpellDef>
 
 	
 	

@@ -908,9 +908,10 @@
         <RequiresResource>1</RequiresResource>
         <SupportedResourceType>IronOre</SupportedResourceType>
         <PreferredTerrain>Category:Land</PreferredTerrain>
+		<UpgradesToImprovement>IronWorks</UpgradesToImprovement>
         <UpgradeTier>3</UpgradeTier>
         <HideInHiergamenon>1</HideInHiergamenon>
-	<Prereq>
+		<Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Republic</Attribute>
             <Target>Player</Target>

@@ -106,12 +106,19 @@
 		<IsChampion>0</IsChampion>
 	</UnitType>
 	
-	<UnitType InternalName="Iru_Soldier">
-        <DisplayName>Iru Warrior</DisplayName>
-        <CanBeDesigned>0</CanBeDesigned>
+	<UnitType InternalName="Iru_Adept">
+        <DisplayName>Iru Adept</DisplayName>
+        <DividesBattleExp>0</DividesBattleExp>
+        <Gender>Male</Gender>
+        <IsNPC>1</IsNPC>
+        <IsChampion>1</IsChampion>
         <IsSovereign>0</IsSovereign>
-        <HasWages>0</HasWages>
-        <SpawnRating>5</SpawnRating>
+        <GetPerksOnLevelUp>1</GetPerksOnLevelUp>
+        <AllowGrouping>0</AllowGrouping>
+        <Prereq>
+            <Type>Race</Type>
+            <Attribute>Race_Type_Cypher</Attribute>
+        </Prereq>		
         <LevelMilestone InternalName="L1">
             <Level>1</Level>
             <UnitStat_Accuracy>75</UnitStat_Accuracy>
@@ -125,7 +132,9 @@
 			<UnitStat_BG_IsMale>1.0000</UnitStat_BG_IsMale>
 			<UnitStat_BG_IsTwisted>1.0000</UnitStat_BG_IsTwisted>			
         </LevelMilestone>
-        <SelectedAbilityBonusOption>IruSoldier</SelectedAbilityBonusOption>
+        <SelectedAbilityBonusOption>LifeAdept1</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>FireAdept1</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>IruLifeLink_Ability</SelectedAbilityBonusOption>		
         <SelectedAbilityBonusOption>VulnerableToCold</SelectedAbilityBonusOption>
         <Equipment>Staff_Monks</Equipment>
         <Equipment>Robe_Adept</Equipment>

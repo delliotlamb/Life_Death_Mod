@@ -443,10 +443,14 @@
             <Value>1</Value>
             <Provides>Champions can order magic accessories (chamrs) when present, summoning items like a spell</Provides>
         </GameModifier>
+        <GameModifier>
+            <Provides>Allows purchase of Glyph Of Journeys And Wolf Charm</Provides>
+        </GameModifier>		
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
             <AITag>Study</AITag>
         </AIData>
+		<UnlocksShopItem>WolfCharm</UnlocksShopItem>
         <ArtDef>Art_Enchanter</ArtDef>
     </ImprovementType>
 	
@@ -482,14 +486,14 @@
             <Provides>Can order Magic items (charms)</Provides>
         </GameModifier>	
         <GameModifier>
-            <Provides>Allows purchase of Glyph Of Journeys</Provides>
+            <Provides>Allows purchase of Glyph Of Journeys And Wolf Charm</Provides>
         </GameModifier>			
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
             <AITag>Study</AITag>
         </AIData>
 		<UnlocksShopItem>GlyphOfJourneys</UnlocksShopItem>	
-		<UnlocksShopItem>WolfToken</UnlocksShopItem>
+		<UnlocksShopItem>WolfCharm</UnlocksShopItem>
         <ArtDef>Art_AlchemyLab</ArtDef>
     </ImprovementType>
 	
@@ -538,13 +542,13 @@
             <Provides>Can order Magic items</Provides>
         </GameModifier>	
         <GameModifier>
-            <Provides>Allows purchase of Glyph Of Journeys</Provides>
+            <Provides>Allows purchase of Glyph Of Journeys And Wolf Charm</Provides>
         </GameModifier>			
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
             <AITag>Study</AITag>
         </AIData>	
-		<UnlocksShopItem>WolfToken</UnlocksShopItem>
+		<UnlocksShopItem>WolfCharm</UnlocksShopItem>
 		<UnlocksShopItem>GlyphOfJourneys</UnlocksShopItem>			
         <ArtDef>Art_Armorer</ArtDef>
     </ImprovementType>
