@@ -441,7 +441,7 @@
             <Attribute>AdjustDefendingUnit</Attribute>
             <StrVal>UnitStat_IsAtEnchanter</StrVal>
             <Value>1</Value>
-            <Provides>Champions can order magic accessories when present, summoning items like a spell</Provides>
+            <Provides>Champions can order magic accessories (chamrs) when present, summoning items like a spell</Provides>
         </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
@@ -472,25 +472,30 @@
             <Attribute>AdjustDefendingUnit</Attribute>
             <StrVal>UnitStat_IsAtMasterEnchanter</StrVal>
             <Value>1</Value>
-            <Provides>Champions can order advanced magic accessories when present, summoning items like a spell</Provides>
+            <Provides>Champions can order advanced magic accessories (glyphs, cloaks) when present, summoning items like a spell</Provides>
         </GameModifier>
         <GameModifier>
             <ModType>City</ModType>
             <Attribute>AdjustDefendingUnit</Attribute>
             <StrVal>UnitStat_IsAtEnchanter</StrVal>
             <Value>1</Value>
-            <Provides>Can order Magic items</Provides>
-        </GameModifier>		
+            <Provides>Can order Magic items (charms)</Provides>
+        </GameModifier>	
+        <GameModifier>
+            <Provides>Allows purchase of Glyph Of Journeys</Provides>
+        </GameModifier>			
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
             <AITag>Study</AITag>
-        </AIData>		
+        </AIData>
+		<UnlocksShopItem>GlyphOfJourneys</UnlocksShopItem>	
+		<UnlocksShopItem>WolfToken</UnlocksShopItem>
         <ArtDef>Art_AlchemyLab</ArtDef>
     </ImprovementType>
 	
 	<ImprovementType InternalName="Arcane_Armorer">
         <DisplayName>Arcane Armorer</DisplayName>
-        <Description>Arcane Armorers are commissioned to enchant armor. Once in a lifetime, an armorer can create a work of transcendence. Only a sovereign present in the city can summon the items like a spell.</Description>
+        <Description>Arcane Armorers are commissioned to enchant armor.</Description>
 		<AllowedPerFaction>1</AllowedPerFaction>
         <RequiresCity>1</RequiresCity>
         <BarredTerrain>River</BarredTerrain>
@@ -516,20 +521,8 @@
             <Attribute>AdjustDefendingUnit</Attribute>
             <StrVal>UnitStat_IsAtArcaneArmorer_Tran</StrVal>
             <Value>1</Value>
-            <Provides>A sovereign can order Transcendent Armor, once per game</Provides>
-        </GameModifier>
-                <GameModifier>
-                    <ModType>Player</ModType>
-                    <Attribute>UnlockSpell</Attribute>
-                    <StrVal>ArcaneArmorersWrit2_Ability</StrVal>
-		     <Provides>Can Forge Transcendent Plate Mail (Only When Present At Forge Of The Overlord)</Provides>
-                </GameModifier>	
-                <GameModifier>
-                    <ModType>Player</ModType>
-                    <Attribute>UnlockSpell</Attribute>
-                    <StrVal>ArcaneArmorersWrit3_Ability</StrVal>
-		     <Provides>Can Forge Transcendent Chain Mail (Only When Present At Forge Of The Overlord)</Provides>
-                </GameModifier>		
+            <Provides>Allows crafting of Transcendent armor</Provides>
+        </GameModifier>	
         <GameModifier>
             <ModType>City</ModType>
             <Attribute>AdjustDefendingUnit</Attribute>
@@ -543,17 +536,22 @@
             <StrVal>UnitStat_IsAtEnchanter</StrVal>
             <Value>1</Value>
             <Provides>Can order Magic items</Provides>
-        </GameModifier>		
+        </GameModifier>	
+        <GameModifier>
+            <Provides>Allows purchase of Glyph Of Journeys</Provides>
+        </GameModifier>			
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
             <AITag>Study</AITag>
-        </AIData>		
+        </AIData>	
+		<UnlocksShopItem>WolfToken</UnlocksShopItem>
+		<UnlocksShopItem>GlyphOfJourneys</UnlocksShopItem>			
         <ArtDef>Art_Armorer</ArtDef>
     </ImprovementType>
 	
 	<ImprovementType InternalName="Arcane_Weaponsmith">
         <DisplayName>Arcane Weaponsmith</DisplayName>
-        <Description>An Arcane Weaponsmith is commissioned to forge incredible weapons for your heroes. Only once in a lifetime can such transcendent work be done. Only a sovereign present in the city can summon the items like a spell.</Description>
+        <Description>An Arcane Weaponsmith is commissioned to forge incredible weapons for your heroes.</Description>
 		<AllowedPerFaction>1</AllowedPerFaction>
         <RequiresCity>1</RequiresCity>
         <BarredTerrain>River</BarredTerrain>
@@ -612,9 +610,9 @@
                     <StrVal>ArcaneWeaponsmith_Lance_Ability</StrVal>
 		    <Provides>Can Forge Transcendent Spear (Only When Present At Forge Of The Overlord)</Provides>
                 </GameModifier>			
-        <!--<GameModifier>
-            <Provides>Unlocks new weapons in the shop</Provides>
-        </GameModifier>-->	
+        <GameModifier>
+            <Provides>Unlocks new items in the shop</Provides>
+        </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
             <AITag>Study</AITag>
@@ -647,6 +645,9 @@
             <Value>1</Value>
             <Provides>Can order a random piece of worn equipment, but with a chance of a powerful relic instead</Provides>
         </GameModifier>
+        <GameModifier>
+            <Provides>Allows purchase of rusty and worn equipment in shop</Provides>
+        </GameModifier>		
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
             <AITag>Economy</AITag>

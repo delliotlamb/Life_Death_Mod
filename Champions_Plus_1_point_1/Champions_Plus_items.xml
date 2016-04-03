@@ -2781,13 +2781,12 @@
 
 	<GameItemType InternalName="Longsword_Thunder">
         <DisplayName>Thunder Blade</DisplayName>
-        <Description>The rage of a hurricanes hides inside its metal, only freed by the wrath of the wielder.</Description>
+        <Description>The rage of a thundercloud hides inside its metal, only freed by the wrath of the wielder.</Description>
         <Type>Weapon</Type>
         <WeaponType>OneHanded</WeaponType>
         <WeaponUpgradeType>Blade</WeaponUpgradeType>
         <CanBeEquipped>1</CanBeEquipped>
-        <AdditionalTrainingTurns>40</AdditionalTrainingTurns>
-        <ShopValue>630</ShopValue>
+        <ShopValue>330</ShopValue>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
@@ -2798,13 +2797,20 @@
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_Attack_Lightning</StrVal>
-            <Value>10</Value>
+            <Value>8</Value>
         </GameModifier>
+		<GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsSword</StrVal>
+            <Value>1</Value>
+			<Provides>Unit counts as wielding a sword</Provides>
+        </GameModifier>			
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_CombatSpeed</StrVal>
-            <Value>3</Value>
+            <Value>2</Value>
         </GameModifier>
             <GameModifier>
                 <ModType>Unit</ModType>
@@ -2880,18 +2886,19 @@
 
 
 
-<GameItemType InternalName="CanineToken">
-        <DisplayName>Canine Token</DisplayName>
-        <Description>Holding this tiny charm bestows the wearer with enhanced reflexes.</Description>
+<GameItemType InternalName="WolfToken">
+        <DisplayName>Wolf Token</DisplayName>
+        <Description>Holding this tiny charm brings out the pack hunter in anyone.</Description>
         <Type>Accessory</Type>
         <CanBeEquipped>1</CanBeEquipped>
         <ShopValue>180</ShopValue>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_Attack_Dodge</StrVal>
-            <Value>8</Value>
-        </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustUnitStat</Attribute>
+                <StrVal>UnitStat_SwarmBonusCounter</StrVal>
+                <Value>2</Value>
+                <Provides>This unit recieves triple the normal Swarm bonus</Provides>
+            </GameModifier>
         <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
         <RarityDisplay>Rare</RarityDisplay>
         <IsUsable>0</IsUsable>
@@ -2901,7 +2908,7 @@
         <ArtDef>CanineToken_ArtDef</ArtDef>
         <GameItemTypeArtDef InternalName="CanineToken_ArtDef">
             <GameItemTypeModelPack InternalName="CanineToken_Default">
-                <IconFile>TokenoftheFriend_Item.png</IconFile>
+                <IconFile>Item_TokenoftheWolf.png</IconFile>
                 <TintR>240</TintR>
                 <TintG>10</TintG>
                 <TintB>10</TintB>
@@ -2955,7 +2962,7 @@
 	
 	<GameItemType InternalName="Longsword_ArcaneBrilliance">
         <DisplayName>Longsword Of Brilliance</DisplayName>
-        <Description>This blade hums with a mysterious vibration, ready to exude deadly rays of destruction upon its bearer's command.</Description>
+        <Description>This blade hums with a mysterious vibration, ready to exude deadly rays of light upon its bearer's command.</Description>
         <Type>Weapon</Type>
         <WeaponType>OneHanded</WeaponType>
         <WeaponUpgradeType>Blade</WeaponUpgradeType>
@@ -2971,14 +2978,21 @@
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_Attack_ArcaneLight</StrVal>
-            <Value>15</Value>
+            <Value>25</Value>
         </GameModifier>
             <GameModifier>
                 <ModType>Unit</ModType>
-                <Attribute>UnlockCombatAbility</Attribute>
-                <StrVal>LightrayLeap_Ability</StrVal>
-                <Provides>Lightray Leap- this unit can teleport through enemies in a straight line, dealing Arcane Light damage.</Provides>
-            </GameModifier>	
+                <Attribute>MeleeAppliesSpell</Attribute>
+                <StrVal>BlindingLight</StrVal>
+                <Provides>Melee attacks blind nearby enemies</Provides>
+            </GameModifier>
+		<GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsSword</StrVal>
+            <Value>1</Value>
+			<Provides>Unit counts as wielding a sword</Provides>
+        </GameModifier>				
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
@@ -3390,7 +3404,7 @@
 	
 	<GameItemType InternalName="Longbow_Volcano">
         <DisplayName>Volcanic Longbow</DisplayName>
-        <Description>Woe to he who stands where these arrows land, for the earth shall become fire and flesh shall melt away.</Description>
+        <Description>Woe to he who stands where these arrows land, for the earth shall become fire and all flesh shall burn away.</Description>
         <Type>Weapon</Type>
         <Type>Defense</Type>
         <WeaponType>Bow</WeaponType>
@@ -3573,6 +3587,13 @@
 		<GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
+            <StrVal>UnitStat_IsSword</StrVal>
+            <Value>1</Value>
+			<Provides>Unit counts as wielding a sword</Provides>
+        </GameModifier>		
+		<GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_Moves</StrVal>
             <Value>2</Value>
         </GameModifier>		
@@ -3651,35 +3672,7 @@
                     <ModelFile>gfx/hkb/Weapons/W_Longsword_Legendary_01.hkb</ModelFile>
                     <Texture_All>gfx/hkb/Weapons/FE_Weapons_01.png</Texture_All>
                     <Attachment>hand_right_Lcf</Attachment>
-                    <Color_Clothing1>232,158,28</Color_Clothing1>
-        <EffectAttachment>
-            <Attachment>Effect_Loc_01</Attachment>
-            <EffectName>W_SunBladeEffect_01</EffectName>
-            <EffectPosition>0,-4,-5</EffectPosition>
-            <EffectRotation>5,0,0</EffectRotation>
-            <EffectScale>0.5</EffectScale>
-        </EffectAttachment>
-        <EffectAttachment>
-            <Attachment>Effect_Loc_01</Attachment>
-            <EffectName>W_SunBladeEffect_01</EffectName>
-            <EffectPosition>0,-4,-15</EffectPosition>
-            <EffectRotation>5,0,0</EffectRotation>
-            <EffectScale>0.5</EffectScale>
-        </EffectAttachment>
-        <EffectAttachment>
-            <Attachment>Effect_Loc_01</Attachment>
-            <EffectName>W_SunBladeEffect_01</EffectName>
-            <EffectPosition>0,-4,-25</EffectPosition>
-            <EffectRotation>5,0,0</EffectRotation>
-            <EffectScale>0.5</EffectScale>
-        </EffectAttachment>
-        <EffectAttachment>
-            <Attachment>Effect_Loc_01</Attachment>
-            <EffectName>W_SunBladeEffect_01</EffectName>
-            <EffectPosition>0,-4,-35</EffectPosition>
-            <EffectRotation>5,0,0</EffectRotation>
-            <EffectScale>0.5</EffectScale>
-        </EffectAttachment>					
+                    <Color_Clothing1>232,158,28</Color_Clothing1>				
                 </GameItemTypeModel>
             </GameItemTypeModelPack>
         </GameItemTypeArtDef>
@@ -3735,9 +3728,9 @@
         <ArtDef>Mace_Bishops_ArtDef</ArtDef>
     </GameItemType>
 	
-	<GameItemType InternalName="PhantomRing">
-        <DisplayName>Phantom Ring</DisplayName>
-        <Description>This ring is more magic than material, making the wearer difficult to strike, especially from afar.</Description>
+	<GameItemType InternalName="FlyCharm">
+        <DisplayName>Fly Charm</DisplayName>
+        <Description>This jeweled insect makes the wearer difficult to strike, especially from afar.</Description>
         <Type>Accessory</Type>
         <CanBeEquipped>1</CanBeEquipped>
         <ShopValue>50</ShopValue>
@@ -3760,10 +3753,10 @@
             <AIData AIPersonality="AI_General">
                 <AIPriority>40</AIPriority>
             </AIData>
-        <ArtDef>PhantomRing_ArtDef</ArtDef>
-        <GameItemTypeArtDef InternalName="PhantomRing_ArtDef">
-            <GameItemTypeModelPack InternalName="PhantomRing_Default">
-                <IconFile>BandoftheStalwart_Item_BG.png</IconFile>
+        <ArtDef>FlyCharm_ArtDef</ArtDef>
+        <GameItemTypeArtDef InternalName="FlyCharm_ArtDef">
+            <GameItemTypeModelPack InternalName="FlyCharm_Default">
+                <IconFile>JeweledFly_Icon.png</IconFile>
                 <TintR>240</TintR>
                 <TintG>10</TintG>
                 <TintB>10</TintB>
@@ -4080,7 +4073,7 @@
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_Attack_Bost</StrVal>
+            <StrVal>UnitStat_Attack_Boost</StrVal>
             <Value>25</Value>
             <Provides>+25 Attack</Provides>
         </GameModifier>		
@@ -4189,35 +4182,6 @@
                 <AIPriority>130</AIPriority>
             </AIData>
         <ArtDef>Art_TitansCrown</ArtDef>
-    </GameItemType>
-	
-	<GameItemType InternalName="PlateBoots_Overlord">
-        <DisplayName>Overlord's Boots</DisplayName>
-        <Description>Magic has little hold over the bearer of these armored boots.</Description>
-        <Type>Boots</Type>
-        <CanBeEquipped>1</CanBeEquipped>
-        <HideInHiergamenon>1</HideInHiergamenon>
-        <ShopValue>440</ShopValue>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_Defense_Pierce</StrVal>
-            <Value>20</Value>
-        </GameModifier>
-		<GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_MagicResist</StrVal>
-            <Value>100</Value>
-        </GameModifier>
-        <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
-        <Likelihood>20</Likelihood>
-        <RarityDisplay>Rare</RarityDisplay>
-		<HeroOnly>1</HeroOnly>
-            <AIData AIPersonality="AI_General">
-                <AIPriority>53</AIPriority>
-            </AIData>
-        <ArtDef>Art_PlateBoots_Overlord</ArtDef>
     </GameItemType>
 
 </GameItemTypes>

@@ -2102,7 +2102,7 @@
         <Description>Craft a Transcendent Plate Armor set. Transcendent plate focuses on increasing the owner's defense and survivability to superhuman levels.</Description>
         <Image>Fallen_Medallion.png</Image>
         <IconFG>Armor_F_ImpenetrablePlateCuirass.png</IconFG>
-        <!--<AutoUnlock>1</AutoUnlock>-->
+        <AutoUnlock>1</AutoUnlock>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -2167,7 +2167,7 @@
         <Description>Craft a Transcendent Chainmail Armor set. Transcendent chain armor is enchanted to augment the performance of the owner as much as protect them.</Description>
         <Image>Fallen_Medallion.png</Image>
         <IconFG>Armor_F_OphidianScaleShirt.png</IconFG>
-        <!--<AutoUnlock>1</AutoUnlock>-->
+        <AutoUnlock>1</AutoUnlock>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -5669,8 +5669,8 @@
 	<SpellDef InternalName="CharmCraft_Ability">
         <DisplayName>Charmcraft Writ</DisplayName>
         <Description>Order three especially enchanted charms for your champions.</Description>
-        <Image>SignetRing_Item.png.png</Image>
-        <IconFG>WeddingRings.png</IconFG>
+        <Image>WeddingRings.png</Image>
+        <IconFG>SignetRing_Item.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
 		<Cooldown>5</Cooldown>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
@@ -5703,7 +5703,7 @@
         </GameModifier>
         <GameModifier>
             <ModType>GiveItem</ModType>
-            <Attribute>PhantomRing</Attribute>
+            <Attribute>FlyCharm</Attribute>
         </GameModifier>		
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
@@ -5747,7 +5747,7 @@
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>FlamebearersGlyph</Attribute>
-        </GameModifier>
+        </GameModifier>	
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
         </AIData>
@@ -5758,6 +5758,7 @@
         <Description>Order three especially enchanted cloaks for your champions.</Description>
         <Image>P_Chasm_01.png</Image>
         <IconFG>DestinySliver_Item.png</IconFG>
+		<AutoUnlock>1</AutoUnlock>
 		<Cooldown>5</Cooldown>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
@@ -6009,7 +6010,7 @@
         </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
-            <Attribute>Bow_Volcano</Attribute>
+            <Attribute>Longbow_Volcano</Attribute>
         </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
