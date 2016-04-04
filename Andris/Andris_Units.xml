@@ -207,7 +207,7 @@
         <CanBeDesigned>0</CanBeDesigned>
         <IsSovereign>0</IsSovereign>
         <HasWages>0</HasWages>
-        <SpawnRating>5</SpawnRating>
+        <SpawnRating>8</SpawnRating>
         <LevelMilestone InternalName="L1">
             <Level>1</Level>
             <UnitStat_Accuracy>75</UnitStat_Accuracy>
@@ -251,7 +251,7 @@
         <CanBeDesigned>0</CanBeDesigned>
         <IsSovereign>0</IsSovereign>
         <HasWages>0</HasWages>
-        <SpawnRating>5</SpawnRating>
+        <SpawnRating>12</SpawnRating>
         <LevelMilestone InternalName="L1">
             <Level>1</Level>
             <UnitStat_Accuracy>75</UnitStat_Accuracy>
