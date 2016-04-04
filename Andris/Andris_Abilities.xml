@@ -57,12 +57,6 @@
                 <Attribute>UnlockSpell</Attribute>
                 <StrVal>SummonIruHenchman</StrVal>
                 <Provides>Unlocks Summon Iru Henchman</Provides>
-            </GameModifier>
-            <GameModifier>
-                <ModType>Player</ModType>
-                <Attribute>UnlockSpell</Attribute>
-                <StrVal>SummonIruAllies_Tactical</StrVal>
-                <Provides>.</Provides>
             </GameModifier>			
             <Cost>1</Cost>
             <Type>Army</Type>
@@ -158,6 +152,27 @@
                 <StrVal>HealingLight</StrVal>
                 <Provides>Heals 8 hit points (+2 per level) to all allies within 1 tile.</Provides>
             </GameModifier>			
+            <CombatRating>40</CombatRating>
+            <IsCombatAbility>1</IsCombatAbility>
+            <Type>Defensive</Type>
+            <AIData AIPersonality="AI_General">
+                <AIPriority>5</AIPriority>
+            </AIData>
+        </AbilityBonusOption>
+    </AbilityBonus>
+	
+	<AbilityBonus InternalName="IruAdeptAbility">
+        <AbilityBonusOption InternalName="IruAdept">
+            <DisplayName>Iru Soldier</DisplayName>
+            <Description>Unit gains Initiative, Spell Mastery, Spell Resist, Dodge and Fire Spell Damage with each life shard.</Description>
+            <Icon>Life_Dot.png</Icon>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>BattleAutoCastSpell</Attribute>
+                <StrVal>IruLifeLink_Ability</StrVal>
+                <Value>100</Value>
+                <Provides>Iru Link is triggered when combat begins</Provides>
+            </GameModifier>		
             <CombatRating>40</CombatRating>
             <IsCombatAbility>1</IsCombatAbility>
             <Type>Defensive</Type>

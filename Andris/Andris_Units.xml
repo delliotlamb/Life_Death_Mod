@@ -134,7 +134,50 @@
         </LevelMilestone>
         <SelectedAbilityBonusOption>LifeAdept1</SelectedAbilityBonusOption>
 		<SelectedAbilityBonusOption>FireAdept1</SelectedAbilityBonusOption>
-		<SelectedAbilityBonusOption>IruLifeLink_Ability</SelectedAbilityBonusOption>		
+		<SelectedAbilityBonusOption>IruAdept</SelectedAbilityBonusOption>		
+        <SelectedAbilityBonusOption>VulnerableToCold</SelectedAbilityBonusOption>
+        <Equipment>Staff_Monks</Equipment>
+        <Equipment>Robe_Adept</Equipment>
+        <Quote>We are the hidden.</Quote>
+        <Backstory>From the hidden city of Iru T'Alavar, the Iru rarely come forward into the "open world". No one knows where their hidden valley is. Rumored to be one of the races of the "Fallen", the Iru are benevolent and peaceful by nature but also make lethal warriors.</Backstory>
+        <Medallions InternalName="">
+            <All>Sovereign_Magnar.png</All>
+        </Medallions>
+        <AnimationPack>FemaleSovereignAnimationPack</AnimationPack>
+        <BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+        <Color_Skin>230,220,245,55</Color_Skin>
+        <CutSceneDataPack>SandCrawlerUnitCutscenePack</CutSceneDataPack>
+        <EyeTexture>gfx/eyes/female_brown_eye.png</EyeTexture>
+        <InfoCardBackground>BG25_Sunset</InfoCardBackground>
+        <ModelPath>gfx\hkb\Monsters\M_SandCrawler_Shaman_Mesh_01.hkb</ModelPath>
+        <ModelScale>0.7</ModelScale>
+        <OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+        <SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+        <SoundPack>SoundPack_Generic_Female</SoundPack>
+        <TacticalModelScale>1</TacticalModelScale>
+        <Texture_Skin>Gfx\HKB\Units\K_Female_Fallen_Texture_01.png</Texture_Skin>
+        <UnitModelType>MancerMale</UnitModelType>
+    </UnitType>
+	
+	<UnitType InternalName="Iru_Soldier">
+        <DisplayName>Iru Soldier</DisplayName>
+        <CanBeDesigned>0</CanBeDesigned>
+        <IsSovereign>0</IsSovereign>
+        <HasWages>0</HasWages>
+        <SpawnRating>5</SpawnRating>
+        <LevelMilestone InternalName="L1">
+            <Level>1</Level>
+            <UnitStat_Accuracy>75</UnitStat_Accuracy>
+            <UnitStat_Attack_Pierce>0</UnitStat_Attack_Pierce>
+            <UnitStat_CombatSpeed>22</UnitStat_CombatSpeed>
+            <UnitStat_HitPoints>20</UnitStat_HitPoints>
+            <UnitStat_Intelligence>10</UnitStat_Intelligence>			
+			<UnitStat_BG_IsHumanoid>1.0000</UnitStat_BG_IsHumanoid>
+			<UnitStat_BG_IsKingdom>1.0000</UnitStat_BG_IsKingdom>
+			<UnitStat_BG_IsMale>1.0000</UnitStat_BG_IsMale>
+			<UnitStat_BG_IsTwisted>1.0000</UnitStat_BG_IsTwisted>			
+        </LevelMilestone>
+		<SelectedAbilityBonusOption>IruSoldier</SelectedAbilityBonusOption>		
         <SelectedAbilityBonusOption>VulnerableToCold</SelectedAbilityBonusOption>
         <Equipment>Staff_Monks</Equipment>
         <Equipment>Robe_Adept</Equipment>
