@@ -2,7 +2,7 @@
 
 <SpellDef InternalName="ChaosInTheRanks">
         <DisplayName>Chaos In The Ranks</DisplayName>
-        <Description>Units in the targeted army are randomly scattered around the adjacent surrounding tiles.</Description>
+        <Description>Units in the targeted army are immobilized for 3 turns (Can be cast outside friendly territory).</Description>
         <Image>T_Pandemonium_Painting.png</Image>
         <IconFG>T_DirgeofCeresa_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>

@@ -148,7 +148,7 @@
                 <Expression><![CDATA[[UnitOwner_GetNumLifeShards]]]></Expression>
             </Calculate>
             <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc]]]></Expression>
+                <Expression><![CDATA[[Calc] * .1]]></Expression>
             </Calculate>
         </GameModifier>		
         <AIData AIPersonality="AI_General">
@@ -169,6 +169,7 @@
         <SpellClass>Defensive</SpellClass>
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
+		<LifeShards>1</LifeShards>
         <Range>0</Range>
         <CasterMustBeSov>1</CasterMustBeSov>		
         <SpellResourceCost>
