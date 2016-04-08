@@ -1,7 +1,7 @@
-<ImprovementTypes>
+<!--<ImprovementTypes>
 	
 	<ImprovementType InternalName="LifeAltar">
-        <!--<DisplayName>Life Altar</DisplayName>
+        <DisplayName>Life Altar</DisplayName>
         <Description>Life Altars can be built on Life Shards. They amplify Life spells and provide Mana every season.</Description>
         <SpecialBuildingType>Shard</SpecialBuildingType>
         <IgnoreDuplicateImpLimit>1</IgnoreDuplicateImpLimit>
@@ -13,13 +13,13 @@
         <Prereq>
             <Type>Allegiance</Type>
             <Attribute>Kingdom</Attribute>
-        </Prereq>-->
+        </Prereq>
         <Prereq>
             <Type>RestrictedAbilityBonusOption</Type>
             <Attribute>IruAllies</Attribute>
             <Target>Player</Target>
         </Prereq>		
-        <!--<Prereq>
+        <Prereq>
             <Type>Tech</Type>
             <Attribute>Shard_Harvesting</Attribute>
         </Prereq>
@@ -44,11 +44,11 @@
             <AIPriority>5</AIPriority>
             <AITag>Shards</AITag>
         </AIData>
-        <ArtDef>LifeAltar_ArtDef</ArtDef>-->
+        <ArtDef>LifeAltar_ArtDef</ArtDef>
     </ImprovementType>
 	
     <ImprovementType InternalName="LifeShrine">
-        <!--<DisplayName>Life Shrine</DisplayName>
+        <DisplayName>Life Shrine</DisplayName>
         <Description>Life Shrines upgrade from Life Altars. They amplify Life spells and provide additional Mana every season.</Description>
         <SpecialBuildingType>Shard</SpecialBuildingType>
         <IgnoreDuplicateImpLimit>1</IgnoreDuplicateImpLimit>
@@ -60,13 +60,13 @@
         <Prereq>
             <Type>Allegiance</Type>
             <Attribute>Kingdom</Attribute>
-        </Prereq>-->
+        </Prereq>
         <Prereq>
             <Type>RestrictedAbilityBonusOption</Type>
             <Attribute>IruAllies</Attribute>
             <Target>Player</Target>
         </Prereq>			
-        <!--<Prereq>
+        <Prereq>
             <Type>Tech</Type>
             <Attribute>Immortal_Codex</Attribute>
         </Prereq>
@@ -91,24 +91,24 @@
             <AIPriority>5</AIPriority>
             <AITag>Shards</AITag>
         </AIData>
-        <ArtDef>LifeShrine_ArtDef</ArtDef>-->
+        <ArtDef>LifeShrine_ArtDef</ArtDef>
     </ImprovementType>
 	
     <ImprovementType InternalName="LifeTemple">
-        <!--<DisplayName>Life Temple</DisplayName>
+        <DisplayName>Life Temple</DisplayName>
         <Description>Life Temples upgrade from Life Shrines. They amplify Life spells and provide additional Mana every season.</Description>
         <SpecialBuildingType>Shard</SpecialBuildingType>
         <IgnoreDuplicateImpLimit>1</IgnoreDuplicateImpLimit>
         <RequiresResource>1</RequiresResource>
         <SupportedResourceType>LifeShard</SupportedResourceType>
         <PreferredTerrain>Category:Land</PreferredTerrain>
-        <UpgradeTier>3</UpgradeTier>-->
+        <UpgradeTier>3</UpgradeTier>
         <Prereq>
             <Type>RestrictedAbilityBonusOption</Type>
             <Attribute>IruAllies</Attribute>
             <Target>Player</Target>
         </Prereq>		
-        <!--<Prereq>
+        <Prereq>
             <Type>Allegiance</Type>
             <Attribute>Kingdom</Attribute>
         </Prereq>
@@ -137,7 +137,7 @@
             <AIPriority>5</AIPriority>
             <AITag>Shards</AITag>
         </AIData>
-        <ArtDef>LifeTemple_ArtDef</ArtDef>-->
+        <ArtDef>LifeTemple_ArtDef</ArtDef>
     </ImprovementType>
 	
 	<ImprovementType InternalName="LifeAltar_Andris">
@@ -308,4 +308,4 @@
         <ArtDef>LifeTemple_ArtDef</ArtDef>
     </ImprovementType>
 	
-	    </ImprovementTypes>
+	    </ImprovementTypes>-->

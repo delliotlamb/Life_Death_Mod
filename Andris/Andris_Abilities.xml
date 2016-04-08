@@ -57,6 +57,12 @@
                 <Attribute>UnlockSpell</Attribute>
                 <StrVal>SummonIruHenchman</StrVal>
                 <Provides>Unlocks Summon Iru Henchman</Provides>
+            </GameModifier>	
+            <GameModifier>
+                <ModType>Player</ModType>
+                <Attribute>UnlockSpell</Attribute>
+                <StrVal>SummonIru</StrVal>
+                <Provides>Unlocks Summon Iru Soldier</Provides>
             </GameModifier>			
             <Cost>1</Cost>
             <Type>Army</Type>
@@ -101,7 +107,7 @@
         </AbilityBonusOption>
 		</AbilityBonus>
 		
-		<AbilityBonus InternalName="IruKnightAbility">
+		<!--<AbilityBonus InternalName="IruKnightAbility">
         <AbilityBonusOption InternalName="IruKnight">
             <DisplayName>Iru Knight</DisplayName>
             <Description>Unit gains Initiative, Spell Mastery, Spell Resist, Dodge and Fire Spell Damage with each life shard.</Description>
@@ -171,7 +177,7 @@
                 <AIPriority>5</AIPriority>
             </AIData>
         </AbilityBonusOption>
-    </AbilityBonus>
+    </AbilityBonus>-->
 	
 	<AbilityBonus InternalName="IruAdeptAbility">
         <AbilityBonusOption InternalName="IruAdept">

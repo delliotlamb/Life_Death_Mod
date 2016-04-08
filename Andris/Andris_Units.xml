@@ -169,14 +169,14 @@
             <UnitStat_Accuracy>75</UnitStat_Accuracy>
             <UnitStat_Attack_Pierce>0</UnitStat_Attack_Pierce>
             <UnitStat_CombatSpeed>22</UnitStat_CombatSpeed>
-            <UnitStat_HitPoints>20</UnitStat_HitPoints>
+            <UnitStat_HitPoints>25</UnitStat_HitPoints>
             <UnitStat_Intelligence>10</UnitStat_Intelligence>			
 			<UnitStat_BG_IsHumanoid>1.0000</UnitStat_BG_IsHumanoid>
 			<UnitStat_BG_IsKingdom>1.0000</UnitStat_BG_IsKingdom>
 			<UnitStat_BG_IsMale>1.0000</UnitStat_BG_IsMale>
 			<UnitStat_BG_IsTwisted>1.0000</UnitStat_BG_IsTwisted>			
         </LevelMilestone>
-		<SelectedAbilityBonusOption>IruSoldier</SelectedAbilityBonusOption>		
+		<SelectedAbilityBonusOption>IruMaster</SelectedAbilityBonusOption>		
         <SelectedAbilityBonusOption>VulnerableToCold</SelectedAbilityBonusOption>
         <Equipment>Staff_Monks</Equipment>
         <Equipment>Robe_Adept</Equipment>
@@ -201,7 +201,7 @@
         <UnitModelType>MancerMale</UnitModelType>
     </UnitType>
 	
-	<UnitType InternalName="Iru_Knight">
+	<!--<UnitType InternalName="Iru_Knight">
         <DisplayName>Iru Knight</DisplayName>
         <CanBeDesigned>0</CanBeDesigned>
         <IsSovereign>0</IsSovereign>
@@ -285,7 +285,7 @@
         <TacticalModelScale>1</TacticalModelScale>
         <Texture_Skin>Gfx\HKB\Units\K_Female_Fallen_Texture_01.png</Texture_Skin>
         <UnitModelType>MancerMale</UnitModelType>
-    </UnitType>
+    </UnitType>-->
 	
 	<UnitType InternalName="Generic_Sovereign_Andris_Female">
         <DisplayName>Andris Sovereign</DisplayName>

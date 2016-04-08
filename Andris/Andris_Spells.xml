@@ -188,4 +188,48 @@
         <HitSoundFX>Spell_SummonFireElemental_01</HitSoundFX>
     </SpellDef>
 	
+	<SpellDef InternalName="SummonIru">
+        <DisplayName>Summon Iru Henchman</DisplayName>
+        <Description>Summons a level 5 (+1 per life shard) Iru Soldier.</Description>
+        <Image>Res_IruT'Alavar.png</Image>
+        <IconFG>Life_Dot.png</IconFG>
+        <CanStack>0</CanStack>
+		<Cooldown>1000</Cooldown>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+		<LifeShards>1</LifeShards>
+        <Range>0</Range>
+        <CasterMustBeSov>1</CasterMustBeSov>		
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <PerTurn>1</PerTurn>
+            <Amount>1</Amount>
+        </SpellResourceCost>		
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>SummonUnit</Attribute>
+            <StrVal>Iru Soldier</StrVal>
+            <UnitClass>IruSoldier</UnitClass>
+            <Duration>-1</Duration>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumLifeShards] + [UnitStat_BonusSummonLevel]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc] + 5]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>1000</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_SummonFireElemental_01</HitSoundFX>
+    </SpellDef>	
+	
 	</Spells>
