@@ -31,12 +31,18 @@
 	    <Provides>City is protected from city-targeting spells and most unit-damaging spells</Provides>
         </GameModifier>
         <GameModifier>
+            <ModType>Map</ModType>
+            <Attribute>SummonUnit</Attribute>
+            <UnitClass>ArcanaWardGuardian</UnitClass>
+			<Value>1</Value>
+        </GameModifier>			
+        <!--<GameModifier>
             <ModType>Player</ModType>
             <Attribute>LimitedUnitCap</Attribute>
             <StrVal>ArcanaWardGuardian</StrVal>
             <Value>1</Value>
             <Provides>Recruit an Arcana Ward Guardian in this city</Provides>
-        </GameModifier>
+        </GameModifier>-->
         <AIData AIPersonality="AI_General">
             <AIPriority>1000</AIPriority>
             <AITag>Defensive</AITag>
