@@ -6,7 +6,7 @@
         <FormattedDescription>Needles of fire shoot at an enemy for for %d fire damage.</FormattedDescription>
         <Image>T_FlameDart_Painting.png</Image>
         <IconFG>T_FlameDart_Icon.png</IconFG>
-		<Cooldown>3</Cooldown>
+        <StaminaCost>3</StaminaCost>
         <SpellBookSortCategory>Unit</SpellBookSortCategory>
         <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
         <SpellType>Tactical</SpellType>
@@ -28,7 +28,7 @@
                 <Expression><![CDATA[[Calc] + 10]]></Expression>
             </Calculate>
             <Calculate InternalName="Calc3" ValueOwner="CastingUnit">
-                <Expression><![CDATA[[Calc2] + [UnitStat_SpellDamage_Fire]]]></Expression>
+                <Expression><![CDATA[[Calc2] * [UnitStat_SpellDamage_Fire]]]></Expression>
             </Calculate>
             <Calculate InternalName="Value">
                 <Expression><![CDATA[[Calc3]]]></Expression>
@@ -184,51 +184,6 @@
         </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>1000</AIPriority>
-        </AIData>
-        <HitSoundFX>Spell_SummonFireElemental_01</HitSoundFX>
-    </SpellDef>
-	
-    <SpellDef InternalName="SummonIruAllies_Tactical">
-        <DisplayName>Summon Iru Ally</DisplayName>
-        <Description>Summons a level 5 (+1 per life shard) Iru Soldier.</Description>
-        <FormattedDescription>Summons a level %d Iru Soldier.</FormattedDescription>
-        <Image>Res_IruT'Alavar.png</Image>
-        <IconFG>Life_Dot.png</IconFG>
-        <CanStack>0</CanStack>
-        <SpellBookSortCategory>Summon</SpellBookSortCategory>
-        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
-        <SpellType>Tactical</SpellType>
-        <SpellClass>Offensive</SpellClass>
-        <SpellSubClass>Summon</SpellSubClass>
-        <SpellTargetType>EmptyTile</SpellTargetType>
-        <SpellTargetTileOccupied>EnemyOrEmpty</SpellTargetTileOccupied>
-        <HideInHiergamenon>1</HideInHiergamenon>
-        <PreventStackingWith>SummonIruAllies</PreventStackingWith>
-        <CasterMustBeSov>1</CasterMustBeSov>
-        <SpellResourceCost>
-            <Resource>Mana</Resource>
-            <Amount>20</Amount>
-        </SpellResourceCost>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>SummonUnit</Attribute>
-            <StrVal>Iru Soldier</StrVal>
-            <UnitClass>Iru_Soldier</UnitClass>
-            <ApplyToSpellRadiusCenterOnly>1</ApplyToSpellRadiusCenterOnly>
-            <IsForFormattedDescription>1</IsForFormattedDescription>
-            <Duration>-1</Duration>
-            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
-                <Expression><![CDATA[[UnitOwner_GetNumLifeShards] + [UnitStat_BonusSummonLevel]]]></Expression>
-            </Calculate>
-            <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc] + 5]]></Expression>
-            </Calculate>
-            <Calculate InternalName="ValueForFormattedDescription">
-                <Expression><![CDATA[[Calc] + 5]]></Expression>
-            </Calculate>
-        </GameModifier>
-        <AIData AIPersonality="AI_General">
-            <AIPriority>70</AIPriority>
         </AIData>
         <HitSoundFX>Spell_SummonFireElemental_01</HitSoundFX>
     </SpellDef>

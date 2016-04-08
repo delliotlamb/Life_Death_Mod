@@ -125,8 +125,7 @@
             <UnitStat_Attack_Pierce>0</UnitStat_Attack_Pierce>
             <UnitStat_CombatSpeed>24</UnitStat_CombatSpeed>
             <UnitStat_HitPoints>18</UnitStat_HitPoints>
-            <UnitStat_Intelligence>10</UnitStat_Intelligence>
-			<UnitStat_Stamina_Growth>2<UnitStat_Stamina_Growth>			
+            <UnitStat_Intelligence>10</UnitStat_Intelligence>		
 			<UnitStat_BG_IsHumanoid>1.0000</UnitStat_BG_IsHumanoid>
 			<UnitStat_BG_IsKingdom>1.0000</UnitStat_BG_IsKingdom>
 			<UnitStat_BG_IsMale>1.0000</UnitStat_BG_IsMale>
@@ -214,8 +213,7 @@
             <UnitStat_Attack_Pierce>0</UnitStat_Attack_Pierce>
             <UnitStat_CombatSpeed>26</UnitStat_CombatSpeed>
             <UnitStat_HitPoints>28</UnitStat_HitPoints>
-            <UnitStat_Intelligence>10</UnitStat_Intelligence>
-			<UnitStat_Stamina_Growth>2<UnitStat_Stamina_Growth>				
+            <UnitStat_Intelligence>10</UnitStat_Intelligence>			
 			<UnitStat_BG_IsHumanoid>1.0000</UnitStat_BG_IsHumanoid>
 			<UnitStat_BG_IsKingdom>1.0000</UnitStat_BG_IsKingdom>
 			<UnitStat_BG_IsMale>1.0000</UnitStat_BG_IsMale>
@@ -258,8 +256,7 @@
             <UnitStat_Attack_Pierce>0</UnitStat_Attack_Pierce>
             <UnitStat_CombatSpeed>28</UnitStat_CombatSpeed>
             <UnitStat_HitPoints>40</UnitStat_HitPoints>
-            <UnitStat_Intelligence>10</UnitStat_Intelligence>
-			<UnitStat_Stamina_Growth>2<UnitStat_Stamina_Growth>				
+            <UnitStat_Intelligence>10</UnitStat_Intelligence>			
 			<UnitStat_BG_IsHumanoid>1.0000</UnitStat_BG_IsHumanoid>
 			<UnitStat_BG_IsKingdom>1.0000</UnitStat_BG_IsKingdom>
 			<UnitStat_BG_IsMale>1.0000</UnitStat_BG_IsMale>

@@ -124,6 +124,12 @@
                 <Attribute>UnlockCombatAbility</Attribute>
                 <StrVal>Embers2</StrVal>
                 <Provides>Needles of fire shoot at an enemy for for 4 (+2 per level) damage</Provides>
+            </GameModifier>	
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Fireball_Ability</StrVal>
+                <Provides>This unit can cast fireball</Provides>
             </GameModifier>			
             <CombatRating>40</CombatRating>
             <IsCombatAbility>1</IsCombatAbility>
@@ -151,6 +157,12 @@
                 <Attribute>UnlockCombatAbility</Attribute>
                 <StrVal>HealingLight</StrVal>
                 <Provides>Heals 8 hit points (+2 per level) to all allies within 1 tile.</Provides>
+            </GameModifier>	
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>Embers2</StrVal>
+                <Provides>Needles of fire shoot at an enemy for for 4 (+2 per level) damage</Provides>
             </GameModifier>			
             <CombatRating>40</CombatRating>
             <IsCombatAbility>1</IsCombatAbility>
@@ -194,6 +206,12 @@
                 <Value>100</Value>
                 <Provides>Iru Link is triggered when combat begins</Provides>
             </GameModifier>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>UnlockCombatAbility</Attribute>
+                <StrVal>HealingLight</StrVal>
+                <Provides>Heals 8 hit points (+2 per level) to all allies within 1 tile.</Provides>
+            </GameModifier>			
             <GameModifier>
                 <ModType>Unit</ModType>
                 <Attribute>UnlockCombatAbility</Attribute>
