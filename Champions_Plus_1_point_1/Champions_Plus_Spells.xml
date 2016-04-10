@@ -6190,4 +6190,58 @@
         </AIData>
     </SpellDef>
 	
+	<SpellDef InternalName="Wrath">
+        <DisplayName>Wrath</DisplayName>
+        <Description>Does 18 fire damage (+3 per air and fire shard) to all armies within 1 tile of the impact point.</Description>
+        <Image>S_DestroyLand_Painting.png</Image>
+        <IconFG>Searing_Attack.png</IconFG>
+        <Cooldown>1</Cooldown>
+        <SpellBookSortCategory>Unit</SpellBookSortCategory>
+        <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Damage</SpellSubClass>
+        <SpellTargetType>EnemyUnit</SpellTargetType>
+        <UnitAppSpecifier>ApplyToAll</UnitAppSpecifier>
+        <AlwaysPromptForCaster>0</AlwaysPromptForCaster>
+        <CasterMustBeSov>1</CasterMustBeSov>
+        <Radius>1</Radius>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>150</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Fire</AttackStat>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumAirShards] + [UnitOwner_GetNumFireShards]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc2" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[Calc] * 3]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc2] + 18]]></Expression>
+            </Calculate>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>100</AIPriority>
+        </AIData>
+        <HitSoundFX>Spell_FallingStar_01</HitSoundFX>
+        <ModifierDelay>1</ModifierDelay>
+        <WorldLightOverrideTime>4</WorldLightOverrideTime>
+        <WorldLightOverrideAmbiant>0,0,0</WorldLightOverrideAmbiant>
+        <WorldLightOverrideDiffuse>35,50,48</WorldLightOverrideDiffuse>
+        <WorldLightOverrideRim0>22,116,176</WorldLightOverrideRim0>
+        <WorldLightOverrideRim1>17,212,164</WorldLightOverrideRim1>
+        <SpellDefEffect>
+            <EffectName>_FireElemental_Awaken_01</EffectName>
+            <LocalPosition>0, 0 ,0</LocalPosition>
+            <EffectScale>1.5</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+            <PlayOnAllTargets>1</PlayOnAllTargets>
+        </SpellDefEffect>
+    </SpellDef>
+	
 </Spells>
