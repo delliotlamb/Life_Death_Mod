@@ -64,6 +64,13 @@
             <Icon>S_FallingStar_Icon.png</Icon>
             <Provides>Spell: Meteor Strike, more powerful variation of Falling Star</Provides>
         </GameModifier>		
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>UnlockSpell</Attribute>
+            <StrVal>Wrath</StrVal>
+            <Icon>Searing_Attack.png</Icon>
+            <Provides>Spell: Wrath, a high-damage fire spell</Provides>
+        </GameModifier>			
     </TechDef>
 		
 	<!--<TechDef InternalName="Book_Of_Mastery">

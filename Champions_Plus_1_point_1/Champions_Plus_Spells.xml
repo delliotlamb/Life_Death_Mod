@@ -6192,7 +6192,7 @@
 	
 	<SpellDef InternalName="Wrath">
         <DisplayName>Wrath</DisplayName>
-        <Description>Does 18 fire damage (+3 per air and fire shard) to all armies within 1 tile of the impact point.</Description>
+        <Description>Does 18 fire damage (+3 per air and fire shard) to all armies within 1 tile.</Description>
         <Image>S_DestroyLand_Painting.png</Image>
         <IconFG>Searing_Attack.png</IconFG>
         <Cooldown>1</Cooldown>
@@ -6227,13 +6227,9 @@
         <AIData AIPersonality="AI_General">
             <AIPriority>100</AIPriority>
         </AIData>
-        <HitSoundFX>Spell_FallingStar_01</HitSoundFX>
+        <HitSoundFX>Spell_FlameWaveTravel_01</HitSoundFX>
+        <HitSoundFX>Spell_FlameWaveTravel_02</HitSoundFX>
         <ModifierDelay>1</ModifierDelay>
-        <WorldLightOverrideTime>4</WorldLightOverrideTime>
-        <WorldLightOverrideAmbiant>0,0,0</WorldLightOverrideAmbiant>
-        <WorldLightOverrideDiffuse>35,50,48</WorldLightOverrideDiffuse>
-        <WorldLightOverrideRim0>22,116,176</WorldLightOverrideRim0>
-        <WorldLightOverrideRim1>17,212,164</WorldLightOverrideRim1>
         <SpellDefEffect>
             <EffectName>_FireElemental_Awaken_01</EffectName>
             <LocalPosition>0, 0 ,0</LocalPosition>
