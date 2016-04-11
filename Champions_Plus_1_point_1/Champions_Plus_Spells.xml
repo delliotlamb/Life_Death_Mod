@@ -6109,7 +6109,7 @@
         </SpellDefEffect>
     </SpellDef>
 	
-	<SpellDef InternalName="AI_Equipment_Armor">
+	<!--<SpellDef InternalName="AI_Equipment_Armor">
         <DisplayName>What Spell?</DisplayName>
         <Description>You really need to keep your spellbook more organized, this is just notes and scribbles.</Description>
         <Image>Improvement_Academy.png</Image>
@@ -6188,7 +6188,7 @@
         <AIData AIPersonality="AI_General">
             <AIPriority>1000</AIPriority>
         </AIData>
-    </SpellDef>
+    </SpellDef>-->
 	
 	<SpellDef InternalName="Wrath">
         <DisplayName>Wrath</DisplayName>
