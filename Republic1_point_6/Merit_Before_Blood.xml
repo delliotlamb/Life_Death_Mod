@@ -1,6 +1,6 @@
 <AbilityBonuses>
 
-<AbilityBonus InternalName="OutcastAbility">
+<!--<AbilityBonus InternalName="OutcastAbility">
         <AbilityBonusType>Unit_Injury</AbilityBonusType>
         <AbilityBonusOption InternalName="Outcast">
             <DisplayName>Shamed</DisplayName>
@@ -46,7 +46,7 @@
                 <AIPriority>5</AIPriority>
             </AIData>
         </AbilityBonusOption>
-    </AbilityBonus>
+    </AbilityBonus>-->
 	
 	<!--<AbilityBonus InternalName="PariahAbility">
         <AbilityBonusOption InternalName="Pariah">
@@ -1429,11 +1429,11 @@
         <AppliesRandomModifier>1</AppliesRandomModifier>		
         <SpellResourceCost>
             <Resource>Fame</Resource>
-            <Amount>25</Amount>
+            <Amount>30</Amount>
         </SpellResourceCost>
         <SpellResourceCost>
             <Resource>Mana</Resource>
-            <Amount>10</Amount>
+            <Amount>25</Amount>
         </SpellResourceCost>
         <SpellResourceCost>
             <Resource>Gold</Resource>
@@ -1528,11 +1528,11 @@
         </Prereq>
         <SpellResourceCost>
             <Resource>Fame</Resource>
-            <Amount>25</Amount>
+            <Amount>30</Amount>
         </SpellResourceCost>
         <SpellResourceCost>
             <Resource>Mana</Resource>
-            <Amount>10</Amount>
+            <Amount>25</Amount>
         </SpellResourceCost>
         <SpellResourceCost>
             <Resource>Gold</Resource>
