@@ -22,7 +22,7 @@
         </Prereq>
         <SpellResourceCost>
             <Resource>DiplomaticCapital</Resource>
-            <Amount>45</Amount>
+            <Amount>10</Amount>
         </SpellResourceCost>
         <SpellResourceCost>
             <Resource>Gold</Resource>
@@ -182,11 +182,11 @@
         </Prereq>
         <SpellResourceCost>
             <Resource>Gold</Resource>
-            <Amount>75</Amount>
+            <Amount>50</Amount>
         </SpellResourceCost>
         <SpellResourceCost>
             <Resource>DiplomaticCapital</Resource>
-            <Amount>80</Amount>
+            <Amount>50</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Map</ModType>
@@ -329,7 +329,7 @@
         <IsSpecialAbility>1</IsSpecialAbility>
         <SpellResourceCost>
             <Resource>DiplomaticCapital</Resource>
-            <Amount>50</Amount>
+            <Amount>30</Amount>
         </SpellResourceCost>		
         <GameModifier>
             <ModType>TacticalUnit</ModType>
@@ -428,6 +428,7 @@
         <IconFG>S_MoriansChant_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
         <Cooldown>1000</Cooldown>
+		<CastTime>2</CastTime>
         <SpellBookSortCategory>World</SpellBookSortCategory>
         <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -472,11 +473,11 @@
         </Prereq>
         <SpellResourceCost>
             <Resource>DiplomaticCapital</Resource>
-            <Amount>150</Amount>
+            <Amount>75</Amount>
         </SpellResourceCost>
         <SpellResourceCost>
             <Resource>Gold</Resource>
-            <Amount>100</Amount>
+            <Amount>150</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>City</ModType>
@@ -508,7 +509,7 @@
         </Prereq>
         <SpellResourceCost>
             <Resource>DiplomaticCapital</Resource>
-            <Amount>300</Amount>
+            <Amount>250</Amount>
         </SpellResourceCost>
         <SpellResourceCost>
             <Resource>Gold</Resource>
@@ -528,12 +529,13 @@
     </SpellDef>
 
 	<SpellDef InternalName="SeedCorruption">
-        <DisplayName>Seed Corruption</DisplayName>
-        <Description>-60% to gold income, production, iron and crystal yields .</Description>
+        <DisplayName>Seed Corrupt Cartel</DisplayName>
+        <Description>Target city suffers -80% to iron and crystal yields, -50% to gold income, -40% to production. Can be cast on other factions, even if not at war with them.</Description>
         <Image>BurningFarm.png</Image>
-        <IconFG>Improvement_DestroyedLot.png</IconFG>
+        <IconFG>Improvement_Bank.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
         <Cooldown>1</Cooldown>
+		<CastTime>2</CastTime>
         <SpellBookSortCategory>City</SpellBookSortCategory>
         <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -547,7 +549,7 @@
         </Prereq>
         <SpellResourceCost>
             <Resource>DiplomaticCapital</Resource>
-            <Amount>200</Amount>
+            <Amount>150</Amount>
         </SpellResourceCost>
         <SpellResourceCost>
             <Resource>Gold</Resource>
@@ -556,30 +558,30 @@
         <GameModifier>
             <ModType>ResourceMultiplier</ModType>
             <Attribute>Production</Attribute>
-            <Value>.4</Value>
+            <Value>.6</Value>
             <PerTurn>1</PerTurn>
-            <Provides>-60% Production</Provides>
+            <Provides>-40% Production</Provides>
         </GameModifier>
 		<GameModifier>
             <ModType>ResourceMultiplier</ModType>
             <Attribute>Metal</Attribute>
-            <Value>.4</Value>
+            <Value>.2</Value>
             <PerTurn>1</PerTurn>
-            <Provides>-60% Metal</Provides>
+            <Provides>-80% Metal</Provides>
         </GameModifier>
 		<GameModifier>
             <ModType>ResourceMultiplier</ModType>
             <Attribute>RefinedCrystal</Attribute>
-            <Value>.4</Value>
+            <Value>.2</Value>
             <PerTurn>1</PerTurn>
-            <Provides>-60% Crystal</Provides>
+            <Provides>-80% Crystal</Provides>
         </GameModifier>
         <GameModifier>
             <ModType>ResourceMultiplier</ModType>
             <Attribute>Gold</Attribute>
-            <Value>.4</Value>
+            <Value>.5</Value>
             <PerTurn>1</PerTurn>
-            <Provides>-60% Gold</Provides>
+            <Provides>-50% Gold</Provides>
         </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>

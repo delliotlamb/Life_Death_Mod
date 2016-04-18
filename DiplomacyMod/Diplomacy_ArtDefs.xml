@@ -1,0 +1,28 @@
+<ImprovementTypeArtDefs>
+
+	<ImprovementTypeArtDef InternalName="Art_League">
+        <ImprovementTypeArtSubPack InternalName="Art_League_Kingdom">
+            <SupportedBuildingStyle>KingdomStyle</SupportedBuildingStyle>
+            <TileDesign>K_League_01</TileDesign>
+            <ConstructionTileDesign>K_Construction1x1_01</ConstructionTileDesign>
+            <DrawnIcon>Improvement_HostensLibrary.png</DrawnIcon>
+            <DrawnIconConstruction>Improvement_HostensLibrary_C.png</DrawnIconConstruction>
+            <Thumbnail>K_K_Hostens_Library_Thumb.png</Thumbnail>
+            <Medallions InternalName="">
+                <All>K_K_Hostens_Library_Thumb.png</All>
+            </Medallions>
+        </ImprovementTypeArtSubPack>
+        <ImprovementTypeArtSubPack InternalName="Art_League_Empire">
+            <SupportedBuildingStyle>EmpireStyle</SupportedBuildingStyle>
+            <TileDesign>F_League_01</TileDesign>
+            <ConstructionTileDesign>F_Construction1x1_01</ConstructionTileDesign>
+            <DrawnIcon>Improvement_HostensLibrary.png</DrawnIcon>
+            <DrawnIconConstruction>Improvement_HostensLibrary_C.png</DrawnIconConstruction>
+            <Thumbnail>F_HostensLibrary_01_Thumb.png</Thumbnail>
+            <Medallions InternalName="">
+                <All>F_HostensLibrary_01_Thumb.png</All>
+            </Medallions>
+        </ImprovementTypeArtSubPack>
+    </ImprovementTypeArtDef>
+
+</ImprovementTypeArtDefs>

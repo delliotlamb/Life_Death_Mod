@@ -88,13 +88,6 @@
         </GameModifier>
         <GameModifier>
             <ModType>Resource</ModType>
-            <Attribute>Prestige</Attribute>
-            <Value>-1</Value>
-            <PerTurn>1</PerTurn>
-            <Provides>-1 Growth</Provides>
-        </GameModifier>
-        <GameModifier>
-            <ModType>Resource</ModType>
             <Attribute>FoodPerGrain</Attribute>
             <Value>-5</Value>
             <PerTurn>1</PerTurn>
@@ -164,13 +157,6 @@
             <PerTurn>1</PerTurn>
             <Provides>-2 Gildar per Season</Provides>
             <UpgradeComparisonID>1</UpgradeComparisonID>
-        </GameModifier>
-        <GameModifier>
-            <ModType>Resource</ModType>
-            <Attribute>Prestige</Attribute>
-            <Value>-2</Value>
-            <PerTurn>1</PerTurn>
-            <Provides>-2 Growth</Provides>
         </GameModifier>
         <GameModifier>
             <ModType>Resource</ModType>
@@ -263,9 +249,9 @@
         <GameModifier>
             <ModType>Resource</ModType>
             <Attribute>Prestige</Attribute>
-            <Value>-3</Value>
+            <Value>-1</Value>
             <PerTurn>1</PerTurn>
-            <Provides>-3 Growth</Provides>
+            <Provides>-1 Growth</Provides>
         </GameModifier>
         <GameModifier>
             <ModType>Resource</ModType>

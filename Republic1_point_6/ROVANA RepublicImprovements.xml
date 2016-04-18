@@ -1,4 +1,5 @@
 <ImprovementTypes>   
+
     <ImprovementType InternalName="PublicForum">
         <DisplayName>Public Forum</DisplayName>
         <Description>The true heart of the city. Citizens can gather here to barter, haggle, and discuss politics. But most of all, ideas flow freely and dissenting thoughts are given voice. Over time, the public forum will give this city the massive benefits - and problems - of a Republic.</Description>
@@ -7,7 +8,7 @@
         <BarredTerrain>SwampTerrain</BarredTerrain>
         <PreferredTerrain>City</PreferredTerrain>
         <PreferredTerrain>Category:Land</PreferredTerrain>
-        <PreferredTerrain>Forest</PreferredTerrain>        
+        <PreferredTerrain>Forest</PreferredTerrain>  	
 		<Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Republic</Attribute>
@@ -45,7 +46,7 @@
         <GameModifier>
             <ModType>Resource</ModType>
             <Attribute>Unrest</Attribute>
-            <Value>-58</Value>
+            <Value>-52</Value>
             <PerTurn>1</PerTurn>
             <Provides>Negates Republic Unrest in this city</Provides>
         </GameModifier>
@@ -53,8 +54,8 @@
             <ModType>Player</ModType>
             <Attribute>AbilityBonus</Attribute>
             <StrVal>A_Additive_Unrest</StrVal>
-            <Value>18</Value>
-            <Provides>+18% Unrest in all your other cities</Provides>
+            <Value>12</Value>
+            <Provides>+12% Unrest in all your other cities</Provides>
       	</GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>1000</AIPriority>
@@ -2394,9 +2395,9 @@
         <ArtDef>Art_Almshouse</ArtDef>
     </ImprovementType>
 
-<ImprovementType InternalName="PressGuild">
+	<ImprovementType InternalName="PressGuild">
         <DisplayName>Republic Press Guild</DisplayName>
-        <Description>A guild of reporters who anazlyze and report on what is happening in the Republic, aggregating reports from the local presses. The Senators would rather they took some gildar and kept quiet, but your people appreciate the agendas of Senators being put into daylight. So much shared information also boosts your whole Republic's trade and research.</Description>
+        <Description>A guild of reporters who anazlyze and report on what is happening in the Republic, aggregating reports from the local presses. The Senators would rather they took some gildar and kept quiet, but your people appreciate the agendas of Senators being put into daylight. The information inevitably spreads beyond your borders, too, generating fame and influence.</Description>
         <AllowedPerFaction>1</AllowedPerFaction>
         <RequiresCity>1</RequiresCity>
         <BarredTerrain>River</BarredTerrain>
@@ -2407,7 +2408,7 @@
         <UpgradeTier>2</UpgradeTier> 
         <RequiresCityImprovement>1</RequiresCityImprovement>
         <RequiredImprovement>TradeGuild</RequiredImprovement>       
-	<Prereq>
+		<Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Republic</Attribute>
             <Target>Player</Target>
@@ -2425,25 +2426,19 @@
             <Provides>-10% Unrest in all your cities</Provides>
         </GameModifier>
         <GameModifier>
-            <ModType>Player</ModType>
-            <Attribute>AbilityBonus</Attribute>
-            <StrVal>A_Gold</StrVal>
-            <Value>5</Value>
-            <Provides>+5% Gildar in all your cities</Provides>
-        </GameModifier>
-        <GameModifier>
-            <ModType>Player</ModType>
-            <Attribute>AbilityBonus</Attribute>
-            <StrVal>A_Research</StrVal>
-            <Value>5</Value>
-            <Provides>+5% Research in all your cities</Provides>
-        </GameModifier>
-        <GameModifier>
             <ModType>Resource</ModType>
             <Attribute>Fame</Attribute>
-            <Value>10</Value>
-            <Provides>+10 Fame</Provides>
+            <Value>1</Value>
+			<PerTurn>1</PerTurn>
+            <Provides>+1 Fame per turn</Provides>
         </GameModifier>
+		<GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>DiplomaticCapital</Attribute>
+            <Value>1</Value>
+            <PerTurn>1</PerTurn>			
+            <Provides>+1 Diplomatic Capital Per Turn</Provides>
+        </GameModifier>		
         <AIData AIPersonality="AI_General">
             <AIPriority>8</AIPriority>
             <AITag>Workshop</AITag>
@@ -2451,7 +2446,7 @@
         <ArtDef>Art_Almshouse</ArtDef>
     </ImprovementType>
 
-<ImprovementType InternalName="ExchangeForum">
+	<ImprovementType InternalName="ExchangeForum">
         <DisplayName>Exchange Forum</DisplayName>
         <Description>A gathering of laborers, farmers, and merchants that barter and make offers to match surplus with demand. This exchange gives price signals to your Labor's economy, increasing efficiency and reducing waste.</Description>
         <RequiresCity>1</RequiresCity>
@@ -2464,7 +2459,7 @@
         <UpgradeTier>1</UpgradeTier> 
         <RequiresCityImprovement>1</RequiresCityImprovement>
         <RequiredImprovement>TradeGuild</RequiredImprovement>       
-	<Prereq>
+		<Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Republic</Attribute>
             <Target>Player</Target>
@@ -2505,7 +2500,7 @@
         <ArtDef>Art_ExchangeForum</ArtDef>
     </ImprovementType>
 
-<ImprovementType InternalName="ExchangeGuild">
+	<ImprovementType InternalName="ExchangeGuild">
         <DisplayName>Exchange Guild</DisplayName>
         <Description>A more organized connection between local exchanges, this guild allows the price signals of each city to reach every city, making your economy more self-aware and efficient.</Description>
         <AllowedPerFaction>1</AllowedPerFaction>
@@ -2518,7 +2513,7 @@
         <UpgradeTier>2</UpgradeTier> 
         <RequiresCityImprovement>1</RequiresCityImprovement>
         <RequiredImprovement>TradeGuild</RequiredImprovement>       
-	<Prereq>
+		<Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Republic</Attribute>
             <Target>Player</Target>
@@ -2576,12 +2571,6 @@
             <StrVal>A_Gold</StrVal>
             <Value>10</Value>
             <Provides>+10% Gildar in all your cities</Provides>
-        </GameModifier>
-        <GameModifier>
-            <ModType>Resource</ModType>
-            <Attribute>Fame</Attribute>
-            <Value>10</Value>
-            <Provides>+10 Fame</Provides>
         </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>1000</AIPriority>
@@ -2761,12 +2750,11 @@
         </Prereq>
         <LaborToBuild>950</LaborToBuild>
             <GameModifier>
-                <ModType>Resource</ModType>
+                <ModType>ResourceMultiplier</ModType>
                 <Attribute>Prestige</Attribute>
-                <Value>1</Value>
-				<PerTurn>1</PerTurn>
-                <Provides>+1 Growth</Provides>
-            </GameModifier>
+                <Value>1.33</Value>
+                <Provides>+33% Growth</Provides>
+            </GameModifier>	
         <GameModifier>
             <ModType>ResourceMultiplier</ModType>
             <Attribute>Food</Attribute>
@@ -2805,12 +2793,11 @@
         </Prereq>
         <LaborToBuild>950</LaborToBuild>
             <GameModifier>
-                <ModType>Resource</ModType>
+                <ModType>ResourceMultiplier</ModType>
                 <Attribute>Prestige</Attribute>
-                <Value>1</Value>
-				<PerTurn>1</PerTurn>
-                <Provides>+1 Growth</Provides>
-            </GameModifier>
+                <Value>1.33</Value>
+                <Provides>+33% Growth</Provides>
+            </GameModifier>	
         <GameModifier>
             <ModType>ResourceMultiplier</ModType>
             <Attribute>Food</Attribute>
@@ -2818,7 +2805,7 @@
             <PerTurn>1</PerTurn>
             <Provides>+10% Food in this city</Provides>
             <UpgradeComparisonID>3</UpgradeComparisonID>
-        </GameModifier>
+        </GameModifier>			
         <AIData AIPersonality="AI_General">
             <AIPriority>1000</AIPriority>
             <AITag>Mining</AITag>
@@ -3003,7 +2990,7 @@
     </ImprovementType>
 
 <ImprovementType InternalName="ExchangeForum_Conclave">
-        <DisplayName>Exchange Forum</DisplayName>
+        <DisplayName>Capital Exchange</DisplayName>
         <Description>A gathering of laborers, farmers, and merchants that barter and make offers to match surplus with demand. This exchange gives price signals to your Labor's economy, increasing efficiency and reducing waste.</Description>
         <RequiresCity>1</RequiresCity>
         <BarredTerrain>River</BarredTerrain>
@@ -3014,7 +3001,7 @@
         <RequiresCityImprovement>1</RequiresCityImprovement>
         <RequiredImprovement>Conclave</RequiredImprovement>
         <HideInHiergamenon>1</HideInHiergamenon>       
-	<Prereq>
+		<Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Republic</Attribute>
             <Target>Player</Target>

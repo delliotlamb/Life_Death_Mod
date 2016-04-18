@@ -1479,7 +1479,7 @@
 
      -->
 	
-    <ImprovementType InternalName="TowerOfMagic4">
+	<ImprovementType InternalName="TowerOfMagic4">
         <!--
 	<Prereq>
             <Type>Tech</Type>
@@ -1496,7 +1496,7 @@
             <Value>1</Value>
             <Provides>Allows the player to craft transcendant weapons and armor, when present at the Forge (armor requires arcane armor tech)</Provides>
         </GameModifier>
-	        <GameModifier>
+	    <GameModifier>
             <ModType>ConstructionResourceCost</ModType>
             <Attribute>Mana</Attribute>
             <Value>-300</Value>

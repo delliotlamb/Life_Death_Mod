@@ -4828,13 +4828,13 @@
         <HitSoundFX>Spell_TrueStrike_01</HitSoundFX>
     </SpellDef>
 
-	<!-- turns off vanilla falling star-->
+
 	<SpellDef InternalName="FallingStar">
         <DisplayName>Falling Star</DisplayName>
-        <Description>This spell cannot be entirely recovered from incomplete tomes.</Description>
+        <Description>Does 12 fire damage (+2 per fire shard) and 12 physical damage (+2 per Air shard), per unit member, to all armies within 1 tile of the impact point. You will gain significant Ember and Famine favor, while equally losing Verdant favor. BEWARE - this spell will leave scarred earth behind, wiping out resources or even cities.</Description>
         <Image>S_FallingStar_Painting.png</Image>
         <IconFG>S_FallingStar_Icon.png</IconFG>
-        <Cooldown>1</Cooldown>
+        <Cooldown>5</Cooldown>
         <SpellBookSortCategory>Unit</SpellBookSortCategory>
         <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -4845,37 +4845,81 @@
         <AlwaysPromptForCaster>0</AlwaysPromptForCaster>
         <CasterMustBeSov>1</CasterMustBeSov>
         <Radius>1</Radius>
-		<Prereq>
-            <Type>UnitStat</Type>
-            <Attribute>UnitStat_NeverGonnaHappen</Attribute>
-            <Value>1</Value>
-        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>600</Amount>
+        </SpellResourceCost>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>DefendableDamage</Attribute>
             <AttackStat>UnitStat_Attack_Fire</AttackStat>
             <Calculate InternalName="Calc" ValueOwner="CastingUnit">
-                <Expression><![CDATA[[UnitOwner_GetNumAirShards] + [UnitOwner_GetNumFireShards]]]></Expression>
+                <Expression><![CDATA[[UnitOwner_GetNumFireShards] * 2]]></Expression>
             </Calculate>
-            <Calculate InternalName="Calc2" ValueOwner="CastingUnit">
-                <Expression><![CDATA[[Calc] * 3]]></Expression>
+            <Calculate InternalName="Calc2">
+                <Expression><![CDATA[[Calc] + 12]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc3" ValueOwner="TargetUnit">
+                <Expression><![CDATA[[Unit_GetTroopCount]]]></Expression>
             </Calculate>
             <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc2] + 18]]></Expression>
+                <Expression><![CDATA[[Calc2] * [Calc3]]]></Expression>
             </Calculate>
         </GameModifier>
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>DefendableDamage</Attribute>
+            <AttackStat>UnitStat_Attack_Pierce</AttackStat>
+            <Calculate InternalName="Calc" ValueOwner="CastingUnit">
+                <Expression><![CDATA[[UnitOwner_GetNumEarthShards] * 2]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc2">
+                <Expression><![CDATA[[Calc] + 12]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Calc3" ValueOwner="TargetUnit">
+                <Expression><![CDATA[[Unit_GetTroopCount]]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc2] * [Calc3]]]></Expression>
+            </Calculate>
+        </GameModifier>		
         <GameModifier>
             <ModType>Map</ModType>
             <Attribute>PlaceTerrain</Attribute>
             <TerrainType>BurningLands</TerrainType>
+	     <!--<TerrainType>Fertile_Land</TerrainType>-->
         </GameModifier>
         <GameModifier>
             <ModType>Map</ModType>
             <Attribute>PlaceEnvironment</Attribute>
             <TerrainType>BarrenEnvironment</TerrainType>
-        </GameModifier>
+        </GameModifier>	
+            <GameModifier>
+                <ModType>Resource</ModType>
+                <Attribute>EmberEssence</Attribute>
+				<ApplyToCaster>1</ApplyToCaster>
+                <Value>40</Value>
+            </GameModifier>	
+            <GameModifier>
+                <ModType>Resource</ModType>
+                <Attribute>FamineEssence</Attribute>
+				<ApplyToCaster>1</ApplyToCaster>
+                <Value>20</Value>
+            </GameModifier>			
+            <GameModifier>
+                <ModType>Resource</ModType>
+                <Attribute>VerdantEssence</Attribute>
+				<ApplyToCaster>1</ApplyToCaster>
+                <Value>-35</Value>
+            </GameModifier>	
+            <GameModifier>
+                <ModType>Resource</ModType>
+                <Attribute>Mana</Attribute>
+				<ApplyToCaster>1</ApplyToCaster>
+                <Value>150</Value> <!-- this prevents from the original 150 mana cost from being charged -->
+            </GameModifier>			
         <AIData AIPersonality="AI_General">
-            <AIPriority>100</AIPriority>
+            <AIPriority>1000</AIPriority>
         </AIData>
         <HitSoundFX>Spell_FallingStar_01</HitSoundFX>
         <ModifierDelay>1</ModifierDelay>

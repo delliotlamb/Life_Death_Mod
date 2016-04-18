@@ -419,18 +419,6 @@
         </AbilityBonusOption>
     </AbilityBonus>
 	
-	<AbilityBonus InternalName="Merchant2Ability">
-        <AbilityBonusOption InternalName="Merchant2">
-            <GameModifier>
-                <ModType>Unit</ModType>
-                <Attribute>ProduceResource</Attribute>
-                <StrVal>DiplomaticCapital</StrVal>
-                <Value>1</Value>
-                <Provides>+1 Influence per Season</Provides>
-            </GameModifier>
-        </AbilityBonusOption>
-    </AbilityBonus>
-	
     <AbilityBonus InternalName="Merchant3Ability">
         <AbilityBonusOption InternalName="Merchant3">
              <GameModifier>
@@ -438,7 +426,7 @@
                 <Attribute>ProduceResource</Attribute>
                 <StrVal>DiplomaticCapital</StrVal>
                 <Value>1</Value>
-                <Provides>Additional +1 Influence per Season</Provides>
+                <Provides>+1 Influence per Season</Provides>
             </GameModifier>
         </AbilityBonusOption>
     </AbilityBonus>
@@ -483,7 +471,7 @@
                 <Attribute>Merchant4</Attribute>
             </Prereq>
             <AIData AIPersonality="AI_General">
-                <AIPriority>5</AIPriority>
+                <AIPriority>0</AIPriority>
             </AIData>
         </AbilityBonusOption>
     </AbilityBonus>

@@ -1,6 +1,6 @@
 <ImprovementTypes>
 
-<ImprovementType InternalName="Diplomat">
+	<ImprovementType InternalName="Diplomat">
         <DisplayName>Diplomat's Office</DisplayName>
         <Description>The diplomat will generate Diplomatic Capital (influence) improving your relations with other civilizations. The effect will increase as you pass 100 and then 200 influence more than a rival's influence.</Description>
         <RequiresCity>1</RequiresCity>		
@@ -11,23 +11,19 @@
         <PreferredTerrain>Forest</PreferredTerrain>
         <RequiresCityImprovement>1</RequiresCityImprovement>
         <RequiredImprovement>TradeGuild</RequiredImprovement>  
+        <UpgradesToImprovement>ChannelersLeague</UpgradesToImprovement>
+        <UpgradeTier>1</UpgradeTier>		
 		<LaborToBuild>750</LaborToBuild>
         <Prereq>
             <Type>Tech</Type>
             <Attribute>Literacy</Attribute>
         </Prereq>
-        <!--<GameModifier>
-            <ModType>Resource</ModType>
-            <Attribute>DiplomaticCapital</Attribute>
-            <Value>50</Value>
-            <Provides>+50 Diplomatic Capital</Provides>
-        </GameModifier>-->
         <GameModifier>
             <ModType>Player</ModType>
             <Attribute>AbilityBonus</Attribute>
             <StrVal>A_DiplomaticCapital</StrVal>
             <Value>10</Value>
-            <Provides>All sources of Influence get +10%</Provides>
+            <Provides>All cities produce +10% Influence</Provides>
         </GameModifier>		
 		<GameModifier>
             <ModType>Resource</ModType>
@@ -49,8 +45,60 @@
         </AIData>
         <ArtDef>Art_Embassy</ArtDef>
     </ImprovementType>
+	
+	<ImprovementType InternalName="ChannelersLeague">
+        <DisplayName>League Of Channelers</DisplayName>
+        <Description>This meeting of nations is obligatory for all factions, putting yours in a massiveley influential role. Your spies, of course, will be in attendance to each meeting.</Description>
+        <AllowedPerGame>1</AllowedPerGame>		
+        <RequiresCity>1</RequiresCity>		
+        <BarredTerrain>River</BarredTerrain>
+        <BarredTerrain>SwampTerrain</BarredTerrain>
+        <PreferredTerrain>City</PreferredTerrain>
+        <PreferredTerrain>Category:Land</PreferredTerrain>
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>TradeGuild</RequiredImprovement>  
+        <UpgradeTier>2</UpgradeTier>		
+		<LaborToBuild>1250</LaborToBuild>
+        <Prereq>
+            <Type>Tech</Type>
+            <Attribute>Alliances</Attribute>
+        </Prereq>
+        <GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>DiplomaticCapital</Attribute>
+            <Value>50</Value>
+            <Provides>+50 Diplomatic Capital</Provides>
+        </GameModifier>		
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>AbilityBonus</Attribute>
+            <StrVal>A_DiplomaticCapital</StrVal>
+            <Value>20</Value>
+            <Provides>All cities produce +20% Influence</Provides>
+        </GameModifier>		
+		<GameModifier>
+            <ModType>Resource</ModType>
+            <Attribute>DiplomaticCapital</Attribute>
+            <Value>5<Value>
+            <PerTurn>1</PerTurn>			
+            <Provides>+5 Diplomatic Capital Per Turn</Provides>
+        </GameModifier>
+        <GameModifier>
+            <ModType>City</ModType>
+            <Attribute>AdjustDefendingUnit</Attribute>
+            <StrVal>UnitStat_IsAtDiplomat</StrVal>
+            <Value>1</Value>
+            <Provides>Can recruit spies</Provides>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>25</AIPriority>
+            <AITag>Merchant</AITag>
+        </AIData>
+        <ArtDef>Art_League</ArtDef>
+    </ImprovementType>	
 
-<ImprovementType InternalName="Embassy">
+	<ImprovementType InternalName="Embassy">
 		<GameModifier>
             <ModType>Resource</ModType>
             <Attribute>DiplomaticCapital</Attribute>
@@ -124,9 +172,9 @@
 		<GameModifier>
             <ModType>Resource</ModType>
             <Attribute>DiplomaticCapital</Attribute>
-            <Value>2</Value>
+            <Value>1</Value>
             <PerTurn>1</PerTurn>			
-            <Provides>+2 Diplomatic Capital Per Turn</Provides>
+            <Provides>+1 Diplomatic Capital Per Turn</Provides>
         </GameModifier>
     </ImprovementType>
 	
