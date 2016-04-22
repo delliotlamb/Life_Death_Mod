@@ -10,9 +10,7 @@
         <PreferredTerrain>Category:Land</PreferredTerrain>
         <PreferredTerrain>Forest</PreferredTerrain>
         <RequiresCityImprovement>1</RequiresCityImprovement>
-        <RequiredImprovement>TradeGuild</RequiredImprovement>  
-        <UpgradesToImprovement>ChannelersLeague</UpgradesToImprovement>
-        <UpgradeTier>1</UpgradeTier>		
+        <RequiredImprovement>TradeGuild</RequiredImprovement>  		
 		<LaborToBuild>750</LaborToBuild>
         <Prereq>
             <Type>Tech</Type>
@@ -68,21 +66,21 @@
             <ModType>Resource</ModType>
             <Attribute>DiplomaticCapital</Attribute>
             <Value>50</Value>
-            <Provides>+50 Diplomatic Capital</Provides>
+            <Provides>+50 Influence</Provides>
         </GameModifier>		
         <GameModifier>
             <ModType>Player</ModType>
             <Attribute>AbilityBonus</Attribute>
             <StrVal>A_DiplomaticCapital</StrVal>
-            <Value>20</Value>
-            <Provides>All cities produce +20% Influence</Provides>
+            <Value>100</Value>
+            <Provides>All cities produce +100% Influence</Provides>
         </GameModifier>		
 		<GameModifier>
             <ModType>Resource</ModType>
             <Attribute>DiplomaticCapital</Attribute>
-            <Value>5<Value>
+            <Value>2</Value>
             <PerTurn>1</PerTurn>			
-            <Provides>+5 Diplomatic Capital Per Turn</Provides>
+            <Provides>+2 Influence Per Turn (+4 with multiplier)</Provides>
         </GameModifier>
         <GameModifier>
             <ModType>City</ModType>

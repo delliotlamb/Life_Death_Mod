@@ -3327,7 +3327,7 @@
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_ArmorPierce</StrVal>
-            <Value>10</Value>
+            <Value>33</Value>
         </GameModifier>			
         <GameModifier>
             <ModType>Unit</ModType>
@@ -3402,7 +3402,7 @@
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_ArmorPierce</StrVal>
-            <Value>20</Value>
+            <Value>33</Value>
         </GameModifier>		
             <GameModifier>
                 <ModType>Unit</ModType>
@@ -3528,8 +3528,8 @@
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
                 <StrVal>UnitStat_ArmorPierce</StrVal>
-                <Value>20</Value>
-                <Provides>Ignores 20% of the victim's Defense</Provides>
+                <Value>25</Value>
+                <Provides>Ignores 25% of the victim's Defense</Provides>
             </GameModifier>
         <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
         <RarityDisplay>Uncommon</RarityDisplay>

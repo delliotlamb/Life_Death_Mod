@@ -15,13 +15,12 @@
             <Target>Player</Target>
         </Prereq> 
         <LaborToBuild>2</LaborToBuild>          
-		<!-- Trying without growth bonus for now
 		<GameModifier>
                 <ModType>ResourceMultiplier</ModType>
                 <Attribute>Prestige</Attribute>
                 <Value>1.25</Value>
                 <Provides>+25% Growth in this city</Provides>
-        </GameModifier> -->
+        </GameModifier>
         <GameModifier>
             <ModType>ResourceMultiplier</ModType>
             <Attribute>Research</Attribute>

@@ -25,6 +25,56 @@
         </ImprovementTypeArtSubPack>
     </ImprovementTypeArtDef>
 	
+	<ImprovementTypeArtDef InternalName="Art_CivicForum">
+        <ImprovementTypeArtSubPack InternalName="Art_CivicForum_Kingdom">
+            <SupportedBuildingStyle>KingdomStyle</SupportedBuildingStyle>
+            <TileDesign>K_PublicForum_01</TileDesign>
+            <ConstructionTileDesign>K_Construction1x1_01</ConstructionTileDesign>
+                <DrawnIcon>Improvement_AncientTemple.png</DrawnIcon>
+                <DrawnIconConstruction>Improvement_AncientTemple_C.png</DrawnIconConstruction>
+            <Thumbnail>K_Sage_Thumb_01.png</Thumbnail>
+            <Medallions InternalName="">
+                <All>K_Sage_Thumb_01.png</All>
+            </Medallions>
+        </ImprovementTypeArtSubPack>
+        <ImprovementTypeArtSubPack InternalName="Art_CivicForum_Empire">
+            <SupportedBuildingStyle>EmpireStyle</SupportedBuildingStyle>
+            <TileDesign>F_PublicForum_01</TileDesign>
+            <ConstructionTileDesign>F_Construction1x1_01</ConstructionTileDesign>
+                <DrawnIcon>Improvement_AncientTemple.png</DrawnIcon>
+                <DrawnIconConstruction>Improvement_AncientTemple_C.png</DrawnIconConstruction>
+            <Thumbnail>F_Sage_Thumb_01.png</Thumbnail>
+            <Medallions InternalName="">
+                <All>F_Sage_Thumb_01.png</All>
+            </Medallions>
+        </ImprovementTypeArtSubPack>
+    </ImprovementTypeArtDef>
+
+	<ImprovementTypeArtDef InternalName="Art_HypothesisForum">
+        <ImprovementTypeArtSubPack InternalName="Art_HypothesisForum_Kingdom">
+            <SupportedBuildingStyle>KingdomStyle</SupportedBuildingStyle>
+            <TileDesign>K_PublicForum_01</TileDesign>
+            <ConstructionTileDesign>K_Construction1x1_01</ConstructionTileDesign>
+                <DrawnIcon>Improvement_AncientTemple.png</DrawnIcon>
+                <DrawnIconConstruction>Improvement_AncientTemple_C.png</DrawnIconConstruction>
+            <Thumbnail>K_Sage_Thumb_01.png</Thumbnail>
+            <Medallions InternalName="">
+                <All>K_Sage_Thumb_01.png</All>
+            </Medallions>
+        </ImprovementTypeArtSubPack>
+        <ImprovementTypeArtSubPack InternalName="Art_HypothesisForum_Empire">
+            <SupportedBuildingStyle>EmpireStyle</SupportedBuildingStyle>
+            <TileDesign>F_PublicForum_01</TileDesign>
+            <ConstructionTileDesign>F_Construction1x1_01</ConstructionTileDesign>
+                <DrawnIcon>Improvement_AncientTemple.png</DrawnIcon>
+                <DrawnIconConstruction>Improvement_AncientTemple_C.png</DrawnIconConstruction>
+            <Thumbnail>F_Sage_Thumb_01.png</Thumbnail>
+            <Medallions InternalName="">
+                <All>F_Sage_Thumb_01.png</All>
+            </Medallions>
+        </ImprovementTypeArtSubPack>
+    </ImprovementTypeArtDef>	
+	
 	<ImprovementTypeArtDef InternalName="Art_Courier_Post">
         <ImprovementTypeArtSubPack InternalName="Art_Courier_Post_Kingdom">
             <SupportedBuildingStyle>KingdomStyle</SupportedBuildingStyle>
