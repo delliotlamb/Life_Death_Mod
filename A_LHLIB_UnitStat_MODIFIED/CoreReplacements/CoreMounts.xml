@@ -392,7 +392,7 @@
         <ModType>Unit</ModType>
         <Attribute>AdjustUnitStat</Attribute>
         <StrVal>UnitStat_CombatSpeed</StrVal>
-        <Value>2</Value>
+        <Value>1</Value>
       </GameModifier>
       <GameModifier>
         <ModType>Unit</ModType>
@@ -442,7 +442,7 @@
         <ModType>Unit</ModType>
         <Attribute>AdjustUnitStat</Attribute>
         <StrVal>UnitStat_CombatSpeed</StrVal>
-        <Value>2</Value>
+        <Value>1</Value>
       </GameModifier>
       <GameModifier>
         <ModType>Unit</ModType>

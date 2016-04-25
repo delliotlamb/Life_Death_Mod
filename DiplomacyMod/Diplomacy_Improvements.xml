@@ -44,20 +44,17 @@
         <ArtDef>Art_Embassy</ArtDef>
     </ImprovementType>
 	
-	<ImprovementType InternalName="ChannelersLeague">
-        <DisplayName>League Of Channelers</DisplayName>
-        <Description>This meeting of nations is obligatory for all factions, putting yours in a massiveley influential role. Your spies, of course, will be in attendance to each meeting.</Description>
+	<ImprovementType InternalName="League">
+        <DisplayName>League Of The Mighty</DisplayName>
+        <Description>This meeting of nations is nigh obligatory for all factions, putting yours in a massiveley influential role. Your spies, of course, will be paying close attention to each meeting.</Description>
         <AllowedPerGame>1</AllowedPerGame>		
         <RequiresCity>1</RequiresCity>		
         <BarredTerrain>River</BarredTerrain>
         <BarredTerrain>SwampTerrain</BarredTerrain>
         <PreferredTerrain>City</PreferredTerrain>
         <PreferredTerrain>Category:Land</PreferredTerrain>
-        <PreferredTerrain>Forest</PreferredTerrain>
-        <RequiresCityImprovement>1</RequiresCityImprovement>
-        <RequiredImprovement>TradeGuild</RequiredImprovement>  
-        <UpgradeTier>2</UpgradeTier>		
-		<LaborToBuild>1250</LaborToBuild>
+        <PreferredTerrain>Forest</PreferredTerrain>		
+		<LaborToBuild>1800</LaborToBuild>
         <Prereq>
             <Type>Tech</Type>
             <Attribute>Alliances</Attribute>

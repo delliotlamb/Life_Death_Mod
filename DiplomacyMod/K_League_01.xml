@@ -7,165 +7,726 @@
 	<TileDesign InternalName="K_League_01">
 		<DisplayName>K_League_01</DisplayName>
 		<Thumbnail>\Game\Gfx\tile_icon.png</Thumbnail>
-		<DecalName>Gfx\Decals\CobblestoneSquareSmall.png</DecalName>
+		<DecalName>Gfx\Decals\CobblestoneSquareLarge.png</DecalName>
 		<LowResShadow>K_League_01_shadow.png</LowResShadow>
 		<HighResShadow>K_League_01_shadow.png</HighResShadow>
 		<ShadowTransparency>70</ShadowTransparency>
 		<IsCore>0</IsCore>
 		<IsHiddenFromEditor>0</IsHiddenFromEditor>
-		<SubTileFlags>1</SubTileFlags>
+		<SubTileFlags>15</SubTileFlags>
 		<TileDesignObject InternalName="_obj0">
 			<ObjectType>PropModelType</ObjectType>
-			<ObjectDefName>K_Dubble_Door_Window_01</ObjectDefName>
-			<ObjectLOD>4</ObjectLOD>
+			<ObjectDefName>K_Temple_Center_Advanced_01</ObjectDefName>
+			<ObjectLOD>1</ObjectLOD>
 			<IgnoreTerrain>1</IgnoreTerrain>
-			<Position>-1.298889,0.000000,1.244032</Position>
-			<Rotation>0.000000,0.750000,0.000000</Rotation>
+			<Position>27.000000,1.000000,0.000000</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
 			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
-			<Scale>1.0000</Scale>
+			<Scale>1.0400</Scale>
 			<BaseScale>1.0000</BaseScale>
 		</TileDesignObject>
 		<TileDesignObject InternalName="_obj1">
 			<ObjectType>PropModelType</ObjectType>
-			<ObjectDefName>K_City_Stonework_Square</ObjectDefName>
-			<ObjectLOD>4</ObjectLOD>
+			<ObjectDefName>K_Temple_Center_Advanced_01</ObjectDefName>
+			<ObjectLOD>1</ObjectLOD>
 			<IgnoreTerrain>1</IgnoreTerrain>
-			<Position>-4.658968,-1.000000,-2.250053</Position>
-			<Rotation>0.000000,0.750000,0.000000</Rotation>
+			<Position>0.000000,1.000000,27.000000</Position>
+			<Rotation>0.000000,-1.570796,0.000000</Rotation>
 			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
-			<Scale>1.3000</Scale>
+			<Scale>1.0800</Scale>
 			<BaseScale>1.0000</BaseScale>
 		</TileDesignObject>
 		<TileDesignObject InternalName="_obj2">
 			<ObjectType>PropModelType</ObjectType>
-			<ObjectDefName>K_Stone_Flagpole_01</ObjectDefName>
-			<ObjectLOD>3</ObjectLOD>
+			<ObjectDefName>K_Temple_Center_Advanced_01</ObjectDefName>
+			<ObjectLOD>1</ObjectLOD>
 			<IgnoreTerrain>1</IgnoreTerrain>
-			<Position>12.806374,27.000000,-8.070908</Position>
-			<Rotation>6.283185,0.000000,0.000000</Rotation>
+			<Position>-27.000000,1.000000,0.000000</Position>
+			<Rotation>0.000000,-3.141593,0.000000</Rotation>
 			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
-			<Scale>1.2400</Scale>
+			<Scale>1.0800</Scale>
 			<BaseScale>1.0000</BaseScale>
 		</TileDesignObject>
 		<TileDesignObject InternalName="_obj3">
 			<ObjectType>PropModelType</ObjectType>
-			<ObjectDefName>MaleMilitiaDoorGuard01</ObjectDefName>
-			<ObjectLOD>6</ObjectLOD>
-			<IgnoreTerrain>0</IgnoreTerrain>
-			<Position>7.278872,0.000000,-16.994904</Position>
-			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<ObjectDefName>K_Temple_Center_Advanced_01</ObjectDefName>
+			<ObjectLOD>1</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>0.000000,1.000000,-27.000000</Position>
+			<Rotation>0.000000,-4.712389,0.000000</Rotation>
 			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
-			<Scale>1.0000</Scale>
-			<BaseScale>0.1300</BaseScale>
+			<Scale>1.0400</Scale>
+			<BaseScale>1.0000</BaseScale>
 		</TileDesignObject>
 		<TileDesignObject InternalName="_obj4">
 			<ObjectType>PropModelType</ObjectType>
-			<ObjectDefName>MaleMilitiaDoorGuard01</ObjectDefName>
-			<ObjectLOD>5</ObjectLOD>
-			<IgnoreTerrain>0</IgnoreTerrain>
-			<Position>-12.425224,0.000000,-4.647202</Position>
-			<Rotation>0.000000,0.450000,0.000000</Rotation>
+			<ObjectDefName>K_Wall_Corner_Advanced_02</ObjectDefName>
+			<ObjectLOD>2</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>-24.000000,-5.000000,23.000000</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
 			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
-			<Scale>1.0000</Scale>
-			<BaseScale>0.1300</BaseScale>
+			<Scale>1.0400</Scale>
+			<BaseScale>1.0000</BaseScale>
 		</TileDesignObject>
 		<TileDesignObject InternalName="_obj5">
 			<ObjectType>PropModelType</ObjectType>
-			<ObjectDefName>K_Flag_prestige_01</ObjectDefName>
-			<ObjectLOD>3</ObjectLOD>
+			<ObjectDefName>K_Wall_Corner_Advanced_02</ObjectDefName>
+			<ObjectLOD>2</ObjectLOD>
 			<IgnoreTerrain>1</IgnoreTerrain>
-			<Position>12.932814,62.000000,-8.903465</Position>
-			<Rotation>6.283185,-2.356194,0.000000</Rotation>
+			<Position>23.000000,-5.000000,23.000000</Position>
+			<Rotation>0.000000,1.570796,0.000000</Rotation>
 			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
-			<Scale>0.5800</Scale>
+			<Scale>1.0400</Scale>
 			<BaseScale>1.0000</BaseScale>
 		</TileDesignObject>
 		<TileDesignObject InternalName="_obj6">
 			<ObjectType>PropModelType</ObjectType>
-			<ObjectDefName>RobedTalking1</ObjectDefName>
-			<ObjectLOD>5</ObjectLOD>
-			<IgnoreTerrain>0</IgnoreTerrain>
-			<Position>-18.750000,0.000000,-12.500000</Position>
-			<Rotation>0.000000,-0.825000,0.000000</Rotation>
+			<ObjectDefName>K_Wall_Corner_Advanced_02</ObjectDefName>
+			<ObjectLOD>2</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>23.000000,-5.000000,-23.000000</Position>
+			<Rotation>0.000000,3.141592,0.000000</Rotation>
 			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
-			<Scale>1.0000</Scale>
-			<BaseScale>0.1300</BaseScale>
+			<Scale>1.0400</Scale>
+			<BaseScale>1.0000</BaseScale>
 		</TileDesignObject>
 		<TileDesignObject InternalName="_obj7">
 			<ObjectType>PropModelType</ObjectType>
-			<ObjectDefName>FallenWarriorFemaleTalking1</ObjectDefName>
-			<ObjectLOD>5</ObjectLOD>
-			<IgnoreTerrain>0</IgnoreTerrain>
-			<Position>-12.500000,0.000000,-12.500000</Position>
-			<Rotation>0.000000,0.975000,0.000000</Rotation>
+			<ObjectDefName>K_Wall_Corner_Advanced_02</ObjectDefName>
+			<ObjectLOD>2</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>-23.000000,-5.000000,-23.000000</Position>
+			<Rotation>0.000000,-1.570796,0.000000</Rotation>
 			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
-			<Scale>1.0000</Scale>
-			<BaseScale>0.1300</BaseScale>
+			<Scale>1.0400</Scale>
+			<BaseScale>1.0000</BaseScale>
 		</TileDesignObject>
 		<TileDesignObject InternalName="_obj8">
 			<ObjectType>PropModelType</ObjectType>
-			<ObjectDefName>MaleTalking2</ObjectDefName>
-			<ObjectLOD>5</ObjectLOD>
-			<IgnoreTerrain>0</IgnoreTerrain>
-			<Position>-12.500000,0.000000,-18.750000</Position>
-			<Rotation>0.000000,2.700001,0.000000</Rotation>
+			<ObjectDefName>K_Temple_Center_Advanced_01</ObjectDefName>
+			<ObjectLOD>1</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>0.000000,6.000000,0.000000</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
 			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
-			<Scale>1.0000</Scale>
-			<BaseScale>0.1300</BaseScale>
+			<Scale>1.2400</Scale>
+			<BaseScale>1.0000</BaseScale>
 		</TileDesignObject>
 		<TileDesignObject InternalName="_obj9">
 			<ObjectType>PropModelType</ObjectType>
-			<ObjectDefName>K_Library_01</ObjectDefName>
+			<ObjectDefName>K_City_Wall_Piller</ObjectDefName>
 			<ObjectLOD>4</ObjectLOD>
-			<IgnoreTerrain>0</IgnoreTerrain>
-			<Position>13.101154,0.000000,-3.597656</Position>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>17.750000,16.000000,0.000000</Position>
 			<Rotation>0.000000,0.000000,0.000000</Rotation>
 			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
-			<Scale>1.0000</Scale>
+			<Scale>1.5600</Scale>
 			<BaseScale>1.0000</BaseScale>
 		</TileDesignObject>
 		<TileDesignObject InternalName="_obj10">
 			<ObjectType>PropModelType</ObjectType>
-			<ObjectDefName>K_Medium_Tower_Advanced_01</ObjectDefName>
-			<ObjectLOD>4</ObjectLOD>
-			<IgnoreTerrain>0</IgnoreTerrain>
-			<Position>4.360123,0.000000,11.018402</Position>
+			<ObjectDefName>K_City_Wall_Piller</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>0.000000,16.000000,-17.750000</Position>
 			<Rotation>0.000000,0.000000,0.000000</Rotation>
 			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
-			<Scale>1.0000</Scale>
+			<Scale>1.5600</Scale>
 			<BaseScale>1.0000</BaseScale>
 		</TileDesignObject>
 		<TileDesignObject InternalName="_obj11">
 			<ObjectType>PropModelType</ObjectType>
-			<ObjectDefName>K_Hall_Advanced_01</ObjectDefName>
-			<ObjectLOD>4</ObjectLOD>
-			<IgnoreTerrain>0</IgnoreTerrain>
-			<Position>-2.384567,0.000000,14.253431</Position>
-			<Rotation>0.000000,1.570796,0.000000</Rotation>
+			<ObjectDefName>K_City_Wall_Piller</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>-17.750000,16.000000,0.000000</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
 			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
-			<Scale>1.0000</Scale>
+			<Scale>1.5600</Scale>
 			<BaseScale>1.0000</BaseScale>
 		</TileDesignObject>
 		<TileDesignObject InternalName="_obj12">
 			<ObjectType>PropModelType</ObjectType>
-			<ObjectDefName>K_Temple_Piller_02</ObjectDefName>
-			<ObjectLOD>4</ObjectLOD>
-			<IgnoreTerrain>0</IgnoreTerrain>
-			<Position>-17.476700,0.000000,-0.001740</Position>
+			<ObjectDefName>K_City_Wall_Piller</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>0.000000,16.000000,17.750000</Position>
 			<Rotation>0.000000,0.000000,0.000000</Rotation>
 			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
-			<Scale>1.0000</Scale>
-			<BaseScale>2.0000</BaseScale>
+			<Scale>1.5600</Scale>
+			<BaseScale>1.0000</BaseScale>
 		</TileDesignObject>
 		<TileDesignObject InternalName="_obj13">
 			<ObjectType>PropModelType</ObjectType>
-			<ObjectDefName>K_Temple_Piller_02</ObjectDefName>
+			<ObjectDefName>K_Wood_Platform_01</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>-17.750000,12.000000,-17.750000</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.4400</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj14">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>K_Wood_Platform_01</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>17.750000,12.000000,-17.750000</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.4400</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj15">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>K_Wood_Platform_01</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>17.750000,12.000000,17.750000</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.4400</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj16">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>K_Wood_Platform_01</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>-18.750000,12.000000,17.750000</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.4400</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj17">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>K_Window_Fire_Water_01</ObjectDefName>
+			<ObjectLOD>6</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>-11.706619,18.000000,-11.709068</Position>
+			<Rotation>0.000000,-2.356194,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.8000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj18">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>K_Window_Fire_Water_01</ObjectDefName>
+			<ObjectLOD>6</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>-11.567146,18.000000,11.568359</Position>
+			<Rotation>0.000000,-0.768927,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.8000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj19">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>K_Window_Fire_Water_01</ObjectDefName>
+			<ObjectLOD>6</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>11.764481,18.000000,11.573837</Position>
+			<Rotation>0.000000,0.731073,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.8000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj20">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>K_Window_Fire_Water_01</ObjectDefName>
+			<ObjectLOD>6</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>11.614342,18.000000,-11.642143</Position>
+			<Rotation>0.000000,2.381073,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.8000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj21">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>K_City_Stonework_Corner</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>42.187500,-1.000000,-7.812500</Position>
+			<Rotation>0.000000,-1.570796,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.4000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj22">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>K_City_Stonework_Corner</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>-7.812500,-1.000000,-42.187500</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.4800</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj23">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>K_City_Stonework_Corner</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>32.812500,-1.000000,-15.625000</Position>
+			<Rotation>0.000000,-0.785398,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.4800</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj24">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>K_City_Stonework_Corner</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>4.687500,-1.000000,-43.750000</Position>
+			<Rotation>0.000000,-0.785398,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.4000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj25">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>K_City_Stonework_Corner</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>14.062500,-1.000000,-35.937500</Position>
+			<Rotation>0.000000,-1.570796,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.4800</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj26">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>K_City_Stonework_Corner</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>-15.625000,-1.000000,-32.812500</Position>
+			<Rotation>0.000000,0.785399,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.4400</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj27">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>K_City_Stonework_Corner</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>-43.750000,-1.000000,-4.687500</Position>
+			<Rotation>0.000000,0.785399,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.4000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj28">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>K_City_Stonework_Corner</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>-42.187500,-1.000000,7.812500</Position>
+			<Rotation>0.000000,1.570797,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.4800</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj29">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>K_City_Stonework_Corner</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>-32.812500,-1.000000,15.625000</Position>
+			<Rotation>0.000000,2.356194,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.4000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj30">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>K_City_Stonework_Corner</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>-35.937500,-1.000000,-14.062500</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.4800</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj31">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>K_City_Stonework_Corner</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>42.187500,-1.000000,4.687500</Position>
+			<Rotation>0.000000,-2.356194,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.4800</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj32">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>K_City_Stonework_Corner</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>34.375000,-1.000000,14.062500</Position>
+			<Rotation>0.000000,-3.141593,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.4000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj33">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>K_City_Stonework_Corner</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>7.812500,-1.000000,42.187500</Position>
+			<Rotation>0.000000,-3.141593,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.4800</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj34">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>K_City_Stonework_Corner</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>15.625000,-1.000000,32.812500</Position>
+			<Rotation>0.000000,-2.356194,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.4000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj35">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>K_City_Stonework_Corner</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>-4.687500,-1.000000,43.750000</Position>
+			<Rotation>0.000000,-3.926991,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.4000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj36">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>K_City_Stonework_Corner</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>-14.062500,-1.000000,35.937500</Position>
+			<Rotation>0.000000,-4.712389,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.4800</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj37">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>Statue_Stand1</ObjectDefName>
 			<ObjectLOD>4</ObjectLOD>
-			<IgnoreTerrain>0</IgnoreTerrain>
-			<Position>-1.173141,0.000000,-13.866013</Position>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>-37.500000,-2.000000,-37.500000</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.3200</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj38">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>Statue_Stand1</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>-37.500000,-2.000000,37.500000</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.3200</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj39">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>Statue_Stand1</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>34.375000,-2.000000,-37.500000</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.3200</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj40">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>Statue_Stand1</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>37.500000,-2.000000,37.500000</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.3200</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj41">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>Statue_HorseMount_01</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>39.375000,5.000000,38.375000</Position>
+			<Rotation>0.000000,-2.304326,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.2800</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj42">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>Statue_King_01</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>-37.500000,4.000000,-37.500000</Position>
+			<Rotation>0.000000,0.959931,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.4000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj43">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>Statue_KingdomGuard1</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>-38.375000,4.000000,38.500000</Position>
+			<Rotation>0.000000,2.443461,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.4800</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj44">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>Statue_Hooded_01</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>34.375000,4.000000,-37.500000</Position>
+			<Rotation>0.000000,-0.698132,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.4400</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj45">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>K_City_Piller_Base_01</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>0.000000,31.000000,0.000000</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.3200</Scale>
+			<BaseScale>2.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj46">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>K_Bench_01</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>-28.583534,0.000000,-29.025368</Position>
+			<Rotation>0.000000,-2.343928,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj47">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>K_Bench_01</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>26.361687,0.000000,-28.593540</Position>
+			<Rotation>0.000000,-0.600000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj48">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>K_Bench_01</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>27.894140,0.000000,28.173576</Position>
+			<Rotation>0.000000,0.825000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj49">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>K_Bench_01</ObjectDefName>
+			<ObjectLOD>5</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>-29.064615,0.000000,28.172922</Position>
+			<Rotation>0.000000,-0.675000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj50">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>MaleTalking2</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>-6.050430,1.000000,-44.303284</Position>
+			<Rotation>0.000000,-1.050000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>0.1300</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj51">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>MaleTalking2</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>-39.813782,0.000000,25.469482</Position>
+			<Rotation>0.000000,-1.875000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>0.1300</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj52">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>FemaleTalking1</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>1.939438,1.000000,-45.929077</Position>
+			<Rotation>0.000000,1.500000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>0.1300</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj53">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>FemaleTalking1</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>35.864372,1.000000,25.721615</Position>
+			<Rotation>0.000000,1.875001,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>0.1300</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj54">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>FemaleFarmerSitting1</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>31.185623,0.000000,27.215172</Position>
+			<Rotation>0.000000,-1.575000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>0.1300</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj55">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>RobedSitting1</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>-29.673111,0.000000,30.789946</Position>
+			<Rotation>0.000000,1.800000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>0.1300</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj56">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>RobedSitting1</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>-32.801926,0.000000,27.540634</Position>
+			<Rotation>0.000000,2.250001,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>0.1300</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj57">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>RobedAtMarket</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>35.702652,0.000000,-26.929779</Position>
 			<Rotation>0.000000,0.000000,0.000000</Rotation>
 			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
 			<Scale>1.0000</Scale>
+			<BaseScale>0.1300</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj58">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>RobedAtMarket</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>-2.641861,1.000000,46.879562</Position>
+			<Rotation>0.000000,-1.675935,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>1.0000</Scale>
+			<BaseScale>0.1300</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj59">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>DogProp</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>1</IgnoreTerrain>
+			<Position>4.099457,1.000000,45.882111</Position>
+			<Rotation>0.000000,1.575000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.9600</Scale>
+			<BaseScale>0.2000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj60">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>K_Tower_Advanced_01</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>0.308630,16.000000,-0.744972</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.9200</Scale>
+			<BaseScale>1.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj61">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>K_City_Piller_Base_01</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>0.135880,16.000000,-29.495575</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.5000</Scale>
+			<BaseScale>2.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj62">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>K_City_Piller_Base_01</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-28.511292,17.000000,0.658787</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.5000</Scale>
+			<BaseScale>2.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj63">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>K_City_Piller_Base_01</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>-0.334297,17.000000,28.477829</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.5000</Scale>
+			<BaseScale>2.0000</BaseScale>
+		</TileDesignObject>
+		<TileDesignObject InternalName="_obj64">
+			<ObjectType>PropModelType</ObjectType>
+			<ObjectDefName>K_City_Piller_Base_01</ObjectDefName>
+			<ObjectLOD>4</ObjectLOD>
+			<IgnoreTerrain>0</IgnoreTerrain>
+			<Position>28.676926,16.000000,-0.180864</Position>
+			<Rotation>0.000000,0.000000,0.000000</Rotation>
+			<RotationSpeed>0.000000,0.000000,0.000000</RotationSpeed>
+			<Scale>0.5000</Scale>
 			<BaseScale>2.0000</BaseScale>
 		</TileDesignObject>
 		<TileDesignPath InternalName="_path0"/>
