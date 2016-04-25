@@ -56,7 +56,7 @@
         <Provides>Assassins cannot sneak or lay traps with this mount</Provides>		
         <Value>-1</Value>
       </GameModifier>	  
-      <GameModifier>
+      <!--<GameModifier>
         <ModType>Unit</ModType>
         <Attribute>AdjustUnitStat</Attribute>
         <BoolVal1>1</BoolVal1>
@@ -66,7 +66,7 @@
         <BonusValue>0.5</BonusValue>
         <Provides>Additional +1 Attack when using a Bow</Provides>
         <vsHigher>1</vsHigher>
-      </GameModifier>
+      </GameModifier>-->
       <GameModifier>
         <ModType>Unit</ModType>
         <Attribute>AdjustUnitStat</Attribute>
@@ -151,7 +151,7 @@
         <Provides>Assassins cannot sneak or lay traps with this mount</Provides>		
         <Value>-1</Value>
       </GameModifier>  
-      <GameModifier>
+      <!--<GameModifier>
         <ModType>Unit</ModType>
         <Attribute>AdjustUnitStat</Attribute>
         <BoolVal1>1</BoolVal1>
@@ -161,7 +161,7 @@
         <BonusValue>0.5</BonusValue>
         <Provides>Additional +1 Attack when using a Bow</Provides>
         <vsHigher>1</vsHigher>
-      </GameModifier>
+      </GameModifier>-->
       <GameModifier>
         <ModType>Unit</ModType>
         <Attribute>AdjustUnitStat</Attribute>
@@ -245,7 +245,7 @@
         <Provides>Assassins cannot sneak or lay traps with this mount</Provides>		
         <Value>-1</Value>
       </GameModifier>	  
-      <GameModifier>
+      <!--<GameModifier>
         <ModType>Unit</ModType>
         <Attribute>AdjustUnitStat</Attribute>
         <BoolVal1>1</BoolVal1>
@@ -255,7 +255,7 @@
         <BonusValue>0.5</BonusValue>
         <Provides>Additional +1 Attack when using a Bow</Provides>
         <vsHigher>1</vsHigher>
-      </GameModifier>
+      </GameModifier>-->
       <GameModifier>
         <ModType>Unit</ModType>
         <Attribute>AdjustUnitStat</Attribute>
@@ -328,7 +328,7 @@
         <Provides>Assassins cannot sneak or lay traps with this mount</Provides>		
         <Value>-1</Value>
       </GameModifier>	  
-      <GameModifier>
+      <!--<GameModifier>
         <ModType>Unit</ModType>
         <Attribute>AdjustUnitStat</Attribute>
         <BoolVal1>1</BoolVal1>
@@ -338,7 +338,7 @@
         <BonusValue>0.5</BonusValue>
         <Provides>Additional +1 Attack when using a Bow</Provides>
         <vsHigher>1</vsHigher>
-      </GameModifier>
+      </GameModifier>-->
       <GameModifier>
         <ModType>Unit</ModType>
         <Attribute>AdjustUnitStat</Attribute>
@@ -498,7 +498,7 @@
         <StrVal>UnitStat_Moves</StrVal>
         <Value>2</Value>
       </GameModifier>	  
-      <GameModifier>
+      <!--<GameModifier>
         <ModType>Unit</ModType>
         <Attribute>AdjustUnitStat</Attribute>
         <BoolVal1>1</BoolVal1>
@@ -508,7 +508,7 @@
         <BonusValue>0.5</BonusValue>
         <Provides>Additional +1 Attack when using a Bow</Provides>
         <vsHigher>1</vsHigher>
-      </GameModifier>	  
+      </GameModifier>-->	  
       <CutSceneDataPack>SpiderMountCutScenePack</CutSceneDataPack>
       <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
       <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
@@ -586,7 +586,7 @@
         <Provides>Assassins cannot sneak or lay traps with this mount</Provides>		
         <Value>-1</Value>
       </GameModifier>	  
-      <GameModifier>
+      <!--<GameModifier>
         <ModType>Unit</ModType>
         <Attribute>AdjustUnitStat</Attribute>
         <BoolVal1>1</BoolVal1>
@@ -596,7 +596,7 @@
         <BonusValue>0.5</BonusValue>
         <Provides>Additional +1 Attack when using a Bow</Provides>
         <vsHigher>1</vsHigher>
-      </GameModifier>
+      </GameModifier>-->
       <GameModifier>
         <ModType>Unit</ModType>
         <Attribute>AdjustUnitStat</Attribute>
@@ -643,17 +643,17 @@
         <StrVal>UnitStat_Moves</StrVal>
         <Value>2</Value>
       </GameModifier>	  
-            <GameModifier>
-                <ModType>Unit</ModType>
-                <Attribute>AdjustUnitStat</Attribute>
-                <BoolVal1>1</BoolVal1>
-                <StrVal>UnitStat_Attack_Pierce</StrVal>
-                <StrVal2>UnitStat_IsBow</StrVal2>
-                <Value>1</Value>
-                <BonusValue>0.5</BonusValue>
-                <Provides>+1 Attack when using a Bow</Provides>
-                <vsHigher>1</vsHigher>
-            </GameModifier>	  
+      <!--<GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <BoolVal1>1</BoolVal1>
+        <StrVal>UnitStat_Attack_Pierce</StrVal>
+        <StrVal2>UnitStat_IsBow</StrVal2>
+        <Value>1</Value>
+        <BonusValue>0.5</BonusValue>
+        <Provides>Additional +1 Attack when using a Bow</Provides>
+        <vsHigher>1</vsHigher>
+      </GameModifier>--> 
       <CutSceneDataPack>WargMountCutScenePack</CutSceneDataPack>
       <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
       <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
@@ -738,17 +738,17 @@
         <Provides>Assassins cannot sneak or lay traps with this mount</Provides>		
         <Value>-1</Value>
       </GameModifier>	  
-            <GameModifier>
-                <ModType>Unit</ModType>
-                <Attribute>AdjustUnitStat</Attribute>
-                <BoolVal1>1</BoolVal1>
-                <StrVal>UnitStat_Attack_Pierce</StrVal>
-                <StrVal2>UnitStat_IsBow</StrVal2>
-                <Value>1</Value>
-                <BonusValue>0.5</BonusValue>
-                <Provides>+1 Attack when using a Bow</Provides>
-                <vsHigher>1</vsHigher>
-            </GameModifier>	  
+      <!--<GameModifier>
+        <ModType>Unit</ModType>
+        <Attribute>AdjustUnitStat</Attribute>
+        <BoolVal1>1</BoolVal1>
+        <StrVal>UnitStat_Attack_Pierce</StrVal>
+        <StrVal2>UnitStat_IsBow</StrVal2>
+        <Value>1</Value>
+        <BonusValue>0.5</BonusValue>
+        <Provides>Additional +1 Attack when using a Bow</Provides>
+        <vsHigher>1</vsHigher>
+      </GameModifier>-->  
       <CutSceneDataPack>WargMountCutScenePack</CutSceneDataPack>
       <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
       <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
@@ -813,7 +813,7 @@
         <Provides>Assassins cannot sneak or lay traps with this mount</Provides>		
         <Value>-1</Value>
       </GameModifier>	
-      <GameModifier>
+      <!--<GameModifier>
         <ModType>Unit</ModType>
         <Attribute>AdjustUnitStat</Attribute>
         <BoolVal1>1</BoolVal1>
@@ -823,7 +823,7 @@
         <BonusValue>0.5</BonusValue>
         <Provides>Additional +1 Attack when using a Bow</Provides>
         <vsHigher>1</vsHigher>
-      </GameModifier>
+      </GameModifier>-->
       <GameModifier>
         <ModType>Unit</ModType>
         <Attribute>AdjustUnitStat</Attribute>
