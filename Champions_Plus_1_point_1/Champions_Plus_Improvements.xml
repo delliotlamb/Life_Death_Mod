@@ -117,8 +117,8 @@
         <PreferredTerrain>Forest</PreferredTerrain>
         <RequiresCityImprovement>1</RequiresCityImprovement>
         <RequiredImprovement>Fortress</RequiredImprovement>
-        <UpgradesToImprovement>PlateArmorer</UpgradesToImprovement>		
-        <UpgradeTier>1</UpgradeTier>
+        <!--<UpgradesToImprovement>PlateArmorer</UpgradesToImprovement>		
+        <UpgradeTier>1</UpgradeTier>-->
         <Prereq>
             <Type>RestrictedAbilityBonusOption</Type>
             <Attribute>LightPlate</Attribute>
@@ -159,7 +159,7 @@
         <PreferredTerrain>City</PreferredTerrain>
         <PreferredTerrain>Category:Land</PreferredTerrain>
         <PreferredTerrain>Forest</PreferredTerrain>			
-        <UpgradeTier>2</UpgradeTier>
+        <!--<UpgradeTier>2</UpgradeTier>-->
         <Prereq>
             <Type>RestrictedAbilityBonusOption</Type>
             <Attribute>LightPlate</Attribute>
@@ -216,8 +216,8 @@
         <PreferredTerrain>Forest</PreferredTerrain>
         <RequiresCityImprovement>1</RequiresCityImprovement>
         <RequiredImprovement>Fortress</RequiredImprovement>
-        <UpgradesToImprovement>PlateArmorer_LightPlate</UpgradesToImprovement>		
-        <UpgradeTier>1</UpgradeTier>
+        <!--<UpgradesToImprovement>PlateArmorer_LightPlate</UpgradesToImprovement>		
+        <UpgradeTier>1</UpgradeTier>-->
         <HideInHiergamenon>1</HideInHiergamenon>		
         <Prereq>
             <Type>AbilityBonusOption</Type>
@@ -254,7 +254,7 @@
         <PreferredTerrain>City</PreferredTerrain>
         <PreferredTerrain>Category:Land</PreferredTerrain>
         <PreferredTerrain>Forest</PreferredTerrain>			
-        <UpgradeTier>2</UpgradeTier>
+        <!--<UpgradeTier>2</UpgradeTier>-->
         <HideInHiergamenon>1</HideInHiergamenon>
         <Prereq>
             <Type>AbilityBonusOption</Type>
@@ -307,8 +307,8 @@
         <PreferredTerrain>Forest</PreferredTerrain>
         <RequiresCityImprovement>1</RequiresCityImprovement>
         <RequiredImprovement>Fortress</RequiredImprovement>
-        <UpgradesToImprovement>PlateArmorer_MasterworkChain</UpgradesToImprovement>		
-        <UpgradeTier>1</UpgradeTier>
+        <!--<UpgradesToImprovement>PlateArmorer_MasterworkChain</UpgradesToImprovement>		
+        <UpgradeTier>1</UpgradeTier>-->
         <HideInHiergamenon>1</HideInHiergamenon>		
         <Prereq>
             <Type>AbilityBonusOption</Type>
@@ -345,7 +345,7 @@
         <PreferredTerrain>City</PreferredTerrain>
         <PreferredTerrain>Category:Land</PreferredTerrain>
         <PreferredTerrain>Forest</PreferredTerrain>			
-        <UpgradeTier>2</UpgradeTier>
+        <!--<UpgradeTier>2</UpgradeTier>-->
         <HideInHiergamenon>1</HideInHiergamenon>
         <Prereq>
             <Type>AbilityBonusOption</Type>
@@ -429,8 +429,8 @@
         <PreferredTerrain>Forest</PreferredTerrain>
         <RequiresCityImprovement>1</RequiresCityImprovement>
         <RequiredImprovement>Conclave</RequiredImprovement>		
-        <UpgradesToImprovement>Master_Enchanter</UpgradesToImprovement>
-        <UpgradeTier>1</UpgradeTier>
+        <!--<UpgradesToImprovement>Master_Enchanter</UpgradesToImprovement>
+        <UpgradeTier>1</UpgradeTier>-->
         <LaborToBuild>200</LaborToBuild>
         <Prereq>
             <Type>Tech</Type>
@@ -464,8 +464,8 @@
         <PreferredTerrain>City</PreferredTerrain>
         <PreferredTerrain>Category:Land</PreferredTerrain>
         <PreferredTerrain>Forest</PreferredTerrain>		
-        <UpgradesToImprovement>Arcane_Armorer</UpgradesToImprovement>		
-        <UpgradeTier>2</UpgradeTier>
+        <!--<UpgradesToImprovement>Arcane_Armorer</UpgradesToImprovement>		
+        <UpgradeTier>2</UpgradeTier>-->
         <LaborToBuild>500</LaborToBuild>
         <Prereq>
             <Type>Tech</Type>
@@ -507,7 +507,7 @@
         <PreferredTerrain>City</PreferredTerrain>
         <PreferredTerrain>Category:Land</PreferredTerrain>
         <PreferredTerrain>Forest</PreferredTerrain>		
-        <UpgradeTier>3</UpgradeTier>
+        <!--<UpgradeTier>3</UpgradeTier>-->
         <LaborToBuild>700</LaborToBuild>
         <Prereq>
             <Type>Tech</Type>

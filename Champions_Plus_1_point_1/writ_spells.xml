@@ -1,0 +1,1842 @@
+<Spells>
+<!-- These are the equipment spells modified for building unitstat pre-reqs -->
+
+	<SpellDef InternalName="TannersWrit_Ability">
+        <DisplayName>Tanner's Writ</DisplayName>
+        <Description>Order a Leather armor set.</Description>
+        <Image>LeatherArmor.png</Image>
+        <IconFG>K_LeatherChest1_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+		<Cooldown>5</Cooldown>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtTanner</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Gold</Resource>
+            <Amount>70</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>LeatherBreastpiece</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>LeatherVambraces</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>LeatherHelmet</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>LeatherBoots</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>LeatherGreaves</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>WoodShield</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+
+	<SpellDef InternalName="SmithsWrit_Ability">
+        <DisplayName>Smith's Writ</DisplayName>
+        <Description>Order a Chainmail armor set</Description>
+        <Image>Tech_Armor.png</Image>
+        <IconFG>Armor_F_ChainShirt.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+		<Cooldown>5</Cooldown>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtBlacksmith</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Metal</Resource>
+            <Amount>18</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Gold</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>ChainBreastpiece</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>ChainHelmet</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>ChainVambraces</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>ChainBoots</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>ChainGreaves</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>KiteShield</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>BeltOfReinforcing</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+
+	<SpellDef InternalName="SmithsWrit_Ability_LightPlate">
+        <DisplayName>Smith's Writ</DisplayName>
+        <Description>Order a Light Platemail armor set</Description>
+        <Image>Tech_Armor.png</Image>
+        <IconFG>MasterFullHeavyPlateMail.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+		<Cooldown>5</Cooldown>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtBlacksmith_LightPlate</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Metal</Resource>
+            <Amount>23</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Gold</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>PlateBreastpiece_Light</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>PlateHelmet_Light</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>PlateVambraces_Light</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>PlateBoots_Light</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>PlateGreaves_Light</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>KiteShield</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>BeltOfReinforcing</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+
+		<SpellDef InternalName="ArmorersWrit_Ability">
+        <DisplayName>Armorer's Writ</DisplayName>
+        <Description>Order a Plate Mail armor set</Description>
+        <Image>PlateArmor.png</Image>
+        <IconFG>MasterFullHeavyPlateMail2.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+		<Cooldown>5</Cooldown>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <HideInHiergamenon>1</HideInHiergamenon>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtPlateArmorer</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <!-- added 3-9-15 -->
+		<Prereq>
+            <Type>Tech</Type>
+            <Attribute>Heavy_Armor</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Metal</Resource>
+            <Amount>31</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Gold</Resource>
+            <Amount>100</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>PlateBreastpiece</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>PlateHelmet</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>PlateVambraces</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>PlateBoots</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>PlateGreaves</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>TowerShield</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>BeltOfReinforcing</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+
+
+	<SpellDef InternalName="ArmorersWrit_Ability_MasterworkChain">
+        <DisplayName>Armorer's Writ</DisplayName>
+        <Description>Order a Masterwork Chainmail armor set</Description>
+        <Image>PlateArmor.png</Image>
+        <IconFG>Armor_K_MasterworkChainShirt.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+		<Cooldown>5</Cooldown>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+		<Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>MasterworkChain</Attribute>
+            <Target>Player</Target>
+        </Prereq>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtMasterworkChainArmorer</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <!-- added 3-9-15 -->
+		<Prereq>
+            <Type>Tech</Type>
+            <Attribute>Heavy_Armor</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Metal</Resource>
+            <Amount>20</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Gold</Resource>
+            <Amount>100</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>ChainBreastpiece_Masterwork</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>ChainHelmet_Masterwork</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>ChainVambraces_Masterwork</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>ChainBoots_Masterwork</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>ChainGreaves_Masterwork</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>TowerShield</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>BeltOfReinforcing</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+
+
+<SpellDef InternalName="EnchantersWrit_Ability">
+        <DisplayName>Enchanter's Writ</DisplayName>
+        <Description>Order enchanted items in bulk</Description>
+        <Image>WeddingRings.png</Image>
+        <IconFG>BeltofSpeed_Item.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+		<Cooldown>5</Cooldown>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtEnchanter</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>RefinedCrystal</Resource>
+            <Amount>11</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Gold</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>RingOfEmbers</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>RingOfTheGlacier</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>RingOfLife</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>BeltOfPrecognition</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Robe_Monks</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+
+	<SpellDef InternalName="MystantumWrit_Ability">
+        <DisplayName>Mystantum Writ</DisplayName>
+        <Description>Order Mystantum armor set and sword in bulk</Description>
+        <Image>Refined_Defense_Tech.png</Image>
+        <IconFG>MasterLightPlateMailCuirass2.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+		<Cooldown>5</Cooldown>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtEnchanter</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>RefinedCrystal</Resource>
+            <Amount>14</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Gold</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>RoundShield_Mystantum</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Shortsword_Mystantum</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>MystantumBreastpiece</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>MystantumGreaves</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+
+	<SpellDef InternalName="MasterEnchantersWrit_Ability">
+        <DisplayName>Master Enchanter's Writ</DisplayName>
+        <Description>Order advanced enchanted items in bulk</Description>
+        <Image>EnchantedSword1.png</Image>
+        <IconFG>AmuletofHaste_Item.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+		<Cooldown>5</Cooldown>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtMasterEnchanter</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>RefinedCrystal</Resource>
+            <Amount>43</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Gold</Resource>
+            <Amount>200</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Robe_Aegis</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>CloakOfShadows</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>AmuletofWarding</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>AmuletOfHaste</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>AmuletOfFrost</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>AmuletOfFlames</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>DragonHideCloak</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>IceWargCloak</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+
+	<SpellDef InternalName="ArcaneArmorersWrit_Ability">
+        <DisplayName>Arcane Armorer's Writ</DisplayName>
+        <Description>Order a Champion's Armor set</Description>
+        <Image>ArmorStatue_Medallion.png</Image>
+        <IconFG>Armor_K_LegendaryPlateCuirass.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+		<Cooldown>5</Cooldown>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtArcaneArmorer</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>RefinedCrystal</Resource>
+            <Amount>33</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Gold</Resource>
+            <Amount>200</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>PlateBreastpiece_Champions</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>PlateHelmet_Champions</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>PlateVambraces_Champions</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>PlateBoots_Champion</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>PlateGreaves_Champions</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+
+	<SpellDef InternalName="ArmorersWrit_Master_Ability">
+        <DisplayName>Plate Master's Writ</DisplayName>
+        <Description>Order a Pinnacle Plate Mail armor set. Can be used only once per game!</Description>
+        <Image>PlateArmor.png</Image>
+        <IconFG>Armor_F_ReinforcedPlateCuirass.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+		<Cooldown>1000</Cooldown>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtPlateArmorer_Master</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Metal</Resource>
+            <Amount>55</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Gold</Resource>
+            <Amount>200</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>PlateBreastpiece2</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>PlateHelmet2</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>PlateVambraces2</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>PlateBoots2</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>PlateGreaves2</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+
+	<SpellDef InternalName="ArmorersWrit_Master2_Ability">
+        <DisplayName>Chain Master's Writ</DisplayName>
+        <Description>Order a Pinnacle Chain Mail armor set. Can only be used once per game!</Description>
+        <Image>PlateArmor.png</Image>
+        <IconFG>Armor_F_ReinforcedChainShirt.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+		<Cooldown>1000</Cooldown>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>		
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtPlateArmorer_Master</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Metal</Resource>
+            <Amount>55</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Gold</Resource>
+            <Amount>200</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>ChainGreaves_Masterwork2</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>ChainBreastpiece_Masterwork2</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>ChainHelmet_Masterwork2</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+			<Attribute>ChainVambraces_Masterwork2</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>ChainBoots_Masterwork2</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+
+	<SpellDef InternalName="ArcaneArmorersWrit2_Ability">
+        <DisplayName>Forge Transcendent Platemail</DisplayName>
+        <Description>Craft a Transcendent Plate Armor set. Transcendent plate focuses on increasing the owner's defense and survivability to superhuman levels.</Description>
+        <Image>Fallen_Medallion.png</Image>
+        <IconFG>Armor_F_ImpenetrablePlateCuirass.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+		<AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtArcaneArmorer_Tran</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>RefinedCrystal</Resource>
+            <Amount>100</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Metal</Resource>
+            <Amount>100</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>100</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>PlateGreaves_Champions2</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>PlateBreastpiece_Impenetrable3</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>PlateHelmet_Champions2</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>PlateVambraces_Champions2</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>PlateBoots_Champion2</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>TowerShield_Impenetrable2</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+
+	<SpellDef InternalName="ArcaneArmorersWrit3_Ability">
+        <DisplayName>Forge Transcendent Chainmail</DisplayName>
+        <Description>Craft a Transcendent Chainmail Armor set. Transcendent chain armor is enchanted to augment the performance of the owner as much as protect them.</Description>
+        <Image>Fallen_Medallion.png</Image>
+        <IconFG>Armor_F_OphidianScaleShirt.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtArcaneArmorer_Tran</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>RefinedCrystal</Resource>
+            <Amount>100</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Metal</Resource>
+            <Amount>100</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>100</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>ChainGreaves_Transcendent</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>ChainBreastpiece_Transcendent</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>ChainHelmet_Transcendent</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+			<Attribute>ChainVambraces_Transcendent</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>ChainBoots_Transcendent</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>KiteShield_Mirror2</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+
+	<SpellDef InternalName="ArcaneWeaponsmith_TerrorSword_Ability">
+        <DisplayName>Forge Terror Blade</DisplayName>
+        <Description>Craft a Transcendent Sword.</Description>
+        <Image>Refined_Attack.png</Image>
+        <IconFG>W_Scimitar_Brutal_Trog_Icon_01.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+		<Prereq>
+            <Type>Allegiance</Type>
+            <Attribute>Empire</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtArcaneWeaponsmith_Tran</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>RefinedCrystal</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Metal</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Longsword_Terror</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+	
+	<SpellDef InternalName="ArcaneWeaponsmith_Longsword_Brilliance_Ability">
+        <DisplayName>Forge Longsword Of Brilliance</DisplayName>
+        <Description>Craft a Transcendent Sword.</Description>
+        <Image>Refined_Attack.png</Image>
+        <IconFG>W_Broadsword_Masterwork_Icon_01.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+		<Prereq>
+            <Type>Allegiance</Type>
+            <Attribute>Kingdom</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtArcaneWeaponsmith_Tran</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>RefinedCrystal</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Metal</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Longsword_ArcaneBrilliance</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+
+
+    <SpellDef InternalName="ArcaneWeaponsmith_Axe_Ability">
+        <DisplayName>Writ Of Transcendent Axecraft</DisplayName>
+        <Description>Craft a Transcendent Axe.</Description>
+        <Image>Refined_Attack.png</Image>
+        <IconFG>W_GreatAxe_Pendulum_Icon_01.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtArcaneWeaponsmith_Tran</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>RefinedCrystal</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Metal</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Greataxe_Pendulum2</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+
+	<SpellDef InternalName="ArcaneWeaponsmith_Mace_Ability">
+        <DisplayName>Writ Of Transcendent Macecraft</DisplayName>
+        <Description>Craft a Transcendent Blunt Weapon.</Description>
+        <Image>Refined_Attack.png</Image>
+        <IconFG>W_Maul_Curgens_Icon_01.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtArcaneWeaponsmith_Tran</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>RefinedCrystal</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Metal</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Maul_Imprisoning</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+
+	<SpellDef InternalName="ArcaneWeaponsmith_Bow_Ability">
+        <DisplayName>Writ Of Transcendent Bowcraft</DisplayName>
+        <Description>Craft a Transcendent Bow.</Description>
+        <Image>Tech_Longbows.png</Image>
+        <IconFG>W_Longbow_Lightining_Icon_01.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtArcaneWeaponsmith_Tran</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>RefinedCrystal</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Metal</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Longbow_Thundergod</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+
+	<SpellDef InternalName="ArcaneWeaponsmith_Lance_Ability">
+        <DisplayName>Writ Of Transcendent Lancecraft</DisplayName>
+        <Description>Craft a Transcendent Spear.</Description>
+        <Image>Refined_Attack.png</Image>
+        <IconFG>W_Pike_Masterwork_Icon_01.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>		
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtArcaneWeaponsmith_Tran</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>RefinedCrystal</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Metal</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Pike_Spectre</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+
+		<SpellDef InternalName="ArcaneWeaponsmith_Ability">
+        <DisplayName>Writ Of Arcane Weaponry</DisplayName>
+        <Description>Order the full set of trained-unit-eligible high-end arcane weapons.</Description>
+        <Image>Refined_Attack.png</Image>
+        <IconFG>W_Staff_Hellfire_Icon_01.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+		<Cooldown>1000</Cooldown>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtArcaneWeaponsmith</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>RefinedCrystal</Resource>
+            <Amount>34</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Gold</Resource>
+            <Amount>150</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Staff_Freezing</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Staff_Hellfire</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Longbow_Ignys</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Longsword_Freezing</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Pike_Shocking</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Maul_Doom</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+
+	<SpellDef InternalName="Weaponsmith_Pinnacle_Ability">
+        <DisplayName>Writ Of Pinnacle Weaponry</DisplayName>
+        <Description>Order a pinnacle sword, axe, pike, maul, and bow. Only one pinnacle weapon set can be ordered per game!</Description>
+        <Image>Improvement_Weaponsmith.png</Image>
+        <IconFG>W_Battle_Axe_Masterwork_Icon_01.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+		<Cooldown>1000</Cooldown>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtWeaponsmith</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Metal</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Gold</Resource>
+            <Amount>300</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Maul_Pinnacle</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>YewLongbow_Pinnacle</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Pike_Pinnacle</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>BattleAxe_Pinnacle</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Longsword_Pinnacle</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+
+	<SpellDef InternalName="ArchaeologistsWrit_Ability">
+        <DisplayName>Archaeologist's Writ</DisplayName>
+        <Description>Order an expedition that will return a piece of weathered equipment. There is a small chance of a rare artifact being found instead...</Description>
+        <Image>Artifact_Swamp1.png</Image>
+        <IconFG>Armor_GolemShield.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+		<Cooldown>5</Cooldown>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <AppliesRandomModifier>1</AppliesRandomModifier>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtArchaeologist</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Gold</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>ChainBreastpiece_Skeleton</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>ChainBreastpiece_Skeleton</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>PlateBreastpiece_Rusty</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>PlateHelmet_Rusty</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>RustyShield</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>RustyShield</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>KiteShield_Golem</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Longsword_Golem</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Axe_Golem</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>KiteShield_Golem</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>KiteShield_Dragonscale</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>RingOfWisdom</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Loot_DeadRat</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Loot_DeadRat</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+
+	<SpellDef InternalName="RanchersWrit_Ability">
+        <DisplayName>Rancher's Writ</DisplayName>
+        <Description>Order a pair of horses as mounts.</Description>
+        <Image>Res_Horses_Plains.png</Image>
+        <IconFG>Horse_Resource_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+		<Cooldown>5</Cooldown>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtRanch</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Gold</Resource>
+            <Amount>25</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Horses</Resource>
+            <Amount>2</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>BasicHorseMount</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>BasicHorseMount2</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+
+	<SpellDef InternalName="RanchersWrit_Dead_Ability">
+        <DisplayName>Rancher's Writ</DisplayName>
+        <Description>Order a pair of undead horses as mounts.</Description>
+        <Image>Res_Horses_Plains.png</Image>
+        <IconFG>Horse_Resource_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+		<Cooldown>5</Cooldown>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtRanch_Dead</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Gold</Resource>
+            <Amount>25</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Horses</Resource>
+            <Amount>2</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>UndeadHorseMount</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>UndeadHorseMount</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+
+	<SpellDef InternalName="RanchersWrit_Ability_LegacyOfSerrane">
+        <DisplayName>Rancher's Writ</DisplayName>
+        <Description>Order a pair of warhorses as mounts.</Description>
+        <Image>Res_Horses_Plains.png</Image>
+        <IconFG>Horse_Resource_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+		<Cooldown>5</Cooldown>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtRanch_LegacyOfSerrane</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Gold</Resource>
+            <Amount>25</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Horses</Resource>
+            <Amount>2</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>WarHorseMount</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>WarHorseMount</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+
+	<SpellDef InternalName="KennelsWrit_Ability">
+        <DisplayName>Kennel's Writ</DisplayName>
+        <Description>Order a pair of Wargs as mounts.</Description>
+        <Image>M_Warg_PlainsWarg_Card.png</Image>
+        <IconFG>Icon_Wargs.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+		<Cooldown>5</Cooldown>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtKennel</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Gold</Resource>
+            <Amount>25</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Wargs</Resource>
+            <Amount>2</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>BasicWargMount2</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>BasicWargMount</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+
+		<SpellDef InternalName="ProvisionistsWrit_Ability">
+        <DisplayName>Provisionist's Writ</DisplayName>
+        <Description>Order food and equipment to keep your champions well supplied.</Description>
+        <Image>AppleOrchard_Full.png</Image>
+        <IconFG>Bread_Item.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+		<Cooldown>5</Cooldown>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtProvisionist</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Gold</Resource>
+            <Amount>70</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>FirstAidKit</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Bread</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Rations</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>SaltedPork</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>LeatherBoots_Soldiers</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>LeatherVambraces_Soldiers</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+
+	<SpellDef InternalName="ProvisionistsWrit_Dead_Ability">
+        <DisplayName>Clerk's Writ</DisplayName>
+        <Description>Order equipment to keep your champions well supplied.</Description>
+        <Image>WorkCamp.png</Image>
+        <IconFG>Pack_Pioneer01.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+		<Cooldown>5</Cooldown>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtProvisionist_Dead</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Gold</Resource>
+            <Amount>40</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>LeatherBoots_Soldiers</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Whetstone</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>LeatherVambraces_Soldiers</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+	
+	<SpellDef InternalName="CharmCraft_Ability">
+        <DisplayName>Charmcraft Writ</DisplayName>
+        <Description>Order three especially enchanted charms for your champions.</Description>
+        <Image>WeddingRings.png</Image>
+        <IconFG>SignetRing_Item.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+		<Cooldown>5</Cooldown>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtEnchanter</Attribute>
+            <Value>1</Value>
+        </Prereq>
+		<SpellResourceCost>
+            <Resource>Gold</Resource>
+            <Amount>40</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>RefinedCrystal</Resource>
+            <Amount>15</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>MarksmansRing</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>SurvivorsSignet</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>FlyCharm</Attribute>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+	
+	<SpellDef InternalName="GlyphWrit_Ability">
+        <DisplayName>Glyphcraft Writ</DisplayName>
+        <Description>Order three especially enchanted glyph stones for your champions.</Description>
+        <Image>EnchantedSword1.png</Image>
+        <IconFG>DestinySliver_Item.png</IconFG>
+		<Cooldown>5</Cooldown>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtEnchanter</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>RefinedCrystal</Resource>
+            <Amount>20</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Gold</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>TelekineticGlyph</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>WarriorsFang</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>FlamebearersGlyph</Attribute>
+        </GameModifier>	
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+	
+	<SpellDef InternalName="CloakWrit_Ability">
+        <DisplayName>Cloakcraft Writ</DisplayName>
+        <Description>Order three especially enchanted cloaks for your champions.</Description>
+        <Image>P_Chasm_01.png</Image>
+        <IconFG>WizardCloak_Dark.png</IconFG>
+		<AutoUnlock>1</AutoUnlock>
+		<Cooldown>5</Cooldown>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtMasterEnchanter</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>RefinedCrystal</Resource>
+            <Amount>30</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Gold</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>ArrowslipCloak</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>NatureshieldCloak</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>SpellturningCloak</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+	
+	<SpellDef InternalName="ArcaneWeaponsmith_Ability">
+        <DisplayName>Writ Of Improved Enchanting</DisplayName>
+        <Description>Order a powerful enchanted sword and Maul.</Description>
+        <Image>Refined_Attack.png</Image>
+        <IconFG>W_Maul_Berserkers_Icon_01.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+		<Cooldown>1000</Cooldown>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtMasterEnchanter</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>RefinedCrystal</Resource>
+            <Amount>20</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Gold</Resource>
+            <Amount>100</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Maul_Rockshattering</Attribute>
+        </GameModifier>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Longsword_Thunder</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+	
+		<SpellDef InternalName="Overlord_Axe_Ability">
+        <DisplayName>Forge Overlord's Axe</DisplayName>
+        <Description>Create the ultimate Axe.</Description>
+        <Image>Refined_Attack.png</Image>
+        <IconFG>W_GreatAxe_Sunderer_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+		<Cooldown>1000</Cooldown>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtForgeOverlord</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>RefinedCrystal</Resource>
+            <Amount>60</Amount>
+        </SpellResourceCost>
+		<SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Greataxe_Reaper</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+	
+	<SpellDef InternalName="Overlord_Pike_Ability">
+        <DisplayName>Forge Overlord's Pike</DisplayName>
+        <Description>Create the ultimate Pike.</Description>
+        <Image>Refined_Attack.png</Image>
+        <IconFG>W_Pike_Holhiarn_01.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+		<Cooldown>1000</Cooldown>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtForgeOverlord</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>RefinedCrystal</Resource>
+            <Amount>60</Amount>
+        </SpellResourceCost>
+		<SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Pike_Shockwave</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+	
+	<SpellDef InternalName="Overlord_Sword_Ability">
+        <DisplayName>Forge Overlord's Sword</DisplayName>
+        <Description>Create the ultimate sword.</Description>
+        <Image>Refined_Attack.png</Image>
+        <IconFG>W_Longsword_Legendary_Icon_01.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+		<Cooldown>1000</Cooldown>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtForgeOverlord</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>RefinedCrystal</Resource>
+            <Amount>60</Amount>
+        </SpellResourceCost>
+		<SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Longsword_Tarantella</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+	
+	<SpellDef InternalName="Overlord_Mace_Ability">
+        <DisplayName>Forge Overlord's Mace</DisplayName>
+        <Description>Create the ultimate blunt weapon.</Description>
+        <Image>Refined_Attack.png</Image>
+        <IconFG>W_Mace_Legendary_Icon_01.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+		<Cooldown>1000</Cooldown>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtForgeOverlord</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>RefinedCrystal</Resource>
+            <Amount>60</Amount>
+        </SpellResourceCost>
+		<SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Mace_Legendcall</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+	
+	<SpellDef InternalName="Overlord_Bow_Ability">
+        <DisplayName>Forge Overlord's Bow</DisplayName>
+        <Description>Create the ultimate bow.</Description>
+        <Image>Refined_Attack.png</Image>
+        <IconFG>W_Longbow_Yew_Perfect_Icon_01.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+		<Cooldown>1000</Cooldown>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtForgeOverlord</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>RefinedCrystal</Resource>
+            <Amount>60</Amount>
+        </SpellResourceCost>
+		<SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>Longbow_Volcano</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+	
+	<SpellDef InternalName="Overlord_Armor_Ability">
+        <DisplayName>Forge Overlord's Armor</DisplayName>
+        <Description>Create the ultimate set of armor, wearable by any champion (no armor proficiency required).</Description>
+        <Image>T_ParidensReturn_Painting.png</Image>
+        <IconFG>VergaHelmet.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+		<Cooldown>1000</Cooldown>
+        <SpellBookSortCategory>Summon</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Defensive</SpellClass>
+        <SpellSubClass>Summon</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsAtForgeOverlord</Attribute>
+            <Value>1</Value>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>RefinedCrystal</Resource>
+            <Amount>90</Amount>
+        </SpellResourceCost>
+		<SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>50</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>PlateVambraces_Overlord</Attribute>
+        </GameModifier>
+		<GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>PlateBreastpiece_Overlord</Attribute>
+        </GameModifier>
+		<GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>PlateGreaves_Overlord</Attribute>
+        </GameModifier>
+		<GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>PlateHelmet_Overlord</Attribute>
+        </GameModifier>
+		<GameModifier>
+            <ModType>GiveItem</ModType>
+            <Attribute>PlateBoots_Overlord</Attribute>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>0</AIPriority>
+        </AIData>
+    </SpellDef>
+	
+	</Spells>
