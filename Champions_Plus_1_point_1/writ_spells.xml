@@ -1544,7 +1544,7 @@
         </Prereq>
         <SpellResourceCost>
             <Resource>RefinedCrystal</Resource>
-            <Amount>30</Amount>
+            <Amount>25</Amount>
         </SpellResourceCost>
         <SpellResourceCost>
             <Resource>Gold</Resource>
