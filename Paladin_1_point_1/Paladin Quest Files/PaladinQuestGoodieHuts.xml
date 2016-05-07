@@ -92,19 +92,20 @@
     </GoodieHutType>
 	
 	<GoodieHutType InternalName="GH_Paladin_WhiteWarg">
-        <Name>Swamp</Name>
-        <Description>The swamps buzz with life, and hidden secrets. Your sovereign must face whatever awaits totally alone!</Description>
-        <Rarity>-1</Rarity>
-        <MinDistanceFromStartingPoints>6</MinDistanceFromStartingPoints>
-        <BarredTerrain>River</BarredTerrain>
-        <PreferredTerrain>SwampTerrain</PreferredTerrain>
-        <SpawnRating>0</SpawnRating>
-        <TileDesign>G_Great_Swamp_Tree_WithChest_01</TileDesign>
-        <DrawnIcon>Treasure_GreatSwampTree.png</DrawnIcon>
-        <OnSelectSFX>Click_Swamp</OnSelectSFX>
-        <Medallions InternalName="">
-            <All>G_Great_Swamp_Tree_01.png</All>
-        </Medallions>
-    </GoodieHutType>
+		<Name>Swamp</Name>
+		<Description>The swamps buzz with life, and hidden secrets. Your sovereign must face whatever awaits totally alone!</Description>
+		<Rarity>-1</Rarity>
+		<MinDistanceFromStartingPoints>6</MinDistanceFromStartingPoints>
+		<BarredTerrain>River</BarredTerrain>
+		<!--<PreferredTerrain>SwampTerrain</PreferredTerrain>-->
+		<PreferredTerrain>Category:Land</PreferredTerrain>
+		<SpawnRating>0</SpawnRating>
+		<TileDesign>G_Great_Swamp_Tree_WithChest_01</TileDesign>
+		<DrawnIcon>Treasure_GreatSwampTree.png</DrawnIcon>
+		<OnSelectSFX>Click_Swamp</OnSelectSFX>
+		<Medallions InternalName="">
+			<All>G_Great_Swamp_Tree_01.png</All>
+		</Medallions>
+	</GoodieHutType>
 
 </GoodieHutTypes>

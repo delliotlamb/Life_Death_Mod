@@ -1341,7 +1341,7 @@
                 <ModType>Resource</ModType>
                 <Attribute>Mana</Attribute>
 				<ApplyToCaster>1</ApplyToCaster>
-                <Value>150</Value> <!-- this prevents from the original 150 mana cost from being charged -->
+                <Value>150</Value> <!-- this prevents the original 150 mana cost from being charged -->
             </GameModifier>			
         <AIData AIPersonality="AI_General">
             <AIPriority>1000</AIPriority>
