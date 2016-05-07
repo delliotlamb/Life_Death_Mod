@@ -2045,4 +2045,45 @@
         </SpellDefEffect>
     </SpellDef>
 	
+	<SpellDef InternalName="SpellOfMaking">
+        <DisplayName>Spell of Making</DisplayName>
+        <Description>This spell places the full power of magic at your disposal, allowing none to challenge your sovereignty.</Description>
+        <Image>S_SpellofMaking_Painting.png</Image>
+        <IconFG>S_SpellofMaking_Icon.png</IconFG>
+        <CastTime>10</CastTime>
+        <SpellBookSortCategory>World</SpellBookSortCategory>
+        <SpellBookSortSubCategory>Other</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Other</SpellClass>
+        <SpellSubClass>Other</SpellSubClass>
+        <SpellTargetType>Self</SpellTargetType>
+        <CasterMustBeSov>1</CasterMustBeSov>
+        <Prereq>
+            <Type>BuildingRequirement</Type>
+            <Target>Player</Target>
+            <Attribute>ForgeOfTheOverlord</Attribute>
+        </Prereq>
+        <Prereq>
+            <Type>UnitStat</Type>
+            <Attribute>UnitStat_IsSPOMReady</Attribute>
+            <Value>1</Value>
+        </Prereq>		
+        <!--<SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>250</Amount>
+        </SpellResourceCost>-->
+        <GameModifier>
+            <ModType>Unit</ModType>
+            <Attribute>SpellVictory</Attribute>
+        </GameModifier>
+        <AIData AIPersonality="AI_General">
+            <AIPriority>1000</AIPriority>
+            <AITag>Victory</AITag>
+        </AIData>
+        <ChannelingEffect>S_ChannelingSpellOfMaking_1</ChannelingEffect>
+        <HitSoundFX>Spell_Spell_of_Making_01</HitSoundFX>
+        <SpellCastEffectName>Spell_Of_Making</SpellCastEffectName>
+        <SpellCastEffectScale>.6</SpellCastEffectScale>
+    </SpellDef>
+	
 	</Spells>

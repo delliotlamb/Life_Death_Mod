@@ -72,6 +72,16 @@
             <Provides>Spell: Wrath, a high-damage fire spell</Provides>
         </GameModifier>			
     </TechDef>
+	
+		<TechDef InternalName="Ereogs_Journal">
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>UnlockSpell</Attribute>
+            <StrVal>ArcaneInterference</StrVal>
+            <Icon>S_FallingStar_Icon.png</Icon>
+            <Provides>Spell: Arcane Interference, a counter to the spell of making</Provides>
+        </GameModifier>		
+    </TechDef>
 		
 	<!--<TechDef InternalName="Book_Of_Mastery">
 	    <GameModifier>

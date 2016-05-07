@@ -224,6 +224,14 @@
 		<UnitStatGrouping>CombatStat</UnitStatGrouping>
         <DefaultValue>1.0</DefaultValue>
     </UnitStatType>
+	
+		<UnitStatType InternalName="UnitStat_IsSPOMReady">
+        <DisplayName>Can Cast Spell of Making?</DisplayName>
+        <Description>Unitstat required for a sovereign to cast the spell of Making.</Description>
+        <Hidden>1</Hidden>
+		<UnitStatGrouping>CombatStat</UnitStatGrouping>
+        <DefaultValue>1.0</DefaultValue>
+    </UnitStatType>
 
 
 	
