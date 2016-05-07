@@ -16,7 +16,7 @@
             <UnitStat_HitPoints>40</UnitStat_HitPoints>
             <UnitStat_Moves>0</UnitStat_Moves>
         </LevelMilestone>
-        <!--<SelectedAbilityBonusOption>Unmoving</SelectedAbilityBonusOption>-->
+        <SelectedAbilityBonusOption>Unmoving</SelectedAbilityBonusOption>
         <SelectedAbilityBonusOption>ImmuneToPoison</SelectedAbilityBonusOption>
         <SelectedAbilityBonusOption>ImmuneToMagic</SelectedAbilityBonusOption>
         <SelectedAbilityBonusOption>Tough</SelectedAbilityBonusOption>

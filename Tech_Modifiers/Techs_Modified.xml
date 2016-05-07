@@ -57,13 +57,13 @@
     </TechDef>
 	
 	<TechDef InternalName="Third_Book_Of_The_Magi">
-        <!--<GameModifier>
+        <GameModifier>
             <ModType>Player</ModType>
             <Attribute>UnlockSpell</Attribute>
-            <StrVal>FallingStar2</StrVal>
+            <StrVal>MeteorStrike</StrVal>
             <Icon>S_FallingStar_Icon.png</Icon>
             <Provides>Spell: Meteor Strike, more powerful variation of Falling Star</Provides>
-        </GameModifier>-->
+        </GameModifier>
         <GameModifier>
             <ModType>Player</ModType>
             <Attribute>UnlockSpell</Attribute>

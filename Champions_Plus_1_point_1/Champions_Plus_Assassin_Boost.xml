@@ -629,7 +629,7 @@
         <Range>1</Range>
         <SpellResourceCost>
             <Resource>Mana</Resource>
-            <Amount>900</Amount>
+            <Amount>1200</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Unit</ModType>
@@ -1008,7 +1008,7 @@
         <AbilityBonusType>Unit_Level</AbilityBonusType>
         <AbilityBonusOption InternalName="MasterArcher2">
             <DisplayName>Murderer's Aim</DisplayName>
-            <Description>+20 Critical Hit Chance when using a Bow and unlocks DeadlyShot</Description>
+            <Description>+20 Critical Hit Chance when using a Bow</Description>
             <Icon>Ability_MasterArcher_Icon.png</Icon>
             <PerkTreePosX>4</PerkTreePosX>
             <PerkTreePosY>3</PerkTreePosY>
@@ -1023,12 +1023,12 @@
                 <Provides>+20 Critical Hit Chance when using a Bow</Provides>
                 <vsHigher>1</vsHigher>
             </GameModifier>
-            <GameModifier>
+            <!--<GameModifier>
                 <ModType>Unit</ModType>
                 <Attribute>UnlockCombatAbility</Attribute>
                 <StrVal>DeadlyShot</StrVal>
                 <Provides>Unlocks DeadlyShot: Deal 50% bonus damage, requires a bow</Provides>
-            </GameModifier>
+            </GameModifier>-->
             <IsCombatAbility>1</IsCombatAbility>
             <Type>Ability</Type>
             <Prereq>

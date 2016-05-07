@@ -13,17 +13,12 @@
         <LaborToBuild>800</LaborToBuild>
         <Prereq>
             <Type>Tech</Type>
-            <Attribute>Third_Book_Of_The_Magi</Attribute>
+            <Attribute>Ereogs_Journal</Attribute>
         </Prereq>		
         <GameModifier>
             <ModType>ConstructionResourceCost</ModType>
-            <Attribute>Metal</Attribute>
-            <Value>-20</Value>
-        </GameModifier>
-        <GameModifier>
-            <ModType>ConstructionResourceCost</ModType>
             <Attribute>RefinedCrystal</Attribute>
-            <Value>-50</Value>
+            <Value>-30</Value>
         </GameModifier>	
         <GameModifier>
             <ModType>City</ModType>
@@ -58,11 +53,6 @@
             <Type>Tech</Type>
             <Attribute>Book_Of_Mastery</Attribute>
         </Prereq>		
-        <GameModifier>
-            <ModType>ConstructionResourceCost</ModType>
-            <Attribute>Metal</Attribute>
-            <Value>-50</Value>
-        </GameModifier>
         <GameModifier>
             <ModType>ConstructionResourceCost</ModType>
             <Attribute>RefinedCrystal</Attribute>
@@ -134,13 +124,19 @@
             <Attribute>Armor</Attribute>
         </Prereq>
         <LaborToBuild>500</LaborToBuild>
-        <GameModifier>
+        <!--<GameModifier>
             <ModType>City</ModType>
             <Attribute>AdjustDefendingUnit</Attribute>
             <StrVal>UnitStat_IsAtBlacksmith</StrVal>
             <Value>1</Value>
             <Provides>Champions can order chainmail when present, summoning items like a spell</Provides>
-        </GameModifier>
+        </GameModifier>-->
+		<GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>UnlockSpell</Attribute>
+            <StrVal>SummonDragon</StrVal>
+			<Provides>Can order chainmail armor</Provides>			
+        </GameModifier>	
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
             <AITag>CommandPost</AITag>
@@ -175,7 +171,7 @@
             <Attribute>Heavy_Armor</Attribute>
         </Prereq>		
         <LaborToBuild>600</LaborToBuild>
-        <GameModifier>
+        <!--<GameModifier>
             <ModType>City</ModType>
             <Attribute>AdjustDefendingUnit</Attribute>
             <StrVal>UnitStat_IsAtPlateArmorer_Master</StrVal>
@@ -195,6 +191,12 @@
             <StrVal>UnitStat_IsAtBlacksmith</StrVal>
             <Value>1</Value>
             <Provides>Can order chainmail</Provides>
+        </GameModifier>-->
+		<GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>UnlockSpell</Attribute>
+            <StrVal>SummonDragon</StrVal>
+			<Provides>Can order platemail armor, and pinnacle plate mail armor for champions</Provides>			
         </GameModifier>		
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
@@ -229,13 +231,19 @@
             <Attribute>Armor</Attribute>
         </Prereq>
         <LaborToBuild>500</LaborToBuild>
-        <GameModifier>
+        <!--<GameModifier>
             <ModType>City</ModType>
             <Attribute>AdjustDefendingUnit</Attribute>
             <StrVal>UnitStat_IsAtBlacksmith_LightPlate</StrVal>
             <Value>1</Value>
             <Provides>Champions can order light plate mail when present, summoning items like a spell</Provides>
-        </GameModifier>
+        </GameModifier>-->
+		<GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>UnlockSpell</Attribute>
+            <StrVal>SummonDragon</StrVal>
+			<Provides>Can order chainmail armor</Provides>			
+        </GameModifier>	
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
             <AITag>CommandPost</AITag>
@@ -266,7 +274,7 @@
             <Attribute>Heavy_Armor</Attribute>
         </Prereq>		
         <LaborToBuild>600</LaborToBuild>
-        <GameModifier>
+        <!--<GameModifier>
             <ModType>City</ModType>
             <Attribute>AdjustDefendingUnit</Attribute>
             <StrVal>UnitStat_IsAtPlateArmorer_Master</StrVal>
@@ -286,6 +294,12 @@
             <StrVal>UnitStat_IsAtBlacksmith_LightPlate</StrVal>
             <Value>1</Value>
             <Provides>Can order Light Platemail</Provides>
+        </GameModifier>-->
+		<GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>UnlockSpell</Attribute>
+            <StrVal>SummonDragon</StrVal>
+			<Provides>Can order platemail armor, and pinnacle plate mail armor for champions</Provides>			
         </GameModifier>		
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
@@ -295,7 +309,7 @@
         <ArtDef>Art_Armorer</ArtDef>
     </ImprovementType>
 	
-		<ImprovementType InternalName="Smithy_MasterworkChain">
+	<ImprovementType InternalName="Smithy_MasterworkChain">
         <DisplayName>Smithy</DisplayName>
         <Description>Allows the crafting of chainmail for champions. A champion must be present in the city to summon the items like a spell.</Description>
 		<AllowedPerFaction>1</AllowedPerFaction>

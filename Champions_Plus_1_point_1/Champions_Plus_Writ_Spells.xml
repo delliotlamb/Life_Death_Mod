@@ -6,8 +6,7 @@
         <Description>Order a Leather armor set.</Description>
         <Image>LeatherArmor.png</Image>
         <IconFG>K_LeatherChest1_Icon.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>
-		<Cooldown>5</Cooldown>
+        <!--<AutoUnlock>1</AutoUnlock>-->
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -15,14 +14,14 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
-        <Prereq>
+        <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtTanner</Attribute>
             <Value>1</Value>
-        </Prereq>
+        </Prereq>-->
         <SpellResourceCost>
             <Resource>Gold</Resource>
-            <Amount>70</Amount>
+            <Amount>50</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
@@ -58,8 +57,7 @@
         <Description>Order a Chainmail armor set</Description>
         <Image>Tech_Armor.png</Image>
         <IconFG>Armor_F_ChainShirt.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>
-		<Cooldown>5</Cooldown>
+        <!--<AutoUnlock>1</AutoUnlock>-->
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -67,18 +65,18 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
-        <Prereq>
+        <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtBlacksmith</Attribute>
             <Value>1</Value>
-        </Prereq>
+        </Prereq>-->
         <SpellResourceCost>
             <Resource>Metal</Resource>
             <Amount>18</Amount>
         </SpellResourceCost>
         <SpellResourceCost>
             <Resource>Gold</Resource>
-            <Amount>50</Amount>
+            <Amount>75</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
@@ -118,8 +116,7 @@
         <Description>Order a Light Platemail armor set</Description>
         <Image>Tech_Armor.png</Image>
         <IconFG>MasterFullHeavyPlateMail.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>
-		<Cooldown>5</Cooldown>
+        <!--<AutoUnlock>1</AutoUnlock>-->
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -127,18 +124,18 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
-        <Prereq>
+        <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtBlacksmith_LightPlate</Attribute>
             <Value>1</Value>
-        </Prereq>
+        </Prereq>-->
         <SpellResourceCost>
             <Resource>Metal</Resource>
             <Amount>23</Amount>
         </SpellResourceCost>
         <SpellResourceCost>
             <Resource>Gold</Resource>
-            <Amount>50</Amount>
+            <Amount>80</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
@@ -178,8 +175,7 @@
         <Description>Order a Plate Mail armor set</Description>
         <Image>PlateArmor.png</Image>
         <IconFG>MasterFullHeavyPlateMail2.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>
-		<Cooldown>5</Cooldown>
+        <!--<AutoUnlock>1</AutoUnlock>-->
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -187,16 +183,15 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <HideInHiergamenon>1</HideInHiergamenon>
-        <Prereq>
+        <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtPlateArmorer</Attribute>
             <Value>1</Value>
         </Prereq>
-        <!-- added 3-9-15 -->
 		<Prereq>
             <Type>Tech</Type>
             <Attribute>Heavy_Armor</Attribute>
-        </Prereq>
+        </Prereq>-->
         <SpellResourceCost>
             <Resource>Metal</Resource>
             <Amount>31</Amount>
@@ -244,8 +239,7 @@
         <Description>Order a Masterwork Chainmail armor set</Description>
         <Image>PlateArmor.png</Image>
         <IconFG>Armor_K_MasterworkChainShirt.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>
-		<Cooldown>5</Cooldown>
+        <!--<AutoUnlock>1</AutoUnlock>-->
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -253,7 +247,7 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
-		<Prereq>
+		<!--<Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>MasterworkChain</Attribute>
             <Target>Player</Target>
@@ -263,11 +257,10 @@
             <Attribute>UnitStat_IsAtMasterworkChainArmorer</Attribute>
             <Value>1</Value>
         </Prereq>
-        <!-- added 3-9-15 -->
 		<Prereq>
             <Type>Tech</Type>
             <Attribute>Heavy_Armor</Attribute>
-        </Prereq>
+        </Prereq>-->
         <SpellResourceCost>
             <Resource>Metal</Resource>
             <Amount>20</Amount>
@@ -315,8 +308,7 @@
         <Description>Order enchanted items in bulk</Description>
         <Image>WeddingRings.png</Image>
         <IconFG>BeltofSpeed_Item.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>
-		<Cooldown>5</Cooldown>
+        <!--<AutoUnlock>1</AutoUnlock>-->
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -324,11 +316,11 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
-        <Prereq>
+        <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtEnchanter</Attribute>
             <Value>1</Value>
-        </Prereq>
+        </Prereq>-->
         <SpellResourceCost>
             <Resource>RefinedCrystal</Resource>
             <Amount>11</Amount>
@@ -367,8 +359,7 @@
         <Description>Order Mystantum armor set and sword in bulk</Description>
         <Image>Refined_Defense_Tech.png</Image>
         <IconFG>MasterLightPlateMailCuirass2.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>
-		<Cooldown>5</Cooldown>
+        <!--<AutoUnlock>1</AutoUnlock>-->
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -376,11 +367,11 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
-        <Prereq>
+        <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtEnchanter</Attribute>
             <Value>1</Value>
-        </Prereq>
+        </Prereq>-->
         <SpellResourceCost>
             <Resource>RefinedCrystal</Resource>
             <Amount>14</Amount>
@@ -415,8 +406,7 @@
         <Description>Order advanced enchanted items in bulk</Description>
         <Image>EnchantedSword1.png</Image>
         <IconFG>AmuletofHaste_Item.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>
-		<Cooldown>5</Cooldown>
+        <!--<AutoUnlock>1</AutoUnlock>-->
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -424,11 +414,11 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
-        <Prereq>
+        <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtMasterEnchanter</Attribute>
             <Value>1</Value>
-        </Prereq>
+        </Prereq>-->
         <SpellResourceCost>
             <Resource>RefinedCrystal</Resource>
             <Amount>43</Amount>
@@ -479,8 +469,7 @@
         <Description>Order a Champion's Armor set</Description>
         <Image>ArmorStatue_Medallion.png</Image>
         <IconFG>Armor_K_LegendaryPlateCuirass.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>
-		<Cooldown>5</Cooldown>
+        <!--<AutoUnlock>1</AutoUnlock>-->
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -488,18 +477,18 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
-        <Prereq>
+        <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtArcaneArmorer</Attribute>
             <Value>1</Value>
-        </Prereq>
+        </Prereq>-->
         <SpellResourceCost>
             <Resource>RefinedCrystal</Resource>
             <Amount>33</Amount>
         </SpellResourceCost>
         <SpellResourceCost>
             <Resource>Gold</Resource>
-            <Amount>200</Amount>
+            <Amount>300</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
@@ -528,11 +517,10 @@
 
 	<SpellDef InternalName="ArmorersWrit_Master_Ability">
         <DisplayName>Plate Master's Writ</DisplayName>
-        <Description>Order a Pinnacle Plate Mail armor set. Can be used only once per game!</Description>
+        <Description>Order a Pinnacle Plate Mail armor set.</Description>
         <Image>PlateArmor.png</Image>
         <IconFG>Armor_F_ReinforcedPlateCuirass.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>
-		<Cooldown>1000</Cooldown>
+        <!--<AutoUnlock>1</AutoUnlock>-->
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -540,11 +528,11 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
-        <Prereq>
+        <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtPlateArmorer_Master</Attribute>
             <Value>1</Value>
-        </Prereq>
+        </Prereq>-->
         <SpellResourceCost>
             <Resource>Metal</Resource>
             <Amount>55</Amount>
@@ -580,11 +568,10 @@
 
 	<SpellDef InternalName="ArmorersWrit_Master2_Ability">
         <DisplayName>Chain Master's Writ</DisplayName>
-        <Description>Order a Pinnacle Chain Mail armor set. Can only be used once per game!</Description>
+        <Description>Order a Pinnacle Chain Mail armor set.</Description>
         <Image>PlateArmor.png</Image>
         <IconFG>Armor_F_ReinforcedChainShirt.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>
-		<Cooldown>1000</Cooldown>
+        <!--<AutoUnlock>1</AutoUnlock>-->
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -592,11 +579,11 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>		
-        <Prereq>
+        <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtPlateArmorer_Master</Attribute>
             <Value>1</Value>
-        </Prereq>
+        </Prereq>-->
         <SpellResourceCost>
             <Resource>Metal</Resource>
             <Amount>55</Amount>
@@ -635,7 +622,7 @@
         <Description>Craft a Transcendent Plate Armor set. Transcendent plate focuses on increasing the owner's defense and survivability to superhuman levels.</Description>
         <Image>Fallen_Medallion.png</Image>
         <IconFG>Armor_F_ImpenetrablePlateCuirass.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>
+        <!--<AutoUnlock>1</AutoUnlock>-->
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -643,22 +630,22 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
 		<AlwaysPromptForCaster>1</AlwaysPromptForCaster>
-        <Prereq>
+        <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtArcaneArmorer_Tran</Attribute>
             <Value>1</Value>
-        </Prereq>
+        </Prereq>-->
         <SpellResourceCost>
             <Resource>RefinedCrystal</Resource>
-            <Amount>100</Amount>
+            <Amount>60</Amount>
         </SpellResourceCost>
         <SpellResourceCost>
             <Resource>Metal</Resource>
-            <Amount>100</Amount>
+            <Amount>30</Amount>
         </SpellResourceCost>
         <SpellResourceCost>
-            <Resource>Mana</Resource>
-            <Amount>100</Amount>
+            <Resource>Gold</Resource>
+            <Amount>300</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
@@ -694,7 +681,7 @@
         <Description>Craft a Transcendent Chainmail Armor set. Transcendent chain armor is enchanted to augment the performance of the owner as much as protect them.</Description>
         <Image>Fallen_Medallion.png</Image>
         <IconFG>Armor_F_OphidianScaleShirt.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>
+        <!--<AutoUnlock>1</AutoUnlock>-->
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -702,22 +689,22 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
-        <Prereq>
+        <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtArcaneArmorer_Tran</Attribute>
             <Value>1</Value>
-        </Prereq>
+        </Prereq>-->
         <SpellResourceCost>
             <Resource>RefinedCrystal</Resource>
-            <Amount>100</Amount>
+            <Amount>60</Amount>
         </SpellResourceCost>
         <SpellResourceCost>
             <Resource>Metal</Resource>
-            <Amount>100</Amount>
+            <Amount>30</Amount>
         </SpellResourceCost>
         <SpellResourceCost>
-            <Resource>Mana</Resource>
-            <Amount>100</Amount>
+            <Resource>Gold</Resource>
+            <Amount>300</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
@@ -753,7 +740,7 @@
         <Description>Craft a Transcendent Sword.</Description>
         <Image>Refined_Attack.png</Image>
         <IconFG>W_Scimitar_Brutal_Trog_Icon_01.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>
+        <!--<AutoUnlock>1</AutoUnlock>-->
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -761,7 +748,7 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
-		<Prereq>
+		<!--<Prereq>
             <Type>Allegiance</Type>
             <Attribute>Empire</Attribute>
         </Prereq>
@@ -769,18 +756,18 @@
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtArcaneWeaponsmith_Tran</Attribute>
             <Value>1</Value>
-        </Prereq>
+        </Prereq>-->
         <SpellResourceCost>
             <Resource>RefinedCrystal</Resource>
-            <Amount>50</Amount>
+            <Amount>30</Amount>
         </SpellResourceCost>
         <SpellResourceCost>
             <Resource>Metal</Resource>
-            <Amount>50</Amount>
+            <Amount>20</Amount>
         </SpellResourceCost>
         <SpellResourceCost>
-            <Resource>Mana</Resource>
-            <Amount>50</Amount>
+            <Resource>Gold</Resource>
+            <Amount>200</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
@@ -796,7 +783,7 @@
         <Description>Craft a Transcendent Sword.</Description>
         <Image>Refined_Attack.png</Image>
         <IconFG>W_Broadsword_Masterwork_Icon_01.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>
+        <!--<AutoUnlock>1</AutoUnlock>-->
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -804,7 +791,7 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
-		<Prereq>
+		<!--<Prereq>
             <Type>Allegiance</Type>
             <Attribute>Kingdom</Attribute>
         </Prereq>
@@ -812,18 +799,18 @@
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtArcaneWeaponsmith_Tran</Attribute>
             <Value>1</Value>
-        </Prereq>
+        </Prereq>-->
         <SpellResourceCost>
             <Resource>RefinedCrystal</Resource>
-            <Amount>50</Amount>
+            <Amount>30</Amount>
         </SpellResourceCost>
         <SpellResourceCost>
             <Resource>Metal</Resource>
-            <Amount>50</Amount>
+            <Amount>20</Amount>
         </SpellResourceCost>
         <SpellResourceCost>
-            <Resource>Mana</Resource>
-            <Amount>50</Amount>
+            <Resource>Gold</Resource>
+            <Amount>200</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
@@ -840,7 +827,7 @@
         <Description>Craft a Transcendent Axe.</Description>
         <Image>Refined_Attack.png</Image>
         <IconFG>W_GreatAxe_Pendulum_Icon_01.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>
+        <!--<AutoUnlock>1</AutoUnlock>-->
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -848,22 +835,22 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
-        <Prereq>
+        <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtArcaneWeaponsmith_Tran</Attribute>
             <Value>1</Value>
-        </Prereq>
+        </Prereq>-->
         <SpellResourceCost>
             <Resource>RefinedCrystal</Resource>
-            <Amount>50</Amount>
+            <Amount>30</Amount>
         </SpellResourceCost>
         <SpellResourceCost>
             <Resource>Metal</Resource>
-            <Amount>50</Amount>
+            <Amount>20</Amount>
         </SpellResourceCost>
         <SpellResourceCost>
-            <Resource>Mana</Resource>
-            <Amount>50</Amount>
+            <Resource>Gold</Resource>
+            <Amount>200</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
@@ -879,7 +866,7 @@
         <Description>Craft a Transcendent Blunt Weapon.</Description>
         <Image>Refined_Attack.png</Image>
         <IconFG>W_Maul_Curgens_Icon_01.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>
+        <!--<AutoUnlock>1</AutoUnlock>-->
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -887,22 +874,22 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
-        <Prereq>
+        <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtArcaneWeaponsmith_Tran</Attribute>
             <Value>1</Value>
-        </Prereq>
+        </Prereq>-->
         <SpellResourceCost>
             <Resource>RefinedCrystal</Resource>
-            <Amount>50</Amount>
+            <Amount>30</Amount>
         </SpellResourceCost>
         <SpellResourceCost>
             <Resource>Metal</Resource>
-            <Amount>50</Amount>
+            <Amount>20</Amount>
         </SpellResourceCost>
         <SpellResourceCost>
-            <Resource>Mana</Resource>
-            <Amount>50</Amount>
+            <Resource>Gold</Resource>
+            <Amount>200</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
@@ -918,7 +905,7 @@
         <Description>Craft a Transcendent Bow.</Description>
         <Image>Tech_Longbows.png</Image>
         <IconFG>W_Longbow_Lightining_Icon_01.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>
+        <!--<AutoUnlock>1</AutoUnlock>-->
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -926,22 +913,22 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
-        <Prereq>
+        <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtArcaneWeaponsmith_Tran</Attribute>
             <Value>1</Value>
-        </Prereq>
+        </Prereq>-->
         <SpellResourceCost>
             <Resource>RefinedCrystal</Resource>
-            <Amount>50</Amount>
+            <Amount>30</Amount>
         </SpellResourceCost>
         <SpellResourceCost>
             <Resource>Metal</Resource>
-            <Amount>50</Amount>
+            <Amount>20</Amount>
         </SpellResourceCost>
         <SpellResourceCost>
-            <Resource>Mana</Resource>
-            <Amount>50</Amount>
+            <Resource>Gold</Resource>
+            <Amount>200</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
@@ -957,7 +944,7 @@
         <Description>Craft a Transcendent Spear.</Description>
         <Image>Refined_Attack.png</Image>
         <IconFG>W_Pike_Masterwork_Icon_01.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>
+        <!--<AutoUnlock>1</AutoUnlock>-->
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -965,22 +952,22 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>		
-        <Prereq>
+        <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtArcaneWeaponsmith_Tran</Attribute>
             <Value>1</Value>
-        </Prereq>
+        </Prereq>-->
         <SpellResourceCost>
             <Resource>RefinedCrystal</Resource>
-            <Amount>50</Amount>
+            <Amount>30</Amount>
         </SpellResourceCost>
         <SpellResourceCost>
             <Resource>Metal</Resource>
-            <Amount>50</Amount>
+            <Amount>20</Amount>
         </SpellResourceCost>
         <SpellResourceCost>
-            <Resource>Mana</Resource>
-            <Amount>50</Amount>
+            <Resource>Gold</Resource>
+            <Amount>200</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
@@ -991,13 +978,12 @@
         </AIData>
     </SpellDef>
 
-		<SpellDef InternalName="ArcaneWeaponsmith_Ability">
+	<SpellDef InternalName="ArcaneWeaponsmith_Ability">
         <DisplayName>Writ Of Arcane Weaponry</DisplayName>
         <Description>Order the full set of trained-unit-eligible high-end arcane weapons.</Description>
         <Image>Refined_Attack.png</Image>
         <IconFG>W_Staff_Hellfire_Icon_01.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>
-		<Cooldown>1000</Cooldown>
+        <!--<AutoUnlock>1</AutoUnlock>-->
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -1005,11 +991,11 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
-        <Prereq>
+        <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtArcaneWeaponsmith</Attribute>
             <Value>1</Value>
-        </Prereq>
+        </Prereq>-->
         <SpellResourceCost>
             <Resource>RefinedCrystal</Resource>
             <Amount>34</Amount>
@@ -1049,11 +1035,10 @@
 
 	<SpellDef InternalName="Weaponsmith_Pinnacle_Ability">
         <DisplayName>Writ Of Pinnacle Weaponry</DisplayName>
-        <Description>Order a pinnacle sword, axe, pike, maul, and bow. Only one pinnacle weapon set can be ordered per game!</Description>
+        <Description>Order a pinnacle sword, axe, pike, maul, and bow.</Description>
         <Image>Improvement_Weaponsmith.png</Image>
         <IconFG>W_Battle_Axe_Masterwork_Icon_01.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>
-		<Cooldown>1000</Cooldown>
+        <!--<AutoUnlock>1</AutoUnlock>-->
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -1061,18 +1046,18 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
-        <Prereq>
+        <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtWeaponsmith</Attribute>
             <Value>1</Value>
-        </Prereq>
+        </Prereq>-->
         <SpellResourceCost>
             <Resource>Metal</Resource>
             <Amount>50</Amount>
         </SpellResourceCost>
         <SpellResourceCost>
             <Resource>Gold</Resource>
-            <Amount>300</Amount>
+            <Amount>200</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
@@ -1101,11 +1086,10 @@
 
 	<SpellDef InternalName="ArchaeologistsWrit_Ability">
         <DisplayName>Archaeologist's Writ</DisplayName>
-        <Description>Order an expedition that will return a piece of weathered equipment. There is a small chance of a rare artifact being found instead...</Description>
+        <Description>Order an expedition that will return a piece of weathered equipment. There is a small chance of a rare artifact (or junk) being found instead.</Description>
         <Image>Artifact_Swamp1.png</Image>
         <IconFG>Armor_GolemShield.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>
-		<Cooldown>5</Cooldown>
+        <!--<AutoUnlock>1</AutoUnlock>-->
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -1114,11 +1098,11 @@
         <SpellTargetType>Self</SpellTargetType>
         <AppliesRandomModifier>1</AppliesRandomModifier>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
-        <Prereq>
+        <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtArchaeologist</Attribute>
             <Value>1</Value>
-        </Prereq>
+        </Prereq>-->
         <SpellResourceCost>
             <Resource>Gold</Resource>
             <Amount>50</Amount>
@@ -1189,8 +1173,7 @@
         <Description>Order a pair of horses as mounts.</Description>
         <Image>Res_Horses_Plains.png</Image>
         <IconFG>Horse_Resource_Icon.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>
-		<Cooldown>5</Cooldown>
+        <!--<AutoUnlock>1</AutoUnlock>-->
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -1198,11 +1181,11 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
-        <Prereq>
+        <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtRanch</Attribute>
             <Value>1</Value>
-        </Prereq>
+        </Prereq>-->
         <SpellResourceCost>
             <Resource>Gold</Resource>
             <Amount>25</Amount>
@@ -1229,8 +1212,7 @@
         <Description>Order a pair of undead horses as mounts.</Description>
         <Image>Res_Horses_Plains.png</Image>
         <IconFG>Horse_Resource_Icon.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>
-		<Cooldown>5</Cooldown>
+        <!--<AutoUnlock>1</AutoUnlock>-->
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -1238,11 +1220,11 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
-        <Prereq>
+        <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtRanch_Dead</Attribute>
             <Value>1</Value>
-        </Prereq>
+        </Prereq>-->
         <SpellResourceCost>
             <Resource>Gold</Resource>
             <Amount>25</Amount>
@@ -1269,8 +1251,7 @@
         <Description>Order a pair of warhorses as mounts.</Description>
         <Image>Res_Horses_Plains.png</Image>
         <IconFG>Horse_Resource_Icon.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>
-		<Cooldown>5</Cooldown>
+        <!--<AutoUnlock>1</AutoUnlock>-->
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -1278,11 +1259,11 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
-        <Prereq>
+        <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtRanch_LegacyOfSerrane</Attribute>
             <Value>1</Value>
-        </Prereq>
+        </Prereq>-->
         <SpellResourceCost>
             <Resource>Gold</Resource>
             <Amount>25</Amount>
@@ -1309,8 +1290,7 @@
         <Description>Order a pair of Wargs as mounts.</Description>
         <Image>M_Warg_PlainsWarg_Card.png</Image>
         <IconFG>Icon_Wargs.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>
-		<Cooldown>5</Cooldown>
+        <!--<AutoUnlock>1</AutoUnlock>-->
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -1318,11 +1298,11 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
-        <Prereq>
+        <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtKennel</Attribute>
             <Value>1</Value>
-        </Prereq>
+        </Prereq>-->
         <SpellResourceCost>
             <Resource>Gold</Resource>
             <Amount>25</Amount>
@@ -1349,8 +1329,7 @@
         <Description>Order food and equipment to keep your champions well supplied.</Description>
         <Image>AppleOrchard_Full.png</Image>
         <IconFG>Bread_Item.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>
-		<Cooldown>5</Cooldown>
+        <!--<AutoUnlock>1</AutoUnlock>-->
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -1358,14 +1337,14 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
-        <Prereq>
+        <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtProvisionist</Attribute>
             <Value>1</Value>
-        </Prereq>
+        </Prereq>-->
         <SpellResourceCost>
             <Resource>Gold</Resource>
-            <Amount>70</Amount>
+            <Amount>50</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
@@ -1373,15 +1352,7 @@
         </GameModifier>
         <GameModifier>
             <ModType>GiveItem</ModType>
-            <Attribute>Bread</Attribute>
-        </GameModifier>
-        <GameModifier>
-            <ModType>GiveItem</ModType>
             <Attribute>Rations</Attribute>
-        </GameModifier>
-        <GameModifier>
-            <ModType>GiveItem</ModType>
-            <Attribute>SaltedPork</Attribute>
         </GameModifier>
         <GameModifier>
             <ModType>GiveItem</ModType>
@@ -1401,8 +1372,7 @@
         <Description>Order equipment to keep your champions well supplied.</Description>
         <Image>WorkCamp.png</Image>
         <IconFG>Pack_Pioneer01.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>
-		<Cooldown>5</Cooldown>
+        <!--<AutoUnlock>1</AutoUnlock>-->
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -1410,22 +1380,18 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
-        <Prereq>
+        <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtProvisionist_Dead</Attribute>
             <Value>1</Value>
-        </Prereq>
+        </Prereq>-->
         <SpellResourceCost>
             <Resource>Gold</Resource>
-            <Amount>40</Amount>
+            <Amount>25</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>LeatherBoots_Soldiers</Attribute>
-        </GameModifier>
-        <GameModifier>
-            <ModType>GiveItem</ModType>
-            <Attribute>Whetstone</Attribute>
         </GameModifier>
         <GameModifier>
             <ModType>GiveItem</ModType>
@@ -1441,8 +1407,7 @@
         <Description>Order three especially enchanted charms for your champions.</Description>
         <Image>WeddingRings.png</Image>
         <IconFG>SignetRing_Item.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>
-		<Cooldown>5</Cooldown>
+        <!--<AutoUnlock>1</AutoUnlock>-->
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -1450,14 +1415,14 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
-        <Prereq>
+        <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtEnchanter</Attribute>
             <Value>1</Value>
-        </Prereq>
+        </Prereq>-->
 		<SpellResourceCost>
             <Resource>Gold</Resource>
-            <Amount>40</Amount>
+            <Amount>90</Amount>
         </SpellResourceCost>
         <SpellResourceCost>
             <Resource>RefinedCrystal</Resource>
@@ -1485,7 +1450,6 @@
         <Description>Order three especially enchanted glyph stones for your champions.</Description>
         <Image>EnchantedSword1.png</Image>
         <IconFG>DestinySliver_Item.png</IconFG>
-		<Cooldown>5</Cooldown>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -1493,18 +1457,18 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
-        <Prereq>
+        <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtEnchanter</Attribute>
             <Value>1</Value>
-        </Prereq>
+        </Prereq>-->
         <SpellResourceCost>
             <Resource>RefinedCrystal</Resource>
             <Amount>20</Amount>
         </SpellResourceCost>
         <SpellResourceCost>
             <Resource>Gold</Resource>
-            <Amount>50</Amount>
+            <Amount>130</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
@@ -1528,8 +1492,7 @@
         <Description>Order three especially enchanted cloaks for your champions.</Description>
         <Image>P_Chasm_01.png</Image>
         <IconFG>WizardCloak_Dark.png</IconFG>
-		<AutoUnlock>1</AutoUnlock>
-		<Cooldown>5</Cooldown>
+		<!--<AutoUnlock>1</AutoUnlock>-->
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -1537,18 +1500,18 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
-        <Prereq>
+        <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtMasterEnchanter</Attribute>
             <Value>1</Value>
-        </Prereq>
+        </Prereq>-->
         <SpellResourceCost>
             <Resource>RefinedCrystal</Resource>
             <Amount>25</Amount>
         </SpellResourceCost>
         <SpellResourceCost>
             <Resource>Gold</Resource>
-            <Amount>50</Amount>
+            <Amount>130</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>GiveItem</ModType>
@@ -1569,11 +1532,10 @@
 	
 	<SpellDef InternalName="ArcaneWeaponsmith_Ability">
         <DisplayName>Writ Of Improved Enchanting</DisplayName>
-        <Description>Order a powerful enchanted sword and Maul.</Description>
+        <Description>Order a powerful enchanted Sword and Maul.</Description>
         <Image>Refined_Attack.png</Image>
         <IconFG>W_Maul_Berserkers_Icon_01.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>
-		<Cooldown>1000</Cooldown>
+        <!--<AutoUnlock>1</AutoUnlock>-->
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -1581,14 +1543,14 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
-        <Prereq>
+        <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtMasterEnchanter</Attribute>
             <Value>1</Value>
-        </Prereq>
+        </Prereq>-->
         <SpellResourceCost>
             <Resource>RefinedCrystal</Resource>
-            <Amount>20</Amount>
+            <Amount>25</Amount>
         </SpellResourceCost>
         <SpellResourceCost>
             <Resource>Gold</Resource>
@@ -1612,8 +1574,7 @@
         <Description>Create the ultimate Axe.</Description>
         <Image>Refined_Attack.png</Image>
         <IconFG>W_GreatAxe_Sunderer_Icon.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>
-		<Cooldown>1000</Cooldown>
+        <!--<AutoUnlock>1</AutoUnlock>-->
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -1621,11 +1582,11 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
-        <Prereq>
+        <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtForgeOverlord</Attribute>
             <Value>1</Value>
-        </Prereq>
+        </Prereq>-->
         <SpellResourceCost>
             <Resource>RefinedCrystal</Resource>
             <Amount>60</Amount>
@@ -1648,8 +1609,7 @@
         <Description>Create the ultimate Pike.</Description>
         <Image>Refined_Attack.png</Image>
         <IconFG>W_Pike_Holhiarn_01.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>
-		<Cooldown>1000</Cooldown>
+        <!--<AutoUnlock>1</AutoUnlock>-->
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -1657,11 +1617,11 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
-        <Prereq>
+        <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtForgeOverlord</Attribute>
             <Value>1</Value>
-        </Prereq>
+        </Prereq>-->
         <SpellResourceCost>
             <Resource>RefinedCrystal</Resource>
             <Amount>60</Amount>
@@ -1684,8 +1644,7 @@
         <Description>Create the ultimate sword.</Description>
         <Image>Refined_Attack.png</Image>
         <IconFG>W_Longsword_Legendary_Icon_01.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>
-		<Cooldown>1000</Cooldown>
+        <!--<AutoUnlock>1</AutoUnlock>-->
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -1693,11 +1652,11 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
-        <Prereq>
+        <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtForgeOverlord</Attribute>
             <Value>1</Value>
-        </Prereq>
+        </Prereq>-->
         <SpellResourceCost>
             <Resource>RefinedCrystal</Resource>
             <Amount>60</Amount>
@@ -1720,8 +1679,7 @@
         <Description>Create the ultimate blunt weapon.</Description>
         <Image>Refined_Attack.png</Image>
         <IconFG>W_Mace_Legendary_Icon_01.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>
-		<Cooldown>1000</Cooldown>
+        <!--<AutoUnlock>1</AutoUnlock>-->
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -1729,11 +1687,11 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
-        <Prereq>
+        <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtForgeOverlord</Attribute>
             <Value>1</Value>
-        </Prereq>
+        </Prereq>-->
         <SpellResourceCost>
             <Resource>RefinedCrystal</Resource>
             <Amount>60</Amount>
@@ -1756,8 +1714,7 @@
         <Description>Create the ultimate bow.</Description>
         <Image>Refined_Attack.png</Image>
         <IconFG>W_Longbow_Yew_Perfect_Icon_01.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>
-		<Cooldown>1000</Cooldown>
+        <!--<AutoUnlock>1</AutoUnlock>-->
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -1765,11 +1722,11 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
-        <Prereq>
+        <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtForgeOverlord</Attribute>
             <Value>1</Value>
-        </Prereq>
+        </Prereq>-->
         <SpellResourceCost>
             <Resource>RefinedCrystal</Resource>
             <Amount>60</Amount>
@@ -1792,8 +1749,7 @@
         <Description>Create the ultimate set of armor, wearable by any champion (no armor proficiency required).</Description>
         <Image>T_ParidensReturn_Painting.png</Image>
         <IconFG>VergaHelmet.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>
-		<Cooldown>1000</Cooldown>
+        <!--<AutoUnlock>1</AutoUnlock>-->
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -1801,11 +1757,11 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
-        <Prereq>
+        <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtForgeOverlord</Attribute>
             <Value>1</Value>
-        </Prereq>
+        </Prereq>-->
         <SpellResourceCost>
             <Resource>RefinedCrystal</Resource>
             <Amount>90</Amount>
