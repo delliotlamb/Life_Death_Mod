@@ -2385,7 +2385,7 @@
         <Image>S_CurgensVolcano_Painting.png</Image>
         <IconFG>S_CurgensVolcano_Icon.png</IconFG>
 		<AutoUnlock>1</AutoUnlock>
-        <CastTime>2</CastTime>
+        <CastTime>1</CastTime>
 		<Cooldown>10</Cooldown>
         <SpellBookSortCategory>Unit</SpellBookSortCategory>
         <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
@@ -2400,7 +2400,7 @@
         </Prereq>		
         <SpellResourceCost>
             <Resource>EmberEssence</Resource>
-            <Amount>50</Amount>
+            <Amount>40</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Map</ModType>
