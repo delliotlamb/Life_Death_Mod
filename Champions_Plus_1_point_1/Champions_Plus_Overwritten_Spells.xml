@@ -2058,16 +2058,15 @@
         <SpellSubClass>Other</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <CasterMustBeSov>1</CasterMustBeSov>
+		<AirShards>3</AirShards>
+		<WaterShards>3</WaterShards>
+		<FireShards>3</FireShards>
+		<EarthShards>3</EarthShards>
         <Prereq>
             <Type>BuildingRequirement</Type>
             <Target>Player</Target>
             <Attribute>ForgeOfTheOverlord</Attribute>
         </Prereq>
-        <Prereq>
-            <Type>UnitStat</Type>
-            <Attribute>UnitStat_IsSPOMReady</Attribute>
-            <Value>1</Value>
-        </Prereq>		
         <!--<SpellResourceCost>
             <Resource>Mana</Resource>
             <Amount>250</Amount>

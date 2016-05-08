@@ -560,13 +560,13 @@
             <UpgradeComparisonID>6</UpgradeComparisonID>
             <UpgradeComparisonText>Trained Unit Attack</UpgradeComparisonText>
         </GameModifier>
-        <GameModifier>
+        <!--<GameModifier>
             <ModType>City</ModType>
             <Attribute>AdjustDefendingUnit</Attribute>
             <StrVal>UnitStat_IsAtWeaponsmith</StrVal>
             <Value>1</Value>
             <Provides>Sovereigns can order pinnacle weaponry like a summon spell.</Provides>
-        </GameModifier>		
+        </GameModifier>-->		
         <GameModifier>
             <ModType>Resource</ModType>
             <Attribute>Gold</Attribute>
@@ -590,6 +590,12 @@
             <UpgradeComparisonID>1</UpgradeComparisonID>
             <UpgradeComparisonText>Food per Grain</UpgradeComparisonText>
         </GameModifier>
+		<GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>UnlockSpell</Attribute>
+            <StrVal>Weaponsmith_Pinnacle_Ability</StrVal>
+			<Provides>Can a set of ultra high quality weapons</Provides>			
+        </GameModifier>					
         <AIData AIPersonality="AI_General">
             <AIPriority>10</AIPriority>
             <AITag>CommandPost</AITag>

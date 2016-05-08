@@ -14,6 +14,7 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>		
         <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtTanner</Attribute>
@@ -65,6 +66,7 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>		
         <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtBlacksmith</Attribute>
@@ -124,6 +126,7 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>		
         <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtBlacksmith_LightPlate</Attribute>
@@ -183,6 +186,7 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <HideInHiergamenon>1</HideInHiergamenon>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>		
         <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtPlateArmorer</Attribute>
@@ -247,6 +251,7 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>		
 		<!--<Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>MasterworkChain</Attribute>
@@ -316,6 +321,7 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>		
         <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtEnchanter</Attribute>
@@ -367,6 +373,7 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>		
         <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtEnchanter</Attribute>
@@ -414,6 +421,7 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>		
         <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtMasterEnchanter</Attribute>
@@ -477,6 +485,7 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>		
         <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtArcaneArmorer</Attribute>
@@ -528,6 +537,7 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>		
         <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtPlateArmorer_Master</Attribute>
@@ -578,7 +588,8 @@
         <SpellClass>Defensive</SpellClass>
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
-        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>		
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>	
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>		
         <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtPlateArmorer_Master</Attribute>
@@ -630,6 +641,7 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
 		<AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>		
         <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtArcaneArmorer_Tran</Attribute>
@@ -689,6 +701,7 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>		
         <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtArcaneArmorer_Tran</Attribute>
@@ -748,6 +761,7 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>		
 		<!--<Prereq>
             <Type>Allegiance</Type>
             <Attribute>Empire</Attribute>
@@ -791,6 +805,7 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>		
 		<!--<Prereq>
             <Type>Allegiance</Type>
             <Attribute>Kingdom</Attribute>
@@ -835,6 +850,7 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>		
         <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtArcaneWeaponsmith_Tran</Attribute>
@@ -874,6 +890,7 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>		
         <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtArcaneWeaponsmith_Tran</Attribute>
@@ -913,6 +930,7 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>		
         <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtArcaneWeaponsmith_Tran</Attribute>
@@ -951,7 +969,8 @@
         <SpellClass>Defensive</SpellClass>
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
-        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>		
+        <AlwaysPromptForCaster>1</AlwaysPromptForCaster>	
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>		
         <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtArcaneWeaponsmith_Tran</Attribute>
@@ -991,6 +1010,7 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>		
         <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtArcaneWeaponsmith</Attribute>
@@ -1046,6 +1066,7 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>		
         <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtWeaponsmith</Attribute>
@@ -1098,6 +1119,7 @@
         <SpellTargetType>Self</SpellTargetType>
         <AppliesRandomModifier>1</AppliesRandomModifier>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>		
         <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtArchaeologist</Attribute>
@@ -1181,6 +1203,7 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>		
         <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtRanch</Attribute>
@@ -1220,6 +1243,7 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>		
         <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtRanch_Dead</Attribute>
@@ -1259,6 +1283,7 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>		
         <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtRanch_LegacyOfSerrane</Attribute>
@@ -1298,6 +1323,7 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>		
         <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtKennel</Attribute>
@@ -1337,6 +1363,7 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>		
         <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtProvisionist</Attribute>
@@ -1380,6 +1407,7 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>		
         <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtProvisionist_Dead</Attribute>
@@ -1415,6 +1443,7 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>		
         <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtEnchanter</Attribute>
@@ -1457,6 +1486,7 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>		
         <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtEnchanter</Attribute>
@@ -1500,6 +1530,7 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>		
         <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtMasterEnchanter</Attribute>
@@ -1543,6 +1574,7 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>		
         <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtMasterEnchanter</Attribute>
@@ -1574,6 +1606,7 @@
         <Description>Create the ultimate Axe.</Description>
         <Image>Refined_Attack.png</Image>
         <IconFG>W_GreatAxe_Sunderer_Icon.png</IconFG>
+		<Cooldown>50</Cooldown>		
         <!--<AutoUnlock>1</AutoUnlock>-->
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
@@ -1582,6 +1615,8 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>	
+        <CasterMustBeSov>1</CasterMustBeSov>		
         <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtForgeOverlord</Attribute>
@@ -1600,7 +1635,7 @@
             <Attribute>Greataxe_Reaper</Attribute>
         </GameModifier>
         <AIData AIPersonality="AI_General">
-            <AIPriority>0</AIPriority>
+            <AIPriority>1000</AIPriority>
         </AIData>
     </SpellDef>
 	
@@ -1609,6 +1644,7 @@
         <Description>Create the ultimate Pike.</Description>
         <Image>Refined_Attack.png</Image>
         <IconFG>W_Pike_Holhiarn_01.png</IconFG>
+		<Cooldown>50</Cooldown>		
         <!--<AutoUnlock>1</AutoUnlock>-->
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
@@ -1617,6 +1653,8 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>
+        <CasterMustBeSov>1</CasterMustBeSov>		
         <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtForgeOverlord</Attribute>
@@ -1635,7 +1673,7 @@
             <Attribute>Pike_Shockwave</Attribute>
         </GameModifier>
         <AIData AIPersonality="AI_General">
-            <AIPriority>0</AIPriority>
+            <AIPriority>1000</AIPriority>
         </AIData>
     </SpellDef>
 	
@@ -1644,6 +1682,7 @@
         <Description>Create the ultimate sword.</Description>
         <Image>Refined_Attack.png</Image>
         <IconFG>W_Longsword_Legendary_Icon_01.png</IconFG>
+		<Cooldown>50</Cooldown>
         <!--<AutoUnlock>1</AutoUnlock>-->
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
@@ -1652,6 +1691,8 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>	
+        <CasterMustBeSov>1</CasterMustBeSov>		
         <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtForgeOverlord</Attribute>
@@ -1670,7 +1711,7 @@
             <Attribute>Longsword_Tarantella</Attribute>
         </GameModifier>
         <AIData AIPersonality="AI_General">
-            <AIPriority>0</AIPriority>
+            <AIPriority>1000</AIPriority>
         </AIData>
     </SpellDef>
 	
@@ -1679,6 +1720,7 @@
         <Description>Create the ultimate blunt weapon.</Description>
         <Image>Refined_Attack.png</Image>
         <IconFG>W_Mace_Legendary_Icon_01.png</IconFG>
+		<Cooldown>50</Cooldown>		
         <!--<AutoUnlock>1</AutoUnlock>-->
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
@@ -1687,6 +1729,8 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>	
+        <CasterMustBeSov>1</CasterMustBeSov>		
         <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtForgeOverlord</Attribute>
@@ -1705,7 +1749,7 @@
             <Attribute>Mace_Legendcall</Attribute>
         </GameModifier>
         <AIData AIPersonality="AI_General">
-            <AIPriority>0</AIPriority>
+            <AIPriority>1000</AIPriority>
         </AIData>
     </SpellDef>
 	
@@ -1714,6 +1758,7 @@
         <Description>Create the ultimate bow.</Description>
         <Image>Refined_Attack.png</Image>
         <IconFG>W_Longbow_Yew_Perfect_Icon_01.png</IconFG>
+		<Cooldown>50</Cooldown>		
         <!--<AutoUnlock>1</AutoUnlock>-->
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
@@ -1722,6 +1767,8 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>	
+        <CasterMustBeSov>1</CasterMustBeSov>		
         <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtForgeOverlord</Attribute>
@@ -1740,7 +1787,7 @@
             <Attribute>Longbow_Volcano</Attribute>
         </GameModifier>
         <AIData AIPersonality="AI_General">
-            <AIPriority>0</AIPriority>
+            <AIPriority>1000</AIPriority>
         </AIData>
     </SpellDef>
 	
@@ -1749,6 +1796,7 @@
         <Description>Create the ultimate set of armor, wearable by any champion (no armor proficiency required).</Description>
         <Image>T_ParidensReturn_Painting.png</Image>
         <IconFG>VergaHelmet.png</IconFG>
+		<Cooldown>50</Cooldown>		
         <!--<AutoUnlock>1</AutoUnlock>-->
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
@@ -1757,6 +1805,8 @@
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
         <AlwaysPromptForCaster>1</AlwaysPromptForCaster>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>	
+        <CasterMustBeSov>1</CasterMustBeSov>	
         <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtForgeOverlord</Attribute>
@@ -1791,7 +1841,7 @@
             <Attribute>PlateBoots_Overlord</Attribute>
         </GameModifier>		
         <AIData AIPersonality="AI_General">
-            <AIPriority>0</AIPriority>
+            <AIPriority>1000</AIPriority>
         </AIData>
     </SpellDef>
 	

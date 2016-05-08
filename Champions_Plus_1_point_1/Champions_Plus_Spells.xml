@@ -1947,7 +1947,7 @@
         </SpellDefEffect>
     </SpellDef>
 	
-	<SpellDef InternalName="ArcaneInterference">
+	<!--<SpellDef InternalName="ArcaneInterference">
         <DisplayName>Arcane Interference</DisplayName>
         <Description>Target sovereign canot cast the spell of making.</Description>
         <Image>S_TimeStop_Painting.png</Image>
@@ -1972,10 +1972,9 @@
         </SpellResourceCost>		
         <GameModifier>
             <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_IsSPOMReady</StrVal>
+            <Attribute>PreventSpellcasting</Attribute>
             <Duration>-1</Duration>
-			<Value></Value>
+            <PerTurn>1</PerTurn>
         </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
@@ -2023,10 +2022,9 @@
         </SpellResourceCost>		
         <GameModifier>
             <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_IsSPOMReady</StrVal>
+            <Attribute>PreventSpellcasting</Attribute>
             <Duration>-1</Duration>
-			<Value></Value>
+            <PerTurn>1</PerTurn>
         </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
@@ -2039,6 +2037,6 @@
             <EffectDelay>0</EffectDelay>
             <SnapToTerrain>1</SnapToTerrain>
         </SpellDefEffect>
-    </SpellDef>
+    </SpellDef>-->
 	
 </Spells>

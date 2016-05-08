@@ -106,7 +106,7 @@
         <PreferredTerrain>Category:Land</PreferredTerrain>
         <PreferredTerrain>Forest</PreferredTerrain>
         <RequiresCityImprovement>1</RequiresCityImprovement>
-        <RequiredImprovement>Fortress</RequiredImprovement>
+        <RequiredImprovement>Fortress</RequiredImprovement>		
         <!--<UpgradesToImprovement>PlateArmorer</UpgradesToImprovement>		
         <UpgradeTier>1</UpgradeTier>-->
         <Prereq>
@@ -114,11 +114,11 @@
             <Attribute>LightPlate</Attribute>
             <Target>Player</Target>
         </Prereq>
-        <Prereq>
+        <!--<Prereq>
             <Type>RestrictedAbilityBonusOption</Type>
             <Attribute>MasterworkChain</Attribute>
             <Target>Player</Target>
-        </Prereq>		
+        </Prereq>-->		
         <Prereq>
             <Type>Tech</Type>
             <Attribute>Armor</Attribute>
@@ -134,7 +134,7 @@
 		<GameModifier>
             <ModType>Player</ModType>
             <Attribute>UnlockSpell</Attribute>
-            <StrVal>SummonDragon</StrVal>
+            <StrVal>SmithsWrit_Ability</StrVal>
 			<Provides>Can order chainmail armor</Provides>			
         </GameModifier>	
         <AIData AIPersonality="AI_General">
@@ -154,13 +154,13 @@
         <BarredTerrain>SwampTerrain</BarredTerrain>
         <PreferredTerrain>City</PreferredTerrain>
         <PreferredTerrain>Category:Land</PreferredTerrain>
-        <PreferredTerrain>Forest</PreferredTerrain>			
+        <PreferredTerrain>Forest</PreferredTerrain>		
         <!--<UpgradeTier>2</UpgradeTier>-->
-        <Prereq>
+        <!--<Prereq>
             <Type>RestrictedAbilityBonusOption</Type>
             <Attribute>LightPlate</Attribute>
             <Target>Player</Target>
-        </Prereq>
+        </Prereq>-->
         <Prereq>
             <Type>RestrictedAbilityBonusOption</Type>
             <Attribute>MasterworkChain</Attribute>
@@ -195,7 +195,7 @@
 		<GameModifier>
             <ModType>Player</ModType>
             <Attribute>UnlockSpell</Attribute>
-            <StrVal>SummonDragon</StrVal>
+            <StrVal>ArmorersWrit_Ability</StrVal>
 			<Provides>Can order platemail armor, and pinnacle plate mail armor for champions</Provides>			
         </GameModifier>		
         <AIData AIPersonality="AI_General">
@@ -219,7 +219,7 @@
         <RequiresCityImprovement>1</RequiresCityImprovement>
         <RequiredImprovement>Fortress</RequiredImprovement>
         <!--<UpgradesToImprovement>PlateArmorer_LightPlate</UpgradesToImprovement>		
-        <UpgradeTier>1</UpgradeTier>-->
+        <UpgradeTier>1</UpgradeTier>-->		
         <HideInHiergamenon>1</HideInHiergamenon>		
         <Prereq>
             <Type>AbilityBonusOption</Type>
@@ -241,7 +241,7 @@
 		<GameModifier>
             <ModType>Player</ModType>
             <Attribute>UnlockSpell</Attribute>
-            <StrVal>SummonDragon</StrVal>
+            <StrVal>SmithsWrit_Ability_LightPlate</StrVal>
 			<Provides>Can order chainmail armor</Provides>			
         </GameModifier>	
         <AIData AIPersonality="AI_General">
@@ -252,7 +252,7 @@
         <ArtDef>Art_Blacksmith</ArtDef>
     </ImprovementType>
 	
-	<ImprovementType InternalName="PlateArmorer_LightPlate">
+	<!--<ImprovementType InternalName="PlateArmorer_LightPlate">
         <DisplayName>Master Smithy</DisplayName>
         <Description>Master Armorers are commissioned to forge Plate Mail on short notice. A champion must be present in the city to summon the items like a spell.</Description>
 		<AllowedPerFaction>1</AllowedPerFaction>
@@ -262,7 +262,7 @@
         <PreferredTerrain>City</PreferredTerrain>
         <PreferredTerrain>Category:Land</PreferredTerrain>
         <PreferredTerrain>Forest</PreferredTerrain>			
-        <!--<UpgradeTier>2</UpgradeTier>-->
+        <UpgradeTier>2</UpgradeTier>
         <HideInHiergamenon>1</HideInHiergamenon>
         <Prereq>
             <Type>AbilityBonusOption</Type>
@@ -274,7 +274,7 @@
             <Attribute>Heavy_Armor</Attribute>
         </Prereq>		
         <LaborToBuild>600</LaborToBuild>
-        <!--<GameModifier>
+        <GameModifier>
             <ModType>City</ModType>
             <Attribute>AdjustDefendingUnit</Attribute>
             <StrVal>UnitStat_IsAtPlateArmorer_Master</StrVal>
@@ -294,7 +294,7 @@
             <StrVal>UnitStat_IsAtBlacksmith_LightPlate</StrVal>
             <Value>1</Value>
             <Provides>Can order Light Platemail</Provides>
-        </GameModifier>-->
+        </GameModifier>
 		<GameModifier>
             <ModType>Player</ModType>
             <Attribute>UnlockSpell</Attribute>
@@ -307,9 +307,9 @@
         </AIData>
         <UnlocksShopItem>Whetstone</UnlocksShopItem>		
         <ArtDef>Art_Armorer</ArtDef>
-    </ImprovementType>
+    </ImprovementType>-->
 	
-	<ImprovementType InternalName="Smithy_MasterworkChain">
+	<!--<ImprovementType InternalName="Smithy_MasterworkChain">
         <DisplayName>Smithy</DisplayName>
         <Description>Allows the crafting of chainmail for champions. A champion must be present in the city to summon the items like a spell.</Description>
 		<AllowedPerFaction>1</AllowedPerFaction>
@@ -321,8 +321,8 @@
         <PreferredTerrain>Forest</PreferredTerrain>
         <RequiresCityImprovement>1</RequiresCityImprovement>
         <RequiredImprovement>Fortress</RequiredImprovement>
-        <!--<UpgradesToImprovement>PlateArmorer_MasterworkChain</UpgradesToImprovement>		
-        <UpgradeTier>1</UpgradeTier>-->
+        <<UpgradesToImprovement>PlateArmorer_MasterworkChain</UpgradesToImprovement>		
+        <UpgradeTier>1</UpgradeTier>
         <HideInHiergamenon>1</HideInHiergamenon>		
         <Prereq>
             <Type>AbilityBonusOption</Type>
@@ -341,13 +341,19 @@
             <Value>1</Value>
             <Provides>Champions can order chainmail</Provides>
         </GameModifier>
+		<GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>UnlockSpell</Attribute>
+            <StrVal>SummonDragon</StrVal>
+			<Provides>Can order platemail armor, and pinnacle plate mail armor for champions</Provides>			
+        </GameModifier>			
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
             <AITag>CommandPost</AITag>
         </AIData>
         <UnlocksShopItem>Whetstone</UnlocksShopItem>		
         <ArtDef>Art_Blacksmith</ArtDef>
-    </ImprovementType>
+    </ImprovementType>-->
 	
 	<ImprovementType InternalName="PlateArmorer_MasterworkChain">
         <DisplayName>Master Smithy</DisplayName>
@@ -371,7 +377,7 @@
             <Attribute>Heavy_Armor</Attribute>
         </Prereq>		
         <LaborToBuild>600</LaborToBuild>
-        <GameModifier>
+        <!--<GameModifier>
             <ModType>City</ModType>
             <Attribute>AdjustDefendingUnit</Attribute>
             <StrVal>UnitStat_IsAtPlateArmorer_Master</StrVal>
@@ -391,7 +397,13 @@
             <StrVal>UnitStat_IsAtBlacksmith</StrVal>
             <Value>1</Value>
             <Provides>Can order chainmail</Provides>
-        </GameModifier>		
+        </GameModifier>-->	
+		<GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>UnlockSpell</Attribute>
+            <StrVal>ArmorersWrit_Ability_MasterworkChain</StrVal>
+			<Provides>Can order platemail armor, and pinnacle plate mail armor for champions</Provides>			
+        </GameModifier>			
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
             <AITag>CommandPost</AITag>
@@ -417,13 +429,19 @@
             <Type>Tech</Type>
             <Attribute>Leatherworking</Attribute>
         </Prereq>		
-        <GameModifier>
+        <!--<GameModifier>
             <ModType>City</ModType>
             <Attribute>AdjustDefendingUnit</Attribute>
             <StrVal>UnitStat_IsAtTanner</StrVal>
             <Value>1</Value>
             <Provides>Champions can order leather armor when present, summoning items like a spell</Provides>
-        </GameModifier>
+        </GameModifier>-->
+		<GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>UnlockSpell</Attribute>
+            <StrVal>TannersWrit_Ability</StrVal>
+			<Provides>Can order leather armor</Provides>			
+        </GameModifier>			
         <AIData AIPersonality="AI_General">
             <AIPriority>0</AIPriority>
             <AITag>Workshop</AITag>
@@ -450,21 +468,39 @@
             <Type>Tech</Type>
             <Attribute>Enchantment</Attribute>
         </Prereq>		
-        <GameModifier>
+        <!--<GameModifier>
             <ModType>City</ModType>
             <Attribute>AdjustDefendingUnit</Attribute>
             <StrVal>UnitStat_IsAtEnchanter</StrVal>
             <Value>1</Value>
             <Provides>Champions can order magic accessories (chamrs) when present, summoning items like a spell</Provides>
-        </GameModifier>
+        </GameModifier>-->
+		<GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>UnlockSpell</Attribute>
+            <StrVal>EnchantersWrit_Ability</StrVal>
+			<Provides>Can order a set of charmed items</Provides>			
+        </GameModifier>	
+		<GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>UnlockSpell</Attribute>
+            <StrVal>MystantumWrit_Ability</StrVal>
+			<Provides>Can order a set of Mystsantum armor, shield, and short sword</Provides>			
+        </GameModifier>	
+		<GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>UnlockSpell</Attribute>
+            <StrVal>CharmCraft_Ability</StrVal>
+			<Provides>Can order a set of especially enchanted rings</Provides>			
+        </GameModifier>			
         <GameModifier>
-            <Provides>Allows purchase of Glyph Of Journeys And Wolf Charm</Provides>
-        </GameModifier>		
+            <Provides>Allows purchase of Wolf Charm</Provides>
+        </GameModifier>			
         <AIData AIPersonality="AI_General">
             <AIPriority>100</AIPriority>
             <AITag>Study</AITag>
         </AIData>
-		<UnlocksShopItem>WolfCharm</UnlocksShopItem>
+		<UnlocksShopItem>WolfCharm</UnlocksShopItem>		
         <ArtDef>Art_Enchanter</ArtDef>
     </ImprovementType>
 	
@@ -485,7 +521,7 @@
             <Type>Tech</Type>
             <Attribute>Arcane_Apparel</Attribute>
         </Prereq>		
-        <GameModifier>
+        <!--<GameModifier>
             <ModType>City</ModType>
             <Attribute>AdjustDefendingUnit</Attribute>
             <StrVal>UnitStat_IsAtMasterEnchanter</StrVal>
@@ -498,16 +534,33 @@
             <StrVal>UnitStat_IsAtEnchanter</StrVal>
             <Value>1</Value>
             <Provides>Can order Magic items (charms)</Provides>
+        </GameModifier>-->
+		<GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>UnlockSpell</Attribute>
+            <StrVal>MasterEnchantersWrit_Ability</StrVal>
+			<Provides>Can order a set of advanced enchanted items</Provides>			
+        </GameModifier>		
+		<GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>UnlockSpell</Attribute>
+            <StrVal>CloakWrit_Ability</StrVal>
+			<Provides>Can order a set of special enchanted cloaks</Provides>			
         </GameModifier>	
+                <GameModifier>
+                    <ModType>Player</ModType>
+                    <Attribute>UnlockSpell</Attribute>
+                    <StrVal>ArcaneWeaponsmith_Ability</StrVal>
+					<Provides>Order a powerful sword and maul</Provides>
+                </GameModifier>			
         <GameModifier>
-            <Provides>Allows purchase of Glyph Of Journeys And Wolf Charm</Provides>
+            <Provides>Allows purchase of Glyph Of Journeys</Provides>
         </GameModifier>			
         <AIData AIPersonality="AI_General">
             <AIPriority>100</AIPriority>
             <AITag>Study</AITag>
         </AIData>
 		<UnlocksShopItem>GlyphOfJourneys</UnlocksShopItem>	
-		<UnlocksShopItem>WolfCharm</UnlocksShopItem>
         <ArtDef>Art_AlchemyLab</ArtDef>
     </ImprovementType>
 	
@@ -527,7 +580,7 @@
             <Type>Tech</Type>
             <Attribute>Arcane_Armor</Attribute>
         </Prereq>		
-        <GameModifier>
+        <!--<GameModifier>
             <ModType>City</ModType>
             <Attribute>AdjustDefendingUnit</Attribute>
             <StrVal>UnitStat_IsAtArcaneArmorer</StrVal>
@@ -554,19 +607,29 @@
             <StrVal>UnitStat_IsAtEnchanter</StrVal>
             <Value>1</Value>
             <Provides>Can order Magic items</Provides>
-        </GameModifier>	
+        </GameModifier>-->	
                 <GameModifier>
                     <ModType>Player</ModType>
                     <Attribute>UnlockSpell</Attribute>
-                    <StrVal>AI_Equipment_Armor</StrVal>
-					<Provides>Allows purchase of Glyph Of Journeys And Wolf Charm</Provides>
+                    <StrVal>ArcaneArmorersWrit_Ability</StrVal>
+					<Provides>Order a champion's armor set</Provides>
+                </GameModifier>	
+                <GameModifier>
+                    <ModType>Player</ModType>
+                    <Attribute>UnlockSpell</Attribute>
+                    <StrVal>ArcaneArmorersWrit2_Ability</StrVal>
+					<Provides>Order transcendent plate mail</Provides>
+                </GameModifier>
+                <GameModifier>
+                    <ModType>Player</ModType>
+                    <Attribute>UnlockSpell</Attribute>
+                    <StrVal>ArcaneArmorersWrit3_Ability</StrVal>
+					<Provides>Order transcendent chain mail</Provides>
                 </GameModifier>				
         <AIData AIPersonality="AI_General">
             <AIPriority>100</AIPriority>
             <AITag>Study</AITag>
-        </AIData>	
-		<UnlocksShopItem>WolfCharm</UnlocksShopItem>
-		<UnlocksShopItem>GlyphOfJourneys</UnlocksShopItem>			
+        </AIData>				
         <ArtDef>Art_Armorer</ArtDef>
     </ImprovementType>
 	
@@ -587,7 +650,7 @@
             <Type>Tech</Type>
             <Attribute>Arcane_Weapons</Attribute>
         </Prereq>		
-        <GameModifier>
+        <!--<GameModifier>
             <ModType>City</ModType>
             <Attribute>AdjustDefendingUnit</Attribute>
             <StrVal>UnitStat_IsAtArcaneWeaponsmith</StrVal>
@@ -606,6 +669,48 @@
                     <Attribute>UnlockSpell</Attribute>
                     <StrVal>AI_Equipment_Weapons</StrVal>
 					<Provides>Unlocks new items in the shop</Provides>
+                </GameModifier>-->	
+                <GameModifier>
+                    <ModType>Player</ModType>
+                    <Attribute>UnlockSpell</Attribute>
+                    <StrVal>ArcaneWeaponsmith_TerrorSword_Ability</StrVal>
+					<Provides>Order a transcendent sword of fear</Provides>
+                </GameModifier>	
+                <GameModifier>
+                    <ModType>Player</ModType>
+                    <Attribute>UnlockSpell</Attribute>
+                    <StrVal>ArcaneWeaponsmith_Longsword_Brilliance_Ability</StrVal>
+					<Provides>Order a transcendent sword of light<Provides>
+                </GameModifier>	
+                <GameModifier>
+                    <ModType>Player</ModType>
+                    <Attribute>UnlockSpell</Attribute>
+                    <StrVal>ArcaneWeaponsmith_Axe_Ability</StrVal>
+					<Provides>Order a transcendent axe</Provides>
+                </GameModifier>	
+                <GameModifier>
+                    <ModType>Player</ModType>
+                    <Attribute>UnlockSpell</Attribute>
+                    <StrVal>ArcaneWeaponsmith_Mace_Ability</StrVal>
+					<Provides>Order a transcendent mace</Provides>
+                </GameModifier>	
+                <GameModifier>
+                    <ModType>Player</ModType>
+                    <Attribute>UnlockSpell</Attribute>
+                    <StrVal>ArcaneWeaponsmith_Bow_Ability</StrVal>
+					<Provides>Order a transcendent bow</Provides>
+                </GameModifier>	
+                <GameModifier>
+                    <ModType>Player</ModType>
+                    <Attribute>UnlockSpell</Attribute>
+                    <StrVal>ArcaneWeaponsmith_Lance_Ability</StrVal>
+					<Provides>Order a transcendent lance</Provides>
+                </GameModifier>		
+                <GameModifier>
+                    <ModType>Player</ModType>
+                    <Attribute>UnlockSpell</Attribute>
+                    <StrVal>ArcaneWeaponsmith_Ability</StrVal>
+					<Provides>Order a full set of arcane weapons</Provides>
                 </GameModifier>		
         <AIData AIPersonality="AI_General">
             <AIPriority>100</AIPriority>
@@ -634,13 +739,19 @@
             <Type>Tech</Type>
             <Attribute>Mining</Attribute>
         </Prereq>		
-        <GameModifier>
+        <!--<GameModifier>
             <ModType>City</ModType>
             <Attribute>AdjustDefendingUnit</Attribute>
             <StrVal>UnitStat_IsAtArchaeologist</StrVal>
             <Value>1</Value>
             <Provides>Can order a random piece of worn equipment, but with a chance of a powerful relic instead</Provides>
-        </GameModifier>
+        </GameModifier>-->
+		<GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>UnlockSpell</Attribute>
+            <StrVal>ArchaeologistsWrit_Ability</StrVal>
+			<Provides>Can order a random piece of artifact equipment</Provides>			
+        </GameModifier>					
         <GameModifier>
             <Provides>Allows purchase of rusty and worn equipment in shop</Provides>
         </GameModifier>		
@@ -686,13 +797,19 @@
             <Attribute>Mounted_Warfare</Attribute>
         </Prereq>
         <LaborToBuild>200</LaborToBuild>
-        <GameModifier>
+        <!--<GameModifier>
             <ModType>City</ModType>
             <Attribute>AdjustDefendingUnit</Attribute>
             <StrVal>UnitStat_IsAtRanch</StrVal>
             <Value>1</Value>
             <Provides>Champions can order Horse Mounts when present, summoning the items like a spell</Provides>
-        </GameModifier>
+        </GameModifier>-->
+		<GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>UnlockSpell</Attribute>
+            <StrVal>RanchersWrit_Ability</StrVal>
+			<Provides>Can order a pair of horses as mounts</Provides>			
+        </GameModifier>		
         <AIData AIPersonality="AI_General">
             <AIPrefType>AIPrefType_MOUNT</AIPrefType>
             <AIPriority>0</AIPriority>
@@ -724,13 +841,19 @@
             <Attribute>Mounted_Warfare</Attribute>
         </Prereq>
         <LaborToBuild>200</LaborToBuild>
-        <GameModifier>
+        <!--<GameModifier>
             <ModType>City</ModType>
             <Attribute>AdjustDefendingUnit</Attribute>
             <StrVal>UnitStat_IsAtRanch_Dead</StrVal>
             <Value>1</Value>
             <Provides>Champions can order Horse Mounts when present, summoning the items like a spell</Provides>
-        </GameModifier>
+        </GameModifier>-->
+		<GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>UnlockSpell</Attribute>
+            <StrVal>RanchersWrit_Dead_Ability</StrVal>
+			<Provides>Can order a pair of undead horses as mounts</Provides>			
+        </GameModifier>			
         <AIData AIPersonality="AI_General">
             <AIPrefType>AIPrefType_MOUNT</AIPrefType>
             <AIPriority>0</AIPriority>
@@ -762,13 +885,19 @@
             <Attribute>Mounted_Warfare</Attribute>
         </Prereq>
         <LaborToBuild>200</LaborToBuild>
-        <GameModifier>
+        <!--<GameModifier>
             <ModType>City</ModType>
             <Attribute>AdjustDefendingUnit</Attribute>
             <StrVal>UnitStat_IsAtRanch_LegacyOfSerrane</StrVal>
             <Value>1</Value>
             <Provides>Champions can order Warhorse Mounts when present, summoning the items like a spell</Provides>
-        </GameModifier>
+        </GameModifier>-->
+		<GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>UnlockSpell</Attribute>
+            <StrVal>RanchersWrit_Ability_LegacyOfSerrane</StrVal>
+			<Provides>Can order a pair of warhorses as mounts</Provides>			
+        </GameModifier>			
         <AIData AIPersonality="AI_General">
             <AIPrefType>AIPrefType_MOUNT</AIPrefType>
             <AIPriority>0</AIPriority>
@@ -796,13 +925,19 @@
             <Attribute>Warg_Riding</Attribute>
         </Prereq>
         <LaborToBuild>200</LaborToBuild>
-        <GameModifier>
+        <!--<GameModifier>
             <ModType>City</ModType>
             <Attribute>AdjustDefendingUnit</Attribute>
             <StrVal>UnitStat_IsAtKennel</StrVal>
             <Value>1</Value>
             <Provides>Champions can order Warg Mounts when present, summoning the items like a spell</Provides>
-        </GameModifier>
+        </GameModifier>-->
+		<GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>UnlockSpell</Attribute>
+            <StrVal>KennelsWrit_Ability</StrVal>
+			<Provides>Can order a pair of warhorses as mounts</Provides>			
+        </GameModifier>		
         <AIData AIPersonality="AI_General">
             <AIPrefType>AIPrefType_MOUNT</AIPrefType>
             <AIPriority>0</AIPriority>
@@ -833,13 +968,19 @@
 				<Attribute>DLC04_UndeadFaction</Attribute>
 				<Target>Player</Target>
 			</Prereq>		
-        <GameModifier>
+        <!--<GameModifier>
             <ModType>City</ModType>
             <Attribute>AdjustDefendingUnit</Attribute>
             <StrVal>UnitStat_IsAtProvisionist</StrVal>
             <Value>1</Value>
             <Provides>Champions can order rations and food supplies when present, summoning the items like a spell</Provides>
-        </GameModifier>
+        </GameModifier>-->
+		<GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>UnlockSpell</Attribute>
+            <StrVal>ProvisionistsWrit_Ability</StrVal>
+			<Provides>Can order provisions</Provides>			
+        </GameModifier>		
         <AIData AIPersonality="AI_General">
             <AIPrefType>AIPrefType_MOUNT</AIPrefType>
             <AIPriority>0</AIPriority>
@@ -873,13 +1014,19 @@
             <Attribute>DLC04_UndeadFaction</Attribute>
             <Target>Player</Target>
         </Prereq>				
-        <GameModifier>
+        <!--<GameModifier>
             <ModType>City</ModType>
             <Attribute>AdjustDefendingUnit</Attribute>
             <StrVal>UnitStat_IsAtProvisionist_Dead</StrVal>
             <Value>1</Value>
             <Provides>Champions can order supplies when present, summoning the items like a spell</Provides>
-        </GameModifier>
+        </GameModifier>-->
+		<GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>UnlockSpell</Attribute>
+            <StrVal>ProvisionistsWrit_Dead_Ability</StrVal>
+			<Provides>Can order provisions</Provides>			
+        </GameModifier>		
         <AIData AIPersonality="AI_General">
             <AIPrefType>AIPrefType_MOUNT</AIPrefType>
             <AIPriority>0</AIPriority>
@@ -967,13 +1114,19 @@
     </ImprovementType>
 	
 	<ImprovementType InternalName="Weaponsmith">
-        <GameModifier>
+        <!--<GameModifier>
             <ModType>City</ModType>
             <Attribute>AdjustDefendingUnit</Attribute>
             <StrVal>UnitStat_IsAtWeaponsmith</StrVal>
             <Value>1</Value>
             <Provides>Sovereigns can order pinnacle weaponry like a summon spell.</Provides>
-        </GameModifier>
+        </GameModifier>-->
+		<GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>UnlockSpell</Attribute>
+            <StrVal>Weaponsmith_Pinnacle_Ability</StrVal>
+			<Provides>Can a set of ultra high quality weapons</Provides>			
+        </GameModifier>			
 		<UnlocksShopItem>Longsword_Pinnacle</UnlocksShopItem>
 		<UnlocksShopItem>BattleAxe_Pinnacle</UnlocksShopItem>
 		<UnlocksShopItem>Pike_Pinnacle</UnlocksShopItem>
@@ -1494,14 +1647,49 @@
      -->
 	
 	<ImprovementType InternalName="TowerOfMagic4">
-	<GameModifier>
+	<!--<GameModifier>
             <ModType>City</ModType>
             <Attribute>AdjustDefendingUnit</Attribute>
             <StrVal>UnitStat_IsAtForgeOverlord</StrVal>
             <Value>1</Value>
             <Provides>Allows the player to craft transcendant weapons and armor, when present at the Forge (armor requires arcane armor tech)</Provides>
+        </GameModifier>-->
+		<GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>UnlockSpell</Attribute>
+            <StrVal>Overlord_Armor_Ability</StrVal>
+			<Provides>Forge The Ultimate Set of Armor</Provides>			
         </GameModifier>
-
+		<GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>UnlockSpell</Attribute>
+            <StrVal>Overlord_Bow_Ability</StrVal>
+			<Provides>Forge The Ultimate Bow</Provides>			
+        </GameModifier>
+		<GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>UnlockSpell</Attribute>
+            <StrVal>Overlord_Mace_Ability</StrVal>
+			<Provides>Forge The Ultimate Mace</Provides>			
+        </GameModifier>		
+		<GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>UnlockSpell</Attribute>
+            <StrVal>Overlord_Sword_Ability</StrVal>
+			<Provides>Forge The Ultimate Sword</Provides>			
+        </GameModifier>
+		<GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>UnlockSpell</Attribute>
+            <StrVal>Overlord_Pike_Ability</StrVal>
+			<Provides>Forge The Ultimate Pike</Provides>			
+        </GameModifier>
+		<GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>UnlockSpell</Attribute>
+            <StrVal>Overlord_Axe_Ability</StrVal>
+			<Provides>Forge The Ultimate Axe</Provides>			
+        </GameModifier>
     </ImprovementType>
     
 </ImprovementTypes>

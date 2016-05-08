@@ -4031,10 +4031,10 @@
 	
 	<GameItemType InternalName="PlateVambraces_Overlord">
         <DisplayName>Overlord's Gauntlets</DisplayName>
-        <Description>These gauntlets imbue the wearer with the power of the stars.</Description>
+        <Description>These gauntlets imbue the wearer with incredible might.</Description>
         <Type>Forearms</Type>
         <CanBeEquipped>1</CanBeEquipped>
-        <ShopValue>400</ShopValue>
+        <ShopValue>2800</ShopValue>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
@@ -4061,14 +4061,14 @@
         <RarityDisplay>UltraRare</RarityDisplay>
         <HeroOnly>1</HeroOnly>
             <AIData AIPersonality="AI_General">
-                <AIPriority>150</AIPriority>
+                <AIPriority>300</AIPriority>
             </AIData>
         <ArtDef>Art_PlateVambraces_Titan</ArtDef>
     </GameItemType>
 	
 	<GameItemType InternalName="PlateBreastpiece_Overlord">
         <DisplayName>Overlord's Cuirass</DisplayName>
-        <Description>No one bearing this armor will fear death.</Description>
+        <Description>None clad in this armor will fear death.</Description>
         <Type>Torso</Type>
         <Type>Surcoat</Type>
         <CanBeEquipped>1</CanBeEquipped>
@@ -4077,7 +4077,7 @@
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_Defense_Pierce</StrVal>
-            <Value>35</Value>
+            <Value>32</Value>
         </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
@@ -4089,7 +4089,7 @@
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_TacticalHealthRegen</StrVal>
-            <Value>50</Value>
+            <Value>20</Value>
         </GameModifier>
         <IsAvailableForSovereignCustomization>0</IsAvailableForSovereignCustomization>
         <IsAvailableForUnitDesign>0</IsAvailableForUnitDesign>
@@ -4097,7 +4097,7 @@
         <RarityDisplay>Unique</RarityDisplay>
         <HeroOnly>1</HeroOnly>
             <AIData AIPersonality="AI_General">
-                <AIPriority>160</AIPriority>
+                <AIPriority>300</AIPriority>
             </AIData>
         <ArtDef>Art_PlateBreastplate_Titan</ArtDef>
     </GameItemType>
@@ -4113,7 +4113,7 @@
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_Defense_Pierce</StrVal>
-            <Value>28</Value>
+            <Value>26</Value>
         </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
@@ -4128,7 +4128,7 @@
         <RarityDisplay>Unique</RarityDisplay>
         <HeroOnly>1</HeroOnly>
             <AIData AIPersonality="AI_General">
-                <AIPriority>110</AIPriority>
+                <AIPriority>300</AIPriority>
             </AIData>
         <ArtDef>Art_PlateGreaves_Titan</ArtDef>
     </GameItemType>
@@ -4138,7 +4138,7 @@
         <Description>Any who strike the wearer of this headpiece shall be stunned in punishment.</Description>
         <Type>Head</Type>
         <CanBeEquipped>1</CanBeEquipped>
-        <ShopValue>750</ShopValue>
+        <ShopValue>2750</ShopValue>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
@@ -4157,9 +4157,9 @@
         <RarityDisplay>UltraRare</RarityDisplay>
         <HeroOnly>1</HeroOnly>
             <AIData AIPersonality="AI_General">
-                <AIPriority>130</AIPriority>
+                <AIPriority>300</AIPriority>
             </AIData>
-        <ArtDef>Art_TitansCrown</ArtDef>
+        <ArtDef>Art_PlateHelmet_Obsidian</ArtDef>
     </GameItemType>
 	
 	<GameItemType InternalName="TrollCharm">

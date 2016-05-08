@@ -5,7 +5,7 @@
         <Description>Recruit a Spy that can use accumulated Influence against your enemies, or to benefit your realm.</Description>
         <Image>Sovereign_YoungWizard.png</Image>
         <IconFG>Individual.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>
+        <!--<AutoUnlock>1</AutoUnlock>-->
 		<Cooldown>5</Cooldown>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
@@ -15,11 +15,12 @@
         <SpellTargetType>Self</SpellTargetType>
 		<CasterMustBeSov>1</CasterMustBeSov>
         <HideInHiergamenon>1</HideInHiergamenon>
-        <Prereq>
+        <SpellTargetZOCType>Friendly</SpellTargetZOCType>		
+        <!--<Prereq>
             <Type>UnitStat</Type>
             <Attribute>UnitStat_IsAtDiplomat</Attribute>
             <Value>1</Value>
-        </Prereq>
+        </Prereq>-->
         <SpellResourceCost>
             <Resource>DiplomaticCapital</Resource>
             <Amount>10</Amount>

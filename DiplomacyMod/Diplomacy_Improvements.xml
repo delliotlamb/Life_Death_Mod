@@ -10,19 +10,19 @@
         <PreferredTerrain>Category:Land</PreferredTerrain>
         <PreferredTerrain>Forest</PreferredTerrain>
         <RequiresCityImprovement>1</RequiresCityImprovement>
-        <RequiredImprovement>TradeGuild</RequiredImprovement>  		
+        <RequiredImprovement>Conclave</RequiredImprovement>  		
 		<LaborToBuild>750</LaborToBuild>
         <Prereq>
             <Type>Tech</Type>
             <Attribute>Literacy</Attribute>
         </Prereq>
-        <GameModifier>
+        <!--<GameModifier>
             <ModType>Player</ModType>
             <Attribute>AbilityBonus</Attribute>
             <StrVal>A_DiplomaticCapital</StrVal>
             <Value>10</Value>
             <Provides>All cities produce +10% Influence</Provides>
-        </GameModifier>		
+        </GameModifier>-->	
 		<GameModifier>
             <ModType>Resource</ModType>
             <Attribute>DiplomaticCapital</Attribute>
@@ -30,13 +30,19 @@
             <PerTurn>1</PerTurn>			
             <Provides>+1 Diplomatic Capital Per Turn</Provides>
         </GameModifier>
-        <GameModifier>
+        <!--<GameModifier>
             <ModType>City</ModType>
             <Attribute>AdjustDefendingUnit</Attribute>
             <StrVal>UnitStat_IsAtDiplomat</StrVal>
             <Value>1</Value>
             <Provides>Can recruit spies</Provides>
-        </GameModifier>		
+        </GameModifier>-->	
+		<GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>UnlockSpell</Attribute>
+            <StrVal>RecruitSpy</StrVal>
+			<Provides>Can order chainmail armor</Provides>			
+        </GameModifier>			
         <AIData AIPersonality="AI_General">
             <AIPriority>5</AIPriority>
             <AITag>Diplomat</AITag>
