@@ -131,8 +131,8 @@
                 <ModType>Unit</ModType>
                 <Attribute>ProduceResource</Attribute>
                 <StrVal>Mana</StrVal>
-                <Value>2</Value>
-                <Provides>+2 Mana per Season</Provides>
+                <Value>4</Value>
+                <Provides>+4 Mana per Season</Provides>
             </GameModifier>		
         </AbilityBonusOption>
     </AbilityBonus>

@@ -1388,8 +1388,16 @@
     </SpellDef>
 	
 	<SpellDef InternalName="Tornado">
+	<HideInHiergamenon>1</HideInHiergamenon>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>NotGonnaHappenBreh</Attribute>
+        </Prereq>
+    </SpellDef>
+	
+	<SpellDef InternalName="Tornado2">
         <DisplayName>Tornado</DisplayName>
-        <Description>Units in the targeted army are randomly scattered around the surrounding tiles, immobilized for a turn and take 3 damage per air shard.</Description>
+        <Description>Units in the targeted army are randomly scattered around the surrounding tiles, immobilized for a turn and take 3 damage per air shard, per member.</Description>
         <Image>S_Tornado_Painting.png</Image>
         <IconFG>S_Tornado_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -1432,13 +1440,7 @@
             <ModType>Unit</ModType>
             <Attribute>DisperseStack</Attribute>
             <Radius>4</Radius>
-        </GameModifier>
-            <GameModifier>
-                <ModType>Resource</ModType>
-                <Attribute>Mana</Attribute>
-				<ApplyToCaster>1</ApplyToCaster>
-                <Value>150</Value> <!-- this prevents from the original 150 mana cost from being charged -->
-            </GameModifier>			
+        </GameModifier>			
         <AIData AIPersonality="AI_General">
             <AIPriority>80</AIPriority>
         </AIData>
@@ -2083,6 +2085,79 @@
         <HitSoundFX>Spell_Spell_of_Making_01</HitSoundFX>
         <SpellCastEffectName>Spell_Of_Making</SpellCastEffectName>
         <SpellCastEffectScale>.6</SpellCastEffectScale>
+    </SpellDef>
+	
+		<SpellDef InternalName="Earthquake">
+	<HideInHiergamenon>1</HideInHiergamenon>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>NoWayJose</Attribute>
+        </Prereq>
+	
+	<SpellDef InternalName="Earthquake2">
+        <DisplayName>Earthquake</DisplayName>
+        <Description>Destroys random city improvements, resets the production queue and halves the population of the targeted city. Defending units lose -2 to initiative and hit points for 1 turn. There is a small chance that the entire city will be destroyed.</Description>
+        <Image>S_Earthquake_Painting.png</Image>
+        <IconFG>S_Earthquake_Icon.png</IconFG>
+        <AutoUnlock>1</AutoUnlock>
+        <Cooldown>10</Cooldown>
+		<CanStack>1</CanStack>
+        <SpellBookSortCategory>City</SpellBookSortCategory>
+        <SpellBookSortSubCategory>CityCurse</SpellBookSortSubCategory>
+        <SpellType>Strategic</SpellType>
+        <SpellClass>Offensive</SpellClass>
+        <SpellSubClass>Debuff</SpellSubClass>
+        <SpellTargetType>EnemyCity</SpellTargetType>
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>Earth5</Attribute>
+        </Prereq>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <Amount>200</Amount>
+        </SpellResourceCost>
+        <GameModifier>
+            <ModType>City</ModType>
+            <Attribute>Earthquake</Attribute>
+            <Radius>1</Radius>
+        </GameModifier>
+        <GameModifier>
+            <ModType>City</ModType>
+            <Attribute>Sacrifice</Attribute>
+            <Calculate InternalName="Calc" ValueOwner="TargetCity">
+                <Expression><![CDATA[[CityPopulation] / 2]]></Expression>
+            </Calculate>
+            <Calculate InternalName="Value">
+                <Expression><![CDATA[[Calc]]]></Expression>
+            </Calculate>
+        </GameModifier>
+	        <GameModifier>
+            <ModType>City</ModType>
+            <Attribute>AdjustDefendingUnit</Attribute>
+            <StrVal>UnitStat_CombatSpeed</StrVal>
+			<Duration>1</Duration>
+            <Value>-2</Value>
+        </GameModifier>
+        <GameModifier>
+            <ModType>City</ModType>
+            <Attribute>AdjustDefendingUnit</Attribute>
+            <StrVal>UnitStat_HitPoints</StrVal>
+			<Duration>1</Duration>
+            <Value>-2</Value>
+        </GameModifier>		
+        <AIData AIPersonality="AI_General">
+            <AIPriority>300</AIPriority>
+        </AIData>
+        <CameraShakeDuration>2.25</CameraShakeDuration>
+        <CameraShakeStrength>0.25</CameraShakeStrength>
+        <HitSoundFX>Spell_Earthquake_01</HitSoundFX>
+        <SpellDefEffect>
+            <EffectName>S_Earthquake_Particle</EffectName>
+            <LocalPosition>0,0,0</LocalPosition>
+            <EffectScale>0.3</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>
     </SpellDef>
 	
 	</Spells>

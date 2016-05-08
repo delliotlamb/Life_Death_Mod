@@ -247,15 +247,14 @@
         <SpellClass>Offensive</SpellClass>
         <SpellSubClass>Debuff</SpellSubClass>
         <SpellTargetType>EnemyUnit</SpellTargetType>
-        <UnitAppSpecifier>ApplyToAll</UnitAppSpecifier>
-        <SpellTargetZOCType>Friendly</SpellTargetZOCType>		
+        <UnitAppSpecifier>ApplyToAll</UnitAppSpecifier>	
         <Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Life3</Attribute>
         </Prereq>		
         <SpellResourceCost>
             <Resource>VerdantEssence</Resource>
-            <Amount>20</Amount>
+            <Amount>30</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Unit</ModType>
@@ -534,6 +533,10 @@
             <Resource>VerdantEssence</Resource>
             <Amount>80</Amount>
         </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>RefinedCrystal</Resource>
+            <Amount>10</Amount>
+        </SpellResourceCost>		
 			<GameModifier>
 				<ModType>GiveItem</ModType>
 				<Attribute>Longsword_Searingray</Attribute>
@@ -753,7 +756,7 @@
 	
     <SpellDef InternalName="SoulOfTheCurrent">
         <DisplayName>Soul Of The Current</DisplayName>
-        <Description>Target unit on River, and its army, gets +3 initiative (+.5 per Water Shard), +20 armor piercing (+5 per water shard) and +10 Dodge (+5 per water Shard) for this season.</Description>
+        <Description>Target unit on River, and its army, gets +1 initiative (+1 per Water Shard), +20 armor piercing (+5 per water shard) and +10 Dodge (+5 per water Shard) for this season.</Description>
         <Image>S_FreezeSeas_Icon.png</Image>
         <IconFG>T_ArcaneVeil_Icon.png</IconFG>
 		<AutoUnlock>1</AutoUnlock>		
@@ -780,10 +783,10 @@
             <Duration>1</Duration>
             <HasUpgradableValue>1</HasUpgradableValue>
             <Calculate InternalName="Calc" ValueOwner="CastingUnit">
-                <Expression><![CDATA[[UnitOwner_GetNumWaterShards] * .5]]></Expression>
+                <Expression><![CDATA[[UnitOwner_GetNumWaterShards]]]></Expression>
             </Calculate>
             <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc] + 3]]></Expression>
+                <Expression><![CDATA[[Calc] + 1]]></Expression>
             </Calculate>
         </GameModifier>
 		<GameModifier>
@@ -1402,6 +1405,10 @@
             <Resource>WaveEssence</Resource>
             <Amount>12</Amount>
         </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>RefinedCrystal</Resource>
+            <Amount>10</Amount>
+        </SpellResourceCost>		
 			<GameModifier>
 				<ModType>GiveItem</ModType>
 				<Attribute>GoldenBelt2</Attribute>
@@ -2558,11 +2565,10 @@
  
  <SpellDef InternalName="AwakenEmbers">
         <DisplayName>Awaken Embers</DisplayName>
-        <Description>Attack an enemy army on Burning Lands with an all-consuming blaze for 15 Fire damage (+3 per fire shard).</Description>
+        <Description>Attack an enemy army on Burning Lands with an all-consuming blaze for 20 Fire damage (+3 per fire shard).</Description>
         <Image>Great_Blaze_Painting.png</Image>
         <IconFG>Hungering_Fire.png</IconFG>
-		<AutoUnlock>1</AutoUnlock>
-	<Cooldown>10</Cooldown>		
+		<AutoUnlock>1</AutoUnlock>	
         <SpellBookSortCategory>Unit</SpellBookSortCategory>
         <SpellBookSortSubCategory>UnitDamage</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -2590,7 +2596,7 @@
                 <Expression><![CDATA[[Calc] * 3]]></Expression>
             </Calculate>
             <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc2] + 15]]></Expression>
+                <Expression><![CDATA[[Calc2] + 20]]></Expression>
             </Calculate>
         </GameModifier>
         <GameModifier>
@@ -2695,6 +2701,10 @@
             <Resource>EmberEssence</Resource>
             <Amount>80</Amount>
         </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>RefinedCrystal</Resource>
+            <Amount>10</Amount>
+        </SpellResourceCost>		
             <GameModifier>
 				<ModType>GiveItem</ModType>
 				<Attribute>Greataxe_Flaming2</Attribute>
@@ -2859,7 +2869,7 @@
 
 <SpellDef InternalName="SoulOfTheBreeze">
         <DisplayName>Soul Of The Breeze</DisplayName>
-        <Description>Target army on Plains gets +2 initiative and +15 Dodge (+3 per Air shard) for this season.</Description>
+        <Description>Target army on Plains gets +2 initiative and +5 Dodge (+1 per Air shard) for this season.</Description>
         <Image>S_Crusade_Painting.png</Image>
         <IconFG>S_CalloftheTitans_Icon.png</IconFG>
 		<AutoUnlock>1</AutoUnlock>		
@@ -2894,10 +2904,10 @@
             <Duration>1</Duration>
             <HasUpgradableValue>1</HasUpgradableValue>
             <Calculate InternalName="Calc" ValueOwner="CastingUnit">
-                <Expression><![CDATA[[UnitOwner_GetNumAirShards] * 3]]></Expression>
+                <Expression><![CDATA[[UnitOwner_GetNumAirShards]]]></Expression>
             </Calculate>
             <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc] + 15]]></Expression>
+                <Expression><![CDATA[[Calc] + 5]]></Expression>
             </Calculate>
         </GameModifier>
         <ValidTerrainType>Land</ValidTerrainType>
@@ -3032,15 +3042,14 @@
         <SpellClass>Offensive</SpellClass>
         <SpellSubClass>Debuff</SpellSubClass>
         <SpellTargetType>EnemyUnit</SpellTargetType>		
-        <UnitAppSpecifier>ApplyToAll</UnitAppSpecifier>
-        <SpellTargetZOCType>Friendly</SpellTargetZOCType>		
+        <UnitAppSpecifier>ApplyToAll</UnitAppSpecifier>	
         <Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Air3</Attribute>
         </Prereq>		
         <SpellResourceCost>
             <Resource>GaleEssence</Resource>
-            <Amount>10</Amount>
+            <Amount>50</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Unit</ModType>
@@ -3184,6 +3193,10 @@
             <Resource>GaleEssence</Resource>
             <Amount>80</Amount>
         </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>RefinedCrystal</Resource>
+            <Amount>10</Amount>
+        </SpellResourceCost>		
         <GameModifier>
             <ModType>GiveItem</ModType>
             <Attribute>YewLongbow_Breezefly</Attribute>
@@ -3526,7 +3539,7 @@
 	
 <SpellDef InternalName="SoulOfOre">
         <DisplayName>Soul Of Ore</DisplayName>
-        <Description>Target army on Hills gets +5 Defense (+3 per earth shard) for this season.</Description>
+        <Description>Target army on Hills gets +3 Defense (+3 per earth shard) for this season.</Description>
         <Image>CaveGrassland_Medallion.png</Image>
         <IconFG>T_GiftOfIron_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>			
@@ -3545,7 +3558,7 @@
         </Prereq>		
         <SpellResourceCost>
             <Resource>MineralEssence</Resource>
-            <Amount>30</Amount>
+            <Amount>20</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Unit</ModType>
@@ -3557,7 +3570,7 @@
                 <Expression><![CDATA[[UnitOwner_GetNumEarthShards] * 3]]></Expression>
             </Calculate>
             <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc] + 5]]></Expression>
+                <Expression><![CDATA[[Calc] + 3]]></Expression>
             </Calculate>
         </GameModifier>
         <ValidTerrainType>HillsTerrain</ValidTerrainType>
@@ -4115,15 +4128,14 @@
         <SpellClass>Offensive</SpellClass>
         <SpellSubClass>Debuff</SpellSubClass>
         <SpellTargetType>EnemyUnit</SpellTargetType>
-        <UnitAppSpecifier>ApplyToAll</UnitAppSpecifier>
-        <SpellTargetZOCType>Friendly</SpellTargetZOCType>		
+        <UnitAppSpecifier>ApplyToAll</UnitAppSpecifier>	
         <Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Earth3</Attribute>
         </Prereq>
         <SpellResourceCost>
             <Resource>MineralEssence</Resource>
-            <Amount>20</Amount>
+            <Amount>30</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Unit</ModType>
@@ -4214,78 +4226,6 @@
         </SpellDefEffect>
     </SpellDef>
 	
-	<SpellDef InternalName="Earthquake">
-        <DisplayName>Earthquake</DisplayName>
-        <Description>Destroys random city improvements, resets the production queue and halves the population of the targeted city. Defending units lose -2 to initiative and hit points for 1 turn. There is a small chance that the entire city will be destroyed.</Description>
-        <Image>S_Earthquake_Painting.png</Image>
-        <IconFG>S_Earthquake_Icon.png</IconFG>
-        <AutoUnlock>1</AutoUnlock>
-        <Cooldown>10</Cooldown>
-		<CanStack>1</CanStack>
-        <SpellBookSortCategory>City</SpellBookSortCategory>
-        <SpellBookSortSubCategory>CityCurse</SpellBookSortSubCategory>
-        <SpellType>Strategic</SpellType>
-        <SpellClass>Offensive</SpellClass>
-        <SpellSubClass>Debuff</SpellSubClass>
-        <SpellTargetType>EnemyCity</SpellTargetType>
-        <Prereq>
-            <Type>AbilityBonusOption</Type>
-            <Attribute>Earth5</Attribute>
-        </Prereq>
-        <SpellResourceCost>
-            <Resource>Mana</Resource>
-            <Amount>200</Amount>
-        </SpellResourceCost>
-        <GameModifier>
-            <ModType>City</ModType>
-            <Attribute>Earthquake</Attribute>
-            <Radius>1</Radius>
-        </GameModifier>
-        <GameModifier>
-            <ModType>City</ModType>
-            <Attribute>Sacrifice</Attribute>
-            <Calculate InternalName="Calc" ValueOwner="TargetCity">
-                <Expression><![CDATA[[CityPopulation] / 2]]></Expression>
-            </Calculate>
-            <Calculate InternalName="Value">
-                <Expression><![CDATA[[Calc]]]></Expression>
-            </Calculate>
-        </GameModifier>
-	        <GameModifier>
-            <ModType>City</ModType>
-            <Attribute>AdjustDefendingUnit</Attribute>
-            <StrVal>UnitStat_CombatSpeed</StrVal>
-			<Duration>1</Duration>
-            <Value>-2</Value>
-        </GameModifier>
-        <GameModifier>
-            <ModType>City</ModType>
-            <Attribute>AdjustDefendingUnit</Attribute>
-            <StrVal>UnitStat_HitPoints</StrVal>
-			<Duration>1</Duration>
-            <Value>-2</Value>
-        </GameModifier>	
-        <GameModifier>
-            <ModType>Resource</ModType>
-            <Attribute>Mana</Attribute>
-            <ApplyToCaster>1</ApplyToCaster>
-            <Value>300</Value>
-        </GameModifier>		
-        <AIData AIPersonality="AI_General">
-            <AIPriority>300</AIPriority>
-        </AIData>
-        <CameraShakeDuration>2.25</CameraShakeDuration>
-        <CameraShakeStrength>0.25</CameraShakeStrength>
-        <HitSoundFX>Spell_Earthquake_01</HitSoundFX>
-        <SpellDefEffect>
-            <EffectName>S_Earthquake_Particle</EffectName>
-            <LocalPosition>0,0,0</LocalPosition>
-            <EffectScale>0.3</EffectScale>
-            <EffectDelay>0</EffectDelay>
-            <SnapToTerrain>1</SnapToTerrain>
-        </SpellDefEffect>
-    </SpellDef>
-	
 
 <!-- Death Spells -->
 
@@ -4294,7 +4234,7 @@
 
 <SpellDef InternalName="SoulOfTheSands">
         <DisplayName>Soul Of The Sands</DisplayName>
-        <Description>For this season, target army on desert gets + 5 critical chance (+3 per death shard) and +1 moves.</Description>
+        <Description>For this season, target army on desert gets +5 critical chance (+3 per death shard).</Description>
         <Image>S_MoriansChant_Painting.png</Image>
         <IconFG>S_DefiledBenediction_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>		
@@ -4314,13 +4254,6 @@
             <Resource>FamineEssence</Resource>
             <Amount>20</Amount>
         </SpellResourceCost>
-        <GameModifier>
-            <ModType>Unit</ModType>
-            <Attribute>AdjustUnitStat</Attribute>
-            <StrVal>UnitStat_Moves</StrVal>
-            <Duration>1</Duration>
-			<Value>1</Value>
-        </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
@@ -4425,6 +4358,11 @@
         <SpellResourceCost>
             <Resource>Mana</Resource>
             <Amount>200</Amount>
+        </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>Mana</Resource>
+            <PerTurn>1</PerTurn>
+            <Amount>3</Amount>
         </SpellResourceCost>		
         <GameModifier>
             <ModType>ResourceMultiplier</ModType>
@@ -4663,6 +4601,10 @@
             <Resource>FamineEssence</Resource>
             <Amount>80</Amount>
         </SpellResourceCost>
+        <SpellResourceCost>
+            <Resource>RefinedCrystal</Resource>
+            <Amount>10</Amount>
+        </SpellResourceCost>		
 			<GameModifier>
 				<ModType>GiveItem</ModType>
 				<Attribute>CloakOfTheNight2</Attribute>
@@ -4688,7 +4630,7 @@
 
     <SpellDef InternalName="ConsumptionOfTheSands">
         <DisplayName>Desert Fever</DisplayName>
-        <Description>Target unit is overwhelmed with sickness, knocking it prone for 2 turns and halving most of its combat stats, unless it resists.</Description>
+        <Description>Target unit is overwhelmed with sickness, knocking it prone for 2 turns and suffering a -25% penalty to most of its combat stats, unless it resists.</Description>
         <Image>Desert_Fever_Painting.png</Image>
         <IconFG>Desert_Fever.png</IconFG>
         <AutoUnlock>1</AutoUnlock>		
@@ -4707,7 +4649,7 @@
         </Prereq>			
         <SpellResourceCost>
             <Resource>FamineEssence</Resource>
-            <Amount>40</Amount>
+            <Amount>50</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>TacticalUnit</ModType>
@@ -4720,35 +4662,35 @@
             <StrVal>UnitStat_Attack_Pierce</StrVal>
             <DisplayName>Fever</DisplayName>			
             <Duration>-1</Duration>
-            <Multiplier>0.5</Multiplier>
+            <Multiplier>0.75</Multiplier>
         </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_Dodge</StrVal>
             <Duration>-1</Duration>
-            <Multiplier>0.5</Multiplier>
+            <Multiplier>0.75</Multiplier>
         </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_MagicResist</StrVal>
             <Duration>-1</Duration>
-            <Multiplier>0.5</Multiplier>
+            <Multiplier>0.75</Multiplier>
         </GameModifier>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_MagicPower</StrVal>
             <Duration>-1</Duration>
-            <Multiplier>0.5</Multiplier>
+            <Multiplier>0.75</Multiplier>
         </GameModifier>		
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
             <StrVal>UnitStat_Accuracy</StrVal>
             <Duration>-1</Duration>
-            <Multiplier>0.5</Multiplier>
+            <Multiplier>0.75</Multiplier>
         </GameModifier>		
         <AIData AIPersonality="AI_General">
             <AIPriority>100</AIPriority>
@@ -4912,15 +4854,14 @@
         <SpellClass>Offensive</SpellClass>
         <SpellSubClass>Debuff</SpellSubClass>
         <SpellTargetType>EnemyUnit</SpellTargetType>
-        <UnitAppSpecifier>ApplyToAll</UnitAppSpecifier>
-        <SpellTargetZOCType>Friendly</SpellTargetZOCType>		
+        <UnitAppSpecifier>ApplyToAll</UnitAppSpecifier>		
         <Prereq>
             <Type>AbilityBonusOption</Type>
             <Attribute>Death3</Attribute>
         </Prereq>	
         <SpellResourceCost>
             <Resource>FamineEssence</Resource>
-            <Amount>5</Amount>
+            <Amount>30</Amount>
         </SpellResourceCost>
         <GameModifier>
             <ModType>Unit</ModType>

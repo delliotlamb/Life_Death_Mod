@@ -9,7 +9,7 @@
         <WeaponType>Bow</WeaponType>
         <WeaponUpgradeType>Bow</WeaponUpgradeType>
         <CanBeEquipped>1</CanBeEquipped>
-        <ShopValue>100</ShopValue>
+        <ShopValue>200</ShopValue>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
@@ -115,7 +115,7 @@
 	
 	<GameItemType InternalName="MystantumGreaves">
         <DisplayName>Mystantum Greaves</DisplayName>
-        <Description>Mystantum is extremely difficult to bend, making greaves and cuirass the only options for this lightweight, ironless material.</Description>
+        <Description>Mystantum is extremely difficult to bend, making greave, shield, and cuirass the only options for this lightweight, ironless material.</Description>
         <Type>LowerBody</Type>
         <CanBeEquipped>1</CanBeEquipped>
         <ShopValue>140</ShopValue>	
@@ -2931,7 +2931,7 @@
         <Type>Accessory</Type>
         <CanBeEquipped>1</CanBeEquipped>
         <AdditionalTrainingTurns>8</AdditionalTrainingTurns>
-        <ShopValue>295</ShopValue>
+        <ShopValue>100</ShopValue>
                     <GameModifier>
                 <ModType>Unit</ModType>
                 <Attribute>AdjustUnitStat</Attribute>
@@ -2971,7 +2971,7 @@
         <WeaponType>OneHanded</WeaponType>
         <WeaponUpgradeType>Blade</WeaponUpgradeType>
         <CanBeEquipped>1</CanBeEquipped>
-        <ShopValue>1980</ShopValue>
+        <ShopValue>980</ShopValue>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
@@ -3277,7 +3277,7 @@
         <WeaponType>Bow</WeaponType>
         <WeaponUpgradeType>Bow</WeaponUpgradeType>
         <CanBeEquipped>1</CanBeEquipped>
-        <ShopValue>1720</ShopValue>
+        <ShopValue>1000</ShopValue>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
@@ -3708,7 +3708,7 @@
         <Description>This jeweled insect makes the wearer difficult to strike, especially from afar.</Description>
         <Type>Accessory</Type>
         <CanBeEquipped>1</CanBeEquipped>
-        <ShopValue>50</ShopValue>
+        <ShopValue>100</ShopValue>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
@@ -3751,7 +3751,7 @@
 		or a single axe swipe - but it is still no substitute for a full set of armor.</Description>
         <Type>Accessory</Type>
         <CanBeEquipped>1</CanBeEquipped>
-        <ShopValue>50</ShopValue>
+        <ShopValue>100</ShopValue>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
@@ -3793,7 +3793,7 @@
         <Description>Bearing this ring, even a boy who has never gripped a sword shall strike true.</Description>
         <Type>Accessory</Type>
         <CanBeEquipped>1</CanBeEquipped>
-        <ShopValue>50</ShopValue>
+        <ShopValue>100</ShopValue>
         <GameModifier>
             <ModType>Unit</ModType>
             <Attribute>AdjustUnitStat</Attribute>
@@ -4226,7 +4226,7 @@
         <RarityDisplay>Uncommon</RarityDisplay>
         <Prereq>
             <Type>Tech</Type>
-            <Attribute>IHateThisItem</Attribute> <!-- Turned off -->
+            <Attribute>IHateSeeingArmiesInThisOutfitAndItRuinsSomeUnitDesigns</Attribute> <!-- Turned off -->
         </Prereq>
             <AIData AIPersonality="AI_General">
                 <AIPriority>70</AIPriority>
