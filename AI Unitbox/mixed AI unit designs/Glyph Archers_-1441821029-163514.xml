@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<UnitTypes>
+	<UnitType InternalName="Glyph Archers_-1441821029-163514">
+		<DisplayName>Glyph Archers</DisplayName>
+		<Description>Archers are lightly equipped and skilled at picking off their opponents at a distance.</Description>
+		<Quote>'Our footfalls will roar like drums of war.'</Quote>
+		<Backstory>Resoln is a new country - but its fighters draw their strength from the old powers, from the magics of  the Dread Lord Curgen, most powerful of all the Titans to ever walk upon Elemental. The armies of Resoln discount the use of much equipment the typical soldier relies upon, and instead make use of the enchantments, spells, and creatures that are their birthright.</Backstory>
+		<HasEssence>false</HasEssence>
+		<ModelPath>Gfx\HKB\Units\K_Female_Mesh_01.hkb</ModelPath>
+		<SkeletonPath>Gfx\HKB\Units\K_Male_Skeleton_01.hkb</SkeletonPath>
+		<EyeTexture>gfx\eyes\blinks\Eyeblink_F4_Wht.png</EyeTexture>
+		<AnimationPack>FemaleSovereignAnimationPack</AnimationPack>
+		<ShowAsSingleUnit>false</ShowAsSingleUnit>
+		<CutSceneDataPack>DefaultUnitCutscenePack</CutSceneDataPack>
+		<ModelScale>1.0000</ModelScale>
+		<TacticalModelScale>1.5000</TacticalModelScale>
+		<EquipmentScale>1.0000</EquipmentScale>
+		<ClothMapScale>1.6000</ClothMapScale>
+		<BattleAnimationBehavior>Melee</BattleAnimationBehavior>
+		<MovementType>land</MovementType>
+		<BobbingFrequency>0.0000</BobbingFrequency>
+		<ClothPoseIndex>1</ClothPoseIndex>
+		<InfoCardBackground>BG_Swamp</InfoCardBackground>
+		<InfoCardBackgroundFlipped>0</InfoCardBackgroundFlipped>
+		<CanBeDesigned>1</CanBeDesigned>
+		<UserDesigned>true</UserDesigned>
+		<IsModDependent>false</IsModDependent>
+		<Medallions InternalName=""/>
+		<MovingSFX>TEMP_KnightMarching1</MovingSFX>
+		<LevelMilestone InternalName="">
+			<Level>1</Level>
+			<UnitStat_BG_IsEmpire>1.0000</UnitStat_BG_IsEmpire>
+			<UnitStat_BG_IsFemale>1.0000</UnitStat_BG_IsFemale>
+			<UnitStat_BG_IsHumanoid>1.0000</UnitStat_BG_IsHumanoid>
+			<UnitStat_BG_IsRace_Wraiths>1.0000</UnitStat_BG_IsRace_Wraiths>
+		</LevelMilestone>
+		<Equipment>F_Female_Head_Mesh_06</Equipment>
+		<Equipment>LeatherHelmet</Equipment>
+		<Equipment>LeatherBreastpiece</Equipment>
+		<Equipment>LeatherBoots_Soldiers</Equipment>
+		<Equipment>LeatherGreaves</Equipment>
+		<Equipment>LeatherVambraces_Soldiers</Equipment>
+		<Equipment>Cloak_Scaled</Equipment>
+		<Equipment>AmuletOfHaste</Equipment>
+		<Equipment>AmuletOfFlames</Equipment>
+		<Equipment>AmuletOfFrost</Equipment>
+		<Equipment>Rations</Equipment>
+		<EquipmentUpgradeDef>
+			<SelectionCriterion>MaximizeBest</SelectionCriterion>
+			<ComparisonAttribute>UnitStat_Attack_Pierce</ComparisonAttribute>
+			<WeaponUpgradeType>Bow</WeaponUpgradeType>
+			<EquipmentSlot>Weapon</EquipmentSlot>
+			<EquipmentSlot>Defense</EquipmentSlot>
+			<ForUpgradeActionOnly>0</ForUpgradeActionOnly>
+		</EquipmentUpgradeDef>
+		<EquipmentUpgradeDef>
+			<SelectionCriterion>MaximizeSum</SelectionCriterion>
+			<ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+			<EquipmentSlot>Head</EquipmentSlot>
+			<ForUpgradeActionOnly>1</ForUpgradeActionOnly>
+		</EquipmentUpgradeDef>
+		<EquipmentUpgradeDef>
+			<SelectionCriterion>MaximizeSum</SelectionCriterion>
+			<ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+			<EquipmentSlot>Torso</EquipmentSlot>
+			<EquipmentSlot>Surcoat</EquipmentSlot>
+			<ForUpgradeActionOnly>1</ForUpgradeActionOnly>
+		</EquipmentUpgradeDef>
+		<EquipmentUpgradeDef>
+			<SelectionCriterion>MaximizeSum</SelectionCriterion>
+			<ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+			<EquipmentSlot>Boots</EquipmentSlot>
+			<ForUpgradeActionOnly>1</ForUpgradeActionOnly>
+		</EquipmentUpgradeDef>
+		<EquipmentUpgradeDef>
+			<SelectionCriterion>MaximizeSum</SelectionCriterion>
+			<ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+			<EquipmentSlot>LowerBody</EquipmentSlot>
+			<ForUpgradeActionOnly>1</ForUpgradeActionOnly>
+		</EquipmentUpgradeDef>
+		<EquipmentUpgradeDef>
+			<SelectionCriterion>MaximizeSum</SelectionCriterion>
+			<ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+			<EquipmentSlot>Forearms</EquipmentSlot>
+			<ForUpgradeActionOnly>1</ForUpgradeActionOnly>
+		</EquipmentUpgradeDef>
+		<EquipmentUpgradeDef>
+			<SelectionCriterion>MaximizeSum</SelectionCriterion>
+			<ComparisonAttribute>UnitStat_Defense_Pierce</ComparisonAttribute>
+			<EquipmentSlot>Cloak</EquipmentSlot>
+			<ForUpgradeActionOnly>1</ForUpgradeActionOnly>
+		</EquipmentUpgradeDef>
+		<Color_Hair>50,50,65,255</Color_Hair>
+		<Texture_Eyes>gfx\eyes\blinks\Eyeblink_F4_Wht.png</Texture_Eyes>
+		<Texture_Skin>K_Female_Scarred_Texture_01.png</Texture_Skin>
+		<CreatorFactionName>EmpireOfResoln</CreatorFactionName>
+		<Gender>Female</Gender>
+		<UnitModelType>WraithFemale</UnitModelType>
+		<SelectedAbilityBonusOption>Blood_Wraith</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Fast</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Zealot</SelectedAbilityBonusOption>
+		<SelectedAbilityBonusOption>Finesse</SelectedAbilityBonusOption>
+		<IsSovereign>0</IsSovereign>
+		<HasWages>1</HasWages>
+		<NPCFreeRecruit>0</NPCFreeRecruit>
+		<RaceType>Race_Type_Wraiths</RaceType>
+		<IgnoreItemTrainingCosts>false</IgnoreItemTrainingCosts>
+		<AdditionalTrainingTurns>20.0000</AdditionalTrainingTurns>
+		<WageOverride>0.0000</WageOverride>
+		<UnitTypeVersion>1</UnitTypeVersion>
+		<TileRadius>0</TileRadius>
+		<GetPerksOnLevelUp>0</GetPerksOnLevelUp>
+		<DividesBattleExp>1</DividesBattleExp>
+		<CanSqueeze>0</CanSqueeze>
+		<OnHitParticleName>Bloody_OnHit</OnHitParticleName>
+		<AllowGrouping>true</AllowGrouping>
+		<SoundPack>SoundPack_Generic_Female</SoundPack>
+		<Prereq InternalName="Prereq 147">
+			<Type>Race</Type>
+			<Target>player</Target>
+			<Attribute>Race_Type_Wraiths</Attribute>
+			<Value>0.0000</Value>
+		</Prereq>
+		<Prereq InternalName="Prereq 148">
+			<Type>Tech</Type>
+			<Target>player</Target>
+			<Attribute>Archery</Attribute>
+			<Value>0.0000</Value>
+		</Prereq>
+		<IsChampion>0</IsChampion>
+	</UnitType>
+</UnitTypes>
