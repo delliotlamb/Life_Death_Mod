@@ -6,6 +6,7 @@
         <Image>F_Magnar_Card_01.png</Image>
         <IconFG>T_ParidensReturn_Icon.png</IconFG>
 		<AutoUnlock>1</AutoUnlock>
+		<Cooldown>10</Cooldown>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
@@ -19,7 +20,7 @@
         </Prereq>		
         <SpellResourceCost>
             <Resource>Gold</Resource>
-            <Amount>50</Amount>
+            <Amount>100</Amount>
         </SpellResourceCost>
          <GameModifier>
             <ModType>Map</ModType>
@@ -48,43 +49,37 @@
         <ValidTerrainType>Imperium</ValidTerrainType>
         <ValidTerrainType>The_Shroud</ValidTerrainType>
         <ValidTerrainType>Scrapyard</ValidTerrainType>
-        <HitSoundFX>Spell_SummonEarthElemental_01</HitSoundFX>
-        <WorldLightOverrideTime>2</WorldLightOverrideTime>
-        <WorldLightOverrideAmbiant>30,30,30</WorldLightOverrideAmbiant>
-        <WorldLightOverrideDiffuse>30,30,30</WorldLightOverrideDiffuse>
-        <WorldLightOverrideRim0>212,0,192</WorldLightOverrideRim0>
-        <WorldLightOverrideRim1>0,132,234</WorldLightOverrideRim1>
-        <SpellDefEffect>
-            <EffectName>S_SummonEarthElemental_Particle</EffectName>
-            <LocalPosition>0,0,0</LocalPosition>
-            <EffectScale>0.5</EffectScale>
-            <EffectDelay>0</EffectDelay>
-            <SnapToTerrain>1</SnapToTerrain>
-        </SpellDefEffect>
+        <HitSoundFX>Spell_Crusade_01</HitSoundFX>
     </SpellDef>
 	
 	<SpellDef InternalName="CurgensCall2"> <!-- unlocked by new structure -->
-        <DisplayName>Call Knights Of Curgen</DisplayName>
+        <DisplayName>Call Warriors Of Curgen</DisplayName>
         <Description>Recruit Willing Quendar Soldiers</Description>
         <Image>F_Magnar_Card_01.png</Image>
         <IconFG>T_ParidensReturn_Icon.png</IconFG>
+		<AutoUnlock>1</AutoUnlock>		
+		<Cooldown>10</Cooldown>
         <SpellBookSortCategory>Summon</SpellBookSortCategory>
         <SpellBookSortSubCategory>Summon</SpellBookSortSubCategory>
         <SpellType>Strategic</SpellType>
         <SpellClass>Offensive</SpellClass>
         <SpellSubClass>Summon</SpellSubClass>
         <SpellTargetType>Self</SpellTargetType>
-		<!--<SpellTargetTileOccupied>FriendlyOrEmpty</SpellTargetTileOccupied>-->		
+		<!--<SpellTargetTileOccupied>FriendlyOrEmpty</SpellTargetTileOccupied>-->	
+        <Prereq>
+            <Type>AbilityBonusOption</Type>
+            <Attribute>TrainSlaves</Attribute>
+        </Prereq>		
         <SpellResourceCost>
             <Resource>Gold</Resource>
-            <Amount>50</Amount>
+            <Amount>150</Amount>
         </SpellResourceCost>
          <GameModifier>
             <ModType>Map</ModType>
             <Attribute>SummonUnit</Attribute>
             <Value>1</Value>
             <Multiplier>3</Multiplier>
-            <UnitClass>Design a Unit Breh</UnitClass>
+            <UnitClass>Curgens_Warriors_Summon</UnitClass>
         </GameModifier>
         <AIData AIPersonality="AI_General">
             <AIPriority>1000</AIPriority>
@@ -106,17 +101,5 @@
         <ValidTerrainType>Imperium</ValidTerrainType>
         <ValidTerrainType>The_Shroud</ValidTerrainType>
         <ValidTerrainType>Scrapyard</ValidTerrainType>
-        <HitSoundFX>Spell_SummonEarthElemental_01</HitSoundFX>
-        <WorldLightOverrideTime>2</WorldLightOverrideTime>
-        <WorldLightOverrideAmbiant>30,30,30</WorldLightOverrideAmbiant>
-        <WorldLightOverrideDiffuse>30,30,30</WorldLightOverrideDiffuse>
-        <WorldLightOverrideRim0>212,0,192</WorldLightOverrideRim0>
-        <WorldLightOverrideRim1>0,132,234</WorldLightOverrideRim1>
-        <SpellDefEffect>
-            <EffectName>S_SummonEarthElemental_Particle</EffectName>
-            <LocalPosition>0,0,0</LocalPosition>
-            <EffectScale>0.5</EffectScale>
-            <EffectDelay>0</EffectDelay>
-            <SnapToTerrain>1</SnapToTerrain>
-        </SpellDefEffect>
+        <HitSoundFX>Spell_Crusade_01</HitSoundFX>
     </SpellDef>
