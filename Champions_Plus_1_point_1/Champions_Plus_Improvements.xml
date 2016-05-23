@@ -154,7 +154,9 @@
         <BarredTerrain>SwampTerrain</BarredTerrain>
         <PreferredTerrain>City</PreferredTerrain>
         <PreferredTerrain>Category:Land</PreferredTerrain>
-        <PreferredTerrain>Forest</PreferredTerrain>		
+        <PreferredTerrain>Forest</PreferredTerrain>
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>Fortress</RequiredImprovement>		
         <!--<UpgradeTier>2</UpgradeTier>-->
         <!--<Prereq>
             <Type>RestrictedAbilityBonusOption</Type>
@@ -364,7 +366,9 @@
         <BarredTerrain>SwampTerrain</BarredTerrain>
         <PreferredTerrain>City</PreferredTerrain>
         <PreferredTerrain>Category:Land</PreferredTerrain>
-        <PreferredTerrain>Forest</PreferredTerrain>			
+        <PreferredTerrain>Forest</PreferredTerrain>		
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>Fortress</RequiredImprovement>			
         <!--<UpgradeTier>2</UpgradeTier>-->
         <HideInHiergamenon>1</HideInHiergamenon>
         <Prereq>
@@ -513,7 +517,9 @@
         <BarredTerrain>SwampTerrain</BarredTerrain>
         <PreferredTerrain>City</PreferredTerrain>
         <PreferredTerrain>Category:Land</PreferredTerrain>
-        <PreferredTerrain>Forest</PreferredTerrain>		
+        <PreferredTerrain>Forest</PreferredTerrain>	
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>Conclave</RequiredImprovement>		
         <!--<UpgradesToImprovement>Arcane_Armorer</UpgradesToImprovement>		
         <UpgradeTier>2</UpgradeTier>-->
         <LaborToBuild>500</LaborToBuild>
@@ -573,7 +579,9 @@
         <BarredTerrain>SwampTerrain</BarredTerrain>
         <PreferredTerrain>City</PreferredTerrain>
         <PreferredTerrain>Category:Land</PreferredTerrain>
-        <PreferredTerrain>Forest</PreferredTerrain>		
+        <PreferredTerrain>Forest</PreferredTerrain>	
+        <RequiresCityImprovement>1</RequiresCityImprovement>
+        <RequiredImprovement>Conclave</RequiredImprovement>		
         <!--<UpgradeTier>3</UpgradeTier>-->
         <LaborToBuild>700</LaborToBuild>
         <Prereq>
