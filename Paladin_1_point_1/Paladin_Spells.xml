@@ -330,8 +330,8 @@
     </SpellDef>
 	
     <SpellDef InternalName="VolcanoStrike">
-        <DisplayName>Volcanic Fists</DisplayName>
-        <Description>An enemy and all units within 1 radius take 10 (+2 per fire shard) in fire damage. This damage is multiplied by each member of the enemy unit - beware, the fists will burn the caster as well!</Description>
+        <DisplayName>Volcanic Strike</DisplayName>
+        <Description>An enemy and all units within 1 radius take 14 (+2 per fire shard) in fire damage. This damage is multiplied by each member of the enemy unit - beware, the fists will burn the caster as well!</Description>
         <Image>S_BurningBlade_Painting.png</Image>
         <IconFG>S_Firestorm_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -367,7 +367,7 @@
                 <Expression><![CDATA[[UnitOwner_GetNumFireShards] * 2]]></Expression>
             </Calculate>
             <Calculate InternalName="Calc2">
-                <Expression><![CDATA[[Calc] + 10]]></Expression>
+                <Expression><![CDATA[[Calc] + 14]]></Expression>
             </Calculate>
             <Calculate InternalName="Calc3" ValueOwner="TargetUnit">
                 <Expression><![CDATA[[Unit_GetTroopCount]]]></Expression>
@@ -388,7 +388,7 @@
                 <Expression><![CDATA[[UnitOwner_GetNumFireShards]]]></Expression>
             </Calculate>
             <Calculate InternalName="Calc2">
-                <Expression><![CDATA[[Calc] + 5]]></Expression>
+                <Expression><![CDATA[[Calc] + 7]]></Expression>
             </Calculate>
             <Calculate InternalName="Calc3" ValueOwner="TargetUnit">
                 <Expression><![CDATA[[Unit_GetTroopCount]]]></Expression>
@@ -412,13 +412,21 @@
         </AIData>
         <CasterAnimationType>30</CasterAnimationType>
         <HitSoundFX>Spell_Fireball_01</HitSoundFX>
-        <SpellDefEffect>
+        <!--<SpellDefEffect>
             <EffectName>T_BurningHands_Particle</EffectName>
             <LocalPosition>0,0,0</LocalPosition>
             <EffectScale>0.75</EffectScale>
             <EffectDelay>0.25</EffectDelay>
             <SnapToTerrain>1</SnapToTerrain>
-        </SpellDefEffect>
+        </SpellDefEffect>-->
+        <SpellDefEffect>
+            <EffectName>_FireElemental_Awaken_01</EffectName>
+            <LocalPosition>0, 0 ,0</LocalPosition>
+            <EffectScale>1.5</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+            <PlayOnAllTargets>1</PlayOnAllTargets>
+        </SpellDefEffect>		
     </SpellDef>
 	
 	<SpellDef InternalName="QuakeStrike">
@@ -4087,8 +4095,8 @@
     </SpellDef>
 	
     <SpellDef InternalName="VolcanoStrike_Adept">
-        <DisplayName>Volcanic Fists</DisplayName>
-        <Description>An enemy and all units within 1 radius take 10 (+2 per fire shard) in fire damage. This damage is multiplied by each member of the enemy unit - beware, the fists will burn the caster as well!</Description>
+        <DisplayName>Volcanic Strike</DisplayName>
+        <Description>An enemy and all units within 1 radius take 14 (+2 per fire shard) in fire damage. This damage is multiplied by each member of the enemy unit - beware, the fists will burn the caster as well!</Description>
         <Image>S_BurningBlade_Painting.png</Image>
         <IconFG>S_Firestorm_Icon.png</IconFG>
         <AutoUnlock>1</AutoUnlock>
@@ -4124,7 +4132,7 @@
                 <Expression><![CDATA[[UnitOwner_GetNumFireShards] * 2]]></Expression>
             </Calculate>
             <Calculate InternalName="Calc2">
-                <Expression><![CDATA[[Calc] + 10]]></Expression>
+                <Expression><![CDATA[[Calc] + 14]]></Expression>
             </Calculate>
             <Calculate InternalName="Calc3" ValueOwner="TargetUnit">
                 <Expression><![CDATA[[Unit_GetTroopCount]]]></Expression>
@@ -4145,7 +4153,7 @@
                 <Expression><![CDATA[[UnitOwner_GetNumFireShards]]]></Expression>
             </Calculate>
             <Calculate InternalName="Calc2">
-                <Expression><![CDATA[[Calc] + 5]]></Expression>
+                <Expression><![CDATA[[Calc] + 7]]></Expression>
             </Calculate>
             <Calculate InternalName="Calc3" ValueOwner="TargetUnit">
                 <Expression><![CDATA[[Unit_GetTroopCount]]]></Expression>
@@ -4169,12 +4177,20 @@
         </AIData>
         <CasterAnimationType>30</CasterAnimationType>
         <HitSoundFX>Spell_Fireball_01</HitSoundFX>
-        <SpellDefEffect>
+        <!--<SpellDefEffect>
             <EffectName>T_BurningHands_Particle</EffectName>
             <LocalPosition>0,0,0</LocalPosition>
             <EffectScale>0.75</EffectScale>
             <EffectDelay>0.25</EffectDelay>
             <SnapToTerrain>1</SnapToTerrain>
+        </SpellDefEffect>-->
+        <SpellDefEffect>
+            <EffectName>_FireElemental_Awaken_01</EffectName>
+            <LocalPosition>0, 0 ,0</LocalPosition>
+            <EffectScale>1.5</EffectScale>
+            <EffectDelay>0</EffectDelay>
+            <SnapToTerrain>1</SnapToTerrain>
+            <PlayOnAllTargets>1</PlayOnAllTargets>
         </SpellDefEffect>
     </SpellDef>
 	
