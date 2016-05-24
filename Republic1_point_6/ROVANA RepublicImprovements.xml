@@ -2446,7 +2446,7 @@
     </ImprovementType>
 
 	<ImprovementType InternalName="ExchangeForum">
-        <DisplayName>Exchange Forum</DisplayName>
+        <DisplayName>Capital Exchange</DisplayName>
         <Description>A gathering of laborers, farmers, and merchants that barter and make offers to match surplus with demand. This exchange gives price signals to your Labor's economy, increasing efficiency and reducing waste.</Description>
         <RequiresCity>1</RequiresCity>
         <BarredTerrain>River</BarredTerrain>
