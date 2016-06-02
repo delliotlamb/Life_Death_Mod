@@ -564,5 +564,27 @@
         </AbilityBonusOption>
     </AbilityBonus>
 	
+	<AbilityBonus InternalName="Trainer3Ability">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="Trainer3">
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>SimmerDownNow</Attribute>
+            </Prereq>
+			</AbilityBonusOption>
+    </AbilityBonus>
+	
+    <AbilityBonus InternalName="Trainer4Ability">
+        <AbilityBonusType>Unit_Level</AbilityBonusType>
+        <AbilityBonusOption InternalName="Trainer4">
+            <Prereq>
+                <Type>AbilityBonusOption</Type>
+                <Target>Unit</Target>
+                <Attribute>SimmerDownNow</Attribute>
+            </Prereq>
+		</AbilityBonusOption>	
+    </AbilityBonus>
+	
 	
 	</AbilityBonuses>
