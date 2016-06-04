@@ -1699,5 +1699,15 @@
 			<Provides>Forge The Ultimate Axe</Provides>			
         </GameModifier>
     </ImprovementType>
+	
+	<ImprovementType InternalName="TowerOfTheMagi">
+        <GameModifier>
+            <ModType>Player</ModType>
+            <Attribute>LimitedUnitCap</Attribute>
+            <StrVal>ArcanaWardGuardian</StrVal>
+            <Value>1</Value>
+            <Provides>Gain an Arcana Guardian</Provides>
+        </GameModifier>	
+    </ImprovementType>
     
 </ImprovementTypes>

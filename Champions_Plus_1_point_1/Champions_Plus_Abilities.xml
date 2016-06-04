@@ -567,22 +567,38 @@
 	<AbilityBonus InternalName="Trainer3Ability">
         <AbilityBonusType>Unit_Level</AbilityBonusType>
         <AbilityBonusOption InternalName="Trainer3">
-            <Prereq>
-                <Type>AbilityBonusOption</Type>
-                <Target>Unit</Target>
-                <Attribute>SimmerDownNow</Attribute>
-            </Prereq>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustArmyStat</Attribute>
+                <StrVal>UnitStat_ExpBonus</StrVal>
+                <Value>-10</Value>
+                <Provides>-10% to to the Army's Experience</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Resource</ModType>
+                <Attribute>Research</Attribute>
+                <Value>40</Value>
+                <Provides>+40 Research</Provides>
+            </GameModifier>			
 			</AbilityBonusOption>
     </AbilityBonus>
 	
     <AbilityBonus InternalName="Trainer4Ability">
         <AbilityBonusType>Unit_Level</AbilityBonusType>
         <AbilityBonusOption InternalName="Trainer4">
-            <Prereq>
-                <Type>AbilityBonusOption</Type>
-                <Target>Unit</Target>
-                <Attribute>SimmerDownNow</Attribute>
-            </Prereq>
+            <GameModifier>
+                <ModType>Unit</ModType>
+                <Attribute>AdjustArmyStat</Attribute>
+                <StrVal>UnitStat_ExpBonus</StrVal>
+                <Value>-10</Value>
+                <Provides>-10% to to the Army's Experience</Provides>
+            </GameModifier>
+            <GameModifier>
+                <ModType>Resource</ModType>
+                <Attribute>Research</Attribute>
+                <Value>50</Value>
+                <Provides>+50 Research</Provides>
+            </GameModifier>			
 		</AbilityBonusOption>	
     </AbilityBonus>
 	
